@@ -1,0 +1,24 @@
+{
+  "originHash" : "61b7bd7e64716d599624ef2b96b98a5cf6a1948e8510711be9864c3481b06da2",
+  "pins" : [
+    {
+      "identity" : "desing-library-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/intiMRA/Desing-Library-SPM",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d69eff5835f3b042572550ddf9a4bedbb01dd9d4"
+      }
+    },
+    {
+      "identity" : "lottie-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-spm.git",
+      "state" : {
+        "revision" : "04f2fd18cc9404a0a0917265a449002674f24ec9",
+        "version" : "4.5.2"
+      }
+    }
+  ],
+  "version" : 3
+}

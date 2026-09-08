@@ -1,0 +1,21 @@
+# Xcode
+build/
+DerivedData/
+.build/
+*.xcuserstate
+*.xcuserdatad/
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# SwiftPM
+# Package.resolved IS committed: DesignLibrary is pinned by branch with no tags, so the
+# resolved file is the only record of the revision this app was built against.
+.swiftpm/
+Packages/
+
+# macOS
+.DS_Store
