@@ -31,6 +31,17 @@ final class CatalogueStore {
         fileURL?.path(percentEncoded: false) ?? "No catalogue found"
     }
 
+    /// Where photos live, alongside the catalogue file.
+    var photoDirectory: URL? {
+        fileURL.map(PhotoAudit.directory(forCatalogueAt:))
+    }
+
+    /// Filesystem checks the pure model can't do: missing files, oversized files, orphans.
+    var photoReport: PhotoAudit.Report? {
+        guard let photoDirectory else { return nil }
+        return PhotoAudit.audit(species: species, photoDirectory: photoDirectory)
+    }
+
     func load() {
         guard let fileURL else {
             status = .failed(
@@ -178,7 +189,9 @@ extension ForageSpecies {
         warnings: [String]? = nil,
         harvestEthics: String?? = nil,
         sources: [String]? = nil,
-        recipes: [Recipe]? = nil
+        recipes: [Recipe]? = nil,
+        photos: [SpeciesPhoto]? = nil,
+        moreImagesURL: URL?? = nil
     ) -> ForageSpecies {
         ForageSpecies(
             id: id,
@@ -198,7 +211,9 @@ extension ForageSpecies {
             warnings: warnings ?? self.warnings,
             harvestEthics: harvestEthics ?? self.harvestEthics,
             sources: sources ?? self.sources,
-            recipes: recipes ?? self.recipes
+            recipes: recipes ?? self.recipes,
+            photos: photos ?? self.photos,
+            moreImagesURL: moreImagesURL ?? self.moreImagesURL
         )
     }
 }

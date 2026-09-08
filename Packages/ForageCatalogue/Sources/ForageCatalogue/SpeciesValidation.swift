@@ -89,6 +89,25 @@ public extension ForageSpecies {
             blocking("recipes[\(index)]", "Recipe needs a title.")
         }
 
+        for (index, photo) in photos.enumerated() {
+            let field = "photos[\(index)]"
+            if photo.caption.trimmed.isEmpty {
+                blocking(field, "Needs a caption saying which feature it shows.")
+            }
+            if photo.credit.trimmed.isEmpty {
+                blocking(field, "Needs attribution — the licence requires it and the app shows it.")
+            }
+        }
+
+        if caution != .doNotEat && photos.count < CataloguePhotos.recommendedCount {
+            advisory(
+                "photos",
+                photos.isEmpty
+                    ? "No photos. It can't realistically be identified from text alone."
+                    : "Only \(photos.count) photo(s); \(CataloguePhotos.recommendedCount) makes it identifiable."
+            )
+        }
+
         if sources.isEmpty {
             advisory("sources", "Not yet checked against a field guide.")
         } else if sources.contains(where: { $0.trimmed.isEmpty }) {

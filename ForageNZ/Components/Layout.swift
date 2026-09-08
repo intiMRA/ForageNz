@@ -11,6 +11,11 @@ enum Layout {
 
     static let cardBackgroundOpacity: Double = 0.4
 
+    /// Identification photo card. Wide enough to show a leaf margin, short enough that
+    /// several fit on screen at once.
+    static let photoWidth: CGFloat = 200
+    static let photoHeight: CGFloat = 150
+
     static var cardShape: RoundedRectangle {
         RoundedRectangle(cornerRadius: cardCornerRadius)
     }
