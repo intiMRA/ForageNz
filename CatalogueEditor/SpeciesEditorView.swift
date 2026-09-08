@@ -1,70 +1,24 @@
 import ForageCatalogue
 import SwiftUI
 
-/// The editable sheet for one species.
+/// The editable sheet for one species. Everything visible here is an input; derived facts
+/// live in the sidebar and toolbar instead.
 struct SpeciesEditorView: View {
     let species: ForageSpecies
     let onChange: (ForageSpecies) -> Void
 
+    @State private var showingIssues = false
+
     var body: some View {
         Form {
-            if !species.validationIssues.isEmpty {
-                Section {
-                    ForEach(species.validationIssues) { issue in
-                        Label {
-                            VStack(alignment: .leading, spacing: 1) {
-                                Text(issue.message)
-                                Text(issue.field)
-                                    .font(.caption)
-                                    .monospaced()
-                                    .foregroundStyle(.secondary)
-                            }
-                        } icon: {
-                            Image(systemName: issue.severity == .blocking
-                                ? "exclamationmark.octagon.fill"
-                                : "info.circle")
-                                .foregroundStyle(issue.severity == .blocking ? .red : .secondary)
-                        }
-                    }
-                } header: {
-                    Text(species.isPublishable ? "Worth finishing" : "Still to fill in")
-                } footer: {
-                    if !species.isPublishable {
-                        Text("Red items fail the app's build, so the entry can't ship until they're resolved.")
-                            .font(.caption)
-                    }
-                }
-            }
-
-            Section {
-                LabeledContent("Verification") {
-                    if species.isVerified {
-                        Label("\(species.sources.count) source(s) recorded", systemImage: "checkmark.seal.fill")
-                            .foregroundStyle(.green)
-                    } else {
-                        Label("Not yet checked against a book", systemImage: "exclamationmark.triangle.fill")
-                            .foregroundStyle(.orange)
-                    }
-                }
-                LabeledContent("Priority", value: species.reviewTierLabel)
-                LabeledContent("Identifier", value: species.id)
-                    .monospaced()
-            }
-
-            Section("Sources — book and page") {
-                StringListEditor(
-                    values: species.sources,
-                    addLabel: "Add source",
-                    placeholder: "Langlands, Foraging New Zealand (2024), p. 112",
-                    onChange: { onChange(species.with(sources: $0)) }
-                )
-            }
-
             Section("Names") {
-                TextField("Common name", text: binding(\.commonName) { $0.with(commonName: $1) })
-                TextField("Te reo Māori name", text: optionalBinding(\.maoriName) { $0.with(maoriName: $1) })
-                TextField("Scientific name", text: binding(\.scientificName) { $0.with(scientificName: $1) })
-                    .italic()
+                LabelledField("Common name", text: binding(\.commonName) { $0.with(commonName: $1) })
+                LabelledField("Te reo Māori name", text: optionalBinding(\.maoriName) { $0.with(maoriName: $1) })
+                LabelledField(
+                    "Scientific name",
+                    text: binding(\.scientificName) { $0.with(scientificName: $1) },
+                    italic: true
+                )
             }
 
             Section("Classification") {
@@ -81,33 +35,58 @@ struct SpeciesEditorView: View {
                 }
             }
 
-            Section("Season") {
-                MonthPicker(
-                    months: species.months,
-                    onChange: { onChange(species.with(months: $0)) }
-                )
-                Text(species.seasonDescription)
+            Section {
+                MonthPicker(months: species.months) { onChange(species.with(months: $0)) }
+            } header: {
+                Text("Season")
+            } footer: {
+                Text("Shows in the app as “\(species.seasonDescription)”. Leave every month off for year-round.")
+                    .font(.caption)
                     .foregroundStyle(.secondary)
             }
 
             Section("Description") {
-                LabeledTextEditor("Summary", text: binding(\.summary) { $0.with(summary: $1) })
-                LabeledTextEditor("Habitat", text: binding(\.habitat) { $0.with(habitat: $1) })
-                LabeledTextEditor("Identification", text: binding(\.identification) { $0.with(identification: $1) })
-            }
-
-            if species.caution != .doNotEat {
-                Section("Use") {
-                    LabeledTextEditor("Edible parts", text: binding(\.edibleParts) { $0.with(edibleParts: $1) })
-                    LabeledTextEditor("Preparation", text: binding(\.preparation) { $0.with(preparation: $1) })
-                }
-            }
-
-            Section("Lookalikes — the field-critical checks") {
-                LookalikeEditor(
-                    lookalikes: species.lookalikes,
-                    onChange: { onChange(species.with(lookalikes: $0)) }
+                LabelledField(
+                    "Summary",
+                    text: binding(\.summary) { $0.with(summary: $1) },
+                    lines: 2...4,
+                    help: "One line. It's the subtitle in every list."
                 )
+                LabelledField(
+                    "Habitat",
+                    text: binding(\.habitat) { $0.with(habitat: $1) },
+                    lines: 3...8
+                )
+                LabelledField(
+                    "Identification",
+                    text: binding(\.identification) { $0.with(identification: $1) },
+                    lines: 4...12,
+                    help: "What to check in the field."
+                )
+            }
+
+            Section("Use") {
+                LabelledField(
+                    "Edible parts",
+                    text: binding(\.edibleParts) { $0.with(edibleParts: $1) },
+                    lines: 2...6,
+                    help: species.caution == .doNotEat ? "Must say “none” for a do-not-eat entry." : nil
+                )
+                LabelledField(
+                    "Preparation",
+                    text: binding(\.preparation) { $0.with(preparation: $1) },
+                    lines: 3...8
+                )
+            }
+
+            Section {
+                LookalikeEditor(lookalikes: species.lookalikes) { onChange(species.with(lookalikes: $0)) }
+            } header: {
+                Text("Lookalikes")
+            } footer: {
+                Text("The field-critical part. Give a difference someone can check while holding the plant.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
             }
 
             Section("Warnings") {
@@ -115,26 +94,79 @@ struct SpeciesEditorView: View {
                     values: species.warnings,
                     addLabel: "Add warning",
                     placeholder: "What will hurt someone, and how",
-                    onChange: { onChange(species.with(warnings: $0)) }
-                )
+                    lines: 2...6
+                ) { onChange(species.with(warnings: $0)) }
             }
 
             Section("Harvesting & tikanga") {
-                LabeledTextEditor(
+                LabelledField(
                     "Guidance",
-                    text: optionalBinding(\.harvestEthics) { $0.with(harvestEthics: $1) }
+                    text: optionalBinding(\.harvestEthics) { $0.with(harvestEthics: $1) },
+                    lines: 3...8,
+                    help: species.origin == .native ? "Required for native species." : nil
                 )
             }
 
+            Section("Sources") {
+                StringListEditor(
+                    values: species.sources,
+                    addLabel: "Add source",
+                    placeholder: "Langlands, Foraging New Zealand (2024), p. 112",
+                    lines: 1...3
+                ) { onChange(species.with(sources: $0)) }
+            }
+
             Section("Recipes") {
-                RecipeEditor(
-                    recipes: species.recipes,
-                    onChange: { onChange(species.with(recipes: $0)) }
-                )
+                RecipeEditor(recipes: species.recipes) { onChange(species.with(recipes: $0)) }
+            }
+
+            if !species.validationIssues.isEmpty {
+                Section {
+                    DisclosureGroup(isExpanded: $showingIssues) {
+                        VStack(alignment: .leading, spacing: 6) {
+                            ForEach(species.validationIssues) { issue in
+                                HStack(alignment: .firstTextBaseline, spacing: 6) {
+                                    Image(systemName: issue.severity == .blocking
+                                        ? "exclamationmark.circle.fill" : "info.circle")
+                                        .foregroundStyle(issue.severity == .blocking ? .red : .secondary)
+                                    Text(issue.message)
+                                    Spacer(minLength: 0)
+                                    Text(issue.field)
+                                        .font(.caption)
+                                        .monospaced()
+                                        .foregroundStyle(.secondary)
+                                }
+                            }
+                        }
+                        .padding(.top, 4)
+                    } label: {
+                        issueSummary
+                    }
+                }
             }
         }
         .formStyle(.grouped)
-        .navigationTitle(species.commonName)
+        .navigationTitle(species.commonName.isEmpty ? "Untitled species" : species.commonName)
+        .navigationSubtitle(species.id)
+    }
+
+    private var issueSummary: some View {
+        let blocking = species.blockingIssues.count
+        let advisory = species.validationIssues.count - blocking
+        return HStack(spacing: 6) {
+            if blocking > 0 {
+                Image(systemName: "exclamationmark.circle.fill").foregroundStyle(.red)
+                Text("\(blocking) still to fill in")
+            } else {
+                Image(systemName: "checkmark.circle.fill").foregroundStyle(.green)
+                Text("Nothing blocking")
+            }
+            if advisory > 0 {
+                Text("· \(advisory) suggested")
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .font(.callout)
     }
 
     // MARK: - Bindings
@@ -160,27 +192,55 @@ struct SpeciesEditorView: View {
     }
 }
 
-/// A multi-line field with a label above it — `TextField(axis:)` collapses too readily
-/// for paragraph-length identification notes.
-private struct LabeledTextEditor: View {
+/// A labelled text input. Uses `TextField(axis: .vertical)` rather than `TextEditor` —
+/// it sizes to its content in a Form and needs no decorative overlay, which is what
+/// previously sat on top of these fields and swallowed every click.
+private struct LabelledField: View {
     let label: String
     @Binding var text: String
+    var italic = false
+    var lines: ClosedRange<Int>?
+    var help: String?
 
-    init(_ label: String, text: Binding<String>) {
+    init(
+        _ label: String,
+        text: Binding<String>,
+        italic: Bool = false,
+        lines: ClosedRange<Int>? = nil,
+        help: String? = nil
+    ) {
         self.label = label
         self._text = text
+        self.italic = italic
+        self.lines = lines
+        self.help = help
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
+        VStack(alignment: .leading, spacing: 3) {
             Text(label)
                 .font(.caption)
                 .foregroundStyle(.secondary)
-            TextEditor(text: $text)
-                .font(.body)
-                .frame(minHeight: 66)
-                .overlay(RoundedRectangle(cornerRadius: 5).stroke(.quaternary))
+
+            Group {
+                if let lines {
+                    TextField(label, text: $text, axis: .vertical)
+                        .lineLimit(lines)
+                } else {
+                    TextField(label, text: $text)
+                }
+            }
+            .labelsHidden()
+            .textFieldStyle(.roundedBorder)
+            .italic(italic)
+
+            if let help {
+                Text(help)
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+            }
         }
+        .padding(.vertical, 2)
     }
 }
 
@@ -188,12 +248,19 @@ private struct StringListEditor: View {
     let values: [String]
     let addLabel: String
     let placeholder: String
+    let lines: ClosedRange<Int>
     let onChange: ([String]) -> Void
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
+            if values.isEmpty {
+                Text("None yet.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
             ForEach(Array(values.enumerated()), id: \.offset) { index, value in
-                HStack(alignment: .top) {
+                HStack(alignment: .top, spacing: 6) {
                     TextField(placeholder, text: Binding(
                         get: { value },
                         set: { newValue in
@@ -202,20 +269,25 @@ private struct StringListEditor: View {
                             onChange(next)
                         }
                     ), axis: .vertical)
+                    .lineLimit(lines)
+                    .textFieldStyle(.roundedBorder)
+
                     Button {
                         var next = values
                         next.remove(at: index)
                         onChange(next)
                     } label: {
-                        Image(systemName: "minus.circle")
+                        Image(systemName: "minus.circle.fill")
                     }
                     .buttonStyle(.borderless)
                     .help("Remove")
                 }
             }
-            Button(addLabel, systemImage: "plus") { onChange(values + [""]) }
+
+            Button(addLabel, systemImage: "plus.circle") { onChange(values + [""]) }
                 .buttonStyle(.borderless)
         }
+        .padding(.vertical, 2)
     }
 }
 
@@ -224,38 +296,48 @@ private struct RecipeEditor: View {
     let onChange: ([Recipe]) -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 10) {
+            if recipes.isEmpty {
+                Text("None yet.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
             ForEach(Array(recipes.enumerated()), id: \.offset) { index, recipe in
                 VStack(alignment: .leading, spacing: 6) {
-                    HStack {
+                    HStack(spacing: 6) {
                         TextField("Title", text: Binding(
                             get: { recipe.title },
                             set: { replace(index, Recipe(title: $0, method: recipe.method)) }
                         ))
+                        .textFieldStyle(.roundedBorder)
+
                         Button {
                             var next = recipes
                             next.remove(at: index)
                             onChange(next)
                         } label: {
-                            Image(systemName: "minus.circle")
+                            Image(systemName: "minus.circle.fill")
                         }
                         .buttonStyle(.borderless)
                         .help("Remove recipe")
                     }
+
                     TextField("Method", text: Binding(
                         get: { recipe.method },
                         set: { replace(index, Recipe(title: recipe.title, method: $0)) }
                     ), axis: .vertical)
-                    .lineLimit(2...6)
+                    .lineLimit(2...8)
+                    .textFieldStyle(.roundedBorder)
                 }
-                .padding(8)
-                .background(.quaternary.opacity(0.4), in: RoundedRectangle(cornerRadius: 6))
             }
-            Button("Add recipe", systemImage: "plus") {
+
+            Button("Add recipe", systemImage: "plus.circle") {
                 onChange(recipes + [Recipe(title: "", method: "")])
             }
             .buttonStyle(.borderless)
         }
+        .padding(.vertical, 2)
     }
 
     private func replace(_ index: Int, _ recipe: Recipe) {
@@ -271,11 +353,22 @@ private struct LookalikeEditor: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
+            if lookalikes.isEmpty {
+                Text("None recorded.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
             ForEach(Array(lookalikes.enumerated()), id: \.offset) { index, lookalike in
                 VStack(alignment: .leading, spacing: 6) {
-                    HStack {
-                        TextField("Name", text: binding(index, lookalike, \.name))
-                        Picker("", selection: Binding(
+                    HStack(spacing: 6) {
+                        TextField("Name", text: Binding(
+                            get: { lookalike.name },
+                            set: { replace(index, lookalike, name: $0) }
+                        ))
+                        .textFieldStyle(.roundedBorder)
+
+                        Picker("Risk", selection: Binding(
                             get: { lookalike.risk },
                             set: { replace(index, lookalike, risk: $0) }
                         )) {
@@ -284,56 +377,46 @@ private struct LookalikeEditor: View {
                             Text("Unpalatable").tag(LookalikeRisk.unpalatable)
                         }
                         .labelsHidden()
-                        .frame(width: 130)
+                        .frame(width: 140)
+
                         Button {
                             var next = lookalikes
                             next.remove(at: index)
                             onChange(next)
                         } label: {
-                            Image(systemName: "minus.circle")
+                            Image(systemName: "minus.circle.fill")
                         }
                         .buttonStyle(.borderless)
                         .help("Remove lookalike")
                     }
+
                     TextField("Scientific name", text: Binding(
                         get: { lookalike.scientificName ?? "" },
                         set: { replace(index, lookalike, scientificName: $0.isEmpty ? nil : $0) }
                     ))
+                    .textFieldStyle(.roundedBorder)
                     .italic()
-                    Text("How to tell them apart — be specific and field-checkable")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                    TextField("How to tell", text: binding(index, lookalike, \.howToTell), axis: .vertical)
-                        .lineLimit(2...8)
+
+                    TextField("How to tell them apart", text: Binding(
+                        get: { lookalike.howToTell },
+                        set: { replace(index, lookalike, howToTell: $0) }
+                    ), axis: .vertical)
+                    .lineLimit(2...8)
+                    .textFieldStyle(.roundedBorder)
                 }
-                .padding(8)
+                .padding(10)
                 .background(
                     (lookalike.risk == .deadly ? Color.red : Color.secondary).opacity(0.08),
                     in: RoundedRectangle(cornerRadius: 6)
                 )
             }
-            Button("Add lookalike", systemImage: "plus") {
+
+            Button("Add lookalike", systemImage: "plus.circle") {
                 onChange(lookalikes + [Lookalike(name: "", risk: .toxic, howToTell: "")])
             }
             .buttonStyle(.borderless)
         }
-    }
-
-    private func binding(
-        _ index: Int,
-        _ lookalike: Lookalike,
-        _ keyPath: KeyPath<Lookalike, String>
-    ) -> Binding<String> {
-        Binding(
-            get: { lookalike[keyPath: keyPath] },
-            set: { newValue in
-                if keyPath == \Lookalike.name {
-                    replace(index, lookalike, name: newValue)
-                } else {
-                    replace(index, lookalike, howToTell: newValue)
-                }
-            }
-        )
+        .padding(.vertical, 2)
     }
 
     private func replace(
@@ -360,27 +443,22 @@ private struct MonthPicker: View {
     let onChange: ([ForageMonth]) -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text("Leave every month off for a year-round species.")
-                .font(.caption)
-                .foregroundStyle(.secondary)
-            HStack(spacing: 4) {
-                ForEach(ForageMonth.allCases, id: \.rawValue) { month in
-                    let isOn = months.contains(month)
-                    Button(month.shortName) {
-                        onChange(isOn
-                            ? months.filter { $0 != month }
-                            : (months + [month]).sorted())
-                    }
-                    .buttonStyle(.borderless)
-                    .padding(.vertical, 4)
-                    .padding(.horizontal, 6)
-                    .background(
-                        isOn ? Color.accentColor.opacity(0.25) : Color.secondary.opacity(0.1),
-                        in: RoundedRectangle(cornerRadius: 4)
-                    )
+        HStack(spacing: 4) {
+            ForEach(ForageMonth.allCases, id: \.rawValue) { month in
+                let isOn = months.contains(month)
+                Button(month.shortName) {
+                    onChange(isOn ? months.filter { $0 != month } : (months + [month]).sorted())
                 }
+                .buttonStyle(.borderless)
+                .font(.caption)
+                .frame(minWidth: 26)
+                .padding(.vertical, 5)
+                .background(
+                    isOn ? Color.accentColor.opacity(0.3) : Color.secondary.opacity(0.12),
+                    in: RoundedRectangle(cornerRadius: 4)
+                )
             }
         }
+        .padding(.vertical, 2)
     }
 }

@@ -38,8 +38,6 @@ struct EditorRootView: View {
                     .keyboardShortcut("s")
             }
         }
-        .navigationTitle("Forage Catalogue")
-        .navigationSubtitle(store.displayPath)
         .sheet(isPresented: $isAddingSpecies) { addSheet }
         .alert("Delete this entry?", isPresented: .init(
             get: { pendingDeletion != nil },
@@ -130,8 +128,17 @@ struct EditorRootView: View {
             .searchable(text: $search, placement: .sidebar, prompt: "Search species")
 
             Divider()
-            Toggle("Unverified only", isOn: $unverifiedOnly)
-                .padding(8)
+            VStack(alignment: .leading, spacing: 6) {
+                Toggle("Unverified only", isOn: $unverifiedOnly)
+                Text(store.displayPath)
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(2)
+                    .truncationMode(.head)
+                    .textSelection(.enabled)
+                    .help(store.displayPath)
+            }
+            .padding(8)
         }
         .frame(minWidth: 260)
     }
