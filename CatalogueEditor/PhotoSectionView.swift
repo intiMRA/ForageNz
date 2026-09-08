@@ -20,8 +20,8 @@ struct PhotoSectionView: View {
     private var emptyStateGuidance: String {
         let base = "No photos yet. Aim for \(wantedPhotoCount): whole plant, leaf or frond detail, "
             + "the diagnostic feature, and whatever it gets confused with."
-        let offline = " These are all a forager will have — there is no signal in the bush, "
-            + "so the web link is for planning at home, not for identifying in the field."
+        let offline = " Assume no signal: these must stand alone, because the web link may "
+            + "not load where it matters."
         return species.highestLookalikeRisk == .deadly
             ? base + " It has a deadly lookalike, so it needs more than usual." + offline
             : base + offline
@@ -82,7 +82,7 @@ struct PhotoSectionView: View {
                     )
                 )
                 .textFieldStyle(.roundedBorder)
-                Text("For planning and checking at home. It needs a connection, so it is no help in the field.")
+                Text("Useful for planning, and in the field when there is signal — so never the only place something important lives.")
                     .font(.caption2)
                     .foregroundStyle(.secondary)
             }

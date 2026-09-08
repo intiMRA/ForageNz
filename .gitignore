@@ -23,3 +23,4 @@ xcuserdata/
 # Evaluation photos: openly-licensed test data, fetched on demand, never shipped.
 .eval-photos/
 .eval-photos-negative/
+.staged-photos/

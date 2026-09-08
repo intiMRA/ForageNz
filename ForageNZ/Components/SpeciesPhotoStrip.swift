@@ -26,7 +26,7 @@ struct SpeciesPhotoStrip: View {
                         Label("More photos on the web", systemImage: "safari")
                             .font(.subheadline)
                     }
-                    Text("Needs a connection — look before you go, not while you're out.")
+                    Text("Opens in a browser, so it needs a connection.")
                         .font(.caption2)
                         .foregroundStyle(.secondary)
                 }
