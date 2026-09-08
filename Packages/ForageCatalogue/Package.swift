@@ -9,7 +9,9 @@ let package = Package(
     ],
     targets: [
         .target(name: "ForageCatalogue"),
-        .executableTarget(name: "CatalogueEditor", dependencies: ["ForageCatalogue"]),
+        // Headless maintenance only. The editor with a window is the CatalogueEditor
+        // app target in ForageNZ.xcodeproj.
+        .executableTarget(name: "catalogue-tool", dependencies: ["ForageCatalogue"]),
         .testTarget(name: "ForageCatalogueTests", dependencies: ["ForageCatalogue"])
     ]
 )

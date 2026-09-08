@@ -24,7 +24,8 @@ no distinguishing check, or a native species ships without harvesting guidance.
 
 | Path | What's in it |
 |---|---|
-| `Packages/ForageCatalogue/` | Local SwiftPM package. `Sources/ForageCatalogue` is the shared model — `ForageSpecies`, `ForageMonth`, `ForageCategory`/`ForageOrigin`, `CautionLevel`, `Lookalike`, `Recipe` — plus `CatalogueFile` for reading and writing `species.json`. `Sources/CatalogueEditor` is the macOS editor. |
+| `Packages/ForageCatalogue/` | Local SwiftPM package: the shared model (`ForageSpecies`, `ForageMonth`, `ForageCategory`/`ForageOrigin`, `CautionLevel`, `Lookalike`, `Recipe`), `CatalogueFile` for load/save, `SpeciesValidation` for the shared rules, `CatalogueLocator`, and the `catalogue-tool` CLI. Depended on by every target. |
+| `CatalogueEditor/` | macOS editor app target — its own scheme in the project. |
 | `ForageNZ/ForageNZApp.swift`, `RootView.swift` | App entry and the tab shell, which owns catalogue loading. |
 | `ForageNZ/Catalogue/` | `species.json`, `SpeciesRepository` (protocol + bundled actor), `SpeciesStore` (`@Observable @MainActor`). |
 | `ForageNZ/InSeason/` | What's worth looking for this month. |
@@ -38,23 +39,37 @@ Grouped by feature rather than by layer, matching the other apps in this folder.
 
 ## Editing the catalogue
 
-`species.json` is edited with the macOS editor, which goes through the same `ForageSpecies`
-type the app decodes — so it cannot write JSON the app can't read.
+`species.json` is edited with the **CatalogueEditor** scheme — a macOS app target in
+`ForageNZ.xcodeproj`. Open the project, pick the scheme, ⌘R. It edits the repo's
+`species.json` in place; there is no import or export step.
+
+It finds the catalogue via a compile-time source anchor (`#filePath` at the call site),
+because an app bundle launched from Xcode has neither a working directory nor a bundle path
+inside the repo. That's fine for a developer tool and wrong for anything shipped — see
+`CatalogueLocator`.
+
+In the app: ⌘N adds a species, ⌘S saves. Nothing is written until you save; the sidebar
+marks unsaved entries and flags incomplete ones. Entries are grouped by verification
+priority, lethal claims first.
+
+Headless maintenance lives in the package instead, so it can run without a window:
 
 ```sh
 cd Packages/ForageCatalogue
-swift run CatalogueEditor              # opens the editor on the repo's species.json
-swift run CatalogueEditor --normalise  # rewrite in canonical form, no window
+swift run catalogue-tool --normalise   # rewrite species.json in canonical form
+swift run catalogue-tool --check       # list blocking issues, non-zero exit if any
 ```
-
-Entries are grouped by verification priority: lethal claims first (do-not-eat entries and
-anything with a deadly lookalike), then care-required, then the rest. `--catalogue <path>`
-points it at a different file.
 
 **Formatting is load-bearing.** `CatalogueFileTests` asserts that re-encoding `species.json`
 is byte-identical to what's on disk, so a save is a one-entry diff rather than a whole-file
 reformat. Foundation's `prettyPrinted` writes `"key" : value` (with a space before the colon),
 which is *not* what most formatters produce — after hand-editing the file, run `--normalise`.
+
+## Validation
+
+Per-entry rules live in `ForageSpecies.validationIssues`, split into blocking (fails the
+build) and advisory. The editor shows them at the top of each entry, and `CatalogueTests`
+enforces the same rules — one definition, so the tool and the build can't disagree.
 
 ## Verification status
 
@@ -75,15 +90,22 @@ Dynamic Type styles and the caution palette is defined as asset-catalog colour s
 ## Building
 
 ```sh
+# the iOS app
 xcodebuild build -project ForageNZ.xcodeproj -scheme ForageNZ \
   -destination 'platform=iOS Simulator,name=iPhone 17' | xcbeautify -q
 xcodebuild test  -project ForageNZ.xcodeproj -scheme ForageNZ \
   -destination 'platform=iOS Simulator,name=iPhone 17' | xcbeautify -q
+
+# the macOS editor
+xcodebuild build -project ForageNZ.xcodeproj -scheme CatalogueEditor -destination 'platform=macOS'
+
+# the shared package
+cd Packages/ForageCatalogue && swift test
 ```
 
-Use **iPhone 17**: the iPhone 16 family is only installed on iOS 18.x runtimes here, and
-`xcodebuild` defaults to `OS:latest`, so those names fail to resolve. Confirm with
-`xcodebuild -showdestinations` if the device list drifts.
+Use **iPhone 17** for the iOS scheme: the iPhone 16 family is only installed on iOS 18.x
+runtimes here, and `xcodebuild` defaults to `OS:latest`, so those names fail to resolve.
+Confirm with `xcodebuild -showdestinations` if the device list drifts.
 
 `Package.resolved` is committed: `DesignLibrary` is branch-pinned with no tags, so it is the
 only record of the revision this app was built against.

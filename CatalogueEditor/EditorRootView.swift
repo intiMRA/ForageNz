@@ -39,7 +39,7 @@ struct EditorRootView: View {
             }
         }
         .navigationTitle("Forage Catalogue")
-        .navigationSubtitle(store.fileURL.path(percentEncoded: false))
+        .navigationSubtitle(store.displayPath)
         .sheet(isPresented: $isAddingSpecies) { addSheet }
         .alert("Delete this entry?", isPresented: .init(
             get: { pendingDeletion != nil },
