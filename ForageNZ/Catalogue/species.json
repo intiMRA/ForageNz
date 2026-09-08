@@ -1,86 +1,106 @@
 [
   {
-    "category" : "greens",
+    "category" : "fruit",
     "caution" : "straightforward",
-    "commonName" : "Pūhā / Sow thistle",
-    "edibleParts" : "Young leaves and shoots. Older leaves turn tough and very bitter.",
-    "habitat" : "Waste ground, gardens, roadsides, cultivated paddocks. Almost anywhere disturbed.",
-    "harvestEthics" : "Abundant and largely introduced. Take freely, but leave plants that are flowering and setting seed on land you want to keep harvesting.",
-    "id" : "puha",
-    "identification" : "Rosette of deeply lobed leaves with soft prickly margins, clasping the stem. Stems and leaves exude a white milky sap when broken. Small yellow dandelion-like flowers on a branched stem. The native S. kirkii is fleshier and coastal.",
+    "commonName" : "Blackberry",
+    "edibleParts" : "Ripe black fruit. Young spring leaf tips make a passable tea.",
+    "habitat" : "Roadsides, riverbanks, gullies, forest margins, abandoned farmland. Forms impenetrable thickets.",
+    "harvestEthics" : "A declared pest plant in most regions. There is no such thing as taking too much.",
+    "id" : "blackberry",
+    "identification" : "Arching thorny canes, compound leaves of three to five toothed leaflets with a pale underside, white or pink five-petalled flowers, and clustered berries ripening green to red to matte black.",
     "lookalikes" : [
-      {
-        "howToTell" : "Stiffer, genuinely spiny leaf margins with rounded clasping lobes. Harmless, just unpleasant to eat.",
-        "name" : "Prickly sow thistle",
-        "risk" : "unpalatable",
-        "scientificName" : "Sonchus asper"
-      }
+
     ],
-    "maoriName" : "Pūhā, rauriki",
     "months" : [
-      9,
-      10,
-      11,
-      12,
       1,
       2,
-      3
+      3,
+      4
     ],
-    "origin" : "introduced",
+    "origin" : "pest",
     "photos" : [
 
     ],
-    "preparation" : "Strip the leaves, boil and discard the water to cut the bitterness — traditionally boiled with pork bones. Young shoots can be eaten raw in small amounts.",
+    "preparation" : "Raw, or into jam, crumble, cordial and vinegar. Fully black and pulling away from the plant with no effort means ripe.",
     "recipes" : [
 
     ],
-    "scientificName" : "Sonchus oleraceus / Sonchus kirkii",
+    "scientificName" : "Rubus fruticosus agg.",
     "sources" : [
 
     ],
-    "summary" : "The classic Aotearoa wild green — a boiled staple long before it was fashionable.",
+    "summary" : "A declared pest across much of NZ. Pick as much as you physically can.",
     "warnings" : [
-      "Avoid plants growing on roadside verges or sprayed ground — pūhā thrives exactly where councils spray herbicide."
+      "Blackberry thickets are a favourite spray target for regional councils and landowners — look for spray marker dye and browning canes.",
+      "Wear long sleeves; the thorns are vicious and blackberry scratches infect readily."
     ]
   },
   {
-    "category" : "greens",
+    "category" : "seaweed",
     "caution" : "careRequired",
-    "commonName" : "Watercress",
-    "edibleParts" : "Leaves and tender stems.",
-    "habitat" : "Slow-moving fresh water: streams, drains, spring-fed creeks. Often in dense floating mats.",
-    "harvestEthics" : "Cut above the waterline and leave the roots so the mat regenerates.",
-    "id" : "watercress",
-    "identification" : "Rounded, glossy compound leaves with a large terminal leaflet. Hollow stems that root at the nodes. Small four-petalled white flowers. Sharp peppery taste.",
+    "commonName" : "Bull kelp",
+    "edibleParts" : "Young blade tissue.",
+    "habitat" : "Wave-battered rocky coast, especially the South Island, Stewart Island and southern North Island.",
+    "harvestEthics" : "Rimurapa is culturally significant, particularly for pōhā tītī in the south. Some beds are subject to customary management or rāhui. Ask locally before harvesting.",
+    "id" : "bull-kelp",
+    "identification" : "Very large, thick, leathery olive-brown straps anchored by a massive holdfast. The blade is honeycombed inside, which keeps it buoyant — this internal structure is diagnostic.",
     "lookalikes" : [
-      {
-        "howToTell" : "Leaflets are toothed and celery-scented rather than rounded and peppery. Grows in the same drains.",
-        "name" : "Water celery / fool's watercress",
-        "risk" : "unpalatable",
-        "scientificName" : "Helosciadium nodiflorum"
-      }
+
     ],
-    "maoriName" : "Kōwhitiwhiti, wātakirihi",
+    "maoriName" : "Rimurapa",
     "months" : [
 
     ],
-    "origin" : "introduced",
+    "origin" : "native",
     "photos" : [
 
     ],
-    "preparation" : "Cook it. Soups, blanched as a green, or wilted. Eating it raw from an unknown waterway is the single most common way NZ foragers make themselves ill.",
+    "preparation" : "Slice thinly and simmer for a long time, or dry and grind as a seasoning. Tough and best treated as a stock ingredient rather than a vegetable.",
     "recipes" : [
 
     ],
-    "scientificName" : "Nasturtium officinale",
+    "scientificName" : "Durvillaea antarctica",
     "sources" : [
 
     ],
-    "summary" : "Peppery and everywhere in NZ waterways — but the water it grows in is the whole problem.",
+    "summary" : "The massive leathery kelp of the southern coast — traditionally made into pōhā, the bags that preserved tītī.",
     "warnings" : [
-      "Liver fluke risk: watercress in waterways grazed by sheep or cattle can carry Fasciola hepatica. Cooking destroys it — raw does not.",
-      "Check the waterway for agricultural runoff and toxic algae before harvesting. LAWA publishes water quality and algal bloom status for monitored sites.",
-      "Never harvest from a stream below a farm, dairy shed or urban stormwater outfall."
+      "Collecting kelp from a wave-exposed southern shore is genuinely dangerous. People drown doing this. Never turn your back on the sea, and never go alone.",
+      "Take only drift or cut from the blade tip — never remove the holdfast."
+    ]
+  },
+  {
+    "category" : "fruit",
+    "caution" : "straightforward",
+    "commonName" : "Cherry guava",
+    "edibleParts" : "Ripe fruit.",
+    "habitat" : "Forest margins, gullies and regenerating bush in Northland, Auckland, Bay of Plenty and coastal Taranaki.",
+    "harvestEthics" : "A serious environmental weed that displaces native regeneration. Harvest as much as you like, and do not spread the seed.",
+    "id" : "cherry-guava",
+    "identification" : "Shrub or small tree with smooth peeling copper-brown bark, glossy oval leaves, and round dark red fruit about 2–3 cm across with soft pink flesh and small hard seeds.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+      3,
+      4,
+      5
+    ],
+    "origin" : "pest",
+    "photos" : [
+
+    ],
+    "preparation" : "Raw, or into jelly and cordial. Ripe fruit is deep red and gives to a squeeze.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Psidium cattleianum",
+    "sources" : [
+
+    ],
+    "summary" : "An aggressive weed in the north that happens to produce excellent fruit.",
+    "warnings" : [
+
     ]
   },
   {
@@ -127,47 +147,6 @@
   },
   {
     "category" : "greens",
-    "caution" : "careRequired",
-    "commonName" : "Stinging nettle",
-    "edibleParts" : "Young tips and leaves, picked before the plant flowers.",
-    "habitat" : "Nitrogen-rich disturbed ground: old stockyards, compost heaps, riverbanks, neglected sections.",
-    "id" : "nettle",
-    "identification" : "Opposite, coarsely toothed, heart-shaped leaves on a square stem, covered in stinging hairs. Small green tassel-like flower clusters at the leaf joints. Rarely above waist height.",
-    "lookalikes" : [
-      {
-        "howToTell" : "A native shrub that grows to 3 m with woody stems and pale green leaves carrying stinging spines up to 6 mm long — far longer and more visible than common nettle's fine hairs. Its sting is a medical emergency, not a nuisance: it has caused at least one recorded human death and regularly kills dogs and horses. If the plant is woody, taller than you, and the spines are clearly visible from a metre away, walk away.",
-        "name" : "Ongaonga / tree nettle",
-        "risk" : "deadly",
-        "scientificName" : "Urtica ferox"
-      }
-    ],
-    "maoriName" : "Ongaonga (see warning)",
-    "months" : [
-      8,
-      9,
-      10,
-      11
-    ],
-    "origin" : "introduced",
-    "photos" : [
-
-    ],
-    "preparation" : "Wear gloves. Blanching or any cooking destroys the sting completely — after 30 seconds in boiling water it is entirely safe to handle and eat. Soup, pesto, or dried for tea.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Urtica dioica / Urtica urens",
-    "sources" : [
-
-    ],
-    "summary" : "Excellent cooked green with an iron-rich, spinach-like flavour — and a genuinely dangerous native relative.",
-    "warnings" : [
-      "Only harvest low, soft, herbaceous nettle. Never harvest from a woody shrub.",
-      "Stop harvesting once the plant flowers — older leaves develop gritty crystals that irritate the kidneys."
-    ]
-  },
-  {
-    "category" : "greens",
     "caution" : "straightforward",
     "commonName" : "Dandelion",
     "edibleParts" : "Leaves, flowers, and roots.",
@@ -203,303 +182,52 @@
     ]
   },
   {
-    "category" : "greens",
-    "caution" : "straightforward",
-    "commonName" : "Miner's lettuce / Winter purslane",
-    "edibleParts" : "Leaves, stems and flowers.",
-    "habitat" : "Cool damp shaded ground, often under deciduous trees and in old gardens. More common in the South Island.",
-    "id" : "miners-lettuce",
-    "identification" : "Unmistakable: the flowering stem passes straight through the centre of a single round, saucer-like leaf, with a small spray of white flowers rising from the middle. Nothing else in NZ looks like it.",
-    "lookalikes" : [
-
-    ],
-    "months" : [
-      6,
-      7,
-      8,
-      9,
-      10
-    ],
-    "origin" : "introduced",
-    "photos" : [
-
-    ],
-    "preparation" : "Raw. It is a salad green and cooking wastes it.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Claytonia perfoliata",
-    "sources" : [
-
-    ],
-    "summary" : "A succulent, genuinely delicious winter salad green with an unmistakable leaf.",
-    "warnings" : [
-
-    ]
-  },
-  {
-    "category" : "greens",
-    "caution" : "careRequired",
-    "commonName" : "Sea celery / Māori celery",
-    "edibleParts" : "Leaves and stems, used as a herb rather than a vegetable.",
-    "habitat" : "Coastal: rocky shores above the tide line, sand dunes, estuary margins, cliff bases.",
-    "harvestEthics" : "Native and slow to recover on exposed coast. Take a few leaves per plant, never the whole rosette.",
-    "id" : "sea-celery",
-    "identification" : "Low sprawling plant with glossy, deeply divided compound leaves. Strong true celery smell when crushed — this is the confirming check. Tiny white flowers in small umbels.",
+    "category" : "fungi",
+    "caution" : "doNotEat",
+    "commonName" : "Death cap",
+    "edibleParts" : "None. Ever.",
+    "habitat" : "Under introduced broadleaf trees — especially oak, and also birch, hornbeam and chestnut. Parks, old estates, campus grounds and suburban streets in Auckland, Wellington, Christchurch and Dunedin.",
+    "harvestEthics" : "Do not harvest. This entry exists so you can recognise it.",
+    "id" : "death-cap",
+    "identification" : "Smooth greenish, yellowish or bronze cap, often with a faint radial sheen. Gills WHITE and free of the stem at every age. White stem with a skirt-like ring, and — the critical feature — a membranous cup (volva) around the swollen base, frequently hidden below the leaf litter. Spore print white.",
     "lookalikes" : [
       {
-        "howToTell" : "Hemlock is a tall (to 2 m) upright plant with purple-blotched hollow stems and a foul mousy smell — sea celery is low, sprawling, coastal, and smells strongly of celery. Both are in the carrot family, so confirm by smell every time.",
-        "name" : "Hemlock",
+        "howToTell" : "Field mushroom has pink-then-brown gills and no volva. Death cap has white gills and a volva. Check both, on every mushroom, every time.",
+        "name" : "Field mushroom",
         "risk" : "deadly",
-        "scientificName" : "Conium maculatum"
-      }
-    ],
-    "maoriName" : "Tūtae kōau",
-    "months" : [
-
-    ],
-    "origin" : "native",
-    "photos" : [
-
-    ],
-    "preparation" : "Chop finely into stews, stuffings and fish dishes. Far stronger than cultivated celery — use sparingly.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Apium prostratum",
-    "sources" : [
-
-    ],
-    "summary" : "Native coastal herb with a concentrated celery flavour — Cook fed it to his crew against scurvy.",
-    "warnings" : [
-      "Never harvest any carrot-family plant without crushing a leaf and confirming the smell.",
-      "Avoid plants at the high-tide line near boat ramps, marinas or stormwater outfalls."
-    ]
-  },
-  {
-    "category" : "greens",
-    "caution" : "careRequired",
-    "commonName" : "Pikopiko / Hen and chicken fern",
-    "edibleParts" : "The unfurled young frond tips only.",
-    "habitat" : "Damp shaded native forest floor and gullies, often under tree ferns.",
-    "harvestEthics" : "Take no more than one or two fronds per plant and move on. Pikopiko is culturally significant and slow-growing; commercial demand has already stripped accessible stands. Seek permission from mana whenua and the landowner.",
-    "id" : "pikopiko",
-    "identification" : "Finely divided lacy fronds, with tiny bulbils (plantlets) growing on the upper surface of mature fronds — the 'chickens' that give it its name. Harvest only the tightly curled, still-unfurling koru at the tip.",
-    "lookalikes" : [
-      {
-        "howToTell" : "Bracken fiddleheads are coarse, hairy and rise singly from the ground on a tough stem, out in the open on scrubland — pikopiko is lacy, forest-dwelling and grows from a crown. Bracken contains ptaquiloside, a confirmed carcinogen, and should not be eaten despite its traditional use.",
-        "name" : "Bracken fern",
-        "risk" : "toxic",
-        "scientificName" : "Pteridium esculentum"
-      }
-    ],
-    "maoriName" : "Pikopiko, mouku",
-    "months" : [
-      9,
-      10,
-      11,
-      12
-    ],
-    "origin" : "native",
-    "photos" : [
-
-    ],
-    "preparation" : "Rub off the papery brown scales, then blanch or sauté. Asparagus-like, slightly bitter. Do not eat raw in quantity.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Asplenium bulbiferum",
-    "sources" : [
-
-    ],
-    "summary" : "The curled young fronds are a native delicacy — and one of the easiest species to over-harvest.",
-    "warnings" : [
-      "Harvesting plant material on public conservation land is prohibited without a DOC permit. Most accessible native forest in NZ is DOC land.",
-      "Taking every frond kills the plant. It cannot photosynthesise without them."
-    ]
-  },
-  {
-    "category" : "herbs",
-    "caution" : "careRequired",
-    "commonName" : "Kawakawa",
-    "edibleParts" : "Leaves, primarily for tea. Ripe orange fruit spikes are sweet but seedy.",
-    "habitat" : "Coastal and lowland forest, forest margins, regenerating bush. Common in the North Island, patchier south.",
-    "harvestEthics" : "Kawakawa is a significant rongoā (medicinal) plant. Tikanga around its harvest matters: take only what you need, never strip a plant, and seek guidance from mana whenua. Do not harvest on DOC land without a permit.",
-    "id" : "kawakawa",
-    "identification" : "Heart-shaped glossy leaves, usually riddled with holes from the kawakawa looper caterpillar. Jointed, swollen stem nodes. Distinctive peppery-medicinal smell when crushed. Small upright green flower spikes.",
-    "lookalikes" : [
-
-    ],
-    "maoriName" : "Kawakawa",
-    "months" : [
-
-    ],
-    "origin" : "native",
-    "photos" : [
-
-    ],
-    "preparation" : "Traditionally the hole-riddled leaves are chosen as the most potent. Dry and steep as a tea, or use fresh leaves to wrap food. Use as a flavouring, not a bulk green.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Piper excelsum",
-    "sources" : [
-
-    ],
-    "summary" : "New Zealand's native pepper tree — a rongoā plant first and a flavouring second.",
-    "warnings" : [
-      "Contains myristicin. Fine as an occasional tea; not something to drink in volume daily.",
-      "Avoid during pregnancy and while breastfeeding."
-    ]
-  },
-  {
-    "category" : "herbs",
-    "caution" : "straightforward",
-    "commonName" : "Horopito / Pepper tree",
-    "edibleParts" : "Leaves.",
-    "habitat" : "Cool damp native forest and forest margins, common in the central North Island and through the South Island.",
-    "harvestEthics" : "Native. Take a few leaves per shrub. DOC permit required on conservation land.",
-    "id" : "horopito",
-    "identification" : "Small shrub with leathery oval leaves blotched red and cream, pale blue-green underneath. Chewing a fragment produces a strong, slow-building chilli-like burn — the confirming test.",
-    "lookalikes" : [
-
-    ],
-    "maoriName" : "Horopito",
-    "months" : [
-
-    ],
-    "origin" : "native",
-    "photos" : [
-
-    ],
-    "preparation" : "Dry and grind as a pepper substitute, or use fresh leaves in a rub. Very potent — start with far less than you think.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Pseudowintera colorata",
-    "sources" : [
-
-    ],
-    "summary" : "Fiercely hot native leaf — a genuine NZ spice with no real substitute.",
-    "warnings" : [
-      "The heat is genuine and lingers. Do not chew a whole leaf to test it."
-    ]
-  },
-  {
-    "category" : "herbs",
-    "caution" : "careRequired",
-    "commonName" : "Wild fennel",
-    "edibleParts" : "Fronds, stems, pollen, and green or dried seeds. Wild plants rarely form a usable bulb.",
-    "habitat" : "Roadsides, railway corridors, coastal banks, waste ground. Extremely common.",
-    "harvestEthics" : "A declared pest plant in several regions. Harvest freely — you are doing the land a favour.",
-    "id" : "wild-fennel",
-    "identification" : "Tall (to 2 m) with feathery thread-fine leaves and flat-topped yellow flower umbels. Solid, ridged, unspotted green stem. Crushing any part releases a strong sweet aniseed smell — this is the only check that matters.",
-    "lookalikes" : [
-      {
-        "howToTell" : "Hemlock has purple or reddish blotches on a smooth hollow stem, white flowers, and a rank mousy smell. Fennel has an unspotted solid ridged stem, yellow flowers, and smells overwhelmingly of aniseed. They grow side by side on the same verges. If it does not smell of aniseed, it is not fennel.",
-        "name" : "Hemlock",
-        "risk" : "deadly",
-        "scientificName" : "Conium maculatum"
+        "scientificName" : "Agaricus campestris"
       },
       {
-        "howToTell" : "Grows in wet ground and ditches, with celery-like leaves and white flowers. Among the most poisonous plants in the country. Again: no aniseed smell.",
-        "name" : "Hemlock water dropwort",
+        "howToTell" : "A frequent and fatal confusion for people used to gathering Volvariella overseas — it also has a volva. Death cap additionally has a ring on the stem and a white spore print.",
+        "name" : "Straw mushroom / paddy straw",
         "risk" : "deadly",
-        "scientificName" : "Oenanthe crocata"
+        "scientificName" : "Volvariella volvacea"
       }
     ],
     "months" : [
-
-    ],
-    "origin" : "pest",
-    "photos" : [
-
-    ],
-    "preparation" : "Fronds with fish; seeds toasted for spice; pollen as a finishing seasoning; stems in a stock.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Foeniculum vulgare",
-    "sources" : [
-
-    ],
-    "summary" : "Lines roadsides across the country — and shares those roadsides with the deadliest plant in the carrot family.",
-    "warnings" : [
-      "Crush and smell before every single harvest, not just the first.",
-      "Roadside and railway verges are routinely sprayed."
-    ]
-  },
-  {
-    "category" : "herbs",
-    "caution" : "straightforward",
-    "commonName" : "Nasturtium",
-    "edibleParts" : "Leaves, flowers, and green seed pods.",
-    "habitat" : "Garden escapes, banks, coastal waste ground, roadside dumps of garden waste.",
-    "id" : "nasturtium",
-    "identification" : "Unmistakable round shield-shaped leaves with the stem joining at the centre, and bright orange, yellow or red spurred trumpet flowers. Sprawling, often smothering.",
-    "lookalikes" : [
-
-    ],
-    "months" : [
-      10,
-      11,
-      12,
-      1,
       2,
       3,
-      4
+      4,
+      5,
+      6
     ],
     "origin" : "introduced",
     "photos" : [
 
     ],
-    "preparation" : "Leaves and flowers raw in salads. Green seed pods brined and pickled as 'poor man's capers'.",
+    "preparation" : "None. Cooking, drying and freezing do not destroy amatoxins.",
     "recipes" : [
 
     ],
-    "scientificName" : "Tropaeolum majus",
+    "scientificName" : "Amanita phalloides",
     "sources" : [
 
     ],
-    "summary" : "Garden escapee with peppery leaves, edible flowers, and seed pods that pickle into passable capers.",
+    "summary" : "Listed so you can recognise it. Established in New Zealand, and responsible for most fatal mushroom poisonings worldwide.",
     "warnings" : [
-      "Strongly peppery — an unfamiliar amount can upset the stomach."
-    ]
-  },
-  {
-    "category" : "fruit",
-    "caution" : "straightforward",
-    "commonName" : "Blackberry",
-    "edibleParts" : "Ripe black fruit. Young spring leaf tips make a passable tea.",
-    "habitat" : "Roadsides, riverbanks, gullies, forest margins, abandoned farmland. Forms impenetrable thickets.",
-    "harvestEthics" : "A declared pest plant in most regions. There is no such thing as taking too much.",
-    "id" : "blackberry",
-    "identification" : "Arching thorny canes, compound leaves of three to five toothed leaflets with a pale underside, white or pink five-petalled flowers, and clustered berries ripening green to red to matte black.",
-    "lookalikes" : [
-
-    ],
-    "months" : [
-      1,
-      2,
-      3,
-      4
-    ],
-    "origin" : "pest",
-    "photos" : [
-
-    ],
-    "preparation" : "Raw, or into jam, crumble, cordial and vinegar. Fully black and pulling away from the plant with no effort means ripe.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Rubus fruticosus agg.",
-    "sources" : [
-
-    ],
-    "summary" : "A declared pest across much of NZ. Pick as much as you physically can.",
-    "warnings" : [
-      "Blackberry thickets are a favourite spray target for regional councils and landowners — look for spray marker dye and browning canes.",
-      "Wear long sleeves; the thorns are vicious and blackberry scratches infect readily."
+      "Symptoms are delayed six to twenty-four hours, and there is often a deceptive period of apparent recovery before liver failure. By the time you feel ill, damage is underway.",
+      "If ingestion is even suspected, call the National Poisons Centre on 0800 764 766 immediately. Do not wait for symptoms.",
+      "Keep children and dogs away from mushrooms under oak trees in autumn."
     ]
   },
   {
@@ -573,305 +301,6 @@
     ]
   },
   {
-    "category" : "fruit",
-    "caution" : "straightforward",
-    "commonName" : "Wild plum",
-    "edibleParts" : "Ripe fruit only.",
-    "habitat" : "Roadsides, riverbanks, old orchard sites, railway corridors.",
-    "id" : "wild-plum",
-    "identification" : "Small tree, white five-petalled blossom in spring, and round to oval fruit in red, yellow or purple with a single stone and a waxy bloom.",
-    "lookalikes" : [
-
-    ],
-    "months" : [
-      12,
-      1,
-      2
-    ],
-    "origin" : "introduced",
-    "photos" : [
-
-    ],
-    "preparation" : "Raw, or into jam, sauce and chutney. Wild plums are usually tarter than shop fruit.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Prunus domestica / Prunus cerasifera",
-    "sources" : [
-
-    ],
-    "summary" : "Roadside remnants of old orchards and thrown stones — the single most reliable summer roadside fruit.",
-    "warnings" : [
-      "Never eat the stones or kernels — like all Prunus, they contain cyanogenic compounds."
-    ]
-  },
-  {
-    "category" : "fruit",
-    "caution" : "straightforward",
-    "commonName" : "Cherry guava",
-    "edibleParts" : "Ripe fruit.",
-    "habitat" : "Forest margins, gullies and regenerating bush in Northland, Auckland, Bay of Plenty and coastal Taranaki.",
-    "harvestEthics" : "A serious environmental weed that displaces native regeneration. Harvest as much as you like, and do not spread the seed.",
-    "id" : "cherry-guava",
-    "identification" : "Shrub or small tree with smooth peeling copper-brown bark, glossy oval leaves, and round dark red fruit about 2–3 cm across with soft pink flesh and small hard seeds.",
-    "lookalikes" : [
-
-    ],
-    "months" : [
-      3,
-      4,
-      5
-    ],
-    "origin" : "pest",
-    "photos" : [
-
-    ],
-    "preparation" : "Raw, or into jelly and cordial. Ripe fruit is deep red and gives to a squeeze.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Psidium cattleianum",
-    "sources" : [
-
-    ],
-    "summary" : "An aggressive weed in the north that happens to produce excellent fruit.",
-    "warnings" : [
-
-    ]
-  },
-  {
-    "category" : "fruit",
-    "caution" : "careRequired",
-    "commonName" : "Rosehip (sweet briar)",
-    "edibleParts" : "The flesh of the ripe hip only.",
-    "habitat" : "Dry hill country, riverbeds and farmland, especially Marlborough, Canterbury and Central Otago.",
-    "harvestEthics" : "A declared pest in several South Island regions. Harvest freely.",
-    "id" : "rosehip",
-    "identification" : "Thorny arching shrub with compound leaves that smell of green apple when crushed. Pink single flowers, followed by bright orange-red oval hips.",
-    "lookalikes" : [
-
-    ],
-    "months" : [
-      3,
-      4,
-      5,
-      6
-    ],
-    "origin" : "pest",
-    "photos" : [
-
-    ],
-    "preparation" : "Top, tail, halve and scrape out every seed and hair, or cook whole and strain through fine cloth. Into syrup, jelly or tea.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Rosa rubiginosa",
-    "sources" : [
-
-    ],
-    "summary" : "Vitamin-C dense autumn fruit from a pest rose that has colonised the dry east coast.",
-    "warnings" : [
-      "The hairs surrounding the seeds are a potent irritant to the mouth and gut — they were the original itching powder. Straining through fine cloth is not optional.",
-      "Harvest after the first frost for sweetness, but before the hips go soft and mouldy."
-    ]
-  },
-  {
-    "category" : "fruit",
-    "caution" : "careRequired",
-    "commonName" : "Poroporo",
-    "edibleParts" : "Fully ripe fruit only — soft, deep orange, and falling from the plant.",
-    "habitat" : "Forest margins, slips, regenerating scrub, coastal banks. A fast coloniser of disturbed ground.",
-    "harvestEthics" : "Native, but abundant and fast-growing on disturbed ground. Harvest is fine outside conservation land.",
-    "id" : "poroporo",
-    "identification" : "Soft-wooded shrub to 3 m with large deeply lobed leaves and showy purple flowers with yellow centres. Fruit is an oval berry ripening from green through orange to a soft deep orange.",
-    "lookalikes" : [
-      {
-        "howToTell" : "Much smaller plant with small white flowers and small black berries. The unripe green berries are the dangerous part. Poroporo has large purple flowers and large orange fruit.",
-        "name" : "Black nightshade",
-        "risk" : "toxic",
-        "scientificName" : "Solanum nigrum"
-      }
-    ],
-    "maoriName" : "Poroporo",
-    "months" : [
-      2,
-      3,
-      4,
-      5
-    ],
-    "origin" : "native",
-    "photos" : [
-
-    ],
-    "preparation" : "Eat ripe fruit raw or cook into a jam. Discard anything still firm or green-tinged.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Solanum laciniatum",
-    "sources" : [
-
-    ],
-    "summary" : "Native nightshade with genuinely good fruit — but only when fully ripe, and never before.",
-    "warnings" : [
-      "Unripe green fruit contains solasodine and is genuinely poisonous. This is not a case of 'a bit sour' — wait for full ripeness.",
-      "Leaves and stems are toxic at every stage."
-    ]
-  },
-  {
-    "category" : "fruit",
-    "caution" : "doNotEat",
-    "commonName" : "Karaka",
-    "edibleParts" : "None, without expert traditional processing. Do not attempt.",
-    "habitat" : "Coastal forest and old pā sites throughout the North Island and northern South Island — often planted deliberately by tūpuna.",
-    "harvestEthics" : "Karaka groves are frequently associated with wāhi tapu and historic pā sites. Treat them as culturally significant places, not as a food source.",
-    "id" : "karaka",
-    "identification" : "Handsome tree to 15 m with large, thick, very glossy dark green oval leaves. Heavy hanging clusters of bright orange oval fruit about 3 cm long.",
-    "lookalikes" : [
-
-    ],
-    "maoriName" : "Karaka",
-    "months" : [
-      1,
-      2,
-      3,
-      4
-    ],
-    "origin" : "native",
-    "photos" : [
-
-    ],
-    "preparation" : "Do not prepare. Traditional Māori processing involved prolonged steaming, extended soaking in running water for days, and expert knowledge passed down through generations. Modern poisonings occur when people shortcut this.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Corynocarpus laevigatus",
-    "sources" : [
-
-    ],
-    "summary" : "Listed so you can recognise it and leave it alone. The kernel is severely poisonous without traditional processing.",
-    "warnings" : [
-      "The kernel contains karakin. Poisoning causes violent convulsions and can result in permanent limb contractures and paralysis. There is no simple home antidote.",
-      "The orange flesh is not the hazard — the kernel inside is, and separating them reliably is not a beginner's task.",
-      "Fallen karaka fruit is a recognised poisoning risk for children and dogs. Learn the tree so you can steer them away from it."
-    ]
-  },
-  {
-    "category" : "fruit",
-    "caution" : "doNotEat",
-    "commonName" : "Tutu",
-    "edibleParts" : "None. Every part of this plant except the fleshy petal is lethally toxic.",
-    "habitat" : "Riverbeds, slips, forest margins, regenerating scrub. Extremely common nationwide.",
-    "harvestEthics" : "Do not harvest. This entry exists so you can recognise it.",
-    "id" : "tutu",
-    "identification" : "Shrub or small tree with arching stems and glossy, strongly veined opposite leaves. Long drooping strings of small flowers followed by shiny purple-black fruit, each holding several small seeds. The fleshy purple 'petals' surround the seeds.",
-    "lookalikes" : [
-      {
-        "howToTell" : "This is the confusion that kills. Elder has compound leaves of several toothed leaflets and flat-topped flower sprays; tutu has simple opposite leaves and long drooping flower strings. If you are unsure which you are looking at, harvest neither.",
-        "name" : "Elderberry",
-        "risk" : "deadly",
-        "scientificName" : "Sambucus nigra"
-      }
-    ],
-    "maoriName" : "Tutu",
-    "months" : [
-
-    ],
-    "origin" : "native",
-    "photos" : [
-
-    ],
-    "preparation" : "None.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Coriaria arborea",
-    "sources" : [
-
-    ],
-    "summary" : "The most dangerous plant a New Zealand forager can meet. Learn it, then never touch it.",
-    "warnings" : [
-      "Contains tutin. Tutu has killed people, and historically killed a circus elephant in Whanganui. Seeds, leaves and shoots are all lethal.",
-      "Toxic honey: bees do not visit tutu, but passionvine hoppers feed on it and excrete honeydew that bees collect. This produces genuinely poisonous honey and is the reason NZ regulates honey harvesting in tutu regions between December and April.",
-      "Never make a wine, cordial or jam from any purple-black wild berry in NZ unless you have positively identified the plant."
-    ]
-  },
-  {
-    "category" : "fungi",
-    "caution" : "careRequired",
-    "commonName" : "Saffron milk cap / Pine mushroom",
-    "edibleParts" : "Firm young caps.",
-    "habitat" : "Exclusively under pine, in plantation forest and shelter belts. Never in native bush.",
-    "harvestEthics" : "Cut rather than pull, and leave the smallest and the largest.",
-    "id" : "saffron-milk-cap",
-    "identification" : "Orange cap with darker concentric rings, often depressed in the centre. Orange gills that bruise dull green. The confirming test: cut the flesh and it bleeds bright carrot-orange latex, and the cut surface slowly stains green. Brittle, not fibrous, flesh.",
-    "lookalikes" : [
-      {
-        "howToTell" : "Other milk caps bleed white or cream latex, not orange, and are acrid. Orange latex plus green staining plus pine is the reliable combination.",
-        "name" : "Other Lactarius species",
-        "risk" : "unpalatable"
-      }
-    ],
-    "months" : [
-      3,
-      4,
-      5,
-      6
-    ],
-    "origin" : "introduced",
-    "photos" : [
-
-    ],
-    "preparation" : "Dry-fry or roast hard — they release a lot of water and go slimy if cooked gently. Do not eat raw.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Lactarius deliciosus",
-    "sources" : [
-
-    ],
-    "summary" : "The best beginner's mushroom in NZ — it bleeds bright orange, and nothing dangerous does.",
-    "warnings" : [
-      "Only harvest from pine. A mushroom that looks similar in native forest is not this species.",
-      "Many plantation forests are private land or actively logged — get permission and check for harvesting operations.",
-      "Some plantations are aerially sprayed. Check with the forest manager."
-    ]
-  },
-  {
-    "category" : "fungi",
-    "caution" : "careRequired",
-    "commonName" : "Slippery jack",
-    "edibleParts" : "Young caps, peeled.",
-    "habitat" : "Under pine, in plantations and shelter belts.",
-    "id" : "slippery-jack",
-    "identification" : "Slimy chocolate-brown cap. Underneath there are pores, not gills — a spongy yellow surface. A distinct purple-brown ring on the stem, left by a veil.",
-    "lookalikes" : [
-
-    ],
-    "months" : [
-      3,
-      4,
-      5,
-      6
-    ],
-    "origin" : "introduced",
-    "photos" : [
-
-    ],
-    "preparation" : "Peel off the slimy cap skin and remove the spongy pore layer, then cook thoroughly. Good dried.",
-    "recipes" : [
-
-    ],
-    "scientificName" : "Suillus luteus",
-    "sources" : [
-
-    ],
-    "summary" : "Abundant under pine alongside saffron milk caps, and safe once you peel it.",
-    "warnings" : [
-      "The slimy cap skin causes stomach upset in many people. Peeling is not optional.",
-      "Never eat raw."
-    ]
-  },
-  {
     "category" : "fungi",
     "caution" : "careRequired",
     "commonName" : "Field mushroom",
@@ -922,18 +351,18 @@
     ]
   },
   {
-    "category" : "fungi",
+    "category" : "herbs",
     "caution" : "straightforward",
-    "commonName" : "Wood ear",
-    "edibleParts" : "The whole fruiting body.",
-    "habitat" : "Dead and dying wood in damp native bush, especially māhoe and other soft-wooded trees.",
-    "harvestEthics" : "Growing on dead wood in native bush means it is usually on DOC land, where a permit is required. Cut cleanly and leave the wood intact.",
-    "id" : "wood-ear",
-    "identification" : "Ear-shaped rubbery brackets, brown to purplish, velvety on the outer surface and smooth within. Gelatinous and springy when fresh, shrinking to a hard flake when dry and rehydrating readily.",
+    "commonName" : "Horopito / Pepper tree",
+    "edibleParts" : "Leaves.",
+    "habitat" : "Cool damp native forest and forest margins, common in the central North Island and through the South Island.",
+    "harvestEthics" : "Native. Take a few leaves per shrub. DOC permit required on conservation land.",
+    "id" : "horopito",
+    "identification" : "Small shrub with leathery oval leaves blotched red and cream, pale blue-green underneath. Chewing a fragment produces a strong, slow-building chilli-like burn — the confirming test.",
     "lookalikes" : [
 
     ],
-    "maoriName" : "Hakeka, hakeke",
+    "maoriName" : "Horopito",
     "months" : [
 
     ],
@@ -941,66 +370,55 @@
     "photos" : [
 
     ],
-    "preparation" : "Rinse, slice and add to soups and stir-fries. Prized for texture rather than flavour. Dries and rehydrates well.",
+    "preparation" : "Dry and grind as a pepper substitute, or use fresh leaves in a rub. Very potent — start with far less than you think.",
     "recipes" : [
 
     ],
-    "scientificName" : "Auricularia cornea",
+    "scientificName" : "Pseudowintera colorata",
     "sources" : [
 
     ],
-    "summary" : "New Zealand's first export mushroom — gathered by the tonne from Taranaki bush in the 1870s.",
+    "summary" : "Fiercely hot native leaf — a genuine NZ spice with no real substitute.",
     "warnings" : [
-      "There are no dangerous lookalikes, but its texture is very distinctive — anything firm, gilled or dry is something else."
+      "The heat is genuine and lingers. Do not chew a whole leaf to test it."
     ]
   },
   {
-    "category" : "fungi",
+    "category" : "fruit",
     "caution" : "doNotEat",
-    "commonName" : "Death cap",
-    "edibleParts" : "None. Ever.",
-    "habitat" : "Under introduced broadleaf trees — especially oak, and also birch, hornbeam and chestnut. Parks, old estates, campus grounds and suburban streets in Auckland, Wellington, Christchurch and Dunedin.",
-    "harvestEthics" : "Do not harvest. This entry exists so you can recognise it.",
-    "id" : "death-cap",
-    "identification" : "Smooth greenish, yellowish or bronze cap, often with a faint radial sheen. Gills WHITE and free of the stem at every age. White stem with a skirt-like ring, and — the critical feature — a membranous cup (volva) around the swollen base, frequently hidden below the leaf litter. Spore print white.",
+    "commonName" : "Karaka",
+    "edibleParts" : "None, without expert traditional processing. Do not attempt.",
+    "habitat" : "Coastal forest and old pā sites throughout the North Island and northern South Island — often planted deliberately by tūpuna.",
+    "harvestEthics" : "Karaka groves are frequently associated with wāhi tapu and historic pā sites. Treat them as culturally significant places, not as a food source.",
+    "id" : "karaka",
+    "identification" : "Handsome tree to 15 m with large, thick, very glossy dark green oval leaves. Heavy hanging clusters of bright orange oval fruit about 3 cm long.",
     "lookalikes" : [
-      {
-        "howToTell" : "Field mushroom has pink-then-brown gills and no volva. Death cap has white gills and a volva. Check both, on every mushroom, every time.",
-        "name" : "Field mushroom",
-        "risk" : "deadly",
-        "scientificName" : "Agaricus campestris"
-      },
-      {
-        "howToTell" : "A frequent and fatal confusion for people used to gathering Volvariella overseas — it also has a volva. Death cap additionally has a ring on the stem and a white spore print.",
-        "name" : "Straw mushroom / paddy straw",
-        "risk" : "deadly",
-        "scientificName" : "Volvariella volvacea"
-      }
+
     ],
+    "maoriName" : "Karaka",
     "months" : [
+      1,
       2,
       3,
-      4,
-      5,
-      6
+      4
     ],
-    "origin" : "introduced",
+    "origin" : "native",
     "photos" : [
 
     ],
-    "preparation" : "None. Cooking, drying and freezing do not destroy amatoxins.",
+    "preparation" : "Do not prepare. Traditional Māori processing involved prolonged steaming, extended soaking in running water for days, and expert knowledge passed down through generations. Modern poisonings occur when people shortcut this.",
     "recipes" : [
 
     ],
-    "scientificName" : "Amanita phalloides",
+    "scientificName" : "Corynocarpus laevigatus",
     "sources" : [
 
     ],
-    "summary" : "Listed so you can recognise it. Established in New Zealand, and responsible for most fatal mushroom poisonings worldwide.",
+    "summary" : "Listed so you can recognise it and leave it alone. The kernel is severely poisonous without traditional processing.",
     "warnings" : [
-      "Symptoms are delayed six to twenty-four hours, and there is often a deceptive period of apparent recovery before liver failure. By the time you feel ill, damage is underway.",
-      "If ingestion is even suspected, call the National Poisons Centre on 0800 764 766 immediately. Do not wait for symptoms.",
-      "Keep children and dogs away from mushrooms under oak trees in autumn."
+      "The kernel contains karakin. Poisoning causes violent convulsions and can result in permanent limb contractures and paralysis. There is no simple home antidote.",
+      "The orange flesh is not the hazard — the kernel inside is, and separating them reliably is not a beginner's task.",
+      "Fallen karaka fruit is a recognised poisoning risk for children and dogs. Learn the tree so you can steer them away from it."
     ]
   },
   {
@@ -1043,18 +461,18 @@
     ]
   },
   {
-    "category" : "seaweed",
+    "category" : "herbs",
     "caution" : "careRequired",
-    "commonName" : "Bull kelp",
-    "edibleParts" : "Young blade tissue.",
-    "habitat" : "Wave-battered rocky coast, especially the South Island, Stewart Island and southern North Island.",
-    "harvestEthics" : "Rimurapa is culturally significant, particularly for pōhā tītī in the south. Some beds are subject to customary management or rāhui. Ask locally before harvesting.",
-    "id" : "bull-kelp",
-    "identification" : "Very large, thick, leathery olive-brown straps anchored by a massive holdfast. The blade is honeycombed inside, which keeps it buoyant — this internal structure is diagnostic.",
+    "commonName" : "Kawakawa",
+    "edibleParts" : "Leaves, primarily for tea. Ripe orange fruit spikes are sweet but seedy.",
+    "habitat" : "Coastal and lowland forest, forest margins, regenerating bush. Common in the North Island, patchier south.",
+    "harvestEthics" : "Kawakawa is a significant rongoā (medicinal) plant. Tikanga around its harvest matters: take only what you need, never strip a plant, and seek guidance from mana whenua. Do not harvest on DOC land without a permit.",
+    "id" : "kawakawa",
+    "identification" : "Heart-shaped glossy leaves, usually riddled with holes from the kawakawa looper caterpillar. Jointed, swollen stem nodes. Distinctive peppery-medicinal smell when crushed. Small upright green flower spikes.",
     "lookalikes" : [
 
     ],
-    "maoriName" : "Rimurapa",
+    "maoriName" : "Kawakawa",
     "months" : [
 
     ],
@@ -1062,18 +480,376 @@
     "photos" : [
 
     ],
-    "preparation" : "Slice thinly and simmer for a long time, or dry and grind as a seasoning. Tough and best treated as a stock ingredient rather than a vegetable.",
+    "preparation" : "Traditionally the hole-riddled leaves are chosen as the most potent. Dry and steep as a tea, or use fresh leaves to wrap food. Use as a flavouring, not a bulk green.",
     "recipes" : [
 
     ],
-    "scientificName" : "Durvillaea antarctica",
+    "scientificName" : "Piper excelsum",
     "sources" : [
 
     ],
-    "summary" : "The massive leathery kelp of the southern coast — traditionally made into pōhā, the bags that preserved tītī.",
+    "summary" : "New Zealand's native pepper tree — a rongoā plant first and a flavouring second.",
     "warnings" : [
-      "Collecting kelp from a wave-exposed southern shore is genuinely dangerous. People drown doing this. Never turn your back on the sea, and never go alone.",
-      "Take only drift or cut from the blade tip — never remove the holdfast."
+      "Contains myristicin. Fine as an occasional tea; not something to drink in volume daily.",
+      "Avoid during pregnancy and while breastfeeding."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "straightforward",
+    "commonName" : "Miner's lettuce / Winter purslane",
+    "edibleParts" : "Leaves, stems and flowers.",
+    "habitat" : "Cool damp shaded ground, often under deciduous trees and in old gardens. More common in the South Island.",
+    "id" : "miners-lettuce",
+    "identification" : "Unmistakable: the flowering stem passes straight through the centre of a single round, saucer-like leaf, with a small spray of white flowers rising from the middle. Nothing else in NZ looks like it.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : "Raw. It is a salad green and cooking wastes it.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Claytonia perfoliata",
+    "sources" : [
+
+    ],
+    "summary" : "A succulent, genuinely delicious winter salad green with an unmistakable leaf.",
+    "warnings" : [
+
+    ]
+  },
+  {
+    "category" : "herbs",
+    "caution" : "straightforward",
+    "commonName" : "Nasturtium",
+    "edibleParts" : "Leaves, flowers, and green seed pods.",
+    "habitat" : "Garden escapes, banks, coastal waste ground, roadside dumps of garden waste.",
+    "id" : "nasturtium",
+    "identification" : "Unmistakable round shield-shaped leaves with the stem joining at the centre, and bright orange, yellow or red spurred trumpet flowers. Sprawling, often smothering.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : "Leaves and flowers raw in salads. Green seed pods brined and pickled as 'poor man's capers'.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Tropaeolum majus",
+    "sources" : [
+
+    ],
+    "summary" : "Garden escapee with peppery leaves, edible flowers, and seed pods that pickle into passable capers.",
+    "warnings" : [
+      "Strongly peppery — an unfamiliar amount can upset the stomach."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "careRequired",
+    "commonName" : "Pikopiko / Hen and chicken fern",
+    "edibleParts" : "The unfurled young frond tips only.",
+    "habitat" : "Damp shaded native forest floor and gullies, often under tree ferns.",
+    "harvestEthics" : "Take no more than one or two fronds per plant and move on. Pikopiko is culturally significant and slow-growing; commercial demand has already stripped accessible stands. Seek permission from mana whenua and the landowner.",
+    "id" : "pikopiko",
+    "identification" : "Finely divided lacy fronds, with tiny bulbils (plantlets) growing on the upper surface of mature fronds — the 'chickens' that give it its name. Harvest only the tightly curled, still-unfurling koru at the tip.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Bracken fiddleheads are coarse, hairy and rise singly from the ground on a tough stem, out in the open on scrubland — pikopiko is lacy, forest-dwelling and grows from a crown. Bracken contains ptaquiloside, a confirmed carcinogen, and should not be eaten despite its traditional use.",
+        "name" : "Bracken fern",
+        "risk" : "toxic",
+        "scientificName" : "Pteridium esculentum"
+      }
+    ],
+    "maoriName" : "Pikopiko, mouku",
+    "months" : [
+      9,
+      10,
+      11,
+      12
+    ],
+    "origin" : "native",
+    "photos" : [
+
+    ],
+    "preparation" : "Rub off the papery brown scales, then blanch or sauté. Asparagus-like, slightly bitter. Do not eat raw in quantity.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Asplenium bulbiferum",
+    "sources" : [
+
+    ],
+    "summary" : "The curled young fronds are a native delicacy — and one of the easiest species to over-harvest.",
+    "warnings" : [
+      "Harvesting plant material on public conservation land is prohibited without a DOC permit. Most accessible native forest in NZ is DOC land.",
+      "Taking every frond kills the plant. It cannot photosynthesise without them."
+    ]
+  },
+  {
+    "category" : "fungi",
+    "caution" : "straightforward",
+    "commonName" : "Porcini",
+    "edibleParts" : "All",
+    "habitat" : "They’re most commonly found growing under English oak, pine, English beech, and silver birch trees.",
+    "id" : "porcini",
+    "identification" : "The mushroom cap will look like a slightly greasy bun and the colour can range from yellow brown to a reddish brown. The caps can grow as large as 30cm (12inch) when mature and weigh up to 1kg (2lb) with a stem of about the same weight. When cut, the flesh should remain white.  The stem shows a very faint net pattern and is very solid and white. If in doubt, cut it. It should not change colour. When I first picked this mushroom with an expert at my side he told me to look for what he called \"chicken wiring\" on the stem - and if you look closely you will see that it has this webbing. This is a sure sign that you are holding a king bolete or porcini. \nIf you still have doubts then ask a friend who is familiar with picking mushrooms or take close pictures and find a forum where people can help you identify your bounty. Never eat something you are unsure about - mushroom picking is fun and rewarding, but it is not for someone who has not read up on any poisonous mushrooms that look similar to what they are picking.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+      3,
+      4,
+      5
+    ],
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "entire mushroom",
+        "credit" : "https://www.first-nature.com/",
+        "fileName" : "porcini-1.heic"
+      },
+      {
+        "caption" : "mushroom in the wild",
+        "credit" : "https://www.first-nature.com/",
+        "fileName" : "porcini-2.heic"
+      }
+    ],
+    "preparation" : "Sautéed using butter",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Boletus edulis",
+    "sources" : [
+      "https://thegreedyvegan.com/how-to-identify-and-pick-porcini/"
+    ],
+    "summary" : "Porcini mushrooms have a distinctive appearance, with a thick, pale stem and a broad brown cap that gives them a shape often compared to a Champagne cork.\n\nBeneath their dark brown exterior lies firm white flesh, which retains its colour when cooked. Their dense texture and rich flavour make them particularly popular in hearty autumn and winter recipes.",
+    "warnings" : [
+
+    ]
+  },
+  {
+    "category" : "fruit",
+    "caution" : "careRequired",
+    "commonName" : "Poroporo",
+    "edibleParts" : "Fully ripe fruit only — soft, deep orange, and falling from the plant.",
+    "habitat" : "Forest margins, slips, regenerating scrub, coastal banks. A fast coloniser of disturbed ground.",
+    "harvestEthics" : "Native, but abundant and fast-growing on disturbed ground. Harvest is fine outside conservation land.",
+    "id" : "poroporo",
+    "identification" : "Soft-wooded shrub to 3 m with large deeply lobed leaves and showy purple flowers with yellow centres. Fruit is an oval berry ripening from green through orange to a soft deep orange.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Much smaller plant with small white flowers and small black berries. The unripe green berries are the dangerous part. Poroporo has large purple flowers and large orange fruit.",
+        "name" : "Black nightshade",
+        "risk" : "toxic",
+        "scientificName" : "Solanum nigrum"
+      }
+    ],
+    "maoriName" : "Poroporo",
+    "months" : [
+      2,
+      3,
+      4,
+      5
+    ],
+    "origin" : "native",
+    "photos" : [
+
+    ],
+    "preparation" : "Eat ripe fruit raw or cook into a jam. Discard anything still firm or green-tinged.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Solanum laciniatum",
+    "sources" : [
+
+    ],
+    "summary" : "Native nightshade with genuinely good fruit — but only when fully ripe, and never before.",
+    "warnings" : [
+      "Unripe green fruit contains solasodine and is genuinely poisonous. This is not a case of 'a bit sour' — wait for full ripeness.",
+      "Leaves and stems are toxic at every stage."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "straightforward",
+    "commonName" : "Pūhā / Sow thistle",
+    "edibleParts" : "Young leaves and shoots. Older leaves turn tough and very bitter.",
+    "habitat" : "Waste ground, gardens, roadsides, cultivated paddocks. Almost anywhere disturbed.",
+    "harvestEthics" : "Abundant and largely introduced. Take freely, but leave plants that are flowering and setting seed on land you want to keep harvesting.",
+    "id" : "puha",
+    "identification" : "Rosette of deeply lobed leaves with soft prickly margins, clasping the stem. Stems and leaves exude a white milky sap when broken. Small yellow dandelion-like flowers on a branched stem. The native S. kirkii is fleshier and coastal.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Stiffer, genuinely spiny leaf margins with rounded clasping lobes. Harmless, just unpleasant to eat.",
+        "name" : "Prickly sow thistle",
+        "risk" : "unpalatable",
+        "scientificName" : "Sonchus asper"
+      }
+    ],
+    "maoriName" : "Pūhā, rauriki",
+    "months" : [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : "Strip the leaves, boil and discard the water to cut the bitterness — traditionally boiled with pork bones. Young shoots can be eaten raw in small amounts.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Sonchus oleraceus / Sonchus kirkii",
+    "sources" : [
+
+    ],
+    "summary" : "The classic Aotearoa wild green — a boiled staple long before it was fashionable.",
+    "warnings" : [
+      "Avoid plants growing on roadside verges or sprayed ground — pūhā thrives exactly where councils spray herbicide."
+    ]
+  },
+  {
+    "category" : "fruit",
+    "caution" : "careRequired",
+    "commonName" : "Rosehip (sweet briar)",
+    "edibleParts" : "The flesh of the ripe hip only.",
+    "habitat" : "Dry hill country, riverbeds and farmland, especially Marlborough, Canterbury and Central Otago.",
+    "harvestEthics" : "A declared pest in several South Island regions. Harvest freely.",
+    "id" : "rosehip",
+    "identification" : "Thorny arching shrub with compound leaves that smell of green apple when crushed. Pink single flowers, followed by bright orange-red oval hips.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+      3,
+      4,
+      5,
+      6
+    ],
+    "origin" : "pest",
+    "photos" : [
+
+    ],
+    "preparation" : "Top, tail, halve and scrape out every seed and hair, or cook whole and strain through fine cloth. Into syrup, jelly or tea.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Rosa rubiginosa",
+    "sources" : [
+
+    ],
+    "summary" : "Vitamin-C dense autumn fruit from a pest rose that has colonised the dry east coast.",
+    "warnings" : [
+      "The hairs surrounding the seeds are a potent irritant to the mouth and gut — they were the original itching powder. Straining through fine cloth is not optional.",
+      "Harvest after the first frost for sweetness, but before the hips go soft and mouldy."
+    ]
+  },
+  {
+    "category" : "fungi",
+    "caution" : "careRequired",
+    "commonName" : "Saffron milk cap / Pine mushroom",
+    "edibleParts" : "Firm young caps.",
+    "habitat" : "Exclusively under pine, in plantation forest and shelter belts. Never in native bush.",
+    "harvestEthics" : "Cut rather than pull, and leave the smallest and the largest.",
+    "id" : "saffron-milk-cap",
+    "identification" : "Orange cap with darker concentric rings, often depressed in the centre. Orange gills that bruise dull green. The confirming test: cut the flesh and it bleeds bright carrot-orange latex, and the cut surface slowly stains green. Brittle, not fibrous, flesh.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Other milk caps bleed white or cream latex, not orange, and are acrid. Orange latex plus green staining plus pine is the reliable combination.",
+        "name" : "Other Lactarius species",
+        "risk" : "unpalatable"
+      }
+    ],
+    "months" : [
+      3,
+      4,
+      5,
+      6
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : "Dry-fry or roast hard — they release a lot of water and go slimy if cooked gently. Do not eat raw.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Lactarius deliciosus",
+    "sources" : [
+
+    ],
+    "summary" : "The best beginner's mushroom in NZ — it bleeds bright orange, and nothing dangerous does.",
+    "warnings" : [
+      "Only harvest from pine. A mushroom that looks similar in native forest is not this species.",
+      "Many plantation forests are private land or actively logged — get permission and check for harvesting operations.",
+      "Some plantations are aerially sprayed. Check with the forest manager."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "careRequired",
+    "commonName" : "Sea celery / Māori celery",
+    "edibleParts" : "Leaves and stems, used as a herb rather than a vegetable.",
+    "habitat" : "Coastal: rocky shores above the tide line, sand dunes, estuary margins, cliff bases.",
+    "harvestEthics" : "Native and slow to recover on exposed coast. Take a few leaves per plant, never the whole rosette.",
+    "id" : "sea-celery",
+    "identification" : "Low sprawling plant with glossy, deeply divided compound leaves. Strong true celery smell when crushed — this is the confirming check. Tiny white flowers in small umbels.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Hemlock is a tall (to 2 m) upright plant with purple-blotched hollow stems and a foul mousy smell — sea celery is low, sprawling, coastal, and smells strongly of celery. Both are in the carrot family, so confirm by smell every time.",
+        "name" : "Hemlock",
+        "risk" : "deadly",
+        "scientificName" : "Conium maculatum"
+      }
+    ],
+    "maoriName" : "Tūtae kōau",
+    "months" : [
+
+    ],
+    "origin" : "native",
+    "photos" : [
+
+    ],
+    "preparation" : "Chop finely into stews, stuffings and fish dishes. Far stronger than cultivated celery — use sparingly.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Apium prostratum",
+    "sources" : [
+
+    ],
+    "summary" : "Native coastal herb with a concentrated celery flavour — Cook fed it to his crew against scurvy.",
+    "warnings" : [
+      "Never harvest any carrot-family plant without crushing a leaf and confirming the smell.",
+      "Avoid plants at the high-tide line near boat ramps, marinas or stormwater outfalls."
     ]
   },
   {
@@ -1111,35 +887,79 @@
     ]
   },
   {
-    "category" : "nuts",
-    "caution" : "straightforward",
-    "commonName" : "Walnut",
-    "edibleParts" : "The kernel. Green immature nuts can be pickled whole.",
-    "habitat" : "Old farm shelter belts, homestead gardens, roadsides. Common in Canterbury, Nelson and Hawke's Bay.",
-    "id" : "walnut",
-    "identification" : "Large tree with compound leaves of five to nine leaflets, aromatic when crushed. Green tennis-ball husks that split and blacken to release the familiar wrinkled shell.",
+    "category" : "fungi",
+    "caution" : "careRequired",
+    "commonName" : "Slippery jack",
+    "edibleParts" : "Young caps, peeled.",
+    "habitat" : "Under pine, in plantations and shelter belts.",
+    "id" : "slippery-jack",
+    "identification" : "Slimy chocolate-brown cap. Underneath there are pores, not gills — a spongy yellow surface. A distinct purple-brown ring on the stem, left by a veil.",
     "lookalikes" : [
 
     ],
     "months" : [
+      3,
       4,
-      5
+      5,
+      6
     ],
     "origin" : "introduced",
     "photos" : [
 
     ],
-    "preparation" : "Gather fallen nuts promptly, husk them (wear gloves — the husk stains skin brown for weeks), then dry for several weeks before storing.",
+    "preparation" : "Peel off the slimy cap skin and remove the spongy pore layer, then cook thoroughly. Good dried.",
     "recipes" : [
 
     ],
-    "scientificName" : "Juglans regia",
+    "scientificName" : "Suillus luteus",
     "sources" : [
 
     ],
-    "summary" : "Old farm and roadside trees drop far more than anyone collects.",
+    "summary" : "Abundant under pine alongside saffron milk caps, and safe once you peel it.",
     "warnings" : [
-      "Nuts left lying damp on the ground develop moulds. Discard any kernel that is shrivelled, discoloured or smells rancid."
+      "The slimy cap skin causes stomach upset in many people. Peeling is not optional.",
+      "Never eat raw."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "careRequired",
+    "commonName" : "Stinging nettle",
+    "edibleParts" : "Young tips and leaves, picked before the plant flowers.",
+    "habitat" : "Nitrogen-rich disturbed ground: old stockyards, compost heaps, riverbanks, neglected sections.",
+    "id" : "nettle",
+    "identification" : "Opposite, coarsely toothed, heart-shaped leaves on a square stem, covered in stinging hairs. Small green tassel-like flower clusters at the leaf joints. Rarely above waist height.",
+    "lookalikes" : [
+      {
+        "howToTell" : "A native shrub that grows to 3 m with woody stems and pale green leaves carrying stinging spines up to 6 mm long — far longer and more visible than common nettle's fine hairs. Its sting is a medical emergency, not a nuisance: it has caused at least one recorded human death and regularly kills dogs and horses. If the plant is woody, taller than you, and the spines are clearly visible from a metre away, walk away.",
+        "name" : "Ongaonga / tree nettle",
+        "risk" : "deadly",
+        "scientificName" : "Urtica ferox"
+      }
+    ],
+    "maoriName" : "Ongaonga (see warning)",
+    "months" : [
+      8,
+      9,
+      10,
+      11
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : "Wear gloves. Blanching or any cooking destroys the sting completely — after 30 seconds in boiling water it is entirely safe to handle and eat. Soup, pesto, or dried for tea.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Urtica dioica / Urtica urens",
+    "sources" : [
+
+    ],
+    "summary" : "Excellent cooked green with an iron-rich, spinach-like flavour — and a genuinely dangerous native relative.",
+    "warnings" : [
+      "Only harvest low, soft, herbaceous nettle. Never harvest from a woody shrub.",
+      "Stop harvesting once the plant flowers — older leaves develop gritty crystals that irritate the kidneys."
     ]
   },
   {
@@ -1178,6 +998,228 @@
     "warnings" : [
       "Count the spines: dense and needle-sharp means sweet chestnut, sparse and blunt means horse chestnut.",
       "Many nuts in old plantings are grub-infested. Float them in water and discard any that float."
+    ]
+  },
+  {
+    "category" : "fruit",
+    "caution" : "doNotEat",
+    "commonName" : "Tutu",
+    "edibleParts" : "None. Every part of this plant except the fleshy petal is lethally toxic.",
+    "habitat" : "Riverbeds, slips, forest margins, regenerating scrub. Extremely common nationwide.",
+    "harvestEthics" : "Do not harvest. This entry exists so you can recognise it.",
+    "id" : "tutu",
+    "identification" : "Shrub or small tree with arching stems and glossy, strongly veined opposite leaves. Long drooping strings of small flowers followed by shiny purple-black fruit, each holding several small seeds. The fleshy purple 'petals' surround the seeds.",
+    "lookalikes" : [
+      {
+        "howToTell" : "This is the confusion that kills. Elder has compound leaves of several toothed leaflets and flat-topped flower sprays; tutu has simple opposite leaves and long drooping flower strings. If you are unsure which you are looking at, harvest neither.",
+        "name" : "Elderberry",
+        "risk" : "deadly",
+        "scientificName" : "Sambucus nigra"
+      }
+    ],
+    "maoriName" : "Tutu",
+    "months" : [
+
+    ],
+    "origin" : "native",
+    "photos" : [
+
+    ],
+    "preparation" : "None.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Coriaria arborea",
+    "sources" : [
+
+    ],
+    "summary" : "The most dangerous plant a New Zealand forager can meet. Learn it, then never touch it.",
+    "warnings" : [
+      "Contains tutin. Tutu has killed people, and historically killed a circus elephant in Whanganui. Seeds, leaves and shoots are all lethal.",
+      "Toxic honey: bees do not visit tutu, but passionvine hoppers feed on it and excrete honeydew that bees collect. This produces genuinely poisonous honey and is the reason NZ regulates honey harvesting in tutu regions between December and April.",
+      "Never make a wine, cordial or jam from any purple-black wild berry in NZ unless you have positively identified the plant."
+    ]
+  },
+  {
+    "category" : "nuts",
+    "caution" : "straightforward",
+    "commonName" : "Walnut",
+    "edibleParts" : "The kernel. Green immature nuts can be pickled whole.",
+    "habitat" : "Old farm shelter belts, homestead gardens, roadsides. Common in Canterbury, Nelson and Hawke's Bay.",
+    "id" : "walnut",
+    "identification" : "Large tree with compound leaves of five to nine leaflets, aromatic when crushed. Green tennis-ball husks that split and blacken to release the familiar wrinkled shell.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+      4,
+      5
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : "Gather fallen nuts promptly, husk them (wear gloves — the husk stains skin brown for weeks), then dry for several weeks before storing.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Juglans regia",
+    "sources" : [
+
+    ],
+    "summary" : "Old farm and roadside trees drop far more than anyone collects.",
+    "warnings" : [
+      "Nuts left lying damp on the ground develop moulds. Discard any kernel that is shrivelled, discoloured or smells rancid."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "careRequired",
+    "commonName" : "Watercress",
+    "edibleParts" : "Leaves and tender stems.",
+    "habitat" : "Slow-moving fresh water: streams, drains, spring-fed creeks. Often in dense floating mats.",
+    "harvestEthics" : "Cut above the waterline and leave the roots so the mat regenerates.",
+    "id" : "watercress",
+    "identification" : "Rounded, glossy compound leaves with a large terminal leaflet. Hollow stems that root at the nodes. Small four-petalled white flowers. Sharp peppery taste.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Leaflets are toothed and celery-scented rather than rounded and peppery. Grows in the same drains.",
+        "name" : "Water celery / fool's watercress",
+        "risk" : "unpalatable",
+        "scientificName" : "Helosciadium nodiflorum"
+      }
+    ],
+    "maoriName" : "Kōwhitiwhiti, wātakirihi",
+    "months" : [
+
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : "Cook it. Soups, blanched as a green, or wilted. Eating it raw from an unknown waterway is the single most common way NZ foragers make themselves ill.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Nasturtium officinale",
+    "sources" : [
+
+    ],
+    "summary" : "Peppery and everywhere in NZ waterways — but the water it grows in is the whole problem.",
+    "warnings" : [
+      "Liver fluke risk: watercress in waterways grazed by sheep or cattle can carry Fasciola hepatica. Cooking destroys it — raw does not.",
+      "Check the waterway for agricultural runoff and toxic algae before harvesting. LAWA publishes water quality and algal bloom status for monitored sites.",
+      "Never harvest from a stream below a farm, dairy shed or urban stormwater outfall."
+    ]
+  },
+  {
+    "category" : "herbs",
+    "caution" : "careRequired",
+    "commonName" : "Wild fennel",
+    "edibleParts" : "Fronds, stems, pollen, and green or dried seeds. Wild plants rarely form a usable bulb.",
+    "habitat" : "Roadsides, railway corridors, coastal banks, waste ground. Extremely common.",
+    "harvestEthics" : "A declared pest plant in several regions. Harvest freely — you are doing the land a favour.",
+    "id" : "wild-fennel",
+    "identification" : "Tall (to 2 m) with feathery thread-fine leaves and flat-topped yellow flower umbels. Solid, ridged, unspotted green stem. Crushing any part releases a strong sweet aniseed smell — this is the only check that matters.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Hemlock has purple or reddish blotches on a smooth hollow stem, white flowers, and a rank mousy smell. Fennel has an unspotted solid ridged stem, yellow flowers, and smells overwhelmingly of aniseed. They grow side by side on the same verges. If it does not smell of aniseed, it is not fennel.",
+        "name" : "Hemlock",
+        "risk" : "deadly",
+        "scientificName" : "Conium maculatum"
+      },
+      {
+        "howToTell" : "Grows in wet ground and ditches, with celery-like leaves and white flowers. Among the most poisonous plants in the country. Again: no aniseed smell.",
+        "name" : "Hemlock water dropwort",
+        "risk" : "deadly",
+        "scientificName" : "Oenanthe crocata"
+      }
+    ],
+    "months" : [
+
+    ],
+    "origin" : "pest",
+    "photos" : [
+
+    ],
+    "preparation" : "Fronds with fish; seeds toasted for spice; pollen as a finishing seasoning; stems in a stock.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Foeniculum vulgare",
+    "sources" : [
+
+    ],
+    "summary" : "Lines roadsides across the country — and shares those roadsides with the deadliest plant in the carrot family.",
+    "warnings" : [
+      "Crush and smell before every single harvest, not just the first.",
+      "Roadside and railway verges are routinely sprayed."
+    ]
+  },
+  {
+    "category" : "fruit",
+    "caution" : "straightforward",
+    "commonName" : "Wild plum",
+    "edibleParts" : "Ripe fruit only.",
+    "habitat" : "Roadsides, riverbanks, old orchard sites, railway corridors.",
+    "id" : "wild-plum",
+    "identification" : "Small tree, white five-petalled blossom in spring, and round to oval fruit in red, yellow or purple with a single stone and a waxy bloom.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+      12,
+      1,
+      2
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : "Raw, or into jam, sauce and chutney. Wild plums are usually tarter than shop fruit.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Prunus domestica / Prunus cerasifera",
+    "sources" : [
+
+    ],
+    "summary" : "Roadside remnants of old orchards and thrown stones — the single most reliable summer roadside fruit.",
+    "warnings" : [
+      "Never eat the stones or kernels — like all Prunus, they contain cyanogenic compounds."
+    ]
+  },
+  {
+    "category" : "fungi",
+    "caution" : "straightforward",
+    "commonName" : "Wood ear",
+    "edibleParts" : "The whole fruiting body.",
+    "habitat" : "Dead and dying wood in damp native bush, especially māhoe and other soft-wooded trees.",
+    "harvestEthics" : "Growing on dead wood in native bush means it is usually on DOC land, where a permit is required. Cut cleanly and leave the wood intact.",
+    "id" : "wood-ear",
+    "identification" : "Ear-shaped rubbery brackets, brown to purplish, velvety on the outer surface and smooth within. Gelatinous and springy when fresh, shrinking to a hard flake when dry and rehydrating readily.",
+    "lookalikes" : [
+
+    ],
+    "maoriName" : "Hakeka, hakeke",
+    "months" : [
+
+    ],
+    "origin" : "native",
+    "photos" : [
+
+    ],
+    "preparation" : "Rinse, slice and add to soups and stir-fries. Prized for texture rather than flavour. Dries and rehydrates well.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Auricularia cornea",
+    "sources" : [
+
+    ],
+    "summary" : "New Zealand's first export mushroom — gathered by the tonne from Taranaki bush in the 1870s.",
+    "warnings" : [
+      "There are no dangerous lookalikes, but its texture is very distinctive — anything firm, gilled or dry is something else."
     ]
   }
 ]

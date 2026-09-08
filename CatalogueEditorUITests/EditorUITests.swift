@@ -76,6 +76,24 @@ final class EditorUITests: XCTestCase {
         )
     }
 
+    /// The toolbar's save button can be collapsed away when the window is narrow, so the
+    /// editor carries a persistent one in a footer bar.
+    func testSaveButtonIsAlwaysVisible() {
+        selectFirstSpecies()
+
+        let save = app.buttons["Save changes"]
+        XCTAssertTrue(save.waitForExistence(timeout: Self.timeout), "No persistent save button")
+        XCTAssertFalse(save.isEnabled, "Save should be disabled with no unsaved changes")
+
+        tabButton(containing: "Entry").click()
+        let field = app.textFields.element(boundBy: 0)
+        XCTAssertTrue(field.waitForExistence(timeout: Self.timeout))
+        field.click()
+        field.typeText("Z")
+
+        XCTAssertTrue(save.isEnabled, "Save should enable once an entry is edited")
+    }
+
     func testAddingASpeciesShowsItsIdentifierBeforeCommitting() {
         app.buttons["Add species"].firstMatch.click()
 

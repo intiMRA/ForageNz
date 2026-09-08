@@ -17,10 +17,13 @@ struct EditorRootView: View {
             sidebar
         } detail: {
             if let species = store.species.first(where: { $0.id == selectedId }) {
-                SpeciesEditorView(
-                    species: species,
-                    photoDirectory: store.photoDirectory
-                ) { store.update($0) }
+                VStack(spacing: 0) {
+                    SpeciesEditorView(
+                        species: species,
+                        photoDirectory: store.photoDirectory
+                    ) { store.update($0) }
+                    saveBar
+                }
             } else {
                 ContentUnavailableView(
                     "Pick a species",
@@ -115,6 +118,49 @@ struct EditorRootView: View {
         case .failure(.duplicate(let id)):
             addError = "“\(id)” is already in the catalogue."
         }
+    }
+
+    private var saveBar: some View {
+        VStack(spacing: 0) {
+            Divider()
+            HStack(spacing: 12) {
+                Group {
+                    switch store.status {
+                    case .edited(let count):
+                        Label(
+                            "\(count) unsaved \(count == 1 ? "entry" : "entries")",
+                            systemImage: "pencil.circle.fill"
+                        )
+                        .foregroundStyle(.orange)
+                    case .saved(let date):
+                        Label(
+                            "Saved \(date.formatted(date: .omitted, time: .shortened))",
+                            systemImage: "checkmark.circle.fill"
+                        )
+                        .foregroundStyle(.green)
+                    case .failed(let message):
+                        Label(message, systemImage: "exclamationmark.triangle.fill")
+                            .foregroundStyle(.red)
+                            .lineLimit(2)
+                    case .clean:
+                        Text("No unsaved changes")
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                .font(.callout)
+
+                Spacer(minLength: 8)
+
+                Button("Save changes") { store.save() }
+                    .buttonStyle(.borderedProminent)
+                    .keyboardShortcut("s")
+                    .disabled(!store.hasUnsavedChanges)
+                    .help("Write the catalogue to species.json (⌘S)")
+            }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 10)
+        }
+        .background(.bar)
     }
 
     private var sidebar: some View {
