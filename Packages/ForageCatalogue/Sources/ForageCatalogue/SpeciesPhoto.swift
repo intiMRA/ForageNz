@@ -44,7 +44,16 @@ public enum CataloguePhotos {
     public static let totalByteBudget = 24_000_000
 
     /// How many photos an entry wants before it is genuinely identifiable.
-    public static let recommendedCount = 4
+    ///
+    /// Higher for anything with a deadly lookalike. There is no signal in a gully, so the
+    /// embedded photos are all the user will ever have — a link to more is a desk
+    /// affordance, not a field one. The harder the call, the more the guide must carry.
+    public static func recommendedCount(hasDeadlyLookalike: Bool) -> Int {
+        hasDeadlyLookalike ? 6 : 4
+    }
+
+    /// The floor, for copy that can't know the species.
+    public static let minimumRecommendedCount = 4
 
     public static func fileName(speciesId: String, index: Int) -> String {
         "\(speciesId)-\(index).heic"

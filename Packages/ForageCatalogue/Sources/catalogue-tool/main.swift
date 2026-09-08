@@ -194,10 +194,14 @@ if arguments.contains("--photos") {
     for orphan in report.orphanedFiles {
         print("orphan · \(orphan): referenced by no entry")
     }
-    let thin = species.filter { $0.caution != .doNotEat && $0.photos.count < CataloguePhotos.recommendedCount }
+    let thin = species.filter { entry in
+        entry.caution != .doNotEat && entry.photos.count < CataloguePhotos.recommendedCount(
+            hasDeadlyLookalike: entry.highestLookalikeRisk == .deadly
+        )
+    }
     print("""
     \(report.photoCount) photo(s) · \(report.totalBytes / 1024) KB of \(CataloguePhotos.totalByteBudget / 1_000_000) MB budget
-    \(thin.count) entrie(s) with fewer than \(CataloguePhotos.recommendedCount) photos
+    \(thin.count) entrie(s) below their photo target (4, or 6 with a deadly lookalike)
     """)
     exit(report.isClean ? 0 : 1)
 }

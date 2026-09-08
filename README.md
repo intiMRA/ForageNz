@@ -71,9 +71,15 @@ which is *not* what most formatters produce — after hand-editing the file, run
 
 ## Photos
 
-Each entry wants around four identification photos: whole plant, leaf or frond detail, the
-diagnostic feature, and whatever it gets confused with. Plus `moreImagesURL` pointing at a
-page with more — an iNaturalist taxon page is usually best, since licences are stated there.
+**There is no signal where this app gets used.** That is the constraint everything else
+follows from: the embedded photos are all a forager will ever have, so they carry the whole
+identification load. `moreImagesURL` is a planning aid for before you leave — the app labels
+it as needing a connection, and `CatalogueTests` asserts no entry depends on it for anything
+needed in the field.
+
+The photo target scales with how badly a mistake ends: **four** normally, **six** for
+anything with a deadly lookalike, since those are the calls where a forager most needs
+another angle and can least afford to guess.
 
 They ship inside the app, so size is a constraint rather than an afterthought:
 
@@ -82,6 +88,7 @@ They ship inside the app, so size is a constraint rather than an afterthought:
 | Format | HEIC, quality 0.62 |
 | Longest edge | 1400 px |
 | Per photo | ≤ 215 KB |
+| Target per entry | 4, or 6 with a deadly lookalike |
 | Whole catalogue | ≤ 24 MB |
 
 **Lossless is not an option.** A lossless PNG of a photograph at this size is 1.5–3 MB, so

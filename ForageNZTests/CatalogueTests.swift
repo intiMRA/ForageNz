@@ -91,6 +91,41 @@ struct CatalogueTests {
         }
     }
 
+    // MARK: - Offline guarantee
+
+    /// The guide has to work with the radio off: there is no signal where it gets used.
+    /// This asserts the catalogue and every photo it references resolve from the bundle
+    /// alone, with no network involved.
+    @Test("Everything the guide renders is present in the app bundle")
+    func everythingResolvesOffline() async throws {
+        let species = try await loadCatalogue()
+        #expect(!species.isEmpty, "The catalogue itself must be bundled")
+
+        let photoDirectory = Bundle.main.resourceURL?.appending(path: CataloguePhotos.directoryName)
+        let directory = try #require(photoDirectory, "Photos/ is not in the bundle")
+
+        for entry in species {
+            for photo in entry.photos {
+                let url = directory.appending(path: photo.fileName)
+                #expect(
+                    FileManager.default.fileExists(atPath: url.path),
+                    "\(entry.id) references \(photo.fileName), which is not bundled — it would be a blank slot in the field"
+                )
+            }
+        }
+    }
+
+    /// A web link is a planning aid, never the only route to something needed in the field.
+    @Test("No entry depends on a web link for its identification content")
+    func noEntryLeansOnTheWeb() async throws {
+        for entry in try await loadCatalogue() {
+            #expect(
+                !entry.identification.isEmpty,
+                "\(entry.id) has no identification text, so its only usable content would be online"
+            )
+        }
+    }
+
     // MARK: - Catalogue-wide rules
 
     @Test("Identifiers are unique")
