@@ -19,7 +19,6 @@ final class FieldGuideUITests: XCTestCase {
         let tabs = [
             (label: "In season", title: "In season"),
             (label: "Field guide", title: "Field guide"),
-            (label: "Match", title: "Match a photo"),
             (label: "Safety", title: "Safety")
         ]
 
@@ -76,31 +75,6 @@ final class FieldGuideUITests: XCTestCase {
         XCTAssertTrue(
             app.staticTexts["Taraxacum officinale"].waitForExistence(timeout: Self.existenceTimeout),
             "Species detail did not show the scientific name"
-        )
-    }
-
-    func testMatchTabIsReachableAndStatesItIsNotIdentification() {
-        app.tabBars.buttons["Match"].tap()
-
-        XCTAssertTrue(
-            app.staticTexts["This does not identify anything"].waitForExistence(timeout: Self.existenceTimeout),
-            "Match screen must lead with the fact that it is not an identification"
-        )
-        XCTAssertTrue(
-            app.buttons.containing(.staticText, identifier: "Choose a photo").firstMatch
-                .waitForExistence(timeout: Self.existenceTimeout),
-            "No way to pick a photo on the Match tab"
-        )
-    }
-
-    /// With almost no catalogue photos, matching is meaningless — the screen has to say so
-    /// rather than rank one species against nothing.
-    func testMatchTabWarnsWhenThereAreTooFewPhotos() {
-        app.tabBars.buttons["Match"].tap()
-
-        XCTAssertTrue(
-            app.staticTexts["Not enough photos yet"].waitForExistence(timeout: Self.existenceTimeout),
-            "Thin-coverage warning missing — it should appear until enough entries have photos"
         )
     }
 

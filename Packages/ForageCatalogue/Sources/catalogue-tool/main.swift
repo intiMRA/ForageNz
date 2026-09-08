@@ -58,6 +58,37 @@ if arguments.contains("--normalise") {
     exit(0)
 }
 
+if let flag = arguments.firstIndex(of: "--openset") {
+    guard arguments.count > flag + 2 else {
+        FileHandle.standardError.write(Data("--openset needs <in-catalogue-dir> <out-of-catalogue-dir>\n".utf8))
+        exit(2)
+    }
+    let report = MatcherEvaluation.openSet(
+        inCatalogue: URL(fileURLWithPath: arguments[flag + 1]),
+        outOfCatalogue: URL(fileURLWithPath: arguments[flag + 2])
+    )
+
+    func summarise(_ label: String, _ values: [Float]) {
+        guard !values.isEmpty else { print("\(label): none"); return }
+        let median = values[values.count / 2]
+        let p10 = values[max(0, values.count / 10)]
+        let p90 = values[min(values.count - 1, values.count * 9 / 10)]
+        print(String(format: "%@  n=%d  min %.2f  p10 %.2f  median %.2f  p90 %.2f  max %.2f",
+                     label, values.count, values.first!, p10, median, p90, values.last!))
+    }
+
+    print("Nearest-prototype distance distributions\n")
+    summarise("in catalogue    ", report.inCatalogueDistances)
+    summarise("NOT in catalogue", report.outOfCatalogueDistances)
+    print(String(format: "\nBest threshold %.2f: accepts %.0f%% of known, rejects %.0f%% of unknown",
+                 report.bestThreshold,
+                 report.acceptedInCatalogue * 100,
+                 report.rejectedOutOfCatalogue * 100))
+    print(String(format: "So %.0f%% of plants NOT in the guide would still be handed a shortlist.",
+                 report.falseAcceptRate * 100))
+    exit(0)
+}
+
 if let flag = arguments.firstIndex(of: "--evaluate") {
     guard arguments.count > flag + 1 else {
         FileHandle.standardError.write(Data("--evaluate needs a directory of labelled photos\n".utf8))

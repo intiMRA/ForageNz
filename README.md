@@ -30,7 +30,6 @@ no distinguishing check, or a native species ships without harvesting guidance.
 | `ForageNZ/Catalogue/` | `species.json`, `SpeciesRepository` (protocol + bundled actor), `SpeciesStore` (`@Observable @MainActor`). |
 | `ForageNZ/InSeason/` | What's worth looking for this month. |
 | `ForageNZ/FieldGuide/` | Searchable catalogue with category + origin filters, and the species detail screen. |
-| `ForageNZ/Match/` | The Match tab: photo picker, and the actor that builds the index off the main actor. |
 | `ForageNZ/Safety/` | Ground rules, the do-not-eat list, and species with deadly lookalikes. |
 | `ForageNZ/Components/` | Shared UI: `SpeciesRow`, `CautionBadge`, `CautionPalette`, `Layout`. |
 | `ForageNZTests/` | Swift Testing: store filtering and shipped-catalogue integrity. |
@@ -108,59 +107,48 @@ prompt.
 A caption is required because "the stem base" is the entire reason a photo helps, and a
 credit is required because CC BY obliges it — the app displays both.
 
-## Photo matching (experiment, not shipped)
+## Photo matching — measured, then removed from the app
 
-`PhotoMatcher` + `PhotoIndex` rank a query image against the catalogue's own photos using
-Vision feature prints — nearest-neighbour over a frozen embedding rather than a trained
-classifier, because the catalogue is a closed set of ~30 species with a handful of photos
-each. No training, no model to ship, and a prototype is ~3 KB against ~90 KB per photo.
+There is no photo matcher in the app. It was built, measured, and taken out. The package
+code and the evaluation harness remain, because the measurement is the useful artifact and
+the basis for retrying with a better model.
 
-```sh
-swift run catalogue-tool --index   # build prototypes and report separation
+**Why it was removed: it cannot refuse.** Nearest-neighbour ranking always returns the
+closest catalogue entries, however far away they are. For a foraging guide that is not a
+quality problem, it is a safety one — the dangerous case is photographing something that
+isn't in the guide at all.
+
+`catalogue-tool --openset` measures whether a distance threshold could tell "in the
+catalogue" from "not in the catalogue", using 112 photos of 14 catalogue species against 48
+photos of six NZ plants deliberately left out (foxglove, hemlock, ragwort, agapanthus, arum
+lily, buttercup):
+
+```
+in catalogue      n=112  min 0.27  p10 0.41  median 0.54  p90 0.72  max 0.82
+NOT in catalogue  n=48   min 0.47  p10 0.52  median 0.66  p90 0.88  max 1.00
+
+Best threshold 0.64: accepts 84% of known, rejects 58% of unknown
 ```
 
-**It ranks; it never identifies.** `matches(for:limit:)` returns candidates for the user to
-read the lookalike checks against, and a `doNotEat` entry is never cut by the result limit —
-if something scores near death cap, that is the most important thing to show, not the
-next-best edible guess.
+The distributions overlap almost entirely. The best achievable threshold still hands a
+shortlist to **42% of plants that are not in the guide**. Photograph hemlock and there is a
+good chance it points at wild fennel — the exact fatal confusion the guide exists to
+prevent.
 
-Feature prints are not comparable across Vision revisions, so `PhotoIndex` records the
-revision it was built with and `requireCompatible(queryRevision:)` refuses a mismatch rather
-than returning meaningless distances.
+Closed-set accuracy was respectable (`--evaluate`: top-1 78.6%, top-3 94.6% over the same
+112 photos), and irrelevant next to the above. A matcher that is usually right about species
+it knows, and confidently wrong about everything else, is worse than no matcher.
 
-It surfaces in the app as the **Match** tab: pick a photo, get the closest entries to read.
-The screen leads with "This does not identify anything", and while fewer than five entries
-have photos it shows a warning that results are meaningless — with one prototype, everything
-"matches" it.
+**What would change the decision:** a plant-specific backbone (PlantCLEF DINOv2) with wide
+enough margins that in-catalogue and unknown distances separate. `--openset` is the test it
+would have to pass first — and rejecting unknowns matters more than closed-set accuracy.
 
-### Measured accuracy
-
-`Tools/fetch_eval_photos.py` pulls CC0/CC-BY photos from iNaturalist into `.eval-photos/`
-(gitignored, never shipped, attribution recorded in a manifest). `catalogue-tool --evaluate`
-then runs leave-one-out: each photo is scored against prototypes built from the *other*
-photos of its species, so a prototype can never contain its own query.
-
-**14 species, 112 photos: top-1 78.6%, top-3 94.6%.**
-
-Top-3 is the number that matters — the screen presents candidates to read, not an answer.
-
-The margins are the warning. Mean distance to a species' own prototype versus the nearest
-rival differs by only +0.00 to +0.19 on a 0–2 scale, so the ranking is fragile: a change of
-background or light can flip it. Two failures are instructive:
-
-- **chickweed 37% top-1, margin −0.00**, confused with watercress. The embedding cannot do
-  fine-grained green leafy plants.
-- **field mushroom and saffron milk cap each lost one photo to death cap.** That is the safe
-  direction of error — over-caution — and no death cap photo matched an edible species. On
-  eight photos that is reassuring, not a guarantee.
-
-Two caveats on the 78.6%: iNaturalist research-grade photos are well framed and well lit, so
-a phone photo in a gully will do worse; and the evaluation built prototypes from seven photos
-per species where the app ships four.
-
-The conclusion is that this is sound as a *narrowing* aid and unsound as identification —
-which is why the screen says so. Widening those margins is what a plant-specific backbone
-(PlantCLEF DINOv2) would buy.
+```sh
+python3 Tools/fetch_eval_photos.py                                  # CC0/CC-BY, gitignored
+python3 Tools/fetch_eval_photos.py --set out-of-catalogue --out .eval-photos-negative
+swift run catalogue-tool --evaluate ../../.eval-photos
+swift run catalogue-tool --openset ../../.eval-photos ../../.eval-photos-negative
+```
 
 ## Validation
 
