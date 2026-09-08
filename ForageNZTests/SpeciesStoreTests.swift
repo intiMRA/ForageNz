@@ -1,3 +1,4 @@
+import ForageCatalogue
 import Foundation
 import Testing
 

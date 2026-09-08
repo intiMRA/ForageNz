@@ -15,21 +15,18 @@
 		360194B642E9FF2742582745 /* InSeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4ED5A9B62C12BD6C3E48E /* InSeasonView.swift */; };
 		3D19D3D50781F4C7BE5F99E4 /* SpeciesStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3FB453CF93F89079D941E /* SpeciesStoreTests.swift */; };
 		42BC722A0552DA4BEBBE5C9F /* CautionBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BEAEAE3D024F1C6A9B9C10 /* CautionBadge.swift */; };
-		432B8F925527A1C1C3B92D52 /* ForageSpeciesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35390A96995C0C24461EF8D /* ForageSpeciesTests.swift */; };
-		50EF0AD6BEDDADCD7E23A44B /* ForageMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F2E3E55EE6C5B8135D641 /* ForageMonth.swift */; };
+		5D9C874AA850F3AE65673F79 /* ForageCatalogue in Frameworks */ = {isa = PBXBuildFile; productRef = 69125DE059737EBB12471472 /* ForageCatalogue */; };
 		69242F8D935959254849BA9D /* SpeciesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6D5333F8A7A09C3B0043D /* SpeciesStore.swift */; };
 		732EB0C3958667F5E1937D29 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F567D725B05CA6E238F22C8 /* RootView.swift */; };
 		7D35632F1F5EEB570322D3E0 /* PoisonsCentre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163C64C7220DD70F766A16E /* PoisonsCentre.swift */; };
 		7F83D47960CFE20BF784F76C /* FieldGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452B052BD15DA513EB5F5BF3 /* FieldGuideUITests.swift */; };
-		81D0E03DD45D2415686CD96F /* ForageCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CD34B63E7F6550BFA68020 /* ForageCategory.swift */; };
 		88884AE952E8D6A46933C56A /* SpeciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */; };
 		9E8FC670A75374EEBCCECBC7 /* SafetyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE90969BDB0EBE6CF9F173 /* SafetyView.swift */; };
-		A0952AD53E234A3D3793CEFC /* CautionLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A5980F1B1DCFCE4B03018 /* CautionLevel.swift */; };
 		B93BA6A59034E519AC12B2B9 /* CatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6276DE2F1556F1A782D58DEF /* CatalogueTests.swift */; };
 		BC7A270E66145A359CC6F5BB /* species.json in Resources */ = {isa = PBXBuildFile; fileRef = D6ECE46F98F836C2B53E8AA5 /* species.json */; };
+		C6508D90B2BD9E3DC2D0E545 /* ForageCatalogue in Frameworks */ = {isa = PBXBuildFile; productRef = 279E84FE33A5770883B72986 /* ForageCatalogue */; };
 		C96F1DE935FB259F9428C0FE /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9E85DA08B2A7D3ED5C7C9 /* BrowseView.swift */; };
 		E7057F68D7BCDBAEC626647A /* DesignLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 83413BE0AA6927FA598C7C0C /* DesignLibrary */; };
-		E98A9C21E4C0E97F94F660C6 /* ForageSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798EA084F32FC780835814E8 /* ForageSpecies.swift */; };
 		FB252221E135784791053AC1 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B10EF78BEEEED358AB658 /* Layout.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,21 +52,16 @@
 		2163C64C7220DD70F766A16E /* PoisonsCentre.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PoisonsCentre.swift; path = Models/PoisonsCentre.swift; sourceTree = "<group>"; };
 		3DEE90969BDB0EBE6CF9F173 /* SafetyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafetyView.swift; path = Safety/SafetyView.swift; sourceTree = "<group>"; };
 		452B052BD15DA513EB5F5BF3 /* FieldGuideUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FieldGuideUITests.swift; sourceTree = "<group>"; };
-		4F4A5980F1B1DCFCE4B03018 /* CautionLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CautionLevel.swift; path = Models/CautionLevel.swift; sourceTree = "<group>"; };
 		55C6D5333F8A7A09C3B0043D /* SpeciesStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesStore.swift; path = Catalogue/SpeciesStore.swift; sourceTree = "<group>"; };
 		5F39B686CA0E9CE04181DD40 /* ForageNZApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForageNZApp.swift; sourceTree = "<group>"; };
 		6276DE2F1556F1A782D58DEF /* CatalogueTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueTests.swift; sourceTree = "<group>"; };
 		6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CautionPalette.swift; path = Components/CautionPalette.swift; sourceTree = "<group>"; };
 		6F567D725B05CA6E238F22C8 /* RootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		764F2E3E55EE6C5B8135D641 /* ForageMonth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForageMonth.swift; path = Models/ForageMonth.swift; sourceTree = "<group>"; };
-		798EA084F32FC780835814E8 /* ForageSpecies.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForageSpecies.swift; path = Models/ForageSpecies.swift; sourceTree = "<group>"; };
 		7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesDetailView.swift; path = FieldGuide/SpeciesDetailView.swift; sourceTree = "<group>"; };
 		817A298659AD6F2CD63D0228 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B5CFF23B8C79B576A8D1B65 /* ForageNZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRepository.swift; path = Catalogue/SpeciesRepository.swift; sourceTree = "<group>"; };
-		92CD34B63E7F6550BFA68020 /* ForageCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForageCategory.swift; path = Models/ForageCategory.swift; sourceTree = "<group>"; };
 		B23CB3FA9353E11476EEC70C /* ForageNZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B35390A96995C0C24461EF8D /* ForageSpeciesTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForageSpeciesTests.swift; sourceTree = "<group>"; };
 		B5D3FB453CF93F89079D941E /* SpeciesStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesStoreTests.swift; sourceTree = "<group>"; };
 		D271FA601484668BEA2A2E9C /* ForageNZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForageNZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6ECE46F98F836C2B53E8AA5 /* species.json */ = {isa = PBXFileReference; includeInIndex = 1; name = species.json; path = Catalogue/species.json; sourceTree = "<group>"; };
@@ -84,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9C874AA850F3AE65673F79 /* ForageCatalogue in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7057F68D7BCDBAEC626647A /* DesignLibrary in Frameworks */,
+				C6508D90B2BD9E3DC2D0E545 /* ForageCatalogue in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +139,6 @@
 		7127DAAD2E1698DAE324AB23 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4F4A5980F1B1DCFCE4B03018 /* CautionLevel.swift */,
-				92CD34B63E7F6550BFA68020 /* ForageCategory.swift */,
-				764F2E3E55EE6C5B8135D641 /* ForageMonth.swift */,
-				798EA084F32FC780835814E8 /* ForageSpecies.swift */,
 				2163C64C7220DD70F766A16E /* PoisonsCentre.swift */,
 			);
 			name = Models;
@@ -168,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				6276DE2F1556F1A782D58DEF /* CatalogueTests.swift */,
-				B35390A96995C0C24461EF8D /* ForageSpeciesTests.swift */,
 				B5D3FB453CF93F89079D941E /* SpeciesStoreTests.swift */,
 			);
 			name = ForageNZTests;
@@ -237,6 +226,9 @@
 				D7969EC4F6CC735AD010135D /* PBXTargetDependency */,
 			);
 			name = ForageNZTests;
+			packageProductDependencies = (
+				69125DE059737EBB12471472 /* ForageCatalogue */,
+			);
 			productName = ForageNZTests;
 			productReference = 8B5CFF23B8C79B576A8D1B65 /* ForageNZTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -256,6 +248,7 @@
 			name = ForageNZ;
 			packageProductDependencies = (
 				83413BE0AA6927FA598C7C0C /* DesignLibrary */,
+				279E84FE33A5770883B72986 /* ForageCatalogue */,
 			);
 			productName = ForageNZ;
 			productReference = D271FA601484668BEA2A2E9C /* ForageNZ.app */;
@@ -300,6 +293,7 @@
 			minimizedProjectReferenceProxies = 0;
 			packageReferences = (
 				657237127B68D0589BA6C34C /* XCRemoteSwiftPackageReference "Desing-Library-SPM" */,
+				90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1EAF7E4DE18E3DAE6C74AAC9 /* Products */;
@@ -361,10 +355,6 @@
 				33F1FEE23644859BA88F9258 /* SpeciesDetailView.swift in Sources */,
 				2FFEC43C9B4D53C2E4ACBA15 /* ForageNZApp.swift in Sources */,
 				360194B642E9FF2742582745 /* InSeasonView.swift in Sources */,
-				A0952AD53E234A3D3793CEFC /* CautionLevel.swift in Sources */,
-				81D0E03DD45D2415686CD96F /* ForageCategory.swift in Sources */,
-				50EF0AD6BEDDADCD7E23A44B /* ForageMonth.swift in Sources */,
-				E98A9C21E4C0E97F94F660C6 /* ForageSpecies.swift in Sources */,
 				7D35632F1F5EEB570322D3E0 /* PoisonsCentre.swift in Sources */,
 				732EB0C3958667F5E1937D29 /* RootView.swift in Sources */,
 				9E8FC670A75374EEBCCECBC7 /* SafetyView.swift in Sources */,
@@ -377,7 +367,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B93BA6A59034E519AC12B2B9 /* CatalogueTests.swift in Sources */,
-				432B8F925527A1C1C3B92D52 /* ForageSpeciesTests.swift in Sources */,
 				3D19D3D50781F4C7BE5F99E4 /* SpeciesStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,6 +674,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ForageCatalogue;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		657237127B68D0589BA6C34C /* XCRemoteSwiftPackageReference "Desing-Library-SPM" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -697,6 +693,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		279E84FE33A5770883B72986 /* ForageCatalogue */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
+			productName = ForageCatalogue;
+		};
+		69125DE059737EBB12471472 /* ForageCatalogue */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
+			productName = ForageCatalogue;
+		};
 		83413BE0AA6927FA598C7C0C /* DesignLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 657237127B68D0589BA6C34C /* XCRemoteSwiftPackageReference "Desing-Library-SPM" */;

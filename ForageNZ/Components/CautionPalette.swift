@@ -1,3 +1,4 @@
+import ForageCatalogue
 import SwiftUI
 
 /// The single mapping from safety semantics to colour. Colouring a caution affordance

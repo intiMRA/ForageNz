@@ -1,3 +1,4 @@
+import ForageCatalogue
 import SwiftUI
 
 struct RootView: View {
