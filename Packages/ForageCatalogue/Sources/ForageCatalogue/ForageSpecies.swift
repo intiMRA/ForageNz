@@ -26,6 +26,9 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     /// Where this entry's claims were checked. Empty means unverified.
     public let sources: [String]
     public let recipes: [Recipe]
+    public let photos: [SpeciesPhoto]
+    /// Where to see more photographs — an iNaturalist taxon page, usually.
+    public let moreImagesURL: URL?
 
     public init(
         id: String,
@@ -45,7 +48,9 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         warnings: [String] = [],
         harvestEthics: String? = nil,
         sources: [String] = [],
-        recipes: [Recipe] = []
+        recipes: [Recipe] = [],
+        photos: [SpeciesPhoto] = [],
+        moreImagesURL: URL? = nil
     ) {
         self.id = id
         self.commonName = commonName
@@ -65,6 +70,8 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         self.harvestEthics = harvestEthics
         self.sources = sources
         self.recipes = recipes
+        self.photos = photos
+        self.moreImagesURL = moreImagesURL
     }
 
     /// `true` once someone has checked this entry against a field guide.

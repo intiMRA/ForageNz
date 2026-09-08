@@ -28,6 +28,10 @@ struct SpeciesDetailView: View {
                     Text(species.identification)
                 }
 
+                if !species.photos.isEmpty || species.moreImagesURL != nil {
+                    photosSection
+                }
+
                 if species.caution != .doNotEat {
                     section("Edible parts", systemImage: "leaf") {
                         Text(species.edibleParts)
@@ -116,6 +120,14 @@ struct SpeciesDetailView: View {
             Text(species.summary)
                 .font(.body)
                 .padding(.top, .xxSmall)
+        }
+    }
+
+    private var photosSection: some View {
+        VStack(alignment: .leading, spacing: .xSmall) {
+            Label("Photos", systemImage: "photo.on.rectangle.angled")
+                .font(.headline)
+            SpeciesPhotoStrip(species: species)
         }
     }
 

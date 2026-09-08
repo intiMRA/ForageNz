@@ -36,6 +36,26 @@ if arguments.contains("--normalise") {
     exit(0)
 }
 
+if arguments.contains("--photos") {
+    let species = loadCatalogue()
+    let report = PhotoAudit.audit(
+        species: species,
+        photoDirectory: PhotoAudit.directory(forCatalogueAt: url)
+    )
+    for finding in report.findings {
+        print("\(finding.speciesId) · \(finding.fileName): \(finding.problem)")
+    }
+    for orphan in report.orphanedFiles {
+        print("orphan · \(orphan): referenced by no entry")
+    }
+    let thin = species.filter { $0.caution != .doNotEat && $0.photos.count < CataloguePhotos.recommendedCount }
+    print("""
+    \(report.photoCount) photo(s) · \(report.totalBytes / 1024) KB of \(CataloguePhotos.totalByteBudget / 1_000_000) MB budget
+    \(thin.count) entrie(s) with fewer than \(CataloguePhotos.recommendedCount) photos
+    """)
+    exit(report.isClean ? 0 : 1)
+}
+
 if arguments.contains("--check") {
     let species = loadCatalogue()
     var blocking = 0
@@ -55,6 +75,7 @@ catalogue-tool — headless catalogue maintenance
 
   --normalise            rewrite species.json in the canonical shape
   --check                report blocking validation issues
+  --photos               report photo budget, missing files and orphans
   --catalogue <path>     use a different catalogue file
 
 The editor with a window is the CatalogueEditor scheme in ForageNZ.xcodeproj.

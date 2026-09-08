@@ -17,7 +17,10 @@ struct EditorRootView: View {
             sidebar
         } detail: {
             if let species = store.species.first(where: { $0.id == selectedId }) {
-                SpeciesEditorView(species: species) { store.update($0) }
+                SpeciesEditorView(
+                    species: species,
+                    photoDirectory: store.photoDirectory
+                ) { store.update($0) }
             } else {
                 ContentUnavailableView(
                     "Pick a species",

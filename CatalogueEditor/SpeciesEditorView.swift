@@ -5,6 +5,7 @@ import SwiftUI
 /// live in the sidebar and toolbar instead.
 struct SpeciesEditorView: View {
     let species: ForageSpecies
+    let photoDirectory: URL?
     let onChange: (ForageSpecies) -> Void
 
     @State private var showingIssues = false
@@ -114,6 +115,20 @@ struct SpeciesEditorView: View {
                     placeholder: "Langlands, Foraging New Zealand (2024), p. 112",
                     lines: 1...3
                 ) { onChange(species.with(sources: $0)) }
+            }
+
+            Section {
+                PhotoSectionView(
+                    species: species,
+                    photoDirectory: photoDirectory,
+                    onChange: onChange
+                )
+            } header: {
+                Text("Photos")
+            } footer: {
+                Text("Imported photos are downscaled and re-encoded, and ship inside the app — keep each one under \(CataloguePhotos.maximumBytesPerPhoto / 1024) KB.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
             }
 
             Section("Recipes") {

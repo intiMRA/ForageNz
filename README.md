@@ -65,6 +65,37 @@ is byte-identical to what's on disk, so a save is a one-entry diff rather than a
 reformat. Foundation's `prettyPrinted` writes `"key" : value` (with a space before the colon),
 which is *not* what most formatters produce — after hand-editing the file, run `--normalise`.
 
+## Photos
+
+Each entry wants around four identification photos: whole plant, leaf or frond detail, the
+diagnostic feature, and whatever it gets confused with. Plus `moreImagesURL` pointing at a
+page with more — an iNaturalist taxon page is usually best, since licences are stated there.
+
+They ship inside the app, so size is a constraint rather than an afterthought:
+
+| | |
+|---|---|
+| Format | HEIC, quality 0.62 |
+| Longest edge | 1400 px |
+| Per photo | ≤ 215 KB |
+| Whole catalogue | ≤ 24 MB |
+
+**Lossless is not an option.** A lossless PNG of a photograph at this size is 1.5–3 MB, so
+four per species would be 190–370 MB embedded. HEIC at 0.62 is visually indistinguishable
+for identification and roughly 30× smaller. Every number above is a constant in
+`CataloguePhotos`, so retune it in one place.
+
+Import through the editor — it downscales and re-encodes on the way in, so an untouched 6 MB
+phone photo can't land in the repo. `PhotoAuditTests` fails the build on a missing file, an
+oversized file, an orphaned file, or a photo with no caption or credit.
+
+```sh
+swift run catalogue-tool --photos   # budget used, missing files, orphans, thin entries
+```
+
+A caption is required because "the stem base" is the entire reason a photo helps, and a
+credit is required because CC BY obliges it — the app displays both.
+
 ## Validation
 
 Per-entry rules live in `ForageSpecies.validationIssues`, split into blocking (fails the
