@@ -38,7 +38,16 @@ from enum import StrEnum
 from pathlib import Path
 from typing import Any
 
-from sources import COURTESY_DELAY, Licence, Source, SourceError, download, results_of
+from sources import (
+    COURTESY_DELAY,
+    NEW_ZEALAND_PLACE_ID,
+    Licence,
+    Source,
+    SourceError,
+    download,
+    get_json,
+    results_of,
+)
 
 CATALOGUE = Path("ForageNZ/Catalogue/species.json")
 NORMALISER = [
@@ -57,6 +66,7 @@ class Field(StrEnum):
     ID = "id"
     COMMON_NAME = "commonName"
     MAORI_NAME = "maoriName"
+    MONTHS = "months"
     SCIENTIFIC_NAME = "scientificName"
     ORIGIN = "origin"
     MORE_IMAGES_URL = "moreImagesURL"
@@ -83,6 +93,7 @@ FIELD_POLICY: dict[Field, Policy] = {
     Field.SCIENTIFIC_NAME: Policy.REPORT_ONLY,
     Field.ORIGIN: Policy.REPORT_ONLY,
     Field.MAORI_NAME: Policy.NEVER_WRITE,
+    Field.MONTHS: Policy.REPORT_ONLY,
 }
 
 
@@ -98,6 +109,18 @@ class NzorOrigin(StrEnum):
     def catalogue_origin(self) -> str:
         """`Non-endemic` is still indigenous — it occurs naturally here and elsewhere."""
         return "introduced" if self is NzorOrigin.EXOTIC else "native"
+
+
+class EstablishmentMeans(StrEnum):
+    """iNaturalist's establishment means for a place. Finer than the catalogue's split."""
+
+    ENDEMIC = "endemic"
+    NATIVE = "native"
+    INTRODUCED = "introduced"
+
+    @property
+    def catalogue_origin(self) -> str:
+        return "introduced" if self is EstablishmentMeans.INTRODUCED else "native"
 
 
 class FindingKind(StrEnum):
@@ -147,6 +170,45 @@ class InatTaxon:
     @property
     def taxon_page(self) -> str:
         return f"https://inaturalist.nz/taxa/{self.taxon_id}"
+
+
+@dataclass(frozen=True)
+class InatDetail:
+    """Place-scoped facts iNaturalist holds about a taxon in New Zealand."""
+
+    establishment_means: EstablishmentMeans | None
+    conservation_status: str | None
+
+
+@dataclass(frozen=True)
+class Seasonality:
+    """Research-grade NZ observations per month — when people actually find it."""
+
+    counts: dict[int, int]
+
+    #: A month counts as part of the season at or above this share of the peak month.
+    PEAK_SHARE = 0.25
+    #: Below this many observations the shape is noise.
+    MINIMUM_OBSERVATIONS = 30
+    #: A peak spanning more than this many months says nothing a year-round entry
+    #: does not already say. Perennials get photographed all year regardless of when
+    #: they are worth picking.
+    NARROW_ENOUGH_TO_MENTION = 7
+
+    @property
+    def total(self) -> int:
+        return sum(self.counts.values())
+
+    @property
+    def is_meaningful(self) -> bool:
+        return self.total >= self.MINIMUM_OBSERVATIONS
+
+    @property
+    def peak_months(self) -> tuple[int, ...]:
+        if not self.counts:
+            return ()
+        threshold = max(self.counts.values()) * self.PEAK_SHARE
+        return tuple(sorted(month for month, count in self.counts.items() if count >= threshold))
 
 
 @dataclass(frozen=True)
@@ -217,6 +279,56 @@ def fetch_inat_taxon(scientific_name: str, locale: str | None = None) -> InatTax
     )
 
 
+def fetch_inat_detail(taxon_id: int) -> InatDetail | None:
+    """Establishment means and conservation status, scoped to New Zealand."""
+    try:
+        results = results_of(f"{Source.INAT_TAXA}/{taxon_id}", {})
+    except SourceError as error:
+        print(f"    iNaturalist detail failed: {error}", file=sys.stderr)
+        return None
+    if not results:
+        return None
+
+    taxon = results[0]
+    means: EstablishmentMeans | None = None
+    for listing in taxon.get("listed_taxa") or []:
+        if (listing.get("place") or {}).get("id") != NEW_ZEALAND_PLACE_ID:
+            continue
+        try:
+            means = EstablishmentMeans(listing.get("establishment_means"))
+        except ValueError:
+            means = None
+        break
+
+    status = taxon.get("conservation_status") or {}
+    return InatDetail(
+        establishment_means=means,
+        conservation_status=(status.get("status_name") or status.get("status")) or None,
+    )
+
+
+def fetch_seasonality(taxon_id: int) -> Seasonality | None:
+    """When this species is actually observed in New Zealand."""
+    try:
+        payload = get_json(
+            Source.INAT_HISTOGRAM,
+            {
+                "taxon_id": taxon_id,
+                "place_id": NEW_ZEALAND_PLACE_ID,
+                "date_field": "observed",
+                "interval": "month_of_year",
+                "quality_grade": "research",
+            },
+        )
+    except SourceError as error:
+        print(f"    seasonality lookup failed: {error}", file=sys.stderr)
+        return None
+
+    histogram = (payload.get("results") or {}).get("month_of_year") or {}
+    counts = {int(month): int(count) for month, count in histogram.items() if int(count) > 0}
+    return Seasonality(counts=counts)
+
+
 def stage_photos(species_id: str, taxon_id: int, directory: Path, wanted: int) -> list[StagedPhoto]:
     directory.mkdir(parents=True, exist_ok=True)
     staged: list[StagedPhoto] = []
@@ -265,8 +377,68 @@ def stage_photos(species_id: str, taxon_id: int, directory: Path, wanted: int) -
     return staged
 
 
+MONTH_NAMES = (
+    "-",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+)
+
+
+def describe_months(months: tuple[int, ...] | list[int]) -> str:
+    return " ".join(MONTH_NAMES[month] for month in sorted(months)) or "year-round"
+
+
+def inspect_seasonality(
+    entry: dict[str, Any], seasonality: Seasonality | None
+) -> Iterator[Finding]:
+    """Compare the catalogue's season to when the species is actually observed.
+
+    Observation counts are NOT a harvest window. For fungi the two align closely — you see
+    one when it fruits — but a perennial like kawakawa is photographed year-round
+    regardless of when its leaves are worth picking. Always a suggestion, never a fill.
+    """
+    if seasonality is None or not seasonality.is_meaningful:
+        return
+
+    species_id = str(entry[Field.ID])
+    observed = seasonality.peak_months
+    recorded = [int(month) for month in entry.get(Field.MONTHS) or []]
+
+    if not recorded:
+        # An all-year peak agrees with a year-round entry; reporting it is noise.
+        if len(observed) <= Seasonality.NARROW_ENOUGH_TO_MENTION:
+            yield Finding(
+                FindingKind.SUGGESTION,
+                species_id,
+                f"{Field.MONTHS} is year-round; NZ observations peak "
+                f"{describe_months(observed)} ({seasonality.total} records)",
+            )
+        return
+
+    if not set(recorded) & set(observed):
+        yield Finding(
+            FindingKind.DISAGREEMENT,
+            species_id,
+            f"{Field.MONTHS} {describe_months(recorded)} does not overlap the observed peak "
+            f"{describe_months(observed)} ({seasonality.total} records)",
+        )
+
+
 def inspect_entry(
-    entry: dict[str, Any], nzor: NzorRecord | None, maori_candidate: InatTaxon | None
+    entry: dict[str, Any],
+    nzor: NzorRecord | None,
+    maori_candidate: InatTaxon | None,
+    detail: InatDetail | None = None,
 ) -> Iterator[Finding]:
     """Disagreements between the catalogue and an external source. Never applied."""
     species_id = str(entry[Field.ID])
@@ -294,6 +466,36 @@ def inspect_entry(
                 f"({', '.join(str(origin) for origin in nzor.origins)})",
             )
 
+    if detail:
+        means = detail.establishment_means
+        actual = str(entry.get(Field.ORIGIN) or "")
+        if means:
+            allowed = (
+                {"introduced", "pest"} if means is EstablishmentMeans.INTRODUCED else {"native"}
+            )
+            if actual not in allowed:
+                yield Finding(
+                    FindingKind.DISAGREEMENT,
+                    species_id,
+                    f"{Field.ORIGIN} '{actual}' — iNaturalist lists it as '{means}' in New Zealand",
+                )
+            elif means is EstablishmentMeans.ENDEMIC:
+                # Finer than the catalogue models: endemic means found nowhere else, which
+                # is a stronger reason to harvest sparingly than "native" alone conveys.
+                yield Finding(
+                    FindingKind.SUGGESTION,
+                    species_id,
+                    "endemic to New Zealand — worth saying so in the harvesting guidance",
+                )
+
+        if detail.conservation_status:
+            yield Finding(
+                FindingKind.DISAGREEMENT,
+                species_id,
+                f"has a conservation status ('{detail.conservation_status}') — "
+                "check before presenting it as foragable",
+            )
+
     if (
         maori_candidate
         and maori_candidate.preferred_common_name
@@ -308,12 +510,28 @@ def inspect_entry(
 
 
 def fill_entry(entry: dict[str, Any], taxon: InatTaxon | None) -> Iterator[Finding]:
-    """Fill only empty fields, and only those declared FILL_WHEN_EMPTY."""
+    """Fill only empty fields, and only those declared FILL_WHEN_EMPTY.
+
+    "Empty" means absent, null, or the empty string — NOT whitespace. The rule that this
+    script never overwrites is worth keeping total: an exception for "looks blank enough"
+    is one somebody has to remember, and the two failure modes are not symmetric. Not
+    filling is fixed by deleting a space; overwriting loses what you wrote. A field
+    holding only whitespace is reported instead, so it cannot silently block enrichment.
+    """
     species_id = str(entry[Field.ID])
     for field, policy in FIELD_POLICY.items():
         if policy is not Policy.FILL_WHEN_EMPTY:
             continue
-        if str(entry.get(field) or "").strip():
+
+        current = entry.get(field)
+        if current is not None and current != "":
+            if isinstance(current, str) and not current.strip():
+                yield Finding(
+                    FindingKind.SUGGESTION,
+                    species_id,
+                    f"{field} holds only whitespace, so it is left alone — "
+                    "clear it to allow filling",
+                )
             continue  # yours — never touched
 
         value: str | None = None
@@ -378,7 +596,13 @@ def main() -> int:
         maori_candidate = fetch_inat_taxon(scientific_name, locale="mi")
         time.sleep(COURTESY_DELAY)
 
-        findings.extend(inspect_entry(entry, nzor, maori_candidate))
+        detail = fetch_inat_detail(taxon.taxon_id) if taxon else None
+        time.sleep(COURTESY_DELAY)
+        seasonality = fetch_seasonality(taxon.taxon_id) if taxon else None
+        time.sleep(COURTESY_DELAY)
+
+        findings.extend(inspect_entry(entry, nzor, maori_candidate, detail))
+        findings.extend(inspect_seasonality(entry, seasonality))
         findings.extend(fill_entry(entry, taxon))
 
         if arguments.stage_photos and taxon:
