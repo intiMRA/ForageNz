@@ -15,17 +15,30 @@ final class CatalogueStore {
 
     private(set) var species: [ForageSpecies] = []
     private(set) var status: Status = .clean
-    let fileURL: URL
+    /// `nil` when no catalogue could be located — the editor says so rather than
+    /// silently editing nothing.
+    let fileURL: URL?
 
     /// Ids whose entry differs from what was loaded, so the sidebar can mark them.
     private(set) var editedIds: Set<String> = []
     private var loaded: [String: ForageSpecies] = [:]
 
-    init(fileURL: URL) {
+    init(fileURL: URL?) {
         self.fileURL = fileURL
     }
 
+    var displayPath: String {
+        fileURL?.path(percentEncoded: false) ?? "No catalogue found"
+    }
+
     func load() {
+        guard let fileURL else {
+            status = .failed(
+                "Couldn't find \(CatalogueLocator.relativePath). Open the CatalogueEditor scheme "
+                + "from inside the repo, or pass --catalogue <path> in the scheme's arguments."
+            )
+            return
+        }
         do {
             let loadedSpecies = try CatalogueFile.load(from: fileURL)
             species = loadedSpecies
@@ -38,6 +51,7 @@ final class CatalogueStore {
     }
 
     func save() {
+        guard let fileURL else { return }
         do {
             try CatalogueFile.save(species, to: fileURL)
             loaded = Dictionary(uniqueKeysWithValues: species.map { ($0.id, $0) })
@@ -120,10 +134,11 @@ final class CatalogueStore {
     }
 
     private func message(for error: CatalogueFile.Failure) -> String {
-        switch error {
-        case .unreadable(let detail): "Couldn't read \(fileURL.lastPathComponent) — \(detail)"
-        case .undecodable(let detail): "\(fileURL.lastPathComponent) isn't valid catalogue JSON — \(detail)"
-        case .unwritable(let detail): "Couldn't write \(fileURL.lastPathComponent) — \(detail)"
+        let name = fileURL?.lastPathComponent ?? "the catalogue"
+        return switch error {
+        case .unreadable(let detail): "Couldn't read \(name) — \(detail)"
+        case .undecodable(let detail): "\(name) isn't valid catalogue JSON — \(detail)"
+        case .unwritable(let detail): "Couldn't write \(name) — \(detail)"
         }
     }
 }

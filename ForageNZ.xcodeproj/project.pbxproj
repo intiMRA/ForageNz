@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A816877BA9AA045859E5529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817A298659AD6F2CD63D0228 /* Assets.xcassets */; };
 		2419EA989959E66CD9C14599 /* CautionPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */; };
+		264ED09A988065B705F34E20 /* CatalogueEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DF0D2BB9C0D5A58110687 /* CatalogueEditorApp.swift */; };
 		2CA3EAD76EAE4CE824C68675 /* SpeciesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD4F47E08118369C1720304 /* SpeciesRow.swift */; };
 		2FFEC43C9B4D53C2E4ACBA15 /* ForageNZApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F39B686CA0E9CE04181DD40 /* ForageNZApp.swift */; };
 		33F1FEE23644859BA88F9258 /* SpeciesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */; };
@@ -21,7 +22,12 @@
 		7D35632F1F5EEB570322D3E0 /* PoisonsCentre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163C64C7220DD70F766A16E /* PoisonsCentre.swift */; };
 		7F83D47960CFE20BF784F76C /* FieldGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452B052BD15DA513EB5F5BF3 /* FieldGuideUITests.swift */; };
 		88884AE952E8D6A46933C56A /* SpeciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */; };
+		914C98374F0108651F55C013 /* ForageCatalogue in Frameworks */ = {isa = PBXBuildFile; productRef = FCA8BB9C87B318851F23469F /* ForageCatalogue */; };
+		9259C8452BDD7F338B28B7A0 /* CatalogueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001C8B591D460EC849D511 /* CatalogueStore.swift */; };
+		993520DE95024A3F666F3E9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C28C6DA10AE33F73F5B94C /* Cocoa.framework */; };
 		9E8FC670A75374EEBCCECBC7 /* SafetyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE90969BDB0EBE6CF9F173 /* SafetyView.swift */; };
+		ADCE358E9BDD4BA324F73087 /* SpeciesEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A08516B887C616C0C2D6B0 /* SpeciesEditorView.swift */; };
+		B07C79F23F1BB365C0EEFFBE /* EditorRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230F2A934A37C1CF47C7C24 /* EditorRootView.swift */; };
 		B93BA6A59034E519AC12B2B9 /* CatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6276DE2F1556F1A782D58DEF /* CatalogueTests.swift */; };
 		BC7A270E66145A359CC6F5BB /* species.json in Resources */ = {isa = PBXBuildFile; fileRef = D6ECE46F98F836C2B53E8AA5 /* species.json */; };
 		C6508D90B2BD9E3DC2D0E545 /* ForageCatalogue in Frameworks */ = {isa = PBXBuildFile; productRef = 279E84FE33A5770883B72986 /* ForageCatalogue */; };
@@ -48,7 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08C28C6DA10AE33F73F5B94C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		09A9E85DA08B2A7D3ED5C7C9 /* BrowseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrowseView.swift; path = FieldGuide/BrowseView.swift; sourceTree = "<group>"; };
+		20B1543CD87D475CBC78AD1B /* CatalogueEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatalogueEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2163C64C7220DD70F766A16E /* PoisonsCentre.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PoisonsCentre.swift; path = Models/PoisonsCentre.swift; sourceTree = "<group>"; };
 		3DEE90969BDB0EBE6CF9F173 /* SafetyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafetyView.swift; path = Safety/SafetyView.swift; sourceTree = "<group>"; };
 		452B052BD15DA513EB5F5BF3 /* FieldGuideUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FieldGuideUITests.swift; sourceTree = "<group>"; };
@@ -57,16 +65,20 @@
 		6276DE2F1556F1A782D58DEF /* CatalogueTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueTests.swift; sourceTree = "<group>"; };
 		6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CautionPalette.swift; path = Components/CautionPalette.swift; sourceTree = "<group>"; };
 		6F567D725B05CA6E238F22C8 /* RootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		791DF0D2BB9C0D5A58110687 /* CatalogueEditorApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueEditorApp.swift; sourceTree = "<group>"; };
 		7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesDetailView.swift; path = FieldGuide/SpeciesDetailView.swift; sourceTree = "<group>"; };
 		817A298659AD6F2CD63D0228 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B5CFF23B8C79B576A8D1B65 /* ForageNZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRepository.swift; path = Catalogue/SpeciesRepository.swift; sourceTree = "<group>"; };
+		A1001C8B591D460EC849D511 /* CatalogueStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueStore.swift; sourceTree = "<group>"; };
 		B23CB3FA9353E11476EEC70C /* ForageNZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D3FB453CF93F89079D941E /* SpeciesStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesStoreTests.swift; sourceTree = "<group>"; };
+		B9A08516B887C616C0C2D6B0 /* SpeciesEditorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesEditorView.swift; sourceTree = "<group>"; };
 		D271FA601484668BEA2A2E9C /* ForageNZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForageNZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6ECE46F98F836C2B53E8AA5 /* species.json */ = {isa = PBXFileReference; includeInIndex = 1; name = species.json; path = Catalogue/species.json; sourceTree = "<group>"; };
 		D90B10EF78BEEEED358AB658 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Components/Layout.swift; sourceTree = "<group>"; };
 		DBD4F47E08118369C1720304 /* SpeciesRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRow.swift; path = Components/SpeciesRow.swift; sourceTree = "<group>"; };
+		E230F2A934A37C1CF47C7C24 /* EditorRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditorRootView.swift; sourceTree = "<group>"; };
 		E3BEAEAE3D024F1C6A9B9C10 /* CautionBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CautionBadge.swift; path = Components/CautionBadge.swift; sourceTree = "<group>"; };
 		E6C4ED5A9B62C12BD6C3E48E /* InSeasonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InSeasonView.swift; path = InSeason/InSeasonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +101,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59A07CD9D21AEFD694FBCCA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993520DE95024A3F666F3E9E /* Cocoa.framework in Frameworks */,
+				914C98374F0108651F55C013 /* ForageCatalogue in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FCBFD4959C37A4687CB679AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,6 +126,7 @@
 				D271FA601484668BEA2A2E9C /* ForageNZ.app */,
 				8B5CFF23B8C79B576A8D1B65 /* ForageNZTests.xctest */,
 				B23CB3FA9353E11476EEC70C /* ForageNZUITests.xctest */,
+				20B1543CD87D475CBC78AD1B /* CatalogueEditor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +158,14 @@
 			name = FieldGuide;
 			sourceTree = "<group>";
 		};
+		711F335DDFF6CDD5644F0103 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				08C28C6DA10AE33F73F5B94C /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
 		7127DAAD2E1698DAE324AB23 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,8 +180,22 @@
 				4537A289B0B2289A2594A27C /* ForageNZ */,
 				8B12CE910C09A1C47E310208 /* ForageNZTests */,
 				CE52BB10A395B7F229EC8BA2 /* ForageNZUITests */,
+				EDAA54BA5FF98C3FFF333A66 /* Frameworks */,
+				89A81489E415CD72F663CA81 /* CatalogueEditor */,
 				1EAF7E4DE18E3DAE6C74AAC9 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		89A81489E415CD72F663CA81 /* CatalogueEditor */ = {
+			isa = PBXGroup;
+			children = (
+				791DF0D2BB9C0D5A58110687 /* CatalogueEditorApp.swift */,
+				A1001C8B591D460EC849D511 /* CatalogueStore.swift */,
+				E230F2A934A37C1CF47C7C24 /* EditorRootView.swift */,
+				B9A08516B887C616C0C2D6B0 /* SpeciesEditorView.swift */,
+			);
+			name = CatalogueEditor;
+			path = CatalogueEditor;
 			sourceTree = "<group>";
 		};
 		8B12CE910C09A1C47E310208 /* ForageNZTests */ = {
@@ -209,9 +253,37 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
+		EDAA54BA5FF98C3FFF333A66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				711F335DDFF6CDD5644F0103 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		59A6A517C248344E43789972 /* CatalogueEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70E77FAB5437F8D15DB804AA /* Build configuration list for PBXNativeTarget "CatalogueEditor" */;
+			buildPhases = (
+				3470D031916E85148313F362 /* Sources */,
+				59A07CD9D21AEFD694FBCCA2 /* Frameworks */,
+				5706423444FC78CF32466E6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatalogueEditor;
+			packageProductDependencies = (
+				FCA8BB9C87B318851F23469F /* ForageCatalogue */,
+			);
+			productName = CatalogueEditor;
+			productReference = 20B1543CD87D475CBC78AD1B /* CatalogueEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
 		772F8AACA5208A949F28343E /* ForageNZTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2B8CAB986F0B6513588CC30 /* Build configuration list for PBXNativeTarget "ForageNZTests" */;
@@ -303,6 +375,7 @@
 				A30D369B280A270DB734DD97 /* ForageNZ */,
 				772F8AACA5208A949F28343E /* ForageNZTests */,
 				D52EE6FB1A38DE7E7509CA65 /* ForageNZUITests */,
+				59A6A517C248344E43789972 /* CatalogueEditor */,
 			);
 		};
 /* End PBXProject section */
@@ -324,6 +397,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5706423444FC78CF32466E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		980601161AE715F7337CDA81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,6 +419,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F83D47960CFE20BF784F76C /* FieldGuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3470D031916E85148313F362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264ED09A988065B705F34E20 /* CatalogueEditorApp.swift in Sources */,
+				9259C8452BDD7F338B28B7A0 /* CatalogueStore.swift in Sources */,
+				B07C79F23F1BB365C0EEFFBE /* EditorRootView.swift in Sources */,
+				ADCE358E9BDD4BA324F73087 /* SpeciesEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +572,32 @@
 			};
 			name = Release;
 		};
+		700A9389B975D4F187041D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.CatalogueEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "";
+			};
+			name = Debug;
+		};
 		85BFC4E628BC358C20BD2F71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -588,6 +705,32 @@
 			};
 			name = Debug;
 		};
+		CE3F0ACF060C3A3CB4CC4576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.CatalogueEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "";
+			};
+			name = Release;
+		};
 		E21CF96ECF49DC7644C3D0DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -641,6 +784,15 @@
 			buildConfigurations = (
 				E21CF96ECF49DC7644C3D0DF /* Release */,
 				C4F9C7556E69CB706DEBBF8D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70E77FAB5437F8D15DB804AA /* Build configuration list for PBXNativeTarget "CatalogueEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3F0ACF060C3A3CB4CC4576 /* Release */,
+				700A9389B975D4F187041D41 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -707,6 +859,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 657237127B68D0589BA6C34C /* XCRemoteSwiftPackageReference "Desing-Library-SPM" */;
 			productName = DesignLibrary;
+		};
+		FCA8BB9C87B318851F23469F /* ForageCatalogue */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
+			productName = ForageCatalogue;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
