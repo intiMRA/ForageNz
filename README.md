@@ -37,6 +37,39 @@ no distinguishing check, or a native species ships without harvesting guidance.
 
 Grouped by feature rather than by layer, matching the other apps in this folder.
 
+## Enriching the catalogue from external sources
+
+`Tools/enrich_catalogue.py` fills gaps from NZOR and iNaturalist. **It never overwrites
+anything you wrote.**
+
+```sh
+python3 Tools/enrich_catalogue.py                 # dry run: reports, changes nothing
+python3 Tools/enrich_catalogue.py --write         # applies the fills, then normalises
+python3 Tools/enrich_catalogue.py --stage-photos  # CC0/CC-BY candidates, staged not attached
+```
+
+Three categories, and the split is the point:
+
+| | Fields | Behaviour |
+|---|---|---|
+| **Fills when empty** | `moreImagesURL` | Matter of record — an iNaturalist taxon id |
+| **Never writes** | `identification`, `warnings`, `lookalikes`, `preparation`, `edibleParts`, `harvestEthics`, `sources`, `recipes`, `caution`, `summary`, `habitat`, `maoriName` | Judgement or safety-critical. From your books, never a script |
+| **Reports only** | `scientificName`, `origin`, te reo suggestions | A disagreement is a decision for you |
+
+Dry run is the default, because this touches safety-critical data.
+
+**Why `maoriName` is not auto-filled:** iNaturalist's `preferred_common_name` is
+locale-dependent and defaults to English — asked for te reo names it offered "Persian
+walnut", "King Bolete" and "garden nasturtium". `locale=mi` is far too patchy, returning
+nothing for kawakawa or horopito, whose te reo names *are* their common names. Candidates it
+does find are printed as suggestions.
+
+**Photos are staged, never attached.** A photo needs a caption naming the feature it shows,
+which is a human judgement; attach and caption them in the editor.
+
+What it found on first run: 26 entries gained an iNaturalist link, and NZOR disagrees with
+one name — it accepts **`Feijoa sellowiana`** where the catalogue says `Acca sellowiana`.
+
 ## Editing the catalogue
 
 `species.json` is edited with the **CatalogueEditor** scheme — a macOS app target in
