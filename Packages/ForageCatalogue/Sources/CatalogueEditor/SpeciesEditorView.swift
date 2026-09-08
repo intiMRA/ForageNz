@@ -8,6 +8,34 @@ struct SpeciesEditorView: View {
 
     var body: some View {
         Form {
+            if !species.validationIssues.isEmpty {
+                Section {
+                    ForEach(species.validationIssues) { issue in
+                        Label {
+                            VStack(alignment: .leading, spacing: 1) {
+                                Text(issue.message)
+                                Text(issue.field)
+                                    .font(.caption)
+                                    .monospaced()
+                                    .foregroundStyle(.secondary)
+                            }
+                        } icon: {
+                            Image(systemName: issue.severity == .blocking
+                                ? "exclamationmark.octagon.fill"
+                                : "info.circle")
+                                .foregroundStyle(issue.severity == .blocking ? .red : .secondary)
+                        }
+                    }
+                } header: {
+                    Text(species.isPublishable ? "Worth finishing" : "Still to fill in")
+                } footer: {
+                    if !species.isPublishable {
+                        Text("Red items fail the app's build, so the entry can't ship until they're resolved.")
+                            .font(.caption)
+                    }
+                }
+            }
+
             Section {
                 LabeledContent("Verification") {
                     if species.isVerified {
