@@ -37,6 +37,16 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BDB4B6D0E38E2FEB2917F750"
+               BuildableName = "CatalogueEditorUITests.xctest"
+               BlueprintName = "CatalogueEditorUITests"
+               ReferencedContainer = "container:ForageNZ.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

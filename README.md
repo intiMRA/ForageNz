@@ -48,6 +48,10 @@ because an app bundle launched from Xcode has neither a working directory nor a 
 inside the repo. That's fine for a developer tool and wrong for anything shipped — see
 `CatalogueLocator`.
 
+The entry is split into four tabs — **Entry**, **Photos**, **Safety**, **Sources** — each
+labelled with its own count of unfilled required fields, e.g. "Entry (5)". A single scrolling
+form buried the photo importer ten sections down.
+
 In the app: ⌘N adds a species, ⌘S saves. Nothing is written until you save; the sidebar
 marks unsaved entries and flags incomplete ones. Entries are grouped by verification
 priority, lethal claims first.
@@ -92,6 +96,13 @@ oversized file, an orphaned file, or a photo with no caption or credit.
 ```sh
 swift run catalogue-tool --photos   # budget used, missing files, orphans, thin entries
 ```
+
+`CatalogueEditorUITests` drives the real window: every tab reachable, the photo importer one
+click from the Photos tab, prose fields accepting typed text, and the derived identifier
+shown before a new species is committed. **macOS gates UI testing behind a one-time system
+authentication prompt**, so run it yourself the first time (⌘U in Xcode, or
+`xcodebuild test -scheme CatalogueEditor -destination 'platform=macOS'`) and approve the
+prompt.
 
 A caption is required because "the stem base" is the entire reason a photo helps, and a
 credit is required because CC BY obliges it — the app displays both.
