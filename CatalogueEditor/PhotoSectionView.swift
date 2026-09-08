@@ -12,6 +12,21 @@ struct PhotoSectionView: View {
 
     @State private var importError: String?
 
+    private var wantedPhotoCount: Int {
+        CataloguePhotos.recommendedCount(hasDeadlyLookalike: species.highestLookalikeRisk == .deadly)
+    }
+
+    /// Says why the count matters: nobody in the bush can look anything up.
+    private var emptyStateGuidance: String {
+        let base = "No photos yet. Aim for \(wantedPhotoCount): whole plant, leaf or frond detail, "
+            + "the diagnostic feature, and whatever it gets confused with."
+        let offline = " These are all a forager will have — there is no signal in the bush, "
+            + "so the web link is for planning at home, not for identifying in the field."
+        return species.highestLookalikeRisk == .deadly
+            ? base + " It has a deadly lookalike, so it needs more than usual." + offline
+            : base + offline
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             if photoDirectory == nil {
@@ -21,7 +36,7 @@ struct PhotoSectionView: View {
             }
 
             if species.photos.isEmpty {
-                Text("No photos yet. \(CataloguePhotos.recommendedCount) is usually enough to identify something: whole plant, leaf detail, the diagnostic feature, and the confusable part.")
+                Text(emptyStateGuidance)
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -67,7 +82,7 @@ struct PhotoSectionView: View {
                     )
                 )
                 .textFieldStyle(.roundedBorder)
-                Text("An iNaturalist taxon page is the best bet — many photos, and licences stated.")
+                Text("For planning and checking at home. It needs a connection, so it is no help in the field.")
                     .font(.caption2)
                     .foregroundStyle(.secondary)
             }

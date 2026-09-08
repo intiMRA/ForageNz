@@ -99,12 +99,18 @@ public extension ForageSpecies {
             }
         }
 
-        if caution != .doNotEat && photos.count < CataloguePhotos.recommendedCount {
+        let wantedPhotos = CataloguePhotos.recommendedCount(
+            hasDeadlyLookalike: highestLookalikeRisk == .deadly
+        )
+        if caution != .doNotEat && photos.count < wantedPhotos {
             advisory(
                 "photos",
                 photos.isEmpty
-                    ? "No photos. It can't realistically be identified from text alone."
-                    : "Only \(photos.count) photo(s); \(CataloguePhotos.recommendedCount) makes it identifiable."
+                    ? "No photos. It can't be identified from text alone, and there is no signal in the bush to look any up."
+                    : "Only \(photos.count) of \(wantedPhotos) photos."
+                        + (highestLookalikeRisk == .deadly
+                            ? " It has a deadly lookalike, so it needs more than usual."
+                            : "")
             )
         }
 

@@ -21,9 +21,14 @@ struct SpeciesPhotoStrip: View {
             .scrollIndicators(.visible)
 
             if let url = species.moreImagesURL {
-                Link(destination: url) {
-                    Label("More photos on the web", systemImage: "safari")
-                        .font(.subheadline)
+                VStack(alignment: .leading, spacing: .xxxSmall) {
+                    Link(destination: url) {
+                        Label("More photos on the web", systemImage: "safari")
+                            .font(.subheadline)
+                    }
+                    Text("Needs a connection — look before you go, not while you're out.")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
                 }
             }
         }
