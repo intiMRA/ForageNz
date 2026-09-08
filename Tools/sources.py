@@ -58,13 +58,19 @@ class Source(StrEnum):
     NZOR_SEARCH = "https://data.nzor.org.nz/names/search"
     INAT_TAXA = "https://api.inaturalist.org/v1/taxa"
     INAT_OBSERVATIONS = "https://api.inaturalist.org/v1/observations"
+    INAT_HISTOGRAM = "https://api.inaturalist.org/v1/observations/histogram"
+
+
+#: iNaturalist's place id for New Zealand. Establishment means and seasonality are both
+#: place-scoped — a species introduced here may be native somewhere else.
+NEW_ZEALAND_PLACE_ID = 6803
 
 
 class SourceError(Exception):
     """A source could not be reached or returned something unusable."""
 
 
-def get_json(url: Source, params: dict[str, object]) -> dict[str, Any]:
+def get_json(url: Source | str, params: dict[str, object]) -> dict[str, Any]:
     request = urllib.request.Request(
         f"{url}?{urllib.parse.urlencode(params)}",
         headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
@@ -79,7 +85,7 @@ def get_json(url: Source, params: dict[str, object]) -> dict[str, Any]:
     return payload
 
 
-def results_of(url: Source, params: dict[str, object]) -> list[dict[str, Any]]:
+def results_of(url: Source | str, params: dict[str, object]) -> list[dict[str, Any]]:
     """The `results` array, or empty. Raises `SourceError` if the call fails."""
     payload = get_json(url, params)
     results = payload.get("results")

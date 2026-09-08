@@ -93,7 +93,24 @@ Three categories, and the split is the point:
 |---|---|---|
 | **Fills when empty** | `moreImagesURL` | Matter of record — an iNaturalist taxon id |
 | **Never writes** | `identification`, `warnings`, `lookalikes`, `preparation`, `edibleParts`, `harvestEthics`, `sources`, `recipes`, `caution`, `summary`, `habitat`, `maoriName` | Judgement or safety-critical. From your books, never a script |
-| **Reports only** | `scientificName`, `origin`, te reo suggestions | A disagreement is a decision for you |
+| **Reports only** | `scientificName`, `origin`, `months`, conservation status, te reo suggestions | A disagreement is a decision for you |
+
+"Empty" means absent or the empty string, never whitespace — the rule that this script never
+overwrites is kept total, because an exception for "looks blank enough" is one somebody has
+to remember. A whitespace-only field is reported instead, so a stray space cannot silently
+block enrichment. `Tools/tests/` exists to make that invariant fail loudly if it breaks.
+
+### What it reads from iNaturalist
+
+- **`establishment_means`** for the New Zealand place: `endemic` / `native` / `introduced`.
+  Finer than the catalogue's `native`, and an endemic species is a stronger reason to
+  harvest sparingly than "native" alone conveys — so it suggests saying so.
+- **`conservation_status`** — flagged loudly, because presenting a threatened species as
+  foragable is a different kind of mistake.
+- **Seasonality**: research-grade NZ observations per month. Reported only, and only when
+  the observed peak is *narrower* than what the entry claims. Observation counts are not a
+  harvest window — a perennial like kawakawa is photographed year-round regardless of when
+  its leaves are worth picking, so an all-year peak says nothing and is suppressed.
 
 Dry run is the default, because this touches safety-critical data.
 

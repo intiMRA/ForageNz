@@ -9,12 +9,17 @@ requires-python = ">=3.11"
 dependencies = ["certifi"]
 
 [project.optional-dependencies]
-dev = ["mypy>=1.11", "ruff>=0.6"]
+dev = ["mypy>=1.11", "ruff>=0.6", "pytest>=8.0"]
 
 [tool.setuptools]
 # Scripts, not an importable package — run them through the PyCharm configurations or
 # directly with `python Tools/<script>.py` from the repo root.
 py-modules = []
+
+[tool.pytest.ini_options]
+# Tools/ holds scripts rather than an installed package, so put it on the path.
+pythonpath = ["Tools"]
+testpaths = ["Tools/tests"]
 
 [tool.mypy]
 python_version = "3.11"
