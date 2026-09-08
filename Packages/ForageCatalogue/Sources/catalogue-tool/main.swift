@@ -58,6 +58,47 @@ if arguments.contains("--normalise") {
     exit(0)
 }
 
+if let flag = arguments.firstIndex(of: "--evaluate") {
+    guard arguments.count > flag + 1 else {
+        FileHandle.standardError.write(Data("--evaluate needs a directory of labelled photos\n".utf8))
+        exit(2)
+    }
+    let directory = URL(fileURLWithPath: arguments[flag + 1])
+    let report = MatcherEvaluation.run(directory: directory)
+
+    guard report.queries > 0 else {
+        FileHandle.standardError.write(Data("No species with 2+ photos found in \(directory.path)\n".utf8))
+        exit(1)
+    }
+
+    print("Leave-one-out over \(report.queries) photos, \(report.perSpecies.count) species\n")
+    func pad(_ text: String, _ width: Int) -> String {
+        text.count >= width ? text : text + String(repeating: " ", count: width - text.count)
+    }
+    func percent(_ part: Int, of whole: Int) -> String {
+        whole == 0 ? "  -" : String(format: "%3d%%", Int(Double(part) / Double(whole) * 100))
+    }
+
+    print("\(pad("species", 20)) n  top1  top3   own  rival  margin  confused with")
+    print(String(repeating: "-", count: 78))
+    for result in report.perSpecies.sorted(by: { $0.margin < $1.margin }) {
+        let numbers = String(
+            format: "%2d  %@  %@  %.2f   %.2f  %+.2f",
+            result.queries,
+            percent(result.top1, of: result.queries),
+            percent(result.top3, of: result.queries),
+            result.meanOwnDistance,
+            result.meanRivalDistance,
+            result.margin
+        )
+        print("\(pad(result.speciesId, 20)) \(numbers)  \(report.confusions[result.speciesId] ?? "")")
+    }
+    print(String(repeating: "-", count: 78))
+    print(String(format: "overall top-1 %.1f%%   top-3 %.1f%%",
+                 report.top1Accuracy * 100, report.top3Accuracy * 100))
+    exit(0)
+}
+
 if arguments.contains("--index") {
     let species = loadCatalogue()
     let photoDirectory = PhotoAudit.directory(forCatalogueAt: url)
@@ -151,6 +192,7 @@ catalogue-tool — headless catalogue maintenance
   --check                report blocking validation issues
   --photos               report photo budget, missing files and orphans
   --index                build the photo match index and report its separation
+  --evaluate <dir>       leave-one-out accuracy over a directory of labelled photos
   --catalogue <path>     use a different catalogue file
 
 The editor with a window is the CatalogueEditor scheme in ForageNZ.xcodeproj.

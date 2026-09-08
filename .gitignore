@@ -19,3 +19,6 @@ xcuserdata/
 
 # macOS
 .DS_Store
+
+# Evaluation photos: openly-licensed test data, fetched on demand, never shipped.
+.eval-photos/

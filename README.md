@@ -133,18 +133,34 @@ The screen leads with "This does not identify anything", and while fewer than fi
 have photos it shows a warning that results are meaningless — with one prototype, everything
 "matches" it.
 
-**Whether this is good enough is undecided.** With the only photographed species so far:
+### Measured accuracy
 
-| Measurement | Distance (0–2 scale) |
-|---|---|
-| Between two photos of the same species | 0.719 |
-| To an unrelated control image | 1.156 |
+`Tools/fetch_eval_photos.py` pulls CC0/CC-BY photos from iNaturalist into `.eval-photos/`
+(gitignored, never shipped, attribution recorded in a manifest). `catalogue-tool --evaluate`
+then runs leave-one-out: each photo is scored against prototypes built from the *other*
+photos of its species, so a prototype can never contain its own query.
 
-There is signal, but the margin is not wide, and the number that decides it — distance
-*between* visually similar species — needs photos for two or three of the brown-capped
-mushrooms (porcini, slippery jack, field mushroom). If between-species separation is not
-clearly above the 0.72 within-species spread, generic features are not enough and the next
-step is a plant-specific backbone.
+**14 species, 112 photos: top-1 78.6%, top-3 94.6%.**
+
+Top-3 is the number that matters — the screen presents candidates to read, not an answer.
+
+The margins are the warning. Mean distance to a species' own prototype versus the nearest
+rival differs by only +0.00 to +0.19 on a 0–2 scale, so the ranking is fragile: a change of
+background or light can flip it. Two failures are instructive:
+
+- **chickweed 37% top-1, margin −0.00**, confused with watercress. The embedding cannot do
+  fine-grained green leafy plants.
+- **field mushroom and saffron milk cap each lost one photo to death cap.** That is the safe
+  direction of error — over-caution — and no death cap photo matched an edible species. On
+  eight photos that is reassuring, not a guarantee.
+
+Two caveats on the 78.6%: iNaturalist research-grade photos are well framed and well lit, so
+a phone photo in a gully will do worse; and the evaluation built prototypes from seven photos
+per species where the app ships four.
+
+The conclusion is that this is sound as a *narrowing* aid and unsound as identification —
+which is why the screen says so. Widening those margins is what a plant-specific backbone
+(PlantCLEF DINOv2) would buy.
 
 ## Validation
 
