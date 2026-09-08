@@ -30,6 +30,7 @@ no distinguishing check, or a native species ships without harvesting guidance.
 | `ForageNZ/Catalogue/` | `species.json`, `SpeciesRepository` (protocol + bundled actor), `SpeciesStore` (`@Observable @MainActor`). |
 | `ForageNZ/InSeason/` | What's worth looking for this month. |
 | `ForageNZ/FieldGuide/` | Searchable catalogue with category + origin filters, and the species detail screen. |
+| `ForageNZ/Match/` | The Match tab: photo picker, and the actor that builds the index off the main actor. |
 | `ForageNZ/Safety/` | Ground rules, the do-not-eat list, and species with deadly lookalikes. |
 | `ForageNZ/Components/` | Shared UI: `SpeciesRow`, `CautionBadge`, `CautionPalette`, `Layout`. |
 | `ForageNZTests/` | Swift Testing: store filtering and shipped-catalogue integrity. |
@@ -127,6 +128,11 @@ Feature prints are not comparable across Vision revisions, so `PhotoIndex` recor
 revision it was built with and `requireCompatible(queryRevision:)` refuses a mismatch rather
 than returning meaningless distances.
 
+It surfaces in the app as the **Match** tab: pick a photo, get the closest entries to read.
+The screen leads with "This does not identify anything", and while fewer than five entries
+have photos it shows a warning that results are meaningless — with one prototype, everything
+"matches" it.
+
 **Whether this is good enough is undecided.** With the only photographed species so far:
 
 | Measurement | Distance (0–2 scale) |
@@ -138,7 +144,7 @@ There is signal, but the margin is not wide, and the number that decides it — 
 *between* visually similar species — needs photos for two or three of the brown-capped
 mushrooms (porcini, slippery jack, field mushroom). If between-species separation is not
 clearly above the 0.72 within-species spread, generic features are not enough and the next
-step is a plant-specific backbone. No camera UI exists yet, deliberately.
+step is a plant-specific backbone.
 
 ## Validation
 
