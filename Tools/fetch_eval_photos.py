@@ -47,6 +47,19 @@ TAXA = {
 }
 
 
+# Plants that are common in NZ and deliberately NOT in the catalogue. Several are
+# seriously toxic, which is the point: photographing one must not produce a confident
+# shortlist of edible entries.
+OUT_OF_CATALOGUE = {
+    "foxglove": "Digitalis purpurea",
+    "hemlock": "Conium maculatum",
+    "ragwort": "Jacobaea vulgaris",
+    "agapanthus": "Agapanthus praecox",
+    "arum-lily": "Zantedeschia aethiopica",
+    "buttercup": "Ranunculus repens",
+}
+
+
 def request_json(url: str) -> dict:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(request, timeout=30) as response:
@@ -82,13 +95,15 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--per-species", type=int, default=8)
     parser.add_argument("--out", default=".eval-photos")
+    parser.add_argument("--set", choices=["catalogue", "out-of-catalogue"], default="catalogue")
     arguments = parser.parse_args()
 
     root = pathlib.Path(arguments.out)
     root.mkdir(parents=True, exist_ok=True)
     manifest: dict[str, list[dict]] = {}
 
-    for species_id, scientific_name in TAXA.items():
+    taxa = TAXA if arguments.set == "catalogue" else OUT_OF_CATALOGUE
+    for species_id, scientific_name in taxa.items():
         directory = root / species_id
         directory.mkdir(exist_ok=True)
         records: list[dict] = []

@@ -49,15 +49,6 @@ struct RootView: View {
                 }
             }
 
-            Tab("Match", systemImage: "camera.viewfinder") {
-                NavigationStack {
-                    MatchView()
-                        .navigationDestination(for: ForageSpecies.self) { species in
-                            SpeciesDetailView(species: species)
-                        }
-                }
-            }
-
             Tab("Safety", systemImage: "exclamationmark.shield") {
                 NavigationStack {
                     SafetyView()
