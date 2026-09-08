@@ -1,5 +1,8 @@
+import CoreGraphics
 import ForageCatalogue
 import Foundation
+import ImageIO
+import UniformTypeIdentifiers
 
 // Headless catalogue maintenance. The GUI editor is the `CatalogueEditor` target in
 // ForageNZ.xcodeproj; this exists so formatting and checking can run without a window
@@ -13,6 +16,25 @@ let arguments = CommandLine.arguments
 guard let url = CatalogueLocator.resolve() else {
     FileHandle.standardError.write(Data("Couldn't find \(CatalogueLocator.relativePath). Pass --catalogue <path>.\n".utf8))
     exit(1)
+}
+
+/// A flat mid-grey image: the "nothing like a plant" baseline for calibration.
+func makeControlImage() -> URL? {
+    guard let context = CGContext(
+        data: nil, width: 320, height: 320, bitsPerComponent: 8, bytesPerRow: 0,
+        space: CGColorSpaceCreateDeviceRGB(),
+        bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue
+    ) else { return nil }
+    context.setFillColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1)
+    context.fill(CGRect(x: 0, y: 0, width: 320, height: 320))
+
+    guard let image = context.makeImage() else { return nil }
+    let url = URL(fileURLWithPath: NSTemporaryDirectory()).appending(path: "control-\(UUID().uuidString).png")
+    guard let destination = CGImageDestinationCreateWithURL(
+        url as CFURL, UTType.png.identifier as CFString, 1, nil
+    ) else { return nil }
+    CGImageDestinationAddImage(destination, image, nil)
+    return CGImageDestinationFinalize(destination) ? url : nil
 }
 
 func loadCatalogue() -> [ForageSpecies] {
@@ -33,6 +55,58 @@ if arguments.contains("--normalise") {
         exit(1)
     }
     print("Normalised \(species.count) entries in \(url.path(percentEncoded: false))")
+    exit(0)
+}
+
+if arguments.contains("--index") {
+    let species = loadCatalogue()
+    let photoDirectory = PhotoAudit.directory(forCatalogueAt: url)
+    let (index, skipped) = PhotoIndex.build(species: species, photoDirectory: photoDirectory)
+
+    print("Vision feature-print revision \(index.revision)")
+    print("\(index.prototypes.count) prototype(s) from \(index.prototypes.reduce(0) { $0 + $1.photoCount }) photo(s)")
+    if !skipped.isEmpty { print("unreadable: \(skipped.joined(separator: ", "))") }
+
+    // Within-species spread: how far apart are two photos of the SAME species?
+    for entry in species where entry.photos.count >= 2 {
+        let vectors = entry.photos.compactMap {
+            try? PhotoMatcher.featureVector(for: photoDirectory.appending(path: $0.fileName), revision: index.revision)
+        }
+        var worst: Float = 0
+        for i in vectors.indices {
+            for j in vectors.indices where j > i {
+                worst = max(worst, vectors[i].distance(to: vectors[j]))
+            }
+        }
+        print(String(format: "within  %@: widest gap between its own photos %.3f", entry.id, worst))
+    }
+
+    // Between-species: the nearest other prototype. Needs to exceed the within figure for
+    // matching to mean anything.
+    for a in index.prototypes {
+        let nearest = index.prototypes
+            .filter { $0.speciesId != a.speciesId }
+            .map { (id: $0.speciesId, d: a.vector.distance(to: $0.vector)) }
+            .min { $0.d < $1.d }
+        if let nearest {
+            print(String(format: "between %@: nearest is %@ at %.3f", a.speciesId, nearest.id, nearest.d))
+        }
+    }
+    if index.prototypes.count < 2 {
+        print("Only one species has photos — between-species separation can't be measured yet.")
+    }
+
+    // Calibration: how far is an unrelated image? Within-species distance has to be well
+    // below this for ranking to carry any signal.
+    if let control = makeControlImage() {
+        defer { try? FileManager.default.removeItem(at: control) }
+        if let controlVector = try? PhotoMatcher.featureVector(for: control, revision: index.revision) {
+            for a in index.prototypes {
+                print(String(format: "control %@: distance to an unrelated image %.3f",
+                             a.speciesId, a.vector.distance(to: controlVector)))
+            }
+        }
+    }
     exit(0)
 }
 
@@ -76,6 +150,7 @@ catalogue-tool — headless catalogue maintenance
   --normalise            rewrite species.json in the canonical shape
   --check                report blocking validation issues
   --photos               report photo budget, missing files and orphans
+  --index                build the photo match index and report its separation
   --catalogue <path>     use a different catalogue file
 
 The editor with a window is the CatalogueEditor scheme in ForageNZ.xcodeproj.

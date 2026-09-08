@@ -107,6 +107,39 @@ prompt.
 A caption is required because "the stem base" is the entire reason a photo helps, and a
 credit is required because CC BY obliges it — the app displays both.
 
+## Photo matching (experiment, not shipped)
+
+`PhotoMatcher` + `PhotoIndex` rank a query image against the catalogue's own photos using
+Vision feature prints — nearest-neighbour over a frozen embedding rather than a trained
+classifier, because the catalogue is a closed set of ~30 species with a handful of photos
+each. No training, no model to ship, and a prototype is ~3 KB against ~90 KB per photo.
+
+```sh
+swift run catalogue-tool --index   # build prototypes and report separation
+```
+
+**It ranks; it never identifies.** `matches(for:limit:)` returns candidates for the user to
+read the lookalike checks against, and a `doNotEat` entry is never cut by the result limit —
+if something scores near death cap, that is the most important thing to show, not the
+next-best edible guess.
+
+Feature prints are not comparable across Vision revisions, so `PhotoIndex` records the
+revision it was built with and `requireCompatible(queryRevision:)` refuses a mismatch rather
+than returning meaningless distances.
+
+**Whether this is good enough is undecided.** With the only photographed species so far:
+
+| Measurement | Distance (0–2 scale) |
+|---|---|
+| Between two photos of the same species | 0.719 |
+| To an unrelated control image | 1.156 |
+
+There is signal, but the margin is not wide, and the number that decides it — distance
+*between* visually similar species — needs photos for two or three of the brown-capped
+mushrooms (porcini, slippery jack, field mushroom). If between-species separation is not
+clearly above the 0.72 within-species spread, generic features are not enough and the next
+step is a plant-specific backbone. No camera UI exists yet, deliberately.
+
 ## Validation
 
 Per-entry rules live in `ForageSpecies.validationIssues`, split into blocking (fails the
