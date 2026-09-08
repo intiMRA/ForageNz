@@ -37,6 +37,39 @@ no distinguishing check, or a native species ships without harvesting guidance.
 
 Grouped by feature rather than by layer, matching the other apps in this folder.
 
+## Python tooling
+
+The tools in `Tools/` are Python. They need 3.11+ (`StrEnum`), and the system `python3` on
+this machine is 3.8 — use the virtualenv:
+
+```sh
+python3.13 -m venv .venv
+.venv/bin/pip install -e ".[dev]"
+
+.venv/bin/mypy          # the verify gate: strict, must be clean
+.venv/bin/ruff check Tools/
+.venv/bin/ruff format Tools/
+```
+
+**In PyCharm:** open the repo root as the project, set the interpreter to `.venv/bin/python`
+(Settings → Project → Python Interpreter → Add → Existing). Five run configurations are
+committed in `.idea/runConfigurations/` and appear in the run dropdown:
+
+| Configuration | Does |
+|---|---|
+| Enrich catalogue (dry run) | Reports fills, suggestions and disagreements. Changes nothing |
+| Enrich catalogue (write) | Applies the fills, then normalises |
+| Stage photos for review | Downloads CC-licensed candidates to `.staged-photos/` |
+| Fetch eval photos | Evaluation set for the matcher harness |
+| Fetch eval photos (out-of-catalogue) | The negative set, for open-set testing |
+
+Each sets the working directory to the repo root — every tool resolves paths from there.
+
+`certifi` is the one runtime dependency, and only because Homebrew Python ships without the
+macOS trust store wired up: without it HTTPS fails with `CERTIFICATE_VERIFY_FAILED`.
+Disabling verification instead would not be acceptable when fetching into a safety-critical
+dataset.
+
 ## Enriching the catalogue from external sources
 
 `Tools/enrich_catalogue.py` fills gaps from NZOR and iNaturalist. **It never overwrites
@@ -47,6 +80,12 @@ python3 Tools/enrich_catalogue.py                 # dry run: reports, changes no
 python3 Tools/enrich_catalogue.py --write         # applies the fills, then normalises
 python3 Tools/enrich_catalogue.py --stage-photos  # CC0/CC-BY candidates, staged not attached
 ```
+
+It is not a discovery tool either. It iterates the species already in the catalogue and
+looks each one up by the scientific name you wrote, so it cannot introduce a species you
+have not vetted — a guard aborts the write if the entry set changes. No source it queries
+knows what is edible: iNaturalist, NZOR and GBIF carry taxonomy, distribution and
+conservation status, not edibility. Deciding something is foragable stays editorial.
 
 Three categories, and the split is the point:
 
