@@ -3,7 +3,7 @@ import Foundation
 /// A calendar month, used to express when a species is worth looking for.
 ///
 /// Seasons follow the southern-hemisphere calendar: summer is December–February.
-nonisolated enum ForageMonth: Int, Codable, Sendable, CaseIterable, Comparable {
+public nonisolated enum ForageMonth: Int, Codable, Sendable, CaseIterable, Comparable {
     case january = 1
     case february
     case march
@@ -17,7 +17,7 @@ nonisolated enum ForageMonth: Int, Codable, Sendable, CaseIterable, Comparable {
     case november
     case december
 
-    var displayName: String {
+    public var displayName: String {
         switch self {
         case .january: "January"
         case .february: "February"
@@ -34,7 +34,7 @@ nonisolated enum ForageMonth: Int, Codable, Sendable, CaseIterable, Comparable {
         }
     }
 
-    var shortName: String {
+    public var shortName: String {
         switch self {
         case .january: "Jan"
         case .february: "Feb"
@@ -51,25 +51,25 @@ nonisolated enum ForageMonth: Int, Codable, Sendable, CaseIterable, Comparable {
         }
     }
 
-    static let count = allCases.count
+    public static let count = allCases.count
 
-    static func < (lhs: ForageMonth, rhs: ForageMonth) -> Bool {
+    public static func < (lhs: ForageMonth, rhs: ForageMonth) -> Bool {
         lhs.rawValue < rhs.rawValue
     }
 
     /// Treats the calendar as circular, so December is immediately before January.
-    func isImmediatelyAfter(_ other: ForageMonth) -> Bool {
+    public func isImmediatelyAfter(_ other: ForageMonth) -> Bool {
         (other.rawValue % Self.count) + 1 == rawValue
     }
 
     /// Months forward from `other` to `self`, wrapping at the end of the year.
-    func monthsAfter(_ other: ForageMonth) -> Int {
+    public func monthsAfter(_ other: ForageMonth) -> Int {
         (rawValue - other.rawValue + Self.count) % Self.count
     }
 
     /// Falls back to `.january` only if the calendar yields a month outside 1...12,
     /// which `Calendar` does not do for a valid `Date`.
-    static func containing(_ date: Date, calendar: Calendar = .current) -> ForageMonth {
+    public static func containing(_ date: Date, calendar: Calendar = .current) -> ForageMonth {
         ForageMonth(rawValue: calendar.component(.month, from: date)) ?? .january
     }
 }

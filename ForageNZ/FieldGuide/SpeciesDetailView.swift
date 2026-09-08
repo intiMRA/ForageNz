@@ -1,4 +1,5 @@
 import DesignLibrary
+import ForageCatalogue
 import SwiftUI
 
 struct SpeciesDetailView: View {
@@ -49,6 +50,23 @@ struct SpeciesDetailView: View {
                     section("Harvesting & tikanga", systemImage: "hands.sparkles") {
                         Text(ethics)
                     }
+                }
+
+                if species.isVerified {
+                    section("Sources", systemImage: "book.closed") {
+                        VStack(alignment: .leading, spacing: .xxSmall) {
+                            ForEach(species.sources, id: \.self) { source in
+                                Text(source)
+                            }
+                        }
+                    }
+                } else {
+                    banner(
+                        title: "Not yet checked",
+                        message: "This entry has not been verified against a published field guide. Treat it as a starting point for your own identification, not an authority.",
+                        tint: CautionLevel.careRequired.tintColor,
+                        systemImage: "questionmark.circle.fill"
+                    )
                 }
 
                 disclaimer

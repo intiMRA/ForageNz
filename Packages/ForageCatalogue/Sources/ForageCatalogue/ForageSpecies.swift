@@ -1,30 +1,33 @@
 import Foundation
 
 /// A single wild food entry in the field guide.
-nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiable {
-    let id: String
-    let commonName: String
+public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiable {
+    public let id: String
+    public let commonName: String
     /// Te reo Māori name, where the species has one in common use.
-    let maoriName: String?
-    let scientificName: String
-    let category: ForageCategory
-    let origin: ForageOrigin
-    let caution: CautionLevel
+    public let maoriName: String?
+    public let scientificName: String
+    public let category: ForageCategory
+    public let origin: ForageOrigin
+    public let caution: CautionLevel
     /// Months worth looking. Empty means available year-round.
-    let months: [ForageMonth]
+    public let months: [ForageMonth]
     /// One-line hook shown in lists.
-    let summary: String
-    let habitat: String
-    let identification: String
-    let edibleParts: String
-    let preparation: String
-    let lookalikes: [Lookalike]
+    public let summary: String
+    public let habitat: String
+    public let identification: String
+    public let edibleParts: String
+    public let preparation: String
+    public let lookalikes: [Lookalike]
     /// Hard safety facts — processing requirements, toxic parts, contamination risks.
-    let warnings: [String]
+    public let warnings: [String]
     /// Tikanga, access and conservation notes: rāhui, DOC land, taking sparingly.
-    let harvestEthics: String?
+    public let harvestEthics: String?
+    /// Where this entry's claims were checked. Empty means unverified.
+    public let sources: [String]
+    public let recipes: [Recipe]
 
-    init(
+    public init(
         id: String,
         commonName: String,
         maoriName: String? = nil,
@@ -40,7 +43,9 @@ nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiable {
         preparation: String,
         lookalikes: [Lookalike] = [],
         warnings: [String] = [],
-        harvestEthics: String? = nil
+        harvestEthics: String? = nil,
+        sources: [String] = [],
+        recipes: [Recipe] = []
     ) {
         self.id = id
         self.commonName = commonName
@@ -58,13 +63,18 @@ nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiable {
         self.lookalikes = lookalikes
         self.warnings = warnings
         self.harvestEthics = harvestEthics
+        self.sources = sources
+        self.recipes = recipes
     }
 
+    /// `true` once someone has checked this entry against a field guide.
+    public var isVerified: Bool { !sources.isEmpty }
+
     /// `true` when the species has no seasonal window and is worth looking for at any time.
-    var isYearRound: Bool { months.isEmpty }
+    public var isYearRound: Bool { months.isEmpty }
 
     /// Year-round species are in season in every month.
-    func isInSeason(in month: ForageMonth) -> Bool {
+    public func isInSeason(in month: ForageMonth) -> Bool {
         isYearRound || months.contains(month)
     }
 
@@ -73,7 +83,7 @@ nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiable {
     /// Contiguous runs collapse to a range; scattered months are listed individually.
     /// Seasons are treated as circular, because southern-hemisphere seasons routinely wrap
     /// the new year — a plain numeric sort would render Nov–Feb as "Jan, Feb, Nov, Dec".
-    var seasonDescription: String {
+    public var seasonDescription: String {
         guard !months.isEmpty else { return "Year-round" }
         let ordered = orderedSeasonMonths
         guard let first = ordered.first, let last = ordered.last else { return "Year-round" }
@@ -107,7 +117,7 @@ nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiable {
     }
 
     /// Text the search field matches against.
-    var searchableText: String {
+    public var searchableText: String {
         [commonName, maoriName, scientificName, summary]
             .compactMap(\.self)
             .joined(separator: " ")
@@ -116,7 +126,7 @@ nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiable {
 
     /// The worst lookalike risk attached to this species, if any — used to surface
     /// a deadly-confusion warning before the user goes looking.
-    var highestLookalikeRisk: LookalikeRisk? {
+    public var highestLookalikeRisk: LookalikeRisk? {
         lookalikes.map(\.risk).max()
     }
 }

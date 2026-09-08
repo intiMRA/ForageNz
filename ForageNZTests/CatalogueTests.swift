@@ -1,3 +1,4 @@
+import ForageCatalogue
 import Foundation
 import Testing
 
@@ -9,8 +10,54 @@ import Testing
 /// product defect, not a content nicety. These tests fail the build when one slips in.
 @Suite("Shipped catalogue")
 struct CatalogueTests {
+    /// Entries drafted from general knowledge and not yet checked against a field guide.
+    ///
+    /// Delete an id once its `sources` are filled in. The two tests below enforce both
+    /// directions, so this list can only shrink: a new entry with no sources fails, and an
+    /// id left here after being sourced also fails.
+    ///
+    /// Verify in this order — these make lethal claims:
+    /// tutu, death-cap, karaka, wild-fennel, field-mushroom, nettle, sea-celery.
+    private static let pendingVerification: Set<String> = [
+        // Lethal claims — highest priority.
+        "tutu", "death-cap", "karaka", "wild-fennel", "field-mushroom", "nettle", "sea-celery",
+        // Need care: processing requirements or toxic parts.
+        "watercress", "chickweed", "elderflower", "rosehip", "poroporo", "sweet-chestnut",
+        "slippery-jack", "saffron-milk-cap", "pikopiko", "kawakawa", "bull-kelp", "sea-lettuce",
+        // Straightforward.
+        "puha", "dandelion", "miners-lettuce", "horopito", "nasturtium", "blackberry", "feijoa",
+        "wild-plum", "cherry-guava", "wood-ear", "karengo", "walnut"
+    ]
+
     private func loadCatalogue() async throws -> [ForageSpecies] {
         try await BundledSpeciesRepository().loadSpecies()
+    }
+
+    @Test("Every unsourced entry is on the known pending-verification list")
+    func unsourcedEntriesAreDeclared() async throws {
+        for entry in try await loadCatalogue() where !entry.isVerified {
+            #expect(
+                Self.pendingVerification.contains(entry.id),
+                "\(entry.id) has no sources and is not declared pending — fill in sources before shipping it"
+            )
+        }
+    }
+
+    @Test("The pending-verification list has no stale or unknown ids")
+    func pendingVerificationListIsCurrent() async throws {
+        let catalogue = try await loadCatalogue()
+        let ids = Set(catalogue.map(\.id))
+
+        for pending in Self.pendingVerification {
+            #expect(ids.contains(pending), "\(pending) is declared pending but is not in the catalogue")
+        }
+
+        for entry in catalogue where entry.isVerified {
+            #expect(
+                !Self.pendingVerification.contains(entry.id),
+                "\(entry.id) now has sources — remove it from pendingVerification"
+            )
+        }
     }
 
     @Test("The bundled catalogue decodes")

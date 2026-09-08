@@ -1,6 +1,6 @@
 import Foundation
 
-nonisolated enum ForageCategory: String, Codable, Sendable, CaseIterable, Identifiable {
+public nonisolated enum ForageCategory: String, Codable, Sendable, CaseIterable, Identifiable {
     case greens
     case herbs
     case fruit
@@ -8,9 +8,9 @@ nonisolated enum ForageCategory: String, Codable, Sendable, CaseIterable, Identi
     case seaweed
     case nuts
 
-    var id: String { rawValue }
+    public var id: String { rawValue }
 
-    var displayName: String {
+    public var displayName: String {
         switch self {
         case .greens: "Greens & leaves"
         case .herbs: "Herbs & flavour"
@@ -21,7 +21,7 @@ nonisolated enum ForageCategory: String, Codable, Sendable, CaseIterable, Identi
         }
     }
 
-    var symbolName: String {
+    public var symbolName: String {
         switch self {
         case .greens: "leaf"
         case .herbs: "camera.macro"
@@ -35,14 +35,14 @@ nonisolated enum ForageCategory: String, Codable, Sendable, CaseIterable, Identi
 
 /// Where a species sits relative to Aotearoa's own flora — which drives how
 /// freely it can be harvested.
-nonisolated enum ForageOrigin: String, Codable, Sendable, CaseIterable, Identifiable {
+public nonisolated enum ForageOrigin: String, Codable, Sendable, CaseIterable, Identifiable {
     case native
     case introduced
     case pest
 
-    var id: String { rawValue }
+    public var id: String { rawValue }
 
-    var displayName: String {
+    public var displayName: String {
         switch self {
         case .native: "Native"
         case .introduced: "Introduced"
@@ -50,7 +50,7 @@ nonisolated enum ForageOrigin: String, Codable, Sendable, CaseIterable, Identifi
         }
     }
 
-    var harvestGuidance: String {
+    public var harvestGuidance: String {
         switch self {
         case .native: "Take sparingly. A DOC permit is required on conservation land."
         case .introduced: "Naturalised and not a pest. Harvest reasonably."
@@ -58,7 +58,7 @@ nonisolated enum ForageOrigin: String, Codable, Sendable, CaseIterable, Identifi
         }
     }
 
-    var symbolName: String {
+    public var symbolName: String {
         switch self {
         case .native: "leaf.fill"
         case .introduced: "globe"

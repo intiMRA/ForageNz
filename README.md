@@ -24,17 +24,44 @@ no distinguishing check, or a native species ships without harvesting guidance.
 
 | Path | What's in it |
 |---|---|
+| `Packages/ForageCatalogue/` | Local SwiftPM package. `Sources/ForageCatalogue` is the shared model — `ForageSpecies`, `ForageMonth`, `ForageCategory`/`ForageOrigin`, `CautionLevel`, `Lookalike`, `Recipe` — plus `CatalogueFile` for reading and writing `species.json`. `Sources/CatalogueEditor` is the macOS editor. |
 | `ForageNZ/ForageNZApp.swift`, `RootView.swift` | App entry and the tab shell, which owns catalogue loading. |
-| `ForageNZ/Models/` | `ForageSpecies`, `ForageMonth`, `ForageCategory`/`ForageOrigin`, `CautionLevel`, `Lookalike`, `PoisonsCentre`. All `nonisolated` value types. Season ranges sort circularly, because southern-hemisphere seasons wrap December. |
-| `ForageNZ/Catalogue/` | `species.json` (the catalogue), `SpeciesRepository` (protocol + bundled actor), `SpeciesStore` (`@Observable @MainActor`). |
+| `ForageNZ/Catalogue/` | `species.json`, `SpeciesRepository` (protocol + bundled actor), `SpeciesStore` (`@Observable @MainActor`). |
 | `ForageNZ/InSeason/` | What's worth looking for this month. |
 | `ForageNZ/FieldGuide/` | Searchable catalogue with category + origin filters, and the species detail screen. |
 | `ForageNZ/Safety/` | Ground rules, the do-not-eat list, and species with deadly lookalikes. |
-| `ForageNZ/Components/` | Shared UI: `SpeciesRow`, `CautionBadge`, `Layout`. |
-| `ForageNZTests/` | Swift Testing: model logic, store filtering, shipped-catalogue integrity. |
+| `ForageNZ/Components/` | Shared UI: `SpeciesRow`, `CautionBadge`, `CautionPalette`, `Layout`. |
+| `ForageNZTests/` | Swift Testing: store filtering and shipped-catalogue integrity. |
 | `ForageNZUITests/` | XCUITest: tab navigation, origin filtering end-to-end, species detail, safety list. |
 
 Grouped by feature rather than by layer, matching the other apps in this folder.
+
+## Editing the catalogue
+
+`species.json` is edited with the macOS editor, which goes through the same `ForageSpecies`
+type the app decodes — so it cannot write JSON the app can't read.
+
+```sh
+cd Packages/ForageCatalogue
+swift run CatalogueEditor              # opens the editor on the repo's species.json
+swift run CatalogueEditor --normalise  # rewrite in canonical form, no window
+```
+
+Entries are grouped by verification priority: lethal claims first (do-not-eat entries and
+anything with a deadly lookalike), then care-required, then the rest. `--catalogue <path>`
+points it at a different file.
+
+**Formatting is load-bearing.** `CatalogueFileTests` asserts that re-encoding `species.json`
+is byte-identical to what's on disk, so a save is a one-entry diff rather than a whole-file
+reformat. Foundation's `prettyPrinted` writes `"key" : value` (with a space before the colon),
+which is *not* what most formatters produce — after hand-editing the file, run `--normalise`.
+
+## Verification status
+
+Every entry carries `sources`. Entries with none are unverified, and
+`CatalogueTests.pendingVerification` lists them: a new entry with no sources fails the build
+unless declared there, and an id left on the list after being sourced also fails — so the list
+can only shrink. The detail screen shows a "Not yet checked" banner until an entry is sourced.
 
 ## Dependencies
 

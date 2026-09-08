@@ -4,7 +4,7 @@ import Foundation
 ///
 /// This is deliberately the most prominent attribute in the UI. The app never asserts
 /// that a plant in front of the user *is* a given species — it describes what to check.
-nonisolated enum CautionLevel: String, Codable, Sendable {
+public nonisolated enum CautionLevel: String, Codable, Sendable {
     /// Distinctive enough that a careful beginner can identify it, and harmless if they get it wrong.
     case straightforward
     /// Has toxic lookalikes, or needs processing/cooking before it is safe.
@@ -12,7 +12,7 @@ nonisolated enum CautionLevel: String, Codable, Sendable {
     /// Listed so it can be recognised and avoided. Never eat.
     case doNotEat
 
-    var displayName: String {
+    public var displayName: String {
         switch self {
         case .straightforward: "Straightforward"
         case .careRequired: "Care required"
@@ -20,7 +20,7 @@ nonisolated enum CautionLevel: String, Codable, Sendable {
         }
     }
 
-    var shortLabel: String {
+    public var shortLabel: String {
         switch self {
         case .straightforward: "OK"
         case .careRequired: "Care"
@@ -28,7 +28,7 @@ nonisolated enum CautionLevel: String, Codable, Sendable {
         }
     }
 
-    var symbolName: String {
+    public var symbolName: String {
         switch self {
         case .straightforward: "checkmark.seal"
         case .careRequired: "exclamationmark.triangle"
@@ -38,13 +38,13 @@ nonisolated enum CautionLevel: String, Codable, Sendable {
 }
 
 /// How bad it is to confuse a species with one of its lookalikes.
-nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable {
+public nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable {
     case deadly
     /// Will make you seriously unwell.
     case toxic
     case unpalatable
 
-    var displayName: String {
+    public var displayName: String {
         switch self {
         case .deadly: "Deadly"
         case .toxic: "Toxic"
@@ -60,22 +60,22 @@ nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable {
         }
     }
 
-    static func < (lhs: LookalikeRisk, rhs: LookalikeRisk) -> Bool {
+    public static func < (lhs: LookalikeRisk, rhs: LookalikeRisk) -> Bool {
         lhs.severityRank < rhs.severityRank
     }
 }
 
 /// Something a species can be mistaken for, and the check that separates them.
-nonisolated struct Lookalike: Codable, Sendable, Hashable, Identifiable {
-    let name: String
-    let scientificName: String?
-    let risk: LookalikeRisk
+public nonisolated struct Lookalike: Codable, Sendable, Hashable, Identifiable {
+    public let name: String
+    public let scientificName: String?
+    public let risk: LookalikeRisk
     /// The specific, field-checkable difference — not a general warning.
-    let howToTell: String
+    public let howToTell: String
 
-    var id: String { name }
+    public var id: String { name }
 
-    init(name: String, scientificName: String? = nil, risk: LookalikeRisk, howToTell: String) {
+    public init(name: String, scientificName: String? = nil, risk: LookalikeRisk, howToTell: String) {
         self.name = name
         self.scientificName = scientificName
         self.risk = risk

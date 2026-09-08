@@ -1,4 +1,5 @@
 import DesignLibrary
+import ForageCatalogue
 import SwiftUI
 
 struct CautionBadge: View {

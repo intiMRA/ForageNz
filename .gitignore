@@ -14,8 +14,8 @@ xcuserdata/
 # SwiftPM
 # Package.resolved IS committed: DesignLibrary is pinned by branch with no tags, so the
 # resolved file is the only record of the revision this app was built against.
+# NOTE: `Packages/` is NOT ignored — it holds the local ForageCatalogue package source.
 .swiftpm/
-Packages/
 
 # macOS
 .DS_Store
