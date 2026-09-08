@@ -7,7 +7,9 @@ import Testing
 /// Integrity checks against the real shipped catalogue.
 ///
 /// This is a safety-critical dataset: a missing warning or an unexplained lookalike is a
-/// product defect, not a content nicety. These tests fail the build when one slips in.
+/// product defect, not a content nicety. Per-entry rules live in `ForageSpecies`'
+/// `validationIssues` so the macOS editor shows them while you type; this suite enforces
+/// them at build time, and covers the catalogue-wide rules the editor can't see.
 @Suite("Shipped catalogue")
 struct CatalogueTests {
     /// Entries drafted from general knowledge and not yet checked against a field guide.
@@ -32,6 +34,19 @@ struct CatalogueTests {
     private func loadCatalogue() async throws -> [ForageSpecies] {
         try await BundledSpeciesRepository().loadSpecies()
     }
+
+    // MARK: - Per-entry rules, shared with the editor
+
+    @Test("No entry carries a blocking validation issue")
+    func noBlockingIssues() async throws {
+        for entry in try await loadCatalogue() {
+            for issue in entry.blockingIssues {
+                Issue.record("\(entry.id) · \(issue.field): \(issue.message)")
+            }
+        }
+    }
+
+    // MARK: - Verification tracking
 
     @Test("Every unsourced entry is on the known pending-verification list")
     func unsourcedEntriesAreDeclared() async throws {
@@ -60,6 +75,8 @@ struct CatalogueTests {
         }
     }
 
+    // MARK: - Loading
+
     @Test("The bundled catalogue decodes")
     func catalogueDecodes() async throws {
         let species = try await loadCatalogue()
@@ -74,6 +91,8 @@ struct CatalogueTests {
         }
     }
 
+    // MARK: - Catalogue-wide rules
+
     @Test("Identifiers are unique")
     func uniqueIdentifiers() async throws {
         let species = try await loadCatalogue()
@@ -81,72 +100,10 @@ struct CatalogueTests {
         #expect(Set(ids).count == ids.count)
     }
 
-    @Test("Every entry has the text the detail screen renders")
-    func requiredTextPresent() async throws {
-        for entry in try await loadCatalogue() {
-            #expect(!entry.commonName.isEmpty, "\(entry.id) has no common name")
-            #expect(!entry.scientificName.isEmpty, "\(entry.id) has no scientific name")
-            #expect(!entry.summary.isEmpty, "\(entry.id) has no summary")
-            #expect(!entry.habitat.isEmpty, "\(entry.id) has no habitat")
-            #expect(!entry.identification.isEmpty, "\(entry.id) has no identification notes")
-        }
-    }
-
-    @Test("Every lookalike explains how to tell them apart")
-    func lookalikesAreActionable() async throws {
-        for entry in try await loadCatalogue() {
-            for lookalike in entry.lookalikes {
-                #expect(!lookalike.name.isEmpty, "\(entry.id) has an unnamed lookalike")
-                #expect(
-                    !lookalike.howToTell.isEmpty,
-                    "\(entry.id) lists \(lookalike.name) with no way to tell them apart"
-                )
-            }
-        }
-    }
-
-    @Test("Anything with a deadly lookalike is never marked straightforward")
-    func deadlyLookalikesRaiseCaution() async throws {
-        for entry in try await loadCatalogue() where entry.highestLookalikeRisk == .deadly {
-            #expect(
-                entry.caution != .straightforward,
-                "\(entry.id) has a deadly lookalike but is marked straightforward"
-            )
-        }
-    }
-
-    @Test("Do-not-eat entries carry warnings and claim no edible parts")
-    func doNotEatEntriesAreExplicit() async throws {
+    @Test("The guide teaches avoidance, not only collection")
+    func includesDoNotEatEntries() async throws {
         let doNotEat = try await loadCatalogue().filter { $0.caution == .doNotEat }
-        #expect(!doNotEat.isEmpty, "The guide should teach avoidance, not only collection")
-
-        for entry in doNotEat {
-            #expect(!entry.warnings.isEmpty, "\(entry.id) is do-not-eat but carries no warnings")
-            #expect(
-                entry.edibleParts.localizedCaseInsensitiveContains("none"),
-                "\(entry.id) is do-not-eat but lists edible parts"
-            )
-        }
-    }
-
-    @Test("Care-required entries explain the risk")
-    func careRequiredEntriesExplainThemselves() async throws {
-        for entry in try await loadCatalogue() where entry.caution == .careRequired {
-            #expect(
-                !entry.warnings.isEmpty || !entry.lookalikes.isEmpty,
-                "\(entry.id) needs care but says neither why nor what it resembles"
-            )
-        }
-    }
-
-    @Test("Native species carry harvesting guidance")
-    func nativeSpeciesHaveEthics() async throws {
-        for entry in try await loadCatalogue() where entry.origin == .native {
-            #expect(
-                entry.harvestEthics?.isEmpty == false,
-                "\(entry.id) is native but has no harvesting or tikanga guidance"
-            )
-        }
+        #expect(!doNotEat.isEmpty, "There should be entries that exist to be recognised and avoided")
     }
 
     @Test("Every origin has at least one entry, so the origin filter has no dead options")

@@ -48,6 +48,55 @@ final class CatalogueStore {
         }
     }
 
+    enum AddFailure: Error, Equatable {
+        case nameEmpty
+        case duplicate(id: String)
+    }
+
+    /// Creates a skeleton entry from a common name and returns its id.
+    ///
+    /// Deliberately a skeleton, not a blank: caution defaults to `careRequired` so a new
+    /// entry can never start out claiming to be safe, and the blocking issues on it act as
+    /// the to-do list for filling it in.
+    func addSpecies(commonName: String) -> Result<String, AddFailure> {
+        let trimmed = commonName.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return .failure(.nameEmpty) }
+
+        let id = ForageSpecies.makeIdentifier(from: trimmed)
+        guard !id.isEmpty else { return .failure(.nameEmpty) }
+        guard !species.contains(where: { $0.id == id }) else { return .failure(.duplicate(id: id)) }
+
+        let new = ForageSpecies(
+            id: id,
+            commonName: trimmed,
+            scientificName: "",
+            category: .greens,
+            origin: .introduced,
+            caution: .careRequired,
+            summary: "",
+            habitat: "",
+            identification: "",
+            edibleParts: "",
+            preparation: ""
+        )
+        species.append(new)
+        species.sort { $0.commonName.localizedCaseInsensitiveCompare($1.commonName) == .orderedAscending }
+        editedIds.insert(id)
+        status = .edited(count: editedIds.count)
+        return .success(id)
+    }
+
+    func delete(id: String) {
+        species.removeAll { $0.id == id }
+        editedIds.insert(id)
+        status = .edited(count: editedIds.count)
+    }
+
+    /// Entries that would fail the build as they stand.
+    var unpublishable: [ForageSpecies] {
+        species.filter { !$0.isPublishable }
+    }
+
     func update(_ updated: ForageSpecies) {
         guard let index = species.firstIndex(where: { $0.id == updated.id }) else { return }
         species[index] = updated
