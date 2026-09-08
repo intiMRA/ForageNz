@@ -1,0 +1,52 @@
+[project]
+name = "foragenz-tools"
+version = "1.0.0"
+description = "Catalogue enrichment and matcher-evaluation tooling for the ForageNZ app"
+requires-python = ">=3.11"
+# One dependency, and only because Homebrew Python ships without the macOS trust store
+# wired up, so HTTPS fails with CERTIFICATE_VERIFY_FAILED. The alternative is disabling
+# verification, which is not acceptable when fetching into a safety-critical dataset.
+dependencies = ["certifi"]
+
+[project.optional-dependencies]
+dev = ["mypy>=1.11", "ruff>=0.6"]
+
+[tool.setuptools]
+# Scripts, not an importable package — run them through the PyCharm configurations or
+# directly with `python Tools/<script>.py` from the repo root.
+py-modules = []
+
+[tool.mypy]
+python_version = "3.11"
+files = ["Tools"]
+strict = true
+warn_unreachable = true
+# Reports mypy's own view of coverage rather than silently passing over untyped code.
+disallow_untyped_defs = true
+disallow_any_generics = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["Tools"]
+
+[tool.ruff.lint]
+select = [
+    "E", "W",    # pycodestyle
+    "F",         # pyflakes
+    "I",         # import sorting
+    "N",         # pep8-naming
+    "UP",        # pyupgrade
+    "B",         # bugbear
+    "A",         # shadowing builtins
+    "C4",        # comprehensions
+    "SIM",       # simplify
+    "PTH",       # use pathlib
+    "RUF",
+]
+
+[tool.ruff.format]
+quote-style = "double"

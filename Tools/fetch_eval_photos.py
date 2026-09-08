@@ -1,35 +1,41 @@
 #!/usr/bin/env python3
 """Fetch openly-licensed photos into an evaluation set.
 
-This builds TEST DATA, not catalogue content. Nothing it downloads is shipped: the
-photos land in `.eval-photos/` (gitignored) and exist only so the photo matcher's
-accuracy can be measured against species it hasn't been tuned on.
+This builds TEST DATA, not catalogue content. Nothing it downloads is shipped: the photos
+land in a gitignored directory and exist only so the photo matcher can be measured.
 
-Only CC0 and CC BY photos are taken, and every one keeps its attribution in the
-manifest. Shipping any of these would additionally need a caption naming the feature
-each photo shows, which is a human judgement, not something to auto-fill.
+Only CC0 and CC BY photos are taken, and every one keeps its attribution in the manifest.
+Shipping any of these would additionally need a caption naming the feature each photo
+shows, which is a human judgement and not something to auto-fill.
 
-    python3 Tools/fetch_eval_photos.py [--per-species N] [--out DIR]
+    python3 Tools/fetch_eval_photos.py
+    python3 Tools/fetch_eval_photos.py --set out-of-catalogue --out .eval-photos-negative
 """
 
 from __future__ import annotations
 
 import argparse
 import json
-import pathlib
 import sys
 import time
-import urllib.error
-import urllib.parse
-import urllib.request
+from dataclasses import dataclass
+from enum import StrEnum
+from pathlib import Path
+from typing import Any
 
-API = "https://api.inaturalist.org/v1/observations"
-USER_AGENT = "ForageNZ-eval/1.0 (catalogue matcher evaluation)"
-ACCEPTED_LICENCES = ("cc0", "cc-by")
+from sources import COURTESY_DELAY, Licence, Source, SourceError, download, results_of
 
-# Catalogue id -> scientific name. Weighted towards the confusable fungi, because that
-# is where a visual matcher either works or is dangerous.
-TAXA = {
+
+class EvaluationSet(StrEnum):
+    """Which population to sample."""
+
+    CATALOGUE = "catalogue"
+    OUT_OF_CATALOGUE = "out-of-catalogue"
+
+
+#: Catalogue id -> scientific name. Weighted towards the confusable fungi, because that is
+#: where a visual matcher either works or is dangerous.
+CATALOGUE_TAXA: dict[str, str] = {
     "field-mushroom": "Agaricus campestris",
     "porcini": "Boletus edulis",
     "slippery-jack": "Suillus luteus",
@@ -46,11 +52,9 @@ TAXA = {
     "horopito": "Pseudowintera colorata",
 }
 
-
-# Plants that are common in NZ and deliberately NOT in the catalogue. Several are
-# seriously toxic, which is the point: photographing one must not produce a confident
-# shortlist of edible entries.
-OUT_OF_CATALOGUE = {
+#: Common NZ plants deliberately NOT in the catalogue. Several are seriously toxic, which
+#: is the point: photographing one must not produce a confident shortlist of edibles.
+OUT_OF_CATALOGUE_TAXA: dict[str, str] = {
     "foxglove": "Digitalis purpurea",
     "hemlock": "Conium maculatum",
     "ragwort": "Jacobaea vulgaris",
@@ -59,98 +63,119 @@ OUT_OF_CATALOGUE = {
     "buttercup": "Ranunculus repens",
 }
 
+TAXA_BY_SET: dict[EvaluationSet, dict[str, str]] = {
+    EvaluationSet.CATALOGUE: CATALOGUE_TAXA,
+    EvaluationSet.OUT_OF_CATALOGUE: OUT_OF_CATALOGUE_TAXA,
+}
 
-def request_json(url: str) -> dict:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.load(response)
+
+@dataclass(frozen=True)
+class FetchedPhoto:
+    file: str
+    licence: Licence
+    attribution: str
+    photo_id: int | None
+    observation_url: str | None
+
+    def as_manifest_entry(self) -> dict[str, Any]:
+        return {
+            "file": self.file,
+            "licence": str(self.licence),
+            "attribution": self.attribution,
+            "photoId": self.photo_id,
+            "observationURL": self.observation_url,
+        }
 
 
-def observations(scientific_name: str, wanted: int) -> list[dict]:
+def observations(scientific_name: str, wanted: int) -> list[dict[str, Any]]:
     """Research-grade observations carrying a reusable photo licence."""
-    query = urllib.parse.urlencode(
+    return results_of(
+        Source.INAT_OBSERVATIONS,
         {
             "taxon_name": scientific_name,
             "quality_grade": "research",
-            "photo_license": ",".join(ACCEPTED_LICENCES),
+            "photo_license": Licence.query_value(),
             "per_page": min(wanted * 3, 60),
             "order_by": "votes",
-        }
+        },
     )
-    return request_json(f"{API}?{query}").get("results", [])
 
 
-def download(url: str, destination: pathlib.Path) -> bool:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+def fetch_species(
+    species_id: str, scientific_name: str, directory: Path, wanted: int
+) -> list[FetchedPhoto]:
+    directory.mkdir(parents=True, exist_ok=True)
+    fetched: list[FetchedPhoto] = []
+
     try:
-        with urllib.request.urlopen(request, timeout=30) as response:
-            destination.write_bytes(response.read())
-        return True
-    except (urllib.error.URLError, TimeoutError) as error:
-        print(f"    download failed: {error}", file=sys.stderr)
-        return False
+        found = observations(scientific_name, wanted)
+    except SourceError as error:
+        print(f"{species_id}: query failed ({error})", file=sys.stderr)
+        return fetched
+
+    for observation in found:
+        for photo in observation.get("photos") or []:
+            if len(fetched) >= wanted:
+                return fetched
+            try:
+                licence = Licence(photo.get("license_code"))
+            except ValueError:
+                continue
+
+            # `square.jpg` is a thumbnail; `medium` is the largest openly served size.
+            url = str(photo.get("url") or "").replace("square.", "medium.")
+            if not url:
+                continue
+
+            path = directory / f"{species_id}-{len(fetched) + 1}.jpg"
+            if not download(url, path):
+                print(f"    download failed: {url}", file=sys.stderr)
+                continue
+
+            photo_id = photo.get("id")
+            fetched.append(
+                FetchedPhoto(
+                    file=path.name,
+                    licence=licence,
+                    attribution=str(photo.get("attribution") or ""),
+                    photo_id=int(photo_id) if photo_id is not None else None,
+                    observation_url=observation.get("uri"),
+                )
+            )
+            time.sleep(COURTESY_DELAY)
+    return fetched
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     parser.add_argument("--per-species", type=int, default=8)
-    parser.add_argument("--out", default=".eval-photos")
-    parser.add_argument("--set", choices=["catalogue", "out-of-catalogue"], default="catalogue")
+    parser.add_argument("--out", type=Path, default=Path(".eval-photos"))
+    parser.add_argument(
+        "--set",
+        dest="evaluation_set",
+        type=EvaluationSet,
+        choices=list(EvaluationSet),
+        default=EvaluationSet.CATALOGUE,
+    )
     arguments = parser.parse_args()
 
-    root = pathlib.Path(arguments.out)
+    root: Path = arguments.out
     root.mkdir(parents=True, exist_ok=True)
-    manifest: dict[str, list[dict]] = {}
+    manifest: dict[str, list[dict[str, Any]]] = {}
 
-    taxa = TAXA if arguments.set == "catalogue" else OUT_OF_CATALOGUE
-    for species_id, scientific_name in taxa.items():
-        directory = root / species_id
-        directory.mkdir(exist_ok=True)
-        records: list[dict] = []
-
-        try:
-            found = observations(scientific_name, arguments.per_species)
-        except (urllib.error.URLError, TimeoutError) as error:
-            print(f"{species_id}: query failed ({error})", file=sys.stderr)
-            continue
-
-        for observation in found:
-            if len(records) >= arguments.per_species:
-                break
-            for photo in observation.get("photos", []):
-                if len(records) >= arguments.per_species:
-                    break
-                licence = photo.get("license_code")
-                if licence not in ACCEPTED_LICENCES:
-                    continue
-
-                # `square.jpg` is a thumbnail; `medium` is the largest openly served size.
-                url = (photo.get("url") or "").replace("square.", "medium.")
-                if not url:
-                    continue
-
-                index = len(records) + 1
-                path = directory / f"{species_id}-{index}.jpg"
-                if not download(url, path):
-                    continue
-
-                records.append(
-                    {
-                        "file": path.name,
-                        "licence": licence,
-                        "attribution": photo.get("attribution") or "",
-                        "photoId": photo.get("id"),
-                        "observationURL": observation.get("uri"),
-                    }
-                )
-                time.sleep(0.4)  # be a considerate API client
-
-        manifest[species_id] = records
-        print(f"{species_id}: {len(records)} photo(s) ({scientific_name})")
+    for species_id, scientific_name in TAXA_BY_SET[arguments.evaluation_set].items():
+        fetched = fetch_species(
+            species_id, scientific_name, root / species_id, arguments.per_species
+        )
+        manifest[species_id] = [photo.as_manifest_entry() for photo in fetched]
+        print(f"{species_id}: {len(fetched)} photo(s) ({scientific_name})")
 
     (root / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
-    total = sum(len(v) for v in manifest.values())
-    print(f"\n{total} photos across {len([k for k, v in manifest.items() if v])} species -> {root}/")
+    total = sum(len(photos) for photos in manifest.values())
+    populated = sum(1 for photos in manifest.values() if photos)
+    print(f"\n{total} photos across {populated} species -> {root}/")
     print("Test data only — not shipped, and not catalogue content.")
     return 0
 
