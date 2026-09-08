@@ -94,21 +94,44 @@ public enum PhotoMatcher {
         for imageURL: URL,
         revision: Int? = nil
     ) throws(Failure) -> FeatureVector {
+        try featureVector(
+            label: imageURL.lastPathComponent,
+            revision: revision,
+            makeHandler: { VNImageRequestHandler(url: imageURL, options: [:]) }
+        )
+    }
+
+    /// For an image already in memory — a photo the user just picked.
+    public static func featureVector(
+        forImageData data: Data,
+        revision: Int? = nil
+    ) throws(Failure) -> FeatureVector {
+        try featureVector(
+            label: "selected image",
+            revision: revision,
+            makeHandler: { VNImageRequestHandler(data: data, options: [:]) }
+        )
+    }
+
+    private static func featureVector(
+        label: String,
+        revision: Int?,
+        makeHandler: () -> VNImageRequestHandler
+    ) throws(Failure) -> FeatureVector {
         let request = VNGenerateImageFeaturePrintRequest()
         if let revision { request.revision = revision }
 
-        let handler = VNImageRequestHandler(url: imageURL, options: [:])
         do {
-            try handler.perform([request])
+            try makeHandler().perform([request])
         } catch {
-            throw .unreadable(imageURL.lastPathComponent)
+            throw .unreadable(label)
         }
 
         guard let observation = request.results?.first as? VNFeaturePrintObservation else {
-            throw .noFeaturePrint(imageURL.lastPathComponent)
+            throw .noFeaturePrint(label)
         }
         guard observation.elementType == .float else {
-            throw .unexpectedElementType(imageURL.lastPathComponent)
+            throw .unexpectedElementType(label)
         }
 
         let count = observation.elementCount
