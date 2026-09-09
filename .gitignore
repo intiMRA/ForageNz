@@ -26,6 +26,8 @@ xcuserdata/
 .staged-photos/
 
 # PyCharm: keep the shared run configurations, ignore the per-machine rest.
-.idea/*
-!.idea/runConfigurations/
+# The `**/` matters: a pattern containing a slash is anchored to this file's directory, so
+# a bare `.idea/*` missed the one PyCharm creates when Tools/ is opened on its own.
+**/.idea/*
+!**/.idea/runConfigurations/
 .venv/

@@ -1,0 +1,13 @@
+{
+  "minLongitude": 166.0,
+  "maxLongitude": 179.2,
+  "minLatitude": -47.6,
+  "maxLatitude": -33.9,
+  "degreesPerPixel": 0.0025,
+  "width": 5279,
+  "height": 5480,
+  "flags": {
+    "conservation": 1,
+    "marineReserve": 2
+  }
+}
