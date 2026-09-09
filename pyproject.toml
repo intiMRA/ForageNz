@@ -3,10 +3,11 @@ name = "foragenz-tools"
 version = "1.0.0"
 description = "Catalogue enrichment and matcher-evaluation tooling for the ForageNZ app"
 requires-python = ">=3.11"
-# One dependency, and only because Homebrew Python ships without the macOS trust store
-# wired up, so HTTPS fails with CERTIFICATE_VERIFY_FAILED. The alternative is disabling
-# verification, which is not acceptable when fetching into a safety-critical dataset.
-dependencies = ["certifi"]
+# certifi: Homebrew Python ships without the macOS trust store wired up, so HTTPS fails
+# with CERTIFICATE_VERIFY_FAILED. The alternative is disabling verification, which is not
+# acceptable when fetching into a safety-critical dataset.
+# pillow: rasterises the DOC boundaries into the land-status map the app ships.
+dependencies = ["certifi", "pillow"]
 
 [project.optional-dependencies]
 dev = ["mypy>=1.11", "ruff>=0.6", "pytest>=8.0"]

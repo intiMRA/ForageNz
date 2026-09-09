@@ -3,6 +3,7 @@ import SwiftUI
 
 struct RootView: View {
     @State private var store = SpeciesStore()
+    @State private var whereYouAre = WhereYouAreStore()
 
     var body: some View {
         Group {
@@ -27,6 +28,7 @@ struct RootView: View {
             await store.loadIfNeeded()
         }
         .environment(store)
+        .environment(whereYouAre)
     }
 
     private var tabs: some View {

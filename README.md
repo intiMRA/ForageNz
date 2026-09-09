@@ -31,6 +31,7 @@ no distinguishing check, or a native species ships without harvesting guidance.
 | `ForageNZ/InSeason/` | What's worth looking for this month. |
 | `ForageNZ/FieldGuide/` | Searchable catalogue with category + origin filters, and the species detail screen. |
 | `ForageNZ/Safety/` | Ground rules, the do-not-eat list, and species with deadly lookalikes. |
+| `ForageNZ/WhereYouAre/` | Offline land-status lookup: the bundled DOC raster, a one-shot location fix, and the Safety-tab section that reports it. |
 | `ForageNZ/Components/` | Shared UI: `SpeciesRow`, `CautionBadge`, `CautionPalette`, `Layout`. |
 | `ForageNZTests/` | Swift Testing: store filtering and shipped-catalogue integrity. |
 | `ForageNZUITests/` | XCUITest: tab navigation, origin filtering end-to-end, species detail, safety list. |
@@ -53,7 +54,7 @@ python3.13 -m venv .venv
 
 **In PyCharm:** open the repo root as the project, set the interpreter to `.venv/bin/python`
 (Settings → Project → Python Interpreter → Add → Existing). Five run configurations are
-committed in `.idea/runConfigurations/` and appear in the run dropdown:
+committed in `.idea/runConfigurations/` and appear in the run dropdown (six of them):
 
 | Configuration | Does |
 |---|---|
@@ -62,13 +63,14 @@ committed in `.idea/runConfigurations/` and appear in the run dropdown:
 | Stage photos for review | Downloads CC-licensed candidates to `.staged-photos/` |
 | Fetch eval photos | Evaluation set for the matcher harness |
 | Fetch eval photos (out-of-catalogue) | The negative set, for open-set testing |
+| Build land status map | Rebuilds the bundled DOC conservation / marine reserve raster |
 
 Each sets the working directory to the repo root — every tool resolves paths from there.
 
-`certifi` is the one runtime dependency, and only because Homebrew Python ships without the
-macOS trust store wired up: without it HTTPS fails with `CERTIFICATE_VERIFY_FAILED`.
-Disabling verification instead would not be acceptable when fetching into a safety-critical
-dataset.
+Two runtime dependencies. `certifi`, because Homebrew Python ships without the macOS trust
+store wired up: without it HTTPS fails with `CERTIFICATE_VERIFY_FAILED`, and disabling
+verification instead would not be acceptable when fetching into a safety-critical dataset.
+`pillow`, to rasterise the DOC boundaries into the land-status map.
 
 ## Enriching the catalogue from external sources
 
@@ -246,6 +248,40 @@ swift run catalogue-tool --evaluate ../../.eval-photos
 swift run catalogue-tool --openset ../../.eval-photos ../../.eval-photos-negative
 ```
 
+## Where you are — the offline land-status map
+
+The guide says pikopiko needs a DOC permit and that karengo beds may sit inside a marine
+reserve. It could not say whether *you* were standing in one. `Tools/build_land_status.py`
+bakes DOC's two public layers into a bitmap small enough to ship:
+
+```bash
+python3 Tools/build_land_status.py                  # fetch, rasterise, verify, report size
+python3 Tools/build_land_status.py --degrees 0.005  # coarser grid, smaller file
+```
+
+It writes `ForageNZ/Catalogue/land-status.png` (**237 KB** for the whole country, ~2% of the
+photo budget) plus `land-status.json` describing the grid. `LandStatusMap` in the package
+reads them and answers a coordinate in constant time, entirely offline.
+
+Deliberate trade-offs:
+
+- **A raster, not polygons.** Generalised GeoJSON was ~3.4 MB and needed point-in-polygon over
+  11,000 shapes. One pixel read is simpler and honestly approximate.
+- **~280 m per pixel.** Enough to say "stop and check", not enough to place a boundary.
+- **Two bits per pixel in memory.** The decoded 8-bit form is ~29 MB; packed it is ~7 MB.
+- **Holes are not modelled**, so it over-reports conservation land. That is the safe direction.
+- **Never green.** `LandStatus.tintColor` has no `cautionSafe` case: the map knows two
+  restrictions and nothing about private land, rāhui or council bylaws, so no state of the UI
+  says yes. The Safety section's wording is hedged in every branch, on purpose.
+- **A wrong map fails loudly.** Xcode re-encodes bundled PNGs and ImageIO colour-matches on
+  decode; either could re-map values or flip an axis, and an upside-down map answers every
+  query confidently and wrongly. `LandStatusMap.groundTruth` holds four places whose status is
+  not in doubt, the Python builder checks them after rasterising, the Swift tests check them
+  against the shipped file, and `BundledLandStatusRepository` refuses to serve a map that
+  fails them.
+
+Location is taken once, on request, and never leaves the device.
+
 ## Validation
 
 Per-entry rules live in `ForageSpecies.validationIssues`, split into blocking (fails the
@@ -266,7 +302,9 @@ spacing tokens. It ships no typography or public colour tokens, so text uses Swi
 Dynamic Type styles and the caution palette is defined as asset-catalog colour sets
 (`cautionSafe` / `cautionCare` / `cautionDanger`).
 
-`NetworkLayerSPM` is deliberately **not** a dependency — v1 makes no network calls.
+`NetworkLayerSPM` is deliberately **not** a dependency — v1 makes no network calls. That still
+holds with the land-status map: the boundaries ship in the bundle and `CoreLocation` reads the
+GPS, so the whole feature works with the radio off.
 
 ## Building
 
@@ -303,9 +341,10 @@ Known gaps, in rough priority order:
   source.
 - **No location awareness.** Several entries are regional (cherry guava is northern, rosehip is
   dry-eastern). Region filtering needs a region field on each entry.
-- **No live overlays.** Rāhui, DOC land boundaries, MPI biotoxin warnings and LAWA algal-bloom
-  status are all referenced in warning copy but not yet fetched. Rāhui in particular should not
-  be aggregated without mana whenua involvement.
+- **No live overlays.** Rāhui, MPI biotoxin warnings and LAWA algal-bloom status are all
+  referenced in warning copy but not yet fetched. Rāhui in particular should not be aggregated
+  without mana whenua involvement. DOC land and marine reserves are now embedded (see
+  *Where you are*), but as a static snapshot — boundaries change and the map does not.
 - **Seaweed and shellfish are under-served.** The catalogue lists seaweed but the biotoxin
   warning is static text; it should be a live MPI feed.
 

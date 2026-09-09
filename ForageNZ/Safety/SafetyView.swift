@@ -21,6 +21,8 @@ struct SafetyView: View {
                 .padding(.vertical, .xxSmall)
             }
 
+            WhereYouAreSection()
+
             Section {
                 ForEach(Self.groundRules, id: \.self) { rule in
                     Text(rule)
