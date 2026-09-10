@@ -40,7 +40,11 @@ public enum CataloguePhotos {
     public static let maximumBytesPerPhoto = 220_000
 
     /// Total ceiling for every photo in the catalogue, since they ship in the app.
-    public static let totalByteBudget = 24_000_000
+    ///
+    /// Raised from 24 MB once 52 entries and 183 reviewed photos had used 21 MB of it: the
+    /// original figure predated any photos at all. Lowering quality to stay under it would have
+    /// cost detail on exactly the features the guide tells people to look at.
+    public static let totalByteBudget = 40_000_000
 
     /// How many photos an entry wants before it is genuinely identifiable.
     ///
