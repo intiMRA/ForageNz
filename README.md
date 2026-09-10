@@ -181,7 +181,7 @@ They ship inside the app, so size is a constraint rather than an afterthought:
 | Longest edge | 1400 px |
 | Per photo | ≤ 215 KB |
 | Target per entry | 4, or 6 with a deadly lookalike |
-| Whole catalogue | ≤ 24 MB |
+| Whole catalogue | ≤ 40 MB |
 
 **Lossless is not an option.** A lossless PNG of a photograph at this size is 1.5–3 MB, so
 four per species would be 190–370 MB embedded. HEIC at 0.62 is visually indistinguishable
@@ -367,7 +367,7 @@ the point: the schema encodes the safety rules.
 Known gaps, in rough priority order:
 
 - **Photo coverage is uneven.** 46 of 52 entries carry reviewed CC0/CC-BY photos (183 in
-  all, 21 MB of the 24 MB budget — the next batch of species needs a decision about the ceiling), but 17 are below their target and six have none. Several are missing the one
+  all, 21 MB of the 40 MB budget), but 17 are below their target and six have none. Several are missing the one
   feature that matters most: karaka has no fruit, sweet chestnut has no burr or nut, porcini
   has no pore surface or stem net, hemlock has no shot of its blotched stem, gorse has no
   flower close-up, and kareao has no shoot tip. Those need photographs taken on purpose.
