@@ -281,7 +281,7 @@
     "category" : "fungi",
     "caution" : "doNotEat",
     "commonName" : "Death cap",
-    "edibleParts" : "None. Ever.",
+    "edibleParts" : "None.",
     "habitat" : "Under introduced broadleaf trees — especially oak, and also birch, hornbeam and chestnut. Parks, old estates, campus grounds and suburban streets in Auckland, Wellington, Christchurch and Dunedin.",
     "harvestEthics" : "Do not harvest. This entry exists so you can recognise it.",
     "id" : "death-cap",
@@ -615,7 +615,7 @@
     "category" : "fruit",
     "caution" : "doNotEat",
     "commonName" : "Karaka",
-    "edibleParts" : "None, without expert traditional processing. Do not attempt.",
+    "edibleParts" : "None.",
     "habitat" : "Coastal forest and old pā sites throughout the North Island and northern South Island — often planted deliberately by tūpuna.",
     "harvestEthics" : "Karaka groves are frequently associated with wāhi tapu and historic pā sites. Treat them as culturally significant places, not as a food source.",
     "id" : "karaka",
@@ -668,6 +668,7 @@
     ],
     "summary" : "Listed so you can recognise it and leave it alone. The kernel is severely poisonous without traditional processing.",
     "warnings" : [
+      "No part is edible without the traditional multi-day steeping and cooking. Do not attempt it yourself: the raw kernel causes convulsions and permanent paralysis.",
       "The kernel contains karakin. Poisoning causes violent convulsions and can result in permanent limb contractures and paralysis. There is no simple home antidote.",
       "The orange flesh is not the hazard — the kernel inside is, and separating them reliably is not a beginner's task.",
       "Fallen karaka fruit is a recognised poisoning risk for children and dogs. Learn the tree so you can steer them away from it."
@@ -1528,7 +1529,7 @@
     "category" : "fruit",
     "caution" : "doNotEat",
     "commonName" : "Tutu",
-    "edibleParts" : "None. Every part of this plant except the fleshy petal is lethally toxic.",
+    "edibleParts" : "None.",
     "habitat" : "Riverbeds, slips, forest margins, regenerating scrub. Extremely common nationwide.",
     "harvestEthics" : "Do not harvest. This entry exists so you can recognise it.",
     "id" : "tutu",
@@ -1583,6 +1584,7 @@
     ],
     "summary" : "The most dangerous plant a New Zealand forager can meet. Learn it, then never touch it.",
     "warnings" : [
+      "Every part of this plant except the fleshy petal is lethally toxic.",
       "Contains tutin. Tutu has killed people, and historically killed a circus elephant in Whanganui. Seeds, leaves and shoots are all lethal.",
       "Toxic honey: bees do not visit tutu, but passionvine hoppers feed on it and excrete honeydew that bees collect. This produces genuinely poisonous honey and is the reason NZ regulates honey harvesting in tutu regions between December and April.",
       "Never make a wine, cordial or jam from any purple-black wild berry in NZ unless you have positively identified the plant."

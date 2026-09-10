@@ -7,9 +7,9 @@ import SwiftUI
 struct LabelledField: View {
     let label: String
     @Binding var text: String
-    var italic = false
-    var lines: ClosedRange<Int>?
-    var help: String?
+    let italic: Bool
+    let lines: ClosedRange<Int>?
+    let help: String?
 
     init(
         _ label: String,
@@ -186,7 +186,7 @@ struct LookalikeEditor: View {
                             Text("Unpalatable").tag(LookalikeRisk.unpalatable)
                         }
                         .labelsHidden()
-                        .frame(width: 140)
+                        .frame(width: EditorLayout.riskPickerWidth)
 
                         Button {
                             var next = lookalikes
@@ -214,9 +214,12 @@ struct LookalikeEditor: View {
                     .textFieldStyle(.roundedBorder)
                 }
                 .padding(10)
+                // A deadly lookalike is a caution affordance, so its tint comes from the one
+                // semantic mapping — not a system red that happens to look similar.
                 .background(
-                    (lookalike.risk == .deadly ? Color.red : Color.secondary).opacity(0.08),
-                    in: RoundedRectangle(cornerRadius: 6)
+                    (lookalike.risk == .deadly ? lookalike.risk.tintColor : Color.secondary)
+                        .opacity(Layout.bannerBackgroundOpacity),
+                    in: EditorLayout.insetShape
                 )
             }
 
@@ -260,11 +263,13 @@ struct MonthPicker: View {
                 }
                 .buttonStyle(.borderless)
                 .font(.caption)
-                .frame(minWidth: 26)
+                .frame(minWidth: EditorLayout.monthButtonMinimumWidth)
                 .padding(.vertical, 5)
                 .background(
-                    isOn ? Color.accentColor.opacity(0.3) : Color.secondary.opacity(0.12),
-                    in: RoundedRectangle(cornerRadius: 4)
+                    isOn
+                        ? Color.accentColor.opacity(EditorLayout.selectedTintOpacity)
+                        : Color.secondary.opacity(Layout.bannerBackgroundOpacity),
+                    in: EditorLayout.insetShape
                 )
             }
         }

@@ -11,14 +11,16 @@ struct SpeciesPhotoStrip: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: .xSmall) {
-            ScrollView(.horizontal) {
-                LazyHStack(alignment: .top, spacing: .small) {
-                    ForEach(species.photos) { photo in
-                        photoCard(photo)
+            if !species.photos.isEmpty {
+                ScrollView(.horizontal) {
+                    LazyHStack(alignment: .top, spacing: .small) {
+                        ForEach(species.photos) { photo in
+                            photoCard(photo)
+                        }
                     }
                 }
+                .scrollIndicators(.visible)
             }
-            .scrollIndicators(.visible)
 
             if let url = species.moreImagesURL {
                 VStack(alignment: .leading, spacing: .xxxSmall) {

@@ -9,6 +9,7 @@ struct PhotoSectionView: View {
     let species: ForageSpecies
     let photoDirectory: URL?
     let onChange: (ForageSpecies) -> Void
+    let onRemovePhoto: (SpeciesPhoto) -> Void
 
     @State private var importError: String?
 
@@ -135,10 +136,10 @@ struct PhotoSectionView: View {
                 Image(systemName: "minus.circle.fill")
             }
             .buttonStyle(.borderless)
-            .help("Remove photo and delete the file")
+            .help("Remove photo — the file is deleted when you save")
         }
         .padding(10)
-        .background(.quaternary.opacity(0.35), in: RoundedRectangle(cornerRadius: 6))
+        .background(.quaternary.opacity(Layout.cardBackgroundOpacity), in: EditorLayout.insetShape)
     }
 
     @ViewBuilder
@@ -148,12 +149,12 @@ struct PhotoSectionView: View {
             Image(nsImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 96, height: 96)
-                .clipShape(RoundedRectangle(cornerRadius: 5))
+                .frame(width: EditorLayout.thumbnailSize, height: EditorLayout.thumbnailSize)
+                .clipShape(EditorLayout.insetShape)
         } else {
-            RoundedRectangle(cornerRadius: 5)
+            EditorLayout.insetShape
                 .fill(.quaternary)
-                .frame(width: 96, height: 96)
+                .frame(width: EditorLayout.thumbnailSize, height: EditorLayout.thumbnailSize)
                 .overlay {
                     Image(systemName: "photo")
                         .foregroundStyle(.secondary)
@@ -204,9 +205,7 @@ struct PhotoSectionView: View {
         var next = species.photos
         next.remove(at: index)
         onChange(species.with(photos: next))
-        if let photoDirectory {
-            PhotoImporter.deleteFile(for: photo, in: photoDirectory)
-        }
+        onRemovePhoto(photo)
     }
 
     // MARK: - Import
@@ -246,7 +245,7 @@ struct PhotoSectionView: View {
                 )
                 added.append(photo)
             } catch {
-                failures.append((error as? LocalizedError)?.errorDescription ?? String(describing: error))
+                failures.append(error.errorDescription ?? String(describing: error))
             }
         }
 

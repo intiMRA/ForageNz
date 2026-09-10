@@ -291,8 +291,12 @@ def fetch_inat_taxon(scientific_name: str, locale: str | None = None) -> InatTax
 
     first = results[0]
     common = str(first.get("preferred_common_name") or "").strip()
+    raw_id = first.get("id")
+    if not isinstance(raw_id, int):
+        raise SourceError(f"iNaturalist taxon result without a numeric id: {first!r}")
+    taxon_id = raw_id
     return InatTaxon(
-        taxon_id=int(first["id"]),
+        taxon_id=taxon_id,
         scientific_name=str(first.get("name") or scientific_name),
         preferred_common_name=common or None,
     )
@@ -590,7 +594,11 @@ def main() -> int:
         print(f"No catalogue at {CATALOGUE} — run from the repo root.", file=sys.stderr)
         return 1
 
-    entries: list[dict[str, Any]] = json.loads(CATALOGUE.read_text())
+    try:
+        entries: list[dict[str, Any]] = json.loads(CATALOGUE.read_text())
+    except (OSError, json.JSONDecodeError) as error:
+        print(f"Couldn't read {CATALOGUE}: {error}", file=sys.stderr)
+        return 1
     identifiers_before = {str(entry[Field.ID]) for entry in entries}
     wanted = set(arguments.only.split(",")) if arguments.only else None
 
@@ -689,7 +697,8 @@ def main() -> int:
         )
         return 1
 
-    print(f"  {result.stdout.strip().splitlines()[-1]}")
+    lines = result.stdout.strip().splitlines()
+    print(f"  {lines[-1] if lines else '(normaliser printed nothing)'}")
     print("Then `swift run catalogue-tool --check` to confirm nothing is blocking.")
     return 0
 

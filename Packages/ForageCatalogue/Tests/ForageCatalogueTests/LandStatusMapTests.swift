@@ -73,6 +73,23 @@ struct LandStatusMapTests {
         }
     }
 
+    @Test("metadata that assigns a flag to a different bit is refused")
+    func flagMismatchIsRefused() throws {
+        let directory = try Self.temporaryDirectory()
+        let raster = directory.appending(path: "raster.png")
+        try Self.writeGrey(pixels: [0, 1, 2, 3], width: 2, height: 2, to: raster)
+        let metadata = directory.appending(path: "grid.json")
+        try Data("""
+        {"minLongitude": 0.0, "maxLongitude": 2.0, "minLatitude": -2.0, "maxLatitude": 0.0,
+         "degreesPerPixel": 1.0, "width": 2, "height": 2,
+         "flags": { "conservation": 2, "marineReserve": 1 }}
+        """.utf8).write(to: metadata)
+
+        #expect(throws: LandStatusMap.Failure.self) {
+            try LandStatusMap(rasterURL: raster, metadataURL: metadata)
+        }
+    }
+
     @Test("a missing raster is reported rather than silently empty")
     func missingRasterIsReported() throws {
         let directory = try Self.temporaryDirectory()
@@ -94,8 +111,8 @@ extension LandStatusMapTests {
         guard let catalogue = CatalogueLocator.resolve() else { return nil }
         let directory = catalogue.deletingLastPathComponent()
         return try? LandStatusMap(
-            rasterURL: directory.appending(path: "land-status.png"),
-            metadataURL: directory.appending(path: "land-status.json")
+            rasterURL: directory.appending(path: "\(LandStatusMap.shippedResourceName).png"),
+            metadataURL: directory.appending(path: "\(LandStatusMap.shippedResourceName).json")
         )
     }()
 
@@ -146,7 +163,8 @@ extension LandStatusMapTests {
           "maxLatitude": 0.0,
           "degreesPerPixel": \(degreesPerPixel),
           "width": \(width),
-          "height": \(height)
+          "height": \(height),
+          "flags": { "conservation": 1, "marineReserve": 2 }
         }
         """
         try Data(grid.utf8).write(to: url)

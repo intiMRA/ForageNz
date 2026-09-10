@@ -42,10 +42,10 @@ actor BundledSpeciesRepository: SpeciesRepository {
         return species
     }
 
+    /// Through `CatalogueFile`, so the app and the editor cannot drift on decoder settings.
     private func decodeSpecies(at url: URL) throws(SpeciesRepositoryError) -> [ForageSpecies] {
         do {
-            let data = try Data(contentsOf: url)
-            return try JSONDecoder().decode([ForageSpecies].self, from: data)
+            return try CatalogueFile.load(from: url)
         } catch {
             throw .catalogueUnreadable(description: String(describing: error))
         }

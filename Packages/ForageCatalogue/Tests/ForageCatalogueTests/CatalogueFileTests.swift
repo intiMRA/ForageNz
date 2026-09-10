@@ -7,15 +7,7 @@ import ForageCatalogue
 struct CatalogueFileTests {
     /// The real catalogue in the repo, located relative to this source file.
     private static var repoCatalogue: URL? {
-        var directory = URL(fileURLWithPath: #filePath).deletingLastPathComponent()
-        for _ in 0..<8 {
-            let candidate = directory.appending(path: "ForageNZ/Catalogue/species.json")
-            if FileManager.default.fileExists(atPath: candidate.path) { return candidate }
-            let parent = directory.deletingLastPathComponent()
-            if parent.path == directory.path { break }
-            directory = parent
-        }
-        return nil
+        CatalogueLocator.search(from: URL(fileURLWithPath: #filePath))
     }
 
     @Test("The shipped catalogue decodes through the shared model")

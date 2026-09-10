@@ -58,8 +58,6 @@ final class WhereYouAreStore {
                 map.status(latitude: coordinate.latitude, longitude: coordinate.longitude)
             ))
         } catch {
-            // A plain `catch` and a downcast, not `catch let error as …`: a typed catch
-            // binding in an async function crashes swift-frontend on the pinned toolchain.
             if let error = error as? LandStatusRepositoryError {
                 Self.logger.error("Land map load failed: \(String(describing: error), privacy: .public)")
                 state = .failed(message: error.userMessage)

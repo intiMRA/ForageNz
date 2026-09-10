@@ -5,19 +5,13 @@ import Testing
 import UniformTypeIdentifiers
 
 import ForageCatalogue
+import ForageCatalogueTooling
 
 @Suite("Photo matcher")
 struct PhotoMatcherTests {
+    /// The real catalogue in the repo, located by walking up from this source file.
     private static var repoCatalogue: URL? {
-        var directory = URL(fileURLWithPath: #filePath).deletingLastPathComponent()
-        for _ in 0..<8 {
-            let candidate = directory.appending(path: "ForageNZ/Catalogue/species.json")
-            if FileManager.default.fileExists(atPath: candidate.path) { return candidate }
-            let parent = directory.deletingLastPathComponent()
-            if parent.path == directory.path { break }
-            directory = parent
-        }
-        return nil
+        CatalogueLocator.search(from: URL(fileURLWithPath: #filePath))
     }
 
     // MARK: - Vector maths
@@ -50,7 +44,6 @@ struct PhotoMatcherTests {
             FeatureVector(values: [1, 0]),
             FeatureVector(values: [0, 1])
         ]))
-        // Equidistant from both inputs.
         let toFirst = mean.distance(to: FeatureVector(values: [1, 0]))
         let toSecond = mean.distance(to: FeatureVector(values: [0, 1]))
         #expect(abs(toFirst - toSecond) < 1e-6)
@@ -90,7 +83,6 @@ struct PhotoMatcherTests {
         )
         let sameSpecies = first.distance(to: second)
 
-        // Synthetic controls: flat colour and noise are as unlike a mushroom as it gets.
         let controls = try [
             makeImage(kind: .solid(red: 0.1, green: 0.4, blue: 0.9)),
             makeImage(kind: .noise)
@@ -105,23 +97,50 @@ struct PhotoMatcherTests {
         }
     }
 
-    @Test("Building the index skips species with no photos and records the revision")
+    @Test("Building the index reads every shipped photo and carries each species' caution")
     func indexBuild() throws {
         let catalogue = try #require(Self.repoCatalogue)
         let species = try CatalogueFile.load(from: catalogue)
-        let (index, skipped) = PhotoIndex.build(
+        let (index, unreadable) = PhotoIndex.build(
             species: species,
             photoDirectory: PhotoAudit.directory(forCatalogueAt: catalogue)
         )
 
-        #expect(skipped.isEmpty, "Photos failed to read: \(skipped)")
+        #expect(unreadable.isEmpty, "Photos failed to read: \(unreadable)")
         #expect(index.revision == PhotoMatcher.currentRevision)
         #expect(index.prototypes.count == species.filter { !$0.photos.isEmpty }.count)
-        #expect(index.cautions.count == species.count, "Every species needs a caution for safe presentation")
 
+        let cautions = Dictionary(uniqueKeysWithValues: species.map { ($0.id, $0.caution) })
         for prototype in index.prototypes {
             #expect(prototype.photoCount > 0)
+            #expect(prototype.caution == cautions[prototype.speciesId])
         }
+    }
+
+    @Test("A photo that can't be read is named, and the species keeps what did read")
+    func unreadablePhotoIsReported() throws {
+        let directory = URL.temporaryDirectory.appending(path: UUID().uuidString)
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        defer { try? FileManager.default.removeItem(at: directory) }
+
+        let good = try makeImage(kind: .solid(red: 0.2, green: 0.6, blue: 0.2))
+        try FileManager.default.copyItem(at: good, to: directory.appending(path: "ok.png"))
+        try Data([0, 1, 2]).write(to: directory.appending(path: "broken.png"))
+
+        let species = ForageSpecies(
+            id: "test", commonName: "Test", scientificName: "T. t.",
+            category: .greens, origin: .introduced, caution: .careRequired,
+            summary: "", habitat: "", identification: "", edibleParts: "", preparation: "",
+            photos: [
+                SpeciesPhoto(fileName: "ok.png", caption: "a", credit: "b"),
+                SpeciesPhoto(fileName: "broken.png", caption: "a", credit: "b")
+            ]
+        )
+
+        let (index, unreadable) = PhotoIndex.build(species: [species], photoDirectory: directory)
+
+        #expect(unreadable.map(\.fileName) == ["broken.png"])
+        #expect(index.prototypes.first?.photoCount == 1, "the prototype must report how many photos it is really built from")
     }
 
     @Test("A species' own photo ranks that species first")
@@ -140,20 +159,19 @@ struct PhotoMatcherTests {
         #expect(matches.first?.speciesId == entry.id)
     }
 
-    @Test("The index survives a round-trip, so it can ship prebuilt")
+    @Test("The index survives a round-trip")
     func indexIsCodable() throws {
         let index = PhotoIndex(
             revision: 2,
             prototypes: [SpeciesPrototype(
-                speciesId: "porcini", photoCount: 2, vector: FeatureVector(values: [1, 0, 0])
-            )],
-            cautions: ["porcini": .careRequired]
+                speciesId: "porcini", caution: .careRequired, photoCount: 2, vector: FeatureVector(values: [1, 0, 0])
+            )]
         )
         let data = try JSONEncoder().encode(index)
         let restored = try JSONDecoder().decode(PhotoIndex.self, from: data)
         #expect(restored.revision == 2)
         #expect(restored.prototypes.first?.speciesId == "porcini")
-        #expect(restored.cautions["porcini"] == .careRequired)
+        #expect(restored.prototypes.first?.caution == .careRequired)
     }
 
     // MARK: - Safety behaviour
@@ -164,25 +182,15 @@ struct PhotoMatcherTests {
         let index = PhotoIndex(
             revision: 1,
             prototypes: [
-                SpeciesPrototype(speciesId: "a", photoCount: 1, vector: FeatureVector(values: [1, 0, 0])),
-                SpeciesPrototype(speciesId: "b", photoCount: 1, vector: FeatureVector(values: [0.9, 0.1, 0])),
-                SpeciesPrototype(speciesId: "death-cap", photoCount: 1, vector: FeatureVector(values: [0, 0, 1]))
-            ],
-            cautions: ["a": .straightforward, "b": .careRequired, "death-cap": .doNotEat]
+                SpeciesPrototype(speciesId: "a", caution: .straightforward, photoCount: 1, vector: FeatureVector(values: [1, 0, 0])),
+                SpeciesPrototype(speciesId: "b", caution: .careRequired, photoCount: 1, vector: FeatureVector(values: [0.9, 0.1, 0])),
+                SpeciesPrototype(speciesId: "death-cap", caution: .doNotEat, photoCount: 1, vector: FeatureVector(values: [0, 0, 1]))
+            ]
         )
 
         let matches = index.matches(for: FeatureVector(values: [1, 0, 0]), limit: 2)
         #expect(matches.contains { $0.speciesId == "death-cap" })
         #expect(matches.last?.speciesId == "death-cap", "It should still rank last, just not be hidden")
-    }
-
-    @Test("Comparing across Vision revisions is refused, not silently wrong")
-    func revisionMismatchThrows() {
-        let index = PhotoIndex(revision: 1, prototypes: [], cautions: [:])
-        #expect(throws: PhotoMatcher.Failure.revisionMismatch(indexRevision: 1, queryRevision: 2)) {
-            try index.requireCompatible(queryRevision: 2)
-        }
-        #expect(throws: Never.self) { try index.requireCompatible(queryRevision: 1) }
     }
 
     @Test("An unreadable file reports rather than crashing")

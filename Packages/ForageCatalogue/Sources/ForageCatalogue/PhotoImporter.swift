@@ -41,10 +41,14 @@ public enum PhotoImporter {
         credit: String = "",
         sourceURL: URL? = nil,
         fileManager: FileManager = .default
-    ) throws -> SpeciesPhoto {
+    ) throws(Failure) -> SpeciesPhoto {
         let data = try encode(source)
 
-        try fileManager.createDirectory(at: directory, withIntermediateDirectories: true)
+        do {
+            try fileManager.createDirectory(at: directory, withIntermediateDirectories: true)
+        } catch {
+            throw Failure.writeFailed(String(describing: error))
+        }
         let fileName = nextFileName(speciesId: speciesId, existing: existing, directory: directory, fileManager: fileManager)
 
         do {
@@ -57,7 +61,7 @@ public enum PhotoImporter {
     }
 
     /// The bytes that would be written for `source`, or a failure explaining why not.
-    static func encode(_ source: URL) throws -> Data {
+    static func encode(_ source: URL) throws(Failure) -> Data {
         guard let imageSource = CGImageSourceCreateWithURL(source as CFURL, nil) else {
             throw Failure.unreadable(source.lastPathComponent)
         }
@@ -90,13 +94,18 @@ public enum PhotoImporter {
         return data as Data
     }
 
-    /// Removes the file backing a photo. Called only after it's dropped from the entry.
+    /// Removes the file backing a photo. Call it when the entry that dropped the photo is
+    /// saved — not before, or an unsaved catalogue points at a file that no longer exists.
     public static func deleteFile(
         for photo: SpeciesPhoto,
         in directory: URL,
         fileManager: FileManager = .default
-    ) {
-        try? fileManager.removeItem(at: directory.appending(path: photo.fileName))
+    ) throws(Failure) {
+        do {
+            try fileManager.removeItem(at: directory.appending(path: photo.fileName))
+        } catch {
+            throw .writeFailed("could not delete \(photo.fileName) — \(error.localizedDescription)")
+        }
     }
 
     /// First index not already taken, checking disk too so a deleted-then-re-added photo

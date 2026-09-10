@@ -65,28 +65,30 @@ final class FieldGuideUITests: XCTestCase {
     func testOpeningASpeciesShowsItsDetail() {
         app.tabBars.buttons["Field guide"].tap()
 
-        let dandelion = app.buttons.containing(.staticText, identifier: "Dandelion").firstMatch
+        let dandelion = app.buttons.containing(.staticText, identifier: "speciesRow.dandelion").firstMatch
         XCTAssertTrue(
             dandelion.waitForExistence(timeout: Self.existenceTimeout),
             "Dandelion row not found in the field guide"
         )
         dandelion.tap()
 
+        let scientificName = app.staticTexts["speciesDetail.scientificName"]
         XCTAssertTrue(
-            app.staticTexts["Taraxacum officinale"].waitForExistence(timeout: Self.existenceTimeout),
+            scientificName.waitForExistence(timeout: Self.existenceTimeout),
             "Species detail did not show the scientific name"
         )
+        XCTAssertEqual(scientificName.label, "Taraxacum officinale")
     }
 
     func testSafetyTabListsSpeciesThatMustNotBeEaten() {
         app.tabBars.buttons["Safety"].tap()
 
         XCTAssertTrue(
-            app.staticTexts["If you suspect poisoning"].waitForExistence(timeout: Self.existenceTimeout),
+            app.staticTexts["safety.poisoningHeader"].waitForExistence(timeout: Self.existenceTimeout),
             "Safety screen did not load"
         )
 
-        let tutu = app.staticTexts["Tutu"]
+        let tutu = app.staticTexts["speciesRow.tutu"]
         var swipes = 0
         while !tutu.exists && swipes < Self.maxSwipesToReachDoNotEatList {
             app.swipeUp()

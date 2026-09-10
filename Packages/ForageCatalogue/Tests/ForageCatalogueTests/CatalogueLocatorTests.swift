@@ -9,15 +9,30 @@ struct CatalogueLocatorTests {
     /// app bundle sits inside the repo, so only the source anchor can find the catalogue.
     @Test("Resolves from outside the repo entirely")
     func resolvesWithNoUsableWorkingDirectory() {
+        // Working directory and bundle both outside the repo, exactly as under Xcode. Only
+        // the default source anchor — this file — is left to find it.
         let resolved = CatalogueLocator.resolve(
             arguments: [],
-            fileManager: FileManager.default
+            startingAt: URL(fileURLWithPath: "/"),
+            currentDirectory: "/",
+            bundleURL: URL(fileURLWithPath: "/Applications")
         )
 
-        let url = resolved
-        #expect(url != nil, "Locator found nothing — the editor would open with no catalogue")
-        #expect(url?.lastPathComponent == "species.json")
-        #expect(FileManager.default.fileExists(atPath: url?.path ?? ""))
+        #expect(resolved != nil, "Locator found nothing — the editor would open with no catalogue")
+        #expect(resolved?.lastPathComponent == "species.json")
+        #expect(FileManager.default.fileExists(atPath: resolved?.path ?? ""))
+    }
+
+    @Test("With every origin outside the repo, it finds nothing rather than guessing")
+    func nothingToFind() {
+        let resolved = CatalogueLocator.resolve(
+            arguments: [],
+            startingAt: URL(fileURLWithPath: "/"),
+            currentDirectory: "/",
+            bundleURL: URL(fileURLWithPath: "/Applications"),
+            sourceAnchor: "/Applications/Elsewhere.swift"
+        )
+        #expect(resolved == nil)
     }
 
     @Test("An explicit --catalogue argument wins over any search")

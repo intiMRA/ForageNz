@@ -10,6 +10,7 @@ struct SafetyView: View {
                 VStack(alignment: .leading, spacing: .xSmall) {
                     Text("If you suspect poisoning")
                         .font(.headline)
+                        .accessibilityIdentifier("safety.poisoningHeader")
                     Text("Call the National Poisons Centre on \(PoisonsCentre.displayNumber). Do not wait for symptoms — the most dangerous species in this guide have delayed onset.")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)

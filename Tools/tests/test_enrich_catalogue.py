@@ -186,3 +186,52 @@ class TestReportsWithoutChanging:
         entry = make_entry(maoriName="Kawakawa")
         candidate = InatTaxon(1, "Piper excelsum", "Something else")
         assert list(inspect_entry(entry, None, candidate)) == []
+
+
+class TestSeasonality:
+    """The thresholds decide whether a season suggestion is made at all, so each edge is pinned."""
+
+    def test_below_minimum_observations_is_noise(self) -> None:
+        from enrich_catalogue import Seasonality
+
+        thin = Seasonality(counts={1: Seasonality.MINIMUM_OBSERVATIONS - 1})
+        assert not thin.is_meaningful
+        exact = Seasonality(counts={1: Seasonality.MINIMUM_OBSERVATIONS})
+        assert exact.is_meaningful
+
+    def test_peak_months_are_those_at_or_above_the_share_of_the_busiest_month(self) -> None:
+        from enrich_catalogue import Seasonality
+
+        # Busiest month 100 → threshold 25 at PEAK_SHARE 0.25. 25 is in, 24 is out.
+        season = Seasonality(counts={3: 100, 4: 25, 5: 24, 6: 1})
+        assert season.peak_months == (3, 4)
+
+    def test_no_observations_means_no_peak(self) -> None:
+        from enrich_catalogue import Seasonality
+
+        assert Seasonality(counts={}).peak_months == ()
+
+    def test_a_peak_spanning_most_of_the_year_is_not_suggested(self) -> None:
+        from enrich_catalogue import Seasonality, inspect_seasonality
+
+        wide = Seasonality(
+            counts=dict.fromkeys(range(1, Seasonality.NARROW_ENOUGH_TO_MENTION + 2), 50)
+        )
+        entry = make_entry(months=[])
+        assert [f.kind for f in inspect_seasonality(entry, wide)] == []
+
+    def test_a_narrow_peak_on_a_year_round_entry_is_a_suggestion(self) -> None:
+        from enrich_catalogue import FindingKind, Seasonality, inspect_seasonality
+
+        narrow = Seasonality(counts={3: 50, 4: 50, 5: 50})
+        entry = make_entry(months=[])
+        findings = list(inspect_seasonality(entry, narrow))
+        assert [f.kind for f in findings] == [FindingKind.SUGGESTION]
+        assert entry["months"] == [], "months are report-only"
+
+    def test_unreliable_data_produces_nothing(self) -> None:
+        from enrich_catalogue import Seasonality, inspect_seasonality
+
+        entry = make_entry(months=[1])
+        assert list(inspect_seasonality(entry, Seasonality(counts={6: 5}))) == []
+        assert list(inspect_seasonality(entry, None)) == []
