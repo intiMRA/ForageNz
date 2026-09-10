@@ -29,6 +29,9 @@ struct CatalogueTests {
         // Rewritten from scratch after the original was found to be copied text with
         // all-rights-reserved photos. Lookalikes and toxicity claims still need a field guide.
         "porcini",
+        // Added from general knowledge, not a book: verify before trusting the lookalike claims.
+        "hemlock", "ongaonga", "yellow-stainer", "onion-weed", "fat-hen", "plantain", "hawthorn",
+        "gorse", "kareao", "sheep-sorrel", "cleavers",
         // Straightforward.
         "puha", "dandelion", "miners-lettuce", "horopito", "nasturtium", "blackberry", "feijoa",
         "wild-plum", "cherry-guava", "wood-ear", "karengo", "walnut"
