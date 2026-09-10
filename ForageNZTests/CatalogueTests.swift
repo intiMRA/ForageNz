@@ -32,6 +32,8 @@ struct CatalogueTests {
         // Added from general knowledge, not a book: verify before trusting the lookalike claims.
         "hemlock", "ongaonga", "yellow-stainer", "onion-weed", "fat-hen", "plantain", "hawthorn",
         "gorse", "kareao", "sheep-sorrel", "cleavers",
+        "petty-spurge", "scarlet-pimpernel", "catsear", "bracken", "black-nightshade", "prickly-sow-thistle",
+        "horse-chestnut", "wild-carrot", "snowflake",
         // Straightforward.
         "puha", "dandelion", "miners-lettuce", "horopito", "nasturtium", "blackberry", "feijoa",
         "wild-plum", "cherry-guava", "wood-ear", "karengo", "walnut"
