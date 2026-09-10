@@ -275,10 +275,20 @@ Deliberate trade-offs:
   says yes. The Safety section's wording is hedged in every branch, on purpose.
 - **A wrong map fails loudly.** Xcode re-encodes bundled PNGs and ImageIO colour-matches on
   decode; either could re-map values or flip an axis, and an upside-down map answers every
-  query confidently and wrongly. `LandStatusMap.groundTruth` holds four places whose status is
-  not in doubt, the Python builder checks them after rasterising, the Swift tests check them
-  against the shipped file, and `BundledLandStatusRepository` refuses to serve a map that
-  fails them.
+  query confidently and wrongly. `LandStatusMap.groundTruth` holds six places whose status is
+  not in doubt — two national parks, Poor Knights (reserve only), Goat Island (both flags),
+  and two city centres. The builder checks them **before** it writes anything and exits
+  non-zero if any fail, the Swift tests check them against the shipped file, and
+  `BundledLandStatusRepository` refuses to serve a map that fails them.
+
+  Both flags need their own point. An earlier version compared only the conservation bit,
+  which left the marine-reserve bit — the one carrying the absolute prohibition — verified by
+  nothing, and compared `value & expected`, which is vacuously true for the two points
+  expected to be unrestricted. Half the smoke test could not fail. Both are now whole-value
+  comparisons.
+- **Unexpected pixel values are rejected, not masked.** Folding a stray 255 into the low two
+  bits would read as "conservation land AND marine reserve" — a plausible answer from a
+  corrupted raster, and invisible everywhere except the six ground-truth pixels.
 
 Location is taken once, on request, and never leaves the device.
 

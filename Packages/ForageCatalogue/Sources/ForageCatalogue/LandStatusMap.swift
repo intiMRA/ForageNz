@@ -81,7 +81,6 @@ public struct LandStatusMap: Sendable {
         self.packed = try Self.pack(image: image, grid: grid)
     }
 
-    /// Redraws into an 8-bit grey buffer, then packs to two bits per pixel and drops it.
     private static func pack(image: CGImage, grid: Grid) throws(Failure) -> [UInt8] {
         let count = grid.width * grid.height
         var grey = [UInt8](repeating: 0, count: count)
@@ -104,8 +103,14 @@ public struct LandStatusMap: Sendable {
 
         var packed = [UInt8](repeating: 0, count: (count + pixelsPerByte - 1) / pixelsPerByte)
         for index in 0..<count {
-            let value = grey[index] & pixelMask
+            let value = grey[index]
             guard value != 0 else { continue }
+            // Masking instead would fold an unexpected value into a plausible flag set —
+            // 255 would read as "conservation land AND marine reserve" — which is exactly
+            // the pipeline corruption this type claims to catch, made invisible.
+            guard value <= pixelMask else {
+                throw .rasterUnreadable("unexpected pixel value \(value)")
+            }
             let shift = (index % pixelsPerByte) * bitsPerPixel
             packed[index / pixelsPerByte] |= value << UInt8(shift)
         }
@@ -133,9 +138,15 @@ public struct LandStatusMap: Sendable {
     /// The raster travels through Xcode's asset pipeline and ImageIO before anyone reads it,
     /// and either could quietly re-map values or flip an axis. A map that is upside down
     /// still answers every query — with the wrong answer — so it has to be caught.
+    ///
+    /// Every flag needs a point of its own. A check that only looks at `conservation` leaves
+    /// `marineReserve` guarded by nothing, and the reserve bit is the one carrying the
+    /// absolute prohibition.
     public static let groundTruth: [(name: String, latitude: Double, longitude: Double, expected: LandStatus)] = [
         ("Tongariro National Park", -39.2800, 175.5600, .conservation),
         ("Fiordland National Park", -45.4000, 167.7000, .conservation),
+        ("Poor Knights Islands", -35.4667, 174.7333, .marineReserve),
+        ("Goat Island", -36.2686, 174.7967, [.conservation, .marineReserve]),
         ("Wellington CBD", -41.2865, 174.7762, []),
         ("Hamilton CBD", -37.7870, 175.2793, [])
     ]
@@ -144,8 +155,7 @@ public struct LandStatusMap: Sendable {
     /// Only meaningful for the shipped New Zealand raster.
     public func firstGroundTruthFailure() -> String? {
         Self.groundTruth.first { point in
-            status(latitude: point.latitude, longitude: point.longitude)
-                .contains(.conservation) != point.expected.contains(.conservation)
+            status(latitude: point.latitude, longitude: point.longitude) != point.expected
         }?.name
     }
 }

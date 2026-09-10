@@ -2,8 +2,6 @@ import DesignLibrary
 import ForageCatalogue
 import SwiftUI
 
-/// The "what are the rules here" section of the Safety tab.
-///
 /// Every string in here is deliberately hedged. The map is good enough to tell someone to
 /// stop and check, and not good enough to tell them anything is allowed — so no state of
 /// this view ever says yes.
@@ -111,6 +109,7 @@ extension WhereYouAreSection {
         var body: some View {
             HStack(alignment: .top, spacing: .small) {
                 Image(systemName: verdict.symbolName)
+                    .imageScale(.large)
                     .foregroundStyle(verdict.tint)
                     .frame(width: Layout.rowIconWidth)
                     .accessibilityHidden(true)

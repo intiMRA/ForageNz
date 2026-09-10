@@ -47,12 +47,12 @@ struct DeviceLocationProvider: LocationProvider {
                     )
                 }
             }
-        } catch let error as LocationError {
-            throw error
         } catch {
-            throw .unavailable
+            // A plain `catch` and a downcast, not `catch let error as …`: a typed catch
+            // binding in an async function crashes swift-frontend on the pinned toolchain.
+            guard let error = error as? LocationError else { throw .unavailable }
+            throw error
         }
-        // The sequence finished without ever yielding a fix.
         throw .unavailable
     }
 }
