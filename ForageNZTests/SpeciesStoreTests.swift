@@ -51,6 +51,7 @@ private actor FlakyRepository: SpeciesRepository {
 private func makeSpecies(
     id: String,
     commonName: String = "Plant",
+    scientificName: String? = nil,
     category: ForageCategory = .greens,
     origin: ForageOrigin = .introduced,
     caution: CautionLevel = .straightforward,
@@ -61,7 +62,7 @@ private func makeSpecies(
     ForageSpecies(
         id: id,
         commonName: commonName,
-        scientificName: "Testus \(id)",
+        scientificName: scientificName ?? "Testus \(id)",
         category: category,
         origin: origin,
         caution: caution,
@@ -268,5 +269,51 @@ struct SpeciesStoreTests {
 
         #expect(store.search("").count == 2)
         #expect(store.search("   ").count == 2)
+    }
+
+    // MARK: - Lookalike pages
+
+    private func loadedStore(with species: [ForageSpecies]) async -> SpeciesStore {
+        let store = SpeciesStore(repository: StubRepository(species: species))
+        await store.loadIfNeeded()
+        return store
+    }
+
+    @Test("A lookalike with a catalogue page is found by scientific name")
+    func lookalikeMatchedByScientificName() async {
+        let hemlock = makeSpecies(id: "hemlock", commonName: "Hemlock", scientificName: "Conium maculatum")
+        let store = await loadedStore(with: [
+            makeSpecies(id: "wild-fennel", commonName: "Wild fennel", scientificName: "Foeniculum vulgare"),
+            hemlock
+        ])
+        let lookalike = Lookalike(name: "Poison hemlock", scientificName: "conium maculatum", risk: .deadly, howToTell: "Blotched stem.")
+
+        #expect(store.entry(matching: lookalike) == hemlock)
+    }
+
+    @Test("A lookalike recorded without a scientific name falls back to the common name")
+    func lookalikeMatchedByCommonName() async {
+        let fieldMushroom = makeSpecies(id: "field-mushroom", commonName: "Field mushroom", scientificName: "Agaricus campestris")
+        let store = await loadedStore(with: [fieldMushroom])
+        let lookalike = Lookalike(name: "field mushroom", risk: .deadly, howToTell: "Pink gills.")
+
+        #expect(store.entry(matching: lookalike) == fieldMushroom)
+    }
+
+    @Test("An entry covering two species under one name matches a lookalike naming either")
+    func lookalikeMatchesCompoundScientificName() async {
+        let nettle = makeSpecies(id: "nettle", commonName: "Nettle", scientificName: "Urtica dioica / Urtica urens")
+        let store = await loadedStore(with: [nettle])
+
+        #expect(store.entry(matching: Lookalike(name: "Common nettle", scientificName: "Urtica dioica", risk: .deadly, howToTell: "Soft.")) == nettle)
+        #expect(store.entry(matching: Lookalike(name: "Annual nettle", scientificName: "Urtica urens", risk: .deadly, howToTell: "Small.")) == nettle)
+    }
+
+    @Test("A lookalike the catalogue does not cover has no page")
+    func lookalikeWithoutEntry() async {
+        let store = await loadedStore(with: [makeSpecies(id: "wild-fennel", commonName: "Wild fennel")])
+        let lookalike = Lookalike(name: "Hemlock water dropwort", scientificName: "Oenanthe crocata", risk: .deadly, howToTell: "Wet ground.")
+
+        #expect(store.entry(matching: lookalike) == nil)
     }
 }

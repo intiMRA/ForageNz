@@ -71,6 +71,18 @@ final class SpeciesStore {
         return species.filter { $0.searchableText.contains(trimmed) }
     }
 
+    /// The catalogue's own page for a lookalike, if it has one — so "can be confused with
+    /// hemlock" can open hemlock. Matched on scientific name first, which is the reliable key,
+    /// then on common name for lookalikes recorded without one. `nil` means the lookalike is
+    /// described only on this card.
+    func entry(matching lookalike: Lookalike) -> ForageSpecies? {
+        if let scientific = lookalike.scientificName?.trimmingCharacters(in: .whitespaces), !scientific.isEmpty,
+           let match = species.first(where: { $0.scientificNames.contains { $0.caseInsensitiveCompare(scientific) == .orderedSame } }) {
+            return match
+        }
+        return species.first { $0.commonName.caseInsensitiveCompare(lookalike.name) == .orderedSame }
+    }
+
     /// Search plus the browse filters. A `nil` filter means "don't narrow on that dimension".
     func filter(
         query: String = "",
@@ -82,5 +94,13 @@ final class SpeciesStore {
             if let origin, species.origin != origin { return false }
             return true
         }
+    }
+}
+
+private extension ForageSpecies {
+    /// Some entries cover two species under one name — "Urtica dioica / Urtica urens" — so a
+    /// lookalike naming either one should still find the page.
+    var scientificNames: [String] {
+        scientificName.split(separator: "/").map { $0.trimmingCharacters(in: .whitespaces) }
     }
 }

@@ -5,6 +5,8 @@ import SwiftUI
 struct SpeciesDetailView: View {
     let species: ForageSpecies
 
+    @Environment(SpeciesStore.self) private var store
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: .large) {
@@ -194,36 +196,59 @@ struct SpeciesDetailView: View {
                 .font(.headline)
 
             ForEach(species.lookalikes) { lookalike in
-                VStack(alignment: .leading, spacing: .xxxSmall) {
-                    HStack(spacing: .xSmall) {
-                        Text(lookalike.name)
-                            .font(.subheadline.weight(.semibold))
-
-                        Text(lookalike.risk.displayName)
-                            .font(.caption.weight(.bold))
-                            .padding(.horizontal, .xSmall)
-                            .padding(.vertical, .xxxSmall)
-                            .foregroundStyle(.white)
-                            .background(lookalike.risk.tintColor, in: Capsule())
+                // A lookalike with its own page opens it; one described only here is a plain card.
+                if let target = store.entry(matching: lookalike) {
+                    NavigationLink(value: target) {
+                        lookalikeCard(lookalike, linksToEntry: true)
                     }
-
-                    if let scientificName = lookalike.scientificName {
-                        Text(scientificName)
-                            .font(.caption)
-                            .italic()
-                            .foregroundStyle(.secondary)
-                    }
-
-                    Text(lookalike.howToTell)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .padding(.top, .xxxSmall)
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("lookalike.\(target.id)")
+                } else {
+                    lookalikeCard(lookalike, linksToEntry: false)
                 }
-                .padding(.all, .small)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .background(.quaternary.opacity(Layout.cardBackgroundOpacity), in: Layout.cardShape)
             }
         }
+    }
+
+    private func lookalikeCard(_ lookalike: Lookalike, linksToEntry: Bool) -> some View {
+        HStack(alignment: .top, spacing: .xSmall) {
+            VStack(alignment: .leading, spacing: .xxxSmall) {
+                HStack(spacing: .xSmall) {
+                    Text(lookalike.name)
+                        .font(.subheadline.weight(.semibold))
+
+                    Text(lookalike.risk.displayName)
+                        .font(.caption.weight(.bold))
+                        .padding(.horizontal, .xSmall)
+                        .padding(.vertical, .xxxSmall)
+                        .foregroundStyle(.white)
+                        .background(lookalike.risk.tintColor, in: Capsule())
+                }
+
+                if let scientificName = lookalike.scientificName {
+                    Text(scientificName)
+                        .font(.caption)
+                        .italic()
+                        .foregroundStyle(.secondary)
+                }
+
+                Text(lookalike.howToTell)
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .padding(.top, .xxxSmall)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            if linksToEntry {
+                Image(systemName: "chevron.right")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(.tertiary)
+                    .accessibilityHidden(true)
+            }
+        }
+        .padding(.all, .small)
+        .background(.quaternary.opacity(Layout.cardBackgroundOpacity), in: Layout.cardShape)
+        .contentShape(Layout.cardShape)
     }
 
     private var warningsSection: some View {
