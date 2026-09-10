@@ -206,6 +206,79 @@ if arguments.contains("--photos") {
     exit(report.isClean ? 0 : 1)
 }
 
+// Attach reviewed photos from a staging manifest. Only photos whose `caption` has been filled
+// in are attached: writing the caption IS the review — it says you looked at the picture,
+// confirmed the species, and named the feature it shows. Everything else is skipped.
+if let flag = arguments.firstIndex(of: "--attach") {
+    guard arguments.count > flag + 1 else {
+        FileHandle.standardError.write(Data("--attach needs the path to a staging manifest.json\n".utf8))
+        exit(1)
+    }
+    let manifestURL = URL(fileURLWithPath: arguments[flag + 1])
+    let stagingDirectory = manifestURL.deletingLastPathComponent()
+
+    struct StagedPhoto: Decodable {
+        let file: String
+        let licence: String
+        let credit: String
+        let sourceURL: String
+        let caption: String
+    }
+    let manifest: [String: [StagedPhoto]]
+    do {
+        manifest = try JSONDecoder().decode([String: [StagedPhoto]].self, from: Data(contentsOf: manifestURL))
+    } catch {
+        FileHandle.standardError.write(Data("Couldn't read the manifest: \(error)\n".utf8))
+        exit(1)
+    }
+
+    var species = loadCatalogue()
+    let photoDirectory = PhotoAudit.directory(forCatalogueAt: url)
+    var attached = 0
+    var skipped = 0
+    var failed = 0
+
+    for index in species.indices {
+        guard let staged = manifest[species[index].id] else { continue }
+        var photos = species[index].photos
+        for candidate in staged {
+            let caption = candidate.caption.trimmingCharacters(in: .whitespacesAndNewlines)
+            guard !caption.isEmpty else {
+                skipped += 1
+                continue
+            }
+            do {
+                // The stager writes each species into its own folder under the manifest's.
+                let photo = try PhotoImporter.importPhoto(
+                    from: stagingDirectory.appending(path: species[index].id).appending(path: candidate.file),
+                    speciesId: species[index].id,
+                    existing: photos,
+                    into: photoDirectory,
+                    caption: caption,
+                    credit: "\(candidate.credit) (\(candidate.licence.uppercased()))",
+                    sourceURL: URL(string: candidate.sourceURL)
+                )
+                photos.append(photo)
+                attached += 1
+                print("\(species[index].id) · \(photo.fileName) ← \(candidate.file)")
+            } catch {
+                failed += 1
+                FileHandle.standardError.write(Data("\(species[index].id) · \(candidate.file): \(error.localizedDescription)\n".utf8))
+            }
+        }
+        species[index] = species[index].with(photos: photos)
+    }
+
+    do {
+        try CatalogueFile.save(species, to: url)
+    } catch {
+        FileHandle.standardError.write(Data("Couldn't write the catalogue: \(error)\n".utf8))
+        exit(1)
+    }
+    print("\(attached) attached · \(skipped) skipped (no caption) · \(failed) failed")
+    exit(failed == 0 ? 0 : 1)
+}
+
 if arguments.contains("--check") {
     let species = loadCatalogue()
     var blocking = 0
@@ -226,8 +299,10 @@ catalogue-tool — headless catalogue maintenance
   --normalise            rewrite species.json in the canonical shape
   --check                report blocking validation issues
   --photos               report photo budget, missing files and orphans
+  --attach <manifest>    attach the captioned photos from a staging manifest
   --index                build the photo match index and report its separation
   --evaluate <dir>       leave-one-out accuracy over a directory of labelled photos
+  --openset <in> <out>   open-set separation between catalogue and unknown photos
   --catalogue <path>     use a different catalogue file
 
 The editor with a window is the CatalogueEditor scheme in ForageNZ.xcodeproj.

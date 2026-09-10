@@ -134,14 +134,38 @@ class TestReportsWithoutChanging:
         assert entry["origin"] == "native"
         assert any(finding.kind is FindingKind.DISAGREEMENT for finding in findings)
 
-    @pytest.mark.parametrize(
-        "origin", [NzorOrigin.ENDEMIC, NzorOrigin.NON_ENDEMIC, NzorOrigin.INDIGENOUS]
-    )
+    @pytest.mark.parametrize("origin", [NzorOrigin.NON_ENDEMIC, NzorOrigin.INDIGENOUS])
     def test_indigenous_biostatuses_agree_with_native(self, origin: NzorOrigin) -> None:
         """ "Non-endemic" is still indigenous — it occurs naturally here and elsewhere."""
         entry = make_entry(origin="native")
         nzor = NzorRecord(None, "Current", None, (origin,))
         assert list(inspect_entry(entry, nzor, None)) == []
+
+    def test_endemic_source_with_native_entry_is_a_suggestion_not_a_conflict(self) -> None:
+        """Most sources don't record endemism, so `native` is not wrong — just less precise."""
+        entry = make_entry(origin="native")
+        nzor = NzorRecord(None, "Current", None, (NzorOrigin.ENDEMIC,))
+
+        findings = list(inspect_entry(entry, nzor, None))
+
+        assert entry["origin"] == "native", "origin is report-only"
+        assert [finding.kind for finding in findings] == [FindingKind.SUGGESTION]
+        assert "endemic" in findings[0].message
+
+    def test_endemic_entry_agrees_with_endemic_source(self) -> None:
+        entry = make_entry(origin="endemic")
+        nzor = NzorRecord(None, "Current", None, (NzorOrigin.ENDEMIC,))
+        assert list(inspect_entry(entry, nzor, None)) == []
+
+    def test_endemic_entry_conflicts_with_a_non_endemic_source(self) -> None:
+        """Claiming endemism when the source says it occurs elsewhere is a real disagreement."""
+        entry = make_entry(origin="endemic")
+        nzor = NzorRecord(None, "Current", None, (NzorOrigin.NON_ENDEMIC,))
+
+        findings = list(inspect_entry(entry, nzor, None))
+
+        assert entry["origin"] == "endemic"
+        assert [finding.kind for finding in findings] == [FindingKind.DISAGREEMENT]
 
     def test_a_pest_is_consistent_with_exotic(self) -> None:
         """NZOR cannot tell an introduced species from a declared pest."""

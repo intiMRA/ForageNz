@@ -26,6 +26,9 @@ struct CatalogueTests {
         // Need care: processing requirements or toxic parts.
         "watercress", "chickweed", "elderflower", "rosehip", "poroporo", "sweet-chestnut",
         "slippery-jack", "saffron-milk-cap", "pikopiko", "kawakawa", "bull-kelp", "sea-lettuce",
+        // Rewritten from scratch after the original was found to be copied text with
+        // all-rights-reserved photos. Lookalikes and toxicity claims still need a field guide.
+        "porcini",
         // Straightforward.
         "puha", "dandelion", "miners-lettuce", "horopito", "nasturtium", "blackberry", "feijoa",
         "wild-plum", "cherry-guava", "wood-ear", "karengo", "walnut"

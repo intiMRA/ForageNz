@@ -54,7 +54,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/197107",
     "origin" : "native",
     "photos" : [
-
+      {
+        "caption" : "Fronds streaming in the surf, attached to rock",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "bull-kelp-1.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/2893310"
+      },
+      {
+        "caption" : "Storm-cast plant with its holdfast",
+        "credit" : "(c) Emily Roberts, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "bull-kelp-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/222194049"
+      },
+      {
+        "caption" : "Washed-up strap fronds, thick and leathery",
+        "credit" : "(c) Michael Berardozzi, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "bull-kelp-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/361850974"
+      },
+      {
+        "caption" : "Golden fronds on an exposed reef",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "bull-kelp-4.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/2893310"
+      }
     ],
     "preparation" : "Slice thinly and simmer for a long time, or dry and grind as a seasoning. Tough and best treated as a stock ingredient rather than a vegetable.",
     "recipes" : [
@@ -90,7 +113,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/278242",
     "origin" : "pest",
     "photos" : [
-
+      {
+        "caption" : "Shrub with ripening fruit",
+        "credit" : "(c) nick_goldwater, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "cherry-guava-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/44700142"
+      },
+      {
+        "caption" : "Fruit turning red among glossy leaves",
+        "credit" : "(c) nick_goldwater, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "cherry-guava-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/44700142"
+      },
+      {
+        "caption" : "Leaves: oval, glossy, in opposite pairs",
+        "credit" : "(c) Jacek Pietruszewski, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "cherry-guava-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/142286314"
+      },
+      {
+        "caption" : "Dense thicket — its habit where it has naturalised",
+        "credit" : "(c) Jacek Pietruszewski, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "cherry-guava-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/142286314"
+      }
     ],
     "preparation" : "Raw, or into jelly and cordial. Ripe fruit is deep red and gives to a squeeze.",
     "recipes" : [
@@ -133,7 +179,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/53298",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "The flower: five deeply split petals that look like ten",
+        "credit" : "(c) Sam Kieschnick, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "chickweed-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/19666935"
+      },
+      {
+        "caption" : "Sprawling stems with paired oval leaves",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "chickweed-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/222086868"
+      },
+      {
+        "caption" : "Flowers and leaves — snap a stem to check there is no milky sap",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "chickweed-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/139100654"
+      },
+      {
+        "caption" : "A mat on disturbed ground",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "chickweed-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/139100654"
+      }
     ],
     "preparation" : "Raw in salads, blitzed into a pesto, or wilted briefly. Mild enough to eat in quantity.",
     "recipes" : [
@@ -170,7 +239,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/47602",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Rosette in a footpath, flowering",
+        "credit" : "(c) Георгий Виноградов (Georgy Vinogradov), some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "dandelion-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/47114973"
+      },
+      {
+        "caption" : "Flowers and leaves",
+        "credit" : "(c) Георгий Виноградов (Georgy Vinogradov), some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "dandelion-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/47114973"
+      },
+      {
+        "caption" : "Leaves — a single flower per hollow, leafless stem",
+        "credit" : "(c) Sandy Wolkenberg, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "dandelion-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/63986592"
+      },
+      {
+        "caption" : "Deeply toothed leaves",
+        "credit" : "(c) Sandy Wolkenberg, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "dandelion-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/63986592"
+      }
     ],
     "preparation" : "Young leaves raw; older leaves boiled to cut bitterness. Flowers battered or made into syrup. Roots roasted as a coffee substitute.",
     "recipes" : [
@@ -218,7 +310,36 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/52135",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Cap from above: olive-grey and smooth, under oak",
+        "credit" : "(c) Sofia Zvolanek, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "death-cap-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/221717534"
+      },
+      {
+        "caption" : "Young fruiting body in grass beneath oak",
+        "credit" : "(c) Sofia Zvolanek, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "death-cap-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/221717534"
+      },
+      {
+        "caption" : "Cap with white veil fragments — never mistake this for a field mushroom",
+        "credit" : "(c) Sofia Zvolanek, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "death-cap-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/221717534"
+      },
+      {
+        "caption" : "The base dug out whole: a sac-like volva around the stem",
+        "credit" : "(c) Sofia Zvolanek, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "death-cap-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/221717534"
+      },
+      {
+        "caption" : "Skirt-like ring high on the white stem, volva at the base",
+        "credit" : "(c) Sofia Zvolanek, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "death-cap-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/221717534"
+      }
     ],
     "preparation" : "None. Cooking, drying and freezing do not destroy amatoxins.",
     "recipes" : [
@@ -255,7 +376,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/765394",
     "origin" : "pest",
     "photos" : [
-
+      {
+        "caption" : "Compound leaf with paired, toothed leaflets",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "elderflower-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/95671167"
+      },
+      {
+        "caption" : "Flat-topped cluster of creamy flowers",
+        "credit" : "(c) Kate McAlpine, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "elderflower-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/62694314"
+      },
+      {
+        "caption" : "Green unripe berries — not for eating",
+        "credit" : "(c) Kate McAlpine, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "elderflower-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/62694314"
+      },
+      {
+        "caption" : "Foliage: leaflets in opposite pairs",
+        "credit" : "(c) Kate McAlpine, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "elderflower-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/62694314"
+      }
     ],
     "preparation" : "Flowers into cordial, fritters or a sparkling wine. Berries MUST be cooked and strained — cooked into syrup, jelly or wine. Never eat raw berries.",
     "recipes" : [
@@ -292,7 +436,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/1341071",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Flowers: fleshy petals and red stamens",
+        "credit" : "(c) Denis Zabin, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "feijoa-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/144802342"
+      },
+      {
+        "caption" : "Flowers among grey-green leaves",
+        "credit" : "(c) Denis Zabin, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "feijoa-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/144802342"
+      },
+      {
+        "caption" : "Fruit in the hand",
+        "credit" : "(c) B. Phalan, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "feijoa-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/112860110"
+      },
+      {
+        "caption" : "Fruit on the tree, leaves silvery beneath",
+        "credit" : "(c) B. Phalan, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "feijoa-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/112860110"
+      }
     ],
     "preparation" : "Feijoas ripen off the tree and are ripe when they fall — do not pick, gather. Halve and scoop.",
     "recipes" : [
@@ -340,7 +507,36 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/143563",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Pink-brown gills and a clean white stem",
+        "credit" : "(c) Kevin Speray, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "field-mushroom-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/53201854"
+      },
+      {
+        "caption" : "Two in the hand: chocolate-brown gills, no sac at the base",
+        "credit" : "(c) Kevin Speray, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "field-mushroom-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/53201854"
+      },
+      {
+        "caption" : "Gills edge-on under a dry white cap",
+        "credit" : "(c) Kevin Speray, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "field-mushroom-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/53201854"
+      },
+      {
+        "caption" : "Unopened button in pasture — dig it up to check the base",
+        "credit" : "(c) Kevin Speray, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "field-mushroom-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/53201854"
+      },
+      {
+        "caption" : "White cap from above — always check underneath",
+        "credit" : "(c) Kevin Speray, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "field-mushroom-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/53201854"
+      }
     ],
     "preparation" : "Cook. Excellent fried.",
     "recipes" : [
@@ -375,9 +571,32 @@
 
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/71054",
-    "origin" : "native",
+    "origin" : "endemic",
     "photos" : [
-
+      {
+        "caption" : "Red-blotched leaves — chew a corner, it burns",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "horopito-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/15547358"
+      },
+      {
+        "caption" : "Bush among ferns, leaves speckled red",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "horopito-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/15547358"
+      },
+      {
+        "caption" : "Leaf underside: pale and bluish-white",
+        "credit" : "(c) kiwialli, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "horopito-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/338696045"
+      },
+      {
+        "caption" : "Shrub habit in the understorey",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "horopito-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/15547358"
+      }
     ],
     "preparation" : "Dry and grind as a pepper substitute, or use fresh leaves in a rub. Very potent — start with far less than you think.",
     "recipes" : [
@@ -412,9 +631,32 @@
       4
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/160928",
-    "origin" : "native",
+    "origin" : "endemic",
     "photos" : [
-
+      {
+        "caption" : "Large glossy leaves from below",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "karaka-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/39440377"
+      },
+      {
+        "caption" : "Seedling on the forest floor",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "karaka-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/39440377"
+      },
+      {
+        "caption" : "Flower panicles among the leathery leaves",
+        "credit" : "(c) Michael Keith, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "karaka-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/184196850"
+      },
+      {
+        "caption" : "Mature tree, wind-sheared, on farmland",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "karaka-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/187040405"
+      }
     ],
     "preparation" : "Do not prepare. Traditional Māori processing involved prolonged steaming, extended soaking in running water for days, and expert knowledge passed down through generations. Modern poisonings occur when people shortcut this.",
     "recipes" : [
@@ -489,7 +731,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/404899",
     "origin" : "native",
     "photos" : [
-
+      {
+        "caption" : "Green fruit spike close up",
+        "credit" : "(c) Duncan Cunningham, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "kawakawa-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/9140037"
+      },
+      {
+        "caption" : "Fruit spikes above the leaves",
+        "credit" : "(c) Duncan Cunningham, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "kawakawa-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/9140037"
+      },
+      {
+        "caption" : "Leaf and fruit spikes",
+        "credit" : "(c) John Steel, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "kawakawa-3.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/1245730"
+      },
+      {
+        "caption" : "Heart-shaped leaves with the usual insect holes",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "kawakawa-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/281674564"
+      }
     ],
     "preparation" : "Traditionally the hole-riddled leaves are chosen as the most potent. Dry and steep as a tea, or use fresh leaves to wrap food. Use as a flavouring, not a bulk green.",
     "recipes" : [
@@ -526,7 +791,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/52994",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Plants with round leaves and small white flowers",
+        "credit" : "(c) larndesolen, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "miners-lettuce-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/24818327"
+      },
+      {
+        "caption" : "A mat of leaves",
+        "credit" : "(c) Kristiina Hurme, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "miners-lettuce-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/21307530"
+      },
+      {
+        "caption" : "The perfoliate leaf: the stem passes through the middle",
+        "credit" : "(c) Alan Rockefeller, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "miners-lettuce-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/22868417"
+      },
+      {
+        "caption" : "Flower cluster sitting in the leaf disc",
+        "credit" : "(c) Alan Rockefeller, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "miners-lettuce-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/22868417"
+      }
     ],
     "preparation" : "Raw. It is a salad green and cooking wastes it.",
     "recipes" : [
@@ -564,7 +852,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/54329",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "The orange flower with its spur behind",
+        "credit" : "(c) Antonio W. Salas, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "nasturtium-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/93537593"
+      },
+      {
+        "caption" : "Flowers over round, shield-like leaves",
+        "credit" : "(c) Kate McAlpine, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "nasturtium-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/209362067"
+      },
+      {
+        "caption" : "Leaves: veins radiating from the centre",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "nasturtium-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/270917386"
+      },
+      {
+        "caption" : "Leaf and flower",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "nasturtium-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/270917386"
+      }
     ],
     "preparation" : "Leaves and flowers raw in salads. Green seed pods brined and pickled as 'poor man's capers'.",
     "recipes" : [
@@ -606,7 +917,24 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/197042",
     "origin" : "native",
     "photos" : [
-
+      {
+        "caption" : "Mature frond of hen and chicken fern",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "pikopiko-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/250240077"
+      },
+      {
+        "caption" : "Frond detail — finely divided pinnae",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "pikopiko-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/250240077"
+      },
+      {
+        "caption" : "The edible koru: curled young frond tips",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "pikopiko-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/250240077"
+      }
     ],
     "preparation" : "Rub off the papery brown scales, then blanch or sauté. Asparagus-like, slightly bitter. Do not eat raw in quantity.",
     "recipes" : [
@@ -624,14 +952,24 @@
   },
   {
     "category" : "fungi",
-    "caution" : "straightforward",
+    "caution" : "careRequired",
     "commonName" : "Porcini",
-    "edibleParts" : "All",
-    "habitat" : "They’re most commonly found growing under English oak, pine, English beech, and silver birch trees.",
+    "edibleParts" : "Cap and stem. Trim any maggot-riddled stem base.",
+    "habitat" : "Mycorrhizal with introduced trees: oak, birch, pine and sweet chestnut. Look along the drip line of mature street and park trees and in old shelter belts, especially in Canterbury. It does not grow with native bush trees, so a bolete under beech or kānuka is something else.",
     "id" : "porcini",
-    "identification" : "The mushroom cap will look like a slightly greasy bun and the colour can range from yellow brown to a reddish brown. The caps can grow as large as 30cm (12inch) when mature and weigh up to 1kg (2lb) with a stem of about the same weight. When cut, the flesh should remain white.  The stem shows a very faint net pattern and is very solid and white. If in doubt, cut it. It should not change colour. When I first picked this mushroom with an expert at my side he told me to look for what he called \"chicken wiring\" on the stem - and if you look closely you will see that it has this webbing. This is a sure sign that you are holding a king bolete or porcini. \nIf you still have doubts then ask a friend who is familiar with picking mushrooms or take close pictures and find a forum where people can help you identify your bounty. Never eat something you are unsure about - mushroom picking is fun and rewarding, but it is not for someone who has not read up on any poisonous mushrooms that look similar to what they are picking.",
+    "identification" : "Cap 8–30 cm, tan to chestnut brown, smooth and slightly tacky when wet, often with a fine pale line at the rim. Underneath is a sponge of tiny pores, never gills: white and firm when young, ageing to yellow then olive. The stem is thick and club-shaped, pale brown, with a fine white net (reticulation) at least over the top third — look closely, it is subtle. Flesh is white and stays white when cut or bruised; any blueing, pinking or reddening rules porcini out. Taste a crumb of raw cap and spit it out: it should be mild and nutty, never bitter.",
     "lookalikes" : [
-
+      {
+        "howToTell" : "Pores turn pink with age where porcini's turn yellow-olive, the stem net is dark brown rather than white, and a crumb of raw cap is intensely bitter. Not dangerous, but one ruins the whole pan.",
+        "name" : "Bitter bolete",
+        "risk" : "unpalatable",
+        "scientificName" : "Tylopilus felleus"
+      },
+      {
+        "howToTell" : "Look at the pore surface: porcini's is white to olive. Any bolete with red or orange pores, or whose flesh turns blue when cut, is not porcini — several of these cause severe vomiting. Cut every specimen and watch the flesh for a minute.",
+        "name" : "Red- or orange-pored boletes",
+        "risk" : "toxic"
+      }
     ],
     "months" : [
       3,
@@ -642,27 +980,36 @@
     "origin" : "introduced",
     "photos" : [
       {
-        "caption" : "entire mushroom",
-        "credit" : "https://www.first-nature.com/",
-        "fileName" : "porcini-1.heic"
+        "caption" : "Brown caps and stout pale stems under pine",
+        "credit" : "(c) Alan Rockefeller, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "porcini-1.heic",
+        "sourceURL" : "http://www.inaturalist.org/observations/4751351"
       },
       {
-        "caption" : "mushroom in the wild",
-        "credit" : "https://www.first-nature.com/",
-        "fileName" : "porcini-2.heic"
+        "caption" : "A row of caps at ground level",
+        "credit" : "(c) Alan Rockefeller, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "porcini-2.heic",
+        "sourceURL" : "http://www.inaturalist.org/observations/4751351"
+      },
+      {
+        "caption" : "Lineup with a cut specimen — the flesh stays white",
+        "credit" : "(c) Alan Rockefeller, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "porcini-3.heic",
+        "sourceURL" : "http://www.inaturalist.org/observations/4751351"
       }
     ],
-    "preparation" : "Sautéed using butter",
+    "preparation" : "Cook before eating. Brush clean rather than wash, slice, and check the stem for maggots. Sauté in butter, or slice thinly and dry for stock — the flavour concentrates.",
     "recipes" : [
 
     ],
     "scientificName" : "Boletus edulis",
     "sources" : [
-      "https://thegreedyvegan.com/how-to-identify-and-pick-porcini/"
-    ],
-    "summary" : "Porcini mushrooms have a distinctive appearance, with a thick, pale stem and a broad brown cap that gives them a shape often compared to a Champagne cork.\n\nBeneath their dark brown exterior lies firm white flesh, which retains its colour when cooked. Their dense texture and rich flavour make them particularly popular in hearty autumn and winter recipes.",
-    "warnings" : [
 
+    ],
+    "summary" : "A stout brown-capped bolete with a sponge of pores instead of gills, white flesh that stays white when cut, and a pale net over the top of the stem. In Aotearoa it fruits under introduced oak, birch and pine in autumn.",
+    "warnings" : [
+      "Cut every cap and stem lengthwise before it goes in the basket: white flesh that stays white, and a white pore surface. Colour change of any kind means put it down.",
+      "Check the pore surface of every specimen, not just the first — mixed patches under the same tree are common."
     ]
   },
   {
@@ -692,7 +1039,36 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/328092",
     "origin" : "native",
     "photos" : [
-
+      {
+        "caption" : "Deeply lobed juvenile leaf",
+        "credit" : "(c) Henry Miller, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "poroporo-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/169007955"
+      },
+      {
+        "caption" : "Purple flower with a yellow centre",
+        "credit" : "(c) mcstanley, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "poroporo-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/145401932"
+      },
+      {
+        "caption" : "Green unripe berries — toxic at this stage",
+        "credit" : "(c) mcstanley, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "poroporo-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/145401932"
+      },
+      {
+        "caption" : "Flower and green fruit in the hand",
+        "credit" : "(c) Jon Sullivan, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "poroporo-4.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/2648178"
+      },
+      {
+        "caption" : "Shrub with ripe orange berries — only these are eaten",
+        "credit" : "(c) Jon Sullivan, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "poroporo-5.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/2648178"
+      }
     ],
     "preparation" : "Eat ripe fruit raw or cook into a jam. Discard anything still firm or green-tinged.",
     "recipes" : [
@@ -773,7 +1149,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/78886",
     "origin" : "pest",
     "photos" : [
-
+      {
+        "caption" : "Red hips on the branch",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "rosehip-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/61431709"
+      },
+      {
+        "caption" : "Ripe hips close up",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "rosehip-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/60526584"
+      },
+      {
+        "caption" : "Toothed leaflets, with a robin's pincushion gall",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "rosehip-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/60526584"
+      },
+      {
+        "caption" : "The pink single flower",
+        "credit" : "(c) Bobo-X, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "rosehip-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/287949481"
+      }
     ],
     "preparation" : "Top, tail, halve and scrape out every seed and hair, or cook whole and strain through fine cloth. Into syrup, jelly or tea.",
     "recipes" : [
@@ -814,7 +1213,36 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/155197",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Group with orange gills and green-tinged caps",
+        "credit" : "(c) Alan Rockefeller, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "saffron-milk-cap-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/253233776"
+      },
+      {
+        "caption" : "Caps and gills, orange throughout",
+        "credit" : "(c) Alan Rockefeller, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "saffron-milk-cap-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/253233776"
+      },
+      {
+        "caption" : "Broken cap: orange flesh and gills",
+        "credit" : "(c) Nathan Aaron, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "saffron-milk-cap-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/196267112"
+      },
+      {
+        "caption" : "In the hand: orange gills, pitted stem",
+        "credit" : "(c) Nathan Aaron, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "saffron-milk-cap-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/196267112"
+      },
+      {
+        "caption" : "Cap from above with concentric zones",
+        "credit" : "(c) Nathan Aaron, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "saffron-milk-cap-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/196267112"
+      }
     ],
     "preparation" : "Dry-fry or roast hard — they release a lot of water and go slimy if cooked gently. Do not eat raw.",
     "recipes" : [
@@ -855,7 +1283,36 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/158452",
     "origin" : "native",
     "photos" : [
-
+      {
+        "caption" : "Celery-like leaflets with a flower umbel",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sea-celery-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/237953187"
+      },
+      {
+        "caption" : "Tiny white flowers in a compact umbel",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sea-celery-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/237953187"
+      },
+      {
+        "caption" : "Plant among rocks at the shore",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sea-celery-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/104403294"
+      },
+      {
+        "caption" : "Glossy, toothed leaflets close up",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sea-celery-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/104403294"
+      },
+      {
+        "caption" : "A mat of plants on a coastal bank",
+        "credit" : "(c) krumpianking, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sea-celery-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/148367703"
+      }
     ],
     "preparation" : "Chop finely into stews, stuffings and fish dishes. Far stronger than cultivated celery — use sparingly.",
     "recipes" : [
@@ -925,7 +1382,36 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/53488",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "The ring on the stem below a glossy cap",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "slippery-jack-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/108416993"
+      },
+      {
+        "caption" : "Yellow pore surface and the ring",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "slippery-jack-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/108416993"
+      },
+      {
+        "caption" : "Pores close up",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "slippery-jack-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/108416993"
+      },
+      {
+        "caption" : "Cut in half: pale yellow flesh",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "slippery-jack-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/108416993"
+      },
+      {
+        "caption" : "Slimy brown caps in pine needles",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "slippery-jack-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/108416993"
+      }
     ],
     "preparation" : "Peel off the slimy cap skin and remove the spongy pore layer, then cook thoroughly. Good dried.",
     "recipes" : [
@@ -1005,7 +1491,24 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/121763",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Long, sharply toothed leaves",
+        "credit" : "(c) Connor McInerney, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sweet-chestnut-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/249196089"
+      },
+      {
+        "caption" : "Leaves in the hand: parallel veins each ending in a tooth",
+        "credit" : "(c) Connor McInerney, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sweet-chestnut-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/249196089"
+      },
+      {
+        "caption" : "Leaf detail",
+        "credit" : "(c) Connor McInerney, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sweet-chestnut-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/249196089"
+      }
     ],
     "preparation" : "Score each nut, then roast or boil. Never eat raw in quantity — the tannins are harsh.",
     "recipes" : [
@@ -1043,9 +1546,32 @@
 
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/366667",
-    "origin" : "native",
+    "origin" : "endemic",
     "photos" : [
-
+      {
+        "caption" : "Hanging racemes of dark berries — the seeds are the poison",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "tutu-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/26234929"
+      },
+      {
+        "caption" : "Opposite leaves on a reddish, angular stem",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "tutu-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/222526635"
+      },
+      {
+        "caption" : "Foliage on a roadside bank, its usual place",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "tutu-3.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/3599879"
+      },
+      {
+        "caption" : "Sprays of glossy, paired leaves",
+        "credit" : "(c) Shaun, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "tutu-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/90754382"
+      }
     ],
     "preparation" : "None.",
     "recipes" : [
@@ -1080,7 +1606,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/63935",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Green husked nuts on the branch",
+        "credit" : "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "walnut-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/311020984"
+      },
+      {
+        "caption" : "Nuts with the pinnate leaves",
+        "credit" : "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "walnut-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/311020984"
+      },
+      {
+        "caption" : "Husk splitting to show the nut",
+        "credit" : "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "walnut-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/311020984"
+      },
+      {
+        "caption" : "Pinnate leaf close up",
+        "credit" : "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "walnut-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/311020984"
+      }
     ],
     "preparation" : "Gather fallen nuts promptly, husk them (wear gloves — the husk stains skin brown for weeks), then dry for several weeks before storing.",
     "recipes" : [
@@ -1119,7 +1668,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/78174",
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Four-petalled white flowers above rounded leaflets",
+        "credit" : "(c) Dmitriy Bochkov, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "watercress-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/128602816"
+      },
+      {
+        "caption" : "Leaves and flower heads on a wet bank",
+        "credit" : "(c) Dmitriy Bochkov, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "watercress-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/128602816"
+      },
+      {
+        "caption" : "Flowering mat — check what is upstream before picking",
+        "credit" : "(c) Dmitriy Bochkov, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "watercress-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/128602816"
+      },
+      {
+        "caption" : "A dense mat in slow water",
+        "credit" : "(c) Dmitriy Bochkov, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "watercress-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/128602816"
+      }
     ],
     "preparation" : "Cook it. Soups, blanched as a green, or wilted. Eating it raw from an unknown waterway is the single most common way NZ foragers make themselves ill.",
     "recipes" : [
@@ -1165,7 +1737,30 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/53052",
     "origin" : "pest",
     "photos" : [
-
+      {
+        "caption" : "Ribbed seeds in an umbel, in the hand",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "wild-fennel-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/397306634"
+      },
+      {
+        "caption" : "Tall plant with umbels forming",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "wild-fennel-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/361060883"
+      },
+      {
+        "caption" : "Feathery foliage — crush and smell it: aniseed, never musty",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "wild-fennel-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/379734919"
+      },
+      {
+        "caption" : "Thread-like leaves close up",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "wild-fennel-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/379734919"
+      }
     ],
     "preparation" : "Fronds with fish; seeds toasted for spice; pollen as a finishing seasoning; stems in a stock.",
     "recipes" : [
@@ -1233,7 +1828,24 @@
     "moreImagesURL" : "https://inaturalist.nz/taxa/179230",
     "origin" : "native",
     "photos" : [
-
+      {
+        "caption" : "Purple-brown ears on dead wood",
+        "credit" : "(c) ritirene, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "wood-ear-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/179609066"
+      },
+      {
+        "caption" : "Fruiting bodies on a stick, showing the ear form",
+        "credit" : "(c) ritirene, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "wood-ear-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/179609066"
+      },
+      {
+        "caption" : "Ear-shaped fruiting bodies on a living branch",
+        "credit" : "(c) Serenella Linares, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "wood-ear-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/319014629"
+      }
     ],
     "preparation" : "Rinse, slice and add to soups and stir-fries. Prized for texture rather than flavour. Dries and rehydrates well.",
     "recipes" : [

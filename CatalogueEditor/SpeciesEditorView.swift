@@ -171,7 +171,7 @@ struct SpeciesEditorView: View {
                 "Guidance",
                 text: optionalBinding(\.harvestEthics) { $0.with(harvestEthics: $1) },
                 lines: 3...8,
-                help: species.origin == .native ? "Required for native species." : nil
+                help: species.origin.isIndigenous ? "Required for native and endemic species." : nil
             )
         }
     }

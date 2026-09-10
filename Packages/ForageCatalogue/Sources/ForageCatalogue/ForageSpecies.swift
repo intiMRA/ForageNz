@@ -136,4 +136,51 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     public var highestLookalikeRisk: LookalikeRisk? {
         lookalikes.map(\.risk).max()
     }
+
+    /// A copy with one field replaced. The model is immutable by design, so the editor
+    /// rebuilds an entry rather than mutating it.
+    public func with(
+        commonName: String? = nil,
+        maoriName: String?? = nil,
+        scientificName: String? = nil,
+        category: ForageCategory? = nil,
+        origin: ForageOrigin? = nil,
+        caution: CautionLevel? = nil,
+        months: [ForageMonth]? = nil,
+        summary: String? = nil,
+        habitat: String? = nil,
+        identification: String? = nil,
+        edibleParts: String? = nil,
+        preparation: String? = nil,
+        lookalikes: [Lookalike]? = nil,
+        warnings: [String]? = nil,
+        harvestEthics: String?? = nil,
+        sources: [String]? = nil,
+        recipes: [Recipe]? = nil,
+        photos: [SpeciesPhoto]? = nil,
+        moreImagesURL: URL?? = nil
+    ) -> ForageSpecies {
+        ForageSpecies(
+            id: id,
+            commonName: commonName ?? self.commonName,
+            maoriName: maoriName ?? self.maoriName,
+            scientificName: scientificName ?? self.scientificName,
+            category: category ?? self.category,
+            origin: origin ?? self.origin,
+            caution: caution ?? self.caution,
+            months: months ?? self.months,
+            summary: summary ?? self.summary,
+            habitat: habitat ?? self.habitat,
+            identification: identification ?? self.identification,
+            edibleParts: edibleParts ?? self.edibleParts,
+            preparation: preparation ?? self.preparation,
+            lookalikes: lookalikes ?? self.lookalikes,
+            warnings: warnings ?? self.warnings,
+            harvestEthics: harvestEthics ?? self.harvestEthics,
+            sources: sources ?? self.sources,
+            recipes: recipes ?? self.recipes,
+            photos: photos ?? self.photos,
+            moreImagesURL: moreImagesURL ?? self.moreImagesURL
+        )
+    }
 }

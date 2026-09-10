@@ -31,3 +31,6 @@ xcuserdata/
 **/.idea/*
 !**/.idea/runConfigurations/
 .venv/
+
+# Python bytecode
+__pycache__/

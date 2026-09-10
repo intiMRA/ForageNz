@@ -81,8 +81,8 @@ public extension ForageSpecies {
             if preparation.trimmed.isEmpty { advisory("preparation", "No preparation recorded.") }
         }
 
-        if origin == .native && (harvestEthics?.trimmed.isEmpty ?? true) {
-            blocking("harvestEthics", "Native species need harvesting and tikanga guidance.")
+        if origin.isIndigenous && (harvestEthics?.trimmed.isEmpty ?? true) {
+            blocking("harvestEthics", "Native and endemic species need harvesting and tikanga guidance.")
         }
 
         for (index, recipe) in recipes.enumerated() where recipe.title.trimmed.isEmpty {

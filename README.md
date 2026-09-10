@@ -187,13 +187,32 @@ four per species would be 190–370 MB embedded. HEIC at 0.62 is visually indist
 for identification and roughly 30× smaller. Every number above is a constant in
 `CataloguePhotos`, so retune it in one place.
 
-Import through the editor — it downscales and re-encodes on the way in, so an untouched 6 MB
-phone photo can't land in the repo. `PhotoAuditTests` fails the build on a missing file, an
-oversized file, an orphaned file, or a photo with no caption or credit.
+Two ways in, one encoder. `PhotoImporter` lives in the package and downscales and re-encodes
+on the way in, so an untouched 6 MB phone photo can't land in the repo whichever route it takes:
+
+- **The editor**, for your own photos — drag in, caption, credit.
+- **The staging pipeline**, for CC0/CC-BY photos from iNaturalist research-grade observations:
 
 ```sh
-swift run catalogue-tool --photos   # budget used, missing files, orphans, thin entries
+python3 Tools/enrich_catalogue.py --stage-photos              # candidates → .staged-photos/<id>/
+# look at them; write a caption for each one you accept in .staged-photos/manifest.json
+swift run catalogue-tool --attach ../../.staged-photos/manifest.json
+swift run catalogue-tool --photos                             # budget, missing files, orphans, thin entries
 ```
+
+**The caption is the review.** `--attach` takes only photos whose `caption` you have filled in
+and skips the rest, so nothing gets into the app that nobody has looked at. The first pass
+through this rejected a black bear, a camera on a tripod, a hillside in Hawaii, and a brown
+alga that was not bull kelp — research-grade is a community vote on the *species*, not on
+whether the frame shows anything useful. Photos that are still over the per-photo ceiling
+after compression fail loudly; shrink them and retry, or drop them. The budget does not bend.
+
+The stager cannot resolve compound names (`Sonchus oleraceus / Sonchus kirkii`, `Ulva spp.`),
+so blackberry, karengo, nettle, pūhā, sea lettuce and wild plum get nothing from it and need
+the editor route.
+
+`PhotoAuditTests` fails the build on a missing file, an oversized file, an orphaned file, or a
+photo with no caption or credit.
 
 `CatalogueEditorUITests` drives the real window: every tab reachable, the photo importer one
 click from the Photos tab, prose fields accepting typed text, and the derived identifier
@@ -346,9 +365,10 @@ the point: the schema encodes the safety rules.
 
 Known gaps, in rough priority order:
 
-- **No photographs.** A field guide without images is half a guide. Licensing is the blocker —
-  iNaturalist research-grade observations carry CC0/CC-BY/CC-BY-NC photos and are the obvious
-  source.
+- **Photo coverage is uneven.** 26 of 32 entries now carry reviewed CC0/CC-BY photos (106 in
+  all, 12 MB), but 13 are below their target and six have none. Several are missing the one
+  feature that matters most: karaka has no fruit, sweet chestnut has no burr or nut, porcini
+  has no pore surface or stem net. Those need photographs taken on purpose.
 - **No location awareness.** Several entries are regional (cherry guava is northern, rosehip is
   dry-eastern). Region filtering needs a region field on each entry.
 - **No live overlays.** Rāhui, MPI biotoxin warnings and LAWA algal-bloom status are all
