@@ -64,6 +64,15 @@ struct LandStatusMapTests {
         }
     }
 
+    @Test("a pixel outside the flag range is rejected, not folded into a flag")
+    func unexpectedPixelValueIsRejected() throws {
+        // Masking would turn 255 into "conservation AND marine reserve" — a confident,
+        // plausible, wrong answer from a corrupted raster.
+        #expect(throws: LandStatusMap.Failure.rasterUnreadable("unexpected pixel value 255")) {
+            try Self.synthetic(pixels: [0, 1, 2, 255])
+        }
+    }
+
     @Test("a missing raster is reported rather than silently empty")
     func missingRasterIsReported() throws {
         let directory = try Self.temporaryDirectory()

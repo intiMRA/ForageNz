@@ -57,15 +57,19 @@ final class WhereYouAreStore {
             state = .read(.inside(
                 map.status(latitude: coordinate.latitude, longitude: coordinate.longitude)
             ))
-        } catch let error as LandStatusRepositoryError {
-            Self.logger.error("Land map load failed: \(String(describing: error), privacy: .public)")
-            state = .failed(message: error.userMessage)
-        } catch let error as LocationError {
-            // Not logged: a denial is a choice, not a fault, and a fix is personal.
-            state = .failed(message: error.userMessage)
         } catch {
-            Self.logger.error("Land status check failed: \(String(describing: error), privacy: .public)")
-            state = .failed(message: "Could not work out where you are.")
+            // A plain `catch` and a downcast, not `catch let error as …`: a typed catch
+            // binding in an async function crashes swift-frontend on the pinned toolchain.
+            if let error = error as? LandStatusRepositoryError {
+                Self.logger.error("Land map load failed: \(String(describing: error), privacy: .public)")
+                state = .failed(message: error.userMessage)
+            } else if let error = error as? LocationError {
+                // Not logged: a denial is a choice, not a fault, and a fix is personal.
+                state = .failed(message: error.userMessage)
+            } else {
+                Self.logger.error("Land status check failed: \(String(describing: error), privacy: .public)")
+                state = .failed(message: "Could not work out where you are.")
+            }
         }
     }
 }

@@ -67,13 +67,17 @@ class Grid:
     max_latitude: float = -33.9
     degrees: float = 0.0025  # ~275 m north-south
 
+    # Rounded, not truncated: 13.2 / 0.0025 is 5279.999999999995 in binary floating point,
+    # so `int()` would drop a column while the height rounded the other way and kept its row.
+    # The metadata would then advertise a max longitude the raster does not reach, and every
+    # coordinate in that strip would be reported as "outside the map".
     @property
     def width(self) -> int:
-        return int((self.max_longitude - self.min_longitude) / self.degrees)
+        return round((self.max_longitude - self.min_longitude) / self.degrees)
 
     @property
     def height(self) -> int:
-        return int((self.max_latitude - self.min_latitude) / self.degrees)
+        return round((self.max_latitude - self.min_latitude) / self.degrees)
 
     def pixel(self, longitude: float, latitude: float) -> tuple[float, float]:
         """Latitude is flipped: image row 0 is the northern edge."""
@@ -147,16 +151,31 @@ def fetch_rings(layer: Layer, offset_tolerance: float) -> list[list[tuple[float,
 
 
 #: Ground truth for a smoke test. Rasterising silently produces a plausible-looking blank
-#: image if the projection is wrong, so check places whose status is not in doubt.
+#: image if the projection is wrong, so check places whose status is not in doubt. Every flag
+#: needs its own point: a check that only ever looks at CONSERVATION leaves MARINE_RESERVE
+#: guarded by nothing, and a bit that nothing checks is a bit that can ship inverted.
 KNOWN_POINTS: tuple[tuple[str, float, float, LandStatus], ...] = (
     ("Tongariro National Park", -39.2800, 175.5600, LandStatus.CONSERVATION),
     ("Fiordland National Park", -45.4000, 167.7000, LandStatus.CONSERVATION),
+    ("Poor Knights Islands", -35.4667, 174.7333, LandStatus.MARINE_RESERVE),
+    (
+        "Goat Island",
+        -36.2686,
+        174.7967,
+        LandStatus.CONSERVATION | LandStatus.MARINE_RESERVE,
+    ),
     ("Wellington CBD", -41.2865, 174.7762, LandStatus.NONE),
     ("Hamilton CBD", -37.7870, 175.2793, LandStatus.NONE),
 )
 
 
-def verify(image: Image.Image, grid: Grid) -> None:
+def verify(image: Image.Image, grid: Grid) -> list[str]:
+    """The names of any known points the raster gets wrong.
+
+    Compares the whole value, not `value & expected`: masking makes every NONE point
+    vacuously pass, so a fully inverted map would still have reported four ticks.
+    """
+    failures: list[str] = []
     print("\n  checking known points:")
     for name, latitude, longitude, expected in KNOWN_POINTS:
         x, y = grid.pixel(longitude, latitude)
@@ -164,8 +183,11 @@ def verify(image: Image.Image, grid: Grid) -> None:
         # every mode it supports.
         raw = image.getpixel((int(x), int(y)))
         value = LandStatus(raw if isinstance(raw, int) else 0)
-        verdict = "ok" if bool(value & expected) == bool(expected) else "UNEXPECTED"
-        print(f"    {name:26} {value!s:40} {verdict}")
+        ok = value == expected
+        if not ok:
+            failures.append(name)
+        print(f"    {name:26} {value!s:44} {'ok' if ok else f'EXPECTED {expected!s}'}")
+    return failures
 
 
 def main() -> int:
@@ -207,11 +229,16 @@ def main() -> int:
     for mask in masks[1:]:
         image = ImageChops.add(image, mask)
 
+    # Verify before writing. A map that fails its own smoke test is worse than no map: the
+    # app would answer every question about permits and reserves, confidently and wrongly.
+    failures = verify(image, grid)
+    if failures:
+        print(f"\nNot writing: {', '.join(failures)} came out wrong.", file=sys.stderr)
+        return 1
+
     OUTPUT_IMAGE.parent.mkdir(parents=True, exist_ok=True)
     image.save(OUTPUT_IMAGE, optimize=True)
     OUTPUT_METADATA.write_text(json.dumps(grid.as_metadata(), indent=2) + "\n")
-
-    verify(image, grid)
 
     size = OUTPUT_IMAGE.stat().st_size
     print(f"\nWrote {OUTPUT_IMAGE} — {size / 1024:.0f} KB")

@@ -37,6 +37,32 @@ private actor RecordingLocations: LocationProvider {
     private func record() { wasAsked = true }
 }
 
+/// Holds a load open until released, so a second `check()` can be made to overlap the first.
+private actor GatedMapRepository: LandStatusRepository {
+    private(set) var loadCount = 0
+
+    private let map: LandStatusMap
+    /// Every waiter, not just the latest. Holding one would mean that a store which loses
+    /// its re-entrancy guard strands the first caller forever — and a test that hangs
+    /// instead of failing tells you nothing while costing you ten minutes.
+    private var waiting: [CheckedContinuation<Void, Never>] = []
+
+    init(map: LandStatusMap) {
+        self.map = map
+    }
+
+    func loadMap() async throws(LandStatusRepositoryError) -> LandStatusMap {
+        loadCount += 1
+        await withCheckedContinuation { waiting.append($0) }
+        return map
+    }
+
+    func release() {
+        for continuation in waiting { continuation.resume() }
+        waiting.removeAll()
+    }
+}
+
 @Suite("Where you are")
 @MainActor
 struct WhereYouAreStoreTests {
@@ -110,7 +136,40 @@ struct WhereYouAreStoreTests {
         #expect(await locations.wasAsked == false)
     }
 
-    @Test("checking twice ends in a reading, not stuck mid-check")
+    @Test("a second check while one is in flight does not start another")
+    func overlappingChecksLoadOnce() async throws {
+        let repository = GatedMapRepository(map: try Self.shippedMap())
+        let store = WhereYouAreStore(
+            repository: repository,
+            locations: StubLocations(coordinate: Coordinate(latitude: -45.4000, longitude: 167.7000))
+        )
+
+        let first = Task { await store.check() }
+        // `check()` sets .checking before its first suspension, so this settles immediately;
+        // the bound is only so a broken guard fails the test instead of hanging the suite.
+        var spins = 0
+        while !store.isChecking, spins < 1_000 {
+            await Task.yield()
+            spins += 1
+        }
+        try #require(store.isChecking)
+
+        // Deliberately not awaited here. Without the guard the second call would block on
+        // the gate this test has not released yet, and awaiting it would deadlock — a test
+        // that hangs instead of failing tells you nothing while costing you ten minutes.
+        let second = Task { await store.check() }
+        for _ in 0..<100 { await Task.yield() }
+
+        #expect(await repository.loadCount == 1, "the second check started another load")
+
+        await repository.release()
+        await first.value
+        await second.value
+
+        #expect(store.state == .read(.inside(.conservation)))
+    }
+
+    @Test("checking again after a reading refreshes it")
     func repeatedChecks() async throws {
         let store = try Self.store(at: Coordinate(latitude: -45.4000, longitude: 167.7000))
         await store.check()
