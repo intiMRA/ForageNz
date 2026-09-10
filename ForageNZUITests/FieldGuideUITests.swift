@@ -98,6 +98,39 @@ final class FieldGuideUITests: XCTestCase {
         XCTAssertTrue(tutu.exists, "Safety screen did not list Tutu among the do-not-eat species")
     }
 
+    /// A lookalike the catalogue has its own page for opens that page — "can be confused with
+    /// hemlock" is only useful in the field if you can then look at hemlock.
+    func testLookalikeCardOpensItsOwnEntry() {
+        app.tabBars.buttons["Field guide"].tap()
+
+        // The list is lazy and alphabetical; wild fennel sits well below the fold, so search
+        // for it rather than assume it is rendered.
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: Self.existenceTimeout), "Field guide has no search field")
+        search.tap()
+        search.typeText("fennel")
+
+        let fennel = app.buttons.containing(.staticText, identifier: "speciesRow.wild-fennel").firstMatch
+        XCTAssertTrue(fennel.waitForExistence(timeout: Self.existenceTimeout), "Wild fennel row not found")
+        fennel.tap()
+
+        // Matched by identifier regardless of the element type SwiftUI exposes the link as,
+        // then scrolled into view — `exists` is true for anything in the hierarchy, on screen or not.
+        let hemlockCard = app.descendants(matching: .any)["lookalike.hemlock"].firstMatch
+        XCTAssertTrue(hemlockCard.waitForExistence(timeout: Self.existenceTimeout), "Hemlock lookalike card is not on the wild fennel page")
+        var swipes = 0
+        while !hemlockCard.isHittable && swipes < Self.maxSwipesToReachDoNotEatList {
+            app.swipeUp()
+            swipes += 1
+        }
+        XCTAssertTrue(hemlockCard.isHittable, "Could not scroll the hemlock card into view")
+        hemlockCard.tap()
+
+        let scientificName = app.staticTexts["speciesDetail.scientificName"]
+        XCTAssertTrue(scientificName.waitForExistence(timeout: Self.existenceTimeout))
+        XCTAssertEqual(scientificName.label, "Conium maculatum", "Tapping the card did not open hemlock's own page")
+    }
+
     private func selectOrigin(_ name: String) {
         app.tabBars.buttons["Field guide"].tap()
         app.navigationBars.buttons["Filter"].firstMatch.tap()
