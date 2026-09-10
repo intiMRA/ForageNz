@@ -1,3 +1,4 @@
+import DesignLibrary
 import ForageCatalogue
 import SwiftUI
 
@@ -16,7 +17,7 @@ struct SpeciesEditorView: View {
     @State private var tab: EditorTab = .entry
 
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: .empty) {
             Picker("Section", selection: $tab) {
                 ForEach(EditorTab.allCases) { candidate in
                     Text(label(for: candidate)).tag(candidate)
@@ -24,8 +25,8 @@ struct SpeciesEditorView: View {
             }
             .pickerStyle(.segmented)
             .labelsHidden()
-            .padding(.horizontal, 14)
-            .padding(.vertical, 10)
+            .padding(.horizontal, .medium)
+            .padding(.vertical, .small)
 
             Divider()
 
@@ -41,7 +42,7 @@ struct SpeciesEditorView: View {
                 if !issues.isEmpty {
                     Section("Still to fill in here") {
                         ForEach(issues) { issue in
-                            HStack(alignment: .firstTextBaseline, spacing: 6) {
+                            HStack(alignment: .firstTextBaseline, spacing: .xSmall) {
                                 Image(systemName: issue.severity == .blocking
                                     ? "exclamationmark.circle.fill" : "info.circle")
                                     .foregroundStyle(issue.severity == .blocking ? .red : .secondary)

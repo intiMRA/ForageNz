@@ -1,4 +1,5 @@
 import AppKit
+import DesignLibrary
 import ForageCatalogue
 import SwiftUI
 import UniformTypeIdentifiers
@@ -29,7 +30,7 @@ struct PhotoSectionView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: .small) {
             if photoDirectory == nil {
                 Text("No catalogue directory, so photos can't be imported.")
                     .font(.caption)
@@ -47,7 +48,7 @@ struct PhotoSectionView: View {
                 photoRow(index: index, photo: photo)
             }
 
-            HStack(spacing: 10) {
+            HStack(spacing: .small) {
                 Button("Add photos…", systemImage: "photo.badge.plus") { pickPhotos() }
                     .buttonStyle(.borderless)
                     .disabled(photoDirectory == nil)
@@ -68,7 +69,7 @@ struct PhotoSectionView: View {
 
             Divider()
 
-            VStack(alignment: .leading, spacing: 3) {
+            VStack(alignment: .leading, spacing: .xxSmall) {
                 Text("More photos on the web")
                     .font(.caption)
                     .foregroundStyle(.secondary)
@@ -88,7 +89,7 @@ struct PhotoSectionView: View {
                     .foregroundStyle(.secondary)
             }
         }
-        .padding(.vertical, 2)
+        .padding(.vertical, .xxxSmall)
         .onDrop(of: [.fileURL], isTargeted: nil) { providers in
             loadDropped(providers)
             return true
@@ -96,10 +97,10 @@ struct PhotoSectionView: View {
     }
 
     private func photoRow(index: Int, photo: SpeciesPhoto) -> some View {
-        HStack(alignment: .top, spacing: 10) {
+        HStack(alignment: .top, spacing: .small) {
             thumbnail(for: photo)
 
-            VStack(alignment: .leading, spacing: 5) {
+            VStack(alignment: .leading, spacing: .xxSmall) {
                 TextField("Caption — which feature does this show?", text: Binding(
                     get: { photo.caption },
                     set: { replace(index, caption: $0) }
@@ -119,7 +120,7 @@ struct PhotoSectionView: View {
                 .textFieldStyle(.roundedBorder)
                 .font(.caption)
 
-                HStack(spacing: 8) {
+                HStack(spacing: .xSmall) {
                     Text(photo.fileName)
                         .font(.caption2)
                         .monospaced()
@@ -138,7 +139,7 @@ struct PhotoSectionView: View {
             .buttonStyle(.borderless)
             .help("Remove photo — the file is deleted when you save")
         }
-        .padding(10)
+        .padding(.all, .small)
         .background(.quaternary.opacity(Layout.cardBackgroundOpacity), in: EditorLayout.insetShape)
     }
 

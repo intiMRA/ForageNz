@@ -327,8 +327,11 @@ can only shrink. The detail screen shows a "Not yet checked" banner until an ent
 
 ## Dependencies
 
-`DesignLibrary` (`github.com/intiMRA/Desing-Library-SPM`, branch `main`) for `CommonPadding`
-spacing tokens. It ships no typography or public colour tokens, so text uses SwiftUI semantic
+`DesignLibrary` (`github.com/intiMRA/Desing-Library-SPM`, branch **`foraging-app`**) for
+`CommonPadding` spacing tokens. That branch is the one that builds for macOS, which is what lets
+the CatalogueEditor target link it and use the same tokens as the app; the project is pinned to
+it so library changes can be verified from here as they land. Move the pin back to `main` once
+the branch is merged. It ships no typography or public colour tokens, so text uses SwiftUI semantic
 Dynamic Type styles and the caution palette is defined as asset-catalog colour sets
 (`cautionSafe` / `cautionCare` / `cautionDanger`).
 
