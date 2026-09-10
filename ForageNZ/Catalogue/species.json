@@ -1861,5 +1861,660 @@
     "warnings" : [
       "There are no dangerous lookalikes, but its texture is very distinctive — anything firm, gilled or dry is something else."
     ]
+  },
+  {
+    "category" : "herbs",
+    "caution" : "doNotEat",
+    "commonName" : "Hemlock",
+    "edibleParts" : "None.",
+    "habitat" : "Roadsides, stream banks, waste ground, paddock margins and the edges of gardens — the same damp, disturbed ground as wild fennel and sea celery, and often growing right through them.",
+    "harvestEthics" : "Do not harvest. This entry exists so you can recognise it.",
+    "id" : "hemlock",
+    "identification" : "A hairless plant 1–2.5 m tall. The stem is smooth, hollow and ridged, and marked with purple-red blotches and streaks, heaviest near the base — no edible umbellifer in this guide has them. Leaves are finely divided, glossy and fern-like, like an oversized parsley. Flowers are small and white in loose, flat-topped umbels in late spring and summer. Crush a leaf: the smell is musty and mousy, nothing like aniseed or celery.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Fennel smells strongly of aniseed, has thread-fine leaves and yellow flowers, and a stem with no blotches. Hemlock smells musty, has broader parsley-like leaflets and white flowers, and a blotched stem. Check all three on every plant.",
+        "name" : "Wild fennel",
+        "risk" : "deadly",
+        "scientificName" : "Foeniculum vulgare"
+      },
+      {
+        "howToTell" : "Sea celery is low and sprawling with glossy, broad, celery-like leaflets and a celery smell. Hemlock stands tall with finely cut leaves and a blotched stem.",
+        "name" : "Sea celery",
+        "risk" : "deadly",
+        "scientificName" : "Apium prostratum"
+      },
+      {
+        "howToTell" : "Wild carrot has a hairy stem with no purple blotches and smells of carrot when crushed. Hemlock's stem is hairless and blotched.",
+        "name" : "Wild carrot",
+        "risk" : "deadly",
+        "scientificName" : "Daucus carota"
+      }
+    ],
+    "months" : [
+
+    ],
+    "origin" : "pest",
+    "photos" : [
+      {
+        "caption" : "Leaves and white umbels — parsley-like leaflets, nothing like fennel's threads",
+        "credit" : "(c) Alan Rockefeller, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "hemlock-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/68359341"
+      },
+      {
+        "caption" : "Finely divided, glossy, fern-like leaves",
+        "credit" : "(c) Sandy Wolkenberg, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "hemlock-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/25579621"
+      },
+      {
+        "caption" : "Flat-topped umbels forming above the foliage",
+        "credit" : "(c) Sandy Wolkenberg, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "hemlock-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/25579621"
+      },
+      {
+        "caption" : "A stand taller than a person on a path edge, its usual place",
+        "credit" : "(c) Sandy Wolkenberg, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "hemlock-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/25579621"
+      }
+    ],
+    "preparation" : "None. Cooking does not destroy the alkaloids.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Conium maculatum",
+    "sources" : [
+
+    ],
+    "summary" : "The tall, purple-blotched umbellifer that kills people who think they have found fennel, parsley or wild carrot. Every part is lethal.",
+    "warnings" : [
+      "Every part — leaf, stem, root, seed — is lethal. Death is by respiratory paralysis, typically within a few hours.",
+      "Do not handle it and then eat with unwashed hands. Do not let children pick the hollow stems for whistles or blowpipes.",
+      "If you suspect any contact with food, call the National Poisons Centre on 0800 764 766 immediately."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "doNotEat",
+    "commonName" : "Ongaonga",
+    "edibleParts" : "None.",
+    "habitat" : "Forest margins, regenerating bush, stream banks and coastal scrub, often in dense stands. Common along tramping tracks in the North Island and the top of the South Island.",
+    "harvestEthics" : "Do not harvest. This entry exists so you can recognise it.",
+    "id" : "ongaonga",
+    "identification" : "A shrub 2–3 m tall with woody stems — you look up at it, not down. Leaves are pale green, triangular and coarsely toothed, and both the leaves and stems carry stiff white spines up to 6 mm long that are clearly visible from a metre away. Common nettle is soft, herbaceous, knee-high and has fine hairs you have to look for.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Common nettle is a soft herb below waist height with fine hairs. Ongaonga is a woody shrub taller than you with spines you can see. If it is woody, walk away.",
+        "name" : "Common nettle",
+        "risk" : "deadly",
+        "scientificName" : "Urtica dioica"
+      }
+    ],
+    "maoriName" : "Ongaonga",
+    "months" : [
+
+    ],
+    "origin" : "endemic",
+    "photos" : [
+      {
+        "caption" : "A stand of young plants: coarsely toothed, pale green leaves",
+        "credit" : "(c) Jon Sullivan, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "ongaonga-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/36789082"
+      },
+      {
+        "caption" : "Leaf close up — the white spines are visible from a metre away",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "ongaonga-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/207896617"
+      },
+      {
+        "caption" : "Toothed leaves on woody stems",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "ongaonga-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/207896617"
+      },
+      {
+        "caption" : "Spines along the stems as well as the leaves",
+        "credit" : "(c) William Harland, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "ongaonga-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/356799104"
+      },
+      {
+        "caption" : "Mature shrub in flower, head-high",
+        "credit" : "(c) Jon Sullivan, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "ongaonga-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/104244867"
+      }
+    ],
+    "preparation" : "None.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Urtica ferox",
+    "sources" : [
+
+    ],
+    "summary" : "Tree nettle. A woody native shrub with visible stinging spines that has killed a person and regularly kills dogs and horses. Not the nettle you make soup from.",
+    "warnings" : [
+      "The sting causes intense pain, then numbness and weakness that can last days; heavy exposure has caused death. Dogs and horses die from it every year.",
+      "Do not push through it on a track. Do not touch it to test the sting.",
+      "Seek medical help for widespread stings or any weakness, blurred vision or breathing difficulty."
+    ]
+  },
+  {
+    "category" : "fungi",
+    "caution" : "doNotEat",
+    "commonName" : "Yellow stainer",
+    "edibleParts" : "None.",
+    "habitat" : "Exactly where field mushrooms grow: lawns, parks, pasture and under hedges, often in the same patch.",
+    "id" : "yellow-stainer",
+    "identification" : "A white Agaricus, the young cap often boxy or flat-topped rather than domed, sometimes greying with age. Gills pink, turning chocolate-brown. The test: cut or scratch the very base of the stem and watch for a few seconds — it turns bright chrome yellow almost immediately. The smell is phenolic, like ink or hospital disinfectant, and gets stronger when cooked. Field mushroom stays white or blushes faintly pink and smells of mushroom.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Cut the stem base of every mushroom in the basket. Yellow within seconds and an inky smell is a yellow stainer. Field mushroom stays white and smells of mushroom.",
+        "name" : "Field mushroom",
+        "risk" : "toxic",
+        "scientificName" : "Agaricus campestris"
+      }
+    ],
+    "months" : [
+      2,
+      3,
+      4,
+      5,
+      9,
+      10
+    ],
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Cut stems flushing bright chrome yellow within seconds — the test",
+        "credit" : "(c) Anisha Kumra, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "yellow-stainer-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/87794170"
+      },
+      {
+        "caption" : "Chocolate-brown gills and a ring, just like a field mushroom",
+        "credit" : "(c) Anisha Kumra, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "yellow-stainer-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/87794170"
+      },
+      {
+        "caption" : "Yellow bruising at the stem base in the hand",
+        "credit" : "(c) Johan Adler, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "yellow-stainer-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/296534076"
+      },
+      {
+        "caption" : "Pink gills under a white cap — the resemblance is exact until you cut the base",
+        "credit" : "(c) Johan Adler, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "yellow-stainer-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/296534076"
+      },
+      {
+        "caption" : "A troop in leaf litter, where field mushrooms also grow",
+        "credit" : "(c) Johan Adler, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "yellow-stainer-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/296534076"
+      }
+    ],
+    "preparation" : "None.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Agaricus xanthodermus",
+    "sources" : [
+
+    ],
+    "summary" : "The field mushroom's poisonous double. Same pink-then-brown gills, same white cap — but the stem base flushes bright yellow the moment you cut it, and it smells of ink.",
+    "warnings" : [
+      "Causes sweating, cramps, vomiting and diarrhoea within hours. Some people tolerate it, most do not — do not use someone else's experience as a test.",
+      "Because it grows among field mushrooms, one in the pan spoils the lot. Cut every base, every time."
+    ]
+  },
+  {
+    "category" : "herbs",
+    "caution" : "careRequired",
+    "commonName" : "Onion weed",
+    "edibleParts" : "Leaves, flowers, flower stalks and the small bulbs.",
+    "habitat" : "Damp shady ground: roadsides, stream banks, under hedges and trees, neglected gardens. Forms dense carpets in winter and spring.",
+    "id" : "onion-weed",
+    "identification" : "Strap-like leaves and a flower stalk with three distinct edges — roll it between your fingers and you feel the triangle. Nodding white bell flowers, each petal with a fine green stripe down the middle, in late winter and spring. Crush any part: a strong onion smell. No smell, not onion weed.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Similar strap leaves and white bells, but no onion smell at all, a round rather than triangular stalk, and the bells lack the green centre stripe. If it does not smell of onion, leave it.",
+        "name" : "Snowflake and daffodil leaves",
+        "risk" : "toxic",
+        "scientificName" : "Leucojum aestivum"
+      }
+    ],
+    "months" : [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "origin" : "pest",
+    "photos" : [
+      {
+        "caption" : "The flower: white bells, each petal with a green stripe",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "onion-weed-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/11381118"
+      },
+      {
+        "caption" : "Whole plant with strap leaves and nodding flowers",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "onion-weed-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/11381118"
+      },
+      {
+        "caption" : "Flower stalk in the hand — roll it to feel the three edges",
+        "credit" : "(c) Ian Rainbow, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "onion-weed-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/183458787"
+      },
+      {
+        "caption" : "Drooping bells among grass",
+        "credit" : "(c) Ian Webb, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "onion-weed-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/57916237"
+      }
+    ],
+    "preparation" : "Use like spring onion or chives, raw or cooked. Flowers scatter well over salads. Milder than it smells.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Allium triquetrum",
+    "sources" : [
+
+    ],
+    "summary" : "Three-cornered leek. A weedy wild onion with a triangular stem and drooping white bell flowers that smells unmistakably of onion — the smell is the whole identification.",
+    "warnings" : [
+      "The onion smell is the test. Every leaf you pick should smell of onion when crushed — bulb lookalikes cause vomiting."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "careRequired",
+    "commonName" : "Fat hen",
+    "edibleParts" : "Young leaves and growing tips. Seeds can be eaten but need care to process.",
+    "habitat" : "Cultivated and disturbed ground: vegetable gardens, compost heaps, paddock edges, building sites. Anywhere the soil has been turned.",
+    "id" : "fat-hen",
+    "identification" : "Upright, 30 cm to 1.5 m, with a stem often streaked red or purple. Leaves are roughly diamond- or goosefoot-shaped with wavy teeth, and the young leaves and growing tips are coated in a white, mealy bloom that rubs off. Flowers are tiny, green and clustered, without petals.",
+    "lookalikes" : [
+      {
+        "howToTell" : "No mealy coating; leaves are smooth and softly hairy. Later it shows white star-shaped flowers and green-then-black berries. Fat hen never has petals or berries.",
+        "name" : "Black nightshade seedlings",
+        "risk" : "toxic",
+        "scientificName" : "Solanum nigrum"
+      }
+    ],
+    "months" : [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Growing tip with the mealy white coating",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "fat-hen-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/304980569"
+      },
+      {
+        "caption" : "Young plant with diamond-shaped leaves",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "fat-hen-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/304980569"
+      },
+      {
+        "caption" : "Flowering stand — tiny green clusters, no petals",
+        "credit" : "(c) Paul Cook, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "fat-hen-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/16937339"
+      },
+      {
+        "caption" : "A stand on disturbed ground",
+        "credit" : "(c) Paul Cook, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "fat-hen-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/16937339"
+      }
+    ],
+    "preparation" : "Cook like spinach — steam or wilt. Do not eat raw in quantity.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Chenopodium album",
+    "sources" : [
+
+    ],
+    "summary" : "A spinach relative and one of the most common garden weeds, recognised by the mealy white dust on its young leaves.",
+    "warnings" : [
+      "Contains oxalates like spinach — eat cooked and in moderation, and not at all if you have kidney stones.",
+      "Accumulates nitrates from heavily fertilised or manured ground; avoid plants growing on muck heaps or freshly fertilised paddocks."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "straightforward",
+    "commonName" : "Plantain",
+    "edibleParts" : "Young leaves; seeds.",
+    "habitat" : "Lawns, paths, paddocks, roadsides and any compacted ground. Everywhere.",
+    "id" : "plantain",
+    "identification" : "A flat rosette of narrow, lance-shaped leaves with three to five prominent parallel veins running their length; tear a leaf across and the veins pull out like strings. The flower is a short brown head on a tall leafless stalk, ringed with pale stamens. Broadleaf plantain (Plantago major) has wider, oval leaves and a longer flower spike and is used the same way.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+
+    ],
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "The flower head: brown spike on a leafless stalk",
+        "credit" : "(c) LJ Moore-McClelland, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "plantain-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/12169871"
+      },
+      {
+        "caption" : "Leaf in the hand showing the parallel veins",
+        "credit" : "(c) LJ Moore-McClelland, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "plantain-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/12169871"
+      },
+      {
+        "caption" : "Rosette of lance-shaped leaves",
+        "credit" : "(c) LJ Moore-McClelland, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "plantain-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/12169871"
+      }
+    ],
+    "preparation" : "Young leaves shredded finely into salads, or cooked — older ones are stringy and best in soup or as a tea. Crushed leaves are the traditional poultice for nettle stings and insect bites.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Plantago lanceolata",
+    "sources" : [
+
+    ],
+    "summary" : "Ribwort. The lawn weed with the stringy, parallel-veined leaves — a tough but reliable green, and useful on nettle stings.",
+    "warnings" : [
+      "Lawns and verges are routinely sprayed. Pick from ground you know."
+    ]
+  },
+  {
+    "category" : "fruit",
+    "caution" : "careRequired",
+    "commonName" : "Hawthorn",
+    "edibleParts" : "The flesh of ripe haws; young spring leaves and flowers. Never the stones.",
+    "habitat" : "Old hedgerows, shelter belts, roadsides and scrub, especially in Canterbury and Otago where it has naturalised widely.",
+    "id" : "hawthorn",
+    "identification" : "A small tree or dense shrub with sharp thorns along the branches. Leaves are small and deeply lobed, like tiny oak leaves. Masses of white five-petalled blossom in late spring, then dark red berries (haws) about 1 cm across in autumn, each with a single hard stone.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+      3,
+      4,
+      5
+    ],
+    "origin" : "pest",
+    "photos" : [
+      {
+        "caption" : "Red haws with the small lobed leaves",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "hawthorn-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/101642363"
+      },
+      {
+        "caption" : "Lobed leaves — like tiny oak leaves",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "hawthorn-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/76087313"
+      },
+      {
+        "caption" : "Ripe haws in autumn",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "hawthorn-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/95153344"
+      },
+      {
+        "caption" : "Leaf shape in the hand",
+        "credit" : "(c) Denys Vynokurov, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "hawthorn-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/87971953"
+      }
+    ],
+    "preparation" : "Haws are dry and mealy raw. Simmer, sieve out the stones, and make jelly or a ketchup. Young leaves and blossom go in salads.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Crataegus monogyna",
+    "sources" : [
+
+    ],
+    "summary" : "A thorny hedgerow tree with white spring blossom and red autumn haws — mealy fruit that makes a good jelly, so long as the stones are strained out.",
+    "warnings" : [
+      "The stones contain cyanogenic compounds. Strain them out and never crush them into a preparation."
+    ]
+  },
+  {
+    "category" : "herbs",
+    "caution" : "careRequired",
+    "commonName" : "Gorse",
+    "edibleParts" : "Flowers only.",
+    "habitat" : "Hillsides, roadsides, scrub, farmland margins. Almost anywhere that has been cleared and left.",
+    "id" : "gorse",
+    "identification" : "A dense, viciously spiny shrub 1–3 m tall; the spines are the leaves. Bright yellow pea-shaped flowers, strongly scented of coconut on a warm day, present most of the year with a peak in spring. Black seed pods that crack open audibly in summer heat.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+
+    ],
+    "origin" : "pest",
+    "photos" : [
+      {
+        "caption" : "A hillside of gorse in flower above the coast",
+        "credit" : "(c) earl woolsey, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "gorse-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/18972588"
+      },
+      {
+        "caption" : "An old plant grown to a small tree, flowers at the top",
+        "credit" : "(c) Murray Dawson, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "gorse-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/143696986"
+      }
+    ],
+    "preparation" : "Pick flowers with gloves. Scatter fresh over salads, steep for tea or cordial, or infuse in spirits. A garnish and a flavouring, not a bulk food.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Ulex europaeus",
+    "sources" : [
+
+    ],
+    "summary" : "New Zealand's most hated weed has coconut-scented yellow flowers that are edible in small amounts — the one good thing to say about it.",
+    "warnings" : [
+      "The pods and seeds are toxic; only the flowers are eaten.",
+      "Flowers contain small amounts of alkaloids — a handful in a salad, not a bowlful."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "careRequired",
+    "commonName" : "Supplejack",
+    "edibleParts" : "The soft new shoot tips, while they still snap.",
+    "habitat" : "Lowland and hill forest throughout the North Island and the wetter parts of the South Island, looping between trees in dense, dark tangles.",
+    "harvestEthics" : "A native of the forest interior, so almost always on conservation land — a DOC permit is required, and the vine is a food and rongoā plant for mana whenua. Take a few tips from a large tangle, not every tip from one plant, and never cut the vine.",
+    "id" : "kareao",
+    "identification" : "Thick, smooth, dark brown to black woody vines that loop and tangle through the understorey. In spring the growing tips are soft, pale green to reddish shoots the thickness of a pencil that snap cleanly when bent. Leaves are glossy, oval and opposite, on the older growth. Berries are bright red.",
+    "lookalikes" : [
+
+    ],
+    "maoriName" : "Kareao",
+    "months" : [
+      9,
+      10,
+      11,
+      12,
+      1
+    ],
+    "origin" : "endemic",
+    "photos" : [
+      {
+        "caption" : "Small pale flowers beneath glossy leaves",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "kareao-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/67105652"
+      },
+      {
+        "caption" : "Vines threading through the understorey",
+        "credit" : "(c) kiwialli, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "kareao-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/241553537"
+      },
+      {
+        "caption" : "Glossy oval leaves in the hand",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "kareao-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/140310388"
+      },
+      {
+        "caption" : "The characteristic tangle of dark vines",
+        "credit" : "(c) kiwialli, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "kareao-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/241553537"
+      }
+    ],
+    "preparation" : "Snap off the tender tip — if it bends rather than snaps it is too old. Eat raw, or steam briefly like asparagus.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Ripogonum scandens",
+    "sources" : [
+
+    ],
+    "summary" : "The tangled black vine of the bush. Its new spring shoots snap off like asparagus and taste much the same.",
+    "warnings" : [
+      "The red berries are not eaten.",
+      "Take only the tip that snaps; cutting into the woody vine damages a plant that may be decades old."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "careRequired",
+    "commonName" : "Sheep sorrel",
+    "edibleParts" : "Leaves.",
+    "habitat" : "Poor, acidic, dry soils: paddocks, roadsides, gravel, sand dunes, lawns that have given up.",
+    "id" : "sheep-sorrel",
+    "identification" : "A low plant with small arrow-shaped leaves — a narrow blade with two backward-pointing lobes at the base, like a spearhead. Flower stalks are slender and turn red; whole plants flush red in summer. The taste is the test: sharply sour and lemony.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+
+    ],
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Leaves and red flower stalks in the hand",
+        "credit" : "(c) cstobie, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sheep-sorrel-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/22517432"
+      },
+      {
+        "caption" : "Tiny red flowers close up",
+        "credit" : "(c) cstobie, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sheep-sorrel-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/22517432"
+      },
+      {
+        "caption" : "The arrow-shaped leaf with two backward lobes",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sheep-sorrel-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/259330367"
+      },
+      {
+        "caption" : "A rosette on poor ground",
+        "credit" : "(c) Kieran Hanrahan, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "sheep-sorrel-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/166433783"
+      }
+    ],
+    "preparation" : "A few leaves raw for sourness in a salad, or wilted into a sauce or soup as with garden sorrel. A seasoning more than a green.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Rumex acetosella",
+    "sources" : [
+
+    ],
+    "summary" : "A small sour weed of poor ground whose arrow-shaped leaves taste sharply of lemon.",
+    "warnings" : [
+      "High in oxalic acid. Eat in small amounts, and avoid altogether if you have kidney problems or gout."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "straightforward",
+    "commonName" : "Cleavers",
+    "edibleParts" : "Young shoots and tips before flowering.",
+    "habitat" : "Hedges, garden edges, fence lines, damp waste ground; scrambles over anything nearby.",
+    "id" : "cleavers",
+    "identification" : "Long, weak, square stems that cling to skin and clothing with tiny hooked hairs. Leaves in whorls of six to eight narrow blades around the stem. Tiny white four-petalled flowers, then small round burrs that stick to everything.",
+    "lookalikes" : [
+
+    ],
+    "months" : [
+      8,
+      9,
+      10,
+      11
+    ],
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Whorled leaves and the round sticky burrs",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "cleavers-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/324788630"
+      },
+      {
+        "caption" : "Burrs close up — they cling to everything",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "cleavers-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/324788630"
+      },
+      {
+        "caption" : "Square stem with whorls of narrow leaves",
+        "credit" : "(c) Gavin Slater, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "cleavers-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/105015175"
+      }
+    ],
+    "preparation" : "Cook — the hooks make it unpleasant raw. Wilt like spinach, blend into soup, or steep the fresh plant as a tea.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Galium aparine",
+    "sources" : [
+
+    ],
+    "summary" : "Sticky willy. The clinging spring weed with whorls of leaves and hooked stems that sticks to your clothes — mild, and one of the first greens of the season.",
+    "warnings" : [
+      "Pick young and before the burrs form; older growth is rough and bitter."
+    ]
   }
 ]

@@ -366,10 +366,15 @@ the point: the schema encodes the safety rules.
 
 Known gaps, in rough priority order:
 
-- **Photo coverage is uneven.** 26 of 32 entries now carry reviewed CC0/CC-BY photos (106 in
-  all, 12 MB), but 13 are below their target and six have none. Several are missing the one
+- **Photo coverage is uneven.** 37 of 43 entries carry reviewed CC0/CC-BY photos (148 in
+  all, 17 MB), but 16 are below their target and six have none. Several are missing the one
   feature that matters most: karaka has no fruit, sweet chestnut has no burr or nut, porcini
-  has no pore surface or stem net. Those need photographs taken on purpose.
+  has no pore surface or stem net, hemlock has no shot of its blotched stem, gorse has no
+  flower close-up, and kareao has no shoot tip. Those need photographs taken on purpose.
+- **Nothing here has been checked against a book yet.** All 43 entries are in
+  `pendingVerification`. Eleven were added from general knowledge alone (hemlock, ongaonga,
+  yellow stainer, onion weed, fat hen, plantain, hawthorn, gorse, kareao, sheep sorrel,
+  cleavers); their lookalike claims in particular need a New Zealand field guide.
 - **No location awareness.** Several entries are regional (cherry guava is northern, rosehip is
   dry-eastern). Region filtering needs a region field on each entry.
 - **No live overlays.** Rāhui, MPI biotoxin warnings and LAWA algal-bloom status are all
