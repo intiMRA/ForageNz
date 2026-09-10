@@ -16,6 +16,7 @@ struct SpeciesRow: View {
             VStack(alignment: .leading, spacing: .xxxSmall) {
                 Text(species.commonName)
                     .font(.headline)
+                    .accessibilityIdentifier("speciesRow.\(species.id)")
 
                 Text(species.scientificName)
                     .font(.caption)

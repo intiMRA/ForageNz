@@ -9,9 +9,17 @@ let package = Package(
     ],
     targets: [
         .target(name: "ForageCatalogue"),
-        // Headless maintenance only. The editor with a window is the CatalogueEditor
-        // app target in ForageNZ.xcodeproj.
-        .executableTarget(name: "catalogue-tool", dependencies: ["ForageCatalogue"]),
-        .testTarget(name: "ForageCatalogueTests", dependencies: ["ForageCatalogue"])
+        // Measurement tooling for the photo matcher — the evidence that removed it from the
+        // app. Kept apart so the iOS app does not link Vision for code it never calls.
+        .target(name: "ForageCatalogueTooling", dependencies: ["ForageCatalogue"]),
+        .executableTarget(
+            name: "catalogue-tool",
+            dependencies: ["ForageCatalogue", "ForageCatalogueTooling"]
+        ),
+        .testTarget(name: "ForageCatalogueTests", dependencies: ["ForageCatalogue"]),
+        .testTarget(
+            name: "ForageCatalogueToolingTests",
+            dependencies: ["ForageCatalogue", "ForageCatalogueTooling"]
+        )
     ]
 )

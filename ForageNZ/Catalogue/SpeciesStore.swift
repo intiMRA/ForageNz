@@ -32,12 +32,7 @@ final class SpeciesStore {
         loadState = .loading
         do {
             let loaded = try await repository.loadSpecies()
-            species = loaded.sorted { lhs, rhs in
-                // Tie-break on id: `sort` is not stable, so equal names would otherwise
-                // order arbitrarily between runs.
-                let comparison = lhs.commonName.localizedCaseInsensitiveCompare(rhs.commonName)
-                return comparison == .orderedSame ? lhs.id < rhs.id : comparison == .orderedAscending
-            }
+            species = loaded.sorted(by: ForageSpecies.displayOrder)
             loadState = .loaded
         } catch {
             species = []

@@ -73,8 +73,8 @@ struct WhereYouAreStoreTests {
         guard let catalogue = CatalogueLocator.resolve() else { return nil }
         let directory = catalogue.deletingLastPathComponent()
         return try? LandStatusMap(
-            rasterURL: directory.appending(path: "land-status.png"),
-            metadataURL: directory.appending(path: "land-status.json")
+            rasterURL: directory.appending(path: "\(LandStatusMap.shippedResourceName).png"),
+            metadataURL: directory.appending(path: "\(LandStatusMap.shippedResourceName).json")
         )
     }()
 
@@ -200,7 +200,7 @@ struct WhereYouAreVerdictTests {
         #expect(verdicts.count == 1)
         // Green is the catalogue's "straightforward". This map cannot earn it: it knows
         // about two restrictions and nothing about who owns the ground.
-        #expect(verdicts.first?.tint != Color(.cautionSafe))
+        #expect(verdicts.first?.tint != CautionLevel.straightforward.tintColor)
     }
 
     @Test("every reading produces something to show")

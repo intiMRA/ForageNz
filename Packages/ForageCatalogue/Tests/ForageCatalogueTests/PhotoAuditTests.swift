@@ -6,15 +6,7 @@ import ForageCatalogue
 @Suite("Photo audit")
 struct PhotoAuditTests {
     private static var repoCatalogue: URL? {
-        var directory = URL(fileURLWithPath: #filePath).deletingLastPathComponent()
-        for _ in 0..<8 {
-            let candidate = directory.appending(path: "ForageNZ/Catalogue/species.json")
-            if FileManager.default.fileExists(atPath: candidate.path) { return candidate }
-            let parent = directory.deletingLastPathComponent()
-            if parent.path == directory.path { break }
-            directory = parent
-        }
-        return nil
+        CatalogueLocator.search(from: URL(fileURLWithPath: #filePath))
     }
 
     /// The photos ship inside the app, so this is the check that stops the bundle growing
@@ -88,8 +80,8 @@ struct PhotoAuditTests {
     @Test("A photo without a caption or credit is a blocking model issue")
     func uncaptionedPhotoBlocks() {
         let species = makeSpecies(photos: [SpeciesPhoto(fileName: "a.heic", caption: "", credit: "")])
-        let fields = species.blockingIssues.map(\.field)
-        #expect(fields.contains("photos[0]"))
+        let labels = species.blockingIssues.map(\.label)
+        #expect(labels.contains("photos[0]"))
         #expect(species.blockingIssues.count >= 2, "caption and credit are separate obligations")
     }
 
@@ -97,7 +89,7 @@ struct PhotoAuditTests {
     func tooFewPhotosIsAdvisory() {
         let species = makeSpecies(photos: [])
         #expect(species.isPublishable)
-        #expect(species.validationIssues.contains { $0.field == "photos" && $0.severity == .advisory })
+        #expect(species.validationIssues.contains { $0.field == .photos && $0.severity == .advisory })
     }
 
     private func makeSpecies(photos: [SpeciesPhoto]) -> ForageSpecies {

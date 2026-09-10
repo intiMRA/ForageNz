@@ -22,8 +22,6 @@ public enum PhotoAudit {
         public let orphanedFiles: [String]
 
         public var isClean: Bool { findings.isEmpty && orphanedFiles.isEmpty }
-
-        public var byteBudgetRemaining: Int { CataloguePhotos.totalByteBudget - totalBytes }
     }
 
     public static func audit(
@@ -50,8 +48,26 @@ public enum PhotoAudit {
                     continue
                 }
 
-                let attributes = try? fileManager.attributesOfItem(atPath: url.path)
-                let bytes = (attributes?[.size] as? Int) ?? 0
+                // A file whose size can't be read is a finding, not zero bytes — otherwise
+                // an unreadable photo would sail under both the per-photo and total budgets.
+                let bytes: Int
+                do {
+                    let attributes = try fileManager.attributesOfItem(atPath: url.path)
+                    guard let size = attributes[.size] as? Int else {
+                        findings.append(Finding(
+                            speciesId: entry.id, fileName: photo.fileName,
+                            problem: "Size unreadable — the filesystem returned no size for it."
+                        ))
+                        continue
+                    }
+                    bytes = size
+                } catch {
+                    findings.append(Finding(
+                        speciesId: entry.id, fileName: photo.fileName,
+                        problem: "Size unreadable — \(error.localizedDescription)"
+                    ))
+                    continue
+                }
                 totalBytes += bytes
 
                 if bytes > CataloguePhotos.maximumBytesPerPhoto {
@@ -63,16 +79,24 @@ public enum PhotoAudit {
             }
         }
 
-        // Only image files can be orphans — a README alongside them is not stray data.
-        let imageExtensions: Set<String> = ["heic", "heif", "jpg", "jpeg", "png", "webp"]
-        let onDisk = (try? fileManager.contentsOfDirectory(atPath: photoDirectory.path)) ?? []
-        let orphans = onDisk
-            .filter { name in
-                guard !name.hasPrefix(".") else { return false }
-                guard imageExtensions.contains(URL(fileURLWithPath: name).pathExtension.lowercased()) else { return false }
-                return !referenced.contains(name)
+        // Only image files can be orphans — a README alongside them is not stray data. A
+        // directory that exists but can't be listed is reported; one that doesn't exist yet
+        // is fine when nothing references it.
+        var orphans: [String] = []
+        if fileManager.fileExists(atPath: photoDirectory.path) {
+            do {
+                orphans = try fileManager.contentsOfDirectory(atPath: photoDirectory.path)
+                    .filter { name in
+                        !name.hasPrefix(".") && CataloguePhotos.isImageFile(name) && !referenced.contains(name)
+                    }
+                    .sorted()
+            } catch {
+                findings.append(Finding(
+                    speciesId: "-", fileName: CataloguePhotos.directoryName,
+                    problem: "Photo directory unreadable — \(error.localizedDescription)"
+                ))
             }
-            .sorted()
+        }
 
         if totalBytes > CataloguePhotos.totalByteBudget {
             findings.append(Finding(

@@ -34,7 +34,7 @@ struct WhereYouAreSection: View {
         } header: {
             Text("Where you are")
         } footer: {
-            Text("Works offline. Boundaries are DOC's, generalised to about 300 m — a prompt to check, never a legal answer. Private land, rāhui and council bylaws are not in this map.")
+            Text("Works offline. Boundaries are DOC's, generalised to about \(LandStatusMap.approximateResolutionMetres) m — a prompt to check, never a legal answer. Private land, rāhui and council bylaws are not in this map.")
         }
     }
 
@@ -98,7 +98,7 @@ extension WhereYouAreSection {
                 symbolName: LandStatus().symbolName,
                 tint: LandStatus().tintColor,
                 title: "Nothing recorded here",
-                detail: "No conservation land or marine reserve within about 300 m. That is not permission to harvest — check who owns the ground."
+                detail: "No conservation land or marine reserve within about \(LandStatusMap.approximateResolutionMetres) m. That is not permission to harvest — check who owns the ground."
             )
         ]
     }

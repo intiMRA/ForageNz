@@ -47,6 +47,16 @@
                ReferencedContainer = "container:ForageNZ.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "78262E2616EA6496F2A11A05"
+               BuildableName = "CatalogueEditorTests.xctest"
+               BlueprintName = "CatalogueEditorTests"
+               ReferencedContainer = "container:ForageNZ.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

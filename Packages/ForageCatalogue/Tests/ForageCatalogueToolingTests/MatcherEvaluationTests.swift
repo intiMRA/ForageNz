@@ -5,6 +5,7 @@ import Testing
 import UniformTypeIdentifiers
 
 import ForageCatalogue
+import ForageCatalogueTooling
 
 @Suite("Matcher evaluation")
 struct MatcherEvaluationTests {
@@ -65,9 +66,27 @@ struct MatcherEvaluationTests {
         defer { try? FileManager.default.removeItem(at: root) }
 
         let report = MatcherEvaluation.run(directory: root)
+        // Without this the loop below is vacuous: an empty map passes every iteration.
+        #expect(!report.confusions.isEmpty, "near-identical greys must produce at least one confusion")
         for (species, confusedWith) in report.confusions {
             #expect(confusedWith.contains("grey-"), "\(species) confused with something unexpected")
         }
+    }
+
+    @Test("Files that cannot be read are named in the report, not dropped from n")
+    func unreadableFilesAreReported() throws {
+        let root = try makeSet([
+            "pair-a": [.solid(1, 0, 0), .solid(1, 0.1, 0)],
+            "pair-b": [.solid(0, 0, 1), .solid(0, 0.1, 1)]
+        ])
+        defer { try? FileManager.default.removeItem(at: root) }
+        let broken = root.appending(path: "pair-a").appending(path: "pair-a-9.png")
+        try Data([0, 1, 2]).write(to: broken)
+
+        let report = MatcherEvaluation.run(directory: root)
+
+        #expect(report.unreadable == [broken.path])
+        #expect(report.queries == 4, "the unreadable file must not count as a query")
     }
 
     // MARK: - Synthetic image sets

@@ -21,6 +21,9 @@ final class CatalogueStore {
 
     /// Ids whose entry differs from what was loaded, so the sidebar can mark them.
     private(set) var editedIds: Set<String> = []
+    /// Photo files dropped from an entry since the last save. Deleted on save, not on
+    /// removal: an unsaved catalogue must never point at a file that is already gone.
+    private(set) var pendingPhotoDeletions: [SpeciesPhoto] = []
     private var loaded: [String: ForageSpecies] = [:]
 
     init(fileURL: URL?) {
@@ -55,6 +58,7 @@ final class CatalogueStore {
             species = loadedSpecies
             loaded = Dictionary(uniqueKeysWithValues: loadedSpecies.map { ($0.id, $0) })
             editedIds = []
+            pendingPhotoDeletions = []
             status = .clean
         } catch {
             status = .failed(message(for: error))
@@ -65,12 +69,27 @@ final class CatalogueStore {
         guard let fileURL else { return }
         do {
             try CatalogueFile.save(species, to: fileURL)
-            loaded = Dictionary(uniqueKeysWithValues: species.map { ($0.id, $0) })
-            editedIds = []
-            status = .saved(at: .now)
         } catch {
             status = .failed(message(for: error))
+            return
         }
+        loaded = Dictionary(uniqueKeysWithValues: species.map { ($0.id, $0) })
+        editedIds = []
+
+        // The catalogue on disk no longer references these, so now they can go. A failure
+        // here is reported, not swallowed: an orphan on disk fails the photo audit.
+        var failures: [String] = []
+        if let photoDirectory {
+            for photo in pendingPhotoDeletions {
+                do {
+                    try PhotoImporter.deleteFile(for: photo, in: photoDirectory)
+                } catch {
+                    failures.append(error.localizedDescription)
+                }
+            }
+        }
+        pendingPhotoDeletions = []
+        status = failures.isEmpty ? .saved(at: .now) : .failed(failures.joined(separator: "\n"))
     }
 
     enum AddFailure: Error, Equatable {
@@ -83,13 +102,13 @@ final class CatalogueStore {
     /// Deliberately a skeleton, not a blank: caution defaults to `careRequired` so a new
     /// entry can never start out claiming to be safe, and the blocking issues on it act as
     /// the to-do list for filling it in.
-    func addSpecies(commonName: String) -> Result<String, AddFailure> {
+    func addSpecies(commonName: String) throws(AddFailure) -> String {
         let trimmed = commonName.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmed.isEmpty else { return .failure(.nameEmpty) }
+        guard !trimmed.isEmpty else { throw .nameEmpty }
 
         let id = ForageSpecies.makeIdentifier(from: trimmed)
-        guard !id.isEmpty else { return .failure(.nameEmpty) }
-        guard !species.contains(where: { $0.id == id }) else { return .failure(.duplicate(id: id)) }
+        guard !id.isEmpty else { throw .nameEmpty }
+        guard !species.contains(where: { $0.id == id }) else { throw .duplicate(id: id) }
 
         let new = ForageSpecies(
             id: id,
@@ -105,13 +124,15 @@ final class CatalogueStore {
             preparation: ""
         )
         species.append(new)
-        species.sort { $0.commonName.localizedCaseInsensitiveCompare($1.commonName) == .orderedAscending }
+        species.sort(by: ForageSpecies.displayOrder)
         editedIds.insert(id)
         status = .edited(count: editedIds.count)
-        return .success(id)
+        return id
     }
 
     func delete(id: String) {
+        guard let removed = species.first(where: { $0.id == id }) else { return }
+        pendingPhotoDeletions.append(contentsOf: removed.photos)
         species.removeAll { $0.id == id }
         editedIds.insert(id)
         status = .edited(count: editedIds.count)
@@ -134,13 +155,18 @@ final class CatalogueStore {
         status = editedIds.isEmpty ? .clean : .edited(count: editedIds.count)
     }
 
+    /// Records that a photo's file should go when the catalogue is next saved.
+    func schedulePhotoDeletion(_ photo: SpeciesPhoto) {
+        pendingPhotoDeletions.append(photo)
+    }
+
     var hasUnsavedChanges: Bool { !editedIds.isEmpty }
 
     /// Entries with no `sources`, worst-first — the queue this tool exists to empty.
     var unverified: [ForageSpecies] {
         species.filter { !$0.isVerified }.sorted { lhs, rhs in
             if lhs.reviewTier != rhs.reviewTier { return lhs.reviewTier < rhs.reviewTier }
-            return lhs.commonName.localizedCaseInsensitiveCompare(rhs.commonName) == .orderedAscending
+            return ForageSpecies.displayOrder(lhs, rhs)
         }
     }
 
@@ -154,19 +180,30 @@ final class CatalogueStore {
     }
 }
 
-extension ForageSpecies {
-    /// Verification priority: lethal claims first, then anything needing care.
-    var reviewTier: Int {
-        if caution == .doNotEat || highestLookalikeRisk == .deadly { return 1 }
-        if caution == .careRequired { return 2 }
-        return 3
+/// Verification priority. Lethal claims first, because those are the entries where an
+/// unchecked sentence can kill someone.
+enum ReviewTier: Int, CaseIterable, Comparable, Identifiable {
+    case lethalClaims
+    case careRequired
+    case straightforward
+
+    var id: Int { rawValue }
+
+    var title: String {
+        switch self {
+        case .lethalClaims: "Lethal claims"
+        case .careRequired: "Care required"
+        case .straightforward: "Straightforward"
+        }
     }
 
-    var reviewTierLabel: String {
-        switch reviewTier {
-        case 1: "Lethal claims"
-        case 2: "Care required"
-        default: "Straightforward"
-        }
+    static func < (lhs: ReviewTier, rhs: ReviewTier) -> Bool { lhs.rawValue < rhs.rawValue }
+}
+
+extension ForageSpecies {
+    var reviewTier: ReviewTier {
+        if caution == .doNotEat || highestLookalikeRisk == .deadly { return .lethalClaims }
+        if caution == .careRequired { return .careRequired }
+        return .straightforward
     }
 }

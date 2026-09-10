@@ -18,12 +18,20 @@ public struct LandStatus: OptionSet, Sendable, Hashable {
 
 /// Offline lookup of land status from a bundled raster.
 ///
-/// Deliberately coarse: roughly 280 m per pixel, generalised from DOC's own layers. It
+/// Deliberately coarse: roughly 300 m per pixel, generalised from DOC's own layers. It
 /// answers "you are probably on conservation land, check before you pick" — never a legal
 /// determination, and every caller must present it that way. Boundaries are approximate and
 /// holes inside conservation land are not modelled, so it errs towards saying a permit may
 /// be needed, which is the safe direction.
 public struct LandStatusMap: Sendable {
+    /// Base name of the two bundled files, `<name>.png` and `<name>.json`.
+    public static let shippedResourceName = "land-status"
+
+    /// What to tell a user the map's resolution is. The builder emits 0.0025° ≈ 278 m; this is
+    /// that figure rounded up, because "about 300 m" is honest and "278 m" implies a precision
+    /// the raster does not have.
+    public static let approximateResolutionMetres = 300
+
     public struct Grid: Codable, Sendable, Hashable {
         public let minLongitude: Double
         public let maxLongitude: Double
@@ -32,6 +40,14 @@ public struct LandStatusMap: Sendable {
         public let degreesPerPixel: Double
         public let width: Int
         public let height: Int
+        /// The bit each flag occupies, as the builder wrote it. Checked against `LandStatus`
+        /// on load so the two sides of the contract cannot drift silently.
+        public let flags: Flags
+
+        public struct Flags: Codable, Sendable, Hashable {
+            public let conservation: UInt8
+            public let marineReserve: UInt8
+        }
 
         /// Image row 0 is the northern edge, so latitude is flipped.
         func pixel(latitude: Double, longitude: Double) -> (x: Int, y: Int)? {
@@ -48,6 +64,8 @@ public struct LandStatusMap: Sendable {
         case metadataUnreadable(String)
         case rasterUnreadable(String)
         case sizeMismatch(expected: String, actual: String)
+        /// The builder assigned a flag to a different bit than this code expects.
+        case flagMismatch(String)
     }
 
     public let grid: Grid
@@ -64,6 +82,14 @@ public struct LandStatusMap: Sendable {
             grid = try JSONDecoder().decode(Grid.self, from: Data(contentsOf: metadataURL))
         } catch {
             throw .metadataUnreadable(String(describing: error))
+        }
+
+        guard grid.flags.conservation == LandStatus.conservation.rawValue,
+              grid.flags.marineReserve == LandStatus.marineReserve.rawValue else {
+            throw .flagMismatch(
+                "metadata says conservation=\(grid.flags.conservation) marineReserve=\(grid.flags.marineReserve); "
+                + "this build expects \(LandStatus.conservation.rawValue) and \(LandStatus.marineReserve.rawValue)"
+            )
         }
 
         guard let source = CGImageSourceCreateWithURL(rasterURL as CFURL, nil),

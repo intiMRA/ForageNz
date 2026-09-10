@@ -20,8 +20,10 @@ struct EditorRootView: View {
                 VStack(spacing: 0) {
                     SpeciesEditorView(
                         species: species,
-                        photoDirectory: store.photoDirectory
-                    ) { store.update($0) }
+                        photoDirectory: store.photoDirectory,
+                        onChange: { store.update($0) },
+                        onRemovePhoto: { store.schedulePhotoDeletion($0) }
+                    )
                     saveBar
                 }
             } else {
@@ -99,7 +101,7 @@ struct EditorRootView: View {
             }
         }
         .padding(20)
-        .frame(width: 420)
+        .frame(width: EditorLayout.addSheetWidth)
     }
 
     private func startAdding() {
@@ -109,14 +111,17 @@ struct EditorRootView: View {
     }
 
     private func commitAdd() {
-        switch store.addSpecies(commonName: newName) {
-        case .success(let id):
-            selectedId = id
+        do {
+            selectedId = try store.addSpecies(commonName: newName)
             isAddingSpecies = false
-        case .failure(.nameEmpty):
-            addError = "Give it a name with at least one letter or digit."
-        case .failure(.duplicate(let id)):
-            addError = "“\(id)” is already in the catalogue."
+        } catch {
+            // Typed throws: `error` is an AddFailure, so the switch is exhaustive.
+            switch error {
+            case .nameEmpty:
+                addError = "Give it a name with at least one letter or digit."
+            case .duplicate(let id):
+                addError = "“\(id)” is already in the catalogue."
+            }
         }
     }
 
@@ -167,7 +172,7 @@ struct EditorRootView: View {
         VStack(spacing: 0) {
             List(selection: $selectedId) {
                 ForEach(tiers, id: \.tier) { group in
-                    Section(header: Text("\(group.label) · \(group.species.count)")) {
+                    Section(header: Text("\(group.tier.title) · \(group.species.count)")) {
                         ForEach(group.species) { species in
                             row(species).tag(species.id)
                         }
@@ -189,7 +194,7 @@ struct EditorRootView: View {
             }
             .padding(8)
         }
-        .frame(minWidth: 260)
+        .frame(minWidth: EditorLayout.sidebarMinimumWidth)
     }
 
     private func row(_ species: ForageSpecies) -> some View {
@@ -212,7 +217,7 @@ struct EditorRootView: View {
             if store.editedIds.contains(species.id) {
                 Circle()
                     .fill(.orange)
-                    .frame(width: 7, height: 7)
+                    .frame(width: EditorLayout.editedDotSize, height: EditorLayout.editedDotSize)
                     .help("Edited, not yet saved")
             }
         }
@@ -224,10 +229,9 @@ struct EditorRootView: View {
     }
 
     private struct TierGroup: Identifiable {
-        let tier: Int
-        let label: String
+        let tier: ReviewTier
         let species: [ForageSpecies]
-        var id: Int { tier }
+        var id: ReviewTier { tier }
     }
 
     private var tiers: [TierGroup] {
@@ -238,11 +242,11 @@ struct EditorRootView: View {
             return species.searchableText.contains(query)
         }
 
-        return [(1, "Lethal claims"), (2, "Care required"), (3, "Straightforward")].compactMap { tier, label in
+        return ReviewTier.allCases.compactMap { tier in
             let members = filtered
                 .filter { $0.reviewTier == tier }
-                .sorted { $0.commonName.localizedCaseInsensitiveCompare($1.commonName) == .orderedAscending }
-            return members.isEmpty ? nil : TierGroup(tier: tier, label: label, species: members)
+                .sorted(by: ForageSpecies.displayOrder)
+            return members.isEmpty ? nil : TierGroup(tier: tier, species: members)
         }
     }
 

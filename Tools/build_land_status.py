@@ -34,6 +34,11 @@ from sources import COURTESY_DELAY, get_json
 OUTPUT_IMAGE = Path("ForageNZ/Catalogue/land-status.png")
 OUTPUT_METADATA = Path("ForageNZ/Catalogue/land-status.json")
 
+#: One degree of latitude, roughly. Only used to describe the grid to a human.
+METRES_PER_DEGREE = 111_000
+#: Past this the bundle grows noticeably; the app also embeds ~12 MB of photos.
+LARGE_ASSET_BYTES = 2_000_000
+
 DOC_SERVICES = "https://services1.arcgis.com/3JjYDyG3oajxU6HO/ArcGIS/rest/services"
 PAGE_SIZE = 1000
 
@@ -204,7 +209,8 @@ def main() -> int:
     arguments = parser.parse_args()
 
     grid = Grid(degrees=arguments.degrees)
-    print(f"Grid {grid.width} x {grid.height} at {grid.degrees}° (~{grid.degrees * 111_000:.0f} m)")
+    metres = grid.degrees * METRES_PER_DEGREE
+    print(f"Grid {grid.width} x {grid.height} at {grid.degrees}° (~{metres:.0f} m)")
 
     # Each layer gets its own mask so overlapping layers keep BOTH bits. Drawing them
     # into one image would have the second layer overwrite the first.
@@ -243,7 +249,7 @@ def main() -> int:
     size = OUTPUT_IMAGE.stat().st_size
     print(f"\nWrote {OUTPUT_IMAGE} — {size / 1024:.0f} KB")
     print(f"Wrote {OUTPUT_METADATA}")
-    if size > 2_000_000:
+    if size > LARGE_ASSET_BYTES:
         print("That is large for a bundled asset; try a coarser --degrees.", file=sys.stderr)
     return 0
 

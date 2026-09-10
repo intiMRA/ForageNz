@@ -1,3 +1,4 @@
+import ForageCatalogue
 import Foundation
 import Vision
 
@@ -36,15 +37,21 @@ public nonisolated struct FeatureVector: Codable, Sendable, Hashable {
 }
 
 /// One species reduced to a single prototype vector.
+///
+/// Carries its own caution so a match can never be presented without one. An earlier design
+/// kept cautions in a parallel dictionary and defaulted a missing entry to `careRequired` —
+/// which would have let a do-not-eat species lose the one protection the ranking gives it.
 public nonisolated struct SpeciesPrototype: Codable, Sendable, Hashable, Identifiable {
     public let speciesId: String
+    public let caution: CautionLevel
     public let photoCount: Int
     public let vector: FeatureVector
 
     public var id: String { speciesId }
 
-    public init(speciesId: String, photoCount: Int, vector: FeatureVector) {
+    public init(speciesId: String, caution: CautionLevel, photoCount: Int, vector: FeatureVector) {
         self.speciesId = speciesId
+        self.caution = caution
         self.photoCount = photoCount
         self.vector = vector
     }
@@ -68,20 +75,25 @@ public nonisolated struct PhotoMatch: Sendable, Hashable, Identifiable {
     }
 }
 
+/// A photo the index could not read, and why.
+public nonisolated struct UnreadablePhoto: Sendable, Hashable {
+    public let speciesId: String
+    public let fileName: String
+    public let failure: PhotoMatcher.Failure
+}
+
 /// Computes Vision feature prints for catalogue photos.
 ///
 /// Deliberately nearest-neighbour over a frozen embedding rather than a trained classifier:
 /// the catalogue is a closed set of a few dozen species with a handful of photos each, which
 /// is where metric-based matching works and training does not.
 ///
-/// It ranks; it never identifies.
+/// It ranks; it never identifies. Measured and removed from the app — see the README.
 public enum PhotoMatcher {
-    public enum Failure: Error, Sendable, Equatable {
+    public enum Failure: Error, Sendable, Hashable {
         case unreadable(String)
         case noFeaturePrint(String)
         case unexpectedElementType(String)
-        /// Feature prints from different Vision revisions are not comparable.
-        case revisionMismatch(indexRevision: Int, queryRevision: Int)
     }
 
     /// Vision's current feature-print revision. Recorded in the index because prints from
@@ -94,35 +106,12 @@ public enum PhotoMatcher {
         for imageURL: URL,
         revision: Int? = nil
     ) throws(Failure) -> FeatureVector {
-        try featureVector(
-            label: imageURL.lastPathComponent,
-            revision: revision,
-            makeHandler: { VNImageRequestHandler(url: imageURL, options: [:]) }
-        )
-    }
-
-    /// For an image already in memory — a photo the user just picked.
-    public static func featureVector(
-        forImageData data: Data,
-        revision: Int? = nil
-    ) throws(Failure) -> FeatureVector {
-        try featureVector(
-            label: "selected image",
-            revision: revision,
-            makeHandler: { VNImageRequestHandler(data: data, options: [:]) }
-        )
-    }
-
-    private static func featureVector(
-        label: String,
-        revision: Int?,
-        makeHandler: () -> VNImageRequestHandler
-    ) throws(Failure) -> FeatureVector {
+        let label = imageURL.lastPathComponent
         let request = VNGenerateImageFeaturePrintRequest()
         if let revision { request.revision = revision }
 
         do {
-            try makeHandler().perform([request])
+            try VNImageRequestHandler(url: imageURL, options: [:]).perform([request])
         } catch {
             throw .unreadable(label)
         }
@@ -146,50 +135,47 @@ public enum PhotoMatcher {
 public nonisolated struct PhotoIndex: Codable, Sendable {
     public let revision: Int
     public let prototypes: [SpeciesPrototype]
-    /// Caution per species, so a match can be presented without re-reading the catalogue.
-    public let cautions: [String: CautionLevel]
 
-    public init(revision: Int, prototypes: [SpeciesPrototype], cautions: [String: CautionLevel]) {
+    public init(revision: Int, prototypes: [SpeciesPrototype]) {
         self.revision = revision
         self.prototypes = prototypes
-        self.cautions = cautions
     }
 
-    /// Builds an index from the catalogue's own photos. Species whose photos can't be read
-    /// are skipped and reported rather than silently dropped.
+    /// Builds an index from the catalogue's own photos.
+    ///
+    /// Every photo that can't be read is returned, individually. A species keeps its
+    /// prototype if at least one photo read — but the caller sees exactly which didn't, so a
+    /// prototype quietly built from one photo out of six cannot pass as six.
     public static func build(
         species: [ForageSpecies],
         photoDirectory: URL,
         revision: Int? = nil
-    ) -> (index: PhotoIndex, skipped: [String]) {
+    ) -> (index: PhotoIndex, unreadable: [UnreadablePhoto]) {
         let usedRevision = revision ?? PhotoMatcher.currentRevision
         var prototypes: [SpeciesPrototype] = []
-        var cautions: [String: CautionLevel] = [:]
-        var skipped: [String] = []
+        var unreadable: [UnreadablePhoto] = []
 
-        for entry in species {
-            cautions[entry.id] = entry.caution
-            guard !entry.photos.isEmpty else { continue }
-
-            let vectors = entry.photos.compactMap { photo -> FeatureVector? in
-                try? PhotoMatcher.featureVector(
-                    for: photoDirectory.appending(path: photo.fileName),
-                    revision: usedRevision
-                )
+        for entry in species where !entry.photos.isEmpty {
+            var vectors: [FeatureVector] = []
+            for photo in entry.photos {
+                do {
+                    vectors.append(try PhotoMatcher.featureVector(
+                        for: photoDirectory.appending(path: photo.fileName),
+                        revision: usedRevision
+                    ))
+                } catch {
+                    unreadable.append(UnreadablePhoto(
+                        speciesId: entry.id, fileName: photo.fileName, failure: error
+                    ))
+                }
             }
-            guard let prototype = FeatureVector.mean(of: vectors) else {
-                skipped.append(entry.id)
-                continue
-            }
+            guard let prototype = FeatureVector.mean(of: vectors) else { continue }
             prototypes.append(SpeciesPrototype(
-                speciesId: entry.id, photoCount: vectors.count, vector: prototype
+                speciesId: entry.id, caution: entry.caution, photoCount: vectors.count, vector: prototype
             ))
         }
 
-        return (
-            PhotoIndex(revision: usedRevision, prototypes: prototypes, cautions: cautions),
-            skipped
-        )
+        return (PhotoIndex(revision: usedRevision, prototypes: prototypes), unreadable)
     }
 
     /// Closest catalogue entries to `query`, nearest first.
@@ -202,7 +188,7 @@ public nonisolated struct PhotoIndex: Codable, Sendable {
                 PhotoMatch(
                     speciesId: prototype.speciesId,
                     distance: prototype.vector.distance(to: query),
-                    caution: cautions[prototype.speciesId] ?? .careRequired
+                    caution: prototype.caution
                 )
             }
             .sorted { $0.distance < $1.distance }
@@ -213,13 +199,5 @@ public nonisolated struct PhotoIndex: Codable, Sendable {
         }
 
         return (head + rescuedAvoidOnly).sorted { $0.distance < $1.distance }
-    }
-
-    /// Rejects a query built with a different Vision revision — those distances would be
-    /// meaningless rather than merely inaccurate.
-    public func requireCompatible(queryRevision: Int) throws(PhotoMatcher.Failure) {
-        guard queryRevision == revision else {
-            throw .revisionMismatch(indexRevision: revision, queryRevision: queryRevision)
-        }
     }
 }

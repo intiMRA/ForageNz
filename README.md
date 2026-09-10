@@ -24,15 +24,16 @@ no distinguishing check, or a native species ships without harvesting guidance.
 
 | Path | What's in it |
 |---|---|
-| `Packages/ForageCatalogue/` | Local SwiftPM package: the shared model (`ForageSpecies`, `ForageMonth`, `ForageCategory`/`ForageOrigin`, `CautionLevel`, `Lookalike`, `Recipe`), `CatalogueFile` for load/save, `SpeciesValidation` for the shared rules, `CatalogueLocator`, and the `catalogue-tool` CLI. Depended on by every target. |
-| `CatalogueEditor/` | macOS editor app target — its own scheme in the project. |
+| `Packages/ForageCatalogue/` | Local SwiftPM package. `ForageCatalogue` is the shared model (`ForageSpecies`, `ForageMonth`, `ForageCategory`/`ForageOrigin`, `CautionLevel`, `Lookalike`, `Recipe`), `CatalogueFile` for load/save, `SpeciesValidation` for the shared rules, `PhotoImporter`, `LandStatusMap` and `CatalogueLocator` — depended on by every target. `ForageCatalogueTooling` holds the photo-matcher measurement code (Vision) and is linked only by the `catalogue-tool` CLI, so the app never carries it. |
+| `CatalogueEditor/` | macOS editor app target — its own scheme in the project. Compiles the app's `Layout` and `CautionPalette` too, so the two UIs share one set of layout values and one caution colour mapping. |
+| `CatalogueEditorTests/` | Swift Testing against the editor's store: adding, editing, deleting, and the rule that a removed photo's file is deleted on save, not before. |
 | `ForageNZ/ForageNZApp.swift`, `RootView.swift` | App entry and the tab shell, which owns catalogue loading. |
 | `ForageNZ/Catalogue/` | `species.json`, `SpeciesRepository` (protocol + bundled actor), `SpeciesStore` (`@Observable @MainActor`). |
 | `ForageNZ/InSeason/` | What's worth looking for this month. |
 | `ForageNZ/FieldGuide/` | Searchable catalogue with category + origin filters, and the species detail screen. |
 | `ForageNZ/Safety/` | Ground rules, the do-not-eat list, and species with deadly lookalikes. |
 | `ForageNZ/WhereYouAre/` | Offline land-status lookup: the bundled DOC raster, a one-shot location fix, and the Safety-tab section that reports it. |
-| `ForageNZ/Components/` | Shared UI: `SpeciesRow`, `CautionBadge`, `CautionPalette`, `Layout`. |
+| `ForageNZ/Components/` | Shared UI: `SpeciesRow`, `CautionBadge`, `CautionPalette`, `Layout`, and `CautionColors.xcassets` — the three caution colours live here rather than in the app's asset catalog so the editor can compile them as well. |
 | `ForageNZTests/` | Swift Testing: store filtering and shipped-catalogue integrity. |
 | `ForageNZUITests/` | XCUITest: tab navigation, origin filtering end-to-end, species detail, safety list. |
 

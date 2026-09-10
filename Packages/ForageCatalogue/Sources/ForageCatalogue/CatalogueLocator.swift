@@ -18,19 +18,19 @@ public enum CatalogueLocator {
         arguments: [String] = CommandLine.arguments,
         startingAt start: URL? = nil,
         fileManager: FileManager = .default,
+        currentDirectory: String = FileManager.default.currentDirectoryPath,
+        bundleURL: URL = Bundle.main.bundleURL,
         sourceAnchor: String = #filePath
     ) -> URL? {
         if let flag = arguments.firstIndex(of: "--catalogue"), arguments.count > flag + 1 {
             return URL(fileURLWithPath: arguments[flag + 1])
         }
 
-        // Xcode launches an app bundle with an arbitrary working directory, so try the
-        // binary's own location as well as the current directory.
         let origins = [
             start,
-            URL(fileURLWithPath: fileManager.currentDirectoryPath),
+            URL(fileURLWithPath: currentDirectory),
             URL(fileURLWithPath: sourceAnchor).deletingLastPathComponent(),
-            Bundle.main.bundleURL
+            bundleURL
         ].compactMap(\.self)
 
         for origin in origins {

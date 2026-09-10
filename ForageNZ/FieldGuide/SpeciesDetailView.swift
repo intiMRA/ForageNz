@@ -97,6 +97,7 @@ struct SpeciesDetailView: View {
 
             Text(species.scientificName)
                 .font(.subheadline)
+                .accessibilityIdentifier("speciesDetail.scientificName")
                 .italic()
                 .foregroundStyle(.secondary)
 

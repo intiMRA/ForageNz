@@ -10,7 +10,6 @@ public nonisolated struct SpeciesPhoto: Codable, Sendable, Hashable, Identifiabl
     /// File name inside the catalogue's photo directory. Not a path — the app resolves it
     /// against its bundle, the editor against the repo.
     public let fileName: String
-    /// Which feature this photo shows.
     public let caption: String
     /// Attribution as it must be displayed, e.g. "© Jane Doe, some rights reserved (CC BY)".
     public let credit: String
@@ -52,8 +51,13 @@ public enum CataloguePhotos {
         hasDeadlyLookalike ? 6 : 4
     }
 
-    /// The floor, for copy that can't know the species.
-    public static let minimumRecommendedCount = 4
+    /// What counts as a photo on disk — for orphan detection and evaluation sets alike, so
+    /// the two cannot disagree about whether a `.webp` is a photo.
+    public static let imageExtensions: Set<String> = ["heic", "heif", "jpg", "jpeg", "png", "webp"]
+
+    public static func isImageFile(_ name: String) -> Bool {
+        imageExtensions.contains(URL(fileURLWithPath: name).pathExtension.lowercased())
+    }
 
     public static func fileName(speciesId: String, index: Int) -> String {
         "\(speciesId)-\(index).heic"

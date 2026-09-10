@@ -34,31 +34,25 @@ struct RootView: View {
     private var tabs: some View {
         TabView {
             Tab("In season", systemImage: "calendar") {
-                NavigationStack {
-                    InSeasonView()
-                        .navigationDestination(for: ForageSpecies.self) { species in
-                            SpeciesDetailView(species: species)
-                        }
-                }
+                NavigationStack { InSeasonView().speciesDestination() }
             }
 
             Tab("Field guide", systemImage: "book") {
-                NavigationStack {
-                    BrowseView()
-                        .navigationDestination(for: ForageSpecies.self) { species in
-                            SpeciesDetailView(species: species)
-                        }
-                }
+                NavigationStack { BrowseView().speciesDestination() }
             }
 
             Tab("Safety", systemImage: "exclamationmark.shield") {
-                NavigationStack {
-                    SafetyView()
-                        .navigationDestination(for: ForageSpecies.self) { species in
-                            SpeciesDetailView(species: species)
-                        }
-                }
+                NavigationStack { SafetyView().speciesDestination() }
             }
+        }
+    }
+}
+
+private extension View {
+    /// Every tab pushes the same detail screen for a species.
+    func speciesDestination() -> some View {
+        navigationDestination(for: ForageSpecies.self) { species in
+            SpeciesDetailView(species: species)
         }
     }
 }

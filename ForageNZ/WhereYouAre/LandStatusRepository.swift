@@ -28,7 +28,7 @@ actor BundledLandStatusRepository: LandStatusRepository {
 
     private var cached: LandStatusMap?
 
-    init(bundle: Bundle = .main, resourceName: String = "land-status") {
+    init(bundle: Bundle = .main, resourceName: String = LandStatusMap.shippedResourceName) {
         self.bundle = bundle
         self.resourceName = resourceName
     }

@@ -8,7 +8,7 @@ struct CatalogueEditorApp: App {
     var body: some Scene {
         WindowGroup {
             EditorRootView(store: store)
-                .frame(minWidth: 900, minHeight: 600)
+                .frame(minWidth: EditorLayout.windowMinimum.width, minHeight: EditorLayout.windowMinimum.height)
                 .task { store.load() }
         }
         .commands {

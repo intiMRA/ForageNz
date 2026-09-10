@@ -1,5 +1,6 @@
 import CoreGraphics
 import ForageCatalogue
+import ForageCatalogueTooling
 import Foundation
 import ImageIO
 import UniformTypeIdentifiers
@@ -46,6 +47,17 @@ func loadCatalogue() -> [ForageSpecies] {
     }
 }
 
+/// Names every input an evaluation could not read, and returns the exit code for it. A
+/// measurement over a set that silently shrank is not a measurement.
+func reportUnreadable(_ paths: [String]) -> Int32 {
+    guard !paths.isEmpty else { return 0 }
+    FileHandle.standardError.write(Data("\n\(paths.count) input(s) could not be read — the figures above exclude them:\n".utf8))
+    for path in paths {
+        FileHandle.standardError.write(Data("  \(path)\n".utf8))
+    }
+    return 1
+}
+
 if arguments.contains("--normalise") {
     let species = loadCatalogue()
     do {
@@ -69,12 +81,12 @@ if let flag = arguments.firstIndex(of: "--openset") {
     )
 
     func summarise(_ label: String, _ values: [Float]) {
-        guard !values.isEmpty else { print("\(label): none"); return }
+        guard let first = values.first, let last = values.last else { print("\(label): none"); return }
         let median = values[values.count / 2]
         let p10 = values[max(0, values.count / 10)]
         let p90 = values[min(values.count - 1, values.count * 9 / 10)]
         print(String(format: "%@  n=%d  min %.2f  p10 %.2f  median %.2f  p90 %.2f  max %.2f",
-                     label, values.count, values.first!, p10, median, p90, values.last!))
+                     label, values.count, first, p10, median, p90, last))
     }
 
     print("Nearest-prototype distance distributions\n")
@@ -86,7 +98,7 @@ if let flag = arguments.firstIndex(of: "--openset") {
                  report.rejectedOutOfCatalogue * 100))
     print(String(format: "So %.0f%% of plants NOT in the guide would still be handed a shortlist.",
                  report.falseAcceptRate * 100))
-    exit(0)
+    exit(reportUnreadable(report.unreadable))
 }
 
 if let flag = arguments.firstIndex(of: "--evaluate") {
@@ -127,22 +139,28 @@ if let flag = arguments.firstIndex(of: "--evaluate") {
     print(String(repeating: "-", count: 78))
     print(String(format: "overall top-1 %.1f%%   top-3 %.1f%%",
                  report.top1Accuracy * 100, report.top3Accuracy * 100))
-    exit(0)
+    exit(reportUnreadable(report.unreadable))
 }
 
 if arguments.contains("--index") {
     let species = loadCatalogue()
     let photoDirectory = PhotoAudit.directory(forCatalogueAt: url)
-    let (index, skipped) = PhotoIndex.build(species: species, photoDirectory: photoDirectory)
+    let (index, unreadable) = PhotoIndex.build(species: species, photoDirectory: photoDirectory)
 
     print("Vision feature-print revision \(index.revision)")
     print("\(index.prototypes.count) prototype(s) from \(index.prototypes.reduce(0) { $0 + $1.photoCount }) photo(s)")
-    if !skipped.isEmpty { print("unreadable: \(skipped.joined(separator: ", "))") }
+    for photo in unreadable {
+        print("unreadable: \(photo.speciesId) · \(photo.fileName) — \(photo.failure)")
+    }
 
     // Within-species spread: how far apart are two photos of the SAME species?
     for entry in species where entry.photos.count >= 2 {
-        let vectors = entry.photos.compactMap {
-            try? PhotoMatcher.featureVector(for: photoDirectory.appending(path: $0.fileName), revision: index.revision)
+        var vectors: [FeatureVector] = []
+        for photo in entry.photos {
+            // Already reported above if it failed; here it simply doesn't take part.
+            if let vector = try? PhotoMatcher.featureVector(for: photoDirectory.appending(path: photo.fileName), revision: index.revision) {
+                vectors.append(vector)
+            }
         }
         var worst: Float = 0
         for i in vectors.indices {
@@ -167,19 +185,25 @@ if arguments.contains("--index") {
     if index.prototypes.count < 2 {
         print("Only one species has photos — between-species separation can't be measured yet.")
     }
+    if !unreadable.isEmpty {
+        print("\n\(unreadable.count) photo(s) could not be read; the figures above exclude them.")
+    }
 
     // Calibration: how far is an unrelated image? Within-species distance has to be well
     // below this for ranking to carry any signal.
     if let control = makeControlImage() {
         defer { try? FileManager.default.removeItem(at: control) }
-        if let controlVector = try? PhotoMatcher.featureVector(for: control, revision: index.revision) {
+        do {
+            let controlVector = try PhotoMatcher.featureVector(for: control, revision: index.revision)
             for a in index.prototypes {
                 print(String(format: "control %@: distance to an unrelated image %.3f",
                              a.speciesId, a.vector.distance(to: controlVector)))
             }
+        } catch {
+            print("control image could not be read: \(error)")
         }
     }
-    exit(0)
+    exit(unreadable.isEmpty ? 0 : 1)
 }
 
 if arguments.contains("--photos") {
@@ -284,7 +308,7 @@ if arguments.contains("--check") {
     var blocking = 0
     for entry in species {
         for issue in entry.blockingIssues {
-            print("\(entry.id) · \(issue.field): \(issue.message)")
+            print("\(entry.id) · \(issue.label): \(issue.message)")
             blocking += 1
         }
     }

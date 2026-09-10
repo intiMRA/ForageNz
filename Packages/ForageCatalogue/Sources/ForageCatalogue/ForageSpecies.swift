@@ -93,7 +93,8 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     public var seasonDescription: String {
         guard !months.isEmpty else { return "Year-round" }
         let ordered = orderedSeasonMonths
-        guard let first = ordered.first, let last = ordered.last else { return "Year-round" }
+        let first = ordered[0]
+        let last = ordered[ordered.count - 1]
         guard ordered.count > 1 else { return first.displayName }
         guard ordered.count < ForageMonth.count else { return "Year-round" }
 
@@ -182,5 +183,16 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
             photos: photos ?? self.photos,
             moreImagesURL: moreImagesURL ?? self.moreImagesURL
         )
+    }
+
+    /// The one ordering every list of species uses — app, editor sidebar, verification
+    /// queue. Ties on common name break on id, because `sort` is not stable and two entries
+    /// with the same name would otherwise swap places between runs.
+    public static func displayOrder(_ lhs: ForageSpecies, _ rhs: ForageSpecies) -> Bool {
+        switch lhs.commonName.localizedCaseInsensitiveCompare(rhs.commonName) {
+        case .orderedAscending: true
+        case .orderedDescending: false
+        case .orderedSame: lhs.id < rhs.id
+        }
     }
 }

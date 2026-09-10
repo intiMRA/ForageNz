@@ -10,6 +10,8 @@ struct SpeciesEditorView: View {
     let species: ForageSpecies
     let photoDirectory: URL?
     let onChange: (ForageSpecies) -> Void
+    /// The file is not deleted here; the store deletes it when the catalogue is saved.
+    let onRemovePhoto: (SpeciesPhoto) -> Void
 
     @State private var tab: EditorTab = .entry
 
@@ -45,7 +47,7 @@ struct SpeciesEditorView: View {
                                     .foregroundStyle(issue.severity == .blocking ? .red : .secondary)
                                 Text(issue.message)
                                 Spacer(minLength: 0)
-                                Text(issue.field)
+                                Text(issue.label)
                                     .font(.caption)
                                     .monospaced()
                                     .foregroundStyle(.secondary)
@@ -124,7 +126,7 @@ struct SpeciesEditorView: View {
                 "Edible parts",
                 text: binding(\.edibleParts) { $0.with(edibleParts: $1) },
                 lines: 2...6,
-                help: species.caution == .doNotEat ? "Must say “none” for a do-not-eat entry." : nil
+                help: species.caution == .doNotEat ? "Must say exactly “\(ForageSpecies.noEdibleParts)” for a do-not-eat entry." : nil
             )
             LabelledField(
                 "Preparation",
@@ -137,7 +139,12 @@ struct SpeciesEditorView: View {
     @ViewBuilder
     private var photosTab: some View {
         Section {
-            PhotoSectionView(species: species, photoDirectory: photoDirectory, onChange: onChange)
+            PhotoSectionView(
+                species: species,
+                photoDirectory: photoDirectory,
+                onChange: onChange,
+                onRemovePhoto: onRemovePhoto
+            )
         } footer: {
             Text("Photos ship inside the app: each stays under \(CataloguePhotos.maximumBytesPerPhoto / 1024) KB, and the whole catalogue under \(CataloguePhotos.totalByteBudget / 1_000_000) MB. Imports are downscaled and re-encoded automatically.")
                 .font(.caption)
@@ -239,18 +246,23 @@ enum EditorTab: String, CaseIterable, Identifiable {
         }
     }
 
-    func owns(field: String) -> Bool {
-        let root = String(field.prefix { $0 != "[" })
-        return switch self {
-        case .entry:
-            ["id", "commonName", "scientificName", "summary", "habitat",
-             "identification", "edibleParts", "preparation", "caution", "months"].contains(root)
+    /// Exhaustive on purpose: a new `ValidationField` that no tab claims is a compile error,
+    /// not an issue the editor silently never shows.
+    static func tab(owning field: ValidationField) -> EditorTab {
+        switch field {
+        case .id, .commonName, .scientificName, .summary, .habitat, .identification,
+             .edibleParts, .preparation, .caution, .months:
+            .entry
         case .photos:
-            root == "photos"
-        case .safety:
-            ["lookalikes", "warnings", "harvestEthics"].contains(root)
-        case .provenance:
-            ["sources", "recipes"].contains(root)
+            .photos
+        case .lookalikes, .warnings, .harvestEthics:
+            .safety
+        case .sources, .recipes:
+            .provenance
         }
+    }
+
+    func owns(field: ValidationField) -> Bool {
+        Self.tab(owning: field) == self
     }
 }
