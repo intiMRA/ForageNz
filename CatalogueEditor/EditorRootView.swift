@@ -1,3 +1,4 @@
+import DesignLibrary
 import ForageCatalogue
 import SwiftUI
 
@@ -17,7 +18,7 @@ struct EditorRootView: View {
             sidebar
         } detail: {
             if let species = store.species.first(where: { $0.id == selectedId }) {
-                VStack(spacing: 0) {
+                VStack(spacing: .empty) {
                     SpeciesEditorView(
                         species: species,
                         photoDirectory: store.photoDirectory,
@@ -63,7 +64,7 @@ struct EditorRootView: View {
     }
 
     private var addSheet: some View {
-        VStack(alignment: .leading, spacing: 14) {
+        VStack(alignment: .leading, spacing: .medium) {
             Text("Add a species")
                 .font(.headline)
             Text("The identifier is derived from the name and can't be changed afterwards, so get the name right first.")
@@ -100,7 +101,7 @@ struct EditorRootView: View {
                     .disabled(newName.trimmingCharacters(in: .whitespaces).isEmpty)
             }
         }
-        .padding(20)
+        .padding(.all, .large)
         .frame(width: EditorLayout.addSheetWidth)
     }
 
@@ -126,9 +127,9 @@ struct EditorRootView: View {
     }
 
     private var saveBar: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: .empty) {
             Divider()
-            HStack(spacing: 12) {
+            HStack(spacing: .small) {
                 Group {
                     switch store.status {
                     case .edited(let count):
@@ -162,14 +163,14 @@ struct EditorRootView: View {
                     .disabled(!store.hasUnsavedChanges)
                     .help("Write the catalogue to species.json (⌘S)")
             }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 10)
+            .padding(.horizontal, .medium)
+            .padding(.vertical, .small)
         }
         .background(.bar)
     }
 
     private var sidebar: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: .empty) {
             List(selection: $selectedId) {
                 ForEach(tiers, id: \.tier) { group in
                     Section(header: Text("\(group.tier.title) · \(group.species.count)")) {
@@ -182,7 +183,7 @@ struct EditorRootView: View {
             .searchable(text: $search, placement: .sidebar, prompt: "Search species")
 
             Divider()
-            VStack(alignment: .leading, spacing: 6) {
+            VStack(alignment: .leading, spacing: .xSmall) {
                 Toggle("Unverified only", isOn: $unverifiedOnly)
                 Text(store.displayPath)
                     .font(.caption2)
@@ -192,16 +193,16 @@ struct EditorRootView: View {
                     .textSelection(.enabled)
                     .help(store.displayPath)
             }
-            .padding(8)
+            .padding(.all, .xSmall)
         }
         .frame(minWidth: EditorLayout.sidebarMinimumWidth)
     }
 
     private func row(_ species: ForageSpecies) -> some View {
-        HStack(spacing: 8) {
+        HStack(spacing: .xSmall) {
             Image(systemName: species.isVerified ? "checkmark.seal.fill" : "circle.dashed")
                 .foregroundStyle(species.isVerified ? .green : .secondary)
-            VStack(alignment: .leading, spacing: 1) {
+            VStack(alignment: .leading, spacing: .xxxSmall) {
                 Text(species.commonName)
                 Text(species.scientificName)
                     .font(.caption)
@@ -254,7 +255,7 @@ struct EditorRootView: View {
     private var statusLabel: some View {
         switch store.status {
         case .clean:
-            HStack(spacing: 10) {
+            HStack(spacing: .small) {
                 Text("\(store.unverified.count) of \(store.species.count) unverified")
                     .foregroundStyle(.secondary)
                 if !store.unpublishable.isEmpty {

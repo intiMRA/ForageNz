@@ -1,3 +1,4 @@
+import DesignLibrary
 import ForageCatalogue
 import SwiftUI
 
@@ -26,7 +27,7 @@ struct LabelledField: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 3) {
+        VStack(alignment: .leading, spacing: .xxSmall) {
             Text(label)
                 .font(.caption)
                 .foregroundStyle(.secondary)
@@ -49,7 +50,7 @@ struct LabelledField: View {
                     .foregroundStyle(.secondary)
             }
         }
-        .padding(.vertical, 2)
+        .padding(.vertical, .xxxSmall)
     }
 }
 
@@ -61,7 +62,7 @@ struct StringListEditor: View {
     let onChange: ([String]) -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .leading, spacing: .xSmall) {
             if values.isEmpty {
                 Text("None yet.")
                     .font(.caption)
@@ -69,7 +70,7 @@ struct StringListEditor: View {
             }
 
             ForEach(Array(values.enumerated()), id: \.offset) { index, value in
-                HStack(alignment: .top, spacing: 6) {
+                HStack(alignment: .top, spacing: .xSmall) {
                     TextField(placeholder, text: Binding(
                         get: { value },
                         set: { newValue in
@@ -96,7 +97,7 @@ struct StringListEditor: View {
             Button(addLabel, systemImage: "plus.circle") { onChange(values + [""]) }
                 .buttonStyle(.borderless)
         }
-        .padding(.vertical, 2)
+        .padding(.vertical, .xxxSmall)
     }
 }
 
@@ -105,7 +106,7 @@ struct RecipeEditor: View {
     let onChange: ([Recipe]) -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: .small) {
             if recipes.isEmpty {
                 Text("None yet.")
                     .font(.caption)
@@ -113,8 +114,8 @@ struct RecipeEditor: View {
             }
 
             ForEach(Array(recipes.enumerated()), id: \.offset) { index, recipe in
-                VStack(alignment: .leading, spacing: 6) {
-                    HStack(spacing: 6) {
+                VStack(alignment: .leading, spacing: .xSmall) {
+                    HStack(spacing: .xSmall) {
                         TextField("Title", text: Binding(
                             get: { recipe.title },
                             set: { replace(index, Recipe(title: $0, method: recipe.method)) }
@@ -146,7 +147,7 @@ struct RecipeEditor: View {
             }
             .buttonStyle(.borderless)
         }
-        .padding(.vertical, 2)
+        .padding(.vertical, .xxxSmall)
     }
 
     private func replace(_ index: Int, _ recipe: Recipe) {
@@ -161,7 +162,7 @@ struct LookalikeEditor: View {
     let onChange: ([Lookalike]) -> Void
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: .small) {
             if lookalikes.isEmpty {
                 Text("None recorded.")
                     .font(.caption)
@@ -169,8 +170,8 @@ struct LookalikeEditor: View {
             }
 
             ForEach(Array(lookalikes.enumerated()), id: \.offset) { index, lookalike in
-                VStack(alignment: .leading, spacing: 6) {
-                    HStack(spacing: 6) {
+                VStack(alignment: .leading, spacing: .xSmall) {
+                    HStack(spacing: .xSmall) {
                         TextField("Name", text: Binding(
                             get: { lookalike.name },
                             set: { replace(index, lookalike, name: $0) }
@@ -213,7 +214,7 @@ struct LookalikeEditor: View {
                     .lineLimit(2...8)
                     .textFieldStyle(.roundedBorder)
                 }
-                .padding(10)
+                .padding(.all, .small)
                 // A deadly lookalike is a caution affordance, so its tint comes from the one
                 // semantic mapping — not a system red that happens to look similar.
                 .background(
@@ -228,7 +229,7 @@ struct LookalikeEditor: View {
             }
             .buttonStyle(.borderless)
         }
-        .padding(.vertical, 2)
+        .padding(.vertical, .xxxSmall)
     }
 
     private func replace(
@@ -255,7 +256,7 @@ struct MonthPicker: View {
     let onChange: ([ForageMonth]) -> Void
 
     var body: some View {
-        HStack(spacing: 4) {
+        HStack(spacing: .xxSmall) {
             ForEach(ForageMonth.allCases, id: \.rawValue) { month in
                 let isOn = months.contains(month)
                 Button(month.shortName) {
@@ -264,7 +265,7 @@ struct MonthPicker: View {
                 .buttonStyle(.borderless)
                 .font(.caption)
                 .frame(minWidth: EditorLayout.monthButtonMinimumWidth)
-                .padding(.vertical, 5)
+                .padding(.vertical, .xxSmall)
                 .background(
                     isOn
                         ? Color.accentColor.opacity(EditorLayout.selectedTintOpacity)
@@ -273,6 +274,6 @@ struct MonthPicker: View {
                 )
             }
         }
-        .padding(.vertical, 2)
+        .padding(.vertical, .xxxSmall)
     }
 }

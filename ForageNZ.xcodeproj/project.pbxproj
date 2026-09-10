@@ -46,6 +46,7 @@
 		ADCE358E9BDD4BA324F73087 /* SpeciesEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A08516B887C616C0C2D6B0 /* SpeciesEditorView.swift */; };
 		AF7EF03860A44072C5F3F471 /* EditorFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493CBE757E2E16D66F2DB00 /* EditorFields.swift */; };
 		B07C79F23F1BB365C0EEFFBE /* EditorRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230F2A934A37C1CF47C7C24 /* EditorRootView.swift */; };
+		B2C190BEA9AAEE9C45BC3959 /* DesignLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = A99949573DBF46AF74F6D6F3 /* DesignLibrary */; };
 		B5B2E727A8C90D23680110B5 /* CatalogueStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B041368BA457787D2DE937A /* CatalogueStoreTests.swift */; };
 		B93BA6A59034E519AC12B2B9 /* CatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6276DE2F1556F1A782D58DEF /* CatalogueTests.swift */; };
 		BC7A270E66145A359CC6F5BB /* species.json in Resources */ = {isa = PBXBuildFile; fileRef = D6ECE46F98F836C2B53E8AA5 /* species.json */; };
@@ -168,6 +169,7 @@
 			files = (
 				993520DE95024A3F666F3E9E /* Cocoa.framework in Frameworks */,
 				914C98374F0108651F55C013 /* ForageCatalogue in Frameworks */,
+				B2C190BEA9AAEE9C45BC3959 /* DesignLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +393,7 @@
 			name = CatalogueEditor;
 			packageProductDependencies = (
 				FCA8BB9C87B318851F23469F /* ForageCatalogue */,
+				A99949573DBF46AF74F6D6F3 /* DesignLibrary */,
 			);
 			productName = CatalogueEditor;
 			productReference = 20B1543CD87D475CBC78AD1B /* CatalogueEditor.app */;
@@ -1139,7 +1142,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/intiMRA/Desing-Library-SPM";
 			requirement = {
-				branch = main;
+				branch = "foraging-app";
 				kind = branch;
 			};
 		};
@@ -1165,6 +1168,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
 			productName = ForageCatalogue;
+		};
+		A99949573DBF46AF74F6D6F3 /* DesignLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 657237127B68D0589BA6C34C /* XCRemoteSwiftPackageReference "Desing-Library-SPM" */;
+			productName = DesignLibrary;
 		};
 		FCA8BB9C87B318851F23469F /* ForageCatalogue */ = {
 			isa = XCSwiftPackageProductDependency;

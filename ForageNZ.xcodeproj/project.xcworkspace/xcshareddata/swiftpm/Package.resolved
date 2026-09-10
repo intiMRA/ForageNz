@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/intiMRA/Desing-Library-SPM",
       "state" : {
-        "branch" : "main",
-        "revision" : "d69eff5835f3b042572550ddf9a4bedbb01dd9d4"
+        "branch" : "foraging-app",
+        "revision" : "3960c461d76b52aa487611bed6a9ee5d4b5e5950"
       }
     },
     {
