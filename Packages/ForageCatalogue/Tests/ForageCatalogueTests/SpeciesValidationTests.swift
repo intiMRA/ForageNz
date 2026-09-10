@@ -84,10 +84,15 @@ struct SpeciesValidationTests {
         #expect(makeSpecies(caution: .careRequired, warnings: ["Cook it."]).isPublishable)
     }
 
-    @Test("Native species need harvesting guidance")
-    func nativeNeedsEthics() {
-        #expect(fields(makeSpecies(origin: .native), severity: .blocking).contains("harvestEthics"))
-        #expect(makeSpecies(origin: .native, harvestEthics: "Take sparingly.").isPublishable)
+    @Test("Native and endemic species need harvesting guidance", arguments: [ForageOrigin.native, .endemic])
+    func indigenousNeedsEthics(origin: ForageOrigin) {
+        #expect(fields(makeSpecies(origin: origin), severity: .blocking).contains("harvestEthics"))
+        #expect(makeSpecies(origin: origin, harvestEthics: "Take sparingly.").isPublishable)
+    }
+
+    @Test("Introduced species and weeds are not held to tikanga guidance", arguments: [ForageOrigin.introduced, .pest])
+    func nonIndigenousNeedsNoEthics(origin: ForageOrigin) {
+        #expect(!fields(makeSpecies(origin: origin), severity: .blocking).contains("harvestEthics"))
     }
 
     @Test("No sources is advisory, a blank source is blocking")

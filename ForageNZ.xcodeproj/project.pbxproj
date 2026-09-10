@@ -31,7 +31,6 @@
 		7B432E867DB0ED01A38C768B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C28C6DA10AE33F73F5B94C /* Cocoa.framework */; };
 		7D35632F1F5EEB570322D3E0 /* PoisonsCentre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163C64C7220DD70F766A16E /* PoisonsCentre.swift */; };
 		7F83D47960CFE20BF784F76C /* FieldGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452B052BD15DA513EB5F5BF3 /* FieldGuideUITests.swift */; };
-		83BB83607E86C9AA966898F1 /* PhotoImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A37342C512470EFB3DCA1 /* PhotoImporter.swift */; };
 		88884AE952E8D6A46933C56A /* SpeciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */; };
 		914C98374F0108651F55C013 /* ForageCatalogue in Frameworks */ = {isa = PBXBuildFile; productRef = FCA8BB9C87B318851F23469F /* ForageCatalogue */; };
 		9259C8452BDD7F338B28B7A0 /* CatalogueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001C8B591D460EC849D511 /* CatalogueStore.swift */; };
@@ -78,7 +77,6 @@
 		047AF412753DE64D1A1346F2 /* CatalogueEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogueEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C28C6DA10AE33F73F5B94C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		09A9E85DA08B2A7D3ED5C7C9 /* BrowseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrowseView.swift; path = FieldGuide/BrowseView.swift; sourceTree = "<group>"; };
-		0D5A37342C512470EFB3DCA1 /* PhotoImporter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoImporter.swift; sourceTree = "<group>"; };
 		1867CCA8A5C5E962FD60BBF8 /* WhereYouAreSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhereYouAreSection.swift; path = WhereYouAre/WhereYouAreSection.swift; sourceTree = "<group>"; };
 		20B1543CD87D475CBC78AD1B /* CatalogueEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatalogueEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2163C64C7220DD70F766A16E /* PoisonsCentre.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PoisonsCentre.swift; path = Models/PoisonsCentre.swift; sourceTree = "<group>"; };
@@ -261,7 +259,6 @@
 				A1001C8B591D460EC849D511 /* CatalogueStore.swift */,
 				E230F2A934A37C1CF47C7C24 /* EditorRootView.swift */,
 				B9A08516B887C616C0C2D6B0 /* SpeciesEditorView.swift */,
-				0D5A37342C512470EFB3DCA1 /* PhotoImporter.swift */,
 				A01BA2E911FCB343C07DAD39 /* PhotoSectionView.swift */,
 				F493CBE757E2E16D66F2DB00 /* EditorFields.swift */,
 			);
@@ -533,7 +530,6 @@
 				9259C8452BDD7F338B28B7A0 /* CatalogueStore.swift in Sources */,
 				B07C79F23F1BB365C0EEFFBE /* EditorRootView.swift in Sources */,
 				ADCE358E9BDD4BA324F73087 /* SpeciesEditorView.swift in Sources */,
-				83BB83607E86C9AA966898F1 /* PhotoImporter.swift in Sources */,
 				16020BFCDA4491686721448A /* PhotoSectionView.swift in Sources */,
 				AF7EF03860A44072C5F3F471 /* EditorFields.swift in Sources */,
 			);

@@ -98,7 +98,7 @@ FIELD_POLICY: dict[Field, Policy] = {
 
 
 class NzorOrigin(StrEnum):
-    """NZOR biostatus values, mapped to the catalogue's native/introduced split."""
+    """NZOR biostatus values, mapped to the catalogue's origins."""
 
     ENDEMIC = "Endemic"
     NON_ENDEMIC = "Non-endemic"
@@ -108,11 +108,13 @@ class NzorOrigin(StrEnum):
     @property
     def catalogue_origin(self) -> str:
         """`Non-endemic` is still indigenous — it occurs naturally here and elsewhere."""
-        return "introduced" if self is NzorOrigin.EXOTIC else "native"
+        if self is NzorOrigin.EXOTIC:
+            return "introduced"
+        return "endemic" if self is NzorOrigin.ENDEMIC else "native"
 
 
 class EstablishmentMeans(StrEnum):
-    """iNaturalist's establishment means for a place. Finer than the catalogue's split."""
+    """iNaturalist's establishment means for a place."""
 
     ENDEMIC = "endemic"
     NATIVE = "native"
@@ -120,7 +122,24 @@ class EstablishmentMeans(StrEnum):
 
     @property
     def catalogue_origin(self) -> str:
-        return "introduced" if self is EstablishmentMeans.INTRODUCED else "native"
+        return str(self)
+
+
+def origins_consistent_with(expected: str) -> set[str]:
+    """Catalogue origins that do not contradict what a source says.
+
+    Neither source separates an introduced species from a declared pest, so `pest` is
+    consistent with `introduced`. A source saying `native` without claiming endemism is
+    consistent with either — most sources simply don't record endemism — but a catalogue
+    entry marked `endemic` when a source says the species occurs elsewhere is a real
+    disagreement, and the reverse (source says endemic, catalogue says native) is only a
+    missed upgrade, reported as a suggestion rather than a conflict.
+    """
+    if expected == "introduced":
+        return {"introduced", "pest"}
+    if expected == "endemic":
+        return {"endemic", "native"}
+    return {expected}
 
 
 class FindingKind(StrEnum):
@@ -455,37 +474,37 @@ def inspect_entry(
 
         expected = nzor.catalogue_origin
         actual = str(entry.get(Field.ORIGIN) or "")
-        # NZOR cannot tell an introduced species from a declared pest, so `pest` counts
-        # as consistent with Exotic.
-        allowed = {expected, "pest"} if expected == "introduced" else {expected}
-        if expected is not None and actual not in allowed:
+        if expected is not None and actual not in origins_consistent_with(expected):
             yield Finding(
                 FindingKind.DISAGREEMENT,
                 species_id,
                 f"{Field.ORIGIN} '{actual}' — NZOR biostatus says {expected} "
                 f"({', '.join(str(origin) for origin in nzor.origins)})",
             )
+        elif expected == "endemic" and actual == "native":
+            yield Finding(
+                FindingKind.SUGGESTION,
+                species_id,
+                f"{Field.ORIGIN} could be 'endemic' — NZOR biostatus says Endemic",
+            )
 
     if detail:
         means = detail.establishment_means
         actual = str(entry.get(Field.ORIGIN) or "")
         if means:
-            allowed = (
-                {"introduced", "pest"} if means is EstablishmentMeans.INTRODUCED else {"native"}
-            )
-            if actual not in allowed:
+            expected = means.catalogue_origin
+            if actual not in origins_consistent_with(expected):
                 yield Finding(
                     FindingKind.DISAGREEMENT,
                     species_id,
                     f"{Field.ORIGIN} '{actual}' — iNaturalist lists it as '{means}' in New Zealand",
                 )
-            elif means is EstablishmentMeans.ENDEMIC:
-                # Finer than the catalogue models: endemic means found nowhere else, which
-                # is a stronger reason to harvest sparingly than "native" alone conveys.
+            elif expected == "endemic" and actual == "native":
                 yield Finding(
                     FindingKind.SUGGESTION,
                     species_id,
-                    "endemic to New Zealand — worth saying so in the harvesting guidance",
+                    f"{Field.ORIGIN} could be 'endemic' — iNaturalist lists it as endemic "
+                    "in New Zealand",
                 )
 
         if detail.conservation_status:
