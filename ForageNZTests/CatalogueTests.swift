@@ -145,21 +145,26 @@ struct CatalogueTests {
         #expect(Set(ids).count == ids.count)
     }
 
-    /// A lookalike card that opens nothing is a dead end in the field. Every lookalike must
-    /// resolve to an entry — by scientific name, or by common name if none was recorded.
+    /// `SpeciesID` is generated from the catalogue and checked in. If they disagree, either a
+    /// species was added without regenerating (its rows could not navigate) or one was removed
+    /// and something may still reference it. Both fail here, so neither ships.
+    @Test("SpeciesID has exactly one case per catalogue entry")
+    func speciesIDMatchesCatalogue() async throws {
+        let ids = Set(try await loadCatalogue().map(\.id))
+        let cases = Set(SpeciesID.allCases.map(\.rawValue))
+        #expect(ids.subtracting(cases).isEmpty, "in the catalogue but not in SpeciesID — run catalogue-tool --normalise: \(ids.subtracting(cases))")
+        #expect(cases.subtracting(ids).isEmpty, "in SpeciesID but not in the catalogue — stale case: \(cases.subtracting(ids))")
+    }
+
+    /// Lookalikes decode their `entry` as a `SpeciesID`, so a card that opens nothing is a
+    /// load failure, not a runtime surprise. This asserts the load actually exercised that.
     @Test("Every lookalike card has a page to open")
-    @MainActor
     func everyLookalikeHasAnEntry() async throws {
         let species = try await loadCatalogue()
-        let store = SpeciesStore(repository: BundledSpeciesRepository())
-        await store.loadIfNeeded()
-
+        let ids = Set(species.map(\.id))
         for entry in species {
             for lookalike in entry.lookalikes {
-                #expect(
-                    store.entry(matching: lookalike) != nil,
-                    "\(entry.id) → \(lookalike.name) has no entry to open — add one, or fix the scientific name"
-                )
+                #expect(ids.contains(lookalike.entry.rawValue), "\(entry.id) → \(lookalike.name) names \(lookalike.entry.rawValue), which is not in the catalogue")
             }
         }
     }

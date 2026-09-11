@@ -3,39 +3,39 @@ import ForageCatalogue
 import SwiftUI
 
 struct SpeciesRow: View {
-    let species: ForageSpecies
+    let model: ListingRowModel
 
     var body: some View {
         HStack(alignment: .top, spacing: .small) {
-            Image(systemName: species.category.symbolName)
+            Image(systemName: model.categorySymbolName)
                 .imageScale(.large)
-                .foregroundStyle(species.caution.tintColor)
+                .foregroundStyle(model.caution.tintColor)
                 .frame(width: Layout.rowIconWidth)
                 .accessibilityHidden(true)
 
             VStack(alignment: .leading, spacing: .xxxSmall) {
-                Text(species.commonName)
+                Text(model.commonName)
                     .font(.headline)
-                    .accessibilityIdentifier("speciesRow.\(species.id)")
+                    .accessibilityIdentifier("speciesRow.\(model.speciesID.rawValue)")
 
-                Text(species.scientificName)
+                Text(model.scientificName)
                     .font(.caption)
                     .italic()
                     .foregroundStyle(.secondary)
 
-                Text(species.summary)
+                Text(model.summary)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .lineLimit(2)
 
                 HStack(spacing: .xSmall) {
-                    CautionBadge(level: species.caution)
+                    CautionBadge(level: model.caution)
 
-                    Text(species.seasonDescription)
+                    Text(model.seasonDescription)
                         .font(.caption)
                         .foregroundStyle(.secondary)
 
-                    if species.highestLookalikeRisk == .deadly, species.caution != .doNotEat {
+                    if model.hasDeadlyLookalike {
                         Label("Deadly lookalike", systemImage: "exclamationmark.triangle.fill")
                             .font(.caption.weight(.semibold))
                             .foregroundStyle(LookalikeRisk.deadly.tintColor)

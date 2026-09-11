@@ -152,6 +152,10 @@ struct EditorRootView: View {
                         Text("No unsaved changes")
                             .foregroundStyle(.secondary)
                     }
+                    if store.needsRebuildForSpeciesIDs {
+                        Label("SpeciesID regenerated — rebuild before picking new species as a lookalike page", systemImage: "hammer")
+                            .foregroundStyle(.orange)
+                    }
                 }
                 .font(.callout)
 

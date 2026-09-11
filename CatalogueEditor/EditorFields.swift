@@ -213,6 +213,13 @@ struct LookalikeEditor: View {
                     ), axis: .vertical)
                     .lineLimit(2...8)
                     .textFieldStyle(.roundedBorder)
+
+                    Picker("Opens page", selection: Binding(
+                        get: { lookalike.entry },
+                        set: { replace(index, lookalike, entry: $0) }
+                    )) {
+                        ForEach(SpeciesID.allCases, id: \.self) { Text($0.rawValue).tag($0) }
+                    }
                 }
                 .padding(.all, .small)
                 // A deadly lookalike is a caution affordance, so its tint comes from the one
@@ -225,11 +232,18 @@ struct LookalikeEditor: View {
             }
 
             Button("Add lookalike", systemImage: "plus.circle") {
-                onChange(lookalikes + [Lookalike(name: "", risk: .toxic, howToTell: "")])
+                onChange(lookalikes + [Lookalike(name: "", risk: .toxic, howToTell: "", entry: defaultEntry)])
             }
             .buttonStyle(.borderless)
         }
         .padding(.vertical, .xxxSmall)
+    }
+
+    /// A new card has to point somewhere; the first case is as arbitrary as any, and the
+    /// picker is right there to change it. A generated enum with one case per species is never
+    /// empty.
+    private var defaultEntry: SpeciesID {
+        SpeciesID.allCases[0]
     }
 
     private func replace(
@@ -238,14 +252,16 @@ struct LookalikeEditor: View {
         name: String? = nil,
         scientificName: String?? = nil,
         risk: LookalikeRisk? = nil,
-        howToTell: String? = nil
+        howToTell: String? = nil,
+        entry: SpeciesID? = nil
     ) {
         var next = lookalikes
         next[index] = Lookalike(
             name: name ?? lookalike.name,
             scientificName: scientificName ?? lookalike.scientificName,
             risk: risk ?? lookalike.risk,
-            howToTell: howToTell ?? lookalike.howToTell
+            howToTell: howToTell ?? lookalike.howToTell,
+            entry: entry ?? lookalike.entry
         )
         onChange(next)
     }

@@ -60,14 +60,14 @@ struct SpeciesValidationTests {
     func lookalikeNeedsHowToTell() {
         let species = makeSpecies(
             caution: .careRequired,
-            lookalikes: [Lookalike(name: "Hemlock", risk: .deadly, howToTell: "   ")]
+            lookalikes: [Lookalike(name: "Hemlock", risk: .deadly, howToTell: "   ", entry: .hemlock)]
         )
         #expect(labels(species, severity: .blocking).contains("lookalikes[0]"))
     }
 
     @Test("A deadly lookalike cannot sit on a straightforward entry")
     func deadlyLookalikeRaisesCaution() {
-        let deadly = Lookalike(name: "Hemlock", risk: .deadly, howToTell: "Purple-blotched stem.")
+        let deadly = Lookalike(name: "Hemlock", risk: .deadly, howToTell: "Purple-blotched stem.", entry: .hemlock)
         #expect(fields(makeSpecies(caution: .straightforward, lookalikes: [deadly]), severity: .blocking).contains(.caution))
         #expect(makeSpecies(caution: .careRequired, lookalikes: [deadly]).isPublishable)
     }

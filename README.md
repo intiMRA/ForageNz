@@ -312,6 +312,31 @@ Deliberate trade-offs:
 
 Location is taken once, on request, and never leaves the device.
 
+## Species are compile-time values
+
+`SpeciesID` (`Packages/ForageCatalogue/Sources/ForageCatalogue/Generated/SpeciesID.swift`) has
+one case per catalogue entry and is **generated, never edited** — `catalogue-tool --normalise`
+and the editor's save both regenerate it. Two tests keep it honest: `SpeciesIDGeneratorTests`
+fails unless the checked-in file is byte-identical to what the catalogue renders, and
+`CatalogueTests` fails unless the enum and the catalogue are exactly the same set.
+
+What that buys:
+
+- **A lookalike can only name a species that has a page.** `Lookalike.entry` is a `SpeciesID`,
+  so `species.json` naming an unknown species fails to decode and the build fails with it. No
+  string matching, nothing to drift.
+- **One factory, dumb views.** `SpeciesModelFactory` is a protocol; `CatalogueSpeciesModelFactory`
+  is injected through `@Environment(\.speciesModels)` and returns plain models —
+  `InfoPageModel`, `ListingRowModel`, `LookalikeCardModel`. Screens ask for a model and build
+  the view: `SpeciesRow(model:)`, `LookalikeCardView(model:)`, `SpeciesDetailView(model:)`. The
+  models are `Equatable`, so `SpeciesModelFactoryTests` checks the factory without rendering.
+- **One route.** Every `NavigationStack` installs `speciesDestination()`; every link to a species
+  carries a `SpeciesID`. Nothing else pushes a species page.
+
+The cost is a workflow step in the editor: add a species → save (the enum is rewritten and the
+status bar says so) → **rebuild** → only then can the new species be chosen as a lookalike's
+page. That is what compile-time ids mean.
+
 ## Validation
 
 Per-entry rules live in `ForageSpecies.validationIssues`, split into blocking (fails the

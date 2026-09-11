@@ -72,13 +72,17 @@ public nonisolated struct Lookalike: Codable, Sendable, Hashable, Identifiable {
     public let risk: LookalikeRisk
     /// The specific, field-checkable difference — not a general warning.
     public let howToTell: String
+    /// The catalogue page this card opens. Typed, so a lookalike can only name a species the
+    /// catalogue has: an unknown id fails to decode, and the build fails with it.
+    public let entry: SpeciesID
 
     public var id: String { name }
 
-    public init(name: String, scientificName: String? = nil, risk: LookalikeRisk, howToTell: String) {
+    public init(name: String, scientificName: String? = nil, risk: LookalikeRisk, howToTell: String, entry: SpeciesID) {
         self.name = name
         self.scientificName = scientificName
         self.risk = risk
         self.howToTell = howToTell
+        self.entry = entry
     }
 }

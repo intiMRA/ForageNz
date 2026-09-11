@@ -27,9 +27,7 @@ struct BrowseView: View {
                 if !items.isEmpty {
                     Section(category.displayName) {
                         ForEach(items) { item in
-                            NavigationLink(value: item) {
-                                SpeciesRow(species: item)
-                            }
+                            SpeciesRowLink(species: item)
                         }
                     }
                 }
@@ -127,4 +125,5 @@ struct BrowseView: View {
             )
         }
     }
+
 }
