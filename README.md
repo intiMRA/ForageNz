@@ -409,6 +409,8 @@ Known gaps, in rough priority order:
   particular need a New Zealand field guide. Four of those last six are flagged on their own
   pages as of uncertain or no wild presence in New Zealand; they exist so that every one of the
   42 lookalike cards opens a page, which `CatalogueTests` now enforces.
+- **No user lists yet** — favourites, found, wanted. Planned, with the model and boundaries
+  worked out, in `docs/plans/species-lists.md`.
 - **No location awareness.** Several entries are regional (cherry guava is northern, rosehip is
   dry-eastern). Region filtering needs a region field on each entry.
 - **No live overlays.** Rāhui, MPI biotoxin warnings and LAWA algal-bloom status are all
