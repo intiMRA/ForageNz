@@ -3,7 +3,7 @@ import Foundation
 import Vision
 
 /// An image embedding, L2-normalised so distances are comparable across images.
-public nonisolated struct FeatureVector: Codable, Sendable, Hashable {
+public nonisolated struct FeatureVector: Sendable, Hashable {
     public let values: [Float]
 
     public init(values: [Float]) {
@@ -36,12 +36,9 @@ public nonisolated struct FeatureVector: Codable, Sendable, Hashable {
     }
 }
 
-/// One species reduced to a single prototype vector.
-///
-/// Carries its own caution so a match can never be presented without one. An earlier design
-/// kept cautions in a parallel dictionary and defaulted a missing entry to `careRequired` —
-/// which would have let a do-not-eat species lose the one protection the ranking gives it.
-public nonisolated struct SpeciesPrototype: Codable, Sendable, Hashable {
+/// One species reduced to a single prototype vector, with its caution alongside so a report
+/// can never show a species without saying how dangerous it is.
+public nonisolated struct SpeciesPrototype: Sendable, Hashable {
     public let speciesId: String
     public let caution: CautionLevel
     public let photoCount: Int
@@ -52,22 +49,6 @@ public nonisolated struct SpeciesPrototype: Codable, Sendable, Hashable {
         self.caution = caution
         self.photoCount = photoCount
         self.vector = vector
-    }
-}
-
-/// A close candidate, with the catalogue context needed to present it safely.
-public nonisolated struct PhotoMatch: Sendable, Hashable {
-    public let speciesId: String
-    public let distance: Float
-    public let caution: CautionLevel
-
-    /// True when this entry exists only to be recognised and avoided.
-    public var isAvoidOnly: Bool { caution == .doNotEat }
-
-    public init(speciesId: String, distance: Float, caution: CautionLevel) {
-        self.speciesId = speciesId
-        self.distance = distance
-        self.caution = caution
     }
 }
 
@@ -128,7 +109,7 @@ public enum PhotoMatcher {
 }
 
 /// Prototypes for every species that has photos, plus the revision they were built with.
-public nonisolated struct PhotoIndex: Codable, Sendable {
+public nonisolated struct PhotoIndex: Sendable {
     public let revision: Int
     public let prototypes: [SpeciesPrototype]
 
@@ -172,28 +153,5 @@ public nonisolated struct PhotoIndex: Codable, Sendable {
         }
 
         return (PhotoIndex(revision: usedRevision, prototypes: prototypes), unreadable)
-    }
-
-    /// Closest catalogue entries to `query`, nearest first.
-    ///
-    /// Entries that exist only to be avoided are never cut by the limit: if a do-not-eat
-    /// species is anywhere in range, seeing it matters more than the next-best edible guess.
-    public func matches(for query: FeatureVector, limit: Int = 5) -> [PhotoMatch] {
-        let ranked = prototypes
-            .map { prototype in
-                PhotoMatch(
-                    speciesId: prototype.speciesId,
-                    distance: prototype.vector.distance(to: query),
-                    caution: prototype.caution
-                )
-            }
-            .sorted { $0.distance < $1.distance }
-
-        let head = Array(ranked.prefix(limit))
-        let rescuedAvoidOnly = ranked.filter { candidate in
-            candidate.isAvoidOnly && !head.contains { $0.speciesId == candidate.speciesId }
-        }
-
-        return (head + rescuedAvoidOnly).sorted { $0.distance < $1.distance }
     }
 }

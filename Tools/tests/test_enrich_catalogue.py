@@ -112,7 +112,6 @@ class TestReportsWithoutChanging:
     def test_a_synonym_is_reported_not_corrected(self) -> None:
         entry = make_entry(scientificName="Acca sellowiana")
         nzor = NzorRecord(
-            partial_name="Acca sellowiana",
             status="Current",
             accepted_name="Feijoa sellowiana",
             origins=(NzorOrigin.EXOTIC,),
@@ -128,7 +127,7 @@ class TestReportsWithoutChanging:
 
     def test_an_origin_conflict_is_reported_not_corrected(self) -> None:
         entry = make_entry(origin="native")
-        nzor = NzorRecord(None, "Current", None, (NzorOrigin.EXOTIC,))
+        nzor = NzorRecord("Current", None, (NzorOrigin.EXOTIC,))
 
         findings = list(inspect_entry(entry, nzor, None))
 
@@ -139,13 +138,13 @@ class TestReportsWithoutChanging:
     def test_indigenous_biostatuses_agree_with_native(self, origin: NzorOrigin) -> None:
         """ "Non-endemic" is still indigenous — it occurs naturally here and elsewhere."""
         entry = make_entry(origin="native")
-        nzor = NzorRecord(None, "Current", None, (origin,))
+        nzor = NzorRecord("Current", None, (origin,))
         assert list(inspect_entry(entry, nzor, None)) == []
 
     def test_endemic_source_with_native_entry_is_a_suggestion_not_a_conflict(self) -> None:
         """Most sources don't record endemism, so `native` is not wrong — just less precise."""
         entry = make_entry(origin="native")
-        nzor = NzorRecord(None, "Current", None, (NzorOrigin.ENDEMIC,))
+        nzor = NzorRecord("Current", None, (NzorOrigin.ENDEMIC,))
 
         findings = list(inspect_entry(entry, nzor, None))
 
@@ -155,13 +154,13 @@ class TestReportsWithoutChanging:
 
     def test_endemic_entry_agrees_with_endemic_source(self) -> None:
         entry = make_entry(origin="endemic")
-        nzor = NzorRecord(None, "Current", None, (NzorOrigin.ENDEMIC,))
+        nzor = NzorRecord("Current", None, (NzorOrigin.ENDEMIC,))
         assert list(inspect_entry(entry, nzor, None)) == []
 
     def test_endemic_entry_conflicts_with_a_non_endemic_source(self) -> None:
         """Claiming endemism when the source says it occurs elsewhere is a real disagreement."""
         entry = make_entry(origin="endemic")
-        nzor = NzorRecord(None, "Current", None, (NzorOrigin.NON_ENDEMIC,))
+        nzor = NzorRecord("Current", None, (NzorOrigin.NON_ENDEMIC,))
 
         findings = list(inspect_entry(entry, nzor, None))
 
@@ -171,7 +170,7 @@ class TestReportsWithoutChanging:
     def test_a_pest_is_consistent_with_exotic(self) -> None:
         """NZOR cannot tell an introduced species from a declared pest."""
         entry = make_entry(origin="pest")
-        nzor = NzorRecord(None, "Current", None, (NzorOrigin.EXOTIC,))
+        nzor = NzorRecord("Current", None, (NzorOrigin.EXOTIC,))
         assert list(inspect_entry(entry, nzor, None)) == []
 
     def test_a_maori_name_candidate_is_a_suggestion_only(self) -> None:

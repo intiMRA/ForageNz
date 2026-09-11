@@ -64,7 +64,6 @@ class Field(StrEnum):
     """Catalogue fields this script reasons about."""
 
     ID = "id"
-    COMMON_NAME = "commonName"
     MAORI_NAME = "maoriName"
     MONTHS = "months"
     SCIENTIFIC_NAME = "scientificName"
@@ -166,7 +165,6 @@ class Finding:
 
 @dataclass(frozen=True)
 class NzorRecord:
-    partial_name: str | None
     status: str | None
     #: Present and different from the queried name means yours is a synonym.
     accepted_name: str | None
@@ -269,7 +267,6 @@ def fetch_nzor(scientific_name: str) -> NzorRecord | None:
                     continue  # a biostatus vocabulary we don't model
 
         return NzorRecord(
-            partial_name=name.get("partialName"),
             status=name.get("status"),
             accepted_name=(name.get("acceptedName") or {}).get("partialName"),
             origins=tuple(origins),
