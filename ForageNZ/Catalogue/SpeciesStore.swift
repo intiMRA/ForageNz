@@ -35,10 +35,10 @@ final class SpeciesStore {
             species = loaded.sorted(by: ForageSpecies.displayOrder)
             loadState = .loaded
         } catch {
+            // `loadSpecies()` has typed throws, so `error` is already a SpeciesRepositoryError.
             species = []
-            let repositoryError = error as? SpeciesRepositoryError
             Self.logger.error("Catalogue load failed: \(String(describing: error), privacy: .public)")
-            loadState = .failed(message: repositoryError?.userMessage ?? "The field guide could not be loaded.")
+            loadState = .failed(message: error.userMessage)
         }
     }
 
