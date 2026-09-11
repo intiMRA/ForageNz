@@ -55,7 +55,7 @@ python3.13 -m venv .venv
 
 **In PyCharm:** open the repo root as the project, set the interpreter to `.venv/bin/python`
 (Settings → Project → Python Interpreter → Add → Existing). Five run configurations are
-committed in `.idea/runConfigurations/` and appear in the run dropdown (six of them):
+committed in `.idea/runConfigurations/` and appear in the run dropdown (seven of them):
 
 | Configuration | Does |
 |---|---|
@@ -65,6 +65,7 @@ committed in `.idea/runConfigurations/` and appear in the run dropdown (six of t
 | Fetch eval photos | Evaluation set for the matcher harness |
 | Fetch eval photos (out-of-catalogue) | The negative set, for open-set testing |
 | Build land status map | Rebuilds the bundled DOC conservation / marine reserve raster |
+| Sync string catalog | Merges the last build's extracted UI strings into `Localizable.xcstrings` |
 
 Each sets the working directory to the repo root — every tool resolves paths from there.
 
@@ -336,6 +337,31 @@ What that buys:
 The cost is a workflow step in the editor: add a species → save (the enum is rewritten and the
 status bar says so) → **rebuild** → only then can the new species be chosen as a lookalike's
 page. That is what compile-time ids mean.
+
+## Localisation
+
+UI strings live in `ForageNZ/Resources/Localizable.xcstrings`, a String Catalog with English as
+the source language. Every `Text("…")` and `LocalizedStringKey` in the app is extracted by the
+compiler at build time (`SWIFT_EMIT_LOC_STRINGS`), so there is nothing to register by hand —
+write the English in the view and it appears in the catalog. Xcode writes the catalog for you
+when you build in the IDE; a terminal build does not, so:
+
+```sh
+xcodebuild build -project ForageNZ.xcodeproj -scheme ForageNZ -destination '…'
+python3 Tools/sync_string_catalog.py      # merge the build's extracted strings into the catalog
+```
+
+The sync adds new keys, never touches an existing entry or translation, and lists keys the code
+no longer uses so they can be removed deliberately. Only the iOS app's strings go in — the
+macOS editor is a developer tool and stays English.
+
+**What is not localised by this:** the catalogue. `species.json` is content, not UI — an entry's
+identification text in te reo Māori is a second catalogue, authored and verified separately,
+not a translation of a key. That is a real piece of work and a separate decision; the UI
+catalog is the prerequisite for it, not a substitute.
+
+To add a language, add it to the catalog in Xcode (Editor → Add Language) and translate; `mi`
+(te reo Māori) is the obvious first.
 
 ## Validation
 

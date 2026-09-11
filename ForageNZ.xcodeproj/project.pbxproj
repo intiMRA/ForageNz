@@ -43,6 +43,7 @@
 		964DFD06BF7EB889DF54325C /* WhereYouAreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23F44C740462604FCC5A42 /* WhereYouAreStore.swift */; };
 		993520DE95024A3F666F3E9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C28C6DA10AE33F73F5B94C /* Cocoa.framework */; };
 		9E8FC670A75374EEBCCECBC7 /* SafetyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE90969BDB0EBE6CF9F173 /* SafetyView.swift */; };
+		9F5008342D304A10A3E24A19 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8AAD98CD750F96CCB1E26CB7 /* Localizable.xcstrings */; };
 		9FBCD80401D74B2453FD524A /* EditorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B8BE3236AB36D01FBF5AF3 /* EditorLayout.swift */; };
 		A4579F5824712EB55154CB9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C28C6DA10AE33F73F5B94C /* Cocoa.framework */; };
 		ADCE358E9BDD4BA324F73087 /* SpeciesEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A08516B887C616C0C2D6B0 /* SpeciesEditorView.swift */; };
@@ -123,6 +124,7 @@
 		791DF0D2BB9C0D5A58110687 /* CatalogueEditorApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueEditorApp.swift; sourceTree = "<group>"; };
 		7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesDetailView.swift; path = FieldGuide/SpeciesDetailView.swift; sourceTree = "<group>"; };
 		817A298659AD6F2CD63D0228 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AAD98CD750F96CCB1E26CB7 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.xcstrings; path = Resources/Localizable.xcstrings; sourceTree = "<group>"; };
 		8B5CFF23B8C79B576A8D1B65 /* ForageNZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRepository.swift; path = Catalogue/SpeciesRepository.swift; sourceTree = "<group>"; };
 		9DE2E1227F9C1C691B2F945D /* WhereYouAreStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WhereYouAreStoreTests.swift; sourceTree = "<group>"; };
@@ -149,7 +151,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8A80CDC83053DCE4004AF7E7 /* Resourses */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resourses; sourceTree = "<group>"; };
+		8A80CDC83053DCE4004AF7E7 /* Resourses */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,7 +246,6 @@
 		4537A289B0B2289A2594A27C /* ForageNZ */ = {
 			isa = PBXGroup;
 			children = (
-				8A80CDC83053DCE4004AF7E7 /* Resourses */,
 				9FDC361CC498756899AA3E06 /* Catalogue */,
 				DC803897D75EFB8356539D00 /* Components */,
 				6906D5A3CD03B7D5259C6C35 /* FieldGuide */,
@@ -242,7 +253,9 @@
 				BA3FADD480C97728D44B490F /* InSeason */,
 				F3879044878C62F8D8F549D8 /* land-status.json */,
 				B2D00CFE7D2AD3E97CCF1400 /* land-status.png */,
+				8AAD98CD750F96CCB1E26CB7 /* Localizable.xcstrings */,
 				7127DAAD2E1698DAE324AB23 /* Models */,
+				8A80CDC83053DCE4004AF7E7 /* Resourses */,
 				6F567D725B05CA6E238F22C8 /* RootView.swift */,
 				C3469FB9258BAE32C11992A3 /* Safety */,
 				D6ECE46F98F836C2B53E8AA5 /* species.json */,
@@ -538,7 +551,7 @@
 			mainGroup = 74F580B8BCAC7AE1BA708F7C;
 			packageReferences = (
 				657237127B68D0589BA6C34C /* XCRemoteSwiftPackageReference "Desing-Library-SPM" */,
-				90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "Packages/ForageCatalogue" */,
+				90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */,
 			);
 			productRefGroup = 1EAF7E4DE18E3DAE6C74AAC9 /* Products */;
 			projectDirPath = "";
@@ -572,6 +585,7 @@
 				566613F76B253A99D963B234 /* land-status.png in Resources */,
 				2BB82EB485F18B9705B3F347 /* land-status.json in Resources */,
 				0EFC0592935EC3241932A7C6 /* CautionColors.xcassets in Resources */,
+				9F5008342D304A10A3E24A19 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -993,6 +1007,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.ForageNZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1000,6 +1015,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1069,6 +1085,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.ForageNZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1076,6 +1093,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1169,7 +1187,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "Packages/ForageCatalogue" */ = {
+		90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/ForageCatalogue;
 		};
@@ -1189,12 +1207,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		279E84FE33A5770883B72986 /* ForageCatalogue */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "Packages/ForageCatalogue" */;
+			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
 			productName = ForageCatalogue;
 		};
 		69125DE059737EBB12471472 /* ForageCatalogue */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "Packages/ForageCatalogue" */;
+			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
 			productName = ForageCatalogue;
 		};
 		83413BE0AA6927FA598C7C0C /* DesignLibrary */ = {
@@ -1204,7 +1222,7 @@
 		};
 		9761BCE487176B0F4BED2611 /* ForageCatalogue */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "Packages/ForageCatalogue" */;
+			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
 			productName = ForageCatalogue;
 		};
 		A99949573DBF46AF74F6D6F3 /* DesignLibrary */ = {
@@ -1214,7 +1232,7 @@
 		};
 		FCA8BB9C87B318851F23469F /* ForageCatalogue */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "Packages/ForageCatalogue" */;
+			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
 			productName = ForageCatalogue;
 		};
 /* End XCSwiftPackageProductDependency section */

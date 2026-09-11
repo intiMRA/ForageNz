@@ -52,6 +52,10 @@ struct SpeciesDetailView: View {
                     warningsSection
                 }
 
+                if !species.recipes.isEmpty {
+                    recipesSection
+                }
+
                 if let ethics = species.harvestEthics {
                     section("Harvesting & tikanga", systemImage: "hands.sparkles") {
                         Text(ethics)
@@ -154,7 +158,7 @@ struct SpeciesDetailView: View {
         )
     }
 
-    private func banner(title: String, message: String, tint: Color, systemImage: String) -> some View {
+    private func banner(title: LocalizedStringKey, message: LocalizedStringKey, tint: Color, systemImage: String) -> some View {
         HStack(alignment: .top, spacing: .small) {
             Image(systemName: systemImage)
                 .imageScale(.large)
@@ -175,8 +179,29 @@ struct SpeciesDetailView: View {
 
     // MARK: - Sections
 
+    private var recipesSection: some View {
+        VStack(alignment: .leading, spacing: .small) {
+            Label("In the kitchen", systemImage: "fork.knife")
+                .font(.headline)
+
+            ForEach(species.recipes, id: \.title) { recipe in
+                VStack(alignment: .leading, spacing: .xxSmall) {
+                    Text(recipe.title)
+                        .font(.subheadline.weight(.semibold))
+                    Text(recipe.method)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+                .padding(.all, .small)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(.quaternary.opacity(Layout.cardBackgroundOpacity), in: Layout.cardShape)
+            }
+        }
+    }
+
+    /// Titles are `LocalizedStringKey` so the string catalog picks them up at build time.
     private func section(
-        _ title: String,
+        _ title: LocalizedStringKey,
         systemImage: String,
         @ViewBuilder content: () -> some View
     ) -> some View {

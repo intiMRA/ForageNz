@@ -322,3 +322,34 @@ class TestEvaluationSets:
             "poison-parsley"
         ]
         assert check_disjoint(catalogue, {"foxglove": "Digitalis purpurea"}) == []
+
+
+class TestStringCatalogSync:
+    def test_new_keys_are_added_and_existing_translations_untouched(self) -> None:
+        from sync_string_catalog import merge
+
+        catalog: dict[str, Any] = {
+            "strings": {
+                "Season": {
+                    "localizations": {
+                        "mi": {"stringUnit": {"state": "translated", "value": "Kaupeka"}}
+                    }
+                }
+            }
+        }
+        added, stale = merge(catalog, {"Season": "", "Edible parts": "Section heading"})
+
+        assert added == ["Edible parts"]
+        assert stale == []
+        assert (
+            catalog["strings"]["Season"]["localizations"]["mi"]["stringUnit"]["value"] == "Kaupeka"
+        )
+        assert catalog["strings"]["Edible parts"] == {"comment": "Section heading"}
+
+    def test_keys_the_code_no_longer_uses_are_reported_not_deleted(self) -> None:
+        from sync_string_catalog import merge
+
+        catalog: dict[str, Any] = {"strings": {"Old heading": {}}}
+        added, stale = merge(catalog, {"New heading": ""})
+        assert added == ["New heading"] and stale == ["Old heading"]
+        assert "Old heading" in catalog["strings"], "deleting is a human decision"
