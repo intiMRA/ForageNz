@@ -293,14 +293,16 @@ class TestSharedPhotoLoop:
                 ],
             }
         ]
+
+        def flaky_download(url: str, destination: Path) -> bool:
+            if "bad" in url:
+                return False
+            destination.write_bytes(b"x")
+            return True
+
         got = list(
             licensed_photos(
-                observations,
-                tmp_path,
-                "puha",
-                wanted=1,
-                size="medium",
-                downloader=lambda url, dest: "good" in url and not dest.write_bytes(b"x"),
+                observations, tmp_path, "puha", wanted=1, size="medium", downloader=flaky_download
             )
         )
         assert [path.name for path, *_ in got] == ["puha-1.jpg"]
