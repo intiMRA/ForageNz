@@ -34,6 +34,8 @@ struct CatalogueTests {
         "gorse", "kareao", "sheep-sorrel", "cleavers",
         "petty-spurge", "scarlet-pimpernel", "catsear", "bracken", "black-nightshade", "prickly-sow-thistle",
         "horse-chestnut", "wild-carrot", "snowflake",
+        "straw-mushroom", "bitter-bolete", "red-pored-boletes", "other-milk-caps", "water-celery",
+        "hemlock-water-dropwort",
         // Straightforward.
         "puha", "dandelion", "miners-lettuce", "horopito", "nasturtium", "blackberry", "feijoa",
         "wild-plum", "cherry-guava", "wood-ear", "karengo", "walnut"
@@ -141,6 +143,25 @@ struct CatalogueTests {
         let species = try await loadCatalogue()
         let ids = species.map(\.id)
         #expect(Set(ids).count == ids.count)
+    }
+
+    /// A lookalike card that opens nothing is a dead end in the field. Every lookalike must
+    /// resolve to an entry — by scientific name, or by common name if none was recorded.
+    @Test("Every lookalike card has a page to open")
+    @MainActor
+    func everyLookalikeHasAnEntry() async throws {
+        let species = try await loadCatalogue()
+        let store = SpeciesStore(repository: BundledSpeciesRepository())
+        await store.loadIfNeeded()
+
+        for entry in species {
+            for lookalike in entry.lookalikes {
+                #expect(
+                    store.entry(matching: lookalike) != nil,
+                    "\(entry.id) → \(lookalike.name) has no entry to open — add one, or fix the scientific name"
+                )
+            }
+        }
     }
 
     @Test("The guide teaches avoidance, not only collection")

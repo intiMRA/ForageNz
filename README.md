@@ -369,18 +369,21 @@ the point: the schema encodes the safety rules.
 
 Known gaps, in rough priority order:
 
-- **Photo coverage is uneven.** 46 of 52 entries carry reviewed CC0/CC-BY photos (183 in
-  all, 21 MB of the 40 MB budget), but 17 are below their target and six have none. Several are missing the one
+- **Photo coverage is uneven.** 50 of 58 entries carry reviewed CC0/CC-BY photos (198 in
+  all, 23 MB of the 40 MB budget), but many are below their target and eight have none. Several are missing the one
   feature that matters most: karaka has no fruit, sweet chestnut has no burr or nut, porcini
   has no pore surface or stem net, hemlock has no shot of its blotched stem, gorse has no
   flower close-up, and kareao has no shoot tip. Those need photographs taken on purpose.
-- **Nothing here has been checked against a book yet.** All 52 entries are in
-  `pendingVerification`. Twenty were added from general knowledge alone — eleven common finds
+- **Nothing here has been checked against a book yet.** All 58 entries are in
+  `pendingVerification`. Twenty-six were added from general knowledge alone — eleven common finds
   and safety entries (hemlock, ongaonga, yellow stainer, onion weed, fat hen, plantain,
   hawthorn, gorse, kareao, sheep sorrel, cleavers) and nine that exist so lookalike cards have
   a page to open (petty spurge, scarlet pimpernel, catsear, bracken, black nightshade, prickly
-  sow thistle, horse chestnut, wild carrot, snowflake). Their lookalike claims in particular
-  need a New Zealand field guide.
+  sow thistle, horse chestnut, wild carrot, snowflake, straw mushroom, bitter bolete, red-pored
+  boletes, other milk caps, water celery, hemlock water dropwort). Their lookalike claims in
+  particular need a New Zealand field guide. Four of those last six are flagged on their own
+  pages as of uncertain or no wild presence in New Zealand; they exist so that every one of the
+  42 lookalike cards opens a page, which `CatalogueTests` now enforces.
 - **No location awareness.** Several entries are regional (cherry guava is northern, rosehip is
   dry-eastern). Region filtering needs a region field on each entry.
 - **No live overlays.** Rāhui, MPI biotoxin warnings and LAWA algal-bloom status are all
