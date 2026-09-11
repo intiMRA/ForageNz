@@ -17,13 +17,12 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-import time
 from dataclasses import dataclass
 from enum import StrEnum
 from pathlib import Path
 from typing import Any
 
-from sources import COURTESY_DELAY, Licence, Source, SourceError, download, results_of
+from sources import Licence, Source, SourceError, licensed_photos, results_of
 
 
 class EvaluationSet(StrEnum):
@@ -33,40 +32,43 @@ class EvaluationSet(StrEnum):
     OUT_OF_CATALOGUE = "out-of-catalogue"
 
 
-#: Catalogue id -> scientific name. Weighted towards the confusable fungi, because that is
-#: where a visual matcher either works or is dangerous.
-CATALOGUE_TAXA: dict[str, str] = {
-    "field-mushroom": "Agaricus campestris",
-    "porcini": "Boletus edulis",
-    "slippery-jack": "Suillus luteus",
-    "saffron-milk-cap": "Lactarius deliciosus",
-    "death-cap": "Amanita phalloides",
-    "wood-ear": "Auricularia cornea",
-    "dandelion": "Taraxacum officinale",
-    "chickweed": "Stellaria media",
-    "nettle": "Urtica dioica",
-    "wild-fennel": "Foeniculum vulgare",
-    "blackberry": "Rubus fruticosus",
-    "watercress": "Nasturtium officinale",
-    "kawakawa": "Piper excelsum",
-    "horopito": "Pseudowintera colorata",
-}
+CATALOGUE = Path("ForageNZ/Catalogue/species.json")
+
+
+def catalogue_taxa(catalogue: Path = CATALOGUE) -> dict[str, str]:
+    """Catalogue id -> scientific name, read from the catalogue itself.
+
+    A hand-maintained copy drifted the first time the catalogue grew; the in-catalogue set is
+    whatever the catalogue says. Compound names ("Urtica dioica / Urtica urens") query by their
+    first part.
+    """
+    entries: list[dict[str, Any]] = json.loads(catalogue.read_text())
+    return {
+        str(entry["id"]): str(entry["scientificName"]).split("/")[0].strip() for entry in entries
+    }
+
 
 #: Common NZ plants deliberately NOT in the catalogue. Several are seriously toxic, which
 #: is the point: photographing one must not produce a confident shortlist of edibles.
+#: Hemlock used to be here; it is a catalogue entry now, and `check_disjoint` exists so that
+#: kind of drift fails the run instead of quietly inflating the false-accept rate.
 OUT_OF_CATALOGUE_TAXA: dict[str, str] = {
     "foxglove": "Digitalis purpurea",
-    "hemlock": "Conium maculatum",
     "ragwort": "Jacobaea vulgaris",
     "agapanthus": "Agapanthus praecox",
     "arum-lily": "Zantedeschia aethiopica",
     "buttercup": "Ranunculus repens",
 }
 
-TAXA_BY_SET: dict[EvaluationSet, dict[str, str]] = {
-    EvaluationSet.CATALOGUE: CATALOGUE_TAXA,
-    EvaluationSet.OUT_OF_CATALOGUE: OUT_OF_CATALOGUE_TAXA,
-}
+
+def check_disjoint(in_catalogue: dict[str, str], out_of_catalogue: dict[str, str]) -> list[str]:
+    """Ids or scientific names in both sets — must be empty for --openset to mean anything."""
+    names = {name.lower() for name in in_catalogue.values()}
+    return sorted(
+        key
+        for key, name in out_of_catalogue.items()
+        if key in in_catalogue or name.lower() in names
+    )
 
 
 @dataclass(frozen=True)
@@ -113,36 +115,19 @@ def fetch_species(
         print(f"{species_id}: query failed ({error})", file=sys.stderr)
         return fetched
 
-    for observation in found:
-        for photo in observation.get("photos") or []:
-            if len(fetched) >= wanted:
-                return fetched
-            try:
-                licence = Licence(photo.get("license_code"))
-            except ValueError:
-                continue
-
-            # `square.jpg` is a thumbnail; `medium` is the largest openly served size.
-            url = str(photo.get("url") or "").replace("square.", "medium.")
-            if not url:
-                continue
-
-            path = directory / f"{species_id}-{len(fetched) + 1}.jpg"
-            if not download(url, path):
-                print(f"    download failed: {url}", file=sys.stderr)
-                continue
-
-            photo_id = photo.get("id")
-            fetched.append(
-                FetchedPhoto(
-                    file=path.name,
-                    licence=licence,
-                    attribution=str(photo.get("attribution") or ""),
-                    photo_id=int(photo_id) if photo_id is not None else None,
-                    observation_url=observation.get("uri"),
-                )
+    for path, licence, photo, observation in licensed_photos(
+        found, directory, species_id, wanted, size="medium"
+    ):
+        photo_id = photo.get("id")
+        fetched.append(
+            FetchedPhoto(
+                file=path.name,
+                licence=licence,
+                attribution=str(photo.get("attribution") or ""),
+                photo_id=int(photo_id) if isinstance(photo_id, int) else None,
+                observation_url=observation.get("uri"),
             )
-            time.sleep(COURTESY_DELAY)
+        )
     return fetched
 
 
@@ -165,7 +150,22 @@ def main() -> int:
     root.mkdir(parents=True, exist_ok=True)
     manifest: dict[str, list[dict[str, Any]]] = {}
 
-    for species_id, scientific_name in TAXA_BY_SET[arguments.evaluation_set].items():
+    in_catalogue = catalogue_taxa()
+    overlap = check_disjoint(in_catalogue, OUT_OF_CATALOGUE_TAXA)
+    if overlap:
+        print(
+            f"Refusing to run: {', '.join(overlap)} is in the catalogue AND the out-of-catalogue "
+            "set, so the open-set numbers would be wrong. Remove it from OUT_OF_CATALOGUE_TAXA.",
+            file=sys.stderr,
+        )
+        return 1
+    taxa = (
+        in_catalogue
+        if arguments.evaluation_set is EvaluationSet.CATALOGUE
+        else OUT_OF_CATALOGUE_TAXA
+    )
+
+    for species_id, scientific_name in taxa.items():
         fetched = fetch_species(
             species_id, scientific_name, root / species_id, arguments.per_species
         )

@@ -116,7 +116,6 @@ struct EditorRootView: View {
             selectedId = try store.addSpecies(commonName: newName)
             isAddingSpecies = false
         } catch {
-            // Typed throws: `error` is an AddFailure, so the switch is exhaustive.
             switch error {
             case .nameEmpty:
                 addError = "Give it a name with at least one letter or digit."
@@ -126,6 +125,10 @@ struct EditorRootView: View {
         }
     }
 
+    private static func unsavedLabel(_ count: Int) -> String {
+        "\(count) unsaved \(count == 1 ? "entry" : "entries")"
+    }
+
     private var saveBar: some View {
         VStack(spacing: .empty) {
             Divider()
@@ -133,10 +136,7 @@ struct EditorRootView: View {
                 Group {
                     switch store.status {
                     case .edited(let count):
-                        Label(
-                            "\(count) unsaved \(count == 1 ? "entry" : "entries")",
-                            systemImage: "pencil.circle.fill"
-                        )
+                        Label(Self.unsavedLabel(count), systemImage: "pencil.circle.fill")
                         .foregroundStyle(.orange)
                     case .saved(let date):
                         Label(
@@ -159,7 +159,7 @@ struct EditorRootView: View {
                 }
                 .font(.callout)
 
-                Spacer(minLength: 8)
+                Spacer(minLength: CommonPadding.xSmall.rawValue)
 
                 Button("Save changes") { store.save() }
                     .buttonStyle(.borderedProminent)
@@ -176,7 +176,7 @@ struct EditorRootView: View {
     private var sidebar: some View {
         VStack(spacing: .empty) {
             List(selection: $selectedId) {
-                ForEach(tiers, id: \.tier) { group in
+                ForEach(tiers) { group in
                     Section(header: Text("\(group.tier.title) · \(group.species.count)")) {
                         ForEach(group.species) { species in
                             row(species).tag(species.id)
@@ -213,7 +213,7 @@ struct EditorRootView: View {
                     .italic()
                     .foregroundStyle(.secondary)
             }
-            Spacer(minLength: 4)
+            Spacer(minLength: CommonPadding.xxSmall.rawValue)
             if !species.isPublishable {
                 Image(systemName: "exclamationmark.triangle.fill")
                     .foregroundStyle(.red)
@@ -268,7 +268,7 @@ struct EditorRootView: View {
                 }
             }
         case .edited(let count):
-            Text("\(count) unsaved \(count == 1 ? "entry" : "entries")")
+            Text(Self.unsavedLabel(count))
                 .foregroundStyle(.orange)
         case .saved(let date):
             Text("Saved \(date.formatted(date: .omitted, time: .standard))")

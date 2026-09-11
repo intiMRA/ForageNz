@@ -19,7 +19,7 @@ final class SpeciesStore {
 
     private let repository: any SpeciesRepository
 
-    private static let logger = Logger(subsystem: "nz.co.intialbuquerque.ForageNZ", category: "catalogue")
+    private static let logger = Logger(subsystem: Logging.subsystem, category: "catalogue")
 
     init(repository: any SpeciesRepository = BundledSpeciesRepository()) {
         self.repository = repository
@@ -35,7 +35,6 @@ final class SpeciesStore {
             species = loaded.sorted(by: ForageSpecies.displayOrder)
             loadState = .loaded
         } catch {
-            // `loadSpecies()` has typed throws, so `error` is already a SpeciesRepositoryError.
             species = []
             Self.logger.error("Catalogue load failed: \(String(describing: error), privacy: .public)")
             loadState = .failed(message: error.userMessage)
@@ -61,7 +60,7 @@ final class SpeciesStore {
 
     /// Every species that has at least one lookalike that can kill.
     var withDeadlyLookalikes: [ForageSpecies] {
-        species.filter { $0.highestLookalikeRisk == .deadly && $0.caution != .doNotEat }
+        species.filter(\.hasDeadlyLookalikeAsEdible)
     }
 
     /// Case-insensitive search across names and summary. An empty query returns everything.

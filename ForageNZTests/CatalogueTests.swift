@@ -169,6 +169,24 @@ struct CatalogueTests {
         }
     }
 
+    /// A card can name any page, so this is what stops "Hemlock" opening the bitter-bolete page:
+    /// when a lookalike records a scientific name, the page it opens must carry that name.
+    @Test("Every lookalike opens the page whose scientific name it records")
+    func lookalikeEntriesMatchTheirScientificNames() async throws {
+        let species = try await loadCatalogue()
+        let byID = Dictionary(uniqueKeysWithValues: species.map { ($0.id, $0) })
+        for entry in species {
+            for lookalike in entry.lookalikes {
+                guard let scientific = lookalike.scientificName, let target = byID[lookalike.entry.rawValue] else { continue }
+                let targetNames = target.scientificName.split(separator: "/").map { $0.trimmingCharacters(in: .whitespaces).lowercased() }
+                #expect(
+                    targetNames.contains(scientific.lowercased()),
+                    "\(entry.id) → \(lookalike.name) says \(scientific) but opens \(target.id) (\(target.scientificName))"
+                )
+            }
+        }
+    }
+
     @Test("The guide teaches avoidance, not only collection")
     func includesDoNotEatEntries() async throws {
         let doNotEat = try await loadCatalogue().filter { $0.caution == .doNotEat }

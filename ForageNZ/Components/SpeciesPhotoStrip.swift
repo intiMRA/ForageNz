@@ -74,13 +74,14 @@ private struct BundledPhoto: View {
         }
     }
 
-    /// Photos ship as a folder reference, so they resolve by name inside the bundle.
+    /// Photos ship as a folder reference; `CatalogueTests` asserts that layout, so there is
+    /// no second place to look.
     private var loadedImage: UIImage? {
         guard let url = Bundle.main.url(
             forResource: fileName,
             withExtension: nil,
             subdirectory: CataloguePhotos.directoryName
-        ) ?? Bundle.main.url(forResource: fileName, withExtension: nil) else {
+        ) else {
             return nil
         }
         return UIImage(contentsOfFile: url.path)

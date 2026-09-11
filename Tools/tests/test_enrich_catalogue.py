@@ -6,6 +6,7 @@ gained the ability to change something a person wrote in a book-checked entry.
 
 from __future__ import annotations
 
+from pathlib import Path
 from typing import Any
 
 import pytest
@@ -235,3 +236,88 @@ class TestSeasonality:
         entry = make_entry(months=[1])
         assert list(inspect_seasonality(entry, Seasonality(counts={6: 5}))) == []
         assert list(inspect_seasonality(entry, None)) == []
+
+
+class TestSharedPhotoLoop:
+    """Both scripts fetch photos through one loop, so licence and URL handling cannot drift."""
+
+    def test_only_acceptably_licensed_photos_are_taken_and_wanted_is_a_ceiling(
+        self, tmp_path: Path
+    ) -> None:
+        from sources import licensed_photos
+
+        observations = [
+            {
+                "uri": "obs1",
+                "photos": [
+                    {"license_code": "cc-by-nc", "url": "https://x/1/square.jpg"},
+                    {"license_code": "cc0", "url": "https://x/2/square.jpg"},
+                ],
+            },
+            {
+                "uri": "obs2",
+                "photos": [
+                    {"license_code": "cc-by", "url": "https://x/3/square.jpg"},
+                    {"license_code": "cc-by", "url": "https://x/4/square.jpg"},
+                ],
+            },
+        ]
+        fetched: list[str] = []
+
+        def fake_download(url: str, destination: Path) -> bool:
+            fetched.append(url)
+            destination.write_bytes(b"jpg")
+            return True
+
+        got = list(
+            licensed_photos(
+                observations, tmp_path, "puha", wanted=2, size="large", downloader=fake_download
+            )
+        )
+
+        assert [path.name for path, *_ in got] == ["puha-1.jpg", "puha-2.jpg"]
+        assert fetched == ["https://x/2/large.jpg", "https://x/3/large.jpg"], (
+            "NC skipped, size rewritten, stopped at wanted"
+        )
+        assert [str(licence) for _, licence, *_ in got] == ["cc0", "cc-by"]
+
+    def test_a_failed_download_is_skipped_not_counted(self, tmp_path: Path) -> None:
+        from sources import licensed_photos
+
+        observations = [
+            {
+                "uri": "o",
+                "photos": [
+                    {"license_code": "cc0", "url": "https://x/bad/square.jpg"},
+                    {"license_code": "cc0", "url": "https://x/good/square.jpg"},
+                ],
+            }
+        ]
+        got = list(
+            licensed_photos(
+                observations,
+                tmp_path,
+                "puha",
+                wanted=1,
+                size="medium",
+                downloader=lambda url, dest: "good" in url and not dest.write_bytes(b"x"),
+            )
+        )
+        assert [path.name for path, *_ in got] == ["puha-1.jpg"]
+
+
+class TestEvaluationSets:
+    def test_the_negative_set_shares_nothing_with_the_shipped_catalogue(self) -> None:
+        from fetch_eval_photos import OUT_OF_CATALOGUE_TAXA, catalogue_taxa, check_disjoint
+
+        assert check_disjoint(catalogue_taxa(), OUT_OF_CATALOGUE_TAXA) == []
+
+    def test_an_overlap_by_id_or_by_name_is_caught(self) -> None:
+        from fetch_eval_photos import check_disjoint
+
+        catalogue = {"hemlock": "Conium maculatum", "puha": "Sonchus oleraceus"}
+        assert check_disjoint(catalogue, {"hemlock": "Something else"}) == ["hemlock"]
+        assert check_disjoint(catalogue, {"poison-parsley": "conium maculatum"}) == [
+            "poison-parsley"
+        ]
+        assert check_disjoint(catalogue, {"foxglove": "Digitalis purpurea"}) == []

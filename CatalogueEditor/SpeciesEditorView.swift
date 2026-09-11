@@ -47,7 +47,7 @@ struct SpeciesEditorView: View {
                                     ? "exclamationmark.circle.fill" : "info.circle")
                                     .foregroundStyle(issue.severity == .blocking ? .red : .secondary)
                                 Text(issue.message)
-                                Spacer(minLength: 0)
+                                Spacer(minLength: CommonPadding.empty.rawValue)
                                 Text(issue.label)
                                     .font(.caption)
                                     .monospaced()
@@ -90,9 +90,7 @@ struct SpeciesEditorView: View {
                 ForEach(ForageOrigin.allCases) { Text($0.displayName).tag($0) }
             }
             Picker("Caution", selection: binding(\.caution) { $0.with(caution: $1) }) {
-                Text("Straightforward").tag(CautionLevel.straightforward)
-                Text("Care required").tag(CautionLevel.careRequired)
-                Text("Do not eat").tag(CautionLevel.doNotEat)
+                ForEach(CautionLevel.allCases, id: \.self) { Text($0.displayName).tag($0) }
             }
         }
 
@@ -156,7 +154,7 @@ struct SpeciesEditorView: View {
     @ViewBuilder
     private var safetyTab: some View {
         Section {
-            LookalikeEditor(lookalikes: species.lookalikes) { onChange(species.with(lookalikes: $0)) }
+            LookalikeEditor(lookalikes: species.lookalikes, owner: species.typedID) { onChange(species.with(lookalikes: $0)) }
         } header: {
             Text("Lookalikes")
         } footer: {

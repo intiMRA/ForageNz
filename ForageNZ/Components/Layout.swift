@@ -1,3 +1,4 @@
+import DesignLibrary
 import SwiftUI
 
 /// Layout values that have no DesignLibrary token.
@@ -13,7 +14,7 @@ enum Layout {
 
     /// Identification photo card. Wide enough to show a leaf margin, short enough that
     /// several fit on screen at once.
-    static let photoWidth: CGFloat = 200
+    static let photoWidth: CGFloat = CommonSizes.large.rawValue
     static let photoHeight: CGFloat = 150
 
     static var cardShape: RoundedRectangle {

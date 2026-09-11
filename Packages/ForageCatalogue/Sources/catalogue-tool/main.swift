@@ -235,7 +235,7 @@ if arguments.contains("--photos") {
     }
     print("""
     \(report.photoCount) photo(s) · \(report.totalBytes / 1024) KB of \(CataloguePhotos.totalByteBudget / 1_000_000) MB budget
-    \(thin.count) entrie(s) below their photo target (4, or 6 with a deadly lookalike)
+    \(thin.count) entrie(s) below their photo target (\(CataloguePhotos.recommendedCount(hasDeadlyLookalike: false)), or \(CataloguePhotos.recommendedCount(hasDeadlyLookalike: true)) with a deadly lookalike)
     """)
     exit(report.isClean ? 0 : 1)
 }

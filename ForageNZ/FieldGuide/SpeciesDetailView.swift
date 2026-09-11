@@ -14,7 +14,7 @@ struct SpeciesDetailView: View {
 
                 if species.caution == .doNotEat {
                     doNotEatBanner
-                } else if species.highestLookalikeRisk == .deadly {
+                } else if species.hasDeadlyLookalikeAsEdible {
                     deadlyLookalikeBanner
                 }
 

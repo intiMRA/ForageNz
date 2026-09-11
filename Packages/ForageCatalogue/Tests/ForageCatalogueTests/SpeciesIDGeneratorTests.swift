@@ -26,6 +26,7 @@ struct SpeciesIDGeneratorTests {
         #expect(SpeciesIDGenerator.caseName(for: "death-cap") == "deathCap")
         #expect(SpeciesIDGenerator.caseName(for: "red-pored-boletes") == "redPoredBoletes")
         #expect(SpeciesIDGenerator.caseName(for: "puha") == "puha")
+        #expect(SpeciesIDGenerator.caseName(for: "default") == "`default`", "a keyword id must still compile")
         #expect(SpeciesIDGenerator.render(ids: ["b", "a", "b"]) == SpeciesIDGenerator.render(ids: ["a", "b"]))
     }
 

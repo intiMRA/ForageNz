@@ -5,13 +5,11 @@ import Foundation
 /// `ForageSpecies.validationIssues` is pure — it can't know whether a file exists or how
 /// big it is. These checks need a directory, so they live here and run in tests and in the
 /// editor rather than on the model.
-public enum PhotoAudit {
-    public struct Finding: Sendable, Hashable, Identifiable {
+public nonisolated enum PhotoAudit {
+    public struct Finding: Sendable, Hashable {
         public let speciesId: String
         public let fileName: String
         public let problem: String
-
-        public var id: String { "\(speciesId)|\(fileName)|\(problem)" }
     }
 
     public struct Report: Sendable {

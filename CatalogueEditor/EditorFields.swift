@@ -159,6 +159,9 @@ struct RecipeEditor: View {
 
 struct LookalikeEditor: View {
     let lookalikes: [Lookalike]
+    /// The species being edited. A new card starts by pointing at it, which validation flags
+    /// as blocking — so an untouched card can never quietly ship pointing somewhere plausible.
+    let owner: SpeciesID?
     let onChange: ([Lookalike]) -> Void
 
     var body: some View {
@@ -182,9 +185,7 @@ struct LookalikeEditor: View {
                             get: { lookalike.risk },
                             set: { replace(index, lookalike, risk: $0) }
                         )) {
-                            Text("Deadly").tag(LookalikeRisk.deadly)
-                            Text("Toxic").tag(LookalikeRisk.toxic)
-                            Text("Unpalatable").tag(LookalikeRisk.unpalatable)
+                            ForEach(LookalikeRisk.allCases, id: \.self) { Text($0.displayName).tag($0) }
                         }
                         .labelsHidden()
                         .frame(width: EditorLayout.riskPickerWidth)
@@ -239,11 +240,8 @@ struct LookalikeEditor: View {
         .padding(.vertical, .xxxSmall)
     }
 
-    /// A new card has to point somewhere; the first case is as arbitrary as any, and the
-    /// picker is right there to change it. A generated enum with one case per species is never
-    /// empty.
     private var defaultEntry: SpeciesID {
-        SpeciesID.allCases[0]
+        owner ?? SpeciesID.allCases[0]
     }
 
     private func replace(
