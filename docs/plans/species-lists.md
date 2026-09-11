@@ -21,27 +21,44 @@ values* for what the catalogue side guarantees.
 ## Model
 
 ```swift
+/// Which shipped list this is, if any. Identity by kind, not by name, so renaming "Favourites"
+/// to "Keepers" does not lose the heart badge.
+enum BuiltInList: String, Codable { case favourites, found }
+
 @Model final class SpeciesList {
-    var name: String
-    var createdAt: Date
-    /// Ships with the app and cannot be deleted (renaming: open decision below).
-    var isBuiltIn: Bool
-    @Relationship(deleteRule: .cascade, inverse: \ListEntry.list) var entries: [ListEntry]
+    /// Our own stable id, crossing the repository boundary in snapshots. Not `@Attribute(.unique)`
+    /// — unique constraints are incompatible with CloudKit.
+    var id: UUID = UUID()
+    var name: String = ""
+    var createdAt: Date = .now
+    var builtIn: BuiltInList? = nil
+    @Relationship(deleteRule: .cascade, inverse: \ListEntry.list) var entries: [ListEntry]? = []
 }
 
 @Model final class ListEntry {
-    /// The compile-time id. A list can never name a species the catalogue lacks; removing a
-    /// species from the catalogue surfaces orphaned entries when SpeciesID is regenerated.
-    var speciesID: SpeciesID
-    var addedAt: Date
-    var note: String?
-    var list: SpeciesList?
+    var id: UUID = UUID()
+    /// Stored as the raw string, NOT as `SpeciesID`. If the enum were the attribute type, removing
+    /// a species from the catalogue would make every fetch that touches an old row fail to decode
+    /// — a crash on launch for anyone who had listed it. As a string the row still loads, and
+    /// `speciesID` (below) is `nil` for it, which the UI shows as "no longer in the guide" and
+    /// offers to remove. Writes still go through `SpeciesID`, so a new entry can never name a
+    /// species the catalogue lacks.
+    var speciesIDRaw: String = ""
+    var addedAt: Date = .now
+    var note: String? = nil
+    /// Where it was found, if the user chose to record it. The Where-you-are location code and
+    /// its permission string already exist; this is opt-in per entry, never automatic.
+    var latitude: Double? = nil
+    var longitude: Double? = nil
+    var list: SpeciesList? = nil
+
+    var speciesID: SpeciesID? { SpeciesID(rawValue: speciesIDRaw) }
 }
 ```
 
-If "Found" is the start of a foraging log, add `latitude: Double?` / `longitude: Double?` to
-`ListEntry` **from the first version** — a place and a date are what turn a tick into a find,
-and adding columns later means a migration.
+Every property has a default and every relationship is optional: that is the CloudKit-compatible
+shape, and it costs nothing to adopt now even if sync is never turned on. Adding columns later is
+a migration; the location fields are in from the start for that reason.
 
 ## Boundaries (per the harness standard: protocol at every seam, factories return models)
 
@@ -56,7 +73,11 @@ protocol SpeciesListsRepository: Sendable {
 }
 ```
 
-- `SwiftDataSpeciesListsRepository` — the real conformance, wrapping a `ModelContainer`.
+- `SwiftDataSpeciesListsRepository` — the real conformance, a `@ModelActor` actor owning its
+  `ModelContext` (contexts are not `Sendable`; the actor is what makes the async protocol honest).
+  If the `ModelContainer` cannot be created — corrupt store, full disk — the app reports "lists
+  unavailable" and disables the feature for the session. It never crashes on launch over user
+  data, and it never touches the catalogue.
 - `InMemorySpeciesListsRepository` — tests and previews. No SwiftData in a unit test.
 - Snapshots (`SpeciesListSnapshot`, `ListEntrySnapshot`) are `Sendable` value types crossing the
   boundary; `@Model` classes never leave the repository. That keeps views and the factory free of
@@ -86,17 +107,20 @@ takes the lists snapshot as input the same way it takes the store — it stays a
   built-ins cannot be deleted, duplicate names refused, membership reflected in factory models.
 - A SwiftData integration test against an in-memory `ModelConfiguration(isStoredInMemoryOnly: true)`
   for the real repository: cascade delete removes entries; a `SpeciesID` round-trips.
-- `CatalogueTests` already fails the build if `SpeciesID` and the catalogue diverge; add a check
-  that a store containing an unknown raw id is reported, not crashed, when decoding snapshots.
+- An entry whose `speciesIDRaw` has no `SpeciesID` case (species removed from the catalogue after
+  it was listed) loads, is flagged in its snapshot, appears in the UI as "no longer in the guide",
+  and can be removed — never silently deleted, never a crash. Test it by inserting a row with a
+  made-up raw id into the in-memory store.
 - UI test: add dandelion to Favourites, relaunch, see it in the Lists tab.
 
 ## Open decisions (decide before starting)
 
 1. **Built-in lists** — ship "Favourites" and "Found" pre-created? Deletable? Renamable? Leaning:
-   pre-created, not deletable, renamable.
-2. **CloudKit sync** — lists following the user between devices. Much easier to design in now:
-   every `@Model` property needs a default or must be optional, relationships must be optional,
-   no unique constraints. Decide before writing the models.
+   pre-created on first launch, not deletable, renamable (identity is `builtIn`, not the name).
+2. **CloudKit sync** — lists following the user between devices. The models above are already in
+   the shape CloudKit requires (defaults everywhere, optional relationships, no unique
+   constraints), so this is a container-configuration switch plus an entitlement, not a
+   remodel. Still decide up front: sync changes how conflicts and deletions behave.
 3. **"Found" as a log** — if yes, add location (and optionally a photo reference) to `ListEntry`
    from the start, and the Where-you-are location code becomes reusable here.
 4. **Tab or sheet** — a fourth tab is discoverable; a sheet from the detail page is lighter. The
