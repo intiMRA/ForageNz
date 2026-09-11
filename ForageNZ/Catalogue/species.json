@@ -969,7 +969,8 @@
       {
         "howToTell" : "Look at the pore surface: porcini's is white to olive. Any bolete with red or orange pores, or whose flesh turns blue when cut, is not porcini — several of these cause severe vomiting. Cut every specimen and watch the flesh for a minute.",
         "name" : "Red- or orange-pored boletes",
-        "risk" : "toxic"
+        "risk" : "toxic",
+        "scientificName" : "Boletaceae (red-pored)"
       }
     ],
     "months" : [
@@ -1202,7 +1203,8 @@
       {
         "howToTell" : "Other milk caps bleed white or cream latex, not orange, and are acrid. Orange latex plus green staining plus pine is the reliable combination.",
         "name" : "Other Lactarius species",
-        "risk" : "unpalatable"
+        "risk" : "unpalatable",
+        "scientificName" : "Lactarius spp."
       }
     ],
     "months" : [
@@ -3047,6 +3049,317 @@
     "summary" : "A garden bulb that has gone wild along streams, with strap leaves and white bells much like onion weed's — but no onion smell, and a poisonous bulb.",
     "warnings" : [
       "The bulbs and leaves contain lycorine: vomiting and diarrhoea. The bulbs are the usual mistake, dug up with onion weed's."
+    ]
+  },
+  {
+    "category" : "fungi",
+    "caution" : "doNotEat",
+    "commonName" : "Straw mushroom",
+    "edibleParts" : "None.",
+    "habitat" : "Cultivated on rice straw in Southeast Asia and sold canned or fresh. Not established in the wild in New Zealand; anything that looks like one under an oak here is not one.",
+    "id" : "straw-mushroom",
+    "identification" : "A small grey-brown mushroom that emerges from a sac (volva) at the base, with white then pink-brown gills and no ring on the stem. The death cap shares the sac, but has white gills, a skirt-like ring high on the stem and a white spore print — and grows under oak, where straw mushrooms never do.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Death cap has white gills, a ring on the stem and grows under oak. If you learned mushrooms where straw mushrooms grow wild, assume every sac-based mushroom here is a death cap.",
+        "name" : "Death cap",
+        "risk" : "deadly",
+        "scientificName" : "Amanita phalloides"
+      }
+    ],
+    "months" : [
+
+    ],
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Underside on straw: gills, no ring",
+        "credit" : "(c) Vincent A. Vos, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "straw-mushroom-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/335700888"
+      },
+      {
+        "caption" : "A cluster on rice straw, its cultivated home",
+        "credit" : "(c) Tara Severns, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "straw-mushroom-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/351068390"
+      },
+      {
+        "caption" : "Specimens cut to show the sac at the base",
+        "credit" : "(c) Jerry Cooper, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "straw-mushroom-3.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/1049331"
+      },
+      {
+        "caption" : "Pink-brown gills from below — no ring on the stem",
+        "credit" : "(c) Tara Severns, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "straw-mushroom-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/351068390"
+      }
+    ],
+    "preparation" : "None. Buy them; do not gather them.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Volvariella volvacea",
+    "sources" : [
+
+    ],
+    "summary" : "The paddy straw mushroom of Asian markets. It does not grow wild here — which is exactly why people used to gathering it overseas pick death caps by mistake.",
+    "warnings" : [
+      "Several deaths overseas and at least one poisoning here trace to this exact confusion. There is no wild straw mushroom to find in New Zealand."
+    ]
+  },
+  {
+    "category" : "fungi",
+    "caution" : "doNotEat",
+    "commonName" : "Bitter bolete",
+    "edibleParts" : "None.",
+    "habitat" : "Under conifers and broadleaf trees in Europe and North America. Its presence in New Zealand is uncertain; it is included because it is the confusion every porcini guide warns about.",
+    "id" : "bitter-bolete",
+    "identification" : "Cap tan to brown like porcini. The pores start white but turn distinctly pink with age, where porcini's go yellow-olive. The net on the stem is dark brown and coarse, not fine and white. Taste a crumb of raw cap and spit it out: intensely bitter. Flesh white, unchanging.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Porcini: pores white to olive, fine white net, mild nutty taste. Bitter bolete: pores pink, dark coarse net, bitter.",
+        "name" : "Porcini",
+        "risk" : "unpalatable",
+        "scientificName" : "Boletus edulis"
+      }
+    ],
+    "months" : [
+
+    ],
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Brown cap on a stout stem — porcini-like at a glance",
+        "credit" : "(c) Shirley Zundell, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "bitter-bolete-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/142724564"
+      },
+      {
+        "caption" : "Pinkish pores and the dark, coarse net on the stem",
+        "credit" : "(c) Shirley Zundell, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "bitter-bolete-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/142724564"
+      },
+      {
+        "caption" : "Dark net on the stem in the hand",
+        "credit" : "(c) Елена А. Кизилова, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "bitter-bolete-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/182589139"
+      },
+      {
+        "caption" : "Pore surface close up, flushing pink",
+        "credit" : "(c) Елена А. Кизилова, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "bitter-bolete-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/182589139"
+      }
+    ],
+    "preparation" : "None. Not poisonous, but one specimen makes a dish inedible.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Tylopilus felleus",
+    "sources" : [
+
+    ],
+    "summary" : "Porcini's classic double: same brown cap and stout stem, but pink pores, a dark net and a bitterness that ruins a whole pan. Rarely if ever recorded in New Zealand — verify before relying on it.",
+    "warnings" : [
+      "Whether this species occurs in New Zealand at all is not settled. Treat this page as a description of what to check, not a claim you will find it."
+    ]
+  },
+  {
+    "category" : "fungi",
+    "caution" : "doNotEat",
+    "commonName" : "Red-pored boletes",
+    "edibleParts" : "None.",
+    "habitat" : "Under the same introduced oaks, birches and pines as porcini.",
+    "id" : "red-pored-boletes",
+    "identification" : "Turn the mushroom over. Porcini's pore surface is white, yellow or olive. If it is red, orange or any warm colour, stop. Cut the cap in half and watch for a minute: if the flesh blues, stop. Some of these are edible after long cooking in other countries; none is worth the gamble in a field guide.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Pore colour and a cut. White-to-olive pores and flesh that stays white is porcini territory; red or orange pores, or blueing, is not.",
+        "name" : "Porcini",
+        "risk" : "toxic",
+        "scientificName" : "Boletus edulis"
+      }
+    ],
+    "months" : [
+
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : "None.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Boletaceae (red-pored)",
+    "sources" : [
+
+    ],
+    "summary" : "Not one species but a rule: any bolete with red or orange pores, or flesh that turns blue when cut, is not porcini and several of them cause violent vomiting.",
+    "warnings" : [
+      "Severe gastrointestinal poisoning within hours from several species in this group.",
+      "Check the pore surface of every specimen. Mixed patches under one tree are common."
+    ]
+  },
+  {
+    "category" : "fungi",
+    "caution" : "doNotEat",
+    "commonName" : "Other milk caps",
+    "edibleParts" : "None.",
+    "habitat" : "Under pines and other conifers alongside saffron milk caps.",
+    "id" : "other-milk-caps",
+    "identification" : "Cut or nick the gills of any milk cap and watch the milk. Saffron milk cap bleeds bright orange that slowly greens. Anything bleeding white, cream or watery milk is a different Lactarius — some peppery-hot, some emetic. Caps may be zoned like the saffron milk cap, so the cap alone tells you nothing.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Orange milk that greens on standing is saffron milk cap. White or watery milk is not. Test every cap.",
+        "name" : "Saffron milk cap",
+        "risk" : "toxic",
+        "scientificName" : "Lactarius deliciosus"
+      }
+    ],
+    "months" : [
+
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : "None.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Lactarius spp.",
+    "sources" : [
+
+    ],
+    "summary" : "Saffron milk cap has relatives that look similar and bleed white or watery milk instead of orange. Some are acrid, a few make you ill. The milk colour is the test.",
+    "warnings" : [
+      "Several white-milked species cause vomiting and diarrhoea; the acrid ones are unmistakable on the tongue, the dangerous ones are not."
+    ]
+  },
+  {
+    "category" : "greens",
+    "caution" : "doNotEat",
+    "commonName" : "Water celery",
+    "edibleParts" : "None.",
+    "habitat" : "Slow streams, drains and ditches — the same water as watercress, often intertwined with it.",
+    "id" : "water-celery",
+    "identification" : "Sprawling, hollow, ridged stems rooting at the nodes, with paired, oval, lightly toothed leaflets that smell of celery or parsley when crushed. Small white umbels sit on short stalks opposite the leaves. Watercress smells peppery, has rounded leaflets and four-petalled white flowers in a cluster, not an umbel.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Smell and flowers. Watercress is peppery with four-petalled flowers in a head; water celery smells of celery and flowers in small umbels.",
+        "name" : "Watercress",
+        "risk" : "toxic",
+        "scientificName" : "Nasturtium officinale"
+      }
+    ],
+    "months" : [
+
+    ],
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Stems rooting in duckweed",
+        "credit" : "(c) bernhard_hiller, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "water-celery-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/207385151"
+      },
+      {
+        "caption" : "Toothed paired leaflets and small umbels on reddish stems",
+        "credit" : "(c) Andre Hosper, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "water-celery-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/161454049"
+      },
+      {
+        "caption" : "Sprawling through a watercress stream",
+        "credit" : "(c) Andre Hosper, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "water-celery-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/15582094"
+      },
+      {
+        "caption" : "A flower umbel close up",
+        "credit" : "(c) Andre Hosper, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "water-celery-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/15582094"
+      }
+    ],
+    "preparation" : "None. It is eaten in parts of Europe, but in a watercress bed the cost of a wrong call among umbellifers is too high for this guide to recommend it.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Helosciadium nodiflorum",
+    "sources" : [
+
+    ],
+    "summary" : "Fool's watercress. A celery-scented streamside umbellifer that grows through watercress beds and shares its water with deadly relatives. Eaten in Europe; not recommended here.",
+    "warnings" : [
+      "Pull watercress stem by stem and smell each one. Anything with a celery or parsley smell is not watercress.",
+      "Its deadly relatives in the same water — hemlock and hemlock water dropwort — also lack the pepper smell."
+    ]
+  },
+  {
+    "category" : "herbs",
+    "caution" : "doNotEat",
+    "commonName" : "Hemlock water dropwort",
+    "edibleParts" : "None.",
+    "habitat" : "Ditches, stream banks and marshy ground in Europe. Its status in New Zealand is unconfirmed; treat any large, celery-leaved plant in a watercress stream as if it were this until proven otherwise.",
+    "id" : "hemlock-water-dropwort",
+    "identification" : "Up to 1.5 m, with hairless, hollow, grooved stems and glossy leaves divided two or three times into broad, toothed, celery-like leaflets. White umbels in summer. The roots are pale, swollen and finger-like — the part most often mistaken for a vegetable. Smells of parsley or celery, never aniseed or pepper.",
+    "lookalikes" : [
+      {
+        "howToTell" : "Fennel has thread-fine leaves and smells of aniseed. Dropwort has broad celery-like leaflets and smells of parsley.",
+        "name" : "Wild fennel",
+        "risk" : "deadly",
+        "scientificName" : "Foeniculum vulgare"
+      },
+      {
+        "howToTell" : "Watercress is low, peppery and has rounded leaflets. Dropwort stands tall, smells of parsley, and has toothed celery-like leaves.",
+        "name" : "Watercress",
+        "risk" : "deadly",
+        "scientificName" : "Nasturtium officinale"
+      }
+    ],
+    "months" : [
+
+    ],
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Glossy, celery-like leaves on a stream bank",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "hemlock-water-dropwort-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/336102403"
+      },
+      {
+        "caption" : "Foliage growing in a stream",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "hemlock-water-dropwort-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/336102403"
+      },
+      {
+        "caption" : "Leaves over running water",
+        "credit" : "(c) zebedeugalinha, some rights reserved (CC BY) (CC-BY)",
+        "fileName" : "hemlock-water-dropwort-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/336102403"
+      }
+    ],
+    "preparation" : "None.",
+    "recipes" : [
+
+    ],
+    "scientificName" : "Oenanthe crocata",
+    "sources" : [
+
+    ],
+    "summary" : "One of Europe's most poisonous plants, a celery-leaved umbellifer of wet ground. Not confirmed as established in New Zealand — included because any streamside umbellifer deserves this level of suspicion.",
+    "warnings" : [
+      "Death can follow within hours of eating the root. Handle nothing in a watercress stream you have not identified leaf by leaf.",
+      "Whether this species is established in New Zealand is not settled. The caution stands either way."
     ]
   }
 ]
