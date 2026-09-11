@@ -42,12 +42,6 @@ final class CatalogueStore {
         fileURL.map(PhotoAudit.directory(forCatalogueAt:))
     }
 
-    /// Filesystem checks the pure model can't do: missing files, oversized files, orphans.
-    var photoReport: PhotoAudit.Report? {
-        guard let photoDirectory else { return nil }
-        return PhotoAudit.audit(species: species, photoDirectory: photoDirectory)
-    }
-
     func load() {
         guard let fileURL else {
             status = .failed(

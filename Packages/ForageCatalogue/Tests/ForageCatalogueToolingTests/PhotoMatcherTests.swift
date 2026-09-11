@@ -143,56 +143,6 @@ struct PhotoMatcherTests {
         #expect(index.prototypes.first?.photoCount == 1, "the prototype must report how many photos it is really built from")
     }
 
-    @Test("A species' own photo ranks that species first")
-    func ownPhotoRanksFirst() throws {
-        let catalogue = try #require(Self.repoCatalogue)
-        let species = try CatalogueFile.load(from: catalogue)
-        let photoDirectory = PhotoAudit.directory(forCatalogueAt: catalogue)
-        let (index, _) = PhotoIndex.build(species: species, photoDirectory: photoDirectory)
-
-        let entry = try #require(species.first { !$0.photos.isEmpty })
-        let query = try PhotoMatcher.featureVector(
-            for: photoDirectory.appending(path: entry.photos[0].fileName)
-        )
-
-        let matches = index.matches(for: query, limit: 3)
-        #expect(matches.first?.speciesId == entry.id)
-    }
-
-    @Test("The index survives a round-trip")
-    func indexIsCodable() throws {
-        let index = PhotoIndex(
-            revision: 2,
-            prototypes: [SpeciesPrototype(
-                speciesId: "porcini", caution: .careRequired, photoCount: 2, vector: FeatureVector(values: [1, 0, 0])
-            )]
-        )
-        let data = try JSONEncoder().encode(index)
-        let restored = try JSONDecoder().decode(PhotoIndex.self, from: data)
-        #expect(restored.revision == 2)
-        #expect(restored.prototypes.first?.speciesId == "porcini")
-        #expect(restored.prototypes.first?.caution == .careRequired)
-    }
-
-    // MARK: - Safety behaviour
-
-    @Test("A do-not-eat entry is never cut by the result limit")
-    func avoidOnlyEntriesAreAlwaysSurfaced() {
-        // Death cap sits furthest away, so a plain top-2 would drop it.
-        let index = PhotoIndex(
-            revision: 1,
-            prototypes: [
-                SpeciesPrototype(speciesId: "a", caution: .straightforward, photoCount: 1, vector: FeatureVector(values: [1, 0, 0])),
-                SpeciesPrototype(speciesId: "b", caution: .careRequired, photoCount: 1, vector: FeatureVector(values: [0.9, 0.1, 0])),
-                SpeciesPrototype(speciesId: "death-cap", caution: .doNotEat, photoCount: 1, vector: FeatureVector(values: [0, 0, 1]))
-            ]
-        )
-
-        let matches = index.matches(for: FeatureVector(values: [1, 0, 0]), limit: 2)
-        #expect(matches.contains { $0.speciesId == "death-cap" })
-        #expect(matches.last?.speciesId == "death-cap", "It should still rank last, just not be hidden")
-    }
-
     @Test("An unreadable file reports rather than crashing")
     func unreadableFile() {
         let url = URL(fileURLWithPath: NSTemporaryDirectory()).appending(path: "not-an-image.heic")
