@@ -1012,7 +1012,14 @@
     ],
     "preparation" : "Cook before eating. Brush clean rather than wash, slice, and check the stem for maggots. Sauté in butter, or slice thinly and dry for stock — the flavour concentrates.",
     "recipes" : [
-
+      {
+        "method" : "Brush the caps clean — do not wash them, they drink water. Slice thickly, about the width of a finger. Melt a good knob of butter in a wide pan until it foams, add the slices in one layer and leave them alone until the undersides are deep brown, then turn. Salt only at the end, or they weep. Finish with a squeeze of lemon and a little chopped parsley, pile onto thick toast rubbed with garlic, and eat immediately. Two medium caps feed one person who has had a good day.",
+        "title" : "Porcini on toast"
+      },
+      {
+        "method" : "The way to keep a glut. Slice caps and stems 5 mm thick and lay them on a rack or a tea towel in a warm, airy spot — a dehydrator at 45 °C, or an oven on its lowest setting with the door ajar, takes six to eight hours. They are done when they snap rather than bend. Store in a jar with a tight lid; the smell will be stronger than the fresh mushroom ever was. To use, soak a handful in warm water for twenty minutes, lift the pieces out, and pour the soaking liquid through a paper filter to catch the grit — that liquid is the best part, and goes into risotto, soup or gravy.",
+        "title" : "Dried porcini and their stock"
+      }
     ],
     "scientificName" : "Boletus edulis",
     "sources" : [
