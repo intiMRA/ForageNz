@@ -4,7 +4,7 @@ import SwiftUI
 // MARK: - Models
 
 /// Everything a list row shows. A value, so it can be built and checked without a view.
-struct ListingRowModel: Equatable {
+nonisolated struct ListingRowModel: Equatable {
     let speciesID: SpeciesID
     let commonName: String
     let scientificName: String
@@ -16,7 +16,7 @@ struct ListingRowModel: Equatable {
 }
 
 /// One "can be confused with" card, including where tapping it goes.
-struct LookalikeCardModel: Equatable, Identifiable {
+nonisolated struct LookalikeCardModel: Equatable, Identifiable {
     let destination: SpeciesID
     let name: String
     let scientificName: String?
@@ -38,7 +38,7 @@ struct LookalikeCardModel: Equatable, Identifiable {
 }
 
 /// The detail page: the entry itself plus its lookalike cards already resolved to destinations.
-struct InfoPageModel: Equatable {
+nonisolated struct InfoPageModel: Equatable {
     let species: ForageSpecies
     let lookalikeCards: [LookalikeCardModel]
 }
@@ -82,8 +82,7 @@ struct CatalogueSpeciesModelFactory: SpeciesModelFactory {
             caution: species.caution,
             categorySymbolName: species.category.symbolName,
             seasonDescription: species.seasonDescription,
-            // A do-not-eat entry is itself the danger; the badge is for edibles with a killer double.
-            hasDeadlyLookalike: species.highestLookalikeRisk == .deadly && species.caution != .doNotEat
+            hasDeadlyLookalike: species.hasDeadlyLookalikeAsEdible
         )
     }
 

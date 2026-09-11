@@ -85,8 +85,11 @@ struct LandStatusMapTests {
          "flags": { "conservation": 2, "marineReserve": 1 }}
         """.utf8).write(to: metadata)
 
-        #expect(throws: LandStatusMap.Failure.self) {
+        let thrown = #expect(throws: LandStatusMap.Failure.self) {
             try LandStatusMap(rasterURL: raster, metadataURL: metadata)
+        }
+        guard case .flagMismatch = thrown else {
+            Issue.record("expected .flagMismatch, got \(String(describing: thrown))"); return
         }
     }
 

@@ -8,9 +8,12 @@ from __future__ import annotations
 
 import json
 import ssl
+import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections.abc import Callable, Iterator
 from enum import StrEnum
 from pathlib import Path
 from typing import Any
@@ -90,6 +93,44 @@ def results_of(url: Source | str, params: dict[str, object]) -> list[dict[str, A
     payload = get_json(url, params)
     results = payload.get("results")
     return results if isinstance(results, list) else []
+
+
+def licensed_photos(
+    observations: list[dict[str, Any]],
+    directory: Path,
+    species_id: str,
+    wanted: int,
+    size: str,
+    downloader: Callable[[str, Path], bool] | None = None,
+) -> Iterator[tuple[Path, Licence, dict[str, Any], dict[str, Any]]]:
+    """Download up to `wanted` acceptably licensed photos from iNaturalist observations.
+
+    One loop for both the catalogue stager and the evaluation fetcher, so they cannot drift
+    on what counts as licensed or how a photo URL is rewritten. Yields (path, licence, photo,
+    observation) for each file written; skips photos without an acceptable licence and reports
+    failed downloads to stderr.
+    """
+    fetch = downloader or download
+    count = 0
+    for observation in observations:
+        for photo in observation.get("photos") or []:
+            if count >= wanted:
+                return
+            try:
+                licence = Licence(photo.get("license_code"))
+            except ValueError:
+                continue
+            # `square.` is a thumbnail; the caller picks the size it needs.
+            url = str(photo.get("url") or "").replace("square.", f"{size}.")
+            if not url:
+                continue
+            path = directory / f"{species_id}-{count + 1}.jpg"
+            if not fetch(url, path):
+                print(f"    download failed: {url}", file=sys.stderr)
+                continue
+            count += 1
+            yield path, licence, photo, observation
+            time.sleep(COURTESY_DELAY)
 
 
 def download(url: str, destination: Path) -> bool:

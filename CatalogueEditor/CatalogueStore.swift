@@ -193,12 +193,10 @@ final class CatalogueStore {
 
 /// Verification priority. Lethal claims first, because those are the entries where an
 /// unchecked sentence can kill someone.
-enum ReviewTier: Int, CaseIterable, Comparable, Identifiable {
+enum ReviewTier: Int, CaseIterable, Comparable {
     case lethalClaims
     case careRequired
     case straightforward
-
-    var id: Int { rawValue }
 
     var title: String {
         switch self {
@@ -213,7 +211,7 @@ enum ReviewTier: Int, CaseIterable, Comparable, Identifiable {
 
 extension ForageSpecies {
     var reviewTier: ReviewTier {
-        if caution == .doNotEat || highestLookalikeRisk == .deadly { return .lethalClaims }
+        if caution == .doNotEat || hasDeadlyLookalikeAsEdible { return .lethalClaims }
         if caution == .careRequired { return .careRequired }
         return .straightforward
     }

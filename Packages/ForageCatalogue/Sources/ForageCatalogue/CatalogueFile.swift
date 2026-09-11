@@ -4,7 +4,7 @@ import Foundation
 ///
 /// The iOS app loads the copy bundled with it; the macOS editor edits the file in the repo.
 /// Both go through `ForageSpecies`, so the editor cannot write JSON the app can't read.
-public enum CatalogueFile {
+public nonisolated enum CatalogueFile {
     public enum Failure: Error, Sendable, Equatable {
         case unreadable(String)
         case undecodable(String)

@@ -26,7 +26,7 @@ public nonisolated struct SpeciesPhoto: Codable, Sendable, Hashable, Identifiabl
     }
 }
 
-public enum CataloguePhotos {
+public nonisolated enum CataloguePhotos {
     /// Directory holding the shipped photos, relative to the repo root.
     public static let directoryName = "Photos"
 

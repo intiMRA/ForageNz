@@ -142,6 +142,12 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         lookalikes.map(\.risk).max()
     }
 
+    /// The one rule behind every "deadly lookalike" badge and banner: an edible whose double
+    /// can kill. A do-not-eat entry is the danger itself, so it does not get the badge.
+    public var hasDeadlyLookalikeAsEdible: Bool {
+        highestLookalikeRisk == .deadly && caution != .doNotEat
+    }
+
     /// A copy with one field replaced. The model is immutable by design, so the editor
     /// rebuilds an entry rather than mutating it.
     public func with(

@@ -73,6 +73,8 @@ public extension ForageSpecies {
             blocking(.id, "Needs an identifier.")
         } else if id.contains(where: { !($0.isLowercase && $0.isLetter) && !$0.isNumber && $0 != "-" }) {
             blocking(.id, "Use lowercase letters, digits and hyphens only.")
+        } else if id.first?.isNumber == true {
+            blocking(.id, "Start with a letter — the id becomes a Swift enum case.")
         }
 
         if commonName.trimmed.isEmpty { blocking(.commonName, "Needs a common name.") }
@@ -83,6 +85,9 @@ public extension ForageSpecies {
 
         for (index, lookalike) in lookalikes.enumerated() {
             if lookalike.name.trimmed.isEmpty { blocking(.lookalikes, at: index, "Lookalike needs a name.") }
+            if lookalike.entry.rawValue == id {
+                blocking(.lookalikes, at: index, "A species cannot be its own lookalike — pick the page this card should open.")
+            }
             if lookalike.howToTell.trimmed.isEmpty {
                 blocking(.lookalikes, at: index, "Needs a specific, field-checkable way to tell them apart.")
             }

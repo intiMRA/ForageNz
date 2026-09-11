@@ -41,13 +41,11 @@ public nonisolated struct FeatureVector: Codable, Sendable, Hashable {
 /// Carries its own caution so a match can never be presented without one. An earlier design
 /// kept cautions in a parallel dictionary and defaulted a missing entry to `careRequired` —
 /// which would have let a do-not-eat species lose the one protection the ranking gives it.
-public nonisolated struct SpeciesPrototype: Codable, Sendable, Hashable, Identifiable {
+public nonisolated struct SpeciesPrototype: Codable, Sendable, Hashable {
     public let speciesId: String
     public let caution: CautionLevel
     public let photoCount: Int
     public let vector: FeatureVector
-
-    public var id: String { speciesId }
 
     public init(speciesId: String, caution: CautionLevel, photoCount: Int, vector: FeatureVector) {
         self.speciesId = speciesId
@@ -58,15 +56,13 @@ public nonisolated struct SpeciesPrototype: Codable, Sendable, Hashable, Identif
 }
 
 /// A close candidate, with the catalogue context needed to present it safely.
-public nonisolated struct PhotoMatch: Sendable, Hashable, Identifiable {
+public nonisolated struct PhotoMatch: Sendable, Hashable {
     public let speciesId: String
     public let distance: Float
     public let caution: CautionLevel
 
     /// True when this entry exists only to be recognised and avoided.
     public var isAvoidOnly: Bool { caution == .doNotEat }
-
-    public var id: String { speciesId }
 
     public init(speciesId: String, distance: Float, caution: CautionLevel) {
         self.speciesId = speciesId

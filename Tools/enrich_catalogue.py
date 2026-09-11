@@ -44,8 +44,8 @@ from sources import (
     Licence,
     Source,
     SourceError,
-    download,
     get_json,
+    licensed_photos,
     results_of,
 )
 
@@ -370,33 +370,17 @@ def stage_photos(species_id: str, taxon_id: int, directory: Path, wanted: int) -
         print(f"    photo search failed: {error}", file=sys.stderr)
         return staged
 
-    for observation in results:
-        for photo in observation.get("photos") or []:
-            if len(staged) >= wanted:
-                return staged
-            try:
-                licence = Licence(photo.get("license_code"))
-            except ValueError:
-                continue
-
-            url = str(photo.get("url") or "").replace("square.", "large.")
-            if not url:
-                continue
-
-            path = directory / f"{species_id}-{len(staged) + 1}.jpg"
-            if not download(url, path):
-                print(f"    download failed: {url}", file=sys.stderr)
-                continue
-
-            staged.append(
-                StagedPhoto(
-                    file=path.name,
-                    licence=licence,
-                    credit=str(photo.get("attribution") or ""),
-                    source_url=observation.get("uri"),
-                )
+    for path, licence, photo, observation in licensed_photos(
+        results, directory, species_id, wanted, size="large"
+    ):
+        staged.append(
+            StagedPhoto(
+                file=path.name,
+                licence=licence,
+                credit=str(photo.get("attribution") or ""),
+                source_url=observation.get("uri"),
             )
-            time.sleep(COURTESY_DELAY)
+        )
     return staged
 
 

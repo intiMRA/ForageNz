@@ -65,6 +65,19 @@ struct SpeciesValidationTests {
         #expect(labels(species, severity: .blocking).contains("lookalikes[0]"))
     }
 
+    @Test("A species cannot name itself as a lookalike")
+    func selfLookalikeBlocks() {
+        let selfie = Lookalike(name: "Itself", risk: .toxic, howToTell: "Look harder.", entry: .hemlock)
+        let species = makeSpecies(id: "hemlock", caution: .careRequired, lookalikes: [selfie])
+        #expect(labels(species, severity: .blocking).contains("lookalikes[0]"))
+        #expect(makeSpecies(id: "wild-fennel", caution: .careRequired, lookalikes: [selfie]).isPublishable)
+    }
+
+    @Test("Identifiers cannot start with a digit — they become enum cases")
+    func identifierNoLeadingDigit() {
+        #expect(fields(makeSpecies(id: "2-leaf"), severity: .blocking).contains(.id))
+    }
+
     @Test("A deadly lookalike cannot sit on a straightforward entry")
     func deadlyLookalikeRaisesCaution() {
         let deadly = Lookalike(name: "Hemlock", risk: .deadly, howToTell: "Purple-blotched stem.", entry: .hemlock)

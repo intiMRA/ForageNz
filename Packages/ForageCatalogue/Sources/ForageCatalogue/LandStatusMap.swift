@@ -3,7 +3,7 @@ import Foundation
 import ImageIO
 
 /// What the law says about taking things where you are standing.
-public struct LandStatus: OptionSet, Sendable, Hashable {
+public nonisolated struct LandStatus: OptionSet, Sendable, Hashable {
     public let rawValue: UInt8
 
     public init(rawValue: UInt8) {
@@ -23,7 +23,7 @@ public struct LandStatus: OptionSet, Sendable, Hashable {
 /// determination, and every caller must present it that way. Boundaries are approximate and
 /// holes inside conservation land are not modelled, so it errs towards saying a permit may
 /// be needed, which is the safe direction.
-public struct LandStatusMap: Sendable {
+public nonisolated struct LandStatusMap: Sendable {
     /// Base name of the two bundled files, `<name>.png` and `<name>.json`.
     public static let shippedResourceName = "land-status"
 

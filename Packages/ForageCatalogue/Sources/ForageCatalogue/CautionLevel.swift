@@ -4,7 +4,7 @@ import Foundation
 ///
 /// This is deliberately the most prominent attribute in the UI. The app never asserts
 /// that a plant in front of the user *is* a given species — it describes what to check.
-public nonisolated enum CautionLevel: String, Codable, Sendable {
+public nonisolated enum CautionLevel: String, Codable, Sendable, CaseIterable {
     /// Distinctive enough that a careful beginner can identify it, and harmless if they get it wrong.
     case straightforward
     /// Has toxic lookalikes, or needs processing/cooking before it is safe.
@@ -38,7 +38,7 @@ public nonisolated enum CautionLevel: String, Codable, Sendable {
 }
 
 /// How bad it is to confuse a species with one of its lookalikes.
-public nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable {
+public nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable, CaseIterable {
     case deadly
     /// Will make you seriously unwell.
     case toxic
@@ -66,7 +66,7 @@ public nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable {
 }
 
 /// Something a species can be mistaken for, and the check that separates them.
-public nonisolated struct Lookalike: Codable, Sendable, Hashable, Identifiable {
+public nonisolated struct Lookalike: Codable, Sendable, Hashable {
     public let name: String
     public let scientificName: String?
     public let risk: LookalikeRisk
@@ -75,8 +75,6 @@ public nonisolated struct Lookalike: Codable, Sendable, Hashable, Identifiable {
     /// The catalogue page this card opens. Typed, so a lookalike can only name a species the
     /// catalogue has: an unknown id fails to decode, and the build fails with it.
     public let entry: SpeciesID
-
-    public var id: String { name }
 
     public init(name: String, scientificName: String? = nil, risk: LookalikeRisk, howToTell: String, entry: SpeciesID) {
         self.name = name

@@ -5,7 +5,7 @@ import OSLog
 
 /// Answers "what are the rules where I am standing" from a bundled map, with the radio off.
 ///
-/// Everything it reports is advisory. The map is a ~280 m raster generalised from DOC's
+/// Everything it reports is advisory. The map is a roughly 300 m raster generalised from DOC's
 /// published boundaries, so it exists to tell a forager when to stop and check, not to
 /// decide anything. The view must never phrase a reading as permission.
 @Observable
@@ -28,7 +28,7 @@ final class WhereYouAreStore {
     private let repository: any LandStatusRepository
     private let locations: any LocationProvider
 
-    private static let logger = Logger(subsystem: "nz.co.intialbuquerque.ForageNZ", category: "land-status")
+    private static let logger = Logger(subsystem: Logging.subsystem, category: "land-status")
 
     init(
         repository: any LandStatusRepository = BundledLandStatusRepository(),

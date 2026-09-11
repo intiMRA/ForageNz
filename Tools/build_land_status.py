@@ -36,7 +36,7 @@ OUTPUT_METADATA = Path("ForageNZ/Catalogue/land-status.json")
 
 #: One degree of latitude, roughly. Only used to describe the grid to a human.
 METRES_PER_DEGREE = 111_000
-#: Past this the bundle grows noticeably; the app also embeds ~12 MB of photos.
+#: Past this the bundle grows noticeably next to the photo budget in `CataloguePhotos`.
 LARGE_ASSET_BYTES = 2_000_000
 
 DOC_SERVICES = "https://services1.arcgis.com/3JjYDyG3oajxU6HO/ArcGIS/rest/services"

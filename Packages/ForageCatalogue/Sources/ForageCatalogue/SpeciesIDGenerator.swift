@@ -34,8 +34,18 @@ public enum SpeciesIDGenerator {
     public static func caseName(for id: String) -> String {
         let parts = id.split(separator: "-")
         guard let first = parts.first else { return id }
-        return String(first) + parts.dropFirst().map { $0.prefix(1).uppercased() + $0.dropFirst() }.joined()
+        let name = String(first) + parts.dropFirst().map { $0.prefix(1).uppercased() + $0.dropFirst() }.joined()
+        return swiftKeywords.contains(name) ? "`\(name)`" : name
     }
+
+    /// An id that happens to be a keyword ("default", "class") still has to compile.
+    private static let swiftKeywords: Set<String> = [
+        "associatedtype", "class", "deinit", "enum", "extension", "func", "import", "init", "inout",
+        "internal", "let", "operator", "private", "protocol", "public", "static", "struct", "subscript",
+        "typealias", "var", "break", "case", "continue", "default", "defer", "do", "else", "fallthrough",
+        "for", "guard", "if", "in", "repeat", "return", "switch", "where", "while", "as", "catch", "false",
+        "is", "nil", "rethrows", "super", "self", "throw", "throws", "true", "try", "none", "some", "any"
+    ]
 
     /// The generated file's location for a catalogue at `catalogueURL`, or `nil` if the
     /// catalogue is not inside the repo layout this expects.
