@@ -161,12 +161,14 @@
     "identification" : "Small oval opposite leaves on a weak sprawling stem. The giveaway: a single line of fine hairs running along one side of the stem, switching sides at each node. Tiny white flowers with five deeply split petals that look like ten.",
     "lookalikes" : [
       {
+        "entry" : "petty-spurge",
         "howToTell" : "Snap a stem: petty spurge bleeds white milky latex, chickweed does not. The latex is a severe irritant to skin and eyes. Petty spurge grows in exactly the same garden beds.",
         "name" : "Petty spurge",
         "risk" : "toxic",
         "scientificName" : "Euphorbia peplus"
       },
       {
+        "entry" : "scarlet-pimpernel",
         "howToTell" : "Square stem and salmon-orange flowers, versus chickweed's round stem and white flowers.",
         "name" : "Scarlet pimpernel",
         "risk" : "toxic",
@@ -227,6 +229,7 @@
     "identification" : "Flat rosette of jagged backward-pointing lobed leaves. A single flower per hollow, leafless stem. Every part bleeds white milky sap. No branching stem — this is the key check.",
     "lookalikes" : [
       {
+        "entry" : "catsear",
         "howToTell" : "Hairy leaves and a branched, solid flower stem carrying several flowers. Edible but coarse — mistaking it is harmless.",
         "name" : "Catsear / flatweed",
         "risk" : "unpalatable",
@@ -288,12 +291,14 @@
     "identification" : "Smooth greenish, yellowish or bronze cap, often with a faint radial sheen. Gills WHITE and free of the stem at every age. White stem with a skirt-like ring, and — the critical feature — a membranous cup (volva) around the swollen base, frequently hidden below the leaf litter. Spore print white.",
     "lookalikes" : [
       {
+        "entry" : "field-mushroom",
         "howToTell" : "Field mushroom has pink-then-brown gills and no volva. Death cap has white gills and a volva. Check both, on every mushroom, every time.",
         "name" : "Field mushroom",
         "risk" : "deadly",
         "scientificName" : "Agaricus campestris"
       },
       {
+        "entry" : "straw-mushroom",
         "howToTell" : "A frequent and fatal confusion for people used to gathering Volvariella overseas — it also has a volva. Death cap additionally has a ring on the stem and a white spore print.",
         "name" : "Straw mushroom / paddy straw",
         "risk" : "deadly",
@@ -485,12 +490,14 @@
     "identification" : "White cap, sometimes with fine scales. Gills start pink and mature to chocolate brown — never white at maturity. Stem is short with a thin ring and NO sac or bulb at the base. Flesh may bruise faintly pinkish, never bright yellow. Pleasant mushroom smell.",
     "lookalikes" : [
       {
+        "entry" : "death-cap",
         "howToTell" : "Death cap gills stay WHITE at every age, and the stem base sits in a membranous sac (volva) that is often buried — you must dig up the whole base to see it. It grows under oak and other introduced broadleaf trees, not in open pasture. Half a cap can kill an adult. Always dig the whole mushroom and always check gill colour.",
         "name" : "Death cap",
         "risk" : "deadly",
         "scientificName" : "Amanita phalloides"
       },
       {
+        "entry" : "yellow-stainer",
         "howToTell" : "Cut or scratch the stem base: yellow stainer flashes bright chrome yellow within seconds and smells of ink, iodine or phenol. Field mushroom does not. This is the most common mushroom poisoning in NZ.",
         "name" : "Yellow stainer",
         "risk" : "toxic",
@@ -902,6 +909,7 @@
     "identification" : "Finely divided lacy fronds, with tiny bulbils (plantlets) growing on the upper surface of mature fronds — the 'chickens' that give it its name. Harvest only the tightly curled, still-unfurling koru at the tip.",
     "lookalikes" : [
       {
+        "entry" : "bracken",
         "howToTell" : "Bracken fiddleheads are coarse, hairy and rise singly from the ground on a tough stem, out in the open on scrubland — pikopiko is lacy, forest-dwelling and grows from a crown. Bracken contains ptaquiloside, a confirmed carcinogen, and should not be eaten despite its traditional use.",
         "name" : "Bracken fern",
         "risk" : "toxic",
@@ -961,12 +969,14 @@
     "identification" : "Cap 8–30 cm, tan to chestnut brown, smooth and slightly tacky when wet, often with a fine pale line at the rim. Underneath is a sponge of tiny pores, never gills: white and firm when young, ageing to yellow then olive. The stem is thick and club-shaped, pale brown, with a fine white net (reticulation) at least over the top third — look closely, it is subtle. Flesh is white and stays white when cut or bruised; any blueing, pinking or reddening rules porcini out. Taste a crumb of raw cap and spit it out: it should be mild and nutty, never bitter.",
     "lookalikes" : [
       {
+        "entry" : "bitter-bolete",
         "howToTell" : "Pores turn pink with age where porcini's turn yellow-olive, the stem net is dark brown rather than white, and a crumb of raw cap is intensely bitter. Not dangerous, but one ruins the whole pan.",
         "name" : "Bitter bolete",
         "risk" : "unpalatable",
         "scientificName" : "Tylopilus felleus"
       },
       {
+        "entry" : "red-pored-boletes",
         "howToTell" : "Look at the pore surface: porcini's is white to olive. Any bolete with red or orange pores, or whose flesh turns blue when cut, is not porcini — several of these cause severe vomiting. Cut every specimen and watch the flesh for a minute.",
         "name" : "Red- or orange-pored boletes",
         "risk" : "toxic",
@@ -1025,6 +1035,7 @@
     "identification" : "Soft-wooded shrub to 3 m with large deeply lobed leaves and showy purple flowers with yellow centres. Fruit is an oval berry ripening from green through orange to a soft deep orange.",
     "lookalikes" : [
       {
+        "entry" : "black-nightshade",
         "howToTell" : "Much smaller plant with small white flowers and small black berries. The unripe green berries are the dangerous part. Poroporo has large purple flowers and large orange fruit.",
         "name" : "Black nightshade",
         "risk" : "toxic",
@@ -1097,6 +1108,7 @@
     "identification" : "Rosette of deeply lobed leaves with soft prickly margins, clasping the stem. Stems and leaves exude a white milky sap when broken. Small yellow dandelion-like flowers on a branched stem. The native S. kirkii is fleshier and coastal.",
     "lookalikes" : [
       {
+        "entry" : "prickly-sow-thistle",
         "howToTell" : "Stiffer, genuinely spiny leaf margins with rounded clasping lobes. Harmless, just unpleasant to eat.",
         "name" : "Prickly sow thistle",
         "risk" : "unpalatable",
@@ -1201,6 +1213,7 @@
     "identification" : "Orange cap with darker concentric rings, often depressed in the centre. Orange gills that bruise dull green. The confirming test: cut the flesh and it bleeds bright carrot-orange latex, and the cut surface slowly stains green. Brittle, not fibrous, flesh.",
     "lookalikes" : [
       {
+        "entry" : "other-milk-caps",
         "howToTell" : "Other milk caps bleed white or cream latex, not orange, and are acrid. Orange latex plus green staining plus pine is the reliable combination.",
         "name" : "Other Lactarius species",
         "risk" : "unpalatable",
@@ -1273,6 +1286,7 @@
     "identification" : "Low sprawling plant with glossy, deeply divided compound leaves. Strong true celery smell when crushed — this is the confirming check. Tiny white flowers in small umbels.",
     "lookalikes" : [
       {
+        "entry" : "hemlock",
         "howToTell" : "Hemlock is a tall (to 2 m) upright plant with purple-blotched hollow stems and a foul mousy smell — sea celery is low, sprawling, coastal, and smells strongly of celery. Both are in the carrot family, so confirm by smell every time.",
         "name" : "Hemlock",
         "risk" : "deadly",
@@ -1440,6 +1454,7 @@
     "identification" : "Opposite, coarsely toothed, heart-shaped leaves on a square stem, covered in stinging hairs. Small green tassel-like flower clusters at the leaf joints. Rarely above waist height.",
     "lookalikes" : [
       {
+        "entry" : "ongaonga",
         "howToTell" : "A native shrub that grows to 3 m with woody stems and pale green leaves carrying stinging spines up to 6 mm long — far longer and more visible than common nettle's fine hairs. Its sting is a medical emergency, not a nuisance: it has caused at least one recorded human death and regularly kills dogs and horses. If the plant is woody, taller than you, and the spines are clearly visible from a metre away, walk away.",
         "name" : "Ongaonga / tree nettle",
         "risk" : "deadly",
@@ -1481,6 +1496,7 @@
     "identification" : "Long narrow leaves with sharply toothed edges. Nuts sit inside a dense casing covered in fine, sharp, needle-like spines — like a sea urchin — usually two or three flattened glossy brown nuts per case, each with a pointed tip and a tassel.",
     "lookalikes" : [
       {
+        "entry" : "horse-chestnut",
         "howToTell" : "Horse chestnut has palmate hand-shaped leaves and a thick green case with sparse, blunt, widely spaced knobs, holding a single round nut with no point or tassel. Sweet chestnut has long simple toothed leaves and a densely spiny case with several flattened, pointed nuts. Horse chestnut contains aesculin and causes vomiting.",
         "name" : "Horse chestnut / conker",
         "risk" : "toxic",
@@ -1538,6 +1554,7 @@
     "identification" : "Shrub or small tree with arching stems and glossy, strongly veined opposite leaves. Long drooping strings of small flowers followed by shiny purple-black fruit, each holding several small seeds. The fleshy purple 'petals' surround the seeds.",
     "lookalikes" : [
       {
+        "entry" : "elderflower",
         "howToTell" : "This is the confusion that kills. Elder has compound leaves of several toothed leaflets and flat-topped flower sprays; tutu has simple opposite leaves and long drooping flower strings. If you are unsure which you are looking at, harvest neither.",
         "name" : "Elderberry",
         "risk" : "deadly",
@@ -1659,6 +1676,7 @@
     "identification" : "Rounded, glossy compound leaves with a large terminal leaflet. Hollow stems that root at the nodes. Small four-petalled white flowers. Sharp peppery taste.",
     "lookalikes" : [
       {
+        "entry" : "water-celery",
         "howToTell" : "Leaflets are toothed and celery-scented rather than rounded and peppery. Grows in the same drains.",
         "name" : "Water celery / fool's watercress",
         "risk" : "unpalatable",
@@ -1723,12 +1741,14 @@
     "identification" : "Tall (to 2 m) with feathery thread-fine leaves and flat-topped yellow flower umbels. Solid, ridged, unspotted green stem. Crushing any part releases a strong sweet aniseed smell — this is the only check that matters.",
     "lookalikes" : [
       {
+        "entry" : "hemlock",
         "howToTell" : "Hemlock has purple or reddish blotches on a smooth hollow stem, white flowers, and a rank mousy smell. Fennel has an unspotted solid ridged stem, yellow flowers, and smells overwhelmingly of aniseed. They grow side by side on the same verges. If it does not smell of aniseed, it is not fennel.",
         "name" : "Hemlock",
         "risk" : "deadly",
         "scientificName" : "Conium maculatum"
       },
       {
+        "entry" : "hemlock-water-dropwort",
         "howToTell" : "Grows in wet ground and ditches, with celery-like leaves and white flowers. Among the most poisonous plants in the country. Again: no aniseed smell.",
         "name" : "Hemlock water dropwort",
         "risk" : "deadly",
@@ -1875,18 +1895,21 @@
     "identification" : "A hairless plant 1–2.5 m tall. The stem is smooth, hollow and ridged, and marked with purple-red blotches and streaks, heaviest near the base — no edible umbellifer in this guide has them. Leaves are finely divided, glossy and fern-like, like an oversized parsley. Flowers are small and white in loose, flat-topped umbels in late spring and summer. Crush a leaf: the smell is musty and mousy, nothing like aniseed or celery.",
     "lookalikes" : [
       {
+        "entry" : "wild-fennel",
         "howToTell" : "Fennel smells strongly of aniseed, has thread-fine leaves and yellow flowers, and a stem with no blotches. Hemlock smells musty, has broader parsley-like leaflets and white flowers, and a blotched stem. Check all three on every plant.",
         "name" : "Wild fennel",
         "risk" : "deadly",
         "scientificName" : "Foeniculum vulgare"
       },
       {
+        "entry" : "sea-celery",
         "howToTell" : "Sea celery is low and sprawling with glossy, broad, celery-like leaflets and a celery smell. Hemlock stands tall with finely cut leaves and a blotched stem.",
         "name" : "Sea celery",
         "risk" : "deadly",
         "scientificName" : "Apium prostratum"
       },
       {
+        "entry" : "wild-carrot",
         "howToTell" : "Wild carrot has a hairy stem with no purple blotches and smells of carrot when crushed. Hemlock's stem is hairless and blotched.",
         "name" : "Wild carrot",
         "risk" : "deadly",
@@ -1949,6 +1972,7 @@
     "identification" : "A shrub 2–3 m tall with woody stems — you look up at it, not down. Leaves are pale green, triangular and coarsely toothed, and both the leaves and stems carry stiff white spines up to 6 mm long that are clearly visible from a metre away. Common nettle is soft, herbaceous, knee-high and has fine hairs you have to look for.",
     "lookalikes" : [
       {
+        "entry" : "nettle",
         "howToTell" : "Common nettle is a soft herb below waist height with fine hairs. Ongaonga is a woody shrub taller than you with spines you can see. If it is woody, walk away.",
         "name" : "Common nettle",
         "risk" : "deadly",
@@ -2017,6 +2041,7 @@
     "identification" : "A white Agaricus, the young cap often boxy or flat-topped rather than domed, sometimes greying with age. Gills pink, turning chocolate-brown. The test: cut or scratch the very base of the stem and watch for a few seconds — it turns bright chrome yellow almost immediately. The smell is phenolic, like ink or hospital disinfectant, and gets stronger when cooked. Field mushroom stays white or blushes faintly pink and smells of mushroom.",
     "lookalikes" : [
       {
+        "entry" : "field-mushroom",
         "howToTell" : "Cut the stem base of every mushroom in the basket. Yellow within seconds and an inky smell is a yellow stainer. Field mushroom stays white and smells of mushroom.",
         "name" : "Field mushroom",
         "risk" : "toxic",
@@ -2088,6 +2113,7 @@
     "identification" : "Strap-like leaves and a flower stalk with three distinct edges — roll it between your fingers and you feel the triangle. Nodding white bell flowers, each petal with a fine green stripe down the middle, in late winter and spring. Crush any part: a strong onion smell. No smell, not onion weed.",
     "lookalikes" : [
       {
+        "entry" : "snowflake",
         "howToTell" : "Similar strap leaves and white bells, but no onion smell at all, a round rather than triangular stalk, and the bells lack the green centre stripe. If it does not smell of onion, leave it.",
         "name" : "Snowflake and daffodil leaves",
         "risk" : "toxic",
@@ -2151,6 +2177,7 @@
     "identification" : "Upright, 30 cm to 1.5 m, with a stem often streaked red or purple. Leaves are roughly diamond- or goosefoot-shaped with wavy teeth, and the young leaves and growing tips are coated in a white, mealy bloom that rubs off. Flowers are tiny, green and clustered, without petals.",
     "lookalikes" : [
       {
+        "entry" : "black-nightshade",
         "howToTell" : "No mealy coating; leaves are smooth and softly hairy. Later it shows white star-shaped flowers and green-then-black berries. Fat hen never has petals or berries.",
         "name" : "Black nightshade seedlings",
         "risk" : "toxic",
@@ -2529,6 +2556,7 @@
     "identification" : "A soft, upright weed 10–30 cm tall with smooth oval leaves and odd, cup-like green flowers with no petals at the top of the stem. The test is the sap: snap any stem and it bleeds white milky latex immediately. Chickweed does not.",
     "lookalikes" : [
       {
+        "entry" : "chickweed",
         "howToTell" : "Chickweed has a clear-sapped, round stem with a single line of hairs down one side and white star flowers. Spurge has milky sap and no petals. Snap a stem from every clump before picking.",
         "name" : "Chickweed",
         "risk" : "toxic",
@@ -2589,6 +2617,7 @@
     "identification" : "Sprawling stems that are square in cross-section, with paired oval leaves — similar in size and shape to chickweed's. The flowers give it away: five salmon-orange (occasionally blue) petals, open in sunshine and closed in dull weather. Chickweed's flowers are white and its stem is round.",
     "lookalikes" : [
       {
+        "entry" : "chickweed",
         "howToTell" : "Roll the stem: chickweed's is round, pimpernel's is square. Any orange flower means pimpernel.",
         "name" : "Chickweed",
         "risk" : "toxic",
@@ -2698,6 +2727,7 @@
     "identification" : "A tall coarse fern to 2 m with fronds divided three times into stiff, leathery, triangular blades on a strong dark stalk, forming dense stands rather than single plants. New shoots emerge singly from the ground as tightly coiled brown-hairy fists, unlike pikopiko's clusters of soft green koru on an existing plant.",
     "lookalikes" : [
       {
+        "entry" : "pikopiko",
         "howToTell" : "Pikopiko koru grow from the crown of an existing soft, drooping fern in shaded forest. Bracken shoots come straight up out of open ground, hairy and brown, near dense stands of stiff fronds.",
         "name" : "Pikopiko / hen and chicken fern",
         "risk" : "toxic",
@@ -2758,12 +2788,14 @@
     "identification" : "A soft annual 30–80 cm tall with oval, slightly wavy, dull green leaves that are smooth — never mealy. Small white five-pointed star flowers with a yellow centre, in little drooping clusters, then berries in clusters that ripen from green to dull black. Poroporo is a woody shrub with large purple flowers and orange berries.",
     "lookalikes" : [
       {
+        "entry" : "poroporo",
         "howToTell" : "Poroporo is a shrub with big purple flowers and orange ripe fruit. Black nightshade is a soft weed with small white flowers and black fruit.",
         "name" : "Poroporo",
         "risk" : "toxic",
         "scientificName" : "Solanum laciniatum"
       },
       {
+        "entry" : "fat-hen",
         "howToTell" : "Fat hen's young leaves carry a mealy white coating and it never has petals or berries. Nightshade leaves are smooth and it flowers white.",
         "name" : "Fat hen",
         "risk" : "toxic",
@@ -2878,6 +2910,7 @@
     "identification" : "A large tree with big compound leaves of five to seven leaflets spread like fingers from one stalk. Upright cones of white flowers in spring. The nuts sit one or two to a thick green husk with a few short, widely spaced spikes, and are large, glossy and rounded with one pale patch. Sweet chestnut husks are densely bristly like a hedgehog and hold two or three flattened nuts with a pointed tuft.",
     "lookalikes" : [
       {
+        "entry" : "sweet-chestnut",
         "howToTell" : "Look at the husk and the leaves. Sweet chestnut: needle-dense husk, nuts with a tassel, long single toothed leaves. Horse chestnut: sparse short spikes, smooth round nut, hand-shaped compound leaves.",
         "name" : "Sweet chestnut",
         "risk" : "toxic",
@@ -2938,6 +2971,7 @@
     "identification" : "Up to 1 m, with a stem that is distinctly hairy and never blotched. Leaves finely divided and feathery, smelling of carrot when crushed. Flat white umbels often with one tiny dark red flower at the very centre, and a ruff of forked green bracts beneath the umbel that hemlock lacks. Seed heads close up into a bird's-nest shape.",
     "lookalikes" : [
       {
+        "entry" : "hemlock",
         "howToTell" : "Hemlock's stem is smooth, hairless and blotched purple, and it smells musty. Wild carrot's stem is hairy, unblotched, and smells of carrot, with bracts under the umbel. Check every plant. If any doubt remains, leave it.",
         "name" : "Hemlock",
         "risk" : "deadly",
@@ -3002,6 +3036,7 @@
     "identification" : "Clumps of strap-shaped leaves and a round, hollow flower stalk with several nodding white bells, each petal tipped with a green spot. Crush a leaf: no onion smell at all. Onion weed has a triangular stalk, a green stripe down the whole petal, and smells strongly of onion.",
     "lookalikes" : [
       {
+        "entry" : "onion-weed",
         "howToTell" : "Smell first. Onion weed smells of onion and has a three-edged stalk. Snowflake smells of nothing and its stalk is round.",
         "name" : "Onion weed",
         "risk" : "toxic",
@@ -3061,6 +3096,7 @@
     "identification" : "A small grey-brown mushroom that emerges from a sac (volva) at the base, with white then pink-brown gills and no ring on the stem. The death cap shares the sac, but has white gills, a skirt-like ring high on the stem and a white spore print — and grows under oak, where straw mushrooms never do.",
     "lookalikes" : [
       {
+        "entry" : "death-cap",
         "howToTell" : "Death cap has white gills, a ring on the stem and grows under oak. If you learned mushrooms where straw mushrooms grow wild, assume every sac-based mushroom here is a death cap.",
         "name" : "Death cap",
         "risk" : "deadly",
@@ -3120,6 +3156,7 @@
     "identification" : "Cap tan to brown like porcini. The pores start white but turn distinctly pink with age, where porcini's go yellow-olive. The net on the stem is dark brown and coarse, not fine and white. Taste a crumb of raw cap and spit it out: intensely bitter. Flesh white, unchanging.",
     "lookalikes" : [
       {
+        "entry" : "porcini",
         "howToTell" : "Porcini: pores white to olive, fine white net, mild nutty taste. Bitter bolete: pores pink, dark coarse net, bitter.",
         "name" : "Porcini",
         "risk" : "unpalatable",
@@ -3179,6 +3216,7 @@
     "identification" : "Turn the mushroom over. Porcini's pore surface is white, yellow or olive. If it is red, orange or any warm colour, stop. Cut the cap in half and watch for a minute: if the flesh blues, stop. Some of these are edible after long cooking in other countries; none is worth the gamble in a field guide.",
     "lookalikes" : [
       {
+        "entry" : "porcini",
         "howToTell" : "Pore colour and a cut. White-to-olive pores and flesh that stays white is porcini territory; red or orange pores, or blueing, is not.",
         "name" : "Porcini",
         "risk" : "toxic",
@@ -3216,6 +3254,7 @@
     "identification" : "Cut or nick the gills of any milk cap and watch the milk. Saffron milk cap bleeds bright orange that slowly greens. Anything bleeding white, cream or watery milk is a different Lactarius — some peppery-hot, some emetic. Caps may be zoned like the saffron milk cap, so the cap alone tells you nothing.",
     "lookalikes" : [
       {
+        "entry" : "saffron-milk-cap",
         "howToTell" : "Orange milk that greens on standing is saffron milk cap. White or watery milk is not. Test every cap.",
         "name" : "Saffron milk cap",
         "risk" : "toxic",
@@ -3252,6 +3291,7 @@
     "identification" : "Sprawling, hollow, ridged stems rooting at the nodes, with paired, oval, lightly toothed leaflets that smell of celery or parsley when crushed. Small white umbels sit on short stalks opposite the leaves. Watercress smells peppery, has rounded leaflets and four-petalled white flowers in a cluster, not an umbel.",
     "lookalikes" : [
       {
+        "entry" : "watercress",
         "howToTell" : "Smell and flowers. Watercress is peppery with four-petalled flowers in a head; water celery smells of celery and flowers in small umbels.",
         "name" : "Watercress",
         "risk" : "toxic",
@@ -3312,12 +3352,14 @@
     "identification" : "Up to 1.5 m, with hairless, hollow, grooved stems and glossy leaves divided two or three times into broad, toothed, celery-like leaflets. White umbels in summer. The roots are pale, swollen and finger-like — the part most often mistaken for a vegetable. Smells of parsley or celery, never aniseed or pepper.",
     "lookalikes" : [
       {
+        "entry" : "wild-fennel",
         "howToTell" : "Fennel has thread-fine leaves and smells of aniseed. Dropwort has broad celery-like leaflets and smells of parsley.",
         "name" : "Wild fennel",
         "risk" : "deadly",
         "scientificName" : "Foeniculum vulgare"
       },
       {
+        "entry" : "watercress",
         "howToTell" : "Watercress is low, peppery and has rounded leaflets. Dropwort stands tall, smells of parsley, and has toothed celery-like leaves.",
         "name" : "Watercress",
         "risk" : "deadly",

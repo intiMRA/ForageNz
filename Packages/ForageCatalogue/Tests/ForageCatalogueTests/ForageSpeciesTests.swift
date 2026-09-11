@@ -89,9 +89,9 @@ struct ForageSpeciesTests {
     @Test("The highest lookalike risk wins")
     func highestRisk() {
         let species = makeSpecies(lookalikes: [
-            Lookalike(name: "Bland thing", risk: .unpalatable, howToTell: "Tastes bad."),
-            Lookalike(name: "Lethal thing", risk: .deadly, howToTell: "Has a volva."),
-            Lookalike(name: "Nasty thing", risk: .toxic, howToTell: "Milky sap.")
+            Lookalike(name: "Bland thing", risk: .unpalatable, howToTell: "Tastes bad.", entry: .catsear),
+            Lookalike(name: "Lethal thing", risk: .deadly, howToTell: "Has a volva.", entry: .deathCap),
+            Lookalike(name: "Nasty thing", risk: .toxic, howToTell: "Milky sap.", entry: .pettySpurge)
         ])
         #expect(species.highestLookalikeRisk == .deadly)
     }

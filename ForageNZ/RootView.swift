@@ -29,6 +29,7 @@ struct RootView: View {
         }
         .environment(store)
         .environment(whereYouAre)
+        .environment(\.speciesModels, CatalogueSpeciesModelFactory(store: store))
     }
 
     private var tabs: some View {
@@ -48,11 +49,3 @@ struct RootView: View {
     }
 }
 
-private extension View {
-    /// Every tab pushes the same detail screen for a species.
-    func speciesDestination() -> some View {
-        navigationDestination(for: ForageSpecies.self) { species in
-            SpeciesDetailView(species: species)
-        }
-    }
-}

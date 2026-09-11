@@ -24,6 +24,9 @@ final class CatalogueStore {
     /// Photo files dropped from an entry since the last save. Deleted on save, not on
     /// removal: an unsaved catalogue must never point at a file that is already gone.
     private(set) var pendingPhotoDeletions: [SpeciesPhoto] = []
+    /// Set when a save rewrote `SpeciesID.swift`: the editor must be rebuilt before the new or
+    /// renamed species can be chosen as a lookalike's page.
+    private(set) var needsRebuildForSpeciesIDs = false
     private var loaded: [String: ForageSpecies] = [:]
 
     init(fileURL: URL?) {
@@ -61,7 +64,7 @@ final class CatalogueStore {
             pendingPhotoDeletions = []
             status = .clean
         } catch {
-            status = .failed(message(for: error))
+            status = .failed(message(for: error, file: fileURL.lastPathComponent))
         }
     }
 
@@ -70,11 +73,20 @@ final class CatalogueStore {
         do {
             try CatalogueFile.save(species, to: fileURL)
         } catch {
-            status = .failed(message(for: error))
+            status = .failed(message(for: error, file: fileURL.lastPathComponent))
             return
         }
         loaded = Dictionary(uniqueKeysWithValues: species.map { ($0.id, $0) })
         editedIds = []
+
+        do {
+            if try SpeciesIDGenerator.regenerate(for: species, catalogueURL: fileURL) == .rewritten {
+                needsRebuildForSpeciesIDs = true
+            }
+        } catch {
+            status = .failed(message(for: error, file: SpeciesIDGenerator.relativePath))
+            return
+        }
 
         // The catalogue on disk no longer references these, so now they can go. A failure
         // here is reported, not swallowed: an orphan on disk fails the photo audit.
@@ -170,9 +182,8 @@ final class CatalogueStore {
         }
     }
 
-    private func message(for error: CatalogueFile.Failure) -> String {
-        let name = fileURL?.lastPathComponent ?? "the catalogue"
-        return switch error {
+    private func message(for error: CatalogueFile.Failure, file name: String) -> String {
+        switch error {
         case .unreadable(let detail): "Couldn't read \(name) — \(detail)"
         case .undecodable(let detail): "\(name) isn't valid catalogue JSON — \(detail)"
         case .unwritable(let detail): "Couldn't write \(name) — \(detail)"

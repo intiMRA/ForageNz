@@ -1,4 +1,5 @@
 import DesignLibrary
+import ForageCatalogue
 import SwiftUI
 
 struct SafetyView: View {
@@ -36,9 +37,7 @@ struct SafetyView: View {
             if !store.doNotEat.isEmpty {
                 Section {
                     ForEach(store.doNotEat) { item in
-                        NavigationLink(value: item) {
-                            SpeciesRow(species: item)
-                        }
+                        SpeciesRowLink(species: item)
                     }
                 } header: {
                     Text("Learn these, then leave them alone")
@@ -50,9 +49,7 @@ struct SafetyView: View {
             if !store.withDeadlyLookalikes.isEmpty {
                 Section {
                     ForEach(store.withDeadlyLookalikes) { item in
-                        NavigationLink(value: item) {
-                            SpeciesRow(species: item)
-                        }
+                        SpeciesRowLink(species: item)
                     }
                 } header: {
                     Text("Edible, but has a deadly lookalike")
@@ -73,4 +70,5 @@ struct SafetyView: View {
         "Avoid roadside verges, railway corridors and council-maintained ground: they are routinely sprayed.",
         "Never harvest shellfish or seaweed without checking MPI's current biotoxin warnings for that stretch of coast."
     ]
+
 }

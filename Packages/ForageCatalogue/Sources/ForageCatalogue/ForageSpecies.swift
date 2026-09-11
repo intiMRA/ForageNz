@@ -77,6 +77,10 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     /// `true` once someone has checked this entry against a field guide.
     public var isVerified: Bool { !sources.isEmpty }
 
+    /// This entry as a compile-time value. `nil` only for a species added since `SpeciesID`
+    /// was last generated — a state the tests do not allow to ship.
+    public var typedID: SpeciesID? { SpeciesID(rawValue: id) }
+
     /// `true` when the species has no seasonal window and is worth looking for at any time.
     public var isYearRound: Bool { months.isEmpty }
 

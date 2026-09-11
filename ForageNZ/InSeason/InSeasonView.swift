@@ -15,9 +15,7 @@ struct InSeasonView: View {
                         .foregroundStyle(.secondary)
                 } else {
                     ForEach(species) { item in
-                        NavigationLink(value: item) {
-                            SpeciesRow(species: item)
-                        }
+                        SpeciesRowLink(species: item)
                     }
                 }
             } header: {
@@ -28,4 +26,5 @@ struct InSeasonView: View {
         }
         .navigationTitle("In season")
     }
+
 }

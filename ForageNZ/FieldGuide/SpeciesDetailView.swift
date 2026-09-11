@@ -3,9 +3,9 @@ import ForageCatalogue
 import SwiftUI
 
 struct SpeciesDetailView: View {
-    let species: ForageSpecies
+    let model: InfoPageModel
 
-    @Environment(SpeciesStore.self) private var store
+    private var species: ForageSpecies { model.species }
 
     var body: some View {
         ScrollView {
@@ -195,60 +195,10 @@ struct SpeciesDetailView: View {
             Label("Can be confused with", systemImage: "questionmark.circle")
                 .font(.headline)
 
-            ForEach(species.lookalikes) { lookalike in
-                // A lookalike with its own page opens it; one described only here is a plain card.
-                if let target = store.entry(matching: lookalike) {
-                    NavigationLink(value: target) {
-                        lookalikeCard(lookalike, linksToEntry: true)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityIdentifier("lookalike.\(target.id)")
-                } else {
-                    lookalikeCard(lookalike, linksToEntry: false)
-                }
+            ForEach(model.lookalikeCards) { card in
+                LookalikeCardView(model: card)
             }
         }
-    }
-
-    private func lookalikeCard(_ lookalike: Lookalike, linksToEntry: Bool) -> some View {
-        HStack(alignment: .top, spacing: .xSmall) {
-            VStack(alignment: .leading, spacing: .xxxSmall) {
-                HStack(spacing: .xSmall) {
-                    Text(lookalike.name)
-                        .font(.subheadline.weight(.semibold))
-
-                    Text(lookalike.risk.displayName)
-                        .font(.caption.weight(.bold))
-                        .padding(.horizontal, .xSmall)
-                        .padding(.vertical, .xxxSmall)
-                        .foregroundStyle(.white)
-                        .background(lookalike.risk.tintColor, in: Capsule())
-                }
-
-                if let scientificName = lookalike.scientificName {
-                    Text(scientificName)
-                        .font(.caption)
-                        .italic()
-                        .foregroundStyle(.secondary)
-                }
-
-                Text(lookalike.howToTell)
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                    .padding(.top, .xxxSmall)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-
-            if linksToEntry {
-                Image(systemName: "chevron.right")
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(.tertiary)
-                    .accessibilityHidden(true)
-            }
-        }
-        .padding(.all, .small)
-        .background(.quaternary.opacity(Layout.cardBackgroundOpacity), in: Layout.cardShape)
-        .contentShape(Layout.cardShape)
     }
 
     private var warningsSection: some View {

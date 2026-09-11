@@ -46,7 +46,7 @@ struct CatalogueFileTests {
                 caution: .doNotEat, months: [.november, .december, .january],
                 summary: "A test.", habitat: "Nowhere.", identification: "Unmistakable.",
                 edibleParts: "None.", preparation: "None.",
-                lookalikes: [Lookalike(name: "Other", risk: .deadly, howToTell: "Check the base.")],
+                lookalikes: [Lookalike(name: "Other", risk: .deadly, howToTell: "Check the base.", entry: .deathCap)],
                 warnings: ["Do not eat."], harvestEthics: "Leave it.",
                 sources: ["Somebody, A Book, p. 1"],
                 recipes: [Recipe(title: "Nothing", method: "Do not.")]

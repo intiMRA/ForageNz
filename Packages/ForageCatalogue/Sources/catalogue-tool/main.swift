@@ -67,6 +67,16 @@ if arguments.contains("--normalise") {
         exit(1)
     }
     print("Normalised \(species.count) entries in \(url.path(percentEncoded: false))")
+    do {
+        switch try SpeciesIDGenerator.regenerate(for: species, catalogueURL: url) {
+        case .unchanged: print("SpeciesID enum already matches the catalogue")
+        case .rewritten: print("Regenerated \(SpeciesIDGenerator.relativePath) — rebuild before referencing new species")
+        case .notInRepo: FileHandle.standardError.write(Data("Catalogue is outside the repo; SpeciesID enum not regenerated\n".utf8))
+        }
+    } catch {
+        FileHandle.standardError.write(Data("Couldn't regenerate SpeciesID: \(error)\n".utf8))
+        exit(1)
+    }
     exit(0)
 }
 
