@@ -23,11 +23,22 @@
     ],
     "preparation" : "Raw, or into jam, crumble, cordial and vinegar. Fully black and pulling away from the plant with no effort means ripe.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Blackberry jam"
+      },
+      {
+        "method" : "",
+        "title" : "Blackberry syrup"
+      },
+      {
+        "method" : "",
+        "title" : "Blackberry leaf tea"
+      }
     ],
     "scientificName" : "Rubus fruticosus agg.",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Blackberry' entry."
     ],
     "summary" : "A declared pest across much of NZ. Pick as much as you physically can.",
     "warnings" : [
@@ -81,11 +92,22 @@
     ],
     "preparation" : "Slice thinly and simmer for a long time, or dry and grind as a seasoning. Tough and best treated as a stock ingredient rather than a vegetable.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Bull kelp stock"
+      },
+      {
+        "method" : "",
+        "title" : "Roasted kelp chips"
+      },
+      {
+        "method" : "",
+        "title" : "Kelp oven bag"
+      }
     ],
     "scientificName" : "Durvillaea antarctica",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Bull kelp' entry."
     ],
     "summary" : "The massive leathery kelp of the southern coast — traditionally made into pōhā, the bags that preserved tītī.",
     "warnings" : [
@@ -208,11 +230,18 @@
     ],
     "preparation" : "Raw in salads, blitzed into a pesto, or wilted briefly. Mild enough to eat in quantity.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Chickweed pesto"
+      },
+      {
+        "method" : "",
+        "title" : "Chickweed salad"
+      }
     ],
     "scientificName" : "Stellaria media",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Chickweed' entry."
     ],
     "summary" : "Mild, sweet and abundant in every neglected garden bed in the country.",
     "warnings" : [
@@ -236,6 +265,7 @@
         "scientificName" : "Hypochaeris radicata"
       }
     ],
+    "maoriName" : "Tawao",
     "months" : [
 
     ],
@@ -269,11 +299,22 @@
     ],
     "preparation" : "Young leaves raw; older leaves boiled to cut bitterness. Flowers battered or made into syrup. Roots roasted as a coffee substitute.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Pickled dandelion buds"
+      },
+      {
+        "method" : "",
+        "title" : "Dandelion root coffee"
+      },
+      {
+        "method" : "",
+        "title" : "Sautéed dandelion greens"
+      }
     ],
     "scientificName" : "Taraxacum officinale",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Common dandelion' entry."
     ],
     "summary" : "Entirely edible, entirely unmistakable, and growing in every lawn in the country.",
     "warnings" : [
@@ -365,7 +406,7 @@
     "category" : "fruit",
     "caution" : "careRequired",
     "commonName" : "Elder (flowers & berries)",
-    "edibleParts" : "Flower heads (Nov–Dec) and ripe berries (Feb–Mar).",
+    "edibleParts" : "Flower heads (Sep–Dec) and ripe berries (Feb–Apr).",
     "habitat" : "Riverbanks, old farm shelter belts, roadsides, abandoned gardens.",
     "id" : "elderflower",
     "identification" : "Small tree with opposite compound leaves of five to seven toothed leaflets, corky warty bark, and large flat-topped sprays of tiny cream flowers, followed by drooping clusters of small purple-black berries.",
@@ -373,10 +414,13 @@
 
     ],
     "months" : [
+      9,
+      10,
       11,
       12,
       2,
-      3
+      3,
+      4
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/765394",
     "origin" : "pest",
@@ -408,11 +452,26 @@
     ],
     "preparation" : "Flowers into cordial, fritters or a sparkling wine. Berries MUST be cooked and strained — cooked into syrup, jelly or wine. Never eat raw berries.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Elderflower cordial"
+      },
+      {
+        "method" : "",
+        "title" : "Elderflower fritters"
+      },
+      {
+        "method" : "",
+        "title" : "Elderberry jelly"
+      },
+      {
+        "method" : "",
+        "title" : "Pickled green elderberry capers"
+      }
     ],
     "scientificName" : "Sambucus nigra",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Elderflower' entry."
     ],
     "summary" : "Two harvests from one tree — cordial in early summer, syrup in autumn. The berries must be cooked.",
     "warnings" : [
@@ -508,8 +567,7 @@
     "months" : [
       2,
       3,
-      4,
-      5
+      4
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/143563",
     "origin" : "introduced",
@@ -547,11 +605,14 @@
     ],
     "preparation" : "Cook. Excellent fried.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Pickled button field mushrooms"
+      }
     ],
     "scientificName" : "Agaricus campestris",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Field mushroom' entry."
     ],
     "summary" : "Familiar and delicious — and the species whose lookalikes include the deadliest fungus on earth.",
     "warnings" : [
@@ -573,7 +634,7 @@
     "lookalikes" : [
 
     ],
-    "maoriName" : "Horopito",
+    "maoriName" : "Horopito, puhikawa, ramarama, ōramarama",
     "months" : [
 
     ],
@@ -607,11 +668,22 @@
     ],
     "preparation" : "Dry and grind as a pepper substitute, or use fresh leaves in a rub. Very potent — start with far less than you think.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Horopito spice rub"
+      },
+      {
+        "method" : "",
+        "title" : "Horopito-infused oil"
+      },
+      {
+        "method" : "",
+        "title" : "Horopito gin"
+      }
     ],
     "scientificName" : "Pseudowintera colorata",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Horopito' entry."
     ],
     "summary" : "Fiercely hot native leaf — a genuine NZ spice with no real substitute.",
     "warnings" : [
@@ -630,9 +702,8 @@
     "lookalikes" : [
 
     ],
-    "maoriName" : "Karaka",
+    "maoriName" : "Karaka, kōpī",
     "months" : [
-      1,
       2,
       3,
       4
@@ -671,7 +742,7 @@
     ],
     "scientificName" : "Corynocarpus laevigatus",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Karaka' entry."
     ],
     "summary" : "Listed so you can recognise it and leave it alone. The kernel is severely poisonous without traditional processing.",
     "warnings" : [
@@ -693,7 +764,7 @@
     "lookalikes" : [
 
     ],
-    "maoriName" : "Karengo",
+    "maoriName" : "Karengo, parengo",
     "months" : [
       6,
       7,
@@ -708,11 +779,22 @@
     ],
     "preparation" : "Rinse in seawater, dry thoroughly, then toast. Use as you would nori, or crumble into soups and boil-ups.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Crisped karengo"
+      },
+      {
+        "method" : "",
+        "title" : "Karengo salt"
+      },
+      {
+        "method" : "",
+        "title" : "Karengo pudding"
+      }
     ],
     "scientificName" : "Pyropia / Porphyra spp.",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Karengo' entry."
     ],
     "summary" : "Aotearoa's native nori — a taonga species, traditionally dried on rocks and traded inland.",
     "warnings" : [
@@ -766,11 +848,26 @@
     ],
     "preparation" : "Traditionally the hole-riddled leaves are chosen as the most potent. Dry and steep as a tea, or use fresh leaves to wrap food. Use as a flavouring, not a bulk green.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Kawakawa tea"
+      },
+      {
+        "method" : "",
+        "title" : "Kawakawa sugar"
+      },
+      {
+        "method" : "",
+        "title" : "Kawakawa salt"
+      },
+      {
+        "method" : "",
+        "title" : "Pickled kawakawa leaves"
+      }
     ],
-    "scientificName" : "Piper excelsum",
+    "scientificName" : "Piper excelsum (syn. Macropiper excelsum)",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Kawakawa' entry."
     ],
     "summary" : "New Zealand's native pepper tree — a rongoā plant first and a flavouring second.",
     "warnings" : [
@@ -826,11 +923,18 @@
     ],
     "preparation" : "Raw. It is a salad green and cooking wastes it.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Miner's lettuce pesto"
+      },
+      {
+        "method" : "",
+        "title" : "Miner's lettuce salad"
+      }
     ],
     "scientificName" : "Claytonia perfoliata",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Miner's lettuce' entry."
     ],
     "summary" : "A succulent, genuinely delicious winter salad green with an unmistakable leaf.",
     "warnings" : [
@@ -849,13 +953,7 @@
 
     ],
     "months" : [
-      10,
-      11,
-      12,
-      1,
-      2,
-      3,
-      4
+
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/54329",
     "origin" : "introduced",
@@ -887,11 +985,22 @@
     ],
     "preparation" : "Leaves and flowers raw in salads. Green seed pods brined and pickled as 'poor man's capers'.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Pickled nasturtium seed pods"
+      },
+      {
+        "method" : "",
+        "title" : "Nasturtium leaf oil"
+      },
+      {
+        "method" : "",
+        "title" : "Nasturtium seed pepper"
+      }
     ],
     "scientificName" : "Tropaeolum majus",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Nasturtium' entry."
     ],
     "summary" : "Garden escapee with peppery leaves, edible flowers, and seed pods that pickle into passable capers.",
     "warnings" : [
@@ -916,12 +1025,11 @@
         "scientificName" : "Pteridium esculentum"
       }
     ],
-    "maoriName" : "Pikopiko, mouku",
+    "maoriName" : "Pikopiko, mouku, mauku, mouki, manamana",
     "months" : [
-      9,
-      10,
-      11,
-      12
+      6,
+      7,
+      8
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/197042",
     "origin" : "native",
@@ -947,11 +1055,18 @@
     ],
     "preparation" : "Rub off the papery brown scales, then blanch or sauté. Asparagus-like, slightly bitter. Do not eat raw in quantity.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Sautéed pikopiko"
+      },
+      {
+        "method" : "",
+        "title" : "Pickled pikopiko"
+      }
     ],
     "scientificName" : "Asplenium bulbiferum",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Hen and chicken fern' entry."
     ],
     "summary" : "The curled young fronds are a native delicacy — and one of the easiest species to over-harvest.",
     "warnings" : [
@@ -984,6 +1099,8 @@
       }
     ],
     "months" : [
+      1,
+      2,
       3,
       4,
       5
@@ -1023,7 +1140,7 @@
     ],
     "scientificName" : "Boletus edulis",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Porcini' entry."
     ],
     "summary" : "A stout brown-capped bolete with a sponge of pores instead of gills, white flesh that stays white when cut, and a pale net over the top of the stem. In Aotearoa it fruits under introduced oak, birch and pine in autumn.",
     "warnings" : [
@@ -1049,12 +1166,11 @@
         "scientificName" : "Solanum nigrum"
       }
     ],
-    "maoriName" : "Poroporo",
+    "maoriName" : "Poroporo, pōporo, kahoho, tūpurupuru",
     "months" : [
       2,
       3,
-      4,
-      5
+      4
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/328092",
     "origin" : "native",
@@ -1092,11 +1208,18 @@
     ],
     "preparation" : "Eat ripe fruit raw or cook into a jam. Discard anything still firm or green-tinged.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Poroporo jam"
+      },
+      {
+        "method" : "",
+        "title" : "Poroporo chutney"
+      }
     ],
     "scientificName" : "Solanum laciniatum",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Poroporo' entry."
     ],
     "summary" : "Native nightshade with genuinely good fruit — but only when fully ripe, and never before.",
     "warnings" : [
@@ -1124,13 +1247,7 @@
     ],
     "maoriName" : "Pūhā, rauriki",
     "months" : [
-      9,
-      10,
-      11,
-      12,
-      1,
-      2,
-      3
+
     ],
     "origin" : "introduced",
     "photos" : [
@@ -1138,11 +1255,18 @@
     ],
     "preparation" : "Strip the leaves, boil and discard the water to cut the bitterness — traditionally boiled with pork bones. Young shoots can be eaten raw in small amounts.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Boil-up with pūhā"
+      },
+      {
+        "method" : "",
+        "title" : "Pickled pūhā buds"
+      }
     ],
     "scientificName" : "Sonchus oleraceus / Sonchus kirkii",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Prickly and common sow thistle' entry."
     ],
     "summary" : "The classic Aotearoa wild green — a boiled staple long before it was fashionable.",
     "warnings" : [
@@ -1340,11 +1464,18 @@
     ],
     "preparation" : "Chop finely into stews, stuffings and fish dishes. Far stronger than cultivated celery — use sparingly.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Sea celery herb butter"
+      },
+      {
+        "method" : "",
+        "title" : "Sea celery seed seasoning"
+      }
     ],
     "scientificName" : "Apium prostratum",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Native celery' entry."
     ],
     "summary" : "Native coastal herb with a concentrated celery flavour — Cook fed it to his crew against scurvy.",
     "warnings" : [
@@ -1398,6 +1529,7 @@
 
     ],
     "months" : [
+      2,
       3,
       4,
       5,
@@ -1441,9 +1573,9 @@
     "recipes" : [
 
     ],
-    "scientificName" : "Suillus luteus",
+    "scientificName" : "Suillus luteus (and other Suillus spp.)",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Slippery jack group' entry."
     ],
     "summary" : "Abundant under pine alongside saffron milk caps, and safe once you peel it.",
     "warnings" : [
@@ -1481,11 +1613,26 @@
     ],
     "preparation" : "Wear gloves. Blanching or any cooking destroys the sting completely — after 30 seconds in boiling water it is entirely safe to handle and eat. Soup, pesto, or dried for tea.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Nettle soup"
+      },
+      {
+        "method" : "",
+        "title" : "Nettle pesto"
+      },
+      {
+        "method" : "",
+        "title" : "Nettle tea"
+      },
+      {
+        "method" : "",
+        "title" : "Nettle beer"
+      }
     ],
     "scientificName" : "Urtica dioica / Urtica urens",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Stinging nettle' entry."
     ],
     "summary" : "Excellent cooked green with an iron-rich, spinach-like flavour — and a genuinely dangerous native relative.",
     "warnings" : [
@@ -1538,11 +1685,22 @@
     ],
     "preparation" : "Score each nut, then roast or boil. Never eat raw in quantity — the tannins are harsh.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Roasted sweet chestnuts"
+      },
+      {
+        "method" : "",
+        "title" : "Chestnut flour"
+      },
+      {
+        "method" : "",
+        "title" : "Chestnut soup"
+      }
     ],
     "scientificName" : "Castanea sativa",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Sweet chestnuts' entry."
     ],
     "summary" : "Worth the effort in autumn — but its ornamental namesake is toxic and far more commonly planted.",
     "warnings" : [
@@ -1628,8 +1786,9 @@
 
     ],
     "months" : [
-      4,
-      5
+      2,
+      3,
+      4
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/63935",
     "origin" : "introduced",
@@ -1661,11 +1820,22 @@
     ],
     "preparation" : "Gather fallen nuts promptly, husk them (wear gloves — the husk stains skin brown for weeks), then dry for several weeks before storing.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Pickled green walnuts"
+      },
+      {
+        "method" : "",
+        "title" : "Walnut butter"
+      },
+      {
+        "method" : "",
+        "title" : "Walnut pesto"
+      }
     ],
     "scientificName" : "Juglans regia",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Walnut' entry."
     ],
     "summary" : "Old farm and roadside trees drop far more than anyone collects.",
     "warnings" : [
@@ -1724,11 +1894,22 @@
     ],
     "preparation" : "Cook it. Soups, blanched as a green, or wilted. Eating it raw from an unknown waterway is the single most common way NZ foragers make themselves ill.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Watercress pesto"
+      },
+      {
+        "method" : "",
+        "title" : "Watercress seed mustard"
+      },
+      {
+        "method" : "",
+        "title" : "Watercress flower salt"
+      }
     ],
     "scientificName" : "Nasturtium officinale",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Watercress' entry."
     ],
     "summary" : "Peppery and everywhere in NZ waterways — but the water it grows in is the whole problem.",
     "warnings" : [
@@ -1795,11 +1976,22 @@
     ],
     "preparation" : "Fronds with fish; seeds toasted for spice; pollen as a finishing seasoning; stems in a stock.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Candied fennel fronds"
+      },
+      {
+        "method" : "",
+        "title" : "Fennel seed spice"
+      },
+      {
+        "method" : "",
+        "title" : "Fennel pollen"
+      }
     ],
     "scientificName" : "Foeniculum vulgare",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Wild fennel' entry."
     ],
     "summary" : "Lines roadsides across the country — and shares those roadsides with the deadliest plant in the carrot family.",
     "warnings" : [
@@ -1880,11 +2072,18 @@
     ],
     "preparation" : "Rinse, slice and add to soups and stir-fries. Prized for texture rather than flavour. Dries and rehydrates well.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Stir-fried wood ear"
+      },
+      {
+        "method" : "",
+        "title" : "Wood ear broth"
+      }
     ],
     "scientificName" : "Auricularia cornea",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Wood ear fungus' entry."
     ],
     "summary" : "New Zealand's first export mushroom — gathered by the tonne from Taranaki bush in the 1870s.",
     "warnings" : [
@@ -1959,7 +2158,7 @@
     ],
     "scientificName" : "Conium maculatum",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Hemlock' entry."
     ],
     "summary" : "The tall, purple-blotched umbellifer that kills people who think they have found fennel, parsley or wild carrot. Every part is lethal.",
     "warnings" : [
@@ -2029,7 +2228,7 @@
     ],
     "scientificName" : "Urtica ferox",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Ongaonga' entry."
     ],
     "summary" : "Tree nettle. A woody native shrub with visible stinging spines that has killed a person and regularly kills dogs and horses. Not the nettle you make soup from.",
     "warnings" : [
@@ -2132,7 +2331,9 @@
       7,
       8,
       9,
-      10
+      10,
+      11,
+      12
     ],
     "origin" : "pest",
     "photos" : [
@@ -2163,11 +2364,26 @@
     ],
     "preparation" : "Use like spring onion or chives, raw or cooked. Flowers scatter well over salads. Milder than it smells.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Onionweed salsa verde"
+      },
+      {
+        "method" : "",
+        "title" : "Onionweed herb butter"
+      },
+      {
+        "method" : "",
+        "title" : "Onionweed flower tempura"
+      },
+      {
+        "method" : "",
+        "title" : "Pickled onionweed bulbs"
+      }
     ],
     "scientificName" : "Allium triquetrum",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Onionweed' entry."
     ],
     "summary" : "Three-cornered leek. A weedy wild onion with a triangular stem and drooping white bell flowers that smells unmistakably of onion — the smell is the whole identification.",
     "warnings" : [
@@ -2192,12 +2408,15 @@
       }
     ],
     "months" : [
+      9,
       10,
       11,
       12,
       1,
       2,
-      3
+      3,
+      4,
+      5
     ],
     "origin" : "introduced",
     "photos" : [
@@ -2228,11 +2447,18 @@
     ],
     "preparation" : "Cook like spinach — steam or wilt. Do not eat raw in quantity.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Fat hen sauerkraut"
+      },
+      {
+        "method" : "",
+        "title" : "Fat hen kimchi"
+      }
     ],
     "scientificName" : "Chenopodium album",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Spear-leaved orache' entry."
     ],
     "summary" : "A spinach relative and one of the most common garden weeds, recognised by the mealy white dust on its young leaves.",
     "warnings" : [
@@ -2277,11 +2503,18 @@
     ],
     "preparation" : "Young leaves shredded finely into salads, or cooked — older ones are stringy and best in soup or as a tea. Crushed leaves are the traditional poultice for nettle stings and insect bites.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Plantain seed muesli"
+      },
+      {
+        "method" : "",
+        "title" : "Plantain leaf tea"
+      }
     ],
     "scientificName" : "Plantago lanceolata",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Narrow-leaf plantain' entry."
     ],
     "summary" : "Ribwort. The lawn weed with the stringy, parallel-veined leaves — a tough but reliable green, and useful on nettle stings.",
     "warnings" : [
@@ -2300,6 +2533,8 @@
 
     ],
     "months" : [
+      1,
+      2,
       3,
       4,
       5
@@ -2333,11 +2568,22 @@
     ],
     "preparation" : "Haws are dry and mealy raw. Simmer, sieve out the stones, and make jelly or a ketchup. Young leaves and blossom go in salads.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Hawthorn berry syrup"
+      },
+      {
+        "method" : "",
+        "title" : "Hawthorn leaf tea"
+      },
+      {
+        "method" : "",
+        "title" : "Hawthorn flour"
+      }
     ],
     "scientificName" : "Crataegus monogyna",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Hawthorn' entry."
     ],
     "summary" : "A thorny hedgerow tree with white spring blossom and red autumn haws — mealy fruit that makes a good jelly, so long as the stones are strained out.",
     "warnings" : [
@@ -2375,11 +2621,22 @@
     ],
     "preparation" : "Pick flowers with gloves. Scatter fresh over salads, steep for tea or cordial, or infuse in spirits. A garnish and a flavouring, not a bulk food.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Gorse flower wine"
+      },
+      {
+        "method" : "",
+        "title" : "Gorse-infused vinegar"
+      },
+      {
+        "method" : "",
+        "title" : "Gorse flower tea"
+      }
     ],
     "scientificName" : "Ulex europaeus",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Gorse' entry."
     ],
     "summary" : "New Zealand's most hated weed has coconut-scented yellow flowers that are edible in small amounts — the one good thing to say about it.",
     "warnings" : [
@@ -2399,7 +2656,7 @@
     "lookalikes" : [
 
     ],
-    "maoriName" : "Kareao",
+    "maoriName" : "Kareao, karewao, pirita, akapirita, kekereao, taiore",
     "months" : [
       9,
       10,
@@ -2436,11 +2693,14 @@
     ],
     "preparation" : "Snap off the tender tip — if it bends rather than snaps it is too old. Eat raw, or steam briefly like asparagus.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Steamed kareao tips"
+      }
     ],
     "scientificName" : "Ripogonum scandens",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Supplejack' entry."
     ],
     "summary" : "The tangled black vine of the bush. Its new spring shoots snap off like asparagus and taste much the same.",
     "warnings" : [
@@ -2491,11 +2751,18 @@
     ],
     "preparation" : "A few leaves raw for sourness in a salad, or wilted into a sauce or soup as with garden sorrel. A seasoning more than a green.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Sorrel soup"
+      },
+      {
+        "method" : "",
+        "title" : "Sheep's sorrel salsa"
+      }
     ],
     "scientificName" : "Rumex acetosella",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Sheep's sorrel' entry."
     ],
     "summary" : "A small sour weed of poor ground whose arrow-shaped leaves taste sharply of lemon.",
     "warnings" : [
@@ -2514,6 +2781,8 @@
 
     ],
     "months" : [
+      6,
+      7,
       8,
       9,
       10,
@@ -2542,11 +2811,18 @@
     ],
     "preparation" : "Cook — the hooks make it unpleasant raw. Wilt like spinach, blend into soup, or steep the fresh plant as a tea.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Cleavers tea"
+      },
+      {
+        "method" : "",
+        "title" : "Cleavers seed coffee"
+      }
     ],
     "scientificName" : "Galium aparine",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Cleavers' entry."
     ],
     "summary" : "Sticky willy. The clinging spring weed with whorls of leaves and hooked stems that sticks to your clothes — mild, and one of the first greens of the season.",
     "warnings" : [
@@ -2712,11 +2988,14 @@
     ],
     "preparation" : "Leaves are bitter and hairy raw — better wilted or in soup. Buds can be pickled. Treat it as a coarser dandelion.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Catsear root coffee"
+      }
     ],
     "scientificName" : "Hypochaeris radicata",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Catsear' entry."
     ],
     "summary" : "Flatweed. The dandelion lookalike with hairy leaves and branched, wiry flower stalks — and it is edible too, so the confusion costs nothing.",
     "warnings" : [
@@ -2845,7 +3124,7 @@
     ],
     "scientificName" : "Solanum nigrum",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Black nightshade' entry."
     ],
     "summary" : "A common garden weed with white star flowers and black berries. Its green parts are poisonous, and it is too easily confused with poroporo and fat hen to treat as food.",
     "warnings" : [
@@ -2896,11 +3175,14 @@
     ],
     "preparation" : "Cook as for pūhā — boil and change the water to cut the bitterness. Wear gloves to pick; the spines soften completely once cooked.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Pickled sow thistle buds"
+      }
     ],
     "scientificName" : "Sonchus asper",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Prickly and common sow thistle' entry."
     ],
     "summary" : "The spinier cousin of pūhā, glossy and sharp-edged. Just as edible once cooked; just less pleasant to pick.",
     "warnings" : [
@@ -3021,11 +3303,18 @@
     ],
     "preparation" : "Roots are thin and best boiled young. Flowers can be battered or infused. Seeds are a caraway-like seasoning.",
     "recipes" : [
-
+      {
+        "method" : "",
+        "title" : "Wild carrot root coffee"
+      },
+      {
+        "method" : "",
+        "title" : "Wild carrot seed seasoning"
+      }
     ],
     "scientificName" : "Daucus carota",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Wild carrot' entry."
     ],
     "summary" : "Queen Anne's lace. An edible umbellifer with a hairy stem and a carrot smell — and hemlock's most dangerous double. Only for people who know hemlock cold.",
     "warnings" : [
@@ -3341,7 +3630,7 @@
     ],
     "scientificName" : "Helosciadium nodiflorum",
     "sources" : [
-
+      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Water celery' entry."
     ],
     "summary" : "Fool's watercress. A celery-scented streamside umbellifer that grows through watercress beds and shares its water with deadly relatives. Eaten in Europe; not recommended here.",
     "warnings" : [

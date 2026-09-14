@@ -18,27 +18,15 @@ struct CatalogueTests {
     /// directions, so this list can only shrink: a new entry with no sources fails, and an
     /// id left here after being sourced also fails.
     ///
-    /// Verify in this order — these make lethal claims:
-    /// tutu, death-cap, karaka, wild-fennel, field-mushroom, nettle, sea-celery.
+    /// Verify tutu and death-cap first — both make lethal claims.
     private static let pendingVerification: Set<String> = [
-        // Lethal claims — highest priority.
-        "tutu", "death-cap", "karaka", "wild-fennel", "field-mushroom", "nettle", "sea-celery",
-        // Need care: processing requirements or toxic parts.
-        "watercress", "chickweed", "elderflower", "rosehip", "poroporo", "sweet-chestnut",
-        "slippery-jack", "saffron-milk-cap", "pikopiko", "kawakawa", "bull-kelp", "sea-lettuce",
-        // Rewritten from scratch after the original was found to be copied text with
-        // all-rights-reserved photos. Lookalikes and toxicity claims still need a field guide.
-        "porcini",
-        // Added from general knowledge, not a book: verify before trusting the lookalike claims.
-        "hemlock", "ongaonga", "yellow-stainer", "onion-weed", "fat-hen", "plantain", "hawthorn",
-        "gorse", "kareao", "sheep-sorrel", "cleavers",
-        "petty-spurge", "scarlet-pimpernel", "catsear", "bracken", "black-nightshade", "prickly-sow-thistle",
-        "horse-chestnut", "wild-carrot", "snowflake",
-        "straw-mushroom", "bitter-bolete", "red-pored-boletes", "other-milk-caps", "water-celery",
+        // Not covered by Langlands (2024) — mostly the toxic entries, which that book leaves out.
+        "tutu", "death-cap", "yellow-stainer", "petty-spurge", "scarlet-pimpernel", "bracken",
+        "horse-chestnut", "snowflake", "bitter-bolete", "red-pored-boletes", "other-milk-caps",
         "hemlock-water-dropwort",
-        // Straightforward.
-        "puha", "dandelion", "miners-lettuce", "horopito", "nasturtium", "blackberry", "feijoa",
-        "wild-plum", "cherry-guava", "wood-ear", "karengo", "walnut"
+        // Edibles the book does not cover.
+        "rosehip", "saffron-milk-cap", "sea-lettuce", "straw-mushroom", "feijoa", "wild-plum",
+        "cherry-guava"
     ]
 
     private func loadCatalogue() async throws -> [ForageSpecies] {

@@ -188,9 +188,11 @@ struct SpeciesDetailView: View {
                 VStack(alignment: .leading, spacing: .xxSmall) {
                     Text(recipe.title)
                         .font(.subheadline.weight(.semibold))
-                    Text(recipe.method)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
+                    if !recipe.method.isEmpty {
+                        Text(recipe.method)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                    }
                 }
                 .padding(.all, .small)
                 .frame(maxWidth: .infinity, alignment: .leading)
