@@ -9,29 +9,21 @@ import Foundation
 import SwiftUI
 import DesignLibrary
 
+/// The classification icons for one entry's habitats, and optionally their names.
+///
+/// It draws no title of its own. Each caller owns its heading, because the two disagree about
+/// what a heading is — the species row wants "Habitat:" in the same footnote style as its
+/// "Group:" and "Season:" siblings, the detail page wants a `createSectionHeader` matching its
+/// other sections. Keeping the title here meant the detail page could not draw one for an
+/// entry with no classified habitats, since this view renders nothing at all in that case.
 struct HabitatView: View {
     let habitats: [Habitat]
     let layoutDirection: LayoutDirection
-    var icon: Image?
     var includeName: Bool = false
-    
+
     var body: some View {
         if !habitats.isEmpty {
             VStack(alignment: .leading, spacing: .xxxSmall) {
-                if let icon {
-                    HStack(spacing: .xxSmall) {
-                        icon
-                            .icon(size: .small, color: .primary)
-                        Text("Habitat:")
-                            .bold()
-                            .font(.caption)
-                    }
-                }
-                else {
-                    Text("Habitat:")
-                        .bold()
-                        .font(.footnote)
-                }
                 LazyVGrid(columns: [
                     .init(.fixed(IconSize.standard.value())),
                     .init(.fixed(IconSize.standard.value())),

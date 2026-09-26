@@ -5,24 +5,15 @@ struct SpeciesRow: View {
     let model: ListingRowModel
     
     var body: some View {
-        HStack(alignment: .top, spacing: .small) {
+        SpeciesCard(background: .rowCardBackground) {
             leftView
             rightView
         }
-        .padding(.all, .xSmall)
-        .frame(maxWidth: .infinity)
-        .background {
-            RoundedRectangle(cornerRadius: 8)
-                .fill(.rowCardBackground)
-                .shadow(color: .shadow, radius: 2)
-        }
     }
-    
+
     var leftView: some View {
         VStack(alignment: .leading) {
-            BundledPhoto(fileName: model.photoFileName ?? "")
-                .frame(width: 100, height: 100)
-                .clipShape(RoundedRectangle(cornerRadius: 8))
+            SpeciesThumbnail(fileName: model.photoFileName)
             Spacer()
             groupView
         }
@@ -46,7 +37,7 @@ struct SpeciesRow: View {
             HStack(alignment: .top) {
                 seasonView
                 Spacer()
-                HabitatView(habitats: model.habitats, layoutDirection: .rightToLeft)
+                habitatView
             }
         }
     }
@@ -62,6 +53,20 @@ struct SpeciesRow: View {
         
     }
     
+    /// Nothing at all for an unclassified entry — an empty space where a line belongs reads
+    /// as a missing value, so the label goes with the icons.
+    @ViewBuilder
+    var habitatView: some View {
+        if !model.habitats.isEmpty {
+            VStack(alignment: .leading, spacing: .xxxSmall) {
+                Text("Habitat:")
+                    .bold()
+                    .font(.footnote)
+                HabitatView(habitats: model.habitats, layoutDirection: .rightToLeft)
+            }
+        }
+    }
+
     var seasonView: some View {
         VStack(alignment: .leading, spacing: .xxxSmall) {
             Text("Season:")
@@ -76,17 +81,12 @@ struct SpeciesRow: View {
     
     var infoView: some View {
         VStack(alignment: .leading, spacing: .empty) {
-            Text(model.commonName)
-                .font(.headline)
-                .accessibilityIdentifier("speciesRow.\(model.speciesID.rawValue)")
-                .foregroundStyle(.primary)
-            
-            Text(model.scientificName)
-                .font(.caption)
-                .italic()
-                .foregroundStyle(.secondary)
-                .padding(.bottom, .xSmall)
-            
+            SpeciesCardTitle(
+                commonName: model.commonName,
+                scientificName: model.scientificName,
+                accessibilityIdentifier: "speciesRow.\(model.speciesID.rawValue)"
+            )
+
             Text(model.summary)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)

@@ -19,6 +19,7 @@
 		28CE6B4FE8E95DD4A1BB1633 /* SpeciesModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC10D366D26564C8B7E4205 /* SpeciesModelFactory.swift */; };
 		2BB82EB485F18B9705B3F347 /* land-status.json in Resources */ = {isa = PBXBuildFile; fileRef = F3879044878C62F8D8F549D8 /* land-status.json */; };
 		2CA3EAD76EAE4CE824C68675 /* SpeciesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD4F47E08118369C1720304 /* SpeciesRow.swift */; };
+		0556316CF96F4367AE28C6AE /* SpeciesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C37CCC8954518819C409B /* SpeciesCard.swift */; };
 		2FFEC43C9B4D53C2E4ACBA15 /* ForageNZApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F39B686CA0E9CE04181DD40 /* ForageNZApp.swift */; };
 		33F1FEE23644859BA88F9258 /* SpeciesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */; };
 		360194B642E9FF2742582745 /* InSeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4ED5A9B62C12BD6C3E48E /* InSeasonView.swift */; };
@@ -39,7 +40,6 @@
 		7F83D47960CFE20BF784F76C /* FieldGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452B052BD15DA513EB5F5BF3 /* FieldGuideUITests.swift */; };
 		88884AE952E8D6A46933C56A /* SpeciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */; };
 		8ACD48F23062428200B39C86 /* BundledPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD48F13062428200B39C86 /* BundledPhoto.swift */; };
-		8ADBEE413063726B00B20F27 /* View+If.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBEE403063726B00B20F27 /* View+If.swift */; };
 		8ADBF3C0306655F900B20F27 /* HabitatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF3BF306655F900B20F27 /* HabitatView.swift */; };
 		9259C8452BDD7F338B28B7A0 /* CatalogueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001C8B591D460EC849D511 /* CatalogueStore.swift */; };
 		964DFD06BF7EB889DF54325C /* WhereYouAreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23F44C740462604FCC5A42 /* WhereYouAreStore.swift */; };
@@ -170,7 +170,6 @@
 		817A298659AD6F2CD63D0228 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AAD98CD750F96CCB1E26CB7 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; name = Localizable.xcstrings; path = ../Resources/Localizable.xcstrings; sourceTree = "<group>"; };
 		8ACD48F13062428200B39C86 /* BundledPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundledPhoto.swift; sourceTree = "<group>"; };
-		8ADBEE403063726B00B20F27 /* View+If.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+If.swift"; sourceTree = "<group>"; };
 		8ADBF3BF306655F900B20F27 /* HabitatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitatView.swift; sourceTree = "<group>"; };
 		8B5CFF23B8C79B576A8D1B65 /* ForageNZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRepository.swift; path = Catalogue/SpeciesRepository.swift; sourceTree = "<group>"; };
@@ -205,6 +204,7 @@
 		D6ECE46F98F836C2B53E8AA5 /* species.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = species.json; path = Catalogue/species.json; sourceTree = "<group>"; };
 		D90B10EF78BEEEED358AB658 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Components/Layout.swift; sourceTree = "<group>"; };
 		DBD4F47E08118369C1720304 /* SpeciesRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRow.swift; path = Components/SpeciesRow.swift; sourceTree = "<group>"; };
+		CD6C37CCC8954518819C409B /* SpeciesCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesCard.swift; path = Components/SpeciesCard.swift; sourceTree = "<group>"; };
 		DFB4A544F5F85A5E95E8A82A /* SpeciesRowButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRowButton.swift; path = Components/SpeciesRowButton.swift; sourceTree = "<group>"; };
 		E230F2A934A37C1CF47C7C24 /* EditorRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditorRootView.swift; sourceTree = "<group>"; };
 		E3BEAEAE3D024F1C6A9B9C10 /* ImageBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageBadge.swift; path = Components/ImageBadge.swift; sourceTree = "<group>"; };
@@ -413,7 +413,6 @@
 		8ADBEE3F3063725700B20F27 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				8ADBEE403063726B00B20F27 /* View+If.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -508,6 +507,7 @@
 				EA11341A3521A25AA8E3516D /* SpeciesPhotoStrip.swift */,
 				8ACD48F13062428200B39C86 /* BundledPhoto.swift */,
 				DBD4F47E08118369C1720304 /* SpeciesRow.swift */,
+				CD6C37CCC8954518819C409B /* SpeciesCard.swift */,
 				DFB4A544F5F85A5E95E8A82A /* SpeciesRowButton.swift */,
 				8ADBF3BF306655F900B20F27 /* HabitatView.swift */,
 			);
@@ -799,8 +799,8 @@
 				42BC722A0552DA4BEBBE5C9F /* ImageBadge.swift in Sources */,
 				FB252221E135784791053AC1 /* Layout.swift in Sources */,
 				2CA3EAD76EAE4CE824C68675 /* SpeciesRow.swift in Sources */,
+				0556316CF96F4367AE28C6AE /* SpeciesCard.swift in Sources */,
 				8ACD48F23062428200B39C86 /* BundledPhoto.swift in Sources */,
-				8ADBEE413063726B00B20F27 /* View+If.swift in Sources */,
 				CA7A10000000000000000002 /* CatalogueFile.swift in Sources */,
 				CA7A10000000000000000005 /* CatalogueLocator.swift in Sources */,
 				CA7A10000000000000000008 /* CautionLevel.swift in Sources */,

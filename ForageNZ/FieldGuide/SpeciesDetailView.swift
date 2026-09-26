@@ -99,44 +99,36 @@ struct SpeciesDetailView: View {
     }
     
     private var description: some View {
-        VStack(alignment: .leading, spacing: .xxSmall) {
-            createSectionHeader(image: Image(systemName: "pencil.and.list.clipboard"), title: "Description")
-            Text(species.summary.text)
-                .font(.caption)
-        }
+        textSection(
+            image: Image(systemName: "pencil.and.list.clipboard"),
+            title: "Description",
+            text: species.summary.text
+        )
     }
     
+    /// Not a `textSection`: the classification icons sit between the header and the prose.
+    /// The header is drawn here rather than inside `HabitatView` so it survives an entry with
+    /// no classified habitats — `HabitatView` renders nothing at all in that case, which would
+    /// otherwise leave this section's prose with no title.
     private var habitat: some View {
         VStack(alignment: .leading, spacing: .xxxSmall) {
-            HabitatView(habitats: species.habitats, layoutDirection: .leftToRight, icon: Image(.mapSearch), includeName: true)
-                .padding(.bottom, .xxSmall)
+            createSectionHeader(image: Image(.mapSearch), title: "Habitat")
+            HabitatView(habitats: species.habitats, layoutDirection: .leftToRight, includeName: true)
             Text(species.habitat.text)
                 .font(.caption)
         }
     }
     
     private var howToFindIt: some View {
-        VStack(alignment: .leading, spacing: .xxxSmall) {
-            createSectionHeader(image: Image(.search), title: "How To Find It")
-            Text(species.identification.text)
-                .font(.caption)
-        }
+        textSection(image: Image(.search), title: "How To Find It", text: species.identification.text)
     }
-    
+
     private var edibleParts: some View {
-        VStack(alignment: .leading, spacing: .xxxSmall) {
-            createSectionHeader(image: Image(.forkKnife), title: "Edible Parts")
-            Text(species.edibleParts.text)
-                .font(.caption)
-        }
+        textSection(image: Image(.forkKnife), title: "Edible Parts", text: species.edibleParts.text)
     }
-    
+
     private var preparation: some View {
-        VStack(alignment: .leading, spacing: .xxxSmall) {
-            createSectionHeader(image: Image(.pot), title: "Preparation")
-            Text(species.preparation.text)
-                .font(.caption)
-        }
+        textSection(image: Image(.pot), title: "Preparation", text: species.preparation.text)
     }
     
     private var lookALike: some View {
@@ -154,18 +146,17 @@ struct SpeciesDetailView: View {
             
             VStack(alignment: .leading, spacing: .xxSmall) {
                 ForEach(species.warnings, id: \.self) { warning in
+                    // The styling is set once on the row: `font`, `italic` and
+                    // `foregroundStyle` are inherited by both `Text`s.
                     HStack(alignment: .top, spacing: .xSmall) {
                         Text("•")
-                            .font(.caption2)
-                            .italic()
-                            .foregroundStyle(.secondary)
                             .accessibilityHidden(true)
-                        
+
                         Text(warning)
-                            .font(.caption2)
-                            .italic()
-                            .foregroundStyle(.secondary)
                     }
+                    .font(.caption2)
+                    .italic()
+                    .foregroundStyle(.secondary)
                 }
             }
             .padding(.bottom, .xSmall)
@@ -194,11 +185,11 @@ struct SpeciesDetailView: View {
     }
     
     private var ethics: some View {
-        VStack(alignment: .leading, spacing: .xxxSmall) {
-            createSectionHeader(image: Image(systemName: "hands.sparkles"), title: "Harvesting & tikanga")
-            Text(model.species.harvestEthics?.text ?? "")
-                .font(.caption)
-        }
+        textSection(
+            image: Image(systemName: "hands.sparkles"),
+            title: "Harvesting & tikanga",
+            text: species.harvestEthics?.text ?? ""
+        )
     }
     
     @ViewBuilder
@@ -227,6 +218,16 @@ struct SpeciesDetailView: View {
         }
     }
     
+    /// A titled section whose body is one block of catalogue prose. Five of the page's
+    /// sections are exactly this and differ only in their icon, title and field.
+    private func textSection(image: Image, title: LocalizedStringResource, text: String) -> some View {
+        VStack(alignment: .leading, spacing: .xxxSmall) {
+            createSectionHeader(image: image, title: title)
+            Text(text)
+                .font(.caption)
+        }
+    }
+
     private func createSectionHeader(image: Image, title: LocalizedStringResource, subTitle: String? = nil) -> some View {
         HStack(spacing: .xxSmall) {
             image
@@ -296,22 +297,6 @@ struct SpeciesDetailView: View {
         .font(.caption2)
         .italic()
         .foregroundStyle(.secondary)
-        .padding(.bottom, .medium)
     }
     
-    /// Titles are `LocalizedStringKey` so the string catalog picks them up at build time.
-    private func section(
-        _ title: LocalizedStringKey,
-        systemImage: String,
-        @ViewBuilder content: () -> some View
-    ) -> some View {
-        VStack(alignment: .leading, spacing: .xSmall) {
-            Label(title, systemImage: systemImage)
-                .font(.headline)
-            
-            content()
-                .font(.body)
-                .foregroundStyle(.secondary)
-        }
-    }
 }

@@ -64,6 +64,42 @@ struct BrowseView: View {
         selectedGroup != nil || selectedOrigin != nil
     }
 
+    /// One "pick a classification, or clear it" menu section. Group and origin are the same
+    /// control over different enums, so they are the same code over a `CatalogueFacet`.
+    ///
+    /// A checkmark replaces the facet's own drawing when it is the current choice, which is
+    /// the only way a `Menu` row can show selection.
+    private func facetSection<Facet: CatalogueFacet>(
+        _ title: LocalizedStringKey,
+        clearTitle: LocalizedStringKey,
+        clearSymbol: String,
+        selection: Binding<Facet?>
+    ) -> some View {
+        Section(title) {
+            Button {
+                selection.wrappedValue = nil
+            } label: {
+                Label(clearTitle, systemImage: selection.wrappedValue == nil ? "checkmark" : clearSymbol)
+            }
+
+            ForEach(Array(Facet.allCases)) { facet in
+                Button {
+                    selection.wrappedValue = facet
+                } label: {
+                    Label {
+                        Text(facet.displayName)
+                    } icon: {
+                        if selection.wrappedValue == facet {
+                            Image(systemName: "checkmark")
+                        } else {
+                            facet.image
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @ViewBuilder
     private var emptyState: some View {
         if searchText.isEmpty {
@@ -79,59 +115,19 @@ struct BrowseView: View {
 
     private var filterMenu: some View {
         Menu {
-            Section("Group") {
-                Button {
-                    selectedGroup = nil
-                } label: {
-                    Label(
-                        "All groups",
-                        systemImage: selectedGroup == nil ? "checkmark" : "square.grid.2x2"
-                    )
-                }
+            facetSection(
+                "Group",
+                clearTitle: "All groups",
+                clearSymbol: "square.grid.2x2",
+                selection: $selectedGroup
+            )
 
-                ForEach(ForageGroup.allCases) { group in
-                    Button {
-                        selectedGroup = group
-                    } label: {
-                        Label {
-                            Text(group.displayName)
-                        } icon: {
-                            if selectedGroup == group {
-                                Image(systemName: "checkmark")
-                            } else {
-                                group.image
-                            }
-                        }
-                    }
-                }
-            }
-
-            Section("Origin") {
-                Button {
-                    selectedOrigin = nil
-                } label: {
-                    Label(
-                        "Any origin",
-                        systemImage: selectedOrigin == nil ? "checkmark" : "circle.dashed"
-                    )
-                }
-
-                ForEach(ForageOrigin.allCases) { origin in
-                    Button {
-                        selectedOrigin = origin
-                    } label: {
-                        Label {
-                            Text(origin.displayName)
-                        } icon: {
-                            if selectedOrigin == origin {
-                                Image(systemName: "checkmark")
-                            } else {
-                                origin.image
-                            }
-                        }
-                    }
-                }
-            }
+            facetSection(
+                "Origin",
+                clearTitle: "Any origin",
+                clearSymbol: "circle.dashed",
+                selection: $selectedOrigin
+            )
         } label: {
             Label(
                 "Filter",

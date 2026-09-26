@@ -11,6 +11,18 @@ import SwiftUI
 /// an image set and this file stops compiling, which is the whole point of naming them this
 /// way rather than by string.
 
+/// A classification the user can filter the guide by: it has a name to show and a drawing to
+/// show beside it. Conformance is declared here rather than in `Model/` because `image` is
+/// app-side for the reason above, and a protocol is only worth it once something is generic
+/// over these — `BrowseView`'s filter menu, which would otherwise be the same code per enum.
+protocol CatalogueFacet: CaseIterable, Identifiable, Hashable {
+    var displayName: LocalizedStringResource { get }
+    var image: Image { get }
+}
+
+extension ForageGroup: CatalogueFacet {}
+extension ForageOrigin: CatalogueFacet {}
+
 extension Habitat {
     var image: Image {
         switch self {

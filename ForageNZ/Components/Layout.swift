@@ -24,4 +24,19 @@ enum Layout {
     static var cardShape: RoundedRectangle {
         RoundedRectangle(cornerRadius: cardCornerRadius)
     }
+
+    /// List cards — a species row and a lookalike card — are drawn tighter than a photo or a
+    /// banner. Kept distinct from `cardCornerRadius` rather than unified, because the two
+    /// radii were chosen against different content.
+    static let rowCardCornerRadius: CGFloat = 8
+
+    static var rowCardShape: RoundedRectangle {
+        RoundedRectangle(cornerRadius: rowCardCornerRadius)
+    }
+
+    /// The square thumbnail on a list card.
+    static let thumbnailSize: CGFloat = 100
+
+    /// Drop shadow shared by every list card.
+    static let cardShadowRadius: CGFloat = 2
 }

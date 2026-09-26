@@ -19,11 +19,9 @@ struct LookalikeCardView: View {
     }
 
     var card: some View {
-        HStack(alignment: .top, spacing: .small) {
+        SpeciesCard(background: model.risk.backgroundColor) {
             VStack(alignment: .leading) {
-                BundledPhoto(fileName: model.photoFileName ?? "")
-                    .frame(width: 100, height: 100)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                SpeciesThumbnail(fileName: model.photoFileName)
                 Spacer()
                 Badge(
                     image: model.risk.image,
@@ -33,34 +31,20 @@ struct LookalikeCardView: View {
                     fontWeight: .regular
                 )
             }
-            
-                infoView
-                    .padding(.bottom, .xxSmall)
-        }
-        .padding(.all, .xSmall)
-        .frame(maxWidth: .infinity)
-        .background {
-            RoundedRectangle(cornerRadius: 8)
-                .fill(model.risk.backgroundColor)
-                .shadow(color: .shadow, radius: 2)
+
+            infoView
+                .padding(.bottom, .xxSmall)
         }
     }
-    
 
-    
     var infoView: some View {
         VStack(alignment: .leading, spacing: .empty) {
-            Text(model.name)
-                .font(.headline)
-                .accessibilityIdentifier(model.id)
-                .foregroundStyle(.primary)
-            
-            Text(model.scientificName ?? "")
-                .font(.caption)
-                .italic()
-                .foregroundStyle(.secondary)
-                .padding(.bottom, .xSmall)
-            
+            SpeciesCardTitle(
+                commonName: model.name,
+                scientificName: model.scientificName,
+                accessibilityIdentifier: model.id
+            )
+
             Text(model.howToTell)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
