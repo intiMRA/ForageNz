@@ -79,6 +79,13 @@ struct SpeciesDetailView: View {
                 Badge(image: species.origin.image, title: species.origin.displayName, size: .small)
             }
             .padding(.bottom, .xSmall)
+
+            // Debug builds only: a shipped page is never a draft. On its own line rather than
+            // in the row above, which already carries three badges and has no room to wrap.
+            if species.draft {
+                UnverifiedBadge()
+                    .padding(.bottom, .xSmall)
+            }
             
             if !species.photos.isEmpty || species.moreImagesURL != nil {
                 SpeciesPhotoStrip(species: species)

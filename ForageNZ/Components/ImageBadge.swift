@@ -1,6 +1,19 @@
 import DesignLibrary
 import SwiftUI
 
+/// Marks an entry nobody has finished checking. Only ever on screen in a debug build, where
+/// the drawer's "Show unverified entries" flag has let the drafts out of `SpeciesStore` —
+/// so it is the one badge that does not describe the species, but the state of its page.
+///
+/// Deliberately not a caution colour: it is a claim about the entry, not about the plant.
+struct UnverifiedBadge: View {
+    var size: Badge.Size = .small
+
+    var body: some View {
+        Badge(image: Image(systemName: "questionmark.circle"), title: "Unverified", size: size)
+    }
+}
+
 struct Badge: View {
     enum Size {
         case small, medium, large

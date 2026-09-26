@@ -17,6 +17,12 @@ nonisolated struct ListingRowModel: Equatable {
     /// Empty for an entry nobody has classified — the row then shows no habitat line at all,
     /// rather than an empty space where one belongs.
     let habitats: [Habitat]
+    /// The entry is an unfinished draft, on screen only because the debug drawer asked for it.
+    /// Always `false` in a build the user has, where drafts never leave `SpeciesStore`.
+    ///
+    /// Not `ForageSpecies.isVerified`, which asks the narrower question of whether the entry
+    /// cites any source. Every draft does; none of them is finished.
+    let isUnverified: Bool
 }
 
 /// One "can be confused with" card, including where tapping it goes.
@@ -93,7 +99,8 @@ struct CatalogueSpeciesModelFactory: SpeciesModelFactory {
             caution: species.caution,
             group: species.group,
             seasonDescription: species.seasonDescription,
-            habitats: species.habitats
+            habitats: species.habitats,
+            isUnverified: species.draft
         )
     }
 

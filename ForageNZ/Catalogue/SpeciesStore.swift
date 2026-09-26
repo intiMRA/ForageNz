@@ -14,8 +14,28 @@ final class SpeciesStore {
         case failed(message: String)
     }
 
+    /// What the screens read: the catalogue minus the unfinished entries.
     private(set) var species: [ForageSpecies] = []
     private(set) var loadState: LoadState = .idle
+
+    /// Everything the file holds, drafts included, in display order. Kept so the visible list
+    /// can be recomputed when `includesUnverified` flips without re-reading the bundle.
+    private var catalogue: [ForageSpecies] = []
+
+    /// Lists the unfinished entries alongside the finished ones. Off in every build the user
+    /// sees: the only thing that writes it is the debug drawer, which is compiled out of a
+    /// release build. Half an entry is worse than none in the field, which is why the default
+    /// stands.
+    var includesUnverified = false {
+        didSet {
+            guard oldValue != includesUnverified else { return }
+            applyVisibility()
+        }
+    }
+
+    /// How many entries the catalogue is hiding. For the debug drawer to report; nothing the
+    /// user sees depends on it.
+    var unverifiedCount: Int { catalogue.count { $0.draft } }
 
     @ObservationIgnored @Dependency(\.speciesRepository) private var repository
 
@@ -35,14 +55,19 @@ final class SpeciesStore {
 
         loadState = .loading
         do {
-            let loaded = try await repository.loadSpecies()
-            species = loaded.filter { !$0.draft }.sorted(by: ForageSpecies.displayOrder)
+            catalogue = try await repository.loadSpecies().sorted(by: ForageSpecies.displayOrder)
+            applyVisibility()
             loadState = .loaded
         } catch {
+            catalogue = []
             species = []
             Self.logger.error("Catalogue load failed: \(String(describing: error), privacy: .public)")
             loadState = .failed(message: error.userMessage)
         }
+    }
+
+    private func applyVisibility() {
+        species = includesUnverified ? catalogue : catalogue.filter { !$0.draft }
     }
 
     private var isFailed: Bool {
@@ -74,9 +99,9 @@ final class SpeciesStore {
         return species.filter { $0.searchableText.contains(trimmed) }
     }
 
-    /// The entry for a compile-time species id. `nil` for a draft, which never reaches this
-    /// array, or if the enum and the catalogue have
-    /// drifted, which `CatalogueTests` does not allow to ship.
+    /// The entry for a compile-time species id. `nil` for a draft, unless the debug drawer
+    /// has asked for them, or if the enum and the catalogue have drifted, which
+    /// `CatalogueTests` does not allow to ship.
     func species(for id: SpeciesID) -> ForageSpecies? {
         species.first { $0.id == id.rawValue }
     }

@@ -35,6 +35,7 @@ struct RootView: View {
         .environment(store)
         .environment(whereYouAre)
         .environment(\.speciesModels, CatalogueSpeciesModelFactory(store: store))
+        .debugDrawer(store: store)
     }
 
     private var tabs: some View {

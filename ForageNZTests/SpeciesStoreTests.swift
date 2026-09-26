@@ -115,6 +115,28 @@ struct SpeciesStoreTests {
         #expect(store.search("stub").isEmpty)
     }
 
+    /// The debug drawer's one flag. It has to reach a list the store built at load time, so
+    /// flipping it after the catalogue is in memory must re-filter rather than do nothing.
+    @Test("The debug flag lets the drafts out, and putting it back hides them again")
+    func unverifiedEntriesAreOptIn() async {
+        let draft = makeSpecies(id: "stub", commonName: "Stub").with(draft: true)
+        let store = makeStore(repository: StubRepository(species: [
+            draft, makeSpecies(id: "a", commonName: "Blackberry")
+        ]))
+
+        await store.loadIfNeeded()
+        #expect(store.unverifiedCount == 1)
+
+        store.includesUnverified = true
+
+        #expect(store.species.map(\.id) == ["a", "stub"])
+        #expect(store.search("stub").map(\.id) == ["stub"])
+
+        store.includesUnverified = false
+
+        #expect(store.species.map(\.id) == ["a"])
+    }
+
     @Test("A missing catalogue surfaces its own message and no species")
     func loadFailure() async {
         let store = makeStore(repository: FailingRepository())

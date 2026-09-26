@@ -5,7 +5,7 @@ struct SpeciesRow: View {
     let model: ListingRowModel
     
     var body: some View {
-        SpeciesCard(background: .rowCardBackground) {
+        SpeciesCard(background: model.caution == .doNotEat ? .riskDeadlyBackground : .rowCardBackground) {
             leftView
             rightView
         }
@@ -24,12 +24,18 @@ struct SpeciesRow: View {
             HStack(alignment: .top) {
                 infoView
                 Spacer()
-                Badge(
-                    image: model.caution.image,
-                    title: model.caution.shortLabel,
-                    size: .small,color: model.caution.tintColor,
-                    forgroundColor: .white
-                )
+                VStack(alignment: .trailing, spacing: .xxSmall) {
+                    Badge(
+                        image: model.caution.image,
+                        title: model.caution.shortLabel,
+                        size: .small,color: model.caution.tintColor,
+                        forgroundColor: .white
+                    )
+                    // Debug builds only — a shipped row is never unverified.
+                    if model.isUnverified {
+                        UnverifiedBadge()
+                    }
+                }
             }
             
             Spacer()
