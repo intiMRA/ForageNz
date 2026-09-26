@@ -75,6 +75,9 @@ extension LookalikeRisk {
         case .deadly: Image(.deadly)
         case .toxic: Image(.toxic)
         case .unpalatable: Image(.unpalatable)
+        // No drawing of its own: it borrows the symbol `CautionLevel.straightforward` uses,
+        // so "this one is fine" looks the same wherever the app says it.
+        case .edible: Image(systemName: "checkmark.seal")
         }
     }
 }

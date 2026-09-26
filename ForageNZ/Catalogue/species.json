@@ -529,7 +529,7 @@
         "entry" : "field-mushroom",
         "howToTell" : "Field mushroom has pink-then-brown gills and no volva. Death cap has white gills and a volva. Check both, on every mushroom, every time.",
         "name" : "Field mushroom",
-        "risk" : "deadly",
+        "risk" : "edible",
         "scientificName" : "Agaricus campestris"
       },
       {
@@ -2634,7 +2634,7 @@
         "entry" : "elderflower",
         "howToTell" : "This is the confusion that kills. Elder has compound leaves of several toothed leaflets and flat-topped flower sprays; tutu has simple opposite leaves and long drooping flower strings. If you are unsure which you are looking at, harvest neither.",
         "name" : "Elderberry",
-        "risk" : "deadly",
+        "risk" : "edible",
         "scientificName" : "Sambucus nigra"
       }
     ],
@@ -3220,21 +3220,21 @@
         "entry" : "wild-fennel",
         "howToTell" : "Fennel smells strongly of aniseed, has thread-fine leaves and yellow flowers, and a stem with no blotches. Hemlock smells musty, has broader parsley-like leaflets and white flowers, and a blotched stem. Check all three on every plant.",
         "name" : "Wild fennel",
-        "risk" : "deadly",
+        "risk" : "edible",
         "scientificName" : "Foeniculum vulgare"
       },
       {
         "entry" : "sea-celery",
         "howToTell" : "Sea celery is low and sprawling with glossy, broad, celery-like leaflets and a celery smell. Hemlock stands tall with finely cut leaves and a blotched stem.",
         "name" : "Sea celery",
-        "risk" : "deadly",
+        "risk" : "edible",
         "scientificName" : "Apium prostratum"
       },
       {
         "entry" : "wild-carrot",
         "howToTell" : "Wild carrot has a hairy stem with no purple blotches and smells of carrot when crushed. Hemlock's stem is hairless and blotched.",
         "name" : "Wild carrot",
-        "risk" : "deadly",
+        "risk" : "edible",
         "scientificName" : "Daucus carota"
       }
     ],
@@ -3335,7 +3335,7 @@
         "entry" : "nettle",
         "howToTell" : "Common nettle is a soft herb below waist height with fine hairs. Ongaonga is a woody shrub taller than you with spines you can see. If it is woody, walk away.",
         "name" : "Common nettle",
-        "risk" : "deadly",
+        "risk" : "edible",
         "scientificName" : "Urtica dioica"
       }
     ],
@@ -3436,7 +3436,7 @@
         "entry" : "field-mushroom",
         "howToTell" : "Cut the stem base of every mushroom in the basket. Yellow within seconds and an inky smell is a yellow stainer. Field mushroom stays white and smells of mushroom.",
         "name" : "Field mushroom",
-        "risk" : "toxic",
+        "risk" : "edible",
         "scientificName" : "Agaricus campestris"
       }
     ],
@@ -4310,7 +4310,7 @@
         "entry" : "chickweed",
         "howToTell" : "Chickweed has a clear-sapped, round stem with a single line of hairs down one side and white star flowers. Spurge has milky sap and no petals. Snap a stem from every clump before picking.",
         "name" : "Chickweed",
-        "risk" : "toxic",
+        "risk" : "edible",
         "scientificName" : "Stellaria media"
       }
     ],
@@ -4402,7 +4402,7 @@
         "entry" : "chickweed",
         "howToTell" : "Roll the stem: chickweed's is round, pimpernel's is square. Any orange flower means pimpernel.",
         "name" : "Chickweed",
-        "risk" : "toxic",
+        "risk" : "edible",
         "scientificName" : "Stellaria media"
       }
     ],
@@ -4582,7 +4582,7 @@
         "entry" : "pikopiko",
         "howToTell" : "Pikopiko koru grow from the crown of an existing soft, drooping fern in shaded forest. Bracken shoots come straight up out of open ground, hairy and brown, near dense stands of stiff fronds.",
         "name" : "Pikopiko / hen and chicken fern",
-        "risk" : "toxic",
+        "risk" : "edible",
         "scientificName" : "Asplenium bulbiferum"
       }
     ],
@@ -4673,14 +4673,14 @@
         "entry" : "poroporo",
         "howToTell" : "Poroporo is a shrub with big purple flowers and orange ripe fruit. Black nightshade is a soft weed with small white flowers and black fruit.",
         "name" : "Poroporo",
-        "risk" : "toxic",
+        "risk" : "edible",
         "scientificName" : "Solanum laciniatum"
       },
       {
         "entry" : "fat-hen",
         "howToTell" : "Fat hen's young leaves carry a mealy white coating and it never has petals or berries. Nightshade leaves are smooth and it flowers white.",
         "name" : "Fat hen",
-        "risk" : "toxic",
+        "risk" : "edible",
         "scientificName" : "Chenopodium album"
       }
     ],
@@ -4860,7 +4860,7 @@
         "entry" : "sweet-chestnut",
         "howToTell" : "Look at the husk and the leaves. Sweet chestnut: needle-dense husk, nuts with a tassel, long single toothed leaves. Horse chestnut: sparse short spikes, smooth round nut, hand-shaped compound leaves.",
         "name" : "Sweet chestnut",
-        "risk" : "toxic",
+        "risk" : "edible",
         "scientificName" : "Castanea sativa"
       }
     ],
@@ -5054,7 +5054,7 @@
         "entry" : "onion-weed",
         "howToTell" : "Smell first. Onion weed smells of onion and has a three-edged stalk. Snowflake smells of nothing and its stalk is round.",
         "name" : "Onion weed",
-        "risk" : "toxic",
+        "risk" : "edible",
         "scientificName" : "Allium triquetrum"
       }
     ],
@@ -5232,7 +5232,7 @@
         "entry" : "porcini",
         "howToTell" : "Porcini: pores white to olive, fine white net, mild nutty taste. Bitter bolete: pores pink, dark coarse net, bitter.",
         "name" : "Porcini",
-        "risk" : "unpalatable",
+        "risk" : "edible",
         "scientificName" : "Boletus edulis"
       }
     ],
@@ -5321,7 +5321,7 @@
         "entry" : "porcini",
         "howToTell" : "Pore colour and a cut. White-to-olive pores and flesh that stays white is porcini territory; red or orange pores, or blueing, is not.",
         "name" : "Porcini",
-        "risk" : "toxic",
+        "risk" : "edible",
         "scientificName" : "Boletus edulis"
       }
     ],
@@ -5390,7 +5390,7 @@
         "entry" : "saffron-milk-cap",
         "howToTell" : "Orange milk that greens on standing is saffron milk cap. White or watery milk is not. Test every cap.",
         "name" : "Saffron milk cap",
-        "risk" : "toxic",
+        "risk" : "edible",
         "scientificName" : "Lactarius deliciosus"
       }
     ],
@@ -5456,7 +5456,7 @@
         "entry" : "watercress",
         "howToTell" : "Smell and flowers. Watercress is peppery with four-petalled flowers in a head; water celery smells of celery and flowers in small umbels.",
         "name" : "Watercress",
-        "risk" : "toxic",
+        "risk" : "edible",
         "scientificName" : "Nasturtium officinale"
       }
     ],
@@ -5546,14 +5546,14 @@
         "entry" : "wild-fennel",
         "howToTell" : "Fennel has thread-fine leaves and smells of aniseed. Dropwort has broad celery-like leaflets and smells of parsley.",
         "name" : "Wild fennel",
-        "risk" : "deadly",
+        "risk" : "edible",
         "scientificName" : "Foeniculum vulgare"
       },
       {
         "entry" : "watercress",
         "howToTell" : "Watercress is low, peppery and has rounded leaflets. Dropwort stands tall, smells of parsley, and has toothed celery-like leaves.",
         "name" : "Watercress",
-        "risk" : "deadly",
+        "risk" : "edible",
         "scientificName" : "Nasturtium officinale"
       }
     ],

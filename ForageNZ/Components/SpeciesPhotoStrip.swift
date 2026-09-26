@@ -18,7 +18,7 @@ struct SpeciesPhotoStrip: View {
                         }
                     }
                 }
-                .scrollIndicators(.visible)
+                .scrollIndicators(.hidden)
             }
 
             if let url = species.moreImagesURL {

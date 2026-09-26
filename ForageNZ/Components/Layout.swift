@@ -39,4 +39,12 @@ enum Layout {
 
     /// Drop shadow shared by every list card.
     static let cardShadowRadius: CGFloat = 2
+
+    /// Longest edge, in pixels, to decode a catalogue photo at for the identification strip —
+    /// `photoWidth` at 3× with room to spare, so it stays sharp without decoding the file
+    /// whole. See `BundledPhoto.loadedImage` for why decoding whole is not an option.
+    static let photoDecodePixelSize = 720
+
+    /// The same, for the square thumbnail on a list card.
+    static let thumbnailDecodePixelSize = 360
 }

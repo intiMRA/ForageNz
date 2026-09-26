@@ -26,12 +26,6 @@ struct SpeciesDetailView: View {
                     lookALike
                 }
                 
-                if species.caution == .doNotEat {
-                    doNotEatBanner
-                } else if species.hasDeadlyLookalikeAsEdible {
-                    deadlyLookalikeBanner
-                }
-                
                 if !species.recipes.isEmpty {
                     recipes
                 }
@@ -135,6 +129,15 @@ struct SpeciesDetailView: View {
         VStack(alignment: .leading, spacing: .empty) {
             createSectionHeader(image: Image(.outlineQuestion), title: "Look Alike")
                 .padding(.bottom, .xxSmall)
+            if species.caution == .doNotEat {
+                doNotEatBanner
+                    .padding(.bottom, .xxxSmall)
+            }
+            else if species.hasDeadlyLookalikeAsEdible {
+                deadlyLookalikeBanner
+                    .padding(.bottom, .xxxSmall)
+            }
+            
             HStack(spacing: .xxSmall) {
                 Image(.outlineExclamation)
                     .icon(size: .custom(size: 12), color: .primary)
@@ -246,43 +249,26 @@ struct SpeciesDetailView: View {
         }
     }
     
-    // MARK: - Banners
-    
     private var doNotEatBanner: some View {
-        banner(
-            title: "Do not eat",
-            message: "This entry is here so you can recognise this species and avoid it.",
-            tint: CautionLevel.doNotEat.tintColor,
-            systemImage: "xmark.octagon.fill"
-        )
+        HStack(alignment: .top, spacing: .xxxSmall) {
+            CautionLevel.doNotEat.image
+                .icon(size: .custom(size: 12), color: .cautionDanger)
+            Text("Do not eat, this entry is here so you can recognise this species and avoid it.")
+                .font(.caption)
+                .italic()
+                .foregroundStyle(.secondary)
+        }
     }
     
     private var deadlyLookalikeBanner: some View {
-        banner(
-            title: "Has a deadly lookalike",
-            message: "Read the lookalikes section below before you harvest this.",
-            tint: LookalikeRisk.deadly.tintColor,
-            systemImage: "exclamationmark.triangle.fill"
-        )
-    }
-    
-    private func banner(title: LocalizedStringKey, message: LocalizedStringKey, tint: Color, systemImage: String) -> some View {
-        HStack(alignment: .top, spacing: .small) {
-            Image(systemName: systemImage)
-                .imageScale(.large)
-                .foregroundStyle(tint)
-            
-            VStack(alignment: .leading, spacing: .xxxSmall) {
-                Text(title)
-                    .font(.headline)
-                Text(message)
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-            }
+        HStack(alignment: .top, spacing: .xxxSmall) {
+            CautionLevel.doNotEat.image
+                .icon(size: .custom(size: 12), color: .cautionDanger)
+            Text("Has a deadly lookalike, read the lookalikes section below before you harvest this.")
+                .font(.caption)
+                .italic()
+                .foregroundStyle(.secondary)
         }
-        .padding(.all, .small)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(tint.opacity(Layout.bannerBackgroundOpacity), in: Layout.cardShape)
     }
     
     private var footer: some View {

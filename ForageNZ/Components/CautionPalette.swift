@@ -15,14 +15,17 @@ extension CautionLevel {
 extension LookalikeRisk {
     var tintColor: Color {
         switch self {
+        case .edible: Color(.riskEdible)
         case .unpalatable: Color(.riskUnpalatable)
         case .toxic: Color(.riskToxic)
         case .deadly: Color(.riskDeadly)
         }
     }
-    
+
     var backgroundColor: Color {
         switch self {
+        case .edible:
+            Color(.riskEdibleBackground)
         case .unpalatable:
             Color(.riskUnpalatableBackground)
         case .toxic:

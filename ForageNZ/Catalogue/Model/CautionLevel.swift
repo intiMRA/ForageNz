@@ -30,26 +30,38 @@ public nonisolated enum CautionLevel: String, Codable, Sendable, CaseIterable {
 
 }
 
-/// How bad it is to confuse a species with one of its lookalikes.
+/// What happens if you eat the lookalike instead of the entry whose page you are on.
+///
+/// It describes the *named* species, not the pair — which is why `edible` has to exist. A
+/// confusable pair is carded from both sides, and from a do-not-eat entry's page the species
+/// it is confused with is usually the one you actually wanted. Without a case for that, the
+/// reverse card had to repeat the dangerous entry's own risk, and hemlock's page told the
+/// reader that wild fennel was deadly.
 public nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable, CaseIterable {
     case deadly
     /// Will make you seriously unwell.
     case toxic
     case unpalatable
+    /// The safe member of the pair: no worse than the entry it is carded against, and
+    /// usually the one the forager was looking for. Not a claim that it needs no care —
+    /// that is its own entry's `caution` to state.
+    case edible
 
     public var displayName: LocalizedStringResource {
         switch self {
         case .deadly: "Deadly"
         case .toxic: "Toxic"
         case .unpalatable: "Unpalatable"
+        case .edible: "Edible"
         }
     }
 
     private var severityRank: Int {
         switch self {
-        case .unpalatable: 0
-        case .toxic: 1
-        case .deadly: 2
+        case .edible: 0
+        case .unpalatable: 1
+        case .toxic: 2
+        case .deadly: 3
         }
     }
 

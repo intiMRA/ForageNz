@@ -34,7 +34,7 @@ struct SpeciesThumbnail: View {
     let fileName: String?
 
     var body: some View {
-        BundledPhoto(fileName: fileName ?? "")
+        BundledPhoto(fileName: fileName ?? "", maxPixelSize: Layout.thumbnailDecodePixelSize)
             .frame(width: Layout.thumbnailSize, height: Layout.thumbnailSize)
             .clipShape(Layout.rowCardShape)
     }

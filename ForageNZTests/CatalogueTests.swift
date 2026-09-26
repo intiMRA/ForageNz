@@ -184,6 +184,33 @@ struct CatalogueTests {
         }
     }
 
+    /// A lookalike's `risk` describes the species the card *names*, not the pair. A confusable
+    /// pair is carded from both sides, and it is the reverse card that goes wrong: hemlock's
+    /// page carried "Wild fennel — Deadly", because there was no way to say the other one is
+    /// the safe half until `LookalikeRisk.edible` existed. This is the check that says so.
+    @Test("A lookalike's risk agrees with the caution on the page it opens")
+    func lookalikeRiskMatchesItsEntry() async throws {
+        let species = try await loadCatalogue()
+        let byID = Dictionary(uniqueKeysWithValues: species.map { ($0.id, $0) })
+        for entry in species {
+            for lookalike in entry.lookalikes {
+                guard let target = byID[lookalike.entry.rawValue] else { continue }
+
+                if target.caution != .doNotEat {
+                    #expect(
+                        lookalike.risk != .toxic && lookalike.risk != .deadly,
+                        "\(entry.id) → \(lookalike.name) is tagged \(lookalike.risk.rawValue), but \(target.id)'s own page says \(target.caution.rawValue)"
+                    )
+                } else {
+                    #expect(
+                        lookalike.risk != .edible,
+                        "\(entry.id) → \(lookalike.name) is tagged edible, but \(target.id) is a do-not-eat entry"
+                    )
+                }
+            }
+        }
+    }
+
     @Test("The guide teaches avoidance, not only collection")
     func includesDoNotEatEntries() async throws {
         let doNotEat = try await loadCatalogue().filter { $0.caution == .doNotEat }
