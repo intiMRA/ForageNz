@@ -1,4 +1,3 @@
-import ForageCatalogue
 import SwiftUI
 
 @main

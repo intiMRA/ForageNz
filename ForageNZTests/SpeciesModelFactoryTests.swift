@@ -1,7 +1,17 @@
-import ForageCatalogue
+import Dependencies
 import Testing
 
 @testable import ForageNZ
+
+/// Builds the store with a substituted repository.
+///
+/// `SpeciesStore` reads its collaborators from the dependency context now rather than taking
+/// them as initialiser arguments, and `@Dependency` captures that context when the object is
+/// created — so construction has to happen *inside* `withDependencies`, not around it.
+@MainActor
+private func makeStore(repository: any SpeciesRepository) -> SpeciesStore {
+    withDependencies { $0.speciesRepository = repository } operation: { SpeciesStore() }
+}
 
 private struct StubRepository: SpeciesRepository {
     let species: [ForageSpecies]
@@ -20,36 +30,44 @@ struct SpeciesModelFactoryTests {
         return [
             ForageSpecies(
                 id: "wild-fennel", commonName: "Wild fennel", scientificName: "Foeniculum vulgare",
-                category: .herbs, origin: .pest, caution: .careRequired, months: [.january, .february],
-                summary: "Aniseed.", habitat: "Verges.", identification: "Feathery.",
+                group: .herbs, origin: .pest, caution: .careRequired, months: [.january, .february],
+                summary: "Aniseed.", habitat: "Verges.", habitats: [.coastal, .disturbed],
+                identification: "Feathery.",
                 edibleParts: "Fronds.", preparation: "Raw.", lookalikes: [hemlockCard]
             ),
             ForageSpecies(
                 id: "hemlock", commonName: "Hemlock", scientificName: "Conium maculatum",
-                category: .herbs, origin: .pest, caution: .doNotEat,
+                group: .herbs, origin: .pest, caution: .doNotEat,
                 summary: "Lethal.", habitat: "Verges.", identification: "Blotched.",
-                edibleParts: ForageSpecies.noEdibleParts, preparation: "None.", warnings: ["Lethal."]
+                edibleParts: SourcedText(ForageSpecies.noEdibleParts), preparation: "None.", warnings: ["Lethal."],
+                photos: [SpeciesPhoto(fileName: "hemlock-1.heic", caption: "Blotched stem.", credit: "(c) Someone (CC BY)")]
             )
         ]
     }
 
     private static func factory() async -> CatalogueSpeciesModelFactory {
-        let store = SpeciesStore(repository: StubRepository(species: fennelAndHemlock()))
+        let store = makeStore(repository: StubRepository(species: fennelAndHemlock()))
         await store.loadIfNeeded()
         return CatalogueSpeciesModelFactory(store: store)
     }
 
-    @Test("A row model carries what the row shows, and flags a deadly lookalike only on edibles")
+    @Test("A row model carries what the row shows")
     func rowModel() async {
         let factory = await Self.factory()
 
         let fennel = factory.createListingRowModel(id: .wildFennel)
         #expect(fennel?.commonName == "Wild fennel")
         #expect(fennel?.seasonDescription == "Jan – Feb")
-        #expect(fennel?.hasDeadlyLookalike == true)
+        #expect(fennel?.caution == .careRequired)
 
-        // Hemlock is the danger itself; the "deadly lookalike" badge is for the edible it threatens.
-        #expect(factory.createListingRowModel(id: .hemlock)?.hasDeadlyLookalike == false)
+        // The row draws its own habitat chips, so the classification has to reach the model.
+        #expect(fennel?.habitats == [.coastal, .disturbed])
+        // An unclassified entry gives the row nothing to draw, rather than an empty chip.
+        #expect(factory.createListingRowModel(id: .hemlock)?.habitats.isEmpty == true)
+
+        // The row's thumbnail is the entry's first photo; fennel has none, hemlock does.
+        #expect(fennel?.photoFileName == nil)
+        #expect(factory.createListingRowModel(id: .hemlock)?.photoFileName == "hemlock-1.heic")
     }
 
     @Test("A lookalike card's destination is the SpeciesID the catalogue named")
@@ -62,6 +80,20 @@ struct SpeciesModelFactoryTests {
         #expect(card?.accessibilityIdentifier == "lookalike.hemlock")
         #expect(card?.risk == .deadly)
         #expect(card?.howToTell == "Blotched stem, musty smell.")
+
+        // The card's photo is the destination entry's own first photo. Nothing on the
+        // lookalike names a file, so resolving it through the catalogue is the only way the
+        // card shows anything but a placeholder.
+        #expect(card?.photoFileName == "hemlock-1.heic")
+    }
+
+    @Test("A lookalike whose entry has no photo leaves the card to its placeholder")
+    func lookalikeCardWithoutPhoto() async {
+        let factory = await Self.factory()
+        let fennelAsLookalike = Lookalike(
+            name: "Wild fennel", risk: .unpalatable, howToTell: "Smells of aniseed.", entry: .wildFennel
+        )
+        #expect(factory.createLookalikeCardModel(fennelAsLookalike).photoFileName == nil)
     }
 
     @Test("The info page model resolves every lookalike to a card")

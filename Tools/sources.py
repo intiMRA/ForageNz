@@ -69,8 +69,21 @@ class Source(StrEnum):
 NEW_ZEALAND_PLACE_ID = 6803
 
 
+#: The catalogue every script reads and writes, located from this file so the scripts work
+#: from any working directory.
+CATALOGUE = Path(__file__).resolve().parent.parent / "ForageNZ" / "Catalogue" / "species.json"
+
+
 class SourceError(Exception):
-    """A source could not be reached or returned something unusable."""
+    """A source could not be reached or returned something unusable.
+
+    `status` is the HTTP status when there was one, so callers can tell a throttle (429)
+    from a real failure without parsing the message.
+    """
+
+    def __init__(self, message: str, status: int | None = None) -> None:
+        super().__init__(message)
+        self.status = status
 
 
 def get_json(url: Source | str, params: dict[str, object]) -> dict[str, Any]:
@@ -83,6 +96,8 @@ def get_json(url: Source | str, params: dict[str, object]) -> dict[str, Any]:
             request, timeout=REQUEST_TIMEOUT, context=SSL_CONTEXT
         ) as response:
             payload: dict[str, Any] = json.load(response)
+    except urllib.error.HTTPError as error:
+        raise SourceError(str(error), status=error.code) from error
     except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
         raise SourceError(str(error)) from error
     return payload

@@ -1,5 +1,4 @@
 import DesignLibrary
-import ForageCatalogue
 import SwiftUI
 
 /// Identification photos for one species, with the caption and credit each one carries.
@@ -25,12 +24,20 @@ struct SpeciesPhotoStrip: View {
             if let url = species.moreImagesURL {
                 VStack(alignment: .leading, spacing: .xxxSmall) {
                     Link(destination: url) {
-                        Label("More photos on the web", systemImage: "safari")
-                            .font(.subheadline)
+                        HStack(spacing: .xxSmall) {
+                            Image(systemName: "safari")
+                                .icon(size: .small, color: .accent)
+                            VStack(alignment: .leading, spacing: .empty) {
+                                Text("More photos on the web")
+                                    .font(.caption)
+                                
+                                Text("Requires internet connection.")
+                                    .font(.caption)
+                                    .italic()
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
                     }
-                    Text("Opens in a browser, so it needs a connection.")
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
                 }
             }
         }
@@ -43,47 +50,15 @@ struct SpeciesPhotoStrip: View {
                 .clipShape(Layout.cardShape)
 
             Text(photo.caption)
-                .font(.caption.weight(.medium))
+                .font(.caption)
                 .lineLimit(3)
 
             Text(photo.credit)
-                .font(.caption2)
+                .font(.caption)
                 .foregroundStyle(.secondary)
-                .lineLimit(2)
+                .italic()
+                .lineLimit(3)
         }
         .frame(width: Layout.photoWidth)
-    }
-}
-
-/// Loads a catalogue photo from the app bundle.
-private struct BundledPhoto: View {
-    let fileName: String
-
-    var body: some View {
-        if let image = loadedImage {
-            Image(uiImage: image)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-        } else {
-            Layout.cardShape
-                .fill(.quaternary)
-                .overlay {
-                    Image(systemName: "photo")
-                        .foregroundStyle(.secondary)
-                }
-        }
-    }
-
-    /// Photos ship as a folder reference; `CatalogueTests` asserts that layout, so there is
-    /// no second place to look.
-    private var loadedImage: UIImage? {
-        guard let url = Bundle.main.url(
-            forResource: fileName,
-            withExtension: nil,
-            subdirectory: CataloguePhotos.directoryName
-        ) else {
-            return nil
-        }
-        return UIImage(contentsOfFile: url.path)
     }
 }

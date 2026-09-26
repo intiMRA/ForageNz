@@ -22,7 +22,7 @@ from enum import StrEnum
 from pathlib import Path
 from typing import Any
 
-from sources import Licence, Source, SourceError, licensed_photos, results_of
+from sources import CATALOGUE, Licence, Source, SourceError, licensed_photos, results_of
 
 
 class EvaluationSet(StrEnum):
@@ -30,9 +30,6 @@ class EvaluationSet(StrEnum):
 
     CATALOGUE = "catalogue"
     OUT_OF_CATALOGUE = "out-of-catalogue"
-
-
-CATALOGUE = Path("ForageNZ/Catalogue/species.json")
 
 
 def catalogue_taxa(catalogue: Path = CATALOGUE) -> dict[str, str]:

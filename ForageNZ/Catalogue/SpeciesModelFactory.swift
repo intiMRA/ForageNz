@@ -1,4 +1,3 @@
-import ForageCatalogue
 import SwiftUI
 
 // MARK: - Models
@@ -6,13 +5,18 @@ import SwiftUI
 /// Everything a list row shows. A value, so it can be built and checked without a view.
 nonisolated struct ListingRowModel: Equatable {
     let speciesID: SpeciesID
+    let photoFileName: String?
     let commonName: String
     let scientificName: String
     let summary: String
     let caution: CautionLevel
-    let categorySymbolName: String
+    /// The group itself, not an icon name: the row picks the drawing, and a `ForageGroup`
+    /// keeps this model `Equatable` where a SwiftUI `Image` would not.
+    let group: ForageGroup
     let seasonDescription: String
-    let hasDeadlyLookalike: Bool
+    /// Empty for an entry nobody has classified — the row then shows no habitat line at all,
+    /// rather than an empty space where one belongs.
+    let habitats: [Habitat]
 }
 
 /// One "can be confused with" card, including where tapping it goes.
@@ -20,6 +24,7 @@ nonisolated struct LookalikeCardModel: Equatable, Identifiable {
     let destination: SpeciesID
     let name: String
     let scientificName: String?
+    let photoFileName: String?
     let risk: LookalikeRisk
     let howToTell: String
 
@@ -27,13 +32,17 @@ nonisolated struct LookalikeCardModel: Equatable, Identifiable {
     /// Stable hook for UI tests: `lookalike.hemlock`.
     var accessibilityIdentifier: String { "lookalike.\(destination.rawValue)" }
 
-    /// The mapping needs no catalogue, so it lives on the model and every factory shares it.
-    init(_ lookalike: Lookalike) {
-        destination = lookalike.entry
-        name = lookalike.name
-        scientificName = lookalike.scientificName
-        risk = lookalike.risk
-        howToTell = lookalike.howToTell
+    /// The mapping needs no catalogue, so it lives on the model and every factory shares it —
+    /// except the photo, which belongs to the entry the card opens and so has to be resolved
+    /// by whoever holds the catalogue. A factory without one passes `nil` and the card draws
+    /// its placeholder.
+    init(_ lookalike: Lookalike, photoFileName: String? = nil) {
+        self.destination = lookalike.entry
+        self.name = lookalike.name
+        self.scientificName = lookalike.scientificName
+        self.photoFileName = photoFileName
+        self.risk = lookalike.risk
+        self.howToTell = lookalike.howToTell
     }
 }
 
@@ -53,7 +62,8 @@ nonisolated struct InfoPageModel: Equatable {
 /// asked for. A protocol so previews and tests inject a stub without a catalogue.
 @MainActor
 protocol SpeciesModelFactory {
-    /// `nil` only if the enum and the catalogue have drifted, which the tests do not let ship.
+    /// `nil` for a draft, which the app never lists, or if the enum and the catalogue have
+    /// drifted, which the tests do not let ship.
     func createInfoPageModel(id: SpeciesID) -> InfoPageModel?
     func createListingRowModel(id: SpeciesID) -> ListingRowModel?
     /// Takes the `Lookalike` rather than a bare id: the card's text — how to tell them apart —
@@ -76,18 +86,22 @@ struct CatalogueSpeciesModelFactory: SpeciesModelFactory {
         guard let species = store.species(for: id) else { return nil }
         return ListingRowModel(
             speciesID: id,
+            photoFileName: species.photos.first?.fileName,
             commonName: species.commonName,
             scientificName: species.scientificName,
-            summary: species.summary,
+            summary: species.summary.text,
             caution: species.caution,
-            categorySymbolName: species.category.symbolName,
+            group: species.group,
             seasonDescription: species.seasonDescription,
-            hasDeadlyLookalike: species.hasDeadlyLookalikeAsEdible
+            habitats: species.habitats
         )
     }
 
     func createLookalikeCardModel(_ lookalike: Lookalike) -> LookalikeCardModel {
-        LookalikeCardModel(lookalike)
+        LookalikeCardModel(
+            lookalike,
+            photoFileName: store.species(for: lookalike.entry)?.photos.first?.fileName
+        )
     }
 }
 

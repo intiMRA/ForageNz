@@ -1,41 +1,47 @@
-import ForageCatalogue
 import SwiftUI
+import DesignLibrary
 
 struct BrowseView: View {
     @Environment(SpeciesStore.self) private var store
 
     @State private var searchText = ""
-    @State private var selectedCategory: ForageCategory?
+    @State private var selectedGroup: ForageGroup?
     @State private var selectedOrigin: ForageOrigin?
 
     var body: some View {
         let results = filteredSpecies
-        let grouped = Dictionary(grouping: results, by: \.category)
-
-        List {
-            if let selectedOrigin {
-                Section {
-                    Text(selectedOrigin.harvestGuidance)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .accessibilityIdentifier("originHarvestGuidance")
+        let grouped = Dictionary(grouping: results, by: \.group)
+        ScrollView {
+            LazyVStack {
+                if let selectedOrigin {
+                    Section {
+                        Text(selectedOrigin.harvestGuidance)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                            .accessibilityIdentifier("originHarvestGuidance")
+                    }
                 }
-            }
-
-            ForEach(visibleCategories) { category in
-                let items = grouped[category] ?? []
-                if !items.isEmpty {
-                    Section(category.displayName) {
-                        ForEach(items) { item in
-                            SpeciesRowLink(species: item)
+                
+                ForEach(visibleGroups) { group in
+                    let items = grouped[group] ?? []
+                    if !items.isEmpty {
+                        LazyVStack(alignment: .leading) {
+                            Text(group.displayName)
+                                .bold()
+                                .font(.headline)
+                                .padding(.vertical, .xSmall)
+                            ForEach(items) { item in
+                                SpeciesRowButton(species: item)
+                            }
                         }
                     }
                 }
+                
+                if results.isEmpty {
+                    emptyState
+                }
             }
-
-            if results.isEmpty {
-                emptyState
-            }
+            .padding(.horizontal, .medium)
         }
         .navigationTitle("Field guide")
         .searchable(text: $searchText, prompt: "Search names or description")
@@ -47,15 +53,15 @@ struct BrowseView: View {
     }
 
     private var filteredSpecies: [ForageSpecies] {
-        store.filter(query: searchText, category: selectedCategory, origin: selectedOrigin)
+        store.filter(query: searchText, group: selectedGroup, origin: selectedOrigin)
     }
 
-    private var visibleCategories: [ForageCategory] {
-        selectedCategory.map { [$0] } ?? ForageCategory.allCases
+    private var visibleGroups: [ForageGroup] {
+        selectedGroup.map { [$0] } ?? ForageGroup.allCases
     }
 
     private var isFiltered: Bool {
-        selectedCategory != nil || selectedOrigin != nil
+        selectedGroup != nil || selectedOrigin != nil
     }
 
     @ViewBuilder
@@ -73,24 +79,29 @@ struct BrowseView: View {
 
     private var filterMenu: some View {
         Menu {
-            Section("Category") {
+            Section("Group") {
                 Button {
-                    selectedCategory = nil
+                    selectedGroup = nil
                 } label: {
                     Label(
-                        "All categories",
-                        systemImage: selectedCategory == nil ? "checkmark" : "square.grid.2x2"
+                        "All groups",
+                        systemImage: selectedGroup == nil ? "checkmark" : "square.grid.2x2"
                     )
                 }
 
-                ForEach(ForageCategory.allCases) { category in
+                ForEach(ForageGroup.allCases) { group in
                     Button {
-                        selectedCategory = category
+                        selectedGroup = group
                     } label: {
-                        Label(
-                            category.displayName,
-                            systemImage: selectedCategory == category ? "checkmark" : category.symbolName
-                        )
+                        Label {
+                            Text(group.displayName)
+                        } icon: {
+                            if selectedGroup == group {
+                                Image(systemName: "checkmark")
+                            } else {
+                                group.image
+                            }
+                        }
                     }
                 }
             }
@@ -109,10 +120,15 @@ struct BrowseView: View {
                     Button {
                         selectedOrigin = origin
                     } label: {
-                        Label(
-                            origin.displayName,
-                            systemImage: selectedOrigin == origin ? "checkmark" : origin.symbolName
-                        )
+                        Label {
+                            Text(origin.displayName)
+                        } icon: {
+                            if selectedOrigin == origin {
+                                Image(systemName: "checkmark")
+                            } else {
+                                origin.image
+                            }
+                        }
                     }
                 }
             }

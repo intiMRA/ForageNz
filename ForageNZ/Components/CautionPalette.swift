@@ -1,4 +1,3 @@
-import ForageCatalogue
 import SwiftUI
 
 /// The single mapping from safety semantics to colour. Colouring a caution affordance
@@ -16,9 +15,20 @@ extension CautionLevel {
 extension LookalikeRisk {
     var tintColor: Color {
         switch self {
-        case .unpalatable: Color(.cautionSafe)
-        case .toxic: Color(.cautionCare)
-        case .deadly: Color(.cautionDanger)
+        case .unpalatable: Color(.riskUnpalatable)
+        case .toxic: Color(.riskToxic)
+        case .deadly: Color(.riskDeadly)
+        }
+    }
+    
+    var backgroundColor: Color {
+        switch self {
+        case .unpalatable:
+            Color(.riskUnpalatableBackground)
+        case .toxic:
+            Color(.riskToxicBackground)
+        case .deadly:
+            Color(.riskDeadlyBackground)
         }
     }
 }

@@ -1,5 +1,4 @@
 import DesignLibrary
-import ForageCatalogue
 import SwiftUI
 
 /// One entry, split across tabs.
@@ -83,8 +82,8 @@ struct SpeciesEditorView: View {
         }
 
         Section("Classification") {
-            Picker("Category", selection: binding(\.category) { $0.with(category: $1) }) {
-                ForEach(ForageCategory.allCases) { Text($0.displayName).tag($0) }
+            Picker("Group", selection: binding(\.group) { $0.with(group: $1) }) {
+                ForEach(ForageGroup.allCases) { Text($0.displayName).tag($0) }
             }
             Picker("Origin", selection: binding(\.origin) { $0.with(origin: $1) }) {
                 ForEach(ForageOrigin.allCases) { Text($0.displayName).tag($0) }
@@ -92,6 +91,7 @@ struct SpeciesEditorView: View {
             Picker("Caution", selection: binding(\.caution) { $0.with(caution: $1) }) {
                 ForEach(CautionLevel.allCases, id: \.self) { Text($0.displayName).tag($0) }
             }
+            Toggle("Draft — hidden from the app until finished", isOn: binding(\.draft) { $0.with(draft: $1) })
         }
 
         Section {
@@ -107,14 +107,17 @@ struct SpeciesEditorView: View {
         Section("Description") {
             LabelledField(
                 "Summary",
-                text: binding(\.summary) { $0.with(summary: $1) },
+                text: binding(\.summary.text) { $0.with(summary: $0.summary.with(text: $1)) },
                 lines: 2...4,
                 help: "One line. It's the subtitle in every list."
             )
-            LabelledField("Habitat", text: binding(\.habitat) { $0.with(habitat: $1) }, lines: 3...8)
+            LabelledField("Habitat", text: binding(\.habitat.text) { $0.with(habitat: $0.habitat.with(text: $1)) }, lines: 3...8)
+            LabeledContent("Where it grows") {
+                HabitatPicker(habitats: species.habitats) { onChange(species.with(habitats: $0)) }
+            }
             LabelledField(
                 "Identification",
-                text: binding(\.identification) { $0.with(identification: $1) },
+                text: binding(\.identification.text) { $0.with(identification: $0.identification.with(text: $1)) },
                 lines: 4...12,
                 help: "What to check in the field."
             )
@@ -123,13 +126,13 @@ struct SpeciesEditorView: View {
         Section("Use") {
             LabelledField(
                 "Edible parts",
-                text: binding(\.edibleParts) { $0.with(edibleParts: $1) },
+                text: binding(\.edibleParts.text) { $0.with(edibleParts: $0.edibleParts.with(text: $1)) },
                 lines: 2...6,
                 help: species.caution == .doNotEat ? "Must say exactly “\(ForageSpecies.noEdibleParts)” for a do-not-eat entry." : nil
             )
             LabelledField(
                 "Preparation",
-                text: binding(\.preparation) { $0.with(preparation: $1) },
+                text: binding(\.preparation.text) { $0.with(preparation: $0.preparation.with(text: $1)) },
                 lines: 3...8
             )
         }
@@ -175,7 +178,9 @@ struct SpeciesEditorView: View {
         Section("Harvesting & tikanga") {
             LabelledField(
                 "Guidance",
-                text: optionalBinding(\.harvestEthics) { $0.with(harvestEthics: $1) },
+                text: optionalBinding(\.harvestEthics?.text) { species, text in
+                    species.with(harvestEthics: text.map { species.harvestEthics?.with(text: $0) ?? SourcedText($0) })
+                },
                 lines: 3...8,
                 help: species.origin.isIndigenous ? "Required for native and endemic species." : nil
             )
@@ -249,7 +254,7 @@ enum EditorTab: String, CaseIterable, Identifiable {
     /// not an issue the editor silently never shows.
     static func tab(owning field: ValidationField) -> EditorTab {
         switch field {
-        case .id, .commonName, .scientificName, .summary, .habitat, .identification,
+        case .id, .commonName, .scientificName, .summary, .habitat, .habitats, .identification,
              .edibleParts, .preparation, .caution, .months:
             .entry
         case .photos:

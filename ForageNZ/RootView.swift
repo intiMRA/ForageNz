@@ -1,9 +1,14 @@
-import ForageCatalogue
 import SwiftUI
 
 struct RootView: View {
     @State private var store = SpeciesStore()
     @State private var whereYouAre = WhereYouAreStore()
+
+    // One router per tab, so the three stacks stay independent and each keeps its place when
+    // the user switches away and back — the behaviour the implicit stacks had.
+    @State private var inSeasonRouter = Router()
+    @State private var fieldGuideRouter = Router()
+    @State private var safetyRouter = Router()
 
     var body: some View {
         Group {
@@ -35,15 +40,24 @@ struct RootView: View {
     private var tabs: some View {
         TabView {
             Tab("In season", systemImage: "calendar") {
-                NavigationStack { InSeasonView().speciesDestination() }
+                NavigationStack(path: $inSeasonRouter.path) {
+                    InSeasonView().speciesDestination()
+                }
+                .environment(\.router, inSeasonRouter)
             }
 
             Tab("Field guide", systemImage: "book") {
-                NavigationStack { BrowseView().speciesDestination() }
+                NavigationStack(path: $fieldGuideRouter.path) {
+                    BrowseView().speciesDestination()
+                }
+                .environment(\.router, fieldGuideRouter)
             }
 
             Tab("Safety", systemImage: "exclamationmark.shield") {
-                NavigationStack { SafetyView().speciesDestination() }
+                NavigationStack(path: $safetyRouter.path) {
+                    SafetyView().speciesDestination()
+                }
+                .environment(\.router, safetyRouter)
             }
         }
     }

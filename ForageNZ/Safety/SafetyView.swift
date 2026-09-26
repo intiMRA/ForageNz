@@ -1,5 +1,4 @@
 import DesignLibrary
-import ForageCatalogue
 import SwiftUI
 
 struct SafetyView: View {
@@ -37,7 +36,7 @@ struct SafetyView: View {
             if !store.doNotEat.isEmpty {
                 Section {
                     ForEach(store.doNotEat) { item in
-                        SpeciesRowLink(species: item)
+                        SpeciesRowButton(species: item)
                     }
                 } header: {
                     Text("Learn these, then leave them alone")
@@ -49,7 +48,7 @@ struct SafetyView: View {
             if !store.withDeadlyLookalikes.isEmpty {
                 Section {
                     ForEach(store.withDeadlyLookalikes) { item in
-                        SpeciesRowLink(species: item)
+                        SpeciesRowButton(species: item)
                     }
                 } header: {
                     Text("Edible, but has a deadly lookalike")

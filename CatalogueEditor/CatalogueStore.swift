@@ -1,4 +1,3 @@
-import ForageCatalogue
 import Foundation
 import Observation
 
@@ -120,7 +119,7 @@ final class CatalogueStore {
             id: id,
             commonName: trimmed,
             scientificName: "",
-            category: .greens,
+            group: .greens,
             origin: .introduced,
             caution: .careRequired,
             summary: "",

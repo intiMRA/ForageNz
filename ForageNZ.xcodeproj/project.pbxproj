@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B386238746B52A8FC66EF1 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51770A6820F225DAC3895D24 /* Destination.swift */; };
 		07A7F205698F30A7C79C9D9B /* EditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12BAA997F082B29A294ACA /* EditorUITests.swift */; };
 		0A816877BA9AA045859E5529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817A298659AD6F2CD63D0228 /* Assets.xcassets */; };
-		0EFC0592935EC3241932A7C6 /* CautionColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B19F5173E05C2042951736 /* CautionColors.xcassets */; };
+		0EFC0592935EC3241932A7C6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B19F5173E05C2042951736 /* Colors.xcassets */; };
 		16020BFCDA4491686721448A /* PhotoSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01BA2E911FCB343C07DAD39 /* PhotoSectionView.swift */; };
 		16AF351E5E55AEB9978BCDD5 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB674D266AEC3706DD237EA /* LocationProvider.swift */; };
 		16DE25F2A746058FB6782194 /* SpeciesPhotoStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11341A3521A25AA8E3516D /* SpeciesPhotoStrip.swift */; };
@@ -23,29 +24,40 @@
 		360194B642E9FF2742582745 /* InSeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4ED5A9B62C12BD6C3E48E /* InSeasonView.swift */; };
 		3D19D3D50781F4C7BE5F99E4 /* SpeciesStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3FB453CF93F89079D941E /* SpeciesStoreTests.swift */; };
 		427F19E65882EA68C6C6B0B6 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B10EF78BEEEED358AB658 /* Layout.swift */; };
-		42BC722A0552DA4BEBBE5C9F /* CautionBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BEAEAE3D024F1C6A9B9C10 /* CautionBadge.swift */; };
+		42BC722A0552DA4BEBBE5C9F /* ImageBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BEAEAE3D024F1C6A9B9C10 /* ImageBadge.swift */; };
 		4BB7620AB24EB7A8E15ADEB9 /* WhereYouAreSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867CCA8A5C5E962FD60BBF8 /* WhereYouAreSection.swift */; };
 		4CCD82CE448B568CA2ED776F /* SpeciesDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FF7768A1A33F41DFEFA066 /* SpeciesDestination.swift */; };
 		566613F76B253A99D963B234 /* land-status.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D00CFE7D2AD3E97CCF1400 /* land-status.png */; };
-		5D9C874AA850F3AE65673F79 /* ForageCatalogue in Frameworks */ = {isa = PBXBuildFile; productRef = 69125DE059737EBB12471472 /* ForageCatalogue */; };
+		663A3FC4F77B87622BD1B478 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F90454DCD23471EAA95C57 /* Router.swift */; };
 		69242F8D935959254849BA9D /* SpeciesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6D5333F8A7A09C3B0043D /* SpeciesStore.swift */; };
 		6A2120C5CF1E8C22A431AE0A /* Photos in Resources */ = {isa = PBXBuildFile; fileRef = F6DE5983A841F0D9A2F105AA /* Photos */; };
-		6B9CC9414FC7769127533890 /* ForageCatalogue in Frameworks */ = {isa = PBXBuildFile; productRef = 9761BCE487176B0F4BED2611 /* ForageCatalogue */; };
-		6DCD0099345F124C7C49EED0 /* CautionColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B19F5173E05C2042951736 /* CautionColors.xcassets */; };
+		6DCD0099345F124C7C49EED0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B19F5173E05C2042951736 /* Colors.xcassets */; };
 		7062ADCA73776244CB4A6E51 /* WhereYouAreStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE2E1227F9C1C691B2F945D /* WhereYouAreStoreTests.swift */; };
 		732EB0C3958667F5E1937D29 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F567D725B05CA6E238F22C8 /* RootView.swift */; };
 		7B432E867DB0ED01A38C768B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C28C6DA10AE33F73F5B94C /* Cocoa.framework */; };
 		7D35632F1F5EEB570322D3E0 /* PoisonsCentre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163C64C7220DD70F766A16E /* PoisonsCentre.swift */; };
 		7F83D47960CFE20BF784F76C /* FieldGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452B052BD15DA513EB5F5BF3 /* FieldGuideUITests.swift */; };
 		88884AE952E8D6A46933C56A /* SpeciesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */; };
-		914C98374F0108651F55C013 /* ForageCatalogue in Frameworks */ = {isa = PBXBuildFile; productRef = FCA8BB9C87B318851F23469F /* ForageCatalogue */; };
+		8ACD48F23062428200B39C86 /* BundledPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD48F13062428200B39C86 /* BundledPhoto.swift */; };
+		8ADBEE413063726B00B20F27 /* View+If.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBEE403063726B00B20F27 /* View+If.swift */; };
+		8ADBF3C0306655F900B20F27 /* HabitatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF3BF306655F900B20F27 /* HabitatView.swift */; };
 		9259C8452BDD7F338B28B7A0 /* CatalogueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001C8B591D460EC849D511 /* CatalogueStore.swift */; };
 		964DFD06BF7EB889DF54325C /* WhereYouAreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23F44C740462604FCC5A42 /* WhereYouAreStore.swift */; };
 		993520DE95024A3F666F3E9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C28C6DA10AE33F73F5B94C /* Cocoa.framework */; };
 		9E8FC670A75374EEBCCECBC7 /* SafetyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE90969BDB0EBE6CF9F173 /* SafetyView.swift */; };
 		9F5008342D304A10A3E24A19 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8AAD98CD750F96CCB1E26CB7 /* Localizable.xcstrings */; };
 		9FBCD80401D74B2453FD524A /* EditorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B8BE3236AB36D01FBF5AF3 /* EditorLayout.swift */; };
+		A15E8B2398C04E25AE895BDB /* DependencyValues+ForageNZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB214D4274747C97AEAA6449 /* DependencyValues+ForageNZ.swift */; };
+		A1C0DE0000000000CA7A1007 /* CatalogueArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C0DE0000000000CA7A1006 /* CatalogueArtwork.swift */; };
+		A1C0DE0000000000CA7A1008 /* CatalogueArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C0DE0000000000CA7A1006 /* CatalogueArtwork.swift */; };
+		A1C0DE0000000000CA7A100A /* Catalogue.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C0DE0000000000CA7A1009 /* Catalogue.xcassets */; };
+		A1C0DE0000000000CA7A100B /* Catalogue.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C0DE0000000000CA7A1009 /* Catalogue.xcassets */; };
 		A4579F5824712EB55154CB9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C28C6DA10AE33F73F5B94C /* Cocoa.framework */; };
+		AA20000000000000000001AA /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = AA10000000000000000001AA /* Dependencies */; };
+		AA20000000000000000002AA /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = AA10000000000000000002AA /* SwiftUINavigation */; };
+		AA20000000000000000003AA /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = AA10000000000000000003AA /* Dependencies */; };
+		AA20000000000000000004AA /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = AA10000000000000000004AA /* SwiftUINavigation */; };
+		AA20000000000000000005AA /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = AA10000000000000000005AA /* Dependencies */; };
 		ADCE358E9BDD4BA324F73087 /* SpeciesEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A08516B887C616C0C2D6B0 /* SpeciesEditorView.swift */; };
 		AF7EF03860A44072C5F3F471 /* EditorFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493CBE757E2E16D66F2DB00 /* EditorFields.swift */; };
 		B07C79F23F1BB365C0EEFFBE /* EditorRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E230F2A934A37C1CF47C7C24 /* EditorRootView.swift */; };
@@ -54,10 +66,41 @@
 		B93BA6A59034E519AC12B2B9 /* CatalogueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6276DE2F1556F1A782D58DEF /* CatalogueTests.swift */; };
 		BAA24ADD5643D98E84B24B00 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A21BD7B7E3E1BCD02A1F09 /* Logging.swift */; };
 		BC7A270E66145A359CC6F5BB /* species.json in Resources */ = {isa = PBXBuildFile; fileRef = D6ECE46F98F836C2B53E8AA5 /* species.json */; };
-		C6508D90B2BD9E3DC2D0E545 /* ForageCatalogue in Frameworks */ = {isa = PBXBuildFile; productRef = 279E84FE33A5770883B72986 /* ForageCatalogue */; };
 		C96F1DE935FB259F9428C0FE /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9E85DA08B2A7D3ED5C7C9 /* BrowseView.swift */; };
+		CA7A10000000000000000002 /* CatalogueFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000001 /* CatalogueFile.swift */; };
+		CA7A10000000000000000003 /* CatalogueFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000001 /* CatalogueFile.swift */; };
+		CA7A10000000000000000005 /* CatalogueLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000004 /* CatalogueLocator.swift */; };
+		CA7A10000000000000000006 /* CatalogueLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000004 /* CatalogueLocator.swift */; };
+		CA7A10000000000000000008 /* CautionLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000007 /* CautionLevel.swift */; };
+		CA7A10000000000000000009 /* CautionLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000007 /* CautionLevel.swift */; };
+		CA7A1000000000000000000B /* ForageGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000000A /* ForageGroup.swift */; };
+		CA7A1000000000000000000C /* ForageGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000000A /* ForageGroup.swift */; };
+		CA7A1000000000000000000E /* ForageMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000000D /* ForageMonth.swift */; };
+		CA7A1000000000000000000F /* ForageMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000000D /* ForageMonth.swift */; };
+		CA7A10000000000000000011 /* ForageSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000010 /* ForageSpecies.swift */; };
+		CA7A10000000000000000012 /* ForageSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000010 /* ForageSpecies.swift */; };
+		CA7A10000000000000000014 /* Habitat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000013 /* Habitat.swift */; };
+		CA7A10000000000000000015 /* Habitat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000013 /* Habitat.swift */; };
+		CA7A10000000000000000017 /* LandStatusMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000016 /* LandStatusMap.swift */; };
+		CA7A10000000000000000018 /* LandStatusMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000016 /* LandStatusMap.swift */; };
+		CA7A1000000000000000001A /* PhotoAudit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000019 /* PhotoAudit.swift */; };
+		CA7A1000000000000000001B /* PhotoAudit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000019 /* PhotoAudit.swift */; };
+		CA7A1000000000000000001D /* PhotoImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000001C /* PhotoImporter.swift */; };
+		CA7A1000000000000000001E /* PhotoImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000001C /* PhotoImporter.swift */; };
+		CA7A10000000000000000020 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000001F /* Recipe.swift */; };
+		CA7A10000000000000000021 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000001F /* Recipe.swift */; };
+		CA7A10000000000000000023 /* SourcedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000022 /* SourcedText.swift */; };
+		CA7A10000000000000000024 /* SourcedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000022 /* SourcedText.swift */; };
+		CA7A10000000000000000026 /* SpeciesIDGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000025 /* SpeciesIDGenerator.swift */; };
+		CA7A10000000000000000027 /* SpeciesIDGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000025 /* SpeciesIDGenerator.swift */; };
+		CA7A10000000000000000029 /* SpeciesPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000028 /* SpeciesPhoto.swift */; };
+		CA7A1000000000000000002A /* SpeciesPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A10000000000000000028 /* SpeciesPhoto.swift */; };
+		CA7A1000000000000000002C /* SpeciesValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000002B /* SpeciesValidation.swift */; };
+		CA7A1000000000000000002D /* SpeciesValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000002B /* SpeciesValidation.swift */; };
+		CA7A1000000000000000002F /* SpeciesID.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000002E /* SpeciesID.swift */; };
+		CA7A10000000000000000030 /* SpeciesID.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000002E /* SpeciesID.swift */; };
 		CAFC3DCE142AC7A3A71B2E81 /* SpeciesModelFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72CBBFBBA343438F3DA352 /* SpeciesModelFactoryTests.swift */; };
-		CEA8223E11FF897287721DDE /* SpeciesRowLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB4A544F5F85A5E95E8A82A /* SpeciesRowLink.swift */; };
+		CEA8223E11FF897287721DDE /* SpeciesRowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB4A544F5F85A5E95E8A82A /* SpeciesRowButton.swift */; };
 		E0E56E639A59BBA011C3905E /* LandStatusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F8E9DC97AD8C0C3504754F /* LandStatusRepository.swift */; };
 		E3C01D365E85295EE1DB4CBC /* CautionPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */; };
 		E7057F68D7BCDBAEC626647A /* DesignLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 83413BE0AA6927FA598C7C0C /* DesignLibrary */; };
@@ -98,7 +141,7 @@
 
 /* Begin PBXFileReference section */
 		047AF412753DE64D1A1346F2 /* CatalogueEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogueEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04B19F5173E05C2042951736 /* CautionColors.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = CautionColors.xcassets; path = Components/CautionColors.xcassets; sourceTree = "<group>"; };
+		04B19F5173E05C2042951736 /* Colors.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = ../Components/Colors.xcassets; sourceTree = "<group>"; };
 		08C28C6DA10AE33F73F5B94C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		09A9E85DA08B2A7D3ED5C7C9 /* BrowseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrowseView.swift; path = FieldGuide/BrowseView.swift; sourceTree = "<group>"; };
 		1867CCA8A5C5E962FD60BBF8 /* WhereYouAreSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhereYouAreSection.swift; path = WhereYouAre/WhereYouAreSection.swift; sourceTree = "<group>"; };
@@ -113,6 +156,7 @@
 		4430CA485A2948687D079B77 /* CatalogueEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogueEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		452B052BD15DA513EB5F5BF3 /* FieldGuideUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FieldGuideUITests.swift; sourceTree = "<group>"; };
 		50C595A6A649F412A4066591 /* LookalikeCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LookalikeCardView.swift; path = Components/LookalikeCardView.swift; sourceTree = "<group>"; };
+		51770A6820F225DAC3895D24 /* Destination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Destination.swift; path = Navigation/Destination.swift; sourceTree = "<group>"; };
 		55C6D5333F8A7A09C3B0043D /* SpeciesStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesStore.swift; path = Catalogue/SpeciesStore.swift; sourceTree = "<group>"; };
 		5E12BAA997F082B29A294ACA /* EditorUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditorUITests.swift; sourceTree = "<group>"; };
 		5F39B686CA0E9CE04181DD40 /* ForageNZApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForageNZApp.swift; sourceTree = "<group>"; };
@@ -124,52 +168,61 @@
 		791DF0D2BB9C0D5A58110687 /* CatalogueEditorApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueEditorApp.swift; sourceTree = "<group>"; };
 		7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesDetailView.swift; path = FieldGuide/SpeciesDetailView.swift; sourceTree = "<group>"; };
 		817A298659AD6F2CD63D0228 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8AAD98CD750F96CCB1E26CB7 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.xcstrings; path = Resources/Localizable.xcstrings; sourceTree = "<group>"; };
+		8AAD98CD750F96CCB1E26CB7 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; name = Localizable.xcstrings; path = ../Resources/Localizable.xcstrings; sourceTree = "<group>"; };
+		8ACD48F13062428200B39C86 /* BundledPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundledPhoto.swift; sourceTree = "<group>"; };
+		8ADBEE403063726B00B20F27 /* View+If.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+If.swift"; sourceTree = "<group>"; };
+		8ADBF3BF306655F900B20F27 /* HabitatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitatView.swift; sourceTree = "<group>"; };
 		8B5CFF23B8C79B576A8D1B65 /* ForageNZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRepository.swift; path = Catalogue/SpeciesRepository.swift; sourceTree = "<group>"; };
 		9DE2E1227F9C1C691B2F945D /* WhereYouAreStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WhereYouAreStoreTests.swift; sourceTree = "<group>"; };
 		A01BA2E911FCB343C07DAD39 /* PhotoSectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoSectionView.swift; sourceTree = "<group>"; };
 		A1001C8B591D460EC849D511 /* CatalogueStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueStore.swift; sourceTree = "<group>"; };
+		A1C0DE0000000000CA7A1006 /* CatalogueArtwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogueArtwork.swift; path = Components/CatalogueArtwork.swift; sourceTree = "<group>"; };
+		A1C0DE0000000000CA7A1009 /* Catalogue.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Catalogue.xcassets; sourceTree = "<group>"; };
 		B23CB3FA9353E11476EEC70C /* ForageNZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D00CFE7D2AD3E97CCF1400 /* land-status.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "land-status.png"; path = "Catalogue/land-status.png"; sourceTree = "<group>"; };
 		B5D3FB453CF93F89079D941E /* SpeciesStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesStoreTests.swift; sourceTree = "<group>"; };
 		B9A08516B887C616C0C2D6B0 /* SpeciesEditorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesEditorView.swift; sourceTree = "<group>"; };
+		CA7A10000000000000000001 /* CatalogueFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogueFile.swift; path = Catalogue/Model/CatalogueFile.swift; sourceTree = "<group>"; };
+		CA7A10000000000000000004 /* CatalogueLocator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogueLocator.swift; path = Catalogue/Model/CatalogueLocator.swift; sourceTree = "<group>"; };
+		CA7A10000000000000000007 /* CautionLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CautionLevel.swift; path = Catalogue/Model/CautionLevel.swift; sourceTree = "<group>"; };
+		CA7A1000000000000000000A /* ForageGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForageGroup.swift; path = Catalogue/Model/ForageGroup.swift; sourceTree = "<group>"; };
+		CA7A1000000000000000000D /* ForageMonth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForageMonth.swift; path = Catalogue/Model/ForageMonth.swift; sourceTree = "<group>"; };
+		CA7A10000000000000000010 /* ForageSpecies.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForageSpecies.swift; path = Catalogue/Model/ForageSpecies.swift; sourceTree = "<group>"; };
+		CA7A10000000000000000013 /* Habitat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Habitat.swift; path = Catalogue/Model/Habitat.swift; sourceTree = "<group>"; };
+		CA7A10000000000000000016 /* LandStatusMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LandStatusMap.swift; path = Catalogue/Model/LandStatusMap.swift; sourceTree = "<group>"; };
+		CA7A10000000000000000019 /* PhotoAudit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoAudit.swift; path = Catalogue/Model/PhotoAudit.swift; sourceTree = "<group>"; };
+		CA7A1000000000000000001C /* PhotoImporter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoImporter.swift; path = Catalogue/Model/PhotoImporter.swift; sourceTree = "<group>"; };
+		CA7A1000000000000000001F /* Recipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Catalogue/Model/Recipe.swift; sourceTree = "<group>"; };
+		CA7A10000000000000000022 /* SourcedText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourcedText.swift; path = Catalogue/Model/SourcedText.swift; sourceTree = "<group>"; };
+		CA7A10000000000000000025 /* SpeciesIDGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesIDGenerator.swift; path = Catalogue/Model/SpeciesIDGenerator.swift; sourceTree = "<group>"; };
+		CA7A10000000000000000028 /* SpeciesPhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesPhoto.swift; path = Catalogue/Model/SpeciesPhoto.swift; sourceTree = "<group>"; };
+		CA7A1000000000000000002B /* SpeciesValidation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesValidation.swift; path = Catalogue/Model/SpeciesValidation.swift; sourceTree = "<group>"; };
+		CA7A1000000000000000002E /* SpeciesID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesID.swift; path = Catalogue/Model/Generated/SpeciesID.swift; sourceTree = "<group>"; };
 		CD72CBBFBBA343438F3DA352 /* SpeciesModelFactoryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesModelFactoryTests.swift; sourceTree = "<group>"; };
 		D271FA601484668BEA2A2E9C /* ForageNZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForageNZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F90454DCD23471EAA95C57 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Navigation/Router.swift; sourceTree = "<group>"; };
 		D6ECE46F98F836C2B53E8AA5 /* species.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = species.json; path = Catalogue/species.json; sourceTree = "<group>"; };
 		D90B10EF78BEEEED358AB658 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Components/Layout.swift; sourceTree = "<group>"; };
 		DBD4F47E08118369C1720304 /* SpeciesRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRow.swift; path = Components/SpeciesRow.swift; sourceTree = "<group>"; };
-		DFB4A544F5F85A5E95E8A82A /* SpeciesRowLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRowLink.swift; path = Components/SpeciesRowLink.swift; sourceTree = "<group>"; };
+		DFB4A544F5F85A5E95E8A82A /* SpeciesRowButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRowButton.swift; path = Components/SpeciesRowButton.swift; sourceTree = "<group>"; };
 		E230F2A934A37C1CF47C7C24 /* EditorRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditorRootView.swift; sourceTree = "<group>"; };
-		E3BEAEAE3D024F1C6A9B9C10 /* CautionBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CautionBadge.swift; path = Components/CautionBadge.swift; sourceTree = "<group>"; };
+		E3BEAEAE3D024F1C6A9B9C10 /* ImageBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageBadge.swift; path = Components/ImageBadge.swift; sourceTree = "<group>"; };
 		E6C4ED5A9B62C12BD6C3E48E /* InSeasonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InSeasonView.swift; path = InSeason/InSeasonView.swift; sourceTree = "<group>"; };
 		EA11341A3521A25AA8E3516D /* SpeciesPhotoStrip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesPhotoStrip.swift; path = Components/SpeciesPhotoStrip.swift; sourceTree = "<group>"; };
+		EB214D4274747C97AEAA6449 /* DependencyValues+ForageNZ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DependencyValues+ForageNZ.swift"; path = "Dependencies/DependencyValues+ForageNZ.swift"; sourceTree = "<group>"; };
 		EE23F44C740462604FCC5A42 /* WhereYouAreStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhereYouAreStore.swift; path = WhereYouAre/WhereYouAreStore.swift; sourceTree = "<group>"; };
 		F3879044878C62F8D8F549D8 /* land-status.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = "land-status.json"; path = "Catalogue/land-status.json"; sourceTree = "<group>"; };
 		F493CBE757E2E16D66F2DB00 /* EditorFields.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditorFields.swift; sourceTree = "<group>"; };
 		F6DE5983A841F0D9A2F105AA /* Photos */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Photos; path = Catalogue/Photos; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		8A80CDC83053DCE4004AF7E7 /* Resourses */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
-			path = Resourses;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
 		139B551A825086CE5C77B8AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D9C874AA850F3AE65673F79 /* ForageCatalogue in Frameworks */,
+				AA20000000000000000005AA /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,8 +230,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA20000000000000000001AA /* Dependencies in Frameworks */,
+				AA20000000000000000002AA /* SwiftUINavigation in Frameworks */,
 				E7057F68D7BCDBAEC626647A /* DesignLibrary in Frameworks */,
-				C6508D90B2BD9E3DC2D0E545 /* ForageCatalogue in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4579F5824712EB55154CB9C /* Cocoa.framework in Frameworks */,
-				6B9CC9414FC7769127533890 /* ForageCatalogue in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +248,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA20000000000000000003AA /* Dependencies in Frameworks */,
+				AA20000000000000000004AA /* SwiftUINavigation in Frameworks */,
 				993520DE95024A3F666F3E9E /* Cocoa.framework in Frameworks */,
-				914C98374F0108651F55C013 /* ForageCatalogue in Frameworks */,
 				B2C190BEA9AAEE9C45BC3959 /* DesignLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +286,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		27521AA16C33F2F28E2789DF /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				EB214D4274747C97AEAA6449 /* DependencyValues+ForageNZ.swift */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
 		290B8E95C0511ACCC95A8711 /* WhereYouAre */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +308,10 @@
 		4537A289B0B2289A2594A27C /* ForageNZ */ = {
 			isa = PBXGroup;
 			children = (
+				8ADBEE3F3063725700B20F27 /* Util */,
+				27521AA16C33F2F28E2789DF /* Dependencies */,
+				4CDD3507996E9E45CF93A6C5 /* Navigation */,
+				8A026143305DEA6E0064F9A6 /* SharedResources */,
 				9FDC361CC498756899AA3E06 /* Catalogue */,
 				DC803897D75EFB8356539D00 /* Components */,
 				6906D5A3CD03B7D5259C6C35 /* FieldGuide */,
@@ -253,16 +319,22 @@
 				BA3FADD480C97728D44B490F /* InSeason */,
 				F3879044878C62F8D8F549D8 /* land-status.json */,
 				B2D00CFE7D2AD3E97CCF1400 /* land-status.png */,
-				8AAD98CD750F96CCB1E26CB7 /* Localizable.xcstrings */,
 				7127DAAD2E1698DAE324AB23 /* Models */,
-				8A80CDC83053DCE4004AF7E7 /* Resourses */,
 				6F567D725B05CA6E238F22C8 /* RootView.swift */,
 				C3469FB9258BAE32C11992A3 /* Safety */,
 				D6ECE46F98F836C2B53E8AA5 /* species.json */,
 				290B8E95C0511ACCC95A8711 /* WhereYouAre */,
-				817A298659AD6F2CD63D0228 /* Assets.xcassets */,
 			);
 			path = ForageNZ;
+			sourceTree = "<group>";
+		};
+		4CDD3507996E9E45CF93A6C5 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				51770A6820F225DAC3895D24 /* Destination.swift */,
+				D4F90454DCD23471EAA95C57 /* Router.swift */,
+			);
+			name = Navigation;
 			sourceTree = "<group>";
 		};
 		6906D5A3CD03B7D5259C6C35 /* FieldGuide */ = {
@@ -327,6 +399,25 @@
 			path = CatalogueEditor;
 			sourceTree = "<group>";
 		};
+		8A026143305DEA6E0064F9A6 /* SharedResources */ = {
+			isa = PBXGroup;
+			children = (
+				8AAD98CD750F96CCB1E26CB7 /* Localizable.xcstrings */,
+				04B19F5173E05C2042951736 /* Colors.xcassets */,
+				817A298659AD6F2CD63D0228 /* Assets.xcassets */,
+				A1C0DE0000000000CA7A1009 /* Catalogue.xcassets */,
+			);
+			path = SharedResources;
+			sourceTree = "<group>";
+		};
+		8ADBEE3F3063725700B20F27 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8ADBEE403063726B00B20F27 /* View+If.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		8B12CE910C09A1C47E310208 /* ForageNZTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +436,7 @@
 				1EC10D366D26564C8B7E4205 /* SpeciesModelFactory.swift */,
 				8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */,
 				55C6D5333F8A7A09C3B0043D /* SpeciesStore.swift */,
+				CA7A10000000000000FFFF01 /* Model */,
 			);
 			name = Catalogue;
 			sourceTree = "<group>";
@@ -373,6 +465,29 @@
 			name = Safety;
 			sourceTree = "<group>";
 		};
+		CA7A10000000000000FFFF01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA7A10000000000000000001 /* CatalogueFile.swift */,
+				CA7A10000000000000000004 /* CatalogueLocator.swift */,
+				CA7A10000000000000000007 /* CautionLevel.swift */,
+				CA7A1000000000000000000A /* ForageGroup.swift */,
+				CA7A1000000000000000000D /* ForageMonth.swift */,
+				CA7A10000000000000000010 /* ForageSpecies.swift */,
+				CA7A10000000000000000013 /* Habitat.swift */,
+				CA7A10000000000000000016 /* LandStatusMap.swift */,
+				CA7A10000000000000000019 /* PhotoAudit.swift */,
+				CA7A1000000000000000001C /* PhotoImporter.swift */,
+				CA7A1000000000000000001F /* Recipe.swift */,
+				CA7A10000000000000000022 /* SourcedText.swift */,
+				CA7A10000000000000000025 /* SpeciesIDGenerator.swift */,
+				CA7A10000000000000000028 /* SpeciesPhoto.swift */,
+				CA7A1000000000000000002B /* SpeciesValidation.swift */,
+				CA7A1000000000000000002E /* SpeciesID.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		CE52BB10A395B7F229EC8BA2 /* ForageNZUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,15 +499,17 @@
 		DC803897D75EFB8356539D00 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E3BEAEAE3D024F1C6A9B9C10 /* CautionBadge.swift */,
-				04B19F5173E05C2042951736 /* CautionColors.xcassets */,
+				E3BEAEAE3D024F1C6A9B9C10 /* ImageBadge.swift */,
 				6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */,
+				A1C0DE0000000000CA7A1006 /* CatalogueArtwork.swift */,
 				D90B10EF78BEEEED358AB658 /* Layout.swift */,
 				50C595A6A649F412A4066591 /* LookalikeCardView.swift */,
 				28FF7768A1A33F41DFEFA066 /* SpeciesDestination.swift */,
 				EA11341A3521A25AA8E3516D /* SpeciesPhotoStrip.swift */,
+				8ACD48F13062428200B39C86 /* BundledPhoto.swift */,
 				DBD4F47E08118369C1720304 /* SpeciesRow.swift */,
-				DFB4A544F5F85A5E95E8A82A /* SpeciesRowLink.swift */,
+				DFB4A544F5F85A5E95E8A82A /* SpeciesRowButton.swift */,
+				8ADBF3BF306655F900B20F27 /* HabitatView.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -422,7 +539,8 @@
 			);
 			name = CatalogueEditor;
 			packageProductDependencies = (
-				FCA8BB9C87B318851F23469F /* ForageCatalogue */,
+				AA10000000000000000003AA /* Dependencies */,
+				AA10000000000000000004AA /* SwiftUINavigation */,
 				A99949573DBF46AF74F6D6F3 /* DesignLibrary */,
 			);
 			productName = CatalogueEditor;
@@ -444,7 +562,7 @@
 			);
 			name = ForageNZTests;
 			packageProductDependencies = (
-				69125DE059737EBB12471472 /* ForageCatalogue */,
+				AA10000000000000000005AA /* Dependencies */,
 			);
 			productName = ForageNZTests;
 			productReference = 8B5CFF23B8C79B576A8D1B65 /* ForageNZTests.xctest */;
@@ -464,9 +582,6 @@
 				9C80D7806298FB436622B1B6 /* PBXTargetDependency */,
 			);
 			name = CatalogueEditorTests;
-			packageProductDependencies = (
-				9761BCE487176B0F4BED2611 /* ForageCatalogue */,
-			);
 			productName = CatalogueEditorTests;
 			productReference = 4430CA485A2948687D079B77 /* CatalogueEditorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -483,13 +598,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				8A80CDC83053DCE4004AF7E7 /* Resourses */,
-			);
 			name = ForageNZ;
 			packageProductDependencies = (
+				AA10000000000000000001AA /* Dependencies */,
+				AA10000000000000000002AA /* SwiftUINavigation */,
 				83413BE0AA6927FA598C7C0C /* DesignLibrary */,
-				279E84FE33A5770883B72986 /* ForageCatalogue */,
 			);
 			productName = ForageNZ;
 			productReference = D271FA601484668BEA2A2E9C /* ForageNZ.app */;
@@ -537,8 +650,9 @@
 		1D3393DFDFFF00F04CDA6DF3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2610;
 			};
 			buildConfigurationList = 9846665B244C4B9A61517302 /* Build configuration list for PBXProject "ForageNZ" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -550,8 +664,9 @@
 			);
 			mainGroup = 74F580B8BCAC7AE1BA708F7C;
 			packageReferences = (
+				AA0000000000000000000001 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+				AA0000000000000000000002 /* XCRemoteSwiftPackageReference "swift-navigation" */,
 				657237127B68D0589BA6C34C /* XCRemoteSwiftPackageReference "Desing-Library-SPM" */,
-				90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */,
 			);
 			productRefGroup = 1EAF7E4DE18E3DAE6C74AAC9 /* Products */;
 			projectDirPath = "";
@@ -584,7 +699,8 @@
 				6A2120C5CF1E8C22A431AE0A /* Photos in Resources */,
 				566613F76B253A99D963B234 /* land-status.png in Resources */,
 				2BB82EB485F18B9705B3F347 /* land-status.json in Resources */,
-				0EFC0592935EC3241932A7C6 /* CautionColors.xcassets in Resources */,
+				0EFC0592935EC3241932A7C6 /* Colors.xcassets in Resources */,
+				A1C0DE0000000000CA7A100A /* Catalogue.xcassets in Resources */,
 				9F5008342D304A10A3E24A19 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,7 +716,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DCD0099345F124C7C49EED0 /* CautionColors.xcassets in Resources */,
+				6DCD0099345F124C7C49EED0 /* Colors.xcassets in Resources */,
+				A1C0DE0000000000CA7A100B /* Catalogue.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +764,23 @@
 				ADCE358E9BDD4BA324F73087 /* SpeciesEditorView.swift in Sources */,
 				16020BFCDA4491686721448A /* PhotoSectionView.swift in Sources */,
 				AF7EF03860A44072C5F3F471 /* EditorFields.swift in Sources */,
+				CA7A10000000000000000003 /* CatalogueFile.swift in Sources */,
+				CA7A10000000000000000006 /* CatalogueLocator.swift in Sources */,
+				CA7A10000000000000000009 /* CautionLevel.swift in Sources */,
+				CA7A1000000000000000000C /* ForageGroup.swift in Sources */,
+				CA7A1000000000000000000F /* ForageMonth.swift in Sources */,
+				CA7A10000000000000000012 /* ForageSpecies.swift in Sources */,
+				CA7A10000000000000000015 /* Habitat.swift in Sources */,
+				CA7A10000000000000000018 /* LandStatusMap.swift in Sources */,
+				CA7A1000000000000000001B /* PhotoAudit.swift in Sources */,
+				CA7A1000000000000000001E /* PhotoImporter.swift in Sources */,
+				CA7A10000000000000000021 /* Recipe.swift in Sources */,
+				CA7A10000000000000000024 /* SourcedText.swift in Sources */,
+				CA7A10000000000000000027 /* SpeciesIDGenerator.swift in Sources */,
+				CA7A1000000000000000002A /* SpeciesPhoto.swift in Sources */,
+				CA7A1000000000000000002D /* SpeciesValidation.swift in Sources */,
+				CA7A10000000000000000030 /* SpeciesID.swift in Sources */,
+				A1C0DE0000000000CA7A1008 /* CatalogueArtwork.swift in Sources */,
 				427F19E65882EA68C6C6B0B6 /* Layout.swift in Sources */,
 				E3C01D365E85295EE1DB4CBC /* CautionPalette.swift in Sources */,
 				9FBCD80401D74B2453FD524A /* EditorLayout.swift in Sources */,
@@ -657,11 +791,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663A3FC4F77B87622BD1B478 /* Router.swift in Sources */,
+				00B386238746B52A8FC66EF1 /* Destination.swift in Sources */,
+				A15E8B2398C04E25AE895BDB /* DependencyValues+ForageNZ.swift in Sources */,
 				88884AE952E8D6A46933C56A /* SpeciesRepository.swift in Sources */,
 				69242F8D935959254849BA9D /* SpeciesStore.swift in Sources */,
-				42BC722A0552DA4BEBBE5C9F /* CautionBadge.swift in Sources */,
+				42BC722A0552DA4BEBBE5C9F /* ImageBadge.swift in Sources */,
 				FB252221E135784791053AC1 /* Layout.swift in Sources */,
 				2CA3EAD76EAE4CE824C68675 /* SpeciesRow.swift in Sources */,
+				8ACD48F23062428200B39C86 /* BundledPhoto.swift in Sources */,
+				8ADBEE413063726B00B20F27 /* View+If.swift in Sources */,
+				CA7A10000000000000000002 /* CatalogueFile.swift in Sources */,
+				CA7A10000000000000000005 /* CatalogueLocator.swift in Sources */,
+				CA7A10000000000000000008 /* CautionLevel.swift in Sources */,
+				CA7A1000000000000000000B /* ForageGroup.swift in Sources */,
+				8ADBF3C0306655F900B20F27 /* HabitatView.swift in Sources */,
+				CA7A1000000000000000000E /* ForageMonth.swift in Sources */,
+				CA7A10000000000000000011 /* ForageSpecies.swift in Sources */,
+				CA7A10000000000000000014 /* Habitat.swift in Sources */,
+				CA7A10000000000000000017 /* LandStatusMap.swift in Sources */,
+				CA7A1000000000000000001A /* PhotoAudit.swift in Sources */,
+				CA7A1000000000000000001D /* PhotoImporter.swift in Sources */,
+				CA7A10000000000000000020 /* Recipe.swift in Sources */,
+				CA7A10000000000000000023 /* SourcedText.swift in Sources */,
+				CA7A10000000000000000026 /* SpeciesIDGenerator.swift in Sources */,
+				CA7A10000000000000000029 /* SpeciesPhoto.swift in Sources */,
+				CA7A1000000000000000002C /* SpeciesValidation.swift in Sources */,
+				CA7A1000000000000000002F /* SpeciesID.swift in Sources */,
+				A1C0DE0000000000CA7A1007 /* CatalogueArtwork.swift in Sources */,
 				C96F1DE935FB259F9428C0FE /* BrowseView.swift in Sources */,
 				33F1FEE23644859BA88F9258 /* SpeciesDetailView.swift in Sources */,
 				2FFEC43C9B4D53C2E4ACBA15 /* ForageNZApp.swift in Sources */,
@@ -677,7 +834,7 @@
 				4BB7620AB24EB7A8E15ADEB9 /* WhereYouAreSection.swift in Sources */,
 				28CE6B4FE8E95DD4A1BB1633 /* SpeciesModelFactory.swift in Sources */,
 				F3D4CB60FA829288FF51385C /* LookalikeCardView.swift in Sources */,
-				CEA8223E11FF897287721DDE /* SpeciesRowLink.swift in Sources */,
+				CEA8223E11FF897287721DDE /* SpeciesRowButton.swift in Sources */,
 				4CCD82CE448B568CA2ED776F /* SpeciesDestination.swift in Sources */,
 				BAA24ADD5643D98E84B24B00 /* Logging.swift in Sources */,
 			);
@@ -738,6 +895,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.CatalogueEditorTests;
@@ -756,6 +914,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.CatalogueEditorTests;
@@ -772,6 +931,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -802,9 +962,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -816,6 +978,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -871,6 +1034,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -895,6 +1059,7 @@
 			buildSettings = {
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.CatalogueEditorUITests;
@@ -911,6 +1076,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -941,9 +1107,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -962,6 +1130,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1031,6 +1200,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1055,6 +1225,7 @@
 			buildSettings = {
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "-";
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.CatalogueEditorUITests;
@@ -1186,13 +1357,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = Packages/ForageCatalogue;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		657237127B68D0589BA6C34C /* XCRemoteSwiftPackageReference "Desing-Library-SPM" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -1202,38 +1366,59 @@
 				kind = branch;
 			};
 		};
+		AA0000000000000000000001 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.1;
+			};
+		};
+		AA0000000000000000000002 /* XCRemoteSwiftPackageReference "swift-navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-navigation";
+			requirement = {
+				kind = exactVersion;
+				version = 2.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		279E84FE33A5770883B72986 /* ForageCatalogue */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
-			productName = ForageCatalogue;
-		};
-		69125DE059737EBB12471472 /* ForageCatalogue */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
-			productName = ForageCatalogue;
-		};
 		83413BE0AA6927FA598C7C0C /* DesignLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 657237127B68D0589BA6C34C /* XCRemoteSwiftPackageReference "Desing-Library-SPM" */;
 			productName = DesignLibrary;
-		};
-		9761BCE487176B0F4BED2611 /* ForageCatalogue */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
-			productName = ForageCatalogue;
 		};
 		A99949573DBF46AF74F6D6F3 /* DesignLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 657237127B68D0589BA6C34C /* XCRemoteSwiftPackageReference "Desing-Library-SPM" */;
 			productName = DesignLibrary;
 		};
-		FCA8BB9C87B318851F23469F /* ForageCatalogue */ = {
+		AA10000000000000000001AA /* Dependencies */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 90A8FB02D53977FDDEE5442E /* XCLocalSwiftPackageReference "ForageCatalogue" */;
-			productName = ForageCatalogue;
+			package = AA0000000000000000000001 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		AA10000000000000000002AA /* SwiftUINavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000000000000000000002 /* XCRemoteSwiftPackageReference "swift-navigation" */;
+			productName = SwiftUINavigation;
+		};
+		AA10000000000000000003AA /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000000000000000000001 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		AA10000000000000000004AA /* SwiftUINavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000000000000000000002 /* XCRemoteSwiftPackageReference "swift-navigation" */;
+			productName = SwiftUINavigation;
+		};
+		AA10000000000000000005AA /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000000000000000000001 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

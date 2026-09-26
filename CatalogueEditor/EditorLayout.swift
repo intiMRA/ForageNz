@@ -21,6 +21,8 @@ enum EditorLayout {
     static let addSheetWidth: CGFloat = 420
     static let riskPickerWidth: CGFloat = 140
     static let monthButtonMinimumWidth: CGFloat = 26
+    /// Wide enough for "Roadsides" and its symbol, so the habitat grid wraps evenly.
+    static let habitatButtonMinimumWidth: CGFloat = 104
 
     /// The "edited, not saved" marker in the sidebar.
     static let editedDotSize: CGFloat = 7

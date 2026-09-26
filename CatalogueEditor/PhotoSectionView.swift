@@ -1,6 +1,5 @@
 import AppKit
 import DesignLibrary
-import ForageCatalogue
 import SwiftUI
 import UniformTypeIdentifiers
 

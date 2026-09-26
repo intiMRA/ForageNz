@@ -8,6 +8,10 @@ enum Layout {
     /// Width of the leading icon gutter in a species row, so names align down the list.
     static let rowIconWidth: CGFloat = 28
 
+    /// The drawn classification artwork inside a chip. The art is 24pt, sized for the row
+    /// gutter; a chip sits at caption size and needs it brought down to the text.
+    static let chipIconSize: CGFloat = 14
+
     static let bannerBackgroundOpacity: Double = 0.12
 
     static let cardBackgroundOpacity: Double = 0.4

@@ -39,6 +39,7 @@ from pathlib import Path
 from typing import Any
 
 from sources import (
+    CATALOGUE,
     COURTESY_DELAY,
     NEW_ZEALAND_PLACE_ID,
     Licence,
@@ -49,12 +50,10 @@ from sources import (
     results_of,
 )
 
-CATALOGUE = Path("ForageNZ/Catalogue/species.json")
+#: The manifest is at the repo root now, so this runs from the repo root with no --package-path.
 NORMALISER = [
     "swift",
     "run",
-    "--package-path",
-    "Packages/ForageCatalogue",
     "catalogue-tool",
     "--normalise",
 ]
@@ -673,7 +672,7 @@ def main() -> int:
         print(
             "  Could not run the normaliser. Run this before committing, or the\n"
             "  byte-stability test will fail:\n"
-            "    (cd Packages/ForageCatalogue && swift run catalogue-tool --normalise)",
+            "    swift run catalogue-tool --normalise",
             file=sys.stderr,
         )
         return 1

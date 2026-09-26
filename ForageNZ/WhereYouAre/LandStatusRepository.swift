@@ -1,4 +1,3 @@
-import ForageCatalogue
 import Foundation
 
 protocol LandStatusRepository: Sendable {

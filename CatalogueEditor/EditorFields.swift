@@ -1,5 +1,4 @@
 import DesignLibrary
-import ForageCatalogue
 import SwiftUI
 
 /// A labelled text input. Uses `TextField(axis: .vertical)` rather than `TextEditor` —
@@ -233,7 +232,9 @@ struct LookalikeEditor: View {
             }
 
             Button("Add lookalike", systemImage: "plus.circle") {
-                onChange(lookalikes + [Lookalike(name: "", risk: .toxic, howToTell: "", entry: defaultEntry)])
+                onChange(lookalikes + [
+                    Lookalike(name: "", risk: .toxic, howToTell: "", entry: defaultEntry)
+                ])
             }
             .buttonStyle(.borderless)
         }
@@ -262,6 +263,57 @@ struct LookalikeEditor: View {
             entry: entry ?? lookalike.entry
         )
         onChange(next)
+    }
+}
+
+/// The structured companion to the habitat text field. Toggles rather than a single
+/// selection, because a species that grows on roadsides and riverbanks grows in both.
+struct HabitatPicker: View {
+    let habitats: [Habitat]
+    let onChange: ([Habitat]) -> Void
+
+    /// `LazyVGrid` and `GridItem` have no `CommonPadding` overload, so the token is unwrapped
+    /// here rather than a loose number being written in.
+    private static let gap = CommonPadding.xxSmall.rawValue
+
+    private var columns: [GridItem] {
+        [GridItem(.adaptive(minimum: EditorLayout.habitatButtonMinimumWidth), spacing: Self.gap)]
+    }
+
+    var body: some View {
+        LazyVGrid(columns: columns, alignment: .leading, spacing: Self.gap) {
+            ForEach(Habitat.allCases) { habitat in
+                let isOn = habitats.contains(habitat)
+                Button {
+                    // Rebuilt in `allCases` order, so the saved file does not record the
+                    // order someone happened to click in.
+                    let next = isOn ? habitats.filter { $0 != habitat } : habitats + [habitat]
+                    onChange(Habitat.allCases.filter(next.contains))
+                } label: {
+                    Label {
+                        Text(habitat.shortLabel)
+                    } icon: {
+                        habitat.image
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: Layout.chipIconSize, height: Layout.chipIconSize)
+                    }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .buttonStyle(.borderless)
+                .font(.caption)
+                .padding(.horizontal, .xxSmall)
+                .padding(.vertical, .xxSmall)
+                .background(
+                    isOn
+                        ? Color.accentColor.opacity(EditorLayout.selectedTintOpacity)
+                        : Color.secondary.opacity(Layout.bannerBackgroundOpacity),
+                    in: EditorLayout.insetShape
+                )
+                .help(habitat.displayName)
+            }
+        }
+        .padding(.vertical, .xxxSmall)
     }
 }
 

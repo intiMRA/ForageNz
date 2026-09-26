@@ -1,4 +1,3 @@
-import ForageCatalogue
 import Foundation
 import Testing
 
@@ -12,22 +11,12 @@ import Testing
 /// them at build time, and covers the catalogue-wide rules the editor can't see.
 @Suite("Shipped catalogue")
 struct CatalogueTests {
-    /// Entries drafted from general knowledge and not yet checked against a field guide.
+    /// Entries not yet checked against anything.
     ///
-    /// Delete an id once its `sources` are filled in. The two tests below enforce both
-    /// directions, so this list can only shrink: a new entry with no sources fails, and an
-    /// id left here after being sourced also fails.
-    ///
-    /// Verify tutu and death-cap first — both make lethal claims.
-    private static let pendingVerification: Set<String> = [
-        // Not covered by Langlands (2024) — mostly the toxic entries, which that book leaves out.
-        "tutu", "death-cap", "yellow-stainer", "petty-spurge", "scarlet-pimpernel", "bracken",
-        "horse-chestnut", "snowflake", "bitter-bolete", "red-pored-boletes", "other-milk-caps",
-        "hemlock-water-dropwort",
-        // Edibles the book does not cover.
-        "rosehip", "saffron-milk-cap", "sea-lettuce", "straw-mushroom", "feijoa", "wild-plum",
-        "cherry-guava"
-    ]
+    /// Empty, and the two tests below keep it that way: an entry with no sources fails unless
+    /// it is declared here, and an id left here after being sourced fails too. A new entry
+    /// goes on this list until someone has checked it.
+    private static let pendingVerification: Set<String> = []
 
     private func loadCatalogue() async throws -> [ForageSpecies] {
         try await BundledSpeciesRepository().loadSpecies()
@@ -35,12 +24,22 @@ struct CatalogueTests {
 
     // MARK: - Per-entry rules, shared with the editor
 
-    @Test("No entry carries a blocking validation issue")
+    /// Drafts are exempt: they are stubs the app never lists, and being incomplete is what
+    /// makes them drafts. `draftsAreStubsNotShippedContent` keeps that exemption honest.
+    @Test("No shipped entry carries a blocking validation issue")
     func noBlockingIssues() async throws {
-        for entry in try await loadCatalogue() {
+        for entry in try await loadCatalogue() where !entry.draft {
             for issue in entry.blockingIssues {
                 Issue.record("\(entry.id) · \(issue.field): \(issue.message)")
             }
+        }
+    }
+
+    @Test("Every draft is sourced and unfinished, never a way to ship an unchecked entry")
+    func draftsAreStubsNotShippedContent() async throws {
+        for entry in try await loadCatalogue() where entry.draft {
+            #expect(entry.isVerified, "\(entry.id) is a draft with no source — where did its facts come from?")
+            #expect(!entry.blockingIssues.isEmpty, "\(entry.id) passes validation, so it should no longer be a draft")
         }
     }
 
@@ -116,9 +115,9 @@ struct CatalogueTests {
     /// A web link is a planning aid, never the only route to something needed in the field.
     @Test("No entry depends on a web link for its identification content")
     func noEntryLeansOnTheWeb() async throws {
-        for entry in try await loadCatalogue() {
+        for entry in try await loadCatalogue() where !entry.draft {
             #expect(
-                !entry.identification.isEmpty,
+                !entry.identification.isBlank,
                 "\(entry.id) has no identification text, so its only usable content would be online"
             )
         }
@@ -146,13 +145,23 @@ struct CatalogueTests {
 
     /// Lookalikes decode their `entry` as a `SpeciesID`, so a card that opens nothing is a
     /// load failure, not a runtime surprise. This asserts the load actually exercised that.
+    ///
+    /// A shipped card must open a shipped page: `SpeciesStore` drops drafts, so a card
+    /// pointing at one would render `ContentUnavailableView` where it promised a species.
     @Test("Every lookalike card has a page to open")
     func everyLookalikeHasAnEntry() async throws {
         let species = try await loadCatalogue()
         let ids = Set(species.map(\.id))
+        let shipped = Set(species.filter { !$0.draft }.map(\.id))
         for entry in species {
             for lookalike in entry.lookalikes {
                 #expect(ids.contains(lookalike.entry.rawValue), "\(entry.id) → \(lookalike.name) names \(lookalike.entry.rawValue), which is not in the catalogue")
+                if !entry.draft {
+                    #expect(
+                        shipped.contains(lookalike.entry.rawValue),
+                        "\(entry.id) → \(lookalike.name) opens \(lookalike.entry.rawValue), which is still a draft and so is not in the app"
+                    )
+                }
             }
         }
     }
@@ -181,9 +190,11 @@ struct CatalogueTests {
         #expect(!doNotEat.isEmpty, "There should be entries that exist to be recognised and avoided")
     }
 
+    /// Drafts are excluded throughout: the app never lists one, so a filter option backed
+    /// only by drafts is a dead option to the person holding the phone.
     @Test("Every origin has at least one entry, so the origin filter has no dead options")
     func originsArePopulated() async throws {
-        let species = try await loadCatalogue()
+        let species = try await loadCatalogue().filter { !$0.draft }
         for origin in ForageOrigin.allCases {
             #expect(
                 species.contains { $0.origin == origin },
@@ -192,20 +203,20 @@ struct CatalogueTests {
         }
     }
 
-    @Test("Every category has at least one entry")
-    func categoriesArePopulated() async throws {
-        let species = try await loadCatalogue()
-        for category in ForageCategory.allCases {
+    @Test("Every group has at least one entry")
+    func groupsArePopulated() async throws {
+        let species = try await loadCatalogue().filter { !$0.draft }
+        for group in ForageGroup.allCases {
             #expect(
-                species.contains { $0.category == category },
-                "No entries in \(category.displayName)"
+                species.contains { $0.group == group },
+                "No entries in \(group.displayName)"
             )
         }
     }
 
     @Test("Every month has something to look for")
     func everyMonthHasSomething() async throws {
-        let species = try await loadCatalogue()
+        let species = try await loadCatalogue().filter { !$0.draft }
         for month in ForageMonth.allCases {
             let inSeason = species.filter { $0.caution != .doNotEat && $0.isInSeason(in: month) }
             #expect(!inSeason.isEmpty, "Nothing to forage in \(month.displayName)")

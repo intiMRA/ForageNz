@@ -1,4 +1,4 @@
-import ForageCatalogue
+import Dependencies
 import Foundation
 import Observation
 import OSLog
@@ -25,18 +25,10 @@ final class WhereYouAreStore {
 
     private(set) var state: State = .idle
 
-    private let repository: any LandStatusRepository
-    private let locations: any LocationProvider
+    @ObservationIgnored @Dependency(\.landStatusRepository) private var repository
+    @ObservationIgnored @Dependency(\.locationProvider) private var locations
 
     private static let logger = Logger(subsystem: Logging.subsystem, category: "land-status")
-
-    init(
-        repository: any LandStatusRepository = BundledLandStatusRepository(),
-        locations: any LocationProvider = DeviceLocationProvider()
-    ) {
-        self.repository = repository
-        self.locations = locations
-    }
 
     var isChecking: Bool { state == .checking }
 

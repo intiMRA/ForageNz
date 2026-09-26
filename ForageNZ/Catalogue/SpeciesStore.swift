@@ -1,4 +1,4 @@
-import ForageCatalogue
+import Dependencies
 import Foundation
 import Observation
 import OSLog
@@ -17,13 +17,17 @@ final class SpeciesStore {
     private(set) var species: [ForageSpecies] = []
     private(set) var loadState: LoadState = .idle
 
-    private let repository: any SpeciesRepository
+    @ObservationIgnored @Dependency(\.speciesRepository) private var repository
+
+    /// The month the guide is currently showing. It reads the clock through the dependency
+    /// context rather than `Date.now`, so a test can put the app in February without waiting
+    /// for February. `@Observable` cannot track a property wrapper, hence `@ObservationIgnored`
+    /// on both — neither is state the views need to observe.
+    @ObservationIgnored @Dependency(\.date) private var date
+
+    var currentMonth: ForageMonth { ForageMonth.containing(date.now) }
 
     private static let logger = Logger(subsystem: Logging.subsystem, category: "catalogue")
-
-    init(repository: any SpeciesRepository = BundledSpeciesRepository()) {
-        self.repository = repository
-    }
 
     /// Loads the catalogue unless it is already loaded or in flight. A failed load may retry.
     func loadIfNeeded() async {
@@ -32,7 +36,7 @@ final class SpeciesStore {
         loadState = .loading
         do {
             let loaded = try await repository.loadSpecies()
-            species = loaded.sorted(by: ForageSpecies.displayOrder)
+            species = loaded.filter { !$0.draft }.sorted(by: ForageSpecies.displayOrder)
             loadState = .loaded
         } catch {
             species = []
@@ -70,7 +74,8 @@ final class SpeciesStore {
         return species.filter { $0.searchableText.contains(trimmed) }
     }
 
-    /// The entry for a compile-time species id. `nil` only if the enum and the catalogue have
+    /// The entry for a compile-time species id. `nil` for a draft, which never reaches this
+    /// array, or if the enum and the catalogue have
     /// drifted, which `CatalogueTests` does not allow to ship.
     func species(for id: SpeciesID) -> ForageSpecies? {
         species.first { $0.id == id.rawValue }
@@ -79,11 +84,11 @@ final class SpeciesStore {
     /// Search plus the browse filters. A `nil` filter means "don't narrow on that dimension".
     func filter(
         query: String = "",
-        category: ForageCategory? = nil,
+        group: ForageGroup? = nil,
         origin: ForageOrigin? = nil
     ) -> [ForageSpecies] {
         search(query).filter { species in
-            if let category, species.category != category { return false }
+            if let group, species.group != group { return false }
             if let origin, species.origin != origin { return false }
             return true
         }

@@ -1,5 +1,4 @@
 import DesignLibrary
-import ForageCatalogue
 import SwiftUI
 
 /// Every string in here is deliberately hedged. The map is good enough to tell someone to

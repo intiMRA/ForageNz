@@ -1,5 +1,4 @@
 import DesignLibrary
-import ForageCatalogue
 import SwiftUI
 
 /// One "can be confused with" card. Tapping it opens the lookalike's own page — every card
@@ -7,50 +6,64 @@ import SwiftUI
 struct LookalikeCardView: View {
     let model: LookalikeCardModel
 
+    @Environment(\.router) private var router
+
     var body: some View {
-        NavigationLink(value: model.destination) {
+        Button {
+            router.push(.species(model.destination))
+        } label: {
             card
         }
         .buttonStyle(.plain)
         .accessibilityIdentifier(model.accessibilityIdentifier)
     }
 
-    private var card: some View {
-        HStack(alignment: .top, spacing: .xSmall) {
-            VStack(alignment: .leading, spacing: .xxxSmall) {
-                HStack(spacing: .xSmall) {
-                    Text(model.name)
-                        .font(.subheadline.weight(.semibold))
-
-                    Text(model.risk.displayName)
-                        .font(.caption.weight(.bold))
-                        .padding(.horizontal, .xSmall)
-                        .padding(.vertical, .xxxSmall)
-                        .foregroundStyle(.white)
-                        .background(model.risk.tintColor, in: Capsule())
-                }
-
-                if let scientificName = model.scientificName {
-                    Text(scientificName)
-                        .font(.caption)
-                        .italic()
-                        .foregroundStyle(.secondary)
-                }
-
-                Text(model.howToTell)
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                    .padding(.top, .xxxSmall)
+    var card: some View {
+        HStack(alignment: .top, spacing: .small) {
+            VStack(alignment: .leading) {
+                BundledPhoto(fileName: model.photoFileName ?? "")
+                    .frame(width: 100, height: 100)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                Spacer()
+                Badge(
+                    image: model.risk.image,
+                    title: model.risk.displayName,
+                    size: .small,color: model.risk.tintColor,
+                    forgroundColor: .white,
+                    fontWeight: .regular
+                )
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-
-            Image(systemName: "chevron.right")
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(.tertiary)
-                .accessibilityHidden(true)
+            
+                infoView
+                    .padding(.bottom, .xxSmall)
         }
-        .padding(.all, .small)
-        .background(.quaternary.opacity(Layout.cardBackgroundOpacity), in: Layout.cardShape)
-        .contentShape(Layout.cardShape)
+        .padding(.all, .xSmall)
+        .frame(maxWidth: .infinity)
+        .background {
+            RoundedRectangle(cornerRadius: 8)
+                .fill(model.risk.backgroundColor)
+                .shadow(color: .shadow, radius: 2)
+        }
+    }
+    
+
+    
+    var infoView: some View {
+        VStack(alignment: .leading, spacing: .empty) {
+            Text(model.name)
+                .font(.headline)
+                .accessibilityIdentifier(model.id)
+                .foregroundStyle(.primary)
+            
+            Text(model.scientificName ?? "")
+                .font(.caption)
+                .italic()
+                .foregroundStyle(.secondary)
+                .padding(.bottom, .xSmall)
+            
+            Text(model.howToTell)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+        }
     }
 }

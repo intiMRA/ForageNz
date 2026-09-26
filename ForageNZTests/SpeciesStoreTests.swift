@@ -1,4 +1,4 @@
-import ForageCatalogue
+import Dependencies
 import Foundation
 import Testing
 
@@ -48,22 +48,32 @@ private actor FlakyRepository: SpeciesRepository {
     }
 }
 
+/// Builds the store with a substituted repository.
+///
+/// `SpeciesStore` reads its collaborators from the dependency context now rather than taking
+/// them as initialiser arguments, and `@Dependency` captures that context when the object is
+/// created — so construction has to happen *inside* `withDependencies`, not around it.
+@MainActor
+private func makeStore(repository: any SpeciesRepository) -> SpeciesStore {
+    withDependencies { $0.speciesRepository = repository } operation: { SpeciesStore() }
+}
+
 private func makeSpecies(
     id: String,
     commonName: String = "Plant",
     scientificName: String? = nil,
-    category: ForageCategory = .greens,
+    group: ForageGroup = .greens,
     origin: ForageOrigin = .introduced,
     caution: CautionLevel = .straightforward,
     months: [ForageMonth] = [],
-    summary: String = "A plant.",
+    summary: SourcedText = "A plant.",
     lookalikes: [Lookalike] = []
 ) -> ForageSpecies {
     ForageSpecies(
         id: id,
         commonName: commonName,
         scientificName: scientificName ?? "Testus \(id)",
-        category: category,
+        group: group,
         origin: origin,
         caution: caution,
         months: months,
@@ -81,7 +91,7 @@ private func makeSpecies(
 struct SpeciesStoreTests {
     @Test("Loading sorts the catalogue by common name")
     func loadSorts() async {
-        let store = SpeciesStore(repository: StubRepository(species: [
+        let store = makeStore(repository: StubRepository(species: [
             makeSpecies(id: "b", commonName: "Watercress"),
             makeSpecies(id: "a", commonName: "Blackberry")
         ]))
@@ -92,9 +102,22 @@ struct SpeciesStoreTests {
         #expect(store.species.map(\.commonName) == ["Blackberry", "Watercress"])
     }
 
+    @Test("Drafts never reach the app, by list or by id")
+    func draftsAreHidden() async {
+        let draft = makeSpecies(id: "stub", commonName: "Stub").with(draft: true)
+        let store = makeStore(repository: StubRepository(species: [
+            draft, makeSpecies(id: "a", commonName: "Blackberry")
+        ]))
+
+        await store.loadIfNeeded()
+
+        #expect(store.species.map(\.id) == ["a"])
+        #expect(store.search("stub").isEmpty)
+    }
+
     @Test("A missing catalogue surfaces its own message and no species")
     func loadFailure() async {
-        let store = SpeciesStore(repository: FailingRepository())
+        let store = makeStore(repository: FailingRepository())
 
         await store.loadIfNeeded()
 
@@ -108,7 +131,7 @@ struct SpeciesStoreTests {
 
     @Test("An unreadable catalogue surfaces a different message from a missing one")
     func unreadableCatalogueMessage() async {
-        let store = SpeciesStore(repository: FlakyRepository(species: []))
+        let store = makeStore(repository: FlakyRepository(species: []))
 
         await store.loadIfNeeded()
 
@@ -121,7 +144,7 @@ struct SpeciesStoreTests {
     @Test("A second load does not hit the repository again")
     func loadIsIdempotent() async {
         let repository = CountingRepository(species: [makeSpecies(id: "a")])
-        let store = SpeciesStore(repository: repository)
+        let store = makeStore(repository: repository)
 
         await store.loadIfNeeded()
         await store.loadIfNeeded()
@@ -133,7 +156,7 @@ struct SpeciesStoreTests {
 
     @Test("A failed load is retried, and recovers")
     func failedLoadRetries() async {
-        let store = SpeciesStore(repository: FlakyRepository(species: [makeSpecies(id: "a")]))
+        let store = makeStore(repository: FlakyRepository(species: [makeSpecies(id: "a")]))
 
         await store.loadIfNeeded()
         if case .failed = store.loadState {
@@ -150,7 +173,7 @@ struct SpeciesStoreTests {
 
     @Test("In-season excludes do-not-eat entries")
     func inSeasonExcludesToxic() async {
-        let store = SpeciesStore(repository: StubRepository(species: [
+        let store = makeStore(repository: StubRepository(species: [
             makeSpecies(id: "safe", commonName: "Safe", caution: .straightforward, months: [.march]),
             makeSpecies(id: "toxic", commonName: "Toxic", caution: .doNotEat, months: [.march])
         ]))
@@ -162,7 +185,7 @@ struct SpeciesStoreTests {
 
     @Test("In-season always includes year-round species")
     func inSeasonIncludesYearRound() async {
-        let store = SpeciesStore(repository: StubRepository(species: [
+        let store = makeStore(repository: StubRepository(species: [
             makeSpecies(id: "always", months: []),
             makeSpecies(id: "autumn", months: [.april])
         ]))
@@ -176,7 +199,7 @@ struct SpeciesStoreTests {
     @Test("Deadly-lookalike list omits entries that are themselves inedible")
     func deadlyLookalikesExcludeDoNotEat() async {
         let deadly = Lookalike(name: "Hemlock", risk: .deadly, howToTell: "Purple stem.", entry: .hemlock)
-        let store = SpeciesStore(repository: StubRepository(species: [
+        let store = makeStore(repository: StubRepository(species: [
             makeSpecies(id: "fennel", caution: .careRequired, lookalikes: [deadly]),
             makeSpecies(id: "tutu", caution: .doNotEat, lookalikes: [deadly]),
             makeSpecies(id: "plain", caution: .straightforward)
@@ -190,7 +213,7 @@ struct SpeciesStoreTests {
 
     @Test("Search matches names and summaries, case-insensitively")
     func search() async {
-        let store = SpeciesStore(repository: StubRepository(species: [
+        let store = makeStore(repository: StubRepository(species: [
             makeSpecies(id: "kawakawa", commonName: "Kawakawa", summary: "Native pepper tree."),
             makeSpecies(id: "puha", commonName: "Pūhā", summary: "Boiled green.")
         ]))
@@ -204,7 +227,7 @@ struct SpeciesStoreTests {
 
     @Test("Filtering by origin narrows to that origin alone")
     func filterByOrigin() async {
-        let store = SpeciesStore(repository: StubRepository(species: [
+        let store = makeStore(repository: StubRepository(species: [
             makeSpecies(id: "kawakawa", origin: .native),
             makeSpecies(id: "blackberry", origin: .pest),
             makeSpecies(id: "walnut", origin: .introduced)
@@ -219,22 +242,22 @@ struct SpeciesStoreTests {
 
     @Test("Category and origin filters compose")
     func filterByCategoryAndOrigin() async {
-        let store = SpeciesStore(repository: StubRepository(species: [
-            makeSpecies(id: "kawakawa", commonName: "Kawakawa", category: .herbs, origin: .native),
-            makeSpecies(id: "horopito", commonName: "Horopito", category: .herbs, origin: .native),
-            makeSpecies(id: "fennel", commonName: "Fennel", category: .herbs, origin: .pest),
-            makeSpecies(id: "karengo", commonName: "Karengo", category: .seaweed, origin: .native)
+        let store = makeStore(repository: StubRepository(species: [
+            makeSpecies(id: "kawakawa", commonName: "Kawakawa", group: .herbs, origin: .native),
+            makeSpecies(id: "horopito", commonName: "Horopito", group: .herbs, origin: .native),
+            makeSpecies(id: "fennel", commonName: "Fennel", group: .herbs, origin: .pest),
+            makeSpecies(id: "karengo", commonName: "Karengo", group: .seaweed, origin: .native)
         ]))
 
         await store.loadIfNeeded()
 
-        #expect(store.filter(category: .herbs, origin: .native).map(\.id) == ["horopito", "kawakawa"])
-        #expect(store.filter(category: .seaweed, origin: .pest).isEmpty)
+        #expect(store.filter(group: .herbs, origin: .native).map(\.id) == ["horopito", "kawakawa"])
+        #expect(store.filter(group: .seaweed, origin: .pest).isEmpty)
     }
 
     @Test("Filters compose with the search query")
     func filterComposesWithSearch() async {
-        let store = SpeciesStore(repository: StubRepository(species: [
+        let store = makeStore(repository: StubRepository(species: [
             makeSpecies(id: "kawakawa", commonName: "Kawakawa", origin: .native),
             makeSpecies(id: "karengo", commonName: "Karengo", origin: .native),
             makeSpecies(id: "blackberry", commonName: "Blackberry", origin: .pest)
@@ -248,7 +271,7 @@ struct SpeciesStoreTests {
 
     @Test("No filters returns the whole catalogue")
     func filterWithNoConstraints() async {
-        let store = SpeciesStore(repository: StubRepository(species: [
+        let store = makeStore(repository: StubRepository(species: [
             makeSpecies(id: "a", origin: .native),
             makeSpecies(id: "b", origin: .pest)
         ]))
@@ -260,7 +283,7 @@ struct SpeciesStoreTests {
 
     @Test("An empty or whitespace query returns the whole catalogue")
     func emptySearch() async {
-        let store = SpeciesStore(repository: StubRepository(species: [
+        let store = makeStore(repository: StubRepository(species: [
             makeSpecies(id: "a"),
             makeSpecies(id: "b")
         ]))
@@ -275,7 +298,7 @@ struct SpeciesStoreTests {
 
     @Test("A SpeciesID resolves to its entry, and to nothing if the catalogue lacks it")
     func speciesForID() async {
-        let store = SpeciesStore(repository: StubRepository(species: [
+        let store = makeStore(repository: StubRepository(species: [
             makeSpecies(id: "hemlock", commonName: "Hemlock"),
             makeSpecies(id: "wild-fennel", commonName: "Wild fennel")
         ]))

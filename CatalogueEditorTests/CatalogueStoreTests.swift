@@ -1,4 +1,3 @@
-import ForageCatalogue
 import Foundation
 import Testing
 
@@ -18,15 +17,15 @@ struct CatalogueStoreTests {
 
         let puha = ForageSpecies(
             id: "puha", commonName: "Pūhā", scientificName: "Sonchus oleraceus",
-            category: .greens, origin: .introduced, caution: .straightforward,
+            group: .greens, origin: .introduced, caution: .straightforward,
             summary: "s", habitat: "h", identification: "i", edibleParts: "Leaves", preparation: "Boil",
             photos: [SpeciesPhoto(fileName: "puha-1.heic", caption: "leaf", credit: "me")]
         )
         let tutu = ForageSpecies(
             id: "tutu", commonName: "Tutu", scientificName: "Coriaria arborea",
-            category: .fruit, origin: .endemic, caution: .doNotEat,
+            group: .fruit, origin: .endemic, caution: .doNotEat,
             summary: "s", habitat: "h", identification: "i",
-            edibleParts: ForageSpecies.noEdibleParts, preparation: "",
+            edibleParts: SourcedText(ForageSpecies.noEdibleParts), preparation: "",
             warnings: ["Lethal."], harvestEthics: "Leave it."
         )
         try Data([0]).write(to: photos.appending(path: "puha-1.heic"))
@@ -112,7 +111,7 @@ struct CatalogueStoreTests {
         let ghost = try #require(store.species.first).with(commonName: "Ghost")
         let stranger = ForageSpecies(
             id: "stranger", commonName: ghost.commonName, scientificName: "",
-            category: .greens, origin: .introduced, caution: .careRequired,
+            group: .greens, origin: .introduced, caution: .careRequired,
             summary: "", habitat: "", identification: "", edibleParts: "", preparation: ""
         )
 

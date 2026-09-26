@@ -1,6 +1,25 @@
 import DesignLibrary
-import ForageCatalogue
 import SwiftUI
+import SwiftUINavigation
+
+/// Everything this window can put in front of the catalogue, as one value.
+///
+/// It replaces four separate `@State` properties — a `Bool` for the sheet plus the two fields
+/// that were its payload, and an optional for the alert. One optional enum makes two things
+/// true that a comment used to have to promise: the add form cannot open holding the last
+/// attempt's name or error, and the sheet and the alert cannot both be up at once.
+@CasePathable
+private enum Destination {
+    case adding(AddDraft)
+    case deleting(ForageSpecies)
+}
+
+/// The add form's own state, so it lives and dies with the presentation.
+private struct AddDraft: Identifiable {
+    let id = UUID()
+    var name = ""
+    var error: String?
+}
 
 struct EditorRootView: View {
     let store: CatalogueStore
@@ -8,10 +27,7 @@ struct EditorRootView: View {
     @State private var selectedId: String?
     @State private var search = ""
     @State private var unverifiedOnly = false
-    @State private var isAddingSpecies = false
-    @State private var newName = ""
-    @State private var addError: String?
-    @State private var pendingDeletion: ForageSpecies?
+    @State private var destination: Destination?
 
     var body: some View {
         NavigationSplitView {
@@ -47,23 +63,23 @@ struct EditorRootView: View {
                     .keyboardShortcut("s")
             }
         }
-        .sheet(isPresented: $isAddingSpecies) { addSheet }
-        .alert("Delete this entry?", isPresented: .init(
-            get: { pendingDeletion != nil },
-            set: { if !$0 { pendingDeletion = nil } }
-        ), presenting: pendingDeletion) { species in
+        .sheet(item: $destination.adding) { $draft in
+            addSheet(draft: $draft)
+        }
+        .alert(item: $destination.deleting) { _ in
+            Text("Delete this entry?")
+        } actions: { species in
             Button("Delete", role: .destructive) {
                 if selectedId == species.id { selectedId = nil }
                 store.delete(id: species.id)
-                pendingDeletion = nil
             }
-            Button("Cancel", role: .cancel) { pendingDeletion = nil }
+            Button("Cancel", role: .cancel) {}
         } message: { species in
             Text("\(species.commonName) will be removed from the catalogue when you save.")
         }
     }
 
-    private var addSheet: some View {
+    private func addSheet(draft: Binding<AddDraft>) -> some View {
         VStack(alignment: .leading, spacing: .medium) {
             Text("Add a species")
                 .font(.headline)
@@ -72,17 +88,17 @@ struct EditorRootView: View {
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
 
-            TextField("Common name", text: $newName)
-                .onSubmit(commitAdd)
+            TextField("Common name", text: draft.name)
+                .onSubmit { commitAdd(draft: draft) }
 
-            if !newName.isEmpty {
+            if !draft.wrappedValue.name.isEmpty {
                 LabeledContent("Identifier") {
-                    Text(ForageSpecies.makeIdentifier(from: newName))
+                    Text(ForageSpecies.makeIdentifier(from: draft.wrappedValue.name))
                         .monospaced()
                 }
             }
-            if let addError {
-                Label(addError, systemImage: "exclamationmark.triangle.fill")
+            if let error = draft.wrappedValue.error {
+                Label(error, systemImage: "exclamationmark.triangle.fill")
                     .foregroundStyle(.red)
                     .font(.callout)
             }
@@ -94,11 +110,11 @@ struct EditorRootView: View {
 
             HStack {
                 Spacer()
-                Button("Cancel") { isAddingSpecies = false }
+                Button("Cancel") { destination = nil }
                     .keyboardShortcut(.cancelAction)
-                Button("Add") { commitAdd() }
+                Button("Add") { commitAdd(draft: draft) }
                     .keyboardShortcut(.defaultAction)
-                    .disabled(newName.trimmingCharacters(in: .whitespaces).isEmpty)
+                    .disabled(draft.wrappedValue.name.trimmingCharacters(in: .whitespaces).isEmpty)
             }
         }
         .padding(.all, .large)
@@ -106,21 +122,20 @@ struct EditorRootView: View {
     }
 
     private func startAdding() {
-        newName = ""
-        addError = nil
-        isAddingSpecies = true
+        // A fresh draft each time, so there is nothing to reset by hand.
+        destination = .adding(AddDraft())
     }
 
-    private func commitAdd() {
+    private func commitAdd(draft: Binding<AddDraft>) {
         do {
-            selectedId = try store.addSpecies(commonName: newName)
-            isAddingSpecies = false
+            selectedId = try store.addSpecies(commonName: draft.wrappedValue.name)
+            destination = nil
         } catch {
             switch error {
             case .nameEmpty:
-                addError = "Give it a name with at least one letter or digit."
+                draft.wrappedValue.error = "Give it a name with at least one letter or digit."
             case .duplicate(let id):
-                addError = "“\(id)” is already in the catalogue."
+                draft.wrappedValue.error = "“\(id)” is already in the catalogue."
             }
         }
     }
@@ -228,7 +243,7 @@ struct EditorRootView: View {
         }
         .contextMenu {
             Button("Delete \(species.commonName)…", role: .destructive) {
-                pendingDeletion = species
+                destination = .deleting(species)
             }
         }
     }

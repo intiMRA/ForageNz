@@ -1,9 +1,24 @@
-import ForageCatalogue
+import Dependencies
 import Foundation
 import SwiftUI
 import Testing
 
 @testable import ForageNZ
+
+/// Same reason as `makeStore` in the catalogue tests: `@Dependency` binds the context at
+/// construction, so the store must be built inside `withDependencies`.
+@MainActor
+private func makeStore(
+    repository: any LandStatusRepository,
+    locations: any LocationProvider
+) -> WhereYouAreStore {
+    withDependencies {
+        $0.landStatusRepository = repository
+        $0.locationProvider = locations
+    } operation: {
+        WhereYouAreStore()
+    }
+}
 
 private struct StubMapRepository: LandStatusRepository {
     let map: LandStatusMap
@@ -83,7 +98,7 @@ struct WhereYouAreStoreTests {
     }
 
     static func store(at coordinate: Coordinate) throws -> WhereYouAreStore {
-        WhereYouAreStore(
+        makeStore(
             repository: StubMapRepository(map: try shippedMap()),
             locations: StubLocations(coordinate: coordinate)
         )
@@ -112,7 +127,7 @@ struct WhereYouAreStoreTests {
 
     @Test("a denied fix surfaces the reason it was denied")
     func deniedLocation() async throws {
-        let store = WhereYouAreStore(
+        let store = makeStore(
             repository: StubMapRepository(map: try Self.shippedMap()),
             locations: FailingLocations(error: .denied)
         )
@@ -123,7 +138,7 @@ struct WhereYouAreStoreTests {
     @Test("a broken map is reported before anyone is asked for their location")
     func mapFailsBeforeAskingForLocation() async throws {
         let locations = RecordingLocations()
-        let store = WhereYouAreStore(
+        let store = makeStore(
             repository: FailingMapRepository(error: .mapImplausible(place: "Tongariro National Park")),
             locations: locations
         )
@@ -139,7 +154,7 @@ struct WhereYouAreStoreTests {
     @Test("a second check while one is in flight does not start another")
     func overlappingChecksLoadOnce() async throws {
         let repository = GatedMapRepository(map: try Self.shippedMap())
-        let store = WhereYouAreStore(
+        let store = makeStore(
             repository: repository,
             locations: StubLocations(coordinate: Coordinate(latitude: -45.4000, longitude: 167.7000))
         )
