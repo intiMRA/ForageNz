@@ -111,6 +111,15 @@ public extension ForageSpecies {
             if warnings.isEmpty {
                 blocking(.warnings, "A do-not-eat entry must say what the danger is.")
             }
+        case .psychoactive:
+            // Same two rules as `doNotEat`, for a different reason: nothing here is food, and
+            // an entry that does not say what the law makes of it is worse than no entry.
+            if !claimsNoEdibleParts {
+                blocking(.edibleParts, "A psychoactive entry must say exactly “\(Self.noEdibleParts)”.")
+            }
+            if warnings.isEmpty {
+                blocking(.warnings, "A psychoactive entry must state its legal status.")
+            }
         case .careRequired:
             if warnings.isEmpty && lookalikes.isEmpty {
                 blocking(.warnings, "Needs care, so it must say why — a warning or a lookalike.")
@@ -142,7 +151,7 @@ public extension ForageSpecies {
         let wantedPhotos = CataloguePhotos.recommendedCount(
             hasDeadlyLookalike: highestLookalikeRisk == .deadly
         )
-        if caution != .doNotEat && photos.count < wantedPhotos {
+        if caution.isHarvestable && photos.count < wantedPhotos {
             advisory(
                 .photos,
                 photos.isEmpty

@@ -75,9 +75,10 @@ extension LookalikeRisk {
         case .deadly: Image(.deadly)
         case .toxic: Image(.toxic)
         case .unpalatable: Image(.unpalatable)
-        // No drawing of its own: it borrows the symbol `CautionLevel.straightforward` uses,
-        // so "this one is fine" looks the same wherever the app says it.
+        // Neither has a drawing of its own: each borrows the symbol its `CautionLevel`
+        // counterpart uses, so the same claim looks the same wherever the app makes it.
         case .edible: Image(systemName: "checkmark.seal")
+        case .psychoactive: Image(systemName: "brain.head.profile")
         }
     }
 }
@@ -90,6 +91,7 @@ extension CautionLevel {
         case .straightforward: Image(systemName: "checkmark.seal")
         case .careRequired: Image(systemName: "exclamationmark.triangle")
         case .doNotEat: Image(systemName: "xmark.octagon")
+        case .psychoactive: Image(systemName: "brain.head.profile")
         }
     }
 }

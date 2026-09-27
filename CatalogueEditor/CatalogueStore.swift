@@ -204,7 +204,12 @@ enum ReviewTier: Int, CaseIterable, Comparable {
 
 extension ForageSpecies {
     var reviewTier: ReviewTier {
-        if caution == .doNotEat || hasDeadlyLookalikeAsEdible { return .lethalClaims }
+        // Psychoactive entries sit in the top tier too. Not because the mushroom is lethal —
+        // it is not — but because the claims on the page are legal ones, and the species they
+        // are confused with kill.
+        if caution == .doNotEat || caution == .psychoactive || hasDeadlyLookalikeAsEdible {
+            return .lethalClaims
+        }
         if caution == .careRequired { return .careRequired }
         return .straightforward
     }

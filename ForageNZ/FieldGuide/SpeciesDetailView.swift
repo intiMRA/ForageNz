@@ -136,6 +136,9 @@ struct SpeciesDetailView: View {
         VStack(alignment: .leading, spacing: .empty) {
             createSectionHeader(image: Image(.outlineQuestion), title: "Look Alike")
                 .padding(.bottom, .xxSmall)
+            // A `.psychoactive` entry gets neither banner yet: "do not eat" is the wrong
+            // reason and "before you harvest this" is the wrong instruction. It needs one
+            // line of its own, and that sentence is the owner's to write.
             if species.caution == .doNotEat {
                 doNotEatBanner
                     .padding(.bottom, .xxxSmall)

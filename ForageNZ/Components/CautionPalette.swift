@@ -8,6 +8,17 @@ extension CautionLevel {
         case .straightforward: Color(.cautionSafe)
         case .careRequired: Color(.cautionCare)
         case .doNotEat: Color(.cautionDanger)
+        case .psychoactive: Color(.cautionPsychoactive)
+        }
+    }
+
+    /// The slab a list row sits on. Only the two cases the reader may not take colour it —
+    /// if every row were tinted, the tint would stop meaning anything.
+    var rowBackgroundColor: Color {
+        switch self {
+        case .straightforward, .careRequired: Color(.rowCardBackground)
+        case .doNotEat: Color(.riskDeadlyBackground)
+        case .psychoactive: Color(.cautionPsychoactiveBackground)
         }
     }
 }
@@ -16,6 +27,7 @@ extension LookalikeRisk {
     var tintColor: Color {
         switch self {
         case .edible: Color(.riskEdible)
+        case .psychoactive: Color(.cautionPsychoactive)
         case .unpalatable: Color(.riskUnpalatable)
         case .toxic: Color(.riskToxic)
         case .deadly: Color(.riskDeadly)
@@ -26,6 +38,10 @@ extension LookalikeRisk {
         switch self {
         case .edible:
             Color(.riskEdibleBackground)
+        // Shares the caution palette's purple rather than owning a second one: the two
+        // enums are making the same claim from opposite sides of the same card.
+        case .psychoactive:
+            Color(.cautionPsychoactiveBackground)
         case .unpalatable:
             Color(.riskUnpalatableBackground)
         case .toxic:

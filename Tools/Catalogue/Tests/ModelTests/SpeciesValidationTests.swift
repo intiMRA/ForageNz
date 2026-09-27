@@ -96,6 +96,28 @@ struct SpeciesValidationTests {
         #expect(makeSpecies(caution: .doNotEat, edibleParts: "None.", warnings: ["Lethal."]).isPublishable)
     }
 
+    /// Same two rules as a do-not-eat entry, for a different reason. A psilocybin mushroom is
+    /// not poisonous, so nothing here stops an entry reading as a recipe except the rule that
+    /// it must claim no edible parts, and nothing makes it state the law except the rule that
+    /// it must carry a warning.
+    @Test("A psychoactive entry must claim no edible parts and state its legal status")
+    func psychoactiveRules() {
+        let claimsFood = makeSpecies(caution: .psychoactive, edibleParts: "Caps.", warnings: ["Class A."])
+        #expect(fields(claimsFood, severity: .blocking).contains(.edibleParts))
+
+        let silent = makeSpecies(caution: .psychoactive, edibleParts: "None.", warnings: [])
+        #expect(fields(silent, severity: .blocking).contains(.warnings))
+
+        #expect(makeSpecies(caution: .psychoactive, edibleParts: "None.", warnings: ["Class A."]).isPublishable)
+    }
+
+    /// The property the screens ask instead of `!= .doNotEat`, which silently answered "yes,
+    /// this is food" for any case added later.
+    @Test("Only the two cases the reader may take are harvestable")
+    func harvestableCases() {
+        #expect(CautionLevel.allCases.filter(\.isHarvestable) == [.straightforward, .careRequired])
+    }
+
     @Test("A care-required entry must say why care is needed")
     func careRequiredNeedsAReason() {
         #expect(fields(makeSpecies(caution: .careRequired), severity: .blocking).contains(.warnings))

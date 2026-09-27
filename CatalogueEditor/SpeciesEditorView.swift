@@ -128,7 +128,9 @@ struct SpeciesEditorView: View {
                 "Edible parts",
                 text: binding(\.edibleParts.text) { $0.with(edibleParts: $0.edibleParts.with(text: $1)) },
                 lines: 2...6,
-                help: species.caution == .doNotEat ? "Must say exactly “\(ForageSpecies.noEdibleParts)” for a do-not-eat entry." : nil
+                help: species.caution.isHarvestable
+                    ? nil
+                    : "Must say exactly “\(ForageSpecies.noEdibleParts)” for a \(species.caution == .doNotEat ? "do-not-eat" : "psychoactive") entry."
             )
             LabelledField(
                 "Preparation",

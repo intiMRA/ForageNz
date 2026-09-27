@@ -79,12 +79,18 @@ final class SpeciesStore {
 
     /// Species worth looking for in `month`, excluding entries that exist only as warnings.
     func inSeason(for month: ForageMonth) -> [ForageSpecies] {
-        species.filter { $0.caution != .doNotEat && $0.isInSeason(in: month) }
+        species.filter { $0.caution.isHarvestable && $0.isInSeason(in: month) }
     }
 
     /// Entries that exist so the user can recognise and avoid them.
     var doNotEat: [ForageSpecies] {
         species.filter { $0.caution == .doNotEat }
+    }
+
+    /// Entries whose reason to leave them alone is the law, not poisoning. Kept out of
+    /// `doNotEat` so the Safety tab can say which of the two it means.
+    var psychoactive: [ForageSpecies] {
+        species.filter { $0.caution == .psychoactive }
     }
 
     /// Every species that has at least one lookalike that can kill.

@@ -201,9 +201,10 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     }
 
     /// The one rule behind every "deadly lookalike" badge and banner: an edible whose double
-    /// can kill. A do-not-eat entry is the danger itself, so it does not get the badge.
+    /// can kill. An entry nobody may take does not get the badge — a do-not-eat entry is the
+    /// danger itself, and a psychoactive one is not being offered as food either.
     public var hasDeadlyLookalikeAsEdible: Bool {
-        highestLookalikeRisk == .deadly && caution != .doNotEat
+        highestLookalikeRisk == .deadly && caution.isHarvestable
     }
 
     /// A copy with one field replaced. The model is immutable by design, so the editor

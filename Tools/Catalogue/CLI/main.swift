@@ -229,7 +229,7 @@ if arguments.contains("--photos") {
         print("orphan · \(orphan): referenced by no entry")
     }
     let thin = species.filter { entry in
-        entry.caution != .doNotEat && entry.photos.count < CataloguePhotos.recommendedCount(
+        entry.caution.isHarvestable && entry.photos.count < CataloguePhotos.recommendedCount(
             hasDeadlyLookalike: entry.highestLookalikeRisk == .deadly
         )
     }

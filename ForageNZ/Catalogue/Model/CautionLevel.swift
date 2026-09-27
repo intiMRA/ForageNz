@@ -11,12 +11,17 @@ public nonisolated enum CautionLevel: String, Codable, Sendable, CaseIterable {
     case careRequired
     /// Listed so it can be recognised and avoided. Never eat.
     case doNotEat
+    /// Not poisonous, but its active compounds are controlled drugs, so taking it is a crime
+    /// rather than a health risk. Kept apart from `doNotEat` because filing a non-toxic
+    /// mushroom under a heading about poisoning is a claim that is simply untrue.
+    case psychoactive
 
     public var displayName: LocalizedStringResource {
         switch self {
         case .straightforward: "Straightforward"
         case .careRequired: "Care required"
         case .doNotEat: "Do not eat"
+        case .psychoactive: "Psychoactive"
         }
     }
 
@@ -24,7 +29,20 @@ public nonisolated enum CautionLevel: String, Codable, Sendable, CaseIterable {
         switch self {
         case .straightforward: "OK"
         case .careRequired: "Care"
-        case .doNotEat: "Toxic"
+        case .doNotEat: "Danger"
+        case .psychoactive: "Psychoactive"
+        }
+    }
+
+    /// Whether this is something the reader may take at all.
+    ///
+    /// The two reasons not to are different in kind — it will hurt you, or taking it is a
+    /// crime — but every screen that asks "is this food?" wants them treated the same, and
+    /// asking `!= .doNotEat` silently answered yes for anything added later.
+    public var isHarvestable: Bool {
+        switch self {
+        case .straightforward, .careRequired: true
+        case .doNotEat, .psychoactive: false
         }
     }
 
@@ -42,6 +60,11 @@ public nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable, Ca
     /// Will make you seriously unwell.
     case toxic
     case unpalatable
+    /// Won't poison you, but its active compounds are controlled drugs. The counterpart to
+    /// `CautionLevel.psychoactive`, and the reason it has to exist: from a deadly species'
+    /// page the mushroom it is confused with may be neither dangerous nor `edible`, and a
+    /// green "Edible" tick on a Class A species is the worst of the available lies.
+    case psychoactive
     /// The safe member of the pair: no worse than the entry it is carded against, and
     /// usually the one the forager was looking for. Not a claim that it needs no care —
     /// that is its own entry's `caution` to state.
@@ -52,16 +75,21 @@ public nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable, Ca
         case .deadly: "Deadly"
         case .toxic: "Toxic"
         case .unpalatable: "Unpalatable"
+        case .psychoactive: "Psychoactive"
         case .edible: "Edible"
         }
     }
 
+    /// Ordered by what it costs you to get the pair the wrong way round. `psychoactive` sits
+    /// above `unpalatable` because a conviction outlasts a bad dinner, and below `toxic`
+    /// because nothing about it will put you in hospital.
     private var severityRank: Int {
         switch self {
         case .edible: 0
         case .unpalatable: 1
-        case .toxic: 2
-        case .deadly: 3
+        case .psychoactive: 2
+        case .toxic: 3
+        case .deadly: 4
         }
     }
 

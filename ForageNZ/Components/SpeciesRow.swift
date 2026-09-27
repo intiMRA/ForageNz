@@ -5,7 +5,7 @@ struct SpeciesRow: View {
     let model: ListingRowModel
     
     var body: some View {
-        SpeciesCard(background: model.caution == .doNotEat ? .riskDeadlyBackground : .rowCardBackground) {
+        SpeciesCard(background: model.caution.rowBackgroundColor) {
             leftView
             rightView
         }

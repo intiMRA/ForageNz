@@ -45,6 +45,20 @@ struct SafetyView: View {
                 }
             }
 
+            // Deliberately its own section rather than a few more rows under "leave them
+            // alone": these are not poisonous, and filing them under a heading about
+            // poisoning would be a claim that is not true. The footer explaining what the
+            // reason actually is still needs writing.
+            if !store.psychoactive.isEmpty {
+                Section {
+                    ForEach(store.psychoactive) { item in
+                        SpeciesRowButton(species: item)
+                    }
+                } header: {
+                    Text("Psychoactive")
+                }
+            }
+
             if !store.withDeadlyLookalikes.isEmpty {
                 Section {
                     ForEach(store.withDeadlyLookalikes) { item in

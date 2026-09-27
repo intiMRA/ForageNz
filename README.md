@@ -627,7 +627,14 @@ built around.
 |---|---|---|---|
 | `straightforward` | Straightforward | OK | A careful beginner can identify it, and is unharmed if they get it wrong |
 | `careRequired` | Care required | Care | Has toxic lookalikes, or needs processing before it is safe |
-| `doNotEat` | Do not eat | Toxic | Listed so it can be recognised and avoided |
+| `doNotEat` | Do not eat | Danger | Listed so it can be recognised and avoided |
+| `psychoactive` | Psychoactive | Psychoactive | Not poisonous, but its active compounds are controlled drugs |
+
+`isHarvestable` is false for the last two and true for the first two. Every screen that asks
+"is this food?" asks that, not `!= .doNotEat`: the two reasons not to take something differ in
+kind, but no list of what to pick this month cares which one applies. The validation rules for
+`psychoactive` are `doNotEat`'s — it must claim no edible parts, and it must carry a warning,
+which is where the legal status goes.
 
 **`LookalikeRisk`** — how bad it is to confuse a species with its double. `Comparable`, so
 `highestLookalikeRisk` is `max()` and the ordering is the type's, not a caller's.
@@ -636,7 +643,15 @@ built around.
 |---|---|---|
 | `deadly` | Deadly | highest |
 | `toxic` | Toxic | |
-| `unpalatable` | Unpalatable | lowest |
+| `psychoactive` | Psychoactive | |
+| `unpalatable` | Unpalatable | |
+| `edible` | Edible | lowest |
+
+The risk describes the species the card *names*, not the pair — a confusable pair is carded
+from both sides, and without `edible` the reverse card had to repeat the dangerous entry's own
+risk, so hemlock's page told the reader that wild fennel was deadly. `psychoactive` and
+`edible` are the two cases that only exist because of that. A test
+(`lookalikeRiskMatchesItsEntry`) holds every card to the caution on the page it opens.
 
 **`Habitat`** — where it grows, as a filterable classification beside the habitat prose. A case
 names a **place**, and so does its label: never a thing found in it, a piece of infrastructure

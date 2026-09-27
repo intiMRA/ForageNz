@@ -188,6 +188,10 @@ struct CatalogueTests {
     /// pair is carded from both sides, and it is the reverse card that goes wrong: hemlock's
     /// page carried "Wild fennel — Deadly", because there was no way to say the other one is
     /// the safe half until `LookalikeRisk.edible` existed. This is the check that says so.
+    ///
+    /// `psychoactive` is the tightest of the three rules, and deliberately so: it is the one
+    /// word on a card that carries a legal claim, so a page and the cards that open it may
+    /// not disagree about it in either direction.
     @Test("A lookalike's risk agrees with the caution on the page it opens")
     func lookalikeRiskMatchesItsEntry() async throws {
         let species = try await loadCatalogue()
@@ -195,17 +199,26 @@ struct CatalogueTests {
         for entry in species {
             for lookalike in entry.lookalikes {
                 guard let target = byID[lookalike.entry.rawValue] else { continue }
+                let card = "\(entry.id) → \(lookalike.name)"
 
-                if target.caution != .doNotEat {
+                #expect(
+                    (lookalike.risk == .psychoactive) == (target.caution == .psychoactive),
+                    "\(card) is tagged \(lookalike.risk.rawValue), but \(target.id)'s own page says \(target.caution.rawValue)"
+                )
+
+                switch target.caution {
+                case .straightforward, .careRequired:
                     #expect(
                         lookalike.risk != .toxic && lookalike.risk != .deadly,
-                        "\(entry.id) → \(lookalike.name) is tagged \(lookalike.risk.rawValue), but \(target.id)'s own page says \(target.caution.rawValue)"
+                        "\(card) is tagged \(lookalike.risk.rawValue), but \(target.id)'s own page says \(target.caution.rawValue)"
                     )
-                } else {
+                case .doNotEat:
                     #expect(
                         lookalike.risk != .edible,
-                        "\(entry.id) → \(lookalike.name) is tagged edible, but \(target.id) is a do-not-eat entry"
+                        "\(card) is tagged edible, but \(target.id) is a do-not-eat entry"
                     )
+                case .psychoactive:
+                    break  // Covered by the equivalence above.
                 }
             }
         }
