@@ -23363,5 +23363,397 @@
     "warnings" : [
 
     ]
+  },
+  {
+    "caution" : "psychoactive",
+    "commonName" : "Psilocybe subaeruginosa",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fungi",
+    "habitat" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe subaeruginosa' (CC BY-SA 4.0)"
+      ],
+      "text" : "Psilocybe subaeruginosa grows solitary to gregarious from wood debris in Australian native forests, pine plantations and is occasionally observed growing on dung. It is common in southern parts of Australia from April to August. The species is also known from Australian native and Eucalyptus forests, and famously in New Zealand on wood chip. It is recorded as present in New Zealand, but DNA sequencing of collections so far indicates P. allenii and P. cyanescens there as well as P. subaeruginosa. Its tendency to live on wood chips, as well as on plants and in soil, contribute to the likelihood that these were the materials it was transplanted to the Northern Hemisphere on, and the transplantation led to a decrease in genetic diversity. This concept also led to the idea that they exist in disturbed areas, rather than natural."
+    },
+    "habitats" : [
+
+    ],
+    "id" : "psilocybe-subaeruginosa",
+    "identification" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe subaeruginosa' (CC BY-SA 4.0)"
+      ],
+      "text" : "The cap averages 12–50 mm in diameter. It is conical to conic-convex with slightly inrolled edges when young, and becomes convex, often slightly upturned, sub-gibbous, or sometimes with a small acute umbo. It is slightly tacky. There may be veil remnants at the margin when young. Coloured yellow-brown to orange-brown, paler towards the margin, which is a little striate, hygrophanous, fading in drying to pallid biscuit brown or pale orange-yellow. The cap stains greenish blue with age or handling and the flesh inside is whitish. The gills are moderately close, pale smoky brown when young, violet-brown or brownish fuscous in age, with narrow pale edges, slightly ventricose, in three series, the middle reaching halfway to the stipe, with an adnate or broadly adnexed attachment and lines sometimes running down the stipe. The stipe is 25–70 × 2–3.5(-5) mm, tall and slender, equal or slightly wider towards the cap, finely vertically lined, mealy at the top with fine fibrils below, the base somewhat swollen or becoming a mass of mycelium, hollow inside, cartilaginous, pale whitish streaked with dark greyish brown, staining greenish blue, flesh brownish. A white cortinate partial veil soon disappears, leaving traces as a raised area around the upper stipe.\nTaste and odour are farinaceous and the spore print is purple brown.\nThe cheilocystidia are 17–29 x 5.5–11 μm, hyaline, fusoid-ventricose, subpyriform or mucronate, often with an elongated neck at the apex which is 2–4.5 μm.  The pleurocystidia measure 22–47 x 6–16 μm and is shaped like the cheilocystidia and also hyaline. The spores are smooth, subellipsoid, with an apical germ pore, measuring (10) 13.2–14.3 (15.4) x 6.6–7.7 x 6–7.5 μm."
+    },
+    "lookalikes" : [
+      {
+        "entry" : "wood-nipple-fungus",
+        "howToTell" : "",
+        "name" : "Wood nipple fungus",
+        "risk" : "deadly",
+        "scientificName" : "Galerina patagonica"
+      }
+    ],
+    "months" : [
+
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Psilocybe subaeruginosa",
+    "sources" : [
+      "Manaaki Whenua – Landcare Research. Virtual Mycota: 'Psilocybe subaeruginosa'. Retrieved 27/09/2026. https://virtualmycota.landcareresearch.co.nz/webforms/vM_Species_Details.aspx?pk=8807",
+      "Identification, habitat and summary text: Wikipedia contributors. 'Psilocybe subaeruginosa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 27/09/2026. https://en.wikipedia.org/wiki/Psilocybe_subaeruginosa"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe subaeruginosa' (CC BY-SA 4.0)"
+      ],
+      "text" : "Psilocybe subaeruginosa is a species of agaric fungus in the family Hymenogastraceae described in 1927 and known from Australia and New Zealand."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "psychoactive",
+    "commonName" : "Weraroa",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fungi",
+    "habitat" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe weraroa' (CC BY-SA 4.0)"
+      ],
+      "text" : "The species is endemic to New Zealand, and is fairly abundant in the early winter and spring months in lowland mixed rainforest near Wellington and Auckland. The mushroom can be difficult to see, often buried under leaves or eaten by slugs, and it is sometimes hard to find mature specimens that are not partially eaten. The species is typically found on decaying wood buried in forest leaf litter (either solitary or crowded), often on the rotting branches of māhoe (Melicytus ramiflorus). It has also been found fruiting on rotted cabbage trees (Cordyline australis) and associated with decaying tree-fern fronds, native to the forests of New Zealand."
+    },
+    "habitats" : [
+
+    ],
+    "id" : "weraroa",
+    "identification" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe weraroa' (CC BY-SA 4.0)"
+      ],
+      "text" : "Pileus (Peridium) 3–5 cm (1.2–2.0 in) long by 1.5–3 cm (0.59–1.18 in) wide, roundish, ovate (wider at the base and tapering towards the end, egg-shaped) or elongated and elliptic (tapered at the base and apex with a swollen mid-section), base decurrent (extending down the stem below the insertion) or rounded and blunt, margin folded and often torn, light brown when young, becoming french-grey or pale blue-grey, sometimes pallid green in age, longitudinally fibrillose causing a finely striated appearance, becoming smooth, polished, glabrous, tacky and leathery in age, slowly bruising blue or greenish when injured, drying yellow to dingy brown. Stipe up to 40 mm (1.6 in) long by 6 mm (0.24 in) in diameter, slender, equal in width, whitish to french-grey, bruising blue or greenish with damage, yellowish-brown at the base, initially fibrillose but becoming smooth, polished and cartilaginous in age excluding at the base, hollow, flesh yellow-orange, thickening at the internal apex. Gleba sepia-brown to chocolate-brown, cellular, coarsely shaped, often elongated, laterally compressed, sparse, chambered and gill-like. Spores 11–15(17) x 5–8 μm in size, smooth, sepia-coloured to purple-brown, elliptic-ovate or elliptical in shape, rounded at one end with a thin epispore."
+    },
+    "lookalikes" : [
+
+    ],
+    "months" : [
+
+    ],
+    "origin" : "endemic",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Psilocybe weraroa",
+    "sources" : [
+      "Manaaki Whenua – Landcare Research. Virtual Mycota: 'Weraroa novae-zelandiae'. Retrieved 27/09/2026. https://virtualmycota.landcareresearch.co.nz/webforms/vM_Species_Details.aspx?pk=12470 (the basionym of Psilocybe weraroa)",
+      "Identification, habitat and summary text: Wikipedia contributors. 'Psilocybe weraroa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 27/09/2026. https://en.wikipedia.org/wiki/Psilocybe_weraroa"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe weraroa' (CC BY-SA 4.0)"
+      ],
+      "text" : "Psilocybe weraroa, formerly Weraroa novae-zelandiae, is a secotioid fungus in the family Hymenogastraceae."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "psychoactive",
+    "commonName" : "Psilocybe makarorae",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fungi",
+    "habitat" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe makarorae' (CC BY-SA 4.0)"
+      ],
+      "text" : "Psilocybe makarorae is known only from New Zealand. The reported collection locations have been on both the North and South Islands, including the Bay of Plenty, Westland District, Central Otago, and Dunedin.  Like all Psilocybe species, it is saprobic, and feeds on decomposing organic matter. Fruit bodies grow scattered or in groups on the fallen, rotting wood of southern beeches (genus Nothofagus), and are often encountered near lakes and picnic grounds"
+    },
+    "habitats" : [
+
+    ],
+    "id" : "psilocybe-makarorae",
+    "identification" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe makarorae' (CC BY-SA 4.0)"
+      ],
+      "text" : "The cap is initially conical to bell shaped, but as the mushroom grows, it expands to become convex with a prominent umbo, and attains a diameter of 15–55 mm (0.6–2.2 in). The cap surface is dry to slightly tacky. Its colour is yellow-brown to orange-brown, often paler towards the margin, which has fine striations corresponding to the gills on the underside. The flesh is white. Gills have an adnexed attachment to the stem, and are pale greyish brown. The whitish stipe is 30–60 millimetres (1.2–2.4 in) long by 2–4 mm wide. It is cylindrical, with a surface of pressed silky fibrils. The base of the stem is often brownish, with white rhizoids present. The veil of young fruit bodies is cortinate—resembling the cobweb-like partial veil found in Cortinarius species. As the mushroom grows, its remnants often remain visible on the stem, but it never forms a complete ring. Both the cap and the stem stain greenish-blue when damaged.\nThe spore print is dark purplish brown. Spores typically measure 7.5–9.5 by 5.5–6.5 by 4.5–5.5 μm, averaging 8.7 by 6.0 by 5.3 μm. Its shape in face view is ovate (egg-shaped) to roughly rhomboid, while viewed from the side it appears elliptical. The spore wall is brown, smooth, about 0.8–1 μm thick, and has a germ pore. The basidia (spore-bearing cells) are four-spored and somewhat club-shaped, tapering slightly to the base; they are clamped, and measure 25–31 by 7–8.5 μm.\nThe cheilocystidia (cystidia on the gill edge) have dimensions of 18–26 by 6–9 μm, and a shape ranging from ventricose-rostrate (broad in the middle and tapering to a beaklike neck) to mucronate (ending abruptly in a short sharp point). They are hyaline (translucent), thin-walled, and clamped, with necks that are 3–5 μm long. The pleurocystidia (cystidia on the gill face) are similar in shape to cheilocystidia, but narrower (4–8 μm wide), and usually have a shorter neck measuring 2.5–4 μm.  The cap cuticle is a cutis (characterised by hyphae that run parallel to the cap surface) of long-celled, 2–3 μm diameter, gelatinised hyphae. The hypodermium (the tissue layer under the cap cuticle) is filamentous, comprising 4–6 μm diameter cells with pale brown walls. Clamps are common. The subhymenium (the tissue layer under the hymenium) is poorly developed, containing 2–4 μm diameter cells with pale brown walls. The tissue comprising the hymenophore is made of short cylindric, 3–6 μm diameter hyaline cells.\nP. makarorae contains the psychedelic compounds psilocybin and psilocin. Although the potency is not known definitely, Paul Stamets suggests that, based on the degree of the bluing reaction, they are \"probably moderately potent\".\n\n\nSimilar species\nPsilocybe makarorae is related to Psilocybe weraroa and Psilocybe subaeruginosa, though not as closely as they are to each other."
+    },
+    "lookalikes" : [
+      {
+        "entry" : "wood-nipple-fungus",
+        "howToTell" : "",
+        "name" : "Wood nipple fungus",
+        "risk" : "deadly",
+        "scientificName" : "Galerina patagonica"
+      }
+    ],
+    "months" : [
+
+    ],
+    "origin" : "endemic",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Psilocybe makarorae",
+    "sources" : [
+      "Manaaki Whenua – Landcare Research. Virtual Mycota: 'Psilocybe makarorae'. Retrieved 27/09/2026. https://virtualmycota.landcareresearch.co.nz/webforms/vM_Species_Details.aspx?pk=8801",
+      "Identification, habitat and summary text: Wikipedia contributors. 'Psilocybe makarorae', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 27/09/2026. https://en.wikipedia.org/wiki/Psilocybe_makarorae"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe makarorae' (CC BY-SA 4.0)"
+      ],
+      "text" : "Psilocybe makarorae is a species of psilocybin mushroom in the family Hymenogastraceae."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "psychoactive",
+    "commonName" : "Psilocybe aucklandiae",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fungi",
+    "habitat" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe aucklandiae' (CC BY-SA 4.0)"
+      ],
+      "text" : "On soil and litter, especially clay soils, in native forests and pine plantations, almost always in the wider Auckland Region. Commonly found in the exotic pine plantation of Riverhead. Has been recorded from Waipoua in Northland, and in Australia as Psilocybe sect. Zapotecorum, which is likely phylogenetically similar or the same.\nSpecimens examined for the description: Auckland: Woodhill State Forest, on ground in litter of mixed pine and native forest,  C. C. King, Jun 1989 PDD 57236 (holotype). Waitakere Ranges: Sharps Bush, in litter under Leptospermum and Dacrydium: PDD 43043; Atkinson Park, Titirangi Beach on soil under Leptospermum: PDD 49789; Quarry Track, Piha Valley Forest, on litter: PDD 58423. Hunua Ranges: Orere, on ground: PDD 34593; Mangatangi Valley, on rotten wood: PDD 34594."
+    },
+    "habitats" : [
+
+    ],
+    "id" : "psilocybe-aucklandiae",
+    "identification" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe aucklandiae' (CC BY-SA 4.0)"
+      ],
+      "text" : "The cap is 15–55 mm diam., broadly conic, expanding to broadly umbonate to more or less flattened, with edges becoming slightly upturned and often splitting; dry; lacking veil remnants; dark brown to yellow-brown, striate (radially lined) to edge, hygrophanous, drying to pale yellow-brown to straw-coloured; staining greenish-blue with damage or age; flesh white. The gills are adnate (broadly attached to the stem), close, greyish yellow-brown, maturing dark violaceous, with a conspicuous pale narrow margin. The stipe is 35-100 x 1.5–5 mm, cylindric, finely pruinose in the upper part and silky-fibrillose near the base, white, yellow or pinkish purple brown, with brownish flesh. Veil cortinoid and poorly developed, disappearing as caps mature. All parts staining deep greenish-blue or blackish-blue with damage. Spore print violet brown.\nSpores measure (6.5-)7-9.5 x 4–5.5 x 3.5-4.5 μm, 8.1 x 4.9 x 4.3 μm average, ovate in face view, elliptic-ovate in side view; brown-walled and smooth, 0.5 μm thick with apical pore; Basidia 20-28 x 4.5-6 μm, cylindric, with 4 spores, clamped; Cheilocystidia 15-32 x 4-8 μm, ventricose-rostrate (swollen and uneven with a beak), with long, tapering, flexuous and sometimes bifurcate neck (forked in two), transparent, thin-walled, up to 12 μm long; Pleurocystidia 13-19 x 4.5-6 μm, scattered, similar to cheilocystidia but with shorter neck, up to 4.5 μm.\n\n\nSimilar species\nPsilocybe zapotecorum in Mexico and South America, as noted by Guzman et al. (1991), \"P. aucklandii is very similar to P. zapotecorum R. Heim emend. Guzman, which is common in Mexico and known from South America. The two species are barely distinguishable microscopically, although comparison with published descriptions (Guzman 1983) show that P. aucklandii may have slightly narrower pleurocystidia and slightly wider spores. Published illustrations of P. zapotecorum (Guzman 1983) appear to show that P. aucklandii is a less robust species.\""
+    },
+    "lookalikes" : [
+
+    ],
+    "months" : [
+
+    ],
+    "origin" : "endemic",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Psilocybe aucklandiae",
+    "sources" : [
+      "Manaaki Whenua – Landcare Research. Virtual Mycota: 'Psilocybe aucklandiae'. Retrieved 27/09/2026. https://virtualmycota.landcareresearch.co.nz/webforms/vM_Species_Details.aspx?pk=8795",
+      "Identification, habitat and summary text: Wikipedia contributors. 'Psilocybe aucklandiae', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 27/09/2026. https://en.wikipedia.org/wiki/Psilocybe_aucklandiae"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe aucklandiae' (CC BY-SA 4.0)"
+      ],
+      "text" : "Psilocybe aucklandiae is a species of agaric fungus in the family Hymenogastraceae."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "psychoactive",
+    "commonName" : "Liberty cap",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fungi",
+    "habitat" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe semilanceata' (CC BY-SA 4.0)"
+      ],
+      "text" : "Psilocybe semilanceata fruits solitarily or in groups on rich and acidic soil, typically in grasslands, such as meadows, pastures, or lawns. It is often found in pastures that have been fertilized with sheep or cow dung, although it does not typically grow directly on the dung.\nP. semilanceata, like all others species of the genus Psilocybe, is a saprobic fungus, meaning it obtains nutrients by breaking down organic matter. The mushroom is also associated with sedges in moist areas of fields, and it is thought to live on the decaying root remains. At least one study has demonstrated an association of P. semilanceata with the roots of the grasses Agrosiis tenuis, Poa annua, and the dicot Lolium perenne.\nLike some other grassland psilocybin mushroom species such as P. mexicana, P. tampanensis and Conocybe cyanopus, P. semilanceata may form sclerotia, a dormant form of the fungus, which affords it some protection from wildfires and other natural disasters.\nLaboratory tests have shown P. semilanceata to suppress the growth of the soil-borne water mold Phytophthora cinnamomi, a virulent plant pathogen that causes the disease root rot. When grown in dual culture with other saprobic fungi isolated from the rhizosphere of grasses from its habitat, P. semilanceata significantly suppresses their growth. This antifungal activity, which can be traced at least partly to two phenolic compounds it secretes, helps it compete successfully with other fungal species in the intense competition for nutrients provided by decaying plant matter. Using standard antimicrobial susceptibility tests, Psilocybe semilanceata was shown to strongly inhibit the growth of the human pathogen methicillin-resistant Staphylococcus aureus (MRSA). The source of the antimicrobial activity is unknown."
+    },
+    "habitats" : [
+
+    ],
+    "id" : "liberty-cap",
+    "identification" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe semilanceata' (CC BY-SA 4.0)"
+      ],
+      "text" : "The cap of P. semilanceata is 5–25 mm (0.20–0.98 in) in diameter and 6–22 mm (0.24–0.87 in) tall. It varies in shape from sharply conical to bell-shaped, often with a prominent papilla (a nipple-shaped structure), and does not change shape considerably as it ages. The cap margin is initially rolled inward but unrolls to become straight or even curled upwards in maturity. The cap is hygrophanous, meaning it assumes different colors depending on its state of hydration. When it is moist, the cap is ochraceous to pale brown to dark chestnut brown, but darker in the center, often with a greenish-blue tinge. When moist, radial grooves (striations) can be seen on the cap that correspond to the positions of the gills underneath. When the cap is dry, it becomes much paler, a light yellow-brown color. Moist mushrooms have sticky surfaces that result from a thin gelatinous film called a pellicle. This film becomes apparent if a piece of the cap is broken by bending it back and peeling away the piece. When the cap dries from exposure to the sun, the film turns whitish and is no longer peelable.\nOn the underside of the mushroom's cap, there are between 15 and 27 individual narrow gills that are moderately crowded together, and they have a narrowly adnexed to almost free attachment to the stipe. Their color is initially pale brown, but becomes dark gray to purple-brown with a lighter edge as the spores mature. The slender yellowish-brown stipe is 4.5–14 cm (1.8–5.5 in) long by 1–3.5 mm (0.04–0.14 in) thick, and usually slightly thicker towards the base. The mushroom has a thin cobweb-like partial veil that does not last long before disappearing; sometimes, the partial veil leaves an annular zone on the stipe that may be darkened by spores. The flesh is thin and membrane-like, and roughly the same color as the surface tissue. It has a farinaceous (similar to freshly ground flour) odor and taste. All parts of the mushroom will stain a bluish color if handled or bruised, and it may naturally turn blue with age.\n\n\nMicroscopic characteristics\nIn deposit, the spores are a deep reddish purple-brown color. The use of an optical microscope can reveal further details: the spores are oblong when seen in side view, and oblong to oval in frontal view, with dimensions of 10.5–15 by 6.5–8.5 μm. The basidia (spore bearing cells of the hymenium), are 20–31 by 5–9 μm, four-spored, and have clamps at their bases; there are no basidia found on the sterile gill edge. The cheilocystidia (cystidia on the gill edge) measure 15–30 by 4–7 μm, and are flask-shaped with long thin necks that are 1–3.5 μm wide. P. semilanceata does not have pleurocystidia (cystidia on the gill face). The cap cuticle is up to 90 μm thick, and is made of a tissue layer called an ixocutis—a gelatinized layer of hyphae lying parallel to the cap surface. The hyphae comprising the ixocutis are cylindrical, hyaline, and 1–3.5 μm wide. Immediately under the cap cuticle is the subpellis, made of hyphae that are 4–12 μm wide with yellowish-brown encrusted walls. There are clamp connections present in the hyphae of all tissues.\n\n\nOther forms\nThe anamorphic form of P. semilanceata is an asexual stage in the fungus's life cycle involved in the development of mitotic diaspores (conidia). In culture, grown in a petri dish, the fungus forms a white to pale orange cottony or felt-like mat of mycelia. The conidia formed are straight to curved, measuring 2.0–8.0 by 1.1–2.0 μm, and may contain one to several small intracellular droplets. Although little is known of the anamorphic stage of P. semilanceata beyond the confines of laboratory culture, in general, the morphology of the asexual structures may be used as classical characters in phylogenetic analyses to help understand the evolutionary relationships between related groups of fungi.\nScottish mycologist Roy Watling described sequestrate (truffle-like) or secotioid versions of P. semilanceata he found growing in association with regular fruit bodies. These versions had elongated caps, 20–22 cm (7.9–8.7 in) long and 0.8–1 cm (0.3–0.4 in) wide at the base, with the inward curved margins closely hugging the stipe from the development of membranous flanges. Their gills were narrow, closely crowded together, and anastomosed (fused together in a vein-like network). The color of the gills was sepia with a brownish vinaceous (red wine-colored) cast, and a white margin. The stipes of the fruit bodies were 5–6 cm (2.0–2.4 in) long by 0.1–0.3 cm (0.04–0.12 in) thick, with about 2 cm (0.8 in) of stipe length covered by the extended cap. The thick-walled ellipsoid spores were 12.5–13.5 by 6.5–7 μm. Despite the significant differences in morphology, molecular analysis showed the secotioid version to be the same species as the typical morphotype.\n\n\nSimilar species\n\nThere are several other Psilocybe species that may be confused with P. semilanceata due to similarities in physical appearance. P. strictipes is a slender grassland species that is differentiated macroscopically from P. semilanceata by the lack of a prominent papilla. P. mexicana, commonly known as the \"Mexican liberty cap\", is also similar in appearance, but is found in manure-rich soil in subtropical grasslands in Mexico. It has somewhat smaller spores than P. semilanceata, typically 8–9.9 by 5.5–7.7 μm. Another lookalike species is P. samuiensis, found in Thailand, where it grows in well-manured clay-like soils or among paddy fields. This mushroom can be distinguished from P. semilanceata by its smaller cap, up to 1.5 cm (0.6 in) in diameter, and its rhomboid-shaped spores. P. pelliculosa is physically similar to such a degree that it may be indistinguishable in the field. It differs from P. semilanceata by virtue of its smaller spores, measuring 9–13 by 5–7 μm.\nP. semilanceata has also been confused with the toxic muscarine-containing species Inocybe geophylla, a whitish mushroom with a silky cap, yellowish-brown to pale grayish gills, and a dull yellowish-brown spore print."
+    },
+    "lookalikes" : [
+
+    ],
+    "months" : [
+
+    ],
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Psilocybe semilanceata",
+    "sources" : [
+      "Manaaki Whenua – Landcare Research. Biota of New Zealand: 'Psilocybe semilanceata (Fr.) P. Kumm. 1871'. Retrieved 27/09/2026. https://biotanz.landcareresearch.co.nz/scientific-names/1cb19d9f-36b9-11d5-9548-00d0592d548c",
+      "Identification, habitat and summary text: Wikipedia contributors. 'Psilocybe semilanceata', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 27/09/2026. https://en.wikipedia.org/wiki/Psilocybe_semilanceata"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Psilocybe semilanceata' (CC BY-SA 4.0)"
+      ],
+      "text" : "Psilocybe semilanceata, commonly known as the liberty cap, is a species of fungus which produces psilocybin, psilocin and baeocystin."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "doNotEat",
+    "commonName" : "Wood nipple fungus",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fungi",
+    "habitat" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "habitats" : [
+
+    ],
+    "id" : "wood-nipple-fungus",
+    "identification" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "lookalikes" : [
+      {
+        "entry" : "psilocybe-subaeruginosa",
+        "howToTell" : "",
+        "name" : "Psilocybe subaeruginosa",
+        "risk" : "psychoactive",
+        "scientificName" : "Psilocybe subaeruginosa"
+      },
+      {
+        "entry" : "psilocybe-makarorae",
+        "howToTell" : "",
+        "name" : "Psilocybe makarorae",
+        "risk" : "psychoactive",
+        "scientificName" : "Psilocybe makarorae"
+      }
+    ],
+    "months" : [
+
+    ],
+    "origin" : "native",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Galerina patagonica",
+    "sources" : [
+      "Manaaki Whenua – Landcare Research. Virtual Mycota: 'Galerina patagonica'. Retrieved 27/09/2026. https://virtualmycota.landcareresearch.co.nz/webforms/vM_Species_Details.aspx?pk=3860",
+      "Janszoon. 'Fungi Friday: wood nipple fungus (Galerina patagonica)'. Retrieved 27/09/2026. https://janszoon.org/news/fungi-friday-wood-nipple-fungus-galerina-patagonica/",
+      "Summary text: Wikipedia contributors. 'Galerina patagonica', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 27/09/2026. https://en.wikipedia.org/wiki/Galerina_patagonica"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Galerina patagonica' (CC BY-SA 4.0)"
+      ],
+      "text" : "Galerina patagonica is a species of agaric fungus in the family Hymenogastraceae."
+    },
+    "warnings" : [
+
+    ]
   }
 ]

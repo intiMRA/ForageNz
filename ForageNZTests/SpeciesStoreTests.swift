@@ -193,16 +193,22 @@ struct SpeciesStoreTests {
         #expect(store.species.count == 1)
     }
 
-    @Test("In-season excludes do-not-eat entries")
+    /// Both reasons the reader may not take something, because "In season" is the one screen
+    /// that reads as an instruction — a Class A species listed as worth looking for this month
+    /// is the app telling someone to go and commit an offence.
+    @Test("In-season excludes everything the reader may not take")
     func inSeasonExcludesToxic() async {
         let store = makeStore(repository: StubRepository(species: [
             makeSpecies(id: "safe", commonName: "Safe", caution: .straightforward, months: [.march]),
-            makeSpecies(id: "toxic", commonName: "Toxic", caution: .doNotEat, months: [.march])
+            makeSpecies(id: "toxic", commonName: "Toxic", caution: .doNotEat, months: [.march]),
+            makeSpecies(id: "subs", commonName: "Subs", caution: .psychoactive, months: [.march])
         ]))
 
         await store.loadIfNeeded()
 
         #expect(store.inSeason(for: .march).map(\.id) == ["safe"])
+        #expect(store.psychoactive.map(\.id) == ["subs"])
+        #expect(store.doNotEat.map(\.id) == ["toxic"])
     }
 
     @Test("In-season always includes year-round species")
