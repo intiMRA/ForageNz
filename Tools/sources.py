@@ -42,14 +42,30 @@ COURTESY_DELAY = 0.3
 
 
 class Licence(StrEnum):
-    """Photo licences permissive enough to ship in an app.
+    """Photo licences permissive enough to ship in this app.
 
-    iNaturalist's default is CC BY-NC, which bars commercial use; neither member here
-    does, so filtering to these keeps the app's options open.
+    CC0 and CC BY carry no commercial restriction and are preferred everywhere. **CC BY-NC
+    is accepted on the owner's decision (2026-09-30) that the app will be free**, and it is
+    iNaturalist's default licence, so admitting it roughly doubles the pool — on
+    `Smyrnium olusatrum`, 8 NZ research-grade observations become 16.
+
+    The cost is a constraint on the app's future: an NC photo may not be distributed in
+    anything commercial, so charging for the app, carrying ads, or shipping it under a
+    company would mean removing every one of them first. That is survivable only because
+    they stay identifiable — iNaturalist's attribution string names the licence, so an NC
+    photo's `credit` contains "CC BY-NC" and the set can be found with a grep. Prefer the
+    unrestricted two wherever both are available, so the set to strip stays as small as
+    possible; see `is_unrestricted`.
     """
 
     CC0 = "cc0"
     CC_BY = "cc-by"
+    CC_BY_NC = "cc-by-nc"
+
+    @property
+    def is_unrestricted(self) -> bool:
+        """Whether the licence permits commercial use, and so survives the app ever selling."""
+        return self is not Licence.CC_BY_NC
 
     @classmethod
     def query_value(cls) -> str:

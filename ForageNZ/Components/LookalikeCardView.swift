@@ -19,21 +19,25 @@ struct LookalikeCardView: View {
     }
 
     var card: some View {
-        SpeciesCard(background: model.risk.backgroundColor) {
-            VStack(alignment: .leading) {
-                SpeciesThumbnail(fileName: model.photoFileName)
-                Spacer()
-                Badge(
-                    image: model.risk.image,
-                    title: model.risk.displayName,
-                    size: .small,color: model.risk.tintColor,
-                    forgroundColor: .white,
-                    fontWeight: .regular
-                )
+        SpeciesCard(background: model.risk.background) {
+            HStack {
+                VStack(alignment: .leading) {
+                    SpeciesThumbnail(fileName: model.photoFileName)
+                    Spacer()
+                    Badge(
+                        image: model.risk.badgeIcon,
+                        title: model.risk.displayName,
+                        size: .small,
+                        color: model.risk.tintColor,
+                        forgroundColor: model.risk.badgeForeground,
+                        fontWeight: .regular
+                    )
+                }
+                
+                infoView
+                    .padding(.bottom, .xxSmall)
             }
-
-            infoView
-                .padding(.bottom, .xxSmall)
+            Spacer()
         }
     }
 

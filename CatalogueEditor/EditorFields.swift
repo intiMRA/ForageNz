@@ -157,11 +157,22 @@ struct RecipeEditor: View {
 }
 
 struct LookalikeEditor: View {
+    @Environment(\.colorScheme) private var colorScheme
+
     let lookalikes: [Lookalike]
     /// The species being edited. A new card starts by pointing at it, which validation flags
     /// as blocking — so an untouched card can never quietly ship pointing somewhere plausible.
     let owner: SpeciesID?
     let onChange: ([Lookalike]) -> Void
+
+    /// Pulled out of the row's `.background(_:in:)` because inlining the ternary made the row
+    /// body too much for the type checker.
+    private func banner(for risk: LookalikeRisk) -> AnyShapeStyle {
+        let style = risk == .deadly
+            ? risk.tintColor.style(.card, in: colorScheme)
+            : AnyShapeStyle(Color.secondary)
+        return AnyShapeStyle(style.opacity(Layout.bannerBackgroundOpacity))
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: .small) {
@@ -224,11 +235,7 @@ struct LookalikeEditor: View {
                 .padding(.all, .small)
                 // A deadly lookalike is a caution affordance, so its tint comes from the one
                 // semantic mapping — not a system red that happens to look similar.
-                .background(
-                    (lookalike.risk == .deadly ? lookalike.risk.tintColor : Color.secondary)
-                        .opacity(Layout.bannerBackgroundOpacity),
-                    in: EditorLayout.insetShape
-                )
+                .background(banner(for: lookalike.risk), in: EditorLayout.insetShape)
             }
 
             Button("Add lookalike", systemImage: "plus.circle") {

@@ -270,3 +270,47 @@ sea-lettuce (Langlands covers *Ulva lactuca* as "Broadleaf sea lettuce" — our 
 spp.; cite if you narrow it), feijoa, wild-plum, cherry-guava.
 
 Mostly fungi and lookalike-only pages. A mushroom guide is the obvious next source.
+
+## Online sourcing exhausted: wild-oat (*Avena fatua*) — 2026-10-01
+
+Asked for after an NZPCN link was offered for the entry. Every route was fetched and read.
+**Nothing online can close `edibleParts`, `preparation`, `habitat` or `months` on this
+entry under a licence we accept, so it has to come from a book.**
+
+| Source | Licence | What it gave |
+|---|---|---|
+| NZPCN fact sheet | all rights reserved | a features paragraph shorter than the one we hold, naturalised 1872, origin Eurasia/N Africa. No habitat, months, or uses. |
+| Flora of NZ Online factsheet | CC BY 3.0 NZ | already quoted in `identification`; the page has no habitat, distribution, flowering or fruiting fields at all. |
+| Wikipedia, *Avena fatua* | CC BY-SA 4.0 | already quoted in `summary`; **no uses or edibility section exists**, only description and weed impact. |
+| Practical Plants wiki | CC BY-NC-SA | the only licensed edibility text found — see below. |
+| PFAF | all rights reserved | same text as Practical Plants, which forked it. Cite, never copy. |
+| Search results otherwise | — | SEO content farms with no named author or sources. Not citable. |
+
+**The one usable source is weak, and it is your call whether to take it.** Practical Plants
+gives `"Seed - cooked"`, seed ground to flour for porridge, biscuits and bread, sprouted for
+salads, roasted as a coffee substitute, and `"The seed ripens in the latter half of summer
+and, when harvested and dried, can store for several years. It has a floury texture and a
+mild, somewhat creamy flavour."` Three reasons to hold off:
+
+- It is a PFAF fork, and PFAF's edible-use lines here trace to Hedrick's *Sturtevant's
+  Edible Plants of the World* (1972) and Usher's *A Dictionary of Plants Used by Man* (1974)
+  — nineteenth- and twentieth-century compilations, not first-hand practice.
+- It is not New Zealand. No habitat statement, and "latter half of summer" is a northern
+  season that would be wrong in `months` without inverting it.
+- **It omits the whole difficulty.** Every practical account of wild oat says the work is
+  dehulling and de-awning the grain, and that the panicle shatters within a narrow window.
+  An `edibleParts` that says "seed — cooked" and stops is the kind of entry this catalogue
+  is meant not to ship.
+
+**Knox is already in the entry's `sources` and is the right fill-in.** Same treatment as the
+rest of this file: facts only, nothing copied. The other four *Avena* drafts — `algerian-oat`,
+`bristle-oat`, `slender-wild-oat`, `sterilised-oat` — are empty in exactly the same four
+fields and can be done in the same sitting.
+
+**The verdict now lives on the entry, not only here.** `wild-oat` carries
+`"needsBookSource": true` and a `sourcingNote` naming Knox and what each route failed to give,
+so the editor shows it while you work and the sidebar's **Book only** filter is the queue. This
+section stays as the evidence behind that one flag. The other four *Avena* drafts are
+deliberately **not** flagged: they are empty in the same fields, but their online sourcing has
+not actually been tried, and the flag has to mean "checked and exhausted" rather than "looks
+similar" — otherwise it stops being a reason to skip a search.

@@ -36,6 +36,16 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     /// tests see them, but the app never lists one — half an entry is worse than none in
     /// the field. Defaults to `false` when the key is missing.
     public let draft: Bool
+    /// Set once the web has been searched for this species and found to hold nothing usable,
+    /// so the remaining prose can only come off a printed page. `false` is the honest default
+    /// for an absent key: it means nobody has looked, **not** that a search came back clean.
+    /// Kept separate from `draft` and `isVerified` because it answers a different question —
+    /// not "is this written" or "is this cited", but "is there any point searching again".
+    public let needsBookSource: Bool
+    /// Which book to reach for, and why the web could not do it. Read beside
+    /// `needsBookSource`; a flag without one of these leaves the next person no better off
+    /// than an untagged entry, which is what the validation advisory is there to catch.
+    public let sourcingNote: String?
 
     public init(
         id: String,
@@ -59,7 +69,9 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         recipes: [Recipe] = [],
         photos: [SpeciesPhoto] = [],
         moreImagesURL: URL? = nil,
-        draft: Bool = false
+        draft: Bool = false,
+        needsBookSource: Bool = false,
+        sourcingNote: String? = nil
     ) {
         self.id = id
         self.commonName = commonName
@@ -83,6 +95,8 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         self.photos = photos
         self.moreImagesURL = moreImagesURL
         self.draft = draft
+        self.needsBookSource = needsBookSource
+        self.sourcingNote = sourcingNote
     }
 
     public init(from decoder: any Decoder) throws {
@@ -111,6 +125,9 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         photos = try container.decode([SpeciesPhoto].self, forKey: .photos)
         moreImagesURL = try container.decodeIfPresent(URL.self, forKey: .moreImagesURL)
         draft = try container.decodeIfPresent(Bool.self, forKey: .draft) ?? false
+        // Absent means nobody has searched, the same treatment `draft` and `habitats` get.
+        needsBookSource = try container.decodeIfPresent(Bool.self, forKey: .needsBookSource) ?? false
+        sourcingNote = try container.decodeIfPresent(String.self, forKey: .sourcingNote)
     }
 
     /// `true` once someone has checked this entry against a field guide.
@@ -230,7 +247,9 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         recipes: [Recipe]? = nil,
         photos: [SpeciesPhoto]? = nil,
         moreImagesURL: URL?? = nil,
-        draft: Bool? = nil
+        draft: Bool? = nil,
+        needsBookSource: Bool? = nil,
+        sourcingNote: String?? = nil
     ) -> ForageSpecies {
         ForageSpecies(
             id: id,
@@ -254,7 +273,9 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
             recipes: recipes ?? self.recipes,
             photos: photos ?? self.photos,
             moreImagesURL: moreImagesURL ?? self.moreImagesURL,
-            draft: draft ?? self.draft
+            draft: draft ?? self.draft,
+            needsBookSource: needsBookSource ?? self.needsBookSource,
+            sourcingNote: sourcingNote ?? self.sourcingNote
         )
     }
 

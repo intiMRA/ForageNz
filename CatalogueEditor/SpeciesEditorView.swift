@@ -9,6 +9,10 @@ import SwiftUI
 struct SpeciesEditorView: View {
     let species: ForageSpecies
     let photoDirectory: URL?
+    /// Where the photo fetcher's candidates wait, when there are any.
+    let stagingDirectory: URL?
+    /// The catalogue on disk, which the photo fetcher reads when asked for more candidates.
+    let catalogueURL: URL?
     let onChange: (ForageSpecies) -> Void
     /// The file is not deleted here; the store deletes it when the catalogue is saved.
     let onRemovePhoto: (SpeciesPhoto) -> Void
@@ -146,6 +150,8 @@ struct SpeciesEditorView: View {
             PhotoSectionView(
                 species: species,
                 photoDirectory: photoDirectory,
+                stagingDirectory: stagingDirectory,
+                catalogueURL: catalogueURL,
                 onChange: onChange,
                 onRemovePhoto: onRemovePhoto
             )
@@ -202,6 +208,25 @@ struct SpeciesEditorView: View {
             Text("Sources")
         } footer: {
             Text("Book and page. An entry with no source shows a “not yet checked” banner in the app.")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+        }
+
+        Section {
+            Toggle(
+                "Book only — the web has been searched and has nothing",
+                isOn: binding(\.needsBookSource) { $0.with(needsBookSource: $1) }
+            )
+            LabelledField(
+                "Which book, and why",
+                text: optionalBinding(\.sourcingNote) { $0.with(sourcingNote: $1) },
+                lines: 2...4,
+                help: "Name the book to reach for, and what the web failed to give."
+            )
+        } header: {
+            Text("Sourcing")
+        } footer: {
+            Text("Turn this on only after searching. Off means nobody has looked — not that a search came back clean.")
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
@@ -263,7 +288,7 @@ enum EditorTab: String, CaseIterable, Identifiable {
             .photos
         case .lookalikes, .warnings, .harvestEthics:
             .safety
-        case .sources, .recipes:
+        case .sources, .needsBookSource, .recipes:
             .provenance
         }
     }

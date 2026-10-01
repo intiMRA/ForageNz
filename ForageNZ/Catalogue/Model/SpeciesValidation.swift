@@ -21,6 +21,7 @@ public enum ValidationField: String, Sendable, Hashable, CaseIterable {
     case warnings
     case harvestEthics
     case sources
+    case needsBookSource
     case recipes
     case photos
 }
@@ -120,6 +121,16 @@ public extension ForageSpecies {
             if warnings.isEmpty {
                 blocking(.warnings, "A psychoactive entry must state its legal status.")
             }
+            // Two more, blocking here where every other case keeps them advisory or skips
+            // them. The generic rules let the *least* finished entry through first: with the
+            // legal statement added, `liberty-cap` passed while carrying no months, no photos
+            // and no lookalike card, purely because nothing demanded them.
+            if months.isEmpty {
+                blocking(.months, "A psychoactive entry must say when it fruits — empty months reads as year-round.")
+            }
+            if photos.isEmpty {
+                blocking(.photos, "A psychoactive entry needs a photo. These are small brown mushrooms, and the prose alone will not separate one from what grows beside it.")
+            }
         case .careRequired:
             if warnings.isEmpty && lookalikes.isEmpty {
                 blocking(.warnings, "Needs care, so it must say why — a warning or a lookalike.")
@@ -167,6 +178,18 @@ public extension ForageSpecies {
             advisory(.sources, "Not yet checked against a field guide.")
         } else if sources.contains(where: { $0.trimmed.isEmpty }) {
             blocking(.sources, "Remove the blank source, or fill it in.")
+        }
+
+        // Advisory, never blocking: waiting on a book is a fact about the sources available,
+        // not a defect in the entry, and an entry nobody can finish yet must not fail the build.
+        if needsBookSource {
+            if let sourcingNote, !sourcingNote.trimmed.isEmpty {
+                advisory(.needsBookSource, "Waiting on a book: \(sourcingNote.trimmed)")
+            } else {
+                // The flag alone leaves the next person exactly where an untagged entry does —
+                // knowing only that the web failed, not which shelf to reach for.
+                advisory(.needsBookSource, "Flagged as book-only with no note — say which book, and what the web failed to give.")
+            }
         }
 
         return issues

@@ -3,9 +3,9 @@ import SwiftUI
 
 struct SpeciesRow: View {
     let model: ListingRowModel
-    
+
     var body: some View {
-        SpeciesCard(background: model.caution.rowBackgroundColor) {
+        SpeciesCard(background: model.caution.rowBackground) {
             leftView
             rightView
         }
@@ -26,14 +26,18 @@ struct SpeciesRow: View {
                 Spacer()
                 VStack(alignment: .trailing, spacing: .xxSmall) {
                     Badge(
-                        image: model.caution.image,
+                        image: model.caution.badgeIcon,
                         title: model.caution.shortLabel,
-                        size: .small,color: model.caution.tintColor,
-                        forgroundColor: .white
+                        size: .small,
+                        color: model.caution.tintColor,
+                        forgroundColor: model.caution.badgeForeground
                     )
                     // Debug builds only — a shipped row is never unverified.
                     if model.isUnverified {
                         UnverifiedBadge()
+                    }
+                    if model.needsBookSource {
+                        BookOnlyBadge()
                     }
                 }
             }

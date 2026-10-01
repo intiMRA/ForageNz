@@ -58,6 +58,7 @@ struct DebugDrawer: View {
     @Bindable var settings: DebugSettings
     /// How many entries the catalogue is currently hiding, for the footer to report.
     let unverifiedCount: Int
+    let needsBookCount: Int
 
     @Environment(\.dismiss) private var dismiss
 
@@ -76,6 +77,9 @@ struct DebugDrawer: View {
                             \(unverifiedCount) entries are unfinished drafts, and the app \
                             hides them. Turn this on to browse and open them — each is badged \
                             Unverified, in its row and on its page.
+
+                            \(needsBookCount) of them are badged Book only: the web has been \
+                            searched and has nothing, so the rest has to come off a printed page.
                             """
                     )
                 }
@@ -113,7 +117,11 @@ private struct DebugDrawerModifier: ViewModifier {
                 TwoFingerDoubleTap { isPresented.toggle() }
             }
             .sheet(isPresented: $isPresented) {
-                DebugDrawer(settings: settings, unverifiedCount: store.unverifiedCount)
+                DebugDrawer(
+                    settings: settings,
+                    unverifiedCount: store.unverifiedCount,
+                    needsBookCount: store.needsBookCount
+                )
             }
             // `initial: true` so a flag left on from the last launch is applied at startup,
             // not only when someone toggles it.

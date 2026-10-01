@@ -104,7 +104,7 @@ the authority; check it before you run something.
 | `find_sources.py` | Fetch candidate pages, require each to name the species, then cite it | `--write` | NZPCN, NZOR |
 | `audit_names.py` | Check every scientific name against NZOR: real, current, recorded here | never | NZOR |
 | `build_land_status.py` | Rasterise DOC's conservation and marine-reserve layers into the shipped bitmap | on a plain run | DOC ArcGIS |
-| `fetch_eval_photos.py` | Download CC0/CC-BY photos into a gitignored matcher evaluation set | on a plain run | iNaturalist |
+| `fetch_eval_photos.py` | Download openly licensed photos into a gitignored matcher evaluation set | on a plain run | iNaturalist |
 | `sync_string_catalog.py` | Merge a terminal build's extracted strings into `Localizable.xcstrings` | on a plain run | — |
 | `check_target_membership.py` | Fail if a model source is not compiled by both app targets | never | — |
 
@@ -182,7 +182,7 @@ anything you wrote.**
 ```sh
 .venv/bin/python Tools/enrich_catalogue.py                 # dry run: reports, changes nothing
 .venv/bin/python Tools/enrich_catalogue.py --write         # applies the fills, then normalises
-.venv/bin/python Tools/enrich_catalogue.py --stage-photos  # CC0/CC-BY candidates, staged not attached
+.venv/bin/python Tools/enrich_catalogue.py --stage-photos  # openly licensed, staged not attached
 ```
 
 It is not a discovery tool either. It iterates the species already in the catalogue and
@@ -425,6 +425,19 @@ citing it, so no URL is guessed. It will not write an NZOR name record into `sou
 record says the name exists and nothing about the plant, and writing one would flip
 `isVerified`, taking the entry off the pending list on the strength of a check nobody made.
 
+**When the web has nothing, say so on the entry.** Some species cannot be finished online at
+all: everything licensed is silent, and everything that speaks is all rights reserved. Turn on
+**Book only** in the editor's Sources tab and write the note beside it — which book to reach
+for, and what each route failed to give. It raises an advisory, never a blocking issue: waiting
+on a book is a fact about the sources available, not a defect in the entry. The sidebar's
+**Book only** filter is then the queue to work through with the shelf in front of you, and in a
+debug build the entry is badged in its row and on its page.
+
+Turn it on **only after searching**. Off means nobody has looked, not that a search came back
+clean — and a flag with no note leaves the next person exactly where an untagged entry does,
+which is what the advisory checks for. `wild-oat` is the worked example: see the
+*"Online sourcing exhausted"* section of `docs/langlands-fill-in.md` for what was tried.
+
 ### 10. Verify
 
 Run the full gate — the second recipe under *The tooling*. `CatalogueTests` is what the
@@ -463,7 +476,9 @@ Two ways in, one encoder. `PhotoImporter` lives in the model and downscales and 
 on the way in, so an untouched 6 MB phone photo can't land in the repo whichever route it takes:
 
 - **The editor**, for your own photos — drag in, caption, credit.
-- **The staging pipeline**, for CC0/CC-BY photos from iNaturalist research-grade observations:
+- **The staging pipeline**, for openly licensed photos from iNaturalist research-grade
+  observations — CC0 and CC BY preferred, CC BY-NC accepted as a fallback because the app will
+  be free (see `Licence` in `Tools/sources.py`):
 
 ```sh
 .venv/bin/python Tools/enrich_catalogue.py --stage-photos              # candidates → .staged-photos/<id>/
@@ -494,7 +509,9 @@ authentication prompt**, so run it yourself the first time (⌘U in Xcode, or
 prompt.
 
 A caption is required because "the stem base" is the entire reason a photo helps, and a
-credit is required because CC BY obliges it — the app displays both.
+credit is required because CC BY obliges it — the app displays both. The credit is also the
+only record of a photo's licence: iNaturalist's attribution names it, so the CC BY-NC set the
+app would have to strip if it ever stopped being free is `grep 'CC BY-NC'` away.
 
 ## Photo matching — measured, then removed from the app
 
@@ -533,7 +550,7 @@ enough margins that in-catalogue and unknown distances separate. `--openset` is 
 would have to pass first — and rejecting unknowns matters more than closed-set accuracy.
 
 ```sh
-.venv/bin/python Tools/fetch_eval_photos.py                                  # CC0/CC-BY, gitignored
+.venv/bin/python Tools/fetch_eval_photos.py                                  # gitignored
 .venv/bin/python Tools/fetch_eval_photos.py --set out-of-catalogue --out .eval-photos-negative
 swift run catalogue-tool --evaluate .eval-photos
 swift run catalogue-tool --openset .eval-photos .eval-photos-negative
@@ -689,7 +706,7 @@ a window routinely wraps the new year and `seasonDescription` treats the calenda
 **`ValidationField`** — the part of an entry an issue points at: `id`, `commonName`,
 `scientificName`, `summary`, `habitat`, `habitats`, `identification`, `edibleParts`,
 `preparation`, `caution`, `months`, `lookalikes`, `warnings`, `harvestEthics`, `sources`,
-`recipes`, `photos`. An enum rather than a string so the editor's tab-ownership `switch` is
+`needsBookSource`, `recipes`, `photos`. An enum rather than a string so the editor's tab-ownership `switch` is
 exhaustive: a field no tab claims is a compile error, not an issue the editor silently never
 shows. **`ValidationIssue.Severity`** is `blocking` (fails the build) or `advisory`.
 
@@ -700,10 +717,10 @@ shows. **`ValidationIssue.Severity`** is `blocking` (fails the build) or `adviso
 | Constant | Value | Why it is fixed |
 |---|---|---|
 | `ForageSpecies.noEdibleParts` | `"None."` | The one accepted way for a do-not-eat entry to say it has no edible parts. Matched exactly, never as a substring — "Leaves (none for children)" must not pass |
-| `CataloguePhotos.maximumPixelSize` | `1400` | Longest edge. Enough to zoom into a leaf margin, not enough to bloat |
+| `CataloguePhotos.maximumPixelSize` | `1000` | Longest edge, sized against what the app draws: the detail strip decodes at 720, thumbnails at 360, and nothing zooms. **This is the lever that makes full coverage fit** — 1,366 photos measure ~154 MB here against ~230 MB at the old 1400. Measure, don't extrapolate: HEIC does not shrink with pixel area (1000 px is 0.68× of 1400, not 0.51×) |
 | `CataloguePhotos.compressionQuality` | `0.62` | HEIC quality |
-| `CataloguePhotos.maximumBytesPerPhoto` | `220_000` | A photo over this has been mis-encoded |
-| `CataloguePhotos.totalByteBudget` | `40_000_000` | Every photo ships in the app |
+| `CataloguePhotos.maximumBytesPerPhoto` | `220_000` | A photo over this has been mis-encoded. A defect detector, not a size lever — left at 220 KB when the pixel size dropped, so the already-shipped 1400 px photos are not flagged |
+| `CataloguePhotos.totalByteBudget` | `180_000_000` | A download-size limit, not a coverage limit. Sized to stay under the App Store's default 200 MB cellular prompt; fits 4 photos on every entry (~154 MB). Applies to what **ships** — `fetch_catalogue_photos.py` does not charge staged downloads against it, and reports the real total after `--write` |
 | `CataloguePhotos.recommendedCount` | 4, or 6 with a deadly lookalike | There is no signal in a gully, so the embedded photos are all the user gets |
 | `CataloguePhotos.imageExtensions` | heic, heif, jpg, jpeg, png, webp | One definition, so orphan detection and the evaluation sets cannot disagree about whether a `.webp` is a photo |
 | `CataloguePhotos.directoryName` | `Photos` | |
@@ -787,6 +804,12 @@ can only shrink. The detail screen shows a "Not yet checked" banner until an ent
 
 Verified is not the same as finished: 271 entries are sourced **drafts** (see the playbook),
 hidden from the app until their safety fields are written and the draft flag cleared.
+
+A third question, separate from both: `needsBookSource` says the web has been searched for an
+entry and found to hold nothing usable, so the rest has to come off a printed page.
+`isVerified` asks whether anything is cited, `draft` asks whether anyone has finished writing,
+and this asks whether there is any point searching again. `sourcingNote` carries which book and
+why. Absent means nobody has looked — never that a search came back clean.
 
 ## Dependencies
 

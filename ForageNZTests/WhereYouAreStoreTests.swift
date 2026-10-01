@@ -215,7 +215,11 @@ struct WhereYouAreVerdictTests {
         #expect(verdicts.count == 1)
         // Green is the catalogue's "straightforward". This map cannot earn it: it knows
         // about two restrictions and nothing about who owns the ground.
-        #expect(verdicts.first?.tint != CautionLevel.straightforward.tintColor)
+        //
+        // Compared against the colour rather than `CautionLevel.straightforward.tintColor`,
+        // which is a `Gradient` now — a verdict tint is a flat `Color`, and this is the
+        // single stop that ramp holds.
+        #expect(verdicts.first?.tint != Color(.cautionSafe))
     }
 
     @Test("every reading produces something to show")

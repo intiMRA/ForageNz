@@ -23,6 +23,9 @@ nonisolated struct ListingRowModel: Equatable {
     /// Not `ForageSpecies.isVerified`, which asks the narrower question of whether the entry
     /// cites any source. Every draft does; none of them is finished.
     let isUnverified: Bool
+    /// The draft is waiting on a printed book, not on someone's time. Debug builds only, for
+    /// the same reason as `isUnverified` — it can only be true on an entry the drawer let out.
+    let needsBookSource: Bool
 }
 
 /// One "can be confused with" card, including where tapping it goes.
@@ -100,7 +103,8 @@ struct CatalogueSpeciesModelFactory: SpeciesModelFactory {
             group: species.group,
             seasonDescription: species.seasonDescription,
             habitats: species.habitats,
-            isUnverified: species.draft
+            isUnverified: species.draft,
+            needsBookSource: species.needsBookSource
         )
     }
 

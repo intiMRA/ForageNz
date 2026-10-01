@@ -37,6 +37,10 @@ final class SpeciesStore {
     /// user sees depends on it.
     var unverifiedCount: Int { catalogue.count { $0.draft } }
 
+    /// How many of those are waiting on a printed book rather than on someone's time. Debug
+    /// reporting only, like `unverifiedCount`.
+    var needsBookCount: Int { catalogue.count { $0.needsBookSource } }
+
     @ObservationIgnored @Dependency(\.speciesRepository) private var repository
 
     /// The month the guide is currently showing. It reads the clock through the dependency

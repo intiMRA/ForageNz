@@ -11,6 +11,7 @@ struct SpeciesValidationTests {
         scientificName: String = "Testus testa",
         origin: ForageOrigin = .introduced,
         caution: CautionLevel = .straightforward,
+        months: [ForageMonth] = [],
         summary: SourcedText = "A summary.",
         habitat: SourcedText = "Somewhere.",
         identification: SourcedText = "Distinctive.",
@@ -20,15 +21,30 @@ struct SpeciesValidationTests {
         warnings: [String] = [],
         harvestEthics: SourcedText? = nil,
         sources: [String] = ["A Book, p. 1"],
-        recipes: [Recipe] = []
+        recipes: [Recipe] = [],
+        photos: [SpeciesPhoto] = []
     ) -> ForageSpecies {
         ForageSpecies(
             id: id, commonName: commonName, scientificName: scientificName,
-            group: .greens, origin: origin, caution: caution,
+            group: .greens, origin: origin, caution: caution, months: months,
             summary: summary, habitat: habitat, identification: identification,
             edibleParts: edibleParts, preparation: preparation,
             lookalikes: lookalikes, warnings: warnings, harvestEthics: harvestEthics,
-            sources: sources, recipes: recipes
+            sources: sources, recipes: recipes, photos: photos
+        )
+    }
+
+    /// The shape a `.psychoactive` entry has to reach: months and a photo are blocking there,
+    /// where every other case leaves them advisory.
+    private func makePsychoactive(
+        months: [ForageMonth] = [.may],
+        photos: [SpeciesPhoto] = [SpeciesPhoto(fileName: "test-1.heic", caption: "Cap.", credit: "Someone (CC BY 4.0)")],
+        edibleParts: SourcedText = "None.",
+        warnings: [String] = ["Class A."]
+    ) -> ForageSpecies {
+        makeSpecies(
+            caution: .psychoactive, months: months,
+            edibleParts: edibleParts, warnings: warnings, photos: photos
         )
     }
 
@@ -102,13 +118,24 @@ struct SpeciesValidationTests {
     /// it must carry a warning.
     @Test("A psychoactive entry must claim no edible parts and state its legal status")
     func psychoactiveRules() {
-        let claimsFood = makeSpecies(caution: .psychoactive, edibleParts: "Caps.", warnings: ["Class A."])
-        #expect(fields(claimsFood, severity: .blocking).contains(.edibleParts))
+        #expect(fields(makePsychoactive(edibleParts: "Caps."), severity: .blocking).contains(.edibleParts))
+        #expect(fields(makePsychoactive(warnings: []), severity: .blocking).contains(.warnings))
+        #expect(makePsychoactive().isPublishable)
+    }
 
-        let silent = makeSpecies(caution: .psychoactive, edibleParts: "None.", warnings: [])
-        #expect(fields(silent, severity: .blocking).contains(.warnings))
+    /// Months and photos are advisory everywhere else, and that let the *least* finished of the
+    /// five *Psilocybe* entries pass first: `liberty-cap` cleared validation carrying no months,
+    /// no photos and no lookalike card, because nothing demanded any of them.
+    @Test("A psychoactive entry must carry months and a photo, unlike every other caution level")
+    func psychoactiveNeedsMonthsAndAPhoto() {
+        #expect(fields(makePsychoactive(months: []), severity: .blocking).contains(.months))
+        #expect(fields(makePsychoactive(photos: []), severity: .blocking).contains(.photos))
 
-        #expect(makeSpecies(caution: .psychoactive, edibleParts: "None.", warnings: ["Class A."]).isPublishable)
+        // Still only advisory for the cases a reader may actually harvest.
+        let harvestable = makeSpecies(caution: .careRequired, months: [], warnings: ["Careful."], photos: [])
+        #expect(!fields(harvestable, severity: .blocking).contains(.months))
+        #expect(!fields(harvestable, severity: .blocking).contains(.photos))
+        #expect(harvestable.isPublishable)
     }
 
     /// The property the screens ask instead of `!= .doNotEat`, which silently answered "yes,

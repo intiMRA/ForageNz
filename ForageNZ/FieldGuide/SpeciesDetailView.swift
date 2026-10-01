@@ -22,17 +22,11 @@ struct SpeciesDetailView: View {
                     preparation
                 }
                 
-                if !species.lookalikes.isEmpty {
-                    lookALike
-                }
+                lookALike
                 
-                if !species.recipes.isEmpty {
-                    recipes
-                }
+                recipes
                 
-                if species.harvestEthics != nil {
-                    ethics
-                }
+                ethics
                 
                 sources
                 
@@ -67,24 +61,29 @@ struct SpeciesDetailView: View {
             
             HStack(spacing: .xSmall) {
                 Badge(
-                    image: species.caution.image,
+                    image: species.caution.badgeIcon,
                     title: species.caution.displayName,
                     size: .small,
                     color: species.caution.tintColor,
-                    forgroundColor: .white
+                    forgroundColor: species.caution.badgeForeground
                 )
                 
-                Badge(image: species.group.image, title: species.group.displayName, size: .small)
+                Badge(image: .tinted(species.group.image), title: species.group.displayName, size: .small)
                 
-                Badge(image: species.origin.image, title: species.origin.displayName, size: .small)
+                Badge(image: .tinted(species.origin.image), title: species.origin.displayName, size: .small)
             }
             .padding(.bottom, .xSmall)
 
             // Debug builds only: a shipped page is never a draft. On its own line rather than
             // in the row above, which already carries three badges and has no room to wrap.
             if species.draft {
-                UnverifiedBadge()
-                    .padding(.bottom, .xSmall)
+                HStack {
+                    UnverifiedBadge()
+                    if species.needsBookSource {
+                        BookOnlyBadge()
+                    }
+                }
+                .padding(.bottom, .xSmall)
             }
             
             if !species.photos.isEmpty || species.moreImagesURL != nil {
@@ -124,85 +123,100 @@ struct SpeciesDetailView: View {
         textSection(image: Image(.search), title: "How To Find It", text: species.identification.text)
     }
 
+    @ViewBuilder
     private var edibleParts: some View {
-        textSection(image: Image(.forkKnife), title: "Edible Parts", text: species.edibleParts.text)
+        if !species.edibleParts.isBlank {
+            textSection(image: Image(.forkKnife), title: "Edible Parts", text: species.edibleParts.text)
+        }
     }
 
+    @ViewBuilder
     private var preparation: some View {
-        textSection(image: Image(.pot), title: "Preparation", text: species.preparation.text)
+        if !species.preparation.isBlank {
+            textSection(image: Image(.pot), title: "Preparation", text: species.preparation.text)
+        }
     }
     
+    @ViewBuilder
     private var lookALike: some View {
-        VStack(alignment: .leading, spacing: .empty) {
-            createSectionHeader(image: Image(.outlineQuestion), title: "Look Alike")
-                .padding(.bottom, .xxSmall)
-            // A `.psychoactive` entry gets neither banner yet: "do not eat" is the wrong
-            // reason and "before you harvest this" is the wrong instruction. It needs one
-            // line of its own, and that sentence is the owner's to write.
-            if species.caution == .doNotEat {
-                doNotEatBanner
-                    .padding(.bottom, .xxxSmall)
-            }
-            else if species.hasDeadlyLookalikeAsEdible {
-                deadlyLookalikeBanner
-                    .padding(.bottom, .xxxSmall)
-            }
-            
-            HStack(spacing: .xxSmall) {
-                Image(.outlineExclamation)
-                    .icon(size: .custom(size: 12), color: .primary)
-                Text("Safety")
-                    .font(.caption2)
-                    .bold()
-            }
-            .padding(.bottom, .xSmall)
-            
-            VStack(alignment: .leading, spacing: .xxSmall) {
-                ForEach(species.warnings, id: \.self) { warning in
-                    // The styling is set once on the row: `font`, `italic` and
-                    // `foregroundStyle` are inherited by both `Text`s.
-                    HStack(alignment: .top, spacing: .xSmall) {
-                        Text("•")
-                            .accessibilityHidden(true)
-
-                        Text(warning)
+        if !species.lookalikes.isEmpty {
+            VStack(alignment: .leading, spacing: .empty) {
+                createSectionHeader(image: Image(.outlineQuestion), title: "Look Alike")
+                    .padding(.bottom, .xxSmall)
+                // A `.psychoactive` entry gets neither banner yet: "do not eat" is the wrong
+                // reason and "before you harvest this" is the wrong instruction. It needs one
+                // line of its own, and that sentence is the owner's to write.
+                if species.caution == .doNotEat {
+                    doNotEatBanner
+                        .padding(.bottom, .xxxSmall)
+                }
+                else if species.hasDeadlyLookalikeAsEdible {
+                    deadlyLookalikeBanner
+                        .padding(.bottom, .xxxSmall)
+                }
+                
+                HStack(spacing: .xxSmall) {
+                    Image(.outlineExclamation)
+                        .icon(size: .custom(size: 12), color: .primary)
+                    Text("Safety")
+                        .font(.caption2)
+                        .bold()
+                }
+                .padding(.bottom, .xSmall)
+                
+                VStack(alignment: .leading, spacing: .xxSmall) {
+                    ForEach(species.warnings, id: \.self) { warning in
+                        // The styling is set once on the row: `font`, `italic` and
+                        // `foregroundStyle` are inherited by both `Text`s.
+                        HStack(alignment: .top, spacing: .xSmall) {
+                            Text("•")
+                                .accessibilityHidden(true)
+                            
+                            Text(warning)
+                        }
+                        .font(.caption2)
+                        .italic()
+                        .foregroundStyle(.secondary)
                     }
-                    .font(.caption2)
-                    .italic()
-                    .foregroundStyle(.secondary)
                 }
-            }
-            .padding(.bottom, .xSmall)
-            
-            VStack(alignment: .leading, spacing: .xxSmall) {
-                ForEach(model.lookalikeCards) { card in
-                    LookalikeCardView(model: card)
+                .padding(.bottom, .xSmall)
+                
+                VStack(alignment: .leading, spacing: .xxSmall) {
+                    ForEach(model.lookalikeCards) { card in
+                        LookalikeCardView(model: card)
+                    }
                 }
             }
         }
     }
     
+    @ViewBuilder
     private var recipes: some View {
-        Button {
-            // TODO: go to recepies page
-        } label: {
-            HStack(spacing: .xxSmall) {
-                Image(.chefHat)
-                    .icon(size: .small, color: .accent)
-                Text("How can I cook it? \(model.species.recipes.count) recipes")
-                Spacer()
-                Image(.chevronRight)
-                    .icon(size: .small, color: .accent)
+        if !species.recipes.isEmpty {
+            Button {
+                // TODO: go to recepies page
+            } label: {
+                HStack(spacing: .xxSmall) {
+                    Image(.chefHat)
+                        .icon(size: .small, color: .accent)
+                    Text("How can I cook it? \(model.species.recipes.count) recipes")
+                    Spacer()
+                    Image(.chevronRight)
+                        .icon(size: .small, color: .accent)
+                }
             }
         }
     }
     
+    @ViewBuilder
     private var ethics: some View {
-        textSection(
-            image: Image(systemName: "hands.sparkles"),
-            title: "Harvesting & tikanga",
-            text: species.harvestEthics?.text ?? ""
-        )
+        if species.harvestEthics != nil {
+            textSection(
+                image: Image(systemName: "hands.sparkles"),
+                title: "Harvesting & tikanga",
+                text: species.harvestEthics?.text ?? ""
+            )
+        }
     }
     
     @ViewBuilder

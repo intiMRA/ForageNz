@@ -96,6 +96,32 @@ def test_a_shelter_belt_is_trees_and_a_hedgerow_is_shrubs() -> None:
     assert classify("Old hedgerows, shelter belts and scrub.") == ["forest", "shrubland"]
 
 
+def test_a_herbarium_list_is_place_names_and_is_not_read_at_all() -> None:
+    # Psilocybe aucklandiae's prose. The list gave it `coastal` from "Titirangi Beach" and
+    # `urban` from "Atkinson Park" — two New Zealand place names that happen to be built out
+    # of habitat words, and neither says where the fungus grows.
+    prose = (
+        "On soil and litter, especially clay soils, in native forests and pine plantations.\n"
+        "Specimens examined for the description: Atkinson Park, Titirangi Beach on soil "
+        "under Leptospermum: PDD 49789; Quarry Track, Piha Valley Forest, on litter."
+    )
+    assert classify(prose) == ["forest"]
+    # Only the list goes, never prose that follows it on its own line.
+    assert classify("Material examined: Otago Peninsula.\nCoastal dunes.") == ["coastal"]
+
+
+def test_a_species_merely_found_near_a_lake_is_not_a_wetland_species() -> None:
+    # Psilocybe makarorae: the substrate is beech wood, and the lake is where people run into
+    # it. Its forest label comes from that substrate, which never uses the word "forest".
+    assert classify(
+        "Fruit bodies grow on the fallen, rotting wood of southern beeches "
+        "(genus Nothofagus), and are often encountered near lakes and picnic grounds"
+    ) == ["forest"]
+    # A species that genuinely lives on a lake edge still counts.
+    assert classify("Lake margins and lakeside seepages.") == ["wetland"]
+    assert classify("Shallow water at the edges of lakes.") == ["wetland"]
+
+
 def test_evidence_names_the_words_behind_each_label() -> None:
     # Porcini's prose. The evidence is what makes a wrong rule visible in review.
     found = evidence(

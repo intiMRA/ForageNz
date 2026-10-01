@@ -8,10 +8,19 @@ import UniformTypeIdentifiers
 struct PhotoSectionView: View {
     let species: ForageSpecies
     let photoDirectory: URL?
+    /// Where the photo fetcher's candidates wait, when there are any.
+    let stagingDirectory: URL?
+    /// The catalogue on disk, which the photo fetcher reads when asked for more candidates.
+    let catalogueURL: URL?
     let onChange: (ForageSpecies) -> Void
     let onRemovePhoto: (SpeciesPhoto) -> Void
 
     @State private var importError: String?
+    @State private var staged: [StagedPhoto] = []
+    @State private var isFetching = false
+    /// What the last fetch reported — including "nothing usable", which is a real answer for
+    /// an endemic with few observers and must not look like a failure.
+    @State private var fetchReport: String?
 
     private var wantedPhotoCount: Int {
         CataloguePhotos.recommendedCount(hasDeadlyLookalike: species.highestLookalikeRisk == .deadly)
@@ -52,6 +61,16 @@ struct PhotoSectionView: View {
                     .buttonStyle(.borderless)
                     .disabled(photoDirectory == nil)
 
+                Button("Fetch more…", systemImage: "arrow.down.circle") { fetchMore() }
+                    .buttonStyle(.borderless)
+                    .disabled(isFetching || catalogueURL == nil || stagingDirectory == nil)
+                    .help(fetchHelp)
+
+                if isFetching {
+                    ProgressView()
+                        .controlSize(.small)
+                }
+
                 if !species.photos.isEmpty {
                     Text(sizeSummary)
                         .font(.caption)
@@ -59,11 +78,23 @@ struct PhotoSectionView: View {
                 }
             }
 
+            if let fetchReport {
+                Text(fetchReport)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+
             if let importError {
                 Label(importError, systemImage: "exclamationmark.triangle.fill")
                     .font(.caption)
                     .foregroundStyle(.red)
                     .fixedSize(horizontal: false, vertical: true)
+            }
+
+            if !staged.isEmpty {
+                Divider()
+                stagedTray
             }
 
             Divider()
@@ -93,6 +124,161 @@ struct PhotoSectionView: View {
             loadDropped(providers)
             return true
         }
+        .task(id: species.id) { reloadStaged() }
+    }
+
+    // MARK: - Staged candidates
+
+    /// Candidates the fetcher downloaded, each awaiting a verdict.
+    ///
+    /// Keeping is the deliberate act, not discarding: a reviewer who loses interest halfway
+    /// down the tray ships nothing, which is the right way round. Rejection is the normal
+    /// case anyway — liberty cap kept 6 of 14, weraroa 6 of 25.
+    @ViewBuilder
+    private var stagedTray: some View {
+        VStack(alignment: .leading, spacing: .small) {
+            Text("\(staged.count) staged candidate(s)")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+            Text("Downloaded and encoded, but not in the catalogue. Reject any frame that argues against this entry's own identification or habitat — that is worse than no photo at all.")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+
+            ForEach(staged) { candidate in
+                stagedRow(candidate)
+            }
+        }
+    }
+
+    private func stagedRow(_ candidate: StagedPhoto) -> some View {
+        HStack(alignment: .top, spacing: .small) {
+            stagedThumbnail(candidate)
+
+            VStack(alignment: .leading, spacing: .xxxSmall) {
+                Text(candidate.credit.isEmpty ? "No credit in the manifest" : candidate.credit)
+                    .font(.caption)
+                    .foregroundStyle(candidate.credit.isEmpty ? .red : .primary)
+
+                if !candidate.place.isEmpty || !candidate.observedOn.isEmpty {
+                    Text([candidate.place, candidate.observedOn].filter { !$0.isEmpty }.joined(separator: " · "))
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                }
+
+                Text("\(candidate.agreeingIdentifications) agreeing ID(s) · \(candidate.licence.uppercased()) · \(candidate.bytes / 1024) KB")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+
+                if let sourceURL = candidate.sourceURL {
+                    Link("Observation", destination: sourceURL)
+                        .font(.caption2)
+                }
+            }
+
+            Spacer()
+
+            VStack(spacing: .xxSmall) {
+                Button("Keep") { keep(candidate) }
+                    .help("Copy into Photos/ and attach it — the caption is still yours to write")
+                    .disabled(photoDirectory == nil)
+
+                Button("Discard", role: .destructive) { discard(candidate) }
+                    .help("Delete the staged file. The fetcher can download it again.")
+            }
+        }
+        .padding(.all, .small)
+        .background(.quaternary.opacity(Layout.cardBackgroundOpacity), in: EditorLayout.insetShape)
+    }
+
+    @ViewBuilder
+    private func stagedThumbnail(_ candidate: StagedPhoto) -> some View {
+        if let image = NSImage(contentsOf: candidate.fileURL) {
+            Image(nsImage: image)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: EditorLayout.thumbnailSize, height: EditorLayout.thumbnailSize)
+                .clipShape(EditorLayout.insetShape)
+        } else {
+            EditorLayout.insetShape
+                .fill(.quaternary)
+                .frame(width: EditorLayout.thumbnailSize, height: EditorLayout.thumbnailSize)
+                .allowsHitTesting(false)
+        }
+    }
+
+    private var fetchHelp: String {
+        "Ask iNaturalist for more NZ, research-grade, CC0/CC-BY candidates — "
+        + "\(PhotoFetcher.reviewSlack) beyond the \(wantedPhotoCount) this entry wants, so there is "
+        + "something to reject. Reads the saved catalogue, so save first if you have just kept or "
+        + "removed photos."
+    }
+
+    /// Runs the staging fetcher for this entry and drops whatever it finds into the tray.
+    private func fetchMore() {
+        guard let catalogueURL, let stagingDirectory else { return }
+        isFetching = true
+        fetchReport = nil
+
+        Task {
+            defer { isFetching = false }
+            do {
+                let outcome = try await PhotoFetcher.topUp(
+                    speciesId: species.id,
+                    target: wantedPhotoCount,
+                    catalogueURL: catalogueURL,
+                    stagingDirectory: stagingDirectory
+                )
+                fetchReport = outcome.message
+                reloadStaged()
+            } catch {
+                fetchReport = nil
+                importError = (error as? PhotoFetcher.Failure)?.errorDescription
+                    ?? error.localizedDescription
+            }
+        }
+    }
+
+    private func reloadStaged() {
+        guard let stagingDirectory else {
+            staged = []
+            return
+        }
+        staged = StagedPhotos.candidates(forSpecies: species.id, in: stagingDirectory)
+    }
+
+    /// Attaches a candidate with its licence attribution and a blank caption, then drops it
+    /// from staging so the same frame cannot be attached twice.
+    private func keep(_ candidate: StagedPhoto) {
+        guard let photoDirectory else { return }
+        do {
+            let photo = try PhotoImporter.attachEncoded(
+                from: candidate.fileURL,
+                speciesId: species.id,
+                existing: species.photos,
+                into: photoDirectory,
+                credit: candidate.credit,
+                sourceURL: candidate.sourceURL
+            )
+            onChange(species.with(photos: species.photos + [photo]))
+            try StagedPhotos.discard(candidate)
+            importError = nil
+        } catch {
+            importError = (error as? PhotoImporter.Failure)?.errorDescription
+                ?? error.localizedDescription
+        }
+        reloadStaged()
+    }
+
+    private func discard(_ candidate: StagedPhoto) {
+        do {
+            try StagedPhotos.discard(candidate)
+            importError = nil
+        } catch {
+            importError = error.localizedDescription
+        }
+        reloadStaged()
     }
 
     private func photoRow(index: Int, photo: SpeciesPhoto) -> some View {

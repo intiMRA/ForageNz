@@ -5,7 +5,7 @@ entry's own `habitat` prose and nothing else; **Evidence** is the literal text t
 matched. A wrong label is a rule to fix in the tool, not a value to edit here — the
 file is regenerated on every run.
 
-## Shipped entries (58)
+## Shipped entries (59)
 
 These are the ones the app actually shows. Worth reading all of them.
 
@@ -208,6 +208,13 @@ These are the ones the app actually shows. Worth reading all of them.
     - `forest` ← 'forest', 'bush'
     - `shrubland` ← 'regenerating'
 - **Prose:** Coastal and lowland forest, forest margins, regenerating bush. Common in the North Island, patchier south.
+- **Credit:** _yours, uncredited_
+
+### Liberty cap — `liberty-cap`
+
+- **Labels:** grassland
+    - `grassland` ← 'Pasture', 'meadows', 'lawns', 'grassland', 'grazing', 'grass'
+- **Prose:** Pasture, meadows, lawns and rough grassland on rich, acidic soil, most often where sheep or cattle have been grazing. It feeds on decaying grass roots, not on the dung itself, so look in the sward rather than on a pat. Fruits in autumn, singly or in scattered troops.
 - **Credit:** _yours, uncredited_
 
 ### Miner's lettuce / Winter purslane — `miners-lettuce`
@@ -491,7 +498,7 @@ These are the ones the app actually shows. Worth reading all of them.
 
 Their `habitat` field is really a distribution section — a native range, not a place to look. These need a habitat statement before they can be classified.
 
-### Amaranthus species — `amaranthus-species`
+### Tumbleweed amaranth — `amaranthus-species`
 
 - **Labels:** _none_
 - **Prose:** It is native to the tropical Americas, but is a widespread introduced species in other places, including Europe, Africa, and Australia.
@@ -837,7 +844,7 @@ It is found in North Africa, within Macaronesia, Madeira Islands, Canary Islands
 - **Prose:** The yew is native to all countries of Europe (except Iceland), the Caucasus, and beyond from Turkey eastwards to northern Iran. Its range extends south to Morocco and Algeria in North Africa, and parts of Southwest and South Asia. A few populations are present in the archipelagos of the Azores and Madeira. The limit of its northern Scandinavian distribution is its sensitivity to frost, with global warming predicted to allow its spread inland. It has been introduced elsewhere, including the United States.
 - **Credit:** Wikipedia, 'Taxus baccata' (CC BY-SA 4.0)
 
-## Classified drafts (122)
+## Classified drafts (128)
 
 Prose copied from Wikipedia or Flora of NZ, so the geography may be the species' global range rather than its New Zealand one. Lower confidence than the shipped set.
 
@@ -1543,6 +1550,14 @@ Recent research claims that Pilosella officinarum exhibits an atavism by the ree
 The plant has been found as an invasive species in Sphagnum peatlands disturbed by peat extraction in southern Patagonia.
 - **Credit:** Wikipedia, 'Pilosella officinarum' (CC BY-SA 4.0)
 
+### Mower's mushroom — `mowers-mushroom`
+
+- **Labels:** grassland, disturbed
+    - `grassland` ← 'Lawns', 'playing fields', 'grazed', 'pasture', 'grass'
+    - `disturbed` ← 'verges'
+- **Prose:** Lawns, playing fields, verges and grazed pasture, especially where the grass has been fertilised. One of the commonest mushrooms of mown grass, often appearing in numbers a day or two after rain.
+- **Credit:** _yours, uncredited_
+
 ### Mānuka — `manuka`
 
 - **Labels:** forest, shrubland, disturbed
@@ -1659,6 +1674,29 @@ Within Europe, its native range covers much of France, the Low Countries, Italy,
     - `shrubland` ← 'shrubland'
 - **Prose:** Leptecophylla juniperina is native to New Zealand and Victoria and Tasmania. Subspecies Juniperina is widespread in forest and shrubland in New Zealand and in lowland areas of eastern, north-western and western areas of Tasmania. Subspecies oxycedrus is restricted to exposed, rocky coastal regions of southern and western Tasmania, Bass Strait Islands and southern Victoria and subsp. parvifolia is common at altitudes above 600 m in central and eastern parts of Tasmania.
 - **Credit:** Wikipedia, 'Leptecophylla juniperina' (CC BY-SA 4.0) — units converted to metric
+
+### Psilocybe aucklandiae — `psilocybe-aucklandiae`
+
+- **Labels:** forest
+    - `forest` ← 'forests', 'plantations', 'plantation'
+- **Prose:** On soil and litter, especially clay soils, in native forests and pine plantations, almost always in the wider Auckland Region. Commonly found in the exotic pine plantation of Riverhead. Has been recorded from Waipoua in Northland, and in Australia as Psilocybe sect. Zapotecorum, which is likely phylogenetically similar or the same.
+Specimens examined for the description: Auckland: Woodhill State Forest, on ground in litter of mixed pine and native forest,  C. C. King, Jun 1989 PDD 57236 (holotype). Waitakere Ranges: Sharps Bush, in litter under Leptospermum and Dacrydium: PDD 43043; Atkinson Park, Titirangi Beach on soil under Leptospermum: PDD 49789; Quarry Track, Piha Valley Forest, on litter: PDD 58423. Hunua Ranges: Orere, on ground: PDD 34593; Mangatangi Valley, on rotten wood: PDD 34594.
+- **Credit:** Wikipedia, 'Psilocybe aucklandiae' (CC BY-SA 4.0)
+
+### Psilocybe makarorae — `psilocybe-makarorae`
+
+- **Labels:** forest
+    - `forest` ← 'wood of southern beeches (genus Nothofagus'
+- **Prose:** Psilocybe makarorae is known only from New Zealand. The reported collection locations have been on both the North and South Islands, including the Bay of Plenty, Westland District, Central Otago, and Dunedin.  Like all Psilocybe species, it is saprobic, and feeds on decomposing organic matter. Fruit bodies grow scattered or in groups on the fallen, rotting wood of southern beeches (genus Nothofagus), and are often encountered near lakes and picnic grounds
+- **Credit:** Wikipedia, 'Psilocybe makarorae' (CC BY-SA 4.0)
+
+### Psilocybe subaeruginosa — `psilocybe-subaeruginosa`
+
+- **Labels:** forest, disturbed
+    - `forest` ← 'forests', 'plantations'
+    - `disturbed` ← 'disturbed'
+- **Prose:** Psilocybe subaeruginosa grows solitary to gregarious from wood debris in Australian native forests, pine plantations and is occasionally observed growing on dung. It is common in southern parts of Australia from April to August. The species is also known from Australian native and Eucalyptus forests, and famously in New Zealand on wood chip. It is recorded as present in New Zealand, but DNA sequencing of collections so far indicates P. allenii and P. cyanescens there as well as P. subaeruginosa. Its tendency to live on wood chips, as well as on plants and in soil, contribute to the likelihood that these were the materials it was transplanted to the Northern Hemisphere on, and the transplantation led to a decrease in genetic diversity. This concept also led to the idea that they exist in disturbed areas, rather than natural.
+- **Credit:** Wikipedia, 'Psilocybe subaeruginosa' (CC BY-SA 4.0)
 
 ### Purslane — `purslane`
 
@@ -1911,6 +1949,13 @@ Habitat
 Urtica australis is typically found near the coast, and can be present on rocky beaches, sand dunes, and scrublands.
 - **Credit:** Wikipedia, 'Urtica australis' (CC BY-SA 4.0)
 
+### Spindle pouch — `spindle-pouch`
+
+- **Labels:** forest
+    - `forest` ← 'bush', 'forest'
+- **Prose:** Rotting wood in native bush and in mixed native and introduced forest. Recorded on both main islands and commoner in the North Island, particularly around Wellington and Auckland.
+- **Credit:** _yours, uncredited_
+
 ### Sticky mouse-ear chickweed — `sticky-mouse-ear-chickweed`
 
 - **Labels:** disturbed
@@ -2024,6 +2069,13 @@ Milk thistle has been potentially observed to modify fire regimes in its invasiv
 - **Prose:** Lactuca muralis is a native of Europe but has invaded shady roadsides, paths and logged areas of the Pacific Northwest and New England  It has become naturalized in parts of Northern Ireland as long ago as 1913. It was first recorded in The Burren, where it is now frequent, in 1939.
 It can be found in woodlands, especially beech.  It is also found in calcareous soils, and walls.
 - **Credit:** Wikipedia, 'Lactuca muralis' (CC BY-SA 4.0)
+
+### Weraroa — `weraroa`
+
+- **Labels:** forest
+    - `forest` ← 'forest', 'branches of māhoe', 'on rotted cabbage trees', 'forests'
+- **Prose:** The species is endemic to New Zealand, and is fairly abundant in the early winter and spring months in lowland mixed rainforest near Wellington and Auckland. The mushroom can be difficult to see, often buried under leaves or eaten by slugs, and it is sometimes hard to find mature specimens that are not partially eaten. The species is typically found on decaying wood buried in forest leaf litter (either solitary or crowded), often on the rotting branches of māhoe (Melicytus ramiflorus). It has also been found fruiting on rotted cabbage trees (Cordyline australis) and associated with decaying tree-fern fronds, native to the forests of New Zealand.
+- **Credit:** Wikipedia, 'Psilocybe weraroa' (CC BY-SA 4.0)
 
 ### Western painted suillus — `western-painted-suillus`
 

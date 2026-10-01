@@ -60,6 +60,68 @@ public enum PhotoImporter {
         return SpeciesPhoto(fileName: fileName, caption: caption, credit: credit, sourceURL: sourceURL)
     }
 
+    /// Attaches a file that has **already** been encoded to the catalogue's settings, copying
+    /// its bytes rather than re-encoding them.
+    ///
+    /// For staged candidates from `fetch_catalogue_photos.py`, which writes at
+    /// `CataloguePhotos.maximumPixelSize` and `compressionQuality` precisely so that what a
+    /// reviewer looks at is what would ship. Putting those through `importPhoto` would be a
+    /// second lossy pass over an image that is already at target size — it would soften the
+    /// gill edges and spore detail that are the whole reason the frame was kept.
+    ///
+    /// The copy is conditional, not assumed: anything that is not HEIC, or is over the
+    /// per-file ceiling, falls through to the re-encoding path, so the budget still cannot be
+    /// bypassed by pointing this at an arbitrary file.
+    public static func attachEncoded(
+        from source: URL,
+        speciesId: String,
+        existing: [SpeciesPhoto],
+        into directory: URL,
+        caption: String = "",
+        credit: String = "",
+        sourceURL: URL? = nil,
+        fileManager: FileManager = .default
+    ) throws(Failure) -> SpeciesPhoto {
+        guard isAlreadyCompliant(source, fileManager: fileManager) else {
+            return try importPhoto(
+                from: source,
+                speciesId: speciesId,
+                existing: existing,
+                into: directory,
+                caption: caption,
+                credit: credit,
+                sourceURL: sourceURL,
+                fileManager: fileManager
+            )
+        }
+
+        do {
+            try fileManager.createDirectory(at: directory, withIntermediateDirectories: true)
+        } catch {
+            throw Failure.writeFailed(String(describing: error))
+        }
+
+        let fileName = nextFileName(
+            speciesId: speciesId, existing: existing, directory: directory, fileManager: fileManager
+        )
+        do {
+            let data = try Data(contentsOf: source)
+            try data.write(to: directory.appending(path: fileName), options: .atomic)
+        } catch {
+            throw Failure.writeFailed(String(describing: error))
+        }
+
+        return SpeciesPhoto(fileName: fileName, caption: caption, credit: credit, sourceURL: sourceURL)
+    }
+
+    /// Whether `source` can be copied as-is: HEIC, and inside the per-file ceiling.
+    private static func isAlreadyCompliant(_ source: URL, fileManager: FileManager) -> Bool {
+        guard ["heic", "heif"].contains(source.pathExtension.lowercased()) else { return false }
+        let attributes = try? fileManager.attributesOfItem(atPath: source.path)
+        guard let bytes = attributes?[.size] as? Int else { return false }
+        return bytes > 0 && bytes <= CataloguePhotos.maximumBytesPerPhoto
+    }
+
     /// The bytes that would be written for `source`, or a failure explaining why not.
     static func encode(_ source: URL) throws(Failure) -> Data {
         guard let imageSource = CGImageSourceCreateWithURL(source as CFURL, nil) else {

@@ -12,6 +12,8 @@
 		0A816877BA9AA045859E5529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817A298659AD6F2CD63D0228 /* Assets.xcassets */; };
 		0EFC0592935EC3241932A7C6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B19F5173E05C2042951736 /* Colors.xcassets */; };
 		16020BFCDA4491686721448A /* PhotoSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01BA2E911FCB343C07DAD39 /* PhotoSectionView.swift */; };
+		D7E1A40C3B5642A981C0E116 /* StagedPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E1A40C3B5642A981C0E115 /* StagedPhotos.swift */; };
+		D7E1A40C3B5642A981C0E118 /* PhotoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E1A40C3B5642A981C0E117 /* PhotoFetcher.swift */; };
 		16AF351E5E55AEB9978BCDD5 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB674D266AEC3706DD237EA /* LocationProvider.swift */; };
 		16DE25F2A746058FB6782194 /* SpeciesPhotoStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11341A3521A25AA8E3516D /* SpeciesPhotoStrip.swift */; };
 		2419EA989959E66CD9C14599 /* CautionPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */; };
@@ -42,6 +44,7 @@
 		8ACD48F23062428200B39C86 /* BundledPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD48F13062428200B39C86 /* BundledPhoto.swift */; };
 		8ADBF3C0306655F900B20F27 /* HabitatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF3BF306655F900B20F27 /* HabitatView.swift */; };
 		8ADBF3D2306655F900B20F30 /* DebugDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF3D1306655F900B20F30 /* DebugDrawer.swift */; };
+		8ADBF4A2306655F900B20F41 /* View+If.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF4A1306655F900B20F41 /* View+If.swift */; };
 		9259C8452BDD7F338B28B7A0 /* CatalogueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001C8B591D460EC849D511 /* CatalogueStore.swift */; };
 		964DFD06BF7EB889DF54325C /* WhereYouAreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23F44C740462604FCC5A42 /* WhereYouAreStore.swift */; };
 		993520DE95024A3F666F3E9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C28C6DA10AE33F73F5B94C /* Cocoa.framework */; };
@@ -173,10 +176,13 @@
 		8ACD48F13062428200B39C86 /* BundledPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundledPhoto.swift; sourceTree = "<group>"; };
 		8ADBF3BF306655F900B20F27 /* HabitatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitatView.swift; sourceTree = "<group>"; };
 		8ADBF3D1306655F900B20F30 /* DebugDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugDrawer.swift; sourceTree = "<group>"; };
+		8ADBF4A1306655F900B20F41 /* View+If.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+If.swift"; sourceTree = "<group>"; };
 		8B5CFF23B8C79B576A8D1B65 /* ForageNZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRepository.swift; path = Catalogue/SpeciesRepository.swift; sourceTree = "<group>"; };
 		9DE2E1227F9C1C691B2F945D /* WhereYouAreStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WhereYouAreStoreTests.swift; sourceTree = "<group>"; };
 		A01BA2E911FCB343C07DAD39 /* PhotoSectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoSectionView.swift; sourceTree = "<group>"; };
+		D7E1A40C3B5642A981C0E115 /* StagedPhotos.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StagedPhotos.swift; sourceTree = "<group>"; };
+		D7E1A40C3B5642A981C0E117 /* PhotoFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoFetcher.swift; sourceTree = "<group>"; };
 		A1001C8B591D460EC849D511 /* CatalogueStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueStore.swift; sourceTree = "<group>"; };
 		A1C0DE0000000000CA7A1006 /* CatalogueArtwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogueArtwork.swift; path = Components/CatalogueArtwork.swift; sourceTree = "<group>"; };
 		A1C0DE0000000000CA7A1009 /* Catalogue.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Catalogue.xcassets; sourceTree = "<group>"; };
@@ -398,6 +404,8 @@
 				E230F2A934A37C1CF47C7C24 /* EditorRootView.swift */,
 				A01BA2E911FCB343C07DAD39 /* PhotoSectionView.swift */,
 				B9A08516B887C616C0C2D6B0 /* SpeciesEditorView.swift */,
+				D7E1A40C3B5642A981C0E115 /* StagedPhotos.swift */,
+				D7E1A40C3B5642A981C0E117 /* PhotoFetcher.swift */,
 			);
 			path = CatalogueEditor;
 			sourceTree = "<group>";
@@ -416,6 +424,7 @@
 		8ADBEE3F3063725700B20F27 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				8ADBF4A1306655F900B20F41 /* View+If.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -766,6 +775,8 @@
 				B07C79F23F1BB365C0EEFFBE /* EditorRootView.swift in Sources */,
 				ADCE358E9BDD4BA324F73087 /* SpeciesEditorView.swift in Sources */,
 				16020BFCDA4491686721448A /* PhotoSectionView.swift in Sources */,
+				D7E1A40C3B5642A981C0E116 /* StagedPhotos.swift in Sources */,
+				D7E1A40C3B5642A981C0E118 /* PhotoFetcher.swift in Sources */,
 				AF7EF03860A44072C5F3F471 /* EditorFields.swift in Sources */,
 				CA7A10000000000000000003 /* CatalogueFile.swift in Sources */,
 				CA7A10000000000000000006 /* CatalogueLocator.swift in Sources */,
@@ -841,6 +852,7 @@
 				CEA8223E11FF897287721DDE /* SpeciesRowButton.swift in Sources */,
 				4CCD82CE448B568CA2ED776F /* SpeciesDestination.swift in Sources */,
 				BAA24ADD5643D98E84B24B00 /* Logging.swift in Sources */,
+				8ADBF4A2306655F900B20F41 /* View+If.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

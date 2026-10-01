@@ -51,7 +51,9 @@ struct CatalogueFileTests {
                 warnings: ["Do not eat."], harvestEthics: "Leave it.",
                 sources: ["Somebody, A Book, p. 1"],
                 recipes: [Recipe(title: "Nothing", method: "Do not.")],
-                draft: true
+                draft: true,
+                needsBookSource: true,
+                sourcingNote: "Somebody, A Book — nothing online."
             )
         ]
 

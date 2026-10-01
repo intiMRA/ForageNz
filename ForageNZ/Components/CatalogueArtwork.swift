@@ -69,29 +69,55 @@ extension ForageOrigin {
     }
 }
 
-extension LookalikeRisk {
+/// How a badge draws its image.
+///
+/// Every icon in this app is a silhouette taking the badge's foreground colour — except one.
+/// `DesignLibrary.icon(size:color:)` forces `renderingMode(.template)`, which flattens a
+/// drawing to a single colour, and the psychoactive mushrooms are drawn in their own pinks.
+enum BadgeIcon {
+    /// A silhouette, tinted to the badge's foreground.
+    case tinted(Image)
+    /// Artwork that carries its own colours, drawn as it was drawn.
+    case original(Image)
+
+    /// The artwork itself, for the places that draw it outside a badge — the detail page's
+    /// banners, which are `careRequired` and `doNotEat` and so always tinted.
     var image: Image {
         switch self {
-        case .deadly: Image(.deadly)
-        case .toxic: Image(.toxic)
-        case .unpalatable: Image(.unpalatable)
-        // Neither has a drawing of its own: each borrows the symbol its `CautionLevel`
-        // counterpart uses, so the same claim looks the same wherever the app makes it.
-        case .edible: Image(systemName: "checkmark.seal")
-        case .psychoactive: Image(systemName: "brain.head.profile")
+        case .tinted(let image), .original(let image): image
         }
     }
 }
 
-extension CautionLevel {
-    /// The one classification with no drawing of its own — a badge this small reads better
-    /// as a symbol, and the colour is already carrying the meaning.
-    var image: Image {
+extension LookalikeRisk {
+    var badgeIcon: BadgeIcon {
         switch self {
-        case .straightforward: Image(systemName: "checkmark.seal")
-        case .careRequired: Image(systemName: "exclamationmark.triangle")
-        case .doNotEat: Image(systemName: "xmark.octagon")
-        case .psychoactive: Image(systemName: "brain.head.profile")
+        case .deadly: .tinted(Image(.deadly))
+        case .toxic: .tinted(Image(.toxic))
+        case .unpalatable: .tinted(Image(.unpalatable))
+        // Drawn in its own colours, and shared with `CautionLevel.psychoactive`.
+        case .psychoactive: .original(Image(.psychoactive))
+        // The one with no drawing of its own: it borrows the symbol its `CautionLevel`
+        // counterpart uses, so the same claim looks the same wherever the app makes it.
+        case .edible: .tinted(Image(systemName: "checkmark.seal"))
         }
     }
+
+    var image: Image { badgeIcon.image }
+}
+
+extension CautionLevel {
+    /// Mostly symbols rather than drawings — a badge this small reads better as one, and the
+    /// colour is already carrying the meaning. `psychoactive` is the exception twice over: the
+    /// only case with artwork of its own, and the only one that keeps its own colours.
+    var badgeIcon: BadgeIcon {
+        switch self {
+        case .straightforward: .tinted(Image(systemName: "checkmark.seal"))
+        case .careRequired: .tinted(Image(systemName: "exclamationmark.triangle"))
+        case .doNotEat: .tinted(Image(systemName: "xmark.octagon"))
+        case .psychoactive: .original(Image(.psychoactive))
+        }
+    }
+
+    var image: Image { badgeIcon.image }
 }

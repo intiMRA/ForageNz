@@ -249,7 +249,7 @@ class TestSharedPhotoLoop:
             {
                 "uri": "obs1",
                 "photos": [
-                    {"license_code": "cc-by-nc", "url": "https://x/1/square.jpg"},
+                    {"license_code": "cc-by-nd", "url": "https://x/1/square.jpg"},
                     {"license_code": "cc0", "url": "https://x/2/square.jpg"},
                 ],
             },
@@ -276,7 +276,7 @@ class TestSharedPhotoLoop:
 
         assert [path.name for path, *_ in got] == ["puha-1.jpg", "puha-2.jpg"]
         assert fetched == ["https://x/2/large.jpg", "https://x/3/large.jpg"], (
-            "NC skipped, size rewritten, stopped at wanted"
+            "ND skipped, size rewritten, stopped at wanted"
         )
         assert [str(licence) for _, licence, *_ in got] == ["cc0", "cc-by"]
 

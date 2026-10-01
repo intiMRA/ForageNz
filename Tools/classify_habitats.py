@@ -14,8 +14,12 @@ Two things stop the obvious false positives:
     in "Common on the coast, does not reach the alpine zone."
   - **Ambiguous words carry their context.** "Park" is urban unless it is a national, forest
     or regional park; "sea" is the coast unless it is "sea level"; "marsh" is wetland unless
-    it is saltmarsh, which is coast. Bare "sandy" and "rocky" are not read as coastal at all,
-    because inland soil is both.
+    it is saltmarsh, which is coast; a lake is wetland unless the species is merely found
+    *near* one. Bare "sandy" and "rocky" are not read as coastal at all, because inland soil
+    is both.
+  - **A herbarium list is not prose.** "Specimens examined: … Atkinson Park, Titirangi Beach"
+    is a run of place names, and New Zealand place names are built out of habitat words. The
+    whole paragraph is dropped before anything is read.
 
 The rules are deliberately shy. A missed label is an entry that does not show up in a filter;
 a wrong one tells someone to look for food in the wrong place.
@@ -64,6 +68,16 @@ DENIAL = re.compile(
 #: Clause boundaries: sentence punctuation, dashes used as asides, and "but".
 CLAUSES = re.compile(r"[.;:\u2014\u2013]|\bbut\b", re.I)
 
+#: A herbarium collection list is not habitat prose, and reading it as prose is worse than
+#: reading nothing: it is a run of New Zealand place names, and place names are made of habitat
+#: words. *Psilocybe aucklandiae*'s list gave it `coastal` from "Titirangi **Beach**" and
+#: `urban` from "Atkinson **Park**", neither of which says anything about where the fungus
+#: grows. Everything from the heading to the end of that paragraph goes.
+SPECIMEN_LIST = re.compile(
+    r"\b(?:specimens?|materials?|collections?)\s+(?:examined|studied|seen)\b[^\n]*",
+    re.I,
+)
+
 RULES: dict[str, tuple[str, ...]] = {
     "coastal": (
         r"\bcoast(?:al|s|line)?\b",
@@ -102,6 +116,13 @@ RULES: dict[str, tuple[str, ...]] = {
         # word only counts when something is growing under them.
         r"\bunder\b[^,.;]{0,40}\btrees?\b",
         r"\bunder\b[^,.;]{0,40}\b(?:oak|birch|beech|pine|willow|poplar|hornbeam|chestnut)s?\b",
+        # Growing on the fallen wood or litter of a forest tree puts you in that forest, the
+        # same claim "under beech" makes from the other side. Wanted by *Psilocybe makarorae*,
+        # whose prose gives its substrate — "the fallen, rotting wood of southern beeches
+        # (genus Nothofagus)" — and never uses the word forest.
+        r"\b(?:wood|litter|logs?|branches?|trunks?|stumps?)\b[^,.;]{0,40}"
+        r"\b(?:beech|nothofagus|podocarp|pine|eucalypt|rimu|kauri|tōtara|totara|kahikatea"
+        r"|tāwa|tawa|māhoe|mahoe|mānuka|manuka|kānuka|kanuka)\w*",
         # A fungus fruiting on fallen wood is telling you to look in the trees.
         r"\b(?:logs?|stumps?|fallen timber|dead wood|deadwood)\b",
         r"\bon\b[^,.;]{0,30}\btrees?\b",
@@ -144,7 +165,10 @@ RULES: dict[str, tuple[str, ...]] = {
         r"\bstream(?:s|side|sides)?\b",
         r"\bcreeks?\b",
         r"\bponds?\b",
-        r"\blake(?:s|side)?\b",
+        # A lake edge is wetland; "encountered near lakes and picnic grounds" is a locality,
+        # telling you where people run into the species, not what it grows in. `lakeside` and
+        # `lake margins` still count, so nothing that really lives on a shore is lost.
+        r"(?<!near )\blake(?:s|side)?\b",
         r"\bditch(?:es)?\b",
         r"\bdrains?\b",
         r"\bseepage\b",
@@ -218,7 +242,7 @@ def claims(text: str) -> list[str]:
     Island, does not reach Southland" while still losing the denial.
     """
     kept: list[str] = []
-    for clause in CLAUSES.split(text):
+    for clause in CLAUSES.split(SPECIMEN_LIST.sub(" ", text)):
         if not clause:
             continue
         denial = DENIAL.search(clause)

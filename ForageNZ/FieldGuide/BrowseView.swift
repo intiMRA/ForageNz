@@ -44,7 +44,15 @@ struct BrowseView: View {
             .padding(.horizontal, .medium)
         }
         .navigationTitle("Field guide")
-        .searchable(text: $searchText, prompt: "Search names or description")
+        // The placement is explicit because `.automatic` renders nothing here: from iOS 26 a
+        // `.searchable` inside a `TabView` is hoisted towards the tab bar, and with no
+        // `Tab(role: .search)` to land in it disappears entirely — the field guide shipped
+        // without a search box until a UI test caught it.
+        .searchable(
+            text: $searchText,
+            placement: .navigationBarDrawer(displayMode: .always),
+            prompt: "Search names or description"
+        )
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 filterMenu
