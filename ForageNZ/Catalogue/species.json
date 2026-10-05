@@ -131,69 +131,6 @@
   },
   {
     "caution" : "careRequired",
-    "commonName" : "Algerian oat",
-    "draft" : true,
-    "edibleParts" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "group" : "greens",
-    "habitat" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "habitats" : [
-
-    ],
-    "id" : "algerian-oat",
-    "identification" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "lookalikes" : [
-
-    ],
-    "months" : [
-
-    ],
-    "moreImagesURL" : "https://inaturalist.nz/taxa/362658",
-    "needsBookSource" : false,
-    "origin" : "introduced",
-    "photos" : [
-
-    ],
-    "preparation" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "recipes" : [
-
-    ],
-    "scientificName" : "Avena byzantina",
-    "sources" : [
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
-      "Summary text: Wikipedia contributors. 'Avena byzantina', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Avena_byzantina"
-    ],
-    "summary" : {
-      "sources" : [
-        "Wikipedia, 'Avena byzantina' (CC BY-SA 4.0)"
-      ],
-      "text" : "Avena byzantina, red oats, is a species of cultivated oat in the family Poaceae."
-    },
-    "warnings" : [
-
-    ]
-  },
-  {
-    "caution" : "careRequired",
     "commonName" : "Alsike clover",
     "draft" : true,
     "edibleParts" : {
@@ -307,75 +244,100 @@
   },
   {
     "caution" : "careRequired",
-    "commonName" : "Tumbleweed amaranth",
-    "draft" : true,
+    "commonName" : "Amaranth",
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
       ],
-      "text" : ""
+      "text" : "Stems, leaves, seeds."
     },
     "group" : "greens",
     "habitat" : {
       "sources" : [
-        "Wikipedia, 'Amaranthus albus' (CC BY-SA 4.0)"
+        "Wikipedia, 'Amaranth' (CC BY-SA 4.0)"
       ],
-      "text" : "It is native to the tropical Americas, but is a widespread introduced species in other places, including Europe, Africa, and Australia."
+      "text" : "The genus most likely originated in Central America. The native range of the genus is cosmopolitan in tropical regions. It is found in elevations ranging from lowlands to mountain ranges such as the Himalayas."
     },
     "habitats" : [
-
+      "grassland",
+      "urban",
+      "disturbed"
     ],
     "id" : "amaranthus-species",
     "identification" : {
       "sources" : [
-        "Wikipedia, 'Amaranthus albus' (CC BY-SA 4.0) — units converted to metric"
+        "Wikipedia, 'Amaranth' (CC BY-SA 4.0) — units converted to metric"
       ],
-      "text" : "Amaranthus albus is an annual herb growing up to 50 centimetres tall, forming many branches. Larger specimens turn into tumbleweeds when they die and dry out. The plant creates small, greenish flowers in clumps in the axils of the leaves. Male and female flowers are mixed together in the same clump."
+      "text" : "Amaranth is a herbaceous plant or shrub that is either annual or perennial across the genus. The plant has a primary root with deeper spreading secondary fibrous root structures. Amaranths contain concentric rings of vascular bundles and fix carbon efficiently with a C4 photosynthetic pathway. Amaranth can grow from 1 to 2.5 metres tall with a cylindrical, succulent, fibrous stem that is hollow with grooves and bracteoles when mature varies in flower, leaf, and stem color with a range of striking pigments from the spectrum of maroon to crimson. The leaves are approximately 6.5–15 centimetres and of oval or elliptical shape that are either opposite or alternate across species, although most are whole and simple with entire margins.\n\nCatkin-like cymes of densely packed flowers grow in the summer or fall. The inflorescences are in the form a large panicle that varies from terminal to axial, color, and sex. The tassel of fluorescence is either erect or bent and varies in width and length between species. The flowers are radially symmetric and either bisexual or unisexual with very small, bristly perianth and pointy bracts. The flowers vary interspecifically from the presence of 3 or 5 tepals and stamens, whereas a 7-porate pollen grain structure remains consistent across the family.\nSpecies in this genus are either monoecious (e.g. A. hybridus,) or dioecious (e.g. A. palmeri). The fruits are in the form of capsules referred to as a unilocular pixdio that opens at maturity. The top (operculum) of the capsule releases the urn that contains the seed. The seeds are circular, 1 to 1.5 millimeters in diameter and range in color with a shiny, smooth seed coat. The panicle is harvested 200 days after cultivation with approximately 1,000 to 3,000 seeds harvested per gram."
     },
     "lookalikes" : [
 
     ],
     "months" : [
+      12,
       1,
       2,
       3,
       4,
-      5,
-      6,
-      7,
-      8,
-      12
+      5
     ],
-    "needsBookSource" : true,
+    "moreImagesURL" : "https://inaturalist.nz/taxa/52326",
+    "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Photo of red flower",
+        "credit" : "(c) prosperosity, some rights reserved (CC BY)",
+        "fileName" : "amaranthus-species-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/153629149"
+      },
+      {
+        "caption" : "Photo of flower on neutral background",
+        "credit" : "(c) Angus Campbell, some rights reserved (CC BY)",
+        "fileName" : "amaranthus-species-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/343760606"
+      },
+      {
+        "caption" : "Plant with several flowers",
+        "credit" : "(c) Nicholas Allen, some rights reserved (CC BY)",
+        "fileName" : "amaranthus-species-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/200978239"
+      },
+      {
+        "caption" : "Photo of picked plant",
+        "credit" : "(c) Nathan Odgers, some rights reserved (CC BY)",
+        "fileName" : "amaranthus-species-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/152000373"
+      }
     ],
     "preparation" : {
       "sources" : [
-
+        "Wikipedia, 'Amaranthus retroflexus' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "This plant is eaten as a vegetable in different places of the world. The water should be discarded after boiling due to the presence of oxalic acid and possibly nitrates. The young shoots and leaves can be eaten raw. The leaves are high in calcium, iron, protein, and phosphorus.\n\nIt is among the species consumed as a vegetable in Mexican markets as Quelite quintonil. It is used in the Indian state of Kerala to prepare a popular dish known as thoran by combining the finely cut leaves (cheera) with grated coconut, chili peppers, garlic, turmeric and other ingredients."
     },
     "recipes" : [
 
     ],
-    "scientificName" : "Amaranthus albus",
+    "scientificName" : "Amaranthus spp.",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Amaranthus species' entry.",
-      "Identification, habitat and summary text: Wikipedia contributors. 'Amaranthus albus', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Amaranthus_albus",
-      "Common name: Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988: Flora of New Zealand Vol. IV, via Flora of New Zealand Online, 'Amaranthus albus'. Retrieved 01/10/2026. https://www.nzflora.info/factsheet/taxon/Amaranthus-albus.html",
-      "Common name: New Zealand Plant Conservation Network, 'Amaranthus albus'. Retrieved 01/10/2026. https://www.nzpcn.org.nz/flora/species/amaranthus-albus/"
+      "Identification, habitat and summary text: Wikipedia contributors. 'Amaranth', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Amaranth",
+      "New Zealand Plant Conservation Network. 'Amaranthus hybridus var. erythrostachys' fact sheet. Retrieved 05/10/2026. https://www.nzpcn.org.nz/flora/species/amaranthus-hybridus-var-erythrostachys/",
+      "Bayer Crop Science New Zealand. 'Amaranthus — red root' (Amaranthus powellii) weed profile. Retrieved 05/10/2026. https://www.cropscience.bayer.co.nz/crop-management/weeds/amaranthus-red-root",
+      "Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Amaranthus powellii' factsheet. CC BY 3.0 NZ. Retrieved 05/10/2026. https://www.nzflora.info/factsheet/Taxon/Amaranthus-powellii.html",
+      "Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Amaranthus retroflexus' factsheet. CC BY 3.0 NZ. Retrieved 05/10/2026. https://www.nzflora.info/factsheet/Taxon/Amaranthus-retroflexus.html",
+      "Preparation text: Wikipedia contributors. 'Amaranthus retroflexus', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Amaranthus_retroflexus"
     ],
-    "sourcingNote" : "Langlands, Foraging New Zealand, 'Amaranthus species'. Online sourcing for edible parts, preparation and recipes exhausted 01/10/2026: no recipe anywhere is specific to A. albus. What exists is genus-level amaranth-greens cookery on all-rights-reserved blogs — eatweeds.co.uk (Robin Harford) writes up A. retroflexus and only lists A. albus in a species index; onegreenplanet.org carries no copyright notice at all and 14 of its 15 recipes call for cultivated grain amaranth, not this leaf; dishingupthedirt.com would not serve a page (HTTP 429 on three attempts) so it could not be verified. Wikipedia's only use sentence is one Cambodian line about pig feed. The oxalate and nitrate caution that makes this entry careRequired is quotable only from A. retroflexus and A. palmeri, not from A. albus. NZ leaf-harvest practice is the book's to supply.",
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Amaranthus albus' (CC BY-SA 4.0)"
+        "Wikipedia, 'Amaranth' (CC BY-SA 4.0)"
       ],
-      "text" : "Amaranthus albus is an annual species of flowering plant native to the Americas."
+      "text" : "Amaranthus is a genus of plants commonly known as amaranths."
     },
     "warnings" : [
-
+      "In areas of farm fields the plants can have toxic chemicals or toxic insecticides."
     ]
   },
   {
@@ -562,19 +524,24 @@
     "draft" : true,
     "edibleParts" : {
       "sources" : [
-
+        "Wikipedia, 'Bamboo shoot' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Bamboo shoots or bamboo sprouts are the edible shoots (new bamboo culms that come out of the ground) of many bamboo species including Bambusa vulgaris and Phyllostachys edulis. Most young bamboo shoots are edible after being boiled to remove toxins, but only around a hundred or so species are harvested regularly for edible shoots."
     },
     "group" : "greens",
     "habitat" : {
       "sources" : [
-
+        "NZPCN and Weedbusters (paraphrased)"
       ],
-      "text" : ""
+      "text" : "By far the commonest and most widespread wild bamboo in New Zealand: the Volcanic Plateau and most lowland country southwards, thinning out only in the south of the South Island, which roughly tracks where it was planted. Look on roadsides and riverbanks, in and around plantations, in scrub and along forest margins, and especially where a garden boundary meets rough ground — on abandoned sections and in waste places. Spread here is by rhizome and not by seed, so a stand is one clone creeping outwards from something somebody planted."
     },
     "habitats" : [
-
+      "coastal",
+      "forest",
+      "shrubland",
+      "wetland",
+      "urban",
+      "disturbed"
     ],
     "id" : "arrow-bamboo",
     "identification" : {
@@ -584,7 +551,27 @@
       "text" : "This vigorous bamboo forms thickets up to 6 m tall with shiny leaves up to 25 cm long. The culms are typically yellow-brown and it has palm-like leaves. The common name \"arrow bamboo\" results from the Japanese samurai using its hard and stiff canes for their arrows. It grows up to 4 cm a day."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "fishpole-bamboo",
+        "howToTell" : "Check the bottom metre of a cane. Fishpole bamboo crowds several internodes together down there into a lumpy, tortoise-shell pattern that none of the others has, and it is the one reliable mark. Its canes yellow in sun and deepen to gold-orange with age, branching starts low to the ground, and it tops out around 7 m. Both are edible.",
+        "name" : "Fishpole bamboo",
+        "risk" : "edible",
+        "scientificName" : "Phyllostachys aurea"
+      },
+      {
+        "entry" : "black-bamboo",
+        "howToTell" : "Canes 4–7 m, green in their first year and turning black or heavily black-blotched in their second — but the green-caned var. henonis is naturalised here too, so a green stand does not rule it out. Look instead for the white waxy ring under each node on young canes, nodes evenly spaced along the cane, and cane sheaths uniformly purple or purple-flushed. Both are edible.",
+        "name" : "Black bamboo",
+        "risk" : "edible",
+        "scientificName" : "Phyllostachys nigra"
+      },
+      {
+        "entry" : "square-bamboo",
+        "howToTell" : "Roll a lower internode between finger and thumb: square bamboo's is bluntly four-sided, where every other bamboo here is round. Its nodes are swollen and prominent, and the lowest ones carry short stiff rootlets that harden into spines — nothing else here has them. Canes 3–6 m, dark green. Both are edible.",
+        "name" : "Square bamboo",
+        "risk" : "edible",
+        "scientificName" : "Chimonobambusa quadrangularis"
+      }
     ],
     "months" : [
 
@@ -597,26 +584,36 @@
     ],
     "preparation" : {
       "sources" : [
-
+        "Wikipedia, 'Bamboo shoot' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "The toxins must be destroyed by thorough cooking, and for this reason, fresh bamboo shoots are boiled before being used in other ways. The shoots of some species contain cyanide that must be leached or boiled out before they can be eaten safely. Slicing the bamboo shoots thinly assists in this leaching."
     },
     "recipes" : [
-
+      {
+        "method" : "The husk is many overlapping brown layers covered in fine, sharp hairs, so handle it with that in mind. Run a knife up the side of the shoot to slit it, then unwrap and throw away the layers until you reach the pale core; cut off the pointed tip and the fibrous base. These are the bitter end of the five: cover the core with water, boil it hard, change the water, and keep going in five-minute rounds in fresh water until the flavour comes back mild. Taste between rounds rather than trusting a clock. Cut the shoots when they stand about 8–10 cm above the ground, taking them 5 cm or more below the soil.",
+        "title" : "Preparing fresh shoots"
+      }
     ],
     "scientificName" : "Pseudosasa japonica",
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
-      "Identification and summary text: Wikipedia contributors. 'Pseudosasa japonica', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Pseudosasa_japonica"
+      "Identification and summary text: Wikipedia contributors. 'Pseudosasa japonica', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Pseudosasa_japonica",
+      "Edible parts, preparation and warning text: Wikipedia contributors. 'Bamboo shoot', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 02/10/2026. https://en.wikipedia.org/wiki/Bamboo_shoot — the passages are about bamboo shoots in general, not about this species in particular.",
+      "Preparation method: Staffenhagen, Leigha. 'Bamboo Shoots', Skagit Valley Food Co-op, 03/06/2020. © Skagit Valley Food Co-op, all rights reserved. Retrieved 02/10/2026. https://www.skagitfoodcoop.com/blog/bamboo-shoots — paraphrased, not quoted. Names no species; the shoots it describes are a named grower's, not a wild stand.",
+      "Preparation method: BBC Food. 'Bamboo shoots' ingredient page. Copyright © 2026 BBC, all rights reserved. Retrieved 02/10/2026. https://www.bbc.co.uk/food/bamboo_shoots — paraphrased, not quoted. Names no species. Its buying guidance (canned, dried, vacuum-packed) was not used: this catalogue is about shoots cut from the ground.",
+      "Edible parts and preparation: Plants For A Future. 'Pseudosasa japonica' database entry. © 2010 Plants For A Future, no licence stated, so all rights reserved. Retrieved 02/10/2026. https://pfaf.org/user/Plant.aspx?LatinName=Pseudosasa+japonica — paraphrased, not quoted. PFAF rates this species 2 of 5 for edibility and calls the shoots rather bitter. It is the only one of this catalogue's five bamboos with anything under Known Hazards; the other four read 'None known'. That entry also carries 'Do not use during pregnancy', cited to the same reference as the species' medicinal leaf use, and it is left off this page because it is unclear whether it attaches to the shoots or to the medicine. Its harvest timing is northern-hemisphere spring and was not used.",
+      "Habitat: New Zealand Plant Conservation Network. 'Pseudosasa japonica' factsheet. © 2026 NZPCN, all rights reserved. Retrieved 02/10/2026. https://www.nzpcn.org.nz/flora/species/pseudosasa-japonica/ — paraphrased, not quoted. Its habitat line is itself attributed to Edgar and Connor (2000), Flora of New Zealand Vol. V. Naturalised 1968; named on DOC's list of 386 environmental weeds in New Zealand 2024.",
+      "Habitat: Weedbusters. 'Arrow bamboo' weed information sheet. © Weedbusters, all rights reserved. Retrieved 02/10/2026. https://www.weedbusters.org.nz/what-are-weeds/weed-list/arrow-bamboo/ — paraphrased, not quoted. Source of the habitats-invaded list and of the vegetative-spread note."
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Pseudosasa japonica' (CC BY-SA 4.0)"
+        "Wikipedia, 'Pseudosasa japonica' (CC BY-SA 4.0)",
+        "NZPCN and Weedbusters (paraphrased)"
       ],
-      "text" : "Pseudosasa japonica, the arrow bamboo (Japanese: metake),  is a species of bamboo in the grass family Poaceae native to Japan and Korea, but planted worldwide as a horticultural plant."
+      "text" : "Pseudosasa japonica, the arrow bamboo (Japanese: metake),  is a species of bamboo in the grass family Poaceae native to Japan and Korea, but planted worldwide as a horticultural plant. Introduced to New Zealand as an ornamental and naturalised since 1968, it is the most widespread wild bamboo in the country and is named on DOC's list of environmental weeds."
     },
     "warnings" : [
-
+      "Raw bamboo shoots contain cyanogenic glycosides, natural toxins also contained in cassava. The toxins must be destroyed by thorough cooking, and for this reason, fresh bamboo shoots are boiled before being used in other ways."
     ]
   },
   {
@@ -625,35 +622,70 @@
     "draft" : true,
     "edibleParts" : {
       "sources" : [
-
+        "Wikipedia, 'Passiflora tarminiana' (CC BY-SA 4.0)",
+        "Weedbusters NZ, 'Banana passionfruit' (facts restated)"
       ],
-      "text" : ""
+      "text" : "The ripe fruit. The thin skin ripens from green through yellow to light orange, and inside it the many dark red seeds sit in a sweet orange aril — that pulp is the part worth taking. Nothing else on the vine is eaten."
     },
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-        "Wikipedia, 'Passiflora tarminiana' (CC BY-SA 4.0)"
+        "Wikipedia, 'Passiflora tarminiana' (CC BY-SA 4.0)",
+        "Weedbusters NZ and Otago Regional Council, 'Banana passionfruit' (facts restated)"
       ],
-      "text" : "Passiflora tarminiana is native to the uplands of tropical South America but the exact native range is uncertain as it has been widely cultivated in this region. It is found in the Colombian highlands and the Venezuelan, Peruvian and southern Ecuadorean Andes where it is cultivated from around 2000 – 3000 metres. \nIt has naturalised in Australia, Guam, Hawaii, New Zealand and Zimbabwe. In both Hawaii and New Zealand it is regarded as an invasive species. It is widely cultivated throughout the world, including California, Réunion, Mexico, Panama and Papua New Guinea.\nPassiflora tripartita var. mollissima and P. tarminiana were until recently considered to be one species, P. mollissima."
+      "text" : "Passiflora tarminiana is native to the uplands of tropical South America but the exact native range is uncertain as it has been widely cultivated in this region. It is found in the Colombian highlands and the Venezuelan, Peruvian and southern Ecuadorean Andes where it is cultivated from around 2000 – 3000 metres. \nIt has naturalised in Australia, Guam, Hawaii, New Zealand and Zimbabwe. In both Hawaii and New Zealand it is regarded as an invasive species. It is widely cultivated throughout the world, including California, Réunion, Mexico, Panama and Papua New Guinea.\nPassiflora tripartita var. mollissima and P. tarminiana were until recently considered to be one species, P. mollissima.\nIn New Zealand, look for it in disturbed and open forest, in light wells and along the margins of intact bush, on streamsides, coastline, cliffs and consolidated sand dunes, and on inshore islands. It is just as much at home in hedges, orchards, exotic plantations, waste ground, gardens and along roadsides."
     },
     "habitats" : [
-
+      "forest",
+      "shrubland",
+      "wetland",
+      "coastal",
+      "urban",
+      "disturbed"
     ],
+    "harvestEthics" : {
+      "sources" : [
+        "Weedbusters NZ, Bay of Plenty Regional Council and Otago Regional Council, 'Banana passionfruit' (facts restated)"
+      ],
+      "text" : "There is no case for taking this one sparingly. It is a declared pest — an unwanted organism under the National Pest Plant Accord, under sustained control across the Bay of Plenty and site-led management on Otago Peninsula and around Dunedin's West Harbour — and picking the fruit is the one kind of foraging that actively helps, because it is the fruit that spreads it. What matters is what happens after. Carry the whole fruit out rather than eating it where it hangs and dropping the seed, and put skins and seed in the rubbish — landfill or a refuse transfer station — not into compost or back into the bush. Birds, feral pigs and possums already move the seed a long way without help."
+    },
     "id" : "banana-passionfruit",
     "identification" : {
       "sources" : [
-        "Wikipedia, 'Passiflora tarminiana' (CC BY-SA 4.0)"
+        "Wikipedia, 'Passiflora tarminiana' (CC BY-SA 4.0)",
+        "NZ Plant Conservation Network, 'Passiflora tarminiana' (facts restated)"
       ],
-      "text" : "Passiflora tarminiana is a high climbing vine with hairy stems and petioles. Where the petioles join the stem it has stipules which are 4–7 by 2–3 mm and are soon deciduous. The leaves are three-lobed and hairy below but usually hairless above. The flowers are solitary and hang downwards. The base of the flower has pale green bracts enclosing a swollen nectary chamber. The floral tube (hypanthium) is 6–8 × 0.7–1 cm and pale green, while the sepals and petals are 3–6 cm long, pink and perpendicular to the floral tube, or reflexed. Fruits taper at both ends, are 10–14 cm long by 3.5–4.5 cm wide and ripen to yellow or light orange. The fruit contain many seeds which are embedded in an edible, orange aril.\nMollissima and its close relative Passiflora mixta are vines with cylindrical stems densely coated with yellow hairs, and are vigorous climbers, growing up to seven metres. The leaves are a shiny green with clearly defined veins, the flower is large, pink and green petalled with a yellow and white centre. The fruit is yellow-orange when ripe and contains a sweet edible orange-colored pulp with black seeds.\nPassiflora tarminiana is distinguished from P. tripartita var. mollissima by a number of features. P. tarminiana has small deciduous stipules while P. tripartita var. mollissima has larger, persistent stipules. The sepals and petals in P. tarminiana are perpendicular to the floral tube or are reflexed, whereas they are never so open in P. tripartita var. mollissima. They are also both much shorter in relation to the length of the floral tube in P. tripartita var. mollissima than in P. tarminiana."
+      "text" : "Passiflora tarminiana is a high climbing vine with hairy stems and petioles. Where the petioles join the stem it has stipules which are 4–7 by 2–3 mm and are soon deciduous. The leaves are three-lobed and hairy below but usually hairless above. The flowers are solitary and hang downwards. The base of the flower has pale green bracts enclosing a swollen nectary chamber. The floral tube (hypanthium) is 6–8 × 0.7–1 cm and pale green, while the sepals and petals are 3–6 cm long, pink and perpendicular to the floral tube, or reflexed. Fruits taper at both ends, are 10–14 cm long by 3.5–4.5 cm wide and ripen to yellow or light orange. The fruit contain many seeds which are embedded in an edible, orange aril.\nMollissima and its close relative Passiflora mixta are vines with cylindrical stems densely coated with yellow hairs, and are vigorous climbers, growing up to seven metres. The leaves are a shiny green with clearly defined veins, the flower is large, pink and green petalled with a yellow and white centre. The fruit is yellow-orange when ripe and contains a sweet edible orange-colored pulp with black seeds.\nPassiflora tarminiana is distinguished from P. tripartita var. mollissima by a number of features. P. tarminiana has small deciduous stipules while P. tripartita var. mollissima has larger, persistent stipules. The sepals and petals in P. tarminiana are perpendicular to the floral tube or are reflexed, whereas they are never so open in P. tripartita var. mollissima. They are also both much shorter in relation to the length of the floral tube in P. tripartita var. mollissima than in P. tarminiana.\nThe New Zealand Plant Conservation Network describes the naturalised plant here a little differently, and the differences are worth knowing before you hang an identification on a measurement. It gives the leaves as hairless on both surfaces, where the account above has them downy beneath; the fruit as slender and spindle-shaped up to 9 cm, against 10–14 cm above; and the floral tube as up to 6 cm, against 6–8 cm. Treat all three as approximate. The checks it considers reliable are the ones to lean on: three-lobed leaves, and small stipules that do not persist on mature stems, so a mature vine looks bare where the leaf stalk meets the stem. It also notes the vine flowers in every month of the year in New Zealand, naturalised here from 1970."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "black-passionfruit",
+        "howToTell" : "The flowers separate them at a glance: black passionfruit's are white with a purple-based corona and sit close to the vine, with no floral tube to speak of, where banana passionfruit's are pink and hang from a pale green tube 6–8 cm long. The fruit settles it — black passionfruit is a dull purple ball about 5–6 cm across with black seeds, and banana passionfruit is a yellow to light orange spindle, roughly 7–14 cm long depending on whose measurements you take, tapering at both ends, with dark red seeds. Black passionfruit's stipules are 10–15 mm and persist; banana passionfruit's are small and gone from mature stems. Both are edible.",
+        "name" : "Black passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora edulis"
+      },
+      {
+        "entry" : "pink-flowered-passionfruit",
+        "howToTell" : "Both hang pink flowers off a three-lobed climbing vine, so go to the stipules where the leaf stalk meets the stem: pink-flowered passionfruit's are pinnate — a very narrow rachis fringed with dark thread-like segments — where banana passionfruit's are small and plain, and drop early enough that a mature stem usually has none at all. Its floral tube is the shorter of the two, and its corona threads are violet-blue rather than pale. The fruit is unmistakable once ripe: pink-flowered passionfruit's is round or slightly flattened, 4–7 cm across and downy, where banana passionfruit's is a long spindle tapering at both ends. Both are edible.",
+        "name" : "Pink-flowered passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora pinnatistipula"
+      },
+      {
+        "entry" : "kohia",
+        "howToTell" : "Leaf shape ends this one immediately: kōhia's leaves are simple and undivided, lanceolate to narrow-ovate and 5–12 cm long, where banana passionfruit's are deeply three-lobed. The flowers are nothing alike either — kōhia's are small greenish-yellow clusters, 8–15 mm and often honeysuckle-scented, against a solitary pink flower hanging from a pale green tube 6–8 cm long. The fruit parts them a third time: kōhia's is a round orange berry 2–3 cm across, banana passionfruit's a yellow to light orange spindle 7–14 cm long. Both are edible, but kōhia is a native worth leaving alone where banana passionfruit is a pest worth taking.",
+        "name" : "Kōhia",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tetrandra"
+      }
     ],
     "months" : [
       3,
       4,
       5
     ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/78358",
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
@@ -661,26 +693,35 @@
     ],
     "preparation" : {
       "sources" : [
-
+        "Filbrun, Esther. 'Banana Passionfruit Jelly/Jam' (method restated)",
+        "Weedbusters NZ, 'Banana passionfruit' (facts restated)"
       ],
-      "text" : ""
+      "text" : "Eaten raw, straight from the skin: halve the fruit and scoop the pulp out with a thumb or a teaspoon. The dark red seeds come away with the pulp and are eaten with it, so expect to crunch through them with every mouthful. Take fruit that has gone a full orange-yellow — green ones are not ready — and use it quickly, as it starts to spoil within a few days of picking. Beyond eating it raw, the pulp cooks down into a jelly or jam."
     },
     "recipes" : [
-
+      {
+        "method" : "20–30 banana passionfruit, the juice of 2 lemons (6–8 tbsp), and up to 1.1 kg sugar. Halve the fruit and scrape the pulp and seeds into a pot, then drop the empty skins in with them — the skins carry pectin and help it set. Add just enough water to cover, around 1–1.5 litres, bring to the boil and simmer 30–45 minutes, stirring now and then. Strain, pressing the pulp to get all the juice out, and throw away the skins and spent seeds. Return the juice to the pot with the lemon juice and sugar, and boil until it reaches setting point — allow another half hour, longer if it started watery. Pour into clean jars and water-bath 15 minutes to seal. Makes about six half-pint jars. The sugar can come down from 1.1 kg if that is too sweet, but some is needed for the pectin to set.",
+        "title" : "Banana passionfruit jelly"
+      }
     ],
     "scientificName" : "Passiflora tarminiana",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Banana passionfruit' entry.",
-      "Identification, habitat and summary text: Wikipedia contributors. 'Passiflora tarminiana', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Passiflora_tarminiana"
+      "Identification and habitat text: Wikipedia contributors. 'Passiflora tarminiana', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Passiflora_tarminiana",
+      "Lookalikes, New Zealand habitat and pest status: Weedbusters New Zealand, 'Banana passionfruit' weed information sheet. © Weedbusters, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.weedbusters.org.nz/all-about-weeds/weed-list/banana-passionfruit/",
+      "Regional pest rules: Bay of Plenty Regional Council, 'Banana passionfruit' pest plant page. © Bay of Plenty Regional Council, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.boprc.govt.nz/environment/pests/pest-plants/climber/banana-passionfruit/",
+      "NPPA listing and regional pest rules: Otago Regional Council, 'Banana passionfruit' plant pest page. © Otago Regional Council, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.orc.govt.nz/environment/biosecurity-and-pests/plant-pests/banana-passionfruit",
+      "Similar taxa, NZ description and status: New Zealand Plant Conservation Network, 'Passiflora tarminiana' factsheet, citing Heenan, P.B. & Sykes, W.R. 2003, 'Passiflora (Passifloraceae) in New Zealand: a revised key with notes on distribution', NZ Journal of Botany 41: 217–221. © NZPCN, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.nzpcn.org.nz/flora/species/passiflora-tarminiana/",
+      "Preparation and jelly recipe: Filbrun, Esther. 'Banana Passionfruit Jelly/Jam', A Melodious Sonnet, 06/01/2022. © the author, all rights reserved — method restated, no text reproduced. Retrieved 03/10/2026. https://estherfilbrun.com/2022/01/banana-passionfruit-jelly/"
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Passiflora tarminiana' (CC BY-SA 4.0)"
+        "Weedbusters NZ, 'Banana passionfruit' (facts restated)"
       ],
-      "text" : "Passiflora tarminiana (or banana passionfruit) is a species of passionfruit."
+      "text" : "A vigorous pest vine that smothers the forest canopy, hung through autumn with sweet, banana-shaped fruit."
     },
     "warnings" : [
-
+      "An unwanted organism under the National Pest Plant Accord. It cannot be sold, propagated, distributed or released, and regional rules require control in places — sustained control across the Bay of Plenty, site-led management on Otago Peninsula and around Dunedin's West Harbour. Picking and eating the fruit is fine and helps; moving live material or viable seed is not."
     ]
   },
   {
@@ -1187,19 +1228,21 @@
     "draft" : true,
     "edibleParts" : {
       "sources" : [
-
+        "Wikipedia, 'Bamboo shoot' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Bamboo shoots or bamboo sprouts are the edible shoots (new bamboo culms that come out of the ground) of many bamboo species including Bambusa vulgaris and Phyllostachys edulis. Most young bamboo shoots are edible after being boiled to remove toxins, but only around a hundred or so species are harvested regularly for edible shoots."
     },
     "group" : "greens",
     "habitat" : {
       "sources" : [
-
+        "NZPCN and Environmental Weeds of Australia / BioNET-EAFRINET (paraphrased)"
       ],
-      "text" : ""
+      "text" : "Nobody has published where in New Zealand this one has gone wild. Where it has been described elsewhere, in Australia and East Africa, it is an occasional weed of stream banks, disturbed and waste ground, roadsides, gardens and urban bush in subtropical and warmer temperate country, spreading out of plantings by rhizome into loose clumps of 3–7 m canes."
     },
     "habitats" : [
-
+      "wetland",
+      "urban",
+      "disturbed"
     ],
     "id" : "black-bamboo",
     "identification" : {
@@ -1209,7 +1252,34 @@
       "text" : "Open thicket-forming with rhizomes running extensively. Culm 4–7 m, green, remaining so or becoming black or heavily blotched black in 2nd year, erect, with white waxy ring beneath nodes when young; nodes all ± evenly spaced. Culm-sheaths uniformly purple or purple-flushed, sometimes dark blotched above; auricles on main shoots prominent, dark; oral bristles long, caducous; sheath-blade linear, undulate. Branches green or black, spreading widely (giving an open network). Leaf-sheath with very short auricles. Oral bristles present. Leaf-blade usually 5–9–(13)× 0.5–2–(3) cm, lanceolate, abaxially glaucescent, adaxially moderately shining, acuminate.\n[From:  Edgar and Connor (2000) Flora of New Zealand. Volume 5 (second printing).]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "arrow-bamboo",
+        "howToTell" : "By far the commonest wild bamboo in the country, so it is the one you are most likely to have actually found. Its leaves settle it: up to 25 cm long and glossy, far bigger than any of the others', carried on a dense leafy thicket rather than an open stand of bare canes, and mostly one branch to a node rather than two. Canes yellow-brown, to 6 m. Edible after the same boiling, but its shoots are the bitterest of the five and the poorest eating.",
+        "name" : "Arrow bamboo",
+        "risk" : "unpalatable",
+        "scientificName" : "Pseudosasa japonica"
+      },
+      {
+        "entry" : "fishpole-bamboo",
+        "howToTell" : "Check the bottom metre of a cane. Fishpole bamboo crowds several internodes together down there into a lumpy, tortoise-shell pattern that none of the others has, and it is the one reliable mark. Its canes yellow in sun and deepen to gold-orange with age, branching starts low to the ground, and it tops out around 7 m. Both are edible.",
+        "name" : "Fishpole bamboo",
+        "risk" : "edible",
+        "scientificName" : "Phyllostachys aurea"
+      },
+      {
+        "entry" : "square-bamboo",
+        "howToTell" : "Roll a lower internode between finger and thumb: square bamboo's is bluntly four-sided, where every other bamboo here is round. Its nodes are swollen and prominent, and the lowest ones carry short stiff rootlets that harden into spines — nothing else here has them. Canes 3–6 m, dark green. Both are edible.",
+        "name" : "Square bamboo",
+        "risk" : "edible",
+        "scientificName" : "Chimonobambusa quadrangularis"
+      },
+      {
+        "entry" : "giant-timber-bamboo",
+        "howToTell" : "Size settles it: this one runs to 20 m tall and 10 cm thick, well beyond the others, on very straight canes with long internodes. At each node look for two distinct rings rather than one. It is barely present in the wild here — a single New Zealand record — so expect one of the others first. Both are edible.",
+        "name" : "Giant timber bamboo",
+        "risk" : "edible",
+        "scientificName" : "Phyllostachys bambusoides"
+      }
     ],
     "months" : [
 
@@ -1222,27 +1292,37 @@
     ],
     "preparation" : {
       "sources" : [
-
+        "Wikipedia, 'Bamboo shoot' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "The toxins must be destroyed by thorough cooking, and for this reason, fresh bamboo shoots are boiled before being used in other ways. The shoots of some species contain cyanide that must be leached or boiled out before they can be eaten safely. Slicing the bamboo shoots thinly assists in this leaching."
     },
     "recipes" : [
-
+      {
+        "method" : "The husk is many overlapping brown layers covered in fine, sharp hairs, so handle it with that in mind. Run a knife up the side of the shoot to slit it, then unwrap and throw away the layers until you reach the pale core; cut off the pointed tip and the fibrous base. Acrid raw, and they come round with less work than most: cover with water, boil, and change the water once after 8–10 minutes, then simmer until tender. The shoots are wide — about 5 cm across — so slice before boiling if you want the leaching to reach the middle. They keep a distinct taste and smell of their own. Cut them at about 8 cm above the ground, 5 cm below the soil.",
+        "title" : "Preparing fresh shoots"
+      }
     ],
     "scientificName" : "Phyllostachys nigra",
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Phyllostachys nigra' factsheet. CC BY 3.0 NZ. Retrieved 15/09/2026. https://www.nzflora.info/factsheet/Taxon/Phyllostachys-nigra.html",
-      "Summary text: Wikipedia contributors. 'Phyllostachys nigra', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Phyllostachys_nigra"
+      "Summary text: Wikipedia contributors. 'Phyllostachys nigra', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Phyllostachys_nigra",
+      "Edible parts, preparation and warning text: Wikipedia contributors. 'Bamboo shoot', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 02/10/2026. https://en.wikipedia.org/wiki/Bamboo_shoot — the passages are about bamboo shoots in general, not about this species in particular.",
+      "Preparation method: Staffenhagen, Leigha. 'Bamboo Shoots', Skagit Valley Food Co-op, 03/06/2020. © Skagit Valley Food Co-op, all rights reserved. Retrieved 02/10/2026. https://www.skagitfoodcoop.com/blog/bamboo-shoots — paraphrased, not quoted. Names no species; the shoots it describes are a named grower's, not a wild stand.",
+      "Preparation method: BBC Food. 'Bamboo shoots' ingredient page. Copyright © 2026 BBC, all rights reserved. Retrieved 02/10/2026. https://www.bbc.co.uk/food/bamboo_shoots — paraphrased, not quoted. Names no species. Its buying guidance (canned, dried, vacuum-packed) was not used: this catalogue is about shoots cut from the ground.",
+      "Edible parts and preparation: Plants For A Future. 'Phyllostachys nigra' database entry. © 2010 Plants For A Future, no licence stated, so all rights reserved. Retrieved 02/10/2026. https://pfaf.org/user/Plant.aspx?LatinName=Phyllostachys+nigra — paraphrased, not quoted. PFAF rates this species 4 of 5 for edibility, Known Hazards 'None known'. Its harvest timing is northern-hemisphere spring and was not used.",
+      "Habitat: New Zealand Plant Conservation Network. 'Phyllostachys nigra var. nigra' and 'Phyllostachys nigra var. henonis' factsheets. © 2026 NZPCN, all rights reserved. Retrieved 02/10/2026. https://www.nzpcn.org.nz/flora/species/phyllostachys-nigra-var-nigra/ — paraphrased, not quoted. There is no NZPCN page for the species itself and neither variety page carries a habitat note; the naturalisation years come from these.",
+      "Habitat (outside New Zealand): BioNET-EAFRINET. 'Phyllostachys nigra (Black Bamboo)' factsheet. © 2011, all rights reserved. Retrieved 02/10/2026. https://keys.lucidcentral.org/keys/v3/eafrinet/weeds/key/weeds/Media/Html/Phyllostachys_nigra_(Black_Bamboo).htm — paraphrased, not quoted, and labelled in the text as describing Australia and East Africa rather than New Zealand."
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Phyllostachys nigra' (CC BY-SA 4.0)"
+        "Wikipedia, 'Phyllostachys nigra' (CC BY-SA 4.0)",
+        "NZPCN and Environmental Weeds of Australia / BioNET-EAFRINET (paraphrased)"
       ],
-      "text" : "Phyllostachys nigra, commonly known as black bamboo or purple bamboo (Chinese: 紫竹), is a species of bamboo, native to Hunan Province of China, and is widely cultivated elsewhere."
+      "text" : "Phyllostachys nigra, commonly known as black bamboo or purple bamboo (Chinese: 紫竹), is a species of bamboo, native to Hunan Province of China, and is widely cultivated elsewhere. Two forms have naturalised in New Zealand: var. nigra since 1991 and the green-caned var. henonis since 1993."
     },
     "warnings" : [
-
+      "Raw bamboo shoots contain cyanogenic glycosides, natural toxins also contained in cassava. The toxins must be destroyed by thorough cooking, and for this reason, fresh bamboo shoots are boiled before being used in other ways."
     ]
   },
   {
@@ -1475,23 +1555,35 @@
   {
     "caution" : "careRequired",
     "commonName" : "Black passionfruit",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Te Ara, 'Black passionfruit and flower' (facts restated)",
+        "Enrich with Nature, 'Robinson's Black Passionfruit' (facts restated)"
       ],
-      "text" : ""
+      "text" : "The pulp inside a ripe fruit. Under a thick purple rind sit dozens of black seeds in a juicy orange pulp, sweet and tangy and high in vitamin C — the seeds are eaten along with it. Nothing else on the vine is food."
     },
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "NZ Plant Conservation Network, 'Passiflora edulis f. edulis' (facts restated)",
+        "Te Ara, 'Black passionfruit and flower' (facts restated)",
+        "Enrich with Nature, 'Robinson's Black Passionfruit' (facts restated)"
       ],
-      "text" : ""
+      "text" : "Native to tropical America and brought here to be grown as a crop, it was recorded naturalised in New Zealand by 1950. In the wild it keeps to forest margins and shrubland, and only where frosts are absent — it is a terrestrial climber intolerant of frost and fond of high light, so bush edges, light wells and the sunny side of a gully suit it far better than deep shade. It is still grown on purpose, in gardens and commercially in the Bay of Plenty, in warm sheltered spots with free-draining soil and something to climb; the wild vines are mostly escapes from places like that. A vine can live a long time, though fungal infection usually takes it in the end. It sets a great deal of seed and travels mainly by people moving it about, with birds carrying seed out to sites nobody planted. DOC named it in its 2024 list of New Zealand environmental weeds."
     },
     "habitats" : [
-
+      "forest",
+      "shrubland",
+      "urban",
+      "disturbed"
     ],
+    "harvestEthics" : {
+      "sources" : [
+        "NZ Plant Conservation Network, 'Passiflora edulis f. edulis' (facts restated)"
+      ],
+      "text" : "Take as much as you like; the restraint this one asks for is about seed, not quantity. DOC counts it among New Zealand's environmental weeds, and the way it reaches bush nobody planted it in is fruit that people carry and birds find. So eat it at home rather than where it hangs, and put the rind and spent seed in the rubbish rather than the compost or the undergrowth."
+    },
     "id" : "black-passionfruit",
     "identification" : {
       "sources" : [
@@ -1500,7 +1592,27 @@
       "text" : "Vigorous vine, glabrous except for pistil and stamens.  Shoots slightly angular.  Lvs deeply 3-lobed, but entire on young plants;  petiole 1–3 cm long, with 2 sessile glands near apex;  stipules 10–15 mm long, linear-subulate, entire;  lamina lobes ± elliptic, submembranous, deep shining green above, rounded at base;  middle lobe largest, 6–10 × 3–5.5 cm, serrate or serrulate, obtuse to acute.  Fls ☿, solitary.  Pedicels 4–6 cm long at flowering.  Bracts 1.5–2 cm long, ovate, free, coarsely serrate.  Hypanthium inconspicuous.  Sepals 2.5–3 cm long, oblong, green on reverse, white inside; petals white, similar to sepals;  corona threads 2–2.5 cm long, white with purple base.  Filaments puckered, purple towards base, otherwise white;  anthers 8–10 mm long, > filaments.  Ovary puberulent.  Fr. 5–6.25 × 4.75–5.75 cm, broad-ellipsoid or subglobose, dull purple;  pulp orange, sweet.  Seed  c. 5 mm long, ovate, black, pitted.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "banana-passionfruit",
+        "howToTell" : "The flowers part them at a distance: black passionfruit's are white, about 5 cm across, with a crown of white filaments purple at the base, and they sit close to the vine with no floral tube to speak of, where banana passionfruit's are pink and hang from a pale green tube 6–8 cm long. The fruit settles it — black passionfruit is a dull purple ball or egg about 5–6 cm across with black seeds in orange pulp, and banana passionfruit is a yellow to light orange spindle tapering at both ends, roughly 7–14 cm long, with dark red seeds. The stipules where the leaf stalk meets the stem are a third check: black passionfruit's are 10–15 mm and stay put, banana passionfruit's are small and gone from mature stems. Both are edible.",
+        "name" : "Banana passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tarminiana"
+      },
+      {
+        "entry" : "kohia",
+        "howToTell" : "The leaves separate them before you reach the fruit: kōhia's are simple, one undivided glossy dark-green blade 5–12 cm long, where black passionfruit's are deeply three-lobed on any mature vine. Kōhia's flowers are tiny — 8–15 mm, greenish-yellow, carried in groups of one to four — against black passionfruit's solitary white disc about 5 cm across with a purple-based corona. The fruit confirms it: kōhia's is a 2–3 cm orange berry with sparse reddish pulp, black passionfruit's a 5–6 cm purple ball full of orange pulp. Both are edible, but kōhia is a native and the oil-bearing vine of hinu kōhia — leave it be.",
+        "name" : "Kōhia",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tetrandra"
+      },
+      {
+        "entry" : "pink-flowered-passionfruit",
+        "howToTell" : "Two three-lobed climbing vines, told apart by hair, flower colour and fruit colour. Black passionfruit is hairless all over bar the pistil and stamens; pink-flowered passionfruit is downy — grey- or white-felted under the leaf, with hairy shoots and flower stalks. The flowers are not close once you look: black passionfruit's are white with a white corona purple only at the base, sitting on the vine with no floral tube to speak of, where pink-flowered passionfruit's petals are pink above a conspicuous violet-blue corona, on a hairy tube 4.5–5 cm long. The stipules settle a vine with no flowers on it — black passionfruit's are plain, 10–15 mm and strap-like, pink-flowered passionfruit's are pinnate, a very narrow rachis fringed with dark thread-like segments. And the fruit is a different colour entirely: a smooth dull purple ball 5–6 cm across with black seeds, against a downy yellow one 4–7 cm across with dark red-brown seeds. Both are edible.",
+        "name" : "Pink-flowered passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora pinnatistipula"
+      }
     ],
     "months" : [
       1,
@@ -1510,6 +1622,7 @@
       8,
       12
     ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/51446",
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
@@ -1517,26 +1630,31 @@
     ],
     "preparation" : {
       "sources" : [
-
+        "Te Ara, 'Black passionfruit and flower' (facts restated)",
+        "Enrich with Nature, 'Robinson's Black Passionfruit' (facts restated)"
       ],
-      "text" : ""
+      "text" : "Halve a ripe fruit and eat the pulp straight out of the shell with a teaspoon. Past that it is mostly juiced, or spooned over a dessert, and the pulp freezes well for later. Take fruit that has gone fully purple — a green one is not ready."
     },
     "recipes" : [
 
     ],
-    "scientificName" : "Passiflora edulis f",
+    "scientificName" : "Passiflora edulis",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Black passionfruit' entry.",
-      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora edulis f' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-edulis.html"
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora edulis f' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-edulis.html",
+      "Habitat, naturalisation, dispersal and environmental weed listing: New Zealand Plant Conservation Network, 'Passiflora edulis f. edulis' factsheet, citing Heenan, P.B. & Sykes, W.R. 2003, 'Passiflora (Passifloraceae) in New Zealand: a revised key with notes on distribution', NZ Journal of Botany 41: 217–221. © NZPCN, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.nzpcn.org.nz/flora/species/passiflora-edulis-f-edulis/",
+      "Flower and fruit description, and eating: Scarrow, Sandy. 'Black passionfruit and flower', in 'Citrus, berries, exotic fruit and nuts – Tamarillos, passionfruit and feijoas', Te Ara – the Encyclopedia of New Zealand, 01/03/2009. © Manatū Taonga Ministry for Culture and Heritage, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://teara.govt.nz/en/photograph/16017/black-passionfruit-and-flower",
+      "Growing conditions and uses: Enrich with Nature, 'Robinson's Black Passionfruit' plant page. © Enrich with Nature, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.enrichwithnature.co.nz/Plants/Plant.cshtml?plant_id=888"
     ],
     "summary" : {
       "sources" : [
-
+        "NZ Plant Conservation Network, 'Passiflora edulis f. edulis' (facts restated)",
+        "Te Ara, 'Black passionfruit and flower' (facts restated)"
       ],
-      "text" : ""
+      "text" : "A cultivated purple passionfruit gone wild on frost-free forest margins, hung with round fruit full of sweet orange pulp."
     },
     "warnings" : [
-
+      "Named on DOC's 2024 list of New Zealand environmental weeds — it escapes gardens, and birds carry the seed into bush it was never planted in. Picking and eating it is no problem; bin the rind and seed rather than composting them or dropping them in the bush."
     ]
   },
   {
@@ -1767,6 +1885,68 @@
         "Wikipedia, 'Blackcurrant' (CC BY-SA 4.0)"
       ],
       "text" : "The blackcurrant (Ribes nigrum), black currant or cassis is a deciduous shrub in the family Grossulariaceae grown for its edible berries."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Blackthorn",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fruit",
+    "habitat" : {
+      "sources" : [
+        "Wikipedia, 'Prunus spinosa' (CC BY-SA 4.0)"
+      ],
+      "text" : "P. spinosa is native to Europe, western Asia, and locally in northwest Africa. It is also locally naturalised in Tasmania and eastern North America."
+    },
+    "habitats" : [
+
+    ],
+    "id" : "blackthorn",
+    "identification" : {
+      "sources" : [
+        "Wikipedia, 'Prunus spinosa' (CC BY-SA 4.0)"
+      ],
+      "text" : "Prunus spinosa is a large deciduous shrub or small tree growing to 5 metres (16 ft) tall, with blackish bark and dense, stiff, spiny branches. The leaves are oval, 2–4.5 centimetres (3⁄4–1+3⁄4 inches) long and 1.2–2 cm (1⁄2–3⁄4 in) broad, with a serrated margin. The flowers are about 1.5 cm (1⁄2 in) in diameter, with five creamy-white petals; they are produced shortly before the leaves in early spring, and are hermaphroditic and insect-pollinated. The fruit, called a \"sloe\", is a single-seeded drupe 10–12 millimetres (3⁄8–1⁄2 in) in diameter, black with a purple-blue waxy bloom, ripening in late autumn. The trees can live to 100 years.\nIn the United Kingdom, they are traditionally harvested in October or November, after the first frosts, as this makes the skin softer and easier to process for the purposes of making sloe gin. Sloes are thin-fleshed, with a very strongly astringent flavour when fresh. Its fruit persists for an average of 36.7 days. The fruit averages 77.6% water, and their dry weight includes 10.6% carbohydrates and 0.6% lipids.\nBlackthorn usually grows as a bush but can grow to become a tree to a height of 6 m (20 ft). Its branches usually grow forming a tangle.\nPrunus spinosa is frequently confused with the related P. cerasifera (cherry plum), particularly in early spring when the latter starts flowering a month or more earlier than P. spinosa. They can be distinguished by flower size, around 15 mm P. spinosa, and 20 mm in P. cerasifera. In addition, the sepals are bent backwards in P. cerasifera, but not in P. spinosa. They can be distinguished in winter by the shrubbier habit with stiffer, wider-angled, grey-brown branches of P. spinosa (greenish, and flexible, in one-year-old shoots of P. cerasifera); in summer by the relatively narrower leaves of P. spinosa, more than twice as long as broad; and in autumn by the colour of the fruit skin purplish black in P. spinosa and yellow or red in P. cerasifera; the latter also ripens about two months earlier, in late summer or early autumn.\nPrunus spinosa has a tetraploid (2n=4x=32) set of chromosomes.\nLike many other stone fruit with stones, the seed in the stone contains trace amounts of hydrogen cyanide."
+    },
+    "lookalikes" : [
+
+    ],
+    "months" : [
+
+    ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/55811",
+    "needsBookSource" : false,
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Prunus spinosa",
+    "sources" : [
+      "Identification, habitat and summary text: Wikipedia contributors. 'Prunus spinosa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Prunus_spinosa"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Prunus spinosa' (CC BY-SA 4.0)"
+      ],
+      "text" : "Prunus spinosa, called blackthorn or sloe, is a species of flowering plant in the rose family, Rosaceae."
     },
     "warnings" : [
 
@@ -2135,70 +2315,6 @@
         "Wikipedia, 'Codium fragile' (CC BY-SA 4.0)"
       ],
       "text" : "Codium fragile, known commonly as green sea fingers, dead man's fingers, felty fingers, forked felt-alga, stag seaweed, sponge seaweed, green sponge, green fleece, sea staghorn, and oyster thief, is a species of seaweed in the family Codiaceae."
-    },
-    "warnings" : [
-
-    ]
-  },
-  {
-    "caution" : "careRequired",
-    "commonName" : "Bristle oat",
-    "draft" : true,
-    "edibleParts" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "group" : "greens",
-    "habitat" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "habitats" : [
-
-    ],
-    "id" : "bristle-oat",
-    "identification" : {
-      "sources" : [
-        "Wikipedia, 'Avena strigosa' (CC BY-SA 4.0)"
-      ],
-      "text" : "Avena strigosa is a tufted grass growing to a height of 0.8–1.6 m. Its seeds are smaller than those of the common oat, Avena sativa."
-    },
-    "lookalikes" : [
-
-    ],
-    "months" : [
-
-    ],
-    "moreImagesURL" : "https://inaturalist.nz/taxa/159109",
-    "needsBookSource" : false,
-    "origin" : "introduced",
-    "photos" : [
-
-    ],
-    "preparation" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "recipes" : [
-
-    ],
-    "scientificName" : "Avena strigosa",
-    "sources" : [
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
-      "Identification and summary text: Wikipedia contributors. 'Avena strigosa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Avena_strigosa",
-      "Summary text: Wikipedia contributors. 'Avena strigosa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Avena_strigosa"
-    ],
-    "summary" : {
-      "sources" : [
-        "Wikipedia, 'Avena strigosa' (CC BY-SA 4.0)"
-      ],
-      "text" : "Avena strigosa (also called lopsided oat, bristle oat or black oat; syn. Avena hispanica Ard.) is a species of grass native to Europe."
     },
     "warnings" : [
 
@@ -3466,6 +3582,68 @@
         "Wikipedia, 'Carpobrotus chilensis' (CC BY-SA 4.0)"
       ],
       "text" : "Carpobrotus chilensis is a species of edible succulent plant known by the common name sea fig."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Chinese plum",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fruit",
+    "habitat" : {
+      "sources" : [
+        "Wikipedia, 'Prunus salicina' (CC BY-SA 4.0)"
+      ],
+      "text" : "P. salicina is native to China, Taiwan, Myanmar, Laos, and Vietnam. In China, it grows in sparse forests, forest margins, thickets, along trails in mountains, and stream sides in valleys, at elevations of 200–2600 m. It grows best in temperate warmer regions, as it requires moderate temperatures and is usually early flowering.\nThe domestication center of origin of P. salicina is southwestern China, from the Yangtze River Basin. Wild populations of this species are reported as thriving in the provinces of Shaanxi and Gansu. It is recorded as an introduced species in both Australia and Japan."
+    },
+    "habitats" : [
+
+    ],
+    "id" : "chinese-plum",
+    "identification" : {
+      "sources" : [
+        "Wikipedia, 'Prunus salicina' (CC BY-SA 4.0)"
+      ],
+      "text" : "Prunus salicina grows up to 9–12 m (30–39 ft) tall, and its branches are purplish- to reddish-brown, and its lateral shoots are yellowish-red.\nThe leaves are 6–12 cm long and 2.5–5 cm broad, with scalloped margins, which when young are often mixed with simple, gland-tipped teeth. The leaves' shapes tend to be oblong, though they sometimes vary to slightly more obovate (broader above the middle), narrowly elliptic, or in rare cases slightly ovate (broader half below the middle). The base of the leaf is wedge-shaped, and its apex ranges from acute (pointed) to caudate (having a slender, short tail). The upper side of the leaf is dark green and lustrous, and has six or seven secondary veins on either side of midvein, not extending to the leaf margin.\nThe winter buds of P. salicina are purplish red and are rarely hairy at scale margins. The flowers are produced in early spring, around April, each about 2 cm in diameter with five white petals, and they grow in groups of three. The pedicel is 1.0–1.5 cm, and its sepals are oblong-ovate and about 5 mm, hairless on the outside, with loosely serrated margins. The sepal's apex is acute to obtuse. The petals of the flower are white and oblong-obovate, with a wedge-shaped base and a jagged margin near the apex. The ovary is hairless and the stigma is disc-shaped.\nThe fruit is a drupe, 4–7 cm in diameter, with yellow-pink flesh,  The skin can be yellow, red, or sometimes green or purple, and has a powdery coating. The shape of the drupe is spherical, egg-shaped, or conical, and it is 3.5–5 cm in diameter, though it can reach 7 cm in diameter in horticultural forms. The trees fruit from July to August. When fully ripe, fruit can be eaten raw. In comparison to P. domestica, P. salicina, fruit has a higher flavor and aroma, better texture, more color, bigger size, and good nutritional values.\nThe pit of P. salicina is ovoid to oblong and wrinkled.\n\n\nGrowth pattern\nThe Japanese plum, like other Prunus species, is mostly self-incompatible, so requires cross pollination to ensure fruit set because this genus is unable to bear fruit parthenocarpically. Several cultivars or varieties, however, have been found to be  self-compatibile."
+    },
+    "lookalikes" : [
+
+    ],
+    "months" : [
+
+    ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/464594",
+    "needsBookSource" : false,
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Prunus salicina",
+    "sources" : [
+      "Identification, habitat and summary text: Wikipedia contributors. 'Prunus salicina', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Prunus_salicina"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Prunus salicina' (CC BY-SA 4.0)"
+      ],
+      "text" : "Prunus salicina (syn. Prunus triflora or Prunus thibetica), commonly called the Chinese plum or Japanese plum, is a small, deciduous tree native to China, Taiwan, and Southeast Asia."
     },
     "warnings" : [
 
@@ -6405,19 +6583,21 @@
     "draft" : true,
     "edibleParts" : {
       "sources" : [
-
+        "Wikipedia, 'Bamboo shoot' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Bamboo shoots or bamboo sprouts are the edible shoots (new bamboo culms that come out of the ground) of many bamboo species including Bambusa vulgaris and Phyllostachys edulis. Most young bamboo shoots are edible after being boiled to remove toxins, but only around a hundred or so species are harvested regularly for edible shoots."
     },
     "group" : "greens",
     "habitat" : {
       "sources" : [
-
+        "NZPCN and Environmental Weeds of Australia / BioNET-EAFRINET (paraphrased)"
       ],
-      "text" : ""
+      "text" : "Beyond the bare word \"terrestrial\", nothing has been published about where in New Zealand this has gone wild. It has never been recorded flowering here and sets no seed, so every wild stand traces back to a planting and creeps outwards by rhizome. In Australia it is mainly a weed of warmer country: untended ground near gardens, roadsides, waterways and urban bush."
     },
     "habitats" : [
-
+      "wetland",
+      "urban",
+      "disturbed"
     ],
     "id" : "fishpole-bamboo",
     "identification" : {
@@ -6427,12 +6607,105 @@
       "text" : "The common forms of P. aurea are easily identified by their characteristic compressed internodes in the lower part of the canes which have a tortoise shell-like appearance. This internodal compression result in shorter heights (25 ft) and thicker cane diameters (relative to height) than many other Phyllostachys species.\nThe canes turn yellow in full or partial sun, and deepen into a gold-orange color as the plant matures. Branching and foliage tend to start lower to the ground than many other Phyllostachys species, but some prefer to cut off lower branches to show off the interesting 'tortoise shell' lower part of the canes."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "arrow-bamboo",
+        "howToTell" : "By far the commonest wild bamboo in the country, so it is the one you are most likely to have actually found. Its leaves settle it: up to 25 cm long and glossy, far bigger than any of the others', carried on a dense leafy thicket rather than an open stand of bare canes, and mostly one branch to a node rather than two. Canes yellow-brown, to 6 m. Edible after the same boiling, but its shoots are the bitterest of the five and the poorest eating.",
+        "name" : "Arrow bamboo",
+        "risk" : "unpalatable",
+        "scientificName" : "Pseudosasa japonica"
+      },
+      {
+        "entry" : "black-bamboo",
+        "howToTell" : "Canes 4–7 m, green in their first year and turning black or heavily black-blotched in their second — but the green-caned var. henonis is naturalised here too, so a green stand does not rule it out. Look instead for the white waxy ring under each node on young canes, nodes evenly spaced along the cane, and cane sheaths uniformly purple or purple-flushed. Both are edible.",
+        "name" : "Black bamboo",
+        "risk" : "edible",
+        "scientificName" : "Phyllostachys nigra"
+      },
+      {
+        "entry" : "giant-timber-bamboo",
+        "howToTell" : "Size settles it: this one runs to 20 m tall and 10 cm thick, well beyond the others, on very straight canes with long internodes. At each node look for two distinct rings rather than one. It is barely present in the wild here — a single New Zealand record — so expect one of the others first. Both are edible.",
+        "name" : "Giant timber bamboo",
+        "risk" : "edible",
+        "scientificName" : "Phyllostachys bambusoides"
+      }
     ],
     "months" : [
 
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/78563",
+    "needsBookSource" : false,
+    "origin" : "introduced",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+        "Wikipedia, 'Bamboo shoot' (CC BY-SA 4.0)"
+      ],
+      "text" : "The toxins must be destroyed by thorough cooking, and for this reason, fresh bamboo shoots are boiled before being used in other ways. The shoots of some species contain cyanide that must be leached or boiled out before they can be eaten safely. Slicing the bamboo shoots thinly assists in this leaching."
+    },
+    "recipes" : [
+      {
+        "method" : "The husk is many overlapping brown layers covered in fine, sharp hairs, so handle it with that in mind. Run a knife up the side of the shoot to slit it, then unwrap and throw away the layers until you reach the pale core; cut off the pointed tip and the fibrous base. The sweetest shoots of the genus, with very little bitterness, and reported edible raw — but the warning on this page stands, so cook them unless you have reason to trust that claim. Cover with water, boil, change the water once, and simmer until tender; they need far less of this than the others. The canes are slender, about 15 mm, thicker in their native China. Cut them at about 8 cm above the ground, 5 cm below the soil.",
+        "title" : "Preparing fresh shoots"
+      }
+    ],
+    "scientificName" : "Phyllostachys aurea",
+    "sources" : [
+      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
+      "Identification and summary text: Wikipedia contributors. 'Phyllostachys aurea', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Phyllostachys_aurea",
+      "Edible parts, preparation and warning text: Wikipedia contributors. 'Bamboo shoot', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 02/10/2026. https://en.wikipedia.org/wiki/Bamboo_shoot — the passages are about bamboo shoots in general, not about this species in particular.",
+      "Preparation method: Staffenhagen, Leigha. 'Bamboo Shoots', Skagit Valley Food Co-op, 03/06/2020. © Skagit Valley Food Co-op, all rights reserved. Retrieved 02/10/2026. https://www.skagitfoodcoop.com/blog/bamboo-shoots — paraphrased, not quoted. Names no species; the shoots it describes are a named grower's, not a wild stand.",
+      "Preparation method: BBC Food. 'Bamboo shoots' ingredient page. Copyright © 2026 BBC, all rights reserved. Retrieved 02/10/2026. https://www.bbc.co.uk/food/bamboo_shoots — paraphrased, not quoted. Names no species. Its buying guidance (canned, dried, vacuum-packed) was not used: this catalogue is about shoots cut from the ground.",
+      "Edible parts and preparation: Plants For A Future. 'Phyllostachys aurea' database entry. © 2010 Plants For A Future, no licence stated, so all rights reserved. Retrieved 02/10/2026. https://pfaf.org/user/Plant.aspx?LatinName=Phyllostachys+aurea — paraphrased, not quoted. PFAF rates this species 5 of 5 for edibility, Known Hazards 'None known'. Its claim that these shoots can be eaten raw is the one place a source contradicts the Wikipedia warning on this page, and the warning was kept. Its harvest timing is northern-hemisphere spring and was not used.",
+      "Habitat: New Zealand Plant Conservation Network. 'Phyllostachys aurea' factsheet. © 2026 NZPCN, all rights reserved. Retrieved 02/10/2026. https://www.nzpcn.org.nz/flora/species/phyllostachys-aurea/ — paraphrased, not quoted. Its whole habitat field reads \"Terrestrial.\"; naturalised 1977, flowering never reported in NZ, named on DOC's list of 386 environmental weeds in New Zealand 2024.",
+      "Habitat (outside New Zealand): Environmental Weeds of Australia. 'Phyllostachys aurea' fact sheet. © 2016 Identic Pty Ltd, all rights reserved. Retrieved 02/10/2026. https://keyserver.lucidcentral.org/weeds/data/media/Html/phyllostachys_aurea.htm — paraphrased, not quoted, and labelled in the text as describing Australia rather than New Zealand."
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Phyllostachys aurea' (CC BY-SA 4.0)",
+        "NZPCN and Environmental Weeds of Australia / BioNET-EAFRINET (paraphrased)"
+      ],
+      "text" : "Phyllostachys aurea is a species of bamboo, and is of the 'running bamboo' type, belonging to the diverse Bambuseae tribe. Brought here from south-eastern China as an ornamental and naturalised since 1977, it is named on DOC's list of environmental weeds."
+    },
+    "warnings" : [
+      "Raw bamboo shoots contain cyanogenic glycosides, natural toxins also contained in cassava. The toxins must be destroyed by thorough cooking, and for this reason, fresh bamboo shoots are boiled before being used in other ways."
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Flowering apricot",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fruit",
+    "habitat" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "habitats" : [
+
+    ],
+    "id" : "flowering-apricot",
+    "identification" : {
+      "sources" : [
+        "Wikipedia, 'Prunus mume' (CC BY-SA 4.0)"
+      ],
+      "text" : "Prunus mume is a deciduous tree that starts to flower in mid-winter, typically around January until late February in East Asia. It can grow to 4–10 m (13–33 ft) tall. The flowers are 2–2.5 cm (0.79–0.98 in) in diameter and have a strong fragrant scent. They have colors in varying shades of white, pink, and red. The leaves appear shortly after the petals fall, are oval-shaped with a pointed tip, and are 4–8 cm long and 2.5–5 cm wide. The fruit ripens in early summer, around June and July in East Asia, and coincides with the East Asian rainy season, the meiyu (梅雨, \"plum rain\"). The drupe is 2–3 cm (0.79–1.18 in) in diameter with a groove running from the stalk to the tip. The skin turns yellow, sometimes with a red blush, as it ripens, and the flesh becomes yellow. The tree is cultivated for its fruit and flowers."
+    },
+    "lookalikes" : [
+
+    ],
+    "months" : [
+
+    ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/357447",
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
@@ -6447,16 +6720,15 @@
     "recipes" : [
 
     ],
-    "scientificName" : "Phyllostachys aurea",
+    "scientificName" : "Prunus mume",
     "sources" : [
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
-      "Identification and summary text: Wikipedia contributors. 'Phyllostachys aurea', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Phyllostachys_aurea"
+      "Identification and summary text: Wikipedia contributors. 'Prunus mume', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Prunus_mume"
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Phyllostachys aurea' (CC BY-SA 4.0)"
+        "Wikipedia, 'Prunus mume' (CC BY-SA 4.0)"
       ],
-      "text" : "Phyllostachys aurea is a species of bamboo, and is of the 'running bamboo' type, belonging to the diverse Bambuseae tribe."
+      "text" : "Prunus mume, also known as a Chinese plum, is a tree species in the family Rosaceae."
     },
     "warnings" : [
 
@@ -7112,16 +7384,16 @@
     "draft" : true,
     "edibleParts" : {
       "sources" : [
-
+        "Wikipedia, 'Bamboo shoot' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Bamboo shoots or bamboo sprouts are the edible shoots (new bamboo culms that come out of the ground) of many bamboo species including Bambusa vulgaris and Phyllostachys edulis. Most young bamboo shoots are edible after being boiled to remove toxins, but only around a hundred or so species are harvested regularly for edible shoots."
     },
     "group" : "greens",
     "habitat" : {
       "sources" : [
-
+        "NZPCN and Plants For A Future (paraphrased)"
       ],
-      "text" : ""
+      "text" : "No New Zealand habitat note has been published for this one, so what is on record is that it is loose in the country and runs hard on extensive rhizomes — not where to expect it. In its native range it grows in woodland and open bush-wood, especially on lower cleared slopes, up to about 1800 m."
     },
     "habitats" : [
 
@@ -7134,7 +7406,20 @@
       "text" : "Phyllostachys bambusoides is a \"running\" (monopodial type) evergreen bamboo which can reach a height of roughly 20 m and a diameter of 10 cm. The culms are dark green, with a thin wall that thickens with maturity, and very straight, with long internodes and two distinctive rings at the node. The species is thin-skinned, easily split lengthwise, has long fibres, and is strong and highly flexible, even when split finely.\nLeaves are dark green, and the sheaths are strong and hairless. New stalks emerge in late spring and grow at a rate of up to 1 m a day; one specimen produced culms growing a remarkable 120 cm in 24 hours. The flowering interval of this species is very long, lasting roughly 120 years."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "fishpole-bamboo",
+        "howToTell" : "Check the bottom metre of a cane. Fishpole bamboo crowds several internodes together down there into a lumpy, tortoise-shell pattern that none of the others has, and it is the one reliable mark. Its canes yellow in sun and deepen to gold-orange with age, branching starts low to the ground, and it tops out around 7 m. Both are edible.",
+        "name" : "Fishpole bamboo",
+        "risk" : "edible",
+        "scientificName" : "Phyllostachys aurea"
+      },
+      {
+        "entry" : "black-bamboo",
+        "howToTell" : "Canes 4–7 m, green in their first year and turning black or heavily black-blotched in their second — but the green-caned var. henonis is naturalised here too, so a green stand does not rule it out. Look instead for the white waxy ring under each node on young canes, nodes evenly spaced along the cane, and cane sheaths uniformly purple or purple-flushed. Both are edible.",
+        "name" : "Black bamboo",
+        "risk" : "edible",
+        "scientificName" : "Phyllostachys nigra"
+      }
     ],
     "months" : [
 
@@ -7147,26 +7432,46 @@
     ],
     "preparation" : {
       "sources" : [
-
+        "Wikipedia, 'Bamboo shoot' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "The toxins must be destroyed by thorough cooking, and for this reason, fresh bamboo shoots are boiled before being used in other ways. The shoots of some species contain cyanide that must be leached or boiled out before they can be eaten safely. Slicing the bamboo shoots thinly assists in this leaching."
     },
     "recipes" : [
-
+      {
+        "method" : "The husk is many overlapping brown layers covered in fine, sharp hairs, so handle it with that in mind. Run a knife up the side of the shoot to slit it, then unwrap and throw away the layers until you reach the pale core; cut off the pointed tip and the fibrous base. Large shoots, acrid raw, and the ones that need the most water: boil them in a big pan or through several changes, 20 minutes to the first change and then in fresh water until a taste comes back mild. Slicing them first helps. Cut them at about 8 cm above the ground, 5 cm below the soil.",
+        "title" : "Preparing fresh shoots"
+      },
+      {
+        "method" : "450 g of shoots already boiled and their tough outer layers stripped, 45 ml neutral oil, two thin slices of ginger, 10 ml rock sugar, 10 ml Shaoxing wine, 22.5 ml light soy sauce, 2.5 ml dark soy sauce and 240 ml water. Warm the oil over a medium heat and cook the ginger in it for half a minute, then drop the heat and let the rock sugar dissolve into the oil. Add the shoots, bring the heat back up and stir them until the cut edges start to brown, a few minutes. Pour in the wine, both soy sauces and the water, cover, and simmer ten minutes. Take the lid off, raise the heat and let the liquid reduce around the shoots, then stir through a little more oil for gloss. Winter shoots want blanching first and a longer simmer than spring ones; canned shoots are too wet for this method.",
+        "title" : "Braised spring bamboo shoots (油焖笋)"
+      },
+      {
+        "method" : "Starts from fresh shoots. Cut them into small pieces, boil four to five minutes — seven or eight for larger pieces — then soak them in clean water for at least ten hours, changing the water twice, to draw the bitterness out. Then 250 g of the prepared shoots, 1.5 tbsp light soy sauce, 0.5 tbsp dark soy sauce, 2 tbsp rock sugar and 1 tsp sesame oil. Fry the shoots in hot oil for about a minute, until they soften slightly. Add the soy sauces and the sugar, cover, and simmer four minutes on a lower heat. Uncover and keep cooking until the sauce clings to the shoots, then finish with the sesame oil.",
+        "title" : "Braised bamboo shoots"
+      }
     ],
     "scientificName" : "Phyllostachys bambusoides",
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
-      "Identification and summary text: Wikipedia contributors. 'Phyllostachys bambusoides', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Phyllostachys_bambusoides"
+      "Identification and summary text: Wikipedia contributors. 'Phyllostachys bambusoides', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Phyllostachys_bambusoides",
+      "Recipes: The Woks of Life. 'Braised Spring Bamboo Shoots (油焖笋)'. © The Woks of Life, all rights reserved. Retrieved 02/10/2026. https://thewoksoflife.com/braised-spring-bamboo-shoots/ — method paraphrased, not quoted, and quantities given in metric. The recipe calls for spring or winter shoots and names no species.",
+      "Recipes: China Sichuan Food. 'Braised Bamboo Shoots'. © 2026 China Sichuan Food, all rights reserved. Retrieved 02/10/2026. https://www.chinasichuanfood.com/braised-bamboo-shoots/ — method paraphrased, not quoted. The recipe names no species.",
+      "Preparation method: Staffenhagen, Leigha. 'Bamboo Shoots', Skagit Valley Food Co-op, 03/06/2020. © Skagit Valley Food Co-op, all rights reserved. Retrieved 02/10/2026. https://www.skagitfoodcoop.com/blog/bamboo-shoots — paraphrased, not quoted. Names no species; the shoots it describes are a named grower's, not a wild stand.",
+      "Preparation method: BBC Food. 'Bamboo shoots' ingredient page. Copyright © 2026 BBC, all rights reserved. Retrieved 02/10/2026. https://www.bbc.co.uk/food/bamboo_shoots — paraphrased, not quoted. Names no species. Its buying guidance (canned, dried, vacuum-packed) was not used: this catalogue is about shoots cut from the ground.",
+      "Edible parts, preparation and warning text: Wikipedia contributors. 'Bamboo shoot', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 02/10/2026. https://en.wikipedia.org/wiki/Bamboo_shoot — the passages are about bamboo shoots in general, not about this species in particular.",
+      "Edible parts and preparation: Plants For A Future. 'Phyllostachys bambusoides' database entry. © 2010 Plants For A Future, no licence stated, so all rights reserved. Retrieved 02/10/2026. https://pfaf.org/user/Plant.aspx?LatinName=Phyllostachys+bambusoides — paraphrased, not quoted. PFAF rates this species 4 of 5 for edibility, Known Hazards 'None known'. Its harvest timing is northern-hemisphere spring and was not used.",
+      "Habitat: New Zealand Plant Conservation Network. 'Phyllostachys bambusoides' factsheet. © 2026 NZPCN, all rights reserved. Retrieved 02/10/2026. https://www.nzpcn.org.nz/flora/species/phyllostachys-bambusoides/ — paraphrased, not quoted. The page carries no habitat field at all; naturalised 1993. Native-range habitat from the PFAF entry already cited on this page.",
+      "Photographs: iNaturalist observations 213525362 and 214189931 by botaflo (Florent), Landes and Amou, France. CC0, no rights reserved. Retrieved 02/10/2026. Research-grade. These are the catalogue's only non-New Zealand photographs, and they are here because there are none to be had: iNaturalist holds exactly one New Zealand record of this species, and it is needs-id, carrying one species-level identification against two that go no further than the genus. An unconfirmed New Zealand plant was judged worse on an identification page than a confirmed French one. This page's habitat note already states that no New Zealand habitat has been published for the species, so no NZ-specific habitat claim rests on these frames."
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Phyllostachys bambusoides' (CC BY-SA 4.0)"
+        "Wikipedia, 'Phyllostachys bambusoides' (CC BY-SA 4.0)",
+        "NZPCN and Plants For A Future (paraphrased)"
       ],
-      "text" : "Phyllostachys bambusoides, commonly called madake, giant timber bamboo, or Japanese timber bamboo, is a species of flowering plant in the bamboo subfamily of the grass family Poaceae, native to China, and possibly also to Japan."
+      "text" : "Phyllostachys bambusoides, commonly called madake, giant timber bamboo, or Japanese timber bamboo, is a species of flowering plant in the bamboo subfamily of the grass family Poaceae, native to China, and possibly also to Japan. Naturalised in New Zealand since 1993."
     },
     "warnings" : [
-
+      "Raw bamboo shoots contain cyanogenic glycosides, natural toxins also contained in cassava. The toxins must be destroyed by thorough cooking, and for this reason, fresh bamboo shoots are boiled before being used in other ways."
     ]
   },
   {
@@ -10446,23 +10751,37 @@
   {
     "caution" : "careRequired",
     "commonName" : "Kōhia",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Wikipedia, 'Passiflora tetrandra' (CC BY-SA 4.0)",
+        "Native Plants NZ, 'Passiflora tetrandra' (facts restated)",
+        "Te Karaka (Ngāi Tahu), 'He Aitaka a Tāne — handsome climber' (facts restated)",
+        "Te Māra Reo, 'Kōhia' (facts restated)"
       ],
-      "text" : ""
+      "text" : "The fruit — a shiny orange berry up to about 3 cm, somewhere between a cherry and a small peach, borne only on female vines — and the gum that bleeds from a cut stem, which was chewed. Set your expectations low on the fruit: the skin is dry, the pulp sparse, the taste bitter, and the seeds peppery. It was used more as a flavouring and a source of oil than eaten as a fruit in its own right."
     },
-    "group" : "greens",
+    "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "Wikipedia, 'Passiflora tetrandra' (CC BY-SA 4.0)",
+        "Native Plants NZ, 'Passiflora tetrandra' (facts restated)",
+        "O2 Landscapes, 'Passiflora' (facts restated)",
+        "Te Karaka (Ngāi Tahu), 'He Aitaka a Tāne — handsome climber' (facts restated)"
       ],
-      "text" : ""
+      "text" : "A vigorous evergreen climber of lowland forest, hauling itself 6–10 m into the canopy on touch-sensitive tendrils and hanging there in glistening masses. It grows through the North Island and down the South Island as far as Banks Peninsula. It takes full sun or part shade and is long-lived, and while it wants well-drained soil with some organic matter in it, established vines cope with dry ground. Young plants are the frost-tender ones. Its conservation status was assessed as Not Threatened in 2024.\nThe thing to know before you go looking is that kōhia is dioecious — male and female flowers are on separate vines — so only some of the plants you find will ever carry fruit. Flowers come between October and December and the fruit follows through summer and autumn, ripening around April and May. Birds eat it, and it was always a climb to get: the difficulty was judging ripeness from the ground and then getting up there and back down again."
     },
     "habitats" : [
-
+      "forest"
     ],
+    "harvestEthics" : {
+      "sources" : [
+        "Te Karaka (Ngāi Tahu), 'He Aitaka a Tāne — handsome climber' (facts restated)",
+        "Te Māra Reo, 'Kōhia' (facts restated)",
+        "Native Plants NZ, 'Passiflora tetrandra' (facts restated)"
+      ],
+      "text" : "Kōhia is endemic — it grows nowhere else — and it carries a long history of use as hinu kōhia, so treat a fruiting vine as something to ask about rather than something to strip. Talk to mana whenua before harvesting on or near land they hold, and follow what they tell you.\nTwo practical reasons for a light hand. The vine is dioecious, so only the female plants fruit at all and the ones you find in fruit are a fraction of the population. And the fruit is bird food: it is eaten and carried by birds, which is how the vine gets anywhere. Take a few from a vine carrying plenty, leave the rest, and do not cut the vine for its stems — a climber cut through is a climber killed, and this is not a plant to spend for lashing you could get elsewhere."
+    },
     "id" : "kohia",
     "identification" : {
       "sources" : [
@@ -10471,7 +10790,27 @@
       "text" : "Vigorous, dioecious, high-climbing vine, glabrous except for slightly hairy young stems.  Lvs simple;  petioles (0.8)–1–2 cm long, eglandular;  stipules minute or 0;  lamina (4)–5–12–(14) × (1.8)–2–4–(5.5) cm, lanceolate to narrow-ovate or elliptic, coriaceous, dark glossy green above, entire, acute to acuminate.  Fls (1)–3–4 in cymes, fragrant.  Pedicels 5–15 mm long.  Bracts ± subulate, caducous.  Hypanthium 0.  Perianth 4-merous;  segments 5–6 mm long, ± oblong, yellowish green;  corona threads 2.5–3.5 mm long.  ♂ fls with 4 stamens;  filaments 5–6 mm long forming a short androphore bearing an abortive ovary.  ♀ fls with short staminodes.  Ovary glabrous;  styles (2)–3,  c. 2 mm long.  Fr. (2)–2.5–3 cm diam., subglobose or broad-ellipsoid, orange;  pulp reddish, sparse.  Seeds 3–7 mm long, flattened, wrinkled.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "banana-passionfruit",
+        "howToTell" : "Go to the leaves and you are done: kōhia's are simple — one undivided glossy dark-green blade, lanceolate to narrow-ovate, 5–12 cm long — where banana passionfruit's are deeply three-lobed. The flowers are no closer: kōhia's are small, 8–15 mm, greenish-yellow and often honeysuckle-scented, sitting in little groups of one to four, against banana passionfruit's solitary pink flower hanging from a pale green tube 6–8 cm long. The fruit parts them again — kōhia's is a round orange berry 2–3 cm across, banana passionfruit's a yellow spindle 7–14 cm long. Both are edible, but kōhia is a native worth leaving alone and banana passionfruit is a weed worth taking.",
+        "name" : "Banana passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tarminiana"
+      },
+      {
+        "entry" : "black-passionfruit",
+        "howToTell" : "Leaf shape settles it before anything else: kōhia's leaves are simple and undivided, black passionfruit's deeply three-lobed on any mature vine. Kōhia's flowers are tiny — 8–15 mm, greenish-yellow, in groups — where black passionfruit's are showy white discs about 5 cm across with a purple-based corona, one to a stalk. And the fruit: kōhia's is a 2–3 cm orange berry with sparse reddish pulp, black passionfruit's a 5–6 cm purple ball packed with orange pulp. Both are edible, but kōhia is a native worth leaving alone.",
+        "name" : "Black passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora edulis"
+      },
+      {
+        "entry" : "pink-flowered-passionfruit",
+        "howToTell" : "Leaf shape ends it: kōhia's leaves are simple, a single undivided glossy dark-green blade 5–12 cm long, where pink-flowered passionfruit's are three-lobed and grey- or white-felted underneath. The flowers are not in the same class — kōhia's are 5–6 mm, greenish-yellow and carried in little cymes of one to four, against a solitary pink flower with a violet-blue corona on a tube nearly 5 cm long. The fruit confirms it: kōhia's is a 2–3 cm orange berry with sparse reddish pulp, pink-flowered passionfruit's a downy yellow globe 4–7 cm across full of sweet orange pulp. Both are edible, but kōhia is a native worth leaving alone.",
+        "name" : "Pink-flowered passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora pinnatistipula"
+      }
     ],
     "maoriName" : "Kōhia",
     "months" : [
@@ -10480,6 +10819,7 @@
       4,
       5
     ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/404665",
     "needsBookSource" : false,
     "origin" : "endemic",
     "photos" : [
@@ -10487,9 +10827,10 @@
     ],
     "preparation" : {
       "sources" : [
-
+        "Te Karaka (Ngāi Tahu), 'He Aitaka a Tāne — handsome climber' (facts restated)",
+        "Te Māra Reo, 'Kōhia' (facts restated)"
       ],
-      "text" : ""
+      "text" : "The fruit's recorded use is as a flavouring for jellies made from seaweed, not as something eaten by the handful, and the pulp also yielded a delicate red face paint.\nIts real product was hinu kōhia, the oil. The berries were crushed, steamed in a hāngī and then pressed, and the oil that came out was fragrant enough to be noticed a quarter of a mile away. It was worn as a scented body oil, mixed with plant gums for perfume, and used as a salve on wounds, chronic sores and skin complaints that were slow to heal. Away from the kitchen, dried stems burned slowly and were used to carry fire from one place to another, and the vine itself was strong and flexible enough for lashing."
     },
     "recipes" : [
 
@@ -10498,17 +10839,22 @@
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Kōhia' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora tetrandra' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-tetrandra.html",
-      "Summary text: Wikipedia contributors. 'Passiflora tetrandra', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Passiflora_tetrandra",
+      "Summary and habitat text: Wikipedia contributors. 'Passiflora tetrandra', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 03/10/2026. https://en.wikipedia.org/wiki/Passiflora_tetrandra",
+      "Habitat, growing conditions and conservation status: Native Plants NZ, 'Passiflora tetrandra' plant page. © Native Plants NZ, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.nativeplants.nz/passiflora-tetrandra.html",
+      "Growth habit and dioecy: O2 Landscapes, 'Passiflora' plant page. © O2 Landscapes, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.o2landscapes.com/plants/passiflora/",
+      "Traditional use, hinu kōhia and harvesting: 'He Aitaka a Tāne — handsome climber', Te Karaka, Te Rūnanga o Ngāi Tahu. © Te Rūnanga o Ngāi Tahu, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/he-aitaka-a-tanea-handsome-climber/",
+      "Name, alternative names and traditional uses: Te Māra Reo, 'Kōhia' page. © Te Māra Reo, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.temarareo.org/PPN-Kohia.html",
       "Greater Wellington Regional Council. Wellington Regional Native Plant Guide, revised edition (2010), main plant list — names only."
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Passiflora tetrandra' (CC BY-SA 4.0)"
+        "Wikipedia, 'Passiflora tetrandra' (CC BY-SA 4.0)",
+        "Te Karaka (Ngāi Tahu), 'He Aitaka a Tāne — handsome climber' (facts restated)"
       ],
-      "text" : "Passiflora tetrandra (Māori: kōhia), also known as New Zealand passionflower, New Zealand passionfruit, or kohe, is a climbing vine found in New Zealand."
+      "text" : "New Zealand's only native passionflower: a forest vine hung with small orange fruit, prized far less as food than for the scented oil pressed from its seeds."
     },
     "warnings" : [
-
+      "The fruit is up in the canopy, 6–10 m above you, and the historical difficulty was exactly that — judging from the ground whether it was even ripe, then climbing for it and getting back down. Do not climb a forest tree for this one; it is a bitter, sparse-pulped fruit and not worth a fall."
     ]
   },
   {
@@ -13458,6 +13804,119 @@
   },
   {
     "caution" : "careRequired",
+    "commonName" : "Oat",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "greens",
+    "habitat" : {
+      "sources" : [
+        "Wikipedia, 'Oat' (CC BY-SA 4.0)"
+      ],
+      "text" : "Oats tolerate cold winters less well than cereals such as wheat, barley, and rye, but need less summer heat and more rain, making them important in areas such as Northwest Europe that have cool, wet summers. They can tolerate low-nutrient and acid soils. Oats grow thickly and vigorously, allowing them to outcompete many weeds, and compared to other cereals are relatively free from diseases."
+    },
+    "habitats" : [
+      "disturbed",
+      "grassland"
+    ],
+    "id" : "oat",
+    "identification" : {
+      "sources" : [
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+      ],
+      "text" : "Erect, green to glaucous tufts, 50–150 cm. Leaf-sheath glabrous or slightly hairy. Ligule (2)–3–5 mm, ± rounded, finely denticulate, abaxially finely scabrid. Leaf-blade 15–40 cm × (2.5)–7–15 mm, ± finely scabrid on ribs; margins finely scabrid, sometimes with a few scattered hairs. Culm erect or decumbent and rooting at base, internodes glabrous. Panicle 14–32 cm, very variable in shape, loose or contracted, equilateral to secund; branches horizontal to ± erect, slender, finely scabrid. Spikelets (15)–20–30–(40) mm, 2–(3)-flowered, pendulous on fine unequal pedicels; falling intact at maturity. Glumes 9–11-nerved. Lemma 10–18 mm, ovate-lanceolate, glabrous, or with a few hairs towards base, apex obtuse or shallowly notched, red-brown, grey, yellow, white or blackish, usually awnless, but lowest or sometimes all florets in certain cultivars bearing a weak, straight or curved awn, not geniculate and scarcely twisted at base. Palea keels with 1 row of cilia, interkeel scabrid or glabrous. Anthers 2–4.2 mm. Caryopsis 4–9 × 1.5–3 mm.\n[From:  Edgar and Connor (2000) Flora of New Zealand. Volume 5 (second printing).]"
+    },
+    "lookalikes" : [
+      {
+        "entry" : "slender-wild-oat",
+        "howToTell" : "Both edible; this is about which you have. The cultivated oat's spikelets fall intact and hold on the panicle, where slender oat sheds below each floret. Slender oat is the wispiest of the group — panicle branches and pedicels very fine, the whole plant often slender and drooping at the top. Its clincher is the lemma tip: each of the two lobes is drawn out into a fine bristle 2–3 mm long, which the cultivated oat never has. Its lemma hairs are long, stiff and reddish; the oat's lemma is smooth.",
+        "name" : "Slender oat",
+        "risk" : "edible",
+        "scientificName" : "Avena barbata"
+      },
+      {
+        "entry" : "sterilised-oat",
+        "howToTell" : "Both edible; this is about which you have. The cultivated oat's spikelets fall intact; winter wild oat's are far larger — 1.7–4.5 cm without the awns, glumes 2.4–5 cm, usually three florets to a spikelet against the oat's two. The awn settles it: winter wild oat carries a twisted dorsal awn 3–9 cm long on the two lowest florets, several times anything the cultivated oat grows, which is usually awnless or weakly and straightly awned.",
+        "name" : "Winter wild oat",
+        "risk" : "edible",
+        "scientificName" : "Avena sterilis"
+      },
+      {
+        "entry" : "wild-oat",
+        "howToTell" : "Both are oats and both are worth picking, so this is about which one you have, not about danger. The cultivated oat holds its grain: its spikelets fall intact at maturity and stay on the panicle until you strip them. Wild oat sheds — it disarticulates below each floret, so ripe grain drops at a touch and the harvest window is days. Look at the lemma: the oat's is smooth, usually awnless or with a weak straight awn; wild oat's is stiffly hairy below the awn, and the awn is a stout 30–40 mm, bent at a sharp angle and twisted in its lower half. Wild oat's spikelets are bigger too, 35–50 mm against 20–30 mm.",
+        "name" : "Wild oat",
+        "risk" : "edible",
+        "scientificName" : "Avena fatua"
+      }
+    ],
+    "months" : [
+
+    ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/57156",
+    "needsBookSource" : false,
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Green unripe spikelets held in the hand, hanging from fine drooping panicle branches",
+        "credit" : "no rights reserved",
+        "fileName" : "oat-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/103040852"
+      },
+      {
+        "caption" : "Whole plant in flower, the open nodding panicle held above broad flat leaves",
+        "credit" : "(c) boytouchgrass, some rights reserved (CC BY)",
+        "fileName" : "oat-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/253709201"
+      },
+      {
+        "caption" : "Ripe straw-coloured spikelets, each hanging from a slender branch",
+        "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
+        "fileName" : "oat-6.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/4951881"
+      }
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+      {
+        "method" : "Made from the green straw — stems and leaves cut before the grain hardens, then dried. Put about 60 ml of dried oatstraw in a 1 litre jar, fill with boiling water and cover. Leave it to steep several hours or overnight, then strain. Drink through the day; it keeps about three days in the fridge.",
+        "title" : "Oatstraw infusion"
+      },
+      {
+        "method" : "Built on the infusion above. Warm about 350 ml of milk — dairy, almond or soy — with 2 tbsp honey and 1/2 tsp cinnamon, stirring until smooth. Pour into a jar with 175 ml of strained oatstraw infusion, cover and shake before serving.",
+        "title" : "Avena latte"
+      }
+    ],
+    "scientificName" : "Avena sativa",
+    "sources" : [
+      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Oats' entry (pp. 130–131).",
+      "Identification text and common name: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Avena sativa' factsheet. CC BY 3.0 NZ. Retrieved 05/10/2026. https://www.nzflora.info/factsheet/Taxon/Avena-sativa.html",
+      "Summary text: Wikipedia contributors. 'Oat', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Oat",
+      "Habitat text: Wikipedia contributors. 'Oat', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Oat",
+      "Recipe methods, rewritten: The Herbal Academy. '4 Tasty Avena Sativa Recipes'. All rights reserved — methods restated, no text reproduced. Retrieved 05/10/2026. https://theherbalacademy.com/blog/4-tasty-avena-sativa-recipes/",
+      "Recipe methods, rewritten: Kami McBride. 'Oatstraw Infusion Recipe'. All rights reserved — methods restated, no text reproduced. Retrieved 05/10/2026. https://kamimcbride.com/oatstraw-infusion-recipe/"
+    ],
+    "sourcingNote" : "",
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Oat' (CC BY-SA 4.0)"
+      ],
+      "text" : "The oat (Avena sativa), sometimes called the common oat, is a species of cereal grass (Avena) grown for fodder and for its seed, which is known by the same name (usually in the plural)."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "careRequired",
     "commonName" : "Olive",
     "draft" : true,
     "edibleParts" : {
@@ -14688,23 +15147,35 @@
   {
     "caution" : "careRequired",
     "commonName" : "Pink-flowered passionfruit",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)",
+        "NZ Plant Conservation Network, 'Passiflora pinnatistipula' (facts restated)",
+        "Biota NZ, Manaaki Whenua – Landcare Research, 'Passiflora pinnatistipula' (facts restated)"
       ],
-      "text" : ""
+      "text" : "The pulp of a ripe fruit. The fruit is round to slightly flattened, 4–7 cm across, downy, and yellow when ripe; inside, the pulp is orange, sweet and edible, with dark brown to dark red seeds 5–6 mm long set through it. Nothing else on the vine is eaten."
     },
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "NZ Plant Conservation Network, 'Passiflora pinnatistipula' (facts restated)",
+        "Biota NZ, Manaaki Whenua – Landcare Research, 'Passiflora pinnatistipula' (facts restated)"
       ],
-      "text" : ""
+      "text" : "Native to the northern Andes and naturalised in New Zealand since 1982, it turns up as a cultivation escape in scrub and along forest margins. Unlike the other passionfruit here it is cold-hardy, which is why it persists further south — herbarium collections of wild plants come from the Canterbury and Otago land districts — and it wants high light and fertile soil. It sets seed, probably layers from stems as well, and birds eating the fruit carry the seed away from wherever it was planted. It flowers in every month of the year. Weedbusters carries control advice for it."
     },
     "habitats" : [
-
+      "forest",
+      "shrubland",
+      "urban",
+      "disturbed"
     ],
+    "harvestEthics" : {
+      "sources" : [
+        "NZ Plant Conservation Network, 'Passiflora pinnatistipula' (facts restated)"
+      ],
+      "text" : "Nothing here needs rationing — this is an escaped ornamental, not a native, and Weedbusters publishes control advice for it. Picking the fruit is the useful kind of foraging, because the fruit is how it moves: birds eat it and drop the seed into scrub and bush margins well away from the garden it started in. What matters is where the seed ends up afterwards. Carry whole fruit out rather than eating it where it hangs, and put skin and spent seed in the rubbish, not the compost and not the undergrowth."
+    },
     "id" : "pink-flowered-passionfruit",
     "identification" : {
       "sources" : [
@@ -14713,11 +15184,32 @@
       "text" : "Vigorous vine;  young shoots angular, downy.  Lvs 3-lobed;  petioles 1–3 cm long, white-lanate, with (2)–4–8 glands almost hidden in indumentum; stipules pinnate with dark filiform segments almost to the base of the very narrow-linear rachis;  lamina lobes 5–9 cm long, extending ?-3/4 distance in from margin;  middle lobe largest, 3–8 × 1.5–3 cm, lanceolate to elliptic-ovate, dentate, grey- or white-tomentose below, glabrate above except when young, dark shining green, ± rugose, acute or mucronate.  Fls ☿, solitary.  Pedicels much > petioles, hairy.  Bracts free, 1.5–2.3 cm long, ovate, hairy or glabrate outside, serrate with teeth setose.  Hypanthium (4)–4.5–5 cm long, tomentulose.  Sepals 3–4.8 cm long, elliptic, green outside, with tomentulose band, white or very pale pink inside, with short horn near apex;  petals similar to sepals but all pink;  corona threads violet-blue,  c. 1/2 perianth.  Filaments 1.3–1.7 cm long, much > anthers;  anthers 6–9 mm long.  Ovary white-villous.  Fr. 4–7 cm diam., globose or depressed globose, yellow, tomentulose;  pulp sweet and edible, orange.  Seeds 5–6 mm long, ellipsoid-ovoid, dark brown or dark red, alveolate.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "banana-passionfruit",
+        "howToTell" : "Both hang pink flowers off a three-lobed climbing vine, so go to the stipules where the leaf stalk meets the stem: pink-flowered passionfruit's are pinnate — a very narrow rachis fringed with dark thread-like segments — where banana passionfruit's are small, plain, and usually gone altogether from a mature stem. Its floral tube is the shorter of the two at 4.5–5 cm, and its corona threads are a conspicuous violet-blue skirt rather than pale. The fruit is unmistakable once ripe: round or slightly flattened, 4–7 cm across, downy and yellow, against banana passionfruit's long spindle tapering at both ends. Both are edible.",
+        "name" : "Banana passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tarminiana"
+      },
+      {
+        "entry" : "black-passionfruit",
+        "howToTell" : "Two three-lobed climbing vines, told apart by hair, flower colour and fruit colour. Black passionfruit is hairless all over bar the pistil and stamens; pink-flowered passionfruit is downy — grey- or white-felted under the leaf, with hairy shoots and flower stalks. The flowers are not close once you look: black passionfruit's are white with a white corona purple only at the base, sitting on the vine with no floral tube to speak of, where pink-flowered passionfruit's petals are pink above a conspicuous violet-blue corona, on a hairy tube 4.5–5 cm long. The stipules settle a vine with no flowers on it — black passionfruit's are plain, 10–15 mm and strap-like, pink-flowered passionfruit's are pinnate, a very narrow rachis fringed with dark thread-like segments. And the fruit is a different colour entirely: a smooth dull purple ball 5–6 cm across with black seeds, against a downy yellow one 4–7 cm across with dark red-brown seeds. Both are edible.",
+        "name" : "Black passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora edulis"
+      },
+      {
+        "entry" : "kohia",
+        "howToTell" : "Leaf shape ends it: kōhia's leaves are simple, a single undivided glossy dark-green blade 5–12 cm long, where pink-flowered passionfruit's are three-lobed and grey- or white-felted underneath. The flowers are not in the same class — kōhia's are 5–6 mm, greenish-yellow and carried in little cymes of one to four, against a solitary pink flower with a violet-blue corona on a tube nearly 5 cm long. The fruit confirms it: kōhia's is a 2–3 cm orange berry with sparse reddish pulp, pink-flowered passionfruit's a downy yellow globe 4–7 cm across full of sweet orange pulp. Both are edible, but kōhia is a native worth leaving alone.",
+        "name" : "Kōhia",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tetrandra"
+      }
     ],
     "months" : [
 
     ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/404668",
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
@@ -14725,27 +15217,34 @@
     ],
     "preparation" : {
       "sources" : [
-
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)",
+        "Otero, Charlie. Madrid Fusión 2017 (method restated)"
       ],
-      "text" : ""
+      "text" : "Halve a yellow, fully ripe fruit and spoon the pulp out, seeds and all. Scraped and strained, the same pulp becomes an extract or juice to cook with — it is used that way in South America, where the species goes by poro poro. Be careful with that name in New Zealand: poroporo here means Solanum aviculare and S. laciniatum, an unrelated plant whose unripe fruit is poisonous."
     },
     "recipes" : [
-
+      {
+        "method" : "A restaurant dish built on three passionfruit extracts, two of which you can pick here. For three parcels: 80 g smoked trout, 20 g maize dough, 20 g beaten egg, salt and pepper, maize leaves to wrap, and a tablespoon each of extract of pink-flowered passionfruit (Passiflora pinnatistipula, called poro poro), sweet granadilla (P. ligularis) and banana passionfruit. Blend the trout smooth with the maize dough and the egg. Press the extracts from the fruit. Wash the maize leaves. Split the fish paste into three, work one extract into each, and season. Wrap each into a parcel in a leaf, tie the ends, and steam 20 minutes. Serve still in the leaf.\nThe pickled figs served alongside: wash 100 g breba figs and cut a shallow cross in the base of each, then drain them on paper. Bring 150 ml vinegar, 75 g panela, 5 allspice berries, 5 black peppercorns, 2 sweet peppers, hot pepper and salt to the boil, add the figs, and cook an hour.\nSweet granadilla does not grow wild in New Zealand, so either leave that third out or use more of the other two.",
+        "title" : "Trout and corn wraps with passionfruit"
+      }
     ],
     "scientificName" : "Passiflora pinnatistipula",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Pink-flowered passionfruit' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora pinnatistipula' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-pinnatistipula.html",
-      "Summary text: Wikipedia contributors. 'Passiflora pinnatistipula', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Passiflora_pinnatistipula"
+      "Habitat, naturalisation, dispersal and weed status: New Zealand Plant Conservation Network, 'Passiflora pinnatistipula' factsheet. © NZPCN, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.nzpcn.org.nz/flora/species/passiflora-pinnatistipula/",
+      "Wild distribution and taxonomy: Biota of New Zealand, Manaaki Whenua – Landcare Research, 'Passiflora pinnatistipula Cav.' Retrieved 03/10/2026. https://biotanz.landcareresearch.co.nz/scientific-names/76b81da1-aed4-4401-aab3-fc36b9bf907a",
+      "Recipe: Otero, Charlie. 'Trout and corn wrap, with passionfruits (gulupa, granadilla, curuba) and pickled fig with peppers', Madrid Fusión 2017. © Madrid Fusión, all rights reserved — method restated, no text reproduced. Retrieved 03/10/2026. https://edicionesanteriores.madridfusion.net/en/recipe/trout-and-corn-wrap-with-passionfruits-gulupa-granadilla-curuba-and-pickled-fig-with-peppers/"
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Passiflora pinnatistipula' (CC BY-SA 4.0)"
+        "NZ Plant Conservation Network, 'Passiflora pinnatistipula' (facts restated)",
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
       ],
-      "text" : "Passiflora pinnatistipula, commonly known as poro poro or gulupa (Colombia), is a climbing perennial that grows in the Cajamarca region of Peru."
+      "text" : "An Andean vine escaped from gardens into scrub and bush margins, carrying pink flowers over a violet-blue skirt and round yellow fruit with sweet orange pulp."
     },
     "warnings" : [
-
+      "A garden escape that birds are spreading into scrub and bush margins, and Weedbusters publishes control advice for it. Pick and eat it freely; bin the skin and seed rather than composting them or dropping them in the bush."
     ]
   },
   {
@@ -19246,7 +19745,7 @@
   },
   {
     "caution" : "careRequired",
-    "commonName" : "Slender wild oat",
+    "commonName" : "Slender oat",
     "draft" : true,
     "edibleParts" : {
       "sources" : [
@@ -19257,12 +19756,13 @@
     "group" : "greens",
     "habitat" : {
       "sources" : [
-
+        "Wikipedia, 'Avena barbata' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "A. barbata is native to central Asia (as far east as Pakistan) and the Mediterranean Basin. As an introduced species it also occurs in other Mediterranean-like habitats of New Zealand, Australia, South Africa, Argentina, Chile, Brazil, and Uruguay. In Europe it has been reported in Finland, France, Germany, Norway, Bulgaria, and Austria. In North America it is an introduced species and noxious weed, where it is especially widespread in California. In California it has displaced native species of grass."
     },
     "habitats" : [
-
+      "disturbed",
+      "grassland"
     ],
     "id" : "slender-wild-oat",
     "identification" : {
@@ -19272,7 +19772,27 @@
       "text" : "Tufts green to dark green, often very slender, 65–100–(170) cm, erect or drooping above in taller plants. Leaf-sheath smooth, or slightly scabrid above, occasionally red-tinged. Ligule 2.7–5–(9) mm, obtuse, denticulate, abaxially finely scabrid. Leaf-blade 12.5–30 cm × 2–8 mm, finely scabrid on ribs and margins. Culm internodes glabrous. Panicle (12)–18–40 cm, very lax, equilateral; rachis smooth, branches and pedicels very filiform, finely scabrid. Spikelets 40–50 mm, 2–(3)-flowered; disarticulation below each floret at maturity. Glumes 7–9-nerved. Lemma 12–18 mm, narrow-lanceolate, light brown, with long stiff reddish hairs below level of awn insertion, green and scabrid above, each lobe-tip produced to a fine bristle (2–3 mm); lemmas awned, awns 30–36 mm, geniculate, column very dark brown, twisted. Palea keels with 1–2 rows of cilia, interkeel glabrous, flanks sometimes sparsely scabrid. Callus long hairy, with horse-shoe shaped scar. Rachilla long hairy. Anthers 2–3 mm. Caryopsis 5–7 × 0.8–1.3 mm, light brown, silky hairy.\n[From:  Edgar and Connor (2000) Flora of New Zealand. Volume 5 (second printing).]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "oat",
+        "howToTell" : "Both edible; this is about which you have. The cultivated oat's spikelets fall intact and hold on the panicle; slender oat sheds below each floret. Slender oat is much the finer plant, its panicle branches and pedicels very fine, and its lemma carries long stiff reddish hairs with each lobe-tip drawn out into a fine bristle 2–3 mm long. The cultivated oat's lemma is smooth, with no such bristles, and usually awnless or weakly and straightly awned.",
+        "name" : "Oat",
+        "risk" : "edible",
+        "scientificName" : "Avena sativa"
+      },
+      {
+        "entry" : "sterilised-oat",
+        "howToTell" : "Scale. Slender oat is the finest of the group, spikelets 40–50 mm on filiform branches with an awn of 30–36 mm. Winter wild oat is stout and broad-leaved, spikelets 1.7–4.5 cm without awns, glumes 2.4–5 cm, usually three florets, and an awn of 3–9 cm. Slender oat's fine 2–3 mm bristles at each lemma lobe-tip are not part of winter wild oat's description.",
+        "name" : "Winter wild oat",
+        "risk" : "edible",
+        "scientificName" : "Avena sterilis"
+      },
+      {
+        "entry" : "wild-oat",
+        "howToTell" : "The hardest pair here: both shed below each floret and both have a bent, twisted awn of about 30–40 mm. The lemma tip decides it — slender oat produces each lobe into a fine bristle 2–3 mm long, wild oat does not. Slender oat's lemma hairs are reddish where wild oat's are pale to brown, and slender oat's grain is narrower, 0.8–1.3 mm against 1.8–2.2 mm.",
+        "name" : "Wild oat",
+        "risk" : "edible",
+        "scientificName" : "Avena fatua"
+      }
     ],
     "months" : [
 
@@ -19281,7 +19801,30 @@
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Close-up of a spikelet, showing the long bent awn and the stiff hairs on the lemma",
+        "credit" : "(c) Angus Campbell, some rights reserved (CC BY)",
+        "fileName" : "slender-wild-oat-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/395126652"
+      },
+      {
+        "caption" : "Flowering stems held against the sward, showing the slender habit and widely spreading panicle",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "slender-wild-oat-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/36342787"
+      },
+      {
+        "caption" : "A dense ripe stand on open ground",
+        "credit" : "(c) Jeremy Rolfe, some rights reserved (CC BY)",
+        "fileName" : "slender-wild-oat-3.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/2488642"
+      },
+      {
+        "caption" : "Green plants scattered through rough vegetation on a bank",
+        "credit" : "(c) Chris Ecroyd, some rights reserved (CC BY-NC)",
+        "fileName" : "slender-wild-oat-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/36136628"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -19294,10 +19837,13 @@
     ],
     "scientificName" : "Avena barbata",
     "sources" : [
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
+      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Oats' entry (pp. 130–131).",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Avena barbata' factsheet. CC BY 3.0 NZ. Retrieved 15/09/2026. https://www.nzflora.info/factsheet/Taxon/Avena-barbata.html",
-      "Summary text: Wikipedia contributors. 'Avena barbata', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Avena_barbata"
+      "Summary text: Wikipedia contributors. 'Avena barbata', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Avena_barbata",
+      "Common name: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Avena barbata' factsheet. CC BY 3.0 NZ. Retrieved 05/10/2026. https://www.nzflora.info/factsheet/taxon/Avena-barbata.html",
+      "Habitat text: Wikipedia contributors. 'Avena barbata', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Avena_barbata"
     ],
+    "sourcingNote" : "",
     "summary" : {
       "sources" : [
         "Wikipedia, 'Avena barbata' (CC BY-SA 4.0)"
@@ -20205,16 +20751,16 @@
     "draft" : true,
     "edibleParts" : {
       "sources" : [
-
+        "Wikipedia, 'Bamboo shoot' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Bamboo shoots or bamboo sprouts are the edible shoots (new bamboo culms that come out of the ground) of many bamboo species including Bambusa vulgaris and Phyllostachys edulis. Most young bamboo shoots are edible after being boiled to remove toxins, but only around a hundred or so species are harvested regularly for edible shoots."
     },
     "group" : "greens",
     "habitat" : {
       "sources" : [
-
+        "NZPCN and Plants For A Future (paraphrased)"
       ],
-      "text" : ""
+      "text" : "No New Zealand habitat note has been published. In its native range it is a plant of forests, and here, like the rest of these bamboos, it travels on extensively running rhizomes."
     },
     "habitats" : [
 
@@ -20227,7 +20773,20 @@
       "text" : "Diffuse bamboo with extensively running rhizomes. Culm 3–6 m, dark green; nodes swollen and prominent; internodes obtusely quadrangular in cross section; lower internodes less obviously so; lowest nodes with short indurated adventitious rootlets which become spiny. Culm-sheath to 12 × 8 cm, triangular, tardily deciduous, purple with dark purplish tessellations; auricles and oral bristles 0; sheath-blades very small. Branches spreading widely and ± drooping above, sometimes purplish. Leaf-sheath with long bristles at apex. Leaf-blade 9–24 × 0.7–2 cm, narrow lanceolate or linear-lanceolate, deep green on both surfaces, tessellate, ± drooping.\n[From:  Edgar and Connor (2000) Flora of New Zealand. Volume 5 (second printing).]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "arrow-bamboo",
+        "howToTell" : "By far the commonest wild bamboo in the country, so it is the one you are most likely to have actually found. Its leaves settle it: up to 25 cm long and glossy, far bigger than any of the others', carried on a dense leafy thicket rather than an open stand of bare canes, and mostly one branch to a node rather than two. Canes yellow-brown, to 6 m. Edible after the same boiling, but its shoots are the bitterest of the five and the poorest eating.",
+        "name" : "Arrow bamboo",
+        "risk" : "unpalatable",
+        "scientificName" : "Pseudosasa japonica"
+      },
+      {
+        "entry" : "black-bamboo",
+        "howToTell" : "Canes 4–7 m, green in their first year and turning black or heavily black-blotched in their second — but the green-caned var. henonis is naturalised here too, so a green stand does not rule it out. Look instead for the white waxy ring under each node on young canes, nodes evenly spaced along the cane, and cane sheaths uniformly purple or purple-flushed. Both are edible.",
+        "name" : "Black bamboo",
+        "risk" : "edible",
+        "scientificName" : "Phyllostachys nigra"
+      }
     ],
     "months" : [
 
@@ -20240,27 +20799,36 @@
     ],
     "preparation" : {
       "sources" : [
-
+        "Wikipedia, 'Bamboo shoot' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "The toxins must be destroyed by thorough cooking, and for this reason, fresh bamboo shoots are boiled before being used in other ways. The shoots of some species contain cyanide that must be leached or boiled out before they can be eaten safely. Slicing the bamboo shoots thinly assists in this leaching."
     },
     "recipes" : [
-
+      {
+        "method" : "The husk is many overlapping brown layers covered in fine, sharp hairs, so handle it with that in mind. Run a knife up the side of the shoot to slit it, then unwrap and throw away the layers until you reach the pale core; cut off the pointed tip and the fibrous base. No species-specific boiling time has been found for these, so treat them as the general rule does: cover with water, boil 20 minutes, change the water and simmer until tender, then boil again in fresh water in five-minute rounds while they still taste bitter. The canes are slim, up to about 20 mm, so slice them and the leaching has little distance to travel.",
+        "title" : "Preparing fresh shoots"
+      }
     ],
     "scientificName" : "Chimonobambusa quadrangularis",
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Chimonobambusa quadrangularis' factsheet. CC BY 3.0 NZ. Retrieved 15/09/2026. https://www.nzflora.info/factsheet/Taxon/Chimonobambusa-quadrangularis.html",
-      "Summary text: Wikipedia contributors. 'Chimonobambusa quadrangularis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Chimonobambusa_quadrangularis"
+      "Summary text: Wikipedia contributors. 'Chimonobambusa quadrangularis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Chimonobambusa_quadrangularis",
+      "Edible parts, preparation and warning text: Wikipedia contributors. 'Bamboo shoot', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 02/10/2026. https://en.wikipedia.org/wiki/Bamboo_shoot — the passages are about bamboo shoots in general, not about this species in particular.",
+      "Preparation method: Staffenhagen, Leigha. 'Bamboo Shoots', Skagit Valley Food Co-op, 03/06/2020. © Skagit Valley Food Co-op, all rights reserved. Retrieved 02/10/2026. https://www.skagitfoodcoop.com/blog/bamboo-shoots — paraphrased, not quoted. Names no species; the shoots it describes are a named grower's, not a wild stand.",
+      "Preparation method: BBC Food. 'Bamboo shoots' ingredient page. Copyright © 2026 BBC, all rights reserved. Retrieved 02/10/2026. https://www.bbc.co.uk/food/bamboo_shoots — paraphrased, not quoted. Names no species. Its buying guidance (canned, dried, vacuum-packed) was not used: this catalogue is about shoots cut from the ground.",
+      "Edible parts and preparation: Plants For A Future. 'Chimonobambusa quadrangularis' database entry. © 2010 Plants For A Future, no licence stated, so all rights reserved. Retrieved 02/10/2026. https://pfaf.org/user/Plant.aspx?LatinName=Chimonobambusa+quadrangularis — paraphrased, not quoted. PFAF rates this species 2 of 5 for edibility, Known Hazards 'None known'. It gives no boiling instruction for this species. Its harvest timing is northern-hemisphere spring and was not used.",
+      "Habitat: New Zealand Plant Conservation Network. 'Chimonobambusa quadrangularis' factsheet. © 2026 NZPCN, all rights reserved. Retrieved 02/10/2026. https://www.nzpcn.org.nz/flora/species/chimonobambusa-quadrangularis/ — paraphrased, not quoted. The page carries no habitat field at all; naturalised 1993. Native-range habitat and the south-western England naturalisation from the PFAF entry already cited on this page."
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Chimonobambusa quadrangularis' (CC BY-SA 4.0)"
+        "Wikipedia, 'Chimonobambusa quadrangularis' (CC BY-SA 4.0)",
+        "NZPCN and Plants For A Future (paraphrased)"
       ],
-      "text" : "Chimonobambusa quadrangularis, commonly called square bamboo or shidakudake, is a bamboo in the family Poaceae, native to mainland China and Taiwan, and naturalized to Japan."
+      "text" : "Chimonobambusa quadrangularis, commonly called square bamboo or shidakudake, is a bamboo in the family Poaceae, native to mainland China and Taiwan, and naturalized to Japan. Naturalised in New Zealand since 1993, and also naturalised in south-western England."
     },
     "warnings" : [
-
+      "Raw bamboo shoots contain cyanogenic glycosides, natural toxins also contained in cassava. The toxins must be destroyed by thorough cooking, and for this reason, fresh bamboo shoots are boiled before being used in other ways."
     ]
   },
   {
@@ -20333,7 +20901,7 @@
   },
   {
     "caution" : "careRequired",
-    "commonName" : "Sterilised oat",
+    "commonName" : "Winter wild oat",
     "draft" : true,
     "edibleParts" : {
       "sources" : [
@@ -20344,12 +20912,13 @@
     "group" : "greens",
     "habitat" : {
       "sources" : [
-
+        "Wikipedia, 'Avena sterilis' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "A. sterilis is native to the Mediterranean Basin and West, Central and South Asia, but is widely naturalized elsewhere. The species grows on all continents except Antarctica.\n\nIn North America, it grows as an introduced species in the U.S. states of California, Oregon, New Jersey, Ohio, Pennsylvania, and the Canadian provinces of Ontario and Quebec.\n\nBecause it thrives in the same conditions as many agricultural crops and has similar lifecycles, the grass directly competes with and reduces yield in arable crops."
     },
     "habitats" : [
-
+      "disturbed",
+      "grassland"
     ],
     "id" : "sterilised-oat",
     "identification" : {
@@ -20359,7 +20928,27 @@
       "text" : "Appearance\nAvena sterilis is a stout, broad-leaved grass that grows up to 1.5 m tall. At maturity, it has leaf blades that are up to 60 cm long, and 6–14 mm wide.\n\nIt has an inflorescence that is either an equilateral or a slightly one-sided panicle. The spikelets usually have 3 florets, but can have anywhere from 2 to 5. The spikelets (without awns) are 1.7–4.5 cm long; the glumes are 2.4–5 cm long. \nThe florets can either be a straw yellow or slightly reddish in colour. Occasionally, there can be reddish hairs at the base of the floret.\nThe lemma is usually 1.5–4 cm long.  The florets are elongate and taper at the top. The two florets closest to the glumes have a twisted dorsal awn that is 3–9 cm long.\n\n\nVarieties and subspecies\nOne can distinguish between the two subspecies, A. sterilis sterilis and A. sterilis ludoviciana, using the size of the reproductive parts of the flower.\nA study of 139 populations of A. sterilis L. in Spain revealed 6 varieties based on morphological classifications, though no new subspecies were formally described.\n\n\nReproduction\nA. sterilis is hexaploid. It is an annual plant, with a life cycle that mirrors many cereal crops. While an individual plant is capable of producing as many as 200 seeds, the average seed production of a single plant is 13-21 seeds. Seeds regularly live in the soil for upwards of two years, and can survive for as many as 5 years prior to germination.\n\n\nDistribution\nA. sterilis is native to the Mediterranean Basin and West, Central and South Asia, but is widely naturalized elsewhere. The species grows on all continents except Antarctica.\nIn North America, it grows as an introduced species in the U.S. states of California, Oregon, New Jersey, Ohio, Pennsylvania, and the Canadian provinces of Ontario and Quebec.\n\n\nPests and pathogens\nA. sterilis is a host to the pathogenic nematode Ditylenchus dipsaci. It is a host to the protist plant pathogen Sclerophthora macrospora. It is also a wild host to  Petrobia latens, commonly known as the brown wheat mite. It is susceptible to two widespread diseases that infect Avena species, oat crown rust and stem rust. It is also susceptible to the wheat dwarf virus."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "oat",
+        "howToTell" : "Both edible; this is about which you have. The cultivated oat's spikelets fall intact and hold on the panicle. Winter wild oat is far larger in every reproductive part — spikelets 1.7–4.5 cm without the awns, glumes 2.4–5 cm, usually three florets to a spikelet — and the two lowest florets carry a twisted awn 3–9 cm long, where the cultivated oat is usually awnless or weakly and straightly awned.",
+        "name" : "Oat",
+        "risk" : "edible",
+        "scientificName" : "Avena sativa"
+      },
+      {
+        "entry" : "slender-wild-oat",
+        "howToTell" : "Scale and build. Winter wild oat is stout and broad-leaved, blades up to 60 cm × 6–14 mm, with spikelets 1.7–4.5 cm and an awn of 3–9 cm. Slender oat is the wispiest oat here — fine filiform panicle branches, spikelets 40–50 mm, awn 30–36 mm — and carries a fine bristle 2–3 mm long at each lemma lobe-tip, which winter wild oat's description does not include.",
+        "name" : "Slender oat",
+        "risk" : "edible",
+        "scientificName" : "Avena barbata"
+      },
+      {
+        "entry" : "wild-oat",
+        "howToTell" : "Both shed and both are awned, so go on size. Winter wild oat's spikelets are 1.7–4.5 cm without the awns with glumes 2.4–5 cm and usually three florets; wild oat's are 35–50 mm with two or three. The awn is the quickest check: 3–9 cm on winter wild oat against 30–40 mm on wild oat.",
+        "name" : "Wild oat",
+        "risk" : "edible",
+        "scientificName" : "Avena fatua"
+      }
     ],
     "months" : [
 
@@ -20367,7 +20956,18 @@
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Large ripe spikelets hanging from one side of the panicle, each with a long bent awn",
+        "credit" : "(c) Lloyd Esler, some rights reserved (CC BY-NC)",
+        "fileName" : "sterilised-oat-6.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/10821973"
+      },
+      {
+        "caption" : "Green spikelets, markedly larger than the other wild oats, with stout dark geniculate awns",
+        "credit" : "(c) Colin Ogle, some rights reserved (CC BY-NC)",
+        "fileName" : "sterilised-oat-8.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/36109382"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -20380,9 +20980,12 @@
     ],
     "scientificName" : "Avena sterilis",
     "sources" : [
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Sterilised oat' entry.",
-      "Identification and summary text: Wikipedia contributors. 'Avena sterilis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Avena_sterilis"
+      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Oats' entry (pp. 130–131).",
+      "Identification and summary text: Wikipedia contributors. 'Avena sterilis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Avena_sterilis",
+      "Common name: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Avena sterilis' factsheet. CC BY 3.0 NZ. Retrieved 05/10/2026. https://www.nzflora.info/factsheet/taxon/Avena-sterilis.html",
+      "Habitat text: Wikipedia contributors. 'Avena sterilis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Avena_sterilis"
     ],
+    "sourcingNote" : "",
     "summary" : {
       "sources" : [
         "Wikipedia, 'Avena sterilis' (CC BY-SA 4.0)"
@@ -23769,12 +24372,13 @@
     "group" : "greens",
     "habitat" : {
       "sources" : [
-
+        "Wikipedia, 'Avena fatua' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "This oat is native to Eurasia (particularly the eastern Mediterranean) but it has been introduced to most of the other temperate regions of the world. It is naturalized in some areas and considered a noxious weed in others.\n\nThis species and other wild oats can become troublesome in prairie agriculture when it invades and lowers the quality of a field crop, or competes for resources with the crop plants. It takes very few wild oat plants to cause a significant reduction in the yield of a wheat or cultivated oat field."
     },
     "habitats" : [
-
+      "disturbed",
+      "grassland"
     ],
     "id" : "wild-oat",
     "identification" : {
@@ -23784,16 +24388,60 @@
       "text" : "Tall, green or light green tufts to 1.5 m, robust, or sometimes with rather slender culms. Leaf-sheath slightly hairy, upper sheaths glabrous. Ligule 2–7 mm, truncate to oblong and obtuse, denticulate, abaxially scabrid. Leaf-blade 15–50 cm × 4–15 mm, scabrid on ribs and margins, often with scattered hairs, especially on margins. Culm erect or occasionally geniculate at base, internodes glabrous. Panicle (15)–20–38 cm, lax, equilateral, ± nodding; branches widely spreading, slender, drooping, scabrid. Spikelets 35–50 mm, 2–3-flowered, pendulous on fine unequal pedicels; disarticulation below each floret at maturity. Glumes 9–11-nerved. Lemma 15–17.5 mm, narrow-lanceolate, light brown at first becoming tough and darker brown at maturity, stiffly hairy below level of awn insertion, or sometimes glabrous, scabrid on nerves above, narrowed to bidentate scarious apex; awn 30–40 mm, geniculate, stout, column dark brown, twisted. Palea keels with one row of cilia, interkeel scabrid. Callus with horse-shoe shaped scar densely bordered by long hairs. Anthers 2.5–3.5–(4) mm. Caryopsis 6–8 × 1.8–2.2 mm, light grey, densely hairy.\n[From:  Edgar and Connor (2000) Flora of New Zealand. Volume 5 (second printing).]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "oat",
+        "howToTell" : "Both are oats and both are worth picking. The cultivated oat holds its grain — spikelets fall intact and stay on the panicle — where wild oat disarticulates below each floret and sheds ripe grain at a touch. Wild oat's lemma is stiffly hairy below the awn and the awn is stout, 30–40 mm, sharply bent and twisted; the cultivated oat's lemma is smooth and usually awnless or weakly awned. Wild oat's spikelets run 35–50 mm against 20–30 mm.",
+        "name" : "Oat",
+        "risk" : "edible",
+        "scientificName" : "Avena sativa"
+      },
+      {
+        "entry" : "slender-wild-oat",
+        "howToTell" : "Both shed below each floret and both carry a bent, twisted awn around 30–40 mm, so the awn will not separate them. Use the lemma tip: slender oat draws each lobe out into a fine bristle 2–3 mm long, and wild oat does not. Slender oat's lemma hairs are long, stiff and distinctly reddish where wild oat's are stiff but pale to brown. Slender oat is the finer plant overall — filiform panicle branches, and a narrow grain 0.8–1.3 mm wide against wild oat's 1.8–2.2 mm.",
+        "name" : "Slender oat",
+        "risk" : "edible",
+        "scientificName" : "Avena barbata"
+      },
+      {
+        "entry" : "sterilised-oat",
+        "howToTell" : "Size and awn. Wild oat's spikelets are 35–50 mm with two or three florets and an awn of 30–40 mm. Winter wild oat is altogether bigger: spikelets 1.7–4.5 cm without the awns, glumes 2.4–5 cm, usually three florets, and a twisted awn 3–9 cm long on the two lowest florets — roughly double wild oat's and hard to mistake once you have both in hand.",
+        "name" : "Winter wild oat",
+        "risk" : "edible",
+        "scientificName" : "Avena sterilis"
+      }
     ],
     "months" : [
-
+      1,
+      2,
+      3,
+      4,
+      5,
+      10,
+      11,
+      12
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/52698",
-    "needsBookSource" : true,
-    "origin" : "introduced",
+    "needsBookSource" : false,
+    "origin" : "pest",
     "photos" : [
-
+      {
+        "caption" : "Flowering panicle held in the hand, the spikelets drooping on fine branches below a broad leaf blade",
+        "credit" : "(c) Joe Potter Butler, some rights reserved (CC BY)",
+        "fileName" : "wild-oat-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/64811987"
+      },
+      {
+        "caption" : "Ripening plants on waste ground, showing the open panicle with branches spreading all round the stem",
+        "credit" : "(c) Joe Potter Butler, some rights reserved (CC BY)",
+        "fileName" : "wild-oat-6.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/20239332"
+      },
+      {
+        "caption" : "Green spikelets with long dark awns bent and twisted at the base",
+        "credit" : "(c) Joe Dillon, some rights reserved (CC BY)",
+        "fileName" : "wild-oat-7.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/194489483"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -23806,11 +24454,15 @@
     ],
     "scientificName" : "Avena fatua",
     "sources" : [
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
+      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Oats' entry (pp. 130–131).",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Avena fatua' factsheet. CC BY 3.0 NZ. Retrieved 15/09/2026. https://www.nzflora.info/factsheet/Taxon/Avena-fatua.html",
-      "Summary text: Wikipedia contributors. 'Avena fatua', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Avena_fatua"
+      "Summary text: Wikipedia contributors. 'Avena fatua', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Avena_fatua",
+      "New Zealand Plant Conservation Network. 'Avena fatua' fact sheet. Retrieved 05/10/2026. https://www.nzpcn.org.nz/flora/species/avena-fatua/",
+      "Bayer Crop Science New Zealand. 'Wild oats' (Avena fatua) weed profile. Retrieved 05/10/2026. https://www.cropscience.bayer.co.nz/crop-management/weeds/wild-oats",
+      "Rolston, M. P. 1981. 'Wild oats in New Zealand: a review'. New Zealand Journal of Experimental Agriculture 9(1): 115–121. https://doi.org/10.1080/03015521.1981.10427814",
+      "Habitat text: Wikipedia contributors. 'Avena fatua', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Avena_fatua"
     ],
-    "sourcingNote" : "Knox, A Forager's Treasury. Online sourcing exhausted 01/10/2026: NZPCN and PFAF are all rights reserved, Flora of NZ Online has no habitat or flowering fields for the species, Wikipedia has no uses section, and the only licensed edibility text (Practical Plants, CC BY-NC-SA) is a PFAF fork of 1972/1974 compilations, northern-hemisphere, silent on dehulling and the shatter window.",
+    "sourcingNote" : "",
     "summary" : {
       "sources" : [
         "Wikipedia, 'Avena fatua' (CC BY-SA 4.0)"
@@ -24023,7 +24675,7 @@
     "recipes" : [
 
     ],
-    "scientificName" : "Prunus domestica / Prunus cerasifera",
+    "scientificName" : "Prunus ×domestica",
     "sources" : [
       "New Zealand Plant Conservation Network. 'Prunus domestica' fact sheet. Retrieved 15/09/2026. https://www.nzpcn.org.nz/flora/species/prunus-domestica/"
     ],
