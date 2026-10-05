@@ -37,7 +37,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from sources import CATALOGUE
+from sources import CATALOGUE, write_catalogue
 
 #: Mirrors `Habitat.allCases` in Swift, so the written arrays read in a stable order.
 HABITATS = (
@@ -372,7 +372,7 @@ def main(argv: list[str] | None = None) -> int:
     for name in unclassified:
         print(f"    {name}")
     if args.write:
-        args.catalogue.write_text(json.dumps(catalogue, ensure_ascii=False, indent=2) + "\n")
+        write_catalogue(catalogue, args.catalogue)
     if args.review:
         write_review(catalogue, args.review)
         print(f"Review sheet written to {args.review}")

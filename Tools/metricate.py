@@ -25,7 +25,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from sources import CATALOGUE
+from sources import CATALOGUE, write_catalogue
 
 PROSE = ("summary", "habitat", "identification", "edibleParts", "preparation")
 NOTE = "units converted to metric"
@@ -185,7 +185,7 @@ def main(argv: list[str] | None = None) -> int:
     for name in left:
         print(f"    {name}")
     if args.write:
-        args.catalogue.write_text(json.dumps(catalogue, ensure_ascii=False, indent=2) + "\n")
+        write_catalogue(catalogue, args.catalogue)
     return 0
 
 

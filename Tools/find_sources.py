@@ -49,6 +49,7 @@ from sources import (
     Source,
     SourceError,
     get_json,
+    write_catalogue,
 )
 
 NZPCN_FACTSHEET = "https://www.nzpcn.org.nz/flora/species/{slug}/"
@@ -204,7 +205,7 @@ def main(argv: list[str] | None = None) -> int:
             print(f"    {reference.url}")
 
     if args.write:
-        args.catalogue.write_text(json.dumps(catalogue, ensure_ascii=False, indent=2) + "\n")
+        write_catalogue(catalogue, args.catalogue)
     print(f"\n{len(found_for)} entries can be cited")
     return 0
 

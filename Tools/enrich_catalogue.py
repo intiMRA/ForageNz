@@ -48,6 +48,7 @@ from sources import (
     get_json,
     licensed_photos,
     results_of,
+    write_catalogue,
 )
 
 #: The manifest is at the repo root now, so this runs from the repo root with no --package-path.
@@ -660,7 +661,7 @@ def main() -> int:
         print("\nDry run. Re-run with --write to apply the fills above.")
         return 0
 
-    CATALOGUE.write_text(json.dumps(entries, indent=2, sort_keys=True, ensure_ascii=False) + "\n")
+    write_catalogue(entries)
     print(f"\nWrote {CATALOGUE}.")
 
     # Foundation's prettyPrinted differs from Python's (empty arrays, spacing around

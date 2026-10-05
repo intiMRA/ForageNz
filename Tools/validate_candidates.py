@@ -7,9 +7,13 @@ so every candidate is confirmed against two independent registers before it can 
 entry:
 
   - **NZOR** must know the name and give it a New Zealand biostatus. That is what says the
-    species is real *and* recorded here; the biostatus also supplies the origin.
+    name is real and on a New Zealand list; the biostatus also supplies the origin.
   - **iNaturalist** supplies the common name and taxon page, so the entry's common name
-    comes from a register rather than from OCR.
+    comes from a register rather than from OCR — and the count of wild New Zealand
+    observations, which is the only one of the three checks that says the organism actually
+    grows here. NZOR's biostatus does not: *Prunus nigra*, never once recorded in New
+    Zealand, is indistinguishable from *Prunus cerasifera* and its 457 wild records. See
+    `nz_observations`, and `--min-observations` to adjust or disable the floor.
 
 The output is an index in the shape `import_book_stubs.py` reads, so the two compose:
 
@@ -31,7 +35,7 @@ from pathlib import Path
 from typing import Any
 
 from enrich_catalogue import fetch_inat_taxon, fetch_nzor
-from sources import COURTESY_DELAY
+from sources import COURTESY_DELAY, NEW_ZEALAND_PLACE_ID, Source, SourceError, get_json
 
 #: iNaturalist's placeholders for "this taxon has no vernacular name".
 NO_COMMON_NAME = {"no common name", "none", "-"}
@@ -127,13 +131,55 @@ class Rejected:
     reason: str
 
 
+#: Default floor for `--min-observations`: a taxon nobody has ever recorded in New Zealand is
+#: not forageable here, whatever the registers say about the name. Deliberately 1 and not a
+#: comfortable-looking number — see `nz_observations` for why a higher default would be wrong.
+MIN_NZ_OBSERVATIONS = 1
+
+
+def nz_observations(taxon_id: int) -> int | None:
+    """How many wild New Zealand observations iNaturalist holds, or `None` if the call failed.
+
+    This is the check NZOR cannot make. **NZOR's biostatus says a name is on a New Zealand
+    list, not that the organism grows here**: `Prunus nigra` and `Prunus cerasifera` both come
+    back `status: Current, origins: (Exotic,)`, while iNaturalist has 457 wild records of the
+    second and *zero* of the first. A nursery or herbarium record is enough to earn "Exotic",
+    so without this a catalogue entry can be created for a tree that has never been seen here.
+
+    `captive=false` is what makes it evidence of a wild population rather than of gardening —
+    for `Prunus mume` it is the difference between 4 records and 1.
+
+    Counts are evidence, not a verdict, and the bias runs one way: iNaturalist is a record of
+    where people walk with phones, so cryptic fungi, seaweeds and alpine species are
+    under-recorded while urban weeds are over-recorded. That is why the default threshold is
+    *one* — distinguishing "never recorded here" from "rarely recorded here" is all a raw
+    count can honestly support. A run over cryptic taxa should pass `--min-observations 0` and
+    read the reported counts instead.
+    """
+    try:
+        payload = get_json(
+            Source.INAT_OBSERVATIONS,
+            {
+                "taxon_id": taxon_id,
+                "place_id": NEW_ZEALAND_PLACE_ID,
+                "captive": "false",
+                "per_page": 0,
+            },
+        )
+    except SourceError as error:
+        print(f"    iNaturalist observation count failed: {error}", file=sys.stderr)
+        return None
+    total = payload.get("total_results")
+    return total if isinstance(total, int) else None
+
+
 def accepted_name(scientific: str, record_accepted: str | None) -> str:
     """NZOR's accepted name when the queried one is a synonym, else the queried one."""
     return record_accepted.strip() if record_accepted and record_accepted.strip() else scientific
 
 
 def validate(
-    candidate: dict[str, Any], seen: set[str]
+    candidate: dict[str, Any], seen: set[str], min_observations: int = MIN_NZ_OBSERVATIONS
 ) -> tuple[dict[str, Any] | None, Rejected | None]:
     scientific = str(candidate["scientific"]).strip()
     nzor = fetch_nzor(scientific)
@@ -160,6 +206,17 @@ def validate(
     if not common:
         return None, Rejected(scientific, "no common name from iNaturalist or the book")
 
+    # Only askable when iNaturalist matched a taxon; a book-supplied common name gets us this
+    # far without one. A failed count is reported as unknown rather than treated as zero —
+    # rejecting a species because an API call timed out would be the wrong kind of strict.
+    observations = nz_observations(taxon.taxon_id) if taxon else None
+    if taxon:
+        time.sleep(COURTESY_DELAY)
+    if observations is not None and observations < min_observations:
+        return None, Rejected(
+            scientific, f"no wild New Zealand observations on iNaturalist ({observations})"
+        )
+
     return {
         "title": common,
         "bookTitle": book_heading(str(candidate.get("title") or ""), common, name),
@@ -171,6 +228,9 @@ def validate(
         "page": int(candidate.get("page") or 0),
         "origin": nzor.catalogue_origin,
         "moreImagesURL": taxon.taxon_page if taxon else None,
+        # Carried through so the count that admitted a candidate stays readable in the index:
+        # 5 and 457 both pass, and they are not the same claim about a species being findable.
+        "nzObservations": observations,
     }, None
 
 
@@ -181,6 +241,13 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--candidates", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--limit", type=int, default=0, help="stop after this many candidates")
+    parser.add_argument(
+        "--min-observations",
+        type=int,
+        default=MIN_NZ_OBSERVATIONS,
+        help="reject a taxon with fewer wild NZ iNaturalist observations than this; "
+        "0 disables the check, for cryptic taxa the platform under-records",
+    )
     args = parser.parse_args(argv)
 
     candidates: list[dict[str, Any]] = json.loads(args.candidates.read_text())
@@ -191,7 +258,7 @@ def main(argv: list[str] | None = None) -> int:
     kept: list[dict[str, Any]] = []
     rejected: list[Rejected] = []
     for index, candidate in enumerate(candidates, start=1):
-        entry, reject = validate(candidate, seen)
+        entry, reject = validate(candidate, seen, args.min_observations)
         if entry:
             kept.append(entry)
         elif reject:

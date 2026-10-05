@@ -90,6 +90,51 @@ NEW_ZEALAND_PLACE_ID = 6803
 CATALOGUE = Path(__file__).resolve().parent.parent / "ForageNZ" / "Catalogue" / "species.json"
 
 
+def dump_catalogue(entries: list[dict[str, Any]]) -> str:
+    """`species.json` exactly as Swift's `JSONEncoder` writes it, trailing newline included.
+
+    The catalogue's last writer is usually CatalogueEditor, encoding with `.prettyPrinted`,
+    `.sortedKeys` and `.withoutEscapingSlashes`. Python's `json.dumps` agrees on none of the
+    three details that matter: Swift puts a space before the colon, expands an empty array
+    over two lines, and leaves `/` unescaped. A tool that dumps with `json.dumps(…, indent=2)`
+    therefore rewrites all ~25,000 lines whatever it changed — a four-entry edit came back as
+    12,390 insertions and 17,090 deletions, which no reviewer can read and no `git diff` can
+    usefully show. Going through here keeps a tool's diff to the lines it meant to touch.
+
+    Unparameterised on purpose: the goal is one byte-exact shape, so there is nothing to tune.
+    """
+    return _swift_json(entries) + "\n"
+
+
+def _swift_json(value: Any, indent: int = 0) -> str:
+    pad, inner = "  " * indent, "  " * (indent + 1)
+    if isinstance(value, dict):
+        if not value:
+            return "{\n\n" + pad + "}"
+        body = ",\n".join(
+            f"{inner}{json.dumps(key, ensure_ascii=False)} : {_swift_json(item, indent + 1)}"
+            # Swift's `.sortedKeys` orders by the encoded key.
+            for key, item in sorted(value.items())
+        )
+        return "{\n" + body + "\n" + pad + "}"
+    if isinstance(value, list):
+        if not value:
+            return "[\n\n" + pad + "]"
+        body = ",\n".join(inner + _swift_json(item, indent + 1) for item in value)
+        return "[\n" + body + "\n" + pad + "]"
+    # Before the int branch: `bool` is a subclass of `int`, so True would render as 1.
+    if isinstance(value, bool):
+        return "true" if value else "false"
+    if value is None:
+        return "null"
+    return json.dumps(value, ensure_ascii=False)
+
+
+def write_catalogue(entries: list[dict[str, Any]], path: Path = CATALOGUE) -> None:
+    """Write the catalogue in the editor's own shape. Use this, never `json.dumps`."""
+    path.write_text(dump_catalogue(entries))
+
+
 class SourceError(Exception):
     """A source could not be reached or returned something unusable.
 

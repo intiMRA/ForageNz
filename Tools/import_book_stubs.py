@@ -27,7 +27,7 @@ from pathlib import Path
 from typing import Any
 
 from enrich_catalogue import fetch_nzor
-from sources import CATALOGUE, COURTESY_DELAY
+from sources import CATALOGUE, COURTESY_DELAY, write_catalogue
 
 #: Default citation, overridable with --citation. The book's own heading for the species is
 #: appended when the index carries one, never the common name we chose for the entry.
@@ -312,7 +312,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.dry_run:
         return 0
     catalogue.extend(stub.entry for stub in added)
-    args.catalogue.write_text(json.dumps(catalogue, ensure_ascii=False, indent=2) + "\n")
+    write_catalogue(catalogue, args.catalogue)
     print(
         f"wrote {len(catalogue)} entries to {args.catalogue}; run catalogue-tool --normalise next"
     )

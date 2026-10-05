@@ -43,6 +43,7 @@ from sources import (
     USER_AGENT,
     SourceError,
     get_json,
+    write_catalogue,
 )
 
 WIKIPEDIA_API = "https://en.wikipedia.org/w/api.php"
@@ -307,7 +308,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"filled {len(filled)} entries; per field: {counts}")
     print(f"nothing found for {len(nothing)}: {', '.join(nothing) or '-'}")
     if not args.dry_run:
-        args.catalogue.write_text(json.dumps(catalogue, ensure_ascii=False, indent=2) + "\n")
+        write_catalogue(catalogue, args.catalogue)
     return 0
 
 
