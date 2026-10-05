@@ -54,11 +54,16 @@ enum PhotoFetcher {
     ///
     /// Reads the catalogue **from disk**, so photos kept or removed but not yet saved are
     /// invisible to it — which only costs a duplicate offer, never a wrong one.
+    /// - Parameter worldwide: lets observations from outside New Zealand fill what New Zealand
+    ///   cannot. Off by default, and a per-entry judgement about one species rather than a
+    ///   setting: the NZ-only filter exists because habitat prose is NZ-specific, which is
+    ///   true of a fungus on a particular substrate and not of a bamboo culm.
     nonisolated static func topUp(
         speciesId: String,
         target: Int,
         catalogueURL: URL,
-        stagingDirectory: URL
+        stagingDirectory: URL,
+        worldwide: Bool = false
     ) async throws -> Outcome {
         let root = repositoryRoot(for: catalogueURL)
         let script = root.appending(path: relativeScriptPath)
@@ -76,7 +81,7 @@ enum PhotoFetcher {
                 "--per-species", String(target + reviewSlack),
                 "--catalogue", catalogueURL.path,
                 "--staging", stagingDirectory.path
-            ],
+            ] + (worldwide ? ["--worldwide"] : []),
             workingDirectory: root
         )
         return outcome(from: output, speciesId: speciesId)

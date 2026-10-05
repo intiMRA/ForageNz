@@ -10,17 +10,21 @@ from typing import Any
 
 from fetch_catalogue_photos import (
     MAX_PER_OBSERVATION,
+    NEW_ZEALAND_PLACE_ID,
     PHOTO_CONSTANTS,
     PhotoConstants,
     agreeing_identifications,
     already_used_observations,
     catalogue_photo,
+    in_new_zealand,
+    is_requested_taxon,
     next_index,
     next_manifest,
     previously_offered,
     query_names,
     select_candidates,
     shortfall,
+    taxon_id_for,
     wanted_count,
 )
 
@@ -85,6 +89,78 @@ def test_agreeing_identifications_ignores_identifications_of_another_taxon() -> 
     disputed["identifications"].append({"taxon": {"id": 99}})
     assert agreeing_identifications(disputed) == 2
     assert agreeing_identifications({"taxon": None, "identifications": []}) == 0
+
+
+def test_an_observation_of_a_sibling_species_is_not_a_frame_for_this_entry() -> None:
+    # The four Avena entries were offered each other's photos: iNaturalist's `taxon_name`
+    # matches synonyms and common names, so `Avena sativa` and `Avena fatua` returned the same
+    # observations. Identity, not name, decides.
+    assert is_requested_taxon(observation(1, taxon_id=52698, agreeing=3, photos=1), 52698)
+    assert not is_requested_taxon(observation(2, taxon_id=57156, agreeing=3, photos=1), 52698)
+
+
+def test_a_subspecies_observation_still_belongs_to_its_species_entry() -> None:
+    # Avena sterilis sterilis is a legitimate frame for the Avena sterilis entry, where
+    # A. fatua is not — so the test is descent, not equality.
+    subspecies = observation(3, taxon_id=234543, agreeing=4, photos=1)
+    subspecies["taxon"]["ancestor_ids"] = [47126, 47434, 75722, 234543]
+    assert is_requested_taxon(subspecies, 75722)
+    assert not is_requested_taxon(subspecies, 52698)
+
+
+def test_an_observation_with_no_ancestry_is_judged_on_its_own_taxon_alone() -> None:
+    bare = {"taxon": {"id": 52696}}
+    assert is_requested_taxon(bare, 52696)
+    assert not is_requested_taxon(bare, 75722)
+    assert not is_requested_taxon({"taxon": None}, 75722)
+
+
+def test_an_ambiguous_name_resolves_to_nothing_rather_than_to_the_wrong_taxon(
+    monkeypatch: Any,
+) -> None:
+    # Falling back to the old name query is recoverable; picking one of two taxa that happen
+    # to share a name is the silent wrong-species fetch this whole change exists to stop.
+    import fetch_catalogue_photos as fetcher
+
+    def results(_url: Any, _params: dict[str, object]) -> list[dict[str, Any]]:
+        return [
+            {"id": 1, "name": "Avena fatua"},
+            {"id": 2, "name": "Avena fatua"},
+            {"id": 3, "name": "Avena fatua var. glabrata"},
+        ]
+
+    monkeypatch.setattr(fetcher, "results_of", results)
+    assert taxon_id_for("Avena fatua") is None
+
+
+def test_a_name_matching_exactly_one_taxon_resolves_past_its_near_misses(
+    monkeypatch: Any,
+) -> None:
+    import fetch_catalogue_photos as fetcher
+
+    def results(_url: Any, _params: dict[str, object]) -> list[dict[str, Any]]:
+        return [
+            {"id": 234543, "name": "Avena sterilis sterilis", "rank": "subspecies"},
+            {"id": 75722, "name": "Avena sterilis", "rank": "species"},
+        ]
+
+    monkeypatch.setattr(fetcher, "results_of", results)
+    assert taxon_id_for("Avena sterilis") == 75722
+
+
+def test_a_complex_is_not_the_species_that_shares_its_name(monkeypatch: Any) -> None:
+    # iNaturalist's `Avena barbata` complex groups species too alike to separate. Resolving to
+    # it would hand the entry its siblings' photos under a name that reads as correct.
+    import fetch_catalogue_photos as fetcher
+
+    def results(_url: Any, _params: dict[str, object]) -> list[dict[str, Any]]:
+        return [
+            {"id": 1651480, "name": "Avena barbata", "rank": "complex"},
+            {"id": 52696, "name": "Avena barbata", "rank": "species"},
+        ]
+
+    monkeypatch.setattr(fetcher, "results_of", results)
+    assert taxon_id_for("Avena barbata") == 52696
 
 
 def test_candidates_spread_across_observations_before_taking_a_second_frame() -> None:
@@ -249,6 +325,41 @@ def test_better_identified_observations_still_win_over_the_shuffle() -> None:
     for seed in range(20):
         selected = select_candidates("x", found, wanted=2, rng=random.Random(seed))
         assert [c.observation_id for c in selected] == [2, 1], "ranking must not be random"
+
+
+def test_an_nz_filtered_query_needs_no_proof_that_its_results_are_nz() -> None:
+    """The place filter did the work, so an observation carrying no `place_ids` is still NZ."""
+    selected = select_candidates("x", [observation(1, 7, 3, 1)], wanted=1)
+    assert selected[0].in_new_zealand
+
+
+def test_a_worldwide_query_marks_each_frame_by_where_it_was_recorded() -> None:
+    here = observation(1, taxon_id=7, agreeing=5, photos=1)
+    here["place_ids"] = [1, NEW_ZEALAND_PLACE_ID]
+    abroad = observation(2, taxon_id=7, agreeing=5, photos=1)
+    abroad["place_ids"] = [6753, 97391]
+
+    selected = select_candidates(
+        "x", [here, abroad], wanted=2, geography_known=True
+    )
+
+    assert {c.observation_id: c.in_new_zealand for c in selected} == {1: True, 2: False}
+
+
+def test_an_observation_with_no_places_is_not_claimed_as_nz() -> None:
+    """Only on a worldwide run, where silence is not evidence of being here."""
+    selected = select_candidates("x", [observation(1, 7, 3, 1)], wanted=1, geography_known=True)
+    assert not selected[0].in_new_zealand
+    assert not in_new_zealand({})
+
+
+def test_where_a_frame_came_from_is_review_metadata_not_catalogue_content() -> None:
+    """It steers the keep/discard call; what ships records the reason in `sources` instead."""
+    photo = catalogue_photo({
+        "fileName": "x-1.heic", "caption": "", "credit": "(c) botaflo",
+        "sourceURL": "https://example.test/1", "inNewZealand": False,
+    })
+    assert "inNewZealand" not in photo
 
 
 def test_frames_already_chosen_are_not_offered_twice() -> None:

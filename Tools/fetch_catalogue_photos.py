@@ -35,6 +35,15 @@ excludes the observations its existing photos already came from:
     python3 Tools/fetch_catalogue_photos.py --only psilocybe-aucklandiae --top-up
 
 Entries with no acceptable photos are reported and skipped, never half-filled.
+
+Observations are New Zealand ones only, for the reason on `NEW_ZEALAND_PLACE_ID`. `--worldwide`
+keeps that preference but lets overseas frames fill what New Zealand cannot — for a species
+that looks the same wherever it grows, and only ever as a per-run judgement about that species:
+
+    python3 Tools/fetch_catalogue_photos.py --only giant-timber-bamboo --worldwide
+
+Every overseas candidate is flagged `inNewZealand: false` in the manifest, so the reviewer
+decides knowing where the frame is from, and the entry's `sources` can say why it is there.
 """
 
 from __future__ import annotations
@@ -59,11 +68,18 @@ from sources import (
     SourceError,
     download,
     results_of,
+    write_catalogue,
 )
 
 #: iNaturalist's place id for New Zealand. A research-grade observation from California says
 #: nothing about what the species looks like in a NZ gully, and the catalogue's habitat prose
 #: is NZ-specific — see the porcini finding in the habitat work.
+#:
+#: `--worldwide` relaxes it for the case that rationale does not cover: an introduced species
+#: whose appearance is the same wherever it grows. `giant-timber-bamboo` is the precedent —
+#: iNaturalist holds exactly one New Zealand observation of it, `needs_id`, and shipping an
+#: unconfirmed New Zealand plant onto an identification page is worse than a confirmed French
+#: one. NZ observations are still ranked first; overseas ones only fill what is left.
 NEW_ZEALAND_PLACE_ID = 6803
 
 #: Where the Swift constants live. Parsed rather than copied so the encoder and the budget
@@ -208,6 +224,63 @@ def query_names(scientific_name: str) -> list[str]:
     return names
 
 
+#: iNaturalist ranks that group several species under one name. Never what a catalogue entry
+#: means by its scientific name, and querying one returns the siblings the entry is trying to
+#: be told apart from.
+AGGREGATE_RANKS = frozenset({"complex", "hybrid", "genushybrid", "section", "subsection"})
+
+
+def taxon_id_for(name: str) -> int | None:
+    """The iNaturalist taxon id for an exact scientific name, or `None` if it has no single one.
+
+    Needed because `taxon_name` on the observations endpoint is a *name* lookup that also
+    matches synonyms and common names, and quietly widens to whatever else carries the string.
+    Four `Avena` entries proved it: `taxon_name=Avena sativa` and `taxon_name=Avena fatua`
+    returned byte-identical result sets, and `Avena sterilis` returned mostly *A. fatua* — so
+    the four oats were offered the same photos, of the wrong species, with nothing downstream
+    to notice. Sibling species in a genus the catalogue has split are exactly where this bites.
+
+    Matching is case-insensitive on the full name and nothing else: a near-miss is reported as
+    unresolved so the caller falls back to the old name query rather than silently fetching
+    some other taxon, which is the failure being fixed.
+
+    Aggregate ranks are skipped. iNaturalist carries both a `complex` and a `species` called
+    *Avena barbata*, and a complex is by definition a set of species too alike to tell apart —
+    querying one would re-create the very problem, handing an entry its siblings' photos under
+    a name that looks right.
+    """
+    try:
+        results = results_of(Source.INAT_TAXA, {"q": name, "per_page": 20})
+    except SourceError:
+        return None
+    wanted = name.casefold()
+    exact = [
+        taxon
+        for taxon in results
+        if str(taxon.get("name") or "").casefold() == wanted
+        and taxon.get("id") is not None
+        and str(taxon.get("rank") or "") not in AGGREGATE_RANKS
+    ]
+    if len(exact) != 1:
+        return None
+    return int(exact[0]["id"])
+
+
+def is_requested_taxon(observation: dict[str, Any], taxon_id: int) -> bool:
+    """Whether an observation is of the taxon asked for, or something below it.
+
+    The safety net for the `taxon_name` widening above, and it holds even when a name cannot
+    be resolved to a single id. `ancestor_ids` is what keeps subspecies: an observation of
+    *Avena sterilis sterilis* is a legitimate frame for the *A. sterilis* entry, where an
+    observation of *A. fatua* is not.
+    """
+    taxon = observation.get("taxon") or {}
+    if taxon.get("id") == taxon_id:
+        return True
+    ancestors = taxon.get("ancestor_ids")
+    return isinstance(ancestors, list) and taxon_id in ancestors
+
+
 def agreeing_identifications(observation: dict[str, Any]) -> int:
     """How many identifiers landed on the observation's own taxon.
 
@@ -237,6 +310,10 @@ class Candidate:
     observed_on: str
     agreeing: int
     url: str
+    #: Whether the observation was recorded in New Zealand. Carried to the manifest so a
+    #: reviewer judging an overseas frame knows that is what it is — `place_guess` is free
+    #: text, often just a locality, and "Amou, Landes" does not announce itself as French.
+    in_new_zealand: bool = True
 
 
 def has_unrestricted_photo(observation: dict[str, Any]) -> bool:
@@ -250,19 +327,54 @@ def has_unrestricted_photo(observation: dict[str, Any]) -> bool:
     return False
 
 
-def observations_for(name: str, wanted: int) -> list[dict[str, Any]]:
-    """NZ research-grade observations carrying a licence permissive enough to ship."""
-    return results_of(
-        Source.INAT_OBSERVATIONS,
-        {
-            "taxon_name": name,
-            "quality_grade": "research",
-            "photo_license": Licence.query_value(),
-            "place_id": NEW_ZEALAND_PLACE_ID,
-            "per_page": min(wanted * CANDIDATE_MULTIPLIER * 2, 60),
-            "order_by": "votes",
-        },
-    )
+def observations_for(
+    name: str,
+    wanted: int,
+    place_id: int | None = NEW_ZEALAND_PLACE_ID,
+    taxon_id: int | None = None,
+) -> list[dict[str, Any]]:
+    """Research-grade observations carrying a licence permissive enough to ship.
+
+    `place_id` of `None` drops the geographic filter entirely, which is what `--worldwide`
+    asks for after the New Zealand query has given everything it has.
+
+    `taxon_id` queries by identity rather than by name. Pass it whenever the name resolved —
+    `taxon_name` matches synonyms and common names too, and returns other species in the same
+    genus (see `taxon_id_for`). Results are filtered to the taxon either way, so a name-only
+    fallback cannot stage a sibling species.
+    """
+    query: dict[str, object] = {
+        "quality_grade": "research",
+        "photo_license": Licence.query_value(),
+        "per_page": min(wanted * CANDIDATE_MULTIPLIER * 2, 60),
+        "order_by": "votes",
+    }
+    if taxon_id is None:
+        query["taxon_name"] = name
+    else:
+        query["taxon_id"] = taxon_id
+    if place_id is not None:
+        query["place_id"] = place_id
+    found = results_of(Source.INAT_OBSERVATIONS, query)
+    if taxon_id is None:
+        return found
+    return [
+        observation for observation in found if is_requested_taxon(observation, taxon_id)
+    ]
+
+
+def in_new_zealand(observation: dict[str, Any]) -> bool:
+    """Whether iNaturalist places the observation inside New Zealand.
+
+    Read from `place_ids`, which the API returns on every observation, rather than from the
+    free-text `place_guess`. An unfiltered query returns both, and the manifest has to be able
+    to tell them apart — otherwise a worldwide run would mark NZ frames as overseas and send a
+    reviewer looking for a justification that does not need writing.
+    """
+    place_ids = observation.get("place_ids")
+    if not isinstance(place_ids, list):
+        return False
+    return NEW_ZEALAND_PLACE_ID in place_ids
 
 
 def select_candidates(
@@ -272,6 +384,7 @@ def select_candidates(
     max_per_observation: int = MAX_PER_OBSERVATION,
     skip_photo_ids: frozenset[int] = frozenset(),
     rng: random.Random | None = None,
+    geography_known: bool = False,
 ) -> list[Candidate]:
     """Best-identified observations first, spread across as many of them as possible.
 
@@ -296,6 +409,11 @@ def select_candidates(
 
     `max_per_observation` is raised only by the top-up fallback, for the case the cap's own
     rule already allows for: there are no *other* observations to spread across.
+
+    `geography_known` says the caller did not constrain the query to New Zealand, so each
+    observation's own `place_ids` decides. The default is the ordinary case: the query carried
+    `place_id=NEW_ZEALAND_PLACE_ID`, so every result is a New Zealand one by construction and
+    no observation needs to prove it.
     """
     rng = rng or random.Random()
     ranked = sorted(
@@ -329,6 +447,7 @@ def select_candidates(
                     agreeing=agreeing_identifications(observation),
                     # `square.` is a thumbnail; `large.` is what survives the 1400px encode.
                     url=url.replace("square.", "large."),
+                    in_new_zealand=in_new_zealand(observation) if geography_known else True,
                 )
             )
         if frames:
@@ -393,6 +512,7 @@ def stage(
     constants: PhotoConstants,
     wanted: int,
     exclude_observations: frozenset[str] = frozenset(),
+    worldwide: bool = False,
 ) -> Staged:
     species_id = str(entry["id"])
     result = Staged(species_id=species_id)
@@ -404,8 +524,11 @@ def stage(
 
     candidates: list[Candidate] = []
     for name in query_names(str(entry["scientificName"])):
+        # Resolve once per name and reuse for both queries, so the worldwide fallback is
+        # filtered to the same taxon the New Zealand one was.
+        taxon_id = taxon_id_for(name)
         try:
-            found = observations_for(name, wanted)
+            found = observations_for(name, wanted, taxon_id=taxon_id)
         except SourceError as error:
             result.note = f"query failed ({error})"
             return result
@@ -437,6 +560,31 @@ def stage(
                     candidate.photo_id for candidate in candidates
                 ),
             )
+        # New Zealand first, always: `--worldwide` widens the net, it does not change what the
+        # catalogue would rather show. Only the shortfall is asked of the rest of the world,
+        # and the same exclusions apply, so a frame already seen is not re-offered with a
+        # French postmark.
+        if worldwide and len(candidates) < wanted:
+            time.sleep(COURTESY_DELAY)
+            try:
+                abroad = observations_for(name, wanted, place_id=None, taxon_id=taxon_id)
+            except SourceError as error:
+                result.note = f"worldwide query failed ({error})"
+                return result
+            chosen = frozenset(candidate.photo_id for candidate in candidates)
+            used = excluded | {candidate.observation_url for candidate in candidates}
+            candidates += select_candidates(
+                species_id,
+                [
+                    observation
+                    for observation in abroad
+                    if str(observation.get("uri") or "") not in used
+                ],
+                wanted - len(candidates),
+                skip_photo_ids=seen_photo_ids | chosen,
+                geography_known=True,
+            )
+
         if candidates:
             break
         time.sleep(COURTESY_DELAY)
@@ -446,11 +594,18 @@ def stage(
         # rather than filled from a looser query. The two cases read identically to a user and
         # are not the same problem: one says look elsewhere, the other says you have already
         # seen everything this query can offer and discarded it.
-        result.note = (
-            "every shippable NZ research-grade photo has already been offered"
-            if seen_photo_ids or seen_observations
-            else "no NZ research-grade photos under an accepted licence"
-        )
+        scope = "" if worldwide else " NZ"
+        if seen_photo_ids or seen_observations:
+            result.note = (
+                f"every shippable{scope} research-grade photo has already been offered"
+            )
+        else:
+            result.note = f"no{scope} research-grade photos under an accepted licence"
+            # Named here rather than in the run summary, because this is the line a reviewer
+            # reads in the editor, and it is the only place the option is worth raising: an
+            # entry with NZ frames does not need telling that other countries exist.
+            if not worldwide:
+                result.note += " (--worldwide would look beyond New Zealand)"
         return result
 
     # One directory per species, matching the layout the September staging runs already use
@@ -491,6 +646,7 @@ def stage(
                 "place": candidate.place,
                 "observedOn": candidate.observed_on,
                 "licence": candidate.licence,
+                "inNewZealand": candidate.in_new_zealand,
             }
         )
         time.sleep(COURTESY_DELAY)
@@ -583,6 +739,13 @@ def main(argv: list[str] | None = None) -> int:
         "only the shortfall and skipping observations they already use",
     )
     parser.add_argument(
+        "--worldwide",
+        action="store_true",
+        help="let overseas observations fill what New Zealand cannot, for a species that "
+        "looks the same wherever it grows; NZ frames are still taken first and every "
+        "overseas one is flagged in the manifest",
+    )
+    parser.add_argument(
         "--write",
         action="store_true",
         help="move survivors into Photos/ and attach them with BLANK captions, which block "
@@ -632,6 +795,7 @@ def main(argv: list[str] | None = None) -> int:
             wanted,
             exclude_observations=frozenset(already_used_observations(entry))
             if arguments.top_up else frozenset(),
+            worldwide=arguments.worldwide,
         )
         if result.photos:
             staged.append(result)
@@ -651,6 +815,22 @@ def main(argv: list[str] | None = None) -> int:
             )
         )
         print(f"\nManifest written to {manifest}")
+
+    overseas = sum(
+        1
+        for result in staged
+        for photo in result.photos
+        if not photo.get("inNewZealand", True)
+    )
+    if overseas:
+        # The giant-timber-bamboo precedent: the breach of the NZ-only rule belongs in the
+        # entry's own `sources`, where a reader of the catalogue can see it, not in a commit
+        # message or a shell history nobody will read again.
+        print(
+            f"\n{overseas} candidate(s) are from outside New Zealand. If you keep any, say so "
+            "in that entry's `sources` — why this species looks the same here as there, and "
+            "that these are the catalogue's non-NZ photographs."
+        )
 
     if empty:
         print(f"\n{len(empty)} entr{'y' if len(empty) == 1 else 'ies'} with nothing usable:")
@@ -689,9 +869,7 @@ def main(argv: list[str] | None = None) -> int:
                 shutil.copyfile(source, destination)
         entry["photos"] = [catalogue_photo(photo) for photo in result.photos]
 
-    arguments.catalogue.write_text(
-        json.dumps(entries, indent=2, ensure_ascii=False, sort_keys=True) + "\n"
-    )
+    write_catalogue(entries, arguments.catalogue)
     # Checked here and not before the loop, because `photo["bytes"]` is the STAGED size and the
     # write re-encodes: at the current constants a staged file is ~2× what ships, so a
     # pre-flight check would refuse writes that comfortably fit. This reads what is actually on

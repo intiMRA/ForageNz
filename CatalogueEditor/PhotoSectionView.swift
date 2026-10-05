@@ -21,6 +21,11 @@ struct PhotoSectionView: View {
     /// What the last fetch reported — including "nothing usable", which is a real answer for
     /// an endemic with few observers and must not look like a failure.
     @State private var fetchReport: String?
+    /// Ticked, because the catalogue is a New Zealand one and its habitat prose is written
+    /// about here. Untick it for a species that looks the same wherever it grows — an
+    /// introduced plant with almost no local records — and the fetcher will fall back to
+    /// overseas observations for whatever New Zealand cannot supply.
+    @State private var newZealandOnly = true
 
     private var wantedPhotoCount: Int {
         CataloguePhotos.recommendedCount(hasDeadlyLookalike: species.highestLookalikeRisk == .deadly)
@@ -65,6 +70,16 @@ struct PhotoSectionView: View {
                     .buttonStyle(.borderless)
                     .disabled(isFetching || catalogueURL == nil || stagingDirectory == nil)
                     .help(fetchHelp)
+
+                Toggle("New Zealand only", isOn: $newZealandOnly)
+                    .toggleStyle(.checkbox)
+                    .font(.caption)
+                    .disabled(isFetching)
+                    .help(
+                        "Untick only for a species that looks the same wherever it grows. "
+                        + "New Zealand frames are still taken first; overseas ones fill what "
+                        + "is left, and keeping one means saying why in this entry's sources."
+                    )
 
                 if isFetching {
                     ProgressView()
@@ -161,6 +176,16 @@ struct PhotoSectionView: View {
                     .font(.caption)
                     .foregroundStyle(candidate.credit.isEmpty ? .red : .primary)
 
+                if !candidate.inNewZealand {
+                    Label("Outside New Zealand", systemImage: "globe")
+                        .font(.caption2)
+                        .foregroundStyle(.orange)
+                        .help(
+                            "Keeping this means the entry's sources must say why the species "
+                            + "looks the same there as here."
+                        )
+                }
+
                 if !candidate.place.isEmpty || !candidate.observedOn.isEmpty {
                     Text([candidate.place, candidate.observedOn].filter { !$0.isEmpty }.joined(separator: " · "))
                         .font(.caption2)
@@ -209,7 +234,7 @@ struct PhotoSectionView: View {
     }
 
     private var fetchHelp: String {
-        "Ask iNaturalist for more NZ, research-grade, CC0/CC-BY candidates — "
+        "Ask iNaturalist for more \(newZealandOnly ? "NZ, " : "")research-grade, CC0/CC-BY candidates — "
         + "\(PhotoFetcher.reviewSlack) beyond the \(wantedPhotoCount) this entry wants, so there is "
         + "something to reject. Reads the saved catalogue, so save first if you have just kept or "
         + "removed photos."
@@ -228,7 +253,8 @@ struct PhotoSectionView: View {
                     speciesId: species.id,
                     target: wantedPhotoCount,
                     catalogueURL: catalogueURL,
-                    stagingDirectory: stagingDirectory
+                    stagingDirectory: stagingDirectory,
+                    worldwide: !newZealandOnly
                 )
                 fetchReport = outcome.message
                 reloadStaged()

@@ -18,6 +18,11 @@ struct StagedPhoto: Identifiable, Hashable {
     let agreeingIdentifications: Int
     let licence: String
     let bytes: Int
+    /// Whether iNaturalist records the observation inside New Zealand. Only a `--worldwide`
+    /// run can produce `false`, and keeping such a frame is a decision that has to be written
+    /// into the entry's `sources` — so the tray says so rather than leaving it to `place`,
+    /// which is free text and often just a locality name.
+    let inNewZealand: Bool
 
     var id: URL { fileURL }
     var fileName: String { fileURL.lastPathComponent }
@@ -81,7 +86,10 @@ enum StagedPhotos {
                     observedOn: entry?.observedOn ?? "",
                     agreeingIdentifications: entry?.agreeingIdentifications ?? 0,
                     licence: entry?.licence ?? "",
-                    bytes: entry?.bytes ?? fileSize(of: fileURL, fileManager: fileManager)
+                    bytes: entry?.bytes ?? fileSize(of: fileURL, fileManager: fileManager),
+                    // Absent in every manifest written before the worldwide option existed,
+                    // and those runs were NZ-only by construction — so missing means NZ.
+                    inNewZealand: entry?.inNewZealand ?? true
                 )
             }
     }
@@ -105,6 +113,7 @@ enum StagedPhotos {
         let agreeingIdentifications: Int?
         let licence: String?
         let bytes: Int?
+        let inNewZealand: Bool?
     }
 
     /// Every manifest merged, keyed by file name.

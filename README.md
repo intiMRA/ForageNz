@@ -494,6 +494,17 @@ alga that was not bull kelp — research-grade is a community vote on the *speci
 whether the frame shows anything useful. Photos that are still over the per-photo ceiling
 after compression fail loudly; shrink them and retry, or drop them. The budget does not bend.
 
+**Observations are New Zealand ones.** A research-grade photo from California says nothing
+about what a species looks like in a gully here, and the habitat prose is written about here.
+The exception is an introduced species that looks the same wherever it grows and has almost no
+local records: `fetch_catalogue_photos.py --worldwide`, or untick **New Zealand only** beside
+the editor's *Fetch more…*. New Zealand frames are still taken first and only the shortfall
+goes abroad; every overseas candidate is flagged `inNewZealand: false` in the manifest and
+badged in the staged tray. `giant-timber-bamboo` is the precedent — iNaturalist holds one New
+Zealand observation of it, `needs_id`, and an unconfirmed local plant is worse on an
+identification page than a confirmed French one. **Keeping such a frame means saying why in
+that entry's `sources`**, where a reader of the catalogue can see it.
+
 The stager cannot resolve compound names (`Sonchus oleraceus / Sonchus kirkii`, `Ulva spp.`),
 so blackberry, karengo, nettle, pūhā, sea lettuce and wild plum get nothing from it and need
 the editor route.
