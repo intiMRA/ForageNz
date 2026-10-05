@@ -130,6 +130,20 @@ struct EditorRootView: View {
                     .keyboardShortcut("s")
             }
         }
+        .alert("species.json changed on disk", isPresented: .constant(store.diskChangedUnderneathUs)) {
+            Button("Sync — take the disk version") { startReloading() }
+            Button("Overwrite disk with my edits", role: .destructive) {
+                store.saveOverwritingDiskChanges()
+            }
+            Button("Cancel", role: .cancel) { store.dismissDiskChangedWarning() }
+        } message: {
+            Text(
+                "Something else wrote the catalogue since the editor read it — catalogue-tool, "
+                + "a Python tool, or a git pull. Saving replaces the whole file with the "
+                + "editor's copy, so that change would be lost. Syncing discards unsaved edits "
+                + "in the editor instead."
+            )
+        }
         .sheet(item: $destination.adding) { $draft in
             addSheet(draft: $draft)
         }

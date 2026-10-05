@@ -26,7 +26,22 @@ final class CatalogueStore {
     /// Set when a save rewrote `SpeciesID.swift`: the editor must be rebuilt before the new or
     /// renamed species can be chosen as a lookalike's page.
     private(set) var needsRebuildForSpeciesIDs = false
+    /// Set when a save was refused because the file changed underneath us. The UI asks what to
+    /// do; nothing is written until it answers.
+    private(set) var diskChangedUnderneathUs = false
     private var loaded: [String: ForageSpecies] = [:]
+    /// The file's modification date when this copy was read. `save()` refuses if disk has moved
+    /// since, because a save writes the whole in-memory catalogue and would otherwise silently
+    /// destroy every out-of-editor write — `catalogue-tool`, the Python tools, a git pull.
+    /// Measured 2026-10-03: that is exactly how five bamboo entries and the Passiflora fill were
+    /// lost, with no error shown and no copy left anywhere but a build product.
+    private var loadedModificationDate: Date?
+
+    private func modificationDateOnDisk() -> Date? {
+        guard let fileURL else { return nil }
+        return try? fileURL.resourceValues(forKeys: [.contentModificationDateKey])
+            .contentModificationDate
+    }
 
     init(fileURL: URL?) {
         self.fileURL = fileURL
@@ -60,14 +75,45 @@ final class CatalogueStore {
             loaded = Dictionary(uniqueKeysWithValues: loadedSpecies.map { ($0.id, $0) })
             editedIds = []
             pendingPhotoDeletions = []
+            loadedModificationDate = modificationDateOnDisk()
+            diskChangedUnderneathUs = false
             status = .clean
         } catch {
             status = .failed(message(for: error, file: fileURL.lastPathComponent))
         }
     }
 
+    /// Writes only if disk still holds what was last read. A refusal is not a failure to recover
+    /// from by retrying — it means someone else wrote the file, and the choice of whose version
+    /// survives belongs to the person, not to whichever write happens to land last.
     func save() {
         guard let fileURL else { return }
+        if let loadedModificationDate, let current = modificationDateOnDisk(), current != loadedModificationDate {
+            diskChangedUnderneathUs = true
+            status = .failed(
+                "species.json changed on disk since the editor read it. Saving now would "
+                + "overwrite that change. Sync (⌘R) to take the disk version, or choose "
+                + "Overwrite to keep what is in the editor."
+            )
+            return
+        }
+        writeToDisk(fileURL)
+    }
+
+    /// Leaves both copies alone. The warning stays off until the next save attempt, so cancelling
+    /// cannot be mistaken for the conflict having been resolved.
+    func dismissDiskChangedWarning() {
+        diskChangedUnderneathUs = false
+    }
+
+    /// Saves even though disk has moved — the deliberate "mine wins" path behind a confirmation.
+    func saveOverwritingDiskChanges() {
+        guard let fileURL else { return }
+        writeToDisk(fileURL)
+    }
+
+    private func writeToDisk(_ fileURL: URL) {
+        diskChangedUnderneathUs = false
         do {
             try CatalogueFile.save(species, to: fileURL)
         } catch {
@@ -76,6 +122,7 @@ final class CatalogueStore {
         }
         loaded = Dictionary(uniqueKeysWithValues: species.map { ($0.id, $0) })
         editedIds = []
+        loadedModificationDate = modificationDateOnDisk()
 
         do {
             if try SpeciesIDGenerator.regenerate(for: species, catalogueURL: fileURL) == .rewritten {

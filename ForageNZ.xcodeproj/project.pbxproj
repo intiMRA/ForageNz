@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		00B386238746B52A8FC66EF1 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51770A6820F225DAC3895D24 /* Destination.swift */; };
+		0556316CF96F4367AE28C6AE /* SpeciesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C37CCC8954518819C409B /* SpeciesCard.swift */; };
 		07A7F205698F30A7C79C9D9B /* EditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12BAA997F082B29A294ACA /* EditorUITests.swift */; };
 		0A816877BA9AA045859E5529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817A298659AD6F2CD63D0228 /* Assets.xcassets */; };
 		0EFC0592935EC3241932A7C6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B19F5173E05C2042951736 /* Colors.xcassets */; };
 		16020BFCDA4491686721448A /* PhotoSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01BA2E911FCB343C07DAD39 /* PhotoSectionView.swift */; };
-		D7E1A40C3B5642A981C0E116 /* StagedPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E1A40C3B5642A981C0E115 /* StagedPhotos.swift */; };
-		D7E1A40C3B5642A981C0E118 /* PhotoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E1A40C3B5642A981C0E117 /* PhotoFetcher.swift */; };
 		16AF351E5E55AEB9978BCDD5 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB674D266AEC3706DD237EA /* LocationProvider.swift */; };
 		16DE25F2A746058FB6782194 /* SpeciesPhotoStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11341A3521A25AA8E3516D /* SpeciesPhotoStrip.swift */; };
 		2419EA989959E66CD9C14599 /* CautionPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */; };
@@ -21,7 +20,6 @@
 		28CE6B4FE8E95DD4A1BB1633 /* SpeciesModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC10D366D26564C8B7E4205 /* SpeciesModelFactory.swift */; };
 		2BB82EB485F18B9705B3F347 /* land-status.json in Resources */ = {isa = PBXBuildFile; fileRef = F3879044878C62F8D8F549D8 /* land-status.json */; };
 		2CA3EAD76EAE4CE824C68675 /* SpeciesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD4F47E08118369C1720304 /* SpeciesRow.swift */; };
-		0556316CF96F4367AE28C6AE /* SpeciesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C37CCC8954518819C409B /* SpeciesCard.swift */; };
 		2FFEC43C9B4D53C2E4ACBA15 /* ForageNZApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F39B686CA0E9CE04181DD40 /* ForageNZApp.swift */; };
 		33F1FEE23644859BA88F9258 /* SpeciesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */; };
 		360194B642E9FF2742582745 /* InSeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4ED5A9B62C12BD6C3E48E /* InSeasonView.swift */; };
@@ -105,6 +103,8 @@
 		CA7A10000000000000000030 /* SpeciesID.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A1000000000000000002E /* SpeciesID.swift */; };
 		CAFC3DCE142AC7A3A71B2E81 /* SpeciesModelFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72CBBFBBA343438F3DA352 /* SpeciesModelFactoryTests.swift */; };
 		CEA8223E11FF897287721DDE /* SpeciesRowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB4A544F5F85A5E95E8A82A /* SpeciesRowButton.swift */; };
+		D7E1A40C3B5642A981C0E116 /* StagedPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E1A40C3B5642A981C0E115 /* StagedPhotos.swift */; };
+		D7E1A40C3B5642A981C0E118 /* PhotoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E1A40C3B5642A981C0E117 /* PhotoFetcher.swift */; };
 		E0E56E639A59BBA011C3905E /* LandStatusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F8E9DC97AD8C0C3504754F /* LandStatusRepository.swift */; };
 		E3C01D365E85295EE1DB4CBC /* CautionPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */; };
 		E7057F68D7BCDBAEC626647A /* DesignLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 83413BE0AA6927FA598C7C0C /* DesignLibrary */; };
@@ -181,8 +181,6 @@
 		8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRepository.swift; path = Catalogue/SpeciesRepository.swift; sourceTree = "<group>"; };
 		9DE2E1227F9C1C691B2F945D /* WhereYouAreStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WhereYouAreStoreTests.swift; sourceTree = "<group>"; };
 		A01BA2E911FCB343C07DAD39 /* PhotoSectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoSectionView.swift; sourceTree = "<group>"; };
-		D7E1A40C3B5642A981C0E115 /* StagedPhotos.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StagedPhotos.swift; sourceTree = "<group>"; };
-		D7E1A40C3B5642A981C0E117 /* PhotoFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoFetcher.swift; sourceTree = "<group>"; };
 		A1001C8B591D460EC849D511 /* CatalogueStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueStore.swift; sourceTree = "<group>"; };
 		A1C0DE0000000000CA7A1006 /* CatalogueArtwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogueArtwork.swift; path = Components/CatalogueArtwork.swift; sourceTree = "<group>"; };
 		A1C0DE0000000000CA7A1009 /* Catalogue.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Catalogue.xcassets; sourceTree = "<group>"; };
@@ -206,13 +204,15 @@
 		CA7A10000000000000000028 /* SpeciesPhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesPhoto.swift; path = Catalogue/Model/SpeciesPhoto.swift; sourceTree = "<group>"; };
 		CA7A1000000000000000002B /* SpeciesValidation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesValidation.swift; path = Catalogue/Model/SpeciesValidation.swift; sourceTree = "<group>"; };
 		CA7A1000000000000000002E /* SpeciesID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesID.swift; path = Catalogue/Model/Generated/SpeciesID.swift; sourceTree = "<group>"; };
+		CD6C37CCC8954518819C409B /* SpeciesCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesCard.swift; path = Components/SpeciesCard.swift; sourceTree = "<group>"; };
 		CD72CBBFBBA343438F3DA352 /* SpeciesModelFactoryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesModelFactoryTests.swift; sourceTree = "<group>"; };
 		D271FA601484668BEA2A2E9C /* ForageNZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForageNZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F90454DCD23471EAA95C57 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Navigation/Router.swift; sourceTree = "<group>"; };
 		D6ECE46F98F836C2B53E8AA5 /* species.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = species.json; path = Catalogue/species.json; sourceTree = "<group>"; };
+		D7E1A40C3B5642A981C0E115 /* StagedPhotos.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StagedPhotos.swift; sourceTree = "<group>"; };
+		D7E1A40C3B5642A981C0E117 /* PhotoFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoFetcher.swift; sourceTree = "<group>"; };
 		D90B10EF78BEEEED358AB658 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = Components/Layout.swift; sourceTree = "<group>"; };
 		DBD4F47E08118369C1720304 /* SpeciesRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRow.swift; path = Components/SpeciesRow.swift; sourceTree = "<group>"; };
-		CD6C37CCC8954518819C409B /* SpeciesCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesCard.swift; path = Components/SpeciesCard.swift; sourceTree = "<group>"; };
 		DFB4A544F5F85A5E95E8A82A /* SpeciesRowButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRowButton.swift; path = Components/SpeciesRowButton.swift; sourceTree = "<group>"; };
 		E230F2A934A37C1CF47C7C24 /* EditorRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditorRootView.swift; sourceTree = "<group>"; };
 		E3BEAEAE3D024F1C6A9B9C10 /* ImageBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageBadge.swift; path = Components/ImageBadge.swift; sourceTree = "<group>"; };
@@ -1180,8 +1180,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K524MKAFK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ForageNZ checks your position against DOC's conservation and marine reserve boundaries. It happens on your device, works without a signal, and your location is never sent anywhere.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1195,6 +1197,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.ForageNZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1260,8 +1263,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K524MKAFK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ForageNZ checks your position against DOC's conservation and marine reserve boundaries. It happens on your device, works without a signal, and your location is never sent anywhere.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1275,6 +1280,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.ForageNZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
