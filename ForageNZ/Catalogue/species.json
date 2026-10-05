@@ -1555,7 +1555,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Black passionfruit",
-    "draft" : false,
+    "draft" : true,
     "edibleParts" : {
       "sources" : [
         "Te Ara, 'Black passionfruit and flower' (facts restated)",
@@ -10751,7 +10751,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Kōhia",
-    "draft" : false,
+    "draft" : true,
     "edibleParts" : {
       "sources" : [
         "Wikipedia, 'Passiflora tetrandra' (CC BY-SA 4.0)",
@@ -14276,7 +14276,7 @@
   {
     "caution" : "doNotEat",
     "commonName" : "Other milk caps",
-    "draft" : false,
+    "draft" : true,
     "edibleParts" : {
       "sources" : [
 
@@ -15147,7 +15147,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Pink-flowered passionfruit",
-    "draft" : false,
+    "draft" : true,
     "edibleParts" : {
       "sources" : [
         "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)",
@@ -16997,7 +16997,7 @@
   {
     "caution" : "doNotEat",
     "commonName" : "Red-pored boletes",
-    "draft" : false,
+    "draft" : true,
     "edibleParts" : {
       "sources" : [
 
