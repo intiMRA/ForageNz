@@ -37,8 +37,16 @@ enum Layout {
     /// The square thumbnail on a list card.
     static let thumbnailSize: CGFloat = 100
 
+    /// How much of the next lookalike card is left on screen, so the row reads as scrollable
+    /// without a visible indicator.
+    ///
+    /// The cards are deliberately almost the full width: `howToTell` is a paragraph — the
+    /// whole test for separating two species — and the narrower the card, the more it becomes
+    /// a column of three-word lines. This is the smallest peek that still looks deliberate.
+    static let lookalikeCardPeek: CGFloat = 28
+
     /// Drop shadow shared by every list card.
-    static let cardShadowRadius: CGFloat = 2
+    static let cardShadowRadius: CGFloat = 1
 
     /// Longest edge, in pixels, to decode a catalogue photo at for the identification strip —
     /// `photoWidth` at 3× with room to spare, so it stays sharp without decoding the file

@@ -180,12 +180,20 @@ struct SpeciesDetailView: View {
                     }
                 }
                 .padding(.bottom, .xSmall)
-                
-                VStack(alignment: .leading, spacing: .xxSmall) {
-                    ForEach(model.lookalikeCards) { card in
-                        LookalikeCardView(model: card)
+    
+                ScrollView(.horizontal) {
+                    LazyHStack(alignment: .top, spacing: .xSmall) {
+                        ForEach(model.lookalikeCards) { card in
+                            LookalikeCardView(model: card)
+                                .containerRelativeFrame(.horizontal, alignment: .leading) { width, _ in
+                                    width - CommonPadding.xSmall.rawValue
+                                }
+                        }
                     }
+                    .scrollTargetLayout()
                 }
+                .scrollIndicators(.hidden)
+                .scrollTargetBehavior(.viewAligned)
             }
         }
     }
