@@ -65,6 +65,14 @@ public nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable, Ca
     /// page the mushroom it is confused with may be neither dangerous nor `edible`, and a
     /// green "Edible" tick on a Class A species is the worst of the available lies.
     case psychoactive
+    /// Nobody has recorded whether it is edible — not a hedge, a fact about the literature.
+    ///
+    /// It exists for New Zealand's undescribed natives. Three *Lactarius* on the iNaturalist
+    /// NZ list (`novae-zelandiae`, `tawai`, `umerensis`) have no published description at all,
+    /// and `sp. 'Hauroko'` has no name. Carding them from saffron milk cap's page needed a
+    /// risk, and every other case was a claim: `toxic` asserts harm nobody has observed,
+    /// `unpalatable` asserts a taste nobody has recorded, and `edible` is the dangerous lie.
+    case unknown
     /// The safe member of the pair: no worse than the entry it is carded against, and
     /// usually the one the forager was looking for. Not a claim that it needs no care —
     /// that is its own entry's `caution` to state.
@@ -76,6 +84,7 @@ public nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable, Ca
         case .toxic: "Toxic"
         case .unpalatable: "Unpalatable"
         case .psychoactive: "Psychoactive"
+        case .unknown: "Not known"
         case .edible: "Edible"
         }
     }
@@ -83,13 +92,18 @@ public nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable, Ca
     /// Ordered by what it costs you to get the pair the wrong way round. `psychoactive` sits
     /// above `unpalatable` because a conviction outlasts a bad dinner, and below `toxic`
     /// because nothing about it will put you in hospital.
+    ///
+    /// `unknown` sits above those three and below `toxic`: an untested mushroom is ranked as
+    /// the worse possibility, because the reader is the experiment. It cannot outrank `toxic`
+    /// or `deadly`, which are harms somebody has actually observed.
     private var severityRank: Int {
         switch self {
         case .edible: 0
         case .unpalatable: 1
         case .psychoactive: 2
-        case .toxic: 3
-        case .deadly: 4
+        case .unknown: 3
+        case .toxic: 4
+        case .deadly: 5
         }
     }
 

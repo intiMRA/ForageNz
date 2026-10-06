@@ -100,6 +100,10 @@ extension LookalikeRisk {
         // The one with no drawing of its own: it borrows the symbol its `CautionLevel`
         // counterpart uses, so the same claim looks the same wherever the app makes it.
         case .edible: .tinted(Image(systemName: "checkmark.seal"))
+        // Drawn for this case alone: `CautionLevel` has no "not known" counterpart to borrow
+        // from, because an entry always states how much care it wants even when the
+        // literature says nothing about eating it.
+        case .unknown: .tinted(Image(.unknown))
         }
     }
 

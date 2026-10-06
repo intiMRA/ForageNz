@@ -125,14 +125,19 @@ extension LookalikeRisk {
             return .tint(Color(.riskToxic))
         case .deadly:
             return .tint(Color(.riskDeadly))
+        // A grey, and deliberately the one colour on the palette that is not on the red-to-
+        // green scale at all: "not known" has to be legible as a claim the catalogue is
+        // declining to make, not as a severity sitting between psychoactive and toxic.
+        case .unknown:
+            return .tint(Color(.riskUnknown))
         }
     }
 
-    /// See `CautionLevel.badgeForeground` — white on the four solid risks, `.primary` on the
+    /// See `CautionLevel.badgeForeground` — white on the five solid risks, `.primary` on the
     /// pale psychoactive ramp.
     var badgeForeground: Color {
         switch self {
-        case .edible, .unpalatable, .toxic, .deadly: .white
+        case .edible, .unpalatable, .toxic, .deadly, .unknown: .white
         case .psychoactive: .primary
         }
     }
@@ -140,10 +145,11 @@ extension LookalikeRisk {
     /// Every lookalike card is tinted, unlike a species row where a neutral slab is the
     /// default.
     ///
-    /// Four of the five have their own drawn background, carrying an alpha chosen per case
-    /// (0.5 for toxic, 0.8 for unpalatable, 0.7/0.6 for deadly) — and `riskEdibleBackground`
-    /// is not the foreground colour at all but a muted sage. Deriving these from `tintColor`
-    /// would flatten all of that to one number and change the edible card's hue outright.
+    /// Five of the six have their own drawn background, carrying an alpha chosen per case
+    /// (0.5 for toxic, 0.8 for unpalatable, 0.7/0.6 for deadly, 0.8/0.5 for unknown) — and
+    /// `riskEdibleBackground` is not the foreground colour at all but a muted sage. Deriving
+    /// these from `tintColor` would flatten all of that to one number and change the edible
+    /// card's hue outright.
     var background: CardFill {
         switch self {
         case .edible:
@@ -158,6 +164,8 @@ extension LookalikeRisk {
         // ramp at card strength instead.
         case .psychoactive:
             return tintColor
+        case .unknown:
+            return .tint(Color(.riskUnknownBackground))
         }
     }
 }
