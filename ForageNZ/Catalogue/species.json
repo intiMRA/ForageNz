@@ -671,13 +671,6 @@
         "name" : "Pink-flowered passionfruit",
         "risk" : "edible",
         "scientificName" : "Passiflora pinnatistipula"
-      },
-      {
-        "entry" : "kohia",
-        "howToTell" : "Leaf shape ends this one immediately: kōhia's leaves are simple and undivided, lanceolate to narrow-ovate and 5–12 cm long, where banana passionfruit's are deeply three-lobed. The flowers are nothing alike either — kōhia's are small greenish-yellow clusters, 8–15 mm and often honeysuckle-scented, against a solitary pink flower hanging from a pale green tube 6–8 cm long. The fruit parts them a third time: kōhia's is a round orange berry 2–3 cm across, banana passionfruit's a yellow to light orange spindle 7–14 cm long. Both are edible, but kōhia is a native worth leaving alone where banana passionfruit is a pest worth taking.",
-        "name" : "Kōhia",
-        "risk" : "edible",
-        "scientificName" : "Passiflora tetrandra"
       }
     ],
     "months" : [
@@ -685,7 +678,6 @@
       4,
       5
     ],
-    "moreImagesURL" : "https://inaturalist.nz/taxa/78358",
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
@@ -1558,32 +1550,20 @@
     "draft" : true,
     "edibleParts" : {
       "sources" : [
-        "Te Ara, 'Black passionfruit and flower' (facts restated)",
-        "Enrich with Nature, 'Robinson's Black Passionfruit' (facts restated)"
+
       ],
-      "text" : "The pulp inside a ripe fruit. Under a thick purple rind sit dozens of black seeds in a juicy orange pulp, sweet and tangy and high in vitamin C — the seeds are eaten along with it. Nothing else on the vine is food."
+      "text" : ""
     },
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-        "NZ Plant Conservation Network, 'Passiflora edulis f. edulis' (facts restated)",
-        "Te Ara, 'Black passionfruit and flower' (facts restated)",
-        "Enrich with Nature, 'Robinson's Black Passionfruit' (facts restated)"
+
       ],
-      "text" : "Native to tropical America and brought here to be grown as a crop, it was recorded naturalised in New Zealand by 1950. In the wild it keeps to forest margins and shrubland, and only where frosts are absent — it is a terrestrial climber intolerant of frost and fond of high light, so bush edges, light wells and the sunny side of a gully suit it far better than deep shade. It is still grown on purpose, in gardens and commercially in the Bay of Plenty, in warm sheltered spots with free-draining soil and something to climb; the wild vines are mostly escapes from places like that. A vine can live a long time, though fungal infection usually takes it in the end. It sets a great deal of seed and travels mainly by people moving it about, with birds carrying seed out to sites nobody planted. DOC named it in its 2024 list of New Zealand environmental weeds."
+      "text" : ""
     },
     "habitats" : [
-      "forest",
-      "shrubland",
-      "urban",
-      "disturbed"
+
     ],
-    "harvestEthics" : {
-      "sources" : [
-        "NZ Plant Conservation Network, 'Passiflora edulis f. edulis' (facts restated)"
-      ],
-      "text" : "Take as much as you like; the restraint this one asks for is about seed, not quantity. DOC counts it among New Zealand's environmental weeds, and the way it reaches bush nobody planted it in is fruit that people carry and birds find. So eat it at home rather than where it hangs, and put the rind and spent seed in the rubbish rather than the compost or the undergrowth."
-    },
     "id" : "black-passionfruit",
     "identification" : {
       "sources" : [
@@ -1592,27 +1572,7 @@
       "text" : "Vigorous vine, glabrous except for pistil and stamens.  Shoots slightly angular.  Lvs deeply 3-lobed, but entire on young plants;  petiole 1–3 cm long, with 2 sessile glands near apex;  stipules 10–15 mm long, linear-subulate, entire;  lamina lobes ± elliptic, submembranous, deep shining green above, rounded at base;  middle lobe largest, 6–10 × 3–5.5 cm, serrate or serrulate, obtuse to acute.  Fls ☿, solitary.  Pedicels 4–6 cm long at flowering.  Bracts 1.5–2 cm long, ovate, free, coarsely serrate.  Hypanthium inconspicuous.  Sepals 2.5–3 cm long, oblong, green on reverse, white inside; petals white, similar to sepals;  corona threads 2–2.5 cm long, white with purple base.  Filaments puckered, purple towards base, otherwise white;  anthers 8–10 mm long, > filaments.  Ovary puberulent.  Fr. 5–6.25 × 4.75–5.75 cm, broad-ellipsoid or subglobose, dull purple;  pulp orange, sweet.  Seed  c. 5 mm long, ovate, black, pitted.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-      {
-        "entry" : "banana-passionfruit",
-        "howToTell" : "The flowers part them at a distance: black passionfruit's are white, about 5 cm across, with a crown of white filaments purple at the base, and they sit close to the vine with no floral tube to speak of, where banana passionfruit's are pink and hang from a pale green tube 6–8 cm long. The fruit settles it — black passionfruit is a dull purple ball or egg about 5–6 cm across with black seeds in orange pulp, and banana passionfruit is a yellow to light orange spindle tapering at both ends, roughly 7–14 cm long, with dark red seeds. The stipules where the leaf stalk meets the stem are a third check: black passionfruit's are 10–15 mm and stay put, banana passionfruit's are small and gone from mature stems. Both are edible.",
-        "name" : "Banana passionfruit",
-        "risk" : "edible",
-        "scientificName" : "Passiflora tarminiana"
-      },
-      {
-        "entry" : "kohia",
-        "howToTell" : "The leaves separate them before you reach the fruit: kōhia's are simple, one undivided glossy dark-green blade 5–12 cm long, where black passionfruit's are deeply three-lobed on any mature vine. Kōhia's flowers are tiny — 8–15 mm, greenish-yellow, carried in groups of one to four — against black passionfruit's solitary white disc about 5 cm across with a purple-based corona. The fruit confirms it: kōhia's is a 2–3 cm orange berry with sparse reddish pulp, black passionfruit's a 5–6 cm purple ball full of orange pulp. Both are edible, but kōhia is a native and the oil-bearing vine of hinu kōhia — leave it be.",
-        "name" : "Kōhia",
-        "risk" : "edible",
-        "scientificName" : "Passiflora tetrandra"
-      },
-      {
-        "entry" : "pink-flowered-passionfruit",
-        "howToTell" : "Two three-lobed climbing vines, told apart by hair, flower colour and fruit colour. Black passionfruit is hairless all over bar the pistil and stamens; pink-flowered passionfruit is downy — grey- or white-felted under the leaf, with hairy shoots and flower stalks. The flowers are not close once you look: black passionfruit's are white with a white corona purple only at the base, sitting on the vine with no floral tube to speak of, where pink-flowered passionfruit's petals are pink above a conspicuous violet-blue corona, on a hairy tube 4.5–5 cm long. The stipules settle a vine with no flowers on it — black passionfruit's are plain, 10–15 mm and strap-like, pink-flowered passionfruit's are pinnate, a very narrow rachis fringed with dark thread-like segments. And the fruit is a different colour entirely: a smooth dull purple ball 5–6 cm across with black seeds, against a downy yellow one 4–7 cm across with dark red-brown seeds. Both are edible.",
-        "name" : "Pink-flowered passionfruit",
-        "risk" : "edible",
-        "scientificName" : "Passiflora pinnatistipula"
-      }
+
     ],
     "months" : [
       1,
@@ -1622,7 +1582,6 @@
       8,
       12
     ],
-    "moreImagesURL" : "https://inaturalist.nz/taxa/51446",
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
@@ -1630,31 +1589,26 @@
     ],
     "preparation" : {
       "sources" : [
-        "Te Ara, 'Black passionfruit and flower' (facts restated)",
-        "Enrich with Nature, 'Robinson's Black Passionfruit' (facts restated)"
+
       ],
-      "text" : "Halve a ripe fruit and eat the pulp straight out of the shell with a teaspoon. Past that it is mostly juiced, or spooned over a dessert, and the pulp freezes well for later. Take fruit that has gone fully purple — a green one is not ready."
+      "text" : ""
     },
     "recipes" : [
 
     ],
-    "scientificName" : "Passiflora edulis",
+    "scientificName" : "Passiflora edulis f",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Black passionfruit' entry.",
-      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora edulis f' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-edulis.html",
-      "Habitat, naturalisation, dispersal and environmental weed listing: New Zealand Plant Conservation Network, 'Passiflora edulis f. edulis' factsheet, citing Heenan, P.B. & Sykes, W.R. 2003, 'Passiflora (Passifloraceae) in New Zealand: a revised key with notes on distribution', NZ Journal of Botany 41: 217–221. © NZPCN, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.nzpcn.org.nz/flora/species/passiflora-edulis-f-edulis/",
-      "Flower and fruit description, and eating: Scarrow, Sandy. 'Black passionfruit and flower', in 'Citrus, berries, exotic fruit and nuts – Tamarillos, passionfruit and feijoas', Te Ara – the Encyclopedia of New Zealand, 01/03/2009. © Manatū Taonga Ministry for Culture and Heritage, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://teara.govt.nz/en/photograph/16017/black-passionfruit-and-flower",
-      "Growing conditions and uses: Enrich with Nature, 'Robinson's Black Passionfruit' plant page. © Enrich with Nature, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.enrichwithnature.co.nz/Plants/Plant.cshtml?plant_id=888"
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora edulis f' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-edulis.html"
     ],
     "summary" : {
       "sources" : [
-        "NZ Plant Conservation Network, 'Passiflora edulis f. edulis' (facts restated)",
-        "Te Ara, 'Black passionfruit and flower' (facts restated)"
+
       ],
-      "text" : "A cultivated purple passionfruit gone wild on frost-free forest margins, hung with round fruit full of sweet orange pulp."
+      "text" : ""
     },
     "warnings" : [
-      "Named on DOC's 2024 list of New Zealand environmental weeds — it escapes gardens, and birds carry the seed into bush it was never planted in. Picking and eating it is no problem; bin the rind and seed rather than composting them or dropping them in the bush."
+
     ]
   },
   {
@@ -3955,7 +3909,7 @@
       ],
       "text" : ""
     },
-    "group" : "nuts",
+    "group" : "fungi",
     "habitat" : {
       "sources" : [
         "Wikipedia, 'Lactarius glyciosmus' (CC BY-SA 4.0)"
@@ -3973,7 +3927,13 @@
       "text" : "Lactarius glyciosmus is a small to medium-sized agaric, which typically has a convex cap measuring between 2 and 6 centimetres, with a small central depression developing with age. Sometimes there is a central pimple, and the cap is typically coloured a greyish lilac, sometimes varying to a pale buff. It is thin fleshed, with an incurved margin in younger specimens. The stem measures between 25 and 65 millimetres in height, with a width between 4 and 12 mm. The cylindrical stem is typically widest at the bottom becoming narrower towards the top, or sometimes club shaped. The stem is concolorous with the cap, but sometimes is a little paler or with a yellowish hue. The stem is particularly soft and easily broken, and can become hollow. The flesh is buff. The gills are decurrent and crowded, and vary in colour from a pale yellowish to a pale flesh, turning to a greyish lilac with age. The milk is white with an initially mild, later hot and acrid taste. The mushroom has a strong smell of coconuts.\nThe spore print is a creamy white colour, and the spores themselves are broadly elliptic in shape, and covered with small warts. The warts are connected by thin ridges in an incomplete network. The spores measure between 8 and 9 by between 5 and 6 micrometres.\n\n\nSimilar species\nIt is similar to L. vietus, the grey milk cap, but is differentiated by the fact L. vietus milk dries grey, while L. glyciosmus milk dries white. It can also be confused with L. cocosiolens, which also smells of coconuts, but L. cocosiolens has a slimy brown or orange cap and is not found among birch."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "saffron-milk-cap",
+        "howToTell" : "Cut or nick the gills and watch the milk: saffron milk cap bleeds bright carrot-orange latex that slowly stains the cut green. This one's milk stays white, its cap is greyish lilac rather than orange, and it smells strongly of coconut.",
+        "name" : "Saffron milk cap / Pine mushroom",
+        "risk" : "edible",
+        "scientificName" : "Lactarius deliciosus"
+      }
     ],
     "months" : [
 
@@ -5553,16 +5513,16 @@
     ]
   },
   {
-    "caution" : "careRequired",
+    "caution" : "doNotEat",
     "commonName" : "Downy milk cap",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
       ],
-      "text" : ""
+      "text" : "None."
     },
-    "group" : "greens",
+    "group" : "fungi",
     "habitat" : {
       "sources" : [
         "Wikipedia, 'Lactarius pubescens' (CC BY-SA 4.0)"
@@ -5580,7 +5540,13 @@
       "text" : "The cap is 2.5–10 cm wide, obtuse to convex, becoming broadly convex with a depressed center. The margin (cap edge) is rolled inward and bearded with coarse white hairs when young. The cap surface is dry and fibrillose except for the center, which is sticky and smooth when fresh, azonate, white to cream, becoming reddish-orange to vinaceous (red wine-colored) on the disc with age. The gills are attached to slightly decurrent, crowded, seldom forked, whitish to pale yellow with pinkish tinges, slowly staining brownish ochraceous when bruised.\nThe stem is 2–6.5 cm long, 6–13 mm thick, nearly equal or tapered downward, silky, becoming hollow with age, whitish when young, becoming ochraceous from the base up when older, apex usually tinged pinkish, often with a white basal mycelium. The flesh is firm and whitish; the odor is faintly like geraniums or sometimes pungent, and taste is acrid. The latex is white upon exposure, unchanging, not staining tissues, taste acrid. The spore print is cream with a pinkish tint. The edibility of Lactarius pubescens has been described as unknown, poisonous, and even edible.\nThe spores are 6–8.5 by 5–6.5 μm, elliptic, ornamented with warts and ridges that sometimes form a partial reticulum, prominences up to 1.5 μm high, hyaline (translucent), and amyloid. The cap cuticle is a layer of thin-walled hyphae.\n\n\nVarieties\nLactarius pubescens var. betulae (A.H. Sm.) Hesler & A.H. Sm. 1979\nLactarius pubescens var. betularum (Bon) Bon 1985\nLactarius pubescens var. scoticus (Berk. & Broome) Krieglst. 1991\n\n\nEctomycorrhizae\nThe ectomycorrhizae that L. pubescens forms in association with Betula pendula and Populus tremuloides has been grown in pure culture and described scientifically.\n\n\nSimilar species\nLactarius scoticus Berk. & Broome is a small morphological mimic of L. pubescens, growing in arctic-alpine birch. L. pubescens is often mistaken for L. torminosus which has larger spores (7–10 by 6–8 μm). Certain identification may require microscopic or genetic analysis."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "saffron-milk-cap",
+        "howToTell" : "Cut or nick the gills and watch the milk: saffron milk cap bleeds bright carrot-orange latex that slowly stains the cut green. This one's milk stays white and unchanging, and its young cap margin is rolled and bearded with coarse white hairs.",
+        "name" : "Saffron milk cap / Pine mushroom",
+        "risk" : "edible",
+        "scientificName" : "Lactarius deliciosus"
+      }
     ],
     "months" : [
 
@@ -5589,7 +5555,12 @@
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Specimen plate against a 1 cm scale: the coarse white hairs on the rolled cap margin, cream gills, firm white flesh",
+        "credit" : "(c) Jerry Cooper, some rights reserved (CC BY)",
+        "fileName" : "downy-milk-cap-1.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/1069686"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -5612,7 +5583,7 @@
       "text" : "Lactarius pubescens, commonly known as the downy milk cap, is a species of fungus in the family Russulaceae."
     },
     "warnings" : [
-
+      "Edibility is recorded as unknown, poisonous and edible by different authorities, and the taste is acrid — contradictory sources on a mushroom are a reason not to eat it, not a reason to pick which one to believe."
     ]
   },
   {
@@ -10754,34 +10725,20 @@
     "draft" : true,
     "edibleParts" : {
       "sources" : [
-        "Wikipedia, 'Passiflora tetrandra' (CC BY-SA 4.0)",
-        "Native Plants NZ, 'Passiflora tetrandra' (facts restated)",
-        "Te Karaka (Ngāi Tahu), 'He Aitaka a Tāne — handsome climber' (facts restated)",
-        "Te Māra Reo, 'Kōhia' (facts restated)"
+
       ],
-      "text" : "The fruit — a shiny orange berry up to about 3 cm, somewhere between a cherry and a small peach, borne only on female vines — and the gum that bleeds from a cut stem, which was chewed. Set your expectations low on the fruit: the skin is dry, the pulp sparse, the taste bitter, and the seeds peppery. It was used more as a flavouring and a source of oil than eaten as a fruit in its own right."
+      "text" : ""
     },
-    "group" : "fruit",
+    "group" : "greens",
     "habitat" : {
       "sources" : [
-        "Wikipedia, 'Passiflora tetrandra' (CC BY-SA 4.0)",
-        "Native Plants NZ, 'Passiflora tetrandra' (facts restated)",
-        "O2 Landscapes, 'Passiflora' (facts restated)",
-        "Te Karaka (Ngāi Tahu), 'He Aitaka a Tāne — handsome climber' (facts restated)"
+
       ],
-      "text" : "A vigorous evergreen climber of lowland forest, hauling itself 6–10 m into the canopy on touch-sensitive tendrils and hanging there in glistening masses. It grows through the North Island and down the South Island as far as Banks Peninsula. It takes full sun or part shade and is long-lived, and while it wants well-drained soil with some organic matter in it, established vines cope with dry ground. Young plants are the frost-tender ones. Its conservation status was assessed as Not Threatened in 2024.\nThe thing to know before you go looking is that kōhia is dioecious — male and female flowers are on separate vines — so only some of the plants you find will ever carry fruit. Flowers come between October and December and the fruit follows through summer and autumn, ripening around April and May. Birds eat it, and it was always a climb to get: the difficulty was judging ripeness from the ground and then getting up there and back down again."
+      "text" : ""
     },
     "habitats" : [
-      "forest"
+
     ],
-    "harvestEthics" : {
-      "sources" : [
-        "Te Karaka (Ngāi Tahu), 'He Aitaka a Tāne — handsome climber' (facts restated)",
-        "Te Māra Reo, 'Kōhia' (facts restated)",
-        "Native Plants NZ, 'Passiflora tetrandra' (facts restated)"
-      ],
-      "text" : "Kōhia is endemic — it grows nowhere else — and it carries a long history of use as hinu kōhia, so treat a fruiting vine as something to ask about rather than something to strip. Talk to mana whenua before harvesting on or near land they hold, and follow what they tell you.\nTwo practical reasons for a light hand. The vine is dioecious, so only the female plants fruit at all and the ones you find in fruit are a fraction of the population. And the fruit is bird food: it is eaten and carried by birds, which is how the vine gets anywhere. Take a few from a vine carrying plenty, leave the rest, and do not cut the vine for its stems — a climber cut through is a climber killed, and this is not a plant to spend for lashing you could get elsewhere."
-    },
     "id" : "kohia",
     "identification" : {
       "sources" : [
@@ -10790,27 +10747,7 @@
       "text" : "Vigorous, dioecious, high-climbing vine, glabrous except for slightly hairy young stems.  Lvs simple;  petioles (0.8)–1–2 cm long, eglandular;  stipules minute or 0;  lamina (4)–5–12–(14) × (1.8)–2–4–(5.5) cm, lanceolate to narrow-ovate or elliptic, coriaceous, dark glossy green above, entire, acute to acuminate.  Fls (1)–3–4 in cymes, fragrant.  Pedicels 5–15 mm long.  Bracts ± subulate, caducous.  Hypanthium 0.  Perianth 4-merous;  segments 5–6 mm long, ± oblong, yellowish green;  corona threads 2.5–3.5 mm long.  ♂ fls with 4 stamens;  filaments 5–6 mm long forming a short androphore bearing an abortive ovary.  ♀ fls with short staminodes.  Ovary glabrous;  styles (2)–3,  c. 2 mm long.  Fr. (2)–2.5–3 cm diam., subglobose or broad-ellipsoid, orange;  pulp reddish, sparse.  Seeds 3–7 mm long, flattened, wrinkled.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-      {
-        "entry" : "banana-passionfruit",
-        "howToTell" : "Go to the leaves and you are done: kōhia's are simple — one undivided glossy dark-green blade, lanceolate to narrow-ovate, 5–12 cm long — where banana passionfruit's are deeply three-lobed. The flowers are no closer: kōhia's are small, 8–15 mm, greenish-yellow and often honeysuckle-scented, sitting in little groups of one to four, against banana passionfruit's solitary pink flower hanging from a pale green tube 6–8 cm long. The fruit parts them again — kōhia's is a round orange berry 2–3 cm across, banana passionfruit's a yellow spindle 7–14 cm long. Both are edible, but kōhia is a native worth leaving alone and banana passionfruit is a weed worth taking.",
-        "name" : "Banana passionfruit",
-        "risk" : "edible",
-        "scientificName" : "Passiflora tarminiana"
-      },
-      {
-        "entry" : "black-passionfruit",
-        "howToTell" : "Leaf shape settles it before anything else: kōhia's leaves are simple and undivided, black passionfruit's deeply three-lobed on any mature vine. Kōhia's flowers are tiny — 8–15 mm, greenish-yellow, in groups — where black passionfruit's are showy white discs about 5 cm across with a purple-based corona, one to a stalk. And the fruit: kōhia's is a 2–3 cm orange berry with sparse reddish pulp, black passionfruit's a 5–6 cm purple ball packed with orange pulp. Both are edible, but kōhia is a native worth leaving alone.",
-        "name" : "Black passionfruit",
-        "risk" : "edible",
-        "scientificName" : "Passiflora edulis"
-      },
-      {
-        "entry" : "pink-flowered-passionfruit",
-        "howToTell" : "Leaf shape ends it: kōhia's leaves are simple, a single undivided glossy dark-green blade 5–12 cm long, where pink-flowered passionfruit's are three-lobed and grey- or white-felted underneath. The flowers are not in the same class — kōhia's are 5–6 mm, greenish-yellow and carried in little cymes of one to four, against a solitary pink flower with a violet-blue corona on a tube nearly 5 cm long. The fruit confirms it: kōhia's is a 2–3 cm orange berry with sparse reddish pulp, pink-flowered passionfruit's a downy yellow globe 4–7 cm across full of sweet orange pulp. Both are edible, but kōhia is a native worth leaving alone.",
-        "name" : "Pink-flowered passionfruit",
-        "risk" : "edible",
-        "scientificName" : "Passiflora pinnatistipula"
-      }
+
     ],
     "maoriName" : "Kōhia",
     "months" : [
@@ -10819,7 +10756,6 @@
       4,
       5
     ],
-    "moreImagesURL" : "https://inaturalist.nz/taxa/404665",
     "needsBookSource" : false,
     "origin" : "endemic",
     "photos" : [
@@ -10827,10 +10763,9 @@
     ],
     "preparation" : {
       "sources" : [
-        "Te Karaka (Ngāi Tahu), 'He Aitaka a Tāne — handsome climber' (facts restated)",
-        "Te Māra Reo, 'Kōhia' (facts restated)"
+
       ],
-      "text" : "The fruit's recorded use is as a flavouring for jellies made from seaweed, not as something eaten by the handful, and the pulp also yielded a delicate red face paint.\nIts real product was hinu kōhia, the oil. The berries were crushed, steamed in a hāngī and then pressed, and the oil that came out was fragrant enough to be noticed a quarter of a mile away. It was worn as a scented body oil, mixed with plant gums for perfume, and used as a salve on wounds, chronic sores and skin complaints that were slow to heal. Away from the kitchen, dried stems burned slowly and were used to carry fire from one place to another, and the vine itself was strong and flexible enough for lashing."
+      "text" : ""
     },
     "recipes" : [
 
@@ -10839,22 +10774,17 @@
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Kōhia' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora tetrandra' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-tetrandra.html",
-      "Summary and habitat text: Wikipedia contributors. 'Passiflora tetrandra', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 03/10/2026. https://en.wikipedia.org/wiki/Passiflora_tetrandra",
-      "Habitat, growing conditions and conservation status: Native Plants NZ, 'Passiflora tetrandra' plant page. © Native Plants NZ, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.nativeplants.nz/passiflora-tetrandra.html",
-      "Growth habit and dioecy: O2 Landscapes, 'Passiflora' plant page. © O2 Landscapes, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.o2landscapes.com/plants/passiflora/",
-      "Traditional use, hinu kōhia and harvesting: 'He Aitaka a Tāne — handsome climber', Te Karaka, Te Rūnanga o Ngāi Tahu. © Te Rūnanga o Ngāi Tahu, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/he-aitaka-a-tanea-handsome-climber/",
-      "Name, alternative names and traditional uses: Te Māra Reo, 'Kōhia' page. © Te Māra Reo, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.temarareo.org/PPN-Kohia.html",
+      "Summary text: Wikipedia contributors. 'Passiflora tetrandra', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Passiflora_tetrandra",
       "Greater Wellington Regional Council. Wellington Regional Native Plant Guide, revised edition (2010), main plant list — names only."
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Passiflora tetrandra' (CC BY-SA 4.0)",
-        "Te Karaka (Ngāi Tahu), 'He Aitaka a Tāne — handsome climber' (facts restated)"
+        "Wikipedia, 'Passiflora tetrandra' (CC BY-SA 4.0)"
       ],
-      "text" : "New Zealand's only native passionflower: a forest vine hung with small orange fruit, prized far less as food than for the scented oil pressed from its seeds."
+      "text" : "Passiflora tetrandra (Māori: kōhia), also known as New Zealand passionflower, New Zealand passionfruit, or kohe, is a climbing vine found in New Zealand."
     },
     "warnings" : [
-      "The fruit is up in the canopy, 6–10 m above you, and the historical difficulty was exactly that — judging from the ground whether it was even ripe, then climbing for it and getting back down. Do not climb a forest tree for this one; it is a bitter, sparse-pulped fruit and not worth a fall."
+
     ]
   },
   {
@@ -13425,7 +13355,7 @@
       ],
       "text" : ""
     },
-    "group" : "greens",
+    "group" : "fungi",
     "habitat" : {
       "sources" : [
 
@@ -13443,7 +13373,13 @@
       "text" : ""
     },
     "lookalikes" : [
-
+      {
+        "entry" : "saffron-milk-cap",
+        "howToTell" : "Cut or nick the gills and watch the milk: saffron milk cap bleeds bright carrot-orange latex that slowly stains the cut green. Nothing has been published about this species to compare it with, so the orange milk is the whole of the test.",
+        "name" : "Saffron milk cap / Pine mushroom",
+        "risk" : "edible",
+        "scientificName" : "Lactarius deliciosus"
+      }
     ],
     "months" : [
 
@@ -13749,7 +13685,7 @@
       ],
       "text" : ""
     },
-    "group" : "greens",
+    "group" : "fungi",
     "habitat" : {
       "sources" : [
         "Wikipedia, 'Lactarius quietus' (CC BY-SA 4.0)"
@@ -13767,7 +13703,13 @@
       "text" : "Lactarius quietus typically has a convex cap of 5 to 8 centimetres across, which later flattens or develops a small depression in the centre. In colour, the cap is a dull reddish brown with a tint of cinnamon, sometimes with darker concentric bands or spots. This zoning is one of the most distinctive features of the species. The cap is dry and matt, and not sticky when moist. It features a thick layer of firm, whitish-buff flesh. The stem measures from 4 to 9 centimetres in height, and is typically 10 to 15 millimetres thick. It is cylindrical in shape, but is sometimes furrowed lengthways, and it lacks a ring. It is concolorous with the cap, or a little darker, and is sometimes hollow. The brownish-white gills are slightly decurrent, and change colour with age to a pale reddish brown with mauve hints. The milk is white or cream in colour. The mushroom has a distinctive, strong oily smell, which has also been likened to bedbugs and wet laundry. The spores are oval, with plentiful warts joined by numerous ridges, forming a well-developed network. The spores typically measure 7.5 to 9 by 6.5 to 7.5 μm, and leave a cream print.\n\n\nvar. incanus\nLactarius quietus var. incanus is typically slightly larger than the nominate variety, and younger specimens feature a whitish bloom, after which the variant is named. It has a sweet smell reminiscent of maple syrup, and can be commonly found under oak trees. It can be confused with L. aquifluus and L. mutabilis, but both of these species are found in coniferous woodland."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "saffron-milk-cap",
+        "howToTell" : "Cut or nick the gills and watch the milk: saffron milk cap bleeds bright carrot-orange latex that slowly stains the cut green. This one's milk is white or cream, its cap is dull reddish brown, and it has a strong oily smell likened to bedbugs. Both species have concentric zones on the cap, so zoning is not the difference.",
+        "name" : "Saffron milk cap / Pine mushroom",
+        "risk" : "edible",
+        "scientificName" : "Lactarius deliciosus"
+      }
     ],
     "months" : [
 
@@ -14271,75 +14213,6 @@
     },
     "warnings" : [
 
-    ]
-  },
-  {
-    "caution" : "doNotEat",
-    "commonName" : "Other milk caps",
-    "draft" : true,
-    "edibleParts" : {
-      "sources" : [
-
-      ],
-      "text" : "None."
-    },
-    "group" : "fungi",
-    "habitat" : {
-      "sources" : [
-
-      ],
-      "text" : "Under pines and other conifers alongside saffron milk caps."
-    },
-    "habitats" : [
-      "forest"
-    ],
-    "id" : "other-milk-caps",
-    "identification" : {
-      "sources" : [
-
-      ],
-      "text" : "Cut or nick the gills of any milk cap and watch the milk. Saffron milk cap bleeds bright orange that slowly greens. Anything bleeding white, cream or watery milk is a different Lactarius — some peppery-hot, some emetic. Caps may be zoned like the saffron milk cap, so the cap alone tells you nothing."
-    },
-    "lookalikes" : [
-      {
-        "entry" : "saffron-milk-cap",
-        "howToTell" : "Orange milk that greens on standing is saffron milk cap. White or watery milk is not. A spore print will not separate them — these are all Lactarius, whose prints run white to ochre across the genus, saffron milk cap's cream included. Test every cap for latex instead.",
-        "name" : "Saffron milk cap",
-        "risk" : "edible",
-        "scientificName" : "Lactarius deliciosus"
-      }
-    ],
-    "months" : [
-
-    ],
-    "needsBookSource" : false,
-    "origin" : "introduced",
-    "photos" : [
-
-    ],
-    "preparation" : {
-      "sources" : [
-
-      ],
-      "text" : "None."
-    },
-    "recipes" : [
-
-    ],
-    "scientificName" : "Lactarius spp.",
-    "sources" : [
-      "iNaturalist NZ. The Lactarius species on record in New Zealand (11 of them), which is what this page is about. Checked 15/09/2026. https://inaturalist.nz/observations?taxon_id=54597&place_id=6803&view=species",
-      "Spore print colour: Wikipedia contributors. 'Lactarius deliciosus', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 30/09/2026. https://en.wikipedia.org/wiki/Lactarius_deliciosus",
-      "Spore print colour of the genus: Wikipedia contributors. 'Lactarius', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 30/09/2026. https://en.wikipedia.org/wiki/Lactarius"
-    ],
-    "summary" : {
-      "sources" : [
-
-      ],
-      "text" : "Saffron milk cap has relatives that look similar and bleed white or watery milk instead of orange. Some are acrid, a few make you ill. The milk colour is the test."
-    },
-    "warnings" : [
-      "Several white-milked species cause vomiting and diarrhoea; the acrid ones are unmistakable on the tongue, the dangerous ones are not."
     ]
   },
   {
@@ -15150,32 +15023,20 @@
     "draft" : true,
     "edibleParts" : {
       "sources" : [
-        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)",
-        "NZ Plant Conservation Network, 'Passiflora pinnatistipula' (facts restated)",
-        "Biota NZ, Manaaki Whenua – Landcare Research, 'Passiflora pinnatistipula' (facts restated)"
+
       ],
-      "text" : "The pulp of a ripe fruit. The fruit is round to slightly flattened, 4–7 cm across, downy, and yellow when ripe; inside, the pulp is orange, sweet and edible, with dark brown to dark red seeds 5–6 mm long set through it. Nothing else on the vine is eaten."
+      "text" : ""
     },
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-        "NZ Plant Conservation Network, 'Passiflora pinnatistipula' (facts restated)",
-        "Biota NZ, Manaaki Whenua – Landcare Research, 'Passiflora pinnatistipula' (facts restated)"
+
       ],
-      "text" : "Native to the northern Andes and naturalised in New Zealand since 1982, it turns up as a cultivation escape in scrub and along forest margins. Unlike the other passionfruit here it is cold-hardy, which is why it persists further south — herbarium collections of wild plants come from the Canterbury and Otago land districts — and it wants high light and fertile soil. It sets seed, probably layers from stems as well, and birds eating the fruit carry the seed away from wherever it was planted. It flowers in every month of the year. Weedbusters carries control advice for it."
+      "text" : ""
     },
     "habitats" : [
-      "forest",
-      "shrubland",
-      "urban",
-      "disturbed"
+
     ],
-    "harvestEthics" : {
-      "sources" : [
-        "NZ Plant Conservation Network, 'Passiflora pinnatistipula' (facts restated)"
-      ],
-      "text" : "Nothing here needs rationing — this is an escaped ornamental, not a native, and Weedbusters publishes control advice for it. Picking the fruit is the useful kind of foraging, because the fruit is how it moves: birds eat it and drop the seed into scrub and bush margins well away from the garden it started in. What matters is where the seed ends up afterwards. Carry whole fruit out rather than eating it where it hangs, and put skin and spent seed in the rubbish, not the compost and not the undergrowth."
-    },
     "id" : "pink-flowered-passionfruit",
     "identification" : {
       "sources" : [
@@ -15184,32 +15045,11 @@
       "text" : "Vigorous vine;  young shoots angular, downy.  Lvs 3-lobed;  petioles 1–3 cm long, white-lanate, with (2)–4–8 glands almost hidden in indumentum; stipules pinnate with dark filiform segments almost to the base of the very narrow-linear rachis;  lamina lobes 5–9 cm long, extending ?-3/4 distance in from margin;  middle lobe largest, 3–8 × 1.5–3 cm, lanceolate to elliptic-ovate, dentate, grey- or white-tomentose below, glabrate above except when young, dark shining green, ± rugose, acute or mucronate.  Fls ☿, solitary.  Pedicels much > petioles, hairy.  Bracts free, 1.5–2.3 cm long, ovate, hairy or glabrate outside, serrate with teeth setose.  Hypanthium (4)–4.5–5 cm long, tomentulose.  Sepals 3–4.8 cm long, elliptic, green outside, with tomentulose band, white or very pale pink inside, with short horn near apex;  petals similar to sepals but all pink;  corona threads violet-blue,  c. 1/2 perianth.  Filaments 1.3–1.7 cm long, much > anthers;  anthers 6–9 mm long.  Ovary white-villous.  Fr. 4–7 cm diam., globose or depressed globose, yellow, tomentulose;  pulp sweet and edible, orange.  Seeds 5–6 mm long, ellipsoid-ovoid, dark brown or dark red, alveolate.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-      {
-        "entry" : "banana-passionfruit",
-        "howToTell" : "Both hang pink flowers off a three-lobed climbing vine, so go to the stipules where the leaf stalk meets the stem: pink-flowered passionfruit's are pinnate — a very narrow rachis fringed with dark thread-like segments — where banana passionfruit's are small, plain, and usually gone altogether from a mature stem. Its floral tube is the shorter of the two at 4.5–5 cm, and its corona threads are a conspicuous violet-blue skirt rather than pale. The fruit is unmistakable once ripe: round or slightly flattened, 4–7 cm across, downy and yellow, against banana passionfruit's long spindle tapering at both ends. Both are edible.",
-        "name" : "Banana passionfruit",
-        "risk" : "edible",
-        "scientificName" : "Passiflora tarminiana"
-      },
-      {
-        "entry" : "black-passionfruit",
-        "howToTell" : "Two three-lobed climbing vines, told apart by hair, flower colour and fruit colour. Black passionfruit is hairless all over bar the pistil and stamens; pink-flowered passionfruit is downy — grey- or white-felted under the leaf, with hairy shoots and flower stalks. The flowers are not close once you look: black passionfruit's are white with a white corona purple only at the base, sitting on the vine with no floral tube to speak of, where pink-flowered passionfruit's petals are pink above a conspicuous violet-blue corona, on a hairy tube 4.5–5 cm long. The stipules settle a vine with no flowers on it — black passionfruit's are plain, 10–15 mm and strap-like, pink-flowered passionfruit's are pinnate, a very narrow rachis fringed with dark thread-like segments. And the fruit is a different colour entirely: a smooth dull purple ball 5–6 cm across with black seeds, against a downy yellow one 4–7 cm across with dark red-brown seeds. Both are edible.",
-        "name" : "Black passionfruit",
-        "risk" : "edible",
-        "scientificName" : "Passiflora edulis"
-      },
-      {
-        "entry" : "kohia",
-        "howToTell" : "Leaf shape ends it: kōhia's leaves are simple, a single undivided glossy dark-green blade 5–12 cm long, where pink-flowered passionfruit's are three-lobed and grey- or white-felted underneath. The flowers are not in the same class — kōhia's are 5–6 mm, greenish-yellow and carried in little cymes of one to four, against a solitary pink flower with a violet-blue corona on a tube nearly 5 cm long. The fruit confirms it: kōhia's is a 2–3 cm orange berry with sparse reddish pulp, pink-flowered passionfruit's a downy yellow globe 4–7 cm across full of sweet orange pulp. Both are edible, but kōhia is a native worth leaving alone.",
-        "name" : "Kōhia",
-        "risk" : "edible",
-        "scientificName" : "Passiflora tetrandra"
-      }
+
     ],
     "months" : [
 
     ],
-    "moreImagesURL" : "https://inaturalist.nz/taxa/404668",
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
@@ -15217,34 +15057,27 @@
     ],
     "preparation" : {
       "sources" : [
-        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)",
-        "Otero, Charlie. Madrid Fusión 2017 (method restated)"
+
       ],
-      "text" : "Halve a yellow, fully ripe fruit and spoon the pulp out, seeds and all. Scraped and strained, the same pulp becomes an extract or juice to cook with — it is used that way in South America, where the species goes by poro poro. Be careful with that name in New Zealand: poroporo here means Solanum aviculare and S. laciniatum, an unrelated plant whose unripe fruit is poisonous."
+      "text" : ""
     },
     "recipes" : [
-      {
-        "method" : "A restaurant dish built on three passionfruit extracts, two of which you can pick here. For three parcels: 80 g smoked trout, 20 g maize dough, 20 g beaten egg, salt and pepper, maize leaves to wrap, and a tablespoon each of extract of pink-flowered passionfruit (Passiflora pinnatistipula, called poro poro), sweet granadilla (P. ligularis) and banana passionfruit. Blend the trout smooth with the maize dough and the egg. Press the extracts from the fruit. Wash the maize leaves. Split the fish paste into three, work one extract into each, and season. Wrap each into a parcel in a leaf, tie the ends, and steam 20 minutes. Serve still in the leaf.\nThe pickled figs served alongside: wash 100 g breba figs and cut a shallow cross in the base of each, then drain them on paper. Bring 150 ml vinegar, 75 g panela, 5 allspice berries, 5 black peppercorns, 2 sweet peppers, hot pepper and salt to the boil, add the figs, and cook an hour.\nSweet granadilla does not grow wild in New Zealand, so either leave that third out or use more of the other two.",
-        "title" : "Trout and corn wraps with passionfruit"
-      }
+
     ],
     "scientificName" : "Passiflora pinnatistipula",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Pink-flowered passionfruit' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora pinnatistipula' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-pinnatistipula.html",
-      "Habitat, naturalisation, dispersal and weed status: New Zealand Plant Conservation Network, 'Passiflora pinnatistipula' factsheet. © NZPCN, all rights reserved — facts restated, no text reproduced. Retrieved 03/10/2026. https://www.nzpcn.org.nz/flora/species/passiflora-pinnatistipula/",
-      "Wild distribution and taxonomy: Biota of New Zealand, Manaaki Whenua – Landcare Research, 'Passiflora pinnatistipula Cav.' Retrieved 03/10/2026. https://biotanz.landcareresearch.co.nz/scientific-names/76b81da1-aed4-4401-aab3-fc36b9bf907a",
-      "Recipe: Otero, Charlie. 'Trout and corn wrap, with passionfruits (gulupa, granadilla, curuba) and pickled fig with peppers', Madrid Fusión 2017. © Madrid Fusión, all rights reserved — method restated, no text reproduced. Retrieved 03/10/2026. https://edicionesanteriores.madridfusion.net/en/recipe/trout-and-corn-wrap-with-passionfruits-gulupa-granadilla-curuba-and-pickled-fig-with-peppers/"
+      "Summary text: Wikipedia contributors. 'Passiflora pinnatistipula', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Passiflora_pinnatistipula"
     ],
     "summary" : {
       "sources" : [
-        "NZ Plant Conservation Network, 'Passiflora pinnatistipula' (facts restated)",
-        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+        "Wikipedia, 'Passiflora pinnatistipula' (CC BY-SA 4.0)"
       ],
-      "text" : "An Andean vine escaped from gardens into scrub and bush margins, carrying pink flowers over a violet-blue skirt and round yellow fruit with sweet orange pulp."
+      "text" : "Passiflora pinnatistipula, commonly known as poro poro or gulupa (Colombia), is a climbing perennial that grows in the Cajamarca region of Peru."
     },
     "warnings" : [
-      "A garden escape that birds are spreading into scrub and bush margins, and Weedbusters publishes control advice for it. Pick and eat it freely; bin the skin and seed rather than composting them or dropping them in the bush."
+
     ]
   },
   {
@@ -16997,7 +16830,7 @@
   {
     "caution" : "doNotEat",
     "commonName" : "Red-pored boletes",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
@@ -17940,16 +17773,16 @@
     ]
   },
   {
-    "caution" : "careRequired",
+    "caution" : "doNotEat",
     "commonName" : "Rufous Milkcap",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
       ],
-      "text" : ""
+      "text" : "None."
     },
-    "group" : "greens",
+    "group" : "fungi",
     "habitat" : {
       "sources" : [
         "Wikipedia, 'Lactarius rufus' (CC BY-SA 4.0)"
@@ -17967,7 +17800,13 @@
       "text" : "The cap is up to 10 centimetres in diameter. It is dark brick, bay, or red-brown.  At first it is convex, and often has a small central boss (umbo), but later flattens, eventually acquiring a shallow central depression. The surface is dry and matt. The concolorous, but paler  stem  often becomes hollow with age. The gills are slightly decurrent, cream, becoming coloured as the cap later, only paler. The spore print is creamy white, with a slight salmon tinge. The flesh is white, as is the (abundant) milk, which tastes mild initially, gradually becoming very hot, and acrid after a minute or so."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "saffron-milk-cap",
+        "howToTell" : "Cut or nick the gills and watch the milk: saffron milk cap bleeds bright carrot-orange latex that slowly stains the cut green. This one's milk is white and abundant, turning very hot after a minute, and its cap is dark brick to red-brown with a small central boss.",
+        "name" : "Saffron milk cap / Pine mushroom",
+        "risk" : "edible",
+        "scientificName" : "Lactarius deliciosus"
+      }
     ],
     "months" : [
 
@@ -17976,7 +17815,12 @@
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Brick-red caps in grass under pine, one turned over to show the pale cream gills",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "rufous-milkcap-1.heic",
+        "sourceURL" : "https://inaturalist.nz/observations/999852"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -17990,7 +17834,8 @@
     "scientificName" : "Lactarius rufus",
     "sources" : [
       "iNaturalist NZ. 'Lactarius rufus' is on record in New Zealand; the taxon page carries the observations. Checked 16/09/2026. https://inaturalist.nz/taxa/118223",
-      "Identification, habitat and summary text: Wikipedia contributors. 'Lactarius rufus', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Lactarius_rufus"
+      "Identification, habitat and summary text: Wikipedia contributors. 'Lactarius rufus', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Lactarius_rufus",
+      "Edibility: “generally not recommended for consumption” because of “toxins which may cause gastric upset”, and may be poisonous raw. Wikipedia contributors. 'Lactarius rufus', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 06/10/2026. https://en.wikipedia.org/wiki/Lactarius_rufus"
     ],
     "summary" : {
       "sources" : [
@@ -17999,7 +17844,7 @@
       "text" : "Lactarius rufus is a common, medium-sized member of the mushroom genus Lactarius, whose many members are commonly known as milkcaps."
     },
     "warnings" : [
-
+      "Not recommended for eating: it carries toxins that may cause gastric upset and may be poisonous raw. It is eaten in Scandinavia after canning and was one of Finland's most harvested wild mushrooms, but no amount of that makes it a beginner's mushroom here."
     ]
   },
   {
@@ -18033,15 +17878,50 @@
       "sources" : [
 
       ],
-      "text" : "Orange cap with darker concentric rings, often depressed in the centre. Orange gills that bruise dull green. The confirming test: cut the flesh and it bleeds bright carrot-orange latex, and the cut surface slowly stains green. Brittle, not fibrous, flesh."
+      "text" : "Orange cap with darker concentric rings, often depressed in the centre. Orange gills that bruise dull green. The confirming test: cut the flesh and it bleeds bright carrot-orange latex, and the cut surface slowly stains green. Brittle, not fibrous, flesh. Test every cap for latex rather than reading the cap: other milk caps are zoned the same way, so the cap alone tells you nothing, and a spore print will not separate them either — the prints run white to ochre across the genus, this one's cream included."
     },
     "lookalikes" : [
       {
-        "entry" : "other-milk-caps",
-        "howToTell" : "Other milk caps bleed white or cream latex, not orange, and are acrid. Orange latex plus green staining plus pine is the reliable combination. A spore print will not separate them — these are all Lactarius, whose prints run white to ochre across the genus, saffron milk cap's cream included.",
-        "name" : "Other Lactarius species",
-        "risk" : "unpalatable",
-        "scientificName" : "Lactarius spp."
+        "entry" : "downy-milk-cap",
+        "howToTell" : "Saffron milk cap is the only milk cap here that bleeds bright carrot-orange latex, and the cut surface slowly stains green. This one's milk is white and does not change, and the rolled cap margin is bearded with coarse white hairs when young — saffron milk cap has no hairs on its margin. The taste is acrid.",
+        "name" : "Downy milk cap",
+        "risk" : "toxic",
+        "scientificName" : "Lactarius pubescens"
+      },
+      {
+        "entry" : "new-zealand-milkcap",
+        "howToTell" : "Saffron milk cap is the only milk cap here that bleeds bright carrot-orange latex, and the cut surface slowly stains green. This one has never been described in print, so there is no published account of its cap, gills or milk to check against — the orange latex is the whole of the test, and a milk cap without it is not this one's near relative but simply not saffron milk cap.",
+        "name" : "New Zealand milkcap",
+        "risk" : "unknown",
+        "scientificName" : "Lactarius novae-zelandiae"
+      },
+      {
+        "entry" : "rufous-milkcap",
+        "howToTell" : "Saffron milk cap is the only milk cap here that bleeds bright carrot-orange latex, and the cut surface slowly stains green. This one's milk is white and abundant, mild for a moment and then very hot and acrid. The cap is dark brick or red-brown, dry and matt, often with a small central boss rather than a depression.",
+        "name" : "Rufous Milkcap",
+        "risk" : "toxic",
+        "scientificName" : "Lactarius rufus"
+      },
+      {
+        "entry" : "tawai-milkcap",
+        "howToTell" : "Saffron milk cap is the only milk cap here that bleeds bright carrot-orange latex, and the cut surface slowly stains green. This one has never been described in print, so there is no published account of its cap, gills or milk to check against — the orange latex is the whole of the test, and a milk cap without it is not this one's near relative but simply not saffron milk cap.",
+        "name" : "Tawai milkcap",
+        "risk" : "unknown",
+        "scientificName" : "Lactarius tawai"
+      },
+      {
+        "entry" : "ugly-milkcap",
+        "howToTell" : "Saffron milk cap is the only milk cap here that bleeds bright carrot-orange latex, and the cut surface slowly stains green. This one's milk is white on contact with the air and acrid, and it stains the dirty-white gills olive-brown. The cap is olive brown to yellow-green, darkening to blackish, and slimy in the middle.",
+        "name" : "Ugly Milkcap",
+        "risk" : "toxic",
+        "scientificName" : "Lactarius turpis"
+      },
+      {
+        "entry" : "umere-milkcap",
+        "howToTell" : "Saffron milk cap is the only milk cap here that bleeds bright carrot-orange latex, and the cut surface slowly stains green. This one has never been described in print, so there is no published account of its cap, gills or milk to check against — the orange latex is the whole of the test, and a milk cap without it is not this one's near relative but simply not saffron milk cap.",
+        "name" : "Umere milkcap",
+        "risk" : "unknown",
+        "scientificName" : "Lactarius umerensis"
       }
     ],
     "months" : [
@@ -18083,6 +17963,12 @@
         "credit" : "(c) Nathan Aaron, some rights reserved (CC BY) (CC-BY)",
         "fileName" : "saffron-milk-cap-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/196267112"
+      },
+      {
+        "caption" : "Underside of a mature cap: orange gills, and the green bruising on cap edge and cut stem",
+        "credit" : "no rights reserved",
+        "fileName" : "saffron-milk-cap-6.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/47382403"
       }
     ],
     "preparation" : {
@@ -18098,7 +17984,9 @@
     "sources" : [
       "Plant & Food Research. 'High value fungi may offer new industry for NZ' — Lactarius deliciosus under Pinus radiata in New Zealand, and its January-to-May season. Retrieved 15/09/2026. https://www.plantandfood.com/en-nz/article/high-value-fungi-may-offer-new-industry-for-nz/",
       "Spore print colour: Wikipedia contributors. 'Lactarius deliciosus', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 30/09/2026. https://en.wikipedia.org/wiki/Lactarius_deliciosus",
-      "Spore print colour of the genus: Wikipedia contributors. 'Lactarius', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 30/09/2026. https://en.wikipedia.org/wiki/Lactarius"
+      "Spore print colour of the genus: Wikipedia contributors. 'Lactarius', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 30/09/2026. https://en.wikipedia.org/wiki/Lactarius",
+      "iNaturalist NZ. The Lactarius species on record in New Zealand (11 of them), which is what this page is about. Checked 15/09/2026. https://inaturalist.nz/observations?taxon_id=54597&place_id=6803&view=species",
+      "Necatorin in ugly milk cap, and that boiling does not eliminate it: Wikipedia contributors. 'Lactarius turpis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 06/10/2026. https://en.wikipedia.org/wiki/Lactarius_turpis"
     ],
     "summary" : {
       "sources" : [
@@ -18107,6 +17995,7 @@
       "text" : "The best beginner's mushroom in NZ — it bleeds bright orange, and nothing dangerous does."
     },
     "warnings" : [
+      "Eleven Lactarius species are on record in New Zealand and this is one of them; others are undescribed or unnamed, and related milk-bleeding genera grow here too. Any milk cap bleeding white, cream or watery latex is a different species — the acrid ones announce themselves on the tongue, but several cause vomiting and diarrhoea, and ugly milk cap contains a mutagen that boiling does not remove.",
       "Only harvest from pine. A mushroom that looks similar in native forest is not this species.",
       "Many plantation forests are private land or actively logged — get permission and check for harvesting operations.",
       "Some plantations are aerially sprayed. Check with the forest manager."
@@ -19864,7 +19753,7 @@
       ],
       "text" : ""
     },
-    "group" : "greens",
+    "group" : "fungi",
     "habitat" : {
       "sources" : [
         "Wikipedia, 'Lactarius blennius' (CC BY-SA 4.0)"
@@ -19882,7 +19771,13 @@
       "text" : "Lactarius blennius has a flattened convex cap that is 4–10 cm across that later becomes depressed in the centre. In colour, it is pale olive to a greenish grey, sometimes a dull green or pale grey-sepia, and has blotches of darker colouration in concentric bands, though the colour can vary greatly. Heavily spotted specimens are also known, and a very brown specimen similar to Lactarius circellatus was recorded in Scotland. The cap is very slimy when moist and has a margin that is curved inwards. The stem is a paler colour than the cap, but also very slimy, and measures from 4–5 cm tall by 1–1.7 cm thick, tapering a little towards the bottom. The flesh is whitish, similar in colour to the gills, which later become a creamy or pale buff colour. The gills turn a brownish-grey colour when wounded, and are crowded. In shape, they are slightly decurrent or adnate, meaning that they run a small way down the stem in attachment, or that they are attached to the stem by the whole depth of the gills. The milk is white and dries grey, and is very plentiful. L. blennius spores leave a creamy print, and are elliptic with low warts joined by ridges with a small number of cross-connections, measuring from 6–9 by 5.5–7 μm."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "saffron-milk-cap",
+        "howToTell" : "Cut or nick the gills and watch the milk: saffron milk cap bleeds bright carrot-orange latex that slowly stains the cut green. This one's milk is white and dries grey, and its cap is pale olive to greenish grey and very slimy when moist.",
+        "name" : "Saffron milk cap / Pine mushroom",
+        "risk" : "edible",
+        "scientificName" : "Lactarius deliciosus"
+      }
     ],
     "months" : [
 
@@ -21919,7 +21814,7 @@
       ],
       "text" : ""
     },
-    "group" : "greens",
+    "group" : "fungi",
     "habitat" : {
       "sources" : [
 
@@ -21937,7 +21832,13 @@
       "text" : ""
     },
     "lookalikes" : [
-
+      {
+        "entry" : "saffron-milk-cap",
+        "howToTell" : "Cut or nick the gills and watch the milk: saffron milk cap bleeds bright carrot-orange latex that slowly stains the cut green. Nothing has been published about this species to compare it with, so the orange milk is the whole of the test.",
+        "name" : "Saffron milk cap / Pine mushroom",
+        "risk" : "edible",
+        "scientificName" : "Lactarius deliciosus"
+      }
     ],
     "months" : [
 
@@ -22605,16 +22506,16 @@
     ]
   },
   {
-    "caution" : "careRequired",
+    "caution" : "doNotEat",
     "commonName" : "Ugly Milkcap",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
       ],
-      "text" : ""
+      "text" : "None."
     },
-    "group" : "greens",
+    "group" : "fungi",
     "habitat" : {
       "sources" : [
         "Wikipedia, 'Lactarius turpis' (CC BY-SA 4.0)"
@@ -22633,7 +22534,13 @@
       "text" : "The cap is normally 4–20 cm in diameter. At first it has an involute margin and a somewhat depressed centre. The upper surface is olive brown or yellow-green and is often sticky or slimy in the middle. When young it has velvety zones and may be shaggy at the rim. Later it becomes funnel-shaped and the colour darkens to blackish. The gills are crowded, dirty white, stained olive-brown by old milk, which is initially white on contact with the air. They are somewhat decurrent. With potassium hydroxide or ammonia there is a purple reaction.\nThe stipe is up to about 7 cm tall by 3 cm in diameter and it is similar in colour to the cap, but much lighter. It may have shallow pits (scrobiculae). The flesh is a dirty white and tends to turn brown. The taste (especially the abundant milk) is acrid. There is little smell. The spores are about 7x6 μ and are ornamented with a pattern of ridges. The spore print is cream in colour.\n\n\nSimilar species\nA similar species in Pacific Northwest conifer forests, as well as Sitka spruce forests, is L. olivaceoumbrinus. Usually found growing individually, it has a stronger olive-brown colour on its cap and stipe, with dark spots on the latter. Also similar is L. atroviridis."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "saffron-milk-cap",
+        "howToTell" : "Cut or nick the gills and watch the milk: saffron milk cap bleeds bright carrot-orange latex that slowly stains the cut green. This one's milk is white on contact with the air, and it stains the dirty-white gills olive-brown. The cap is olive brown to yellow-green, darkening to blackish.",
+        "name" : "Saffron milk cap / Pine mushroom",
+        "risk" : "edible",
+        "scientificName" : "Lactarius deliciosus"
+      }
     ],
     "months" : [
 
@@ -22642,7 +22549,12 @@
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Olive-brown caps under birch, slimy in the middle, one upturned showing dirty-white gills",
+        "credit" : "(c) Jerry Cooper, some rights reserved (CC BY)",
+        "fileName" : "ugly-milkcap-1.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/1436425"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -22656,7 +22568,8 @@
     "scientificName" : "Lactarius turpis",
     "sources" : [
       "iNaturalist NZ. 'Lactarius turpis' is on record in New Zealand; the taxon page carries the observations. Checked 16/09/2026. https://inaturalist.nz/taxa/382886",
-      "Identification, habitat and summary text: Wikipedia contributors. 'Lactarius turpis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Lactarius_turpis"
+      "Identification, habitat and summary text: Wikipedia contributors. 'Lactarius turpis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Lactarius_turpis",
+      "Edibility: “contains the mutagenic chemical compound necatorin, so it cannot be recommended for eating”, and boiling reduces but does not eliminate it. Wikipedia contributors. 'Lactarius turpis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 06/10/2026. https://en.wikipedia.org/wiki/Lactarius_turpis"
     ],
     "summary" : {
       "sources" : [
@@ -22665,7 +22578,7 @@
       "text" : "Lactarius turpis (also L. plumbeus or L. necator) is a Eurasian species of fungus, commonly known as the ugly milk-cap or green birch milk cap in English."
     },
     "warnings" : [
-
+      "Contains the mutagenic compound necatorin. Boiling reduces it but does not eliminate it, so this is not a mushroom to eat however it is cooked — despite its use, after boiling, as a pickle in Russia and a spice in northern and eastern Europe."
     ]
   },
   {
@@ -22678,7 +22591,7 @@
       ],
       "text" : ""
     },
-    "group" : "greens",
+    "group" : "fungi",
     "habitat" : {
       "sources" : [
 
@@ -22696,7 +22609,13 @@
       "text" : ""
     },
     "lookalikes" : [
-
+      {
+        "entry" : "saffron-milk-cap",
+        "howToTell" : "Cut or nick the gills and watch the milk: saffron milk cap bleeds bright carrot-orange latex that slowly stains the cut green. Nothing has been published about this species to compare it with, so the orange milk is the whole of the test.",
+        "name" : "Saffron milk cap / Pine mushroom",
+        "risk" : "edible",
+        "scientificName" : "Lactarius deliciosus"
+      }
     ],
     "months" : [
 

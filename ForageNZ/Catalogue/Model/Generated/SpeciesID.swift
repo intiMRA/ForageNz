@@ -194,7 +194,6 @@ public enum SpeciesID: String, Codable, Sendable, Hashable, CaseIterable {
     case ongaonga = "ongaonga"
     case onionWeed = "onion-weed"
     case oregano = "oregano"
-    case otherMilkCaps = "other-milk-caps"
     case oxEyeDaisy = "ox-eye-daisy"
     case palePinkWoodSorrel = "pale-pink-wood-sorrel"
     case patotara = "patotara"

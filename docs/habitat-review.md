@@ -5,9 +5,35 @@ entry's own `habitat` prose and nothing else; **Evidence** is the literal text t
 matched. A wrong label is a rule to fix in the tool, not a value to edit here — the
 file is regenerated on every run.
 
-## Shipped entries (59)
+## Shipped entries (66)
 
 These are the ones the app actually shows. Worth reading all of them.
+
+### Alexanders — `alexanders`
+
+- **Labels:** coastal, urban
+    - `coastal` ← 'coastal', 'coasts', 'coast'
+    - `urban` ← 'gardens'
+- **Prose:** Alexanders is widespread in Britain, where it is frequent in coastal areas in the south, becoming progressively rarer towards the north of Scotland, and absent from Orkney and Shetland. Inland, it is often found close to the sites of medieval monastery gardens and other historical places such as castles. In Ireland it is common around the south and east coasts, but rare inland and to the west.
+
+More generally in Europe, it occurs throughout the Mediterranean, where it is recorded in all coastal areas, including the islands, and it extends as far as Crimea and the Black Sea. It is also found along the Atlantic coast of the continent from the Iberian Peninsula northwards through France, Belgium, the Netherlands, Denmark and (recently) into Norway; and westwards to the Azores. In north Africa it is restricted to the Mediterranean and Atlantic regions, including the Canary Islands.
+The conservation status of alexanders in Britain and France is Least Concern, and it is not considered to be threatened in any region, although it is rare in some countries, such as Belgium.
+It is recorded as an introduction in New Zealand, Australia and Bermuda.
+It is a strictly lowland plant in northern Europe. In Britain, it is recorded no higher than 290 m, at Davidstow Airfield in Cornwall.
+- **Credit:** Wikipedia, 'Smyrnium olusatrum' (CC BY-SA 4.0)
+
+### Amaranth — `amaranthus-species`
+
+- **Labels:** alpine
+    - `alpine` ← 'mountain'
+- **Prose:** The genus most likely originated in Central America. The native range of the genus is cosmopolitan in tropical regions. It is found in elevations ranging from lowlands to mountain ranges such as the Himalayas.
+- **Credit:** Wikipedia, 'Amaranth' (CC BY-SA 4.0)
+
+### Apple mint — `apple-mint`
+
+- **Labels:** _none_
+- **Prose:** Apple mint is native to southern and western Europe and is naturalised in central and northern parts of Europe. It is found in damp and wet locations.
+- **Credit:** Wikipedia, 'Mentha suaveolens' (CC BY-SA 4.0)
 
 ### Bitter bolete — `bitter-bolete`
 
@@ -255,13 +281,6 @@ These are the ones the app actually shows. Worth reading all of them.
 - **Prose:** Damp shady ground: roadsides, stream banks, under hedges and trees, neglected gardens. Forms dense carpets in winter and spring.
 - **Credit:** _yours, uncredited_
 
-### Other milk caps — `other-milk-caps`
-
-- **Labels:** forest
-    - `forest` ← 'Under pines'
-- **Prose:** Under pines and other conifers alongside saffron milk caps.
-- **Credit:** _yours, uncredited_
-
 ### Petty spurge — `petty-spurge`
 
 - **Labels:** urban
@@ -310,6 +329,29 @@ These are the ones the app actually shows. Worth reading all of them.
     - `disturbed` ← 'roadsides', 'waste ground'
 - **Prose:** Gardens, roadsides, paddocks and waste ground alongside pūhā.
 - **Credit:** _yours, uncredited_
+
+### Psilocybe aucklandiae — `psilocybe-aucklandiae`
+
+- **Labels:** forest
+    - `forest` ← 'forests', 'plantations', 'plantation'
+- **Prose:** On soil and litter, especially clay soils, in native forests and pine plantations, almost always in the wider Auckland Region. Commonly found in the exotic pine plantation of Riverhead. Has been recorded from Waipoua in Northland, and in Australia as Psilocybe sect. Zapotecorum, which is likely phylogenetically similar or the same.
+Specimens examined for the description: Auckland: Woodhill State Forest, on ground in litter of mixed pine and native forest,  C. C. King, Jun 1989 PDD 57236 (holotype). Waitakere Ranges: Sharps Bush, in litter under Leptospermum and Dacrydium: PDD 43043; Atkinson Park, Titirangi Beach on soil under Leptospermum: PDD 49789; Quarry Track, Piha Valley Forest, on litter: PDD 58423. Hunua Ranges: Orere, on ground: PDD 34593; Mangatangi Valley, on rotten wood: PDD 34594.
+- **Credit:** Wikipedia, 'Psilocybe aucklandiae' (CC BY-SA 4.0)
+
+### Psilocybe makarorae — `psilocybe-makarorae`
+
+- **Labels:** forest
+    - `forest` ← 'wood of southern beeches (genus Nothofagus'
+- **Prose:** Psilocybe makarorae is known only from New Zealand. The reported collection locations have been on both the North and South Islands, including the Bay of Plenty, Westland District, Central Otago, and Dunedin.  Like all Psilocybe species, it is saprobic, and feeds on decomposing organic matter. Fruit bodies grow scattered or in groups on the fallen, rotting wood of southern beeches (genus Nothofagus), and are often encountered near lakes and picnic grounds
+- **Credit:** Wikipedia, 'Psilocybe makarorae' (CC BY-SA 4.0)
+
+### Psilocybe subaeruginosa — `psilocybe-subaeruginosa`
+
+- **Labels:** forest, disturbed
+    - `forest` ← 'forests', 'plantations'
+    - `disturbed` ← 'disturbed'
+- **Prose:** Psilocybe subaeruginosa grows solitary to gregarious from wood debris in Australian native forests, pine plantations and is occasionally observed growing on dung. It is common in southern parts of Australia from April to August. The species is also known from Australian native and Eucalyptus forests, and famously in New Zealand on wood chip. It is recorded as present in New Zealand, but DNA sequencing of collections so far indicates P. allenii and P. cyanescens there as well as P. subaeruginosa. Its tendency to live on wood chips, as well as on plants and in soil, contribute to the likelihood that these were the materials it was transplanted to the Northern Hemisphere on, and the transplantation led to a decrease in genetic diversity. This concept also led to the idea that they exist in disturbed areas, rather than natural.
+- **Credit:** Wikipedia, 'Psilocybe subaeruginosa' (CC BY-SA 4.0)
 
 ### Pūhā / Sow thistle — `puha`
 
@@ -388,6 +430,13 @@ These are the ones the app actually shows. Worth reading all of them.
     - `wetland` ← 'stream', 'drains'
     - `urban` ← 'gardens'
 - **Prose:** Damp ground: stream banks, drains, old gardens and the shade under trees, often with onion weed nearby.
+- **Credit:** _yours, uncredited_
+
+### Spindle pouch — `spindle-pouch`
+
+- **Labels:** forest
+    - `forest` ← 'bush', 'forest'
+- **Prose:** Rotting wood in native bush and in mixed native and introduced forest. Recorded on both main islands and commoner in the North Island, particularly around Wellington and Auckland.
 - **Credit:** _yours, uncredited_
 
 ### Stinging nettle — `nettle`
@@ -485,6 +534,12 @@ These are the ones the app actually shows. Worth reading all of them.
 - **Prose:** Dead and dying wood in damp native bush, especially māhoe and other soft-wooded trees.
 - **Credit:** _yours, uncredited_
 
+### Wood nipple fungus — `wood-nipple-fungus`
+
+- **Labels:** _none_
+- **Prose:** It has a Gondwanan distribution, and is found in Australia, New Zealand, and Patagonia (South America), where it grows on rotting wood.
+- **Credit:** Wikipedia, 'Galerina patagonica' (CC BY-SA 4.0)
+
 ### Yellow stainer — `yellow-stainer`
 
 - **Labels:** shrubland, grassland, urban
@@ -498,26 +553,6 @@ These are the ones the app actually shows. Worth reading all of them.
 
 Their `habitat` field is really a distribution section — a native range, not a place to look. These need a habitat statement before they can be classified.
 
-### Tumbleweed amaranth — `amaranthus-species`
-
-- **Labels:** _none_
-- **Prose:** It is native to the tropical Americas, but is a widespread introduced species in other places, including Europe, Africa, and Australia.
-- **Credit:** Wikipedia, 'Amaranthus albus' (CC BY-SA 4.0)
-
-### Apple mint — `apple-mint`
-
-- **Labels:** _none_
-- **Prose:** Apple mint is native to southern and western Europe and is naturalised in central and northern parts of Europe. It is found in damp and wet locations.
-- **Credit:** Wikipedia, 'Mentha suaveolens' (CC BY-SA 4.0)
-
-### Banana passionfruit — `banana-passionfruit`
-
-- **Labels:** _none_
-- **Prose:** Passiflora tarminiana is native to the uplands of tropical South America but the exact native range is uncertain as it has been widely cultivated in this region. It is found in the Colombian highlands and the Venezuelan, Peruvian and southern Ecuadorean Andes where it is cultivated from around 2000 – 3000 metres. 
-It has naturalised in Australia, Guam, Hawaii, New Zealand and Zimbabwe. In both Hawaii and New Zealand it is regarded as an invasive species. It is widely cultivated throughout the world, including California, Réunion, Mexico, Panama and Papua New Guinea.
-Passiflora tripartita var. mollissima and P. tarminiana were until recently considered to be one species, P. mollissima.
-- **Credit:** Wikipedia, 'Passiflora tarminiana' (CC BY-SA 4.0)
-
 ### Bird's-eye speedwell — `birds-eye-speedwell`
 
 - **Labels:** _none_
@@ -530,6 +565,12 @@ The species was first recorded in Britain in 1825. It rapidly extended its range
 - **Labels:** _none_
 - **Prose:** The blackcurrant is native to northern Europe and Asia.
 - **Credit:** Wikipedia, 'Blackcurrant' (CC BY-SA 4.0)
+
+### Blackthorn — `blackthorn`
+
+- **Labels:** _none_
+- **Prose:** P. spinosa is native to Europe, western Asia, and locally in northwest Africa. It is also locally naturalised in Tasmania and eastern North America.
+- **Credit:** Wikipedia, 'Prunus spinosa' (CC BY-SA 4.0)
 
 ### Bog yellow cress — `bog-yellow-cress`
 
@@ -686,6 +727,12 @@ It occurs in rocky, sandy soil on lower slopes, in arid proteoid fynbos as well 
 - **Prose:** Lactarius quietus is found growing exclusively at the base of oak trees, solitarily or in scattered groups, in soil. It can be found very commonly throughout autumn months. It is ectomycorrhizal, feeding symbiotically exclusively with oak, though studies have suggested it is also able to feed saprotrophically, growing from organic soil matter. L. quietus can be found only in Europe; in the United Kingdom, it is one of the one hundred most commonly encountered mushroom species. L. quietus var. incanus is found commonly in eastern North America.
 - **Credit:** Wikipedia, 'Lactarius quietus' (CC BY-SA 4.0)
 
+### Oat — `oat`
+
+- **Labels:** _none_
+- **Prose:** Oats tolerate cold winters less well than cereals such as wheat, barley, and rye, but need less summer heat and more rain, making them important in areas such as Northwest Europe that have cool, wet summers. They can tolerate low-nutrient and acid soils. Oats grow thickly and vigorously, allowing them to outcompete many weeds, and compared to other cereals are relatively free from diseases.
+- **Credit:** Wikipedia, 'Oat' (CC BY-SA 4.0)
+
 ### Prickly lettuce — `prickly-lettuce`
 
 - **Labels:** _none_
@@ -810,6 +857,14 @@ It is not at present under threat.
 In North America, it has been documented as introduced in California, Alabama, Iowa, and Washington, DC, and grows wild in other parts of the continent.
 - **Credit:** Wikipedia, 'Lactuca virosa' (CC BY-SA 4.0)
 
+### Wild oat — `wild-oat`
+
+- **Labels:** _none_
+- **Prose:** This oat is native to Eurasia (particularly the eastern Mediterranean) but it has been introduced to most of the other temperate regions of the world. It is naturalized in some areas and considered a noxious weed in others.
+
+This species and other wild oats can become troublesome in prairie agriculture when it invades and lowers the quality of a field crop, or competes for resources with the crop plants. It takes very few wild oat plants to cause a significant reduction in the yield of a wheat or cultivated oat field.
+- **Credit:** Wikipedia, 'Avena fatua' (CC BY-SA 4.0)
+
 ### Wild parsnip — `wild-parsnip`
 
 - **Labels:** _none_
@@ -844,22 +899,9 @@ It is found in North Africa, within Macaronesia, Madeira Islands, Canary Islands
 - **Prose:** The yew is native to all countries of Europe (except Iceland), the Caucasus, and beyond from Turkey eastwards to northern Iran. Its range extends south to Morocco and Algeria in North Africa, and parts of Southwest and South Asia. A few populations are present in the archipelagos of the Azores and Madeira. The limit of its northern Scandinavian distribution is its sensitivity to frost, with global warming predicted to allow its spread inland. It has been introduced elsewhere, including the United States.
 - **Credit:** Wikipedia, 'Taxus baccata' (CC BY-SA 4.0)
 
-## Classified drafts (128)
+## Classified drafts (132)
 
 Prose copied from Wikipedia or Flora of NZ, so the geography may be the species' global range rather than its New Zealand one. Lower confidence than the shipped set.
-
-### Alexanders — `alexanders`
-
-- **Labels:** coastal, urban
-    - `coastal` ← 'coastal', 'coasts', 'coast'
-    - `urban` ← 'gardens'
-- **Prose:** Alexanders is widespread in Britain, where it is frequent in coastal areas in the south, becoming progressively rarer towards the north of Scotland, and absent from Orkney and Shetland. Inland, it is often found close to the sites of medieval monastery gardens and other historical places such as castles. In Ireland it is common around the south and east coasts, but rare inland and to the west.
-
-More generally in Europe, it occurs throughout the Mediterranean, where it is recorded in all coastal areas, including the islands, and it extends as far as Crimea and the Black Sea. It is also found along the Atlantic coast of the continent from the Iberian Peninsula northwards through France, Belgium, the Netherlands, Denmark and (recently) into Norway; and westwards to the Azores. In north Africa it is restricted to the Mediterranean and Atlantic regions, including the Canary Islands.
-The conservation status of alexanders in Britain and France is Least Concern, and it is not considered to be threatened in any region, although it is rare in some countries, such as Belgium.
-It is recorded as an introduction in New Zealand, Australia and Bermuda.
-It is a strictly lowland plant in northern Europe. In Britain, it is recorded no higher than 290 m, at Davidstow Airfield in Cornwall.
-- **Credit:** Wikipedia, 'Smyrnium olusatrum' (CC BY-SA 4.0)
 
 ### Alsike clover — `alsike-clover`
 
@@ -888,6 +930,32 @@ Habitat
 It grows in waste and disturbed ground, such as beside railways, roads and on tips.
 - **Credit:** Wikipedia, 'Diplotaxis muralis' (CC BY-SA 4.0)
 
+### Arrow bamboo — `arrow-bamboo`
+
+- **Labels:** forest, shrubland, wetland, urban, disturbed
+    - `forest` ← 'plantations', 'forest'
+    - `shrubland` ← 'scrub'
+    - `wetland` ← 'riverbanks'
+    - `urban` ← 'garden'
+    - `disturbed` ← 'roadsides', 'abandoned', 'waste places'
+- **Prose:** By far the commonest and most widespread wild bamboo in New Zealand: the Volcanic Plateau and most lowland country southwards, thinning out only in the south of the South Island, which roughly tracks where it was planted. Look on roadsides and riverbanks, in and around plantations, in scrub and along forest margins, and especially where a garden boundary meets rough ground — on abandoned sections and in waste places. Spread here is by rhizome and not by seed, so a stand is one clone creeping outwards from something somebody planted.
+- **Credit:** NZPCN and Weedbusters (paraphrased)
+
+### Banana passionfruit — `banana-passionfruit`
+
+- **Labels:** coastal, forest, shrubland, wetland, urban, disturbed
+    - `coastal` ← 'coastline', 'sand dunes'
+    - `forest` ← 'forest', 'bush', 'plantations'
+    - `shrubland` ← 'hedges'
+    - `wetland` ← 'streamsides'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'disturbed', 'waste ground', 'roadsides'
+- **Prose:** Passiflora tarminiana is native to the uplands of tropical South America but the exact native range is uncertain as it has been widely cultivated in this region. It is found in the Colombian highlands and the Venezuelan, Peruvian and southern Ecuadorean Andes where it is cultivated from around 2000 – 3000 metres. 
+It has naturalised in Australia, Guam, Hawaii, New Zealand and Zimbabwe. In both Hawaii and New Zealand it is regarded as an invasive species. It is widely cultivated throughout the world, including California, Réunion, Mexico, Panama and Papua New Guinea.
+Passiflora tripartita var. mollissima and P. tarminiana were until recently considered to be one species, P. mollissima.
+In New Zealand, look for it in disturbed and open forest, in light wells and along the margins of intact bush, on streamsides, coastline, cliffs and consolidated sand dunes, and on inshore islands. It is just as much at home in hedges, orchards, exotic plantations, waste ground, gardens and along roadsides.
+- **Credit:** Wikipedia, 'Passiflora tarminiana' (CC BY-SA 4.0); Weedbusters NZ and Otago Regional Council, 'Banana passionfruit' (facts restated)
+
 ### Bay tree — `bay-tree`
 
 - **Labels:** forest, alpine
@@ -914,6 +982,16 @@ It grows in waste and disturbed ground, such as beside railways, roads and on ti
 - **Prose:** Leccinum scabrum is a European species that has been introduced to various areas of the world, mostly appearing in urban areas. In New Zealand, it associates solely with Betula pendula. In North America, it can be found from June to September, except on the West Coast, where it appears from September to November.
 It grows in association with birch. It has been found in association with ornamental birch trees planted outside of its native range, such as in California.
 - **Credit:** Wikipedia, 'Leccinum scabrum' (CC BY-SA 4.0)
+
+### Black bamboo — `black-bamboo`
+
+- **Labels:** forest, wetland, urban, disturbed
+    - `forest` ← 'bush'
+    - `wetland` ← 'stream'
+    - `urban` ← 'gardens', 'urban', 'plantings'
+    - `disturbed` ← 'disturbed', 'waste ground', 'roadsides'
+- **Prose:** Nobody has published where in New Zealand this one has gone wild. Where it has been described elsewhere, in Australia and East Africa, it is an occasional weed of stream banks, disturbed and waste ground, roadsides, gardens and urban bush in subtropical and warmer temperate country, spreading out of plantings by rhizome into loose clumps of 3–7 m canes.
+- **Credit:** NZPCN and Environmental Weeds of Australia / BioNET-EAFRINET (paraphrased)
 
 ### Black locust tree — `black-locust-tree`
 
@@ -1049,6 +1127,17 @@ It is a plant of damp places, usually near the coast where the soil is salty, ty
 - **Prose:** Usually found in warm temperate and subtropical areas, it is probably native to southern Africa. It is familiar elsewhere, particularly the coastline of western North America, where it is an introduced invasive species that has taken hold and become commonplace. It is also found, and naturalised, in Argentina, Chile, Peru, Ecuador, Australia, Spain, Greece, Southern England and New Zealand. Grown in sunny conditions, it is normally found within coastal dunes and bluffs, margins of estuaries, along roadsides; at elevations from sea level to 100 m along the southern Pacific Coast of North America.
 - **Credit:** Wikipedia, 'Carpobrotus chilensis' (CC BY-SA 4.0) — units converted to metric
 
+### Chinese plum — `chinese-plum`
+
+- **Labels:** forest, shrubland, wetland, alpine
+    - `forest` ← 'forests', 'forest'
+    - `shrubland` ← 'thickets'
+    - `wetland` ← 'stream', 'River'
+    - `alpine` ← 'mountains'
+- **Prose:** P. salicina is native to China, Taiwan, Myanmar, Laos, and Vietnam. In China, it grows in sparse forests, forest margins, thickets, along trails in mountains, and stream sides in valleys, at elevations of 200–2600 m. It grows best in temperate warmer regions, as it requires moderate temperatures and is usually early flowering.
+The domestication center of origin of P. salicina is southwestern China, from the Yangtze River Basin. Wild populations of this species are reported as thriving in the provinces of Shaanxi and Gansu. It is recorded as an introduced species in both Australia and Japan.
+- **Credit:** Wikipedia, 'Prunus salicina' (CC BY-SA 4.0)
+
 ### Climbing dock — `climbing-dock`
 
 - **Labels:** urban
@@ -1183,6 +1272,15 @@ It grows gregariously in troops, arcs, or rings (type II, which causes the grass
 - **Prose:** It grows in many types of habitat, including disturbed areas, and often in moist spots.
 - **Credit:** Wikipedia, 'Stachys arvensis' (CC BY-SA 4.0)
 
+### Fishpole bamboo — `fishpole-bamboo`
+
+- **Labels:** forest, urban, disturbed
+    - `forest` ← 'bush'
+    - `urban` ← 'gardens', 'urban'
+    - `disturbed` ← 'roadsides'
+- **Prose:** Beyond the bare word "terrestrial", nothing has been published about where in New Zealand this has gone wild. It has never been recorded flowering here and sets no seed, so every wild stand traces back to a planting and creeps outwards by rhizome. In Australia it is mainly a weed of warmer country: untended ground near gardens, roadsides, waterways and urban bush.
+- **Credit:** NZPCN and Environmental Weeds of Australia / BioNET-EAFRINET (paraphrased)
+
 ### Flowering currant — `flowering-currant`
 
 - **Labels:** coastal
@@ -1223,6 +1321,13 @@ It is widely cultivated and naturalized throughout temperate Europe and Australa
     - `grassland` ← 'meadows'
 - **Prose:** The giant puffball is commonly found in meadows, fields, and deciduous forests in late summer and autumn. It is found in temperate areas throughout the world.
 - **Credit:** Wikipedia, 'Calvatia gigantea' (CC BY-SA 4.0)
+
+### Giant timber bamboo — `giant-timber-bamboo`
+
+- **Labels:** forest
+    - `forest` ← 'woodland', 'bush'
+- **Prose:** No New Zealand habitat note has been published for this one, so what is on record is that it is loose in the country and runs hard on extensive rhizomes — not where to expect it. In its native range it grows in woodland and open bush-wood, especially on lower cleared slopes, up to about 1800 m.
+- **Credit:** NZPCN and Plants For A Future (paraphrased)
 
 ### Greater plantain — `greater-plantain`
 
@@ -1675,29 +1780,6 @@ Within Europe, its native range covers much of France, the Low Countries, Italy,
 - **Prose:** Leptecophylla juniperina is native to New Zealand and Victoria and Tasmania. Subspecies Juniperina is widespread in forest and shrubland in New Zealand and in lowland areas of eastern, north-western and western areas of Tasmania. Subspecies oxycedrus is restricted to exposed, rocky coastal regions of southern and western Tasmania, Bass Strait Islands and southern Victoria and subsp. parvifolia is common at altitudes above 600 m in central and eastern parts of Tasmania.
 - **Credit:** Wikipedia, 'Leptecophylla juniperina' (CC BY-SA 4.0) — units converted to metric
 
-### Psilocybe aucklandiae — `psilocybe-aucklandiae`
-
-- **Labels:** forest
-    - `forest` ← 'forests', 'plantations', 'plantation'
-- **Prose:** On soil and litter, especially clay soils, in native forests and pine plantations, almost always in the wider Auckland Region. Commonly found in the exotic pine plantation of Riverhead. Has been recorded from Waipoua in Northland, and in Australia as Psilocybe sect. Zapotecorum, which is likely phylogenetically similar or the same.
-Specimens examined for the description: Auckland: Woodhill State Forest, on ground in litter of mixed pine and native forest,  C. C. King, Jun 1989 PDD 57236 (holotype). Waitakere Ranges: Sharps Bush, in litter under Leptospermum and Dacrydium: PDD 43043; Atkinson Park, Titirangi Beach on soil under Leptospermum: PDD 49789; Quarry Track, Piha Valley Forest, on litter: PDD 58423. Hunua Ranges: Orere, on ground: PDD 34593; Mangatangi Valley, on rotten wood: PDD 34594.
-- **Credit:** Wikipedia, 'Psilocybe aucklandiae' (CC BY-SA 4.0)
-
-### Psilocybe makarorae — `psilocybe-makarorae`
-
-- **Labels:** forest
-    - `forest` ← 'wood of southern beeches (genus Nothofagus'
-- **Prose:** Psilocybe makarorae is known only from New Zealand. The reported collection locations have been on both the North and South Islands, including the Bay of Plenty, Westland District, Central Otago, and Dunedin.  Like all Psilocybe species, it is saprobic, and feeds on decomposing organic matter. Fruit bodies grow scattered or in groups on the fallen, rotting wood of southern beeches (genus Nothofagus), and are often encountered near lakes and picnic grounds
-- **Credit:** Wikipedia, 'Psilocybe makarorae' (CC BY-SA 4.0)
-
-### Psilocybe subaeruginosa — `psilocybe-subaeruginosa`
-
-- **Labels:** forest, disturbed
-    - `forest` ← 'forests', 'plantations'
-    - `disturbed` ← 'disturbed'
-- **Prose:** Psilocybe subaeruginosa grows solitary to gregarious from wood debris in Australian native forests, pine plantations and is occasionally observed growing on dung. It is common in southern parts of Australia from April to August. The species is also known from Australian native and Eucalyptus forests, and famously in New Zealand on wood chip. It is recorded as present in New Zealand, but DNA sequencing of collections so far indicates P. allenii and P. cyanescens there as well as P. subaeruginosa. Its tendency to live on wood chips, as well as on plants and in soil, contribute to the likelihood that these were the materials it was transplanted to the Northern Hemisphere on, and the transplantation led to a decrease in genetic diversity. This concept also led to the idea that they exist in disturbed areas, rather than natural.
-- **Credit:** Wikipedia, 'Psilocybe subaeruginosa' (CC BY-SA 4.0)
-
 ### Purslane — `purslane`
 
 - **Labels:** wetland
@@ -1915,6 +1997,13 @@ New Zealand range
 C. lucida is a plant that lives in warm, temperate regions. Within New Zealand, C. lucida is typically found in low coastal and montane forests. C. lucida is found throughout both mainland islands of New Zealand and some smaller surrounding islands, extending as far south as Big South Cape Island. The latitudinal range of C. lucida in New Zealand is between 34.42°S and 46.75°S. However, C. lucida is rare on Stewart Island, where deer populations have drastically reduced the population. Smale et al. also noted that C. lucida can be found growing in geothermal soils of the Taupō Volcanic Zone.
 - **Credit:** Wikipedia, 'Coprosma lucida' (CC BY-SA 4.0)
 
+### Slender oat — `slender-wild-oat`
+
+- **Labels:** grassland
+    - `grassland` ← 'grass'
+- **Prose:** A. barbata is native to central Asia (as far east as Pakistan) and the Mediterranean Basin. As an introduced species it also occurs in other Mediterranean-like habitats of New Zealand, Australia, South Africa, Argentina, Chile, Brazil, and Uruguay. In Europe it has been reported in Finland, France, Germany, Norway, Bulgaria, and Austria. In North America it is an introduced species and noxious weed, where it is especially widespread in California. In California it has displaced native species of grass.
+- **Credit:** Wikipedia, 'Avena barbata' (CC BY-SA 4.0)
+
 ### Slimy Milkcap — `slimy-milkcap`
 
 - **Labels:** forest
@@ -1949,12 +2038,12 @@ Habitat
 Urtica australis is typically found near the coast, and can be present on rocky beaches, sand dunes, and scrublands.
 - **Credit:** Wikipedia, 'Urtica australis' (CC BY-SA 4.0)
 
-### Spindle pouch — `spindle-pouch`
+### Square bamboo — `square-bamboo`
 
 - **Labels:** forest
-    - `forest` ← 'bush', 'forest'
-- **Prose:** Rotting wood in native bush and in mixed native and introduced forest. Recorded on both main islands and commoner in the North Island, particularly around Wellington and Auckland.
-- **Credit:** _yours, uncredited_
+    - `forest` ← 'forests'
+- **Prose:** No New Zealand habitat note has been published. In its native range it is a plant of forests, and here, like the rest of these bamboos, it travels on extensively running rhizomes.
+- **Credit:** NZPCN and Plants For A Future (paraphrased)
 
 ### Sticky mouse-ear chickweed — `sticky-mouse-ear-chickweed`
 
@@ -2138,6 +2227,17 @@ Common nematode diseases known to affect spearmint are root knot, caused by vari
 Viral and phytoplasmal diseases
 Spearmint can be infected by tobacco ringspot virus. This virus can lead to stunted plant growth and deformation of the leaves in this plant. In China, spearmint have been seen with mosaic symptoms and deformed leaves. This is an indication that the plant can also be infected by the viruses, cucumber mosaic and tomato aspermy.
 - **Credit:** Wikipedia, 'Spearmint' (CC BY-SA 4.0)
+
+### Winter wild oat — `sterilised-oat`
+
+- **Labels:** grassland
+    - `grassland` ← 'grass'
+- **Prose:** A. sterilis is native to the Mediterranean Basin and West, Central and South Asia, but is widely naturalized elsewhere. The species grows on all continents except Antarctica.
+
+In North America, it grows as an introduced species in the U.S. states of California, Oregon, New Jersey, Ohio, Pennsylvania, and the Canadian provinces of Ontario and Quebec.
+
+Because it thrives in the same conditions as many agricultural crops and has similar lifecycles, the grass directly competes with and reduces yield in arable crops.
+- **Credit:** Wikipedia, 'Avena sterilis' (CC BY-SA 4.0)
 
 ### Wood blewit — `wood-blewit`
 
