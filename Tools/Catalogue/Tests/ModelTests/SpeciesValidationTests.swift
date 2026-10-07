@@ -22,7 +22,10 @@ struct SpeciesValidationTests {
         harvestEthics: SourcedText? = nil,
         sources: [String] = ["A Book, p. 1"],
         recipes: [Recipe] = [],
-        photos: [SpeciesPhoto] = []
+        // One photo by default, because an entry with none is no longer complete: a page that
+        // cannot be identified from text alone and has nothing to look at is blocking whatever
+        // its caution. Tests about photos pass `photos: []` deliberately.
+        photos: [SpeciesPhoto] = [SpeciesPhoto(fileName: "test-1.heic", caption: "Whole plant.", credit: "Someone (CC BY 4.0)")]
     ) -> ForageSpecies {
         ForageSpecies(
             id: id, commonName: commonName, scientificName: scientificName,
@@ -123,19 +126,39 @@ struct SpeciesValidationTests {
         #expect(makePsychoactive().isPublishable)
     }
 
-    /// Months and photos are advisory everywhere else, and that let the *least* finished of the
-    /// five *Psilocybe* entries pass first: `liberty-cap` cleared validation carrying no months,
-    /// no photos and no lookalike card, because nothing demanded any of them.
-    @Test("A psychoactive entry must carry months and a photo, unlike every other caution level")
-    func psychoactiveNeedsMonthsAndAPhoto() {
+    /// Months are advisory everywhere else, and that let the *least* finished of the five
+    /// *Psilocybe* entries pass first: `liberty-cap` cleared validation carrying no months,
+    /// no photos and no lookalike card, because nothing demanded any of them. (The photo half
+    /// of that rule is now general — see `everyEntryNeedsAPhotograph` — so this case no longer
+    /// carries one of its own.)
+    @Test("A psychoactive entry must carry months, unlike every other caution level")
+    func psychoactiveNeedsMonths() {
         #expect(fields(makePsychoactive(months: []), severity: .blocking).contains(.months))
-        #expect(fields(makePsychoactive(photos: []), severity: .blocking).contains(.photos))
 
         // Still only advisory for the cases a reader may actually harvest.
-        let harvestable = makeSpecies(caution: .careRequired, months: [], warnings: ["Careful."], photos: [])
+        let harvestable = makeSpecies(caution: .careRequired, months: [], warnings: ["Careful."])
         #expect(!fields(harvestable, severity: .blocking).contains(.months))
-        #expect(!fields(harvestable, severity: .blocking).contains(.photos))
         #expect(harvestable.isPublishable)
+    }
+
+    /// Not gated on `caution.isHarvestable`, which is how it used to be: that gate excluded
+    /// exactly `doNotEat` and `psychoactive`, the pages where mistaking the species costs most.
+    @Test("Every entry needs a photograph, whatever its caution")
+    func everyEntryNeedsAPhotograph() {
+        for caution in CautionLevel.allCases {
+            let species = makeSpecies(
+                caution: caution,
+                // Whatever else each case demands, so the only thing left is the photograph.
+                months: [.may],
+                edibleParts: caution.isHarvestable ? "Leaves." : "None.",
+                warnings: ["Careful."],
+                photos: []
+            )
+            #expect(
+                fields(species, severity: .blocking).contains(.photos),
+                "\(caution) should not be publishable with no photograph"
+            )
+        }
     }
 
     /// The property the screens ask instead of `!= .doNotEat`, which silently answered "yes,

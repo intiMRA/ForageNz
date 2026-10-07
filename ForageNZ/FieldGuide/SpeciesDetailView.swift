@@ -22,8 +22,10 @@ struct SpeciesDetailView: View {
                     preparation
                 }
                 
+                safety
+
                 lookALike
-                
+
                 recipes
                 
                 ethics
@@ -137,24 +139,30 @@ struct SpeciesDetailView: View {
         }
     }
     
+    /// The banners and the warnings list.
+    ///
+    /// A section of its own, and not — as it was — the top half of `lookALike`. Nested there
+    /// it inherited that section's gate, so an entry with warnings and no lookalike card drew
+    /// none of them: 26 shipped entries, including `karaka`, whose four do-not-eat warnings
+    /// rendered nowhere, and `liberty-cap`, whose Class A statement did the same. A warning
+    /// that depends on the entry happening to have a lookalike is not a warning.
     @ViewBuilder
-    private var lookALike: some View {
-        if !species.lookalikes.isEmpty {
+    private var safety: some View {
+        if showsSafety {
             VStack(alignment: .leading, spacing: .empty) {
-                createSectionHeader(image: Image(.outlineQuestion), title: "Look Alike")
-                    .padding(.bottom, .xxSmall)
-                // A `.psychoactive` entry gets neither banner yet: "do not eat" is the wrong
-                // reason and "before you harvest this" is the wrong instruction. It needs one
-                // line of its own, and that sentence is the owner's to write.
                 if species.caution == .doNotEat {
                     doNotEatBanner
+                        .padding(.bottom, .xxxSmall)
+                }
+                else if species.caution == .psychoactive {
+                    psychoactiveBanner
                         .padding(.bottom, .xxxSmall)
                 }
                 else if species.hasDeadlyLookalikeAsEdible {
                     deadlyLookalikeBanner
                         .padding(.bottom, .xxxSmall)
                 }
-                
+
                 HStack(spacing: .xxSmall) {
                     Image(.outlineExclamation)
                         .icon(size: .custom(size: 12), color: .primary)
@@ -163,7 +171,7 @@ struct SpeciesDetailView: View {
                         .bold()
                 }
                 .padding(.bottom, .xSmall)
-                
+
                 VStack(alignment: .leading, spacing: .xxSmall) {
                     ForEach(species.warnings, id: \.self) { warning in
                         // The styling is set once on the row: `font`, `italic` and
@@ -171,7 +179,7 @@ struct SpeciesDetailView: View {
                         HStack(alignment: .top, spacing: .xSmall) {
                             Text("•")
                                 .accessibilityHidden(true)
-                            
+
                             Text(warning)
                         }
                         .font(.caption2)
@@ -179,8 +187,27 @@ struct SpeciesDetailView: View {
                         .foregroundStyle(.secondary)
                     }
                 }
-                .padding(.bottom, .xSmall)
-    
+            }
+        }
+    }
+
+    /// Shown for anything with a warning to give, and for the two caution levels whose banner
+    /// is the warning — a `doNotEat` or `psychoactive` entry says something the reader needs
+    /// even when nobody has written a `warnings` line for it yet.
+    private var showsSafety: Bool {
+        !species.warnings.isEmpty
+            || species.caution == .doNotEat
+            || species.caution == .psychoactive
+            || species.hasDeadlyLookalikeAsEdible
+    }
+
+    @ViewBuilder
+    private var lookALike: some View {
+        if !species.lookalikes.isEmpty {
+            VStack(alignment: .leading, spacing: .empty) {
+                createSectionHeader(image: Image(.outlineQuestion), title: "Look Alike")
+                    .padding(.bottom, .xSmall)
+
                 ScrollView(.horizontal) {
                     LazyHStack(alignment: .top, spacing: .xSmall) {
                         ForEach(model.lookalikeCards) { card in
@@ -292,6 +319,28 @@ struct SpeciesDetailView: View {
         }
     }
     
+    /// Not designed yet, and painted so — see `needsDesign()`.
+    ///
+    /// The wording is a placeholder with the same status as the colour. Neither of the other
+    /// two banners fits a `psychoactive` entry: "do not eat" is the wrong reason, since nothing
+    /// here is poisonous, and "before you harvest this" is the wrong instruction for a species
+    /// whose active compounds are controlled drugs. What this should say is the owner's
+    /// sentence; until it exists the page says something rather than nothing, in a colour that
+    /// cannot be mistaken for finished.
+    private var psychoactiveBanner: some View {
+        HStack(alignment: .top, spacing: .xxxSmall) {
+            // Not `.icon(…)`: this is the one caution symbol drawn in its own colours, and
+            // tinting it would throw them away. See `CautionLevel.badgeIcon`.
+            CautionLevel.psychoactive.image
+                .resizable()
+                .frame(width: 12, height: 12)
+            Text("This is not food. Its active compounds are controlled drugs — read the safety notes below.")
+                .font(.caption)
+                .italic()
+        }
+        .needsDesign()
+    }
+
     private var deadlyLookalikeBanner: some View {
         HStack(alignment: .top, spacing: .xxxSmall) {
             CautionLevel.doNotEat.image

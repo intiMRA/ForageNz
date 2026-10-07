@@ -16,6 +16,7 @@
 		16AF351E5E55AEB9978BCDD5 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB674D266AEC3706DD237EA /* LocationProvider.swift */; };
 		16DE25F2A746058FB6782194 /* SpeciesPhotoStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA11341A3521A25AA8E3516D /* SpeciesPhotoStrip.swift */; };
 		2419EA989959E66CD9C14599 /* CautionPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */; };
+		A1C0DE0000000000CA7A1011 /* NeedsDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C0DE0000000000CA7A1010 /* NeedsDesign.swift */; };
 		264ED09A988065B705F34E20 /* CatalogueEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DF0D2BB9C0D5A58110687 /* CatalogueEditorApp.swift */; };
 		28CE6B4FE8E95DD4A1BB1633 /* SpeciesModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC10D366D26564C8B7E4205 /* SpeciesModelFactory.swift */; };
 		2BB82EB485F18B9705B3F347 /* land-status.json in Resources */ = {isa = PBXBuildFile; fileRef = F3879044878C62F8D8F549D8 /* land-status.json */; };
@@ -168,6 +169,7 @@
 		64F8E9DC97AD8C0C3504754F /* LandStatusRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LandStatusRepository.swift; path = WhereYouAre/LandStatusRepository.swift; sourceTree = "<group>"; };
 		6B041368BA457787D2DE937A /* CatalogueStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueStoreTests.swift; sourceTree = "<group>"; };
 		6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CautionPalette.swift; path = Components/CautionPalette.swift; sourceTree = "<group>"; };
+		A1C0DE0000000000CA7A1010 /* NeedsDesign.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeedsDesign.swift; path = Components/NeedsDesign.swift; sourceTree = "<group>"; };
 		6F567D725B05CA6E238F22C8 /* RootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		791DF0D2BB9C0D5A58110687 /* CatalogueEditorApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueEditorApp.swift; sourceTree = "<group>"; };
 		7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesDetailView.swift; path = FieldGuide/SpeciesDetailView.swift; sourceTree = "<group>"; };
@@ -512,6 +514,7 @@
 			children = (
 				E3BEAEAE3D024F1C6A9B9C10 /* ImageBadge.swift */,
 				6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */,
+				A1C0DE0000000000CA7A1010 /* NeedsDesign.swift */,
 				A1C0DE0000000000CA7A1006 /* CatalogueArtwork.swift */,
 				D90B10EF78BEEEED358AB658 /* Layout.swift */,
 				50C595A6A649F412A4066591 /* LookalikeCardView.swift */,
@@ -842,6 +845,7 @@
 				732EB0C3958667F5E1937D29 /* RootView.swift in Sources */,
 				9E8FC670A75374EEBCCECBC7 /* SafetyView.swift in Sources */,
 				2419EA989959E66CD9C14599 /* CautionPalette.swift in Sources */,
+				A1C0DE0000000000CA7A1011 /* NeedsDesign.swift in Sources */,
 				16DE25F2A746058FB6782194 /* SpeciesPhotoStrip.swift in Sources */,
 				E0E56E639A59BBA011C3905E /* LandStatusRepository.swift in Sources */,
 				16AF351E5E55AEB9978BCDD5 /* LocationProvider.swift in Sources */,

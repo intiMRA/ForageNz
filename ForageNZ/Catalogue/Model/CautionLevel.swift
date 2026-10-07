@@ -67,11 +67,21 @@ public nonisolated enum LookalikeRisk: String, Codable, Sendable, Comparable, Ca
     case psychoactive
     /// Nobody has recorded whether it is edible — not a hedge, a fact about the literature.
     ///
-    /// It exists for New Zealand's undescribed natives. Three *Lactarius* on the iNaturalist
-    /// NZ list (`novae-zelandiae`, `tawai`, `umerensis`) have no published description at all,
-    /// and `sp. 'Hauroko'` has no name. Carding them from saffron milk cap's page needed a
-    /// risk, and every other case was a claim: `toxic` asserts harm nobody has observed,
-    /// `unpalatable` asserts a taste nobody has recorded, and `edible` is the dangerous lie.
+    /// It exists for New Zealand's endemics. The three endemic *Lactarius* on the iNaturalist
+    /// NZ list (`novae-zelandiae`, `tawai`, `umerensis`) have all been described — McNabb did
+    /// it in 1971 — but not one of those accounts says whether the mushroom can be eaten, and
+    /// no later source does either. So the gap this case names is narrower than "nobody has
+    /// written about it": the edibility is unrecorded, not the species.
+    ///
+    /// Their *pages* are a separate problem. McNabb's descriptions are in copyright and no
+    /// openly licensed one exists, so `tawai` and `umerensis` cannot be filled without a
+    /// person writing from the paper — they are drafts flagged `needsBookSource`, and the
+    /// cards pointing at them from saffron milk cap's page open nothing until that happens.
+    /// (`sp. 'Hauroko'` is harder still: six records, no name, no description.)
+    ///
+    /// Carding them needed a risk, and every other case was a claim: `toxic` asserts harm
+    /// nobody has observed, `unpalatable` asserts a taste nobody has recorded, and `edible`
+    /// is the dangerous lie.
     case unknown
     /// The safe member of the pair: no worse than the entry it is carded against, and
     /// usually the one the forager was looking for. Not a claim that it needs no care —

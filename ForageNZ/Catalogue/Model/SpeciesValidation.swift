@@ -121,15 +121,13 @@ public extension ForageSpecies {
             if warnings.isEmpty {
                 blocking(.warnings, "A psychoactive entry must state its legal status.")
             }
-            // Two more, blocking here where every other case keeps them advisory or skips
-            // them. The generic rules let the *least* finished entry through first: with the
-            // legal statement added, `liberty-cap` passed while carrying no months, no photos
-            // and no lookalike card, purely because nothing demanded them.
+            // Blocking here where every other case keeps it advisory or skips it. The generic
+            // rules let the *least* finished entry through first: with the legal statement
+            // added, `liberty-cap` passed while carrying no months and no lookalike card,
+            // purely because nothing demanded them. (Photos are demanded of every entry now,
+            // below, so the rule this case used to carry for itself has gone.)
             if months.isEmpty {
                 blocking(.months, "A psychoactive entry must say when it fruits — empty months reads as year-round.")
-            }
-            if photos.isEmpty {
-                blocking(.photos, "A psychoactive entry needs a photo. These are small brown mushrooms, and the prose alone will not separate one from what grows beside it.")
             }
         case .careRequired:
             if warnings.isEmpty && lookalikes.isEmpty {
@@ -159,18 +157,32 @@ public extension ForageSpecies {
             }
         }
 
+        // Blocking, and deliberately not gated on `caution.isHarvestable`: that gate excluded
+        // exactly `doNotEat` and `psychoactive`, which are the pages where mistaking the
+        // species costs most. A page with no photograph cannot be identified from text alone
+        // and there is no signal in the bush to look one up, so it is not finished — whatever
+        // else is on it.
+        //
+        // One page could never satisfy this, and that was the useful part of enforcing it:
+        // `red-pored-boletes` was a rule ("any bolete with red or orange pores") rather than a
+        // species, so nothing could ever be photographed for it. It was split into the species
+        // actually recorded here and its text folded into `porcini`.
+        if photos.isEmpty {
+            blocking(.photos, "Needs at least one photograph. It can't be identified from text alone, and there is no signal in the bush to look any up.")
+        }
+
+        // The *count* stays advisory, and stays gated: falling short of the recommended number
+        // is a thin page, not an unusable one.
         let wantedPhotos = CataloguePhotos.recommendedCount(
             hasDeadlyLookalike: highestLookalikeRisk == .deadly
         )
-        if caution.isHarvestable && photos.count < wantedPhotos {
+        if caution.isHarvestable && !photos.isEmpty && photos.count < wantedPhotos {
             advisory(
                 .photos,
-                photos.isEmpty
-                    ? "No photos. It can't be identified from text alone, and there is no signal in the bush to look any up."
-                    : "Only \(photos.count) of \(wantedPhotos) photos."
-                        + (highestLookalikeRisk == .deadly
-                            ? " It has a deadly lookalike, so it needs more than usual."
-                            : "")
+                "Only \(photos.count) of \(wantedPhotos) photos."
+                    + (highestLookalikeRisk == .deadly
+                        ? " It has a deadly lookalike, so it needs more than usual."
+                        : "")
             )
         }
 
@@ -180,16 +192,25 @@ public extension ForageSpecies {
             blocking(.sources, "Remove the blank source, or fill it in.")
         }
 
-        // Advisory, never blocking: waiting on a book is a fact about the sources available,
-        // not a defect in the entry, and an entry nobody can finish yet must not fail the build.
+        // Advisory, never blocking: work still owed is a fact about the sources available or
+        // about who may write the text, not a defect in what the entry already says, and
+        // neither an entry nobody can finish yet nor a live page that is right but thin must
+        // fail the build.
+        let note = sourcingNote?.trimmed
         if needsBookSource {
-            if let sourcingNote, !sourcingNote.trimmed.isEmpty {
-                advisory(.needsBookSource, "Waiting on a book: \(sourcingNote.trimmed)")
+            if let note, !note.isEmpty {
+                advisory(.needsBookSource, "Waiting on a book: \(note)")
             } else {
                 // The flag alone leaves the next person exactly where an untagged entry does —
                 // knowing only that the web failed, not which shelf to reach for.
                 advisory(.needsBookSource, "Flagged as book-only with no note — say which book, and what the web failed to give.")
             }
+        } else if let note, !note.isEmpty {
+            // A note without the flag means the evidence is already cited and what is missing
+            // is a person's sentence. Reported, because the alternative is an entry that looks
+            // finished: nothing else in the data distinguishes "cited and written" from
+            // "cited, and still owed the safety text only a person may write".
+            advisory(.needsBookSource, "Still owed a person's text: \(note)")
         }
 
         return issues

@@ -54,6 +54,27 @@ struct BookSourceTests {
         #expect(issue?.message.contains("Knox, A Forager's Treasury.") == true)
     }
 
+    /// The other kind of unfinished entry: everything is cited, and what is missing is the
+    /// safety sentence only a person may write (README:261-265). Without this, such an entry
+    /// is indistinguishable in the data from a finished one.
+    @Test("A note without the flag is reported too, as text owed rather than a book awaited")
+    func notedWithoutFlag() {
+        let owed = makeSpecies(
+            needsBookSource: false,
+            sourcingNote: "The warning says one death; the record is two."
+        )
+        let issue = owed.validationIssues.first { $0.field == .needsBookSource }
+        #expect(issue?.severity == .advisory)
+        #expect(owed.isPublishable)
+        #expect(issue?.message.contains("The warning says one death; the record is two.") == true)
+        #expect(issue?.message.contains("book") == false)
+
+        for note in ["", "   "] {
+            let blank = makeSpecies(needsBookSource: false, sourcingNote: note)
+            #expect(!blank.validationIssues.contains { $0.field == .needsBookSource })
+        }
+    }
+
     /// A flag with no note leaves the next person exactly where an untagged entry does, which
     /// is the state this field exists to prevent.
     @Test("Flagged with no note is called out, and a blank note counts as none")
@@ -98,6 +119,9 @@ struct BookSourceTests {
             edibleParts: "Leaves.",
             preparation: "Boil.",
             sources: ["Knox, A Forager's Treasury (Allen & Unwin, 2013)."],
+            // These tests are about what an entry is still owed, not about completeness, and
+            // an entry with no photograph is blocking — so the fixture carries one.
+            photos: [SpeciesPhoto(fileName: "test-1.heic", caption: "Whole plant.", credit: "Someone (CC BY 4.0)")],
             needsBookSource: needsBookSource,
             sourcingNote: sourcingNote
         )

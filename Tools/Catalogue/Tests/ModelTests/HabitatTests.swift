@@ -103,7 +103,10 @@ struct HabitatTests {
             habitats: habitats,
             identification: "Looks like a test.",
             edibleParts: "Leaves.",
-            preparation: "Boil."
+            preparation: "Boil.",
+            // These tests are about classification, not completeness, and an entry with no
+            // photograph is blocking — so the fixture carries one.
+            photos: [SpeciesPhoto(fileName: "test-1.heic", caption: "Whole plant.", credit: "Someone (CC BY 4.0)")]
         )
     }
 }

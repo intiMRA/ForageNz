@@ -264,6 +264,16 @@ confusable) may come from a book you own. Description text may only come from an
 licensed, human-written source, copied verbatim and credited beside the paragraph. Safety text
 — edible parts, preparation, warnings, how to tell a lookalike apart — is written by a person.
 
+**Verbatim means in the source's own language.** A translation is not a copy: it is new prose in
+the target language, and when a model produces it, it is model prose wearing a citation. So an
+openly licensed article in another language is a source of *facts* like any book — cite it, do not
+render it. Settled 2026-10-07 over French Wikipedia's `Xerocomellus cisalpinus`, which is CC BY-SA;
+`bluefoot-bolete` cites it and quotes nothing. The ruling cost nothing in the end — an English
+CC BY 4.0 description of that species turned up in a regional new-record paper. **Which is the
+lesson: when a species has no Wikipedia article, search the "new record for the mycobiota of X"
+literature.** Those papers carry full descriptions and the regional journals that publish them are
+very often CC BY.
+
 Every prose field is `{ "text": …, "sources": [...] }` (`SourcedText` in Swift). An empty
 `sources` array means the text was written for this guide; otherwise it is the short credit,
 e.g. `Wikipedia, 'Agaricus arvensis' (CC BY-SA 4.0)`. The entry-level `sources` array holds the
@@ -351,7 +361,16 @@ scientific name (CC BY-SA 4.0), falling back to the Flora of New Zealand Online 
 `{text, sources}` into blank `identification`, `habitat` and `summary`, appends the full
 citation to the entry's `sources`, and never touches a field that has text. It backs off on
 Wikipedia's 429s; expect ~15 minutes for 200 species. Sources checked and rejected: NZPCN and
-Weedbusters (all rights reserved), Te Ara (non-commercial only).
+Weedbusters, both all rights reserved — their facts may be restated and cited, their sentences
+may not be copied.
+
+**Non-commercial prose is admitted**, on the same 2026-09-30 decision that the app will be
+free as the one admitting CC BY-NC photos. Te Ara was previously listed here as rejected for
+being non-commercial only, which contradicted both the photo rule and the practice in the data
+— the three clovers already carry CC BY-NC-SA text. The cost is the same one the photos carry
+and is recorded in the same place: an NC source names its licence in the credit beside the
+paragraph, so if the app ever stopped being free, `grep 'NC'` finds everything that would have
+to come out. Prefer an unrestricted source wherever one exists, so that set stays small.
 
 **Books and guides that are not openly licensed** — Langlands' *Foraging New Zealand* (2024),
 Knox's *A Forager's Treasury* (2013), the *Wellington Regional Native Plant Guide* (2010) —
@@ -805,6 +824,16 @@ To add a language, add it to the catalog in Xcode (Editor → Add Language) and 
 Per-entry rules live in `ForageSpecies.validationIssues`, split into blocking (fails the
 build) and advisory. The editor shows them at the top of each entry, and `CatalogueTests`
 enforces the same rules — one definition, so the tool and the build can't disagree.
+
+### Bright magenta means nobody designed it
+
+The owner designs this app. A view built without them, wearing a look nobody chose, reads as
+settled once it ships — so anything added to the interface that the owner has not drawn or
+asked for is painted bright magenta until they have, via `View.needsDesign()`
+(`ForageNZ/Components/NeedsDesign.swift`). The colour is identical in light and dark, so
+neither appearance lets it pass. `grep -rn "needsDesign" ForageNZ` is the complete outstanding
+list, which is the other half of the point: a placeholder nobody can enumerate is a
+placeholder that stays. The psychoactive banner on the species detail screen is the first one.
 
 ## Verification status
 

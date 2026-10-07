@@ -85,11 +85,22 @@ struct PhotoAuditTests {
         #expect(species.blockingIssues.count >= 2, "caption and credit are separate obligations")
     }
 
+    /// One photo, not none: having *fewer* than the recommended number is a thin page, which
+    /// is advisory, while having none at all is a page that cannot be used, which is blocking.
     @Test("Too few photos is advisory, not blocking")
     func tooFewPhotosIsAdvisory() {
-        let species = makeSpecies(photos: [])
+        let species = makeSpecies(photos: [
+            SpeciesPhoto(fileName: "test-1.heic", caption: "Whole plant.", credit: "Someone (CC BY 4.0)")
+        ])
         #expect(species.isPublishable)
         #expect(species.validationIssues.contains { $0.field == .photos && $0.severity == .advisory })
+    }
+
+    @Test("No photos at all is blocking")
+    func noPhotosBlocks() {
+        let species = makeSpecies(photos: [])
+        #expect(!species.isPublishable)
+        #expect(species.blockingIssues.contains { $0.field == .photos })
     }
 
     private func makeSpecies(photos: [SpeciesPhoto]) -> ForageSpecies {

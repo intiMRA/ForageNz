@@ -42,9 +42,19 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     /// Kept separate from `draft` and `isVerified` because it answers a different question —
     /// not "is this written" or "is this cited", but "is there any point searching again".
     public let needsBookSource: Bool
-    /// Which book to reach for, and why the web could not do it. Read beside
-    /// `needsBookSource`; a flag without one of these leaves the next person no better off
-    /// than an untagged entry, which is what the validation advisory is there to catch.
+    /// What this entry is still owed, and by whom.
+    ///
+    /// Beside `needsBookSource` it says which book to reach for and why the web could not do
+    /// it — a flag without one of these leaves the next person no better off than an untagged
+    /// entry, which is what the validation advisory is there to catch.
+    ///
+    /// It is also the channel for the other kind of unfinished entry: one whose evidence is
+    /// already gathered and cited in `sources`, where what is missing is a **person's
+    /// sentence**. Safety text is written by a person (README:261–265), so an entry can hold
+    /// every fact it needs and still be incomplete, with nothing in the data saying so. Such a
+    /// note carries no `needsBookSource`: nobody is waiting on a shelf. Both kinds raise an
+    /// advisory, never a blocking issue — work owed is not a defect in what is already there,
+    /// and a live page that is right but thin must not fail the build.
     public let sourcingNote: String?
 
     public init(

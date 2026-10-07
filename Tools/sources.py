@@ -44,6 +44,12 @@ COURTESY_DELAY = 0.3
 class Licence(StrEnum):
     """Photo licences permissive enough to ship in this app.
 
+    The same reasoning now governs **prose**, which this enum does not police but the README
+    does: a non-commercial description may be quoted and credited, on the 2026-09-30 decision
+    below. The two rules were out of step for a week — the README rejected Te Ara for being
+    non-commercial while this docstring admitted NC photos and three entries already carried
+    NC text — and the app being free settles both the same way.
+
     CC0 and CC BY carry no commercial restriction and are preferred everywhere. **CC BY-NC
     is accepted on the owner's decision (2026-09-30) that the app will be free**, and it is
     iNaturalist's default licence, so admitting it roughly doubles the pool — on
