@@ -1,0 +1,1462 @@
+<title>Similar-species clusters</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #faf8f4; --fg: #1d1c19; --muted: #6b675f; --line: #ded8cd;
+  --card: #fffdf9; --accent: #3f6b43; --warn: #9a5b12; --bad: #9c2f2a;
+  --chip: #efe9dd;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171a; --fg: #ecebe7; --muted: #9d9a93; --line: #2e3238;
+    --card: #1c1f23; --accent: #8fc096; --warn: #e0a35c; --bad: #e98079;
+    --chip: #272b30;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 15px/1.5 ui-sans-serif, -apple-system, "Segoe UI", sans-serif; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 32px 20px 80px; }
+h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.01em; }
+.lede { color: var(--muted); margin: 0 0 24px; max-width: 70ch; }
+.totals { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+.total { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  padding: 10px 14px; }
+.total b { display: block; font-size: 20px; }
+.total span { color: var(--muted); font-size: 12px; text-transform: uppercase;
+  letter-spacing: 0.06em; }
+.cluster { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  margin-bottom: 18px; overflow: hidden; }
+.head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+  padding: 14px 16px; border-bottom: 1px solid var(--line); }
+.head h2 { font-size: 17px; margin: 0; font-style: italic; }
+.rank { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 13px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; }
+.chip { background: var(--chip); border-radius: 999px; padding: 2px 9px; font-size: 12px;
+  color: var(--muted); white-space: nowrap; }
+.chip.on { color: var(--warn); }
+.chip.bad { color: var(--bad); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 700px; }
+th, td { text-align: left; padding: 8px 16px; border-bottom: 1px solid var(--line);
+  vertical-align: top; font-size: 13px; }
+th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.06em; }
+tbody tr:last-child td { border-bottom: 0; }
+.sci { color: var(--muted); font-style: italic; }
+.ok { color: var(--accent); }
+.no { color: var(--bad); }
+.miss { color: var(--warn); }
+code { font: 12px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--muted); }
+</style>
+<div class="wrap">
+<h1>Similar-species clusters</h1>
+<p class="lede">Entries joined by a shared genus or by a lookalike link that points at another catalogue entry — the groups where one research session fills several pages at once. Ordered by how much is still outstanding inside each cluster.</p>
+<div class="totals">
+<div class="total"><b>63</b><span>clusters</span></div>
+<div class="total"><b>202</b><span>of 340 entries</span></div>
+<div class="total"><b>141</b><span>still draft</span></div>
+<div class="total"><b>131</b><span>with no photo</span></div>
+<div class="total"><b>562</b><span>unwritten sibling pairs</span></div>
+</div>
+<section class="cluster">
+<div class="head">
+<h2>Prunus</h2>
+<span class="rank">#1</span>
+<div class="chips">
+<span class="chip">8 entries</span>
+<span class="chip">fruit</span>
+<span class="chip on">7 draft</span>
+<span class="chip bad">7 no photo</span>
+<span class="chip">lookalike pairs 0/56</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Black cherry</b><br><span class="sci">Prunus serotina</span><br><code>black-cherry</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/7</td><td><span class="miss">summary, identification, habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Blackthorn</b><br><span class="sci">Prunus spinosa</span><br><code>blackthorn</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/7</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Cherry-plum</b><br><span class="sci">Prunus cerasifera</span><br><code>cherry-plum</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/7</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Chinese plum</b><br><span class="sci">Prunus salicina</span><br><code>chinese-plum</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/7</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Flowering apricot</b><br><span class="sci">Prunus mume</span><br><code>flowering-apricot</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/7</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Japanese cherry</b><br><span class="sci">Prunus serrulata</span><br><code>japanese-cherry</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/7</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Taiwan cherry</b><br><span class="sci">Prunus campanulata</span><br><code>taiwan-cherry</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/7</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Wild plum</b><br><span class="sci">Prunus ×domestica</span><br><code>wild-plum</code></td><td><span class="ok">shipped</span></td><td><span class="ok">2</span></td><td>0/7</td><td><span class="ok">complete</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Lactarius</h2>
+<span class="rank">#2</span>
+<div class="chips">
+<span class="chip">10 entries</span>
+<span class="chip">fungi</span>
+<span class="chip on">2 draft</span>
+<span class="chip">lookalike pairs 18/90</span>
+<span class="chip bad">do not eat</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Coconut milkcap</b><br><span class="sci">Lactarius glyciosmus</span><br><code>coconut-milkcap</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Downy milkcap</b><br><span class="sci">Lactarius pubescens</span><br><code>downy-milk-cap</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="miss">preparation</span></td></tr>
+<tr><td><b>New Zealand milkcap</b><br><span class="sci">Lactarius novae-zelandiae</span><br><code>new-zealand-milkcap</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Oakbug milkcap</b><br><span class="sci">Lactarius quietus</span><br><code>oakbug-milkcap</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="miss">preparation</span></td></tr>
+<tr><td><b>Rufous milkcap</b><br><span class="sci">Lactarius rufus</span><br><code>rufous-milkcap</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="miss">preparation</span></td></tr>
+<tr><td><b>Saffron milk cap / Pine mushroom</b><br><span class="sci">Lactarius deliciosus</span><br><code>saffron-milk-cap</code></td><td><span class="ok">shipped</span></td><td><span class="ok">6</span></td><td>9/9</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Slimy milkcap</b><br><span class="sci">Lactarius blennius</span><br><code>slimy-milkcap</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Tawai milkcap</b><br><span class="sci">Lactarius tawai</span><br><code>tawai-milkcap</code></td><td><span class="miss">draft</span></td><td><span class="ok">5</span></td><td>1/9</td><td><span class="miss">summary, identification, habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Ugly milkcap</b><br><span class="sci">Lactarius turpis</span><br><code>ugly-milkcap</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="miss">preparation</span></td></tr>
+<tr><td><b>Umere milkcap</b><br><span class="sci">Lactarius umerensis</span><br><code>umere-milkcap</code></td><td><span class="miss">draft</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="miss">summary, identification, habitat, edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Apium / Conium / Daucus / Foeniculum / Helosciadium / Nasturtium / Oenanthe / Smyrnium</h2>
+<span class="rank">#3</span>
+<div class="chips">
+<span class="chip">10 entries</span>
+<span class="chip">greens · herbs</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 13/90</span>
+<span class="chip bad">do not eat</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Alexanders</b><br><span class="sci">Smyrnium olusatrum</span><br><code>alexanders</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Celery</b><br><span class="sci">Apium graveolens</span><br><code>celery</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/9</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Hemlock</b><br><span class="sci">Conium maculatum</span><br><code>hemlock</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>4/9</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Hemlock water dropwort</b><br><span class="sci">Oenanthe crocata</span><br><code>hemlock-water-dropwort</code></td><td><span class="ok">shipped</span></td><td><span class="ok">3</span></td><td>2/9</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Narrow-fruited watercress</b><br><span class="sci">Nasturtium microphyllum</span><br><code>narrow-fruited-watercress</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/9</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Sea celery / Māori celery</b><br><span class="sci">Apium prostratum</span><br><code>sea-celery</code></td><td><span class="ok">shipped</span></td><td><span class="ok">5</span></td><td>1/9</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Water celery</b><br><span class="sci">Helosciadium nodiflorum</span><br><code>water-celery</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Watercress</b><br><span class="sci">Nasturtium officinale</span><br><code>watercress</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Wild carrot</b><br><span class="sci">Daucus carota</span><br><code>wild-carrot</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/9</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Wild fennel</b><br><span class="sci">Foeniculum vulgare</span><br><code>wild-fennel</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>2/9</td><td><span class="miss">months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Oxalis</h2>
+<span class="rank">#4</span>
+<div class="chips">
+<span class="chip">7 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">7 draft</span>
+<span class="chip bad">7 no photo</span>
+<span class="chip">lookalike pairs 0/42</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Bermuda buttercup</b><br><span class="sci">Oxalis pes-caprae</span><br><code>bermuda-buttercup</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/6</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Creeping wood sorrel</b><br><span class="sci">Oxalis corniculata</span><br><code>creeping-wood-sorrel</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/6</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Least yellow sorrel</b><br><span class="sci">Oxalis exilis</span><br><code>least-yellow-sorrel</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/6</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Pale-pink wood sorrel</b><br><span class="sci">Oxalis incarnata</span><br><code>pale-pink-wood-sorrel</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/6</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Purple wood sorrel</b><br><span class="sci">Oxalis purpurea</span><br><code>purple-wood-sorrel</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/6</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Shamrock wood sorrel</b><br><span class="sci">Oxalis articulata</span><br><code>shamrock-wood-sorrel</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/6</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Snowdrop woodsorrel</b><br><span class="sci">Oxalis magellanica</span><br><code>snowdrop-woodsorrel</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/6</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Coprosma</h2>
+<span class="rank">#5</span>
+<div class="chips">
+<span class="chip">6 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">6 draft</span>
+<span class="chip bad">6 no photo</span>
+<span class="chip">lookalike pairs 0/30</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Coprosma</b><br><span class="sci">Coprosma spp.</span><br><code>coprosma</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/5</td><td><span class="miss">summary, identification, habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Kanono</b><br><span class="sci">Coprosma grandifolia</span><br><code>kanono</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/5</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Karamū</b><br><span class="sci">Coprosma robusta</span><br><code>karamu</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/5</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Mingimingi</b><br><span class="sci">Coprosma propinqua</span><br><code>mingimingi</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/5</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Shining Karamū</b><br><span class="sci">Coprosma lucida</span><br><code>shining-karamu</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/5</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Taupata</b><br><span class="sci">Coprosma repens</span><br><code>taupata</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/5</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Malva</h2>
+<span class="rank">#6</span>
+<div class="chips">
+<span class="chip">5 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">5 draft</span>
+<span class="chip bad">5 no photo</span>
+<span class="chip">lookalike pairs 0/20</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Cheeseweed mallow</b><br><span class="sci">Malva parviflora</span><br><code>cheeseweed-mallow</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Common mallow</b><br><span class="sci">Malva sylvestris</span><br><code>common-mallow</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Dwarf mallow</b><br><span class="sci">Malva neglecta</span><br><code>dwarf-mallow</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Island mallow</b><br><span class="sci">Malva assurgentiflora</span><br><code>island-mallow</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Tree mallow</b><br><span class="sci">Malva arborea</span><br><code>tree-mallow</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Rubus</h2>
+<span class="rank">#7</span>
+<div class="chips">
+<span class="chip">5 entries</span>
+<span class="chip">fruit · greens</span>
+<span class="chip on">4 draft</span>
+<span class="chip bad">4 no photo</span>
+<span class="chip">lookalike pairs 0/20</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Blackberry</b><br><span class="sci">Rubus fruticosus agg.</span><br><code>blackberry</code></td><td><span class="ok">shipped</span></td><td><span class="ok">2</span></td><td>0/4</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Bush lawyer</b><br><span class="sci">Rubus australis</span><br><code>bush-lawyer</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Creeping lawyer</b><br><span class="sci">Rubus parvus</span><br><code>creeping-lawyer</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Red raspberry</b><br><span class="sci">Rubus idaeus</span><br><code>red-raspberry</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>White-leaved lawyer</b><br><span class="sci">Rubus schmidelioides</span><br><code>white-leaved-lawyer</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Pelargonium</h2>
+<span class="rank">#8</span>
+<div class="chips">
+<span class="chip">4 entries</span>
+<span class="chip">fruit · greens · herbs</span>
+<span class="chip on">4 draft</span>
+<span class="chip bad">4 no photo</span>
+<span class="chip">lookalike pairs 0/12</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Lemon-scented geranium</b><br><span class="sci">Pelargonium crispum</span><br><code>lemon-scented-geranium</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Peppermint-scented geranium</b><br><span class="sci">Pelargonium tomentosum</span><br><code>peppermint-scented-geranium</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Rose-scented geranium</b><br><span class="sci">Pelargonium capitatum</span><br><code>rose-scented-geranium</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Scented geraniums</b><br><span class="sci">Pelargonium spp.</span><br><code>scented-geraniums</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">summary, identification, habitat, edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Clavogaster / Galerina / Psilocybe</h2>
+<span class="rank">#9</span>
+<div class="chips">
+<span class="chip">7 entries</span>
+<span class="chip">fungi</span>
+<span class="chip on">1 draft</span>
+<span class="chip">lookalike pairs 6/42</span>
+<span class="chip bad">do not eat</span>
+<span class="chip on">psychoactive</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Liberty cap</b><br><span class="sci">Psilocybe semilanceata</span><br><code>liberty-cap</code></td><td><span class="ok">shipped</span></td><td><span class="ok">6</span></td><td>0/6</td><td><span class="miss">preparation</span></td></tr>
+<tr><td><b>Psilocybe aucklandiae</b><br><span class="sci">Psilocybe aucklandiae</span><br><code>psilocybe-aucklandiae</code></td><td><span class="ok">shipped</span></td><td><span class="ok">6</span></td><td>0/6</td><td><span class="miss">preparation</span></td></tr>
+<tr><td><b>Psilocybe makarorae</b><br><span class="sci">Psilocybe makarorae</span><br><code>psilocybe-makarorae</code></td><td><span class="ok">shipped</span></td><td><span class="ok">6</span></td><td>1/6</td><td><span class="miss">preparation</span></td></tr>
+<tr><td><b>Psilocybe subaeruginosa</b><br><span class="sci">Psilocybe subaeruginosa</span><br><code>psilocybe-subaeruginosa</code></td><td><span class="ok">shipped</span></td><td><span class="ok">6</span></td><td>1/6</td><td><span class="miss">preparation</span></td></tr>
+<tr><td><b>Spindle pouch</b><br><span class="sci">Clavogaster virescens</span><br><code>spindle-pouch</code></td><td><span class="ok">shipped</span></td><td><span class="ok">6</span></td><td>1/6</td><td><span class="miss">preparation</span></td></tr>
+<tr><td><b>Weraroa</b><br><span class="sci">Psilocybe weraroa</span><br><code>weraroa</code></td><td><span class="miss">draft</span></td><td><span class="ok">6</span></td><td>1/6</td><td><span class="miss">preparation</span></td></tr>
+<tr><td><b>Wood nipple fungus</b><br><span class="sci">Galerina patagonica</span><br><code>wood-nipple-fungus</code></td><td><span class="ok">shipped</span></td><td><span class="ok">6</span></td><td>2/6</td><td><span class="miss">preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Allium / Leucojum</h2>
+<span class="rank">#10</span>
+<div class="chips">
+<span class="chip">5 entries</span>
+<span class="chip">greens · herbs</span>
+<span class="chip on">3 draft</span>
+<span class="chip bad">3 no photo</span>
+<span class="chip">lookalike pairs 2/20</span>
+<span class="chip bad">do not eat</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Naples garlic</b><br><span class="sci">Allium neapolitanum</span><br><code>naples-garlic</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Onion weed</b><br><span class="sci">Allium triquetrum</span><br><code>onion-weed</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/4</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Rosy garlic</b><br><span class="sci">Allium roseum</span><br><code>rosy-garlic</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Snowflake</b><br><span class="sci">Leucojum aestivum</span><br><code>snowflake</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/4</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Wild garlic</b><br><span class="sci">Allium vineale</span><br><code>wild-garlic</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Cordyline</h2>
+<span class="rank">#11</span>
+<div class="chips">
+<span class="chip">4 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">4 draft</span>
+<span class="chip bad">4 no photo</span>
+<span class="chip">lookalike pairs 0/12</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Cabbage tree</b><br><span class="sci">Cordyline australis</span><br><code>cabbage-tree</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Dwarf cabbage tree</b><br><span class="sci">Cordyline pumilio</span><br><code>dwarf-cabbage-tree</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Forest cabbage tree</b><br><span class="sci">Cordyline banksii</span><br><code>forest-cabbage-tree</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Mountain cabbage tree</b><br><span class="sci">Cordyline indivisa</span><br><code>mountain-cabbage-tree</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Passiflora</h2>
+<span class="rank">#12</span>
+<div class="chips">
+<span class="chip">4 entries</span>
+<span class="chip">fruit · greens</span>
+<span class="chip on">4 draft</span>
+<span class="chip bad">4 no photo</span>
+<span class="chip">lookalike pairs 2/12</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Banana passionfruit</b><br><span class="sci">Passiflora tarminiana</span><br><code>banana-passionfruit</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>2/3</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Black passionfruit</b><br><span class="sci">Passiflora edulis f</span><br><code>black-passionfruit</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">summary, habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Kōhia</b><br><span class="sci">Passiflora tetrandra</span><br><code>kohia</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Pink-flowered passionfruit</b><br><span class="sci">Passiflora pinnatistipula</span><br><code>pink-flowered-passionfruit</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Lavandula</h2>
+<span class="rank">#13</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">3 draft</span>
+<span class="chip bad">3 no photo</span>
+<span class="chip">lookalike pairs 0/6</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Common lavender</b><br><span class="sci">Lavandula angustifolia</span><br><code>common-lavender</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>French lavender</b><br><span class="sci">Lavandula dentata</span><br><code>french-lavender</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Topped lavender</b><br><span class="sci">Lavandula stoechas</span><br><code>topped-lavender</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Chimonobambusa / Phyllostachys / Pseudosasa</h2>
+<span class="rank">#14</span>
+<div class="chips">
+<span class="chip">5 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">5 draft</span>
+<span class="chip bad">5 no photo</span>
+<span class="chip">lookalike pairs 14/20</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Arrow bamboo</b><br><span class="sci">Pseudosasa japonica</span><br><code>arrow-bamboo</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>3/4</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Black bamboo</b><br><span class="sci">Phyllostachys nigra</span><br><code>black-bamboo</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>4/4</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Fishpole bamboo</b><br><span class="sci">Phyllostachys aurea</span><br><code>fishpole-bamboo</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>3/4</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Giant timber bamboo</b><br><span class="sci">Phyllostachys bambusoides</span><br><code>giant-timber-bamboo</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>2/4</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Square bamboo</b><br><span class="sci">Chimonobambusa quadrangularis</span><br><code>square-bamboo</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>2/4</td><td><span class="miss">months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Sonchus</h2>
+<span class="rank">#15</span>
+<div class="chips">
+<span class="chip">4 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 1/12</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>New Zealand sow thistle</b><br><span class="sci">Sonchus kirkii</span><br><code>new-zealand-sow-thistle</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Perennial sow thistle</b><br><span class="sci">Sonchus arvensis</span><br><code>perennial-sow-thistle</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Prickly sow thistle</b><br><span class="sci">Sonchus asper</span><br><code>prickly-sow-thistle</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>0/3</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Pūhā / Sow thistle</b><br><span class="sci">Sonchus oleraceus / Sonchus kirkii</span><br><code>puha</code></td><td><span class="ok">shipped</span></td><td><span class="ok">1</span></td><td>1/3</td><td><span class="miss">months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Geranium</h2>
+<span class="rank">#16</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">3 draft</span>
+<span class="chip bad">3 no photo</span>
+<span class="chip">lookalike pairs 0/6</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Dove&#x27;s-foot cranesbill</b><br><span class="sci">Geranium molle</span><br><code>doves-foot-cranesbill</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Geranium species</b><br><span class="sci">Geranium spp.</span><br><code>geranium-species</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">summary, identification, habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Herb robert</b><br><span class="sci">Geranium robertianum</span><br><code>herb-robert</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Berberis</h2>
+<span class="rank">#17</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">fruit</span>
+<span class="chip on">3 draft</span>
+<span class="chip bad">3 no photo</span>
+<span class="chip">lookalike pairs 0/6</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Darwin&#x27;s barberry</b><br><span class="sci">Berberis darwinii</span><br><code>darwins-barberry</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>European barberry</b><br><span class="sci">Berberis vulgaris</span><br><code>european-barberry</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Mountain grape</b><br><span class="sci">Berberis oiwakensis</span><br><code>mountain-grape</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Urtica</h2>
+<span class="rank">#18</span>
+<div class="chips">
+<span class="chip">4 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 2/12</span>
+<span class="chip bad">do not eat</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Dwarf stinging nettle</b><br><span class="sci">Urtica urens</span><br><code>dwarf-stinging-nettle</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Ongaonga</b><br><span class="sci">Urtica ferox</span><br><code>ongaonga</code></td><td><span class="ok">shipped</span></td><td><span class="ok">5</span></td><td>1/3</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Southern nettle</b><br><span class="sci">Urtica australis</span><br><code>southern-nettle</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/3</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Stinging nettle</b><br><span class="sci">Urtica dioica / Urtica urens</span><br><code>nettle</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/3</td><td><span class="ok">complete</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Agaricus / Amanita / Volvariella</h2>
+<span class="rank">#19</span>
+<div class="chips">
+<span class="chip">5 entries</span>
+<span class="chip">fungi</span>
+<span class="chip on">1 draft</span>
+<span class="chip bad">1 no photo</span>
+<span class="chip">lookalike pairs 6/20</span>
+<span class="chip bad">do not eat</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Death cap</b><br><span class="sci">Amanita phalloides</span><br><code>death-cap</code></td><td><span class="ok">shipped</span></td><td><span class="ok">5</span></td><td>2/4</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Field mushroom</b><br><span class="sci">Agaricus campestris</span><br><code>field-mushroom</code></td><td><span class="ok">shipped</span></td><td><span class="ok">5</span></td><td>2/4</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Horse mushroom</b><br><span class="sci">Agaricus arvensis</span><br><code>horse-mushroom</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/4</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Straw mushroom</b><br><span class="sci">Volvariella volvacea</span><br><code>straw-mushroom</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/4</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Yellow stainer</b><br><span class="sci">Agaricus xanthodermus</span><br><code>yellow-stainer</code></td><td><span class="ok">shipped</span></td><td><span class="ok">5</span></td><td>1/4</td><td><span class="ok">complete</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Plantago</h2>
+<span class="rank">#20</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/6</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Buck&#x27;s-horn plantain</b><br><span class="sci">Plantago coronopus</span><br><code>bucks-horn-plantain</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Greater plantain</b><br><span class="sci">Plantago major</span><br><code>greater-plantain</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Plantain</b><br><span class="sci">Plantago lanceolata</span><br><code>plantain</code></td><td><span class="ok">shipped</span></td><td><span class="ok">3</span></td><td>0/2</td><td><span class="miss">months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Rumex</h2>
+<span class="rank">#21</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/6</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Climbing dock</b><br><span class="sci">Rumex sagittatus</span><br><code>climbing-dock</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Dock</b><br><span class="sci">Rumex conglomeratus</span><br><code>dock</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Sheep sorrel</b><br><span class="sci">Rumex acetosella</span><br><code>sheep-sorrel</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>0/2</td><td><span class="miss">months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Avena</h2>
+<span class="rank">#22</span>
+<div class="chips">
+<span class="chip">4 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">4 draft</span>
+<span class="chip">lookalike pairs 12/12</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Oat</b><br><span class="sci">Avena sativa</span><br><code>oat</code></td><td><span class="miss">draft</span></td><td><span class="ok">3</span></td><td>3/3</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Slender oat</b><br><span class="sci">Avena barbata</span><br><code>slender-wild-oat</code></td><td><span class="miss">draft</span></td><td><span class="ok">4</span></td><td>3/3</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Wild oat</b><br><span class="sci">Avena fatua</span><br><code>wild-oat</code></td><td><span class="miss">draft</span></td><td><span class="ok">3</span></td><td>3/3</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Winter wild oat</b><br><span class="sci">Avena sterilis</span><br><code>sterilised-oat</code></td><td><span class="miss">draft</span></td><td><span class="ok">2</span></td><td>3/3</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Crepis</h2>
+<span class="rank">#23</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Beaked hawksbeard</b><br><span class="sci">Crepis vesicaria</span><br><code>beaked-hawksbeard</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Smooth hawksbeard</b><br><span class="sci">Crepis capillaris</span><br><code>smooth-hawksbeard</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Mentha</h2>
+<span class="rank">#24</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">greens · herbs</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 2/6</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Apple mint</b><br><span class="sci">Mentha suaveolens</span><br><code>apple-mint</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/2</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Hioi</b><br><span class="sci">Mentha cunninghamii</span><br><code>hioi</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Wild spearmint</b><br><span class="sci">Mentha spicata</span><br><code>wild-spearmint</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>1/2</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Suillus</h2>
+<span class="rank">#25</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">fungi</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/6</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Larch bolete</b><br><span class="sci">Suillus grevillei</span><br><code>larch-bolete</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Slippery jack</b><br><span class="sci">Suillus luteus (and other Suillus spp.)</span><br><code>slippery-jack</code></td><td><span class="ok">shipped</span></td><td><span class="ok">5</span></td><td>0/2</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Western painted suillus</b><br><span class="sci">Suillus lakei</span><br><code>western-painted-suillus</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Atriplex</h2>
+<span class="rank">#26</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Creeping Saltbush</b><br><span class="sci">Atriplex prostrata</span><br><code>creeping-saltbush</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Garden orache</b><br><span class="sci">Atriplex hortensis</span><br><code>garden-orache</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Genista</h2>
+<span class="rank">#27</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>French broom</b><br><span class="sci">Genista monspessulana</span><br><code>french-broom</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Sweet broom</b><br><span class="sci">Genista stenopetala</span><br><code>sweet-broom</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Hypochaeris / Taraxacum</h2>
+<span class="rank">#28</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">1 draft</span>
+<span class="chip bad">1 no photo</span>
+<span class="chip">lookalike pairs 1/6</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Catsear</b><br><span class="sci">Hypochaeris radicata</span><br><code>catsear</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>0/2</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Dandelion</b><br><span class="sci">Taraxacum officinale</span><br><code>dandelion</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/2</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Smooth cat&#x27;s ear</b><br><span class="sci">Hypochaeris glabra</span><br><code>smooth-cats-ear</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Caulerpa</h2>
+<span class="rank">#29</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">seaweed</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Sea grapes</b><br><span class="sci">Caulerpa racemosa</span><br><code>sea-grapes</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Sea rimu</b><br><span class="sci">Caulerpa brownii</span><br><code>sea-rimu</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">identification, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Cerastium</h2>
+<span class="rank">#30</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Common mouse-ear chickweed</b><br><span class="sci">Cerastium fontanum</span><br><code>common-mouse-ear-chickweed</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Sticky mouse-ear chickweed</b><br><span class="sci">Cerastium glomeratum</span><br><code>sticky-mouse-ear-chickweed</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Phormium</h2>
+<span class="rank">#31</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Harakeke</b><br><span class="sci">Phormium tenax</span><br><code>harakeke</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Mountain flax</b><br><span class="sci">Phormium cookianum</span><br><code>mountain-flax</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Raphanus</h2>
+<span class="rank">#32</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Radish</b><br><span class="sci">Raphanus sativus</span><br><code>radish</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Wild radish</b><br><span class="sci">Raphanus raphanistrum</span><br><code>wild-radish</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Rorippa</h2>
+<span class="rank">#33</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Bog yellow cress</b><br><span class="sci">Rorippa palustris</span><br><code>bog-yellow-cress</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Creeping yellowcress</b><br><span class="sci">Rorippa sylvestris</span><br><code>creeping-yellowcress</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Sisymbrium</h2>
+<span class="rank">#34</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Eastern rocket</b><br><span class="sci">Sisymbrium orientale</span><br><code>eastern-rocket</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Hedge mustard</b><br><span class="sci">Sisymbrium officinale</span><br><code>hedge-mustard</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Tetragonia</h2>
+<span class="rank">#35</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Beach spinach</b><br><span class="sci">Tetragonia implexicoma</span><br><code>beach-spinach</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>New Zealand spinach</b><br><span class="sci">Tetragonia tetragonioides</span><br><code>new-zealand-spinach</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Aesculus / Castanea</h2>
+<span class="rank">#36</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">nuts</span>
+<span class="chip on">1 draft</span>
+<span class="chip bad">1 no photo</span>
+<span class="chip">lookalike pairs 2/6</span>
+<span class="chip bad">do not eat</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Horse chestnut</b><br><span class="sci">Aesculus hippocastanum</span><br><code>horse-chestnut</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/2</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Japanese chestnut</b><br><span class="sci">Castanea crenata</span><br><code>japanese-chestnut</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Sweet chestnut</b><br><span class="sci">Castanea sativa</span><br><code>sweet-chestnut</code></td><td><span class="ok">shipped</span></td><td><span class="ok">3</span></td><td>1/2</td><td><span class="ok">complete</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Blechnum</h2>
+<span class="rank">#37</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Kiokio</b><br><span class="sci">Blechnum novae-zelandiae</span><br><code>kiokio</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Rereti</b><br><span class="sci">Blechnum chambersii</span><br><code>rereti</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Carpobrotus</h2>
+<span class="rank">#38</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">fruit · greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Chilean sea fig</b><br><span class="sci">Carpobrotus chilensis</span><br><code>chilean-sea-fig</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>South African ice plant</b><br><span class="sci">Carpobrotus edulis</span><br><code>south-african-ice-plant</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Diplotaxis</h2>
+<span class="rank">#39</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Annual wall-rocket</b><br><span class="sci">Diplotaxis muralis</span><br><code>annual-wall-rocket</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Perennial wall-rocket</b><br><span class="sci">Diplotaxis tenuifolia</span><br><code>perennial-wall-rocket</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Fuchsia</h2>
+<span class="rank">#40</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Scrambling fuchsia</b><br><span class="sci">Fuchsia perscandens</span><br><code>scrambling-fuchsia</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Tree fuchsia</b><br><span class="sci">Fuchsia excorticata</span><br><code>tree-fuchsia</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Lactuca</h2>
+<span class="rank">#41</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Prickly lettuce</b><br><span class="sci">Lactuca serriola</span><br><code>prickly-lettuce</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Wild lettuce</b><br><span class="sci">Lactuca virosa</span><br><code>wild-lettuce</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Lamium</h2>
+<span class="rank">#42</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Deadnettle</b><br><span class="sci">Lamium purpureum</span><br><code>deadnettle</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Henbit deadnettle</b><br><span class="sci">Lamium amplexicaule</span><br><code>henbit-deadnettle</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Matricaria</h2>
+<span class="rank">#43</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>German chamomile</b><br><span class="sci">Matricaria chamomilla</span><br><code>german-chamomile</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+<tr><td><b>Pineappleweed</b><br><span class="sci">Matricaria discoidea</span><br><code>pineappleweed</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Stachys</h2>
+<span class="rank">#44</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Field woundwort</b><br><span class="sci">Stachys arvensis</span><br><code>field-woundwort</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Hedge woundwort</b><br><span class="sci">Stachys sylvatica</span><br><code>hedge-woundwort</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Viola</h2>
+<span class="rank">#45</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Sweet violet</b><br><span class="sci">Viola odorata</span><br><code>sweet-violet</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Wild pansy</b><br><span class="sci">Viola arvensis</span><br><code>wild-pansy</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Asplenium / Pteridium</h2>
+<span class="rank">#46</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">1 draft</span>
+<span class="chip bad">1 no photo</span>
+<span class="chip">lookalike pairs 2/6</span>
+<span class="chip bad">do not eat</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Bracken</b><br><span class="sci">Pteridium esculentum</span><br><code>bracken</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/2</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Pikopiko / Hen and chicken fern</b><br><span class="sci">Asplenium bulbiferum</span><br><code>pikopiko</code></td><td><span class="ok">shipped</span></td><td><span class="ok">3</span></td><td>1/2</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Shining spleenwort</b><br><span class="sci">Asplenium oblongifolium</span><br><code>shining-spleenwort</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/2</td><td><span class="miss">habitat, edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Anthriscus</h2>
+<span class="rank">#47</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Cow parsley</b><br><span class="sci">Anthriscus sylvestris</span><br><code>cow-parsley</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Wild chervil</b><br><span class="sci">Anthriscus cerefolium</span><br><code>wild-chervil</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Cardamine</h2>
+<span class="rank">#48</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Hairy bittercress</b><br><span class="sci">Cardamine hirsuta</span><br><code>hairy-bittercress</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Wavy bittercress</b><br><span class="sci">Cardamine flexuosa</span><br><code>wavy-bittercress</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Disphyma</h2>
+<span class="rank">#49</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Jellybean ice plant</b><br><span class="sci">Disphyma crassifolium</span><br><code>jellybean-ice-plant</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Native ice plant</b><br><span class="sci">Disphyma australe</span><br><code>native-ice-plant</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Podocarpus</h2>
+<span class="rank">#50</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Snow tōtara</b><br><span class="sci">Podocarpus nivalis</span><br><code>snow-totara</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Tōtara</b><br><span class="sci">Podocarpus totara</span><br><code>totara</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Ribes</h2>
+<span class="rank">#51</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">2 draft</span>
+<span class="chip bad">2 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Blackcurrant</b><br><span class="sci">Ribes nigrum</span><br><code>blackcurrant</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Flowering currant</b><br><span class="sci">Ribes sanguineum</span><br><code>flowering-currant</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Xerocomellus</h2>
+<span class="rank">#52</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">fungi</span>
+<span class="chip on">1 draft</span>
+<span class="chip bad">1 no photo</span>
+<span class="chip">lookalike pairs 2/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Bluefoot bolete</b><br><span class="sci">Xerocomellus cisalpinus</span><br><code>bluefoot-bolete</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/1</td><td><span class="miss">preparation</span></td></tr>
+<tr><td><b>Riverine bolete</b><br><span class="sci">Xerocomellus ripariellus</span><br><code>riverine-bolete</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>1/1</td><td><span class="miss">summary, identification, habitat, edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Juglans</h2>
+<span class="rank">#53</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">nuts</span>
+<span class="chip on">1 draft</span>
+<span class="chip bad">1 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Japanese walnut</b><br><span class="sci">Juglans ailantifolia</span><br><code>japanese-walnut</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Walnut</b><br><span class="sci">Juglans regia</span><br><code>walnut</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>0/1</td><td><span class="ok">complete</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Pseudowintera</h2>
+<span class="rank">#54</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">greens · herbs</span>
+<span class="chip on">1 draft</span>
+<span class="chip bad">1 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Horopito / Pepper tree</b><br><span class="sci">Pseudowintera colorata</span><br><code>horopito</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>0/1</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Lowland horopito</b><br><span class="sci">Pseudowintera axillaris</span><br><code>lowland-horopito</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation, months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Rosa</h2>
+<span class="rank">#55</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">fruit</span>
+<span class="chip on">1 draft</span>
+<span class="chip bad">1 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Provence rose</b><br><span class="sci">Rosa gallica</span><br><code>provence-rose</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">habitat, edibleParts, preparation, months</span></td></tr>
+<tr><td><b>Rosehip (sweet briar)</b><br><span class="sci">Rosa rubiginosa</span><br><code>rosehip</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>0/1</td><td><span class="ok">complete</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Ulva</h2>
+<span class="rank">#56</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">seaweed</span>
+<span class="chip on">1 draft</span>
+<span class="chip bad">1 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Broadleaf sea lettuce</b><br><span class="sci">Ulva lactuca</span><br><code>broadleaf-sea-lettuce</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Sea lettuce</b><br><span class="sci">Ulva spp.</span><br><code>sea-lettuce</code></td><td><span class="ok">shipped</span></td><td><span class="ok">2</span></td><td>0/1</td><td><span class="miss">months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Euphorbia / Lysimachia / Stellaria</h2>
+<span class="rank">#57</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">greens</span>
+<span class="chip">lookalike pairs 4/6</span>
+<span class="chip bad">do not eat</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Chickweed</b><br><span class="sci">Stellaria media</span><br><code>chickweed</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>2/2</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Petty spurge</b><br><span class="sci">Euphorbia peplus</span><br><code>petty-spurge</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/2</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Scarlet pimpernel</b><br><span class="sci">Lysimachia arvensis</span><br><code>scarlet-pimpernel</code></td><td><span class="ok">shipped</span></td><td><span class="ok">3</span></td><td>1/2</td><td><span class="miss">months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Crataegus</h2>
+<span class="rank">#58</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">fruit · greens</span>
+<span class="chip on">1 draft</span>
+<span class="chip bad">1 no photo</span>
+<span class="chip">lookalike pairs 0/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Hawthorn</b><br><span class="sci">Crataegus monogyna</span><br><code>hawthorn</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>0/1</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Medlar</b><br><span class="sci">Crataegus germanica</span><br><code>medlar</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>0/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Chalciporus</h2>
+<span class="rank">#59</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">fungi</span>
+<span class="chip on">1 draft</span>
+<span class="chip bad">1 no photo</span>
+<span class="chip">lookalike pairs 2/2</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Chalciporus aurantiacus</b><br><span class="sci">Chalciporus aurantiacus</span><br><code>chalciporus-aurantiacus</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/1</td><td><span class="miss">edibleParts, preparation</span></td></tr>
+<tr><td><b>Peppery bolete</b><br><span class="sci">Chalciporus piperatus</span><br><code>peppery-bolete</code></td><td><span class="miss">draft</span></td><td><span class="no">0</span></td><td>1/1</td><td><span class="ok">complete</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Chenopodium / Solanum</h2>
+<span class="rank">#60</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">fruit · greens</span>
+<span class="chip">lookalike pairs 4/6</span>
+<span class="chip bad">do not eat</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Black nightshade</b><br><span class="sci">Solanum nigrum</span><br><code>black-nightshade</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>2/2</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Fat hen</b><br><span class="sci">Chenopodium album</span><br><code>fat-hen</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/2</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Poroporo</b><br><span class="sci">Solanum laciniatum</span><br><code>poroporo</code></td><td><span class="ok">shipped</span></td><td><span class="ok">5</span></td><td>1/2</td><td><span class="ok">complete</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Trifolium</h2>
+<span class="rank">#61</span>
+<div class="chips">
+<span class="chip">3 entries</span>
+<span class="chip">greens</span>
+<span class="chip on">3 draft</span>
+<span class="chip">lookalike pairs 6/6</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Alsike clover</b><br><span class="sci">Trifolium hybridum</span><br><code>alsike-clover</code></td><td><span class="miss">draft</span></td><td><span class="ok">4</span></td><td>2/2</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Red clover</b><br><span class="sci">Trifolium pratense</span><br><code>red-clover</code></td><td><span class="miss">draft</span></td><td><span class="ok">5</span></td><td>2/2</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>White clover</b><br><span class="sci">Trifolium repens</span><br><code>white-clover</code></td><td><span class="miss">draft</span></td><td><span class="ok">4</span></td><td>2/2</td><td><span class="miss">months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Coriaria / Sambucus</h2>
+<span class="rank">#62</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">fruit</span>
+<span class="chip">lookalike pairs 1/2</span>
+<span class="chip bad">do not eat</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Elder (flowers &amp; berries)</b><br><span class="sci">Sambucus nigra</span><br><code>elderflower</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>0/1</td><td><span class="ok">complete</span></td></tr>
+<tr><td><b>Tutu</b><br><span class="sci">Coriaria arborea</span><br><code>tutu</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/1</td><td><span class="miss">months</span></td></tr>
+</tbody></table></div></section>
+<section class="cluster">
+<div class="head">
+<h2>Boletus / Tylopilus</h2>
+<span class="rank">#63</span>
+<div class="chips">
+<span class="chip">2 entries</span>
+<span class="chip">fungi</span>
+<span class="chip">lookalike pairs 2/2</span>
+<span class="chip bad">do not eat</span>
+</div></div>
+<div class="scroll"><table><thead><tr>
+<th>Entry</th>
+<th>State</th>
+<th>Photos</th>
+<th>Sibling links</th>
+<th>Missing</th>
+</tr></thead><tbody>
+<tr><td><b>Bitter bolete</b><br><span class="sci">Tylopilus felleus</span><br><code>bitter-bolete</code></td><td><span class="ok">shipped</span></td><td><span class="ok">4</span></td><td>1/1</td><td><span class="miss">months</span></td></tr>
+<tr><td><b>Porcini</b><br><span class="sci">Boletus edulis</span><br><code>porcini</code></td><td><span class="ok">shipped</span></td><td><span class="ok">3</span></td><td>1/1</td><td><span class="ok">complete</span></td></tr>
+</tbody></table></div></section>
+</div>
