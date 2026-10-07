@@ -131,6 +131,8 @@ struct EditorRootView: View {
             }
         }
         .alert("species.json changed on disk", isPresented: .constant(store.diskChangedUnderneathUs)) {
+            Button("Merge — keep both") { store.saveMergingDiskChanges() }
+                .keyboardShortcut(.defaultAction)
             Button("Sync — take the disk version") { startReloading() }
             Button("Overwrite disk with my edits", role: .destructive) {
                 store.saveOverwritingDiskChanges()
@@ -139,9 +141,10 @@ struct EditorRootView: View {
         } message: {
             Text(
                 "Something else wrote the catalogue since the editor read it — catalogue-tool, "
-                + "a Python tool, or a git pull. Saving replaces the whole file with the "
-                + "editor's copy, so that change would be lost. Syncing discards unsaved edits "
-                + "in the editor instead."
+                + "a Python tool, or a git pull. Merging keeps both: entries only that writer "
+                + "touched come from disk, entries only you touched come from the editor, and "
+                + "anything you both changed keeps your copy and is named afterwards. Overwrite "
+                + "loses their change; Sync loses yours."
             )
         }
         .sheet(item: $destination.adding) { $draft in
@@ -255,6 +258,16 @@ struct EditorRootView: View {
         "\(count) unsaved \(count == 1 ? "entry" : "entries")"
     }
 
+    private static func mergeLabel(at date: Date, fromDisk: [String], collisions: [String]) -> String {
+        let time = date.formatted(date: .omitted, time: .shortened)
+        let kept = fromDisk.isEmpty
+            ? "nothing of theirs had changed"
+            : "kept \(fromDisk.count) from disk (\(fromDisk.joined(separator: ", ")))"
+        guard !collisions.isEmpty else { return "Merged \(time) — \(kept)" }
+        return "Merged \(time) — \(kept). Both sides had changed "
+            + "\(collisions.joined(separator: ", ")) — your copy was kept, check them."
+    }
+
     private var saveBar: some View {
         VStack(spacing: .empty) {
             Divider()
@@ -270,6 +283,15 @@ struct EditorRootView: View {
                             systemImage: "checkmark.circle.fill"
                         )
                         .foregroundStyle(.green)
+                    case .merged(let date, let fromDisk, let collisions):
+                        // Collisions are the half worth reading, so they get the warning colour
+                        // and the ids: both sides changed those entries and the editor's copy won.
+                        Label(
+                            Self.mergeLabel(at: date, fromDisk: fromDisk, collisions: collisions),
+                            systemImage: collisions.isEmpty ? "arrow.triangle.merge" : "exclamationmark.triangle.fill"
+                        )
+                        .foregroundStyle(collisions.isEmpty ? .green : .orange)
+                        .lineLimit(2)
                     case .failed(let message):
                         Label(message, systemImage: "exclamationmark.triangle.fill")
                             .foregroundStyle(.red)
@@ -431,6 +453,11 @@ struct EditorRootView: View {
         case .saved(let date):
             Text("Saved \(date.formatted(date: .omitted, time: .standard))")
                 .foregroundStyle(.green)
+        case .merged(let date, let fromDisk, let collisions):
+            let summary = Self.mergeLabel(at: date, fromDisk: fromDisk, collisions: collisions)
+            Text(summary)
+                .foregroundStyle(collisions.isEmpty ? .green : .orange)
+                .help(summary)
         case .failed(let message):
             Label(message, systemImage: "exclamationmark.triangle.fill")
                 .foregroundStyle(.red)

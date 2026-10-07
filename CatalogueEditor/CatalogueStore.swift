@@ -9,6 +9,7 @@ final class CatalogueStore {
         case clean
         case edited(count: Int)
         case saved(at: Date)
+        case merged(at: Date, fromDisk: [String], collisions: [String])
         case failed(String)
     }
 
@@ -29,18 +30,25 @@ final class CatalogueStore {
     /// Set when a save was refused because the file changed underneath us. The UI asks what to
     /// do; nothing is written until it answers.
     private(set) var diskChangedUnderneathUs = false
+    /// The catalogue as it was last read or written — the common ancestor a merge works from,
+    /// and the yardstick for "has this entry been edited".
     private var loaded: [String: ForageSpecies] = [:]
-    /// The file's modification date when this copy was read. `save()` refuses if disk has moved
-    /// since, because a save writes the whole in-memory catalogue and would otherwise silently
+    /// The bytes of the file when this copy was read. `save()` refuses if disk no longer holds
+    /// them, because a save writes the whole in-memory catalogue and would otherwise silently
     /// destroy every out-of-editor write — `catalogue-tool`, the Python tools, a git pull.
     /// Measured 2026-10-03: that is exactly how five bamboo entries and the Passiflora fill were
     /// lost, with no error shown and no copy left anywhere but a build product.
-    private var loadedModificationDate: Date?
+    ///
+    /// Content, not the modification date. `URL.resourceValues` caches, so after an atomic write
+    /// it keeps handing back the *replaced* file's date — measured 2026-10-06, and it fails in
+    /// both directions: a stale match waves a real conflict through, and a cache that refreshes
+    /// later invents one out of the editor's own save. Re-reading and comparing 1.2 MB costs
+    /// about a millisecond, and it makes an identical rewrite the non-event it actually is.
+    private var loadedContents: Data?
 
-    private func modificationDateOnDisk() -> Date? {
+    private func contentsOnDisk() -> Data? {
         guard let fileURL else { return nil }
-        return try? fileURL.resourceValues(forKeys: [.contentModificationDateKey])
-            .contentModificationDate
+        return try? Data(contentsOf: fileURL)
     }
 
     init(fileURL: URL?) {
@@ -75,7 +83,7 @@ final class CatalogueStore {
             loaded = Dictionary(uniqueKeysWithValues: loadedSpecies.map { ($0.id, $0) })
             editedIds = []
             pendingPhotoDeletions = []
-            loadedModificationDate = modificationDateOnDisk()
+            loadedContents = contentsOnDisk()
             diskChangedUnderneathUs = false
             status = .clean
         } catch {
@@ -88,16 +96,44 @@ final class CatalogueStore {
     /// survives belongs to the person, not to whichever write happens to land last.
     func save() {
         guard let fileURL else { return }
-        if let loadedModificationDate, let current = modificationDateOnDisk(), current != loadedModificationDate {
+        if let loadedContents, let current = contentsOnDisk(), current != loadedContents {
             diskChangedUnderneathUs = true
             status = .failed(
                 "species.json changed on disk since the editor read it. Saving now would "
-                + "overwrite that change. Sync (⌘R) to take the disk version, or choose "
-                + "Overwrite to keep what is in the editor."
+                + "overwrite that change. Save again and choose Merge to keep both sides, "
+                + "Sync (⌘R) to take the disk version, or Overwrite to keep what is in the editor."
             )
             return
         }
         writeToDisk(fileURL)
+    }
+
+    /// Takes both sides: re-reads disk, merges it with the editor entry by entry, and writes the
+    /// result. The answer to "something else wrote the catalogue" almost always is *both*, because
+    /// the other writer and the person editing are hardly ever working on the same entry.
+    ///
+    /// Reports what it did rather than claiming a clean save — which entries came back from disk,
+    /// and which ones both sides had changed (there, the editor's copy is kept; see
+    /// `CatalogueMerge`). Refuses if disk has become unreadable: there is no merge to be had and
+    /// the choice goes back to the person.
+    func saveMergingDiskChanges() {
+        guard let fileURL else { return }
+        let onDisk: [ForageSpecies]
+        do {
+            onDisk = try CatalogueFile.load(from: fileURL)
+        } catch {
+            status = .failed(
+                "Couldn't merge — \(message(for: error, file: fileURL.lastPathComponent)). "
+                + "Overwrite keeps the editor's copy; Cancel leaves both files alone."
+            )
+            return
+        }
+
+        let outcome = CatalogueMerge.merge(base: loaded, disk: onDisk, editor: species)
+        species = outcome.species
+        writeToDisk(fileURL)
+        guard case .saved(let date) = status else { return }
+        status = .merged(at: date, fromDisk: outcome.fromDisk, collisions: outcome.collisions)
     }
 
     /// Leaves both copies alone. The warning stays off until the next save attempt, so cancelling
@@ -122,7 +158,7 @@ final class CatalogueStore {
         }
         loaded = Dictionary(uniqueKeysWithValues: species.map { ($0.id, $0) })
         editedIds = []
-        loadedModificationDate = modificationDateOnDisk()
+        loadedContents = contentsOnDisk()
 
         do {
             if try SpeciesIDGenerator.regenerate(for: species, catalogueURL: fileURL) == .rewritten {
@@ -135,9 +171,14 @@ final class CatalogueStore {
 
         // The catalogue on disk no longer references these, so now they can go. A failure
         // here is reported, not swallowed: an orphan on disk fails the photo audit.
+        //
+        // Checked against what was actually written, not against what was scheduled: a merge can
+        // bring back an entry — photos and all — that the editor had dropped, and deleting the
+        // file then would leave the catalogue pointing at nothing.
+        let stillReferenced = Set(species.flatMap { $0.photos.map(\.fileName) })
         var failures: [String] = []
         if let photoDirectory {
-            for photo in pendingPhotoDeletions {
+            for photo in pendingPhotoDeletions where !stillReferenced.contains(photo.fileName) {
                 do {
                     try PhotoImporter.deleteFile(for: photo, in: photoDirectory)
                 } catch {

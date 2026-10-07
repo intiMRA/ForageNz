@@ -45,6 +45,7 @@
 		8ADBF3D2306655F900B20F30 /* DebugDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF3D1306655F900B20F30 /* DebugDrawer.swift */; };
 		8ADBF4A2306655F900B20F41 /* View+If.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF4A1306655F900B20F41 /* View+If.swift */; };
 		9259C8452BDD7F338B28B7A0 /* CatalogueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001C8B591D460EC849D511 /* CatalogueStore.swift */; };
+		C4A71E0C5D2F48A19B3C0772 /* CatalogueMerge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A71E0B5D2F48A19B3C0771 /* CatalogueMerge.swift */; };
 		964DFD06BF7EB889DF54325C /* WhereYouAreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23F44C740462604FCC5A42 /* WhereYouAreStore.swift */; };
 		993520DE95024A3F666F3E9E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C28C6DA10AE33F73F5B94C /* Cocoa.framework */; };
 		9E8FC670A75374EEBCCECBC7 /* SafetyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE90969BDB0EBE6CF9F173 /* SafetyView.swift */; };
@@ -184,6 +185,7 @@
 		9DE2E1227F9C1C691B2F945D /* WhereYouAreStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WhereYouAreStoreTests.swift; sourceTree = "<group>"; };
 		A01BA2E911FCB343C07DAD39 /* PhotoSectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoSectionView.swift; sourceTree = "<group>"; };
 		A1001C8B591D460EC849D511 /* CatalogueStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueStore.swift; sourceTree = "<group>"; };
+		C4A71E0B5D2F48A19B3C0771 /* CatalogueMerge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueMerge.swift; sourceTree = "<group>"; };
 		A1C0DE0000000000CA7A1006 /* CatalogueArtwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogueArtwork.swift; path = Components/CatalogueArtwork.swift; sourceTree = "<group>"; };
 		A1C0DE0000000000CA7A1009 /* Catalogue.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Catalogue.xcassets; sourceTree = "<group>"; };
 		B23CB3FA9353E11476EEC70C /* ForageNZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				791DF0D2BB9C0D5A58110687 /* CatalogueEditorApp.swift */,
+				C4A71E0B5D2F48A19B3C0771 /* CatalogueMerge.swift */,
 				A1001C8B591D460EC849D511 /* CatalogueStore.swift */,
 				F493CBE757E2E16D66F2DB00 /* EditorFields.swift */,
 				21B8BE3236AB36D01FBF5AF3 /* EditorLayout.swift */,
@@ -775,6 +778,7 @@
 			files = (
 				264ED09A988065B705F34E20 /* CatalogueEditorApp.swift in Sources */,
 				9259C8452BDD7F338B28B7A0 /* CatalogueStore.swift in Sources */,
+				C4A71E0C5D2F48A19B3C0772 /* CatalogueMerge.swift in Sources */,
 				B07C79F23F1BB365C0EEFFBE /* EditorRootView.swift in Sources */,
 				ADCE358E9BDD4BA324F73087 /* SpeciesEditorView.swift in Sources */,
 				16020BFCDA4491686721448A /* PhotoSectionView.swift in Sources */,
