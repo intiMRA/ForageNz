@@ -343,12 +343,12 @@
   {
     "caution" : "careRequired",
     "commonName" : "Annual wall-rocket",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Ressurreição, Salgueiro & Figueirinha, 'Diplotaxis muralis as an Emerging Food Crop', Plants 2025 (CC BY 4.0) — the article's reference markers removed"
       ],
-      "text" : ""
+      "text" : "This edible plant is widely valued for its culinary versatility. Its leaves can be consumed raw in fresh salads, offering a crisp and refreshing texture, or used as an ingredient in a variety of dishes, such as pizzas, sandwiches, and soups.\nD. muralis exhibits a spicy and pungent flavour profile, characteristic of the edible plants of this genus, which are frequently used in cooking."
     },
     "group" : "greens",
     "habitat" : {
@@ -364,26 +364,58 @@
     "id" : "annual-wall-rocket",
     "identification" : {
       "sources" : [
-        "Wikipedia, 'Diplotaxis muralis' (CC BY-SA 4.0) — units converted to metric"
+        "Wikipedia, 'Diplotaxis muralis' (CC BY-SA 4.0) — units converted to metric, and the northern-hemisphere flowering months omitted now that months carries the NZ season"
       ],
-      "text" : "It is an annual, but sometimes grows as a perennial, growing up to 15–60 cm tall on unbranched stems. It has lobed leaves, which form a rosette at the base of the plant. They are 2–9 cm long and 1–3 cm wide. It blooms in summer, between May and September in the UK, and between April and August in China. The flowers are yellow, with oblong sepals and longer, obovate petals. Later, it produces a fruit capsule, long cylindrical with a short beak. It contains 2 rows of yellow brown seeds, which are ovoid or ellipsoid shaped."
+      "text" : "It is an annual, but sometimes grows as a perennial, growing up to 15–60 cm tall on unbranched stems. It has lobed leaves, which form a rosette at the base of the plant. They are 2–9 cm long and 1–3 cm wide. The flowers are yellow, with oblong sepals and longer, obovate petals. Later, it produces a fruit capsule, long cylindrical with a short beak. It contains 2 rows of yellow brown seeds, which are ovoid or ellipsoid shaped."
     },
     "lookalikes" : [
 
     ],
     "months" : [
-
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Photo of several plants",
+        "credit" : "(c) eyrezer, some rights reserved (CC BY)",
+        "fileName" : "annual-wall-rocket-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/62143050"
+      },
+      {
+        "caption" : "Photos of leaves",
+        "credit" : "(c) Anna Burrows, some rights reserved (CC BY)",
+        "fileName" : "annual-wall-rocket-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/45945264"
+      },
+      {
+        "caption" : "Close up of the flower",
+        "credit" : "no rights reserved",
+        "fileName" : "annual-wall-rocket-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/35613593"
+      },
+      {
+        "caption" : "Photo of plant",
+        "credit" : "(c) Chris Ecroyd, some rights reserved (CC BY-NC)",
+        "fileName" : "annual-wall-rocket-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/32602557"
+      }
     ],
     "preparation" : {
       "sources" : [
-
+        "Ressurreição, Salgueiro & Figueirinha, 'Diplotaxis muralis as an Emerging Food Crop', Plants 2025 (CC BY 4.0) — the article's reference markers removed"
       ],
-      "text" : ""
+      "text" : "The flavour profile of D. muralis leaves evolves significantly with their stage of development. Younger leaves are tender and have a mild, slightly peppery taste, making them ideal for raw preparations like salads or as delicate garnishes. In contrast, mature leaves present a more intense, spicy, and pungent flavour, which enhances their appeal in robust dishes like soups, sauces, or as a garnish for hot meals.\nThey can also be processed, such as dried or frozen, to extend their shelf life and broaden their applications in different culinary contexts."
     },
     "recipes" : [
 
@@ -391,8 +423,12 @@
     "scientificName" : "Diplotaxis muralis",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Annual wall-rocket' entry.",
-      "Identification, habitat and summary text: Wikipedia contributors. 'Diplotaxis muralis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Diplotaxis_muralis"
+      "Identification, habitat and summary text: Wikipedia contributors. 'Diplotaxis muralis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Diplotaxis_muralis",
+      "Edible parts, preparation and warning text: Ressurreição, S.; Salgueiro, L.; Figueirinha, A. 'Diplotaxis muralis as an Emerging Food Crop: Chemical Composition, Nutritional Profile and Antioxidant Activities'. Plants 2025, 14, 844. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Retrieved 08/10/2026. https://doi.org/10.3390/plants14060844 (PDF via mdpi-res.com; www.mdpi.com 403s). Quoted verbatim, with the article's bracketed reference markers removed and no other change.",
+      "The scope of the warning, so it is not read as more than it says. The quoted sentences are about Brassicaceae as a family, not about this species in particular, and the paper makes no claim about roadside plants: its own D. muralis was grown in soil and irrigation water analysed before planting, and those leaves came in below the EU maximum levels for lead, cadmium and mercury (Commission Regulation (EU) 2023/915). The warning is on this page because the habitat field above it records the plant growing on waste ground, beside railways and roads and on tips; the inference from one to the other is the reader's to draw and a person's to write, so it is not written here.",
+      "months comes from the iNaturalist month-of-year histogram for Diplotaxis muralis in New Zealand (place_id 6803, verifiable records, n=110), read 08/10/2026, taking every month at or above a quarter of the peak month (April, 20 records; threshold 5). That admits ten months and excludes March (4 records) and July (3). Recorded because those two gaps are an artefact of a thin per-month sample rather than a seasonal break — a single observation either way moves them — and because the 34 flowering-annotated records are too few to set a season from. Read it as recorded essentially year round."
     ],
+    "sourcingNote" : "Owed a lookalike card to perennial-wall-rocket, which is a person's to write. perennial-wall-rocket.identification already names the separating character in its own words — of the short stipe below the pod, 'a useful feature for separating this species from annual wall-rocket' — so the fact is in the catalogue and only the how-to-tell sentence is missing. Neither page cards the other. Both are at careRequired and this page's warnings line is now satisfied by a warning, so the card is not blocking.",
     "summary" : {
       "sources" : [
         "Wikipedia, 'Diplotaxis muralis' (CC BY-SA 4.0)"
@@ -400,7 +436,7 @@
       "text" : "Diplotaxis muralis, the annual wall-rocket, is a species of flowering plant in the family Brassicaceae."
     },
     "warnings" : [
-
+      "Brassicaceae plants are known for their tendency to accumulate heavy metals, a trait that makes them valuable for the phytoremediation of contaminated soils. However, this same ability necessitates careful monitoring, as the accumulation of heavy metals can also pose potential health risks."
     ]
   },
   {
