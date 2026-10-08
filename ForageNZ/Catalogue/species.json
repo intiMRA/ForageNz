@@ -560,9 +560,9 @@
     "draft" : true,
     "edibleParts" : {
       "sources" : [
-        "Wikipedia, 'Bamboo shoot' (CC BY-SA 4.0)"
+        "Useful Temperate Plants, 'Pseudosasa japonica' (CC BY-NC-SA 3.0)"
       ],
-      "text" : "Bamboo shoots or bamboo sprouts are the edible shoots (new bamboo culms that come out of the ground) of many bamboo species including Bambusa vulgaris and Phyllostachys edulis. Most young bamboo shoots are edible after being boiled to remove toxins, but only around a hundred or so species are harvested regularly for edible shoots."
+      "text" : "The young shoots, cooked. A shoot is taken while it is still soft, standing about 8–10 cm above the ground, with the stem cut 5 cm or more below soil level. The flavour is rather bitter."
     },
     "group" : "greens",
     "habitat" : {
@@ -610,13 +610,38 @@
       }
     ],
     "months" : [
-
+      9,
+      10,
+      11
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/167508",
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Photo of leaves",
+        "credit" : "no rights reserved",
+        "fileName" : "arrow-bamboo-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/360768135"
+      },
+      {
+        "caption" : "Close up of stems",
+        "credit" : "no rights reserved",
+        "fileName" : "arrow-bamboo-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/360768135"
+      },
+      {
+        "caption" : "Photo of several bamboo plants",
+        "credit" : "(c) Alex Fergus, some rights reserved (CC BY-NC)",
+        "fileName" : "arrow-bamboo-3.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/7387557"
+      },
+      {
+        "caption" : "Photos of leaves",
+        "credit" : "(c) Hannes Marais, some rights reserved (CC BY-NC)",
+        "fileName" : "arrow-bamboo-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/260547486"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -634,12 +659,18 @@
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
       "Identification and summary text: Wikipedia contributors. 'Pseudosasa japonica', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Pseudosasa_japonica",
-      "Edible parts, preparation and warning text: Wikipedia contributors. 'Bamboo shoot', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 02/10/2026. https://en.wikipedia.org/wiki/Bamboo_shoot — the passages are about bamboo shoots in general, not about this species in particular.",
+      "Preparation and warning text: Wikipedia contributors. 'Bamboo shoot', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 02/10/2026. https://en.wikipedia.org/wiki/Bamboo_shoot — the passages are about bamboo shoots in general, not about this species in particular. The edible-parts text came from here too until 08/10/2026 and has been replaced by a species-specific source.",
+      "Edible parts: Fern, Ken. 'Pseudosasa japonica', Useful Temperate Plants database. CC BY-NC-SA 3.0. Retrieved 08/10/2026. https://temperate.theferns.info/plant/Pseudosasa+japonica — paraphrased, not quoted. Same underlying data as the Plants For A Future entry below, under a licence that permits reuse. Its harvest size and depth are the ones already in the recipe. It disagrees with PFAF on hazards — 'None known' here against PFAF's cyanogens and pregnancy note — so the warning on this page rests on the general bamboo-shoot sources and not on this one. Its 'late spring' was left out of the edible-parts text rather than carried into it: it is northern-hemisphere, and the standing rule is that such a season is omitted and not relocated. The months field carries the New Zealand season instead, from a New Zealand source.",
       "Preparation method: Staffenhagen, Leigha. 'Bamboo Shoots', Skagit Valley Food Co-op, 03/06/2020. © Skagit Valley Food Co-op, all rights reserved. Retrieved 02/10/2026. https://www.skagitfoodcoop.com/blog/bamboo-shoots — paraphrased, not quoted. Names no species; the shoots it describes are a named grower's, not a wild stand.",
       "Preparation method: BBC Food. 'Bamboo shoots' ingredient page. Copyright © 2026 BBC, all rights reserved. Retrieved 02/10/2026. https://www.bbc.co.uk/food/bamboo_shoots — paraphrased, not quoted. Names no species. Its buying guidance (canned, dried, vacuum-packed) was not used: this catalogue is about shoots cut from the ground.",
       "Edible parts and preparation: Plants For A Future. 'Pseudosasa japonica' database entry. © 2010 Plants For A Future, no licence stated, so all rights reserved. Retrieved 02/10/2026. https://pfaf.org/user/Plant.aspx?LatinName=Pseudosasa+japonica — paraphrased, not quoted. PFAF rates this species 2 of 5 for edibility and calls the shoots rather bitter. It is the only one of this catalogue's five bamboos with anything under Known Hazards; the other four read 'None known'. That entry also carries 'Do not use during pregnancy', cited to the same reference as the species' medicinal leaf use, and it is left off this page because it is unclear whether it attaches to the shoots or to the medicine. Its harvest timing is northern-hemisphere spring and was not used.",
       "Habitat: New Zealand Plant Conservation Network. 'Pseudosasa japonica' factsheet. © 2026 NZPCN, all rights reserved. Retrieved 02/10/2026. https://www.nzpcn.org.nz/flora/species/pseudosasa-japonica/ — paraphrased, not quoted. Its habitat line is itself attributed to Edgar and Connor (2000), Flora of New Zealand Vol. V. Naturalised 1968; named on DOC's list of 386 environmental weeds in New Zealand 2024.",
-      "Habitat: Weedbusters. 'Arrow bamboo' weed information sheet. © Weedbusters, all rights reserved. Retrieved 02/10/2026. https://www.weedbusters.org.nz/what-are-weeds/weed-list/arrow-bamboo/ — paraphrased, not quoted. Source of the habitats-invaded list and of the vegetative-spread note."
+      "Habitat: Weedbusters. 'Arrow bamboo' weed information sheet. © Weedbusters, all rights reserved. Retrieved 02/10/2026. https://www.weedbusters.org.nz/what-are-weeds/weed-list/arrow-bamboo/ — paraphrased, not quoted. Source of the habitats-invaded list and of the vegetative-spread note.",
+      "Months: Auckland Council, 'Bamboo species' pest page, https://www.tiakitamakimakaurau.nz/protect-and-restore-our-environment/pests-in-auckland/pest-search/phyaur/ — © Auckland Council, all rights reserved, retrieved 08/10/2026. Fact restated, not quoted. The page covers six bamboos and names this one, Arrow Bamboo, among them, and its control advice is to remove young shoots in spring while they are soft because running types only shoot in spring. Spring in New Zealand is September to November, which is the whole of this field. This is a weed-control page, so what it dates is when the shoots are soft enough to pull, which is the same moment they are worth eating, but the page has no interest in eating them.",
+      "Months, two routes that were NOT used, recorded so they are not retried. Ken Fern's entry (above) has the shoots cut in late spring, but that is the northern hemisphere, and converting it would land on November here by arithmetic rather than by observation. Forest Floor, 'Bamboo for cane production', http://forestfloor.co.nz/ff/bambooshoot.htm, no licence stated, so all rights reserved, retrieved 08/10/2026, has running bamboos in New Zealand shooting spring to early summer, but that page is about growing bamboo for cane and names Phyllostachys aurea and P. nigra, two of this page's lookalikes, not this species. The usual method does not work here either: an iNaturalist NZ month histogram dates the records, and the records are of canes and leaves, which stand all year, so they cannot date the shoots.",
+      "NOT YET ON THE PAGE, and it is the owner's to write: the same Auckland Council page states that these six bamboos, this one included, may not be bred, distributed, released, sold or planted in Auckland, with an exception for relocating an existing plant within the same property, and lists the species as Sustained Control across the whole region under the Regional Pest Management Plan. That bears on a forager — taking shoots is fine and is arguably control, but carrying live rhizome home is not — and it is not yet written anywhere on this entry. The council page is all rights reserved, so it cannot be quoted, and a restatement of a legal rule is safety text. Check it against the Regional Pest Management Plan itself rather than the council's summary of it.",
+      "Note on shipping: this entry has no blocking issues left, but it cannot ship alone. All three of its lookalike cards open fishpole, black and square bamboo, and all three are drafts, so shipping this page would break the rule that a shipped card opens a shipped page. The five bamboos ship as a set or not at all, and the other four still carry model-written habitat text.",
+      "Photographs checked 08/10/2026 against api.inaturalist.org. All four come from three research-grade observations of Pseudosasa japonica in New Zealand — Whakarewarewa in Rotorua, Grey on the West Coast, and Okura in Auckland — and every photo licence matches the credit written beside it: CC0 for the two Rotorua frames, CC BY-NC for Alex Fergus' and for Hannes Marais'. What was checked is the species, the place and the licence; what was not is that each file was cut from the observation named beside it rather than merely being of the right species under the right licence."
     ],
     "summary" : {
       "sources" : [
