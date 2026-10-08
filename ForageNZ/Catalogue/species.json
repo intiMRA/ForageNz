@@ -2023,7 +2023,7 @@
       5
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/416306",
-    "needsBookSource" : true,
+    "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
       {
@@ -3332,7 +3332,7 @@
       5
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/409342",
-    "needsBookSource" : true,
+    "needsBookSource" : false,
     "origin" : "endemic",
     "photos" : [
       {
