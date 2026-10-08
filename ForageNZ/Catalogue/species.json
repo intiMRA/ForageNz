@@ -1598,10 +1598,11 @@
     "recipes" : [
 
     ],
-    "scientificName" : "Passiflora edulis f",
+    "scientificName" : "Passiflora edulis",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Black passionfruit' entry.",
-      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora edulis f' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-edulis.html"
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora edulis f' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-edulis.html",
+      "scientificName: corrected from 'Passiflora edulis f' to 'Passiflora edulis', 08/10/2026. The old value was a truncation of 'Passiflora edulis f. edulis' at the interior full stop, and it failed the lookalike-name test against banana-passionfruit's card, which names the species correctly. Species rank is what the other three Passiflora entries use, and the catalogue has no golden passionfruit (f. flavicarpa) entry for the form epithet to distinguish it from, so the rank buys nothing and the interior full stop is a known hazard here. This is the third time the value has been truncated (490d638, restored in 9357667, truncated again in f4c406e). NOTE FOR WHOEVER CHASES THE CAUSE: trailing full stops survive everywhere in this file — 'Amaranthus spp.', 'Rubus fruticosus agg.' — so nothing is stripping a final period. Only an INTERIOR '. ' is lost, which is the signature of a first-sentence extraction, not a trimmer. Corrected by the assistant on the owner's instruction; flagged here so it is greppable and reversible."
     ],
     "summary" : {
       "sources" : [
