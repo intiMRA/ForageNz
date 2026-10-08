@@ -23172,7 +23172,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Umere milkcap",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
@@ -23189,6 +23189,12 @@
     "habitats" : [
       "forest"
     ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "This mushroom has no known uses so you should leave it undisturbed."
+    },
     "id" : "umere-milkcap",
     "identification" : {
       "sources" : [
@@ -23214,7 +23220,7 @@
       5
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/382887",
-    "needsBookSource" : true,
+    "needsBookSource" : false,
     "origin" : "endemic",
     "photos" : [
       {
@@ -23259,14 +23265,17 @@
       "Season: too few New Zealand records to weight by month — iNaturalist NZ holds 9 research-grade records, falling in January, February, April and May. Set to the full span of those records, which is also the season of its two endemic beech-associate siblings, tawai milkcap and New Zealand milkcap. Checked 06/10/2026. https://inaturalist.nz/taxa/382887",
       "lookalikes.howToTell: the card said nothing had been published about this species. That is wrong — McNabb (1971) described it, and the Virtual Mycota page cited above reproduces that description; what does not exist is an openly licensed one. The clause was corrected to say so and nothing else was changed. Corrected by the assistant on the owner's instruction, 08/10/2026; flagged here so it is greppable and reversible.",
       "identification and habitat, written 08/10/2026 from the full McNabb description on the Virtual Mycota page already cited above (pk=5192), read end to end rather than for the one or two facts previously quoted from it. In copyright, so restated in this guide's own words with nothing reproduced; spores and cystidia left out as microscope characters. THE LATEX IS THE POINT: white and unchanging, which this entry did not record at all and which is the first character a forager checks on a milk cap — the saffron-milk-cap card now turns on it instead of on the absence of a description. summary, edibleParts, preparation and harvestEthics were deliberately left empty: they are judgement and safety fields and they are the owner's to write. Written by the assistant on the owner's instruction; flagged here so it is greppable and reversible.",
-      "A wording pass on 08/10/2026 over the restatements added earlier that day, because several sat closer to McNabb's own adjectives than a restatement should — a colour list in particular reads as a paraphrase when it keeps the source's order and its distinctive words. The facts are unchanged; the sentences were rebuilt so the phrasing is this guide's. No source text is reproduced anywhere on this entry."
+      "A wording pass on 08/10/2026 over the restatements added earlier that day, because several sat closer to McNabb's own adjectives than a restatement should — a colour list in particular reads as a paraphrase when it keeps the source's order and its distinctive words. The facts are unchanged; the sentences were rebuilt so the phrasing is this guide's. No source text is reproduced anywhere on this entry.",
+      "Conservation status: Cooper, Buchanan, Leonard, Allison-Cooper, Johnston, Padamsee, McKenzie & Michel 2022, 'Conservation status of selected species of non-lichenised agarics, boletes and russuloid fungi in Aotearoa New Zealand, 2021', New Zealand Threat Classification Series 38, Department of Conservation. ISSN 2324-1713. 'This work is licensed under the Creative Commons Attribution 4.0 International licence.' Lactarius umerensis appears in Table 8 under NOT THREATENED (330) → Russuloid fungi (33), on p. 42 of the report, with no qualifiers and a status change of 'New listing' — it was not in Hitchmough 2002, so this is its first assessment, not an improvement on an earlier one. Read by extracting the text of the published PDF rather than trusting a search summary, the same check run on chalciporus-aurantiacus. Checked 08/10/2026. https://www.doc.govt.nz/globalassets/documents/science-and-technical/nztcs38entire.pdf",
+      "SEARCH EXHAUSTED for an openly licensed description, 08/10/2026. Five routes, named so none is re-run. (1) OpenAlex, works?search=\"Lactarius umerensis\": meta.count is 1, and that one work is the 2001 nomenclatural checklist of New Zealand agarics in the New Zealand Journal of Botany — a name list, not a description, and in copyright. A count of 1 closes the new-record route, the revision route and the conservation-revision route at once. (2) GBIF /v1/species/<key>/descriptions for all eight taxon keys returned by the species search: every one empty. (3) Zenodo /api/records: 0 hits. (4) Leonardi, Comandini, Sanjust & Rinaldi 2021, 'Conservation Status of Milkcaps', Sustainability 13(18): 10365 — CC BY 4.0 and the source that fills new-zealand-milkcap's summary, so it was the strongest remaining lead. The full PDF contains no occurrence of 'umerensis' or 'tawai': it covers red-listed milkcaps, and this one is not red-listed. (5) Atlas of Living Australia's NZOR page (NZOR-6-14047): taxonomy only, no description, 0 records. There is also no Wikipedia article in any language. The only published description remains McNabb (1971), which is in copyright.",
+      "OPEN LEAD, for the owner and not the assistant: Stevenson, G. (1982), 'Field Guide to Fungi', is the obvious second human description to check McNabb against — the same lead tawai-milkcap carries. Nothing on this entry depends on it; it would be a cross-check, not a gap.",
+      "summary, written 08/10/2026. Three sentences, each restating a fact already cited on this entry: endemic to New Zealand (Virtual Mycota biostatus), small and found under beech (McNabb via the Virtual Mycota page, the same source as identification and habitat), and Not Threatened in the 2021 NZTCS assessment (the CC BY report cited above, restated not quoted). Edibility is unrecorded, which the third sentence says rather than leaves to inference. Written by the assistant on the owner's instruction; flagged here so it is greppable and reversible. harvestEthics on this entry is the owner's own sentence. edibleParts and preparation are left empty, as they are on tawai-milkcap and new-zealand-milkcap, because there is nothing recorded to put in them."
     ],
-    "sourcingNote" : "McNabb, R.F.R. (1971), 'The Russulaceae of New Zealand. 1. Lactarius', New Zealand Journal of Botany 9(1): 46–66, reproduced on the Manaaki Whenua Virtual Mycota page for this species (pk=5192). It is the only published description and it is in copyright, so the facts are restated here and no text is copied. The morphology and habitat are now as complete as that source allows. WHAT IS STILL OWED, and why this stays a draft: summary, edibleParts, preparation and harvestEthics are empty, and edibility is unrecorded anywhere — McNabb gives the taste (mild) and says nothing about eating it, and no later source does either. Those four fields are the owner's to write. Compare tawai-milkcap, where the same page supplied the same kind of description and the OPEN LEAD for an edibility statement is Stevenson 1982, a book.",
     "summary" : {
       "sources" : [
 
       ],
-      "text" : ""
+      "text" : "A small milk cap found only in Aotearoa New Zealand, where it grows under beech. The 2021 New Zealand Threat Classification System assessment lists it as Not Threatened. Whether it can be eaten has never been recorded."
     },
     "warnings" : [
 
