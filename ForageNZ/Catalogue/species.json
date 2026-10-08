@@ -11706,7 +11706,13 @@
       "text" : "Cap 5–25 mm across and about as tall, sharply conical to bell-shaped, and almost always tipped with a small distinct nipple. Colour shifts with moisture: chestnut to olive-brown when damp, with the gill lines showing through the margin, fading to pale buff as it dries. A damp cap is tacky, with a gelatinous skin that peels away if you bend the margin back — the most useful confirming test in the field.\nGills are narrow and crowded, pale brown at first, darkening to purple-brown with paler edges. The stipe is 4.5–14 cm long but only 1–3.5 mm thick, slender, often wavy, and has no ring. Spore print is dark purple-brown.\nAny part handled or bruised stains blue-green. A conical, nipple-tipped grassland cap that bruises blue and gives a purple-brown print is this species."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "mowers-mushroom",
+        "howToTell" : "The mushroom most often mistaken for a liberty cap, growing in the same short grass at the same time of year — their seasons overlap from April to June. It is the blunter of the two: its cap opens out convex with no nipple, where a liberty cap is almost always tipped with one. It never bruises blue, and a liberty cap stains blue-green wherever it is handled. Its cap has no gelatinous skin to peel back from the margin. Its gills are broad and go distinctly mottled as the spores ripen, against the narrow, crowded gills of a liberty cap, which darken to purple-brown with paler edges. The spore print will not decide it: this one is deep brown, sometimes with a purplish cast, against a liberty cap's dark purple-brown.",
+        "name" : "Mower's mushroom",
+        "risk" : "unpalatable",
+        "scientificName" : "Panaeolus foenisecii"
+      }
     ],
     "months" : [
       3,
@@ -11768,7 +11774,10 @@
       "Manaaki Whenua – Landcare Research. Biota of New Zealand: 'Psilocybe semilanceata (Fr.) P. Kumm. 1871'. Retrieved 27/09/2026. https://biotanz.landcareresearch.co.nz/scientific-names/1cb19d9f-36b9-11d5-9548-00d0592d548c",
       "Wikipedia contributors. 'Psilocybe semilanceata', Wikipedia, The Free Encyclopedia. Retrieved 27/09/2026. https://en.wikipedia.org/wiki/Psilocybe_semilanceata — consulted for description and habitat; the text in this entry is written for this guide. Article text is CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/",
       "The legal claims on this page, checked against the Act rather than a summary of it. Schedule 1 (Class A controlled drugs) lists Psilocine, Psilotsin and Psilocybine by name and formula. Section 7(1)(a) makes it an offence to procure, possess, consume, smoke or otherwise use a controlled drug, and section 7(2)(a) sets the penalty at 'imprisonment for a term not exceeding 6 months or to a fine not exceeding $1,000 or to both where a Class A controlled drug was the controlled drug' — which is what this entry's warning says. Note that section 7(2) applies 'without prejudice to any liability under section 6', the dealing provision, which carries life imprisonment for a Class A drug: the same handful of mushrooms can be charged either way depending on quantity and circumstance. Misuse of Drugs Act 1975, read on legislation.govt.nz 06/10/2026. https://www.legislation.govt.nz/act/public/1975/0116/latest/DLM436100.html",
-      "The fungus itself is a prohibited plant, which is a second offence this page did not mention. Section 2 of the Misuse of Drugs Act 1975 defines 'prohibited plant' to include 'any fungus of the genera Conocybe, Panaeolus, or Psilocybe from which a controlled drug can be produced or which contains a controlled drug' — so cultivating it is an offence under section 9, separately from possessing it under section 7. Misuse of Drugs Act 1975, read on legislation.govt.nz 06/10/2026. https://www.legislation.govt.nz/act/public/1975/0116/latest/DLM436100.html"
+      "The fungus itself is a prohibited plant, which is a second offence this page did not mention. Section 2 of the Misuse of Drugs Act 1975 defines 'prohibited plant' to include 'any fungus of the genera Conocybe, Panaeolus, or Psilocybe from which a controlled drug can be produced or which contains a controlled drug' — so cultivating it is an offence under section 9, separately from possessing it under section 7. Misuse of Drugs Act 1975, read on legislation.govt.nz 06/10/2026. https://www.legislation.govt.nz/act/public/1975/0116/latest/DLM436100.html",
+      "lookalikes.howToTell for the mower’s mushroom card, written 08/10/2026 on the owner’s instruction to link the two entries. This page previously carried no lookalike card at all, although its identification text names the characters an identification turns on. The card introduces no fact that was not already on one of the two pages: the nipple, the peelable gelatinous skin and the blue-green bruising come from this entry’s identification, and the convex nippleless cap, the absence of a peelable skin, the mottled gills and the absence of blueing come from mowers-mushroom.identification. It also records that the spore print does not separate them, because that entry gives a deep brown print with a purplish cast against the dark purple-brown given here. Written by the assistant on the owner’s instruction; flagged here so it is greppable and reversible.",
+      "A note on the risk level of that card. It is set to unpalatable, not toxic, because that is what the mower’s mushroom entry itself says — its only warning is that the mushroom is unpalatable. No claim about psilocybin in Panaeolus foenisecii is made on either page, in either direction, because nothing cited on either page settles it. Note separately that section 2 of the Misuse of Drugs Act 1975, quoted above, names Panaeolus alongside Psilocybe, but it reaches only a fungus of that genus ‘from which a controlled drug can be produced or which contains a controlled drug’, so the Act does not itself decide the question for this species and neither does this guide.",
+      "Correction to the two lookalike cards, 08/10/2026, same day they were written, after re-reading them against the pages they draw on. Four claims were stronger or looser than their source. (1) Both cards stated the liberty cap's nipple flatly, where liberty-cap.identification says 'almost always tipped with a small distinct nipple' — the hedge is restored on both, because a nippleless liberty cap is precisely the specimen a hardened card fails to warn about, and it is the first character a reader checks. (2) 'darken evenly' was removed: it is not a claim either page makes about the liberty cap, whose gills are recorded as darkening to purple-brown with paler edges; it had been carried across from the mower's mushroom page, which contrasts its own mottled gills with 'an even colour'. Both cards now give each species' gills as its own page gives them. (3) 'sometimes' was restored to the mower's mushroom's purplish spore-print cast. (4) 'their seasons overlap through autumn' was replaced by the actual overlap of the two months arrays, April to June, which runs past autumn. No new fact was introduced by this correction and nothing was deleted from either page."
     ],
     "sourcingNote" : "Owed a second offence, not a book: Misuse of Drugs Act 1975 s 2 makes any Psilocybe containing a controlled drug a prohibited plant, so cultivation is a separate offence under s 9, on top of possession under s 7. The page states only possession. The Act is cited in this entry's sources; the sentence is a person's to write.",
     "summary" : {
@@ -12973,7 +12982,7 @@
   {
     "caution" : "doNotEat",
     "commonName" : "Mower's mushroom",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
@@ -12999,7 +13008,13 @@
       "text" : "Cap 1–4 cm across, conical at first then opening out to convex — it does not hold the sharp point a liberty cap keeps, and it has no nipple. Hygrophanous like a liberty cap: brown when moist, drying tan from the centre outwards, which often leaves a two-tone cap. There is no peelable gelatinous skin.\nGills are broad and attached, brown with paler edges, going distinctly mottled or blotchy as the spores ripen rather than an even colour. Stipe 3–8 cm by 1–3 mm, fragile and hollow, beige to light brown, with no ring. Spore print is deep brown, sometimes with a purplish cast.\nIt does not bruise blue anywhere."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "liberty-cap",
+        "howToTell" : "A liberty cap is almost always tipped with a small distinct nipple on a sharply conical cap; this one opens out convex and has no nipple. Bruising settles it: a liberty cap stains blue-green wherever it is handled, and the mower's mushroom never does. Bend the margin back on a damp liberty cap and a gelatinous skin peels away — there is nothing here to peel. The gills differ as well: a liberty cap's are narrow and crowded, darkening to purple-brown with paler edges, where these are broad and go mottled and blotchy as the spores ripen. Do not try to separate the two on spore print or on where they are growing — a liberty cap prints dark purple-brown and this one deep brown, sometimes with a purplish cast, both come up in short grass, and their seasons overlap from April to June.",
+        "name" : "Liberty cap",
+        "risk" : "psychoactive",
+        "scientificName" : "Psilocybe semilanceata"
+      }
     ],
     "months" : [
       4,
@@ -13011,7 +13026,30 @@
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Mushrooms in their natural habitat",
+        "credit" : "(c) David Orlovich, some rights reserved (CC BY)",
+        "fileName" : "mowers-mushroom-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/75977770"
+      },
+      {
+        "caption" : "Photo of speciments with a finger for size comparisson",
+        "credit" : "no rights reserved",
+        "fileName" : "mowers-mushroom-2.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/3074196"
+      },
+      {
+        "caption" : "Photos of gills",
+        "credit" : "(c) Colin Meurk, some rights reserved (CC BY)",
+        "fileName" : "mowers-mushroom-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/227232286"
+      },
+      {
+        "caption" : "Speciments on neutral background",
+        "credit" : "(c) Tori Raikkonen, some rights reserved (CC BY-NC)",
+        "fileName" : "mowers-mushroom-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/188304873"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -13025,7 +13063,10 @@
     "scientificName" : "Panaeolus foenisecii",
     "sources" : [
       "Manaaki Whenua – Landcare Research. New Zealand Organisms Register: 'Panaeolus foenisecii (Pers.) Kühner'. Biostatus: Present, Exotic. Retrieved 28/09/2026. https://data.nzor.org.nz/names/search?query=Panaeolus%20foenisecii",
-      "Wikipedia contributors. 'Panaeolus foenisecii', Wikipedia, The Free Encyclopedia. Retrieved 28/09/2026. https://en.wikipedia.org/wiki/Panaeolus_foenisecii — consulted for description; the text in this entry is written for this guide. Article text is CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/"
+      "Wikipedia contributors. 'Panaeolus foenisecii', Wikipedia, The Free Encyclopedia. Retrieved 28/09/2026. https://en.wikipedia.org/wiki/Panaeolus_foenisecii — consulted for description; the text in this entry is written for this guide. Article text is CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/",
+      "lookalikes.howToTell for the liberty cap card, written 08/10/2026 on the owner's instruction to link the two entries. It introduces no fact that was not already on one of the two pages: the nipple, the peelable gelatinous skin and the blue-green bruising come from liberty-cap.identification, and the convex cap, the absence of a nipple, the absence of a peelable skin, the mottled gills and the absence of blueing come from this entry's own identification. It also states which two tests do NOT separate them — spore print, because this entry records a deep brown print with a purplish cast and liberty-cap records a dark purple-brown one, and habitat and season, because both pages describe short grass and their months overlap through autumn. Written by the assistant on the owner's instruction; flagged here so it is greppable and reversible.",
+      "draft was set to false on 08/10/2026. The owner's four photographs, added the same day, cleared the last blocking issue on this entry, and the catalogue's own test asserts that a draft still has something unfinished — so a complete entry cannot stay flagged as a draft. Shipping it is also what the liberty cap card requires: a card on a shipped page may only open another shipped page. No prose field was changed in the same edit.",
+      "Correction to the two lookalike cards, 08/10/2026, same day they were written, after re-reading them against the pages they draw on. Four claims were stronger or looser than their source. (1) Both cards stated the liberty cap's nipple flatly, where liberty-cap.identification says 'almost always tipped with a small distinct nipple' — the hedge is restored on both, because a nippleless liberty cap is precisely the specimen a hardened card fails to warn about, and it is the first character a reader checks. (2) 'darken evenly' was removed: it is not a claim either page makes about the liberty cap, whose gills are recorded as darkening to purple-brown with paler edges; it had been carried across from the mower's mushroom page, which contrasts its own mottled gills with 'an even colour'. Both cards now give each species' gills as its own page gives them. (3) 'sometimes' was restored to the mower's mushroom's purplish spore-print cast. (4) 'their seasons overlap through autumn' was replaced by the actual overlap of the two months arrays, April to June, which runs past autumn. No new fact was introduced by this correction and nothing was deleted from either page."
     ],
     "summary" : {
       "sources" : [
