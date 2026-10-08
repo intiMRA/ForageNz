@@ -17442,7 +17442,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Riverine bolete",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
@@ -17454,17 +17454,18 @@
       "sources" : [
 
       ],
-      "text" : ""
+      "text" : "It can be found in wet woodland — pond edges, boggy ground and stream banks — growing by poplars, silver birch, willows, alders or oaks. The New Zealand collections so far are under poplar, silver birch and goat willow."
     },
     "habitats" : [
-
+      "forest",
+      "grassland"
     ],
     "id" : "riverine-bolete",
     "identification" : {
       "sources" : [
 
       ],
-      "text" : ""
+      "text" : "The cap is up to 6 cm, bright blood-red to carmine fading to apricot or ochre with age, and it is often cracked. The pores are pale yellow with an olive tint. The stipe is yellow, with fine red granules towards the base. The flesh is a pale yellow, red at the base of the stipe, and stains blue when injured."
     },
     "lookalikes" : [
       {
@@ -17482,10 +17483,33 @@
       4
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/460465",
-    "needsBookSource" : true,
+    "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Photos in natural habitat",
+        "credit" : "(c) Jerry Cooper, some rights reserved (CC BY)",
+        "fileName" : "riverine-bolete-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/19547838"
+      },
+      {
+        "caption" : "Photo of pores",
+        "credit" : "no rights reserved",
+        "fileName" : "riverine-bolete-2.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/1360045"
+      },
+      {
+        "caption" : "Photo cut",
+        "credit" : "no rights reserved",
+        "fileName" : "riverine-bolete-3.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/5457650"
+      },
+      {
+        "caption" : "Photo in natural habitat",
+        "credit" : "(c) gabion, some rights reserved (CC BY-NC)",
+        "fileName" : "riverine-bolete-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/41281032"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -17504,14 +17528,24 @@
       "identification, habitat: Kibby, G. (2023). 'Fungal Portrait 96: Xerocomellus cisalpinus and some lookalikes'. Field Mycology 24(4): 111–112, British Mycological Society. In copyright — facts restated, no text reproduced. X. ripariellus stains strongly and has striated spores like X. cisalpinus, but is separated by a bright blood-red, cracked cap and by habitat: it prefers wetter woodland — pond edges, boggy ground — with a variety of trees but especially Salix and Alnus, sometimes Quercus.",
       "summary: Kibby, G. (2023). 'Fungal Portrait 96: Xerocomellus cisalpinus and some lookalikes'. Field Mycology 24(4): 111–112, British Mycological Society. In copyright — facts restated, no text reproduced. X. ripariellus, X. cisalpinus, X. chrysenteron and X. pruinatus have all been much confused and together formed the composite 'red-cracked bolete' of the older field guides.",
       "lookalikes: carded against bluefoot-bolete, Xerocomellus cisalpinus, the congener it is most likely to be confused with here — 163 iNaturalist NZ records against this species' 47, both small bluing boletes. Risk recorded as unpalatable, the owner's judgement on that species.",
-      "lookalikes.howToTell: both cards restate Kibby, G. (2023), 'Fungal Portrait 96: Xerocomellus cisalpinus and some lookalikes', Field Mycology 24(4): 111–112 — a blood-red cracked cap and wet ground with Salix and Alnus for X. ripariellus, against brown to ochraceous with a reddish marginal tint and broadleaf or conifer hosts for X. cisalpinus. In copyright, so facts restated, no text reproduced. No openly licensed source separates these two species: the CC BY Turkish record paper separates X. cisalpinus from X. chrysenteron and X. pruinatus only. Written by the assistant on the owner's instruction, 07/10/2026, replacing the owner's earlier sentence 'Riverine has a red cap whereas blue foot does not.' — which read as presence-versus-absence when both species have red in the cap. Flagged here so it is greppable and reversible."
+      "lookalikes.howToTell: both cards restate Kibby, G. (2023), 'Fungal Portrait 96: Xerocomellus cisalpinus and some lookalikes', Field Mycology 24(4): 111–112 — a blood-red cracked cap and wet ground with Salix and Alnus for X. ripariellus, against brown to ochraceous with a reddish marginal tint and broadleaf or conifer hosts for X. cisalpinus. In copyright, so facts restated, no text reproduced. No openly licensed source separates these two species: the CC BY Turkish record paper separates X. cisalpinus from X. chrysenteron and X. pruinatus only. Written by the assistant on the owner's instruction, 07/10/2026, replacing the owner's earlier sentence 'Riverine has a red cap whereas blue foot does not.' — which read as presence-versus-absence when both species have red in the cap. Flagged here so it is greppable and reversible.",
+      "REJECTED: PlantSnap, 'Xerocomellus ripariellus' (https://plantsnap.com/plant-care/xerocomellus-ripariellus). All rights reserved (© PlantSnap Inc.), and the text reads as machine-generated — a plant-care template applied to a fungus. It is also wrong on the character this species is identified by: it says the flesh 'remains unchanged when cut or bruised', where Kibby, boletales.com and Biota of New Zealand all record strong blueing. Not usable for text and not usable for facts. Checked 07/10/2026.",
+      "REJECTED for description: Hidden Forest, 'Xerocomellus ripariellus' (https://www.hiddenforest.co.nz/fungi/family/boletaceae/bolet12.htm). All rights reserved, and the description does not match this species: it gives a 'dry, yellow-brown to chestnut cap', the common name 'Red Cracking Bolete' and a late-summer season, against a bright blood-red to carmine cap (Kibby 2023; boletales.com) and an iNaturalist NZ season peaking in April. This is the second Hidden Forest page found describing something other than its titled species — see chalciporus-aurantiacus. Its host list (silver birch, pine, poplar, oak; widespread under introduced trees) agrees with Biota of New Zealand and is the only part relied on. Checked 07/10/2026.",
+      "habitat: Biota of New Zealand, 'Xerocomellus ripariellus (Redeuilh) Šutara 2008'. Records it as exotic and present, confirmed by sequences from collections under poplar, and associated with silver birch (Betula pendula), poplar (Populus) and goat willow (Salix caprea). Nine collections: Auckland 3, Mid Canterbury 3, Wairarapa 2, Bay of Plenty 1. Checked 07/10/2026. https://biotanz.landcareresearch.co.nz/scientific-names/b57df96a-d1ba-43e5-ae14-71dcfa114479",
+      "identification: boletales.com, 'Xerocomus ripariellus'. Copyright © boletales.com, all rights reserved — facts restated, no text reproduced. Cap to 6 cm, bright red to carmine or dark red, dry and velvety, cracking and fading to apricot or ochre; tubes and pores pale yellow with an olive tint, blueing when injured; stipe yellow with fine red granules towards the base, blueing; flesh pale yellow, often red at the stipe base, blueing on exposure; spores 11–15 × 4–5.5 µm, striate; wet woodland, presumed mycorrhizal with poplar, alder, willow or oak. Note Ultimate Mushroom tracks this site closely, so the two are one source, not two. Checked 07/10/2026. https://boletales.com/genera/xerocomus/x-ripariellus/",
+      "REJECTED: griby.org, 'Xerocomellus ripariellus' (https://www.griby.org/en/xerocomellus_ripariellus.htm). The page labels its own text an 'AI-generated description', and it reads like one: a 3–6 cm reddish-brown to dark brown cracked cap, against the bright red to carmine cap of the protologue and of every human-written source. Third machine-written page found for this species after PlantSnap; they are now the commonest kind of result for a fungus with no Wikipedia article, which is exactly the kind this catalogue has to fill. Checked 07/10/2026.",
+      "SEARCH EXHAUSTED — no openly licensed description of this species exists in English. Routes run and closed, so nobody runs them again: (1) Wikipedia, no article in any language except French, which the translation ruling bars. (2) The new-record-paper route, twice — the Chilean Salix babylonica inventory lists it without describing it, and Pluzhnyk A.V. & Prydiuk M.P. (2025), 'New records of agaricoid fungi from the Kholodnyi Yar National Nature Park', Ukrainian Botanical Journal 82(4): 291–305, DOI 10.15407/ukrbotj82.04.291, is CC BY 4.0 and open but published in Ukrainian and describes only the two species new to Ukraine. Its record is still a fact, and an awkward one: oak-hornbeam forest with lime and maple, on soil, 11.08.2021, the second Ukrainian record — dry upland woodland, not the riparian ground the name and every other source give. One collection, so it widens the habitat rather than replacing it. (3) GBIF's species description endpoint, empty for all ten taxon keys. (4) Mexia S., et al. (2025), 'The genus Xerocomellus (Boletales, Boletaceae) in Mexico', Phytotaxa 689(1): 1–14, DOI 10.11646/phytotaxa.689.1.1, CC BY-NC 4.0 and therefore quotable under the non-commercial ruling — but this species appears in it only twice, both times as a GenBank accession in a table. Useful for genus-level Xerocomellus characters, not for this page. Checked 07–08/10/2026.",
+      "OPEN LEAD, needs a person and a licence ruling: Ladurner H., Pöder R., Rocabruna A. & Tabarés M. (2001). 'Boletellus catalaunicus Pöder, Moreno, Rocabruna et Tabarés: a synonym of Xerocomus ripariellus Redeuilh'. Revista Catalana de Micologia 23: 121–125. English title and abstract; the abstract says it revises the type material and a large number of further collections and illustrates 'the considerable variability of macroscopic and microscopic characters', which is the description this page lacks. Two obstacles. The journal is CC BY-NC-ND 3.0 ES, and no ruling has been made on ND — NC is admitted, but whether an unmodified credited quotation counts as a derivative is the owner's call, not the assistant's. And RACO, which hosts it, is behind a Cloudflare challenge that returns 403 to both WebFetch and curl, so the PDF has to be fetched from a browser. Checked 08/10/2026. https://raco.cat/index.php/Micologia/issue/archive",
+      "summary: amended to add the Kibby, G. (2023) point that X. ripariellus, X. cisalpinus, X. chrysenteron and X. pruinatus together formed the composite 'red-cracked bolete' of the older field guides ('Fungal Portrait 96', Field Mycology 24(4): 111–112, British Mycological Society; in copyright — fact restated, no text reproduced). The owner's first sentence is unchanged. Amended by the assistant on the owner's instruction, 08/10/2026, over the owner's own sentences; flagged here so it is greppable and reversible.",
+      "habitat: amended on two points. The wet ground was missing and it is the character the name and the bluefoot-bolete card both rest on — Kibby (2023) gives wetter woodland, pond edges and boggy ground, especially Salix and Alnus. Silver birch was added and the New Zealand hosts separated from the European ones, per Biota of New Zealand, which confirms the NZ collections under poplar, silver birch (Betula pendula) and goat willow (Salix caprea). 'aldres' corrected to 'alders'. Both sources in copyright — facts restated, no text reproduced. Amended by the assistant on the owner's instruction, 08/10/2026, over the owner's own sentences; flagged here so it is greppable and reversible.",
+      "identification: amended on the cap colour, which was given as 'brown to red'. Every human-written source gives bright blood-red to carmine fading to apricot or ochre (boletales.com; Kibby 2023), and 'brown to red' is both the colour range of the two pages rejected above as machine-written and close to what bluefoot-bolete actually is — so as written it contradicted the lookalike card the two entries share. Pore colour, the red stipe granules and the red flesh at the stipe base were added from boletales.com; they are the bolete characters the page was silent on. Both sources in copyright — facts restated, no text reproduced. Amended by the assistant on the owner's instruction, 08/10/2026, over the owner's own sentences; flagged here so it is greppable and reversible."
     ],
-    "sourcingNote" : "Owed: the summary, habitat and identification text. No openly licensed description exists — no Wikipedia article in any language, and the Virtual Mycota page is in copyright. The new-record-paper route that filled bluefoot-bolete has been tried and has not worked yet: the Chilean Salix babylonica inventory lists this species as a first record for Chile but as a list entry, not a description. The howToTell on the bluefoot-bolete card is the assistant's restatement of Kibby, not the owner's words.",
+    "sourcingNote" : "The summary, habitat and identification text is the owner's, amended by the assistant on their instruction on 08/10/2026 — see the three flagged lines in sources. It is not verbatim from any source: no openly licensed description of this species exists in English and the search is recorded as exhausted above, four routes run and closed. One lead is still open and needs the owner twice over: the Revista Catalana de Micologia synonymy paper is behind Cloudflare and is CC BY-NC-ND, and whether ND permits a credited verbatim quotation has not been ruled on. If it does, that paper's description should replace this text.",
     "summary" : {
       "sources" : [
 
       ],
-      "text" : ""
+      "text" : "This is a mushroom that was introduced from Europe. It is one of four red-cracked boletes that have long been confused with each other."
     },
     "warnings" : [
 
