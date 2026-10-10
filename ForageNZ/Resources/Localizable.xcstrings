@@ -264,6 +264,9 @@
     "This guide describes what to check — it cannot identify a plant for you. Never eat anything you have not positively identified with an experienced forager. If you suspect poisoning, call the National Poisons Centre on %@." : {
 
     },
+    "This is not food. Its active compounds are controlled drugs — read the safety notes below." : {
+
+    },
     "Toxic" : {
 
     },
