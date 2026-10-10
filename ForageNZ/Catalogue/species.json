@@ -911,21 +911,22 @@
     ]
   },
   {
-    "caution" : "careRequired",
+    "caution" : "straightforward",
     "commonName" : "Beach spinach",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Manaaki Whenua – Landcare Research, Ngā Rauropi Whakaoranga, 'Tetragonia spp.' (CC BY 4.0)",
+        "CitSciHub, Phil Bendle Collection, 'Tetragonia implexicoma (Kokihi)' (CC BY-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "Many sources record the use of the green leaves as a vegetable. The thick succulent leaves are edible with a similar flavour and texture to spinach."
     },
     "group" : "greens",
     "habitat" : {
       "sources" : [
         "Wikipedia, 'Tetragonia implexicoma' (CC BY-SA 4.0)"
       ],
-      "text" : "Bower spinach is found mainly in coastal regions of New Zealand and southern Australia as well as on many nearby island groups. It occupies a variety of habitats from sand and shingle beaches through coastal woodland, shrubland and grassland, and as exposed, salt-pruned vegetation on cliffs and stacks. It may also be found well inland, in farmland where it is grown in barberry hedges, or on calcareous sandstone or limestone outcrops in dense forest."
+      "text" : "It occupies a variety of habitats from sand and shingle beaches through coastal woodland, shrubland and grassland, and as exposed, salt-pruned vegetation on cliffs and stacks. It may also be found well inland, in farmland where it is grown in barberry hedges, or on calcareous sandstone or limestone outcrops in dense forest."
     },
     "habitats" : [
       "coastal",
@@ -933,6 +934,12 @@
       "shrubland",
       "grassland"
     ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "This species is plentiful, but harvest it mindfully, only take what you need."
+    },
     "id" : "beach-spinach",
     "identification" : {
       "sources" : [
@@ -958,10 +965,34 @@
       11,
       12
     ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/1269617",
     "needsBookSource" : false,
-    "origin" : "endemic",
+    "origin" : "native",
     "photos" : [
-
+      {
+        "caption" : "Photo of young plant",
+        "credit" : "(c) Arnim Littek, some rights reserved (CC BY)",
+        "fileName" : "beach-spinach-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/89882031"
+      },
+      {
+        "caption" : "Photo of specimen with red leaves",
+        "credit" : "(c) Arnim Littek, some rights reserved (CC BY)",
+        "fileName" : "beach-spinach-6.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/48520268"
+      },
+      {
+        "caption" : "Photo of plant flowering",
+        "credit" : "(c) Arnim Littek, some rights reserved (CC BY)",
+        "fileName" : "beach-spinach-7.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/73281892"
+      },
+      {
+        "caption" : "Photo of plant in natural habitat",
+        "credit" : "(c) Arnim Littek, some rights reserved (CC BY)",
+        "fileName" : "beach-spinach-8.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/94686374"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -972,11 +1003,24 @@
     "recipes" : [
 
     ],
-    "scientificName" : "Tetragonia implexicoma",
+    "scientificName" : "Tetragonia trigyna",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Beach spinach' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Tetragonia implexicoma' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Tetragonia-implexicoma.html",
-      "Habitat and summary text: Wikipedia contributors. 'Tetragonia implexicoma', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Tetragonia_implexicoma"
+      "Habitat and summary text: Wikipedia contributors. 'Tetragonia implexicoma', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Tetragonia_implexicoma",
+      "Name and origin corrected 10/10/2026: the entry was filed as Tetragonia implexicoma and endemic. Flora of New Zealand Online accepts Tetragonia trigyna Banks & Sol. ex Hook.f. for the New Zealand plant, with T. implexicoma var. chathamica as a synonym, and gives its biostatus as Indigenous (Non-endemic); NZPCN agrees (endemic taxon: no; also Norfolk and Lord Howe Islands). iNaturalist keeps the two apart as species — 2,928 observations of T. trigyna, and no research-grade New Zealand observation of T. implexicoma, checked the same day. Heenan, P.B. 2022, New Zealand Journal of Botany 60(2), https://doi.org/10.1080/0028825X.2021.1955715, is the paper Flora of New Zealand Online cites on the name. https://www.nzflora.info/factsheet/Taxon/Tetragonia-trigyna.html",
+      "Habitat: the Wikipedia article's opening clause, that the plant grows in New Zealand and southern Australia, was deleted, not replaced — it describes T. implexicoma in the broad sense, and NZPCN gives the New Zealand taxon's range as New Zealand, Norfolk and Lord Howe Islands, not Australia. The rest of the paragraph stands and matches NZPCN's own habitat statement for T. trigyna.",
+      "Edible parts text: Manaaki Whenua – Landcare Research (2026) Ngā Rauropi Whakaoranga, 'Tetragonia spp. Kōkihi. New Zealand spinach.' Data CC BY 4.0. Accessed 2026-10-10. https://rauropiwhakaoranga.landcareresearch.co.nz/names/26746101-d9dc-42b9-9385-c4ece9963569 — the record covers both New Zealand Tetragonia species together, not this one alone. The same record is the source for all four Māori names (Williams 1971).",
+      "Berries deliberately not given as edible: the Ngā Rauropi Whakaoranga record quotes Tunuku Karetai, speaking to Beattie, saying the red kōkihi berry is not edible and was used as a stain and dye; NZ Native Plants, 'Tetragonia implexicoma' (all rights reserved; https://www.nativeplants.nz/tetragonia-implexicoma.html) lists the berries as eaten raw, but its account is of the Australian plant. The two disagree, so only the leaves are listed.",
+      "Facts read, not written into the page: NZPCN, 'Tetragonia trigyna' (all rights reserved apart from the NZTCS status, which is DOC's CC BY 4.0; retrieved 10/10/2026; https://www.nzpcn.org.nz/flora/species/tetragonia-trigyna/) — Not Threatened 2023, qualifier SO; coastal to montane; flowering September–June, fruiting September–July; edible but with 'a decidedly less agreeable, more soapy taste' than T. tetragonoides; and told apart from T. tetragonoides when fruiting by pink to dark red fleshy subglobose fruits, not dry, leathery, horned ones. The Plant Company (https://www.theplantcompany.co.nz/shop/product/groundcover-plants/tetragonia-implexicoma) and Peninsula Plants (https://www.peninsulaplants.com.au/product/tetragonia-implexicoma/), both all rights reserved, describe it as edible cooked like spinach, and were also read.",
+      "OWED, a person's sentence — warnings: Diego Bonetto, 'Native spinach' (all rights reserved; https://www.diegobonetto.com/blog/native-spinach), covering both T. tetragonioides and T. implexicoma, says the leaves contain oxalic acid, are not to be eaten raw in large quantities, and are blanched one to two minutes with the water discarded; people with a history of kidney stones are to eat them in moderation. No openly licensed source says this of T. trigyna, so the warning is not on the page. SEARCH, 10/10/2026: the open text on oxalates is all about T. tetragonioides — Wikipedia, 'Tetragonia tetragonioides' (CC BY-SA 4.0) says its medium to low oxalate levels are removed by blanching one minute and rinsing in cold water. Wikipedia's 'Tetragonia' genus article and 'Tetragonia implexicoma' say nothing on oxalates. The all-rights-reserved sources also describe T. tetragonioides, and disagree on the blanch: Warndu 10–15 seconds (https://warndu.com/blogs/first-nations-food-guide/get-your-warrigal-greens), ABC Organic Gardener about one minute, ANPSA three to four minutes with the water discarded, calling the oxalic acid high, and ASNSW about three minutes (https://anpsa.org.au/plant_profiles/tetragonia-tetragonioides/). Quoting a sentence about one species on another's page would be the inference this guide leaves to a person, so nothing was carried across. The owner searched as well on 10/10/2026 and found no warning for this species.",
+      "OWED — lookalike card to new-zealand-spinach, both ways, on the fruit character NZPCN gives above. A howToTell is a comparison of two pages and is the owner's to write.",
+      "Not used here: Not Quite Nigella, 'Warrigal greens recipes' (https://www.notquitenigella.com/2018/05/17/warrigal-greens-recipes/) is about Tetragonia tetragonioides, which is new-zealand-spinach, not this entry.",
+      "Photos verified 10/10/2026 via the iNaturalist API: observations 89882031, 48520268, 73281892 and 94686374 are all research-grade Tetragonia trigyna in New Zealand (Himatangi Beach, Kuku Beach, Foxton Beach ×2), and every photo is CC BY, matching its credit. They replace four photographs of the Australian T. implexicoma. Frame provenance not checked.",
+      "Not used here: RNZ, 'Koki' (https://www.rnz.co.nz/collections/recipes/koki) is a shark-liver pâté and does not use this plant.",
+      "Caution set to straightforward on the owner's decision, 10/10/2026: no source found by either search gives a warning for Tetragonia trigyna, and its one confusable relative, T. tetragonioides, is itself eaten. The oxalate guidance found is all for T. tetragonioides and was not carried across.",
+      "Edible parts text, second sentence: CitSciHub, 'Phil Bendle Collection: Tetragonia implexicoma (Kokihi)'. CC BY-SA 3.0. Retrieved 10/10/2026. https://citscihub.nz/Phil_Bendle_Collection:Tetragonia_implexicoma_(Kokihi) — a New Zealand collection filed under the older name. The same page calls the berries edible, which the Ngā Rauropi Whakaoranga record contradicts, so that sentence was not used.",
+      "Recipes: none found for Tetragonia trigyna itself (search 10/10/2026). Wild Picnic, 'Beach spinach (Tetragonia trigyna)' (all rights reserved; https://wildpicnic.blogspot.com/2008/10/beach-spinach-tetragonia-trigyna.html) calls it a good kale substitute that holds its shape when cooked, and gives no recipe. Every full recipe found is for T. tetragonioides and belongs on new-zealand-spinach."
     ],
     "summary" : {
       "sources" : [
