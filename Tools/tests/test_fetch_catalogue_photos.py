@@ -268,7 +268,132 @@ def test_staging_numbering_continues_past_what_is_already_there(tmp_path: Path) 
     (directory / "puha-notes.txt").write_bytes(b"")
 
     assert next_index(directory, "puha") == 11
-    assert next_index(tmp_path / "empty", "puha") == 1
+    assert next_index(tmp_path / "unknown-species", "unknown-species") == 1
+
+
+def test_staging_numbering_does_not_land_on_a_shipped_photograph(
+    tmp_path: Path, monkeypatch: Any
+) -> None:
+    """An emptied tray must not restart at 1 while the catalogue still shows those names.
+
+    `--write` re-encodes the staged file onto `Photos/<name>`, so reusing a shipped number
+    overwrites a photograph that is live in the guide.
+    """
+    import fetch_catalogue_photos as fetcher
+
+    shipped = tmp_path / "Photos"
+    shipped.mkdir()
+    (shipped / "puha-4.heic").write_bytes(b"")
+    monkeypatch.setattr(fetcher, "PHOTO_DIRECTORY", shipped)
+
+    assert fetcher.next_index(tmp_path / "empty-tray", "puha") == 5
+
+
+def test_one_page_is_read_when_the_first_one_satisfies_the_caller(monkeypatch: Any) -> None:
+    """A fresh entry must not pay for pages it does not need."""
+    import fetch_catalogue_photos as fetcher
+
+    pages: list[int] = []
+
+    def results(_: Any, query: dict[str, Any]) -> list[dict[str, Any]]:
+        pages.append(int(query["page"]))
+        return [observation(i, taxon_id=9, agreeing=3, photos=2) for i in range(48)]
+
+    monkeypatch.setattr(fetcher, "results_of", results)
+    found = fetcher.observations_for("Puha", 4, taxon_id=9, enough=lambda seen: len(seen) >= 4)
+
+    assert pages == [1]
+    assert len(found) == 48
+
+
+def test_further_pages_are_read_until_the_caller_has_enough(monkeypatch: Any) -> None:
+    """The banana-passionfruit case: page one holds nothing the reviewer has not seen."""
+    import fetch_catalogue_photos as fetcher
+
+    pages: list[int] = []
+
+    def results(_: Any, query: dict[str, Any]) -> list[dict[str, Any]]:
+        page = int(query["page"])
+        pages.append(page)
+        per_page = int(query["per_page"])
+        start = (page - 1) * per_page
+        return [
+            observation(start + i, taxon_id=9, agreeing=3, photos=2) for i in range(per_page)
+        ]
+
+    monkeypatch.setattr(fetcher, "results_of", results)
+    monkeypatch.setattr(fetcher, "COURTESY_DELAY", 0)
+    # Nothing before the hundredth observation counts, which only a later page can reach.
+    found = fetcher.observations_for(
+        "Puha", 4, taxon_id=9, enough=lambda seen: any(o["id"] >= 100 for o in seen)
+    )
+
+    assert pages == [1, 2, 3]
+    assert any(o["id"] >= 100 for o in found)
+
+
+def test_paging_stops_when_the_results_run_out(monkeypatch: Any) -> None:
+    """A short page is the end of the pool, and is reported rather than asked again."""
+    import fetch_catalogue_photos as fetcher
+
+    pages: list[int] = []
+
+    def results(_: Any, query: dict[str, Any]) -> list[dict[str, Any]]:
+        pages.append(int(query["page"]))
+        return [observation(1, taxon_id=9, agreeing=3, photos=2)]
+
+    monkeypatch.setattr(fetcher, "results_of", results)
+    monkeypatch.setattr(fetcher, "COURTESY_DELAY", 0)
+    found = fetcher.observations_for("Puha", 4, taxon_id=9, enough=lambda seen: False)
+
+    assert pages == [1]
+    assert len(found) == 1
+
+
+def test_a_page_emptied_by_the_taxon_filter_is_not_the_end_of_the_pool(
+    monkeypatch: Any,
+) -> None:
+    """Exhaustion is judged on what the API returned, not on what survived the filter.
+
+    A full page of a sibling species leaves `found` empty while the pool still holds frames,
+    and treating that as the end is how a genus query loses the species it was asked for.
+    """
+    import fetch_catalogue_photos as fetcher
+
+    pages: list[int] = []
+
+    def results(_: Any, query: dict[str, Any]) -> list[dict[str, Any]]:
+        page = int(query["page"])
+        pages.append(page)
+        wanted_taxon = 9 if page > 1 else 7
+        return [
+            observation(page * 100 + i, taxon_id=wanted_taxon, agreeing=3, photos=2)
+            for i in range(int(query["per_page"]))
+        ]
+
+    monkeypatch.setattr(fetcher, "results_of", results)
+    monkeypatch.setattr(fetcher, "COURTESY_DELAY", 0)
+    found = fetcher.observations_for(
+        "Puha", 4, taxon_id=9, enough=lambda seen: len(seen) >= 1
+    )
+
+    assert pages == [1, 2]
+    assert found and all(o["taxon"]["id"] == 9 for o in found)
+
+
+def test_without_a_stopping_rule_only_the_first_page_is_read(monkeypatch: Any) -> None:
+    import fetch_catalogue_photos as fetcher
+
+    pages: list[int] = []
+
+    def results(_: Any, query: dict[str, Any]) -> list[dict[str, Any]]:
+        pages.append(int(query["page"]))
+        return [observation(i, taxon_id=9, agreeing=3, photos=2) for i in range(48)]
+
+    monkeypatch.setattr(fetcher, "results_of", results)
+
+    assert fetcher.observations_for("Puha", 4, taxon_id=9)
+    assert pages == [1]
 
 
 def test_a_cap_raised_for_the_fallback_goes_deeper_into_one_observation() -> None:

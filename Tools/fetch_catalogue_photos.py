@@ -26,7 +26,9 @@ blocking validation issue until someone writes them — that is the point, not a
 No run re-offers a frame a reviewer has already seen: the staging manifests record which
 iNaturalist photo each candidate was, and kept, discarded and still-waiting frames are all
 skipped. Observations tying on agreeing identifications are ordered at random, so two runs
-over the same pool shortlist different specimens.
+over the same pool shortlist different specimens. When the frames a run would have offered
+have all been seen, it reads a further page rather than reporting the pool exhausted — see
+`observations_for`.
 
 By default only entries with *no* photos are considered, so an entry that came out of review
 short of its target is stuck there. `--top-up` includes those, asks for the shortfall, and
@@ -57,6 +59,7 @@ import subprocess
 import sys
 import time
 from dataclasses import dataclass, field
+from collections.abc import Callable
 from pathlib import Path
 from typing import Any
 
@@ -103,6 +106,14 @@ PHOTO_DIRECTORY = CATALOGUE.parent / "Photos"
 #: it up means a second trip to the network for the frames the first pass already ranked
 #: below the ones it took.
 CANDIDATE_MULTIPLIER = 6
+
+#: How many pages of observations one query may walk before giving up.
+#:
+#: A page is up to 60 observations, so this reaches roughly 360 — past every New Zealand pool
+#: the catalogue has met, banana-passionfruit's 286 included. It is a ceiling on politeness
+#: rather than a target: paging stops the moment the shortlist is full, so an entry nobody has
+#: fetched before still costs one request.
+MAX_PAGES = 6
 
 #: Never take more than this many frames from one observation when others are available.
 #: Four photos of one specimen from four angles teach less than four specimens, and a single
@@ -332,6 +343,8 @@ def observations_for(
     wanted: int,
     place_id: int | None = NEW_ZEALAND_PLACE_ID,
     taxon_id: int | None = None,
+    enough: Callable[[list[dict[str, Any]]], bool] | None = None,
+    max_pages: int = MAX_PAGES,
 ) -> list[dict[str, Any]]:
     """Research-grade observations carrying a licence permissive enough to ship.
 
@@ -342,6 +355,14 @@ def observations_for(
     `taxon_name` matches synonyms and common names too, and returns other species in the same
     genus (see `taxon_id_for`). Results are filtered to the taxon either way, so a name-only
     fallback cannot stage a sibling species.
+
+    `enough` makes the query walk pages until the caller has what it needs. Without it only
+    the first page is read, which is what every caller used to get — and what made a
+    well-covered entry run dry. `order_by=votes` is stable, so a second Fetch more… re-asked
+    for the same top page and `previously_offered` correctly rejected every frame on it:
+    banana-passionfruit burned 260 photo ids across 54 runs and then reported the pool
+    exhausted while 226 of its 286 New Zealand observations had never been looked at. Paging
+    is what lets the exclusion list do its job instead of dead-ending against it.
     """
     query: dict[str, object] = {
         "quality_grade": "research",
@@ -355,12 +376,22 @@ def observations_for(
         query["taxon_id"] = taxon_id
     if place_id is not None:
         query["place_id"] = place_id
-    found = results_of(Source.INAT_OBSERVATIONS, query)
-    if taxon_id is None:
-        return found
-    return [
-        observation for observation in found if is_requested_taxon(observation, taxon_id)
-    ]
+
+    found: list[dict[str, Any]] = []
+    for page in range(1, (max_pages if enough else 1) + 1):
+        returned = results_of(Source.INAT_OBSERVATIONS, {**query, "page": page})
+        batch = (
+            returned
+            if taxon_id is None
+            else [o for o in returned if is_requested_taxon(o, taxon_id)]
+        )
+        found += batch
+        # A short page is the end of the result set. Measured on what the API returned, not on
+        # `batch`, which the taxon filter can empty while further pages still hold the species.
+        if enough is None or len(returned) < int(query["per_page"]) or enough(found):
+            break
+        time.sleep(COURTESY_DELAY)
+    return found
 
 
 def in_new_zealand(observation: dict[str, Any]) -> bool:
@@ -527,8 +558,22 @@ def stage(
         # Resolve once per name and reuse for both queries, so the worldwide fallback is
         # filtered to the same taxon the New Zealand one was.
         taxon_id = taxon_id_for(name)
+
+        def has_enough(seen: list[dict[str, Any]]) -> bool:
+            """Whether the pages read so far can fill the shortlist.
+
+            Asked after every page, so a fresh entry stops at the first and a heavily-fetched
+            one keeps reading. It re-runs selection rather than counting observations because
+            an excluded observation and one whose every frame has been offered are both worth
+            nothing here, and only selection knows the difference.
+            """
+            usable = [o for o in seen if str(o.get("uri") or "") not in excluded]
+            return len(
+                select_candidates(species_id, usable, wanted, skip_photo_ids=seen_photo_ids)
+            ) >= wanted
+
         try:
-            found = observations_for(name, wanted, taxon_id=taxon_id)
+            found = observations_for(name, wanted, taxon_id=taxon_id, enough=has_enough)
         except SourceError as error:
             result.note = f"query failed ({error})"
             return result
@@ -567,7 +612,9 @@ def stage(
         if worldwide and len(candidates) < wanted:
             time.sleep(COURTESY_DELAY)
             try:
-                abroad = observations_for(name, wanted, place_id=None, taxon_id=taxon_id)
+                abroad = observations_for(
+                    name, wanted, place_id=None, taxon_id=taxon_id, enough=has_enough
+                )
             except SourceError as error:
                 result.note = f"worldwide query failed ({error})"
                 return result
@@ -678,10 +725,18 @@ def shipped_photo_bytes(species_id: str) -> set[bytes]:
 
 
 def next_index(directory: Path, species_id: str) -> int:
-    """First `<species>-N` number free in a staging directory."""
+    """First `<species>-N` number free in the staging tray *and* in the shipped folder.
+
+    The shipped folder has to count. `--write` re-encodes `staging/<id>/<name>` onto
+    `Photos/<name>`, so a staged file that reuses a shipped number silently overwrites a
+    photograph the catalogue is already showing. The trays empty as entries are finished —
+    banana-passionfruit's was emptied with `banana-passionfruit-1` through `-10` shipped — and
+    numbering from the tray alone then restarts at 1 and lands on top of them.
+    """
     used = [
         int(match.group(1))
-        for path in directory.glob(f"{species_id}-*")
+        for folder in (directory, PHOTO_DIRECTORY)
+        for path in folder.glob(f"{species_id}-*")
         if (match := re.fullmatch(rf"{re.escape(species_id)}-(\d+)", path.stem))
     ]
     return max(used, default=0) + 1
