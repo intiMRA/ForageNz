@@ -809,23 +809,26 @@
   {
     "caution" : "careRequired",
     "commonName" : "Bay tree",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Wikipedia, 'Bay leaf' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Fresh or dried bay leaves are used in cooking for their distinctive flavour and fragrance. The leaves are often used to flavour soups, stews, braises and pâtés in many countries. The fresh leaves are very mild and do not develop their full flavour until several weeks after picking and drying."
     },
     "group" : "herbs",
     "habitat" : {
       "sources" : [
-        "Wikipedia, 'Laurus nobilis' (CC BY-SA 4.0)"
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
       ],
-      "text" : "Laurus nobilis is a widespread relict  of the laurel forests that originally covered much of the Mediterranean Basin when the climate of the region was more humid. With the drying of the Mediterranean during the Pliocene era, the laurel forests gradually retreated, and were replaced by the more drought-tolerant sclerophyll plant communities familiar today. Most of the last remaining laurel forests around the Mediterranean are believed to have disappeared approximately ten thousand years ago, although some remnants still persist in the mountains of southern Turkey, northern Syria, southern Spain, north-central Portugal, northern Morocco, the Canary Islands and in Madeira."
+      "text" : "clay, cliff, coast, dry, gravel, gully, hill, loam, lowland, margin, open, roadside, rock outcrop, sand, shaded, sheltered, silt, stone, terrace, track, wasteland"
     },
     "habitats" : [
+      "coastal",
       "forest",
-      "alpine"
+      "shrubland",
+      "urban",
+      "disturbed"
     ],
     "id" : "bay-tree",
     "identification" : {
@@ -843,31 +846,68 @@
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Photos of berries",
+        "credit" : "(c) Piet van Leeuwen, some rights reserved (CC BY)",
+        "fileName" : "bay-tree-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/151369663"
+      },
+      {
+        "caption" : "Close up of leaves",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY)",
+        "fileName" : "bay-tree-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/285510835"
+      },
+      {
+        "caption" : "Plant in natural habitat",
+        "credit" : "(c) Leon Perrie, some rights reserved (CC BY)",
+        "fileName" : "bay-tree-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/14819352"
+      },
+      {
+        "caption" : "Branch with berries",
+        "credit" : "(c) Robert Vennell, some rights reserved (CC BY)",
+        "fileName" : "bay-tree-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/32198898"
+      }
     ],
     "preparation" : {
       "sources" : [
-
+        "Wikipedia, 'Bay leaf' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "The leaves are most often used whole (sometimes in a bouquet garni) and removed before serving (they can be abrasive in the digestive tract). Bay leaves can also be crushed or ground before cooking. Crushed bay leaves impart more fragrance than whole leaves, but are more difficult to remove and thus they are often used in a muslin bag or tea infuser. Ground bay laurel may be substituted for whole leaves and does not need to be removed, but it is much stronger."
     },
     "recipes" : [
-
+      {
+        "method" : "Grind 3 small dried bay leaves with 1–2 tbsp of 200 g sugar to a powder, sifting out any stubborn bits. Beat with 454 g soft butter, the rest of the sugar, 1 tsp lemon zest and ⅛ tsp salt, then work in 480 g flour a little at a time to a soft dough. Shape 25 g rounds and bake at 175 °C for 18–20 minutes, until lightly browned at the edges. For the icing, grind 5 small bay leaves with 67 g sugar, then beat with 120 g icing sugar, 1 tbsp meringue powder and 3 tbsp lemon juice at medium speed for 4–5 minutes, until thick but still pourable. Dip the cooled biscuits and leave on racks 12–24 hours to set.",
+        "title" : "Bay leaf and lemon shortbread"
+      }
     ],
     "scientificName" : "Laurus nobilis",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Bay tree' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Laurus nobilis' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Laurus-nobilis.html",
-      "Habitat and summary text: Wikipedia contributors. 'Laurus nobilis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Laurus_nobilis"
+      "Summary text: Wikipedia contributors. 'Laurus nobilis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Laurus_nobilis",
+      "Edible parts, preparation and warnings text: Wikipedia contributors. 'Bay leaf', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 10/10/2026. https://en.wikipedia.org/wiki/Bay_leaf",
+      "Habitat text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Laurus nobilis' weed profile, Habitat line. CC BY 3.0 NZ. Retrieved 10/10/2026. https://www.nzflora.info/factsheet/Weed/Laurus-nobilis.html — the Mediterranean laurel-forest paragraph that stood here before is distribution history and moved, verbatim, to the summary.",
+      "Berries deliberately not given as edible: Wikipedia's 'Laurus nobilis' says dried laurel berries can be used as a spice, while The Plant Company, 'Bay laurel trees' (all rights reserved; retrieved 10/10/2026; https://www.theplantcompany.co.nz/expert-advice/bay-laurel-trees) calls the berries mildly toxic to people and pets in large quantities, causing vomiting and diarrhoea. The two disagree, so only the leaves are listed.",
+      "Months left empty (year-round): the leaf is evergreen, so the edible part is not seasonal. Flora of New Zealand Online gives flowering as Sep.–Nov., which dates the flowers, not the harvest.",
+      "Facts read, not written into the page: NZPCN, 'Laurus nobilis' (all rights reserved; retrieved 10/10/2026; https://www.nzpcn.org.nz/flora/species/laurus-nobilis/) — exotic, naturalised 1983, a persistent cultivation relic that can invade intact bush, waste land and scrub, very shade tolerant, spread by birds and people, and on DOC's 2024 list of 386 environmental weeds. The Plant Store, 'Laurus nobilis' (all rights reserved; https://www.theplantstore.co.nz/products/hedging/laurus-nobilis/), Gewürzhaus, 'How to use bay leaves' (all rights reserved; https://gewurzhaus.com.au/blogs/spices/how-to-use-bay-leaves) and BBC Food, 'Bay leaf' (all rights reserved; https://www.bbc.co.uk/food/bay_leaf) were also read; they agree that whole leaves are removed before serving, and nothing from them is quoted.",
+      "Recipe: restated from Diversivore, 'Bay Leaf & Lemon Shortbread' (all rights reserved). Retrieved 10/10/2026. https://www.diversivore.com/bay-leaf-lemon-shortbread/",
+      "OPEN LEAD: Grow Forage Cook Ferment, 'Foraging for bay leaves' (https://www.growforagecookferment.com/foraging-for-bay-leaves/) sits behind a Cloudflare challenge and was not read. It is the one foraging-specific source supplied.",
+      "OPEN LEAD: the warnings name cherry laurel (Prunus laurocerasus) and mountain laurel as poisonous lookalikes, but neither has an entry here, so no lookalike card can be written.",
+      "Photos verified 10/10/2026 via the iNaturalist API: observations 151369663, 285510835, 14819352 and 32198898 are all research-grade Laurus nobilis in New Zealand (Christchurch, North Shore, Aro Valley, Auckland Domain), and every photo licence is CC BY, matching its credit. Observation 285510835 is itself CC BY-NC; its photo is CC BY. Frame provenance not checked.",
+      "Habitat tags revised 10/10/2026: alpine removed — it came from the Mediterranean mountain-relict text, and no New Zealand source places the tree above the treeline (Flora of New Zealand Online gives lowland and hill; 652 wild research-grade iNaturalist NZ records, checked the same day, run from 35° to 46° S with no alpine localities). coastal and disturbed are what Tools/classify_habitats.py reads from this entry's own habitat line (coast; roadside, wasteland). forest, shrubland and urban rest on NZPCN's habitat statement — a persistent cultivation relic that can invade intact bush, waste land and scrub, very shade tolerant — which is all rights reserved and so is not quoted on the page."
     ],
     "summary" : {
       "sources" : [
         "Wikipedia, 'Laurus nobilis' (CC BY-SA 4.0)"
       ],
-      "text" : "Laurus nobilis  is an aromatic evergreen tree or large shrub with green, glabrous (smooth) leaves."
+      "text" : "Laurus nobilis  is an aromatic evergreen tree or large shrub with green, glabrous (smooth) leaves.\nLaurus nobilis is a widespread relict  of the laurel forests that originally covered much of the Mediterranean Basin when the climate of the region was more humid. With the drying of the Mediterranean during the Pliocene era, the laurel forests gradually retreated, and were replaced by the more drought-tolerant sclerophyll plant communities familiar today. Most of the last remaining laurel forests around the Mediterranean are believed to have disappeared approximately ten thousand years ago, although some remnants still persist in the mountains of southern Turkey, northern Syria, southern Spain, north-central Portugal, northern Morocco, the Canary Islands and in Madeira."
     },
     "warnings" : [
-
+      "Some members of the laurel family, as well as the unrelated but visually similar mountain laurel and cherry laurel, have leaves that are poisonous to humans and livestock.",
+      "While some visually similar plants have poisonous leaves, bay leaves are not toxic. However, they remain stiff even after cooking and may pose a choking hazard or cause harm to the digestive tract if swallowed whole or in large pieces."
     ]
   },
   {
