@@ -24307,7 +24307,7 @@
   {
     "caution" : "psychoactive",
     "commonName" : "Weraroa",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
