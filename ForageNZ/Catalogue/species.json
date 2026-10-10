@@ -745,9 +745,32 @@
       5
     ],
     "needsBookSource" : false,
-    "origin" : "introduced",
+    "origin" : "pest",
     "photos" : [
-
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Michael Morgan, some rights reserved (CC BY-NC)",
+        "fileName" : "banana-passionfruit-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/249088315"
+      },
+      {
+        "caption" : "Photos of leaves",
+        "credit" : "(c) Dave Holland, some rights reserved (CC BY-NC)",
+        "fileName" : "banana-passionfruit-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/74205146"
+      },
+      {
+        "caption" : "Photo of ripe fruit",
+        "credit" : "(c) Frankie Jackson, some rights reserved (CC BY-NC)",
+        "fileName" : "banana-passionfruit-9.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/197832587"
+      },
+      {
+        "caption" : "Photo of unripe fruit",
+        "credit" : "(c) tworandalls, some rights reserved (CC BY-NC)",
+        "fileName" : "banana-passionfruit-10.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/347745939"
+      }
     ],
     "preparation" : {
       "sources" : [
