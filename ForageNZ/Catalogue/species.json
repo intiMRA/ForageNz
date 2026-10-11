@@ -1631,63 +1631,106 @@
   {
     "caution" : "careRequired",
     "commonName" : "Black cherry",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Ken Fern, Useful Temperate Plants, 'Prunus serotina' (CC BY-NC-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "Fruit - raw or cooked in pies, jellies, stews etc."
     },
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "Wikipedia, 'Prunus serotina' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Prunus serotina is a pioneer species. In the Midwest, it is seen growing mostly in old fields with other sunlight-loving species, such as black walnut, black locust, and hackberry. Gleason and Cronquist (1991) describe P. serotina as \"[f]ormerly a forest tree, now abundant as a weed-tree of roadsides, waste land, and forest-margins\". The tree is hardy and can tolerate poor soils and oceanic salt sprays."
     },
     "habitats" : [
-
+      "forest",
+      "shrubland",
+      "grassland",
+      "disturbed"
     ],
     "id" : "black-cherry",
     "identification" : {
       "sources" : [
-
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)",
+        "Wikipedia, 'Prunus serotina' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "a medium-sized tree, up to 15 m high, deciduous, with a tall trunk and erect or spreading branches. its leaves are alternate, thin, green, about 10 cm long, and have toothed margins. its white flowers (about 1 cm across) are spreading and borne in dense terminal racemes.. its fleshy black-purple fruit (up to 1.5 cm long) have a stony centre and resemble a cherry.\n\nThe leaves are 5–13 centimetres (2–5 inches) long, ovate-lanceolate in shape, with finely toothed margins. The fall leaf color is yellow to red. The flowers are small, white and 5-petalled, in racemes 10–15 cm (4–6 in) long which contain several dozen flowers. For about its first decade the bark of a black cherry tree is thin, smooth, and banded, resembling a birch. A mature tree has very broken, dark gray to black bark. An almond-like odour is released when a young twig is scratched and held close to the nose, revealing minute amounts of cyanide compounds produced and stored by the plant as a defense mechanism against herbivores."
     },
     "lookalikes" : [
 
     ],
     "months" : [
-
+      2,
+      3
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/54834",
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Close up of leaf",
+        "credit" : "(c) Eliah Murdoch-Pike, some rights reserved (CC BY-NC)",
+        "fileName" : "black-cherry-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/201448552"
+      },
+      {
+        "caption" : "Close up of flowers",
+        "credit" : "(c) greghadley1, some rights reserved (CC BY-NC)",
+        "fileName" : "black-cherry-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/248413867"
+      },
+      {
+        "caption" : "Unripe fruits",
+        "credit" : "(c) reinderw, some rights reserved (CC BY-NC)",
+        "fileName" : "black-cherry-6.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/38347403"
+      },
+      {
+        "caption" : "Photo of ripe fruit",
+        "credit" : "(c) Sandy Wolkenberg, some rights reserved (CC BY)",
+        "fileName" : "black-cherry-7.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/90837784"
+      }
     ],
     "preparation" : {
       "sources" : [
-
+        "Ken Fern, Useful Temperate Plants, 'Prunus serotina' (CC BY-NC-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "It must be fully ripe or else it will have a bitter flavour. The fruit can taste sweet or bitter. The better fruits have a thin skin and a juicy flesh with a pleasant vinous flavour. The fruit can also be used as a flavouring in liquors."
     },
     "recipes" : [
-
+      {
+        "method" : "Use fully ripe cherries, so dark purple they look black; red ones are under-ripe. If they need cleaning, float 5 cups of cherries in a large pot of cold water, pour off whatever rises, and drain. In a large glass jar (about 7.5 L) crush the raw cherries by hand to break every skin — hands are gentler on the stones than a masher. Add 15 cups cold water, 5 cups raw cane sugar and 2 tsp citric acid (or 8 tbsp lemon juice) and stir until the sugar dissolves; any left will dissolve over the next day. Cover with cheesecloth or a linen towel tied on with string, so it can breathe but fruit flies cannot get in, and keep it in a cool spot out of direct sun, such as a kitchen counter. Stir vigorously with a clean spoon about once every 12 hours (at least once a day) and taste a teaspoon after each stir. After 2–3 days it should be bubbly; fewer days give a sweeter, less fizzy drink, more days a drier, fizzier one — the recipe's authors bottle theirs after 5–7 days. Strain out the stones, skins and pulp, finishing through a fine-mesh strainer, pour into swing-top bottles or jars (not plastic or metal) and refrigerate at once. Never store the bottles at room temperature: the fermentation keeps building pressure and they can burst. It keeps in the fridge for months, and is lightly alcoholic, probably about 1–2.5%.",
+        "title" : "Fermented wild black cherry cordial"
+      }
     ],
     "scientificName" : "Prunus serotina",
     "sources" : [
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013)."
+      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
+      "Summary, identification, habitat and warning text: Wikipedia contributors. 'Prunus serotina', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 12/10/2026. https://en.wikipedia.org/wiki/Prunus_serotina — quoted verbatim. The habitat sentences describe the tree in North America; no openly licensed New Zealand habitat text was found. Not used: 'Edible raw, the fruit is also made into jelly, and the juice can be used as a drink mixer', because it sits in the paragraph on subsp. capuli, the Central and South American cultivated form, not the species as a whole; the farmers' advice on fallen trees and livestock; the timber and Lepidoptera paragraphs.",
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Prunus serotina' weed profile, Recognition. CC BY 3.0 NZ (images © Landcare Research, not used). Retrieved 12/10/2026. https://www.nzflora.info/factsheet/Weed/Prunus-serotina.html — quoted verbatim, including its lower-case sentence openings and the double full stop. The Weed profile has no Habitat line and the Taxon profile no description. Heights differ between sources: Flora of New Zealand up to 15 m, Auckland Council under 20 m, Wikipedia 15–24 m.",
+      "Edible parts, preparation and warning text: Fern, Ken. Useful Temperate Plants, 'Prunus serotina'. CC BY-NC-SA 3.0. Retrieved 12/10/2026. https://temperate.theferns.info/plant/Prunus+serotina — quoted verbatim with the bracketed reference numbers removed; 'injested' is the source's spelling. NOT used, deliberately: 'Seed - raw or cooked', which conflicts with Wikipedia's statement that the seeds release hydrogen cyanide when ground or minced; 'An infusion of the twigs is used as a beverage', because the same page says the young shoots carry the highest levels of cyanogenic glycosides; the genus-level advice that a sweet or slightly bitter Prunus fruit or seed can be considered safe, which is not about this species; the medicinal bark uses; and the commercial bark flavouring. Its habitat sentence ('north or east facing slopes') was not used because the aspect is a northern-hemisphere one.",
+      "Habitat tags 12/10/2026: forest, shrubland, grassland and disturbed rest on Auckland Council's habitat list for rum cherry (forest, plantations, shrubland, grassland, riparian areas, roadsides), which is all rights reserved and so is not quoted on the page. Riparian is not tagged wetland. coastal was not tagged although the Wikipedia habitat text mentions salt spray, because that is a North American tolerance and no New Zealand source places it on the coast.",
+      "Recipe: restated from von Frank, Aaron. 'Recipe: Fermented wild black cherry cordial (Prunus serotina)', Tyrant Farms (all rights reserved). Retrieved 12/10/2026. https://www.tyrantfarms.com/fermented-wild-black-cherry-cordial-prunus-serotina/ — cups and spoons kept as given; the 2-gallon jar converted to about 7.5 L. The page also says that, like cherries and peaches, the stones contain amygdalin, which is why it crushes the fruit by hand rather than risk damaging them.",
+      "Facts read, not written into the page (all rights reserved): Auckland Council, Tiaki Tāmaki Makaurau, 'Rum cherry' (https://www.tiakitamakimakaurau.nz/protect-and-restore-our-environment/pests-in-auckland/pest-search/prunsero/) — National Pest Plant Accord species; Auckland RPMP Sustained Control, whole region; it must not be bred, distributed, released or sold anywhere in New Zealand, and not planted in Auckland; white flowers in dense terminal racemes in late spring; drupes green ripening to purple/black; seeds dispersed by animals; seeds are the part requiring disposal. DOC Weeds (https://weeds.doc.govt.nz/species/prunus-serotina) — 62 records; Environmental Weed; NPPA; Unwanted Organism; Auckland RPMP Sustained Control; Horizons RPMP Eradication; Canterbury RPMP Organism of Interest. NZPCN (https://www.nzpcn.org.nz/flora/species/prunus-serotina/) — Exotic; 2020 NPPA; Environmental Weed (2024). Biota of NZ — Exotic, Wild (Allan Herbarium 2024).",
+      "Links supplied by the owner and not used: Kiwiherb 'Wild Cherry' (a herbal-product page about the bark as a cough remedy — medicinal); Forager Chef, 'Siberian Bird Cherry Cake' (read from the Wayback Machine copy of 12/04/2026; the live page is behind Cloudflare) — NOT used because it grinds whole dried cherries, stones and all, and rests their safety on the author's statement that drying and cooking denature the amygdalin, which no source read here supports and which Wikipedia's statement about ground seeds contradicts; the Pinterest board, whose pins could not be read without JavaScript.",
+      "Months [2, 3] set 12/10/2026 on the owner's ruling: a species-specific source's season word is read as the New Zealand season, approximately, because ripening is spread across trees (\"you know what summer means, it does not have to be perfect\"). The season word is Grow It Build It's 'late summer' for Prunus serotina (it also says trees in one stand vary by as much as three weeks); New Zealand late summer is February, and March is added for that spread and because the same source's ripening runs into its early autumn. Consistent with the New Zealand records below: fruit still red and unripe on 17/01/2020. No New Zealand source found that dates ripe fruit, searched 12/10/2026. New Zealand evidence, iNaturalist research grade (place 6803, n=14), all photos checked by eye: flowers 21/10/2024 (obs 248413867) and 15/11/2025 (obs 326734161), spent racemes 21/11/2023 (obs 191659882), red unripe fruit 17/01/2020 at Rolleston (obs 38347403); no record shows ripe black fruit — the February–May records are leaves and seedlings. Auckland Council gives flowering in late spring. Source of the season word: Grow It Build It, 'Black Cherry (Prunus serotina)' (all rights reserved; https://growitbuildit.com/black-cherry-prunus-serotina/) — 'late summer'; its calendar months (August to mid-September, USDA zone 6) are northern and were not converted. Read and NOT used for months: Environment Canterbury, 'Wilding Prunus species', Weed of the Month, February 2012 (https://api.ecan.govt.nz/TrimPublicAPI/documents/download/2990459) — its November–January fruit is for Prunus laurocerasus, not this species; Go Gardening, 'Prunus - beauty and abundance' (New Zealand Plant Producers Inc., all rights reserved; https://www.gogardening.co.nz/articles/prunus---beauty-and-abundance) — genus-level 'summer fruit' about garden Prunus, never names this species; Fruitfool, 'Cherry Tree Varieties for New Zealand Home Gardeners' (all rights reserved; https://www.fruitfool.co.nz/post/cherry-tree-varieties-for-new-zealand-home-gardeners-your-complete-guide) — sweet cherry cultivars, late November to early February, a different species (Wikipedia: not very closely related to cultivated cherries). Bunnings NZ, 'How to plant and grow a cherry tree' (all rights reserved; https://www.bunnings.co.nz/diy-advice/garden/planting-and-growing/how-to-plant-and-grow-a-cherry-tree) — sweet cherry (Prunus avium) and sour cherry (Prunus cerasus), fruit 'in summer', early, mid or late by variety; different species, never names this one. A season from Knox, A Forager's Treasury (owned), would replace this.",
+      "OWED, harvestEthics: a person's sentence. Facts to write from: it is a National Pest Plant Accord species, so it must not be bred, distributed, released or sold anywhere in New Zealand; its seeds are spread by animals; Auckland Council's control advice treats the seeds as the part needing disposal, to green waste or landfill.",
+      "Photos verified 12/10/2026 against the iNaturalist API, each matched to its source frame by image comparison: black-cherry-1 = obs 201448552 photo 355611227 (Taupō); -4 = obs 248413867 photo 447726391 (Taupō; current identifications Prunus serotina ×2 and Padus, the segregate genus that includes it); -6 = obs 38347403 photo 60932853 (Rolleston); -7 = obs 90837784 photo 150168208 (Teaneck, New Jersey, US — chosen by the owner for ripe fruit; a photo is judged on species, not geography). All research grade with no dissenting current identification; credits match each photo's licence."
     ],
     "summary" : {
       "sources" : [
-
+        "Wikipedia, 'Prunus serotina' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Prunus serotina, commonly called black cherry, wild black cherry, rum cherry, or mountain black cherry, is a New World deciduous tree or shrub in the rose family, Rosaceae. Despite its common names, it is not very closely related to commonly cultivated cherries. The species is widespread and common in North America and Central America. Prunus serotina was widely introduced into Western and Central Europe as an ornamental tree in the mid-20th century, where it has become locally naturalized. It has acted as an invasive species there, negatively affecting forest community biodiversity and regeneration."
     },
     "warnings" : [
-
+      "Like apricots and apples, the seeds of black cherries contain cyanogenic glycosides (compounds that can be converted into cyanide), such as amygdalin. These compounds release hydrogen cyanide when the seed is ground or minced, which releases enzymes that break down the compounds.",
+      "The foliage, particularly when wilted, also contains cyanogenic glycosides, which convert to hydrogen cyanide if eaten by animals.",
+      "The plant (especially the seed and young shoots) contains cyanogenic glycosides, especially amygdalin and prunasin. When injested, these compounds break down in the digestive tract to release cyanide."
     ]
   },
   {
