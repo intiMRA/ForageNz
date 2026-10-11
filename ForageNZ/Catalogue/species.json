@@ -948,7 +948,13 @@
       "text" : "Trailing or lianoid herb or subshrub with terete branching softly woody stems up to ± 3 m. long. Lvs on flattened petioles up to 1 cm. long; lamina fleshy, papillose, (1)–2–3–(5) × 1–3 cm., obtuse, deltoid to broad- ovate to ovate-rhomboid, rather abruptly narrowed to petiole. Fls on slender peduncles ± 5 mm. long, solitary or occ. paired, occ. unisexual; per. yellow. Calyx tube subglobose; stamens 10–20; ovary 2–(3)- celled; styles 2–(3). Fr. 5–7 mm. diam., subglobose, succulent, bright to dark red, not horned; seeds 1–3.\n[From:  Allan  (1961) Flora of New Zealand. Volume 1 as Tetragonia trigyna Banks & Sol. ex Hook.f.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "new-zealand-spinach",
+        "howToTell" : "Check the fruit first. Beach spinach has a fleshy, round berry, pink to dark red and without horns. New Zealand spinach typically has a dry, leathery, angled fruit carrying two to four woody horns. Without fruit it is harder: beach spinach stems are often red or pink when young and its flowers sit on slender stalks, while New Zealand spinach has green stems and flowers sitting almost directly on them. Thick leaves covered in tiny bumps (papillae), diamond to triangular leaf shapes, small yellow flowers and a place on the beach are common to both, so none of those separates them.",
+        "name" : "New Zealand spinach",
+        "risk" : "edible",
+        "scientificName" : "Tetragonia tetragonioides"
+      }
     ],
     "maoriName" : "Kōkihi, rengamutu, rengarenga, tūtae ikamoana",
     "months" : [
@@ -1014,7 +1020,7 @@
       "Berries deliberately not given as edible: the Ngā Rauropi Whakaoranga record quotes Tunuku Karetai, speaking to Beattie, saying the red kōkihi berry is not edible and was used as a stain and dye; NZ Native Plants, 'Tetragonia implexicoma' (all rights reserved; https://www.nativeplants.nz/tetragonia-implexicoma.html) lists the berries as eaten raw, but its account is of the Australian plant. The two disagree, so only the leaves are listed.",
       "Facts read, not written into the page: NZPCN, 'Tetragonia trigyna' (all rights reserved apart from the NZTCS status, which is DOC's CC BY 4.0; retrieved 10/10/2026; https://www.nzpcn.org.nz/flora/species/tetragonia-trigyna/) — Not Threatened 2023, qualifier SO; coastal to montane; flowering September–June, fruiting September–July; edible but with 'a decidedly less agreeable, more soapy taste' than T. tetragonoides; and told apart from T. tetragonoides when fruiting by pink to dark red fleshy subglobose fruits, not dry, leathery, horned ones. The Plant Company (https://www.theplantcompany.co.nz/shop/product/groundcover-plants/tetragonia-implexicoma) and Peninsula Plants (https://www.peninsulaplants.com.au/product/tetragonia-implexicoma/), both all rights reserved, describe it as edible cooked like spinach, and were also read.",
       "OWED, a person's sentence — warnings: Diego Bonetto, 'Native spinach' (all rights reserved; https://www.diegobonetto.com/blog/native-spinach), covering both T. tetragonioides and T. implexicoma, says the leaves contain oxalic acid, are not to be eaten raw in large quantities, and are blanched one to two minutes with the water discarded; people with a history of kidney stones are to eat them in moderation. No openly licensed source says this of T. trigyna, so the warning is not on the page. SEARCH, 10/10/2026: the open text on oxalates is all about T. tetragonioides — Wikipedia, 'Tetragonia tetragonioides' (CC BY-SA 4.0) says its medium to low oxalate levels are removed by blanching one minute and rinsing in cold water. Wikipedia's 'Tetragonia' genus article and 'Tetragonia implexicoma' say nothing on oxalates. The all-rights-reserved sources also describe T. tetragonioides, and disagree on the blanch: Warndu 10–15 seconds (https://warndu.com/blogs/first-nations-food-guide/get-your-warrigal-greens), ABC Organic Gardener about one minute, ANPSA three to four minutes with the water discarded, calling the oxalic acid high, and ASNSW about three minutes (https://anpsa.org.au/plant_profiles/tetragonia-tetragonioides/). Quoting a sentence about one species on another's page would be the inference this guide leaves to a person, so nothing was carried across. The owner searched as well on 10/10/2026 and found no warning for this species.",
-      "OWED — lookalike card to new-zealand-spinach, both ways, on the fruit character NZPCN gives above. A howToTell is a comparison of two pages and is the owner's to write.",
+      "Lookalike card to new-zealand-spinach, written by the assistant on the owner's instruction, 10/10/2026 — a restatement of the two pages' identification text plus NZPCN's 'Similar taxa' and description fields for both species (all rights reserved, facts only; https://www.nzpcn.org.nz/flora/species/tetragonia-trigyna/ and https://www.nzpcn.org.nz/flora/species/tetragonia-tetragonoides/), which say the two are most reliably separated when fruiting. Hedges kept: stems 'often' red or pink; New Zealand spinach fruit 'typically' dry and horned. A claim that young New Zealand spinach fruit is green and fleshy (Lucidcentral, Plants of south-eastern NSW) could not be read — the page is behind Cloudflare — so the card tests on colour and horns, not hardness. Risk is edible both ways because both pages say the leaves are eaten.",
       "Not used here: Not Quite Nigella, 'Warrigal greens recipes' (https://www.notquitenigella.com/2018/05/17/warrigal-greens-recipes/) is about Tetragonia tetragonioides, which is new-zealand-spinach, not this entry.",
       "Photos verified 10/10/2026 via the iNaturalist API: observations 89882031, 48520268, 73281892 and 94686374 are all research-grade Tetragonia trigyna in New Zealand (Himatangi Beach, Kuku Beach, Foxton Beach ×2), and every photo is CC BY, matching its credit. They replace four photographs of the Australian T. implexicoma. Frame provenance not checked.",
       "Not used here: RNZ, 'Koki' (https://www.rnz.co.nz/collections/recipes/koki) is a shark-liver pâté and does not use this plant.",
@@ -13872,7 +13878,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "New Zealand spinach",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Wikipedia, 'Tetragonia tetragonioides' (CC BY-SA 4.0)"
@@ -13891,6 +13897,12 @@
       "urban",
       "disturbed"
     ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "This species is at risk, so if you are going to harvest it make sure you do that sustainably."
+    },
     "id" : "new-zealand-spinach",
     "identification" : {
       "sources" : [
@@ -13899,7 +13911,13 @@
       "text" : "The plant has a trailing habit, and will form a thick carpet on the ground or climb through other vegetation and hang downwards. It can have erect growth when young. The leaves of the plant are 3–15 cm long, triangular in shape, and bright green. The leaves are thick, and covered with tiny papillae that look like waterdrops on the top and bottom of the leaves. The flowers of the plant are yellow, and the fruit are small, hard capsules each with 4–10 horned seeds.\nSphaeraphides are found in at least the leaves, calyx and ovary."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "beach-spinach",
+        "howToTell" : "Beach spinach is most reliably told apart when fruiting: its fruit is a round, fleshy berry, pink to dark red, with no horns, where this plant's is angled and typically dry and leathery, with two to four woody horns. Out of fruit, look at the stems and flower stalks — beach spinach often has red or pink young stems and flowers on slender stalks, against the green stems and near-stalkless flowers here. Do not go by leaf shape, the papillae on the leaves, the yellow flowers or the beach they grow on; the two share all of these.",
+        "name" : "Beach spinach",
+        "risk" : "edible",
+        "scientificName" : "Tetragonia trigyna"
+      }
     ],
     "maoriName" : "Kōkihi, rengamutu, rengarenga, tūtae ikamoana",
     "months" : [
@@ -13909,7 +13927,30 @@
     "needsBookSource" : false,
     "origin" : "native",
     "photos" : [
-
+      {
+        "caption" : "Photo in neutral background",
+        "credit" : "no rights reserved",
+        "fileName" : "new-zealand-spinach-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/2434731"
+      },
+      {
+        "caption" : "Photo of plant in natural habitat",
+        "credit" : "no rights reserved",
+        "fileName" : "new-zealand-spinach-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/23818054"
+      },
+      {
+        "caption" : "Close up of stem and leaves",
+        "credit" : "(c) Stephen Thorpe, some rights reserved (CC BY)",
+        "fileName" : "new-zealand-spinach-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/57080533"
+      },
+      {
+        "caption" : "Close up of leaves",
+        "credit" : "(c) Stephen Thorpe, some rights reserved (CC BY)",
+        "fileName" : "new-zealand-spinach-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/57080533"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -13930,12 +13971,12 @@
       "Greater Wellington Regional Council. Wellington Regional Native Plant Guide, revised edition (2010), main plant list — names only.",
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
       "Facts read, not written into the page: NZPCN, 'Tetragonia tetragonoides' (all rights reserved apart from the NZTCS status; retrieved 10/10/2026; https://www.nzpcn.org.nz/flora/species/tetragonia-tetragonoides/) — conservation status 2023 At Risk – Naturally Uncommon, qualifiers EF, RR, SO, Sp (de Lange et al. 2024, DOC, CC BY 4.0); a plant of the coastal strand zone, along beaches among driftwood and seaweed, in dunes, on boulder and cobble beaches, cliffs and rock ledges; often a casual weed of urban areas and landfills because it is cultivated, so some wild plants near coastal settlements may come from garden waste; threatened by disturbance of coastal sands and stony beaches. Flora of New Zealand Online gives flowering Oct.–Feb. and fruiting Nov.–Mar.",
-      "OWED, a person's sentence — harvestEthics. It is At Risk – Naturally Uncommon (above).",
-      "OWED — lookalike card to beach-spinach, both ways. NZPCN separates them: T. trigyna has reddish stems, more usually broadly ovate or deltoid leaves, distinctly stalked flowers, and globose, succulent, red fruits without horns, against this species' turbinate, woody, horned fruit. A howToTell compares two pages and is the owner's to write.",
+      "Lookalike card to beach-spinach, written by the assistant on the owner's instruction, 10/10/2026 — a restatement of the two pages' identification text plus NZPCN's 'Similar taxa' and description fields for both species (all rights reserved, facts only; https://www.nzpcn.org.nz/flora/species/tetragonia-trigyna/ and https://www.nzpcn.org.nz/flora/species/tetragonia-tetragonoides/), which say the two are most reliably separated when fruiting. Hedges kept: stems 'often' red or pink; New Zealand spinach fruit 'typically' dry and horned. A claim that young New Zealand spinach fruit is green and fleshy (Lucidcentral, Plants of south-eastern NSW) could not be read — the page is behind Cloudflare — so the card tests on colour and horns, not hardness. Risk is edible both ways because both pages say the leaves are eaten.",
       "Recipe: restated from Elliott, Lorraine. 'Warrigal Green Frittata' and 'How to Prepare Warrigal Greens', in '4 Warrigal Greens recipes', Not Quite Nigella, 17/05/2018 (all rights reserved). Retrieved 10/10/2026. https://www.notquitenigella.com/2018/05/17/warrigal-greens-recipes/",
       "Recipe considered and not used: Quick, Bridget. 'Jerusalem artichoke & kokihi (NZ spinach) soup', NZ Herald Viva (all rights reserved; https://www.nzherald.co.nz/viva/food-drink/bridget-quicks-jerusalem-artichoke-kokihi-nz-spinach-soup-recipe/FRUIO3V4CNKSPTGC7LUQM2V4IE/). It adds the leaves to the pot without blanching, against this page's warning, and amending a recipe's method is not this guide's to do. The pie, dumpling and cannelloni recipes on the Not Quite Nigella page are also available.",
       "Name: iNaturalist, NZPCN and Flora of New Zealand Online spell the epithet tetragonoides; Wikipedia spells it tetragonioides. Both refer to this species. iNaturalist taxon 418653 has 338 research-grade New Zealand observations, checked 10/10/2026.",
-      "Habitat tags, 10/10/2026: disturbed is what Tools/classify_habitats.py reads from this entry's habitat line; coastal and urban rest on NZPCN's statement above (coastal strand zone; a casual weed of urban areas), which is all rights reserved and so is not quoted on the page."
+      "Habitat tags, 10/10/2026: disturbed is what Tools/classify_habitats.py reads from this entry's habitat line; coastal and urban rest on NZPCN's statement above (coastal strand zone; a casual weed of urban areas), which is all rights reserved and so is not quoted on the page.",
+      "harvestEthics is the owner's sentence. 'endangered' was corrected to 'at risk' on 10/10/2026 to match DOC's 2023 listing, At Risk – Naturally Uncommon — not a Threatened category — with two typos fixed. Photos verified the same day: observations 2434731, 23818054 and 57080533 are research-grade wild Tetragonia tetragonoides in New Zealand (Wenderholm, Hokitika River mouth, Mount Roskill); the first two photos are CC0 and the last two CC BY, each matching its credit, and the two Mount Roskill frames are different shots."
     ],
     "summary" : {
       "sources" : [
