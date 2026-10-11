@@ -1041,22 +1041,22 @@
   {
     "caution" : "careRequired",
     "commonName" : "Beaked hawksbeard",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Useful Temperate Plants, 'Crepis vesicaria' (CC BY-NC-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "Leaves - raw. Used in salads, they have a bitter taste."
     },
     "group" : "greens",
     "habitat" : {
       "sources" : [
-
+        "Useful Temperate Plants, 'Crepis vesicaria' (CC BY-NC-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "Waysides, walls, railway banks and waste places, especially in calcareous soils."
     },
     "habitats" : [
-
+      "disturbed"
     ],
     "id" : "beaked-hawksbeard",
     "identification" : {
@@ -1066,7 +1066,20 @@
       "text" : "Annual or biennial.  Stems erect or ascending, branching, ribbed to grooved, 15–75–(100) cm tall;  hairs both white, slender, crinkly, subappressed, and red-based, stout, straight, spreading.  Rosette and lower stem lvs thick, petiolate, oblong to oblanceolate, usually deeply runcinately 1–2-pinnatifid, rarely simple and shallowly pinnatifid or toothed, (7)–10–20–(35) × (2)–4–8–(12) cm;  hairs pale, 0.2–0.5 mm long, on both surfaces and margins; lobes slightly recurved, toothed or divided.  Stem lvs similar, deeply pinnatisect to not lobed, toothed, sessile, subauriculate or lobed at base. Capitula campanulate;  buds erect.  Involucral bracts with pale subappressed cobwebby hairs and often dark, spreading glandular hairs on outer surface, and fine appressed straight hairs on inner surface;  outer bracts 6–12, lanceolate to ovate-lanceolate, ?-1/2 length of inner bracts;  inner bracts lanceolate, not keeled, (6)–9–12 mm long, with pale to scarious glabrous margins. Receptacle areoles with raised ciliate margins.  Corolla yellow, sometimes with red stripe on outer face of ligule.  Achenes brown, 10-ribbed, fusiform, scabrid, all long-beaked, 6–9 mm long.  Pappus bristles in 1–(2) rows, fine, white. \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "dandelion",
+        "howToTell" : "A dandelion carries one flower on each hollow, leafless stem that never branches. Beaked hawksbeard sends up an erect or ascending, ribbed stem, 15–75 cm tall and sometimes to 100 cm, that branches and carries leaves of its own. Before the stems appear the rosettes are hard to separate: both have leaves with lobes pointing back towards the centre, usually deeply cut in beaked hawksbeard, so leaf shape does not separate them. Dandelion's milky sap is not a test either, because this page records nothing about beaked hawksbeard's sap.",
+        "name" : "Dandelion",
+        "risk" : "edible",
+        "scientificName" : "Taraxacum officinale"
+      },
+      {
+        "entry" : "catsear",
+        "howToTell" : "Catsear's leaves are only shallowly lobed; beaked hawksbeard's are usually deeply lobed, with lobes pointing back towards the centre. They are rarely simple and only shallowly lobed or toothed, so a shallow leaf does not rule beaked hawksbeard out — check the stem too: beaked hawksbeard's is ribbed to grooved, 15–75 cm tall and sometimes to 100 cm, and carries leaves, while catsear's page describes its flower stalks as solid and wiry. Both have hairy leaves and branching stems, so neither of those separates them. Catsear's sap is clear, but this page records nothing about beaked hawksbeard's sap, so sap is not a test.",
+        "name" : "Catsear",
+        "risk" : "edible",
+        "scientificName" : "Hypochaeris radicata"
+      }
     ],
     "months" : [
 
@@ -1075,28 +1088,67 @@
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Alice Shanks, some rights reserved (CC BY)",
+        "fileName" : "beaked-hawksbeard-3.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/2338054"
+      },
+      {
+        "caption" : "Flowering plant in natural habitat",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "beaked-hawksbeard-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/8663869"
+      },
+      {
+        "caption" : "Close up of leaves",
+        "credit" : "(c) Alice Shanks, some rights reserved (CC BY)",
+        "fileName" : "beaked-hawksbeard-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/97626523"
+      },
+      {
+        "caption" : "Photo of plant in natural habitat",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "beaked-hawksbeard-6.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/125560557"
+      }
     ],
     "preparation" : {
       "sources" : [
-
+        "Wikipedia, 'Crepis' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "In Crete, Greece, the leaves of Crepis commutata which are called glykosyrida (γλυκοσυρίδα) are eaten raw, boiled, steamed or browned in salads. Another two species on the same island, Crepis vesicaria, called kokkinogoula (κοκκινογούλα), lekanida (λεκανίδα) or prikousa (πρικούσα) and a local variety called maryies (μαργιές) or pikrouses (πικρούσες) have both its leaves and tender shoots eaten boiled by the locals."
     },
     "recipes" : [
-
+      {
+        "method" : "For 4: soak about 450 g of freshly picked young greens in cold water for 10 minutes. Bring about 3.8 L of water and 3 tbsp kosher salt to the boil in a large lidded pot, add the greens, cover and bring back to the boil. Uncover and cook for 60 seconds, stirring until all are wilted, then taste one — some greens take longer — and drain in a colander once tender. Let them drain for a minute, turning them over, then tip into a warmed serving bowl, drizzle with olive oil and serve with lemon wedges and about ½ tsp finishing salt to taste.",
+        "title" : "Horta (boiled wild greens with olive oil and lemon)"
+      }
     ],
     "scientificName" : "Crepis vesicaria",
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Crepis vesicaria' factsheet. CC BY 3.0 NZ. Retrieved 15/09/2026. https://www.nzflora.info/factsheet/Taxon/Crepis-vesicaria.html",
-      "Summary text: Wikipedia contributors. 'Crepis vesicaria', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Crepis_vesicaria"
+      "Summary text: Wikipedia contributors. 'Crepis vesicaria', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Crepis_vesicaria",
+      "Habitat and edible parts text: Fern, Ken. 'Crepis vesicaria', Useful Temperate Plants database. CC BY-NC-SA 3.0. Retrieved 10/10/2026. https://temperate.theferns.info/plant/Crepis+vesicaria — quoted verbatim. Its habitat line, taken from Clapham, Tutin and Warburg's Flora of the British Isles (1962), ends 'at elevations up to 150 metres'; that clause was left out because it is a British altitude, not a New Zealand one. It gives Known Hazards as 'None known'. Plants For A Future (all rights reserved; https://pfaf.org/user/Plant.aspx?LatinName=Crepis+vesicaria) carries the same data and also says 'None known'; its flowering May to July is northern-hemisphere and was not used.",
+      "Summary text: Wikipedia contributors. 'Crepis vesicaria subsp. taraxacifolia', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 10/10/2026. https://en.wikipedia.org/wiki/Crepis_vesicaria_subsp._taraxacifolia — added because Flora of New Zealand Online lists subsp. taraxacifolia as the one fully naturalised taxon here.",
+      "Preparation text: Wikipedia contributors. 'Crepis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 10/10/2026. https://en.wikipedia.org/wiki/Crepis — quoted as two sentences because the second does not stand without the first. Wikipedia tags the Crepis vesicaria sentence 'citation needed' (June 2019), so the boiled-leaves-and-shoots use is unsourced there.",
+      "Facts read, not written into the page: Flora of New Zealand Online (CC BY 3.0 NZ; https://www.nzflora.info/factsheet/Taxon/Crepis-vesicaria.html) gives biostatus Exotic: Fully Naturalised, flowering (Aug.)–Oct.–Dec.–(May) and fruiting the same. Its Weed-tab factsheet URL redirects to the Taxon profile, which has no habitat line, so the NZ Flora habitat source used on bay-tree is not available for this species. AgPest (AgResearch) was reported by a web search to place it in lucerne and hay crops, pasture, unmown roadsides and waste places, mostly on the east side of both islands, but the site was offline for maintenance on 10/10/2026 and Wayback holds no copy, so this could not be read and is not used. NZPCN (all rights reserved; https://www.nzpcn.org.nz/flora/species/crepis-vesicaria-subsp-taraxacifolia/) was reported by the same search to give naturalisation in 1870 from W. Europe and N. Africa — not read directly.",
+      "Months left empty, 10/10/2026. The iNaturalist New Zealand month histogram (taxon 56868, place 6803, research grade, n=88) peaks in October (48) and at a quarter of the peak admits September, October and November — but that peak sits inside the flowering season Flora of New Zealand Online gives, so it dates the plant in flower, not the leaves, which are the edible part. No New Zealand source found dates the leaf harvest. Empty here is a gap, not a claim of year-round availability. OPEN LEAD: Knox 2013, above, may give a New Zealand season.",
+      "Recipe: restated from Bergo, Alan. 'Horta: Greek Wild Greens with Olive Oil and Lemon', Forager Chef, 04/05/2024 (all rights reserved). Read from the Wayback Machine copy of 16/03/2026, because the live page is behind Cloudflare. https://foragerchef.com/horta/ — quantities converted to metric (1 lb ≈ 450 g, 1 gal ≈ 3.8 L). The recipe is written for young wild greens generally — it names dandelions, nettles, purslane and fennel greens — and not for this species; it is here because the Crepis sentence in preparation says Crepis vesicaria is eaten boiled in Crete. Its ingredient list gives no quantity of olive oil, and none was added.",
+      "Recipe search, 10/10/2026: no recipe written for Crepis vesicaria itself was found in English, Greek (κοκκινογούλα) or Italian (radicchiella). Italian pages were reported by a web search, not read, to describe it eaten raw young in salads, boiled with oil and lemon, or sautéed with oil and garlic like chicory, but give no recipe with quantities.",
+      "Photos verified 10/10/2026 in one iNaturalist batch call: observations 2338054 (Selwyn River), 8663869 (Otekaieke), 97626523 (Ashburton) and 125560557 (Ferrymead, Christchurch) are research-grade wild Crepis vesicaria in New Zealand. The first three photos are CC BY and match their credits — 8663869's observation is CC0 but its photos are CC BY, and the credit follows the photo. beaked-hawksbeard-6.heic had no credit or source; it was matched by file size (214 688 bytes) to the staged frame from manifest236, photo 212942511 on observation 125560557 by Tom Ferguson, CC0, a rosette photographed in July, and credited from that.",
+      "No warnings found in an open source. Both Ken Fern and PFAF give Known Hazards as 'None known'; that is an absence of record, not a statement that it is safe. OWED: the warnings field. The lookalike cards added on 10/10/2026 satisfy the validation's 'a warning or a lookalike' check, so the page ships with its warnings array still empty.",
+      "Lookalike cards to dandelion and catsear, written by the assistant on the owner's instruction, 10/10/2026 — a restatement of this page's identification text (Flora of New Zealand Online, Webb et al. 1988) and the two target pages' identification text. Hedges kept: leaves 'usually' deeply lobed, 'rarely' simple and shallowly lobed; stem height 15–75 cm with the (100) cm outlier kept as 'sometimes'. Neither card uses sap: dandelion's milky and catsear's clear sap are on their pages, but nothing on this page records beaked hawksbeard's sap. Risk is edible both ways because all three pages say the leaves are eaten.",
+      "Card to smooth-hawksbeard NOT added, 10/10/2026: smooth-hawksbeard is a draft (no photos, no habitat), and a shipped page's card may only open a shipped page. Its card to this page exists, written from the two Flora of New Zealand descriptions; add the reverse when smooth-hawksbeard ships. Shipped the same day: the cards cleared the last blocking issue, and a draft with none fails the catalogue tests.",
+      "Facts read, not written into the page: NatureSpot, 'Beaked Hawk's-beard (Crepis vesicaria)' (Leicestershire and Rutland; no licence stated, so all rights reserved; retrieved 10/10/2026; https://www.naturespot.org/species/beaked-hawks-beard). Habitat: grassy and waste places, roadsides, banks. Outer florets striped red/brown beneath; flowerheads 15–25 mm, in lax-branched flat-topped clusters, erect in bud; middle stem leaves clasp the stem with pointed lobes. It sometimes has outer achenes without a beak, so check the inner ones too — this contradicts Flora of New Zealand's 'all long-beaked', and was carried into the smooth-hawksbeard card, not into this page's identification text. Its 'May to July' is a UK season and was not used. It names Crepis biennis (rough hawk's-beard) as the similar species; the catalogue has no entry for it. It says a 'full-face' photo of the flowerhead cannot verify the species."
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Crepis vesicaria' (CC BY-SA 4.0)"
+        "Wikipedia, 'Crepis vesicaria' (CC BY-SA 4.0)",
+        "Wikipedia, 'Crepis vesicaria subsp. taraxacifolia' (CC BY-SA 4.0)"
       ],
-      "text" : "Crepis vesicaria is a European species of flowering plant in the family Asteraceae with the common name beaked hawk's-beard."
+      "text" : "Crepis vesicaria is a European species of flowering plant in the family Asteraceae with the common name beaked hawk's-beard.\n\nCrepis vesicaria subsp. taraxacifolia, the beaked hawksbeard, is a subspecies of flowering plant in the family Asteraceae. It is native to Europe and northwest Africa. It has become naturalized in scattered locations in the United Kingdom, North America, and Oceania."
     },
     "warnings" : [
 
@@ -3341,7 +3393,13 @@
       "text" : "A flat rosette like dandelion, but the leaves are rough with stiff hairs and only shallowly lobed, where dandelion's are hairless and jaggedly toothed. Flower stalks are solid, wiry and branch into several yellow flowers; dandelion's are hollow, unbranched and carry one flower each. Sap is clear, not milky."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "beaked-hawksbeard",
+        "howToTell" : "Beaked hawksbeard's leaves are usually deeply lobed, with lobes pointing back towards the centre, and its ribbed stems, 15–75 cm tall and sometimes to 100 cm, carry leaves of their own. Its leaves are rarely simple and only shallowly lobed, like catsear's, so check the stem as well as the leaf. Both have hairy leaves and branching stems, so neither of those separates them.",
+        "name" : "Beaked hawksbeard",
+        "risk" : "edible",
+        "scientificName" : "Crepis vesicaria"
+      }
     ],
     "months" : [
 
@@ -3389,7 +3447,8 @@
     "scientificName" : "Hypochaeris radicata",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Catsear' entry.",
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Catsear' entry."
+      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Catsear' entry.",
+      "Lookalike card to beaked-hawksbeard, written by the assistant on the owner's instruction, 10/10/2026 — a restatement of this page's identification text and beaked-hawksbeard's (Flora of New Zealand Online, Webb et al. 1988), with that page's hedges kept ('usually' deeply lobed, 'rarely' shallowly lobed, 'sometimes' to 100 cm). Risk edible because beaked-hawksbeard's page says the leaves are eaten."
     ],
     "summary" : {
       "sources" : [
@@ -5326,6 +5385,13 @@
         "name" : "Catsear / flatweed",
         "risk" : "unpalatable",
         "scientificName" : "Hypochaeris radicata"
+      },
+      {
+        "entry" : "beaked-hawksbeard",
+        "howToTell" : "Beaked hawksbeard's stem branches and carries leaves, and stands 15–75 cm tall, sometimes to 100 cm; a dandelion's is hollow, leafless and unbranched, with one flower — the same key check as for catsear. The rosettes alone do not separate them: both have leaves with backward-pointing lobes.",
+        "name" : "Beaked hawksbeard",
+        "risk" : "edible",
+        "scientificName" : "Crepis vesicaria"
       }
     ],
     "maoriName" : "Tawao",
@@ -5384,7 +5450,8 @@
     "scientificName" : "Taraxacum officinale",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Common dandelion' entry.",
-      "Wikipedia contributors. 'Taraxacum officinale', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 06/10/2026. https://en.wikipedia.org/wiki/Taraxacum_officinale Corroborates all three edible parts and refines how to use them: the young leaves and unopened buds are usually eaten raw in salads while older leaves are cooked, raw leaves being slightly bitter and closest in character to mustard greens. The leaves are high in vitamins A and C, iron, phosphorus and potassium. Native to Eurasia, introduced to New Zealand, and growing in lawns, roadsides, disturbed banks and waterway shores — which is this entry's habitat, independently."
+      "Wikipedia contributors. 'Taraxacum officinale', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 06/10/2026. https://en.wikipedia.org/wiki/Taraxacum_officinale Corroborates all three edible parts and refines how to use them: the young leaves and unopened buds are usually eaten raw in salads while older leaves are cooked, raw leaves being slightly bitter and closest in character to mustard greens. The leaves are high in vitamins A and C, iron, phosphorus and potassium. Native to Eurasia, introduced to New Zealand, and growing in lawns, roadsides, disturbed banks and waterway shores — which is this entry's habitat, independently.",
+      "Lookalike card to beaked-hawksbeard, written by the assistant on the owner's instruction, 10/10/2026 — a restatement of this page's identification text and beaked-hawksbeard's (Flora of New Zealand Online, Webb et al. 1988), with that page's hedges kept ('usually' deeply lobed, 'rarely' shallowly lobed, 'sometimes' to 100 cm). Risk edible because beaked-hawksbeard's page says the leaves are eaten."
     ],
     "summary" : {
       "sources" : [
@@ -20675,7 +20742,13 @@
       "text" : "Annual or biennial.  Stems erect, branching, ribbed or grooved, (5)–15–45–(100) cm tall;  hairs white, slender, crinkly;  stouter pale crinkly hairs usually present also, at least below.  Rosette and lower stem lvs thin, petiolate, oblanceolate to linear-oblanceolate, dentate to runcinate-pinnatifid, (2)–5–20–(30) × (0.3)–1–3–(6) cm, often glabrous or with pale hairs  c.  0.5 mm long confined to middle of lf beneath or rarely distributed on both lf surfaces.  Upper stem lvs similar, becoming sessile and not lobed, narrowly triangular to linear, usually with narrowly triangular teeth especially at subauriculate base.  Capitula campanulate;  buds erect.  Involucral bracts with sparse to dense short white tangled hairs and usually sparse dark glandular hairs on outer surface, glabrous on inner surface;  outer bracts 6–10, linear, ?-1/2length of inner bracts;  inner bracts linear, not keeled, 5–8 mm long, with pale to scarious ± glabrous margins.  Receptacle areoles with flat or depressed, glabrous margins.  Corolla yellow, often with pink or red stripe on outer face of ligule.  Achenes brown, 10-ribbed, fusiform, smooth or ± scabrid, not beaked, 2–2.5 mm long.  Pappus bristles in 2 rows, fine, white.\n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "beaked-hawksbeard",
+        "howToTell" : "The seed separates them: beaked hawksbeard's achenes are long-beaked and 6–9 mm long; smooth hawksbeard's are not beaked and are 2–2.5 mm. Check the inner achenes as well as the outer, because beaked hawksbeard sometimes has outer achenes without a beak. Before seed, look at the leaves: beaked hawksbeard's are thick, with pale hairs on both surfaces and the margins, where smooth hawksbeard's are thin and often hairless, or hairy only along the middle beneath, rarely on both surfaces. Beaked hawksbeard's inner involucral bracts are longer, (6)–9–12 mm against 5–8 mm. Both have yellow flowers that may carry a red or pink stripe on the outer face of the ligule — sometimes in beaked hawksbeard, often in smooth hawksbeard — and branching stems with erect buds, so none of those separates them.",
+        "name" : "Beaked hawksbeard",
+        "risk" : "edible",
+        "scientificName" : "Crepis vesicaria"
+      }
     ],
     "months" : [
 
@@ -20699,7 +20772,9 @@
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Crepis capillaris' factsheet. CC BY 3.0 NZ. Retrieved 15/09/2026. https://www.nzflora.info/factsheet/Taxon/Crepis-capillaris.html",
-      "Summary text: Wikipedia contributors. 'Crepis capillaris', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Crepis_capillaris"
+      "Summary text: Wikipedia contributors. 'Crepis capillaris', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Crepis_capillaris",
+      "Lookalike card to beaked-hawksbeard, written by the assistant on the owner's instruction, 10/10/2026 — a restatement of the two pages' Flora of New Zealand descriptions (Webb et al. 1988, CC BY 3.0 NZ): achene beak and length, leaf thickness and hairs, inner bract length, with the hedges kept ('often', 'rarely', 'sometimes'). Risk edible because beaked-hawksbeard's page says the leaves are eaten. It clears this page's warnings check while its warnings array stays empty; the page is still a draft (no photos, no habitat).",
+      "Correction to the card to beaked-hawksbeard, 10/10/2026, same day: it said beaked hawksbeard's achenes are 'all' long-beaked, following Flora of New Zealand Online. NatureSpot, 'Beaked Hawk's-beard (Crepis vesicaria)' (Leicestershire and Rutland; no licence stated, so all rights reserved; retrieved 10/10/2026; https://www.naturespot.org/species/beaked-hawks-beard) says it sometimes has outer achenes without a beak, and to check the inner ones as well as the outer. The card now says that, so a single unbeaked outer achene is not read as smooth hawksbeard. The two sources disagree; the card follows the more cautious one, and the identification text on beaked-hawksbeard is Flora of New Zealand's and unchanged."
     ],
     "summary" : {
       "sources" : [
