@@ -2210,56 +2210,100 @@
   {
     "caution" : "careRequired",
     "commonName" : "Blackthorn",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Ken Fern, Useful Temperate Plants, 'Prunus spinosa' (CC BY-NC-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "Fruit - raw or cooked. The dried fruits can be added to herbal teas. The flowers are edible and can be crystallised or sugared."
     },
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "Ken Fern, Useful Temperate Plants, 'Prunus spinosa' (CC BY-NC-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "Hedgerows and woods, usually in sunny positions, on all soils except acid peats."
     },
     "habitats" : [
-
+      "forest",
+      "shrubland",
+      "grassland",
+      "urban"
     ],
     "id" : "blackthorn",
     "identification" : {
       "sources" : [
-        "Wikipedia, 'Prunus spinosa' (CC BY-SA 4.0)"
+        "Wikipedia, 'Prunus spinosa' (CC BY-SA 4.0)",
+        "Omitted 12/10/2026: the sentence on the traditional harvest in the United Kingdom, because its calendar months are northern; the hydrogen cyanide sentence was moved verbatim to the warnings."
       ],
-      "text" : "Prunus spinosa is a large deciduous shrub or small tree growing to 5 metres (16 ft) tall, with blackish bark and dense, stiff, spiny branches. The leaves are oval, 2–4.5 centimetres (3⁄4–1+3⁄4 inches) long and 1.2–2 cm (1⁄2–3⁄4 in) broad, with a serrated margin. The flowers are about 1.5 cm (1⁄2 in) in diameter, with five creamy-white petals; they are produced shortly before the leaves in early spring, and are hermaphroditic and insect-pollinated. The fruit, called a \"sloe\", is a single-seeded drupe 10–12 millimetres (3⁄8–1⁄2 in) in diameter, black with a purple-blue waxy bloom, ripening in late autumn. The trees can live to 100 years.\nIn the United Kingdom, they are traditionally harvested in October or November, after the first frosts, as this makes the skin softer and easier to process for the purposes of making sloe gin. Sloes are thin-fleshed, with a very strongly astringent flavour when fresh. Its fruit persists for an average of 36.7 days. The fruit averages 77.6% water, and their dry weight includes 10.6% carbohydrates and 0.6% lipids.\nBlackthorn usually grows as a bush but can grow to become a tree to a height of 6 m (20 ft). Its branches usually grow forming a tangle.\nPrunus spinosa is frequently confused with the related P. cerasifera (cherry plum), particularly in early spring when the latter starts flowering a month or more earlier than P. spinosa. They can be distinguished by flower size, around 15 mm P. spinosa, and 20 mm in P. cerasifera. In addition, the sepals are bent backwards in P. cerasifera, but not in P. spinosa. They can be distinguished in winter by the shrubbier habit with stiffer, wider-angled, grey-brown branches of P. spinosa (greenish, and flexible, in one-year-old shoots of P. cerasifera); in summer by the relatively narrower leaves of P. spinosa, more than twice as long as broad; and in autumn by the colour of the fruit skin purplish black in P. spinosa and yellow or red in P. cerasifera; the latter also ripens about two months earlier, in late summer or early autumn.\nPrunus spinosa has a tetraploid (2n=4x=32) set of chromosomes.\nLike many other stone fruit with stones, the seed in the stone contains trace amounts of hydrogen cyanide."
+      "text" : "Prunus spinosa is a large deciduous shrub or small tree growing to 5 metres (16 ft) tall, with blackish bark and dense, stiff, spiny branches. The leaves are oval, 2–4.5 centimetres (3⁄4–1+3⁄4 inches) long and 1.2–2 cm (1⁄2–3⁄4 in) broad, with a serrated margin. The flowers are about 1.5 cm (1⁄2 in) in diameter, with five creamy-white petals; they are produced shortly before the leaves in early spring, and are hermaphroditic and insect-pollinated. The fruit, called a \"sloe\", is a single-seeded drupe 10–12 millimetres (3⁄8–1⁄2 in) in diameter, black with a purple-blue waxy bloom, ripening in late autumn. The trees can live to 100 years.\nSloes are thin-fleshed, with a very strongly astringent flavour when fresh. Its fruit persists for an average of 36.7 days. The fruit averages 77.6% water, and their dry weight includes 10.6% carbohydrates and 0.6% lipids.\nBlackthorn usually grows as a bush but can grow to become a tree to a height of 6 m (20 ft). Its branches usually grow forming a tangle.\nPrunus spinosa is frequently confused with the related P. cerasifera (cherry plum), particularly in early spring when the latter starts flowering a month or more earlier than P. spinosa. They can be distinguished by flower size, around 15 mm P. spinosa, and 20 mm in P. cerasifera. In addition, the sepals are bent backwards in P. cerasifera, but not in P. spinosa. They can be distinguished in winter by the shrubbier habit with stiffer, wider-angled, grey-brown branches of P. spinosa (greenish, and flexible, in one-year-old shoots of P. cerasifera); in summer by the relatively narrower leaves of P. spinosa, more than twice as long as broad; and in autumn by the colour of the fruit skin purplish black in P. spinosa and yellow or red in P. cerasifera; the latter also ripens about two months earlier, in late summer or early autumn.\nPrunus spinosa has a tetraploid (2n=4x=32) set of chromosomes."
     },
     "lookalikes" : [
 
     ],
     "months" : [
-
+      2,
+      3,
+      4,
+      5
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/55811",
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Gianni Del Bufalo bygdb, some rights reserved (CC BY)",
+        "fileName" : "blackthorn-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/108763997"
+      },
+      {
+        "caption" : "Close up of leaf",
+        "credit" : "no rights reserved",
+        "fileName" : "blackthorn-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/32656302"
+      },
+      {
+        "caption" : "Fruiting branch",
+        "credit" : "(c) Marko Xxx, some rights reserved (CC BY-NC)",
+        "fileName" : "blackthorn-6.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/398946097"
+      },
+      {
+        "caption" : "Fruits on tree",
+        "credit" : "(c) jonas_barzdenas, some rights reserved (CC BY-NC)",
+        "fileName" : "blackthorn-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/140879459"
+      }
     ],
     "preparation" : {
       "sources" : [
-
+        "Wikipedia, 'Prunus spinosa' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "The fruit is similar to a small damson or plum, suitable for preserves, but rather tart and astringent for eating fresh unless it is picked after the first few days of autumn frost. This effect can be reproduced by freezing harvested sloes. This kind of ripening is called bletting.\nSloes can also be made into jam, chutney, and used in fruit pies. Sloes preserved in vinegar are similar in taste to Japanese umeboshi."
     },
     "recipes" : [
-
+      {
+        "method" : "Use sloes that are plump, tender and purple-black under the blue bloom; you need not wait for a frost to pick them. Prick the skins of 450 g sloes all over with a toothpick and put them in a large sterilised jar — or freeze them first, which splits the skins as a frost would, and skip the pricking. Pour in 300–450 g white sugar (granulated or caster; the amount is a matter of taste) and 700 ml gin, seal tightly and shake well. Store in a cool, dark cupboard and shake every other day for a week, then once a week for at least two months. Strain through a sieve into a sterilised bottle with an airtight seal and store it in a cool, dark place; it keeps maturing in the bottle for years. Makes about 1 litre.",
+        "title" : "Sloe gin"
+      },
+      {
+        "method" : "Pick over 450 g sloes, removing leaves, stems and insects, and squeeze each sloe to push out the stone. Peel, core and finely dice 450 g apples. Put the fruit in a large pan with the zest and juice of 1 lemon and 250 ml water, cover, bring to the boil, then simmer for 10–15 minutes until the fruit softens to a pulp; if the apples stay firm and chunkier than you like, mash them down with a potato masher. Add 850 g caster sugar, and a dash more water if the pulp is too thick, and boil, stirring until the sugar dissolves. It reaches setting point fairly quickly because it is naturally high in pectin: put a blob on a plate in the fridge for a minute, and if it forms a skin it is ready. Spoon into sterilised dry jars with sterilised lids, leave to cool partly, put the lids on and store in the fridge, where it should keep for a few months.",
+        "title" : "Sloe and apple jam"
+      }
     ],
     "scientificName" : "Prunus spinosa",
     "sources" : [
-      "Identification, habitat and summary text: Wikipedia contributors. 'Prunus spinosa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Prunus_spinosa"
+      "Identification, summary, preparation and warning text: Wikipedia contributors. 'Prunus spinosa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026 (identification, summary) and 12/10/2026 (preparation, warning). https://en.wikipedia.org/wiki/Prunus_spinosa — quoted verbatim. The habitat text formerly credited to Wikipedia was distribution and stays in the summary; the article has no habitat sentence. Not used: 'is made from the young shoots in spring' (the French troussepinette and vin d'épine), because Useful Temperate Plants names the young shoots, with the seed, as the parts highest in cyanogenic glycosides; 'The leaves resemble tea leaves, and were used as an adulterant of tea', for the reason given against the leaf tea below.",
+      "Edible parts, habitat and warning text: Fern, Ken. Useful Temperate Plants, 'Prunus spinosa'. CC BY-NC-SA 3.0. Retrieved 12/10/2026. https://temperate.theferns.info/plant/Prunus+spinosa — quoted verbatim with the bracketed reference numbers removed; 'injested' is the source's spelling. Its two cyanide statements are both kept as written: Wikipedia's 'trace amounts' and this page's 'especially the seed and young shoots' are not reconciled here. The habitat line describes the plant in Britain and Europe; no openly licensed New Zealand habitat text was found — Flora of New Zealand Online has a name and biostatus only (Taxon profile, retrieved 12/10/2026; the Weed profile URL serves the same page). NOT used, deliberately: 'Seed - raw or cooked. Do not eat the seed if it is too bitter', which conflicts with both warnings; 'The leaves are used as a tea substitute', because nothing read here says how much cyanogenic glycoside the leaves carry; 'Some fruits that we ate in December were fairly pleasant raw', a northern month; 'In France the unripe fruit is pickled like an olive', because nothing read here addresses unripe fruit — the owner's call; the genus-level advice that a sweet or slightly bitter Prunus fruit or seed can be considered safe, which is not about this species; the sentence on cyanide symptoms in larger concentrations, which answers a medicinal sentence not quoted; the medicinal uses.",
+      "Facts read, not written into the page: Biota of New Zealand, Manaaki Whenua – Landcare Research, 'Prunus spinosa L.' (https://biotanz.landcareresearch.co.nz/scientific-names/ba573a17-6a9b-42c2-aeac-9d2076a3b9b8, retrieved 12/10/2026) — biostatus Exotic, Casual (not Naturalised); databased herbarium records from Canterbury and Nelson Land Districts. EdibleWildFood.com, 'Blackthorn' (all rights reserved; https://www.ediblewildfood.com/blackthorn.aspx) says it has naturalised in New Zealand, which Biota of New Zealand's Casual does not support; its 'Seeds can be eaten raw or cooked' was not used, for the reason above. iNaturalist has 7 New Zealand records, 1 research grade (12/10/2026).",
+      "Recipes: 'Sloe gin' restated from The BBC Food team, 'Sloe gin', BBC Food (all rights reserved; https://www.bbc.co.uk/food/recipes/sloegin_7722, retrieved 12/10/2026), including its recipe tips on ripeness, frost and freezing; its 'can be drunk as early as Christmas' was left out, a northern date. 'Sloe and apple jam' restated from Wildway Bushcraft, '5 Sloe Recipes' (all rights reserved; https://www.wildwaybushcraft.co.uk/sloe-recipes/, retrieved 12/10/2026); the same page's sloe gin was not used because it lists sugar but never says when to add it.",
+      "Links supplied by the owner and not used for text: EverydayEarth, 'Blackthorn' (https://everydayearth.ai/species/blackthorn) — a machine-written wildlife-camera template with no sources and northern calendar months, not a source of facts; Sipsmith, 'How to Forage for Sloes, Damsons and Other Autumn Fruits' (all rights reserved) — says to freeze sloes for a few days rather than wait for a frost, and that damsons look much like sloes but slightly larger, with fewer thorns, and bullace plums are similar; Wild Walks Southwest, 'Ten Sloe Fruit Recipes' — titles only, the recipes are in the author's books; BBC Food, 'Sloe' (all rights reserved) — sloes picked in September and October, a northern calendar, not converted.",
+      "Months [2, 3, 4, 5] set 12/10/2026. Season words for this species: Wikipedia 'ripening in late autumn', EdibleWildFood 'ripens in autumn'; read as the New Zealand season (March–May) on the owner's 12/10/2026 ruling (precedent black-cherry). February added from New Zealand records, checked by eye: iNaturalist obs 105973863 (research grade, annotated fruiting, 01/02/2022) and obs 9964316 (needs ID, 23/02/2018), both at Awarua Wetlands, Southland, show black fruit with a blue bloom on the bush. They show colour, not ripeness; Wikipedia dates ripening to late autumn. Northern calendar months not converted: BBC Food 'September and October'; Wikipedia's United Kingdom 'October or November'. No New Zealand source found that dates ripe fruit.",
+      "Habitat tags 12/10/2026: forest and shrubland from classify_habitats on the habitat text (woods; hedgerows); grassland from iNaturalist obs 9964316 ('A small spreading patch on the edge of rough pasture', Awarua); urban from obs 371063269 ('Self seeded in back yard', Sumner) and obs 240231725 (a garden slope outside Timaru Museum). wetland not tagged although two records are at Awarua Wetlands, because the observer places the plant on a pasture edge.",
+      "OPEN LEAD, lookalike cards (not written): Wikipedia says it is frequently confused with cherry plum, Prunus cerasifera (entry cherry-plum, a draft), and its identification text gives the tests; Sipsmith names damson and bullace; no entry was checked for either. Cards are to be built by the sweep method, from a trusted description of each species.",
+      "Photos verified 12/10/2026 against the iNaturalist API, each matched to its source frame by image comparison: blackthorn-2 = obs 108763997 photo 183185453 (Ancona, Italy); -4 = obs 32656302 photo 51235476 (Runcorn, England; CC0); -6 = obs 398946097 photo 731897726 (Bockfließ, Austria; CC BY-NC); -1 = obs 140879459 photo 241222832 (Krikonys, Lithuania; CC BY-NC; checked 12/10/2026, replacing the owner's earlier blackthorn-7, obs 301777503). All research grade with no dissenting current identification; credits match each photo's licence. A Dartmoor frame (obs 30651812) was removed by the owner on 12/10/2026 rather than captioned. None is from New Zealand; a photo is judged on species, not geography."
     ],
-    "sourcingNote" : "Owed: months. Empty reads as year-round, but the part collected here is seasonal (owner, 12/10/2026: months are the window the collected part is available, not how long the plant is alive). Set it from New Zealand records or an NZ source, a book the owner owns, the owner's word, or a source's season word for this species read as the NZ season (\"late summer\" = about February, padded a month for spread) — never a northern source's calendar months shifted by six, and never a different species' season. Precedent: black-cherry.",
     "summary" : {
       "sources" : [
         "Wikipedia, 'Prunus spinosa' (CC BY-SA 4.0)"
@@ -2267,7 +2311,8 @@
       "text" : "Prunus spinosa, called blackthorn or sloe, is a species of flowering plant in the rose family, Rosaceae.\nP. spinosa is native to Europe, western Asia, and locally in northwest Africa. It is also locally naturalised in Tasmania and eastern North America."
     },
     "warnings" : [
-
+      "Like many other stone fruit with stones, the seed in the stone contains trace amounts of hydrogen cyanide.",
+      "The plant (especially the seed and young shoots) contains cyanogenic glycosides, especially amygdalin and prunasin. When injested, these compounds break down in the digestive tract to release cyanide."
     ]
   },
   {
