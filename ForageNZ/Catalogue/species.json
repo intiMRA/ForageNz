@@ -1157,19 +1157,19 @@
   {
     "caution" : "careRequired",
     "commonName" : "Bermuda buttercup",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Wikipedia, 'Oxalis pes-caprae' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "The plant is palatable and in modest quantities is reasonably harmless to humans and livestock. The lateral underground runners, which tend to be fleshy, have been eaten raw or boiled and served with milk."
     },
     "group" : "greens",
     "habitat" : {
       "sources" : [
-
+        "Pacific Bulb Society wiki, 'Oxalis pes-caprae' (CC BY-NC-SA 3.0 US). Copyright Pacific Bulb Society, www.pacificbulbsociety.org."
       ],
-      "text" : ""
+      "text" : "It grows in sandy soil in Namibia, Namaqualand and the western Cape."
     },
     "habitats" : [
 
@@ -1177,12 +1177,33 @@
     "id" : "bermuda-buttercup",
     "identification" : {
       "sources" : [
-        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)",
+        "Pacific Bulb Society wiki, 'Oxalis pes-caprae' (CC BY-NC-SA 3.0 US). Copyright Pacific Bulb Society, www.pacificbulbsociety.org."
       ],
-      "text" : "Perennial herb, apparently acaulous but with underground stolons bearing numerous bulbils near the apex;  contractile roots thick, fleshy, glassy white; bulb to  c. 3 cm long, ovoid;  tunic pale brown, 5–7-nerved.  Lvs 3-foliolate, radical.  Petiole 6–22 cm long, ± hairy;  stipules membranous, glabrous or nearly so.  Lamina sessile (that of terminal leaflet somewhat larger than laterals), 10–32 × 12–35 mm, shallowly to deeply 2-lobed to  c. 1/2 way, glabrous above, ± sericeous and finely reticulate below;  base narrow-cuneate;  lobes oblong to almost obovate;  apex rounded.  Fls (1)–3–18, in pseudoumbels, pendent;  peduncles (7)–15–45 cm long, glabrous to sparsely hairy;  pedicels to 2 cm long, densely clothed in glandular hairs.  Bracts at base of pedicels, c. 2.5 mm long, lanceolate, hairy, with apical calli.  Sepals 5–6.5 mm long, lanceolate or oblong-lanceolate, with glandular hairs mainly towards base, or nearly glabrous;  calli 2, apical, usually orange, sometimes yellow.  Petals (1.5)–2–2.8 cm long, obovate with narrow claw, golden, sometimes red-margined, with appressed hairs outside or almost glabrous.  Stamens at 2 levels, glabrous; filaments appendaged below,  c. 7 mm long in the 2 common stylar morphs, 5 mm long in the rare long-style morph.  Styles either < or nearly = lower stamen whorl (short-styled clone), > lower stamen whorl (mid-style clone), or = or > upper stamen whorl (long-style clone), hairy.  Capsule not seen.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
+      "text" : "Perennial herb, apparently acaulous but with underground stolons bearing numerous bulbils near the apex;  contractile roots thick, fleshy, glassy white; bulb to  c. 3 cm long, ovoid;  tunic pale brown, 5–7-nerved.  Lvs 3-foliolate, radical.  Petiole 6–22 cm long, ± hairy;  stipules membranous, glabrous or nearly so.  Lamina sessile (that of terminal leaflet somewhat larger than laterals), 10–32 × 12–35 mm, shallowly to deeply 2-lobed to  c. 1/2 way, glabrous above, ± sericeous and finely reticulate below;  base narrow-cuneate;  lobes oblong to almost obovate;  apex rounded.  Fls (1)–3–18, in pseudoumbels, pendent;  peduncles (7)–15–45 cm long, glabrous to sparsely hairy;  pedicels to 2 cm long, densely clothed in glandular hairs.  Bracts at base of pedicels, c. 2.5 mm long, lanceolate, hairy, with apical calli.  Sepals 5–6.5 mm long, lanceolate or oblong-lanceolate, with glandular hairs mainly towards base, or nearly glabrous;  calli 2, apical, usually orange, sometimes yellow.  Petals (1.5)–2–2.8 cm long, obovate with narrow claw, golden, sometimes red-margined, with appressed hairs outside or almost glabrous.  Stamens at 2 levels, glabrous; filaments appendaged below,  c. 7 mm long in the 2 common stylar morphs, 5 mm long in the rare long-style morph.  Styles either < or nearly = lower stamen whorl (short-styled clone), > lower stamen whorl (mid-style clone), or = or > upper stamen whorl (long-style clone), hairy.  Capsule not seen.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]\n\nIt is a tall robust species (15-30 cm.) that develops numerous bulbils and has bright yellow flowers in an umbel. The leaves are trifoliate, often with purple edges or dots."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "white-clover",
+        "howToTell" : "In flower: white clover packs numerous flowers, each with a corolla 8–12 mm long, usually white and occasionally pink to reddish, into a globe-shaped head. Bermuda buttercup has separate golden flowers with petals (1.5)–2–2.8 cm long, usually 3–18 of them (occasionally 1) hanging from the top of a stalk (7)–15–45 cm long. Out of flower it can be mistaken for clover, and the leaves do not settle it: white clover's leaflets range from elliptic to obcordate, so they can be notched at the tip like Bermuda buttercup's, and the sizes overlap (white clover c. 5–25 mm long, Bermuda buttercup 10–32 mm). Both often carry markings on the leaf — light or dark on white clover, purple dots on Bermuda buttercup. Look instead at how the plant grows: white clover's stems creep along the ground and root at the nodes, while Bermuda buttercup grows upright from a bulb, with a single short stem that is mostly underground and its leaves in a loose rosette at the soil surface, though it can also send out a runner that starts a new plant above ground. Season is no help: in New Zealand white clover flowers July to March and Bermuda buttercup is recorded flowering in every month, so both are in flower from July to March.",
+        "name" : "White clover",
+        "risk" : "edible",
+        "scientificName" : "Trifolium repens"
+      },
+      {
+        "entry" : "creeping-wood-sorrel",
+        "howToTell" : "Both have yellow flowers and three heart-shaped leaflets, and both can have purple in the leaf, so none of those separates them; leaflet sizes overlap too (creeping wood sorrel (2.5)–5–18 mm long, Bermuda buttercup 10–32 mm). Look at how the plant grows: creeping wood sorrel has slender, branched stems up to c. 40 cm long that lie along the ground or rise a little, carry the leaves, and often root at the nodes; Bermuda buttercup grows upright from a bulb, with a single short stem that is mostly underground and its leaves in a loose rosette at the soil surface, though it can also send out a runner that starts a new plant above ground. Then the flowers: creeping wood sorrel carries 1–5 on a stalk 1–4 cm long, with petals 4.5–10–(13) mm long; Bermuda buttercup usually carries 3–18 (occasionally 1), hanging, on a stalk (7)–15–45 cm long, with golden petals (1.5)–2–2.8 cm long. Creeping wood sorrel sets erect, cylindrical capsules, usually hairy, (6)–10–18–(20) mm long, that burst and throw out their seeds; Flora of New Zealand records no capsule on Bermuda buttercup.",
+        "name" : "Creeping wood sorrel",
+        "risk" : "edible",
+        "scientificName" : "Oxalis corniculata"
+      },
+      {
+        "entry" : "least-yellow-sorrel",
+        "howToTell" : "Both have yellow flowers and three notched leaflets, and both can have purple in the leaf, so none of those separates them. Size is the first test, but the ranges almost meet: least yellow sorrel's leaflets are 1–9 mm long and 1.5–12 mm wide, Bermuda buttercup's 10–32 mm long and 12–35 mm wide; least yellow sorrel's petals are 4.5–9–(13) mm long, Bermuda buttercup's (1.5)–2–2.8 cm. Then how it grows: least yellow sorrel creeps on more or less thread-like stems, prostrate or nearly so, that root at the nodes and often form mats; Bermuda buttercup grows upright from a bulb, with a single short stem that is mostly underground and its leaves in a loose rosette at the soil surface, though it can also send out a runner that starts a new plant above ground. Least yellow sorrel's flowers are solitary, rarely paired; Bermuda buttercup usually carries 3–18 (occasionally 1), hanging, on a stalk (7)–15–45 cm long. Least yellow sorrel sets a capsule (3)–7–10–(13) mm long; Flora of New Zealand records no capsule on Bermuda buttercup.",
+        "name" : "Least yellow sorrel",
+        "risk" : "edible",
+        "scientificName" : "Oxalis exilis"
+      }
     ],
     "months" : [
       6,
@@ -1195,32 +1216,70 @@
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) naturalist132890, some rights reserved (CC BY)",
+        "fileName" : "bermuda-buttercup-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/322347847"
+      },
+      {
+        "caption" : "Photo of plant flowering",
+        "credit" : "no rights reserved",
+        "fileName" : "bermuda-buttercup-2.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/4030815"
+      },
+      {
+        "caption" : "Close up of leaves",
+        "credit" : "(c) Grey Smith, some rights reserved (CC BY)",
+        "fileName" : "bermuda-buttercup-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/136098460"
+      },
+      {
+        "caption" : "Close up of leaves",
+        "credit" : "(c) Mel, some rights reserved (CC BY-NC)",
+        "fileName" : "bermuda-buttercup-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/176888312"
+      }
     ],
     "preparation" : {
       "sources" : [
-
+        "Wikipedia, 'Oxalis pes-caprae' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "In South Africa it is a traditional ingredient in dishes such as waterblommetjiebredie ('water flower stew')."
     },
     "recipes" : [
-
+      {
+        "method" : "Make the filling first; the pastry needs no resting. Bring 2.5 cm of water to the boil in a large pot, pack in about 680 g of leafy greens (spinach, Swiss chard leaves, nettles, lamb's quarters, amaranth or quickweed), cover and cook on high for 2 minutes, stir, then cook 2 minutes more until just tender but still bright green. If you use nettles, cover them in boiling water instead and cook about 5 minutes. Drain, refresh in cold water, squeeze as dry as you can, roll in a clean tea towel to press out the rest, and chop roughly. Beat 3 egg yolks and 1 egg with 1 cup crème fraîche or sour cream, ½ cup whipping cream, ¼ tsp salt and plenty of black pepper, then stir in the greens and 3 tbsp chopped Bermuda buttercup stems, adding more salt if needed. For the pastry, stir 2¼ cups plain flour, ¼ tsp salt, ½ cup extra virgin olive oil and ½ cup tepid water together and form a ball. Heat the oven to 200 °C. Roll the pastry into a disc about 30 cm across on an oiled or lined baking tray, turn up and crimp the edge into a lip, spread in the filling and bake 40–45 minutes, until the pastry is crisp and the centre is set.",
+        "title" : "Leafy green tart with Bermuda buttercup"
+      },
+      {
+        "method" : "Cook pasta of your choice as the packet directs, drain and return it to the pot. Stir in olive oil or butter until melted, then add shredded parmesan (or any cheese), a couple of handfuls of Bermuda buttercup flowers and leaves, and salt and pepper to taste. Toss and serve.",
+        "title" : "Sour grass pasta"
+      }
     ],
     "scientificName" : "Oxalis pes-caprae",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Bermuda buttercup' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Oxalis pes-caprae' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Oxalis-pes-caprae.html",
       "Summary text: Wikipedia contributors. 'Oxalis pes-caprae', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Oxalis_pes-caprae",
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Bermuda buttercup' entry."
+      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Bermuda buttercup' entry.",
+      "Habitat and identification text: Pacific Bulb Society wiki, 'Oxalis pes-caprae'. Text CC BY-NC-SA 3.0 US (photographs all rights reserved, not used). Copyright Pacific Bulb Society, www.pacificbulbsociety.org. Retrieved 10/10/2026. https://www.pacificbulbsociety.org/pbswiki/index.php/Oxalis_pes-caprae — licence read on the wiki's Copyright page. Its habitat sentence describes the plant in its native range; no openly licensed New Zealand habitat text was found.",
+      "Edible parts, preparation, summary and warning text: Wikipedia contributors. 'Oxalis pes-caprae', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 10/10/2026. https://en.wikipedia.org/wiki/Oxalis_pes-caprae — quoted verbatim. The warning is two sentences from the Hazards section, which Wikipedia tags 'Original research' (November 2012); those two sentences cite Bown 1995, Sturtevant 1972 and Chai & Liebman 2005. The runners-eaten-raw-or-boiled sentence cites Watt & Breyer-Brandwijk 1962; the waterblommetjiebredie sentence cites de Villiers 2010. Not used: the raw bulbs used against tapeworm and the plant used as a diuretic ('possibly hazardously'), which are medicinal; and the Hazards paragraphs on livestock deaths, which concern stock and carry 'citation needed' tags.",
+      "Facts read, not written into the page: NZPCN (all rights reserved; https://www.nzpcn.org.nz/flora/species/oxalis-pes-caprae/) gives biostatus Exotic, naturalised 1883, origin South Africa, reproducing by bulbils. Flora of New Zealand Online (CC BY 3.0 NZ) gives flowering Jan.–Dec. and cites Connor 1977, The Poisonous Plants in New Zealand; its Weed-tab URL redirects to the Taxon profile, which has no habitat line. Weeds Australia (Centre for Invasive Species Solutions, all rights reserved; https://weeds.org.au/profiles/soursob-bermuda-buttercup/) says it is poisonous to stock because of oxalate in all its parts and mildly toxic to humans especially if eaten in large quantities; that it can be mistaken for clover when not in flower or for other weedy Oxalis species; that hand removal after bulbil formation spreads the bulbils; and that in Australia it flowers June to October. Plants of the World Online was behind Cloudflare and was not read.",
+      "Months not changed, 10/10/2026. The iNaturalist New Zealand month histogram (place 6803, research grade, n=696) peaks in September (198) and at a quarter of the peak admits June to October; the entry's months also include November (3 records). Weeds Australia says rising temperatures kill the aerial growth after flowering, and the Pacific Bulb Society describes a dry summer dormancy, so the leaves are above ground over much the same months the records fall in.",
+      "Recipe 1: restated from Viljoen, Marie. 'Bermuda Buttercup: Neither Bermudan Nor a Buttercup', Gardenista, 30/09/2024 (all rights reserved), 'Leafy Green Tart with Bermuda Buttercup', itself adapted from her book Forage, Harvest, Feast. Read from the Wayback Machine copy of 17/06/2025, because the live page is behind Cloudflare. https://www.gardenista.com/posts/bermuda-buttercup-recipe/ — quantities converted to metric (1½ lb ≈ 680 g, 1 inch ≈ 2.5 cm, 400 °F ≈ 200 °C, 12 inches ≈ 30 cm); cups and spoons kept as given. The same article says the stems are very sour and edible, that she uses it as a substitute for lemon juice, no more than a few tablespoons at a time, and that it is high in oxalates, so eating a large quantity regularly would be anti-nutritional and bad for ailing kidneys — not quoted, because the page is all rights reserved.",
+      "Recipe 2: restated from Wilderness Youth Project, 'Sour Grass Pasta' (Santa Barbara, California; no licence stated). Read from the Wayback Machine copy of 20/07/2024, because the live page returns 403. https://wyp.org/resource-portal/activities/sour-grass-pasta/ — it uses the flowers and leaves and gives no quantities beyond 'a couple handfuls'.",
+      "OWED, harvestEthics: a person's sentence. Facts to write from: Wikipedia says pulling up the plant, even with the roots, can leave some of the bulbs behind; Weeds Australia says hand removal after bulbil formation dislodges the bulbils and spreads them; Gardenista says it spreads faster when dug up. Weeds Australia lists New Zealand among the countries where it is a troublesome weed; NZPCN gives it as naturalised in 1883.",
+      "Lookalike cards to white clover, creeping wood sorrel and least yellow sorrel, written by the assistant on the owner's instruction and REWRITTEN 11/10/2026 after the owner required every claim to rest on a trusted source (\"we do not make unsubstantiated claims. People could die\"). Every figure and character now comes from Flora of New Zealand Online's descriptions of the four species (Webb et al. 1988; CC BY 3.0 NZ) or from UC IPM Pest Notes 7444, 'Creeping Woodsorrel and Bermuda Buttercup' (LeStrange, Cudney & Elmore, 06/2010; © Regents of the University of California, facts only), https://ipm.ucanr.edu/PMG/PESTNOTES/pn7444.html; the per-test sources are on each target page. What the rewrite corrected in the first version: (1) leaflet shape was used to separate white clover, but Flora of New Zealand gives white clover leaflets up to obcordate, so it is now listed as NOT a test; (2) 'no stem above ground' was too strong — UC IPM says it can send out a runner that forms a new aboveground plant, and Weeds Australia that the rhizome can stand above the soil in shade; (3) flower count was used as if single flowers excluded Bermuda buttercup, but its range is (1)–3–18; (4) creeping wood sorrel's 'single flower to over 20' (Wikipedia) is replaced by Flora of New Zealand's 1–5; (5) creeping wood sorrel's 'small' flowers are replaced by its measured petals. Chosen because Weeds Australia says it can be mistaken for clover when not in flower or for other weedy Oxalis; the two Oxalis are the yellow-flowered ones with entries. All three targets are drafts, so the cards open unshipped pages, accepted by the owner on 11/10/2026. Risk edible for white clover from its own page; creeping wood sorrel from Wikipedia 'Oxalis corniculata' (CC BY-SA 4.0); least yellow sorrel from Ken Fern, Useful Temperate Plants 'Oxalis exilis' (CC BY-NC-SA 3.0)."
     ],
     "summary" : {
       "sources" : [
         "Wikipedia, 'Oxalis pes-caprae' (CC BY-SA 4.0)"
       ],
-      "text" : "Oxalis pes-caprae is a species of tristylous yellow-flowering plant in the wood sorrel family Oxalidaceae."
+      "text" : "Oxalis pes-caprae is a species of tristylous yellow-flowering plant in the wood sorrel family Oxalidaceae. Some of the most common names for the plant reference its sour taste owing to oxalic acid present in its tissues. Indigenous to South Africa, the plant has become a pest plant in different parts of the world that is difficult to eradicate because of how it propagates through underground bulbs. In the non-native range the plants largely reproduce vegetatively and many populations have only one style length and the plants never produce seed."
     },
     "warnings" : [
-
+      "The leaves or roots are used in some parts of the world as a food, although the high levels of calcium oxalate in the plant may bear some risks. Such risks can be reduced if the plant parts are boiled first."
     ]
   },
   {
@@ -5249,7 +5308,13 @@
       "text" : "It has a narrow, creeping stem that easily takes root at the nodes. Its trifoliate leaves are subdivided into three rounded leaflets, resembling a clover. Some varieties have green leaves, while others, such as Oxalis corniculata var. atropurpurea, have purple leaves. There are inconspicuous stipules at the base of each petiole. The small, yellow flowers have either round-edged or sharp-ended petals. The flowers close when the plant is not within direct sunlight, hence the name \"sleeping beauty\". Some specimens can have a single flower while others can have over 20.\n\nThe fruit is a narrow, cylindrical capsule, 1–2 cm long, and noteworthy for its explosive discharge of the contained seeds, 1 mm long. Pollen is about 34 microns in diameter."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "bermuda-buttercup",
+        "howToTell" : "Creeping wood sorrel spreads on slender, branched stems up to c. 40 cm long that lie along the ground or rise a little, carry the leaves, and often root at the nodes. Bermuda buttercup grows upright from a bulb, with a single short stem that is mostly underground and its leaves in a loose rosette at the soil surface, though it can also send out a runner that starts a new plant above ground. Its flower stalks are (7)–15–45 cm long, against creeping wood sorrel's 1–4 cm (to 9.5 cm in fruit), and usually carry 3–18 hanging flowers (occasionally 1) with golden petals (1.5)–2–2.8 cm long; creeping wood sorrel carries 1–5 flowers with petals 4.5–10–(13) mm long. Creeping wood sorrel sets erect, cylindrical capsules, usually hairy, (6)–10–18–(20) mm long; Flora of New Zealand records no capsule on Bermuda buttercup. Yellow flowers, heart-shaped leaflets, leaflet size and purple in the leaf do not separate them.",
+        "name" : "Bermuda buttercup",
+        "risk" : "edible",
+        "scientificName" : "Oxalis pes-caprae"
+      }
     ],
     "months" : [
       6,
@@ -5274,7 +5339,8 @@
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Creeping wood sorrel' entry.",
       "Identification, habitat and summary text: Wikipedia contributors. 'Oxalis corniculata', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Oxalis_corniculata",
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013)."
+      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
+      "Card to/from Bermuda buttercup, rewritten 11/10/2026 after the owner required every claim to rest on a trusted source. Creeping wood sorrel's stems (prostrate to suberect, to c. 40 cm, slender, branched, often rooting at nodes), leaves green or purple, leaflets (2.5)–5–18 mm long and obcordate, inflorescence 1–5-flowered on a peduncle 1–4 cm (to 9.5 cm in fruit), petals 4.5–10–(13) mm, capsule (6)–10–18–(20) mm, cylindric, usually hairy: Flora of New Zealand Online (Webb et al. 1988; CC BY 3.0 NZ), retrieved 11/10/2026, https://www.nzflora.info/factsheet/Taxon/Oxalis-corniculata.html. Capsules erect and bursting to expel the seeds; Bermuda buttercup upright, with a single short vertical stem mostly underground and a loose basal rosette: UC IPM Pest Notes 7444, 'Creeping Woodsorrel and Bermuda Buttercup' (LeStrange, Cudney & Elmore, 06/2010; © Regents of the University of California, facts only), https://ipm.ucanr.edu/PMG/PESTNOTES/pn7444.html. Bermuda buttercup's flowers, leaflets and 'Capsule not seen': Flora of New Zealand Online (Webb et al. 1988; CC BY 3.0 NZ), retrieved 11/10/2026. CONFLICT: this page's identification text (Wikipedia) says a plant can carry over 20 flowers; Flora of New Zealand gives 1–5 per inflorescence, and UC IPM 2 to 5. The card follows Flora of New Zealand. Risk edible because the Bermuda buttercup page says the plant is palatable and eaten, with an oxalate warning."
     ],
     "summary" : {
       "sources" : [
@@ -11632,7 +11698,13 @@
       "text" : "Perennial;  primary root slender to stout, occasionally to  c. 10 mm thick. Stems glabrous to densely hairy (hairs usually antrorse, occasionally dense and patent), ± filiform, creeping, prostrate or nearly so, rooting at nodes, much-branched and often mat-forming.  Lvs 3-foliolate.  Petiole 5–40 mm long, with patent or antrorse hairs, these sparse to dense;  stipules adnate, truncate or rounded at apex.  Petiolules very short.  Lamina of leaflets equal, 1–9 × 1.5–12 mm, obcordate, sometimes broadly so, with width > length, with narrow to broad sinus and rounded lobes, glabrous or hairy above, glabrate or with appressed hairs beneath, ciliate or eciliate, often purplish below;  calli 0.  Fls solitary, rarely paired;  peduncle glabrate to densely clothed in antrorse hairs, generally geniculate at apex;  pedicel (4)–8–25 mm long. Bracts 1–3 mm long, ± linear-subulate, hairy, situated at base or at middle of pedicels;  calli 0.  Sepals 2.3–3.5–(4) mm long, oblong-lanceolate, oblong, or ovate-elliptic, glabrate or with antrorse hairs;  calli 0.  Petals 4.5–9–(13) mm long, ± oblong-obovate, yellow, often pink-flushed outside, glabrous.  Stamens at 2 levels, glabrous or nearly so;  filaments united at base, those of longer whorl  c. 1.5 mm long.  Styles < or > longer stamens, densely hairy.  Capsule (3)–7–10–(13) mm long excluding styles, broadly cylindric, cylindric-ovoid or conic, glabrous to densely hairy; hairs short, patent or retrorse, sometimes glandular.  Seed 1–1.3–(1.5) mm long, broad-ellipsoid;  transverse ridges 7–13, subacute, sometimes white-topped; grooves deep.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "bermuda-buttercup",
+        "howToTell" : "Least yellow sorrel creeps: its stems are more or less thread-like, prostrate or nearly so, root at the nodes and often form mats. Bermuda buttercup grows upright from a bulb, with a single short stem that is mostly underground and its leaves in a loose rosette at the soil surface, though it can also send out a runner that starts a new plant above ground. Measure a leaflet and a petal, remembering the ranges almost meet: least yellow sorrel's leaflets are 1–9 mm long and its petals 4.5–9–(13) mm; Bermuda buttercup's leaflets are 10–32 mm long and its golden petals (1.5)–2–2.8 cm. Least yellow sorrel's flowers are solitary, rarely paired, and it sets a capsule (3)–7–10–(13) mm long; Bermuda buttercup usually carries 3–18 flowers (occasionally 1) hanging on a stalk (7)–15–45 cm long, and Flora of New Zealand records no capsule on it. Yellow flowers, notched leaflets and purple in the leaf do not separate them.",
+        "name" : "Bermuda buttercup",
+        "risk" : "edible",
+        "scientificName" : "Oxalis pes-caprae"
+      }
     ],
     "months" : [
 
@@ -11655,7 +11727,8 @@
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Least yellow sorrel' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Oxalis exilis' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Oxalis-exilis.html",
-      "Summary text: Wikipedia contributors. 'Oxalis exilis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Oxalis_exilis"
+      "Summary text: Wikipedia contributors. 'Oxalis exilis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Oxalis_exilis",
+      "Card to/from Bermuda buttercup, rewritten 11/10/2026 after the owner required every claim to rest on a trusted source. Least yellow sorrel's stems, leaflets (1–9 × 1.5–12 mm, often purplish below), solitary or rarely paired flowers, petals and capsule: Flora of New Zealand Online (Webb et al. 1988; CC BY 3.0 NZ), retrieved 11/10/2026, https://www.nzflora.info/factsheet/Taxon/Oxalis-exilis.html (also this page's identification text). Bermuda buttercup's leaflets (10–32 × 12–35 mm), flowers and 'Capsule not seen': Flora of New Zealand Online (Webb et al. 1988; CC BY 3.0 NZ), retrieved 11/10/2026. Its growth form and purple-dotted leaves: UC IPM Pest Notes 7444, 'Creeping Woodsorrel and Bermuda Buttercup' (LeStrange, Cudney & Elmore, 06/2010; © Regents of the University of California, facts only), https://ipm.ucanr.edu/PMG/PESTNOTES/pn7444.html. The leaflet ranges nearly touch (length 9 mm against 10 mm; width both reach 12 mm), which the card says. Risk edible because the Bermuda buttercup page says the plant is palatable and eaten, with an oxalate warning."
     ],
     "summary" : {
       "sources" : [
@@ -24659,6 +24732,13 @@
         "name" : "Red clover",
         "risk" : "edible",
         "scientificName" : "Trifolium pratense"
+      },
+      {
+        "entry" : "bermuda-buttercup",
+        "howToTell" : "If it is flowering, look at the flower: white clover packs numerous flowers, each with a corolla 8–12 mm long, usually white and occasionally pink to reddish, into a globe-shaped head, while Bermuda buttercup has separate golden flowers with petals (1.5)–2–2.8 cm long, usually 3–18 (occasionally 1) hanging together at the top of a stalk (7)–15–45 cm long. Without flowers, check the stems: white clover's creep along the ground and root at the nodes; Bermuda buttercup grows upright from a bulb, with a single short stem that is mostly underground and its leaves in a loose rosette at the soil surface, though it can also send out a runner that starts a new plant above ground. Leaf shape and size do not separate them: white clover's leaflets range from elliptic to obcordate and are c. 5–25 mm long, Bermuda buttercup's are shallowly to deeply two-lobed and 10–32 mm long. Leaf markings do not separate them either. Season is no help: in New Zealand white clover flowers July to March and Bermuda buttercup is recorded flowering in every month.",
+        "name" : "Bermuda buttercup",
+        "risk" : "edible",
+        "scientificName" : "Oxalis pes-caprae"
       }
     ],
     "months" : [
@@ -24712,7 +24792,8 @@
       "Recipes: Forage Create Love, 'Three of my favourite clover recipes'. Retrieved 01/10/2026. https://www.foragecreatelove.com/posts/three-of-my-favourite-clover-recipes/ — all rights reserved and no author named, so the method is paraphrased, not quoted.",
       "Edible parts, preparation and warnings text: Wikipedia contributors. 'Trifolium repens', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 01/10/2026. https://en.wikipedia.org/wiki/Trifolium_repens",
       "The cyanogenic-glycoside phenotype note is corroborated by Practical Plants, 'Trifolium repens'. CC BY-NC-SA. Retrieved 01/10/2026. https://practicalplants.org/wiki/trifolium_repens/",
-      "Lookalike text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Trifolium repens', 'Trifolium hybridum' and 'Trifolium pratense' factsheets, from Webb et al. (1988) Flora of New Zealand Volume 4. CC BY 3.0 NZ. Retrieved 01/10/2026. https://www.nzflora.info/factsheet/Taxon/Trifolium-repens.html"
+      "Lookalike text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Trifolium repens', 'Trifolium hybridum' and 'Trifolium pratense' factsheets, from Webb et al. (1988) Flora of New Zealand Volume 4. CC BY 3.0 NZ. Retrieved 01/10/2026. https://www.nzflora.info/factsheet/Taxon/Trifolium-repens.html",
+      "Card to/from Bermuda buttercup, rewritten 11/10/2026 after the owner required every claim to rest on a trusted source. Each test and its source: white clover's flowers (numerous, in a globose head; corolla 8–12 mm, usually white, occasionally pink to reddish), leaflets (obovate to elliptic or suborbicular, obtuse to obcordate, c. 5–25 mm long, often with light or dark markings), creeping stems rooting at the nodes and flowering Jul.–Mar.: Flora of New Zealand Online (Webb et al. 1988; CC BY 3.0 NZ), retrieved 11/10/2026, https://www.nzflora.info/factsheet/Taxon/Trifolium-repens.html. Bermuda buttercup's flowers, leaflets and Jan.–Dec. flowering: Flora of New Zealand Online (Webb et al. 1988; CC BY 3.0 NZ), retrieved 11/10/2026, 'Oxalis pes-caprae'. Its single short vertical stem, mostly underground, loose basal rosette, purple-dotted leaves and runner that can form a new aboveground plant: UC IPM Pest Notes 7444, 'Creeping Woodsorrel and Bermuda Buttercup' (LeStrange, Cudney & Elmore, 06/2010; © Regents of the University of California, facts only), https://ipm.ucanr.edu/PMG/PESTNOTES/pn7444.html. That it can be mistaken for clover when not in flower: Weeds Australia (all rights reserved). CORRECTION: the first version of this card (10–11/10) said white clover's leaflets are 'elliptic to egg-shaped' while Bermuda buttercup's are two-lobed, as a test. Flora of New Zealand gives white clover's as up to obcordate, so leaflet shape is NOT a test, and the card now says so. This page's identification text (Wikipedia) says 'elliptic to egg-shaped'; the NZ Flora description is the wider one. Risk edible because the Bermuda buttercup page says the plant is palatable and eaten, with an oxalate warning."
     ],
     "summary" : {
       "sources" : [
