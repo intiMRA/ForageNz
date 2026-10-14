@@ -1,6 +1,7 @@
 # Plan: user lists — "Favourites", "Found", "Wanted", …
 
-**Status:** planned, not started. Written 11/09/2026. Nothing in the app depends on this yet.
+**Status:** planned, not started. Written 11/09/2026; finds and the map added 12/10/2026. Nothing in
+the app depends on this yet.
 
 ## Goal
 
@@ -113,6 +114,45 @@ takes the lists snapshot as input the same way it takes the store — it stays a
   made-up raw id into the in-memory store.
 - UI test: add dandelion to Favourites, relaunch, see it in the Lists tab.
 
+## Finds and the map (owner, 12/10/2026)
+
+**What was asked:** "you can add a location of a place that you found it. we should have a mapview
+with the observations that should each link to a species in the catalogue."
+
+- **Recording a find.** Adding a species to "Found" offers **Use my location**, which takes one fix
+  through the existing `LocationProvider` (`ForageNZ/WhereYouAre/LocationProvider.swift`: one fix,
+  then stop) and stores it in `ListEntry.latitude` / `longitude`. The fields are already in the
+  model above. Still opt-in for each find, never automatic. A find with no location is still a
+  find; it just does not appear on the map. Also allow the user to **drop or move the pin by hand**,
+  because a fix under heavy bush can be poor, or the user may log the find later at home.
+- **The map.** A `Map` (MapKit, SwiftUI) showing one annotation for each find that has a location.
+  Tapping a pin shows the species' name and photo, and opens the catalogue page through
+  `SpeciesRowLink`, so navigation stays the one route. A find whose `speciesID` is `nil` (the
+  species has since been removed from the guide) still shows a pin, labelled "no longer in the
+  guide", and does not link anywhere. Filter by list and by species; when pins are close together,
+  cluster them.
+- **Where it lives.** Either a Map view inside the Lists tab or a fifth tab; decide alongside open
+  decision 4.
+- **Repository.** `SpeciesListsRepository` gains `setLocation(_:for:)` (and clearing it), and
+  `ListEntrySnapshot` carries the coordinate as the existing `Coordinate` value type, so CoreLocation
+  stays out of the package. The factory maps snapshots to a `FindPinModel` (id, coordinate, title,
+  `SpeciesID?`, thumbnail name). The map view renders models; it queries nothing.
+- **Three things that change existing promises, so they need an explicit yes:**
+  1. **The location permission string** (`INFOPLIST_KEY_NSLocationWhenInUseUsageDescription`) says
+     the app only checks your position against DOC boundaries and that "your location is never sent
+     anywhere". Storing finds is a new use, so the string must say so. Stored finds stay on the device.
+  2. **Map tiles come from Apple's servers.** Showing the map sends the region being viewed to Apple
+     (not the stored finds), and without a signal the tiles may not load. The app is offline-first,
+     so the pins must also be readable as a list (species, date, coordinates) when the tiles are
+     missing.
+  3. **Foraging spots are sensitive.** Do not export or share finds, and do not put coordinates in
+     logs or crash reports. CloudKit sync (open decision 2) would put them in the user's iCloud,
+     which is a decision in its own right.
+- **Tests.** Pin models from snapshots (with and without a location; species removed); location set
+  and cleared through `InMemorySpeciesListsRepository`; a denied permission saves the find without a
+  location and shows `LocationError.userMessage`; a UI test that logs a find with a stubbed location,
+  opens the map and taps through to the species page.
+
 ## Open decisions (decide before starting)
 
 1. **Built-in lists** — ship "Favourites" and "Found" pre-created? Deletable? Renamable? Leaning:
@@ -121,8 +161,8 @@ takes the lists snapshot as input the same way it takes the store — it stays a
    the shape CloudKit requires (defaults everywhere, optional relationships, no unique
    constraints), so this is a container-configuration switch plus an entitlement, not a
    remodel. Still decide up front: sync changes how conflicts and deletions behave.
-3. **"Found" as a log** — if yes, add location (and optionally a photo reference) to `ListEntry`
-   from the start, and the Where-you-are location code becomes reusable here.
+3. ~~**"Found" as a log**~~ — **decided 12/10/2026: yes.** A find records where it was found; see
+   *Finds and the map*. A photo reference stays open.
 4. **Tab or sheet** — a fourth tab is discoverable; a sheet from the detail page is lighter. The
    badges on rows matter more than where the lists live.
 
@@ -134,10 +174,11 @@ takes the lists snapshot as input the same way it takes the store — it stays a
    no SwiftData dependency there).
 3. App: `SwiftDataSpeciesListsRepository`, `ModelContainer` in `ForageNZApp`, `ListsViewModel`.
 4. Factory: extend `ListingRowModel`; add list models; inject the lists snapshot.
-5. UI: Lists tab, detail-page control, row badges.
+5. UI: Lists tab, detail-page control, row badges; then the find location (fix + pin) and the map.
 6. Tests as above; both reviewers; README section; remove this file or mark it done.
 
 ## Not in scope
 
-Sharing lists, importing/exporting, anything server-side, and any change to how the catalogue is
+Sharing lists or finds, importing/exporting, anything server-side, other people's
+observations on the map (for example iNaturalist records), and any change to how the catalogue is
 stored.
