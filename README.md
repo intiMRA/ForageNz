@@ -525,7 +525,7 @@ identification page than a confirmed French one. **Keeping such a frame means sa
 that entry's `sources`**, where a reader of the catalogue can see it.
 
 The stager cannot resolve compound names (`Sonchus oleraceus / Sonchus kirkii`, `Ulva spp.`),
-so blackberry, karengo, nettle, pūhā, sea lettuce and wild plum get nothing from it and need
+so blackberry, karengo, nettle, pūhā and sea lettuce get nothing from it and need
 the editor route.
 
 `PhotoAuditTests` fails the build on a missing file, an oversized file, an orphaned file, or a
