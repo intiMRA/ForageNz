@@ -107,6 +107,7 @@ the authority; check it before you run something.
 | `fetch_eval_photos.py` | Download openly licensed photos into a gitignored matcher evaluation set | on a plain run | iNaturalist |
 | `sync_string_catalog.py` | Merge a terminal build's extracted strings into `Localizable.xcstrings` | on a plain run | — |
 | `check_target_membership.py` | Fail if a model source is not compiled by both app targets | never | — |
+| `catalogue_report.py` | The one HTML report, `docs/catalogue.html`: every entry by app group then species group, with state, photos, months, gaps, cards, habitat evidence and `OWED` lines | never (writes only the report) | — |
 
 `Tools/sources.py` is a library, not a script: one definition of each endpoint, licence code
 and request convention, so two scripts cannot drift on what "an acceptable licence" means.
