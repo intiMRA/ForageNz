@@ -5203,68 +5203,6 @@
   },
   {
     "caution" : "careRequired",
-    "commonName" : "Coprosma",
-    "draft" : true,
-    "edibleParts" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "group" : "greens",
-    "habitat" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "habitats" : [
-
-    ],
-    "id" : "coprosma",
-    "identification" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "lookalikes" : [
-
-    ],
-    "maoriName" : "Hukihuki, hūpirau-ririki, hūpiro, kanono, kapukiore, karamū, karangū, kawariki, māmāngi, mingi, mingimingi, manono, patutikitiki, raurēkau, tātaraheke, taupata",
-    "months" : [
-
-    ],
-    "needsBookSource" : false,
-    "origin" : "introduced",
-    "photos" : [
-
-    ],
-    "preparation" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "recipes" : [
-
-    ],
-    "scientificName" : "Coprosma spp.",
-    "sources" : [
-      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Coprosma' entry."
-    ],
-    "summary" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "warnings" : [
-
-    ]
-  },
-  {
-    "caution" : "careRequired",
     "commonName" : "Cow parsley",
     "draft" : true,
     "edibleParts" : {
@@ -10967,6 +10905,7 @@
     "lookalikes" : [
 
     ],
+    "maoriName" : "Kanono, manono, raurēkau, kapukiore, kawariki, patutiketike",
     "months" : [
 
     ],
@@ -10989,7 +10928,8 @@
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Kanono' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Coprosma grandifolia' factsheet. CC BY 3.0 NZ. Retrieved 15/09/2026. https://www.nzflora.info/factsheet/Taxon/Coprosma-grandifolia.html",
-      "Summary text: Wikipedia contributors. 'Coprosma autumnalis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Coprosma_autumnalis"
+      "Summary text: Wikipedia contributors. 'Coprosma autumnalis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Coprosma_autumnalis",
+      "Māori names (added 16/10/2026 when the 'coprosma' genus entry was split): Te Aka Māori Dictionary gives kanono, manono, raurēkau, kapukiore, kawariki and patutiketike (sense 1) for Coprosma grandifolia, https://maoridictionary.co.nz, retrieved 16/10/2026. Raurēkau is also rangiora (Brachyglottis repanda); Te Aka notes some references give kawariki as a buttercup."
     ],
     "summary" : {
       "sources" : [
@@ -13237,6 +13177,7 @@
     "lookalikes" : [
 
     ],
+    "maoriName" : "Mingimingi, mingi",
     "months" : [
       1,
       2,
@@ -13264,7 +13205,8 @@
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Mingimingi' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Coprosma propinqua' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Coprosma-propinqua.html",
       "Habitat and summary text: Wikipedia contributors. 'Coprosma propinqua', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Coprosma_propinqua",
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Mingimingi' entry."
+      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Mingimingi' entry.",
+      "Māori names (added 16/10/2026 when the 'coprosma' genus entry was split): Te Aka Māori Dictionary, 'mingimingi' and 'mingi': Coprosma propinqua var. propinqua — the same names are used for Leucopogon fasciculatus and Leptecophylla juniperina, retrieved 16/10/2026."
     ],
     "summary" : {
       "sources" : [
@@ -21092,6 +21034,7 @@
     "lookalikes" : [
 
     ],
+    "maoriName" : "Karamū, karangū, patutiketike",
     "months" : [
 
     ],
@@ -21114,7 +21057,8 @@
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Shining karamū' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Coprosma lucida' factsheet. CC BY 3.0 NZ. Retrieved 15/09/2026. https://www.nzflora.info/factsheet/Taxon/Coprosma-lucida.html",
-      "Habitat and summary text: Wikipedia contributors. 'Coprosma lucida', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Coprosma_lucida"
+      "Habitat and summary text: Wikipedia contributors. 'Coprosma lucida', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Coprosma_lucida",
+      "Māori names (added 16/10/2026 when the 'coprosma' genus entry was split): Te Aka Māori Dictionary gives karamū and karangū for Coprosma lucida (shared with C. macrocarpa and C. robusta) and patutiketike (sense 2) for C. lucida; Ngā Rauropi Whakaoranga, C. lucida: \"patu-tiketike (Best 1907)\", retrieved 16/10/2026."
     ],
     "summary" : {
       "sources" : [
@@ -27703,6 +27647,338 @@
         "Wikipedia, 'Taxus baccata' (CC BY-SA 4.0)"
       ],
       "text" : "Taxus baccata is a species of coniferous tree in the family Taxaceae.\nThe yew is native to all countries of Europe (except Iceland), the Caucasus, and beyond from Turkey eastwards to northern Iran. Its range extends south to Morocco and Algeria in North Africa, and parts of Southwest and South Asia. A few populations are present in the archipelagos of the Azores and Madeira. The limit of its northern Scandinavian distribution is its sensitivity to frost, with global warming predicted to allow its spread inland. It has been introduced elsewhere, including the United States."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Swamp coprosma",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fruit",
+    "habitat" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "habitats" : [
+
+    ],
+    "id" : "swamp-coprosma",
+    "identification" : {
+      "sources" : [
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+      ],
+      "text" : "Shrub up to c. 3 m. tall; branches slender, subdivaricate, us. ± interlacing; branchlets slender, pubescent. Lvs on ± winged slender pubescent petioles 3–5 mm. long. Stipules small, triangular, subacute, ± pubescent, ciliate, terminal tuft consipicuous. Lamina subcorica., glab., orbicular-ovate, spathulate, obtuse, minutely apiculate, ± 8–13 × 8–10 mm. Reticulations of veins evident on both surfaces. ♂ in fascicles of 3–6; calyx 0; corolla funnelform, lobes ± = tube, ovate, acute. ♀ solitary or in axillary clusters of 2–4 along short branchlets; calyx-teeth minute; corolla funnelform, lobes ovate, acute, = or > tube. Drupe black, globose, 3–4 mm. diam.\n[From:  Allan (1961) Flora of New Zealand. Volume 1.]"
+    },
+    "lookalikes" : [
+
+    ],
+    "maoriName" : "Hukihuki",
+    "months" : [
+
+    ],
+    "needsBookSource" : false,
+    "origin" : "endemic",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Coprosma tenuicaulis",
+    "sources" : [
+      "Split 16/10/2026 from the former genus entry 'coprosma' (Coprosma spp.; Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Coprosma' entry), whose Māori-name list included 'Hukihuki'. Owner, 16/10/2026: \"we should avoid catch all species, add each individual one and delete this one\". Langlands' text for this species has not been read; whether the book names it is unconfirmed.",
+      "Name and origin: NZ Plant Conservation Network, 'Coprosma tenuicaulis', https://www.nzpcn.org.nz/flora/species/coprosma-tenuicaulis/, retrieved 16/10/2026. \"Common names: swamp coprosma, hukihuki\"; Native, endemic.",
+      "Māori name: Te Aka Māori Dictionary, https://maoridictionary.co.nz/search?keywords=hukihuki, retrieved 16/10/2026. \"swamp coprosma, Coprosma tenuicaulis\".",
+      "OWED edibleParts: no source found 16/10/2026 records the fruit as eaten (Ngā Rauropi Whakaoranga, Useful Temperate Plants, Wikipedia checked).",
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Coprosma tenuicaulis' factsheet. CC BY 3.0 NZ. Retrieved 16/10/2026. https://www.nzflora.info/factsheet/Taxon/Coprosma-tenuicaulis.html",
+      "Summary text: Wikipedia contributors. 'Coprosma tenuicaulis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 16/10/2026. https://en.wikipedia.org/wiki/Coprosma_tenuicaulis"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Coprosma tenuicaulis' (CC BY-SA 4.0)"
+      ],
+      "text" : "Coprosma tenuicaulis, commonly called swamp coprosma is a native shrub of New Zealand."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Hūpiro",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fruit",
+    "habitat" : {
+      "sources" : [
+        "Wikipedia, 'Coprosma foetidissima' (CC BY-SA 4.0)"
+      ],
+      "text" : "C. foetidissima is endemic to New Zealand and found from the Coromandel Peninsula southwards to Stewart Island, and on the Auckland Islands. It grows in coastal to sub-alpine forest and shrubland."
+    },
+    "habitats" : [
+
+    ],
+    "id" : "hupiro",
+    "identification" : {
+      "sources" : [
+        "Wikipedia, 'Coprosma foetidissima' (CC BY-SA 4.0) — units converted to metric"
+      ],
+      "text" : "C. foetidissima grows as a small open branched tree or shrub, typically up to 3 m tall, but in the Auckland Islandsreaching heights of 6 m, with a trunk up to 45 cm in diameter. The bark is dark brown, and the branchlets are glabrous (lacking hairs). The interpetiolar stipules are shorter than those of many other coprosma species and taper to a conspicuous tooth fringed by fine short hairs and with uneven tufts of hairs at the tips. Leaves are thin, 30-50 mm long, 14-20 mm wide, somewhat leathery-textured, and shaped obovate to oblong to broadly ovate. Leaf tips may be rounded or have a small tapered point. The leaves lie in a single plane on the branchlet. The leaves of C. foetidissima (and many other species of Rubiaceae) have domatia, small indentations on the underside that may be occupied by potentially beneficial insects such as mites and other arthropods.\nC. foetidissima is dioecious, meaning that male and female flowers are borne on separate plants. Flowering occurs between October and November. The flowers are solitary and occur on the ends of branchlets. The calyx of male flowers is  cup-like with four or five teeth; the corolla is bell-shaped, 4 or 8 lobed to the middle; and anthers are large, elongate-oblong in shape, and as long as the corolla. Female flowers have a short, narrowly ovoid, tubular, and toothed calyx and the corolla is a curved tube with 4 or 5 splits extending one-third to halfway down. The styles are long and substantial. Fruiting occurs between March and July. The drupes are 7–10 mm in length with an oblong shape. They are yellow to orange-red in colour, and are dispersed primarily by birds."
+    },
+    "lookalikes" : [
+
+    ],
+    "maoriName" : "Hūpiro, hūpirau-ririki, naupiro",
+    "months" : [
+
+    ],
+    "needsBookSource" : false,
+    "origin" : "endemic",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Coprosma foetidissima",
+    "sources" : [
+      "Split 16/10/2026 from the former genus entry 'coprosma' (Coprosma spp.; Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Coprosma' entry), whose Māori-name list included 'hūpiro' and 'hūpirau-ririki'. Owner, 16/10/2026: \"we should avoid catch all species, add each individual one and delete this one\". Langlands' text for this species has not been read; whether the book names it is unconfirmed.",
+      "Name and origin: NZ Plant Conservation Network, 'Coprosma foetidissima', https://www.nzpcn.org.nz/flora/species/coprosma-foetidissima/, retrieved 16/10/2026. \"Common names: hūpiro, stinkwood, shit shrub\"; Native, endemic.",
+      "Māori names: Ngā Rauropi Whakaoranga, Manaaki Whenua – Landcare Research, https://rauropiwhakaoranga.landcareresearch.co.nz/names/07bd2178-fdc8-45dd-9836-2f8ddfb7dfda, retrieved 16/10/2026. \"Māori names HŪPIRO, hūpirau-ririki, naupiro…\"; Te Aka Māori Dictionary, https://maoridictionary.co.nz/search?keywords=hupiro, retrieved 16/10/2026. \"stinkwood, Coprosma foetidissima\".",
+      "LEAD, not yet used: Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma foetidissima', https://temperate.theferns.info/plant/Coprosma+foetidissima, retrieved 16/10/2026. \"Edible Uses Fruit - raw. Sweet, but with little flavour\" (cites Knees, The New Plantsman 1995). Ngā Rauropi Whakaoranga has no food entry.",
+      "Identification, habitat and summary text: Wikipedia contributors. 'Coprosma foetidissima', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 16/10/2026. https://en.wikipedia.org/wiki/Coprosma_foetidissima"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Coprosma foetidissima' (CC BY-SA 4.0)"
+      ],
+      "text" : "Coprosma foetidissima, commonly known as stinkwood or hūpiro (Māori), is a species of flowering plant in the family Rubiaceae, native to mainland New Zealand as well as Stewart Island and the Auckland Islands."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Large-seeded coprosma",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fruit",
+    "habitat" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "habitats" : [
+
+    ],
+    "id" : "large-seeded-coprosma",
+    "identification" : {
+      "sources" : [
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+      ],
+      "text" : "Shrub or tree up to 5–(10) m. tall; branches and branchlets stout, glab. Lvs on stout petioles ± 12–25 mm. long. Stipules connate into broad membr. sheath tipped by long sharp denticle. Lamina subcoriac., broad- to elliptic-ovate, obtuse or subacute to mucronulate, ± 9–13 × 4–8 cm. Midrib prominent, secondary veins and reticulations evident. ♂ in compound glomerules on axillary peduncles 10–15 mm. long; calyx-teeth minute; corolla c. 9 mm. long, subcampanulate, lobes ovate-triangular, acute, < tube. ♀ 2–5 together, on simple or branched peduncles 20–70 mm. long; calyx-teeth acute; corolla tubular, widening above, lobes acute, < tube. Drupe orange-red, oblong, 10–25 mm. long.\n[From:  Allan (1961) Flora of New Zealand. Volume 1.]"
+    },
+    "lookalikes" : [
+
+    ],
+    "maoriName" : "Karamū, karangū (names shared with Coprosma lucida and C. robusta)",
+    "months" : [
+
+    ],
+    "needsBookSource" : false,
+    "origin" : "endemic",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Coprosma macrocarpa",
+    "sources" : [
+      "Split 16/10/2026 from the former genus entry 'coprosma' (Coprosma spp.; Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Coprosma' entry), whose Māori-name list included 'karamū' and 'karangū'. Owner, 16/10/2026: \"we should avoid catch all species, add each individual one and delete this one\". Langlands' text for this species has not been read; whether the book names it is unconfirmed.",
+      "Name and origin: NZ Plant Conservation Network, 'Coprosma macrocarpa', https://www.nzpcn.org.nz/flora/species/coprosma-macrocarpa/, retrieved 16/10/2026. (subsp. macrocarpa) — common name large-seeded coprosma; Native, endemic. Subsp. macrocarpa is natural only on the Three Kings Islands and naturalised in Auckland and Wellington; subsp. minor is in the North Island.",
+      "Māori names: Te Aka Māori Dictionary, https://maoridictionary.co.nz/search?keywords=karamu, retrieved 16/10/2026. \"karamū, Coprosma lucida, Coprosma macrocarpa and Coprosma robusta\"; Te Aka Māori Dictionary, https://maoridictionary.co.nz/search?keywords=karangu, retrieved 16/10/2026. same three species. Karamū is in the old list for C. robusta and C. lucida too, so it is not proof the book meant this species.",
+      "OWED edibleParts: no source found 16/10/2026 records the fruit as eaten (Useful Temperate Plants has no page; Wikipedia silent).",
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Coprosma macrocarpa' factsheet. CC BY 3.0 NZ. Retrieved 16/10/2026. https://www.nzflora.info/factsheet/Taxon/Coprosma-macrocarpa.html",
+      "Summary text: Wikipedia contributors. 'Coprosma macrocarpa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 16/10/2026. https://en.wikipedia.org/wiki/Coprosma_macrocarpa"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Coprosma macrocarpa' (CC BY-SA 4.0)"
+      ],
+      "text" : "Coprosma macrocarpa, also known as large-seeded coprosma and coastal karamu, is a shrub native to New Zealand."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Māmāngi",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fruit",
+    "habitat" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "habitats" : [
+
+    ],
+    "id" : "mamangi",
+    "identification" : {
+      "sources" : [
+        "Wikipedia, 'Coprosma arborea' (CC BY-SA 4.0) — units converted to metric"
+      ],
+      "text" : "It is a small, bushy tree reaching 8–12 m in height with a trunk diameter of 20–50 cm. The branches are closely set, with slender branchlets. Adult leaves are somewhat glossy and hairless; they are dark green or yellow-green above and often mottled with maroon or purple and a pale wine-red underneath. The fruit is a non-poisonous juicy berry, containing two small seeds, usually oblong and 6–8 mm in length.  The flowers have insignificant petals and are wind pollinated, with long anthers and stigmas."
+    },
+    "lookalikes" : [
+
+    ],
+    "maoriName" : "Māmāngi",
+    "months" : [
+
+    ],
+    "needsBookSource" : false,
+    "origin" : "endemic",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Coprosma arborea",
+    "sources" : [
+      "Split 16/10/2026 from the former genus entry 'coprosma' (Coprosma spp.; Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Coprosma' entry), whose Māori-name list included 'māmāngi'. Owner, 16/10/2026: \"we should avoid catch all species, add each individual one and delete this one\". Langlands' text for this species has not been read; whether the book names it is unconfirmed.",
+      "Name and origin: NZ Plant Conservation Network, 'Coprosma arborea', https://www.nzpcn.org.nz/flora/species/coprosma-arborea/, retrieved 16/10/2026. \"Common names: māmāngi, tree coprosma\"; Native, endemic.",
+      "Māori name: Te Aka Māori Dictionary, https://maoridictionary.co.nz/search?keywords=mamangi, retrieved 16/10/2026. \"māmāngi, tree coprosma, Coprosma arborea\". Ngā Rauropi Whakaoranga also records māmāngi for C. repens on the East Cape.",
+      "OWED edibleParts: no source found 16/10/2026 records the fruit as eaten (Ngā Rauropi Whakaoranga record has names only; Useful Temperate Plants has no page).",
+      "Identification and summary text: Wikipedia contributors. 'Coprosma arborea', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 16/10/2026. https://en.wikipedia.org/wiki/Coprosma_arborea"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Coprosma arborea' (CC BY-SA 4.0)"
+      ],
+      "text" : "Coprosma arborea is a species of tree found in New Zealand, traditionally known in Māori by the name mamangi."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Sand coprosma",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "fruit",
+    "habitat" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "habitats" : [
+
+    ],
+    "id" : "sand-coprosma",
+    "identification" : {
+      "sources" : [
+        "Wikipedia, 'Coprosma acerosa' (CC BY-SA 4.0)"
+      ],
+      "text" : "Low-growing, with slender flexible, sprawling to prostrate, interlacing branches and branchlets, forming a ± cushionlike mass up to c. 2 m. diam., occ. up to 2m. tall. Branchlets ∞ with yellowish brown bark, pubescent when young. Lvs in opp. Pairs or fascicles, on yellowish petioles. Stipules rounded-obtuse to broadly triangular, ± pubescent, ciliolate. Lamina coriac., yellowish green, linear obtuse, 7-12 × 1-1·5- (2) mm. Midrib alone evident. Fls solitary, terminal on short branchlets. ♂ with calyx 0 or vestigial; corolla funnelform, lobes ovate-oblong, subacute, ± = tube. ♀ with acute, narrow-triangular calyx-teeth; corolla funnelform, lobes narrow-oblong, obtuse. Drupe translucent, very pale to pale blue, often with darker flecks, globose, c. 7 mm. diam."
+    },
+    "lookalikes" : [
+
+    ],
+    "maoriName" : "Tātaraheke",
+    "months" : [
+
+    ],
+    "needsBookSource" : false,
+    "origin" : "endemic",
+    "photos" : [
+
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Coprosma acerosa",
+    "sources" : [
+      "Split 16/10/2026 from the former genus entry 'coprosma' (Coprosma spp.; Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Coprosma' entry), whose Māori-name list included 'tātaraheke'. Owner, 16/10/2026: \"we should avoid catch all species, add each individual one and delete this one\". Langlands' text for this species has not been read; whether the book names it is unconfirmed.",
+      "Name and origin: NZ Plant Conservation Network, 'Coprosma acerosa', https://www.nzpcn.org.nz/flora/species/coprosma-acerosa/, retrieved 16/10/2026. \"Common names: sand coprosma, tātaraheke\"; Native, endemic.",
+      "Māori name: Te Aka Māori Dictionary, https://maoridictionary.co.nz/search?keywords=tataraheke, retrieved 16/10/2026. \"sand coprosma, Coprosma acerosa\" (sense 2 is bush lawyer, Rubus cissoides, R. australis).",
+      "LEAD, not yet used: Ngā Rauropi Whakaoranga, Manaaki Whenua – Landcare Research, https://rauropiwhakaoranga.landcareresearch.co.nz/names/85ff1385-7b57-4d9c-8ec9-773576e4b75f, retrieved 16/10/2026. \"Food Small fruits eaten (Colenso 1868)\"; Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma acerosa', https://temperate.theferns.info/plant/Coprosma+acerosa, retrieved 16/10/2026. \"Edible Uses Fruit - raw… Sweet and juicy\" (cites Crowe 1990).",
+      "Identification and summary text: Wikipedia contributors. 'Coprosma acerosa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 16/10/2026. https://en.wikipedia.org/wiki/Coprosma_acerosa"
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Coprosma acerosa' (CC BY-SA 4.0)"
+      ],
+      "text" : "Coprosma acerosa, commonly called sand coprosma, is a shrub that is native to New Zealand."
     },
     "warnings" : [
 
