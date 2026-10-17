@@ -11,7 +11,7 @@ struct SafetyView: View {
                     Text("If you suspect poisoning")
                         .font(.headline)
                         .accessibilityIdentifier("safety.poisoningHeader")
-                    Text("Call the National Poisons Centre on \(PoisonsCentre.displayNumber). Do not wait for symptoms — the most dangerous species in this guide have delayed onset.")
+                    Text(Self.poisoningAdvice)
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                     if let callURL = PoisonsCentre.callURL {
@@ -72,6 +72,18 @@ struct SafetyView: View {
             }
         }
         .navigationTitle("Safety")
+    }
+
+    /// One localised sentence with a link run on the number, rather than markdown: the `tel:`
+    /// address comes from `PoisonsCentre`, and a link target interpolated into a
+    /// `LocalizedStringKey` is not parsed as markdown.
+    static var poisoningAdvice: AttributedString {
+        var advice = AttributedString(localized: "Call the National Poisons Centre on \(PoisonsCentre.displayNumber). Do not wait for symptoms — the most dangerous species in this guide have delayed onset.")
+        if let callURL = PoisonsCentre.callURL,
+           let number = advice.range(of: PoisonsCentre.displayNumber) {
+            advice[number].link = callURL
+        }
+        return advice
     }
 
     private static let groundRules = [

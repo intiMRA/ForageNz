@@ -33,7 +33,7 @@ struct WhereYouAreSection: View {
         } header: {
             Text("Where you are")
         } footer: {
-            Text("Works offline. Boundaries are DOC's, generalised to about \(LandStatusMap.approximateResolutionMetres) m — a prompt to check, never a legal answer. Private land, rāhui and council bylaws are not in this map.")
+            Text("Works offline. Boundaries are [DOC's](https://doc-deptconservation.opendata.arcgis.com/datasets/72354ba9bf7a4706af3fdfe60f86eea1_0/about), generalised to about \(LandStatusMap.approximateResolutionMetres) m — a prompt to check, never a legal answer. Private land, rāhui and council bylaws are not in this map.")
         }
     }
 

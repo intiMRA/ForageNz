@@ -297,7 +297,7 @@
     "Where you are" : {
 
     },
-    "Works offline. Boundaries are DOC's, generalised to about %lld m — a prompt to check, never a legal answer. Private land, rāhui and council bylaws are not in this map." : {
+    "Works offline. Boundaries are [DOC's](https://doc-deptconservation.opendata.arcgis.com/datasets/72354ba9bf7a4706af3fdfe60f86eea1_0/about), generalised to about %lld m — a prompt to check, never a legal answer. Private land, rāhui and council bylaws are not in this map." : {
 
     },
     "Year-round species are always included. Seasons are indicative and shift with region and altitude." : {

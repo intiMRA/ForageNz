@@ -261,7 +261,7 @@ struct SpeciesDetailView: View {
             createSectionHeader(image: Image(systemName: "book.closed"), title: "Sources")
             if species.isVerified {
                 ForEach(species.sources, id: \.self) { source in
-                    Text(source)
+                    Text(AttributedString(linkingWebAddressesIn: source))
                         .font(.caption)
                         .italic()
                         .foregroundStyle(.secondary)
