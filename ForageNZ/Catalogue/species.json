@@ -11004,12 +11004,16 @@
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-        "Wikipedia, 'Coprosma autumnalis' (CC BY-SA 4.0)"
+        "NZ Plant Conservation Network, 'Coprosma grandifolia' (paraphrased)"
       ],
-      "text" : "Kanono is found in wet and shaded forest areas where it can grow to 6 metres high, with a slender trunk and stout branches."
+      "text" : "Forest understorey and sheltered, shady places, from the coast up to montane and cloud forest. Where rainfall is high it can make up much of the shrubland and regenerating forest, and it is often common along the edges of logging tracks and roads."
     },
     "habitats" : [
-      "forest"
+      "coastal",
+      "forest",
+      "shrubland",
+      "alpine",
+      "disturbed"
     ],
     "harvestEthics" : {
       "sources" : [
@@ -11144,7 +11148,8 @@
       "Summary repaired 17/10/2026: it held only 'Coprosma autumnalis or C.' — the first sentence had been cut at the abbreviation 'C.'. Replaced with Wikipedia's first paragraph, verbatim. Habitat: the whole sentence 'Kanono is found in wet and shaded forest areas…' copied verbatim (it carries where-it-grows content, so it goes to habitat under the habitat-holds-habitat rule); habitat tag forest, read off that sentence.",
       "Harvest ethics: the owner's own generic sentence, written for snowdrop-woodsorrel (16/10/2026), copied unchanged on the owner's instruction, 17/10/2026 (\"come up with a generic one for species that are not endangered … copy that one across\"), because this species is assessed Not Threatened — NZ Plant Conservation Network species page, 2023 NZTCS status (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43, Department of Conservation, CC BY 4.0), retrieved 17/10/2026: https://www.nzpcn.org.nz/flora/species/coprosma-grandifolia/. Rāhui, conservation-land permits and specific tikanga are not covered by it.",
       "Edible parts (written by the assistant on the owner's instruction, 17/10/2026 — owner: \"from my understanding only the berries are edible\", then \"fix all Coprosmas\"): Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma grandifolia', https://temperate.theferns.info/plant/Coprosma+grandifolia, retrieved 17/10/2026: \"Fruit - raw. Sweet and juicy, but with little flavour\" — \"Fruit - raw. Sweet and juicy\" cites Crowe, A. Native Edible Plants of New Zealand (1990); \"but with little flavour\" cites Knees, S. The New Plantsman vol. 2 (1995); \"Known Hazards None known\". UTP marks the record \"not yet been checked and updated\", and cites rather than quotes its source. Fruit colour \"Drupe reddish orange\" and dioecy (\"Plants prevailingly dioec.\") restate Allan 1961 via Flora of New Zealand Online, as on the lookalike cards. Not used: UTP's roasted-seed coffee-substitute line (Brooker, Cambie & Cooper 1991) — the owner says only the berries are eaten, and it rests on one source chain. Group set to fruit the same day: no source records the leaves as food.",
-      "Months [2–5], set 17/10/2026 (ripe fruit): DOC, 'Collect seeds and propagate native trees and shrubs' (https://www.doc.govt.nz/get-involved/conservation-activities/collect-seeds-and-propagate-native-trees-and-shrubs/, retrieved 17/10/2026): after April flowering, \"bright red fruits follow the next February through to May\"; Wikipedia 'Coprosma autumnalis': \"ripe orange fruit between February and May\". Fruiting counts Jan–Dec 28 104 113 131 58 22 29 30 36 47 16 26; ripe photos (of 6) 4 4 4 6 6 5 2 1 0 1 1 2. Jan (≈19) and Jun (≈18) fall below the cut (≈33). NZPCN's \"(September-) October-January (-April)\" is not borne out: Sep–Nov fruit is green (Sep 0 of 6 ripe). Replaces the earlier [2–5, 9–10], which wrongly kept green-fruit months. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's."
+      "Months [2–5], set 17/10/2026 (ripe fruit): DOC, 'Collect seeds and propagate native trees and shrubs' (https://www.doc.govt.nz/get-involved/conservation-activities/collect-seeds-and-propagate-native-trees-and-shrubs/, retrieved 17/10/2026): after April flowering, \"bright red fruits follow the next February through to May\"; Wikipedia 'Coprosma autumnalis': \"ripe orange fruit between February and May\". Fruiting counts Jan–Dec 28 104 113 131 58 22 29 30 36 47 16 26; ripe photos (of 6) 4 4 4 6 6 5 2 1 0 1 1 2. Jan (≈19) and Jun (≈18) fall below the cut (≈33). NZPCN's \"(September-) October-January (-April)\" is not borne out: Sep–Nov fruit is green (Sep 0 of 6 ripe). Replaces the earlier [2–5, 9–10], which wrongly kept green-fruit months. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's.",
+      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma grandifolia', https://www.nzpcn.org.nz/flora/species/coprosma-grandifolia/, retrieved 18/10/2026. Habitat: \"Common in the understorey of forest, and in sheltered shady sites from the coast to montane and cloud forest. In areas of high rainfall can be a major component of shrublands, and within regenerating forest. Often common along the margins of logging tracks and roads.\" Paraphrased by the assistant; habitat holds where it grows only. Replaces Wikipedia's 'Kanono is found in wet and shaded forest areas where it can grow to 6 metres high, with a slender trunk and stout branches.' — its height and trunk are identification, already in the identification text (Allan: up to c. 6 m, trunk slender)."
     ],
     "summary" : {
       "sources" : [
@@ -11351,9 +11356,10 @@
     "group" : "fruit",
     "habitat" : {
       "sources" : [
+        "NZ Plant Conservation Network, 'Coprosma robusta' (paraphrased)",
         "Wikipedia, 'Coprosma robusta' (CC BY-SA 4.0) — units converted to metric"
       ],
-      "text" : "They can often be observed naturally in lowland forest.\nIn Canterbury, karamū is found on Banks Peninsula in fragments of regenerating native bush and bush remnants. Additionally it is also found in forest margins and edges of the montane and lowland forests in the southern alps at the start of the Canterbury plains. Karamū can also be found in the urban environment of many Christchurch city green spaces, such as Riccarton Bush.\n\nKaramū can be widely found near coastal, lowland and lower montane areas. It can also grow within shrub lands and expansive areas within dense trees such as lowland forest. However, the population decreases in lowland forest such as beech and kahikatea forests. Normally karamū is a hardy plant that can adapt to infertile soils, poorly drained and exposed lands. It can also grow in a large range of altitude varying from 0 to 1,200 meters under full sun to shady, windy and frosty circumstances."
+      "text" : "Coastal, lowland and lower montane shrubland, and open places within forest, from sea level to about 1,200 m. Hardy: it copes with infertile, poorly drained and exposed ground, in full sun or shade, wind and frost. Also grows in city green spaces."
     },
     "habitats" : [
       "coastal",
@@ -11497,14 +11503,15 @@
       "Lookalike cards (all ten Coprosma entries, written by the assistant on the owner's instruction, owner 17/10/2026: \"link them all as look alike given they are the same genus and are similar\"): every leaf, fruit, stipule and twig test restates Allan, H.H. 1961, Flora of New Zealand vol. I — species descriptions and the genus key (couplets 8, 21–22, 28–29) — via Flora of New Zealand Online and the Flora of New Zealand Series, CC BY 3.0 NZ, retrieved 17/10/2026; Kanono is Allan's C. australis. Dioecy: Allan, genus description \"Plants prevailingly dioec.\". Smell: Allan (C. foetidissima \"Lvs foetid when bruised\"); Wikipedia 'Coprosma lucida' (CC BY-SA 4.0) \"unlike C. robusta and some other Coprosma species, C. lucida does not have a foul-smelling odour\" and \"The roots and inner bark of C. lucida are a yellow colour, rather than dull brown like the similar C. robusta\"; NZPCN etymology for the genus name. Taupata × sand coprosma hybrids: NZPCN 'Coprosma repens'. Card risk 'edible': Useful Temperate Plants (CC BY-NC-SA 3.0) records the fruit eaten raw for C. grandifolia, robusta, lucida, repens, foetidissima, propinqua and acerosa (citing Crowe, Native Edible Plants of NZ; Knees 1995). Risk 'unknown' for C. tenuicaulis, macrocarpa and arborea: UTP has no page and Ngā Rauropi Whakaoranga records no food use. These cards clear this entry's `warnings` check; no warning text was added.",
       "Harvest ethics: the owner's own generic sentence, written for snowdrop-woodsorrel (16/10/2026), copied unchanged on the owner's instruction, 17/10/2026 (\"come up with a generic one for species that are not endangered … copy that one across\"), because this species is assessed Not Threatened — NZ Plant Conservation Network species page, 2023 NZTCS status (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43, Department of Conservation, CC BY 4.0), retrieved 17/10/2026: https://www.nzpcn.org.nz/flora/species/coprosma-robusta/. Rāhui, conservation-land permits and specific tikanga are not covered by it.",
       "Edible parts (written by the assistant on the owner's instruction, 17/10/2026 — owner: \"from my understanding only the berries are edible\", then \"fix all Coprosmas\"): Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma robusta', https://temperate.theferns.info/plant/Coprosma+robusta, retrieved 17/10/2026: \"Fruit - raw or cooked. The fruit is freely borne, it is sweet but has little flavour. The fruit has a bitter flavour\" — \"Fruit - raw or cooked\" cites Crowe, A. Native Edible Plants of New Zealand (1990); \"freely borne … sweet but has little flavour\" cites Knees, S. The New Plantsman vol. 2 (1995); \"bitter flavour\" cites Trees for Survival (tfsnz.org.nz). The two flavour records disagree and both are kept; \"Known Hazards None known\". UTP marks the record \"not yet been checked and updated\", and cites rather than quotes its source. Fruit colour \"dark orange to yellow\" and dioecy (\"Plants prevailingly dioec.\") restate Allan 1961 via Flora of New Zealand Online, as on the lookalike cards. Not used: UTP's roasted-seed coffee-substitute line (Brooker, Cambie & Cooper 1991) — the owner says only the berries are eaten, and it rests on one source chain. Group set to fruit the same day: no source records the leaves as food.",
-      "Months [2–8], set 17/10/2026 (ripe fruit): DOC, same page: \"ripening between February and August the year after a spring flowering\"; NZPCN 'Coprosma robusta': \"Fruiting (March-) April - May (-July)\"; Nelson Natives (nursery, weaker): \"Fruiting: March–July, peaking from April to May.\" Fruiting counts 133 215 163 343 238 92 50 51 34 33 72 68; ripe photos (of 6) 2 6 6 5 5 5 5 5 3 0 1 0. Window = DOC's Feb–Aug; Jan (≈44) and Sep (≈17) fall below the cut (≈72). Replaces the earlier [1–5], which had no recorded source. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's."
+      "Months [2–8], set 17/10/2026 (ripe fruit): DOC, same page: \"ripening between February and August the year after a spring flowering\"; NZPCN 'Coprosma robusta': \"Fruiting (March-) April - May (-July)\"; Nelson Natives (nursery, weaker): \"Fruiting: March–July, peaking from April to May.\" Fruiting counts 133 215 163 343 238 92 50 51 34 33 72 68; ripe photos (of 6) 2 6 6 5 5 5 5 5 3 0 1 0. Window = DOC's Feb–Aug; Jan (≈44) and Sep (≈17) fall below the cut (≈72). Replaces the earlier [1–5], which had no recorded source. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's.",
+      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma robusta', https://www.nzpcn.org.nz/flora/species/coprosma-robusta/, retrieved 18/10/2026. Habitat: \"Common throughout coastal, lowland and lower montane habitats within shrublands and open sites within forest.\" Paraphrased by the assistant; habitat holds where it grows only. Altitude, soils, exposure and city green spaces are paraphrased from the Wikipedia habitat text this replaces; its two Canterbury sentences (Banks Peninsula, Southern Alps margins) were range, not habitat, and moved verbatim to the end of the summary. Habitat tags unchanged."
     ],
     "summary" : {
       "sources" : [
         "Wikipedia, 'Coprosma robusta' (CC BY-SA 4.0)",
         "Wikipedia, 'Coprosma robusta' (CC BY-SA 4.0) — units converted to metric"
       ],
-      "text" : "Coprosma robusta, commonly known as karamū, is a flowering plant in the family Rubiaceae that is endemic to New Zealand.\nKaramū is endemic to New Zealand. However, it is gradually becoming naturalised in areas of the south-east coast of Australia such as Victoria and Tasmania and has been rated as a weed threat there.\nIt is widely distributed across New Zealand in both the North and South Islands. On the Chatham Islands between Waitangi and Owenga, there is a small area where karamū has become naturalised.\nJudging from the distribution map on New Zealand Plant Observation, the distribution of karamū increases with the differentiation in lower altitude which means more karamū in the North Island."
+      "text" : "Coprosma robusta, commonly known as karamū, is a flowering plant in the family Rubiaceae that is endemic to New Zealand.\nKaramū is endemic to New Zealand. However, it is gradually becoming naturalised in areas of the south-east coast of Australia such as Victoria and Tasmania and has been rated as a weed threat there.\nIt is widely distributed across New Zealand in both the North and South Islands. On the Chatham Islands between Waitangi and Owenga, there is a small area where karamū has become naturalised.\nJudging from the distribution map on New Zealand Plant Observation, the distribution of karamū increases with the differentiation in lower altitude which means more karamū in the North Island.\nIn Canterbury, karamū is found on Banks Peninsula in fragments of regenerating native bush and bush remnants. Additionally it is also found in forest margins and edges of the montane and lowland forests in the southern alps at the start of the Canterbury plains."
     },
     "warnings" : [
 
@@ -13510,7 +13517,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Mingimingi",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma propinqua'",
@@ -13619,7 +13626,30 @@
     "needsBookSource" : false,
     "origin" : "endemic",
     "photos" : [
-
+      {
+        "caption" : "Close up of branch with 1 ripe berry",
+        "credit" : "(c) Oscar Dove, some rights reserved (CC BY)",
+        "fileName" : "mingimingi-6.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/150637316"
+      },
+      {
+        "caption" : "Ripe berries blue",
+        "credit" : "(c) naturewatchwidow, some rights reserved (CC BY)",
+        "fileName" : "mingimingi-8.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/151193507"
+      },
+      {
+        "caption" : "Ripe berries white",
+        "credit" : "(c) Mike Bowie, some rights reserved (CC BY)",
+        "fileName" : "mingimingi-9.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/269592757"
+      },
+      {
+        "caption" : "Plant in natural habitat",
+        "credit" : "(c) Alice Shanks, some rights reserved (CC BY)",
+        "fileName" : "mingimingi-10.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/377038567"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -21605,7 +21635,7 @@
       "sources" : [
         "Wikipedia, 'Coprosma lucida' (CC BY-SA 4.0)"
       ],
-      "text" : "C. lucida is a plant that lives in warm, temperate regions. Within New Zealand, C. lucida is typically found in low coastal and montane forests.  Smale et al. also noted that C. lucida can be found growing in geothermal soils of the Taupō Volcanic Zone."
+      "text" : "C. lucida is typically found in low coastal and montane forests.  Smale et al. also noted that C. lucida can be found growing in geothermal soils of the Taupō Volcanic Zone."
     },
     "habitats" : [
       "coastal",
@@ -21724,13 +21754,14 @@
       "commonName: 'Shining Karamū' → 'Shining karamū' (sentence case), 17/10/2026; the nine Coprosma cards naming it changed with it.",
       "Harvest ethics: the owner's own generic sentence, written for snowdrop-woodsorrel (16/10/2026), copied unchanged on the owner's instruction, 17/10/2026 (\"come up with a generic one for species that are not endangered … copy that one across\"), because this species is assessed Not Threatened — NZ Plant Conservation Network species page, 2023 NZTCS status (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43, Department of Conservation, CC BY 4.0), retrieved 17/10/2026: https://www.nzpcn.org.nz/flora/species/coprosma-lucida/. Rāhui, conservation-land permits and specific tikanga are not covered by it.",
       "Edible parts (written by the assistant on the owner's instruction, 17/10/2026 — owner: \"from my understanding only the berries are edible\", then \"fix all Coprosmas\"): Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma lucida', https://temperate.theferns.info/plant/Coprosma+lucida, retrieved 17/10/2026: \"Fruit - raw. Sweet and juicy, but with little flavour\" — \"Fruit - raw. Sweet and juicy\" cites Crowe, A. Native Edible Plants of New Zealand (1990); \"but with little flavour\" cites Knees, S. The New Plantsman vol. 2 (1995); \"Known Hazards None known\". UTP marks the record \"not yet been checked and updated\", and cites rather than quotes its source. Fruit colour \"orange-red\" and dioecy (\"Plants prevailingly dioec.\") restate Allan 1961 via Flora of New Zealand Online, as on the lookalike cards. Not used: UTP's roasted-seed coffee-substitute line (Brooker, Cambie & Cooper 1991) — the owner says only the berries are eaten, and on this page UTP cites Crowe for it, but no other source was checked. Group set to fruit the same day: no source records the leaves as food.",
-      "Months [1–6], set 17/10/2026 (ripe fruit): DOC, same page: \"The fruit swells, turns read [sic] and ripens in late summer and autumn\" — read as the NZ seasons, Feb–May; Wikipedia 'Coprosma lucida': \"not fully ripened until the following autumn\"; Nelson Natives (nursery): \"ripe fruit present mainly from autumn through winter\". NZPCN gives no fruiting dates. Fruiting counts 52 55 61 52 35 18 6 14 18 35 39 44; ripe photos (of 6) 2 3 3 6 5 5 1 1 1 1 0 1. Jan (≈17) and Jun (≈15) reach the cut (≈13); Jul (≈1) does not. Jan rests on 2 of 6 photos — the weakest month here. Replaces the earlier [3–6]. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's."
+      "Months [1–6], set 17/10/2026 (ripe fruit): DOC, same page: \"The fruit swells, turns read [sic] and ripens in late summer and autumn\" — read as the NZ seasons, Feb–May; Wikipedia 'Coprosma lucida': \"not fully ripened until the following autumn\"; Nelson Natives (nursery): \"ripe fruit present mainly from autumn through winter\". NZPCN gives no fruiting dates. Fruiting counts 52 55 61 52 35 18 6 14 18 35 39 44; ripe photos (of 6) 2 3 3 6 5 5 1 1 1 1 0 1. Jan (≈17) and Jun (≈15) reach the cut (≈13); Jul (≈1) does not. Jan rests on 2 of 6 photos — the weakest month here. Replaces the earlier [3–6]. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's.",
+      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZPCN's 'Coprosma lucida' page has no habitat section, so Wikipedia's habitat text stays; its opening sentence 'C. lucida is a plant that lives in warm, temperate regions.' is range, not habitat, and moved verbatim to the end of the summary."
     ],
     "summary" : {
       "sources" : [
         "Wikipedia, 'Coprosma lucida' (CC BY-SA 4.0)"
       ],
-      "text" : "Coprosma lucida, commonly known as shining karamū, karamū, kāramuramu, shiny karamū, or kakaramu, is a shrub or tree endemic to New Zealand.\nC. lucida is endemic to New Zealand.\nC. lucida is found throughout both mainland islands of New Zealand and some smaller surrounding islands, extending as far south as Big South Cape Island. The latitudinal range of C. lucida in New Zealand is between 34.42°S and 46.75°S. However, C. lucida is rare on Stewart Island, where deer populations have drastically reduced the population."
+      "text" : "Coprosma lucida, commonly known as shining karamū, karamū, kāramuramu, shiny karamū, or kakaramu, is a shrub or tree endemic to New Zealand.\nC. lucida is endemic to New Zealand.\nC. lucida is found throughout both mainland islands of New Zealand and some smaller surrounding islands, extending as far south as Big South Cape Island. The latitudinal range of C. lucida in New Zealand is between 34.42°S and 46.75°S. However, C. lucida is rare on Stewart Island, where deer populations have drastically reduced the population.\nC. lucida is a plant that lives in warm, temperate regions."
     },
     "warnings" : [
 
@@ -24249,12 +24280,14 @@
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "NZ Plant Conservation Network, 'Coprosma repens' (paraphrased)"
       ],
-      "text" : ""
+      "text" : "On the coast: rock stacks, islets, sea cliffs, slopes of fallen rock and boulder fields, petrel scrub on offshore islands, and coastal forest, where it is often the main understorey. Rarely found inland."
     },
     "habitats" : [
-      "coastal"
+      "coastal",
+      "forest",
+      "shrubland"
     ],
     "harvestEthics" : {
       "sources" : [
@@ -24365,7 +24398,8 @@
       "Lookalike cards (all ten Coprosma entries, written by the assistant on the owner's instruction, owner 17/10/2026: \"link them all as look alike given they are the same genus and are similar\"): every leaf, fruit, stipule and twig test restates Allan, H.H. 1961, Flora of New Zealand vol. I — species descriptions and the genus key (couplets 8, 21–22, 28–29) — via Flora of New Zealand Online and the Flora of New Zealand Series, CC BY 3.0 NZ, retrieved 17/10/2026; Kanono is Allan's C. australis. Dioecy: Allan, genus description \"Plants prevailingly dioec.\". Smell: Allan (C. foetidissima \"Lvs foetid when bruised\"); Wikipedia 'Coprosma lucida' (CC BY-SA 4.0) \"unlike C. robusta and some other Coprosma species, C. lucida does not have a foul-smelling odour\" and \"The roots and inner bark of C. lucida are a yellow colour, rather than dull brown like the similar C. robusta\"; NZPCN etymology for the genus name. Taupata × sand coprosma hybrids: NZPCN 'Coprosma repens'. Card risk 'edible': Useful Temperate Plants (CC BY-NC-SA 3.0) records the fruit eaten raw for C. grandifolia, robusta, lucida, repens, foetidissima, propinqua and acerosa (citing Crowe, Native Edible Plants of NZ; Knees 1995). Risk 'unknown' for C. tenuicaulis, macrocarpa and arborea: UTP has no page and Ngā Rauropi Whakaoranga records no food use. These cards clear this entry's `warnings` check; no warning text was added.",
       "Harvest ethics: the owner's own generic sentence, written for snowdrop-woodsorrel (16/10/2026), copied unchanged on the owner's instruction, 17/10/2026 (\"come up with a generic one for species that are not endangered … copy that one across\"), because this species is assessed Not Threatened — NZ Plant Conservation Network species page, 2023 NZTCS status (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43, Department of Conservation, CC BY 4.0), retrieved 17/10/2026: https://www.nzpcn.org.nz/flora/species/coprosma-repens/. Rāhui, conservation-land permits and specific tikanga are not covered by it.",
       "Edible parts (written by the assistant on the owner's instruction, 17/10/2026 — owner: \"from my understanding only the berries are edible\", then \"fix all Coprosmas\"): Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma repens', https://temperate.theferns.info/plant/Coprosma+repens, retrieved 17/10/2026: \"Fruit - raw or cooked. Sweet, but not much flavour\" — \"Fruit - raw or cooked\" cites Crowe, A. Native Edible Plants of New Zealand (1990); \"Sweet, but not much flavour\" cites Knees, S. The New Plantsman vol. 2 (1995); \"Known Hazards None known\". UTP marks the record \"not yet been checked and updated\", and cites rather than quotes its source. Fruit colour \"orange-red\" and dioecy (\"Plants prevailingly dioec.\") restate Allan 1961 via Flora of New Zealand Online, as on the lookalike cards. Not used: UTP's roasted-seed coffee-substitute line (Brooker, Cambie & Cooper 1991) — the owner says only the berries are eaten, and it rests on one source chain. Group set to fruit the same day: no source records the leaves as food.",
-      "Months [1–4], set 17/10/2026 (ripe fruit): No NZ source dates the ripe fruit: NZPCN 'Coprosma repens' \"Fruiting July - June\" is too broad to date ripeness, and Wikipedia gives no season. Secondary, not relied on: The Good Earth \"from summer through autumn\"; Nelson Natives \"June-July\". So the window is the photo estimate alone. Fruiting counts 86 53 41 28 5 3 1 3 5 21 50 62; ripe photos 2/6 2/6 4/6 5/6 2/5 2/3 0.5/1 1/3 0/5 1/6 0/6 0/6. Estimated ripe Jan ≈29, Feb ≈26, Mar ≈27, Apr ≈23, then ≤3; Nov–Dec fruit is all green. Replaces the earlier [2–5], which had no recorded source. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's."
+      "Months [1–4], set 17/10/2026 (ripe fruit): No NZ source dates the ripe fruit: NZPCN 'Coprosma repens' \"Fruiting July - June\" is too broad to date ripeness, and Wikipedia gives no season. Secondary, not relied on: The Good Earth \"from summer through autumn\"; Nelson Natives \"June-July\". So the window is the photo estimate alone. Fruiting counts 86 53 41 28 5 3 1 3 5 21 50 62; ripe photos 2/6 2/6 4/6 5/6 2/5 2/3 0.5/1 1/3 0/5 1/6 0/6 0/6. Estimated ripe Jan ≈29, Feb ≈26, Mar ≈27, Apr ≈23, then ≤3; Nov–Dec fruit is all green. Replaces the earlier [2–5], which had no recorded source. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's.",
+      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma repens', https://www.nzpcn.org.nz/flora/species/coprosma-repens/, retrieved 18/10/2026. Habitat: \"Coastal (rarely inland: Kaitaia – Awanui River, Huntly Basin and in the Manawatu – especially the upper Rangitikei River). A common species of rock stacks, islets, islands coastal cliffs, talus slopes and boulder field. Also a common component of petrel scrub on northern offshore islands, and in coastal forest where it often forms the main understorey and rarely is co-dominant in the canopy.\" Paraphrased by the assistant; habitat holds where it grows only. The inland localities and the page's list of associated species and hybrids are left out (place and taxonomy, not habitat)."
     ],
     "summary" : {
       "sources" : [
@@ -28459,12 +28493,14 @@
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "NZ Plant Conservation Network, 'Coprosma tenuicaulis' (paraphrased)"
       ],
-      "text" : ""
+      "text" : "Swamps and boggy ground, poorly drained shrubland and forest beside streams and rivers, mostly in the lowlands and rarely in the mountains."
     },
     "habitats" : [
-
+      "forest",
+      "shrubland",
+      "wetland"
     ],
     "harvestEthics" : {
       "sources" : [
@@ -28571,7 +28607,8 @@
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Coprosma tenuicaulis' factsheet. CC BY 3.0 NZ. Retrieved 16/10/2026. https://www.nzflora.info/factsheet/Taxon/Coprosma-tenuicaulis.html",
       "Summary text: Wikipedia contributors. 'Coprosma tenuicaulis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 16/10/2026. https://en.wikipedia.org/wiki/Coprosma_tenuicaulis",
       "Lookalike cards (all ten Coprosma entries, written by the assistant on the owner's instruction, owner 17/10/2026: \"link them all as look alike given they are the same genus and are similar\"): every leaf, fruit, stipule and twig test restates Allan, H.H. 1961, Flora of New Zealand vol. I — species descriptions and the genus key (couplets 8, 21–22, 28–29) — via Flora of New Zealand Online and the Flora of New Zealand Series, CC BY 3.0 NZ, retrieved 17/10/2026; Kanono is Allan's C. australis. Dioecy: Allan, genus description \"Plants prevailingly dioec.\". Smell: Allan (C. foetidissima \"Lvs foetid when bruised\"); Wikipedia 'Coprosma lucida' (CC BY-SA 4.0) \"unlike C. robusta and some other Coprosma species, C. lucida does not have a foul-smelling odour\" and \"The roots and inner bark of C. lucida are a yellow colour, rather than dull brown like the similar C. robusta\"; NZPCN etymology for the genus name. Taupata × sand coprosma hybrids: NZPCN 'Coprosma repens'. Card risk 'edible': Useful Temperate Plants (CC BY-NC-SA 3.0) records the fruit eaten raw for C. grandifolia, robusta, lucida, repens, foetidissima, propinqua and acerosa (citing Crowe, Native Edible Plants of NZ; Knees 1995). Risk 'unknown' for C. tenuicaulis, macrocarpa and arborea: UTP has no page and Ngā Rauropi Whakaoranga records no food use. These cards clear this entry's `warnings` check; no warning text was added.",
-      "harvestEthics, changed 17/10/2026 in the owner-requested sweep: no trusted source records this species as food (see sourcingNote), so the generic foraging sentence ('Be mindful when foraging. Take only what you need.') was replaced with the owner's unknown-edibility sentence for plants, as on large-seeded-coprosma (owner, 17/10/2026: \"change mushroom to plant for this\"). Nationally Not Threatened (NZTCS 2023 via NZPCN); rāhui, permits and specific tikanga are not covered."
+      "harvestEthics, changed 17/10/2026 in the owner-requested sweep: no trusted source records this species as food (see sourcingNote), so the generic foraging sentence ('Be mindful when foraging. Take only what you need.') was replaced with the owner's unknown-edibility sentence for plants, as on large-seeded-coprosma (owner, 17/10/2026: \"change mushroom to plant for this\"). Nationally Not Threatened (NZTCS 2023 via NZPCN); rāhui, permits and specific tikanga are not covered.",
+      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma tenuicaulis', https://www.nzpcn.org.nz/flora/species/coprosma-tenuicaulis/, retrieved 18/10/2026. Habitat: \"Lowland (rarely montane) in swamps and boggy ground, poorly drained shrubland and riparian forest.\" Paraphrased by the assistant; habitat holds where it grows only."
     ],
     "sourcingNote" : "Owed: months and edibleParts. Empty months reads as year-round, but nothing is recorded as eaten, so there is no harvest window to date. No trusted source names this species as food (Useful Temperate Plants has no page; NZPCN's genus page says only that the fruit of \"the larger species\" were eaten by Māori children, naming none; Ngā Rauropi Whakaoranga records no food use). If an edible-fruit source turns up, the ripe-fruit evidence gathered 17/10/2026 is: ripe (black) fruit photographed Feb–Jun; NZPCN \"Fruiting March - May\".",
     "summary" : {
@@ -28863,7 +28900,12 @@
     ],
     "maoriName" : "Karamū, karangū (names shared with Coprosma lucida and C. robusta)",
     "months" : [
-
+      1,
+      2,
+      9,
+      10,
+      11,
+      12
     ],
     "needsBookSource" : false,
     "origin" : "endemic",
@@ -28938,12 +28980,14 @@
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "NZ Plant Conservation Network, 'Coprosma arborea' (paraphrased)"
       ],
-      "text" : ""
+      "text" : "Coastal to lower montane forest, mostly near the coast and in the lowlands. Often part of the subcanopy in coastal kauri forest or mixed pōhutukawa and hardwood forest, and occasionally the dominant canopy tree."
     },
     "habitats" : [
-
+      "coastal",
+      "forest",
+      "alpine"
     ],
     "harvestEthics" : {
       "sources" : [
@@ -28954,9 +28998,10 @@
     "id" : "mamangi",
     "identification" : {
       "sources" : [
-        "Wikipedia, 'Coprosma arborea' (CC BY-SA 4.0) — units converted to metric"
+        "Wikipedia, 'Coprosma arborea' (CC BY-SA 4.0) — units converted to metric",
+        "NZ Plant Conservation Network, 'Coprosma arborea' fact sheet (paraphrased)"
       ],
-      "text" : "It is a small, bushy tree reaching 8–12 m in height with a trunk diameter of 20–50 cm. The branches are closely set, with slender branchlets. Adult leaves are somewhat glossy and hairless; they are dark green or yellow-green above and often mottled with maroon or purple and a pale wine-red underneath. The fruit is a non-poisonous juicy berry, containing two small seeds, usually oblong and 6–8 mm in length.  The flowers have insignificant petals and are wind pollinated, with long anthers and stigmas."
+      "text" : "It is a small, bushy tree reaching 8–12 m in height with a trunk diameter of 20–50 cm. The branches are closely set, with slender branchlets. Adult leaves are somewhat glossy and hairless; they are dark green or yellow-green above and often mottled with maroon or purple and a pale wine-red underneath. The fruit is a non-poisonous juicy berry, containing two small seeds, usually oblong and 6–8 mm in length. The flowers have insignificant petals and are wind pollinated, with long anthers and stigmas. The thin, mottled leaves have a small pit where the veins join. Young plants have small spoon-shaped leaves like those of Coprosma spathulata; run a finger along a young branchlet: in māmāngi it feels smooth, while in C. spathulata it is finely wrinkled and feels like a cat's tongue."
     },
     "lookalikes" : [
       {
@@ -29027,10 +29072,34 @@
     "months" : [
 
     ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/70250",
     "needsBookSource" : false,
     "origin" : "endemic",
     "photos" : [
-
+      {
+        "caption" : "Ripe white fruit among the leaves",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY)",
+        "fileName" : "mamangi-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/2938900"
+      },
+      {
+        "caption" : "Wine-red underside of the leaves",
+        "credit" : "(c) Hannah Rogers, some rights reserved (CC BY)",
+        "fileName" : "mamangi-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/199174121"
+      },
+      {
+        "caption" : "Young plant with mottled leaves",
+        "credit" : "(c) brucedc, some rights reserved (CC BY-NC)",
+        "fileName" : "mamangi-7.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/146874839"
+      },
+      {
+        "caption" : "Ripe fruit on the tree",
+        "credit" : "(c) Wyatt, some rights reserved (CC BY-NC)",
+        "fileName" : "mamangi-8.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/80450005"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -29049,14 +29118,19 @@
       "OWED edibleParts: no source found 16/10/2026 records the fruit as eaten (Ngā Rauropi Whakaoranga record has names only; Useful Temperate Plants has no page).",
       "Identification and summary text: Wikipedia contributors. 'Coprosma arborea', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 16/10/2026. https://en.wikipedia.org/wiki/Coprosma_arborea",
       "Lookalike cards (all ten Coprosma entries, written by the assistant on the owner's instruction, owner 17/10/2026: \"link them all as look alike given they are the same genus and are similar\"): every leaf, fruit, stipule and twig test restates Allan, H.H. 1961, Flora of New Zealand vol. I — species descriptions and the genus key (couplets 8, 21–22, 28–29) — via Flora of New Zealand Online and the Flora of New Zealand Series, CC BY 3.0 NZ, retrieved 17/10/2026; Kanono is Allan's C. australis. Dioecy: Allan, genus description \"Plants prevailingly dioec.\". Smell: Allan (C. foetidissima \"Lvs foetid when bruised\"); Wikipedia 'Coprosma lucida' (CC BY-SA 4.0) \"unlike C. robusta and some other Coprosma species, C. lucida does not have a foul-smelling odour\" and \"The roots and inner bark of C. lucida are a yellow colour, rather than dull brown like the similar C. robusta\"; NZPCN etymology for the genus name. Taupata × sand coprosma hybrids: NZPCN 'Coprosma repens'. Card risk 'edible': Useful Temperate Plants (CC BY-NC-SA 3.0) records the fruit eaten raw for C. grandifolia, robusta, lucida, repens, foetidissima, propinqua and acerosa (citing Crowe, Native Edible Plants of NZ; Knees 1995). Risk 'unknown' for C. tenuicaulis, macrocarpa and arborea: UTP has no page and Ngā Rauropi Whakaoranga records no food use. These cards clear this entry's `warnings` check; no warning text was added.",
-      "harvestEthics, changed 17/10/2026 in the owner-requested sweep: no trusted source records this species as food (see sourcingNote), so the generic foraging sentence ('Be mindful when foraging. Take only what you need.') was replaced with the owner's unknown-edibility sentence for plants, as on large-seeded-coprosma (owner, 17/10/2026: \"change mushroom to plant for this\"). Nationally Not Threatened (NZTCS 2023 via NZPCN); rāhui, permits and specific tikanga are not covered."
+      "harvestEthics, changed 17/10/2026 in the owner-requested sweep: no trusted source records this species as food (see sourcingNote), so the generic foraging sentence ('Be mindful when foraging. Take only what you need.') was replaced with the owner's unknown-edibility sentence for plants, as on large-seeded-coprosma (owner, 17/10/2026: \"change mushroom to plant for this\"). Nationally Not Threatened (NZTCS 2023 via NZPCN); rāhui, permits and specific tikanga are not covered.",
+      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma arborea', https://www.nzpcn.org.nz/flora/species/coprosma-arborea/, retrieved 18/10/2026. Habitat: \"Coastal to lower montane forest - but mostly coastal to lowland. Often forming the subcanopy in coastal kauri forest or mixed pohutukawa-hardwood forest. rarely, such as on Waiheke Island, forming a distinct forest type where it dominates the canopy.\" Paraphrased by the assistant; habitat holds where it grows only. The Waiheke Island example is left out as a place, not a habitat.",
+      "Range, leaf pits and the young-plant test (18/10/2026, owner pasted the link): NZ Plant Conservation Network, 'Coprosma arborea' fact sheet (PDF dated 25 May 2026, prepared by Peter J. de Lange 2004, description adapted from Allan 1961), https://www.nzpcn.org.nz/site/assets/files/0/16/749/coprosma-arborea.pdf, retrieved 18/10/2026. Distribution: \"Three Kings and North Island, where found from Te Paki south to near Waitomo in the west and about Gisborne in the East\". Simplified description: \"Leaves thin, mottled, with small pit at junction of veins\". Similar taxa: \"Juvenile Coprosma aborea is most easily distinguished by running ones finger down a young branchlet. In this species the branchlet is smooth while in C. spathulata (both subspecies) the branchlet is finely rugose and so imparts a texture not unlike that of a cats tongue.\" Paraphrased by the assistant. C. spathulata has no entry, so there is no card. 'Smooth' here is against C. spathulata's wrinkled branchlet; Allan and the same sheet also call the branchlets pubescent, which the cards' 'hairy twigs' restate. The sheet's measurements are wider than Allan's, which the cards use: adult leaves \"50-80 × 30-48 mm\" (Allan ± 50–60 × 35–40), young plants \"12-30 × 10-18 mm\" (Allan ± 15–25 × 10–17), fruit \"6-8 mm long\" (Allan c. 7). Flowering \"September - December\"; fruiting \"January - December\".",
+      "Checked for food use 18/10/2026 (owner pasted the link): The Plant Company, 'Coprosma arborea (Mamangi)', https://www.theplantcompany.co.nz/shop/product/trees/coprosma-arborea, retrieved 18/10/2026. A nursery listing; its only food mention is that the plant \"provides valuable habitat and food sources for native birds\". Nothing on people eating the fruit, so edibleParts and months stay owed. The NZPCN fact sheet above has no use or food section either.",
+      "Fruiting (18/10/2026, owner: \"find out when it fruits\"): Department of Conservation, 'Collect seeds and propagate native trees and shrubs', https://www.doc.govt.nz/get-involved/conservation-activities/collect-seeds-and-propagate-native-trees-and-shrubs/, retrieved 18/10/2026: \"It is the tallest coprosma species and produces abundant fruit for birds over a prolonged autumn season. Collect the white fruit from lower branches.\" Te Mārareo, 'Māmāngi', https://www.temarareo.org/TMR-Mamangi.html, retrieved 18/10/2026, gives Mead & Grove's proverb 'He pū māmāngi kī tahi' as meaning \"the berries are ripe in May, indicating definitively that summer and autumn have passed, and the cold season is here.\", but says it \"could apply to either or both of these trees\" (C. arborea and C. repens), so it is not used. Phil Bendle Collection (CitSciHub) \"Fruiting occurs during July\" is not used: one month, from text the page credits to Wikipedia. iNaturalist (NZ, research grade, 'Fruits or Seeds' annotation, 15 observations) read by eye; observation 12318247 (10/05/2018, Okura) shows orange-brown fruit, which does not match this species' white fruit. Months stay empty: the window would date a harvest, and nothing is recorded as eaten (see sourcingNote)."
     ],
-    "sourcingNote" : "Owed: months and edibleParts. Empty months reads as year-round, but nothing is recorded as eaten, so there is no harvest window to date. No trusted source names this species as food (Useful Temperate Plants has no page; NZPCN's genus page says only that the fruit of \"the larger species\" were eaten by Māori children, naming none; Ngā Rauropi Whakaoranga records no food use). If an edible-fruit source turns up, the ripe-fruit evidence gathered 17/10/2026 is: too few records to date: white fruit seen 27/01, 16/02, 12/03, 15/05; NZPCN \"Fruiting January - December\".",
+    "sourcingNote" : "Owed: months and edibleParts. Empty months reads as year-round, but nothing is recorded as eaten, so there is no harvest window to date. No trusted source names this species as food (Useful Temperate Plants has no page; NZPCN's genus page says only that the fruit of \"the larger species\" were eaten by Māori children, naming none; Ngā Rauropi Whakaoranga records no food use). If an edible-fruit source turns up, the ripe-fruit evidence gathered 17/10/2026 is: autumn. DOC: \"produces abundant fruit for birds over a prolonged autumn season\"; NZPCN \"Fruiting January - December\" (fruit of some stage is on the tree all year). NZ research-grade iNaturalist photos checked by eye 18/10/2026: ripe white fruit on 27/01, 12/03 (a blackbird eating it), 14/04 and 15/05; green fruit from January to July. A reading of 15 observations, not a source.",
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Coprosma arborea' (CC BY-SA 4.0)"
+        "Wikipedia, 'Coprosma arborea' (CC BY-SA 4.0)",
+        "NZ Plant Conservation Network, 'Coprosma arborea' fact sheet (paraphrased)"
       ],
-      "text" : "Coprosma arborea is a species of tree found in New Zealand, traditionally known in Māori by the name mamangi."
+      "text" : "Coprosma arborea is a species of tree found in New Zealand, traditionally known in Māori by the name mamangi. It grows only on the Three Kings Islands and in the top half of the North Island, from Te Paki south to about Waitomo in the west and Gisborne in the east."
     },
     "warnings" : [
 
@@ -29076,12 +29150,12 @@
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "NZ Plant Conservation Network, 'Coprosma acerosa' (paraphrased)"
       ],
-      "text" : ""
+      "text" : "Coastal sand, including dunes."
     },
     "habitats" : [
-
+      "coastal"
     ],
     "id" : "sand-coprosma",
     "identification" : {
@@ -29186,7 +29260,8 @@
       "Identification and summary text: Wikipedia contributors. 'Coprosma acerosa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 16/10/2026. https://en.wikipedia.org/wiki/Coprosma_acerosa",
       "Lookalike cards (all ten Coprosma entries, written by the assistant on the owner's instruction, owner 17/10/2026: \"link them all as look alike given they are the same genus and are similar\"): every leaf, fruit, stipule and twig test restates Allan, H.H. 1961, Flora of New Zealand vol. I — species descriptions and the genus key (couplets 8, 21–22, 28–29) — via Flora of New Zealand Online and the Flora of New Zealand Series, CC BY 3.0 NZ, retrieved 17/10/2026; Kanono is Allan's C. australis. Dioecy: Allan, genus description \"Plants prevailingly dioec.\". Smell: Allan (C. foetidissima \"Lvs foetid when bruised\"); Wikipedia 'Coprosma lucida' (CC BY-SA 4.0) \"unlike C. robusta and some other Coprosma species, C. lucida does not have a foul-smelling odour\" and \"The roots and inner bark of C. lucida are a yellow colour, rather than dull brown like the similar C. robusta\"; NZPCN etymology for the genus name. Taupata × sand coprosma hybrids: NZPCN 'Coprosma repens'. Card risk 'edible': Useful Temperate Plants (CC BY-NC-SA 3.0) records the fruit eaten raw for C. grandifolia, robusta, lucida, repens, foetidissima, propinqua and acerosa (citing Crowe, Native Edible Plants of NZ; Knees 1995). Risk 'unknown' for C. tenuicaulis, macrocarpa and arborea: UTP has no page and Ngā Rauropi Whakaoranga records no food use. These cards clear this entry's `warnings` check; no warning text was added.",
       "Edible parts (written by the assistant on the owner's instruction, 17/10/2026 — owner: \"from my understanding only the berries are edible\", then \"fix all Coprosmas\"): Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma acerosa', https://temperate.theferns.info/plant/Coprosma+acerosa, retrieved 17/10/2026: \"Fruit - raw. Sweet and juicy, but with little flavour\" — \"Fruit - raw\" cites Kunkel, G. Plants for Human Consumption; \"Sweet and juicy\" cites Crowe, A. Native Edible Plants of New Zealand (1990); \"but with little flavour\" cites Knees, S. The New Plantsman vol. 2 (1995); \"Known Hazards None known\". UTP marks the record \"not yet been checked and updated\", and cites rather than quotes its source. Fruit colour \"translucent, very pale to pale blue, often with darker flecks\" and dioecy (\"Plants prevailingly dioec.\") restate Allan 1961 via Flora of New Zealand Online, as on the lookalike cards. Not used: UTP's roasted-seed coffee-substitute line (Brooker, Cambie & Cooper 1991) — the owner says only the berries are eaten, and it rests on one source chain. Group set to fruit the same day: no source records the leaves as food.",
-      "Months [1–5], set 17/10/2026 (ripe fruit): NZPCN 'Coprosma acerosa': \"Fruiting February–March–(July)\". Fruiting counts 64 44 39 53 33 20 15 11 8 5 22 28; ripe photos (of 6) 5 6 5 4 4 4 6 5 6 1 0 2. Jan (≈53), Apr (≈35) and May (≈22) reach the cut (≈13); Jun (≈13) sits just under. Single ripe fruits hang on to September, matching NZPCN's bracketed (July). Jan is a month before NZPCN's start; the photos show translucent pale-blue fruit. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's."
+      "Months [1–5], set 17/10/2026 (ripe fruit): NZPCN 'Coprosma acerosa': \"Fruiting February–March–(July)\". Fruiting counts 64 44 39 53 33 20 15 11 8 5 22 28; ripe photos (of 6) 5 6 5 4 4 4 6 5 6 1 0 2. Jan (≈53), Apr (≈35) and May (≈22) reach the cut (≈13); Jun (≈13) sits just under. Single ripe fruits hang on to September, matching NZPCN's bracketed (July). Jan is a month before NZPCN's start; the photos show translucent pale-blue fruit. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's.",
+      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma acerosa', https://www.nzpcn.org.nz/flora/species/coprosma-acerosa/, retrieved 18/10/2026. Habitat: \"Coastal sands throughout distribution.\" Paraphrased by the assistant; habitat holds where it grows only. 'Dunes' is from the same page's Threats section (\"dune reclamation, competition from marram grass\")."
     ],
     "summary" : {
       "sources" : [
