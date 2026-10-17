@@ -139,7 +139,7 @@ public enum SpeciesID: String, Codable, Sendable, Hashable, CaseIterable {
     case jellybeanIcePlant = "jellybean-ice-plant"
     case kahikatea = "kahikatea"
     case kanono = "kanono"
-    case kanukaAndManuka = "kanuka-and-manuka"
+    case kanuka = "kanuka"
     case karaka = "karaka"
     case karamu = "karamu"
     case kareao = "kareao"
