@@ -2415,6 +2415,12 @@
       "coastal",
       "forest"
     ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading."
+    },
     "id" : "bladder-kelp",
     "identification" : {
       "sources" : [
@@ -2448,7 +2454,8 @@
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Bladder kelp' entry.",
       "Identification, habitat and summary text: Wikipedia contributors. 'Macrocystis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Macrocystis",
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013)."
+      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
+      "harvestEthics (19/10/2026, owner: \"can you improve this as well? “This species is at risk, so if you are going to harvest it make sure you do that sustainably.” add to not disturb species propagation and or kill the plant. that can be used for all at little risk\"): the owner's at-risk sentence as extended on the owner's instruction that day (wording by the assistant), applied to every at-risk entry. Status: Nelson, W.A. et al. 2019, Conservation status of New Zealand macroalgae, 2019, NZTCS 30, Department of Conservation: Macrocystis pyrifera listed under \"At Risk – Declining\", qualifiers DP, S?O; read 17/10/2026 for the harvestEthics sweep, where this entry was left out of the generic Not Threatened sentence. Rāhui, conservation-land permits and specific tikanga are not covered."
     ],
     "summary" : {
       "sources" : [
@@ -9510,6 +9517,12 @@
       "grassland",
       "alpine"
     ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading."
+    },
     "id" : "hioi",
     "identification" : {
       "sources" : [
@@ -9541,7 +9554,8 @@
     "scientificName" : "Mentha cunninghamii",
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
-      "Identification, habitat and summary text: Wikipedia contributors. 'Mentha cunninghamii', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Mentha_cunninghamii"
+      "Identification, habitat and summary text: Wikipedia contributors. 'Mentha cunninghamii', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Mentha_cunninghamii",
+      "harvestEthics (19/10/2026, owner: \"can you improve this as well? “This species is at risk, so if you are going to harvest it make sure you do that sustainably.” add to not disturb species propagation and or kill the plant. that can be used for all at little risk\"): the owner's at-risk sentence as extended on the owner's instruction that day (wording by the assistant), applied to every at-risk entry. Status: NZ Plant Conservation Network, 'Mentha cunninghamii', https://www.nzpcn.org.nz/flora/species/mentha-cunninghamii/, 2023 \"At Risk – Declining\", qualifiers PD (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43, Department of Conservation, CC BY 4.0); read 17/10/2026 for the harvestEthics sweep, where this entry was left out of the generic Not Threatened sentence. Rāhui, conservation-land permits and specific tikanga are not covered."
     ],
     "summary" : {
       "sources" : [
@@ -13920,6 +13934,12 @@
       "wetland",
       "alpine"
     ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading."
+    },
     "id" : "mountain-carrot",
     "identification" : {
       "sources" : [
@@ -13962,7 +13982,8 @@
     "scientificName" : "Gingidia montana",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Mountain carrot' entry.",
-      "Identification, habitat and summary text: Wikipedia contributors. 'Gingidia montana', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Gingidia_montana"
+      "Identification, habitat and summary text: Wikipedia contributors. 'Gingidia montana', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Gingidia_montana",
+      "harvestEthics (19/10/2026, owner: \"can you improve this as well? “This species is at risk, so if you are going to harvest it make sure you do that sustainably.” add to not disturb species propagation and or kill the plant. that can be used for all at little risk\"): the owner's at-risk sentence as extended on the owner's instruction that day (wording by the assistant), applied to every at-risk entry. Status: NZ Plant Conservation Network, 'Gingidia montana', https://www.nzpcn.org.nz/flora/species/gingidia-montana/, 2023 \"At Risk – Declining\", qualifiers DPR, DPS, DPT, PF (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43, Department of Conservation, CC BY 4.0); read 17/10/2026 for the harvestEthics sweep, where this entry was left out of the generic Not Threatened sentence. Rāhui, conservation-land permits and specific tikanga are not covered."
     ],
     "summary" : {
       "sources" : [
@@ -14866,6 +14887,12 @@
     "habitats" : [
 
     ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading."
+    },
     "id" : "new-zealand-sow-thistle",
     "identification" : {
       "sources" : [
@@ -14897,7 +14924,8 @@
     "scientificName" : "Sonchus kirkii",
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
-      "Identification and summary text: Wikipedia contributors. 'Sonchus kirkii', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Sonchus_kirkii"
+      "Identification and summary text: Wikipedia contributors. 'Sonchus kirkii', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Sonchus_kirkii",
+      "harvestEthics (19/10/2026, owner: \"can you improve this as well? “This species is at risk, so if you are going to harvest it make sure you do that sustainably.” add to not disturb species propagation and or kill the plant. that can be used for all at little risk\"): the owner's at-risk sentence as extended on the owner's instruction that day (wording by the assistant), applied to every at-risk entry. Status: NZ Plant Conservation Network, 'Sonchus kirkii', https://www.nzpcn.org.nz/flora/species/sonchus-kirkii/, 2023 \"At Risk – Declining\", qualifiers CI (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43, Department of Conservation, CC BY 4.0); read 17/10/2026 for the harvestEthics sweep, where this entry was left out of the generic Not Threatened sentence. Rāhui, conservation-land permits and specific tikanga are not covered."
     ],
     "summary" : {
       "sources" : [
@@ -14935,7 +14963,7 @@
       "sources" : [
 
       ],
-      "text" : "This species is at risk, so if you are going to harvest it make sure you do that sustainably."
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading."
     },
     "id" : "new-zealand-spinach",
     "identification" : {
@@ -15012,7 +15040,8 @@
       "Habitat tags, 10/10/2026: disturbed is what Tools/classify_habitats.py reads from this entry's habitat line; coastal and urban rest on NZPCN's statement above (coastal strand zone; a casual weed of urban areas), which is all rights reserved and so is not quoted on the page.",
       "harvestEthics is the owner's sentence. 'endangered' was corrected to 'at risk' on 10/10/2026 to match DOC's 2023 listing, At Risk – Naturally Uncommon — not a Threatened category — with two typos fixed. Photos verified the same day: observations 2434731, 23818054 and 57080533 are research-grade wild Tetragonia tetragonoides in New Zealand (Wenderholm, Hokitika River mouth, Mount Roskill); the first two photos are CC0 and the last two CC BY, each matching its credit, and the two Mount Roskill frames are different shots.",
       "Lookalike card to Beach spinach — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online, 'Tetragonia trigyna' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Tetragonia-trigyna.html (resolves to Tetragonia implexicoma; Allan 1961 text as T. trigyna) | Flora of New Zealand Online, 'Tetragonia tetragonioides' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Tetragonia-tetragonioides.html UNRESOLVED: Saved Flora page flora-Tetragonia-trigyna.txt shows biostatus 'Exotic' under one heading, while species.json records Flora/NZPCN as Indigenous (Non-endemic) after the 10/10/2026 correction; not a card issue. Useful Temperate Plants for T. implexicoma says 'Edible Uses None known' (v2-utp-Tetragonia+implexicoma.txt) but NZPCN T. trigyna says edible, and the NZ taxon is T. trigyna. proposed_risk was null; final_risk is the current catalogue risk (edible), checked.",
-      "Page sweep 13/10/2026 (owner: \"do a sweep on all species added and make sure they are good\", then \"fix\"): every field checked against curl'd sources, each fix re-verified by a second pass; deletions and weakenings only. On 13/10/2026, in the owner's page sweep, the edible-parts sentence 'The tips of the spinach can be pinched off and eaten raw or cooked' (Wikipedia, citing Nyerges, Foraging Wild Edible Plants of North America) was deleted: it contradicts the page's warning, from the same article, that the oxalates 'need to be removed by blanching'. On 13/10/2026, in the owner's page sweep, the card's stem-length test was deleted: it gave this plant's stems as about 60 cm, while NZPCN gives 'Branches up to 1 m long' and Flora of North America 'Stems mat-forming, 3-14 dm', so stem length does not separate the two. On 13/10/2026, in the owner's page sweep, the card's beach spinach flower-stalk length was widened from 'about 5 mm' to Allan (1961)'s '± 5 mm' and NZPCN's 'pedicels slender, 5-30 mm long'. On 13/10/2026, in the owner's page sweep, the card's fruit description for this plant was re-hedged to NZPCN: horned fruits 'typical of T. tetragonoides', 'Fruit 8-10(15) mm long'. On 13/10/2026, in the owner's page sweep, the card's beach spinach berry was widened to NZPCN's 'Fruit 5-8 mm long, succulent, pink to dark red'. On 13/10/2026, in the owner's page sweep, the word 'horned' was deleted from the identification text's 'each with 4–10 horned seeds' (Wikipedia): Flora of New Zealand Online (Allan 1961) puts the horns on the fruit, 'seeds 4–10; horns 2–4, indurate'."
+      "Page sweep 13/10/2026 (owner: \"do a sweep on all species added and make sure they are good\", then \"fix\"): every field checked against curl'd sources, each fix re-verified by a second pass; deletions and weakenings only. On 13/10/2026, in the owner's page sweep, the edible-parts sentence 'The tips of the spinach can be pinched off and eaten raw or cooked' (Wikipedia, citing Nyerges, Foraging Wild Edible Plants of North America) was deleted: it contradicts the page's warning, from the same article, that the oxalates 'need to be removed by blanching'. On 13/10/2026, in the owner's page sweep, the card's stem-length test was deleted: it gave this plant's stems as about 60 cm, while NZPCN gives 'Branches up to 1 m long' and Flora of North America 'Stems mat-forming, 3-14 dm', so stem length does not separate the two. On 13/10/2026, in the owner's page sweep, the card's beach spinach flower-stalk length was widened from 'about 5 mm' to Allan (1961)'s '± 5 mm' and NZPCN's 'pedicels slender, 5-30 mm long'. On 13/10/2026, in the owner's page sweep, the card's fruit description for this plant was re-hedged to NZPCN: horned fruits 'typical of T. tetragonoides', 'Fruit 8-10(15) mm long'. On 13/10/2026, in the owner's page sweep, the card's beach spinach berry was widened to NZPCN's 'Fruit 5-8 mm long, succulent, pink to dark red'. On 13/10/2026, in the owner's page sweep, the word 'horned' was deleted from the identification text's 'each with 4–10 horned seeds' (Wikipedia): Flora of New Zealand Online (Allan 1961) puts the horns on the fruit, 'seeds 4–10; horns 2–4, indurate'.",
+      "harvestEthics reworded (19/10/2026, owner: \"can you improve this as well? “This species is at risk, so if you are going to harvest it make sure you do that sustainably.” add to not disturb species propagation and or kill the plant. that can be used for all at little risk\"): the owner's sentence, extended on the owner's instruction to say how to harvest without killing the plant or stopping it reproducing; wording by the assistant. Previously: \"This species is at risk, so if you are going to harvest it make sure you do that sustainably.\" Applies to every at-risk entry with a food use; the status is in this entry's other sources lines."
     ],
     "summary" : {
       "sources" : [
@@ -20848,6 +20877,12 @@
     "habitats" : [
       "coastal"
     ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading."
+    },
     "id" : "sea-grapes",
     "identification" : {
       "sources" : [
@@ -20880,7 +20915,8 @@
     "scientificName" : "Caulerpa racemosa",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Sea grapes' entry.",
-      "Identification, habitat and summary text: Wikipedia contributors. 'Caulerpa racemosa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Caulerpa_racemosa"
+      "Identification, habitat and summary text: Wikipedia contributors. 'Caulerpa racemosa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Caulerpa_racemosa",
+      "harvestEthics (19/10/2026, owner: \"can you improve this as well? “This species is at risk, so if you are going to harvest it make sure you do that sustainably.” add to not disturb species propagation and or kill the plant. that can be used for all at little risk\"): the owner's at-risk sentence as extended on the owner's instruction that day (wording by the assistant), applied to every at-risk entry. Status: Nelson, W.A. et al. 2019, Conservation status of New Zealand macroalgae, 2019, NZTCS 30, Department of Conservation: Caulerpa racemosa listed under \"At Risk – Naturally Uncommon\", qualifier SO; read 17/10/2026 for the harvestEthics sweep, where this entry was left out of the generic Not Threatened sentence. Rāhui, conservation-land permits and specific tikanga are not covered."
     ],
     "summary" : {
       "sources" : [
@@ -21622,7 +21658,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Shining karamū",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma lucida'",
@@ -21733,7 +21769,30 @@
     "needsBookSource" : false,
     "origin" : "endemic",
     "photos" : [
-
+      {
+        "caption" : "Close up of leaves",
+        "credit" : "(c) Emily Roberts, some rights reserved (CC BY)",
+        "fileName" : "shining-karamu-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/210101183"
+      },
+      {
+        "caption" : "Fruit on tree",
+        "credit" : "(c) Emily Roberts, some rights reserved (CC BY)",
+        "fileName" : "shining-karamu-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/12569026"
+      },
+      {
+        "caption" : "Unripe fruits on tree",
+        "credit" : "(c) kiwialli, some rights reserved (CC BY)",
+        "fileName" : "shining-karamu-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/340565831"
+      },
+      {
+        "caption" : "Close up on flower",
+        "credit" : "(c) Joe Dillon, some rights reserved (CC BY)",
+        "fileName" : "shining-karamu-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/139596902"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -22775,6 +22834,12 @@
     "habitats" : [
       "coastal"
     ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading."
+    },
     "id" : "southern-nettle",
     "identification" : {
       "sources" : [
@@ -22806,7 +22871,8 @@
     "scientificName" : "Urtica australis",
     "sources" : [
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
-      "Identification, habitat and summary text: Wikipedia contributors. 'Urtica australis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Urtica_australis"
+      "Identification, habitat and summary text: Wikipedia contributors. 'Urtica australis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Urtica_australis",
+      "harvestEthics (19/10/2026, owner: \"can you improve this as well? “This species is at risk, so if you are going to harvest it make sure you do that sustainably.” add to not disturb species propagation and or kill the plant. that can be used for all at little risk\"): the owner's at-risk sentence as extended on the owner's instruction that day (wording by the assistant), applied to every at-risk entry. Status: NZ Plant Conservation Network, 'Urtica australis', https://www.nzpcn.org.nz/flora/species/urtica-australis/, 2023 \"At Risk – Declining\", qualifiers PD (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43, Department of Conservation, CC BY 4.0); read 17/10/2026 for the harvestEthics sweep, where this entry was left out of the generic Not Threatened sentence. Rāhui, conservation-land permits and specific tikanga are not covered."
     ],
     "summary" : {
       "sources" : [
@@ -24269,11 +24335,12 @@
   {
     "caution" : "careRequired",
     "commonName" : "Taupata",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma repens'",
-        "Flora of New Zealand Online (Allan 1961, CC BY 3.0 NZ) — colour, dioecious"
+        "Flora of New Zealand Online (Allan 1961, CC BY 3.0 NZ) — colour, dioecious",
+        "Ngā Rauropi Whakaoranga — berries eaten (Colenso 1868a, 1880)"
       ],
       "text" : "The fruit, raw or cooked. It is orange-red, sweet but without much flavour. Plants are male or female, and only female plants bear fruit."
     },
@@ -24377,7 +24444,30 @@
     "needsBookSource" : false,
     "origin" : "native",
     "photos" : [
-
+      {
+        "caption" : "Several leaves",
+        "credit" : "(c) Joss Carr, some rights reserved (CC BY)",
+        "fileName" : "taupata-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/185477274"
+      },
+      {
+        "caption" : "Unripe fruit on trees",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "taupata-2.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/360305"
+      },
+      {
+        "caption" : "Photo of a small specimen",
+        "credit" : "(c) William Harland, some rights reserved (CC BY)",
+        "fileName" : "taupata-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/138051554"
+      },
+      {
+        "caption" : "Photo of ripe fruit",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "taupata-4.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/360305"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -24392,14 +24482,15 @@
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Taupata' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Coprosma repens' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Coprosma-repens.html",
-      "Habitat and summary text: Wikipedia contributors. 'Coprosma repens', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Coprosma_repens",
+      "Summary text (habitat text until 18/10/2026, now NZPCN — see the Habitat line): Wikipedia contributors. 'Coprosma repens', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Coprosma_repens",
       "Greater Wellington Regional Council. Wellington Regional Native Plant Guide, revised edition (2010), main plant list — names only.",
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
       "Lookalike cards (all ten Coprosma entries, written by the assistant on the owner's instruction, owner 17/10/2026: \"link them all as look alike given they are the same genus and are similar\"): every leaf, fruit, stipule and twig test restates Allan, H.H. 1961, Flora of New Zealand vol. I — species descriptions and the genus key (couplets 8, 21–22, 28–29) — via Flora of New Zealand Online and the Flora of New Zealand Series, CC BY 3.0 NZ, retrieved 17/10/2026; Kanono is Allan's C. australis. Dioecy: Allan, genus description \"Plants prevailingly dioec.\". Smell: Allan (C. foetidissima \"Lvs foetid when bruised\"); Wikipedia 'Coprosma lucida' (CC BY-SA 4.0) \"unlike C. robusta and some other Coprosma species, C. lucida does not have a foul-smelling odour\" and \"The roots and inner bark of C. lucida are a yellow colour, rather than dull brown like the similar C. robusta\"; NZPCN etymology for the genus name. Taupata × sand coprosma hybrids: NZPCN 'Coprosma repens'. Card risk 'edible': Useful Temperate Plants (CC BY-NC-SA 3.0) records the fruit eaten raw for C. grandifolia, robusta, lucida, repens, foetidissima, propinqua and acerosa (citing Crowe, Native Edible Plants of NZ; Knees 1995). Risk 'unknown' for C. tenuicaulis, macrocarpa and arborea: UTP has no page and Ngā Rauropi Whakaoranga records no food use. These cards clear this entry's `warnings` check; no warning text was added.",
       "Harvest ethics: the owner's own generic sentence, written for snowdrop-woodsorrel (16/10/2026), copied unchanged on the owner's instruction, 17/10/2026 (\"come up with a generic one for species that are not endangered … copy that one across\"), because this species is assessed Not Threatened — NZ Plant Conservation Network species page, 2023 NZTCS status (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43, Department of Conservation, CC BY 4.0), retrieved 17/10/2026: https://www.nzpcn.org.nz/flora/species/coprosma-repens/. Rāhui, conservation-land permits and specific tikanga are not covered by it.",
       "Edible parts (written by the assistant on the owner's instruction, 17/10/2026 — owner: \"from my understanding only the berries are edible\", then \"fix all Coprosmas\"): Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma repens', https://temperate.theferns.info/plant/Coprosma+repens, retrieved 17/10/2026: \"Fruit - raw or cooked. Sweet, but not much flavour\" — \"Fruit - raw or cooked\" cites Crowe, A. Native Edible Plants of New Zealand (1990); \"Sweet, but not much flavour\" cites Knees, S. The New Plantsman vol. 2 (1995); \"Known Hazards None known\". UTP marks the record \"not yet been checked and updated\", and cites rather than quotes its source. Fruit colour \"orange-red\" and dioecy (\"Plants prevailingly dioec.\") restate Allan 1961 via Flora of New Zealand Online, as on the lookalike cards. Not used: UTP's roasted-seed coffee-substitute line (Brooker, Cambie & Cooper 1991) — the owner says only the berries are eaten, and it rests on one source chain. Group set to fruit the same day: no source records the leaves as food.",
       "Months [1–4], set 17/10/2026 (ripe fruit): No NZ source dates the ripe fruit: NZPCN 'Coprosma repens' \"Fruiting July - June\" is too broad to date ripeness, and Wikipedia gives no season. Secondary, not relied on: The Good Earth \"from summer through autumn\"; Nelson Natives \"June-July\". So the window is the photo estimate alone. Fruiting counts 86 53 41 28 5 3 1 3 5 21 50 62; ripe photos 2/6 2/6 4/6 5/6 2/5 2/3 0.5/1 1/3 0/5 1/6 0/6 0/6. Estimated ripe Jan ≈29, Feb ≈26, Mar ≈27, Apr ≈23, then ≤3; Nov–Dec fruit is all green. Replaces the earlier [2–5], which had no recorded source. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's.",
-      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma repens', https://www.nzpcn.org.nz/flora/species/coprosma-repens/, retrieved 18/10/2026. Habitat: \"Coastal (rarely inland: Kaitaia – Awanui River, Huntly Basin and in the Manawatu – especially the upper Rangitikei River). A common species of rock stacks, islets, islands coastal cliffs, talus slopes and boulder field. Also a common component of petrel scrub on northern offshore islands, and in coastal forest where it often forms the main understorey and rarely is co-dominant in the canopy.\" Paraphrased by the assistant; habitat holds where it grows only. The inland localities and the page's list of associated species and hybrids are left out (place and taxonomy, not habitat)."
+      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma repens', https://www.nzpcn.org.nz/flora/species/coprosma-repens/, retrieved 18/10/2026. Habitat: \"Coastal (rarely inland: Kaitaia – Awanui River, Huntly Basin and in the Manawatu – especially the upper Rangitikei River). A common species of rock stacks, islets, islands coastal cliffs, talus slopes and boulder field. Also a common component of petrel scrub on northern offshore islands, and in coastal forest where it often forms the main understorey and rarely is co-dominant in the canopy.\" Paraphrased by the assistant; habitat holds where it grows only. The inland localities and the page's list of associated species and hybrids are left out (place and taxonomy, not habitat).",
+      "Edible parts, second record (19/10/2026): Ngā Rauropi Whakaoranga, Manaaki Whenua – Landcare Research, 'Coprosma repens. Taupata.', https://rauropiwhakaoranga.landcareresearch.co.nz/names/4c8f6d53-96fa-4e0c-989c-20421884ea93, retrieved 19/10/2026. Food: \"Berries eaten (Colenso 1868a, 1880)\" — a fact cited, no text copied. It also points to Crawford 1877 for a coffee-substitute use (the seed, not used here; see the Edible parts line). Its other Māori names (naupata, māmāngi on the East Cape, angiangi; Kirk 1889) are not added: māmāngi is this catalogue's name for C. arborea."
     ],
     "summary" : {
       "sources" : [
@@ -28483,7 +28574,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Swamp coprosma",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
@@ -28511,9 +28602,10 @@
     "id" : "swamp-coprosma",
     "identification" : {
       "sources" : [
-        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)",
+        "NZ Plant Conservation Network, 'Coprosma tenuicaulis' — field characters (paraphrased)"
       ],
-      "text" : "Shrub up to c. 3 m. tall; branches slender, subdivaricate, us. ± interlacing; branchlets slender, pubescent. Lvs on ± winged slender pubescent petioles 3–5 mm. long. Stipules small, triangular, subacute, ± pubescent, ciliate, terminal tuft consipicuous. Lamina subcorica., glab., orbicular-ovate, spathulate, obtuse, minutely apiculate, ± 8–13 × 8–10 mm. Reticulations of veins evident on both surfaces. ♂ in fascicles of 3–6; calyx 0; corolla funnelform, lobes ± = tube, ovate, acute. ♀ solitary or in axillary clusters of 2–4 along short branchlets; calyx-teeth minute; corolla funnelform, lobes ovate, acute, = or > tube. Drupe black, globose, 3–4 mm. diam.\n[From:  Allan (1961) Flora of New Zealand. Volume 1.]"
+      "text" : "Shrub up to c. 3 m. tall; branches slender, subdivaricate, us. ± interlacing; branchlets slender, pubescent. Lvs on ± winged slender pubescent petioles 3–5 mm. long. Stipules small, triangular, subacute, ± pubescent, ciliate, terminal tuft consipicuous. Lamina subcorica., glab., orbicular-ovate, spathulate, obtuse, minutely apiculate, ± 8–13 × 8–10 mm. Reticulations of veins evident on both surfaces. ♂ in fascicles of 3–6; calyx 0; corolla funnelform, lobes ± = tube, ovate, acute. ♀ solitary or in axillary clusters of 2–4 along short branchlets; calyx-teeth minute; corolla funnelform, lobes ovate, acute, = or > tube. Drupe black, globose, 3–4 mm. diam.\n[From:  Allan (1961) Flora of New Zealand. Volume 1.]\nIn the field: the leaves have darker margins and a paler blotch in the middle of the upper surface; there is a small tuft of longer hairs (sometimes with a small dark tooth) on the hairy stem between each pair of leaf bases; the ripe fruit has dark reddish-black to black skin and dark purple flesh."
     },
     "lookalikes" : [
       {
@@ -28582,12 +28674,39 @@
     ],
     "maoriName" : "Hukihuki",
     "months" : [
-
+      2,
+      3,
+      4,
+      5,
+      6
     ],
     "needsBookSource" : false,
     "origin" : "endemic",
     "photos" : [
-
+      {
+        "caption" : "Close up of leaves",
+        "credit" : "(c) Angus Campbell, some rights reserved (CC BY)",
+        "fileName" : "swamp-coprosma-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/334689917"
+      },
+      {
+        "caption" : "Leaves on branch",
+        "credit" : "(c) Leon Perrie, some rights reserved (CC BY)",
+        "fileName" : "swamp-coprosma-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/35187506"
+      },
+      {
+        "caption" : "Berries on tree",
+        "credit" : "(c) Jeremy Rolfe, some rights reserved (CC BY)",
+        "fileName" : "swamp-coprosma-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/265805901"
+      },
+      {
+        "caption" : "Close up of flowers",
+        "credit" : "(c) Pat Enright, some rights reserved (CC BY-NC)",
+        "fileName" : "swamp-coprosma-4.heic",
+        "sourceURL" : "http://www.inaturalist.org/observations/2211477"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -28603,19 +28722,23 @@
       "Split 16/10/2026 from the former genus entry 'coprosma' (Coprosma spp.; Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Coprosma' entry), whose Māori-name list included 'Hukihuki'. Owner, 16/10/2026: \"we should avoid catch all species, add each individual one and delete this one\". Langlands' text for this species has not been read; whether the book names it is unconfirmed.",
       "Name and origin: NZ Plant Conservation Network, 'Coprosma tenuicaulis', https://www.nzpcn.org.nz/flora/species/coprosma-tenuicaulis/, retrieved 16/10/2026. \"Common names: swamp coprosma, hukihuki\"; Native, endemic.",
       "Māori name: Te Aka Māori Dictionary, https://maoridictionary.co.nz/search?keywords=hukihuki, retrieved 16/10/2026. \"swamp coprosma, Coprosma tenuicaulis\".",
-      "OWED edibleParts: no source found 16/10/2026 records the fruit as eaten (Ngā Rauropi Whakaoranga, Useful Temperate Plants, Wikipedia checked).",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Coprosma tenuicaulis' factsheet. CC BY 3.0 NZ. Retrieved 16/10/2026. https://www.nzflora.info/factsheet/Taxon/Coprosma-tenuicaulis.html",
       "Summary text: Wikipedia contributors. 'Coprosma tenuicaulis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 16/10/2026. https://en.wikipedia.org/wiki/Coprosma_tenuicaulis",
       "Lookalike cards (all ten Coprosma entries, written by the assistant on the owner's instruction, owner 17/10/2026: \"link them all as look alike given they are the same genus and are similar\"): every leaf, fruit, stipule and twig test restates Allan, H.H. 1961, Flora of New Zealand vol. I — species descriptions and the genus key (couplets 8, 21–22, 28–29) — via Flora of New Zealand Online and the Flora of New Zealand Series, CC BY 3.0 NZ, retrieved 17/10/2026; Kanono is Allan's C. australis. Dioecy: Allan, genus description \"Plants prevailingly dioec.\". Smell: Allan (C. foetidissima \"Lvs foetid when bruised\"); Wikipedia 'Coprosma lucida' (CC BY-SA 4.0) \"unlike C. robusta and some other Coprosma species, C. lucida does not have a foul-smelling odour\" and \"The roots and inner bark of C. lucida are a yellow colour, rather than dull brown like the similar C. robusta\"; NZPCN etymology for the genus name. Taupata × sand coprosma hybrids: NZPCN 'Coprosma repens'. Card risk 'edible': Useful Temperate Plants (CC BY-NC-SA 3.0) records the fruit eaten raw for C. grandifolia, robusta, lucida, repens, foetidissima, propinqua and acerosa (citing Crowe, Native Edible Plants of NZ; Knees 1995). Risk 'unknown' for C. tenuicaulis, macrocarpa and arborea: UTP has no page and Ngā Rauropi Whakaoranga records no food use. These cards clear this entry's `warnings` check; no warning text was added.",
       "harvestEthics, changed 17/10/2026 in the owner-requested sweep: no trusted source records this species as food (see sourcingNote), so the generic foraging sentence ('Be mindful when foraging. Take only what you need.') was replaced with the owner's unknown-edibility sentence for plants, as on large-seeded-coprosma (owner, 17/10/2026: \"change mushroom to plant for this\"). Nationally Not Threatened (NZTCS 2023 via NZPCN); rāhui, permits and specific tikanga are not covered.",
-      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma tenuicaulis', https://www.nzpcn.org.nz/flora/species/coprosma-tenuicaulis/, retrieved 18/10/2026. Habitat: \"Lowland (rarely montane) in swamps and boggy ground, poorly drained shrubland and riparian forest.\" Paraphrased by the assistant; habitat holds where it grows only."
+      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma tenuicaulis', https://www.nzpcn.org.nz/flora/species/coprosma-tenuicaulis/, retrieved 18/10/2026. Habitat: \"Lowland (rarely montane) in swamps and boggy ground, poorly drained shrubland and riparian forest.\" Paraphrased by the assistant; habitat holds where it grows only.",
+      "OWED edibleParts: no source found 16/10/2026 or 19/10/2026 records the fruit as eaten (Ngā Rauropi Whakaoranga, Useful Temperate Plants, Wikipedia, NZPCN, nursery pages checked; every source found names birds only).",
+      "Months [2–6], set 19/10/2026 (owner: \"check Coprosma repens and Coprosma tenuicaulis fill up the missing parts\"): Wikipedia 'Coprosma tenuicaulis' (CC BY-SA 4.0, revision 1009611215, retrieved 19/10/2026): \"produces black/red fruit that ripen between February and June\" — a ripe-fruit window, which also matches the ripe black fruit photographed Feb–Jun on 17/10/2026. NZPCN \"Fruiting March - May\" is narrower and counts fruit at any stage, so it is not used to cut the window. As on māmāngi and large-seeded coprosma, the months date the ripe fruit only; nothing records it as eaten (see sourcingNote).",
+      "Summary additions 19/10/2026: Wikipedia 'Coprosma tenuicaulis' (revision 1009611215), sentence \"The shrub flowers in early spring and produces black/red fruit that ripen between February and June.\" copied verbatim; its habitat sentence (\"found in wet, boggy soil in and around swamp or lake areas\") left out — habitat holds where it grows and is already filled from NZPCN. Range paraphrased by the assistant from NZ Plant Conservation Network, 'Coprosma tenuicaulis', https://www.nzpcn.org.nz/flora/species/coprosma-tenuicaulis/, retrieved 19/10/2026, Distribution: \"Endemic. North and South Islands from Kaitaia to about Okarito\".",
+      "Identification addition 19/10/2026, paraphrased by the assistant from NZ Plant Conservation Network, 'Coprosma tenuicaulis' (retrieved 19/10/2026): Simplified description \"Small tuft of longer hairs on hairy stem between leaf bases (sometimes a small dark tooth also present). Skin of fruit dark reddish-black to black, flesh dark purple.\"; Similar taxa \"leaves which have darker margins and a lighter pigmented central blotch on the upper leaf surface\". The page names Coprosma virescens as the likeliest confusion; it has no entry in this catalogue, so there is no card."
     ],
-    "sourcingNote" : "Owed: months and edibleParts. Empty months reads as year-round, but nothing is recorded as eaten, so there is no harvest window to date. No trusted source names this species as food (Useful Temperate Plants has no page; NZPCN's genus page says only that the fruit of \"the larger species\" were eaten by Māori children, naming none; Ngā Rauropi Whakaoranga records no food use). If an edible-fruit source turns up, the ripe-fruit evidence gathered 17/10/2026 is: ripe (black) fruit photographed Feb–Jun; NZPCN \"Fruiting March - May\".",
+    "sourcingNote" : "Owed: edibleParts. No trusted source names this species as food (Useful Temperate Plants has no page; NZPCN's genus page says only that the fruit of \"the larger species\" were eaten by Māori children, naming none; Ngā Rauropi Whakaoranga records no food use; web searches 19/10/2026 found none). Months date the ripe fruit, not a recorded harvest.",
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Coprosma tenuicaulis' (CC BY-SA 4.0)"
+        "Wikipedia, 'Coprosma tenuicaulis' (CC BY-SA 4.0)",
+        "NZ Plant Conservation Network, 'Coprosma tenuicaulis' — range (paraphrased)"
       ],
-      "text" : "Coprosma tenuicaulis, commonly called swamp coprosma is a native shrub of New Zealand."
+      "text" : "Coprosma tenuicaulis, commonly called swamp coprosma is a native shrub of New Zealand. It grows in the North and South Islands, from Kaitaia south to about Okarito.\nThe shrub flowers in early spring and produces black/red fruit that ripen between February and June."
     },
     "warnings" : [
 
@@ -28954,9 +29077,10 @@
       "Summary text: Wikipedia contributors. 'Coprosma macrocarpa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 16/10/2026. https://en.wikipedia.org/wiki/Coprosma_macrocarpa",
       "Lookalike cards (all ten Coprosma entries, written by the assistant on the owner's instruction, owner 17/10/2026: \"link them all as look alike given they are the same genus and are similar\"): every leaf, fruit, stipule and twig test restates Allan, H.H. 1961, Flora of New Zealand vol. I — species descriptions and the genus key (couplets 8, 21–22, 28–29) — via Flora of New Zealand Online and the Flora of New Zealand Series, CC BY 3.0 NZ, retrieved 17/10/2026; Kanono is Allan's C. australis. Dioecy: Allan, genus description \"Plants prevailingly dioec.\". Smell: Allan (C. foetidissima \"Lvs foetid when bruised\"); Wikipedia 'Coprosma lucida' (CC BY-SA 4.0) \"unlike C. robusta and some other Coprosma species, C. lucida does not have a foul-smelling odour\" and \"The roots and inner bark of C. lucida are a yellow colour, rather than dull brown like the similar C. robusta\"; NZPCN etymology for the genus name. Taupata × sand coprosma hybrids: NZPCN 'Coprosma repens'. Card risk 'edible': Useful Temperate Plants (CC BY-NC-SA 3.0) records the fruit eaten raw for C. grandifolia, robusta, lucida, repens, foetidissima, propinqua and acerosa (citing Crowe, Native Edible Plants of NZ; Knees 1995). Risk 'unknown' for C. tenuicaulis, macrocarpa and arborea: UTP has no page and Ngā Rauropi Whakaoranga records no food use. These cards clear this entry's `warnings` check; no warning text was added.",
       "Habitat: NZ Plant Conservation Network, https://www.nzpcn.org.nz/flora/species/coprosma-macrocarpa-subsp-minor/ (\"Coastal to Montane, (0 – 560 m.a.s.l.). Mostly a coastal species including on off-shore islands, amongst the forest and scrub.\") and https://www.nzpcn.org.nz/flora/species/coprosma-macrocarpa-subsp-macrocarpa/ (\"Forest to scrub, gullies, above streams.\"), retrieved 17/10/2026, paraphrased and merged. Range (North Cape–Kawhia/Hicks Bay; Three Kings) left out of habitat by rule.",
-      "harvestEthics: the owner's tawai-milkcap sentence with \"mushroom\" changed to \"plant\", on the owner's instruction 17/10/2026 (\"change mushroom to plant for this\"). Basis: no trusted source records this species as food (see sourcingNote). Subsp. macrocarpa is At Risk – Naturally Uncommon (NZPCN); rāhui, permits and land-access rules are not covered."
+      "harvestEthics: the owner's tawai-milkcap sentence with \"mushroom\" changed to \"plant\", on the owner's instruction 17/10/2026 (\"change mushroom to plant for this\"). Basis: no trusted source records this species as food (see sourcingNote). Subsp. macrocarpa is At Risk – Naturally Uncommon (NZPCN); rāhui, permits and land-access rules are not covered.",
+      "Months [Sep–Feb] (set by the owner, who recalled \"a pdf online\"; searched 19/10/2026, no PDF found giving exactly September–February): NZ Plant Conservation Network fact sheets, downloaded as PDF 19/10/2026 — 'Coprosma macrocarpa subsp. macrocarpa', https://www.nzpcn.org.nz/flora/species/coprosma-macrocarpa-subsp-macrocarpa/?download=pdf, \"FRUITING August? – February?\"; 'Coprosma macrocarpa subsp. minor', https://www.nzpcn.org.nz/flora/species/coprosma-macrocarpa-subsp-minor/?download=pdf, \"FRUITING August - February.\" Nelson Natives (nursery), https://www.nelsonnatives.co.nz/coprosma-macrocarpa-large-seeded-coprosma, retrieved 19/10/2026, \"Fruiting: August to February.\" All three include August, which the entry leaves out; subsp. macrocarpa's dates are question-marked. 'Fruiting' here counts green fruit: NZ photos read 17/10/2026 showed ripe orange-red fruit Dec–Mar and only green fruit Sep–Oct, and March is outside the window. No source records the fruit as eaten (see sourcingNote)."
     ],
-    "sourcingNote" : "Owed: months and edibleParts. Empty months reads as year-round, but nothing is recorded as eaten, so there is no harvest window to date. No trusted source names this species as food (Useful Temperate Plants has no page; NZPCN's genus page says only that the fruit of \"the larger species\" were eaten by Māori children, naming none; Ngā Rauropi Whakaoranga records no food use). If an edible-fruit source turns up, the ripe-fruit evidence gathered 17/10/2026 is: ripe (orange-red) fruit photographed Dec–Mar, Sep–Oct fruit all green; NZPCN subsp. macrocarpa \"Fruiting August? – February?\".",
+    "sourcingNote" : "Owed: edibleParts. Months were set by the owner to NZPCN's fruiting period less August (see sources), though nothing is recorded as eaten, so they date the fruit rather than a harvest. No trusted source names this species as food (Useful Temperate Plants has no page; NZPCN's genus page says only that the fruit of \"the larger species\" were eaten by Māori children, naming none; Ngā Rauropi Whakaoranga records no food use). If an edible-fruit source turns up, the ripe-fruit evidence gathered 17/10/2026 is: ripe (orange-red) fruit photographed Dec–Mar, Sep–Oct fruit all green; NZPCN subsp. macrocarpa \"Fruiting August? – February?\".",
     "summary" : {
       "sources" : [
         "Wikipedia, 'Coprosma macrocarpa' (CC BY-SA 4.0)"
@@ -28970,7 +29094,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Māmāngi",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
@@ -29070,7 +29194,11 @@
     ],
     "maoriName" : "Māmāngi",
     "months" : [
-
+      1,
+      2,
+      3,
+      4,
+      5
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/70250",
     "needsBookSource" : false,
@@ -29122,9 +29250,10 @@
       "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma arborea', https://www.nzpcn.org.nz/flora/species/coprosma-arborea/, retrieved 18/10/2026. Habitat: \"Coastal to lower montane forest - but mostly coastal to lowland. Often forming the subcanopy in coastal kauri forest or mixed pohutukawa-hardwood forest. rarely, such as on Waiheke Island, forming a distinct forest type where it dominates the canopy.\" Paraphrased by the assistant; habitat holds where it grows only. The Waiheke Island example is left out as a place, not a habitat.",
       "Range, leaf pits and the young-plant test (18/10/2026, owner pasted the link): NZ Plant Conservation Network, 'Coprosma arborea' fact sheet (PDF dated 25 May 2026, prepared by Peter J. de Lange 2004, description adapted from Allan 1961), https://www.nzpcn.org.nz/site/assets/files/0/16/749/coprosma-arborea.pdf, retrieved 18/10/2026. Distribution: \"Three Kings and North Island, where found from Te Paki south to near Waitomo in the west and about Gisborne in the East\". Simplified description: \"Leaves thin, mottled, with small pit at junction of veins\". Similar taxa: \"Juvenile Coprosma aborea is most easily distinguished by running ones finger down a young branchlet. In this species the branchlet is smooth while in C. spathulata (both subspecies) the branchlet is finely rugose and so imparts a texture not unlike that of a cats tongue.\" Paraphrased by the assistant. C. spathulata has no entry, so there is no card. 'Smooth' here is against C. spathulata's wrinkled branchlet; Allan and the same sheet also call the branchlets pubescent, which the cards' 'hairy twigs' restate. The sheet's measurements are wider than Allan's, which the cards use: adult leaves \"50-80 × 30-48 mm\" (Allan ± 50–60 × 35–40), young plants \"12-30 × 10-18 mm\" (Allan ± 15–25 × 10–17), fruit \"6-8 mm long\" (Allan c. 7). Flowering \"September - December\"; fruiting \"January - December\".",
       "Checked for food use 18/10/2026 (owner pasted the link): The Plant Company, 'Coprosma arborea (Mamangi)', https://www.theplantcompany.co.nz/shop/product/trees/coprosma-arborea, retrieved 18/10/2026. A nursery listing; its only food mention is that the plant \"provides valuable habitat and food sources for native birds\". Nothing on people eating the fruit, so edibleParts and months stay owed. The NZPCN fact sheet above has no use or food section either.",
-      "Fruiting (18/10/2026, owner: \"find out when it fruits\"): Department of Conservation, 'Collect seeds and propagate native trees and shrubs', https://www.doc.govt.nz/get-involved/conservation-activities/collect-seeds-and-propagate-native-trees-and-shrubs/, retrieved 18/10/2026: \"It is the tallest coprosma species and produces abundant fruit for birds over a prolonged autumn season. Collect the white fruit from lower branches.\" Te Mārareo, 'Māmāngi', https://www.temarareo.org/TMR-Mamangi.html, retrieved 18/10/2026, gives Mead & Grove's proverb 'He pū māmāngi kī tahi' as meaning \"the berries are ripe in May, indicating definitively that summer and autumn have passed, and the cold season is here.\", but says it \"could apply to either or both of these trees\" (C. arborea and C. repens), so it is not used. Phil Bendle Collection (CitSciHub) \"Fruiting occurs during July\" is not used: one month, from text the page credits to Wikipedia. iNaturalist (NZ, research grade, 'Fruits or Seeds' annotation, 15 observations) read by eye; observation 12318247 (10/05/2018, Okura) shows orange-brown fruit, which does not match this species' white fruit. Months stay empty: the window would date a harvest, and nothing is recorded as eaten (see sourcingNote)."
+      "Fruiting (18/10/2026, owner: \"find out when it fruits\"): Department of Conservation, 'Collect seeds and propagate native trees and shrubs', https://www.doc.govt.nz/get-involved/conservation-activities/collect-seeds-and-propagate-native-trees-and-shrubs/, retrieved 18/10/2026: \"It is the tallest coprosma species and produces abundant fruit for birds over a prolonged autumn season. Collect the white fruit from lower branches.\" Te Mārareo, 'Māmāngi', https://www.temarareo.org/TMR-Mamangi.html, retrieved 18/10/2026, gives Mead & Grove's proverb 'He pū māmāngi kī tahi' as meaning \"the berries are ripe in May, indicating definitively that summer and autumn have passed, and the cold season is here.\", but says it \"could apply to either or both of these trees\" (C. arborea and C. repens), so it is not used. Phil Bendle Collection (CitSciHub) \"Fruiting occurs during July\" is not used: one month, from text the page credits to Wikipedia. iNaturalist (NZ, research grade, 'Fruits or Seeds' annotation, 15 observations) read by eye; observation 12318247 (10/05/2018, Okura) shows orange-brown fruit, which does not match this species' white fruit. Months stay empty: the window would date a harvest, and nothing is recorded as eaten (see sourcingNote).",
+      "Months [Jan–May] (19/10/2026, owner: \"Coprosma arborea has no months fill that in\", then chose to start in January): DOC's \"prolonged autumn season\" above gives March to May, when the white fruit is ripe; January and February were added on the owner's choice because ripe white fruit was photographed on 27/01 (iNaturalist, read by eye — an observation, not a source). Not NZPCN's \"Fruiting January - December\", which counts fruit at any stage and would read as year-round. No source records the fruit as eaten (see sourcingNote)."
     ],
-    "sourcingNote" : "Owed: months and edibleParts. Empty months reads as year-round, but nothing is recorded as eaten, so there is no harvest window to date. No trusted source names this species as food (Useful Temperate Plants has no page; NZPCN's genus page says only that the fruit of \"the larger species\" were eaten by Māori children, naming none; Ngā Rauropi Whakaoranga records no food use). If an edible-fruit source turns up, the ripe-fruit evidence gathered 17/10/2026 is: autumn. DOC: \"produces abundant fruit for birds over a prolonged autumn season\"; NZPCN \"Fruiting January - December\" (fruit of some stage is on the tree all year). NZ research-grade iNaturalist photos checked by eye 18/10/2026: ripe white fruit on 27/01, 12/03 (a blackbird eating it), 14/04 and 15/05; green fruit from January to July. A reading of 15 observations, not a source.",
+    "sourcingNote" : "Owed: edibleParts. Months were set on the owner's instruction to DOC's autumn fruiting season, widened by the owner to start in January (see sources), though nothing is recorded as eaten, so they date the ripe fruit rather than a harvest. No trusted source names this species as food (Useful Temperate Plants has no page; NZPCN's genus page says only that the fruit of \"the larger species\" were eaten by Māori children, naming none; Ngā Rauropi Whakaoranga records no food use). If an edible-fruit source turns up, the ripe-fruit evidence gathered 17/10/2026 is: autumn. DOC: \"produces abundant fruit for birds over a prolonged autumn season\"; NZPCN \"Fruiting January - December\" (fruit of some stage is on the tree all year). NZ research-grade iNaturalist photos checked by eye 18/10/2026: ripe white fruit on 27/01, 12/03 (a blackbird eating it), 14/04 and 15/05; green fruit from January to July. A reading of 15 observations, not a source.",
     "summary" : {
       "sources" : [
         "Wikipedia, 'Coprosma arborea' (CC BY-SA 4.0)",
@@ -29139,7 +29268,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Sand coprosma",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma acerosa'",
@@ -29157,6 +29286,12 @@
     "habitats" : [
       "coastal"
     ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading."
+    },
     "id" : "sand-coprosma",
     "identification" : {
       "sources" : [
@@ -29240,7 +29375,36 @@
     "needsBookSource" : false,
     "origin" : "endemic",
     "photos" : [
-
+      {
+        "caption" : "Growing behind the dunes",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY)",
+        "fileName" : "sand-coprosma-1.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/3163158"
+      },
+      {
+        "caption" : "Photo growing on dunes",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "sand-coprosma-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/267643826"
+      },
+      {
+        "caption" : "Close up of leaves",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY)",
+        "fileName" : "sand-coprosma-3.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/3163158"
+      },
+      {
+        "caption" : "Photo of berries on bush",
+        "credit" : "(c) Arnim Littek, some rights reserved (CC BY)",
+        "fileName" : "sand-coprosma-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/200694459"
+      },
+      {
+        "caption" : "Close up of fruit",
+        "credit" : "(c) Arnim Littek, some rights reserved (CC BY)",
+        "fileName" : "sand-coprosma-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/340893742"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -29256,12 +29420,14 @@
       "Split 16/10/2026 from the former genus entry 'coprosma' (Coprosma spp.; Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Coprosma' entry), whose Māori-name list included 'tātaraheke'. Owner, 16/10/2026: \"we should avoid catch all species, add each individual one and delete this one\". Langlands' text for this species has not been read; whether the book names it is unconfirmed.",
       "Name and origin: NZ Plant Conservation Network, 'Coprosma acerosa', https://www.nzpcn.org.nz/flora/species/coprosma-acerosa/, retrieved 16/10/2026. \"Common names: sand coprosma, tātaraheke\"; Native, endemic.",
       "Māori name: Te Aka Māori Dictionary, https://maoridictionary.co.nz/search?keywords=tataraheke, retrieved 16/10/2026. \"sand coprosma, Coprosma acerosa\" (sense 2 is bush lawyer, Rubus cissoides, R. australis).",
-      "LEAD, not yet used: Ngā Rauropi Whakaoranga, Manaaki Whenua – Landcare Research, https://rauropiwhakaoranga.landcareresearch.co.nz/names/85ff1385-7b57-4d9c-8ec9-773576e4b75f, retrieved 16/10/2026. \"Food Small fruits eaten (Colenso 1868)\"; Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma acerosa', https://temperate.theferns.info/plant/Coprosma+acerosa, retrieved 16/10/2026. \"Edible Uses Fruit - raw… Sweet and juicy\" (cites Crowe 1990).",
+      "Food-use leads found 16/10/2026: Ngā Rauropi Whakaoranga, Manaaki Whenua – Landcare Research, https://rauropiwhakaoranga.landcareresearch.co.nz/names/85ff1385-7b57-4d9c-8ec9-773576e4b75f, retrieved 16/10/2026. \"Food Small fruits eaten (Colenso 1868)\" — still not used in the text; Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma acerosa', https://temperate.theferns.info/plant/Coprosma+acerosa, retrieved 16/10/2026. \"Edible Uses Fruit - raw… Sweet and juicy\" (cites Crowe 1990) — used in edibleParts from 17/10/2026 (see the Edible parts line).",
       "Identification and summary text: Wikipedia contributors. 'Coprosma acerosa', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 16/10/2026. https://en.wikipedia.org/wiki/Coprosma_acerosa",
       "Lookalike cards (all ten Coprosma entries, written by the assistant on the owner's instruction, owner 17/10/2026: \"link them all as look alike given they are the same genus and are similar\"): every leaf, fruit, stipule and twig test restates Allan, H.H. 1961, Flora of New Zealand vol. I — species descriptions and the genus key (couplets 8, 21–22, 28–29) — via Flora of New Zealand Online and the Flora of New Zealand Series, CC BY 3.0 NZ, retrieved 17/10/2026; Kanono is Allan's C. australis. Dioecy: Allan, genus description \"Plants prevailingly dioec.\". Smell: Allan (C. foetidissima \"Lvs foetid when bruised\"); Wikipedia 'Coprosma lucida' (CC BY-SA 4.0) \"unlike C. robusta and some other Coprosma species, C. lucida does not have a foul-smelling odour\" and \"The roots and inner bark of C. lucida are a yellow colour, rather than dull brown like the similar C. robusta\"; NZPCN etymology for the genus name. Taupata × sand coprosma hybrids: NZPCN 'Coprosma repens'. Card risk 'edible': Useful Temperate Plants (CC BY-NC-SA 3.0) records the fruit eaten raw for C. grandifolia, robusta, lucida, repens, foetidissima, propinqua and acerosa (citing Crowe, Native Edible Plants of NZ; Knees 1995). Risk 'unknown' for C. tenuicaulis, macrocarpa and arborea: UTP has no page and Ngā Rauropi Whakaoranga records no food use. These cards clear this entry's `warnings` check; no warning text was added.",
       "Edible parts (written by the assistant on the owner's instruction, 17/10/2026 — owner: \"from my understanding only the berries are edible\", then \"fix all Coprosmas\"): Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Coprosma acerosa', https://temperate.theferns.info/plant/Coprosma+acerosa, retrieved 17/10/2026: \"Fruit - raw. Sweet and juicy, but with little flavour\" — \"Fruit - raw\" cites Kunkel, G. Plants for Human Consumption; \"Sweet and juicy\" cites Crowe, A. Native Edible Plants of New Zealand (1990); \"but with little flavour\" cites Knees, S. The New Plantsman vol. 2 (1995); \"Known Hazards None known\". UTP marks the record \"not yet been checked and updated\", and cites rather than quotes its source. Fruit colour \"translucent, very pale to pale blue, often with darker flecks\" and dioecy (\"Plants prevailingly dioec.\") restate Allan 1961 via Flora of New Zealand Online, as on the lookalike cards. Not used: UTP's roasted-seed coffee-substitute line (Brooker, Cambie & Cooper 1991) — the owner says only the berries are eaten, and it rests on one source chain. Group set to fruit the same day: no source records the leaves as food.",
       "Months [1–5], set 17/10/2026 (ripe fruit): NZPCN 'Coprosma acerosa': \"Fruiting February–March–(July)\". Fruiting counts 64 44 39 53 33 20 15 11 8 5 22 28; ripe photos (of 6) 5 6 5 4 4 4 6 5 6 1 0 2. Jan (≈53), Apr (≈35) and May (≈22) reach the cut (≈13); Jun (≈13) sits just under. Single ripe fruits hang on to September, matching NZPCN's bracketed (July). Jan is a month before NZPCN's start; the photos show translucent pale-blue fruit. Rule (owner 17/10/2026, \"findout when they fruit you should know our rules\"; fruiting annotations date fruit presence, green included, so ripeness was checked by colour): up to 6 random NZ research-grade iNaturalist observations annotated fruiting (term 12 = 14) were viewed per month and judged against Allan's ripe fruit colour; estimated ripe records = month's fruiting count × share of photos showing ripe-coloured fruit. Months = the NZ source's window, plus adjacent months whose estimate reaches a quarter of the peak. Colour is not proof of ripeness and 6 photos is a small sample — the assistant's reading of photos, flagged like blackthorn's.",
-      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma acerosa', https://www.nzpcn.org.nz/flora/species/coprosma-acerosa/, retrieved 18/10/2026. Habitat: \"Coastal sands throughout distribution.\" Paraphrased by the assistant; habitat holds where it grows only. 'Dunes' is from the same page's Threats section (\"dune reclamation, competition from marram grass\")."
+      "Habitat (18/10/2026, owner: \"yeah for all coprosma\"): NZ Plant Conservation Network, 'Coprosma acerosa', https://www.nzpcn.org.nz/flora/species/coprosma-acerosa/, retrieved 18/10/2026. Habitat: \"Coastal sands throughout distribution.\" Paraphrased by the assistant; habitat holds where it grows only. 'Dunes' is from the same page's Threats section (\"dune reclamation, competition from marram grass\").",
+      "harvestEthics (19/10/2026, owner: \"fix if you can, also why are we not using the standard harversting text?\"): the owner's own at-risk sentence, written for new-zealand-spinach (as corrected there 10/10/2026), copied unchanged. The generic 'Be mindful when foraging. Take only what you need.' was copied on 17/10/2026 only to Not Threatened species (owner: \"come up with a generic one for species that are not endangered\"), and this one is not: NZ Plant Conservation Network, 'Coprosma acerosa', https://www.nzpcn.org.nz/flora/species/coprosma-acerosa/, retrieved 19/10/2026 — 2023 \"At Risk – Declining\", qualifiers CI, PD (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS, Department of Conservation, CC BY 4.0). The fruit is recorded as eaten (see the Edible parts line), so 'There is no reason to pick this plant' does not fit. Rāhui, conservation-land permits and specific tikanga are not covered.",
+      "harvestEthics reworded (19/10/2026, owner: \"can you improve this as well? “This species is at risk, so if you are going to harvest it make sure you do that sustainably.” add to not disturb species propagation and or kill the plant. that can be used for all at little risk\"): the owner's sentence, extended on the owner's instruction to say how to harvest without killing the plant or stopping it reproducing; wording by the assistant. Previously: \"This species is at risk, so if you are going to harvest it make sure you do that sustainably.\" Applies to every at-risk entry with a food use; the status is in this entry's other sources lines."
     ],
     "summary" : {
       "sources" : [
