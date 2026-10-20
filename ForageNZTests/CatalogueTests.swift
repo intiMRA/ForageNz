@@ -166,7 +166,7 @@ struct CatalogueTests {
         }
     }
 
-    /// A card can name any page, so this is what stops "Hemlock" opening the bitter-bolete page:
+    /// A card can name any page, so this is what stops "Hemlock" opening the death-cap page:
     /// when a lookalike records a scientific name, the page it opens must carry that name.
     @Test("Every lookalike opens the page whose scientific name it records")
     func lookalikeEntriesMatchTheirScientificNames() async throws {
