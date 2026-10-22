@@ -12,6 +12,7 @@ public enum SpeciesID: String, Codable, Sendable, Hashable, CaseIterable {
     case appleMint = "apple-mint"
     case arrowBamboo = "arrow-bamboo"
     case bananaPassionfruit = "banana-passionfruit"
+    case bananaPassionfruitTripartita = "banana-passionfruit-tripartita"
     case bayTree = "bay-tree"
     case beachSpinach = "beach-spinach"
     case beakedHawksbeard = "beaked-hawksbeard"

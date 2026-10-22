@@ -876,7 +876,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Banana passionfruit",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Wikipedia, 'Passiflora tarminiana' (CC BY-SA 4.0)"
@@ -886,16 +886,14 @@
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "Flora of New Zealand Online, 'Passiflora tarminiana' weed profile (CC BY 3.0 NZ)"
       ],
-      "text" : ""
+      "text" : "bank, clay, dry, hill, loam, lowland, margin, open, roadside, sand, shaded, sheltered, shrubland, slope, stone, track, unstable/eroded"
     },
     "habitats" : [
       "forest",
       "shrubland",
-      "wetland",
       "coastal",
-      "urban",
       "disturbed"
     ],
     "harvestEthics" : {
@@ -926,6 +924,20 @@
         "name" : "Pink-flowered passionfruit",
         "risk" : "edible",
         "scientificName" : "Passiflora pinnatistipula"
+      },
+      {
+        "entry" : "banana-passionfruit-tripartita",
+        "howToTell" : "Banana passionfruit (Passiflora tripartita) has densely hairy shoots; its leaves are 3-lobed, the lobes usually 5–14 cm long, usually more or less felted underneath and hairy or nearly hairless above; its stipules are 5–10 mm wide, kidney-shaped and gland-toothed, and they stay on the stem; its pink flowers hang from a floral tube 8–9.5 cm long, with sepals only 2–3.8 cm long; its fruit is (6)–7–12 × 2–3 cm, more or less ellipsoid, yellow or orange-yellow and finely downy, with dark red to black seeds. Banana passionfruit (Passiflora tarminiana) has hairy stems; its leaves are 3-lobed and usually hairless above (the sources disagree about the underside); its stipules are small, 4–7 × 2–3 mm, and soon fall, so a mature stem usually has none; its pink flowers hang from a floral tube given as up to 6 cm (NZPCN), 6–7 cm (Flora of New Zealand's weed profile) or 6–8 cm (Wikipedia), with sepals and petals 3–6 cm long that spread flat or bend back; its fruit tapers at both ends and ripens yellow or light orange, and is given as up to 9 cm long (NZPCN) or 10–14 cm (Wikipedia). Banana passionfruit (P. tarminiana) has small stipules that soon fall, while P. tripartita's are larger and stay on (Wikipedia; NZPCN). In flower, P. tarminiana's sepals and petals spread flat or bend back, while P. tripartita's never open that far and are much shorter compared with the floral tube (Wikipedia), and P. tripartita's tube is the longer one: 8–10 cm against 6–7 cm in Flora of New Zealand's weed profiles, though Wikipedia's 6–8 cm for P. tarminiana reaches the bottom of that range, so a tube near 8 cm does not decide it. The same profiles describe P. tripartita var. mollissima's leaves as moderately to densely hairy on the upper surface, where P. tarminiana's are usually hairless above. They hybridise (Wikipedia: P. tarminiana 'hybridises with other members of the subgenus Tacsonia'), and iNaturalist New Zealand holds wild records of the hybrid, so an in-between plant may be neither. P. tripartita's other New Zealand variety, var. azuayensis, has leaves hairless or nearly so above (NZPCN, after Heenan & Sykes 2003), so upper-leaf hairs alone do not separate it from P. tarminiana. Both have 3-lobed leaves, pink hanging flowers and edible yellow-orange fruit, so leaf outline, flower colour and fruit colour do not separate them. Both are edible.",
+        "name" : "Banana passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tripartita"
+      },
+      {
+        "entry" : "kohia",
+        "howToTell" : "Kōhia is hairless apart from slightly hairy young stems; its leaves are undivided and untoothed, (4)–5–12–(14) cm long, leathery and dark glossy green above; its flowers are small and yellowish green, (1)–3–4 together, with segments 5–6 mm long and no floral tube, and male and female flowers grow on separate plants; its fruit is (2)–2.5–3 cm across, round or broadly ellipsoid and orange, with sparse reddish pulp. Banana passionfruit (Passiflora tarminiana) has hairy stems; its leaves are 3-lobed and usually hairless above (the sources disagree about the underside); its stipules are small, 4–7 × 2–3 mm, and soon fall, so a mature stem usually has none; its pink flowers hang from a floral tube given as up to 6 cm (NZPCN), 6–7 cm (Flora of New Zealand's weed profile) or 6–8 cm (Wikipedia), with sepals and petals 3–6 cm long that spread flat or bend back; its fruit tapers at both ends and ripens yellow or light orange, and is given as up to 9 cm long (NZPCN) or 10–14 cm (Wikipedia). Flora of New Zealand's key first splits the genus on the flower: the banana passionfruits and pink-flowered passionfruit have a cylindrical, much elongated floral tube, while black passionfruit and kōhia have none, or only an inconspicuous saucer-shaped one. Without flowers the leaves settle it: Flora of New Zealand's key gives kōhia undivided, leathery leaves and flowers under 2 cm across, against lobed leaves and flowers over 4 cm across in the passionfruits it keys out beside, and banana passionfruit (P. tarminiana)'s leaves are 3-lobed. Only female kōhia plants bear fruit (Wikipedia: the plant is dioecious), so a fruitless kōhia is common; use the leaves. Both are edible.",
+        "name" : "Kōhia",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tetrandra"
       }
     ],
     "months" : [
@@ -933,6 +945,7 @@
       4,
       5
     ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/78358",
     "needsBookSource" : false,
     "origin" : "pest",
     "photos" : [
@@ -971,6 +984,18 @@
       {
         "method" : "20–30 banana passionfruit, the juice of 2 lemons (6–8 tbsp), and up to 1.1 kg sugar. Halve the fruit and scrape the pulp and seeds into a pot, then drop the empty skins in with them — in the hope they release pectin into the juice; the author notes you might not want to do that if the fruit is not organic. Add just enough water to cover, around 1–1.5 litres, bring to the boil and simmer 30–45 minutes, stirring now and then. Strain, pressing the pulp to get all the juice out, and throw away the skins and spent seeds. Return the juice to the pot with the lemon juice and sugar, and boil until it reaches setting point — allow another half hour, longer if it started watery. Pour into clean jars and water-bath 15 minutes to seal. Makes about six half-pint jars. The sugar can come down from 1.1 kg if that is too sweet, but some is needed for the pectin to set.",
         "title" : "Banana passionfruit jelly"
+      },
+      {
+        "method" : "12 ripe fruit, 240 ml water, about 300 g sugar, 2 litres milk, 60 ml cream, ice. Halve the fruit and scoop the pulp into a blender with the water, and blend to a cream. Add the milk, the sugar and a little crushed ice and blend at medium speed, then add the cream and blend one minute more. Strain out the seeds if you like, and serve cold.",
+        "title" : "Curuba milk drink (jugo de curuba en leche)"
+      },
+      {
+        "method" : "8 fruit, 480 ml milk, 4 tablespoons sugar, a 200 g pot of cream, a bar of chocolate. Blend the pulp with 240 ml water and strain out the seeds. Blend the juice again with the sugar, the milk and 6 tablespoons of the cream, with a little ice if you like. Melt the chocolate, coat the inside of each glass and chill to set it. Whip the rest of the cream until firm, pour the sorbete into the glasses and top with the cream.",
+        "title" : "Curuba sorbete with chocolate"
+      },
+      {
+        "method" : "10 fruit, 600 ml water, about 400 g sugar, 2 cloves, the juice of 1 lemon. Scoop out the pulp, blend it for only about 3 seconds with 120 ml of the water, and strain to keep the liquid. In a large pot put the remaining 480 ml water, the sugar, the cloves and the lemon juice, add the strained liquid and cook over medium-low heat for about 40 minutes, until it thickens. Take out the cloves before it comes off the heat, and let it cool. Good on bread.",
+        "title" : "Tumbo jam (mermelada de tumbo)"
       }
     ],
     "scientificName" : "Passiflora tarminiana",
@@ -985,8 +1010,14 @@
       "Lookalike card to Black passionfruit — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online (Manaaki Whenua – Landcare Research, CC BY 3.0 NZ), 'Passiflora edulis' factsheet, Description from Webb et al. (1988) Flora of NZ Vol. 4 — https://www.nzflora.info/factsheet/Taxon/Passiflora-edulis.html (saved sweep/pages/fnz-Passiflora-edulis.txt) — flower colours, corona, hypanthium inconspicuous, pedicels, stipules, fruit size/colour, black seeds | NZ Plant Conservation Network, 'Passiflora tarminiana' fact sheet — https://www.nzpcn.org.nz/flora/species/passiflora-tarminiana/ (saved sweep/pages/nzpcn-passiflora-tarminiana.txt) — tube up to 6 cm, stipules absent on mature stems, fruit up to 9 cm, pulp edible | Weedbusters NZ, 'Banana passionfruit' — https://www.weedbusters.org.nz/what-are-weeds/weed-list/banana-passionfruit/ (saved sweep/pages/wb-banana-passionfruit.txt) — pink hanging flowers, tube 60–95 mm, fruit 7–12 cm, dark red seeds, edible pulp | Wikipedia, 'Passiflora tarminiana' (last resort; CC BY-SA) — https://en.wikipedia.org/wiki/Passiflora_tarminiana (saved sweep/pages/wp-Passiflora_tarminiana.txt) — tube 6–8 cm pale green, fruit 10–14 cm | Useful Temperate Plants (Ken Fern), 'Passiflora edulis' — https://temperate.theferns.info/plant/Passiflora+edulis (saved sweep/pages/utp-Passiflora-edulis.txt) — black passionfruit fruit eaten raw or cooked UNRESOLVED: No source says black passionfruit's stipules persist on mature stems; the stipule contrast is only as strong as Flora of NZ's description. Banana passionfruit figures rest on NZPCN/Weedbusters/Wikipedia (no Flora of NZ description); 'pale green' tube is from Wikipedia only.",
       "Lookalike card to Pink-flowered passionfruit — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Passiflora pinnatistipula' (Webb et al. 1988 / Edgar & Connor 2000 text) — https://www.nzflora.info/factsheet/Taxon/Passiflora-pinnatistipula.html [saved pages/b4-flora-Passiflora-pinnatistipula.txt] — stipules pinnate with dark filiform segments; hypanthium (4)–4.5–5 cm; corona threads violet-blue; fruit 4–7 cm diam., globose or depressed globose, yellow, tomentulose; pulp sweet and edible. | NZPCN, 'Passiflora tarminiana' — https://www.nzpcn.org.nz/flora/species/passiflora-tarminiana/ [saved pages/nzpcn-passiflora-tarminiana.txt, fetched by a sibling batch] — 'small stipules that do not persist long on mature stems'; 'short tube (up to 6 cm)'; 'Fruit slender and fusiform, up to 9 cm long'; 'absence of stipules on mature stems'. | Wikipedia, 'Passiflora tarminiana' (CC BY-SA 4.0) [saved pages/b4-wiki-Passiflora_tarminiana.txt] — stipules 4–7 × 2–3 mm, soon deciduous; hypanthium 6–8 cm; fruits taper at both ends, 10–14 cm; P. tripartita var. mollissima has larger, persistent stipules. | Weedbusters NZ, 'Banana passionfruit' — https://www.weedbusters.org.nz/ [saved pages/wb-banana-passionfruit.txt, fetched by a sibling batch] — central tube 60–95 mm; fruit 7–12 × 2–4 cm; lists P. pinnatistipula as a similar species. | Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Passiflora tarminiana' (Webb et al. 1988 / Edgar & Connor 2000 text) — https://www.nzflora.info/factsheet/Taxon/Passiflora-tarminiana.html [saved pages/b4-flora-Passiflora-tarminiana.txt] — name and biostatus only, no description. | Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Passiflora' (Webb et al. 1988 / Edgar & Connor 2000 text) — https://www.nzflora.info/factsheet/Taxon/Passiflora.html [saved pages/b4-flora-Passiflora.txt] — NZ taxa include P. mixta, P. pinnatistipula, P. tarminiana and P. tripartita. UNRESOLVED: Proposed risk null; existing 'edible' supported by FNZ. Unresolved (from pass one): FNZ also lists P. tripartita and P. mixta in NZ; Wikipedia says P. tripartita var. mollissima has 'larger, persistent stipules' of undescribed shape, so persistent stipules alone do not prove pink-flowered passionfruit — only pinnate stipules with thread-like segments. Banana passionfruit stipule size rests on Wikipedia.",
       "Page sweep 13/10/2026 (owner: \"do a sweep on all species added and make sure they are good\", then \"fix\"): every field checked against curl'd sources, each fix re-verified by a second pass; deletions and weakenings only. Summary opening sentence ('A vigorous pest vine ... hung through autumn with sweet, banana-shaped fruit.') deleted 13/10/2026 in the owner's page sweep: model-written, 'banana-shaped' and 'through autumn' in no credited source; Otago Regional Council gives 'fruiting timeframe through spring and summer (September–February)'. Identification paragraph on 'Mollissima and its close relative Passiflora mixta' deleted 13/10/2026 in the owner's page sweep: Wikipedia's text describes P. tripartita var. mollissima and P. mixta, not P. tarminiana, and its 'black seeds' contradicts Weedbusters' 'dark red seeds'. Identification paragraph restating the NZ Plant Conservation Network factsheet deleted 13/10/2026 in the owner's page sweep: model-written and stronger than NZPCN, which says only 'Can be separated from other Passiflora species, by the three-lobed leaves without hairs, and the absence of stipules on mature stems'. Habitat text deleted 13/10/2026 in the owner's page sweep: it reproduced Weedbusters' (all rights reserved) habitat and spread lists near-verbatim ('Disturbed and open forest, light wells and margins of intact bush, streamsides ...'), and Weedbusters gives 'hedges, orchards, exotic plantations, waste land, gardens, roadsides' under how it spreads, not habitat. edibleParts rewritten 13/10/2026 in the owner's page sweep to Wikipedia's verbatim 'The fruit contain many seeds which are embedded in an edible, orange aril.'; the deleted model text's 'Nothing else on the vine is eaten' and 'the part worth taking' were in no source. Preparation text deleted 13/10/2026 in the owner's page sweep: model-written from Filbrun's all-rights-reserved blog and stronger than it (Filbrun: 'By the time they got home, some were starting to spoil'; 'I used my thumbs'). harvestEthics: 'There is no case for taking this one sparingly' and 'picking the fruit is the one kind of foraging that actively helps' deleted 13/10/2026 in the owner's page sweep; Otago Regional Council says only 'If no other option is available please remove the fruit ... it will help to reduce the pest spreading'. (covered by the record on the preceding harvestEthics fix) harvestEthics: 'What matters is what happens after. Carry the whole fruit out rather than eating it where it hangs and dropping the seed' deleted 13/10/2026 in the owner's page sweep as unsourced advice; Weedbusters says only that humans spread it 'via eating or discarded fruit'. harvestEthics disposal advice ('put skins and seed in the rubbish ... not into compost') deleted 13/10/2026 in the owner's page sweep: Weedbusters' landfill advice is for pulled plant material, and 'not into compost' is in no source. harvestEthics: 'already move the seed a long way without help' weakened 13/10/2026 in the owner's page sweep to 'carry the seed some distance', following Weedbusters' 'Birds, feral pigs and possums carry seeds some distance'. Warning sentence 'Picking and eating the fruit is fine and helps; moving live material or viable seed is not.' deleted 13/10/2026 in the owner's page sweep: Weedbusters lists humans 'via eating or discarded fruit' as a spread pathway, so 'fine' is unsupported. Jelly recipe: 'the skins carry pectin and help it set' weakened 13/10/2026 in the owner's page sweep to Filbrun's hedge ('in the hopes that it would release pectin into the juice') with her caveat 'If you don't have organic fruit, you might not want to do that'.",
-      "OWED (page sweep 13/10/2026), months: Langlands (2024) gives [3, 4, 5]; Otago Regional Council gives 'an extended flowering and fruiting timeframe through spring and summer (September–February)', which does not say when fruit is ripe. Unresolved.",
-      "OWED (page sweep 13/10/2026), habitat and preparation: both emptied on 13/10/2026 because they restated all-rights-reserved text (Weedbusters; Filbrun)."
+      "(Checked 22/10/2026 — see the months line below.) OWED (page sweep 13/10/2026), months: Langlands (2024) gives [3, 4, 5]; Otago Regional Council gives 'an extended flowering and fruiting timeframe through spring and summer (September–February)', which does not say when fruit is ripe. Unresolved.",
+      "(Habitat part resolved 22/10/2026 — see the weed-profile line below; preparation still owed.) OWED (page sweep 13/10/2026), habitat and preparation: both emptied on 13/10/2026 because they restated all-rights-reserved text (Weedbusters; Filbrun).",
+      "Habitat: Flora of New Zealand Online (Manaaki Whenua – Landcare Research), 'Passiflora tarminiana' weed profile, Habitat line. CC BY 3.0 NZ. Retrieved 22/10/2026. https://www.nzflora.info/factsheet/Weed/Passiflora-tarminiana.html — quoted verbatim; a keyword list, the form the owner approved for `habitat` on 10/10/2026. Webb 1988's 'P. mixta' habitat line ('Margins of remnant forest stands, windbreaks, plantations, usually in the vicinity of settlements.') probably describes this species too — Heenan & Sykes 2003 moved many New Zealand 'P. mixta' plants to P. tarminiana — but it is not used, because the Flora did not name this species.",
+      "Months, checked 22/10/2026: kept at Langlands' [3, 4, 5]. iNaturalist New Zealand wild records annotated 'fruiting' (n = 30, fruit of any ripeness) reach a quarter of the May peak in January–July and are absent or single in August–December, which fits an autumn harvest and not Otago Regional Council's September–February flowering and fruiting window.",
+      "Lookalike cards among the five Passiflora entries (written by the assistant on the owner's instruction (owner, 22/10/2026: /goal \"find all you can about Passiflora and fill in following the rules\")): each card restates the two species' descriptions and Flora of New Zealand's Passiflora key — Webb, C.J. et al. 1988, Flora of New Zealand vol. IV (Flora of New Zealand Series, CC BY-NC-SA 4.0), https://floraseries.landcareresearch.co.nz/taxa/0e0cc34b-28b7-4b4a-8a94-9b059b1af976 — couplet 1 'Hypanthium cylindric and strongly elongated' against 'Hypanthium 0 or saucer-shaped and inconspicuous'; couplet 2 'Stipules pinnate with filiform segments; fr. ± globose' (pinnatistipula) against 'Stipules simple, ovate and toothed or subulate and entire; fr. ellipsoid'; couplet 3 '× rosea' 'Stipules with lanceolate rachis; stamens abnormal and ± petaloid'; couplet 6 'Lvs entire, coriaceous; perianth < 2 cm diam. when fresh' (tetrandra) against 'Lvs lobed, membranous or submembranous; perianth > 4 cm diam. when fresh'. Descriptions: Webb 1988 for P. edulis, P. pinnatistipula, P. tetrandra and P. mollissima (= P. tripartita var. mollissima; Flora of New Zealand Online files Webb's P. mollissima description under that name); for P. tarminiana, which Webb did not separate, Wikipedia 'Passiflora tarminiana' (revision 1352787405, CC BY-SA 4.0), NZPCN's P. tarminiana page (all rights reserved; facts restated) and Flora of New Zealand Online's weed profiles (CC BY 3.0 NZ: tube '6-7 cm' for P. tarminiana, '8-10 cm' and leaves 'moderately to densely hairy on the upper surface' for P. tripartita var. mollissima). The tarminiana–tripartita test follows Wikipedia's 'distinguished from P. tripartita var. mollissima' paragraph and NZPCN ('Can be distinguished from P. tarminiana by the large persistent stipules, and the long hypanthium'); var. azuayensis 'leaves glabrous to glabrate on upper surface' is NZPCN after Heenan & Sykes 2003; the hybrid is iNaturalist taxon 1645626, Passiflora tarminiana × tripartita (43 wild New Zealand records on 22/10/2026). Blue passionflower: NZPCN 'Most similar to P. caerulea in flower'; Webb 1988 'Lvs 5-lobed almost to base', 'pulp scanty and inedible'. × rosea: Webb's key and NZPCN's P. pinnatistipula page. Kōhia's fruit only on female plants: Wikipedia 'Passiflora tetrandra' (revision 1324332696). Risk `edible` every way, because every page carries a food record. Not carded: black passionfruit ↔ pink-flowered passionfruit — Webb gives black passionfruit 'N.: N. Auckland … Great Barrier Id; K.' and pink-flowered 'S.: Banks Peninsula (widespread), Otago (Palmerston)', so their wild ranges do not meet in the Flora. Blue passionflower, P. × rosea, P. mixta and P. antioquiensis have no entries (owner, 22/10/2026: blue passionflower 'Skip it').",
+      "Habitat tags, re-derived 22/10/2026 (three inputs, as for bay-tree): the weed-profile habitat line gives shrubland and disturbed (roadside, track, unstable/eroded); NZPCN's habitat line (all rights reserved, facts only) adds forest ('margins of remnant forest stands, light gaps') and coastal ('Lowland and coastal shrubland'). Dropped: wetland and urban, which no source read supports.",
+      "Self-audit of the Passiflora cards, 22/10/2026 (assistant): every number in each card was checked mechanically against the source text it restates; two hedges were then added — the tarminiana–tripartita tube test now says Wikipedia's 6–8 cm for P. tarminiana reaches the bottom of P. tripartita's 8–10 cm, and the kōhia–black passionfruit cards say a young black passionfruit's leaves are undivided ('Lvs deeply 3-lobed, but entire on young plants', Webb 1988) so texture decides ('coriaceous' against 'submembranous').",
+      "Recipes 'Curuba milk drink', 'Curuba sorbete with chocolate' and 'Tumbo jam' (written by the assistant on the owner's instruction, owner, 22/10/2026: /goal \"find some recipies for passionara\"; restated in English, metric, no text reproduced; Spanish-language sources are used for facts only, as for the mallows): (1) 'Jugo de Curuba o Sorbete de Curuba', El Rincón Colombiano (filed under Gastronomía de Cundinamarca), © all rights reserved, retrieved 22/10/2026, https://elrinconcolombiano.com/jugo-de-curuba/ — its '1½ taza de azúcar' is given here as about 300 g and '1 taza' as 240 ml; (2) and (3) '+10 recetas con tumbo o curuba', Comida Peruana Web, © all rights reserved, retrieved 22/10/2026, https://comidaperuanaweb.org/gastronomia/recetas-con-tumbo/ — the sorbete is its 'Sorbete de curuba', and the jam its 'Mermelada de tumbo'. The jam's ingredient list omits the sugar its method adds ('2 tazas de azúcar', given here as about 400 g) and lists '1/2 cucharadita de canela en polvo' that its method never uses, so the cinnamon is left out. The page's '1 taza de agua (240 ml)' sets the cup used. Not used: its 'esponjado de curuba', whose ingredient list gives no amount of fruit; its cocktail (alcohol); and the health claims on both pages. WHICH SPECIES: 'curuba' and 'tumbo' are names Wikipedia gives to both P. tripartita ('also called curuba, tumbo, curuba de Castilla, tumbo serrano and poro poro') and P. tarminiana ('curuba, curuba de Castilla, or curuba sabanera blanca (Colombia)'; 'tumbo or curuba (Bolivia)'; 'tacso, tumbo, tumbo del norte' (Peru)), and neither recipe names a species, so the same three recipes are on both banana passionfruit entries."
     ],
     "summary" : {
       "sources" : [
@@ -997,6 +1028,156 @@
     },
     "warnings" : [
       "An unwanted organism under the National Pest Plant Accord. It cannot be sold, propagated, distributed or released, and regional rules require control in places — sustained control across the Bay of Plenty, site-led management on Otago Peninsula and around Dunedin's West Harbour."
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Banana passionfruit",
+    "draft" : false,
+    "edibleParts" : {
+      "sources" : [
+        "Useful Temperate Plants, 'Passiflora tripartita mollissima' (CC BY-NC-SA 3.0)",
+        "Wikipedia, 'Passiflora tripartita' (CC BY-SA 4.0)"
+      ],
+      "text" : "The pulp surrounding the seeds is eaten. The fruit is yellow-orange when ripe and contains a sweet edible orange-colored pulp with black seeds.\nThe fruits of this species are a pale yellow colour, the pulp is more aromatic and tart and has a somewhat superior flavour to the flesh of the deep yellow to orange fruits of Passiflora tarminiana."
+    },
+    "group" : "fruit",
+    "habitat" : {
+      "sources" : [
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0) (as P. mollissima)",
+        "Flora of New Zealand Online, 'Passiflora tripartita var. mollissima' weed profile (CC BY 3.0 NZ)"
+      ],
+      "text" : "Mainly forest and plantation margins, also on isolated trees.\nbank, clay, cliff, coast, dry, forest, gap, lowland, margin, open, roadside, rock outcrop, sand, shaded, sheltered, shrubland, slope, stone, terrace, wasteland"
+    },
+    "habitats" : [
+      "coastal",
+      "forest",
+      "shrubland",
+      "disturbed"
+    ],
+    "id" : "banana-passionfruit-tripartita",
+    "identification" : {
+      "sources" : [
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+      ],
+      "text" : "Vigorous vine; shoots densely hairy, weakly angular when young. Lvs 3-lobed; petioles 1.5–5 cm long, densely hairy, with (4)–6–12 stalked or subsessile glands; stipules 5–10 mm wide (excluding subulate apex when present), subreniform, with glandular teeth; lamina lobes usually 5–14 cm long, extending 1/2-⅔ of the distance in from the margin, usually ± tomentose below, hairy or glabrate above, elliptic or elliptic-ovate, narrow-lanceolate on juvenile shoots, serrate or serrulate, acute; middle lobe largest, 4–9 × 2–5 cm. Fls ☿, solitary. Pedicels > petioles, densely hairy. Bracts 1.5–3.75 cm long, ovate or broad-ovate, ± tomentose outside, entire or slightly toothed, united for lower 1/4–1/2 until anthesis. Hypanthium 8–9.5 cm long, glabrous outside. Sepals 2–3.8 cm long, elliptic, green on reverse, pink or rose inside, rounded and with short horn near apex; petals similar but pink on both sides; corona a ring of purple, white-tipped scales 1–2 mm long. Filaments 1.5–2 cm long, pale, often scarcely > anthers; anthers (7)–10–12 mm long. Ovary white-villous. Fr. (6)–7–12 × 2–3 cm, ± ellipsoid, yellow or orange-yellow, puberulent; pulp sweet and orange, edible. Seed 4.5–5.5 mm long, broad-obovoid, dark red to black, alveolate.\n[From: Webb et al. (1988) Flora of New Zealand. Volume 4, as Passiflora mollissima (Kunth) L.H.Bailey.]"
+    },
+    "lookalikes" : [
+      {
+        "entry" : "banana-passionfruit",
+        "howToTell" : "Banana passionfruit (Passiflora tarminiana) has hairy stems; its leaves are 3-lobed and usually hairless above (the sources disagree about the underside); its stipules are small, 4–7 × 2–3 mm, and soon fall, so a mature stem usually has none; its pink flowers hang from a floral tube given as up to 6 cm (NZPCN), 6–7 cm (Flora of New Zealand's weed profile) or 6–8 cm (Wikipedia), with sepals and petals 3–6 cm long that spread flat or bend back; its fruit tapers at both ends and ripens yellow or light orange, and is given as up to 9 cm long (NZPCN) or 10–14 cm (Wikipedia). Banana passionfruit (Passiflora tripartita) has densely hairy shoots; its leaves are 3-lobed, the lobes usually 5–14 cm long, usually more or less felted underneath and hairy or nearly hairless above; its stipules are 5–10 mm wide, kidney-shaped and gland-toothed, and they stay on the stem; its pink flowers hang from a floral tube 8–9.5 cm long, with sepals only 2–3.8 cm long; its fruit is (6)–7–12 × 2–3 cm, more or less ellipsoid, yellow or orange-yellow and finely downy, with dark red to black seeds. Banana passionfruit (P. tarminiana) has small stipules that soon fall, while P. tripartita's are larger and stay on (Wikipedia; NZPCN). In flower, P. tarminiana's sepals and petals spread flat or bend back, while P. tripartita's never open that far and are much shorter compared with the floral tube (Wikipedia), and P. tripartita's tube is the longer one: 8–10 cm against 6–7 cm in Flora of New Zealand's weed profiles, though Wikipedia's 6–8 cm for P. tarminiana reaches the bottom of that range, so a tube near 8 cm does not decide it. The same profiles describe P. tripartita var. mollissima's leaves as moderately to densely hairy on the upper surface, where P. tarminiana's are usually hairless above. They hybridise (Wikipedia: P. tarminiana 'hybridises with other members of the subgenus Tacsonia'), and iNaturalist New Zealand holds wild records of the hybrid, so an in-between plant may be neither. P. tripartita's other New Zealand variety, var. azuayensis, has leaves hairless or nearly so above (NZPCN, after Heenan & Sykes 2003), so upper-leaf hairs alone do not separate it from P. tarminiana. Both have 3-lobed leaves, pink hanging flowers and edible yellow-orange fruit, so leaf outline, flower colour and fruit colour do not separate them. Both are edible.",
+        "name" : "Banana passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tarminiana"
+      },
+      {
+        "entry" : "pink-flowered-passionfruit",
+        "howToTell" : "Pink-flowered passionfruit has downy young shoots; its leaves are 3-lobed, grey- or white-felted underneath and dark shining green above; its stipules are pinnate, with dark thread-like segments almost to the base of a very narrow central strip; its flowers have a floral tube (4)–4.5–5 cm long, pink petals and violet-blue corona threads; its fruit is 4–7 cm across, round or slightly flattened, yellow and finely downy. Banana passionfruit (Passiflora tripartita) has densely hairy shoots; its leaves are 3-lobed, the lobes usually 5–14 cm long, usually more or less felted underneath and hairy or nearly hairless above; its stipules are 5–10 mm wide, kidney-shaped and gland-toothed, and they stay on the stem; its pink flowers hang from a floral tube 8–9.5 cm long, with sepals only 2–3.8 cm long; its fruit is (6)–7–12 × 2–3 cm, more or less ellipsoid, yellow or orange-yellow and finely downy, with dark red to black seeds. Flora of New Zealand's key: pink-flowered passionfruit's stipules are pinnate, with thread-like segments, and its fruit is more or less round; a banana passionfruit's stipules are simple — either ovate and toothed or awl-shaped and untoothed — and its fruit is ellipsoid. Both have pink flowers and edible orange pulp, so flower colour does not separate them. A hybrid, Passiflora × rosea, which has no entry here, looks very like pink-flowered passionfruit, but the central strip of its stipules is lanceolate and its stamens are usually abnormal (Flora of New Zealand's key; NZPCN). Both are edible.",
+        "name" : "Pink-flowered passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora pinnatistipula"
+      },
+      {
+        "entry" : "black-passionfruit",
+        "howToTell" : "Black passionfruit is hairless except in the flower; its leaves are deeply 3-lobed (undivided on young plants) and deep shining green above, the middle lobe 6–10 × 3–5.5 cm; its stipules are narrow, 10–15 mm long; its flowers stand on stalks 4–6 cm long, are white with white corona threads purple at the base, and have no obvious floral tube; its fruit is 5–6.25 × 4.75–5.75 cm, broadly ellipsoid or nearly round, dull purple, with black seeds. Banana passionfruit (Passiflora tripartita) has densely hairy shoots; its leaves are 3-lobed, the lobes usually 5–14 cm long, usually more or less felted underneath and hairy or nearly hairless above; its stipules are 5–10 mm wide, kidney-shaped and gland-toothed, and they stay on the stem; its pink flowers hang from a floral tube 8–9.5 cm long, with sepals only 2–3.8 cm long; its fruit is (6)–7–12 × 2–3 cm, more or less ellipsoid, yellow or orange-yellow and finely downy, with dark red to black seeds. Flora of New Zealand's key first splits the genus on the flower: the banana passionfruits and pink-flowered passionfruit have a cylindrical, much elongated floral tube, while black passionfruit and kōhia have none, or only an inconspicuous saucer-shaped one. The fruit separates them too: black passionfruit's is dull purple and nearly round; the fruit of banana passionfruit (P. tripartita) is yellow or orange when ripe and elongated. Blue passionflower, which has no entry here, has a flower much like black passionfruit's (NZPCN); Flora of New Zealand gives it 5-lobed leaves and calls its pulp 'scanty and inedible'. Both are edible.",
+        "name" : "Black passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora edulis"
+      },
+      {
+        "entry" : "kohia",
+        "howToTell" : "Kōhia is hairless apart from slightly hairy young stems; its leaves are undivided and untoothed, (4)–5–12–(14) cm long, leathery and dark glossy green above; its flowers are small and yellowish green, (1)–3–4 together, with segments 5–6 mm long and no floral tube, and male and female flowers grow on separate plants; its fruit is (2)–2.5–3 cm across, round or broadly ellipsoid and orange, with sparse reddish pulp. Banana passionfruit (Passiflora tripartita) has densely hairy shoots; its leaves are 3-lobed, the lobes usually 5–14 cm long, usually more or less felted underneath and hairy or nearly hairless above; its stipules are 5–10 mm wide, kidney-shaped and gland-toothed, and they stay on the stem; its pink flowers hang from a floral tube 8–9.5 cm long, with sepals only 2–3.8 cm long; its fruit is (6)–7–12 × 2–3 cm, more or less ellipsoid, yellow or orange-yellow and finely downy, with dark red to black seeds. Flora of New Zealand's key first splits the genus on the flower: the banana passionfruits and pink-flowered passionfruit have a cylindrical, much elongated floral tube, while black passionfruit and kōhia have none, or only an inconspicuous saucer-shaped one. Without flowers the leaves settle it: Flora of New Zealand's key gives kōhia undivided, leathery leaves and flowers under 2 cm across, against lobed leaves and flowers over 4 cm across in the passionfruits it keys out beside, and banana passionfruit (P. tripartita)'s leaves are 3-lobed. Only female kōhia plants bear fruit (Wikipedia: the plant is dioecious), so a fruitless kōhia is common; use the leaves. Both are edible.",
+        "name" : "Kōhia",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tetrandra"
+      }
+    ],
+    "months" : [
+      3,
+      4,
+      5
+    ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/133169",
+    "needsBookSource" : false,
+    "origin" : "pest",
+    "photos" : [
+      {
+        "caption" : "Hanging flowers with long floral tubes",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "banana-passionfruit-tripartita-8.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/45728051"
+      },
+      {
+        "caption" : "Ripe fruit",
+        "credit" : "(c) Amy Balkin, some rights reserved (CC BY-NC)",
+        "fileName" : "banana-passionfruit-tripartita-9.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/30666880"
+      },
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Alice Shanks, some rights reserved (CC BY)",
+        "fileName" : "banana-passionfruit-tripartita-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/96184531"
+      },
+      {
+        "caption" : "Close up of leaf",
+        "credit" : "(c) Mark, some rights reserved (CC BY)",
+        "fileName" : "banana-passionfruit-tripartita-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/105382150"
+      }
+    ],
+    "preparation" : {
+      "sources" : [
+        "Useful Temperate Plants, 'Passiflora tripartita mollissima' (CC BY-NC-SA 3.0)"
+      ],
+      "text" : "Fruit - eaten raw or used in ice creams, fruit salads, pies, jellies, to make drinks etc."
+    },
+    "recipes" : [
+      {
+        "method" : "20–30 banana passionfruit, the juice of 2 lemons (6–8 tbsp), and up to 1.1 kg sugar. Halve the fruit and scrape the pulp and seeds into a pot, then drop the empty skins in with them — in the hope they release pectin into the juice; the author notes you might not want to do that if the fruit is not organic. Add just enough water to cover, around 1–1.5 litres, bring to the boil and simmer 30–45 minutes, stirring now and then. Strain, pressing the pulp to get all the juice out, and throw away the skins and spent seeds. Return the juice to the pot with the lemon juice and sugar, and boil until it reaches setting point — allow another half hour, longer if it started watery. Pour into clean jars and water-bath 15 minutes to seal. Makes about six half-pint jars. The sugar can come down from 1.1 kg if that is too sweet, but some is needed for the pectin to set.",
+        "title" : "Banana passionfruit jelly"
+      },
+      {
+        "method" : "12 ripe fruit, 240 ml water, about 300 g sugar, 2 litres milk, 60 ml cream, ice. Halve the fruit and scoop the pulp into a blender with the water, and blend to a cream. Add the milk, the sugar and a little crushed ice and blend at medium speed, then add the cream and blend one minute more. Strain out the seeds if you like, and serve cold.",
+        "title" : "Curuba milk drink (jugo de curuba en leche)"
+      },
+      {
+        "method" : "8 fruit, 480 ml milk, 4 tablespoons sugar, a 200 g pot of cream, a bar of chocolate. Blend the pulp with 240 ml water and strain out the seeds. Blend the juice again with the sugar, the milk and 6 tablespoons of the cream, with a little ice if you like. Melt the chocolate, coat the inside of each glass and chill to set it. Whip the rest of the cream until firm, pour the sorbete into the glasses and top with the cream.",
+        "title" : "Curuba sorbete with chocolate"
+      },
+      {
+        "method" : "10 fruit, 600 ml water, about 400 g sugar, 2 cloves, the juice of 1 lemon. Scoop out the pulp, blend it for only about 3 seconds with 120 ml of the water, and strain to keep the liquid. In a large pot put the remaining 480 ml water, the sugar, the cloves and the lemon juice, add the strained liquid and cook over medium-low heat for about 40 minutes, until it thickens. Take out the cloves before it comes off the heat, and let it cool. Good on bread.",
+        "title" : "Tumbo jam (mermelada de tumbo)"
+      }
+    ],
+    "scientificName" : "Passiflora tripartita",
+    "sources" : [
+      "Entry added 22/10/2026 (owner, 22/10/2026: /goal \"find all you can about Passiflora and fill in following the rules\"; owner's answer the same day: name it 'Banana passionfruit (Recommended)' — the name every New Zealand source uses for both banana passionfruit species — and let the Latin name tell the two entries apart). Presence: iNaturalist New Zealand holds 723 research-grade wild records of Passiflora tripartita on 22/10/2026, more than P. tarminiana's 333; Flora of New Zealand Online lists two fully naturalised varieties, var. azuayensis and var. mollissima; DOC's 2024 list gives 399 GBIF and 641 DOC records.",
+      "Summary (first line) and edible parts (second sentence): Wikipedia contributors. 'Passiflora tripartita', Wikipedia, The Free Encyclopedia, revision 1364288811. CC BY-SA 4.0. Retrieved 22/10/2026. https://en.wikipedia.org/wiki/Passiflora_tripartita — quoted verbatim, citation markers removed.",
+      "Summary (second line) and habitat (first line): Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988: Flora of New Zealand vol. IV, 'Passiflora mollissima' (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0). Retrieved 22/10/2026. https://floraseries.landcareresearch.co.nz/taxa/35c9c6a9-9560-4fe3-a04f-3415c57558a0 — quoted verbatim; the spaces the page's markup leaves before punctuation are closed. Webb's P. mollissima is P. tripartita var. mollissima (Heenan & Sykes 2003, 'a new rank for plants previously known as P. mollissima'; Flora of New Zealand Online files the description under that name). The habitat sentence is cut before ', sometimes a serious weed.', which is status, not habitat. 'FL Jan-Dec.'",
+      "Summary (third line), written by the assistant: Flora of New Zealand Online, 'Passiflora tripartita' (CC BY 3.0 NZ, retrieved 22/10/2026, https://www.nzflora.info/factsheet/Taxon/Passiflora-tripartita.html) — 'Exotic: Fully Naturalised 2', var. azuayensis and var. mollissima; NZPCN 'Passiflora tripartita var. azuayensis' (all rights reserved, https://www.nzpcn.org.nz/flora/species/passiflora-tripartita-var-azuayensis/) — 'leaves glabrous to glabrate on upper surface', after Heenan & Sykes 2003.",
+      "Habitat (second line): Flora of New Zealand Online (Manaaki Whenua – Landcare Research), 'Passiflora tripartita var. mollissima' weed profile, Habitat line. CC BY 3.0 NZ. Retrieved 22/10/2026. https://www.nzflora.info/factsheet/Weed/Passiflora-tripartita-var-mollissima.html — quoted verbatim; a keyword list, the form the owner approved for `habitat` on 10/10/2026.",
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora tripartita var. mollissima' factsheet (Description from Webb et al. 1988 as Passiflora mollissima). CC BY 3.0 NZ. Retrieved 22/10/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-tripartita-var-mollissima.html — describes var. mollissima; var. azuayensis differs in its upper leaf surface (see summary).",
+      "Edible parts (first and last sentences) and preparation: Fern, Ken. 'Passiflora tripartita mollissima', Useful Temperate Plants database. CC BY-NC-SA 3.0. Retrieved 22/10/2026. https://temperate.theferns.info/plant/Passiflora+tripartita+mollissima — quoted verbatim, reference markers removed. Known Hazards: 'None known'. Its sentences cite Facciola 1998 and Novon 11 (2001). Not used: the medicinal 'passiflorina' sentences.",
+      "Warning, written by the assistant: McAlpine, K.G.; Howell, C.J. 2024: List of environmental weeds in New Zealand 2024. Science for Conservation 340, Department of Conservation, Table 2 (CC BY 4.0). Retrieved 22/10/2026. https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc340.pdf — Table 2: 'Passiflora tripartita (Juss.) Poir. banana passionfruit climber UO NPPA', regional plans Auckland (SC), Waikato (PC, SC), Bay of Plenty (SC), Gisborne (PC), Manawatū-Whanganui (PC), Wellington (SL), Tasman-Nelson (SC, OOI), Canterbury (SL), West Coast (PC), Otago (SL), Chatham Islands (E) — eleven regions. That the Accord prevents sale and distribution is NZPCN's description of the 2020 National Pest Plant Accord.",
+      "Origin checked 22/10/2026 → pest: McAlpine, K.G.; Howell, C.J. 2024: List of environmental weeds in New Zealand 2024. Science for Conservation 340, Department of Conservation, Table 2 (CC BY 4.0). Retrieved 22/10/2026. https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc340.pdf — Table 2 lists 'Passiflora tripartita' as an unwanted organism and NPPA species with eleven regional plans. Pest rule as set on 20/10/2026: on the DOC 2024 list, or an unwanted organism / NPPA, or a real regional pest-plan programme.",
+      "Recipe: copied from the 'Banana passionfruit' (P. tarminiana) entry, which credits Filbrun, Esther, 'Banana Passionfruit Jelly/Jam', A Melodious Sonnet, 06/01/2022 (all rights reserved; method restated). https://estherfilbrun.com/2022/01/banana-passionfruit-jelly/ — written for 'banana passionfruit' without naming a species, so it fits either.",
+      "Months: empty, which the app reads as year-round. Checked 22/10/2026: Weedbusters and Bay of Plenty Regional Council both give flowers from January to December, followed by fruit; NZPCN and Webb give flowering in every month; iNaturalist New Zealand wild records annotated 'fruiting' (n = 89) reach at least a quarter of the peak month in all twelve months; and ripe yellow fruit shows in research-grade photos from July (obs 89283504) and August (obs 30666880).",
+      "Lookalike cards among the five Passiflora entries (written by the assistant on the owner's instruction (owner, 22/10/2026: /goal \"find all you can about Passiflora and fill in following the rules\")): each card restates the two species' descriptions and Flora of New Zealand's Passiflora key — Webb, C.J. et al. 1988, Flora of New Zealand vol. IV (Flora of New Zealand Series, CC BY-NC-SA 4.0), https://floraseries.landcareresearch.co.nz/taxa/0e0cc34b-28b7-4b4a-8a94-9b059b1af976 — couplet 1 'Hypanthium cylindric and strongly elongated' against 'Hypanthium 0 or saucer-shaped and inconspicuous'; couplet 2 'Stipules pinnate with filiform segments; fr. ± globose' (pinnatistipula) against 'Stipules simple, ovate and toothed or subulate and entire; fr. ellipsoid'; couplet 3 '× rosea' 'Stipules with lanceolate rachis; stamens abnormal and ± petaloid'; couplet 6 'Lvs entire, coriaceous; perianth < 2 cm diam. when fresh' (tetrandra) against 'Lvs lobed, membranous or submembranous; perianth > 4 cm diam. when fresh'. Descriptions: Webb 1988 for P. edulis, P. pinnatistipula, P. tetrandra and P. mollissima (= P. tripartita var. mollissima; Flora of New Zealand Online files Webb's P. mollissima description under that name); for P. tarminiana, which Webb did not separate, Wikipedia 'Passiflora tarminiana' (revision 1352787405, CC BY-SA 4.0), NZPCN's P. tarminiana page (all rights reserved; facts restated) and Flora of New Zealand Online's weed profiles (CC BY 3.0 NZ: tube '6-7 cm' for P. tarminiana, '8-10 cm' and leaves 'moderately to densely hairy on the upper surface' for P. tripartita var. mollissima). The tarminiana–tripartita test follows Wikipedia's 'distinguished from P. tripartita var. mollissima' paragraph and NZPCN ('Can be distinguished from P. tarminiana by the large persistent stipules, and the long hypanthium'); var. azuayensis 'leaves glabrous to glabrate on upper surface' is NZPCN after Heenan & Sykes 2003; the hybrid is iNaturalist taxon 1645626, Passiflora tarminiana × tripartita (43 wild New Zealand records on 22/10/2026). Blue passionflower: NZPCN 'Most similar to P. caerulea in flower'; Webb 1988 'Lvs 5-lobed almost to base', 'pulp scanty and inedible'. × rosea: Webb's key and NZPCN's P. pinnatistipula page. Kōhia's fruit only on female plants: Wikipedia 'Passiflora tetrandra' (revision 1324332696). Risk `edible` every way, because every page carries a food record. Not carded: black passionfruit ↔ pink-flowered passionfruit — Webb gives black passionfruit 'N.: N. Auckland … Great Barrier Id; K.' and pink-flowered 'S.: Banks Peninsula (widespread), Otago (Palmerston)', so their wild ranges do not meet in the Flora. Blue passionflower, P. × rosea, P. mixta and P. antioquiensis have no entries (owner, 22/10/2026: blue passionflower 'Skip it').",
+      "Photos (the owner's curation in the editor, seen 22/10/2026; this line replaces the assistant's earlier description of a set the owner has since changed): -8 hanging flowers (obs 45728051, John Barkla, Port Chalmers, CC BY — var. azuayensis), -9 ripe fruit (obs 30666880, Amy Balkin, Careys Bay, CC BY-NC), -1 flower (obs 96184531, Alice Shanks, Redcliffs, CC BY), -2 leaf (obs 105382150, Mark, Ruby Bay, CC BY). Every observation re-checked by the iNaturalist API 22/10/2026 (taxon, research grade, wild, photo licence) and every frame checked by eye against its caption.",
+      "Self-audit of the Passiflora cards, 22/10/2026 (assistant): every number in each card was checked mechanically against the source text it restates; two hedges were then added — the tarminiana–tripartita tube test now says Wikipedia's 6–8 cm for P. tarminiana reaches the bottom of P. tripartita's 8–10 cm, and the kōhia–black passionfruit cards say a young black passionfruit's leaves are undivided ('Lvs deeply 3-lobed, but entire on young plants', Webb 1988) so texture decides ('coriaceous' against 'submembranous').",
+      "Recipes 'Curuba milk drink', 'Curuba sorbete with chocolate' and 'Tumbo jam' (written by the assistant on the owner's instruction, owner, 22/10/2026: /goal \"find some recipies for passionara\"; restated in English, metric, no text reproduced; Spanish-language sources are used for facts only, as for the mallows): (1) 'Jugo de Curuba o Sorbete de Curuba', El Rincón Colombiano (filed under Gastronomía de Cundinamarca), © all rights reserved, retrieved 22/10/2026, https://elrinconcolombiano.com/jugo-de-curuba/ — its '1½ taza de azúcar' is given here as about 300 g and '1 taza' as 240 ml; (2) and (3) '+10 recetas con tumbo o curuba', Comida Peruana Web, © all rights reserved, retrieved 22/10/2026, https://comidaperuanaweb.org/gastronomia/recetas-con-tumbo/ — the sorbete is its 'Sorbete de curuba', and the jam its 'Mermelada de tumbo'. The jam's ingredient list omits the sugar its method adds ('2 tazas de azúcar', given here as about 400 g) and lists '1/2 cucharadita de canela en polvo' that its method never uses, so the cinnamon is left out. The page's '1 taza de agua (240 ml)' sets the cup used. Not used: its 'esponjado de curuba', whose ingredient list gives no amount of fruit; its cocktail (alcohol); and the health claims on both pages. WHICH SPECIES: 'curuba' and 'tumbo' are names Wikipedia gives to both P. tripartita ('also called curuba, tumbo, curuba de Castilla, tumbo serrano and poro poro') and P. tarminiana ('curuba, curuba de Castilla, or curuba sabanera blanca (Colombia)'; 'tumbo or curuba (Bolivia)'; 'tacso, tumbo, tumbo del norte' (Peru)), and neither recipe names a species, so the same three recipes are on both banana passionfruit entries."
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Passiflora tripartita' (CC BY-SA 4.0)",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0) (as P. mollissima)",
+        "NZ Plant Conservation Network, 'Passiflora tripartita var. azuayensis' (all rights reserved; facts restated by the assistant)"
+      ],
+      "text" : "Passiflora tripartita, also called curuba, tumbo, curuba de Castilla, tumbo serrano and poro poro, is a species of Passiflora from Peru, Bolivia, Ecuador, Colombia, and Brazil in areas at elevations of 2000 – 3200 meters. P. tripartita var. mollissima and P. tarminiana were until recently considered to be one species, P. mollissima.\nBanana passionfruit is the commonest naturalised sp. of the genus in N.Z. N.; S.: Auckland to Otago Harbour, particularly just N. of Wellington, coastal Marlborough, including the Sounds, and coastal parts of Nelson.\nTwo varieties grow wild in New Zealand, var. mollissima and var. azuayensis; var. azuayensis has leaves hairless or nearly so on the upper surface."
+    },
+    "warnings" : [
+      "An unwanted organism and listed in the National Pest Plant Accord, which stops it being sold or distributed, and named in the pest management plans of eleven regions, from Auckland to Otago and the Chatham Islands."
     ]
   },
   {
@@ -2049,22 +2230,26 @@
   {
     "caution" : "careRequired",
     "commonName" : "Black passionfruit",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Useful Temperate Plants, 'Passiflora edulis' (CC BY-NC-SA 3.0)",
+        "Wikipedia, 'Passiflora edulis' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Fruit - raw or cooked. An agreeable cooling taste, somewhat like an orange with a mixture of acid. Each seed is surrounded by a membranous sac filled with pulpy juice. The flavor of the juice is slightly acidic and musky."
     },
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "Flora of New Zealand Online, 'Passiflora edulis' weed profile (CC BY 3.0 NZ)",
+        "NZ Plant Conservation Network, 'Passiflora edulis f. edulis' (all rights reserved; facts restated by the assistant)"
       ],
-      "text" : ""
+      "text" : "roadside, slope\nForest margins and shrubland, where there is no frost."
     },
     "habitats" : [
-
+      "forest",
+      "shrubland",
+      "disturbed"
     ],
     "id" : "black-passionfruit",
     "identification" : {
@@ -2074,7 +2259,27 @@
       "text" : "Vigorous vine, glabrous except for pistil and stamens.  Shoots slightly angular.  Lvs deeply 3-lobed, but entire on young plants;  petiole 1–3 cm long, with 2 sessile glands near apex;  stipules 10–15 mm long, linear-subulate, entire;  lamina lobes ± elliptic, submembranous, deep shining green above, rounded at base;  middle lobe largest, 6–10 × 3–5.5 cm, serrate or serrulate, obtuse to acute.  Fls ☿, solitary.  Pedicels 4–6 cm long at flowering.  Bracts 1.5–2 cm long, ovate, free, coarsely serrate.  Hypanthium inconspicuous.  Sepals 2.5–3 cm long, oblong, green on reverse, white inside; petals white, similar to sepals;  corona threads 2–2.5 cm long, white with purple base.  Filaments puckered, purple towards base, otherwise white;  anthers 8–10 mm long, > filaments.  Ovary puberulent.  Fr. 5–6.25 × 4.75–5.75 cm, broad-ellipsoid or subglobose, dull purple;  pulp orange, sweet.  Seed  c. 5 mm long, ovate, black, pitted.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "banana-passionfruit-tripartita",
+        "howToTell" : "Banana passionfruit (Passiflora tripartita) has densely hairy shoots; its leaves are 3-lobed, the lobes usually 5–14 cm long, usually more or less felted underneath and hairy or nearly hairless above; its stipules are 5–10 mm wide, kidney-shaped and gland-toothed, and they stay on the stem; its pink flowers hang from a floral tube 8–9.5 cm long, with sepals only 2–3.8 cm long; its fruit is (6)–7–12 × 2–3 cm, more or less ellipsoid, yellow or orange-yellow and finely downy, with dark red to black seeds. Black passionfruit is hairless except in the flower; its leaves are deeply 3-lobed (undivided on young plants) and deep shining green above, the middle lobe 6–10 × 3–5.5 cm; its stipules are narrow, 10–15 mm long; its flowers stand on stalks 4–6 cm long, are white with white corona threads purple at the base, and have no obvious floral tube; its fruit is 5–6.25 × 4.75–5.75 cm, broadly ellipsoid or nearly round, dull purple, with black seeds. Flora of New Zealand's key first splits the genus on the flower: the banana passionfruits and pink-flowered passionfruit have a cylindrical, much elongated floral tube, while black passionfruit and kōhia have none, or only an inconspicuous saucer-shaped one. The fruit separates them too: black passionfruit's is dull purple and nearly round; the fruit of banana passionfruit (P. tripartita) is yellow or orange when ripe and elongated. Blue passionflower, which has no entry here, has a flower much like black passionfruit's (NZPCN); Flora of New Zealand gives it 5-lobed leaves and calls its pulp 'scanty and inedible'. Both are edible.",
+        "name" : "Banana passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tripartita"
+      },
+      {
+        "entry" : "kohia",
+        "howToTell" : "Kōhia is hairless apart from slightly hairy young stems; its leaves are undivided and untoothed, (4)–5–12–(14) cm long, leathery and dark glossy green above; its flowers are small and yellowish green, (1)–3–4 together, with segments 5–6 mm long and no floral tube, and male and female flowers grow on separate plants; its fruit is (2)–2.5–3 cm across, round or broadly ellipsoid and orange, with sparse reddish pulp. Black passionfruit is hairless except in the flower; its leaves are deeply 3-lobed (undivided on young plants) and deep shining green above, the middle lobe 6–10 × 3–5.5 cm; its stipules are narrow, 10–15 mm long; its flowers stand on stalks 4–6 cm long, are white with white corona threads purple at the base, and have no obvious floral tube; its fruit is 5–6.25 × 4.75–5.75 cm, broadly ellipsoid or nearly round, dull purple, with black seeds. Without flowers the leaves settle it: Flora of New Zealand's key gives kōhia undivided, leathery leaves and flowers under 2 cm across, against lobed leaves and flowers over 4 cm across in the passionfruits it keys out beside, and black passionfruit's leaves are 3-lobed. A young black passionfruit's leaves are undivided too (Flora of New Zealand: 'entire on young plants'), so on a young plant go by texture: kōhia's are leathery, black passionfruit's thin. Only female kōhia plants bear fruit (Wikipedia: the plant is dioecious), so a fruitless kōhia is common; use the leaves. Both are edible.",
+        "name" : "Kōhia",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tetrandra"
+      },
+      {
+        "entry" : "banana-passionfruit",
+        "howToTell" : "Banana passionfruit (Passiflora tarminiana) has hairy stems; its leaves are 3-lobed and usually hairless above (the sources disagree about the underside); its stipules are small, 4–7 × 2–3 mm, and soon fall, so a mature stem usually has none; its pink flowers hang from a floral tube given as up to 6 cm (NZPCN), 6–7 cm (Flora of New Zealand's weed profile) or 6–8 cm (Wikipedia), with sepals and petals 3–6 cm long that spread flat or bend back; its fruit tapers at both ends and ripens yellow or light orange, and is given as up to 9 cm long (NZPCN) or 10–14 cm (Wikipedia). Black passionfruit is hairless except in the flower; its leaves are deeply 3-lobed (undivided on young plants) and deep shining green above, the middle lobe 6–10 × 3–5.5 cm; its stipules are narrow, 10–15 mm long; its flowers stand on stalks 4–6 cm long, are white with white corona threads purple at the base, and have no obvious floral tube; its fruit is 5–6.25 × 4.75–5.75 cm, broadly ellipsoid or nearly round, dull purple, with black seeds. Flora of New Zealand's key first splits the genus on the flower: the banana passionfruits and pink-flowered passionfruit have a cylindrical, much elongated floral tube, while black passionfruit and kōhia have none, or only an inconspicuous saucer-shaped one. The fruit separates them too: black passionfruit's is dull purple and nearly round; the fruit of banana passionfruit (P. tarminiana) is yellow or orange when ripe and elongated. Blue passionflower, which has no entry here, has a flower much like black passionfruit's (NZPCN); Flora of New Zealand gives it 5-lobed leaves and calls its pulp 'scanty and inedible'. Both are edible.",
+        "name" : "Banana passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tarminiana"
+      }
     ],
     "months" : [
       1,
@@ -2084,31 +2289,76 @@
       8,
       12
     ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/51446",
     "needsBookSource" : false,
-    "origin" : "introduced",
+    "origin" : "pest",
     "photos" : [
-
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) canopycover, some rights reserved (CC BY-NC)",
+        "fileName" : "black-passionfruit-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/330790469"
+      },
+      {
+        "caption" : "Three-lobed leaf",
+        "credit" : "(c) Joseph Knight, some rights reserved (CC BY-NC)",
+        "fileName" : "black-passionfruit-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/197204650"
+      },
+      {
+        "caption" : "Unripe fruits",
+        "credit" : "(c) weedfish11, some rights reserved (CC BY-NC)",
+        "fileName" : "black-passionfruit-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/336783425"
+      },
+      {
+        "caption" : "Ripe fruit",
+        "credit" : "(c) garywwilson, some rights reserved (CC BY-NC)",
+        "fileName" : "black-passionfruit-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/338936611"
+      }
     ],
     "preparation" : {
       "sources" : [
-
+        "Useful Temperate Plants, 'Passiflora edulis' (CC BY-NC-SA 3.0)",
+        "Wikipedia, 'Passiflora edulis' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "The ripe aromatic fruit is allowed to wrinkle and develop its sweetness, it is then eaten raw, juiced, made into a syrup or used in sauces, cakes, ice creams, sherbets etc.\nIn Australia and New Zealand, it is available commercially both fresh and tinned. It is added to fruit salads, and fresh fruit pulp or passion fruit sauce is commonly used in desserts, including as a topping for pavlova (a regional meringue cake) and ice cream, a flavouring for cheesecake, and in the icing of vanilla slices."
     },
     "recipes" : [
-
+      {
+        "method" : "The pulp of about 12 passionfruit (250 ml), 125 g unsalted butter, 165 g caster sugar, 5 eggs and 2 extra yolks. Whisk the pulp to loosen it and push it through a sieve, then stir half the seeds back into the juice. Put the juice, butter and sugar in a heatproof bowl over a pan of simmering water, keeping the bowl clear of the water, and stir until the butter melts. Beat the eggs and yolks lightly, whisk them in gently, and keep stirring for 20–25 minutes until it thickens: it is ready when a finger drawn across the curd on the back of a spoon leaves a line that holds. Pour into warm sterilised jars, seal, cool, and keep in the fridge for up to 8 weeks.",
+        "title" : "Passionfruit curd"
+      },
+      {
+        "method" : "880 g caster sugar, 500 ml water, 250 ml passionfruit pulp, 1 teaspoon citric acid. Put everything in a saucepan over medium heat and stir until the sugar dissolves, bring to the boil, take off the heat and let it cool. Keep it in the fridge for up to 4 weeks. Serve over crushed ice, topped up with water or soda water. Makes about 1.25 litres.",
+        "title" : "Passionfruit cordial"
+      }
     ],
     "scientificName" : "Passiflora edulis",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Black passionfruit' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora edulis f' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-edulis.html",
-      "scientificName: corrected from 'Passiflora edulis f' to 'Passiflora edulis', 08/10/2026. The old value was a truncation of 'Passiflora edulis f. edulis' at the interior full stop, and it failed the lookalike-name test against banana-passionfruit's card, which names the species correctly. Species rank is what the other three Passiflora entries use, and the catalogue has no golden passionfruit (f. flavicarpa) entry for the form epithet to distinguish it from, so the rank buys nothing and the interior full stop is a known hazard here. This is the third time the value has been truncated (490d638, restored in 9357667, truncated again in f4c406e). NOTE FOR WHOEVER CHASES THE CAUSE: trailing full stops survive everywhere in this file — 'Amaranthus spp.', 'Rubus fruticosus agg.' — so nothing is stripping a final period. Only an INTERIOR '. ' is lost, which is the signature of a first-sentence extraction, not a trimmer. Corrected by the assistant on the owner's instruction; flagged here so it is greppable and reversible."
+      "scientificName: corrected from 'Passiflora edulis f' to 'Passiflora edulis', 08/10/2026. The old value was a truncation of 'Passiflora edulis f. edulis' at the interior full stop, and it failed the lookalike-name test against banana-passionfruit's card, which names the species correctly. Species rank is what the other three Passiflora entries use, and the catalogue has no golden passionfruit (f. flavicarpa) entry for the form epithet to distinguish it from, so the rank buys nothing and the interior full stop is a known hazard here. This is the third time the value has been truncated (490d638, restored in 9357667, truncated again in f4c406e). NOTE FOR WHOEVER CHASES THE CAUSE: trailing full stops survive everywhere in this file — 'Amaranthus spp.', 'Rubus fruticosus agg.' — so nothing is stripping a final period. Only an INTERIOR '. ' is lost, which is the signature of a first-sentence extraction, not a trimmer. Corrected by the assistant on the owner's instruction; flagged here so it is greppable and reversible.",
+      "Origin checked 22/10/2026 → pest: McAlpine, K.G.; Howell, C.J. 2024: List of environmental weeds in New Zealand 2024. Science for Conservation 340, Department of Conservation, Table 2 (CC BY 4.0). Retrieved 22/10/2026. https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc340.pdf — Table 2 lists 'Passiflora edulis' (black passionfruit) with no unwanted-organism or NPPA mark and no regional plan; the report names it among weeds that 'are valuable commercial crops elsewhere'. NZPCN's page tags it NPPA, which the DOC table does not support; the DOC table is used. Pest rule as set on 20/10/2026: on the DOC 2024 list, or an unwanted organism / NPPA, or a real regional pest-plan programme.",
+      "Summary (first line), edible parts (last two sentences) and preparation (second line): Wikipedia contributors. 'Passiflora edulis', Wikipedia, The Free Encyclopedia, revision 1380446612. CC BY-SA 4.0. Retrieved 22/10/2026. https://en.wikipedia.org/wiki/Passiflora_edulis — quoted verbatim, citation markers removed. Not used: the cyanogenic-glycoside sentence, which is about yellow-fruited varieties; Webb says wild New Zealand plants are the purple f. edulis.",
+      "Summary (second and third lines): Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988: Flora of New Zealand vol. IV, 'Passiflora edulis' (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0). Retrieved 22/10/2026. https://floraseries.landcareresearch.co.nz/taxa/645b8a89-2bd6-4ce2-937c-28c01a48badd — quoted verbatim; the spaces the page's markup leaves before punctuation are closed. Its 'FL Jul-Mar.' dates flowers, not fruit. It gives no habitat line.",
+      "Habitat (first line): Flora of New Zealand Online (Manaaki Whenua – Landcare Research), 'Passiflora edulis' weed profile, Habitat line. CC BY 3.0 NZ. Retrieved 22/10/2026. https://www.nzflora.info/factsheet/Weed/Passiflora-edulis.html — quoted verbatim; a keyword list, the form the owner approved for `habitat` on 10/10/2026.",
+      "Habitat (second line): New Zealand Plant Conservation Network, 'Passiflora edulis f. edulis' (all rights reserved), retrieved 22/10/2026, https://www.nzpcn.org.nz/flora/species/passiflora-edulis-f-edulis/ — its habitat line 'Terrestrial. Forest margins and shrubland in frost-free areas.' restated by the assistant.",
+      "Edible parts (first sentence) and preparation (first line): Fern, Ken. 'Passiflora edulis', Useful Temperate Plants database. CC BY-NC-SA 3.0. Retrieved 22/10/2026. https://temperate.theferns.info/plant/Passiflora+edulis — quoted verbatim, reference markers removed. Known Hazards: 'None known'. Not used: 'An edible oil is obtained from the seed.' and 'Leaves - cooked. Occasionally used as a vegetable.' — no preparation or New Zealand record for either was found.",
+      "Recipe 'Passionfruit curd' (written by the assistant, metric): Parrish, Merle. Merle's Country Show Baking and Other Favourites (Ebury/Random House Australia), reprinted as 'Passionfruit Curd' by the New Zealand Good Food Guide, © all rights reserved — ingredients and method restated, no text reproduced. Retrieved 22/10/2026. https://www.nzgfg.co.nz/recipe/passionfruit-curd — written for 'passionfruit' without naming a species; Webb calls this species 'the black passionfruit of commerce'. '¾ cup caster sugar' converted to about 165 g and '1 cup' of pulp to 250 ml by the assistant.",
+      "Months, checked 22/10/2026: left as Langlands gives them, [1, 2, 6, 7, 8, 12]. iNaturalist New Zealand wild records annotated 'fruiting' fall in December–March, but there are only 9, and one research-grade record shows ripe purple fruit on 04/03/2025 at Te Arai (obs 263825796), a month Langlands leaves out. OPEN (months): the owner to decide whether March belongs.",
+      "Lookalike cards among the five Passiflora entries (written by the assistant on the owner's instruction (owner, 22/10/2026: /goal \"find all you can about Passiflora and fill in following the rules\")): each card restates the two species' descriptions and Flora of New Zealand's Passiflora key — Webb, C.J. et al. 1988, Flora of New Zealand vol. IV (Flora of New Zealand Series, CC BY-NC-SA 4.0), https://floraseries.landcareresearch.co.nz/taxa/0e0cc34b-28b7-4b4a-8a94-9b059b1af976 — couplet 1 'Hypanthium cylindric and strongly elongated' against 'Hypanthium 0 or saucer-shaped and inconspicuous'; couplet 2 'Stipules pinnate with filiform segments; fr. ± globose' (pinnatistipula) against 'Stipules simple, ovate and toothed or subulate and entire; fr. ellipsoid'; couplet 3 '× rosea' 'Stipules with lanceolate rachis; stamens abnormal and ± petaloid'; couplet 6 'Lvs entire, coriaceous; perianth < 2 cm diam. when fresh' (tetrandra) against 'Lvs lobed, membranous or submembranous; perianth > 4 cm diam. when fresh'. Descriptions: Webb 1988 for P. edulis, P. pinnatistipula, P. tetrandra and P. mollissima (= P. tripartita var. mollissima; Flora of New Zealand Online files Webb's P. mollissima description under that name); for P. tarminiana, which Webb did not separate, Wikipedia 'Passiflora tarminiana' (revision 1352787405, CC BY-SA 4.0), NZPCN's P. tarminiana page (all rights reserved; facts restated) and Flora of New Zealand Online's weed profiles (CC BY 3.0 NZ: tube '6-7 cm' for P. tarminiana, '8-10 cm' and leaves 'moderately to densely hairy on the upper surface' for P. tripartita var. mollissima). The tarminiana–tripartita test follows Wikipedia's 'distinguished from P. tripartita var. mollissima' paragraph and NZPCN ('Can be distinguished from P. tarminiana by the large persistent stipules, and the long hypanthium'); var. azuayensis 'leaves glabrous to glabrate on upper surface' is NZPCN after Heenan & Sykes 2003; the hybrid is iNaturalist taxon 1645626, Passiflora tarminiana × tripartita (43 wild New Zealand records on 22/10/2026). Blue passionflower: NZPCN 'Most similar to P. caerulea in flower'; Webb 1988 'Lvs 5-lobed almost to base', 'pulp scanty and inedible'. × rosea: Webb's key and NZPCN's P. pinnatistipula page. Kōhia's fruit only on female plants: Wikipedia 'Passiflora tetrandra' (revision 1324332696). Risk `edible` every way, because every page carries a food record. Not carded: black passionfruit ↔ pink-flowered passionfruit — Webb gives black passionfruit 'N.: N. Auckland … Great Barrier Id; K.' and pink-flowered 'S.: Banks Peninsula (widespread), Otago (Palmerston)', so their wild ranges do not meet in the Flora. Blue passionflower, P. × rosea, P. mixta and P. antioquiensis have no entries (owner, 22/10/2026: blue passionflower 'Skip it').",
+      "Photos (the owner's curation in the editor, seen 22/10/2026; replaces the assistant's earlier description): -1 flower (obs 330790469, canopycover, Buller, CC BY-NC), -4 three-lobed leaf (obs 197204650, Joseph Knight, Mangawhai, CC BY-NC), -5 unripe fruits (obs 336783425, weedfish11, Warkworth, CC BY-NC), -2 ripe purple fruit (obs 338936611, garywwilson, Parua Bay, CC BY-NC). Every observation re-checked by the iNaturalist API 22/10/2026 (taxon, research grade, wild, photo licence) and every frame checked by eye against its caption.",
+      "Self-audit of the Passiflora cards, 22/10/2026 (assistant): every number in each card was checked mechanically against the source text it restates; two hedges were then added — the tarminiana–tripartita tube test now says Wikipedia's 6–8 cm for P. tarminiana reaches the bottom of P. tripartita's 8–10 cm, and the kōhia–black passionfruit cards say a young black passionfruit's leaves are undivided ('Lvs deeply 3-lobed, but entire on young plants', Webb 1988) so texture decides ('coriaceous' against 'submembranous').",
+      "Recipe 'Passionfruit cordial' (written by the assistant on the owner's instruction, owner, 22/10/2026: /goal \"find some recipies for passionara\"; method restated, no text reproduced): Hay, Donna, 'passionfruit cordial', donnahay.com.au, © all rights reserved, retrieved 22/10/2026, https://www.donnahay.com.au/recipes/onepot/P400/passionfruit-cordial — written for 'passionfruit' without naming a species; Webb calls this species 'the black passionfruit of commerce'. 'Makes 5 cups' given as about 1.25 litres."
     ],
     "summary" : {
       "sources" : [
-
+        "Wikipedia, 'Passiflora edulis' (CC BY-SA 4.0)",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Passiflora edulis, commonly known as passion fruit, is a vine species of passion flower native to southern Brazil, through Paraguay, and northern Argentina.\nThis sp. is the black passionfruit of commerce and is widely cultivated in warmer parts of the country. All wild and virtually all cultivated plants in N.Z. belong to f. edulis, and not the less hardy, yellow-fruited f. flavicarpa Degener which is the usual form grown in tropical Polynesia.\nN.: N. Auckland (plantations at Waitangi and Silverdale), near Auckland (Waitakere Range), Great Barrier Id; K.: well-established on Raoul Id where it grows so abundantly on and near the forest margin in some places that attempts have been made to eliminate it."
     },
     "warnings" : [
 
@@ -13375,22 +13625,23 @@
   {
     "caution" : "careRequired",
     "commonName" : "Kōhia",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Wikipedia, 'Passiflora tetrandra' (CC BY-SA 4.0)",
+        "Useful Temperate Plants, 'Passiflora tetrandra' (CC BY-NC-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "The fruit can be eaten by people and is a traditional food for Māori: the gum from the stem was also chewed. The seeds have a peppery taste.\nFruit. The reddish pulp surrounding the seeds is eaten. The orange, subglobose fruit is around 25 - 30mm in diameter. An edible gum is obtained from the stem."
     },
-    "group" : "greens",
+    "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Lowland areas, in indigenous forest clearings, margins and remnants."
     },
     "habitats" : [
-
+      "forest"
     ],
     "harvestEthics" : {
       "sources" : [
@@ -13406,7 +13657,34 @@
       "text" : "Vigorous, dioecious, high-climbing vine, glabrous except for slightly hairy young stems.  Lvs simple;  petioles (0.8)–1–2 cm long, eglandular;  stipules minute or 0;  lamina (4)–5–12–(14) × (1.8)–2–4–(5.5) cm, lanceolate to narrow-ovate or elliptic, coriaceous, dark glossy green above, entire, acute to acuminate.  Fls (1)–3–4 in cymes, fragrant.  Pedicels 5–15 mm long.  Bracts ± subulate, caducous.  Hypanthium 0.  Perianth 4-merous;  segments 5–6 mm long, ± oblong, yellowish green;  corona threads 2.5–3.5 mm long.  ♂ fls with 4 stamens;  filaments 5–6 mm long forming a short androphore bearing an abortive ovary.  ♀ fls with short staminodes.  Ovary glabrous;  styles (2)–3,  c. 2 mm long.  Fr. (2)–2.5–3 cm diam., subglobose or broad-ellipsoid, orange;  pulp reddish, sparse.  Seeds 3–7 mm long, flattened, wrinkled.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "banana-passionfruit-tripartita",
+        "howToTell" : "Banana passionfruit (Passiflora tripartita) has densely hairy shoots; its leaves are 3-lobed, the lobes usually 5–14 cm long, usually more or less felted underneath and hairy or nearly hairless above; its stipules are 5–10 mm wide, kidney-shaped and gland-toothed, and they stay on the stem; its pink flowers hang from a floral tube 8–9.5 cm long, with sepals only 2–3.8 cm long; its fruit is (6)–7–12 × 2–3 cm, more or less ellipsoid, yellow or orange-yellow and finely downy, with dark red to black seeds. Kōhia is hairless apart from slightly hairy young stems; its leaves are undivided and untoothed, (4)–5–12–(14) cm long, leathery and dark glossy green above; its flowers are small and yellowish green, (1)–3–4 together, with segments 5–6 mm long and no floral tube, and male and female flowers grow on separate plants; its fruit is (2)–2.5–3 cm across, round or broadly ellipsoid and orange, with sparse reddish pulp. Flora of New Zealand's key first splits the genus on the flower: the banana passionfruits and pink-flowered passionfruit have a cylindrical, much elongated floral tube, while black passionfruit and kōhia have none, or only an inconspicuous saucer-shaped one. Without flowers the leaves settle it: Flora of New Zealand's key gives kōhia undivided, leathery leaves and flowers under 2 cm across, against lobed leaves and flowers over 4 cm across in the passionfruits it keys out beside, and banana passionfruit (P. tripartita)'s leaves are 3-lobed. Only female kōhia plants bear fruit (Wikipedia: the plant is dioecious), so a fruitless kōhia is common; use the leaves. Both are edible.",
+        "name" : "Banana passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tripartita"
+      },
+      {
+        "entry" : "banana-passionfruit",
+        "howToTell" : "Banana passionfruit (Passiflora tarminiana) has hairy stems; its leaves are 3-lobed and usually hairless above (the sources disagree about the underside); its stipules are small, 4–7 × 2–3 mm, and soon fall, so a mature stem usually has none; its pink flowers hang from a floral tube given as up to 6 cm (NZPCN), 6–7 cm (Flora of New Zealand's weed profile) or 6–8 cm (Wikipedia), with sepals and petals 3–6 cm long that spread flat or bend back; its fruit tapers at both ends and ripens yellow or light orange, and is given as up to 9 cm long (NZPCN) or 10–14 cm (Wikipedia). Kōhia is hairless apart from slightly hairy young stems; its leaves are undivided and untoothed, (4)–5–12–(14) cm long, leathery and dark glossy green above; its flowers are small and yellowish green, (1)–3–4 together, with segments 5–6 mm long and no floral tube, and male and female flowers grow on separate plants; its fruit is (2)–2.5–3 cm across, round or broadly ellipsoid and orange, with sparse reddish pulp. Flora of New Zealand's key first splits the genus on the flower: the banana passionfruits and pink-flowered passionfruit have a cylindrical, much elongated floral tube, while black passionfruit and kōhia have none, or only an inconspicuous saucer-shaped one. Without flowers the leaves settle it: Flora of New Zealand's key gives kōhia undivided, leathery leaves and flowers under 2 cm across, against lobed leaves and flowers over 4 cm across in the passionfruits it keys out beside, and banana passionfruit (P. tarminiana)'s leaves are 3-lobed. Only female kōhia plants bear fruit (Wikipedia: the plant is dioecious), so a fruitless kōhia is common; use the leaves. Both are edible.",
+        "name" : "Banana passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tarminiana"
+      },
+      {
+        "entry" : "black-passionfruit",
+        "howToTell" : "Black passionfruit is hairless except in the flower; its leaves are deeply 3-lobed (undivided on young plants) and deep shining green above, the middle lobe 6–10 × 3–5.5 cm; its stipules are narrow, 10–15 mm long; its flowers stand on stalks 4–6 cm long, are white with white corona threads purple at the base, and have no obvious floral tube; its fruit is 5–6.25 × 4.75–5.75 cm, broadly ellipsoid or nearly round, dull purple, with black seeds. Kōhia is hairless apart from slightly hairy young stems; its leaves are undivided and untoothed, (4)–5–12–(14) cm long, leathery and dark glossy green above; its flowers are small and yellowish green, (1)–3–4 together, with segments 5–6 mm long and no floral tube, and male and female flowers grow on separate plants; its fruit is (2)–2.5–3 cm across, round or broadly ellipsoid and orange, with sparse reddish pulp. Without flowers the leaves settle it: Flora of New Zealand's key gives kōhia undivided, leathery leaves and flowers under 2 cm across, against lobed leaves and flowers over 4 cm across in the passionfruits it keys out beside, and black passionfruit's leaves are 3-lobed. A young black passionfruit's leaves are undivided too (Flora of New Zealand: 'entire on young plants'), so on a young plant go by texture: kōhia's are leathery, black passionfruit's thin. Only female kōhia plants bear fruit (Wikipedia: the plant is dioecious), so a fruitless kōhia is common; use the leaves. Both are edible.",
+        "name" : "Black passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora edulis"
+      },
+      {
+        "entry" : "pink-flowered-passionfruit",
+        "howToTell" : "Pink-flowered passionfruit has downy young shoots; its leaves are 3-lobed, grey- or white-felted underneath and dark shining green above; its stipules are pinnate, with dark thread-like segments almost to the base of a very narrow central strip; its flowers have a floral tube (4)–4.5–5 cm long, pink petals and violet-blue corona threads; its fruit is 4–7 cm across, round or slightly flattened, yellow and finely downy. Kōhia is hairless apart from slightly hairy young stems; its leaves are undivided and untoothed, (4)–5–12–(14) cm long, leathery and dark glossy green above; its flowers are small and yellowish green, (1)–3–4 together, with segments 5–6 mm long and no floral tube, and male and female flowers grow on separate plants; its fruit is (2)–2.5–3 cm across, round or broadly ellipsoid and orange, with sparse reddish pulp. Flora of New Zealand's key first splits the genus on the flower: the banana passionfruits and pink-flowered passionfruit have a cylindrical, much elongated floral tube, while black passionfruit and kōhia have none, or only an inconspicuous saucer-shaped one. Without flowers the leaves settle it: Flora of New Zealand's key gives kōhia undivided, leathery leaves and flowers under 2 cm across, against lobed leaves and flowers over 4 cm across in the passionfruits it keys out beside, and pink-flowered passionfruit's leaves are 3-lobed. Only female kōhia plants bear fruit (Wikipedia: the plant is dioecious), so a fruitless kōhia is common; use the leaves. Both are edible.",
+        "name" : "Pink-flowered passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora pinnatistipula"
+      }
     ],
     "maoriName" : "Kōhia",
     "months" : [
@@ -13415,10 +13693,40 @@
       4,
       5
     ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/404665",
     "needsBookSource" : false,
     "origin" : "endemic",
     "photos" : [
-
+      {
+        "caption" : "Close up of leaf",
+        "credit" : "(c) Rose Zappa, some rights reserved (CC BY)",
+        "fileName" : "kohia-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/36743351"
+      },
+      {
+        "caption" : "Leaves",
+        "credit" : "(c) Tim Park, some rights reserved (CC BY)",
+        "fileName" : "kohia-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/75703352"
+      },
+      {
+        "caption" : "Ripe fruit",
+        "credit" : "(c) Joe Dillon, some rights reserved (CC BY)",
+        "fileName" : "kohia-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/77866858"
+      },
+      {
+        "caption" : "Unripe fruit",
+        "credit" : "(c) Alan Jolliffe, some rights reserved (CC BY-NC)",
+        "fileName" : "kohia-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/330083375"
+      },
+      {
+        "caption" : "Opened fruit",
+        "credit" : "(c) Rene, some rights reserved (CC BY-NC)",
+        "fileName" : "kohia-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/271554120"
+      }
     ],
     "preparation" : {
       "sources" : [
@@ -13435,13 +13743,25 @@
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora tetrandra' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-tetrandra.html",
       "Summary text: Wikipedia contributors. 'Passiflora tetrandra', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Passiflora_tetrandra",
       "Greater Wellington Regional Council. Wellington Regional Native Plant Guide, revised edition (2010), main plant list — names only.",
-      "Harvest ethics: the owner's own generic sentence, written for snowdrop-woodsorrel (16/10/2026), copied unchanged on the owner's instruction, 17/10/2026 (\"come up with a generic one for species that are not endangered … copy that one across\"), because this species is assessed Not Threatened — NZ Plant Conservation Network species page, 2023 NZTCS status (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43, Department of Conservation, CC BY 4.0), retrieved 17/10/2026: https://www.nzpcn.org.nz/flora/species/passiflora-tetrandra/. Rāhui, conservation-land permits and specific tikanga are not covered by it."
+      "Harvest ethics: the owner's own generic sentence, written for snowdrop-woodsorrel (16/10/2026), copied unchanged on the owner's instruction, 17/10/2026 (\"come up with a generic one for species that are not endangered … copy that one across\"), because this species is assessed Not Threatened — NZ Plant Conservation Network species page, 2023 NZTCS status (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43, Department of Conservation, CC BY 4.0), retrieved 17/10/2026: https://www.nzpcn.org.nz/flora/species/passiflora-tetrandra/. Rāhui, conservation-land permits and specific tikanga are not covered by it.",
+      "Summary (added sentences) and edible parts (first line): Wikipedia contributors. 'Passiflora tetrandra', Wikipedia, The Free Encyclopedia, revision 1324332696. CC BY-SA 4.0. Retrieved 22/10/2026. https://en.wikipedia.org/wiki/Passiflora_tetrandra — quoted verbatim, citation markers removed.",
+      "Habitat: Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988: Flora of New Zealand vol. IV, 'Passiflora tetrandra' (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0). Retrieved 22/10/2026. https://floraseries.landcareresearch.co.nz/taxa/ff8c7a08-54f5-47eb-a0df-a9037029b6e5 — quoted verbatim; the spaces the page's markup leaves before punctuation are closed. 'FL Jul-Mar.'",
+      "Edible parts (second line): Fern, Ken. 'Passiflora tetrandra', Useful Temperate Plants database. CC BY-NC-SA 3.0. Retrieved 22/10/2026. https://temperate.theferns.info/plant/Passiflora+tetrandra — quoted verbatim, reference markers removed. Known Hazards: 'None known'. Its sentences cite Crowe 1990 (Native Edible Plants of New Zealand) and Allan 1961. Not used: the medicinal seed-oil and fruit-juice sentences.",
+      "Group: greens → fruit, 22/10/2026. Every food record on the page is the fruit (and a stem gum); none is a leaf.",
+      "Ngā Rauropi Whakaoranga, 'Passiflora tetrandra. Kōhia. New Zealand passionfruit.' (data CC BY 4.0, retrieved 22/10/2026, https://rauropiwhakaoranga.landcareresearch.co.nz/names/ebcbcf65-974f-4190-a72b-a8ebfd6ec2eb) — read; it has no Food section (seed oil, fibre, scent and medicinal uses only), so nothing from it is on the page.",
+      "Months, checked 22/10/2026: left as Langlands gives them, [2–5]. Allan 1961 (Flora of New Zealand vol. I, https://floraseries.landcareresearch.co.nz/taxa/9b09f7f4-78f0-44f8-85f8-0ca4b6ee04d5) gives 'FL.- FT. 10-3.'; Wikipedia gives fruit 'from summer to autumn'; iNaturalist New Zealand wild records annotated 'fruiting' reach a quarter of the April peak in January–June (n = 215, fruit of any ripeness). Langlands' window sits inside all three.",
+      "Preparation: none found. No source read gives a way of preparing the fruit beyond eating it.",
+      "Warnings: still empty. No source read records a hazard (Useful Temperate Plants: 'None known'); the lookalike cards added today are what clears the `warnings` check, not a warning.",
+      "Lookalike cards among the five Passiflora entries (written by the assistant on the owner's instruction (owner, 22/10/2026: /goal \"find all you can about Passiflora and fill in following the rules\")): each card restates the two species' descriptions and Flora of New Zealand's Passiflora key — Webb, C.J. et al. 1988, Flora of New Zealand vol. IV (Flora of New Zealand Series, CC BY-NC-SA 4.0), https://floraseries.landcareresearch.co.nz/taxa/0e0cc34b-28b7-4b4a-8a94-9b059b1af976 — couplet 1 'Hypanthium cylindric and strongly elongated' against 'Hypanthium 0 or saucer-shaped and inconspicuous'; couplet 2 'Stipules pinnate with filiform segments; fr. ± globose' (pinnatistipula) against 'Stipules simple, ovate and toothed or subulate and entire; fr. ellipsoid'; couplet 3 '× rosea' 'Stipules with lanceolate rachis; stamens abnormal and ± petaloid'; couplet 6 'Lvs entire, coriaceous; perianth < 2 cm diam. when fresh' (tetrandra) against 'Lvs lobed, membranous or submembranous; perianth > 4 cm diam. when fresh'. Descriptions: Webb 1988 for P. edulis, P. pinnatistipula, P. tetrandra and P. mollissima (= P. tripartita var. mollissima; Flora of New Zealand Online files Webb's P. mollissima description under that name); for P. tarminiana, which Webb did not separate, Wikipedia 'Passiflora tarminiana' (revision 1352787405, CC BY-SA 4.0), NZPCN's P. tarminiana page (all rights reserved; facts restated) and Flora of New Zealand Online's weed profiles (CC BY 3.0 NZ: tube '6-7 cm' for P. tarminiana, '8-10 cm' and leaves 'moderately to densely hairy on the upper surface' for P. tripartita var. mollissima). The tarminiana–tripartita test follows Wikipedia's 'distinguished from P. tripartita var. mollissima' paragraph and NZPCN ('Can be distinguished from P. tarminiana by the large persistent stipules, and the long hypanthium'); var. azuayensis 'leaves glabrous to glabrate on upper surface' is NZPCN after Heenan & Sykes 2003; the hybrid is iNaturalist taxon 1645626, Passiflora tarminiana × tripartita (43 wild New Zealand records on 22/10/2026). Blue passionflower: NZPCN 'Most similar to P. caerulea in flower'; Webb 1988 'Lvs 5-lobed almost to base', 'pulp scanty and inedible'. × rosea: Webb's key and NZPCN's P. pinnatistipula page. Kōhia's fruit only on female plants: Wikipedia 'Passiflora tetrandra' (revision 1324332696). Risk `edible` every way, because every page carries a food record. Not carded: black passionfruit ↔ pink-flowered passionfruit — Webb gives black passionfruit 'N.: N. Auckland … Great Barrier Id; K.' and pink-flowered 'S.: Banks Peninsula (widespread), Otago (Palmerston)', so their wild ranges do not meet in the Flora. Blue passionflower, P. × rosea, P. mixta and P. antioquiensis have no entries (owner, 22/10/2026: blue passionflower 'Skip it').",
+      "Photos (the owner's curation in the editor, seen 22/10/2026; replaces the assistant's earlier description): -1 leaf (obs 36743351, Rose Zappa, Bridal Veil Falls, CC BY), -4 leaves (obs 75703352, Tim Park, Ōtari-Wilton's Bush, CC BY), -3 ripe orange fruit (obs 77866858, Joe Dillon, Wilton, CC BY), -2 unripe fruit (obs 330083375, Alan Jolliffe, Travis Wetland, CC BY-NC), -5 opened fruit (obs 271554120, Rene, Lower Hutt, CC BY-NC). Every observation re-checked by the iNaturalist API 22/10/2026 (taxon, research grade, wild, photo licence) and every frame checked by eye against its caption.",
+      "Self-audit of the Passiflora cards, 22/10/2026 (assistant): every number in each card was checked mechanically against the source text it restates; two hedges were then added — the tarminiana–tripartita tube test now says Wikipedia's 6–8 cm for P. tarminiana reaches the bottom of P. tripartita's 8–10 cm, and the kōhia–black passionfruit cards say a young black passionfruit's leaves are undivided ('Lvs deeply 3-lobed, but entire on young plants', Webb 1988) so texture decides ('coriaceous' against 'submembranous').",
+      "Recipes searched 22/10/2026 (owner: \"find some recipies for passionara\"): none found. The sources read record the fruit as eaten and the stem gum as chewed, but give no method; Tararua Tramping Club's 'In The Hills', October 2022 (Michele Dickson and Chris Horne, © all rights reserved, https://www.ttc.org.nz/pmwiki/pmwiki.php/InTheHills/InTheHills2022-10) says 'The fruit is edible but not tasty.'"
     ],
     "summary" : {
       "sources" : [
         "Wikipedia, 'Passiflora tetrandra' (CC BY-SA 4.0)"
       ],
-      "text" : "Passiflora tetrandra (Māori: kōhia), also known as New Zealand passionflower, New Zealand passionfruit, or kohe, is a climbing vine found in New Zealand."
+      "text" : "Passiflora tetrandra (Māori: kōhia), also known as New Zealand passionflower, New Zealand passionfruit, or kohe, is a climbing vine found in New Zealand. Of the c. 500 species of passionflower, this is the sole species native to New Zealand.\nIt occurs throughout the North Island and in parts of the South Island as far south as Banks Peninsula."
     },
     "warnings" : [
 
@@ -17383,19 +17703,19 @@
   {
     "caution" : "careRequired",
     "commonName" : "Oat",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "Seed - cooked. It has a floury texture and a mild, somewhat creamy flavour. It can be used as a staple food crop in either savoury or sweet dishes. Used as a cereal, it is probably best known as the breakfast cereal porridge but it can also be used in many other ways. The seed can be sprouted and used in salads, the grain can also be ground into a flour and used in making biscuits, sourdough etc. The roasted seed is a coffee substitute."
     },
-    "group" : "greens",
+    "group" : "nuts",
     "habitat" : {
       "sources" : [
-        "Wikipedia, 'Oat' (CC BY-SA 4.0)"
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)"
       ],
-      "text" : "Oats tolerate cold winters less well than cereals such as wheat, barley, and rye, but need less summer heat and more rain, making them important in areas such as Northwest Europe that have cool, wet summers. They can tolerate low-nutrient and acid soils. Oats grow thickly and vigorously, allowing them to outcompete many weeds, and compared to other cereals are relatively free from diseases."
+      "text" : "On roadsides, on railway embankments, and near racecourses and in farmland, occasionally in damp ground."
     },
     "habitats" : [
       "disturbed",
@@ -17425,14 +17745,19 @@
       },
       {
         "entry" : "wild-oat",
-        "howToTell" : "Wild oat's spikelets break up at maturity, separating below each floret; the cultivated oat's spikelets fall intact. Wild oat's lemma is stiffly hairy below where the awn joins, though sometimes hairless, and carries a stout awn 30–40 mm long, bent at a knee, with a twisted dark-brown lower column. The cultivated oat's lemma is hairless or has a few hairs near the base, and is usually awnless; any awn is weak, straight or curved, not bent at a knee and scarcely twisted. Spikelet length does not separate them cleanly: wild oat's are 35–50 mm, the cultivated oat's usually 20–30 mm but 15–40 mm at the extremes.",
+        "howToTell" : "Wild oat's spikelets break up at maturity, separating below each floret; the cultivated oat's spikelets fall intact. Wild oat's lemma is stiffly hairy below where the awn joins, though sometimes hairless, and carries a stout awn 30–40 mm long, bent at a knee, with a twisted dark-brown lower column. The cultivated oat's lemma is hairless or has a few hairs near the base, and is usually awnless; any awn is weak, straight or curved, not bent at a knee and scarcely twisted. Spikelet length does not separate them cleanly: wild oat's are 35–50 mm, the cultivated oat's usually 20–30 mm but 15–40 mm at the extremes. None of these tests holds for fatuoids, or false wild oats — a mutant form that turns up in oat crops: their florets look like wild oat's, with a bent, twisted awn and a horseshoe-shaped callus bordered by hairs, and the spikelet breaks below every floret.",
         "name" : "Wild oat",
         "risk" : "edible",
         "scientificName" : "Avena fatua"
       }
     ],
+    "maoriName" : "Ōti",
     "months" : [
-
+      1,
+      2,
+      3,
+      4,
+      12
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/57156",
     "needsBookSource" : false,
@@ -17455,13 +17780,20 @@
         "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
         "fileName" : "oat-6.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/4951881"
+      },
+      {
+        "caption" : "Close up of stalk",
+        "credit" : "(c) Nathan Odgers, some rights reserved (CC BY)",
+        "fileName" : "oat-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/194062806"
       }
     ],
     "preparation" : {
       "sources" : [
-
+        "Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0)",
+        "Wikipedia, 'Oat' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Oats are harvested when grain is in the hard dough stage and straw is slightly green (when the moisture content of the grain is 14% or less). If too ripe, shattering causes seed loss. Seeds are threshed and cleaned by winnowing, and artificially dried to below 14% moisture for storage. The seed, when harvested and dried, can store for several years. Harvested oats go through multiple stages of milling. The first stage is cleaning, to remove seeds of other plants, stones and any other extraneous materials. Next is dehulling to remove the indigestible hull, leaving the seed or \"groat\". Heating denatures enzymes in the seed that would make it go sour or rancid; the grain is then dried to minimise the risk of spoilage by bacteria and fungi. For home use such as making porridge, oats are often rolled flat to make them quicker to cook."
     },
     "recipes" : [
       {
@@ -17478,22 +17810,34 @@
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Oats' entry (pp. 130–131).",
       "Identification text and common name: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Avena sativa' factsheet. CC BY 3.0 NZ. Retrieved 05/10/2026. https://www.nzflora.info/factsheet/Taxon/Avena-sativa.html",
       "Summary text: Wikipedia contributors. 'Oat', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Oat",
-      "Habitat text: Wikipedia contributors. 'Oat', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Oat",
+      "Habitat text (until 22/10/2026): Wikipedia contributors. 'Oat', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Oat — on 22/10/2026 that paragraph (growing conditions of the crop, not where it grows wild) moved verbatim to the end of the summary, and the Flora habitat sentence below replaced it.",
       "Recipe methods, rewritten: The Herbal Academy. '4 Tasty Avena Sativa Recipes'. All rights reserved — methods restated, no text reproduced. Retrieved 05/10/2026. https://theherbalacademy.com/blog/4-tasty-avena-sativa-recipes/",
       "Recipe methods, rewritten: Kami McBride. 'Oatstraw Infusion Recipe'. All rights reserved — methods restated, no text reproduced. Retrieved 05/10/2026. https://kamimcbride.com/oatstraw-infusion-recipe/",
       "Lookalike card to Slender oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Avena sativa' (Webb et al. 1988 / Edgar & Connor 2000 text) — https://www.nzflora.info/factsheet/Taxon/Avena-sativa.html [saved pages/b4-flora-Avena-sativa.txt] — 'Spikelets (15)–20–30–(40) mm ... pendulous on fine unequal pedicels; falling intact at maturity'; 'Lemma ... glabrous, or with a few hairs towards base, apex obtuse or shallowly notched ... usually awnless, but lowest or sometimes all florets in certain cultivars bearing a weak, straight or curved awn, not geniculate'. | Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Avena barbata' (Webb et al. 1988 / Edgar & Connor 2000 text) — https://www.nzflora.info/factsheet/Taxon/Avena-barbata.html [saved pages/b4-flora-Avena-barbata.txt] — 'often very slender ... erect or drooping above in taller plants'; 'Leaf-blade 12.5–30 cm × 2–8 mm'; 'branches and pedicels very filiform'; 'Spikelets 40–50 mm ... disarticulation below each floret at maturity'; 'Lemma 12–18 mm ... with long stiff reddish hairs below level of awn insertion ... each lobe-tip produced to a fine bristle (2–3 mm); lemmas awned, awns 30–36 mm, geniculate, column very dark brown, twisted'. | Wikipedia, 'Avena barbata' and 'Avena sterilis' (CC BY-SA 4.0) [saved pages/b4-wiki-Avena_barbata.txt, b4-wiki-Avena_sterilis.txt] — both 'edible seeds'. (Last-resort source for edibility.) UNRESOLVED: Risk 'edible' (unchanged): 'It has edible seeds' — b4-wiki-Avena_barbata.txt (Wikipedia only). 'Two tip-lobes' is inferred from 'each lobe-tip'; Flora does not count the lobes — minor.",
       "Lookalike card to Winter wild oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online, 'Avena sativa' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-sativa.html | Flora of New Zealand Online, 'Avena sterilis' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-sterilis.html | Flora of New Zealand Online, 'Avena sterilis subsp ludoviciana' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-sterilis-subsp-ludoviciana.html | Flora of New Zealand Online, 'Avena sterilis subsp sterilis' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-sterilis-subsp-sterilis.html | Wikipedia, 'Avena sterilis' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Avena_sterilis — 'a species of grass weed whose seeds are edible' (supports edible risk only; its 1.7–4.5 cm / 3–9 cm figures are NOT used because Flora of NZ gives different NZ figures) UNRESOLVED: 'The awn settles it' is the card's own judgement but both species are edible, so no safety consequence; left. proposed_risk was null; final_risk is the current catalogue risk (edible), checked.",
-      "Lookalike card to Wild oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena sativa https://www.nzflora.info/factsheet/Taxon/Avena-sativa.html (saved sweep/pages/flora-Avena-sativa.txt) | Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena fatua https://www.nzflora.info/factsheet/Taxon/Avena-fatua.html (saved sweep/pages/flora-Avena-fatua.txt) UNRESOLVED: proposed_risk null; catalogue risk 'edible' for wild oat is now supported: UTP A. fatua (pages/v2-utp-Avena-fatua.txt): 'The plant is sometimes harvested from the wild for local use as a food'; 'Edible Uses: Seed - cooked'; PFAF (pages/b5-pfaf-Avena-fatua.txt): 'Edible Parts: Seed'. This resolves the first pass's unresolved item."
+      "Lookalike card to Wild oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena sativa https://www.nzflora.info/factsheet/Taxon/Avena-sativa.html (saved sweep/pages/flora-Avena-sativa.txt) | Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena fatua https://www.nzflora.info/factsheet/Taxon/Avena-fatua.html (saved sweep/pages/flora-Avena-fatua.txt) UNRESOLVED: proposed_risk null; catalogue risk 'edible' for wild oat is now supported: UTP A. fatua (pages/v2-utp-Avena-fatua.txt): 'The plant is sometimes harvested from the wild for local use as a food'; 'Edible Uses: Seed - cooked'; PFAF (pages/b5-pfaf-Avena-fatua.txt): 'Edible Parts: Seed'. This resolves the first pass's unresolved item.",
+      "Habitat text and the New Zealand distribution paragraph of the summary (22/10/2026): Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0). https://floraseries.landcareresearch.co.nz/taxa/27166cca-1a3e-4598-9f7d-affa5c7b62cf. Retrieved 22/10/2026. Habitat sentence verbatim ('em-bankments', a line-break hyphen in the source, closed to 'embankments'); distribution moved to the summary because habitat holds habitat. Tags disturbed, grassland from Tools/classify_habitats.py on that sentence.",
+      "Edible parts (22/10/2026): Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0), 'Avena sativa'. https://temperate.theferns.info/plant/Avena+sativa. Retrieved 22/10/2026. Verbatim, reference markers stripped. Omitted, deliberately: the ripening sentence's 'in the latter half of summer' (northern season — the storage half is kept in preparation); 'It is fairly low in gluten, and so is not really suitable for making bread.' (it reads as a reassurance to people avoiding gluten, which the coeliac warning contradicts); convalescent and medicinal claims; the oat-flour antioxidant, protein-percentage, whisky and edible-oil sentences (industry or alcohol, not food you can gather). UTP's Known Hazards for this species: 'None known'.",
+      "Preparation (22/10/2026): Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0) — the three harvesting/threshing sentences and the storage half of the ripening sentence, verbatim; then Wikipedia contributors, 'Oat', Processing section, revision 1380525414 (CC BY-SA 4.0), retrieved 22/10/2026, https://en.wikipedia.org/wiki/Oat — five sentences verbatim ('There may follow…' and the oatmeal sentence left out).",
+      "Warnings (22/10/2026): ergot — Wikipedia contributors, 'Claviceps purpurea', revision 1379604404 (CC BY-SA 4.0), retrieved 22/10/2026, https://en.wikipedia.org/wiki/Claviceps_purpurea — three sentences verbatim (the host list sentence left out). Coeliac — Wikipedia contributors, 'Oat', Coeliac disease section, revision 1380525414 (CC BY-SA 4.0), two sentences verbatim. Not placed on the three wild oats: the source is about oat products.",
+      "Months (22/10/2026): the window ripe grain is on the plant, dated by eye from the first photo of every iNaturalist NZ wild observation (research grade and needs-ID), judged ripe when the panicle is straw-coloured or shedding. 42 observations; ripe (straw-coloured or shed) panicles Dec 2, Jan 3, Feb 1, Mar 1 (a grain close-up), Apr 1; every Oct and Nov record and the rest of Dec green. Peak 3, so every month with a ripe record clears a quarter of it. No NZ source gives a fruiting season for this species; Flora vol. V gives none.",
+      "Group (22/10/2026): greens → nuts ('Nuts & seeds'), because the edible part is the seed.",
+      "Origin checked 22/10/2026 → introduced (unchanged): not on DOC SfC 340 (2024) Table 2, nor in PCE 2021 Appendix 2 (all RPMPs); NZOR biostatus Exotic, Present.",
+      "Māori name (22/10/2026): Te Aka Māori Dictionary (https://maoridictionary.co.nz), retrieved 22/10/2026 — ōti, loan noun, 'oats'.",
+      "Lookalike card to Wild oat, 22/10/2026: fatuoid sentence appended, restated from Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0), 'Avena sativa' note (Fatuoids, or false wild oats; first NZ record Wright & Shillito 1974).",
+      "Photo -1 (added by the owner in the editor, seen 22/10/2026): obs 194062806, Nathan Odgers, Willowbank, Christchurch, 16/12/2023, CC BY — 'Close up of stalk'. -2, -3, -6 as before. Every observation re-checked by the iNaturalist API 22/10/2026 (taxon, research grade, wild, photo licence) and every frame checked by eye against its caption."
     ],
     "sourcingNote" : "",
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Oat' (CC BY-SA 4.0)"
+        "Wikipedia, 'Oat' (CC BY-SA 4.0)",
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)"
       ],
-      "text" : "The oat (Avena sativa), sometimes called the common oat, is a species of cereal grass (Avena) grown for fodder and for its seed, which is known by the same name (usually in the plural)."
+      "text" : "The oat (Avena sativa), sometimes called the common oat, is a species of cereal grass (Avena) grown for fodder and for its seed, which is known by the same name (usually in the plural).\n\nOats tolerate cold winters less well than cereals such as wheat, barley, and rye, but need less summer heat and more rain, making them important in areas such as Northwest Europe that have cool, wet summers. They can tolerate low-nutrient and acid soils. Oats grow thickly and vigorously, allowing them to outcompete many weeds, and compared to other cereals are relatively free from diseases.\n\nIn New Zealand (Flora of New Zealand): N.; S.; Foveaux Strait on Pig Id; St.; C. Naturalised from Eurasia."
     },
     "warnings" : [
-
+      "Claviceps purpurea is an ergot fungus that grows on the ears of rye and related cereal and forage plants. Consumption of grains or seeds contaminated with the survival structure of this fungus, the ergot sclerotium, can cause ergotism in humans and other mammals. It affects oats only rarely.",
+      "Oat products are frequently contaminated by other gluten-containing grains, mainly wheat and barley, requiring caution in the use of oats if people are sensitive to the gluten in those grains. Use of pure oats in a gluten-free diet offers improved nutritional value, but remains controversial because a small proportion of people with coeliac disease react to pure oats."
     ]
   },
   {
@@ -18853,22 +19197,24 @@
   {
     "caution" : "careRequired",
     "commonName" : "Pink-flowered passionfruit",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
       ],
-      "text" : ""
+      "text" : "Fr. 4–7 cm diam., globose or depressed globose, yellow, tomentulose; pulp sweet and edible, orange."
     },
     "group" : "fruit",
     "habitat" : {
       "sources" : [
-
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Cultivation escape; scrub and forest margins."
     },
     "habitats" : [
-
+      "forest",
+      "shrubland",
+      "urban"
     ],
     "id" : "pink-flowered-passionfruit",
     "identification" : {
@@ -18878,21 +19224,72 @@
       "text" : "Vigorous vine;  young shoots angular, downy.  Lvs 3-lobed;  petioles 1–3 cm long, white-lanate, with (2)–4–8 glands almost hidden in indumentum; stipules pinnate with dark filiform segments almost to the base of the very narrow-linear rachis;  lamina lobes 5–9 cm long, extending ?-3/4 distance in from margin;  middle lobe largest, 3–8 × 1.5–3 cm, lanceolate to elliptic-ovate, dentate, grey- or white-tomentose below, glabrate above except when young, dark shining green, ± rugose, acute or mucronate.  Fls ☿, solitary.  Pedicels much > petioles, hairy.  Bracts free, 1.5–2.3 cm long, ovate, hairy or glabrate outside, serrate with teeth setose.  Hypanthium (4)–4.5–5 cm long, tomentulose.  Sepals 3–4.8 cm long, elliptic, green outside, with tomentulose band, white or very pale pink inside, with short horn near apex;  petals similar to sepals but all pink;  corona threads violet-blue,  c. 1/2 perianth.  Filaments 1.3–1.7 cm long, much > anthers;  anthers 6–9 mm long.  Ovary white-villous.  Fr. 4–7 cm diam., globose or depressed globose, yellow, tomentulose;  pulp sweet and edible, orange.  Seeds 5–6 mm long, ellipsoid-ovoid, dark brown or dark red, alveolate.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "banana-passionfruit-tripartita",
+        "howToTell" : "Banana passionfruit (Passiflora tripartita) has densely hairy shoots; its leaves are 3-lobed, the lobes usually 5–14 cm long, usually more or less felted underneath and hairy or nearly hairless above; its stipules are 5–10 mm wide, kidney-shaped and gland-toothed, and they stay on the stem; its pink flowers hang from a floral tube 8–9.5 cm long, with sepals only 2–3.8 cm long; its fruit is (6)–7–12 × 2–3 cm, more or less ellipsoid, yellow or orange-yellow and finely downy, with dark red to black seeds. Pink-flowered passionfruit has downy young shoots; its leaves are 3-lobed, grey- or white-felted underneath and dark shining green above; its stipules are pinnate, with dark thread-like segments almost to the base of a very narrow central strip; its flowers have a floral tube (4)–4.5–5 cm long, pink petals and violet-blue corona threads; its fruit is 4–7 cm across, round or slightly flattened, yellow and finely downy. Flora of New Zealand's key: pink-flowered passionfruit's stipules are pinnate, with thread-like segments, and its fruit is more or less round; a banana passionfruit's stipules are simple — either ovate and toothed or awl-shaped and untoothed — and its fruit is ellipsoid. Both have pink flowers and edible orange pulp, so flower colour does not separate them. A hybrid, Passiflora × rosea, which has no entry here, looks very like pink-flowered passionfruit, but the central strip of its stipules is lanceolate and its stamens are usually abnormal (Flora of New Zealand's key; NZPCN). Both are edible.",
+        "name" : "Banana passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tripartita"
+      },
+      {
+        "entry" : "kohia",
+        "howToTell" : "Kōhia is hairless apart from slightly hairy young stems; its leaves are undivided and untoothed, (4)–5–12–(14) cm long, leathery and dark glossy green above; its flowers are small and yellowish green, (1)–3–4 together, with segments 5–6 mm long and no floral tube, and male and female flowers grow on separate plants; its fruit is (2)–2.5–3 cm across, round or broadly ellipsoid and orange, with sparse reddish pulp. Pink-flowered passionfruit has downy young shoots; its leaves are 3-lobed, grey- or white-felted underneath and dark shining green above; its stipules are pinnate, with dark thread-like segments almost to the base of a very narrow central strip; its flowers have a floral tube (4)–4.5–5 cm long, pink petals and violet-blue corona threads; its fruit is 4–7 cm across, round or slightly flattened, yellow and finely downy. Flora of New Zealand's key first splits the genus on the flower: the banana passionfruits and pink-flowered passionfruit have a cylindrical, much elongated floral tube, while black passionfruit and kōhia have none, or only an inconspicuous saucer-shaped one. Without flowers the leaves settle it: Flora of New Zealand's key gives kōhia undivided, leathery leaves and flowers under 2 cm across, against lobed leaves and flowers over 4 cm across in the passionfruits it keys out beside, and pink-flowered passionfruit's leaves are 3-lobed. Only female kōhia plants bear fruit (Wikipedia: the plant is dioecious), so a fruitless kōhia is common; use the leaves. Both are edible.",
+        "name" : "Kōhia",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tetrandra"
+      },
+      {
+        "entry" : "banana-passionfruit",
+        "howToTell" : "Banana passionfruit (Passiflora tarminiana) has hairy stems; its leaves are 3-lobed and usually hairless above (the sources disagree about the underside); its stipules are small, 4–7 × 2–3 mm, and soon fall, so a mature stem usually has none; its pink flowers hang from a floral tube given as up to 6 cm (NZPCN), 6–7 cm (Flora of New Zealand's weed profile) or 6–8 cm (Wikipedia), with sepals and petals 3–6 cm long that spread flat or bend back; its fruit tapers at both ends and ripens yellow or light orange, and is given as up to 9 cm long (NZPCN) or 10–14 cm (Wikipedia). Pink-flowered passionfruit has downy young shoots; its leaves are 3-lobed, grey- or white-felted underneath and dark shining green above; its stipules are pinnate, with dark thread-like segments almost to the base of a very narrow central strip; its flowers have a floral tube (4)–4.5–5 cm long, pink petals and violet-blue corona threads; its fruit is 4–7 cm across, round or slightly flattened, yellow and finely downy. Flora of New Zealand's key: pink-flowered passionfruit's stipules are pinnate, with thread-like segments, and its fruit is more or less round; a banana passionfruit's stipules are simple — either ovate and toothed or awl-shaped and untoothed — and its fruit is ellipsoid. Both have pink flowers and edible orange pulp, so flower colour does not separate them. P. tarminiana's stipules soon fall, so look for them on young growth. A hybrid, Passiflora × rosea, which has no entry here, looks very like pink-flowered passionfruit, but the central strip of its stipules is lanceolate and its stamens are usually abnormal (Flora of New Zealand's key; NZPCN). Both are edible.",
+        "name" : "Banana passionfruit",
+        "risk" : "edible",
+        "scientificName" : "Passiflora tarminiana"
+      }
     ],
     "months" : [
-
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
     ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/404668",
     "needsBookSource" : false,
-    "origin" : "introduced",
+    "origin" : "pest",
     "photos" : [
-
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Murray NZ, some rights reserved (CC BY)",
+        "fileName" : "pink-flowered-passionfruit-6.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/18691083"
+      },
+      {
+        "caption" : "Unripe fruit",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "pink-flowered-passionfruit-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/1003896"
+      },
+      {
+        "caption" : "Ripe cut fruit",
+        "credit" : "(c) Mel Whiting, some rights reserved (CC BY)",
+        "fileName" : "pink-flowered-passionfruit-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/379942699"
+      },
+      {
+        "caption" : "Close up of leaf",
+        "credit" : "(c) Duncan Ross, some rights reserved (CC BY-NC)",
+        "fileName" : "pink-flowered-passionfruit-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/89575039"
+      }
     ],
     "preparation" : {
       "sources" : [
-
+        "Wikipedia, 'Passiflora pinnatistipula' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "The flesh is reminiscent of an orange and is used for beverages, jams, sorbets and salad dressing."
     },
     "recipes" : [
 
@@ -18901,14 +19298,24 @@
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Pink-flowered passionfruit' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Passiflora pinnatistipula' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Passiflora-pinnatistipula.html",
-      "Summary text: Wikipedia contributors. 'Passiflora pinnatistipula', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Passiflora_pinnatistipula"
+      "Summary text: Wikipedia contributors. 'Passiflora pinnatistipula', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Passiflora_pinnatistipula",
+      "Summary (last line) and habitat: Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988: Flora of New Zealand vol. IV, 'Passiflora pinnatistipula' (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0). Retrieved 22/10/2026. https://floraseries.landcareresearch.co.nz/taxa/ad8fcfec-7080-4058-9e60-676fe8b3671e — quoted verbatim; the spaces the page's markup leaves before punctuation are closed. 'N. Andes 1982', 'FL Jan-Dec.'",
+      "Edible parts: Flora of New Zealand Online, 'Passiflora pinnatistipula' factsheet (Description from Webb et al. 1988), CC BY 3.0 NZ, retrieved 22/10/2026 — the fruit sentence of the description, quoted verbatim.",
+      "Preparation: Wikipedia contributors. 'Passiflora pinnatistipula', Wikipedia, The Free Encyclopedia, revision 1160269573. CC BY-SA 4.0. Retrieved 22/10/2026. https://en.wikipedia.org/wiki/Passiflora_pinnatistipula — quoted verbatim, citation markers removed.",
+      "Origin checked 22/10/2026 → pest: McAlpine, K.G.; Howell, C.J. 2024: List of environmental weeds in New Zealand 2024. Science for Conservation 340, Department of Conservation, Table 2 (CC BY 4.0). Retrieved 22/10/2026. https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc340.pdf — Table 2 lists 'Passiflora pinnatistipula' (yellow passionfruit), with regional plans in Manawatū-Whanganui (PC), Canterbury (SL) and Otago (SL). Pest rule as set on 20/10/2026: on the DOC 2024 list, or an unwanted organism / NPPA, or a real regional pest-plan programme.",
+      "Months, set 22/10/2026 by the assistant: [3–10], March to October. iNaturalist New Zealand holds only 22 wild records annotated 'fruiting', too few for the quarter-of-peak rule, so every photo of them was checked by eye for ripe (yellow) fruit: yellow fruit in March (obs 21253374), May (obs 18647333), June (obs 48753645), July (obs 379942699, 88775886) and October (obs 98263290); only green fruit in January and November. NZPCN gives flowering in every month. Replaces the 'Owed: months' note.",
+      "Lookalike cards among the five Passiflora entries (written by the assistant on the owner's instruction (owner, 22/10/2026: /goal \"find all you can about Passiflora and fill in following the rules\")): each card restates the two species' descriptions and Flora of New Zealand's Passiflora key — Webb, C.J. et al. 1988, Flora of New Zealand vol. IV (Flora of New Zealand Series, CC BY-NC-SA 4.0), https://floraseries.landcareresearch.co.nz/taxa/0e0cc34b-28b7-4b4a-8a94-9b059b1af976 — couplet 1 'Hypanthium cylindric and strongly elongated' against 'Hypanthium 0 or saucer-shaped and inconspicuous'; couplet 2 'Stipules pinnate with filiform segments; fr. ± globose' (pinnatistipula) against 'Stipules simple, ovate and toothed or subulate and entire; fr. ellipsoid'; couplet 3 '× rosea' 'Stipules with lanceolate rachis; stamens abnormal and ± petaloid'; couplet 6 'Lvs entire, coriaceous; perianth < 2 cm diam. when fresh' (tetrandra) against 'Lvs lobed, membranous or submembranous; perianth > 4 cm diam. when fresh'. Descriptions: Webb 1988 for P. edulis, P. pinnatistipula, P. tetrandra and P. mollissima (= P. tripartita var. mollissima; Flora of New Zealand Online files Webb's P. mollissima description under that name); for P. tarminiana, which Webb did not separate, Wikipedia 'Passiflora tarminiana' (revision 1352787405, CC BY-SA 4.0), NZPCN's P. tarminiana page (all rights reserved; facts restated) and Flora of New Zealand Online's weed profiles (CC BY 3.0 NZ: tube '6-7 cm' for P. tarminiana, '8-10 cm' and leaves 'moderately to densely hairy on the upper surface' for P. tripartita var. mollissima). The tarminiana–tripartita test follows Wikipedia's 'distinguished from P. tripartita var. mollissima' paragraph and NZPCN ('Can be distinguished from P. tarminiana by the large persistent stipules, and the long hypanthium'); var. azuayensis 'leaves glabrous to glabrate on upper surface' is NZPCN after Heenan & Sykes 2003; the hybrid is iNaturalist taxon 1645626, Passiflora tarminiana × tripartita (43 wild New Zealand records on 22/10/2026). Blue passionflower: NZPCN 'Most similar to P. caerulea in flower'; Webb 1988 'Lvs 5-lobed almost to base', 'pulp scanty and inedible'. × rosea: Webb's key and NZPCN's P. pinnatistipula page. Kōhia's fruit only on female plants: Wikipedia 'Passiflora tetrandra' (revision 1324332696). Risk `edible` every way, because every page carries a food record. Not carded: black passionfruit ↔ pink-flowered passionfruit — Webb gives black passionfruit 'N.: N. Auckland … Great Barrier Id; K.' and pink-flowered 'S.: Banks Peninsula (widespread), Otago (Palmerston)', so their wild ranges do not meet in the Flora. Blue passionflower, P. × rosea, P. mixta and P. antioquiensis have no entries (owner, 22/10/2026: blue passionflower 'Skip it').",
+      "Photos (the owner's curation in the editor, seen 22/10/2026; replaces the assistant's earlier description): -6 flower (obs 18691083, Murray Dawson, Richmond Hill, CC BY), -1 unripe fruit (obs 1003896, John Barkla, Goodwood Scenic Reserve, 07/06/2014, CC BY photo — the file had been credited to its legacy link naturewatch.org.nz/observations/407422, but iNaturalist 407422 is a different plant (Eupatorium rotundifolium, USA); the real observation was found by the observer's records and the file matched to its fifth photo by eye, and the link corrected 22/10/2026), -2 ripe cut fruit (obs 379942699, Mel Whiting, Cashmere, CC BY), -4 leaf (obs 89575039, Duncan Ross, Broad Bay, CC BY-NC). Every observation re-checked by the iNaturalist API 22/10/2026 (taxon, research grade, wild, photo licence) and every frame checked by eye against its caption.",
+      "Habitat tags 22/10/2026: classify_habitats on the habitat line — forest ('forest margins'), shrubland ('scrub'), urban (from 'Cultivation escape', the classifier's rule; the Flora does not say it grows in towns).",
+      "Self-audit of the Passiflora cards, 22/10/2026 (assistant): every number in each card was checked mechanically against the source text it restates; two hedges were then added — the tarminiana–tripartita tube test now says Wikipedia's 6–8 cm for P. tarminiana reaches the bottom of P. tripartita's 8–10 cm, and the kōhia–black passionfruit cards say a young black passionfruit's leaves are undivided ('Lvs deeply 3-lobed, but entire on young plants', Webb 1988) so texture decides ('coriaceous' against 'submembranous').",
+      "Recipes searched 22/10/2026 (owner: \"find some recipies for passionara\"): none found that is written for this species. Wikipedia's 'poro poro' for P. pinnatistipula is doubtful: in Cajamarca, Peru, 'poro poro' is P. tripartita var. mollissima (Rodríguez, 'Passiflora tripartita var. mollissima (Passifloraceae) \"poro-poro\", \"puro-puro\"', Flora del Perú blog, 2010, http://ericrodriguezr.blogspot.com/2010/07/passiflora-tripartita-var-mollissima.html, citing Cajamarca herbarium collections under 'poro poro'), so Peruvian poro poro recipes were not used here. OPEN: Wikipedia's 'poro poro or gulupa' common names on this entry's summary may be wrong; left as they are."
     ],
-    "sourcingNote" : "Owed: months. Empty reads as year-round, but the part collected here is seasonal (owner, 12/10/2026: months are the window the collected part is available, not how long the plant is alive). Set it from New Zealand records or an NZ source, a book the owner owns, the owner's word, or a source's season word for this species read as the NZ season (\"late summer\" = about February, padded a month for spread) — never a northern source's calendar months shifted by six, and never a different species' season. Precedent: black-cherry.",
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Passiflora pinnatistipula' (CC BY-SA 4.0)"
+        "Wikipedia, 'Passiflora pinnatistipula' (CC BY-SA 4.0)",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
       ],
-      "text" : "Passiflora pinnatistipula, commonly known as poro poro or gulupa (Colombia), is a climbing perennial that grows in the Cajamarca region of Peru."
+      "text" : "Passiflora pinnatistipula, commonly known as poro poro or gulupa (Colombia), is a climbing perennial that grows in the Cajamarca region of Peru.\nS.: Banks Peninsula (widespread), Otago (Palmerston). On Banks Peninsula this is the commonest sp. in the Tacsonia group."
     },
     "warnings" : [
 
@@ -24417,21 +24824,22 @@
   {
     "caution" : "careRequired",
     "commonName" : "Slender oat",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "Seed - cooked. Rather small. It has a floury texture and a mild, somewhat creamy flavour. It can be used as a staple food crop in either savoury or sweet dishes. The seed can be cooked whole, though it is more commonly ground into a flour and used as a cereal in all the ways that oats are used, especially as a porridge but also to make biscuits, sourdough bread etc. The seed can also be sprouted and eaten raw or cooked in salads, stews etc. The roasted seed is a coffee substitute. The seed is sometimes harvested from the wild for local use as a food - though usually only in times of shortage or mixed as a weed with other grain crops."
     },
-    "group" : "greens",
+    "group" : "nuts",
     "habitat" : {
       "sources" : [
-
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Near the sea, especially on cliffs, dry banks, and steep grassy slopes, occasionally inland on disturbed ground, roadsides and in pasture."
     },
     "habitats" : [
+      "coastal",
       "disturbed",
       "grassland"
     ],
@@ -24466,7 +24874,11 @@
       }
     ],
     "months" : [
-
+      1,
+      2,
+      3,
+      11,
+      12
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/52696",
     "needsBookSource" : false,
@@ -24499,9 +24911,11 @@
     ],
     "preparation" : {
       "sources" : [
-
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)",
+        "Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0)",
+        "Wikipedia, 'Oat' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Ripe florets drop from the plant one at a time, so a stand is gathered as it ripens rather than after. The seed, when harvested and dried, can store for several years. No source gives a method written for this species. Written for the cultivated oat: Harvested oats go through multiple stages of milling. The first stage is cleaning, to remove seeds of other plants, stones and any other extraneous materials. Next is dehulling to remove the indigestible hull, leaving the seed or \"groat\". Heating denatures enzymes in the seed that would make it go sour or rancid; the grain is then dried to minimise the risk of spoilage by bacteria and fungi. For home use such as making porridge, oats are often rolled flat to make them quicker to cook."
     },
     "recipes" : [
 
@@ -24512,20 +24926,28 @@
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Avena barbata' factsheet. CC BY 3.0 NZ. Retrieved 15/09/2026. https://www.nzflora.info/factsheet/Taxon/Avena-barbata.html",
       "Summary text: Wikipedia contributors. 'Avena barbata', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Avena_barbata",
       "Common name: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Avena barbata' factsheet. CC BY 3.0 NZ. Retrieved 05/10/2026. https://www.nzflora.info/factsheet/taxon/Avena-barbata.html",
-      "Habitat text: Wikipedia contributors. 'Avena barbata', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Avena_barbata",
+      "Earlier habitat credit (superseded 22/10/2026): Wikipedia contributors. 'Avena barbata', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Avena_barbata — that text was native range and moved to the summary in the 10/10/2026 habitat sweep, leaving habitat empty until the Flora sentence below.",
       "Lookalike card to Oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Avena sativa' (Webb et al. 1988 / Edgar & Connor 2000 text) — https://www.nzflora.info/factsheet/Taxon/Avena-sativa.html [saved pages/b4-flora-Avena-sativa.txt] — 'Spikelets (15)–20–30–(40) mm ... pendulous on fine unequal pedicels; falling intact at maturity'; 'Lemma ... glabrous, or with a few hairs towards base, apex obtuse or shallowly notched ... usually awnless, but lowest or sometimes all florets in certain cultivars bearing a weak, straight or curved awn, not geniculate'. | Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Avena barbata' (Webb et al. 1988 / Edgar & Connor 2000 text) — https://www.nzflora.info/factsheet/Taxon/Avena-barbata.html [saved pages/b4-flora-Avena-barbata.txt] — 'often very slender ... erect or drooping above in taller plants'; 'Leaf-blade 12.5–30 cm × 2–8 mm'; 'branches and pedicels very filiform'; 'Spikelets 40–50 mm ... disarticulation below each floret at maturity'; 'Lemma 12–18 mm ... with long stiff reddish hairs below level of awn insertion ... each lobe-tip produced to a fine bristle (2–3 mm); lemmas awned, awns 30–36 mm, geniculate, column very dark brown, twisted'. | Wikipedia, 'Avena barbata' and 'Avena sterilis' (CC BY-SA 4.0) [saved pages/b4-wiki-Avena_barbata.txt, b4-wiki-Avena_sterilis.txt] — both 'edible seeds'. (Last-resort source for edibility.) UNRESOLVED: Risk 'edible' (unchanged): 'Oats are used for human consumption as oatmeal' — wiki-Oat.txt (Wikipedia; first pass cited no source for cultivated-oat edibility). Card text is identical to the reverse card; it opens oat, so it might read better leading with the oat, but no change is needed for accuracy.",
       "Lookalike card to Winter wild oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Avena barbata' (Webb et al. 1988 / Edgar & Connor 2000 text) — https://www.nzflora.info/factsheet/Taxon/Avena-barbata.html [saved pages/b4-flora-Avena-barbata.txt] — 'often very slender ... erect or drooping above in taller plants'; 'Leaf-blade 12.5–30 cm × 2–8 mm'; 'branches and pedicels very filiform'; 'Spikelets 40–50 mm ... disarticulation below each floret at maturity'; 'Lemma 12–18 mm ... with long stiff reddish hairs below level of awn insertion ... each lobe-tip produced to a fine bristle (2–3 mm); lemmas awned, awns 30–36 mm, geniculate, column very dark brown, twisted'. | Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Avena sterilis' (Webb et al. 1988 / Edgar & Connor 2000 text) — https://www.nzflora.info/factsheet/Taxon/Avena-sterilis.html [saved pages/b4-flora-Avena-sterilis.txt] — vernacular names include 'Winter wild oat'; 'Strong, rather stiff, erect green tufts to 150 cm, with heavy panicles'; 'Leaf-blade 15–45 cm × 3–15 mm'; 'disarticulation above glumes; rachilla tough and continuous between florets'; lemma 'narrowed to scarious bidentate apex; lower 1–2 lemmas awned; awn geniculate'. | Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Avena sterilis subsp. ludoviciana' and 'subsp. sterilis' [saved pages/b4-flora-Avena-sterilis-subsp-*.txt] — ludoviciana: 'Spikelets 3.5–6 cm ... Lemma 18–20 mm ... awn ± slender, 25–50 mm'; sterilis: 'Spikelets 6–8 cm ... Lemma 25–30 mm, light reddish brown, with dense stiff reddish brown hairs below awn insertion; awn very stout, 60–70 mm'. | Wikipedia, 'Avena barbata' and 'Avena sterilis' (CC BY-SA 4.0) [saved pages/b4-wiki-Avena_barbata.txt, b4-wiki-Avena_sterilis.txt] — both 'edible seeds'. (Last-resort source for edibility.) UNRESOLVED: Risk 'edible' (unchanged): 'a species of grass weed whose seeds are edible' — b4-wiki-Avena_sterilis.txt (Wikipedia only). Which subspecies the page means is unstated.",
-      "Lookalike card to Wild oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online, 'Avena barbata' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-barbata.html | Flora of New Zealand Online, 'Avena fatua' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-fatua.html | Plants For A Future, 'Avena fatua', https://pfaf.org/user/Plant.aspx?LatinName=Avena+fatua — Edible parts: seed (all rights reserved; fact restated only) UNRESOLVED: Both edible; no safety consequence. proposed_risk was null; final_risk is the current catalogue risk (edible), checked."
+      "Lookalike card to Wild oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online, 'Avena barbata' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-barbata.html | Flora of New Zealand Online, 'Avena fatua' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-fatua.html | Plants For A Future, 'Avena fatua', https://pfaf.org/user/Plant.aspx?LatinName=Avena+fatua — Edible parts: seed (all rights reserved; fact restated only) UNRESOLVED: Both edible; no safety consequence. proposed_risk was null; final_risk is the current catalogue risk (edible), checked.",
+      "Habitat text and the New Zealand distribution paragraph of the summary (22/10/2026): Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0). https://floraseries.landcareresearch.co.nz/taxa/6dea2fff-9fc6-4954-9a47-186e58094dd1. Retrieved 22/10/2026. Habitat sentence verbatim; distribution moved to the summary because habitat holds habitat. Tags coastal, disturbed, grassland from Tools/classify_habitats.py on that sentence.",
+      "Edible parts (22/10/2026): Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0), 'Avena barbata'. https://temperate.theferns.info/plant/Avena+barbata. Retrieved 22/10/2026. Verbatim, reference markers stripped. Omitted, deliberately: the ripening sentence's 'in the latter half of summer' (northern season — the storage half is kept in preparation). UTP's Known Hazards for this species: 'None known'.",
+      "Preparation (22/10/2026): first sentence written for this guide, restated from the Flora description ('disarticulation below each floret' at maturity) — the advice to gather as it ripens is my reading of that, not a source's. Storage half of UTP's ripening sentence, verbatim. The framing 'No source gives a method written for this species. Written for the cultivated oat:' is mine; what follows is Wikipedia contributors, 'Oat', Processing section, revision 1380525414 (CC BY-SA 4.0), retrieved 22/10/2026, verbatim — written for A. sativa, applied here because no method for this species was found. Searched and not used: PFAF's 'Harvest & Processing Workflow' for Avena fatua (pfaf.org, all rights reserved; a recent templated section whose author is not given, and it dates the harvest by a northern 'late spring'). OPEN LEAD: Knox, A Forager's Treasury, 'Oats' pp. 130–131 (owner's book).",
+      "Warnings (22/10/2026): ergot — Wikipedia contributors, 'Claviceps purpurea', revision 1379604404 (CC BY-SA 4.0), retrieved 22/10/2026, https://en.wikipedia.org/wiki/Claviceps_purpurea — three sentences verbatim (the host list sentence left out). The source says 'oats' without naming a species; placing it on this wild oat is my reading.",
+      "Months (22/10/2026): the window ripe grain is on the plant, dated by eye from the first photo of every iNaturalist NZ wild observation (research grade and needs-ID), judged ripe when the panicle is straw-coloured or shedding. 50 observations; ripe panicles Nov 3, Dec 3, Jan 5, Mar 2; Oct green. February has a single record, green, and is included because January and March both show ripe stands (my inference, not a count). A dry-looking spikelet on 28/08 was not counted. No NZ source gives a fruiting season for this species; Flora vol. V gives none.",
+      "Group (22/10/2026): greens → nuts ('Nuts & seeds'), because the edible part is the seed.",
+      "Origin checked 22/10/2026 → introduced (unchanged): not on DOC SfC 340 (2024) Table 2, nor in PCE 2021 Appendix 2 (all RPMPs); NZOR biostatus Exotic, Present."
     ],
     "sourcingNote" : "",
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Avena barbata' (CC BY-SA 4.0)"
+        "Wikipedia, 'Avena barbata' (CC BY-SA 4.0)",
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)"
       ],
-      "text" : "Avena barbata is a species of wild oat known by the common name slender wild oat.\nA. barbata is native to central Asia (as far east as Pakistan) and the Mediterranean Basin. As an introduced species it also occurs in other Mediterranean-like habitats of New Zealand, Australia, South Africa, Argentina, Chile, Brazil, and Uruguay. In Europe it has been reported in Finland, France, Germany, Norway, Bulgaria, and Austria. In North America it is an introduced species and noxious weed, where it is especially widespread in California. In California it has displaced native species of grass."
+      "text" : "Avena barbata is a species of wild oat known by the common name slender wild oat.\nA. barbata is native to central Asia (as far east as Pakistan) and the Mediterranean Basin. As an introduced species it also occurs in other Mediterranean-like habitats of New Zealand, Australia, South Africa, Argentina, Chile, Brazil, and Uruguay. In Europe it has been reported in Finland, France, Germany, Norway, Bulgaria, and Austria. In North America it is an introduced species and noxious weed, where it is especially widespread in California. In California it has displaced native species of grass.\n\nIn New Zealand (Flora of New Zealand): N.: North Auckland, South Auckland, Bay of Plenty (Opotoki), Hawke's Bay (near Napier), Wellington (Wanganui, Paekakariki and Wellington City). Naturalised from Mediterranean."
     },
     "warnings" : [
-
+      "Claviceps purpurea is an ergot fungus that grows on the ears of rye and related cereal and forage plants. Consumption of grains or seeds contaminated with the survival structure of this fungus, the ergot sclerotium, can cause ergotism in humans and other mammals. It affects oats only rarely."
     ]
   },
   {
@@ -25654,30 +26076,30 @@
   {
     "caution" : "careRequired",
     "commonName" : "Winter wild oat",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "Seed - cooked. It has a floury texture and a mild, somewhat creamy flavour. It can be used as a staple food crop in either savoury or sweet dishes. The seed can be cooked whole, though it is more commonly ground into a flour and used as a cereal in all the ways that oats are used, especially as a porridge but also to make biscuits, sourdough bread etc. The seed can also be sprouted and eaten raw or cooked in salads, stews etc. The roasted seed is a coffee substitute. It is sometimes harvested from the wild or along with other cereal crops when growing wild with them."
     },
-    "group" : "greens",
+    "group" : "nuts",
     "habitat" : {
       "sources" : [
-
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "subsp. ludoviciana: A weed in crops. subsp. sterilis: In waste land."
     },
     "habitats" : [
-      "disturbed",
-      "grassland"
+      "disturbed"
     ],
     "id" : "sterilised-oat",
     "identification" : {
       "sources" : [
-        "Wikipedia, 'Avena sterilis' (CC BY-SA 4.0) — units converted to metric"
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)",
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)"
       ],
-      "text" : "Appearance\nAvena sterilis is a stout, broad-leaved grass that grows up to 1.5 m tall. At maturity, it has leaf blades that are up to 60 cm long, and 6–14 mm wide.\n\nIt has an inflorescence that is either an equilateral or a slightly one-sided panicle. The spikelets usually have 3 florets, but can have anywhere from 2 to 5. The spikelets (without awns) are 1.7–4.5 cm long; the glumes are 2.4–5 cm long. \nThe florets can either be a straw yellow or slightly reddish in colour. Occasionally, there can be reddish hairs at the base of the floret.\nThe lemma is usually 1.5–4 cm long.  The florets are elongate and taper at the top. The two florets closest to the glumes have a twisted dorsal awn that is 3–9 cm long.\n\n\nVarieties and subspecies\nOne can distinguish between the two subspecies, A. sterilis sterilis and A. sterilis ludoviciana, using the size of the reproductive parts of the flower.\nA study of 139 populations of A. sterilis L. in Spain revealed 6 varieties based on morphological classifications, though no new subspecies were formally described.\n\n\nReproduction\nA. sterilis is hexaploid. It is an annual plant, with a life cycle that mirrors many cereal crops. While an individual plant is capable of producing as many as 200 seeds, the average seed production of a single plant is 13-21 seeds. Seeds regularly live in the soil for upwards of two years, and can survive for as many as 5 years prior to germination.\n\n\nDistribution\nA. sterilis is native to the Mediterranean Basin and West, Central and South Asia, but is widely naturalized elsewhere. The species grows on all continents except Antarctica.\nIn North America, it grows as an introduced species in the U.S. states of California, Oregon, New Jersey, Ohio, Pennsylvania, and the Canadian provinces of Ontario and Quebec.\n\n\nPests and pathogens\nA. sterilis is a host to the pathogenic nematode Ditylenchus dipsaci. It is a host to the protist plant pathogen Sclerophthora macrospora. It is also a wild host to  Petrobia latens, commonly known as the brown wheat mite. It is susceptible to two widespread diseases that infect Avena species, oat crown rust and stem rust. It is also susceptible to the wheat dwarf virus."
+      "text" : "Strong, rather stiff, erect green tufts to 150 cm, with heavy panicles. Leaf-sheath glabrous, or rarely with scattered soft hairs. Ligule 3–8 mm, truncate, or more tapered centrally, shortly denticulate, finely ciliate. Leaf-blade 15–45 cm × 3–15 mm, very finely scabrid on ribs, adaxially sometimes smooth, rarely with scattered hairs; margins minutely scabrid. Culm internodes glabrous. Panicle 20–40 cm, equilateral, lax; rachis smooth, branches few, widely spreading, filiform, scabrid. Spikelets often drooping; disarticulation above glumes; rachilla tough and continuous between florets. Glumes 9–11-nerved. Lemma elliptic-lanceolate, tough and hairy below level of awn insertion, greenish above and scabrid on nerves, narrowed to scarious bidentate apex; lower 1–2 lemmas awned; awn geniculate, column red-brown, twisted. Palea keels with 1–3 rows of cilia, interkeel usually minutely hairy above. Callus bordered by dense short hairs.\n\nsubsp. ludoviciana (winter wild oat): Spikelets 3.5–6 cm, 2–3-flowered, spreading. Lemma 18–20 mm, light brown or greyish, with ± dense light brown or whitish hairs below awn insertion; awn ± slender, 25–50 mm. Anthers 2–5 mm.\n\nsubsp. sterilis: Spikelets 6–8 cm, 3–5-flowered, often drooping. Lemma 25–30 mm, light reddish brown, with dense stiff reddish brown hairs below awn insertion; awn very stout, 60–70 mm. Anthers 3–4 mm.\n[From:  Edgar and Connor (2000) Flora of New Zealand. Volume 5 (second printing).]"
     },
     "lookalikes" : [
       {
@@ -25703,7 +26125,8 @@
       }
     ],
     "months" : [
-
+      1,
+      12
     ],
     "needsBookSource" : false,
     "origin" : "introduced",
@@ -25715,17 +26138,31 @@
         "sourceURL" : "https://www.inaturalist.org/observations/10821973"
       },
       {
-        "caption" : "Green spikelets, markedly larger than the other wild oats, with stout dark geniculate awns",
-        "credit" : "(c) Colin Ogle, some rights reserved (CC BY-NC)",
-        "fileName" : "sterilised-oat-8.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/36109382"
+        "caption" : "Ripe stand behind a roadside rail, the large pale spikelets hanging from widely spreading branches",
+        "credit" : "(c) Paul Bell-Butler, some rights reserved (CC BY)",
+        "fileName" : "sterilised-oat-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/145381507"
+      },
+      {
+        "caption" : "Close up of grain",
+        "credit" : "(c) Stephen Thorpe, some rights reserved (CC BY)",
+        "fileName" : "sterilised-oat-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/61143901"
+      },
+      {
+        "caption" : "Grain on plant",
+        "credit" : "no rights reserved",
+        "fileName" : "sterilised-oat-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/46070640"
       }
     ],
     "preparation" : {
       "sources" : [
-
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)",
+        "Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0)",
+        "Wikipedia, 'Oat' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Ripe florets drop from the plant together, as one unit, so a stand is gathered as it ripens rather than after. The seed, when harvested and dried, can store for several years. No source gives a method written for this species. Written for the cultivated oat: Harvested oats go through multiple stages of milling. The first stage is cleaning, to remove seeds of other plants, stones and any other extraneous materials. Next is dehulling to remove the indigestible hull, leaving the seed or \"groat\". Heating denatures enzymes in the seed that would make it go sour or rancid; the grain is then dried to minimise the risk of spoilage by bacteria and fungi. For home use such as making porridge, oats are often rolled flat to make them quicker to cook."
     },
     "recipes" : [
 
@@ -25735,20 +26172,30 @@
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013), 'Oats' entry (pp. 130–131).",
       "Identification and summary text: Wikipedia contributors. 'Avena sterilis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Avena_sterilis",
       "Common name: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Avena sterilis' factsheet. CC BY 3.0 NZ. Retrieved 05/10/2026. https://www.nzflora.info/factsheet/taxon/Avena-sterilis.html",
-      "Habitat text: Wikipedia contributors. 'Avena sterilis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Avena_sterilis",
+      "Earlier habitat credit (superseded 22/10/2026): Wikipedia contributors. 'Avena sterilis', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Avena_sterilis — that text was native range and moved to the summary in the 10/10/2026 habitat sweep, leaving habitat empty until the Flora sentence below.",
       "Lookalike card to Oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online, 'Avena sativa' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-sativa.html | Flora of New Zealand Online, 'Avena sterilis' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-sterilis.html | Flora of New Zealand Online, 'Avena sterilis subsp ludoviciana' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-sterilis-subsp-ludoviciana.html | Flora of New Zealand Online, 'Avena sterilis subsp sterilis' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-sterilis-subsp-sterilis.html | Wikipedia, 'Avena sterilis' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Avena_sterilis — 'a species of grass weed whose seeds are edible' (supports edible risk only; its 1.7–4.5 cm / 3–9 cm figures are NOT used because Flora of NZ gives different NZ figures) UNRESOLVED: proposed_risk was null; final_risk is the current catalogue risk (edible), checked.",
       "Lookalike card to Slender oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Avena barbata' (Webb et al. 1988 / Edgar & Connor 2000 text) — https://www.nzflora.info/factsheet/Taxon/Avena-barbata.html [saved pages/b4-flora-Avena-barbata.txt] — 'often very slender ... erect or drooping above in taller plants'; 'Leaf-blade 12.5–30 cm × 2–8 mm'; 'branches and pedicels very filiform'; 'Spikelets 40–50 mm ... disarticulation below each floret at maturity'; 'Lemma 12–18 mm ... with long stiff reddish hairs below level of awn insertion ... each lobe-tip produced to a fine bristle (2–3 mm); lemmas awned, awns 30–36 mm, geniculate, column very dark brown, twisted'. | Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Avena sterilis' (Webb et al. 1988 / Edgar & Connor 2000 text) — https://www.nzflora.info/factsheet/Taxon/Avena-sterilis.html [saved pages/b4-flora-Avena-sterilis.txt] — vernacular names include 'Winter wild oat'; 'Strong, rather stiff, erect green tufts to 150 cm, with heavy panicles'; 'Leaf-blade 15–45 cm × 3–15 mm'; 'disarticulation above glumes; rachilla tough and continuous between florets'; lemma 'narrowed to scarious bidentate apex; lower 1–2 lemmas awned; awn geniculate'. | Flora of New Zealand Online, Manaaki Whenua (CC BY 3.0 NZ), 'Avena sterilis subsp. ludoviciana' and 'subsp. sterilis' [saved pages/b4-flora-Avena-sterilis-subsp-*.txt] — ludoviciana: 'Spikelets 3.5–6 cm ... Lemma 18–20 mm ... awn ± slender, 25–50 mm'; sterilis: 'Spikelets 6–8 cm ... Lemma 25–30 mm, light reddish brown, with dense stiff reddish brown hairs below awn insertion; awn very stout, 60–70 mm'. | Wikipedia, 'Avena barbata' and 'Avena sterilis' (CC BY-SA 4.0) [saved pages/b4-wiki-Avena_barbata.txt, b4-wiki-Avena_sterilis.txt] — both 'edible seeds'. (Last-resort source for edibility.) UNRESOLVED: Risk 'edible' (unchanged): 'It has edible seeds' — b4-wiki-Avena_barbata.txt (Wikipedia only).",
-      "Lookalike card to Wild oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena fatua https://www.nzflora.info/factsheet/Taxon/Avena-fatua.html (saved sweep/pages/flora-Avena-fatua.txt) | Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena sterilis https://www.nzflora.info/factsheet/Taxon/Avena-sterilis.html (saved sweep/pages/flora-Avena-sterilis.txt) | Wikipedia, Avena sterilis https://en.wikipedia.org/wiki/Avena_sterilis (sweep/pages/wiki-Avena_sterilis.txt), citing CABI Compendium — spikelets (without awns) 1.7–4.5 cm, glumes 2.4–5 cm, usually 3 florets (2–5), awn 3–9 cm on the two lowest florets; 'seeds are edible' — measurements only UNRESOLVED: proposed_risk null; catalogue risk 'edible' for wild oat checked: UTP A. fatua (pages/v2-utp-Avena-fatua.txt): 'The plant is sometimes harvested from the wild for local use as a food'; 'Edible Uses: Seed - cooked'; PFAF (pages/b5-pfaf-Avena-fatua.txt): 'Edible Parts: Seed'. The sizes are now the Flora NZ subspecies figures instead of the Wikipedia/CABI ones; the sterilised-oat page and the oat->sterilised-oat and wild-oat->sterilised-oat cards still quote the Wikipedia numbers (1.7–4.5 cm, 3–9 cm awns) and should be checked the same way."
+      "Lookalike card to Wild oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena fatua https://www.nzflora.info/factsheet/Taxon/Avena-fatua.html (saved sweep/pages/flora-Avena-fatua.txt) | Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena sterilis https://www.nzflora.info/factsheet/Taxon/Avena-sterilis.html (saved sweep/pages/flora-Avena-sterilis.txt) | Wikipedia, Avena sterilis https://en.wikipedia.org/wiki/Avena_sterilis (sweep/pages/wiki-Avena_sterilis.txt), citing CABI Compendium — spikelets (without awns) 1.7–4.5 cm, glumes 2.4–5 cm, usually 3 florets (2–5), awn 3–9 cm on the two lowest florets; 'seeds are edible' — measurements only UNRESOLVED: proposed_risk null; catalogue risk 'edible' for wild oat checked: UTP A. fatua (pages/v2-utp-Avena-fatua.txt): 'The plant is sometimes harvested from the wild for local use as a food'; 'Edible Uses: Seed - cooked'; PFAF (pages/b5-pfaf-Avena-fatua.txt): 'Edible Parts: Seed'. The sizes are now the Flora NZ subspecies figures instead of the Wikipedia/CABI ones; the sterilised-oat page and the oat->sterilised-oat and wild-oat->sterilised-oat cards still quote the Wikipedia numbers (1.7–4.5 cm, 3–9 cm awns) and should be checked the same way.",
+      "Habitat text and the New Zealand distribution paragraph of the summary (22/10/2026): Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0). https://floraseries.landcareresearch.co.nz/taxa/6cf5fd02-0e2f-4480-b25f-a433ca06107e (subsp. ludoviciana) and https://floraseries.landcareresearch.co.nz/taxa/047d5196-c621-4f4f-88c2-6ffbe5083add (subsp. sterilis). Retrieved 22/10/2026. Habitat sentence verbatim; distribution moved to the summary because habitat holds habitat. Tags disturbed from Tools/classify_habitats.py on that sentence.",
+      "Edible parts (22/10/2026): Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0), 'Avena sterilis'. https://temperate.theferns.info/plant/Avena+sterilis. Retrieved 22/10/2026. Verbatim, reference markers stripped. Omitted, deliberately: the ripening sentence's 'in the latter half of summer' (northern season — the storage half is kept in preparation). UTP's Known Hazards for this species: 'None known'.",
+      "Preparation (22/10/2026): first sentence written for this guide, restated from the Flora description ('disarticulation above the glumes, the florets held together' at maturity) — the advice to gather as it ripens is my reading of that, not a source's. Storage half of UTP's ripening sentence, verbatim. The framing 'No source gives a method written for this species. Written for the cultivated oat:' is mine; what follows is Wikipedia contributors, 'Oat', Processing section, revision 1380525414 (CC BY-SA 4.0), retrieved 22/10/2026, verbatim — written for A. sativa, applied here because no method for this species was found. Searched and not used: PFAF's 'Harvest & Processing Workflow' for Avena fatua (pfaf.org, all rights reserved; a recent templated section whose author is not given, and it dates the harvest by a northern 'late spring'). OPEN LEAD: Knox, A Forager's Treasury, 'Oats' pp. 130–131 (owner's book).",
+      "Warnings (22/10/2026): ergot — Wikipedia contributors, 'Claviceps purpurea', revision 1379604404 (CC BY-SA 4.0), retrieved 22/10/2026, https://en.wikipedia.org/wiki/Claviceps_purpurea — three sentences verbatim (the host list sentence left out). The source says 'oats' without naming a species; placing it on this wild oat is my reading.",
+      "Months (22/10/2026): the window ripe grain is on the plant, dated by eye from the first photo of every iNaturalist NZ wild observation (research grade and needs-ID), judged ripe when the panicle is straw-coloured or shedding. 15 observations, few: ripe panicles Dec 2, Jan 1; Sep–Nov green. The window may be wider than the records show. No NZ source gives a fruiting season for this species; Flora vol. V gives none.",
+      "Group (22/10/2026): greens → nuts ('Nuts & seeds'), because the edible part is the seed.",
+      "Origin checked 22/10/2026 → introduced (unchanged): not on DOC SfC 340 (2024) Table 2, nor in PCE 2021 Appendix 2 (all RPMPs); NZOR biostatus Exotic, Present.",
+      "Identification text (22/10/2026): Flora of New Zealand Online, 'Avena sterilis' factsheet (CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-sterilis.html, retrieved 22/10/2026, verbatim; the two subspecies paragraphs from Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0) (hyphens between numbers set as en dashes). Replaces the Wikipedia 'Avena sterilis' description, removed because its spikelet size (1.7–4.5 cm) contradicts Flora's New Zealand figures (3.5–6 cm and 6–8 cm) used in the cards, and because it carried a paragraph on pests and pathogens, which is not identification.",
+      "Photos (the owner's curation in the editor, seen 22/10/2026; replaces the assistant's line on -1 to -4, of which the owner kept -1): -6 ripe spikelets (obs 10821973, Lloyd Esler, CC BY-NC), -1 ripe stand (obs 145381507 photo 249702174, Paul Bell-Butler, Wellington, CC BY), -5 floret close-up under magnification (obs 61143901, Stephen Thorpe, Tāmaki, CC BY), -3 ripe spikelets on the plant (obs 46070640, Anna C, Nea Makri, Greece, CC0 — overseas, judged on species, not geography). Every observation re-checked by the iNaturalist API 22/10/2026 (taxon, research grade, wild, photo licence) and every frame checked by eye against its caption."
     ],
     "sourcingNote" : "",
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Avena sterilis' (CC BY-SA 4.0)"
+        "Wikipedia, 'Avena sterilis' (CC BY-SA 4.0)",
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)"
       ],
-      "text" : "Avena sterilis (animated oat, sterile oat, wild oat, wild red oat, winter wild oat; syn. Avena ludoviciana Durieu; Avena macrocarpa Moench; Avena sterilis ssp. sterilis; Avena sterilis ssp. ludoviciana) is a species of grass weed whose seeds are edible.\nA. sterilis is native to the Mediterranean Basin and West, Central and South Asia, but is widely naturalized elsewhere. The species grows on all continents except Antarctica.\n\nIn North America, it grows as an introduced species in the U.S. states of California, Oregon, New Jersey, Ohio, Pennsylvania, and the Canadian provinces of Ontario and Quebec.\n\nBecause it thrives in the same conditions as many agricultural crops and has similar lifecycles, the grass directly competes with and reduces yield in arable crops."
+      "text" : "Avena sterilis (animated oat, sterile oat, wild oat, wild red oat, winter wild oat; syn. Avena ludoviciana Durieu; Avena macrocarpa Moench; Avena sterilis ssp. sterilis; Avena sterilis ssp. ludoviciana) is a species of grass weed whose seeds are edible.\nA. sterilis is native to the Mediterranean Basin and West, Central and South Asia, but is widely naturalized elsewhere. The species grows on all continents except Antarctica.\n\nIn North America, it grows as an introduced species in the U.S. states of California, Oregon, New Jersey, Ohio, Pennsylvania, and the Canadian provinces of Ontario and Quebec.\n\nBecause it thrives in the same conditions as many agricultural crops and has similar lifecycles, the grass directly competes with and reduces yield in arable crops.\n\nIn New Zealand (Flora of New Zealand): subsp. ludoviciana: N.: Feilding, Wellington City; S.: Nelson City, Blenheim, more common in Canterbury, North Otago (near Oamaru). Naturalised from Eurasia. subsp. sterilis: N.: North Auckland (near Whangarei), Auckland City, Waikato (Waerenga); Cook Strait (Stephens Id); S.: Dunedin. Naturalised from Mediterranean."
     },
     "warnings" : [
-
+      "Claviceps purpurea is an ergot fungus that grows on the ears of rye and related cereal and forage plants. Consumption of grains or seeds contaminated with the survival structure of this fungus, the ergot sclerotium, can cause ergotism in humans and other mammals. It affects oats only rarely."
     ]
   },
   {
@@ -29894,23 +30341,22 @@
   {
     "caution" : "careRequired",
     "commonName" : "Wild oat",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0)"
       ],
-      "text" : ""
+      "text" : "Seed - cooked. It has a floury texture and a mild, somewhat creamy flavour. It can be used as a staple food crop in either savoury or sweet dishes. The seed can be cooked whole, though it is more commonly ground into a flour and used as a cereal in all the ways that oats are used, especially as a porridge but also to make biscuits, sourdough bread etc. The seed can also be sprouted and eaten raw or cooked in salads, stews etc. The roasted seed is a coffee substitute."
     },
-    "group" : "greens",
+    "group" : "nuts",
     "habitat" : {
       "sources" : [
-
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "A problem weed of crops, on roadsides and waste land and also in brackish soil and reclamation areas."
     },
     "habitats" : [
-      "disturbed",
-      "grassland"
+      "disturbed"
     ],
     "id" : "wild-oat",
     "identification" : {
@@ -29922,7 +30368,7 @@
     "lookalikes" : [
       {
         "entry" : "oat",
-        "howToTell" : "The cultivated oat's spikelets fall intact at maturity; wild oat's break up, separating below each floret. The cultivated oat's lemma is hairless or has a few hairs near the base and is usually awnless; any awn is weak, straight or curved, not bent at a knee and scarcely twisted. Wild oat's lemma is stiffly hairy below the awn, though sometimes hairless, and its awn is stout, 30–40 mm, bent at a knee, with a twisted dark-brown lower column. Spikelet length overlaps: the cultivated oat's are usually 20–30 mm but 15–40 mm at the extremes, wild oat's 35–50 mm.",
+        "howToTell" : "The cultivated oat's spikelets fall intact at maturity; wild oat's break up, separating below each floret. The cultivated oat's lemma is hairless or has a few hairs near the base and is usually awnless; any awn is weak, straight or curved, not bent at a knee and scarcely twisted. Wild oat's lemma is stiffly hairy below the awn, though sometimes hairless, and its awn is stout, 30–40 mm, bent at a knee, with a twisted dark-brown lower column. Spikelet length overlaps: the cultivated oat's are usually 20–30 mm but 15–40 mm at the extremes, wild oat's 35–50 mm. None of these tests holds for fatuoids, or false wild oats — a mutant form that turns up in oat crops: their florets look like wild oat's, with a bent, twisted awn and a horseshoe-shaped callus bordered by hairs, and the spikelet breaks below every floret.",
         "name" : "Oat",
         "risk" : "edible",
         "scientificName" : "Avena sativa"
@@ -29947,14 +30393,11 @@
       2,
       3,
       4,
-      5,
-      10,
-      11,
       12
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/52698",
     "needsBookSource" : false,
-    "origin" : "pest",
+    "origin" : "introduced",
     "photos" : [
       {
         "caption" : "Flowering panicle held in the hand, the spikelets drooping on fine branches below a broad leaf blade",
@@ -29963,23 +30406,31 @@
         "sourceURL" : "https://www.inaturalist.org/observations/64811987"
       },
       {
-        "caption" : "Ripening plants on waste ground, showing the open panicle with branches spreading all round the stem",
-        "credit" : "(c) Joe Potter Butler, some rights reserved (CC BY)",
-        "fileName" : "wild-oat-6.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/20239332"
-      },
-      {
         "caption" : "Green spikelets with long dark awns bent and twisted at the base",
         "credit" : "(c) Joe Dillon, some rights reserved (CC BY)",
         "fileName" : "wild-oat-7.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/194489483"
+      },
+      {
+        "caption" : "Ripe grains",
+        "credit" : "(c) Dave Holland, some rights reserved (CC BY-NC)",
+        "fileName" : "wild-oat-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/69904988"
+      },
+      {
+        "caption" : "Unripe grains",
+        "credit" : "(c) Erin Gallagher, some rights reserved (CC BY-NC)",
+        "fileName" : "wild-oat-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/65567079"
       }
     ],
     "preparation" : {
       "sources" : [
-
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)",
+        "Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0)",
+        "Wikipedia, 'Oat' (CC BY-SA 4.0)"
       ],
-      "text" : ""
+      "text" : "Ripe florets drop from the plant one at a time, so a stand is gathered as it ripens rather than after. The seed, when harvested and dried, can store for several years. No source gives a method written for this species. Written for the cultivated oat: Harvested oats go through multiple stages of milling. The first stage is cleaning, to remove seeds of other plants, stones and any other extraneous materials. Next is dehulling to remove the indigestible hull, leaving the seed or \"groat\". Heating denatures enzymes in the seed that would make it go sour or rancid; the grain is then dried to minimise the risk of spoilage by bacteria and fungi. For home use such as making porridge, oats are often rolled flat to make them quicker to cook."
     },
     "recipes" : [
 
@@ -29992,20 +30443,30 @@
       "New Zealand Plant Conservation Network. 'Avena fatua' fact sheet. Retrieved 05/10/2026. https://www.nzpcn.org.nz/flora/species/avena-fatua/",
       "Bayer Crop Science New Zealand. 'Wild oats' (Avena fatua) weed profile. Retrieved 05/10/2026. https://www.cropscience.bayer.co.nz/crop-management/weeds/wild-oats",
       "Rolston, M. P. 1981. 'Wild oats in New Zealand: a review'. New Zealand Journal of Experimental Agriculture 9(1): 115–121. https://doi.org/10.1080/03015521.1981.10427814",
-      "Habitat text: Wikipedia contributors. 'Avena fatua', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Avena_fatua",
+      "Earlier habitat credit (superseded 22/10/2026): Wikipedia contributors. 'Avena fatua', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 05/10/2026. https://en.wikipedia.org/wiki/Avena_fatua — that text was native range and moved to the summary in the 10/10/2026 habitat sweep, leaving habitat empty until the Flora sentence below.",
       "Lookalike card to Oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena sativa https://www.nzflora.info/factsheet/Taxon/Avena-sativa.html (saved sweep/pages/flora-Avena-sativa.txt) | Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena fatua https://www.nzflora.info/factsheet/Taxon/Avena-fatua.html (saved sweep/pages/flora-Avena-fatua.txt) | Wikipedia, Oat https://en.wikipedia.org/wiki/Oat — cereal grown for its seed (supports risk 'edible' for A. sativa) UNRESOLVED: proposed_risk null; catalogue risk 'edible' for oat checked: Wikipedia Oat (pages/wiki-Oat.txt) 'Oats are used for human consumption as oatmeal'. Wild-oat edibility is now sourced too (UTP, see oat->wild-oat), so the removed 'both are worth picking' framing could be restored if wanted; not restored here (no new claims).",
       "Lookalike card to Slender oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online, 'Avena barbata' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-barbata.html | Flora of New Zealand Online, 'Avena fatua' (Webb et al. 1988 / Edgar & Connor 2000 / Allan 1961 text; CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-fatua.html | Wikipedia, 'Avena barbata' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Avena_barbata — 'It has edible seeds.' UNRESOLVED: proposed_risk was null; final_risk is the current catalogue risk (edible), checked.",
-      "Lookalike card to Winter wild oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena sterilis https://www.nzflora.info/factsheet/Taxon/Avena-sterilis.html (saved sweep/pages/flora-Avena-sterilis.txt) | Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena fatua https://www.nzflora.info/factsheet/Taxon/Avena-fatua.html (saved sweep/pages/flora-Avena-fatua.txt) | Wikipedia, Avena sterilis https://en.wikipedia.org/wiki/Avena_sterilis (sweep/pages/wiki-Avena_sterilis.txt), citing CABI Compendium — spikelets (without awns) 1.7–4.5 cm, glumes 2.4–5 cm, usually 3 florets (2–5), awn 3–9 cm on the two lowest florets; 'seeds are edible' — measurements; supports risk 'edible' ('seeds are edible') UNRESOLVED: Winter wild oat size figures switched from Wikipedia/CABI to the Flora of NZ subspecies factsheets, which give longer spikelets (3.5–8 cm vs 1.7–4.5 cm). Overlap with A. fatua still holds, so 'size does not separate them' stands. proposed_risk was null; final_risk is current catalogue risk (edible), resting on Wikipedia only ('seeds are edible')."
+      "Lookalike card to Winter wild oat — verified and rewritten 11/10/2026 in the owner's lookalike sweep (\"we do not make unsubstantiated claims\"): every clause checked against a fetched source page in two passes, failing clauses deleted or weakened to the source. Sources: Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena sterilis https://www.nzflora.info/factsheet/Taxon/Avena-sterilis.html (saved sweep/pages/flora-Avena-sterilis.txt) | Flora of New Zealand Online (Manaaki Whenua, CC BY 3.0 NZ), factsheet Avena fatua https://www.nzflora.info/factsheet/Taxon/Avena-fatua.html (saved sweep/pages/flora-Avena-fatua.txt) | Wikipedia, Avena sterilis https://en.wikipedia.org/wiki/Avena_sterilis (sweep/pages/wiki-Avena_sterilis.txt), citing CABI Compendium — spikelets (without awns) 1.7–4.5 cm, glumes 2.4–5 cm, usually 3 florets (2–5), awn 3–9 cm on the two lowest florets; 'seeds are edible' — measurements; supports risk 'edible' ('seeds are edible') UNRESOLVED: Winter wild oat size figures switched from Wikipedia/CABI to the Flora of NZ subspecies factsheets, which give longer spikelets (3.5–8 cm vs 1.7–4.5 cm). Overlap with A. fatua still holds, so 'size does not separate them' stands. proposed_risk was null; final_risk is current catalogue risk (edible), resting on Wikipedia only ('seeds are edible').",
+      "Habitat text and the New Zealand distribution paragraph of the summary (22/10/2026): Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0). https://floraseries.landcareresearch.co.nz/taxa/5a4220c4-99a1-429b-ae43-377108c03ebb. Retrieved 22/10/2026. Habitat sentence verbatim; distribution moved to the summary because habitat holds habitat. Tags disturbed from Tools/classify_habitats.py on that sentence.",
+      "Edible parts (22/10/2026): Useful Temperate Plants, Ken Fern, temperate.theferns.info (CC BY-NC-SA 3.0), 'Avena fatua'. https://temperate.theferns.info/plant/Avena+fatua. Retrieved 22/10/2026. Verbatim, reference markers stripped. Omitted, deliberately: the ripening sentence's 'in the latter half of summer' (northern season — the storage half is kept in preparation); the medicinal sentence. UTP's Known Hazards for this species: 'None known'.",
+      "Preparation (22/10/2026): first sentence written for this guide, restated from the Flora description ('disarticulation below each floret' at maturity) — the advice to gather as it ripens is my reading of that, not a source's. Storage half of UTP's ripening sentence, verbatim. The framing 'No source gives a method written for this species. Written for the cultivated oat:' is mine; what follows is Wikipedia contributors, 'Oat', Processing section, revision 1380525414 (CC BY-SA 4.0), retrieved 22/10/2026, verbatim — written for A. sativa, applied here because no method for this species was found. Searched and not used: PFAF's 'Harvest & Processing Workflow' for Avena fatua (pfaf.org, all rights reserved; a recent templated section whose author is not given, and it dates the harvest by a northern 'late spring'). OPEN LEAD: Knox, A Forager's Treasury, 'Oats' pp. 130–131 (owner's book).",
+      "Warnings (22/10/2026): ergot — Wikipedia contributors, 'Claviceps purpurea', revision 1379604404 (CC BY-SA 4.0), retrieved 22/10/2026, https://en.wikipedia.org/wiki/Claviceps_purpurea — three sentences verbatim (the host list sentence left out). The source says 'oats' without naming a species; placing it on this wild oat is my reading.",
+      "Months (22/10/2026): the window ripe grain is on the plant, dated by eye from the first photo of every iNaturalist NZ wild observation (research grade and needs-ID), judged ripe when the panicle is straw-coloured or shedding. 36 observations; ripe panicles Dec 4, Jan 4, Feb 4, Apr 1; every Oct and Nov record and May green. March has no records and is included because February and April both show ripe stands (my inference, not a count). Replaces [1, 2, 3, 4, 5, 10, 11, 12] (no source line; October, November and May show only green plants). No NZ source gives a fruiting season for this species; Flora vol. V gives none.",
+      "Group (22/10/2026): greens → nuts ('Nuts & seeds'), because the edible part is the seed.",
+      "Origin checked 22/10/2026 → introduced (was pest): not on McAlpine & Howell 2024, List of environmental weeds in NZ (DOC SfC 340, Table 2); not on any regional pest management plan in Wildland/PCE 2021 Contract Report 5396 Appendix 2; NZPCN lists no unwanted-organism or Pest Plant Accord tag; NZOR biostatus Exotic, Present. A serious crop weed (Flora: 'A problem weed of crops'; Bayer and Rolston lines above), but a crop weed is not a listed pest. Pest rule as set on 20/10/2026: on the DOC 2024 list, or an unwanted organism / NPPA, or a real regional pest-plan programme.",
+      "Lookalike card to Oat, 22/10/2026: fatuoid sentence appended, restated from Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0), 'Avena sativa' note (Fatuoids, or false wild oats; first NZ record Wright & Shillito 1974).",
+      "Photos -1 and -2 (added by the owner in the editor, seen 22/10/2026; -6 removed): -1 ripe grains (obs 69904988, Dave Holland, Beckenham, CC BY-NC), -2 unripe grains (obs 65567079, Erin Gallagher, Lyttelton, CC BY-NC). -5 and -7 as before. Every observation re-checked by the iNaturalist API 22/10/2026 (taxon, research grade, wild, photo licence) and every frame checked by eye against its caption."
     ],
     "sourcingNote" : "",
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Avena fatua' (CC BY-SA 4.0)"
+        "Wikipedia, 'Avena fatua' (CC BY-SA 4.0)",
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)"
       ],
-      "text" : "Avena fatua is a species of grass in the oat genus.\nThis oat is native to Eurasia (particularly the eastern Mediterranean) but it has been introduced to most of the other temperate regions of the world. It is naturalized in some areas and considered a noxious weed in others.\n\nThis species and other wild oats can become troublesome in prairie agriculture when it invades and lowers the quality of a field crop, or competes for resources with the crop plants. It takes very few wild oat plants to cause a significant reduction in the yield of a wheat or cultivated oat field."
+      "text" : "Avena fatua is a species of grass in the oat genus.\nThis oat is native to Eurasia (particularly the eastern Mediterranean) but it has been introduced to most of the other temperate regions of the world. It is naturalized in some areas and considered a noxious weed in others.\n\nThis species and other wild oats can become troublesome in prairie agriculture when it invades and lowers the quality of a field crop, or competes for resources with the crop plants. It takes very few wild oat plants to cause a significant reduction in the yield of a wheat or cultivated oat field.\n\nIn New Zealand (Flora of New Zealand): N.: Auckland City, Bay of Plenty (Opotiki), Hawkes Bay (Takapau), more common in the Manawatu and Wairarapa, also from near Wellington City; S.: common in Canterbury, North and Central Otago, less so in Nelson, Marlborough, South Otago and Southland; Ch. Naturalised."
     },
     "warnings" : [
-
+      "Claviceps purpurea is an ergot fungus that grows on the ears of rye and related cereal and forage plants. Consumption of grains or seeds contaminated with the survival structure of this fungus, the ergot sclerotium, can cause ergotism in humans and other mammals. It affects oats only rarely."
     ]
   },
   {
