@@ -76,6 +76,27 @@ struct SpeciesValidationTests {
         #expect(!species.isPublishable)
     }
 
+    @Test("Edibility text that attributes a claim in the prose is blocking")
+    func attributedEdibilityBlocks() {
+        let species = makeSpecies(
+            edibleParts: "Leaves. Jacobson says they are less bitter than dandelion leaves.",
+            preparation: "Steam them (Eat The Weeds, restated).",
+            warnings: ["Mildly poisonous.", "One forager found them hard on the stomach."]
+        )
+        let blocking = labels(species, severity: .blocking)
+        #expect(blocking.isSuperset(of: ["edibleParts", "preparation", "warnings[1]"]))
+        #expect(!blocking.contains("warnings[0]"))
+    }
+
+    @Test("Stated edibility text, and words that only contain a phrase, pass")
+    func statedEdibilityPasses() {
+        let species = makeSpecies(
+            edibleParts: "Leaves. They are less bitter than dandelion leaves.",
+            preparation: "Boil, then sauté with the findings of the day."
+        )
+        #expect(species.isPublishable)
+    }
+
     @Test("A lookalike with no distinguishing check is blocking")
     func lookalikeNeedsHowToTell() {
         let species = makeSpecies(

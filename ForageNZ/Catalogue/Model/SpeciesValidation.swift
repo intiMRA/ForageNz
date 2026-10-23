@@ -140,6 +140,20 @@ public extension ForageSpecies {
             if preparation.isBlank { advisory(.preparation, "No preparation recorded.") }
         }
 
+        // Blocking (owner, 24/10/2026): edibility text states the fact, and whoever made the
+        // claim goes in the sources. "Jacobson says they are less bitter than dandelion" reads as
+        // hearsay and makes the guide look unsourced; "They are less bitter than dandelion leaves",
+        // with Jacobson cited, does not. The phrases are the ones that never occur in verbatim
+        // licensed text, so the rule cannot fire on a quotation that may not be reworded.
+        let attributed: [(ValidationField, Int?, String)] =
+            [(.edibleParts, nil, edibleParts.text), (.preparation, nil, preparation.text)]
+            + warnings.enumerated().map { (.warnings, $0.offset, $0.element) }
+        for (field, index, text) in attributed {
+            if let phrase = Self.attributionPhrase(in: text) {
+                blocking(field, at: index, "Attributes the claim in the prose (“\(phrase)”) — state it, and put who said it in the sources.")
+            }
+        }
+
         if origin.isIndigenous && (harvestEthics?.isBlank ?? true) {
             blocking(.harvestEthics, "Native and endemic species need harvesting and tikanga guidance.")
         }
@@ -228,6 +242,28 @@ public extension ForageSpecies {
 
     var claimsNoEdibleParts: Bool {
         edibleParts.text.trimmed.caseInsensitiveCompare(Self.noEdibleParts) == .orderedSame
+    }
+
+    /// Phrases that put a claim in someone's mouth instead of stating it.
+    static let attributionPhrases = [
+        "says", "writes", "according to", "advises", "reckons", "finds",
+        "restated)", "translated)",
+        "one forager", "one grower", "one record", "the same forager", "the same grower", "the same source",
+    ]
+
+    /// The first attribution phrase in `text`, matched case-insensitively on word boundaries.
+    static func attributionPhrase(in text: String) -> String? {
+        let lowered = text.lowercased()
+        return attributionPhrases.first { phrase in
+            var searchRange = lowered.startIndex..<lowered.endIndex
+            while let found = lowered.range(of: phrase, range: searchRange) {
+                let before = found.lowerBound == lowered.startIndex ? nil : lowered[lowered.index(before: found.lowerBound)]
+                let after = found.upperBound == lowered.endIndex ? nil : lowered[found.upperBound]
+                if !(before?.isLetter ?? false) && !(after?.isLetter ?? false) { return true }
+                searchRange = found.upperBound..<lowered.endIndex
+            }
+            return false
+        }
     }
 
     /// A slug usable as an entry id, derived from a common name.

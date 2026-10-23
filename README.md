@@ -265,6 +265,15 @@ confusable) may come from a book you own. Description text may only come from an
 licensed, human-written source, copied verbatim and credited beside the paragraph. Safety text
 — edible parts, preparation, warnings, how to tell a lookalike apart — is written by a person.
 
+**Edibility text states, it does not report.** Never "Jacobson says they are less bitter than
+dandelion leaves" or "one forager found…": write "They are less bitter than dandelion leaves and
+are fine to eat if you don't mind their hairiness", and put Jacobson in the field's `sources`.
+Hearsay in the prose makes the guide read as unsourced, which is the opposite of the truth. Inline
+citations such as "(MasterClass)" or "(restated)" go the same way — the sources list carries them.
+What a record does *not* establish is still said, as a statement about the evidence ("Its use as
+food rests on a single tasting"). Verbatim licensed text is left as written. Blocking:
+`ForageSpecies.attributionPhrases` (owner, 24/10/2026).
+
 **Verbatim means in the source's own language.** A translation is not a copy: it is new prose in
 the target language, and when a model produces it, it is model prose wearing a citation. So an
 openly licensed article in another language is a source of *facts* like any book — cite it, do not
