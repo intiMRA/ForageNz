@@ -14,6 +14,7 @@ struct SpeciesValidationTests {
         months: [ForageMonth] = [],
         summary: SourcedText = "A summary.",
         habitat: SourcedText = "Somewhere.",
+        habitats: [Habitat] = [.forest],
         identification: SourcedText = "Distinctive.",
         edibleParts: SourcedText = "Leaves.",
         preparation: SourcedText = "Boil.",
@@ -30,7 +31,7 @@ struct SpeciesValidationTests {
         ForageSpecies(
             id: id, commonName: commonName, scientificName: scientificName,
             group: .greens, origin: origin, caution: caution, months: months,
-            summary: summary, habitat: habitat, identification: identification,
+            summary: summary, habitat: habitat, habitats: habitats, identification: identification,
             edibleParts: edibleParts, preparation: preparation,
             lookalikes: lookalikes, warnings: warnings, harvestEthics: harvestEthics,
             sources: sources, recipes: recipes, photos: photos
@@ -69,9 +70,9 @@ struct SpeciesValidationTests {
 
     @Test("Missing prose the app renders is blocking")
     func missingProseBlocks() {
-        let species = makeSpecies(scientificName: "", summary: "  ", habitat: "", identification: "")
+        let species = makeSpecies(scientificName: "", summary: "  ", habitat: "", habitats: [], identification: "")
         let blocking = fields(species, severity: .blocking)
-        #expect(blocking.isSuperset(of: [.scientificName, .summary, .habitat, .identification]))
+        #expect(blocking.isSuperset(of: [.scientificName, .summary, .habitat, .habitats, .identification]))
         #expect(!species.isPublishable)
     }
 

@@ -107,7 +107,7 @@ struct PhotoAuditTests {
         ForageSpecies(
             id: "test", commonName: "Test", scientificName: "Testus testa",
             group: .greens, origin: .introduced, caution: .straightforward,
-            summary: "A summary.", habitat: "Somewhere.", identification: "Distinctive.",
+            summary: "A summary.", habitat: "Somewhere.", habitats: [.forest], identification: "Distinctive.",
             edibleParts: "Leaves.", preparation: "Boil.",
             sources: ["A Book, p. 1"], photos: photos
         )

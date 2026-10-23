@@ -115,6 +115,7 @@ struct BookSourceTests {
             caution: .straightforward,
             summary: "A plant for testing.",
             habitat: "Test ground.",
+            habitats: [.forest],
             identification: "Looks like a test.",
             edibleParts: "Leaves.",
             preparation: "Boil.",

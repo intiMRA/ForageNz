@@ -83,9 +83,9 @@ public extension ForageSpecies {
         if scientificName.trimmed.isEmpty { blocking(.scientificName, "Needs a scientific name.") }
         if summary.isBlank { blocking(.summary, "Needs a one-line summary — it's the list subtitle.") }
         if habitat.isBlank { blocking(.habitat, "Needs habitat notes.") }
-        // Advisory, not blocking: 101 entries have no habitat prose to classify from yet, and
-        // an unclassified entry still reads correctly — it just cannot be filtered by place.
-        if habitats.isEmpty { advisory(.habitats, "Not classified by habitat, so it won't appear in a where-to-look filter.") }
+        // Blocking (owner, 23/10/2026): the page's habitat section leads with these icons, so an
+        // entry without them reads as having nowhere to grow, and never appears in a where-to-look filter.
+        if habitats.isEmpty { blocking(.habitats, "Needs at least one habitat — where it grows.") }
         if identification.isBlank { blocking(.identification, "Needs identification notes.") }
 
         for (index, lookalike) in lookalikes.enumerated() {

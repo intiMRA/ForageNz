@@ -566,12 +566,6 @@ The species was first recorded in Britain in 1825. It rapidly extended its range
 - **Prose:** The blackcurrant is native to northern Europe and Asia.
 - **Credit:** Wikipedia, 'Blackcurrant' (CC BY-SA 4.0)
 
-### Blackthorn — `blackthorn`
-
-- **Labels:** _none_
-- **Prose:** P. spinosa is native to Europe, western Asia, and locally in northwest Africa. It is also locally naturalised in Tasmania and eastern North America.
-- **Credit:** Wikipedia, 'Prunus spinosa' (CC BY-SA 4.0)
-
 ### Bog yellow cress — `bog-yellow-cress`
 
 - **Labels:** _none_

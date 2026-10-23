@@ -70,12 +70,12 @@ struct HabitatTests {
         #expect(decoded.habitats.isEmpty)
     }
 
-    @Test("An unclassified entry is an advisory, never a reason to fail the build")
-    func unclassifiedIsAdvisoryOnly() {
+    @Test("An unclassified entry is blocked: it would show nowhere to grow")
+    func unclassifiedIsBlocking() {
         let unclassified = makeSpecies(habitats: [])
         let issue = unclassified.validationIssues.first { $0.field == .habitats }
-        #expect(issue?.severity == .advisory)
-        #expect(unclassified.isPublishable)
+        #expect(issue?.severity == .blocking)
+        #expect(!unclassified.isPublishable)
 
         let classified = makeSpecies(habitats: [.forest])
         #expect(!classified.validationIssues.contains { $0.field == .habitats })

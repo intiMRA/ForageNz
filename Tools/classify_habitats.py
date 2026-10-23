@@ -181,11 +181,14 @@ RULES: dict[str, tuple[str, ...]] = {
         r"\balpine\b",
         r"\bsub-?alpine\b",
         r"\btussocks?\b",
-        r"\bmontane\b",
+        # Not "montane": the montane zone is the forest below the treeline, and `alpine` is
+        # the treeline and above. Not a bare "mountain" either — in prose it is usually the
+        # first word of a name (mountain beech, mountain flax, mountain cabbage tree).
         r"\bscree(?:s)?\b",
         r"\bherbfields?\b",
         r"\btree\s?line\b",
-        r"\bmountains?\b",
+        r"\bmountains\b",
+        r"\bmountain (?:tops?|slopes?|zones?|regions?|ranges?|areas?)\b",
         r"\bhigh country\b",
         r"\bsnow\s?line\b",
     ),

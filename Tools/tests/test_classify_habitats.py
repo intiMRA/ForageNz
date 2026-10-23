@@ -61,6 +61,10 @@ def test_an_ambiguous_word_needs_its_context_before_it_counts() -> None:
         "Roadsides and waste ground, the same ground as wild fennel and sea celery."
     ) == ["disturbed"]
     assert classify("It occurs from the sea to the subalpine.") == ["coastal", "alpine"]
+    # Montane is forest below the treeline, not alpine; "mountain" opening a name is no place.
+    assert classify("Coastal to lower montane forest.") == ["coastal", "forest"]
+    assert classify("On rotting wood of mountain beech.") == ["forest"]
+    assert classify("Wetter mountains.") == ["alpine"]
     # Saltmarsh is the coast; a freshwater marsh is not.
     assert classify("Estuaries and salt marsh.") == ["coastal"]
     assert classify("Ditches and marshy ground.") == ["wetland"]
