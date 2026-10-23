@@ -5760,7 +5760,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Common lavender",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (CC BY-NC-SA 3.0)"
@@ -9848,7 +9848,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "French lavender",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Ghanimi et al. 2022, J. Ethnobiol. Ethnomed. (CC BY 4.0; restated)",
@@ -29334,7 +29334,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Topped lavender",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (CC BY-NC-SA 3.0)",
