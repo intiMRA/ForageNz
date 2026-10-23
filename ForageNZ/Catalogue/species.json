@@ -4566,7 +4566,7 @@
       },
       {
         "entry" : "smooth-cats-ear",
-        "howToTell" : "Look at the bracts under the flower head. Catsear's carry a row of stiff hairs along the midrib — dark near the tip, usually pale near the base — which Flora of New Zealand likens to a miniature cock's comb; smooth cat's ear's are always hairless, the inner ones with broad papery margins. Catsear's florets stand about one and a half times as long as the bracts, smooth cat's ear's about as long, and smooth cat's ear's heads are narrowly cylindrical where catsear's are top-shaped to bell-shaped. Catsear's leaves have moderately dense stiff pale hairs; smooth cat's ear's are hairless or sometimes sparsely hairy, so leaf hair is a clue, not a test. Catsear is a perennial; smooth cat's ear is an annual, rarely perennial. Stems do not separate them: catsear's are usually branched, smooth cat's ear's sparingly branched or not. Both have yellow heads and milky sap. Smooth cat's ear's young leaves are eaten, though somewhat bitter (see its page).",
+        "howToTell" : "Look at the bracts under the flower head. Catsear's carry a row of stiff hairs along the midrib — dark near the tip, usually pale near the base — which Flora of New Zealand likens to a miniature cock's comb; smooth cat's ear's are always hairless, the inner ones with broad papery margins. Catsear's florets stand about one and a half times as long as the bracts, smooth cat's ear's about as long, and smooth cat's ear's heads are narrowly cylindrical where catsear's are top-shaped to bell-shaped. Catsear's leaves have moderately dense stiff pale hairs; smooth cat's ear's are hairless or sometimes sparsely hairy, so leaf hair is a clue, not a test. Catsear is a perennial; smooth cat's ear is an annual, rarely perennial. Stems do not separate them: catsear's are usually branched, smooth cat's ear's sparingly branched or not. Catsear's heads are larger, 2–4 cm across against 0.5–1.5 cm in a British account. The seeds differ: catsear's are beaked and 8–16 mm long, though the outer ones are sometimes short- or unbeaked; smooth cat's ear's outer seeds are never beaked and 4–5 mm long, and only the inner ones carry a beak, up to 8 mm long. The two hybridise, so a plant with mixed features may be neither. Both have yellow heads and milky sap. Smooth cat's ear's young leaves are eaten, though somewhat bitter (see its page).",
         "name" : "Smooth cat's ear",
         "risk" : "edible",
         "scientificName" : "Hypochaeris glabra"
@@ -4644,7 +4644,8 @@
       "Self-audit 23/10/2026: 'in spring' cut from the Reinosa clause in preparation — a Spanish season, omitted not relocated (the CONECT-e record says the leaves were eaten 'cuando nacían, en la primavera').",
       "Added 23/10/2026 (owner: a list of links). Preparation, third line: Diego Bonetto, same page — 'The leaves range in flavour from slightly bitter to bland. They can be eaten in raw salads… You can steam flatweed leaves or toss them in a pan with oil and garlic then serve them with lemon and salt. To avoid the stringy texture, it's suggested to harvest younger leaves'; flowers 'infused in honey… or coated in flour for colourful fritters'; petals 'as a garnish'; hortopita from his Greek neighbours — restated. His page is Australian, so his 'flowers all year round' and '365 days a year' are not used for months. His identification lines (leaves 'club-shaped, with rounded indentations', H. glabra's root 'more branched and shallower') add nothing the Flora of New Zealand text and cards do not already give and are not used. Preparation, fourth line: Green Deane, 'False Dandelions For Lunch', Eat The Weeds, 31/08/2011, https://www.eattheweeds.com/pyrrhopappus-hypochoeris-dandelion-impostors-2/ (all rights reserved) — 'Cooking reduces the bitterness but there is always left over bitterness… They can go in go raw in salads, or cooked in soups and also steam well', restated. Not used from it: 'Young tender stems of cat's ear can be boiled and used like spaghetti' (follows the H. glabra sentence; which species is meant is unclear), 'Flower and buds of all can be used like dandelions' (said of four species at once), its seasons (US, 'roots in fall'), and its naming of H. radicata as 'Smooth Cat's Ear' (that name belongs to H. glabra). A 2022 reader comment there calling it toxic to humans cites nothing; the author asked for a source and none came. Pyrrhopappus carolinianus and Agoseris aurantiaca, the page's other 'false dandelions', have no iNaturalist New Zealand records (checked 23/10/2026) and get no entry or card.",
       "Recipe 'Steamed and fried catsear buds', 23/10/2026: Henry H., 'Cat's Ear – Cooking with forage', The Northwest Forager, 23/05/2015, https://thenorthwestforager.com/2015/05/23/cats-ear-cooking-with-forage/ (all rights reserved) — restated, not quoted; written for Hypochaeris radicata. The page gives no quantities.",
-      "Edibility wording, 24/10/2026 (owner: edibility text is never 'he said, she said' — it states the fact and the person or page that made the claim goes in the sources): preparation reworded so no sentence attributes a claim in the prose; the facts and the sources they came from are unchanged and stay cited above and beside the field."
+      "Edibility wording, 24/10/2026 (owner: edibility text is never 'he said, she said' — it states the fact and the person or page that made the claim goes in the sources): preparation reworded so no sentence attributes a claim in the prose; the facts and the sources they came from are unchanged and stay cited above and beside the field.",
+      "Lookalike card to smooth cat's ear, head size, seeds and hybrids added 24/10/2026 (owner: links to Wikipedia, BSBI, NZPCN, Biota of NZ, Florabase and Pl@ntNet): BSBI species account 'Hypochaeris glabra' (Peter Stroh, 2017, https://bsbi.org/learn/resources/species-accounts/hypochaeris-glabra, all rights reserved — restated): H. glabra heads 0.5–1.5 cm, H. radicata 2–4 cm with outer and inner achenes both usually beaked, and the two hybridise; Florabase (Western Australian Herbarium, https://florabase.dbca.wa.gov.au/browse/profile/8086, restated) also says they hybridise, 'making identification difficult', and gives heads up to 1.5 cm. Achene lengths and beaks from the two Flora of New Zealand vol. IV descriptions (Webb et al. 1988): H. radicata fusiform, beaked, 8–16 mm, 'sometimes the outer achenes not or shortly beaked'; H. glabra outer obconic, not beaked, 4–5 mm, inner beaked, up to 8 mm. Head sizes are British measurements."
     ],
     "summary" : {
       "sources" : [
@@ -27109,7 +27110,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Smooth cat's ear",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants, 'Hypochaeris glabra' (CC BY-NC-SA 3.0)"
@@ -27133,14 +27134,16 @@
     "id" : "smooth-cats-ear",
     "identification" : {
       "sources" : [
-        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)",
+        "BSBI species account, 'Hypochaeris glabra' (Peter Stroh, 2017, all rights reserved — restated)",
+        "Wikipedia, 'Hypochaeris glabra' (CC BY-SA 4.0)"
       ],
-      "text" : "Annual, rarely perennial.  Stems ascending to erect, sparingly branched or not branched, glabrous, 4–45–(60) cm tall.  Lvs usually all basal, oblanceolate to linear-oblanceolate, simple and shallowly to deeply dentate, or pinnatifid, (0.6)–2.5–10–(15) × (0.1)–0.5–2–(3) cm, glabrous or sometimes with sparse short strigose hairs.  Stem bracts few, minute;  rarely whorls of rosette lvs formed on stems.  Capitula narrowly cylindric.  Involucral bracts narrow-oblong with subacute apex, glabrous, green,  c. 8 mm long at flowering; inner bracts with broad scarious margin, up to 20 mm long at fruiting.  Florets yellow,  c. = involucre.  Achenes dark brown, scabrid;  outer achenes obconic, not beaked, 4–5 mm long;  inner achenes fusiform, beaked, up to 8 mm long. Pappus in 2 rows, the outer hairs short, slender, scabrid, the inner up to 15 mm long, stout, plumose.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
+      "text" : "Annual, rarely perennial.  Stems ascending to erect, sparingly branched or not branched, glabrous, 4–45–(60) cm tall.  Lvs usually all basal, oblanceolate to linear-oblanceolate, simple and shallowly to deeply dentate, or pinnatifid, (0.6)–2.5–10–(15) × (0.1)–0.5–2–(3) cm, glabrous or sometimes with sparse short strigose hairs.  Stem bracts few, minute;  rarely whorls of rosette lvs formed on stems.  Capitula narrowly cylindric.  Involucral bracts narrow-oblong with subacute apex, glabrous, green,  c. 8 mm long at flowering; inner bracts with broad scarious margin, up to 20 mm long at fruiting.  Florets yellow,  c. = involucre.  Achenes dark brown, scabrid;  outer achenes obconic, not beaked, 4–5 mm long;  inner achenes fusiform, beaked, up to 8 mm long. Pappus in 2 rows, the outer hairs short, slender, scabrid, the inner up to 15 mm long, stout, plumose.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]\nIn the field (BSBI, a British account, restated): the leaves are shiny and pale green, often reddish, with shallow wavy margins, broadest near the tip and narrowing to the base; the stems carry no true leaves, only small scale-like bracts. The heads are 0.5–1.5 cm across, and they open in full sun and close by early afternoon. The bracts are purple-tipped, and the leaves sometimes have a purplish tint near the veins (Wikipedia)."
     },
     "lookalikes" : [
       {
         "entry" : "catsear",
-        "howToTell" : "Turn the head over: catsear's bracts carry a row of stiff hairs along the midrib, dark near the tip and usually pale near the base — Flora of New Zealand's 'miniature cock's comb' — while smooth cat's ear's bracts are always hairless. Smooth cat's ear's heads are narrowly cylindrical, with florets about as long as the bracts; catsear's are top- to bell-shaped, with florets about one and a half times as long. Smooth cat's ear's leaves are hairless or sometimes sparsely hairy; catsear's have moderately dense stiff pale hairs. Smooth cat's ear is an annual, rarely perennial; catsear is a perennial. Both have rosettes of toothed to lobed leaves, stems with a few minute bracts, yellow heads and milky sap. Catsear's young leaves and roots are eaten (see its page).",
+        "howToTell" : "Turn the head over: catsear's bracts carry a row of stiff hairs along the midrib, dark near the tip and usually pale near the base — Flora of New Zealand's 'miniature cock's comb' — while smooth cat's ear's bracts are always hairless. Smooth cat's ear's heads are narrowly cylindrical, with florets about as long as the bracts; catsear's are top- to bell-shaped, with florets about one and a half times as long. Smooth cat's ear's leaves are hairless or sometimes sparsely hairy; catsear's have moderately dense stiff pale hairs. Smooth cat's ear is an annual, rarely perennial; catsear is a perennial. Catsear's heads are larger, 2–4 cm across against 0.5–1.5 cm in a British account. The seeds differ: catsear's are beaked and 8–16 mm long, though the outer ones are sometimes short- or unbeaked; smooth cat's ear's outer seeds are never beaked and 4–5 mm long, and only the inner ones carry a beak, up to 8 mm long. The two hybridise, so a plant with mixed features may be neither. Both have rosettes of toothed to lobed leaves, stems with a few minute bracts, yellow heads and milky sap. Catsear's young leaves and roots are eaten (see its page).",
         "name" : "Catsear",
         "risk" : "edible",
         "scientificName" : "Hypochaeris radicata"
@@ -27160,22 +27163,22 @@
         "sourceURL" : "https://www.inaturalist.org/observations/185515594"
       },
       {
-        "caption" : "Rosette with a flower",
-        "credit" : "(c) reinderw, some rights reserved (CC BY-NC)",
-        "fileName" : "smooth-cats-ear-2.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/248118913"
+        "caption" : "Leaves",
+        "credit" : "(c) Alice Shanks, some rights reserved (CC BY)",
+        "fileName" : "smooth-cats-ear-5.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/4354713"
       },
       {
-        "caption" : "Flowering plant",
-        "credit" : "(c) rubecula, some rights reserved (CC BY-NC)",
+        "caption" : "Close up of flowers",
+        "credit" : "(c) Jo and Ken Morison, some rights reserved (CC BY-NC)",
         "fileName" : "smooth-cats-ear-3.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/263594243"
+        "sourceURL" : "https://www.inaturalist.org/observations/102511704"
       },
       {
-        "caption" : "Flower head",
-        "credit" : "no rights reserved",
+        "caption" : "Plant flowering",
+        "credit" : "(c) Barbara Parris, some rights reserved (CC BY-NC)",
         "fileName" : "smooth-cats-ear-4.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/330909574"
+        "sourceURL" : "https://www.inaturalist.org/observations/365241879"
       }
     ],
     "preparation" : {
@@ -27195,17 +27198,20 @@
       "Habitat and summary (second line), 23/10/2026 (owner: /goal 'find an fill anything you can for danderlions and lookalikes, do web searches and make sure to follow rules'): Flora of New Zealand vol. IV, 'Hypochaeris glabra' (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/f7d44013-1157-4dd2-b558-f0d1e70b92ca), retrieved 23/10/2026 — habitat quoted verbatim; distribution as printed (N. North, S. South Island; K. Kermadec, Ch. Chatham Islands), origin line 'Europe, S.W. Asia, N. Africa 1869' written out; NZPCN gives the same year. Habitat tags from the habitat line (classifier evidence): coastal ('dunes', 'coastal rock'), grassland, wetland ('riverbeds'), urban ('gardens'), disturbed ('railway ballast, waste land', 'roadsides').",
       "Edible parts, 23/10/2026: Fern, Ken. 'Hypochaeris glabra', Useful Temperate Plants database. CC BY-NC-SA 3.0. https://temperate.theferns.info/plant/Hypochaeris+glabra — Edible Uses quoted verbatim, reference numbers removed (Cribb & Cribb 1976, Wild Food in Australia; Kunkel 1984). Known Hazards 'None known'. Its habitat line is British. CONECT-e's only food record for H. glabra is of insect galls on the stems, eaten raw (Arribes del Duero; González et al. 2011) — not the plant, not used.",
       "Lookalike card to catsear, written for this guide 23/10/2026: Flora of New Zealand vol. IV, 'Hypochaeris' (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/c75b828e-d832-4908-919c-770e452c74d1), retrieved 23/10/2026 key couplet 2 (leaves glabrous to sparsely hairy against moderately dense setulose hairs; florets c. = bracts against c. 1½×; bracts always glabrous with broad scarious inner margins, against dark hairs on the midrib near the apex and usually pale ones near the base) and the note under H. radicata ('The row of strigose hairs on the midrib of the involucral bracts, like a miniature cock's comb, distinguishes H. radicata from H. glabra'); capitula narrowly cylindric against turbinate to campanulate, annual against perennial, from the two species' descriptions.",
-      "Name: kept as 'Smooth cat's ear' (Wikipedia). Flora of New Zealand and NZPCN call it 'smooth catsear', which would match this catalogue's 'Catsear' — a rename is the owner's call.",
-      "Photos (chosen 23/10/2026, mine — the owner may cut): -1 rosette of lobed leaves (obs 185515594, photo 324008604, Colin Ogle, PIne forest adjoining Whitiau SCientific Reserve, Whangaehu, New Zealand, 2008/10/30, CC BY-NC); -2 rosette with a flower (obs 248118913, photo 443266689, reinderw, Islington, Christchurch, New Zealand, 2024-10-17, CC BY-NC); -3 flowering plant (obs 263594243, photo 473570731, rubecula, Northland, NZ, 2024-10-12, CC BY-NC); -4 flower head (obs 330909574, photo 600168174, no rights reserved, Chatham Islands, Rekohu (Chatham Island), Track to Ocean Bay, 2025/12/15, CC0). Checked in one iNaturalist API batch call: every observation research grade, wild, in New Zealand, of this taxon, photo licence as credited.",
-      "Preparation, 23/10/2026 (owner: a list of links): Green Deane, 'False Dandelions For Lunch', Eat The Weeds, 31/08/2011, https://www.eattheweeds.com/pyrrhopappus-hypochoeris-dandelion-impostors-2/ (all rights reserved) — 'Another Hypochoeris, the glabra… is less bitter and is often eaten raw' and '_H. glabra_, leaves cooked or raw', restated. It does not contradict Useful Temperate Plants' 'Somewhat bitter': less bitter than catsear is not mild. Diego Bonetto's flatweed page (https://www.diegobonetto.com/blog/flatweed) calls this species cat's ear and says only that all of the plants it covers are edible; no use specific to it, not used."
+      "Name: kept as 'Smooth cat's ear' (Wikipedia). Flora of New Zealand and NZPCN call it 'smooth catsear', which would match this catalogue's 'Catsear' — a rename is the owner's call. 24/10/2026: Biota of New Zealand and Pl@ntNet also give 'smooth catsear' (Pl@ntNet lists 'Smooth cat's ear' first).",
+      "Photos (the owner's set as of 24/10/2026, replacing three of the four I chose on 23/10): -1 rosette of lobed leaves (obs 185515594, Colin Ogle, Whangaehu, 2008-10-30, CC BY-NC); -5 leaves (obs 4354713, Alice Shanks, West Melton, Christchurch, 2016-10-15, CC BY); -3 flowers (obs 102511704, Jo and Ken Morison, Little River, 2021-12-05, CC BY-NC); -4 flowering plant (obs 365241879, Barbara Parris, Kaeo, 2026-05-14, CC BY-NC). Checked in one iNaturalist API call 24/10/2026: all research grade, wild, in New Zealand, of this taxon, licence as credited.",
+      "Preparation, 23/10/2026 (owner: a list of links): Green Deane, 'False Dandelions For Lunch', Eat The Weeds, 31/08/2011, https://www.eattheweeds.com/pyrrhopappus-hypochoeris-dandelion-impostors-2/ (all rights reserved) — 'Another Hypochoeris, the glabra… is less bitter and is often eaten raw' and '_H. glabra_, leaves cooked or raw', restated. It does not contradict Useful Temperate Plants' 'Somewhat bitter': less bitter than catsear is not mild. Diego Bonetto's flatweed page (https://www.diegobonetto.com/blog/flatweed) calls this species cat's ear and says only that all of the plants it covers are edible; no use specific to it, not used.",
+      "Lookalike card to catsear, head size, seeds and hybrids added 24/10/2026 (owner: links to Wikipedia, BSBI, NZPCN, Biota of NZ, Florabase and Pl@ntNet): BSBI species account 'Hypochaeris glabra' (Peter Stroh, 2017, https://bsbi.org/learn/resources/species-accounts/hypochaeris-glabra, all rights reserved — restated): H. glabra heads 0.5–1.5 cm, H. radicata 2–4 cm with outer and inner achenes both usually beaked, and the two hybridise; Florabase (Western Australian Herbarium, https://florabase.dbca.wa.gov.au/browse/profile/8086, restated) also says they hybridise, 'making identification difficult', and gives heads up to 1.5 cm. Achene lengths and beaks from the two Flora of New Zealand vol. IV descriptions (Webb et al. 1988): H. radicata fusiform, beaked, 8–16 mm, 'sometimes the outer achenes not or shortly beaked'; H. glabra outer obconic, not beaked, 4–5 mm, inner beaked, up to 8 mm. Head sizes are British measurements.",
+      "Identification and summary, 24/10/2026 (owner: links to Wikipedia, BSBI, NZPCN, Biota of NZ, Florabase and Pl@ntNet): identification field-note paragraph restated from the BSBI species account (leaf colour, shape and margin; leafless stems with scale-like bracts; heads 0.5–1.5 cm; open in full sun, closed by early afternoon) plus Wikipedia's purple-tipped phyllaries and purplish leaf veins; summary second sentence quoted verbatim from Wikipedia (CC BY-SA 4.0, https://en.wikipedia.org/wiki/Hypochaeris_glabra). Biota of New Zealand (https://biotanz.landcareresearch.co.nz/scientific-names/9627275b-ba22-4ff8-bca3-c5f4b39bdd9b): Exotic, Wild; indicative databased (Allan Herbarium) records from Canterbury, Nelson, North Auckland, Otago, South Auckland, Southland, Taranaki and Wellington land districts — Nelson, Taranaki and Southland are not in Flora of New Zealand's 1988 list, so they are added. NZPCN (https://www.nzpcn.org.nz/flora/species/hypochaeris-glabra/): Exotic, naturalised 1869, Europe, S.W. Asia, N. Africa — as already stated. Not used: Florabase's 'Toxic to horses' (one source with no citation; the stringhalt literature found by web search concerns H. radicata, not this species), its Western Australian flowering (all year, spring flush) and its weed control advice; BSBI's British habitats, June–September flowering and invasive-species ecology; Pl@ntNet's 'Lifecycle Perennial' (contradicts Flora of New Zealand, Wikipedia and BSBI, which call it annual) — Pl@ntNet gave only names otherwise."
     ],
-    "sourcingNote" : "Owed: months — smooth cat's ear is an annual (rarely perennial), so its young leaves are seasonal, and no source read says when they come up in New Zealand. Flora of New Zealand's flowering Oct.–Mar.–(May) dates the flowers.",
+    "sourcingNote" : "Owed: months — smooth cat's ear is an annual (rarely perennial), so its young leaves are seasonal, and no source read says when they come up in New Zealand. Flora of New Zealand's flowering Oct.–Mar.–(May) dates the flowers. BSBI's June–September and Florabase's year-round flowering are British and Western Australian, and date flowers, not leaves.",
     "summary" : {
       "sources" : [
         "Wikipedia, 'Hypochaeris glabra' (CC BY-SA 4.0)",
-        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)",
+        "Biota of New Zealand, 'Hypochaeris glabra L.' (Manaaki Whenua – Landcare Research)"
       ],
-      "text" : "Hypochaeris glabra is a species of flowering plant in the tribe Cichorieae within the family Asteraceae known by the common name smooth cat's ear.\nIn New Zealand (Flora of New Zealand): N.: Northland (Tokerau Beach), Auckland, Waikato, East Cape (Hicks Bay), Wairarapa (Palliser Bay), Wellington (S. Coast); S.: Marlborough, Canterbury, Westland (Saltwater Lagoon), Otago; K., Ch. Naturalised from Europe, south-western Asia and North Africa, first recorded in 1869."
+      "text" : "Hypochaeris glabra is a species of flowering plant in the tribe Cichorieae within the family Asteraceae known by the common name smooth cat's ear. It is native to Europe, North Africa, and the Middle East but it can be found on other continents where it is an introduced species and a widespread weed.\nIn New Zealand (Flora of New Zealand): N.: Northland (Tokerau Beach), Auckland, Waikato, East Cape (Hicks Bay), Wairarapa (Palliser Bay), Wellington (S. Coast); S.: Marlborough, Canterbury, Westland (Saltwater Lagoon), Otago; K., Ch. Naturalised from Europe, south-western Asia and North Africa, first recorded in 1869. Allan Herbarium specimens listed in Biota of New Zealand also come from the Nelson, Taranaki and Southland land districts."
     },
     "warnings" : [
 
@@ -27273,12 +27279,6 @@
         "sourceURL" : "https://www.inaturalist.org/observations/366893058"
       },
       {
-        "caption" : "Flower heads",
-        "credit" : "(c) boytouchgrass, some rights reserved (CC BY)",
-        "fileName" : "smooth-hawksbeard-2.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/273603208"
-      },
-      {
         "caption" : "Whole plant, branching stems",
         "credit" : "(c) Joe Potter Butler, some rights reserved (CC BY)",
         "fileName" : "smooth-hawksbeard-3.heic",
@@ -27289,6 +27289,12 @@
         "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
         "fileName" : "smooth-hawksbeard-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/44648038"
+      },
+      {
+        "caption" : "Close up of flowers",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY)",
+        "fileName" : "smooth-hawksbeard-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/91373884"
       }
     ],
     "preparation" : {

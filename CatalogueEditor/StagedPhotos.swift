@@ -36,24 +36,18 @@ enum StagedPhotos {
     /// Matches the fetcher's `--staging` default, which is relative to the repo root.
     static let directoryName = ".staged-photos"
 
-    /// The staging directory for a catalogue, or `nil` when there is none to review.
+    /// Where the staging directory for a catalogue is, whether or not it exists yet.
     ///
     /// The catalogue sits at `CatalogueLocator.relativePath` inside the repo, so the root is
     /// that many components up — derived rather than hardcoded to three, so moving the
-    /// catalogue moves this with it.
-    static func directory(
-        forCatalogueAt url: URL,
-        fileManager: FileManager = .default
-    ) -> URL? {
+    /// catalogue moves this with it. Not checked for existence: the fetcher creates it, and
+    /// requiring it first meant clearing out the staging area disabled the only button that
+    /// refills it. Everything that reads it treats a missing directory as empty.
+    static func directory(forCatalogueAt url: URL) -> URL {
         let depth = CatalogueLocator.relativePath.split(separator: "/").count
         var root = url
         for _ in 0..<depth { root = root.deletingLastPathComponent() }
-
-        let staging = root.appending(path: directoryName)
-        var isDirectory: ObjCBool = false
-        guard fileManager.fileExists(atPath: staging.path, isDirectory: &isDirectory),
-              isDirectory.boolValue else { return nil }
-        return staging
+        return root.appending(path: directoryName)
     }
 
     /// Candidates for one entry, best-ranked first.

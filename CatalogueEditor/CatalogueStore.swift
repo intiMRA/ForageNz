@@ -64,9 +64,9 @@ final class CatalogueStore {
         fileURL.map(PhotoAudit.directory(forCatalogueAt:))
     }
 
-    /// Where the photo fetcher leaves candidates, or `nil` when it has never been run.
+    /// Where the photo fetcher leaves candidates, which may not exist until it first runs.
     var stagingDirectory: URL? {
-        fileURL.flatMap { StagedPhotos.directory(forCatalogueAt: $0) }
+        fileURL.map(StagedPhotos.directory(forCatalogueAt:))
     }
 
     func load() {
