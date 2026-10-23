@@ -755,7 +755,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Arrow bamboo",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants, 'Pseudosasa japonica' (CC BY-NC-SA 3.0)"
@@ -876,6 +876,139 @@
     },
     "warnings" : [
       "Raw bamboo shoots contain cyanogenic glycosides, natural toxins also contained in cassava. The toxins must be destroyed by thorough cooking, and for this reason, fresh bamboo shoots are boiled before being used in other ways."
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Australasian cranesbill",
+    "draft" : false,
+    "edibleParts" : {
+      "sources" : [
+        "Ngā Rauropi Whakaoranga, 'Geranium homeanum. Pinakitere. Cut-leaved cranesbill.' (Manaaki Whenua – Landcare Research, data CC BY 4.0)",
+        "Australian Plants Society NSW, 'Geranium homeanum — Rainforest Crane's-bill' (Clarke & Howes 2024, all rights reserved — restated)"
+      ],
+      "text" : "Roots eaten in time of great scarcity (Colenso 1868a)\nIn Australia, its large fleshy roots were roasted and eaten by First Nations people (Australian Plants Society NSW)."
+    },
+    "group" : "greens",
+    "habitat" : {
+      "sources" : [
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
+      ],
+      "text" : "Open lowland sites, commonly coastal, grasslands, cliffs, sometimes in waste places."
+    },
+    "habitats" : [
+      "coastal",
+      "grassland",
+      "disturbed"
+    ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "Be mindful when foraging. Take only what you need."
+    },
+    "id" : "australasian-cranesbill",
+    "identification" : {
+      "sources" : [
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+      ],
+      "text" : "Perennial herb; taproot cylindric, to c. 2 cm diam., often divided; caulorrhiza short and stout, bearing a number of flowering stems. Hairs variable, the longer ones mostly curved or bent near base. Petiole of basal lvs to c. 30 cm long; hairs denser distally and mostly appressed to ascending. Lamina to c. 9 cm diam., reniform to orbicular, lobed to 3/4-⅞ way to midrib; lobes usually 5–7, obovate, sparsely hairy on both sides, obtuse, mucronate, the larger lobes usually with (5)–9 teeth; median and longer lateral teeth oblong-obovate. Cauline lvs similar to basal but smaller, with few lobes. Flowering stem glabrescent; hairs mostly appressed to ascending; bracteoles ± linear; fls in pairs. Outer sepals 3–3.5 × c. 2.5 mm, ovate-elliptic; inner sepals narrower, with hyaline margins; hairs short and appressed. Petals c. 4.5 × 3 mm, obovate, pale pink. Mericarps hairy; beak to 12 mm long. Seed c. 2 × 1.2 mm, oblong, reddish brown; dorsal alveolae mostly rectangular, rather shallow.\n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
+    },
+    "lookalikes" : [
+      {
+        "entry" : "solanders-geranium",
+        "howToTell" : "Solander's geranium is a perennial with a taproot to about 2.5 cm across (Flora of New Zealand: turnip-shaped or cylindrical; NZPCN: more like a long tapering parsnip or carrot); its leaves are up to about 7 cm across, cut 3/4–7/8 of the way to the midrib into (5)–7 obovate lobes, the larger lobes with (3)–5–(9) teeth; its long hairs are straight to slightly curved; its flowers are usually paired, with rose-pink petals up to about 7.5 × 4.5 mm. Australasian cranesbill is a perennial with a cylindrical taproot up to about 2 cm across, often divided; its leaves are up to about 9 cm across, cut 3/4–7/8 of the way to the midrib into usually 5–7 obovate lobes, the larger lobes usually with (5)–9 teeth; its flowering stems become almost hairless, the hairs mostly pressed flat or pointing upward; its flowers are paired, with pale pink petals about 4.5 × 3 mm. Flora of New Zealand's key separates Australasian cranesbill from Solander's geranium on three characters: the middle teeth of its leaf lobes are about as long as broad (mostly longer than broad in Solander's geranium); the pale, see-through border of its inner sepals is mostly more than 0.3 mm wide near the tip (mostly less than 0.3 mm); and its seeds are red-brown with rather shallow rectangular pits (red-brown to dark brown, with rather deep rectangular to polygonal pits). Its sepals are mostly elliptic to obovate, against ovate. The lobing does not separate them (both are cut 3/4–7/8 of the way), and both have paired flowers. Solander's geranium's root is recorded as food (Useful Temperate Plants).",
+        "name" : "Solander's geranium",
+        "risk" : "edible",
+        "scientificName" : "Geranium solanderi"
+      },
+      {
+        "entry" : "turnip-rooted-geranium",
+        "howToTell" : "Turnip-rooted geranium is a perennial with a turnip-shaped taproot about 3 cm across; its leaves are up to 5 cm across, cut about 7/8 of the way to the midrib into 5–7 linear lobes, the larger lobes usually with 7 or 9 teeth; its flowering stems usually carry dense backward-pointing hairs; its flowers are usually paired, with white to pink petals about 6 × 4 mm. Australasian cranesbill is a perennial with a cylindrical taproot up to about 2 cm across, often divided; its leaves are up to about 9 cm across, cut 3/4–7/8 of the way to the midrib into usually 5–7 obovate lobes, the larger lobes usually with (5)–9 teeth; its flowering stems become almost hairless, the hairs mostly pressed flat or pointing upward; its flowers are paired, with pale pink petals about 4.5 × 3 mm. Flora of New Zealand's key separates Australasian cranesbill from turnip-rooted geranium on three characters: the middle teeth of its leaf lobes are about as long as broad (mostly longer than broad in turnip-rooted geranium); the pale, see-through border of its inner sepals is mostly more than 0.3 mm wide near the tip (mostly less than 0.3 mm); and its seeds are red-brown with rather shallow rectangular pits (red-brown to dark brown, with rather deep rectangular to polygonal pits). Its sepals are mostly elliptic to obovate, against ovate. The lobing does not separate them (both are cut 3/4–7/8 of the way), and both have paired flowers. No source read records turnip-rooted geranium as food, and it is Threatened – Nationally Vulnerable (NZTCS 2023).",
+        "name" : "Turnip-rooted geranium",
+        "risk" : "unknown",
+        "scientificName" : "Geranium retrorsum"
+      },
+      {
+        "entry" : "cinquefoil-geranium",
+        "howToTell" : "Cinquefoil geranium is a perennial with slender stems that lie flat or spread, usually with many branches; its basal leaves rarely last through the growing season; its leaves are usually up to 3–(4) cm across, cut 3/4–7/8 of the way into (3)–5 lobes, the larger lobes usually with 2 secondary lobes; its flowers are single or sometimes two, on thread-like stalks usually 1–3–(4) cm long, with pink petals 4–5 mm long. Australasian cranesbill is a perennial with a cylindrical taproot up to about 2 cm across, often divided; its leaves are up to about 9 cm across, cut 3/4–7/8 of the way to the midrib into usually 5–7 obovate lobes, the larger lobes usually with (5)–9 teeth; its flowering stems become almost hairless, the hairs mostly pressed flat or pointing upward; its flowers are paired, with pale pink petals about 4.5 × 3 mm. Flora of New Zealand's key separates cinquefoil geranium from Australasian cranesbill on the basal leaves, nearly always less than 3 cm across in cinquefoil geranium and mostly more than 3 cm in Australasian cranesbill, and on the flowers, generally single in cinquefoil geranium and usually in pairs in Australasian cranesbill. Cinquefoil geranium's leaves can reach 4 cm and its flowers are sometimes paired, so a small plant of Australasian cranesbill overlaps on both counts; its slender, flat or spreading, much branched stems are the other sign. Petal colour does not separate them. Cinquefoil geranium's root is recorded as food (Useful Temperate Plants).",
+        "name" : "Cinquefoil geranium",
+        "risk" : "edible",
+        "scientificName" : "Geranium potentilloides"
+      },
+      {
+        "entry" : "cut-leaved-cranesbill",
+        "howToTell" : "Cut-leaved cranesbill is a hairy annual with a large basal rosette; its leaves are 3.5–8 × 3.5–9 cm, cut almost to the leaf stalk into 5–7 lobes that are lobed again, ending in linear or narrow-oblong pointed segments; its flower stalks carry plain hairs and often pink-tipped glandular hairs; its sepals end in an awn (1)–2–3 mm long; its petals are pink or rose, 3.5–5 mm long and notched, its anthers blue, and its fruit segments (mericarps) carry white spreading hairs. Australasian cranesbill is a perennial with a cylindrical taproot up to about 2 cm across, often divided; its leaves are up to about 9 cm across, cut 3/4–7/8 of the way to the midrib into usually 5–7 obovate lobes, the larger lobes usually with (5)–9 teeth; its flowering stems become almost hairless, the hairs mostly pressed flat or pointing upward; its flowers are paired, with pale pink petals about 4.5 × 3 mm. Flora of New Zealand's key separates them at its first step: cut-leaved cranesbill is an annual, usually with a thin fibrous taproot and glandular hairs prominent in the flower clusters, while Australasian cranesbill is a perennial with a rather stout to tuberous rootstock and no, very few, or short and inconspicuous glandular hairs on the flower clusters. Cut-leaved cranesbill's leaves are cut almost to the leaf stalk into linear segments; Australasian cranesbill's are cut 3/4–7/8 of the way into broader lobes. Both have pink petals. Older floras placed Australasian cranesbill under Geranium dissectum (Flora of New Zealand Online cites Allan's 1961 Flora under it as Geranium australe and Geranium dissectum var. glabratum Hook.f.), so older records may use that name. Cut-leaved cranesbill's root is recorded as a famine food (Useful Temperate Plants).",
+        "name" : "Cut-leaved cranesbill",
+        "risk" : "edible",
+        "scientificName" : "Geranium dissectum"
+      }
+    ],
+    "maoriName" : "Pinakitere",
+    "months" : [
+
+    ],
+    "needsBookSource" : false,
+    "origin" : "native",
+    "photos" : [
+      {
+        "caption" : "Leaves",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "australasian-cranesbill-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/200324198"
+      },
+      {
+        "caption" : "Leaf and flower buds",
+        "credit" : "(c) Angus Campbell, some rights reserved (CC BY)",
+        "fileName" : "australasian-cranesbill-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/347708670"
+      },
+      {
+        "caption" : "Flower among leaves",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "australasian-cranesbill-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/3741000"
+      },
+      {
+        "caption" : "Flower",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY)",
+        "fileName" : "australasian-cranesbill-6.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/150896962"
+      }
+    ],
+    "preparation" : {
+      "sources" : [
+        "Australian Plants Society NSW, 'Geranium homeanum — Rainforest Crane's-bill' (Clarke & Howes 2024, all rights reserved — restated)"
+      ],
+      "text" : "The only method in the sources read is Australian: the large fleshy roots were roasted (Australian Plants Society NSW)."
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Geranium homeanum",
+    "sources" : [
+      "Entry added 23/10/2026 when the catch-all 'Geranium species' (Geranium spp.; Langlands, Foraging New Zealand, 2024) was split and deleted (owner, 23/10/2026: 'Split and delete', then 'do a eb serach and see what geranium species can be found in nz', then 'yeah and include only edible ones unless they are needed for lookalikes', then /goal 'fill up anything you can while following our rules for those species'). Langlands' text for the genus is unread, so whether the book names this species is unconfirmed; the stub's months [1, 2, 5, 9, 10, 11, 12] dated no species and were dropped. Presence: iNaturalist New Zealand holds 227 research-grade wild records (258 wild of all grades) on 23/10/2026.",
+      "Name: 'Australasian cranesbill' from iNaturalist ('Australasian Crane's-bill'). Ngā Rauropi Whakaoranga's 'cut-leaved cranesbill' is not used: Flora of New Zealand and NZPCN give that name to Geranium dissectum. maoriName 'Pinakitere' from Ngā Rauropi Whakaoranga ('pinakitere (in Williams 1971)'); it also lists matua-kūmara (Taylor 1870), which Te Aka gives to Geranium solanderi.",
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Geranium homeanum' factsheet (description from Webb et al. 1988). CC BY 3.0 NZ. Retrieved 23/10/2026. https://www.nzflora.info/factsheet/Taxon/Geranium-homeanum.html — quoted verbatim.",
+      "Summary and habitat: Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988: Flora of New Zealand vol. IV, Naturalised Pteridophytes, Gymnosperms, Dicotyledons (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0), 'Geranium homeanum'. Retrieved 23/10/2026. https://floraseries.landcareresearch.co.nz/taxa/c38d5b1e-b2ee-49fd-9e68-1397dc0d8beb — quoted verbatim. 'In New Zealand (Flora of New Zealand): ' is my label. There is no English Wikipedia article. Habitat tags coastal, grassland, disturbed from 'coastal', 'grasslands', 'waste places'.",
+      "Edible parts: Ngā Rauropi Whakaoranga (Manaaki Whenua – Landcare Research), 'Geranium homeanum. Pinakitere. Cut-leaved cranesbill.', Food section. Data CC BY 4.0. Retrieved 23/10/2026. https://rauropiwhakaoranga.landcareresearch.co.nz/names/084a3791-4110-4b83-aecf-96ab96427b45 — quoted verbatim. The record lists Geranium australe as a previous name; Colenso wrote in 1868, before the modern split of these species, so the link to G. homeanum is the database's. Useful Temperate Plants and PFAF have no page. Second line: Australian Plants Society NSW, Dan Clarke and Jeff Howes, 'Geranium homeanum — Rainforest Crane's-bill', 17/01/2024, 'Other information': 'The large fleshy roots were roasted and eaten by First Nation People.' All rights reserved — restated, not quoted; the page cites no source for it. Its wording matches Flood 1980's 'Large fleshy roots were roasted' that the Australian National Botanic Gardens gives for Geranium solanderi, so it may be that record re-filed; treat it as Australian, not New Zealand, use. Retrieved 23/10/2026. https://resources.austplants.com.au/plant/geranium-homeanumrainforest-cranes-bill/ (link from the owner, 23/10/2026).",
+      "Preparation: Australian Plants Society NSW (above, restated): roasted. No New Zealand source gives a method.",
+      "Origin and harvest ethics: NZPCN gives biostatus Native and the 2023 assessment 'Not Threatened (qualifier SO)' (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43; NZTCS data CC BY 4.0). https://www.nzpcn.org.nz/flora/species/geranium-homeanum/ — Flora of New Zealand Online: Indigenous (Non-endemic). harvestEthics is the owner's sentence for Not Threatened species (owner, 17/10/2026).",
+      "Warnings: none found; the lookalike cards satisfy the field.",
+      "Lookalike cards: written for this guide 23/10/2026 from the Flora of New Zealand vol. IV key to Geranium (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/20ca5ec6-fafe-4592-9d67-3d7491229fcc) and the Flora of New Zealand descriptions of both species in each pair; NZPCN's 'Similar taxa' notes (all rights reserved, facts restated) on the Solander's / turnip-rooted pair. Every figure in a card appears in a source for the species it describes.",
+      "Photos (attached by the assistant 23/10/2026; the owner may cut): -1 leaves (obs 200324198, Chatham Islands, 2024/02/12, CC0); -4 leaf and flower buds (obs 347708670, Otitori Bay Rd at Park Rd, 2026-04-06, CC BY); -5 flower among leaves (obs 3741000, Auckland, 2016/07/25, CC0); -6 flower (obs 150896962, Catleys Campsite, 2023/01/07, CC BY). Every observation checked by the iNaturalist API 23/10/2026 (taxon, research grade, wild, New Zealand, photo id) and every frame by eye against its caption; legacy naturewatch.org.nz links were replaced by the iNaturalist observation that holds the same photo. Rejected from the staged eight: -3 and -7 (large white flowers, against Flora of New Zealand's 'pale pink', c. 4.5 mm petals), -2 and -8 (unclear).",
+      "Other links from the owner, 23/10/2026, read and not used on the page: NZPCN (https://www.nzpcn.org.nz/flora/species/geranium-homeanum/) adds nothing beyond the status already cited (regionally, Wellington 2025 'Regionally Threatened – Regionally Critical'); BiotaNZ (https://biotanz.landcareresearch.co.nz/scientific-names/c06a30ba-4c2f-4286-b36b-85398efd319e) confirms Pinakitere and lists Geranium australe Nees, G. dissectum var. glabratum Hook.f. and G. parviflorum Willd. as synonyms; NZ Native Plants (https://www.nativeplants.nz/geranium-homeanum.html, all rights reserved, no sources) gives flowers 'from September to April', which dates flowers, not roots, so months stay owed; PlantNET NSW (https://plantnet.rbgsyd.nsw.gov.au/cgi-bin/NSWfl.pl?page=nswfl&lvl=sp&name=Geranium~homeanum, Harden 1992) describes the Australian plant (sclerophyll forest and rainforest margins, usually damper sites) and is not used for New Zealand habitat or identification. NZ Lifestyle Block's 'How to cook with scented geraniums' (Jenny Somervell, https://ourwayoflife.co.nz/how-to-cook-with-scented-geraniums-plus-rose-cream-rose-crumble-and-rose-sugar-recipes/) and Pennard Plants' 'A selection of Scented Geranium Recipes' are about Pelargonium, not Geranium, and are not used here.",
+      "Months search, 23/10/2026 (owner: 'find about the months', then 'dig deeper surely there are some resources'), nothing found that dates the root: Colenso 1868 ('On the Maori races of New Zealand', Trans. NZ Inst. 1, public domain; read in I. St George's collected Colenso, https://onadmiralroad.co.nz/wp-content/uploads/2020/01/WIBTBG-1-1831-to-1884.pdf) — 'in times of great scarcity the roots of the Matuakumara (Geranium dissectum), and of the Ririwaka (Scirpus maritimus) were also eaten.' — no season; his 'Geranium dissectum' is the native plant (Ngā Rauropi Whakaoranga files the record under G. homeanum), not the European weed; Plomley & Cameron 1993, Plant foods of the Tasmanian Aborigines (CC BY-NC-SA 4.0, https://zenodo.org/records/16699932) — Gunn 1841 'native carrot' dug and roasted, no season; Gott 2008, Telopea 12(2) and Gott, 'Koorie use and management of the plains' — Geranium spp. listed as starch 'roots', roots in general 'available virtually year-round', nothing species-level; Greening Australia, Koori Bush Tucker Garden Book — its 'dug up around mid-spring to early summer while the plant was in flower' is about Bulbine bulbosa, not Geranium. Still to read (not online): Crowe, Native Edible Plants of New Zealand; Zola & Gott 1992; Gott 1982. Also searched: Australian Plants Society NSW and the Yarra Ranges plant directory (taproot roasted, no season).",
+      "Months, 23/10/2026 (owner: 'Months still missing on Australasian and cut-leaved cranesbill. find'): left empty (year-round), and the 'Owed: months' note removed. No source read dates when the root is dug — searched again 23/10/2026 (Yarra Ranges plant directory, Australian Plants Society NSW, ANBG, Rainbow & Brown NZ pasture-weed advice, Corteva and Croprotect UK weed biology, Fermanagh BSBI; none gives a digging season for this species). The empty months are the assistant's reading of species-level facts, not a quoted season: the part eaten is the root, and the plant is a perennial herb with a cylindrical taproot (Flora of New Zealand); iNaturalist New Zealand research-grade wild records by month (23/10/2026): {'1': 24, '2': 24, '3': 21, '4': 33, '5': 11, '6': 13, '7': 9, '8': 10, '9': 17, '10': 28, '11': 17, '12': 20}. Gott's genus-level 'available virtually year-round' (Telopea 2008, already read) agrees. Revert to an owed note if a dated record turns up (Crowe 1990, Zola & Gott 1992 and Low 1989 are still unread)."
+    ],
+    "summary" : {
+      "sources" : [
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
+      ],
+      "text" : "In New Zealand (Flora of New Zealand): N.; S.: rare south of Nelson and Marlborough. Also indigenous to Australia.\nIt is mainly found in modified habitats, and so may have greatly increased in frequency during the last 2 centuries. G. homeanum was treated by Allan (1961) as G. australe."
+    },
+    "warnings" : [
+
     ]
   },
   {
@@ -1949,7 +2082,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Black bamboo",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Phyllostachys nigra'"
@@ -5220,6 +5353,136 @@
     ]
   },
   {
+    "caution" : "careRequired",
+    "commonName" : "Cinquefoil geranium",
+    "draft" : false,
+    "edibleParts" : {
+      "sources" : [
+        "Useful Temperate Plants, 'Geranium potentilloides' (CC BY-NC-SA 3.0)"
+      ],
+      "text" : "Root - raw or cooked. Carrot shaped, it is starchy but astringent and distasteful. Probably only the younger less bitter roots are eaten."
+    },
+    "group" : "greens",
+    "habitat" : {
+      "sources" : [
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
+      ],
+      "text" : "Open habitats, grasslands, rough pastures, roadsides, river banks, tracks, scrub, lowland to montane."
+    },
+    "habitats" : [
+      "shrubland",
+      "grassland",
+      "wetland",
+      "disturbed"
+    ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "Be mindful when foraging. Take only what you need."
+    },
+    "id" : "cinquefoil-geranium",
+    "identification" : {
+      "sources" : [
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+      ],
+      "text" : "Perennial herb, with slender or sometimes fairly stout caulorrhiza. Hairs soft, retrorse or antrorse, generally appressed and often short, sometimes spreading. Stems slender, prostrate or spreading, with ± retrorse hairs; branches usually many. Basal lvs rarely persistent through growing season; petioles to 12–(19) cm long; hairs retrorse and dense. Lamina usually to 3–(4) cm diam., reniform to orbicular or broadly ovate, lobed 3/4-⅞ way to midrib; lobes (3)–5, narrowly to broadly obovate-cuneate, obovate-elliptic, obovate-oblong, or oblong, with appressed hairs on both sides or glabrous above, rounded to acute or mucronate at apex; larger lobes usually with 2 ± oblong or elliptic secondary lobes. Cauline lvs smaller, with fewer lobes. Peduncles (with pedicels) usually 1–3–(4) cm long, filiform, with dense, retrorse hairs; bracteoles subulate or linear-subulate; fls 1–(2). Sepals 3–5–(6) × 1–2.5 mm, lanceolate to elliptic, broadly elliptic or ± ovate, usually with green margin, sometimes completely purple; hairs ± spreading, often very short and antrorse towards apex, sometimes few. Petals 4–5 × 2–2.5 mm, broadly obovate, pink. Mericarps 2–3 mm long, with ± dense hairs; beak (6)–7–10 mm long. Seed 1.5–1.9 mm long, oblong, distinctly alveolate.\n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
+    },
+    "lookalikes" : [
+      {
+        "entry" : "solanders-geranium",
+        "howToTell" : "Solander's geranium is a perennial with a taproot to about 2.5 cm across (Flora of New Zealand: turnip-shaped or cylindrical; NZPCN: more like a long tapering parsnip or carrot); its leaves are up to about 7 cm across, cut 3/4–7/8 of the way to the midrib into (5)–7 obovate lobes, the larger lobes with (3)–5–(9) teeth; its long hairs are straight to slightly curved; its flowers are usually paired, with rose-pink petals up to about 7.5 × 4.5 mm. Cinquefoil geranium is a perennial with slender stems that lie flat or spread, usually with many branches; its basal leaves rarely last through the growing season; its leaves are usually up to 3–(4) cm across, cut 3/4–7/8 of the way into (3)–5 lobes, the larger lobes usually with 2 secondary lobes; its flowers are single or sometimes two, on thread-like stalks usually 1–3–(4) cm long, with pink petals 4–5 mm long. Flora of New Zealand's key separates cinquefoil geranium from Solander's geranium on the basal leaves, nearly always less than 3 cm across in cinquefoil geranium and mostly more than 3 cm in Solander's geranium, and on the flowers, generally single in cinquefoil geranium and usually in pairs in Solander's geranium. Cinquefoil geranium's leaves can reach 4 cm and its flowers are sometimes paired, so a small plant of Solander's geranium overlaps on both counts; its slender, flat or spreading, much branched stems are the other sign. Petal colour does not separate them. Solander's geranium's root is recorded as food (Useful Temperate Plants).",
+        "name" : "Solander's geranium",
+        "risk" : "edible",
+        "scientificName" : "Geranium solanderi"
+      },
+      {
+        "entry" : "turnip-rooted-geranium",
+        "howToTell" : "Turnip-rooted geranium is a perennial with a turnip-shaped taproot about 3 cm across; its leaves are up to 5 cm across, cut about 7/8 of the way to the midrib into 5–7 linear lobes, the larger lobes usually with 7 or 9 teeth; its flowering stems usually carry dense backward-pointing hairs; its flowers are usually paired, with white to pink petals about 6 × 4 mm. Cinquefoil geranium is a perennial with slender stems that lie flat or spread, usually with many branches; its basal leaves rarely last through the growing season; its leaves are usually up to 3–(4) cm across, cut 3/4–7/8 of the way into (3)–5 lobes, the larger lobes usually with 2 secondary lobes; its flowers are single or sometimes two, on thread-like stalks usually 1–3–(4) cm long, with pink petals 4–5 mm long. Flora of New Zealand's key separates cinquefoil geranium from turnip-rooted geranium on the basal leaves, nearly always less than 3 cm across in cinquefoil geranium and mostly more than 3 cm in turnip-rooted geranium, and on the flowers, generally single in cinquefoil geranium and usually in pairs in turnip-rooted geranium. Cinquefoil geranium's leaves can reach 4 cm and its flowers are sometimes paired, so a small plant of turnip-rooted geranium overlaps on both counts; its slender, flat or spreading, much branched stems are the other sign. Petal colour does not separate them. No source read records turnip-rooted geranium as food, and it is Threatened – Nationally Vulnerable (NZTCS 2023).",
+        "name" : "Turnip-rooted geranium",
+        "risk" : "unknown",
+        "scientificName" : "Geranium retrorsum"
+      },
+      {
+        "entry" : "australasian-cranesbill",
+        "howToTell" : "Australasian cranesbill is a perennial with a cylindrical taproot up to about 2 cm across, often divided; its leaves are up to about 9 cm across, cut 3/4–7/8 of the way to the midrib into usually 5–7 obovate lobes, the larger lobes usually with (5)–9 teeth; its flowering stems become almost hairless, the hairs mostly pressed flat or pointing upward; its flowers are paired, with pale pink petals about 4.5 × 3 mm. Cinquefoil geranium is a perennial with slender stems that lie flat or spread, usually with many branches; its basal leaves rarely last through the growing season; its leaves are usually up to 3–(4) cm across, cut 3/4–7/8 of the way into (3)–5 lobes, the larger lobes usually with 2 secondary lobes; its flowers are single or sometimes two, on thread-like stalks usually 1–3–(4) cm long, with pink petals 4–5 mm long. Flora of New Zealand's key separates cinquefoil geranium from Australasian cranesbill on the basal leaves, nearly always less than 3 cm across in cinquefoil geranium and mostly more than 3 cm in Australasian cranesbill, and on the flowers, generally single in cinquefoil geranium and usually in pairs in Australasian cranesbill. Cinquefoil geranium's leaves can reach 4 cm and its flowers are sometimes paired, so a small plant of Australasian cranesbill overlaps on both counts; its slender, flat or spreading, much branched stems are the other sign. Petal colour does not separate them. Australasian cranesbill's root is recorded as a famine food (Ngā Rauropi Whakaoranga).",
+        "name" : "Australasian cranesbill",
+        "risk" : "edible",
+        "scientificName" : "Geranium homeanum"
+      }
+    ],
+    "months" : [
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "needsBookSource" : false,
+    "origin" : "native",
+    "photos" : [
+      {
+        "caption" : "Spreading plant",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "cinquefoil-geranium-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/41877491"
+      },
+      {
+        "caption" : "Small leaves on bare ground",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "cinquefoil-geranium-8.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/401782758"
+      },
+      {
+        "caption" : "Close up of leaves",
+        "credit" : "(c) Alice Shanks, some rights reserved (CC BY)",
+        "fileName" : "cinquefoil-geranium-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/18469107"
+      },
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Pieter Pelser, some rights reserved (CC BY)",
+        "fileName" : "cinquefoil-geranium-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/64909781"
+      }
+    ],
+    "preparation" : {
+      "sources" : [
+        "Wikipedia, 'Geranium potentilloides' (CC BY-SA 4.0)"
+      ],
+      "text" : "The starchy roots are known to have been roasted for food by aboriginal Australian people, although it is likely that this was only the less bitter younger roots."
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Geranium potentilloides",
+    "sources" : [
+      "Entry added 23/10/2026 when the catch-all 'Geranium species' (Geranium spp.; Langlands, Foraging New Zealand, 2024) was split and deleted (owner, 23/10/2026: 'Split and delete', then 'do a eb serach and see what geranium species can be found in nz', then 'yeah and include only edible ones unless they are needed for lookalikes', then /goal 'fill up anything you can while following our rules for those species'). Langlands' text for the genus is unread, so whether the book names this species is unconfirmed; the stub's months [1, 2, 5, 9, 10, 11, 12] dated no species and were dropped. Presence: iNaturalist New Zealand holds 49 research-grade wild records (121 wild of all grades) on 23/10/2026.",
+      "Name: 'Cinquefoil geranium' from iNaturalist and Wikipedia (Wikipedia also gives 'Soft Cranesbill').",
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Geranium potentilloides' factsheet (description from Webb et al. 1988). CC BY 3.0 NZ. Retrieved 23/10/2026. https://www.nzflora.info/factsheet/Taxon/Geranium-potentilloides.html — quoted verbatim.",
+      "Summary (first and second lines) and preparation: Wikipedia contributors. 'Geranium potentilloides', Wikipedia, The Free Encyclopedia, revision 1329494645. CC BY-SA 4.0. Retrieved 23/10/2026. https://en.wikipedia.org/wiki/Geranium_potentilloides — quoted verbatim. Cut from the summary: the Tasmanian altitude and Californian sentences. Not used: the Wikipedia description and its habitat paragraph ('prefers damp, shady sites', Australian), which Flora of New Zealand's 'Open habitats' does not match; its first Uses sentence repeats Useful Temperate Plants; its tannin sentence is about 'Some Geranium species'.",
+      "Summary (third line) and habitat: Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988: Flora of New Zealand vol. IV, Naturalised Pteridophytes, Gymnosperms, Dicotyledons (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0), 'Geranium potentilloides'. Retrieved 23/10/2026. https://floraseries.landcareresearch.co.nz/taxa/76ec15d4-b91e-44b4-814f-c49c4c041b6e — quoted verbatim. Habitat tags shrubland, grassland, wetland, disturbed from 'scrub', 'grasslands'/'rough pastures', 'river banks', 'roadsides'.",
+      "Edible parts: Useful Temperate Plants (Ken Fern), 'Geranium potentilloides'. CC BY-NC-SA 3.0. Retrieved 23/10/2026. https://temperate.theferns.info/plant/Geranium+potentilloides — quoted verbatim, reference numbers removed. UTP cites Low, Wild Food Plants of Australia (1989). Known Hazards: 'None known'.",
+      "Origin and harvest ethics: NZPCN gives biostatus Native and the 2023 assessment 'Not Threatened (qualifier SO)' (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43; NZTCS data CC BY 4.0). https://www.nzpcn.org.nz/flora/species/geranium-potentilloides/ — Flora of New Zealand Online: Indigenous (Non-endemic). harvestEthics is the owner's sentence for Not Threatened species (owner, 17/10/2026).",
+      "Warnings: none found (UTP Known Hazards 'None known'); the lookalike cards satisfy the field.",
+      "Lookalike cards: written for this guide 23/10/2026 from the Flora of New Zealand vol. IV key to Geranium (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/20ca5ec6-fafe-4592-9d67-3d7491229fcc) and the Flora of New Zealand descriptions of both species in each pair; NZPCN's 'Similar taxa' notes (all rights reserved, facts restated) on the Solander's / turnip-rooted pair. Every figure in a card appears in a source for the species it describes.",
+      "Photos (now the owner's curation): -2 spreading plant (obs 41877491, 2020-04-11, CC BY); -8 small leaves on bare ground (obs 401782758, Squally Cove 7193, 2026-09-20, CC0); -1 close up of leaves (obs 18469107, Ngaroma Scenic Reserve, Conway River, 2018-11-16, CC BY); -4 close up of flower (obs 64909781, Kaikoura District, 2020-11-14, photo CC BY). -2 and -8 were attached by the assistant 23/10/2026; -1 and -4 were restored by the owner. All four observations checked by the iNaturalist API (taxon Geranium potentilloides, research grade, wild, New Zealand; -1 and -4 re-checked 23/10/2026).",
+      "Months: Australian Plants Society NSW, 'Geranium potentilloides — Soft Cranesbill, Cinquefoil Geranium' (all rights reserved — restated, not quoted). Retrieved 23/10/2026. https://resources.austplants.com.au/plant/geranium-potentilloidessoft-cranesbill-cinquefoil-geranium/ — it says First Nations people roasted the tap root and that the roots are available in summer and autumn, citing Isaacs, Bush Food – Aboriginal Food and Herbal Medicine (Weldons, 1987), p. 224. Months December–May = that Australian, species-specific 'summer and autumn' read as the New Zealand summer and autumn, as on Solander's geranium; no New Zealand source dates the root (owner, 23/10/2026: 'yes').",
+      "Other links from the owner, 23/10/2026, read and not used on the page: Wikipedia is the revision already cited (1329494645); the Flora of New Zealand Online factsheet is the identification source already cited; NZPCN (https://www.nzpcn.org.nz/flora/species/geranium-potentilloides/) adds only the synonym Geranium microphyllum var. obtusatum G.Simpson & J.S.Thomson and regional statuses (Auckland and Otago 2025 'Regionally Data Deficient', Wellington 2025 'Regionally Not Threatened'); PlantNET NSW (Harden, https://plantnet.rbgsyd.nsw.gov.au/cgi-bin/NSWfl.pl?page=nswfl&lvl=sp&name=Geranium~potentilloides; flowering April–October, woodland and grassland) and VicFlora (Smith 1999, updated Stajsic 2019, https://vicflora.rbg.vic.gov.au/flora/taxon/40cb2d0f-5b9d-49f1-8fd2-dac1daa5446e; petals white to pink, 4–8.5 mm) describe the Australian plant and are not used for New Zealand identification or habitat; NZ Native Plants (https://www.nativeplants.nz/geranium-potentilloides.html, all rights reserved, no sources) says 'No Māori name or traditional Māori use is recorded' and gives flowers 'from October to March', which dates flowers, not roots, so it is not used for months. None of them gives a food use beyond the Australian root record already on the page."
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Geranium potentilloides' (CC BY-SA 4.0)",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
+      ],
+      "text" : "Geranium potentilloides, belongs to the family Geraniaceae, and is a small prostrate perennial herb that can grow up to 60cm high. The species is commonly referred to as Soft Cranesbill or Cinquefoil geranium.\nGeranium potentilloides is native to the south-east of Australia, New Zealand and Indonesia.\nIn New Zealand (Flora of New Zealand): N.: Auckland southwards, widespread and common; S.: Nelson, Marlborough, and collected once between Akatore and Glenledi (S. Otago)."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
     "caution" : "straightforward",
     "commonName" : "Cleavers",
     "draft" : false,
@@ -6827,6 +7090,132 @@
     ]
   },
   {
+    "caution" : "careRequired",
+    "commonName" : "Cut-leaved cranesbill",
+    "draft" : false,
+    "edibleParts" : {
+      "sources" : [
+        "Useful Temperate Plants, 'Geranium dissectum' (CC BY-NC-SA 3.0)"
+      ],
+      "text" : "Root - cooked. A famine food, used when all else fails."
+    },
+    "group" : "greens",
+    "habitat" : {
+      "sources" : [
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
+      ],
+      "text" : "Roadsides, waste places around buildings, rough pasture, crops."
+    },
+    "habitats" : [
+      "grassland",
+      "disturbed"
+    ],
+    "id" : "cut-leaved-cranesbill",
+    "identification" : {
+      "sources" : [
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+      ],
+      "text" : "Hairy, annual, taprooted herb, with large basal lf rosette and ± ascending branches to c. 50 cm long. Stems ± densely hairy with the hairs ± retrorse. Petioles to c. 20 cm long, longest in rosette lvs, with hairs as on stems. Lamina 3.5–8 × 3.5–9 cm, orbicular or suborbicular, with appressed hairs, especially on veins below; lobes 5–7, extending almost to the petiole, again pinnately lobed or 3-lobed, especially in rosette lvs; ultimate segments linear or narrow-oblong, acute. Fls usually in pairs; peduncles usually > pedicels, both densely hairy with eglandular and often pink-tipped glandular hairs. Sepals 5–8 mm long (excluding awn), ovate, densely clothed in long, white, eglandular and short glandular hairs, aristate with awn (1)–2–3 mm long. Petals 3.5–5 mm long, obovate, pink or rose, emarginate; claw short. Filaments whitish; anthers blue. Mericarps 2.5–3 mm long, with white, patent hairs. Seeds prominently isobilaterally alveolate.\n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
+    },
+    "lookalikes" : [
+      {
+        "entry" : "doves-foot-cranesbill",
+        "howToTell" : "Dove's-foot cranesbill is an annual densely covered in short or long hairs; its leaves are 1.5–5 × 1.5–6 cm, kidney-shaped to round, cut about 3/4 of the way to the leaf stalk into 5–9 lobes, usually with 3 rounded secondary lobes towards the tip; its sepals are 2–3.5 mm long and end in a short point; its petals are rosy pink or pink, (3)–4–6 mm long and deeply notched, its anthers mauve, and its fruit segments (mericarps) about 1.5 mm long, hairless, with prominent pale cross-ridges. Cut-leaved cranesbill is a hairy annual with a large basal rosette; its leaves are 3.5–8 × 3.5–9 cm, cut almost to the leaf stalk into 5–7 lobes that are lobed again, ending in linear or narrow-oblong pointed segments; its flower stalks carry plain hairs and often pink-tipped glandular hairs; its sepals end in an awn (1)–2–3 mm long; its petals are pink or rose, 3.5–5 mm long and notched, its anthers blue, and its fruit segments (mericarps) carry white spreading hairs. Flora of New Zealand's key separates them on the fruit: dove's-foot cranesbill's fruit segments (mericarps) are hairless on the outer face and ridged, cut-leaved cranesbill's hairy and smooth. Without fruit, use the leaves: cut-leaved cranesbill's are divided nearly to the base into linear segments, dove's-foot cranesbill's to about 3/4 of the way into broader lobes. The anthers differ too (blue against mauve). Both are hairy annuals with a basal rosette and small, notched pink petals, and both have glandular hairs in the flower clusters, so none of those separates them. Dove's-foot cranesbill's fruits are recorded as eaten by young people in Spain as a nibble (CONECT-e).",
+        "name" : "Dove's-foot cranesbill",
+        "risk" : "edible",
+        "scientificName" : "Geranium molle"
+      },
+      {
+        "entry" : "solanders-geranium",
+        "howToTell" : "Solander's geranium is a perennial with a taproot to about 2.5 cm across (Flora of New Zealand: turnip-shaped or cylindrical; NZPCN: more like a long tapering parsnip or carrot); its leaves are up to about 7 cm across, cut 3/4–7/8 of the way to the midrib into (5)–7 obovate lobes, the larger lobes with (3)–5–(9) teeth; its long hairs are straight to slightly curved; its flowers are usually paired, with rose-pink petals up to about 7.5 × 4.5 mm. Cut-leaved cranesbill is a hairy annual with a large basal rosette; its leaves are 3.5–8 × 3.5–9 cm, cut almost to the leaf stalk into 5–7 lobes that are lobed again, ending in linear or narrow-oblong pointed segments; its flower stalks carry plain hairs and often pink-tipped glandular hairs; its sepals end in an awn (1)–2–3 mm long; its petals are pink or rose, 3.5–5 mm long and notched, its anthers blue, and its fruit segments (mericarps) carry white spreading hairs. Flora of New Zealand's key separates them at its first step: cut-leaved cranesbill is an annual, usually with a thin fibrous taproot and glandular hairs prominent in the flower clusters, while Solander's geranium is a perennial with a rather stout to tuberous rootstock and no, very few, or short and inconspicuous glandular hairs on the flower clusters. Cut-leaved cranesbill's leaves are cut almost to the leaf stalk into linear segments; Solander's geranium's are cut 3/4–7/8 of the way into broader lobes. Both have pink petals. Older floras placed Solander's geranium under Geranium dissectum (NZPCN lists Geranium dissectum var. pilosum Hook.f. and var. australe Benth. among its synonyms), so older records may use that name. Solander's geranium's root is recorded as food (Useful Temperate Plants).",
+        "name" : "Solander's geranium",
+        "risk" : "edible",
+        "scientificName" : "Geranium solanderi"
+      },
+      {
+        "entry" : "australasian-cranesbill",
+        "howToTell" : "Australasian cranesbill is a perennial with a cylindrical taproot up to about 2 cm across, often divided; its leaves are up to about 9 cm across, cut 3/4–7/8 of the way to the midrib into usually 5–7 obovate lobes, the larger lobes usually with (5)–9 teeth; its flowering stems become almost hairless, the hairs mostly pressed flat or pointing upward; its flowers are paired, with pale pink petals about 4.5 × 3 mm. Cut-leaved cranesbill is a hairy annual with a large basal rosette; its leaves are 3.5–8 × 3.5–9 cm, cut almost to the leaf stalk into 5–7 lobes that are lobed again, ending in linear or narrow-oblong pointed segments; its flower stalks carry plain hairs and often pink-tipped glandular hairs; its sepals end in an awn (1)–2–3 mm long; its petals are pink or rose, 3.5–5 mm long and notched, its anthers blue, and its fruit segments (mericarps) carry white spreading hairs. Flora of New Zealand's key separates them at its first step: cut-leaved cranesbill is an annual, usually with a thin fibrous taproot and glandular hairs prominent in the flower clusters, while Australasian cranesbill is a perennial with a rather stout to tuberous rootstock and no, very few, or short and inconspicuous glandular hairs on the flower clusters. Cut-leaved cranesbill's leaves are cut almost to the leaf stalk into linear segments; Australasian cranesbill's are cut 3/4–7/8 of the way into broader lobes. Both have pink petals. Older floras placed Australasian cranesbill under Geranium dissectum (Flora of New Zealand Online cites Allan's 1961 Flora under it as Geranium australe and Geranium dissectum var. glabratum Hook.f.), so older records may use that name. Australasian cranesbill's root is recorded as a famine food (Ngā Rauropi Whakaoranga).",
+        "name" : "Australasian cranesbill",
+        "risk" : "edible",
+        "scientificName" : "Geranium homeanum"
+      },
+      {
+        "entry" : "small-flowered-cranesbill",
+        "howToTell" : "Small-flowered cranesbill is a taprooted annual densely clothed in short hairs; its leaves are 1–3.5 × 1.5–4.5 cm, kidney-shaped to almost round, cut 3/4 of the way to the leaf stalk into 5–9 lobes that are themselves 2–3-lobed; its sepals are 2–3 mm long (to about 4 mm in fruit) and end in a short point; its petals are pale mauve, 2.5–3.5 mm long and notched; only 5–6 of its 10 stamens carry anthers (mauvish brown); and its fruit segments (mericarps) are 1.5–2 mm long, densely clothed in hairs pressed flat on the outer face. Cut-leaved cranesbill is a hairy annual with a large basal rosette; its leaves are 3.5–8 × 3.5–9 cm, cut almost to the leaf stalk into 5–7 lobes that are lobed again, ending in linear or narrow-oblong pointed segments; its flower stalks carry plain hairs and often pink-tipped glandular hairs; its sepals end in an awn (1)–2–3 mm long; its petals are pink or rose, 3.5–5 mm long and notched, its anthers blue, and its fruit segments (mericarps) carry white spreading hairs. Flora of New Zealand's key separates them on the leaves and stamens: cut-leaved cranesbill's lower leaves are divided nearly to the base into linear segments, its sepals end in an awn and all 10 stamens are fertile; small-flowered cranesbill's are divided to about 3/4 of the way into oblong to ovate segments, its sepals end in a point under 0.5 mm, and 4–5 of its 10 stamens lack anthers. Both have hairy fruit segments (mericarps), so the fruit alone does not separate them, though cut-leaved cranesbill's hairs spread and small-flowered cranesbill's are pressed flat. Its petals are pink or rose and 3.5–5 mm long against small-flowered cranesbill's pale mauve 2.5–3.5 mm, and its anthers blue against mauvish brown. No source read records small-flowered cranesbill as food (Plants For A Future and Useful Temperate Plants: none known).",
+        "name" : "Small-flowered cranesbill",
+        "risk" : "unknown",
+        "scientificName" : "Geranium pusillum"
+      }
+    ],
+    "months" : [
+
+    ],
+    "needsBookSource" : false,
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Leaf cut into narrow segments",
+        "credit" : "(c) Angus Campbell, some rights reserved (CC BY)",
+        "fileName" : "cut-leaved-cranesbill-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/347745387"
+      },
+      {
+        "caption" : "Leaf",
+        "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
+        "fileName" : "cut-leaved-cranesbill-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/8151401"
+      },
+      {
+        "caption" : "Rosette of leaves",
+        "credit" : "(c) kiwialli, some rights reserved (CC BY)",
+        "fileName" : "cut-leaved-cranesbill-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/323770542"
+      },
+      {
+        "caption" : "Close up flower",
+        "credit" : "(c) Murray NZ, some rights reserved (CC BY)",
+        "fileName" : "cut-leaved-cranesbill-4.heic",
+        "sourceURL" : "http://naturewatch.org.nz/observations/4460244"
+      }
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : "No source gives a method written for this species."
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Geranium dissectum",
+    "sources" : [
+      "Entry added 23/10/2026 when the catch-all 'Geranium species' (Geranium spp.; Langlands, Foraging New Zealand, 2024) was split and deleted (owner, 23/10/2026: 'Split and delete', then 'do a eb serach and see what geranium species can be found in nz', then 'yeah and include only edible ones unless they are needed for lookalikes', then /goal 'fill up anything you can while following our rules for those species'). Langlands' text for the genus is unread, so whether the book names this species is unconfirmed; the stub's months [1, 2, 5, 9, 10, 11, 12] dated no species and were dropped. Presence: iNaturalist New Zealand holds 274 research-grade wild records (318 wild of all grades) on 23/10/2026.",
+      "Name: 'Cut-leaved cranesbill' from Flora of New Zealand vol. IV and NZPCN.",
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Geranium dissectum' factsheet (description from Webb et al. 1988). CC BY 3.0 NZ. Retrieved 23/10/2026. https://www.nzflora.info/factsheet/Taxon/Geranium-dissectum.html — quoted verbatim.",
+      "Summary (first and second lines): Wikipedia contributors. 'Geranium dissectum', Wikipedia, The Free Encyclopedia, revision 1260156748. CC BY-SA 4.0. Retrieved 23/10/2026. https://en.wikipedia.org/wiki/Geranium_dissectum — quoted verbatim. Cut: 'where it is known as the cutleaf geranium' (North America) and the hemp-seed germination sentence.",
+      "Summary (third line) and habitat: Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988: Flora of New Zealand vol. IV, Naturalised Pteridophytes, Gymnosperms, Dicotyledons (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0), 'Geranium dissectum'. Retrieved 23/10/2026. https://floraseries.landcareresearch.co.nz/taxa/51307c5d-b857-48c0-97dc-28a9f9ccdb09 — quoted verbatim. Year naturalised 1940 (Flora; NZPCN: 'Probably accidentally in grass seed from Europe'). Habitat tags grassland, disturbed from 'rough pasture', 'Roadsides'/'waste places'.",
+      "Edible parts: Useful Temperate Plants (Ken Fern), 'Geranium dissectum'. CC BY-NC-SA 3.0. Retrieved 23/10/2026. https://temperate.theferns.info/plant/Geranium+dissectum — quoted verbatim, reference numbers removed. UTP cites Kunkel, Plants for Human Consumption (1984). Not used: the medicinal section. Known Hazards: 'None known'.",
+      "Preparation: no source read gives a method beyond 'cooked'.",
+      "Origin checked 23/10/2026: no Geranium on DOC's 2024 environmental weed list (SfC 340) or in the PCE 2021 regional pest plan appendix; NZPCN and Flora of New Zealand Online: Exotic. Origin introduced.",
+      "Warnings: none found (UTP Known Hazards 'None known'); the lookalike cards satisfy the field.",
+      "Lookalike cards: written for this guide 23/10/2026 from the Flora of New Zealand vol. IV key to Geranium (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/20ca5ec6-fafe-4592-9d67-3d7491229fcc) and the Flora of New Zealand descriptions of both species in each pair; NZPCN's 'Similar taxa' notes (all rights reserved, facts restated) on the Solander's / turnip-rooted pair. Every figure in a card appears in a source for the species it describes. The native pairs rest also on the old synonymy (NZPCN for G. solanderi; Flora of New Zealand Online bibliography, Allan 1961, for G. homeanum).",
+      "Photos (the owner's curated set, 23/10/2026): -1 leaf cut into narrow segments (obs 347745387, Angus Campbell, Margate Road, Blockhouse Bay, 2026-04-06, CC BY); -3 leaf (obs 8151401, Jon Sullivan, Saint Peter's College, Cambridge, 2017-09-28, CC BY); -5 rosette of leaves (obs 323770542, kiwialli, Mākara, 2025-10-24, CC BY); -4 close up of flower (obs 4460244, Murray Dawson, Auckland, 2016-10-26, CC BY). -1, -3 and -5 were attached by the assistant; the owner replaced -8 with -4. Each checked by the iNaturalist API 23/10/2026: Geranium dissectum, research grade, wild, New Zealand.",
+      "Months search, 23/10/2026 (owner: 'find about the months', then 'dig deeper surely there are some resources'), nothing found that dates the root: Colenso 1868 ('On the Maori races of New Zealand', Trans. NZ Inst. 1, public domain; read in I. St George's collected Colenso, https://onadmiralroad.co.nz/wp-content/uploads/2020/01/WIBTBG-1-1831-to-1884.pdf) — 'in times of great scarcity the roots of the Matuakumara (Geranium dissectum), and of the Ririwaka (Scirpus maritimus) were also eaten.' — no season; his 'Geranium dissectum' is the native plant (Ngā Rauropi Whakaoranga files the record under G. homeanum), not the European weed; Plomley & Cameron 1993, Plant foods of the Tasmanian Aborigines (CC BY-NC-SA 4.0, https://zenodo.org/records/16699932) — Gunn 1841 'native carrot' dug and roasted, no season; Gott 2008, Telopea 12(2) and Gott, 'Koorie use and management of the plains' — Geranium spp. listed as starch 'roots', roots in general 'available virtually year-round', nothing species-level; Greening Australia, Koori Bush Tucker Garden Book — its 'dug up around mid-spring to early summer while the plant was in flower' is about Bulbine bulbosa, not Geranium. Still to read (not online): Crowe, Native Edible Plants of New Zealand; Zola & Gott 1992; Gott 1982. Also searched: French and German sources (Botaliger 'La racine serait comestible', uncited; others 'no food value'); the only harvest timing found is Grieve's A Modern Herbal, for medicine (roots as the plant comes into flower), not food.",
+      "Lookalike card to small-flowered cranesbill (23/10/2026): from the Flora of New Zealand vol. IV key to Geranium (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/20ca5ec6-fafe-4592-9d67-3d7491229fcc), couplet 7 (leaves divided nearly to base with linear segments, sepal awn, all 10 stamens fertile, against divided c. 3/4 way with oblong to ovate segments, mucro < 0.5 mm, 4–5 stamens without anthers), and both Flora of New Zealand Online descriptions (mericarp hairs spreading against appressed; petals and anthers). The card's '0.8 mm' awn in the key is not quoted, because the description gives (1)–2–3 mm.",
+      "Months, 23/10/2026 (owner: 'Months still missing on Australasian and cut-leaved cranesbill. find'): left empty (year-round), and the 'Owed: months' note removed. No source read dates when the root is dug — searched again 23/10/2026 (Yarra Ranges plant directory, Australian Plants Society NSW, ANBG, Rainbow & Brown NZ pasture-weed advice, Corteva and Croprotect UK weed biology, Fermanagh BSBI; none gives a digging season for this species). The empty months are the assistant's reading of species-level facts, not a quoted season: the part eaten is the root, and the plant is a annual, but iNaturalist New Zealand holds wild plants for every month, including ones annotated as not flowering from April to September, so plants of overlapping generations are present all year; iNaturalist New Zealand research-grade wild records by month (23/10/2026): {'1': 42, '2': 32, '3': 29, '4': 60, '5': 22, '6': 20, '7': 28, '8': 32, '9': 63, '10': 107, '11': 110, '12': 61}. Gott's genus-level 'available virtually year-round' (Telopea 2008, already read) agrees. Revert to an owed note if a dated record turns up (Crowe 1990, Zola & Gott 1992 and Low 1989 are still unread)."
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Geranium dissectum' (CC BY-SA 4.0)",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
+      ],
+      "text" : "Geranium dissectum or cut-leaved crane's-bill is a plant species of the genus Geranium. It is native to Europe.\nIt can be found on other continents as well, in some instances as an introduced species.\nIn New Zealand (Flora of New Zealand): N.: commonest from Taranaki northwards; S.: Nelson, Marlborough, Canterbury (at least S. to Ashburton); K. (Raoul, but not collected recently), Ch. G. dissectum has recently become a prominent weed of arable land in N. and E. South Id."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
     "caution" : "straightforward",
     "commonName" : "Dandelion",
     "draft" : false,
@@ -7544,24 +7933,27 @@
   {
     "caution" : "careRequired",
     "commonName" : "Dove's-foot cranesbill",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "CONECT-e, 'Geranium molle — Usos tradicionales' (CC BY-SA 4.0) — translated from Spanish"
       ],
-      "text" : ""
+      "text" : "Fruits, as a nibble. In Spain, young people picked the fruits and ate them as a treat or to pass the time; they were gathered in spring (CONECT-e, translated)."
     },
     "group" : "greens",
     "habitat" : {
       "sources" : [
-        "Wikipedia, 'Geranium molle' (CC BY-SA 4.0) — units converted to metric"
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)",
+        "New Zealand Plant Conservation Network (restated)"
       ],
-      "text" : "It is found in dry meadows, hedges, banks and forest edges. It prefers sunny places on sandy and relatively dry soils,  at an altitude of 0–1,000 metres above sea level."
+      "text" : "Waste places, roadsides, riverbanks, open pastures, cultivated ground.\nIn New Zealand: a common weed of waste ground and grassland, and of open places in forest from sea level up to montane levels (NZPCN, restated)."
     },
     "habitats" : [
       "forest",
-      "shrubland",
-      "grassland"
+      "grassland",
+      "wetland",
+      "urban",
+      "disturbed"
     ],
     "id" : "doves-foot-cranesbill",
     "identification" : {
@@ -7571,8 +7963,22 @@
       "text" : "Taprooted, annual herb, with basal rosette of lvs, densely covered in short or long hairs.  Stems decumbent or ± ascending, pinkish, to  c. 50 cm long. Petiole of rosette and lower cauline lvs to 14 cm long, densely covered in patent white hairs.  Lamina palmately lobed, 1.5–5 × 1.5–6 cm, reniform to orbicular, densely covered in long white hairs;  lobes 5–9, extending to  c. 3/4 way to petiole, usually with 3 oblong to obovate, obtuse to rounded, secondary lobes towards apex.  Upper lvs smaller and simpler with shorter petioles.  Fls numerous, usually paired;  peduncles with dense, long, white, eglandular and short glandular hairs;  pedicels similar but often < peduncles and curving upwards after flowering.  Sepals 2–3.5 mm long, ovate, with hairs as on pedicels, mucronate.  Petals (3)–4–6 mm long, obovate, rosy pink or pink, deeply emarginate; claw very short.  Filaments whitish;  anthers mauve. Mericarps  c. 1.5 mm long, broad, glabrous, with prominent pale transverse ridges.  Seeds smooth.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "cut-leaved-cranesbill",
+        "howToTell" : "Cut-leaved cranesbill is a hairy annual with a large basal rosette; its leaves are 3.5–8 × 3.5–9 cm, cut almost to the leaf stalk into 5–7 lobes that are lobed again, ending in linear or narrow-oblong pointed segments; its flower stalks carry plain hairs and often pink-tipped glandular hairs; its sepals end in an awn (1)–2–3 mm long; its petals are pink or rose, 3.5–5 mm long and notched, its anthers blue, and its fruit segments (mericarps) carry white spreading hairs. Dove's-foot cranesbill is an annual densely covered in short or long hairs; its leaves are 1.5–5 × 1.5–6 cm, kidney-shaped to round, cut about 3/4 of the way to the leaf stalk into 5–9 lobes, usually with 3 rounded secondary lobes towards the tip; its sepals are 2–3.5 mm long and end in a short point; its petals are rosy pink or pink, (3)–4–6 mm long and deeply notched, its anthers mauve, and its fruit segments (mericarps) about 1.5 mm long, hairless, with prominent pale cross-ridges. Flora of New Zealand's key separates them on the fruit: dove's-foot cranesbill's fruit segments (mericarps) are hairless on the outer face and ridged, cut-leaved cranesbill's hairy and smooth. Without fruit, use the leaves: cut-leaved cranesbill's are divided nearly to the base into linear segments, dove's-foot cranesbill's to about 3/4 of the way into broader lobes. The anthers differ too (blue against mauve). Both are hairy annuals with a basal rosette and small, notched pink petals, and both have glandular hairs in the flower clusters, so none of those separates them. Cut-leaved cranesbill's root is recorded as a famine food (Useful Temperate Plants).",
+        "name" : "Cut-leaved cranesbill",
+        "risk" : "edible",
+        "scientificName" : "Geranium dissectum"
+      },
+      {
+        "entry" : "small-flowered-cranesbill",
+        "howToTell" : "Small-flowered cranesbill is a taprooted annual densely clothed in short hairs; its leaves are 1–3.5 × 1.5–4.5 cm, kidney-shaped to almost round, cut 3/4 of the way to the leaf stalk into 5–9 lobes that are themselves 2–3-lobed; its sepals are 2–3 mm long (to about 4 mm in fruit) and end in a short point; its petals are pale mauve, 2.5–3.5 mm long and notched; only 5–6 of its 10 stamens carry anthers (mauvish brown); and its fruit segments (mericarps) are 1.5–2 mm long, densely clothed in hairs pressed flat on the outer face. Dove's-foot cranesbill is an annual densely covered in short or long hairs; its leaves are 1.5–5 × 1.5–6 cm, kidney-shaped to round, cut about 3/4 of the way to the leaf stalk into 5–9 lobes, usually with 3 rounded secondary lobes towards the tip; its sepals are 2–3.5 mm long and end in a short point; its petals are rosy pink or pink, (3)–4–6 mm long and deeply notched, its anthers mauve, and its fruit segments (mericarps) about 1.5 mm long, hairless, with prominent pale cross-ridges. Flora of New Zealand says the two are similar in habit but can always be told apart by the fruit: small-flowered cranesbill's fruit segments (mericarps) are hairy but otherwise smooth, dove's-foot cranesbill's hairless with cross-ridges. Small-flowered cranesbill also has only 5–6 fertile anthers where dove's-foot cranesbill's 10 stamens all carry one (NatureGate), is usually less hairy, and generally has smaller petals (2.5–3.5 mm against (3)–4–6 mm). Both are hairy annuals with round leaves cut about 3/4 of the way into 5–9 lobes, so the leaves do not separate them. No source read records small-flowered cranesbill as food (Plants For A Future and Useful Temperate Plants: none known).",
+        "name" : "Small-flowered cranesbill",
+        "risk" : "unknown",
+        "scientificName" : "Geranium pusillum"
+      }
     ],
+    "maoriName" : "Namunamu",
     "months" : [
       9,
       10,
@@ -7581,13 +7987,36 @@
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Close up of leaf",
+        "credit" : "(c) Angus Campbell, some rights reserved (CC BY)",
+        "fileName" : "doves-foot-cranesbill-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/347707702"
+      },
+      {
+        "caption" : "Plant in natural habitat",
+        "credit" : "(c) Richard Littauer, some rights reserved (CC BY)",
+        "fileName" : "doves-foot-cranesbill-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/361064022"
+      },
+      {
+        "caption" : "Close up of leaves",
+        "credit" : "(c) Jenny Saito, some rights reserved (CC BY)",
+        "fileName" : "doves-foot-cranesbill-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/123184241"
+      },
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Oscar Dove, some rights reserved (CC BY)",
+        "fileName" : "doves-foot-cranesbill-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/245682146"
+      }
     ],
     "preparation" : {
       "sources" : [
 
       ],
-      "text" : ""
+      "text" : "No source gives a method written for this species."
     },
     "recipes" : [
 
@@ -7596,14 +8025,25 @@
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Dove's-foot cranesbill' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Geranium molle' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Geranium-molle.html",
-      "Habitat and summary text: Wikipedia contributors. 'Geranium molle', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Geranium_molle"
+      "Summary text (first two lines): Wikipedia contributors. 'Geranium molle', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Geranium_molle",
+      "Lookalike card to cut-leaved cranesbill: written for this guide 23/10/2026 from the Flora of New Zealand vol. IV key to Geranium (couplet 6: mericarps glabrous and ridged against hairy and smooth; Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/20ca5ec6-fafe-4592-9d67-3d7491229fcc) and the Flora of New Zealand descriptions of both species.",
+      "Name, habitat (second line), summary (last line) and habitat tag disturbed, from the owner's links (23/10/2026, no instruction given; restated, not quoted): maoriName 'Namunamu' from Biota of New Zealand (vernacular names, 'Language of use: Māori Namunamu'), Manaaki Whenua – Landcare Research, https://biotanz.landcareresearch.co.nz/scientific-names/2cb279ae-68a7-43e1-b786-50e3cefcc39e, and Te Aka Māori Dictionary ('namunamu … 2. (noun) dove's-foot crane's-bill, dovesfoot geranium, Geranium molle'), https://maoridictionary.co.nz/search?keywords=namunamu, both retrieved 23/10/2026. Biota of NZ also gives biostatus Exotic / Wild / New Zealand and indicative databased collections (NZ: Canterbury 30, Wellington 9, Nelson 5, North Auckland 3, Hawke's Bay 2, Otago 2, Marlborough 1, unplaced 1 = 53). NZPCN, 'Geranium molle' (all rights reserved), https://www.nzpcn.org.nz/flora/species/geranium-molle/ — habitat 'Common weed of wasteland, grassland, and open places within coastal to montane forest', year naturalised 1852, biostatus Exotic; 'wasteland' gives the disturbed tag, 'open places within … forest' and 'grassland' confirm forest and grassland. NZPCN's 'coastal to montane' is an altitude band for the forest, so it is restated as 'from sea level up to montane levels' and not tagged coastal. NatureGate (LuontoPortti), 'Dove's Foot Cranesbill' (all rights reserved), https://luontoportti.com/en/t/1718 — the spread-by-clover-seed sentence restated.",
+      "Other links from the owner, 23/10/2026, read and not used on the page: Wikipedia ('Geranium molle', revision 1330919425) adds only a Pignatti description (5–30 cm, flowers 8–12 mm, 'blooms from April to September' — Italian months), the synonym list and Culpeper's 1652 herbal uses (medicine, not food). NatureSpot (Leicestershire & Rutland, https://www.naturespot.org/species/doves-foot-cranes-bill) gives a UK description, UK habitat (dry grassland, verges, lawns, arable land, waste ground) and 'When to see it April to September' (UK flowering, not a harvest window). NatureGate's description and Finnish 'June–September' flowering are not used. NZPCN's detailed description (petals bright purple, to 10.5 mm) is not used beside Flora of New Zealand's (rosy pink, (3)–4–6 mm). None of the five pages gives a food use (one was found later the same day — see the Edible parts line). NatureSpot and NatureGate both name small-flowered cranesbill (Geranium pusillum) as its close lookalike — NatureGate: stems and leaf stalks with short hairs only, petals about as long as the sepals, mericarps smooth with appressed hairs (dove's-foot: long and short hairs, petals somewhat longer, mericarps wrinkled and hairless). G. pusillum is naturalised in New Zealand (Flora of New Zealand Online: Exotic, flowering Oct.–Feb.; iNaturalist NZ 14 wild records, 4 research grade, 23/10/2026) and was added as an entry the same day, with cards both ways.",
+      "Edible parts and months, 23/10/2026 (owner: /goal 'find all of that if you can'): CONECT-e — Compartiendo el CONocimiento ECológico Tradicional, 'Geranium molle', Usos tradicionales › Alimentación humana y recetas (CC BY-SA 4.0), retrieved 23/10/2026, https://www.conecte.es/index.php/es/plantas/998-geranium-molle/usos-tradicionales — 'Golosinas y masticatorias: Los muchachos cogían los frutos y se los comían a modo de golosina o entretenimiento. Época de recolección/aprovechamiento: Primavera', recorded at Viso del Marqués (Campo de Calatrava, Ciudad Real) and cited to Molero Mesa, J., Soguero Muñoz, A. & Jiménez, J.J. 2001, Estudio etnobotánico del macizo central de Sierra Morena (Sierra de San Andrés) y extremo suroriental del histórico Campo de Calatrava. Translated by the assistant. It is the only food record found: PFAF and Practical Plants list no edible uses; Julia's Edible Weeds (Tauranga, 30/08/2012, https://juliasedibleweeds.com/edible-weeds-flowers/doves-foot-geranium/) adds the leaves to her smoothies, and PGG Wrightson's Pasture Weed Watch (Sloan, Oct 2017) calls it edible on that basis — a personal practice, not used; the Springer chapter (Paniagua-Zambrana, Bussmann & Kikvidze 2025, Ethnobotany of the Mountain Regions of Eastern Europe, G. molle with three others) is paywalled and unread. CONECT-e's other records are fodder (Galán 1993) and a chest poultice (Fernández Ocaña 2000). The months [9, 10, 11] were on the entry before any source was read; they now rest on CONECT-e's 'Primavera' (spring in Spain) read as the New Zealand spring, September–November — flagged; Flora of New Zealand Online gives flowering Sep.–Feb., and no New Zealand source dates the fruit.",
+      "Lookalike card to small-flowered cranesbill (23/10/2026): from the Flora of New Zealand vol. IV, 'Geranium pusillum' (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/6473bf45-4946-4496-ab21-b7c1500c9952) note 'This sp. is similar in habit to G. molle, but can always be distinguished by its hairy but otherwise smooth mericarps. Also, G. pusillum has only 5-6 fertile anthers, is usually less hairy than G. molle and generally has smaller petals.', the key's couplet 6, both Flora of New Zealand Online descriptions, and NatureGate's 'Stamens 10, all having anther' for dove's-foot cranesbill (all rights reserved, fact restated). The food sentence on the cut-leaved cranesbill card into this entry was rewritten for the CONECT-e record and its risk set to edible.",
+      "Habitat (first line) and summary (third line), 23/10/2026 (standards check): Flora of New Zealand vol. IV, 'Geranium molle' (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/b175f8fa-c883-4039-aef4-cea5d7802da6), retrieved 23/10/2026 — habitat 'Waste places, roadsides, riverbanks, open pastures, cultivated ground.' and distribution quoted verbatim; it also gives 'FL Sep-Feb.' and the year 1852. It replaces Wikipedia's habitat sentences ('It is found in dry meadows, hedges, banks and forest edges. It prefers sunny places on sandy and relatively dry soils, at an altitude of 0–1,000 metres above sea level.'), which come from Pignatti's Flora d'Italia and describe Italy, as on herb robert. Wikipedia's double space in 'central  Asia' closed.",
+      "Photos (checked 23/10/2026): -1 close up of leaf (obs 347707702, Angus Campbell, Titirangi, Auckland, 2026-04-06, CC BY); -2 plant in natural habitat (obs 361064022, Richard Littauer, Wellington, 2026-05-13, CC BY); -3 close up of leaves (obs 123184241, Jenny Saito, Christchurch, 2022-06-24, CC BY); -4 close up of flower (obs 245682146, Oscar Dove, Masterton, 2024-10-05, CC BY). Each checked by the iNaturalist API: Geranium molle, research grade, wild, New Zealand.",
+      "Habitat tags revised 23/10/2026 from the new first habitat line and the NZPCN line (classifier evidence): forest ('forest'), grassland ('pastures', 'grassland'), wetland ('riverbanks'), urban ('cultivated ground', as on other entries), disturbed ('Waste places', 'roadsides', 'waste ground'). shrubland dropped: its only evidence was Wikipedia's 'hedges'."
     ],
     "summary" : {
       "sources" : [
         "Wikipedia, 'Geranium molle' (CC BY-SA 4.0)",
-        "Wikipedia, 'Geranium molle' (CC BY-SA 4.0) — units converted to metric"
+        "Wikipedia, 'Geranium molle' (CC BY-SA 4.0) — units converted to metric",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)",
+        "New Zealand Plant Conservation Network; Biota of New Zealand (facts restated)",
+        "NatureGate / LuontoPortti (all rights reserved — restated)"
       ],
-      "text" : "Geranium molle, the dove's-foot crane's-bill or dovesfoot geranium, is an annual herbaceous plant of the family Geraniaceae.\nIt is native to the Mediterranean and sub-Mediterranean areas, but has naturalized in other parts of Europe, in southwestern and central  Asia and in North Africa, though it may have already been in those parts and areas, just not properly identified. It is considered an introduced species in North America, where it is known as Dovefoot Geranium or Awnless Geranium. Although non-native in parts of its range, this species poses little threat to native ecosystems."
+      "text" : "Geranium molle, the dove's-foot crane's-bill or dovesfoot geranium, is an annual herbaceous plant of the family Geraniaceae.\nIt is native to the Mediterranean and sub-Mediterranean areas, but has naturalized in other parts of Europe, in southwestern and central Asia and in North Africa, though it may have already been in those parts and areas, just not properly identified. It is considered an introduced species in North America, where it is known as Dovefoot Geranium or Awnless Geranium. Although non-native in parts of its range, this species poses little threat to native ecosystems.\nIn New Zealand (Flora of New Zealand): N.; S.; St.; K., Ch., C.: a common weed throughout, but not collected recently from K. and C.\nIn New Zealand it has been recorded as naturalised since 1852 (NZPCN); Biota of New Zealand lists it as exotic and growing wild, from 53 databased New Zealand collections, 30 of them from Canterbury. NatureGate says it now spreads mostly as a contaminant of clover seed, and has travelled from Western Europe, the Mediterranean and the Near East to most of Europe, the Americas, Australia, New Zealand and the Far East (restated)."
     },
     "warnings" : [
 
@@ -9020,7 +9460,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Fishpole bamboo",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Phyllostachys aurea'"
@@ -9869,73 +10309,6 @@
         "Wikipedia, 'Parsley' (CC BY-SA 4.0)"
       ],
       "text" : "Parsley, or garden parsley (Petroselinum crispum), is a species of flowering plant in the family Apiaceae that is native to Greece, the Balkans, Algeria and Morocco."
-    },
-    "warnings" : [
-
-    ]
-  },
-  {
-    "caution" : "careRequired",
-    "commonName" : "Geranium species",
-    "draft" : true,
-    "edibleParts" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "group" : "greens",
-    "habitat" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "habitats" : [
-
-    ],
-    "id" : "geranium-species",
-    "identification" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "lookalikes" : [
-
-    ],
-    "months" : [
-      1,
-      2,
-      5,
-      9,
-      10,
-      11,
-      12
-    ],
-    "needsBookSource" : false,
-    "origin" : "introduced",
-    "photos" : [
-
-    ],
-    "preparation" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "recipes" : [
-
-    ],
-    "scientificName" : "Geranium spp.",
-    "sources" : [
-      "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Geranium species' entry."
-    ],
-    "summary" : {
-      "sources" : [
-
-      ],
-      "text" : ""
     },
     "warnings" : [
 
@@ -10978,22 +11351,25 @@
   {
     "caution" : "careRequired",
     "commonName" : "Herb robert",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
       ],
-      "text" : ""
+      "text" : "Leaves, fresh or as a tea; leaves and flowers, dried for tea. The Woodland Trust says the leaves are edible and some people use them to make tea; Edible Wild Food says the fresh leaves can be eaten or steeped as a tea, and the leaves and flowers dried and kept for tea or added to salads. Neither page cites a source for this, and Plants For A Future and Useful Temperate Plants list no edible use."
     },
     "group" : "greens",
     "habitat" : {
       "sources" : [
-        "Wikipedia, 'Geranium robertianum' (CC BY-SA 4.0) — units converted to metric"
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
       ],
-      "text" : "It grows at altitudes from sea level to 700 m at Great Dun Fell in England and up to 2,400 m in Kashmir."
+      "text" : "Modified habitats, including railway yards, gardens, roadsides, forest margins, remnant forest stands and scrub.\nHerb Robert usually grows in partial or complete shade, but on occasions plants are seen in open sites."
     },
     "habitats" : [
-
+      "forest",
+      "shrubland",
+      "urban",
+      "disturbed"
     ],
     "id" : "herb-robert",
     "identification" : {
@@ -11003,7 +11379,13 @@
       "text" : "Annual or biennial hairy taprooted herb, with a characteristic scent.  Stems decumbent to spreading, to  c. 50 cm long, lax, often red where exposed to strong light, sometimes with base thickened;  internodes short and lvs rosette-like. Petioles long and slender on lower lvs, often reddish, glabrous or hairy. Lamina palmate, to  c. 9 × 10 cm, broad- or triangular-ovate, usually becoming red with age;  lobes 3–5, at least the terminal petiolulate, pinnately divided to varying degrees, ± appressed-hairy;  ultimate segments usually mucronulate. Infl. very diffuse;  fls paired;  peduncles usually > pedicels; peduncles and pedicels with long- and short-stalked glands.  Sepals (at anthesis) 6.5–8 mm long including apical awn, ovate, prominently 3-nerved, with hairs as on pedicels.  Petals (7.5)–10–11.5 mm long, obovate-oblanceolate, pink or rose except for white margin of claw;  limb = claw;  apex rounded. Filaments pinkish;  anthers orange.  Mericarps 2.5–3 mm long, glabrous or hairy, with 4–6 transverse ridges.  Seed smooth.  \n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
     },
     "lookalikes" : [
-
+      {
+        "entry" : "small-herb-robert",
+        "howToTell" : "Small herb Robert is an annual or biennial, hairy, taprooted herb with a characteristic scent; its stems are sprawling to nearly upright and reach about 30 cm; its leaves are 1.5–5–(7) × 2–6–(8) cm, cut very deeply into 5 lobes; its flowers are paired, with pink to rose petals 6–9 mm long; its anthers are yellow; its fruit segments are 2.5–3 mm long, with many close cross-ridges on their upper two-thirds. Herb robert is an annual or biennial, hairy, taprooted herb with a characteristic scent; its stems reach about 50 cm; its leaves reach about 9 × 10 cm, with 3–5 lobes; its flowers are paired, with pink or rose petals (7.5)–10–11.5 mm long; its anthers are orange; its fruit segments (mericarps) are 2.5–3 mm long, with 4–6 cross-ridges. Flora of New Zealand's key separates them on the petals, usually 10–11.5 mm in herb robert and 6–9 mm in small herb Robert, and the anthers, orange in herb robert and yellow in small herb Robert. Its note on small herb Robert says the two have sometimes been confused, and gives small petals, yellow pollen and more, closer ridges on the fruit segments together as the signs of small herb Robert, which is also generally more upright, with smaller leaves. No single sign settles it: herb robert's petals can be as short as 7.5 mm, inside small herb Robert's range, and Wikipedia says both species have yellow pollen, so anther colour alone can be hard to read. Both are scented, both have paired pink flowers and deeply divided leaves that turn red, and their fruit segments are the same length. No source read records small herb Robert as food (Useful Temperate Plants has no page for it; CONECT-e has no traditional-use record).",
+        "name" : "Small herb Robert",
+        "risk" : "unknown",
+        "scientificName" : "Geranium purpureum"
+      }
     ],
     "months" : [
       3,
@@ -11016,32 +11398,69 @@
     "needsBookSource" : false,
     "origin" : "introduced",
     "photos" : [
-
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Duncan Cunningham, some rights reserved (CC BY)",
+        "fileName" : "herb-robert-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/191797989"
+      },
+      {
+        "caption" : "Plant in natural habitat",
+        "credit" : "(c) Leah Sun, some rights reserved (CC BY-NC)",
+        "fileName" : "herb-robert-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/284682505"
+      },
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Grey Smith, some rights reserved (CC BY)",
+        "fileName" : "herb-robert-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/219678557"
+      },
+      {
+        "caption" : "Plant in natural habitat",
+        "credit" : "(c) Taylor, some rights reserved (CC BY-NC)",
+        "fileName" : "herb-robert-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/324059277"
+      }
     ],
     "preparation" : {
       "sources" : [
 
       ],
-      "text" : ""
+      "text" : "The fresh leaves are put in a mug of hot water as a tea, or the leaves and flowers dried for tea in winter (Edible Wild Food)."
     },
     "recipes" : [
-
+      {
+        "method" : "Blend 30 g herb robert leaves, 30 g basil leaves and 1 crushed garlic clove with enough olive oil to make a loose purée. Stir in 40 g finely grated Parmesan or Pecorino and the juice of half a lemon, then season with salt and black pepper to taste. Freezes well in ice-cube trays.",
+        "title" : "Herb robert and basil pesto"
+      }
     ],
     "scientificName" : "Geranium robertianum",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Herb robert' entry.",
       "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Geranium robertianum' factsheet. CC BY 3.0 NZ. Retrieved 14/09/2026. https://www.nzflora.info/factsheet/Taxon/Geranium-robertianum.html",
-      "Habitat and summary text: Wikipedia contributors. 'Geranium robertianum', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Geranium_robertianum"
+      "Summary text (first four lines; it was also the habitat text until 23/10/2026): Wikipedia contributors. 'Geranium robertianum', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 14/09/2026. https://en.wikipedia.org/wiki/Geranium_robertianum",
+      "Habitat, habitat tags and summary (last two lines), from the owner's links 23/10/2026 (no instruction given): Flora of New Zealand vol. IV, 'Geranium robertianum' (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/b47d5d2c-275f-4dcd-b715-86ad4f3365aa), retrieved 23/10/2026 — habitat line quoted verbatim, and the first clause of its note ('Herb Robert usually grows in partial or complete shade, but on occasions plants are seen in open sites') quoted; its distribution 'N.; S.: widely naturalised but commonest in the North Id.' quoted; flowering 'FL Sep-May'. Tags forest ('forest margins', 'remnant forest stands'), shrubland ('scrub'), urban ('gardens'), disturbed ('railway yards', 'roadsides', 'Modified habitats'). Wikipedia's altitude sentence, which was the whole habitat field, is not a habitat and was moved to the summary (units already metric). NZPCN ('Geranium robertianum', all rights reserved, https://www.nzpcn.org.nz/flora/species/geranium-robertianum/): biostatus Exotic, year naturalised 1878, origin Temperate Eurasia — restated; it has no habitat text.",
+      "Edible parts, preparation, warnings and recipe — the evidence, read 23/10/2026; filled on the owner's re-sending of the Woodland Trust link (23/10/2026), after being asked whether to add its line with a warning carrying the Cantabrian reports. For: Woodland Trust, 'Herb-robert' (https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/plants/wild-flowers/herb-robert/, all rights reserved): 'Its leaves are edible and used by some to make tea.' — no source given. Delicious from Scratch (Nancy Anne Harbord, 'Wild herb pesto', https://deliciousfromscratch.com/finding-identifying-herb-robert-geranium-robertianum-tutorial/): a pesto of 30 g herb robert, 30 g basil, 1 garlic clove, olive oil, 40 g Parmesan or Pecorino, juice of half a lemon, salt and pepper — a modern recipe; its health claims (makes 'oxygen more available to the cells') are unsourced and not used. Against or silent: Plants For A Future (Edibility Rating 0 of 5, no edible uses) and Useful Temperate Plants ('Edible Uses None known'), both 'Known Hazards None known'; CONECT-e, 'Geranium robertianum', Usos tradicionales (CC BY-SA 4.0, https://www.conecte.es/index.php/es/plantas/1002-geranium-robertianum/usos-tradicionales) has no food record and two 'Uso tóxico y nocivo' records from Cantabria — 'Es venenosa.' (Valderredible; Pardo de Santayana 2008, Las plantas en la cultura tradicional de la antigua merindad de Campoo) and 'Advirtieron de que hay que tener cuidado con ella por ser venenosa' (Arenas de Iguña; Pardo de Santayana 2004, Guía de las plantas medicinales de Cantabria) — folk reports, no case or compound named; its other records are medicinal (mouthwash, wounds, colds, nettle stings, scabies) and veterinary. Herbal Reality ('Herb robert', https://www.herbalreality.com/herb/herb-robert/, all rights reserved) is a medicinal monograph: 'Safety of this herb has not been established for use during pregnancy or lactation'. Wikipedia (revision 1371145379) gives only medicinal and garden uses and says its medicinal value is uncertain. Edible parts and preparation restate Woodland Trust and say it is uncited; the first warning restates CONECT-e's two Cantabrian records (translated), the second Herbal Reality's safety line (written for its medicinal doses, applied here to any use). Recipe restated from Delicious from Scratch, ingredients already metric; its basil half and cheese are hers. Also read 23/10/2026 (owner's link): The Foraging Foodie (Liza, 'Herb Robert', 29/04/2019, https://www.theforagingfoodie.co.uk/plants/herb-robert-geranium-robertianum/, all rights reserved) — the article says it has 'little to offer in a culinary sense' and gives no food use; the author's reply in the comments (01/02/2025) says it is 'absolutely safe to add to salads and cooked meals', unsourced. Not used: a comment reply is not a source, and the article's medicinal paragraph ('contains … germanium which helps to make oxygen available to cells') is unsupported, so the page is not relied on for a safety claim.",
+      "Other links from the owner, 23/10/2026, read and not used: Plants of the World Online (Kew) is behind a Cloudflare challenge to curl, and Wikipedia's distribution line already cites it; NatureGate (LuontoPortti, 'Herb Robert', all rights reserved) gives a Finnish description, habitat ('mossy boulders in lush woods, rocky places, walls, … seashores') and flowering June–September; NatureSpot (UK) gives 'Shaded habitats, copses, woods and banks' and 'May to September'. Wikipedia's Habitat and ecology section is British and European (Ellenberg values, EUNIS habitats) and is not used beside Flora of New Zealand.",
+      "Lookalike card to small herb Robert (Geranium purpureum), 23/10/2026: the entry was added as a lookalike target and the card written from the Flora of New Zealand vol. IV key couplet 4, its note on G. purpureum ('The combination of small petals, yellow pollen, and more and closer ridges on the mericarps are diagnostic features of G. purpureum. Also, G. purpureum is generally more upright and has smaller lvs.'), both Flora of New Zealand descriptions and Wikipedia's note that both species have yellow pollen — see the small herb Robert entry's sources. Woodland Trust's 'not to be confused with' hedgerow cranesbill (G. pyrenaicum) and dove's-foot cranesbill is British and unchecked for New Zealand.",
+      "Edible parts (second source) and preparation, 23/10/2026 (owner's link): Edible Wild Food (Karen Stephenson, Canada), 'Herb Robert', https://www.ediblewildfood.com/herb-robert.aspx, all rights reserved — 'Fresh leaves can be eaten or tossed into a mug to make a tea. The flower and leaves can be dried and stored so that it can be used throughout the winter months as a tea or tossed into salads as a nutrient booster.' — restated. Not used: 'The root can be dried and used' (no use is named); the claim that it 'absorbs the radiation from the soil' (unsupported); its flower description (near-verbatim NatureGate) and habitat (near-verbatim PFAF), already read at their sources; 'nutrient booster'. The page cites no source for the food uses.",
+      "Edible parts, 23/10/2026 (standards check): the sentence 'Neither page cites a source for this, and Plants For A Future and Useful Temperate Plants list no edible use.' was added so the page says what the evidence line above records.",
+      "Months [3, 4, 5, 9, 10, 11]: on the entry before any other source was read (its only earlier source is Langlands, Foraging New Zealand). No source read dates the leaf harvest; Flora of New Zealand vol. IV gives flowering Sep–May. Not changed.",
+      "Photos (checked 23/10/2026): -2 close up of flower (obs 191797989, Duncan Cunningham, Korokoro Stream, Lower Hutt, 2023-11-16, CC BY); -3 plant in natural habitat (obs 284682505, Leah Sun, Picton, 2025-05-02, CC BY-NC); -4 close up of flower (obs 219678557, Grey Smith, Mangaweka, 2024-06-01, CC BY); -1 plant in natural habitat (obs 324059277, Taylor, Lewis Pass Scenic Reserve, 2025-10-29, CC BY-NC). Each checked by the iNaturalist API: Geranium robertianum, research grade, wild, New Zealand."
     ],
     "summary" : {
       "sources" : [
         "Wikipedia, 'Geranium robertianum' (CC BY-SA 4.0)",
-        "Wikipedia, 'Geranium robertianum' (CC BY-SA 4.0) — units converted to metric"
+        "Wikipedia, 'Geranium robertianum' (CC BY-SA 4.0) — units converted to metric",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)",
+        "New Zealand Plant Conservation Network (fact restated)"
       ],
-      "text" : "Geranium robertianum, commonly known as herb-robert or, in North America, as Robert's geranium, is a species of cranesbill that is widespread throughout the northern hemisphere and introduced to some countries in the southern.\nThe main areas of distribution of herb-robert are throughout Europe northwards to the Baltic and eastwards as far as Russia. It also occurs in north Africa and it is considered also to be native in north America, although in some western states it is regarded as a weed.\nThe IUCN has not assessed the threat status of this species, but in some countries it is classified as Least Concern."
+      "text" : "Geranium robertianum, commonly known as herb-robert or, in North America, as Robert's geranium, is a species of cranesbill that is widespread throughout the northern hemisphere and introduced to some countries in the southern.\nThe main areas of distribution of herb-robert are throughout Europe northwards to the Baltic and eastwards as far as Russia. It also occurs in north Africa and it is considered also to be native in north America, although in some western states it is regarded as a weed.\nThe IUCN has not assessed the threat status of this species, but in some countries it is classified as Least Concern.\nIt grows at altitudes from sea level to 700 m at Great Dun Fell in England and up to 2,400 m in Kashmir.\nIn New Zealand (Flora of New Zealand): N.; S.: widely naturalised but commonest in the North Id. It has been recorded as naturalised since 1878 (NZPCN)."
     },
     "warnings" : [
-
+      "In Cantabria, Spain, people interviewed for two ethnobotanical studies called herb robert poisonous and warned that it should be handled with care (CONECT-e, citing Pardo de Santayana 2004 and 2008); no case or toxic compound is named.",
+      "Its safety has not been established in pregnancy or while breastfeeding (Herbal Reality)."
     ]
   },
   {
@@ -19575,6 +19994,10 @@
       {
         "method" : "Written for rose geranium leaves; the author suggests mint-scented geranium as a substitute. Makes about 300 ml. 250 ml water, 200 g sugar and about five sprigs of peppermint geranium 10–13 cm long. Put the water, sugar and sprigs in a small saucepan, bruising the leaves against the side of the pan with a spoon. Bring to the boil over moderate heat, cover, take off the heat and leave to stand for at least 30 minutes. Lift out the leaves and squeeze them into the syrup. Keeps in the fridge for up to a month, or frozen for up to a year. The original uses it in a chocolate dessert.",
         "title" : "Peppermint geranium syrup"
+      },
+      {
+        "method" : "Written for scented geranium leaves, \"preferably with a lemon scent\"; no species named. Tear 2–3 scented geranium leaves into small pieces and mix them with about 250 g sifted icing sugar in a small bowl. Leave somewhere warm overnight so the sugar takes up the scent, then pick out and discard the leaf pieces. Beat a generous 60 ml softened cream cheese, 2 teaspoons softened butter and 1 teaspoon grated lemon rind, gradually adding the scented icing sugar, until smooth. Spread over a cooled carrot cake and decorate, if you like, with lemon balm leaves or candied lemon peel.",
+        "title" : "Scented geranium and lemon icing"
       }
     ],
     "scientificName" : "Pelargonium tomentosum",
@@ -19589,7 +20012,8 @@
       "Recipe 'Peppermint geranium syrup': Belsinger, Susan, rose geranium syrup in the recipe section of 'Pelargoniums: An Herb Society of America Guide' (The Herb Society of America, 2006), © Susan Belsinger / HSA, all rights reserved, https://www.herbsociety.org/file_download/inline/2b2f9fc8-e827-446c-99da-1c1e8b6559d0, retrieved 21/10/2026 — method paraphrased, not quoted; written for rose geranium; the author: \"Mint-scented geranium ... would be good in this recipe; use about five 4- or 5-inch sprigs in place of the geranium leaves\". The guide names P. tomentosum the \"peppermint-scented geranium\"; that \"mint-scented geranium\" means this species is my reading. Conversions: 1 cup water = 250 ml, 1 cup sugar ≈ 200 g, 4–5 inches ≈ 10–13 cm; yield not given in the source (about 300 ml is my estimate). The dessert it was written for is not reproduced.",
       "Origin checked 21/10/2026: NZ Organisms Register 'Pelargonium tomentosum' (https://data.nzor.org.nz/names/search?query=Pelargonium%20tomentosum): origin Exotic, occurrence Present; NZPCN 'Pelargonium tomentosum' (https://www.nzpcn.org.nz/flora/species/pelargonium-tomentosum/): Biostatus Exotic, year naturalised 1944. Origin 'introduced' stands. Kept introduced, not pest: not on DOC's List of environmental weeds in New Zealand 2024 (McAlpine & Howell, Science for Conservation 340, https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc340.pdf; no Pelargonium in the text), and not in Wildland Consultants' table of weed taxa in every regional pest management plan (2021, Contract Report 5396 for the PCE, Appendix 2 p. 75, read by eye: Passiflora apetala is followed by Persicaria chinensis; https://pce.parliament.nz/media/fx4pjock/hutchison-et-al-review-of-weed-management-programmes-pdf-6mb.pdf).",
       "Lookalike cards (rose-scented geranium, peppermint geranium and rose geranium, all three pairs both ways; written by the assistant on the owner's instruction, owner, 21/10/2026: \"find what you can and fill in according to the rules for Pelargonium\"): every test restates Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988, Flora of New Zealand vol. IV (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0) — the species descriptions and notes and the Pelargonium key (couplet 4: P. ×asperum \"Lamina lobed to > 3/4 way to midrib\"; couplet 6: P. tomentosum \"Umbels diffuse; fls on long pedicels; calyx spur c. 2 mm long\" against \"Umbels dense; fls subsessile; calyx spur 4-5 mm long\"; couplet 7: P. capitatum \"Habit sprawling; lvs strongly undulate, with ± oblong lobes extending at least 1/2 way to the centre of the lamina\"), https://floraseries.landcareresearch.co.nz/taxa/b8f32527-4c30-4f9b-bab4-9155d157a597, retrieved 21/10/2026; plus Wikipedia 'Pelargonium capitatum' (CC BY-SA 4.0, revision 1195218505) for that species' scent and flower-colour range. Webb gives P. capitatum no full description, only a note and its key couplets, so its side of every card rests on those. Webb's key is inconsistent for P. capitatum (couplet 4 sends it down \"Lf blade not lobed or lobed to < 1/2 way to midrib\", couplet 7 says its lobes extend \"at least 1/2 way\") — the cards say lobing does not settle rose geranium against rose-scented geranium for that reason. Card risks: `edible` into all three — peppermint geranium from the start; rose geranium and rose-scented geranium since 21/10/2026, when their pages gained edible parts (a card is not more certain than its page). Not carded, no entry: P. vitifolium (Webb: \"very closely-related\" to P. capitatum and \"often confused\"; 0 wild iNaturalist NZ records 21/10/2026), the native kopata P. inodorum, P. ×fragrans. These cards clear `warnings` on all three pages with no warning text added. Corrected 21/10/2026 (owner: \"check and double check all Pelargoniums\"): the peppermint geranium ↔ rose geranium cards said the key separates them by leaves and flower stalks; couplet 4 uses the leaves only, so the stalk lengths are now credited to the species descriptions.",
-      "Photos (four NZ wild research-grade iNaturalist observations; taxon, grade, wild and licence re-checked with the iNaturalist API 21/10/2026): -2 leaf (obs 126440256, naturewatchwidow, Wellington, CC BY) and -3 flowering plant (obs 246721984, Lower Hutt, CC0), chosen by the assistant 21/10/2026; -4 leaves (obs 956001, Tim Park, Lower Hutt, CC BY; the sourceURL is its legacy NatureWatch link, observations/354704) and -5 plant in habitat (obs 126441673, Leon Perrie, Wellington, CC BY), added by the owner 21/10/2026. The owner removed the assistant's -1 (obs 147014208, Joe Dillon) and its -4 (obs 955997, Tim Park, Muritai Road) — owner's curation, not re-added."
+      "Photos (four NZ wild research-grade iNaturalist observations; taxon, grade, wild and licence re-checked with the iNaturalist API 21/10/2026): -2 leaf (obs 126440256, naturewatchwidow, Wellington, CC BY) and -3 flowering plant (obs 246721984, Lower Hutt, CC0), chosen by the assistant 21/10/2026; -4 leaves (obs 956001, Tim Park, Lower Hutt, CC BY; the sourceURL is its legacy NatureWatch link, observations/354704) and -5 plant in habitat (obs 126441673, Leon Perrie, Wellington, CC BY), added by the owner 21/10/2026. The owner removed the assistant's -1 (obs 147014208, Joe Dillon) and its -4 (obs 955997, Tim Park, Muritai Road) — owner's curation, not re-added.",
+      "Recipe 'Scented geranium and lemon icing' added 23/10/2026 (owner: 'add to the ones that work'): Pennard Plants' reprint of 'Geranium and Lemon Cream Cheese' (credited to 'Between Close Friends'), in 'A selection of Scented Geranium Recipes', www.pennardplants.com (all rights reserved; owner's copy, converted to Markdown) — method paraphrased, not quoted. Written for any scented geranium, 'preferably with a lemon scent', not for this species — the page says so. Conversions: 2 cups icing sugar ≈ 250 g; a generous ¼ cup ≈ 60 ml. Jenny Somervell (NZ Lifestyle Block) names P. tomentosum as peppermint-scented and mint among the best scents for cooking, but none of her recipes is written for it."
     ],
     "summary" : {
       "sources" : [
@@ -22896,6 +23320,34 @@
       {
         "method" : "Warm 1 litre pineapple juice slightly, add 10 rose geranium leaves and bruise them gently against the side of the container with a spoon. Cover and steep for 30 minutes, then take out the leaves. Stir in 400 g sugar and 125 ml lime juice until dissolved (warm it a little to speed this up). Cool, then freeze in an ice-cream maker, or pour into a shallow tray in the freezer and stir with a fork every 30–45 minutes until frozen. Garnish with scented geranium leaves and flowers.",
         "title" : "Pineapple and rose geranium ice"
+      },
+      {
+        "method" : "Heat 300 ml fresh cream, 4 tablespoons caster sugar and 4–6 rose geranium leaves in a pot, stirring often, until just short of boiling; do not let it boil. Take off the heat and cool. Mash 6–8 boysenberries (fresh, or frozen and thawed) to a purée. Beat 250 g sour cream (or cream cheese) until smooth, then beat in the purée. Strain the leaves out of the cream and fold the cream gently into the berry mixture with a spoon. Cover and chill for several hours or overnight. Serve on fresh berries or fruit salad instead of cream or yoghurt.",
+        "title" : "Rose geranium cream"
+      },
+      {
+        "method" : "Roughly chop 6–8 rose geranium leaves and warm them gently with the juice of two oranges plus about 190 ml more orange juice; bring almost to the boil, take off the heat and leave to infuse as it cools. Cut 10–12 trimmed rhubarb stalks into 1 cm pieces — enough to fill, not overfill, the baking dish. In a large bowl mix about 150 g brown sugar, 2 tablespoons cornflour and the grated rind of the two oranges, tip in the rhubarb and mix well. Grease the dish and spread the rhubarb mixture back into it. Strain the juice over it. For the topping, mix about 150 g brown sugar, about 90 g whole rolled oats, about 90 g fine rolled oats and about 125 ml mixed seeds and chopped nuts (such as pumpkin, sesame and sunflower seeds, walnuts, almonds), then rub in 2 tablespoons soft butter. Press the topping firmly over the rhubarb and around the edges. Bake at 180 °C for 45 minutes.",
+        "title" : "Rose geranium rhubarb crumble"
+      },
+      {
+        "method" : "Fill a dry glass jar with alternate layers of rose geranium leaves and caster sugar. Cover tightly and leave somewhere warm for a week or more, shaking it now and then. Sieve out the leaves before use, and sprinkle the sugar on custards, biscuits or sponge cakes.",
+        "title" : "Rose geranium sugar"
+      },
+      {
+        "method" : "Boil 250 ml water with 200 g sugar in a small pot. Take off the heat, add 10 clean rose geranium leaves and leave until cold, overnight if you can. Squeeze the leaves out well (repeat with fresh leaves for a stronger flavour). Add 250 ml fresh lemon or lime juice, bottle and refrigerate; it keeps for up to two weeks. To serve, stir 1 tablespoon of the concentrate into each cup of chilled water and pour over ice, garnished with a small scented geranium leaf or rose petals.",
+        "title" : "Rose geranium lemonade"
+      },
+      {
+        "method" : "Serves 6. Put 250 ml cream (heavy cream in the original), 2 tablespoons finely chopped rose geranium leaves and about 50 g sugar in a metal bowl over a pot of simmering water. Stir until the sugar dissolves and the cream is hot but not boiling, about 5 minutes. Take off the heat, cool a little, then chill until cold, about 45 minutes. Strain and discard the leaves. Beat about 115 g softened cream cheese with the cream using an electric mixer until thickened but not holding peaks, about 2 minutes. Divide about 370 g blackberries and 225 g blueberries between six bowls or glasses and spoon the cream over. The cream can be beaten up to 4 hours ahead and kept covered in the fridge.",
+        "title" : "Berries in rose geranium cream"
+      },
+      {
+        "method" : "Makes 8 wedges. Cream about 170 g room-temperature unsalted butter with about 60 g icing sugar until light and fluffy. Mix about 190 g plain flour with ¼ teaspoon salt, add it to the butter, then mix in 1 teaspoon rose water. Gather into a ball, wrap and refrigerate for 4–6 hours. Let it soften a little. Butter and flour the base of a 20 cm round tin. On baking paper, pat the dough out to the size of the tin. Press 8 large, washed and dried rose geranium leaves into the dough in a circle about 2.5 cm in from the edge, lay the dough in the tin leaf side down and pat it out to the edges. Score it lightly into 8 wedges, sprinkle with 2 tablespoons sugar (or scented sugar) and chill for 45 minutes. Bake at 160 °C for about 20 minutes, until it just starts to colour. Cool in the tin, turn out, peel the baked leaves off the base, cut along the marks and serve with fresh rose geranium leaves.",
+        "title" : "Rose geranium shortbread"
+      },
+      {
+        "method" : "Written for scented geranium leaves, \"preferably with a lemon scent\"; no species named. Tear 2–3 scented geranium leaves into small pieces and mix them with about 250 g sifted icing sugar in a small bowl. Leave somewhere warm overnight so the sugar takes up the scent, then pick out and discard the leaf pieces. Beat a generous 60 ml softened cream cheese, 2 teaspoons softened butter and 1 teaspoon grated lemon rind, gradually adding the scented icing sugar, until smooth. Spread over a cooled carrot cake and decorate, if you like, with lemon balm leaves or candied lemon peel.",
+        "title" : "Scented geranium and lemon icing"
       }
     ],
     "scientificName" : "Pelargonium ×asperum",
@@ -22912,7 +23364,8 @@
       "Origin checked 21/10/2026: NZ Organisms Register 'Pelargonium ×asperum' (https://data.nzor.org.nz/names/search?query=Pelargonium%20asperum): no biostatus record returned; NZPCN 'Pelargonium x asperum' (https://www.nzpcn.org.nz/flora/species/pelargonium-xasperum/): Biostatus Exotic, year naturalised 1869; NZ Flora Online: Exotic. Origin 'introduced'. Kept introduced, not pest: not on DOC's List of environmental weeds in New Zealand 2024 (McAlpine & Howell, Science for Conservation 340, https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc340.pdf; no Pelargonium in the text), and not in Wildland Consultants' table of weed taxa in every regional pest management plan (2021, Contract Report 5396 for the PCE, Appendix 2 p. 75, read by eye: Passiflora apetala is followed by Persicaria chinensis; https://pce.parliament.nz/media/fx4pjock/hutchison-et-al-review-of-weed-management-programmes-pdf-6mb.pdf).",
       "Lookalike cards (rose-scented geranium, peppermint geranium and rose geranium, all three pairs both ways; written by the assistant on the owner's instruction, owner, 21/10/2026: \"find what you can and fill in according to the rules for Pelargonium\"): every test restates Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988, Flora of New Zealand vol. IV (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0) — the species descriptions and notes and the Pelargonium key (couplet 4: P. ×asperum \"Lamina lobed to > 3/4 way to midrib\"; couplet 6: P. tomentosum \"Umbels diffuse; fls on long pedicels; calyx spur c. 2 mm long\" against \"Umbels dense; fls subsessile; calyx spur 4-5 mm long\"; couplet 7: P. capitatum \"Habit sprawling; lvs strongly undulate, with ± oblong lobes extending at least 1/2 way to the centre of the lamina\"), https://floraseries.landcareresearch.co.nz/taxa/b8f32527-4c30-4f9b-bab4-9155d157a597, retrieved 21/10/2026; plus Wikipedia 'Pelargonium capitatum' (CC BY-SA 4.0, revision 1195218505) for that species' scent and flower-colour range. Webb gives P. capitatum no full description, only a note and its key couplets, so its side of every card rests on those. Webb's key is inconsistent for P. capitatum (couplet 4 sends it down \"Lf blade not lobed or lobed to < 1/2 way to midrib\", couplet 7 says its lobes extend \"at least 1/2 way\") — the cards say lobing does not settle rose geranium against rose-scented geranium for that reason. Card risks: `edible` into all three — peppermint geranium from the start; rose geranium and rose-scented geranium since 21/10/2026, when their pages gained edible parts (a card is not more certain than its page). Not carded, no entry: P. vitifolium (Webb: \"very closely-related\" to P. capitatum and \"often confused\"; 0 wild iNaturalist NZ records 21/10/2026), the native kopata P. inodorum, P. ×fragrans. These cards clear `warnings` on all three pages with no warning text added. Corrected 21/10/2026 (owner: \"check and double check all Pelargoniums\"): the peppermint geranium ↔ rose geranium cards said the key separates them by leaves and flower stalks; couplet 4 uses the leaves only, so the stalk lengths are now credited to the species descriptions.",
       "Photos (chosen 21/10/2026 by the assistant, owner: \"find what you can and fill in\" and \"also get more images\"; the owner then kept four of nine): -3 flower head, -4 leaves and -9 self-sown seedlings from obs 231378051 (Colin Ogle, Otamatea, Whanganui, 2022 — self-sown in the observer's garden, recorded as wild; CC BY-NC), and -7 leaf from obs 129814215 (Peter Lang, Honans Scrub, Victoria, Australia, 2011, research grade, wild: \"a naturalising alien plant … Large colony 20 m x 30 m\"; CC BY-NC) — not a NZ plant; it was used because only two wild research-grade NZ observations exist (231378051 and Colin Ogle's 65674751, Castlecliff dunes). Taxon, grade, wild and licence re-checked with the iNaturalist API 21/10/2026. Not used: the NZ captive/casual records 35403057 (double-flowered, the observer: \"Quite likely to be a hybrid/cultivar\"), 41414418 and 184052149 (planted), 343589242 (casual).",
-      "Owner's links, 21/10/2026, read and not used for page text: NZPCN 'Pelargonium xasperum' (\"Pelargonium hybrid\", Exotic, naturalised 1869, origin South Africa; its similar-taxa line \"lamina lobed to > 3/4 way to midrib\" is Webb's key couplet, already on the cards); NZ Flora Online 'Pelargonium ×asperum' (Webb's description, already used); PlantSnap 'Pelargonium asperum' (care-app page, no sources; its \"small and white with pink markings\" flowers contradict Webb's \"Corolla pink\" — not trusted); Jade Shutes, 'Pelargonium graveolens or Pelargonium x asperum', School of Aromatic Studies (ARR) — about commercial geranium oil, no food use; it quotes Kew and PROTA treating \"Pelargonium asperum Ehrh. ex Willd.\" as a synonym of P. graveolens. Checked 21/10/2026: Catalogue of Life lists \"Pelargonium asperum Ehrh. ex Spreng.\" as a synonym of P. graveolens, while GBIF's backbone accepts \"Pelargonium × asperum Willd.\" (Webb's name) as its own taxon — two names sharing an epithet, so this does not show that Webb's hybrid is P. graveolens and does not settle the edibility LEAD above."
+      "Owner's links, 21/10/2026, read and not used for page text: NZPCN 'Pelargonium xasperum' (\"Pelargonium hybrid\", Exotic, naturalised 1869, origin South Africa; its similar-taxa line \"lamina lobed to > 3/4 way to midrib\" is Webb's key couplet, already on the cards); NZ Flora Online 'Pelargonium ×asperum' (Webb's description, already used); PlantSnap 'Pelargonium asperum' (care-app page, no sources; its \"small and white with pink markings\" flowers contradict Webb's \"Corolla pink\" — not trusted); Jade Shutes, 'Pelargonium graveolens or Pelargonium x asperum', School of Aromatic Studies (ARR) — about commercial geranium oil, no food use; it quotes Kew and PROTA treating \"Pelargonium asperum Ehrh. ex Willd.\" as a synonym of P. graveolens. Checked 21/10/2026: Catalogue of Life lists \"Pelargonium asperum Ehrh. ex Spreng.\" as a synonym of P. graveolens, while GBIF's backbone accepts \"Pelargonium × asperum Willd.\" (Webb's name) as its own taxon — two names sharing an epithet, so this does not show that Webb's hybrid is P. graveolens and does not settle the edibility LEAD above.",
+      "Recipes added 23/10/2026 (owner: links and file, then 'add to the ones that work'). Methods paraphrased, not quoted; all rights reserved by the named holders. From Jenny Somervell, 'How to cook with scented geraniums', NZ Lifestyle Block (© CountryWide Media), https://ourwayoflife.co.nz/how-to-cook-with-scented-geraniums-plus-rose-cream-rose-crumble-and-rose-sugar-recipes/, retrieved 23/10/2026: 'Rose geranium cream' (her 'Rose cream', 'rose geranium leaves'), 'Rose geranium rhubarb crumble' (her 'Rose-flavoured rhubarb crumble', 'rose-scented geranium leaves'; the topping method is my wording of hers), 'Rose geranium sugar' (her 'Rose-scented sugar', 'rose-scented pelargonium leaves'). The article names Pelargonium graveolens and P. capitatum among the rose-scented kinds, so the recipes are not written for one species. From 'A selection of Scented Geranium Recipes', Pennard Plants (www.pennardplants.com; read from the owner's copy, converted to Markdown): 'Rose geranium lemonade' (Pennard's 'Rose Scented Geranium Lemonade'), 'Berries in rose geranium cream' (Pennard's reprint of 'Berries in Geranium Cream', Gourmet, July 2005: 'rose-scented (pelargonium) leaves'), 'Rose geranium shortbread' (Pennard's 'Rose Scented Geranium Shortbread'), 'Scented geranium and lemon icing' (Pennard's reprint of 'Geranium and Lemon Cream Cheese', credited to 'Between Close Friends'; written for any scented geranium, 'preferably with a lemon scent'). Conversions: 1 cup = 250 ml; ¾ cup brown sugar ≈ 150 g; 1 cup rolled oats ≈ 90 g; 1 cup sugar ≈ 200 g; ¼ cup sugar ≈ 50 g; 4 oz ≈ 115 g; 13 oz ≈ 370 g; 8 oz ≈ 225 g; 12 tablespoons (1½ sticks) butter ≈ 170 g; ½ cup icing sugar ≈ 60 g; 1½ cups flour ≈ 190 g; 2 cups icing sugar ≈ 250 g; 8 inch ≈ 20 cm; 1 inch ≈ 2.5 cm; 325 °F ≈ 160 °C. Not used: Pennard's 'Lemon-Scented Geranium Cake' (lemon-scented geranium; no such entry), 'Candied Flowers' (vodka; and geranium is one flower among many), and its muffin recipe (ingredient list missing from the file)."
     ],
     "summary" : {
       "sources" : [
@@ -23014,6 +23467,34 @@
       {
         "method" : "Written for \"rose-scented geranium\" leaves without naming a species. Warm 1 litre pineapple juice slightly, add 10 rose-scented geranium leaves and bruise them gently against the side of the container with a spoon. Cover and steep for 30 minutes, then take out the leaves. Stir in 400 g sugar and 125 ml lime juice until dissolved (warm it a little to speed this up). Cool, then freeze in an ice-cream maker, or pour into a shallow tray in the freezer and stir with a fork every 30–45 minutes until frozen. Garnish with scented geranium leaves and flowers.",
         "title" : "Pineapple and rose geranium ice"
+      },
+      {
+        "method" : "Written for rose-scented geraniums without naming a species. Heat 300 ml fresh cream, 4 tablespoons caster sugar and 4–6 rose-scented geranium leaves in a pot, stirring often, until just short of boiling; do not let it boil. Take off the heat and cool. Mash 6–8 boysenberries (fresh, or frozen and thawed) to a purée. Beat 250 g sour cream (or cream cheese) until smooth, then beat in the purée. Strain the leaves out of the cream and fold the cream gently into the berry mixture with a spoon. Cover and chill for several hours or overnight. Serve on fresh berries or fruit salad instead of cream or yoghurt.",
+        "title" : "Rose geranium cream"
+      },
+      {
+        "method" : "Written for rose-scented geraniums without naming a species. Roughly chop 6–8 rose-scented geranium leaves and warm them gently with the juice of two oranges plus about 190 ml more orange juice; bring almost to the boil, take off the heat and leave to infuse as it cools. Cut 10–12 trimmed rhubarb stalks into 1 cm pieces — enough to fill, not overfill, the baking dish. In a large bowl mix about 150 g brown sugar, 2 tablespoons cornflour and the grated rind of the two oranges, tip in the rhubarb and mix well. Grease the dish and spread the rhubarb mixture back into it. Strain the juice over it. For the topping, mix about 150 g brown sugar, about 90 g whole rolled oats, about 90 g fine rolled oats and about 125 ml mixed seeds and chopped nuts (such as pumpkin, sesame and sunflower seeds, walnuts, almonds), then rub in 2 tablespoons soft butter. Press the topping firmly over the rhubarb and around the edges. Bake at 180 °C for 45 minutes.",
+        "title" : "Rose geranium rhubarb crumble"
+      },
+      {
+        "method" : "Written for rose-scented geraniums without naming a species. Fill a dry glass jar with alternate layers of rose-scented geranium leaves and caster sugar. Cover tightly and leave somewhere warm for a week or more, shaking it now and then. Sieve out the leaves before use, and sprinkle the sugar on custards, biscuits or sponge cakes.",
+        "title" : "Rose geranium sugar"
+      },
+      {
+        "method" : "Written for rose-scented geraniums without naming a species. Boil 250 ml water with 200 g sugar in a small pot. Take off the heat, add 10 clean rose-scented geranium leaves and leave until cold, overnight if you can. Squeeze the leaves out well (repeat with fresh leaves for a stronger flavour). Add 250 ml fresh lemon or lime juice, bottle and refrigerate; it keeps for up to two weeks. To serve, stir 1 tablespoon of the concentrate into each cup of chilled water and pour over ice, garnished with a small scented geranium leaf or rose petals.",
+        "title" : "Rose geranium lemonade"
+      },
+      {
+        "method" : "Written for rose-scented geraniums without naming a species. Serves 6. Put 250 ml cream (heavy cream in the original), 2 tablespoons finely chopped rose-scented geranium leaves and about 50 g sugar in a metal bowl over a pot of simmering water. Stir until the sugar dissolves and the cream is hot but not boiling, about 5 minutes. Take off the heat, cool a little, then chill until cold, about 45 minutes. Strain and discard the leaves. Beat about 115 g softened cream cheese with the cream using an electric mixer until thickened but not holding peaks, about 2 minutes. Divide about 370 g blackberries and 225 g blueberries between six bowls or glasses and spoon the cream over. The cream can be beaten up to 4 hours ahead and kept covered in the fridge.",
+        "title" : "Berries in rose geranium cream"
+      },
+      {
+        "method" : "Written for rose-scented geraniums without naming a species. Makes 8 wedges. Cream about 170 g room-temperature unsalted butter with about 60 g icing sugar until light and fluffy. Mix about 190 g plain flour with ¼ teaspoon salt, add it to the butter, then mix in 1 teaspoon rose water. Gather into a ball, wrap and refrigerate for 4–6 hours. Let it soften a little. Butter and flour the base of a 20 cm round tin. On baking paper, pat the dough out to the size of the tin. Press 8 large, washed and dried rose-scented geranium leaves into the dough in a circle about 2.5 cm in from the edge, lay the dough in the tin leaf side down and pat it out to the edges. Score it lightly into 8 wedges, sprinkle with 2 tablespoons sugar (or scented sugar) and chill for 45 minutes. Bake at 160 °C for about 20 minutes, until it just starts to colour. Cool in the tin, turn out, peel the baked leaves off the base, cut along the marks and serve with fresh rose-scented geranium leaves.",
+        "title" : "Rose geranium shortbread"
+      },
+      {
+        "method" : "Written for scented geranium leaves, \"preferably with a lemon scent\"; no species named. Tear 2–3 scented geranium leaves into small pieces and mix them with about 250 g sifted icing sugar in a small bowl. Leave somewhere warm overnight so the sugar takes up the scent, then pick out and discard the leaf pieces. Beat a generous 60 ml softened cream cheese, 2 teaspoons softened butter and 1 teaspoon grated lemon rind, gradually adding the scented icing sugar, until smooth. Spread over a cooled carrot cake and decorate, if you like, with lemon balm leaves or candied lemon peel.",
+        "title" : "Scented geranium and lemon icing"
       }
     ],
     "scientificName" : "Pelargonium capitatum",
@@ -23030,7 +23511,8 @@
       "Origin checked 21/10/2026: NZ Organisms Register 'Pelargonium capitatum' (https://data.nzor.org.nz/names/search?query=Pelargonium%20capitatum): origin Exotic, occurrence Present; NZPCN 'Pelargonium capitatum' (https://www.nzpcn.org.nz/flora/species/pelargonium-capitatum/): Biostatus Exotic. Origin 'introduced' stands. Kept introduced, not pest: not on DOC's List of environmental weeds in New Zealand 2024 (McAlpine & Howell, Science for Conservation 340, https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc340.pdf; no Pelargonium in the text), and not in Wildland Consultants' table of weed taxa in every regional pest management plan (2021, Contract Report 5396 for the PCE, Appendix 2 p. 75, read by eye: Passiflora apetala is followed by Persicaria chinensis; https://pce.parliament.nz/media/fx4pjock/hutchison-et-al-review-of-weed-management-programmes-pdf-6mb.pdf).",
       "Lookalike cards (rose-scented geranium, peppermint geranium and rose geranium, all three pairs both ways; written by the assistant on the owner's instruction, owner, 21/10/2026: \"find what you can and fill in according to the rules for Pelargonium\"): every test restates Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988, Flora of New Zealand vol. IV (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0) — the species descriptions and notes and the Pelargonium key (couplet 4: P. ×asperum \"Lamina lobed to > 3/4 way to midrib\"; couplet 6: P. tomentosum \"Umbels diffuse; fls on long pedicels; calyx spur c. 2 mm long\" against \"Umbels dense; fls subsessile; calyx spur 4-5 mm long\"; couplet 7: P. capitatum \"Habit sprawling; lvs strongly undulate, with ± oblong lobes extending at least 1/2 way to the centre of the lamina\"), https://floraseries.landcareresearch.co.nz/taxa/b8f32527-4c30-4f9b-bab4-9155d157a597, retrieved 21/10/2026; plus Wikipedia 'Pelargonium capitatum' (CC BY-SA 4.0, revision 1195218505) for that species' scent and flower-colour range. Webb gives P. capitatum no full description, only a note and its key couplets, so its side of every card rests on those. Webb's key is inconsistent for P. capitatum (couplet 4 sends it down \"Lf blade not lobed or lobed to < 1/2 way to midrib\", couplet 7 says its lobes extend \"at least 1/2 way\") — the cards say lobing does not settle rose geranium against rose-scented geranium for that reason. Card risks: `edible` into all three — peppermint geranium from the start; rose geranium and rose-scented geranium since 21/10/2026, when their pages gained edible parts (a card is not more certain than its page). Not carded, no entry: P. vitifolium (Webb: \"very closely-related\" to P. capitatum and \"often confused\"; 0 wild iNaturalist NZ records 21/10/2026), the native kopata P. inodorum, P. ×fragrans. These cards clear `warnings` on all three pages with no warning text added. Corrected 21/10/2026 (owner: \"check and double check all Pelargoniums\"): the peppermint geranium ↔ rose geranium cards said the key separates them by leaves and flower stalks; couplet 4 uses the leaves only, so the stalk lengths are now credited to the species descriptions.",
       "Photos (chosen and attached 21/10/2026 by the assistant on the owner's instruction, \"find what you can and fill in\"; owner may cut): from ~40 NZ research-grade CC BY/CC0 frames checked by eye; -1 flower head (obs 140953514, Māhia, CC0), -2 leaves (obs 261949824, kiwialli, Whangamatā, CC BY), -3 sprawling plant (obs 148535322, Leon Perrie, Maitai Bay, CC BY), -4 dune habit (obs 245508689, Michael Berardozzi, Whangamatā, CC BY; resized to 900 px to pass the size cap). Taxon, research grade, wild and photo licence confirmed by the iNaturalist API 21/10/2026. Rejected: obs 146905412 (Ashhurst, erect plant by a fence, large flowers — looks like a garden plant).",
-      "Owner's five links checked 21/10/2026 (Wikipedia, PlantZAfrica, NZPCN, The Plant Company, Flora of NZ vol. IV); no page text changed. Wikipedia is still revision 1195218505; Flora of NZ and NZPCN are what the entry already uses (NZPCN gives biostatus, \"Reason for introduction Horticultural\" and etymology, no habitat or uses). PlantZAfrica (SANBI, ARR) again records only oil, skin use and a medicinal leaf tea; its habitat (\"sand dunes or low hillsides near the coast\") matches the Wikipedia text already used; it gives the plant as \"± 0.3 m\" tall against Wikipedia's 100 cm — Webb gives no height, so the Wikipedia figure stays and the disagreement is noted here. The Plant Company (NZ nursery, ARR) is growing advice only (full sun, well-drained soil, coastal and dry areas, 0.8–1.2 m) and makes no food claim; not used. Edibility still unrecorded."
+      "Owner's five links checked 21/10/2026 (Wikipedia, PlantZAfrica, NZPCN, The Plant Company, Flora of NZ vol. IV); no page text changed. Wikipedia is still revision 1195218505; Flora of NZ and NZPCN are what the entry already uses (NZPCN gives biostatus, \"Reason for introduction Horticultural\" and etymology, no habitat or uses). PlantZAfrica (SANBI, ARR) again records only oil, skin use and a medicinal leaf tea; its habitat (\"sand dunes or low hillsides near the coast\") matches the Wikipedia text already used; it gives the plant as \"± 0.3 m\" tall against Wikipedia's 100 cm — Webb gives no height, so the Wikipedia figure stays and the disagreement is noted here. The Plant Company (NZ nursery, ARR) is growing advice only (full sun, well-drained soil, coastal and dry areas, 0.8–1.2 m) and makes no food claim; not used. Edibility still unrecorded.",
+      "Recipes added 23/10/2026 (owner: links and file, then 'add to the ones that work'). Methods paraphrased, not quoted; all rights reserved by the named holders. From Jenny Somervell, 'How to cook with scented geraniums', NZ Lifestyle Block (© CountryWide Media), https://ourwayoflife.co.nz/how-to-cook-with-scented-geraniums-plus-rose-cream-rose-crumble-and-rose-sugar-recipes/, retrieved 23/10/2026: 'Rose geranium cream' (her 'Rose cream', 'rose geranium leaves'), 'Rose geranium rhubarb crumble' (her 'Rose-flavoured rhubarb crumble', 'rose-scented geranium leaves'; the topping method is my wording of hers), 'Rose geranium sugar' (her 'Rose-scented sugar', 'rose-scented pelargonium leaves'). The article names Pelargonium graveolens and P. capitatum among the rose-scented kinds, so the recipes are not written for one species. From 'A selection of Scented Geranium Recipes', Pennard Plants (www.pennardplants.com; read from the owner's copy, converted to Markdown): 'Rose geranium lemonade' (Pennard's 'Rose Scented Geranium Lemonade'), 'Berries in rose geranium cream' (Pennard's reprint of 'Berries in Geranium Cream', Gourmet, July 2005: 'rose-scented (pelargonium) leaves'), 'Rose geranium shortbread' (Pennard's 'Rose Scented Geranium Shortbread'), 'Scented geranium and lemon icing' (Pennard's reprint of 'Geranium and Lemon Cream Cheese', credited to 'Between Close Friends'; written for any scented geranium, 'preferably with a lemon scent'). Conversions: 1 cup = 250 ml; ¾ cup brown sugar ≈ 150 g; 1 cup rolled oats ≈ 90 g; 1 cup sugar ≈ 200 g; ¼ cup sugar ≈ 50 g; 4 oz ≈ 115 g; 13 oz ≈ 370 g; 8 oz ≈ 225 g; 12 tablespoons (1½ sticks) butter ≈ 170 g; ½ cup icing sugar ≈ 60 g; 1½ cups flour ≈ 190 g; 2 cups icing sugar ≈ 250 g; 8 inch ≈ 20 cm; 1 inch ≈ 2.5 cm; 325 °F ≈ 160 °C. Not used: Pennard's 'Lemon-Scented Geranium Cake' (lemon-scented geranium; no such entry), 'Candied Flowers' (vodka; and geranium is one flower among many), and its muffin recipe (ingredient list missing from the file)."
     ],
     "summary" : {
       "sources" : [
@@ -26110,6 +26592,115 @@
   },
   {
     "caution" : "careRequired",
+    "commonName" : "Small-flowered cranesbill",
+    "draft" : false,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "greens",
+    "habitat" : {
+      "sources" : [
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
+      ],
+      "text" : "Waste places around houses, farmyards, railway yards, lawns, cultivated arable land, rough pastures."
+    },
+    "habitats" : [
+      "grassland",
+      "urban",
+      "disturbed"
+    ],
+    "id" : "small-flowered-cranesbill",
+    "identification" : {
+      "sources" : [
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+      ],
+      "text" : "Taprooted annual, to over 30 cm tall, but often much less, densely clothed in short hairs. Stems decumbent to spreading, often branched from the base. Lvs with long eglandular, and short glandular hairs. Lower lvs long-petiolate. Lamina palmately lobed, 1–3.5 × 1.5–4.5 cm, reniform to almost orbicular; lobes 5–9, extending 3/4 way to petiole, 2–3-lobed; secondary lobes oblong to obovate. Upper lvs smaller and simpler with shorter petioles. Fls numerous, often paired; peduncles short; pedicels usually longer than peduncles, curving upwards after flowering, densely clothed in glandular hairs. Sepals 2–3 mm long (to c. 4 mm at fruiting), ± ovate, densely clothed in long, white, pilose and short glandular hairs, mucronate. Petals 2.5–3.5 mm long, obovate, emarginate, pale mauve; claw short. Stamens 10, 4–5 reduced to staminodes (lacking anthers); filaments whitish; anthers mauvish brown. Mericarps 1.5–2 mm long, densely clothed in appressed hairs on outer face. Seed smooth. \n[From: Webb et al. (1988) Flora of New Zealand. Volume 4.]"
+    },
+    "lookalikes" : [
+      {
+        "entry" : "doves-foot-cranesbill",
+        "howToTell" : "Dove's-foot cranesbill is an annual densely covered in short or long hairs; its leaves are 1.5–5 × 1.5–6 cm, kidney-shaped to round, cut about 3/4 of the way to the leaf stalk into 5–9 lobes, usually with 3 rounded secondary lobes towards the tip; its sepals are 2–3.5 mm long and end in a short point; its petals are rosy pink or pink, (3)–4–6 mm long and deeply notched, its anthers mauve, and its fruit segments (mericarps) about 1.5 mm long, hairless, with prominent pale cross-ridges. Small-flowered cranesbill is a taprooted annual densely clothed in short hairs; its leaves are 1–3.5 × 1.5–4.5 cm, kidney-shaped to almost round, cut 3/4 of the way to the leaf stalk into 5–9 lobes that are themselves 2–3-lobed; its sepals are 2–3 mm long (to about 4 mm in fruit) and end in a short point; its petals are pale mauve, 2.5–3.5 mm long and notched; only 5–6 of its 10 stamens carry anthers (mauvish brown); and its fruit segments (mericarps) are 1.5–2 mm long, densely clothed in hairs pressed flat on the outer face. Flora of New Zealand says the two are similar in habit but can always be told apart by the fruit: small-flowered cranesbill's fruit segments (mericarps) are hairy but otherwise smooth, dove's-foot cranesbill's hairless with cross-ridges. Small-flowered cranesbill also has only 5–6 fertile anthers where dove's-foot cranesbill's 10 stamens all carry one (NatureGate), is usually less hairy, and generally has smaller petals (2.5–3.5 mm against (3)–4–6 mm). Both are hairy annuals with round leaves cut about 3/4 of the way into 5–9 lobes, so the leaves do not separate them. Dove's-foot cranesbill's fruits are recorded as eaten by young people in Spain as a nibble (CONECT-e).",
+        "name" : "Dove's-foot cranesbill",
+        "risk" : "edible",
+        "scientificName" : "Geranium molle"
+      },
+      {
+        "entry" : "cut-leaved-cranesbill",
+        "howToTell" : "Cut-leaved cranesbill is a hairy annual with a large basal rosette; its leaves are 3.5–8 × 3.5–9 cm, cut almost to the leaf stalk into 5–7 lobes that are lobed again, ending in linear or narrow-oblong pointed segments; its flower stalks carry plain hairs and often pink-tipped glandular hairs; its sepals end in an awn (1)–2–3 mm long; its petals are pink or rose, 3.5–5 mm long and notched, its anthers blue, and its fruit segments (mericarps) carry white spreading hairs. Small-flowered cranesbill is a taprooted annual densely clothed in short hairs; its leaves are 1–3.5 × 1.5–4.5 cm, kidney-shaped to almost round, cut 3/4 of the way to the leaf stalk into 5–9 lobes that are themselves 2–3-lobed; its sepals are 2–3 mm long (to about 4 mm in fruit) and end in a short point; its petals are pale mauve, 2.5–3.5 mm long and notched; only 5–6 of its 10 stamens carry anthers (mauvish brown); and its fruit segments (mericarps) are 1.5–2 mm long, densely clothed in hairs pressed flat on the outer face. Flora of New Zealand's key separates them on the leaves and stamens: cut-leaved cranesbill's lower leaves are divided nearly to the base into linear segments, its sepals end in an awn and all 10 stamens are fertile; small-flowered cranesbill's are divided to about 3/4 of the way into oblong to ovate segments, its sepals end in a point under 0.5 mm, and 4–5 of its 10 stamens lack anthers. Both have hairy fruit segments (mericarps), so the fruit alone does not separate them, though cut-leaved cranesbill's hairs spread and small-flowered cranesbill's are pressed flat. Its petals are pink or rose and 3.5–5 mm long against small-flowered cranesbill's pale mauve 2.5–3.5 mm, and its anthers blue against mauvish brown. Cut-leaved cranesbill's root is recorded as a famine food (Useful Temperate Plants).",
+        "name" : "Cut-leaved cranesbill",
+        "risk" : "edible",
+        "scientificName" : "Geranium dissectum"
+      }
+    ],
+    "months" : [
+
+    ],
+    "needsBookSource" : false,
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Close up of leaf",
+        "credit" : "(c) Joseph Knight, some rights reserved (CC BY-NC)",
+        "fileName" : "small-flowered-cranesbill-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/279572776"
+      },
+      {
+        "caption" : "Plant in natural habitat",
+        "credit" : "(c) Dilrukshan Priyantha Wijesinghe, some rights reserved (CC BY)",
+        "fileName" : "small-flowered-cranesbill-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/212137919"
+      },
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Dilrukshan Priyantha Wijesinghe, some rights reserved (CC BY)",
+        "fileName" : "small-flowered-cranesbill-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/6491811"
+      },
+      {
+        "caption" : "Plant in natural habitat",
+        "credit" : "(c) Vladimir Atachkin, some rights reserved (CC BY)",
+        "fileName" : "small-flowered-cranesbill-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/210406985"
+      }
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Geranium pusillum",
+    "sources" : [
+      "Entry added 23/10/2026 as a lookalike target of dove's-foot cranesbill and cut-leaved cranesbill, not as food (owner, 23/10/2026: 'yeah and include only edible ones unless they are needed for lookalikes', then /goal 'find all of that if you can' after being asked whether to add it). NatureSpot (Leicestershire & Rutland) and NatureGate both name it as dove's-foot cranesbill's close lookalike, and Flora of New Zealand vol. IV compares the two directly. Presence: iNaturalist New Zealand holds 4 research-grade wild records (14 wild of all grades) on 23/10/2026, above the presence threshold of three.",
+      "Name: 'Small-flowered cranesbill' from Flora of New Zealand vol. IV and Flora of New Zealand Online (also 'Small-flowered geranium'); Wikipedia gives small-flowered crane's-bill.",
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Geranium pusillum' factsheet (description from Webb et al. 1988). CC BY 3.0 NZ. Retrieved 23/10/2026. https://www.nzflora.info/factsheet/Taxon/Geranium-pusillum.html — quoted verbatim. Flowering Oct.–Feb.",
+      "Summary (first and second lines): Wikipedia contributors. 'Geranium pusillum', Wikipedia, The Free Encyclopedia, revision 1306384750. CC BY-SA 4.0. Retrieved 23/10/2026. https://en.wikipedia.org/wiki/Geranium_pusillum — quoted verbatim, references removed.",
+      "Summary (third and fourth lines) and habitat: Flora of New Zealand vol. IV, 'Geranium pusillum' (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/6473bf45-4946-4496-ab21-b7c1500c9952), retrieved 23/10/2026 — quoted verbatim. Webb gives the native range 'Europe, temperate W. Asia eastwards to Himalaya' with the year 1926 (Webb's first record of the species naturalised). Habitat tags urban, disturbed, grassland from 'around houses', 'lawns', 'waste places', 'railway yards', 'cultivated arable land', 'rough pastures'.",
+      "Edible parts: none recorded — Plants For A Future ('Geranium pusillum', Edible Uses 'None known', Known Hazards 'None known') and Useful Temperate Plants ('Edible Uses None known'), both retrieved 23/10/2026; their medicinal lines are not used. Months left empty: nothing is collected.",
+      "Origin: Flora of New Zealand Online and Flora of New Zealand vol. IV: Exotic (naturalised). Not on DOC's 2024 environmental weed list (SfC 340, no Geranium). Origin introduced.",
+      "Warnings: none found (Known Hazards 'None known'); the lookalike cards satisfy the field.",
+      "Lookalike cards: written for this guide 23/10/2026. Dove's-foot cranesbill: from the Flora of New Zealand vol. IV, 'Geranium pusillum' (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/6473bf45-4946-4496-ab21-b7c1500c9952) comparison note ('This sp. is similar in habit to G. molle, but can always be distinguished by its hairy but otherwise smooth mericarps. Also, G. pusillum has only 5-6 fertile anthers, is usually less hairy than G. molle and generally has smaller petals.'), key couplet 6, both Flora of New Zealand Online descriptions and NatureGate ('Stamens 10, all having anther', fact restated). Cut-leaved cranesbill: from the Flora of New Zealand vol. IV key to Geranium (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/20ca5ec6-fafe-4592-9d67-3d7491229fcc), couplet 7, and both descriptions. Every figure in a card appears in a source for the species it describes.",
+      "Photos (the owner's curated set, 23/10/2026): -2 close up of leaf (obs 279572776, Joseph Knight, Queenstown, 2024-12-20, CC BY-NC); -1 plant in natural habitat (obs 212137919, Dilrukshan Priyantha Wijesinghe, Long Island, New York, US, 2024-04-29, CC BY); -3 close up of flower (obs 6491811, Dilrukshan Priyantha Wijesinghe, Brooklyn, New York, US, 2017-06-03, CC BY); -4 plant in natural habitat (obs 210406985, Vladimir Atachkin, Chuvashia, Russia, 2024-04-27, CC BY). Each checked by the iNaturalist API 23/10/2026: Geranium pusillum, research grade, wild. Only -2 is from New Zealand; -1, -3 and -4 are from the United States and Russia. The assistant's earlier single photo (obs 143922021) is no longer used."
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Geranium pusillum' (CC BY-SA 4.0)",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
+      ],
+      "text" : "Geranium pusillum, commonly known as small-flowered crane's-bill or (in North America) small geranium, is a herbaceous annual plant of the genus Geranium.\nSmall geranium is native to Europe but is introduced in almost every region of the USA and Canada, where it is associated with ecologically disturbed sites.\nIn New Zealand (Flora of New Zealand): N.: Wellington area; S.: mainly in Canterbury and Otago, also collected in Southland.\nThis sp. is similar in habit to G. molle, but can always be distinguished by its hairy but otherwise smooth mericarps. Also, G. pusillum has only 5-6 fertile anthers, is usually less hairy than G. molle and generally has smaller petals."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "careRequired",
     "commonName" : "Smooth cat's ear",
     "draft" : true,
     "edibleParts" : {
@@ -26630,6 +27221,148 @@
     },
     "warnings" : [
       "The bulbs and leaves contain lycorine: vomiting and diarrhoea. The bulbs are the usual mistake, dug up with onion weed's."
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Solander's geranium",
+    "draft" : false,
+    "edibleParts" : {
+      "sources" : [
+        "Useful Temperate Plants, 'Geranium solanderi' (CC BY-NC-SA 3.0)"
+      ],
+      "text" : "Root - raw or cooked. Carrot shaped, it is starchy but slightly bitter and not very palatable."
+    },
+    "group" : "greens",
+    "habitat" : {
+      "sources" : [
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)",
+        "New Zealand Plant Conservation Network (restated)"
+      ],
+      "text" : "Open lowland places, mostly near the coast in natural and partially modified grasslands, very occasionally in waste places.\nIn New Zealand: from the coast up into the montane zone (sea level to 600 m); it was once widespread in short tussock grassland, on lava fields and clay pans, and on rocky headlands by the sea (NZPCN, restated)."
+    },
+    "habitats" : [
+      "coastal",
+      "grassland",
+      "disturbed"
+    ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading."
+    },
+    "id" : "solanders-geranium",
+    "identification" : {
+      "sources" : [
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
+      ],
+      "text" : "Perennial herb with napiform or cylindric taproot to c. 2.5 cm diam.; caulorrhiza short and thick, bearing long weakly ascending flowering stems. Hairs variable; longer hairs straight to slightly curved; glandular hairs short and inconspicuous. Basal lvs: petiole to 30 cm long, with fine, straight or curved long hairs and shorter straight and crisped retrorse hairs; lamina to c. 7 cm diam., reniform to orbicular, lobed to 3/4-⅞ way to midrib, glabrous or densely hairy above; lobes (5)–7, obovate; larger lobes with (3)–5–(9) teeth; median and larger lateral teeth ± oblong, usually obtuse. Cauline lvs similar to basal but smaller, usually 3–5-lobed; teeth usually 3–5 per lobe. Peduncle and pedicels with hairs as on petioles; bracteoles lanceolate or narrow-triangular; fls usually in pairs, occasionally solitary. Sepals ovate or elliptic-ovate; outer sepals c. 5.5 × 3.5 mm excluding mucro; inner sepals slightly narrower; hairs straight or slightly curved, antrorse and ascending. Petals to c. 7.5 × 4.5 mm, obovate, rose-pink. Mericarp hairy; beak to c. 15 mm long. Seed c. 2 × 1.6 mm diam., subglobular to oblong, dark reddish brown or almost black; dorsal alveolae deep, usually 4–6-sided, isodiametric or longer than wide.\n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]\n'Large petals' form (Flora of New Zealand vol. IV): Taproot napiform; lamina of lf glabrous above except for margin and base; hairs of petioles and pedicels straight, to c. 1.5 mm long, perpendicular to surface; petals usually > 7 × 4 mm; alveolae of seed mostly 5-6-sided, isodiametric."
+    },
+    "lookalikes" : [
+      {
+        "entry" : "turnip-rooted-geranium",
+        "howToTell" : "Turnip-rooted geranium is a perennial with a turnip-shaped taproot about 3 cm across; its leaves are up to 5 cm across, cut about 7/8 of the way to the midrib into 5–7 linear lobes, the larger lobes usually with 7 or 9 teeth; its flowering stems usually carry dense backward-pointing hairs; its flowers are usually paired, with white to pink petals about 6 × 4 mm. Solander's geranium is a perennial with a taproot to about 2.5 cm across (Flora of New Zealand: turnip-shaped or cylindrical; NZPCN: more like a long tapering parsnip or carrot); its leaves are up to about 7 cm across, cut 3/4–7/8 of the way to the midrib into (5)–7 obovate lobes, the larger lobes with (3)–5–(9) teeth; its long hairs are straight to slightly curved; its flowers are usually paired, with rose-pink petals up to about 7.5 × 4.5 mm. Flora of New Zealand's key separates them on the hairs of the leaf and flower stalks: in turnip-rooted geranium they are sharply bent near the base, point backward and lie pressed flat; in Solander's geranium they are straight to curved, stand out or point backward, but never lie flat. NZPCN gives the same test. The key adds the leaf lobes (usually linear-obovate in turnip-rooted geranium, obovate in Solander's geranium) and the seed: pits about 0.1 mm across against usually more than 0.1 mm. NZPCN also gives the root, often turnip-shaped in turnip-rooted geranium and more like a long tapering parsnip or carrot in Solander's geranium, but Flora of New Zealand allows Solander's geranium a turnip-shaped root too, so the root alone does not settle it. Flower colour does not separate them: both can have pink petals, and NZPCN's measurements give both petals up to 8–9 mm. No source read records turnip-rooted geranium as food, and it is Threatened – Nationally Vulnerable (NZTCS 2023). The names do not separate them: Biota of New Zealand gives Solander's geranium the names turnip-rooted geranium, Matua-kūmara and pukupuku, and Flora of New Zealand Online gives the same three to turnip-rooted geranium, so a record under any of them may mean either plant.",
+        "name" : "Turnip-rooted geranium",
+        "risk" : "unknown",
+        "scientificName" : "Geranium retrorsum"
+      },
+      {
+        "entry" : "australasian-cranesbill",
+        "howToTell" : "Australasian cranesbill is a perennial with a cylindrical taproot up to about 2 cm across, often divided; its leaves are up to about 9 cm across, cut 3/4–7/8 of the way to the midrib into usually 5–7 obovate lobes, the larger lobes usually with (5)–9 teeth; its flowering stems become almost hairless, the hairs mostly pressed flat or pointing upward; its flowers are paired, with pale pink petals about 4.5 × 3 mm. Solander's geranium is a perennial with a taproot to about 2.5 cm across (Flora of New Zealand: turnip-shaped or cylindrical; NZPCN: more like a long tapering parsnip or carrot); its leaves are up to about 7 cm across, cut 3/4–7/8 of the way to the midrib into (5)–7 obovate lobes, the larger lobes with (3)–5–(9) teeth; its long hairs are straight to slightly curved; its flowers are usually paired, with rose-pink petals up to about 7.5 × 4.5 mm. Flora of New Zealand's key separates Australasian cranesbill from Solander's geranium on three characters: the middle teeth of its leaf lobes are about as long as broad (mostly longer than broad in Solander's geranium); the pale, see-through border of its inner sepals is mostly more than 0.3 mm wide near the tip (mostly less than 0.3 mm); and its seeds are red-brown with rather shallow rectangular pits (red-brown to dark brown, with rather deep rectangular to polygonal pits). Its sepals are mostly elliptic to obovate, against ovate. The lobing does not separate them (both are cut 3/4–7/8 of the way), and both have paired flowers. Australasian cranesbill's root is recorded as a famine food (Ngā Rauropi Whakaoranga).",
+        "name" : "Australasian cranesbill",
+        "risk" : "edible",
+        "scientificName" : "Geranium homeanum"
+      },
+      {
+        "entry" : "cinquefoil-geranium",
+        "howToTell" : "Cinquefoil geranium is a perennial with slender stems that lie flat or spread, usually with many branches; its basal leaves rarely last through the growing season; its leaves are usually up to 3–(4) cm across, cut 3/4–7/8 of the way into (3)–5 lobes, the larger lobes usually with 2 secondary lobes; its flowers are single or sometimes two, on thread-like stalks usually 1–3–(4) cm long, with pink petals 4–5 mm long. Solander's geranium is a perennial with a taproot to about 2.5 cm across (Flora of New Zealand: turnip-shaped or cylindrical; NZPCN: more like a long tapering parsnip or carrot); its leaves are up to about 7 cm across, cut 3/4–7/8 of the way to the midrib into (5)–7 obovate lobes, the larger lobes with (3)–5–(9) teeth; its long hairs are straight to slightly curved; its flowers are usually paired, with rose-pink petals up to about 7.5 × 4.5 mm. Flora of New Zealand's key separates cinquefoil geranium from Solander's geranium on the basal leaves, nearly always less than 3 cm across in cinquefoil geranium and mostly more than 3 cm in Solander's geranium, and on the flowers, generally single in cinquefoil geranium and usually in pairs in Solander's geranium. Cinquefoil geranium's leaves can reach 4 cm and its flowers are sometimes paired, so a small plant of Solander's geranium overlaps on both counts; its slender, flat or spreading, much branched stems are the other sign. Petal colour does not separate them. Cinquefoil geranium's root is recorded as food (Useful Temperate Plants).",
+        "name" : "Cinquefoil geranium",
+        "risk" : "edible",
+        "scientificName" : "Geranium potentilloides"
+      },
+      {
+        "entry" : "cut-leaved-cranesbill",
+        "howToTell" : "Cut-leaved cranesbill is a hairy annual with a large basal rosette; its leaves are 3.5–8 × 3.5–9 cm, cut almost to the leaf stalk into 5–7 lobes that are lobed again, ending in linear or narrow-oblong pointed segments; its flower stalks carry plain hairs and often pink-tipped glandular hairs; its sepals end in an awn (1)–2–3 mm long; its petals are pink or rose, 3.5–5 mm long and notched, its anthers blue, and its fruit segments (mericarps) carry white spreading hairs. Solander's geranium is a perennial with a taproot to about 2.5 cm across (Flora of New Zealand: turnip-shaped or cylindrical; NZPCN: more like a long tapering parsnip or carrot); its leaves are up to about 7 cm across, cut 3/4–7/8 of the way to the midrib into (5)–7 obovate lobes, the larger lobes with (3)–5–(9) teeth; its long hairs are straight to slightly curved; its flowers are usually paired, with rose-pink petals up to about 7.5 × 4.5 mm. Flora of New Zealand's key separates them at its first step: cut-leaved cranesbill is an annual, usually with a thin fibrous taproot and glandular hairs prominent in the flower clusters, while Solander's geranium is a perennial with a rather stout to tuberous rootstock and no, very few, or short and inconspicuous glandular hairs on the flower clusters. Cut-leaved cranesbill's leaves are cut almost to the leaf stalk into linear segments; Solander's geranium's are cut 3/4–7/8 of the way into broader lobes. Both have pink petals. Older floras placed Solander's geranium under Geranium dissectum (NZPCN lists Geranium dissectum var. pilosum Hook.f. and var. australe Benth. among its synonyms), so older records may use that name. Cut-leaved cranesbill's root is recorded as a famine food (Useful Temperate Plants).",
+        "name" : "Cut-leaved cranesbill",
+        "risk" : "edible",
+        "scientificName" : "Geranium dissectum"
+      }
+    ],
+    "maoriName" : "Matua-kūmara",
+    "months" : [
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "needsBookSource" : false,
+    "origin" : "native",
+    "photos" : [
+      {
+        "caption" : "Rosette of leaves",
+        "credit" : "(c) Andy McKay, some rights reserved (CC BY)",
+        "fileName" : "solanders-geranium-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/126429571"
+      },
+      {
+        "caption" : "Leaf",
+        "credit" : "(c) Joe Potter Butler, some rights reserved (CC BY)",
+        "fileName" : "solanders-geranium-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/95495832"
+      },
+      {
+        "caption" : "Close up of flower",
+        "credit" : "no rights reserved",
+        "fileName" : "solanders-geranium-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/103453547"
+      },
+      {
+        "caption" : "Close up of leaf",
+        "credit" : "(c) Andrew Spurgeon, some rights reserved (CC BY-NC)",
+        "fileName" : "solanders-geranium-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/33118158"
+      }
+    ],
+    "preparation" : {
+      "sources" : [
+        "Australian National Botanic Gardens, 'Native Geranium' (Aboriginal plant use, all rights reserved — restated)"
+      ],
+      "text" : "Every method in the sources read is Australian: the slender, carrot-like taproot was boiled and eaten (Cribb & Cribb 1987) or roasted (Flood 1980), and tough roots were pounded and eaten after cooking, though some contain tannin, which makes them unpalatable (Zola & Gott 1992). Digging the root kills the plant."
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Geranium solanderi",
+    "sources" : [
+      "Entry added 23/10/2026 when the catch-all 'Geranium species' (Geranium spp.; Langlands, Foraging New Zealand, 2024) was split and deleted (owner, 23/10/2026: 'Split and delete', then 'do a eb serach and see what geranium species can be found in nz', then 'yeah and include only edible ones unless they are needed for lookalikes', then /goal 'fill up anything you can while following our rules for those species'). Langlands' text for the genus is unread, so whether the book names this species is unconfirmed; the stub's months [1, 2, 5, 9, 10, 11, 12] dated no species and were dropped. Presence: iNaturalist New Zealand holds 105 research-grade wild records (210 wild of all grades) on 23/10/2026.",
+      "Name: 'Solander's geranium' is NZPCN's first common name and iNaturalist's; maoriName 'Matua-kūmara' from Te Aka Māori Dictionary ('matua-kūmara … Geranium solanderi'), retrieved 23/10/2026, https://maoridictionary.co.nz/search?keywords=matua-kumara. NZPCN also gives huika; Ngā Rauropi Whakaoranga files matua-kūmara (Taylor 1870) under Geranium homeanum as well. Biota of New Zealand (https://biotanz.landcareresearch.co.nz/scientific-names/6c678e50-a3b2-422e-9b31-c2dc3d7c00c5, retrieved 23/10/2026) gives the Māori names Matua-kūmara and pukupuku and the English name 'turnip-rooted geranium' — the name this guide gives Geranium retrorsum. Flora of New Zealand Online gives Geranium retrorsum the same three names (Matua-kūmara; pukupuku; turnip-rooted geranium), so both lookalike cards between the two say so.",
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Geranium solanderi' factsheet (description from Webb et al. 1988). CC BY 3.0 NZ. Retrieved 23/10/2026. https://www.nzflora.info/factsheet/Taxon/Geranium-solanderi.html — quoted verbatim. Flora of New Zealand vol. IV treats G. solanderi in a broad sense, as the two forms of Gardner (1984): 'Large petals' and 'Coarse hairs'. NZPCN says the 'coarse hairs' form is now Geranium gardneri (naturalised, probably from Australia). The NZ Flora Online description still covers both forms, so it is quoted as published. Second line: Webb's paragraph for the 'Large petals' form (Flora of New Zealand vol. IV, CC BY-NC-SA 4.0, URL as in the Summary line), quoted verbatim, its lead '(1) \"Large petals\" of Gardner (1984, loc. cit.).' replaced by the label. Why that form: Biota of New Zealand (owner's link, 23/10/2026) lists Geranium solanderi f. \"large petals\" among the synonyms of Geranium solanderi, and Gardner (1984, quoted there) says that form 'matches exactly the type'; NZPCN's Geranium gardneri page says gardneri 'Has been treated in New Zealand as Geranium solanderi “coarse hairs”'. NZPCN still describes the root as parsnip- or carrot-like where Webb gives the 'Large petals' form a napiform root; the cards keep both.",
+      "Summary (first and second lines): Wikipedia contributors. 'Geranium solanderi', Wikipedia, The Free Encyclopedia, revision 1380155408. CC BY-SA 4.0. Retrieved 23/10/2026. https://en.wikipedia.org/wiki/Geranium_solanderi — quoted verbatim. Cut: the naming history, the Description section (its 'stemas', 'stald' and leaf sizes are not used), and the Noongar diarrhoea remedy (medicine, not food).",
+      "Summary (third line) and habitat: Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988: Flora of New Zealand vol. IV, Naturalised Pteridophytes, Gymnosperms, Dicotyledons (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0), 'Geranium solanderi'. Retrieved 23/10/2026. https://floraseries.landcareresearch.co.nz/taxa/bc022784-0cdc-42be-8a34-43f1919b5a90 — quoted verbatim. Webb gives two habitat lines, one after each form; the first is used ('Open lowland places…'); the second reads 'Dry, open, lowland places, mostly near the coast in natural or modified grassland, sometimes in waste places.' NZPCN (all rights reserved) adds: coastal to montane (0–600 m), formerly widespread in short tussock grassland, on lava fields, clay pans and rocky coastal headlands. Habitat tags coastal, grassland, disturbed from 'near the coast', 'grasslands', 'waste places'.",
+      "Edible parts: Useful Temperate Plants (Ken Fern), 'Geranium solanderi'. CC BY-NC-SA 3.0. Retrieved 23/10/2026. https://temperate.theferns.info/plant/Geranium+solanderi — quoted verbatim, reference numbers removed. UTP cites Cribb & Cribb, Wild Food in Australia (1976) and Crowe, Native Edible Plants of New Zealand (1990) for it. Cut: 'There is a form with turnip-shaped roots that might be better' — turnip-shaped roots are what NZPCN gives to Geranium retrorsum, which is Threatened, so the sentence would steer a reader to the wrong plant. Known Hazards: 'None known'. OPEN LEAD: Crowe's own entry (owner may own the book).",
+      "Preparation and months: Australian National Botanic Gardens, 'Native Geranium — Geranium solanderi' (Aboriginal Plant Use, all rights reserved — restated, not quoted). Retrieved 23/10/2026. https://www.anbg.gov.au/apu/plants/gerasola.html — it quotes Cribb & Cribb 1987 p. 169 ('boiled and eaten the slender, carroty taproot was well packed with starch but not particularly palatable with a slight bitter flavour'), Flood 1980 p. 95 ('Large fleshy roots were roasted'; 'Available summer-autumn') and Zola & Gott 1992 p. 47 ('Plants with tough roots - need to be pounded; contain nutritious starch and can be eaten after cooking; some contain tannin - unpalatable'). 'Digging the root kills the plant' is my sentence (the root is the plant's perennial stock — Flora of New Zealand: 'Perennial herb with napiform or cylindric taproot'). Months December–May = Flood's 'summer-autumn' (an Australian, species-specific season word) read as the New Zealand summer and autumn; no New Zealand source dates the root.",
+      "Origin and harvest ethics: NZPCN gives biostatus Native and the 2023 assessment 'At Risk – Declining (qualifiers DPR, DPS, DPT, SO)' (de Lange et al. 2024, Conservation status of vascular plants in Aotearoa New Zealand, 2023, NZTCS 43; NZTCS data CC BY 4.0). https://www.nzpcn.org.nz/flora/species/geranium-solanderi/ — Flora of New Zealand Online: Indigenous (Non-endemic). harvestEthics is the owner's sentence for At Risk species with a food use (owner, 19/10/2026). NZPCN: it has declined from large parts of its former range due to rabbit browsing and the spread of taller weeds.",
+      "Warnings: none found (UTP Known Hazards 'None known'); the lookalike cards satisfy the field.",
+      "Lookalike cards: written for this guide 23/10/2026 from the Flora of New Zealand vol. IV key to Geranium (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/20ca5ec6-fafe-4592-9d67-3d7491229fcc) and the Flora of New Zealand descriptions of both species in each pair; NZPCN's 'Similar taxa' notes (all rights reserved, facts restated) on the Solander's / turnip-rooted pair. Every figure in a card appears in a source for the species it describes.",
+      "Photos (the owner's curated set, 23/10/2026, with -1 replaced the same evening at the owner's request — 'find better ones make sure that they are actually better'): -2 rosette of leaves (obs 126429571, Andy McKay, Paekākāriki, 2022-07-16, CC BY); -5 leaf (obs 95495832, Joe Potter Butler, Waikari, 2021-09-20, CC BY); -4 close up of flower (obs 103453547, Peter de Lange, Kendall Bay, Auckland, 2021-12-22, CC0; pale pink); -1 close up of leaf (obs 33118158, Andrew Spurgeon, Cape Reinga, 2019-09-21, CC BY-NC; one leaf showing Flora of New Zealand's obovate, toothed lobes; identified G. solanderi by two identifiers). It replaces obs 314487095 (Hannah Whittall), whose leaves were cut into long, narrow segments closer to turnip-rooted or cut-leaved geranium; chosen by eye from 169 candidate frames in 75 NZ research-grade observations, avoiding the kind of frame the owner had removed (cluttered patches, partial or withered leaves, soft focus). Each checked by the iNaturalist API 23/10/2026: Geranium solanderi, research grade, wild, New Zealand.",
+      "Habitat (second line) and summary (last line), from the owner's links (23/10/2026, no instruction given): NZPCN, 'Geranium solanderi' (all rights reserved, facts restated), https://www.nzpcn.org.nz/flora/species/geranium-solanderi/, retrieved 23/10/2026 — habitat 'Coastal to montane (0-600 m a.s.l.)…', the 2023 NZTCS status (CC BY 4.0) and the regional statuses (Ford et al. 2026 Northland; Simpkins et al. 2025 Auckland; Enright et al. 2025 Wellington; Jarvie et al. 2025 Otago), and the decline sentence. No new habitat tag: 'coast' and 'tussock grasslands' confirm coastal and grassland; 'montane' is not alpine, and the classifier's alpine from 'tussock' is rejected (short tussock grassland, 0–600 m); lava fields, clay pans and headlands have no tag of their own. NZPCN's flowering September–April and fruiting October–June date the flowers and seed, not the root, so months are unchanged. Greening Australia, 'Geranium solanderi' fact sheet (Capital Region, all rights reserved), https://www.greeningaustralia.org.au/wp-content/uploads/2017/11/FACT-SHEET_Geranium-solanderi.pdf — its food sentences ('The large fleshy roots were roasted and eaten by indigenous people'; starch, some roots with tannin) cite the ANBG page already used; the tannin clause was added to Preparation from ANBG itself.",
+      "Other links from the owner, 23/10/2026, read and not used on the page: Wikipedia (revision 1380155408, unchanged). Greening Australia's Australian description, distribution, varieties (var. solanderi, var. grande), flowering (chiefly August–December, Australian), seed collection late December–mid February, cultivation and diarrhoea remedy (medicine). Biota of New Zealand's biostatus (Indigenous, non-endemic; Wild) agrees with the Origin line; Gardner's full form descriptions (New Zealand Journal of Botany 1984, not openly licensed) are not quoted. NZPCN's detailed description (petals purplish, (3)–6–(8.1) mm; rootstock 2.4–19.1 mm across) and cultivation notes are not used beside Flora of New Zealand's. nativeplants.nz ('Geranium Solanderi Native Plant') describes a tufted grass with panicles and calls it Not Threatened — wrong plant, not used. Yarra Ranges Council Plant Directory: access denied to the fetch (unread).",
+      "Summary, 23/10/2026: Wikipedia's double space in 'common names  - native geranium' closed."
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Geranium solanderi' (CC BY-SA 4.0)",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)",
+        "New Zealand Plant Conservation Network (restated; NZTCS data CC BY 4.0)"
+      ],
+      "text" : "Geranium solanderi (common names - native geranium, Australian cranesbill, Austral cranesbill, Cut-leaf cranesbill, native carrot, and hairy geranium) is a species of plant in the family Geraniaceae. It is native to Australia (New South Wales, Queensland, Victoria, South Australia, Western Australia, and Tasmania), and to New Zealand.\nIn New Zealand, in both 2004 and 2009 it was declared \"Not threatened\", but in 2012, under the New Zealand Threat Classification System it was declared \"At Risk - Declining\", with the qualifiers SO (safe overseas) and DP (data poor), and this status was reaffirmed in 2017.\nGardner, R. O., New Zealand J. Bot. 22: 131-134 (1984), stated that most N.Z. material of G. solanderi belongs to 1 or other of 2 forms. He did not give them taxonomic recognition because their distinctness is lost in Australia.\nIts 2023 national assessment is At Risk – Declining. Regional assessments rate it Regionally Threatened – Regionally Critical in Northland (2026), Regionally Threatened – Regionally Endangered in Wellington (2025) and Regionally Threatened – Regionally Vulnerable in Auckland (2025), and Regionally Data Deficient in Otago (2025). Rabbit browsing and the spread of taller, faster-growing weeds have caused it to decline across large parts of its former range (NZPCN, restated)."
+    },
+    "warnings" : [
+
     ]
   },
   {
@@ -29165,6 +29898,135 @@
         "Wikipedia, 'Trametes versicolor' (CC BY-SA 4.0)"
       ],
       "text" : "Trametes versicolor – also known as Coriolus versicolor and Polyporus versicolor – is a common polypore mushroom found throughout the world."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Turnip-rooted geranium",
+    "draft" : false,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "greens",
+    "habitat" : {
+      "sources" : [
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)",
+        "New Zealand Plant Conservation Network (restated)"
+      ],
+      "text" : "Widely distributed in open habitats, especially in lowland grassland and scrub, on cliffs, often in modified communities of herbs.\nIn New Zealand: from the coast up into the lower montane zone (sea level to 400 m); it was once widespread in short tussock grassland, on lava fields and clay pans, and on rocky headlands by the sea (NZPCN, restated)."
+    },
+    "habitats" : [
+      "coastal",
+      "shrubland",
+      "grassland"
+    ],
+    "harvestEthics" : {
+      "sources" : [
+
+      ],
+      "text" : "There is no reason to pick this plant. You can observe and photograph it without disturbing it."
+    },
+    "id" : "turnip-rooted-geranium",
+    "identification" : {
+      "sources" : [
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+      ],
+      "text" : "Perennial herb with napiform taproot c. 3 cm diam.; caulorrhiza short, bearing a number of flowering stems. Hairs variable, the longer mostly curved or bent near base. Basal lvs with petioles to c. 25 cm long with retrorse hairs. Lamina to 5 cm diam., suborbicular to orbicular, lobed to c. ⅞ way to midrib; lobes 5–7, linear, inconspicuously but uniformly hairy on both sides; larger lobes usually with 7 or 9 teeth; median and larger lateral teeth usually oblong, occasionally obovate to clavate, obtuse, subacute or mucronate. Cauline lvs smaller, with fewer lobes. Flowering stems with dense retrorse hairs or occasionally glabrescent; bracteoles linear to narrowly triangular; fls usually in pairs, occasionally solitary. Sepals c. 5 × 3 mm excluding awn, ovate or elliptic-ovate; awn to 1 mm long; hairs mostly short, appressed, longer on margins. Petals c. 6 × 4 mm, obovate, white to pink. Mericarps hairy; beak to 14 mm long. Seed c. 2 × 1.4 mm, oblong, dark; dorsal alveolae usually deep, 4–6-sided, ± isodiametric.\n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
+    },
+    "lookalikes" : [
+      {
+        "entry" : "solanders-geranium",
+        "howToTell" : "Solander's geranium is a perennial with a taproot to about 2.5 cm across (Flora of New Zealand: turnip-shaped or cylindrical; NZPCN: more like a long tapering parsnip or carrot); its leaves are up to about 7 cm across, cut 3/4–7/8 of the way to the midrib into (5)–7 obovate lobes, the larger lobes with (3)–5–(9) teeth; its long hairs are straight to slightly curved; its flowers are usually paired, with rose-pink petals up to about 7.5 × 4.5 mm. Turnip-rooted geranium is a perennial with a turnip-shaped taproot about 3 cm across; its leaves are up to 5 cm across, cut about 7/8 of the way to the midrib into 5–7 linear lobes, the larger lobes usually with 7 or 9 teeth; its flowering stems usually carry dense backward-pointing hairs; its flowers are usually paired, with white to pink petals about 6 × 4 mm. Flora of New Zealand's key separates them on the hairs of the leaf and flower stalks: in turnip-rooted geranium they are sharply bent near the base, point backward and lie pressed flat; in Solander's geranium they are straight to curved, stand out or point backward, but never lie flat. NZPCN gives the same test. The key adds the leaf lobes (usually linear-obovate in turnip-rooted geranium, obovate in Solander's geranium) and the seed: pits about 0.1 mm across against usually more than 0.1 mm. NZPCN also gives the root, often turnip-shaped in turnip-rooted geranium and more like a long tapering parsnip or carrot in Solander's geranium, but Flora of New Zealand allows Solander's geranium a turnip-shaped root too, so the root alone does not settle it. Flower colour does not separate them: both can have pink petals, and NZPCN's measurements give both petals up to 8–9 mm. Solander's geranium's root is recorded as food (Useful Temperate Plants). The names do not separate them: Biota of New Zealand gives Solander's geranium the names turnip-rooted geranium, Matua-kūmara and pukupuku, and Flora of New Zealand Online gives the same three to turnip-rooted geranium, so a record under any of them may mean either plant.",
+        "name" : "Solander's geranium",
+        "risk" : "edible",
+        "scientificName" : "Geranium solanderi"
+      },
+      {
+        "entry" : "australasian-cranesbill",
+        "howToTell" : "Australasian cranesbill is a perennial with a cylindrical taproot up to about 2 cm across, often divided; its leaves are up to about 9 cm across, cut 3/4–7/8 of the way to the midrib into usually 5–7 obovate lobes, the larger lobes usually with (5)–9 teeth; its flowering stems become almost hairless, the hairs mostly pressed flat or pointing upward; its flowers are paired, with pale pink petals about 4.5 × 3 mm. Turnip-rooted geranium is a perennial with a turnip-shaped taproot about 3 cm across; its leaves are up to 5 cm across, cut about 7/8 of the way to the midrib into 5–7 linear lobes, the larger lobes usually with 7 or 9 teeth; its flowering stems usually carry dense backward-pointing hairs; its flowers are usually paired, with white to pink petals about 6 × 4 mm. Flora of New Zealand's key separates Australasian cranesbill from turnip-rooted geranium on three characters: the middle teeth of its leaf lobes are about as long as broad (mostly longer than broad in turnip-rooted geranium); the pale, see-through border of its inner sepals is mostly more than 0.3 mm wide near the tip (mostly less than 0.3 mm); and its seeds are red-brown with rather shallow rectangular pits (red-brown to dark brown, with rather deep rectangular to polygonal pits). Its sepals are mostly elliptic to obovate, against ovate. The lobing does not separate them (both are cut 3/4–7/8 of the way), and both have paired flowers. Australasian cranesbill's root is recorded as a famine food (Ngā Rauropi Whakaoranga).",
+        "name" : "Australasian cranesbill",
+        "risk" : "edible",
+        "scientificName" : "Geranium homeanum"
+      },
+      {
+        "entry" : "cinquefoil-geranium",
+        "howToTell" : "Cinquefoil geranium is a perennial with slender stems that lie flat or spread, usually with many branches; its basal leaves rarely last through the growing season; its leaves are usually up to 3–(4) cm across, cut 3/4–7/8 of the way into (3)–5 lobes, the larger lobes usually with 2 secondary lobes; its flowers are single or sometimes two, on thread-like stalks usually 1–3–(4) cm long, with pink petals 4–5 mm long. Turnip-rooted geranium is a perennial with a turnip-shaped taproot about 3 cm across; its leaves are up to 5 cm across, cut about 7/8 of the way to the midrib into 5–7 linear lobes, the larger lobes usually with 7 or 9 teeth; its flowering stems usually carry dense backward-pointing hairs; its flowers are usually paired, with white to pink petals about 6 × 4 mm. Flora of New Zealand's key separates cinquefoil geranium from turnip-rooted geranium on the basal leaves, nearly always less than 3 cm across in cinquefoil geranium and mostly more than 3 cm in turnip-rooted geranium, and on the flowers, generally single in cinquefoil geranium and usually in pairs in turnip-rooted geranium. Cinquefoil geranium's leaves can reach 4 cm and its flowers are sometimes paired, so a small plant of turnip-rooted geranium overlaps on both counts; its slender, flat or spreading, much branched stems are the other sign. Petal colour does not separate them. Cinquefoil geranium's root is recorded as food (Useful Temperate Plants).",
+        "name" : "Cinquefoil geranium",
+        "risk" : "edible",
+        "scientificName" : "Geranium potentilloides"
+      }
+    ],
+    "maoriName" : "Matua-kūmara",
+    "months" : [
+
+    ],
+    "needsBookSource" : false,
+    "origin" : "native",
+    "photos" : [
+      {
+        "caption" : "Low, rounded plant in open ground",
+        "credit" : "(c) Alice Shanks, some rights reserved (CC BY)",
+        "fileName" : "turnip-rooted-geranium-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/20382657"
+      },
+      {
+        "caption" : "Roots",
+        "credit" : "no rights reserved",
+        "fileName" : "turnip-rooted-geranium-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/6133695"
+      },
+      {
+        "caption" : "Close up of leaf",
+        "credit" : "(c) Nathan, some rights reserved (CC BY-NC)",
+        "fileName" : "turnip-rooted-geranium-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/331047197"
+      },
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Alex Fergus, some rights reserved (CC BY-NC)",
+        "fileName" : "turnip-rooted-geranium-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/307846362"
+      }
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Geranium retrorsum",
+    "sources" : [
+      "Entry added 23/10/2026 when the catch-all 'Geranium species' (Geranium spp.; Langlands, Foraging New Zealand, 2024) was split and deleted (owner, 23/10/2026: 'Split and delete', then 'do a eb serach and see what geranium species can be found in nz', then 'yeah and include only edible ones unless they are needed for lookalikes', then /goal 'fill up anything you can while following our rules for those species'). Langlands' text for the genus is unread, so whether the book names this species is unconfirmed; the stub's months [1, 2, 5, 9, 10, 11, 12] dated no species and were dropped. Presence: iNaturalist New Zealand holds 295 research-grade wild records (357 wild of all grades) on 23/10/2026. Added as a lookalike target of Solander's geranium, not as food (owner: 'unless they are needed for lookalikes').",
+      "Name: 'Turnip-rooted geranium' is NZPCN's common name (also Biota of New Zealand). iNaturalist and Wikipedia use 'New Zealand geranium', a United States name per Wikipedia. Flora of New Zealand Online (CC BY 3.0 NZ, https://www.nzflora.info/factsheet/taxon/Geranium-retrorsum.html, retrieved 23/10/2026) gives the vernacular names 'Matua-kūmara; pukupuku; turnip-rooted geranium' — Biota of New Zealand gives the same three to Geranium solanderi, and this guide's Solander's geranium page uses Matua-kūmara (Te Aka), so maoriName is left empty here and the shared names go on both lookalike cards. Australian names: 'Common Cranesbill' (PlantNET NSW), 'Grassland Crane's-bill' (VicFlora).",
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Geranium retrorsum' factsheet (description from Webb et al. 1988). CC BY 3.0 NZ. Retrieved 23/10/2026. https://www.nzflora.info/factsheet/Taxon/Geranium-retrorsum.html — quoted verbatim.",
+      "Summary (first and second lines): Wikipedia contributors. 'Geranium retrorsum', Wikipedia, The Free Encyclopedia, revision 1350988315. CC BY-SA 4.0. Retrieved 23/10/2026. https://en.wikipedia.org/wiki/Geranium_retrorsum — quoted verbatim. Cut: the description sentences ('fuchsia to purple' flowers contradicts Flora of New Zealand's 'white to pink').",
+      "Summary (third line) and habitat: Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988: Flora of New Zealand vol. IV, Naturalised Pteridophytes, Gymnosperms, Dicotyledons (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0), 'Geranium retrorsum'. Retrieved 23/10/2026. https://floraseries.landcareresearch.co.nz/taxa/71d29596-6f66-4576-8e87-1e3a8f60d03c — quoted verbatim. Habitat tags shrubland, grassland from 'scrub', 'grassland'. NZPCN (all rights reserved) adds: coastal to lower montane (0–400 m); now very uncommon through most of its North Island range, still common in parts of the eastern South Island; rabbits dig the plants up for the roots.",
+      "Edible parts: none recorded in the sources read — Useful Temperate Plants and PFAF have no page; Ngā Rauropi Whakaoranga has no record. PFAF's G. solanderi page mentions 'a form with turnip-shaped roots that might be better' (Cribb & Cribb 1976); that this is G. retrorsum is a guess and is not carried over. Months left empty: nothing is collected.",
+      "Origin and harvest ethics: NZPCN gives the 2023 assessment 'Threatened – Nationally Vulnerable' (qualifiers DPR, DPS, DPT, SO; de Lange et al. 2024, NZTCS 43; NZTCS data CC BY 4.0). https://www.nzpcn.org.nz/flora/species/geranium-retrorsum/ — NZPCN's header says 'Native – Endemic taxon' but its Distribution says 'Indigenous'; Flora of New Zealand Online gives 'Indigenous (Non-endemic)' and Webb 'Also indigenous to temperate Australia', so origin is native. harvestEthics is the owner's no-food-use sentence (owner, 17/10/2026).",
+      "Warnings: none; the lookalike cards satisfy the field.",
+      "Lookalike cards: written for this guide 23/10/2026 from the Flora of New Zealand vol. IV key to Geranium (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/20ca5ec6-fafe-4592-9d67-3d7491229fcc) and the Flora of New Zealand descriptions of both species in each pair; NZPCN's 'Similar taxa' notes (all rights reserved, facts restated) on the Solander's / turnip-rooted pair. Every figure in a card appears in a source for the species it describes.",
+      "Photos (the owner's curated set, 23/10/2026, with -1 and -4 replaced the same evening at the owner's request — 'find better ones make sure that they are actually better'): -2 low, rounded plant in open ground (obs 20382657, Alice Shanks, Birdlings Flat, 2019-02-16, CC BY); -3 roots (obs 6133695, Peter de Lange, Kapiti Island Nature Reserve, 2017-04-15, CC0; legacy naturewatch.org.nz link replaced by the iNaturalist observation); -1 close up of flower (obs 307846362, Alex Fergus, Boulder Bank Scenic Reserve, Nelson, 2025-08-19, CC BY-NC; white petals tinged pink, as Flora of New Zealand's 'white to pink'; first identified as G. solanderi, now G. retrorsum by three identifiers including the observer); -4 close up of leaf (obs 331047197, Nathan, Selwyn, Canterbury, 2025-10-11, CC BY-NC; leaf cut into narrow, linear lobes, as the Flora describes; two identifiers agree). They replace obs 249460676 and 39603847 (Alice Shanks), whose broad, toothed lobes did not match the Flora's 'linear'. Chosen by eye from the first frames of 207 NZ research-grade observations, avoiding the kind of frame the owner had removed (withered leaves, a small plant lost on rock). Each checked by the iNaturalist API 23/10/2026: Geranium retrorsum, research grade, wild, New Zealand.",
+      "Summary (fourth and fifth lines), habitat (second line) and habitat tag coastal, from the owner's links (23/10/2026, no instruction given): NZPCN, 'Geranium retrorsum' web page and fact-sheet PDF (dated 25 May 2026; all rights reserved, facts restated), https://www.nzpcn.org.nz/flora/species/geranium-retrorsum/ and https://www.nzpcn.org.nz/site/assets/files/0/16/582/geranium-retrorsum.pdf, retrieved 23/10/2026 — the 2023 NZTCS status and earlier ones (CC BY 4.0), the regional statuses (web page; the PDF predates the Northland and Wellington ones), the Threats paragraph (citing de Lange et al. 2010), the Taxonomic notes on the three races (PDF only), and the Habitat line. 'Rocky coastal headlands' gives the coastal tag (Webb's 'on cliffs' agrees); 'montane' is not alpine, and the classifier's alpine from 'tussock' is rejected (short tussock grassland, 0–400 m). VicFlora, Royal Botanic Gardens Victoria, 'Geranium retrorsum' (CC BY 4.0; description from Smith 1999, Flora of Victoria vol. 4, updated by Val Stajsic 24/02/2025), https://vicflora.rbg.vic.gov.au/flora/taxon/f100b669-ec8d-4e33-8342-81316f256c56, retrieved 23/10/2026 — fifth summary line quoted verbatim, label 'In Victoria (VicFlora): ' mine.",
+      "Other links from the owner, 23/10/2026, read and not used on the page: Wikipedia (revision 1350988315, unchanged). Flora of New Zealand Online's description is already the Identification text; its flowering Oct.–Apr. (and NZPCN's flowering September–March, fruiting October–July) dates no harvest, so months stay empty. NZPCN's detailed description (petals (2.9)–3.5–5.3–(9.2) mm, 'dark white, pink to dark purple'; rootstock 4.9–15.7 mm across) is not used beside Flora of New Zealand's. VicFlora's description, Victorian distribution, flowering and its Geranium beardsellii note, and PlantNET NSW's description (taproot turnip-shaped, petals 5–10 mm, pink), are Australian material that VicFlora says mostly differs from the New Zealand type form. None of the pages gives a food use. Yarra Ranges Council Plant Directory: access denied to the fetch (unread).",
+      "maoriName 'Matua-kūmara' set 23/10/2026 (owner: 'add maori'): Flora of New Zealand Online gives 'Matua-kūmara; pukupuku; turnip-rooted geranium' for Geranium retrorsum (CC BY 3.0 NZ, https://www.nzflora.info/factsheet/taxon/Geranium-retrorsum.html). The same name is on Solander's geranium (Te Aka) and is filed by Ngā Rauropi Whakaoranga under Australasian cranesbill too (Taylor 1870), so it does not identify one species — the Solander's geranium cards say so."
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Geranium retrorsum' (CC BY-SA 4.0)",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)",
+        "New Zealand Plant Conservation Network (restated; NZTCS data CC BY 4.0)",
+        "VicFlora, Royal Botanic Gardens Victoria, 'Geranium retrorsum' (CC BY 4.0)"
+      ],
+      "text" : "Geranium retrorsum is a species of Geranium known by the common name New Zealand geranium in the United States and common cranesbill in Australia. It is native to Australia and New Zealand but can be found on other continents as an introduced species which is often a noxious weed as well.\nIn New Zealand this species has been classified by the Department of Conservation as Threatened - Nationally Vulnerable.\nPlants treated here as G. retrorsum were treated by Allan (1961) within his concept of G. pilosum.\nIts 2023 national assessment is Threatened – Nationally Vulnerable (it was Not Threatened in 2004). Regional assessments rate it Regionally Threatened – Regionally Critical in Northland (2026), Wellington (2025) and Otago (2025), and Regionally Threatened – Regionally Vulnerable in Auckland (2025). It has become very uncommon over most of its North Island range, where it now grows mainly on northern offshore islands, but is still common in parts of the eastern South Island. Rabbits threaten it by digging the plants up for their roots, and taller exotic weeds now dominate the open places it favours. Besides the typical form, two other races grow in New Zealand: one on weedy sites around Canterbury, and one so far known only around Oakley Creek, Auckland, perhaps also at Tawa, Wellington; both are treated as indigenous for now (NZPCN, restated).\nIn Victoria (VicFlora): Most Victorian plants differ from the type form of Geranium retrorsum from New Zealand as circumscribed by Gardner (1984). Further assessment of this species may result in Victorian (?and Australian) material being reclassified at an infraspecific level."
     },
     "warnings" : [
 
@@ -32603,6 +33465,106 @@
         "Wikipedia, 'Taxus baccata' (CC BY-SA 4.0)"
       ],
       "text" : "Taxus baccata is a species of coniferous tree in the family Taxaceae.\nThe yew is native to all countries of Europe (except Iceland), the Caucasus, and beyond from Turkey eastwards to northern Iran. Its range extends south to Morocco and Algeria in North Africa, and parts of Southwest and South Asia. A few populations are present in the archipelagos of the Azores and Madeira. The limit of its northern Scandinavian distribution is its sensitivity to frost, with global warming predicted to allow its spread inland. It has been introduced elsewhere, including the United States."
+    },
+    "warnings" : [
+
+    ]
+  },
+  {
+    "caution" : "careRequired",
+    "commonName" : "Small herb Robert",
+    "draft" : false,
+    "edibleParts" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "group" : "greens",
+    "habitat" : {
+      "sources" : [
+        "Wikipedia, 'Geranium purpureum' (CC BY-SA 4.0)"
+      ],
+      "text" : "Introduced populations are often found along railway corridors."
+    },
+    "habitats" : [
+      "disturbed"
+    ],
+    "id" : "small-herb-robert",
+    "identification" : {
+      "sources" : [
+        "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)"
+      ],
+      "text" : "Annual or biennial, hairy, taprooted herb, with sprawling to suberect branched stems to c. 30 cm long, and characteristic scent. Stem base sometimes short and thick with a rosette of lvs. Petioles to c. 10 cm long, reddish where exposed to strong light, usually hairy along 1 side. Lamina very deeply palmately divided, 1.5–5–(7) × 2–6–(8) cm, ± broad-ovate, with hairs scattered above, nearly glabrous below, often turning red with age; lobes 5, pinnatisect or less commonly pinnatifid; ultimate segments mucronate. Infl. very diffuse; fls paired; peduncles and pedicels variable, with simple and glandular hairs, often with a line of hairs along 1 side. Sepals (at anthesis) 5–8 mm long including apical awn, ovate, with mostly glandular hairs, ± reddish. Petals 6–9 mm long, ± oblanceolate, pink to rose; claw a little > limb; apex rounded. Filaments pinkish; anthers yellow. Mericarps 2.5–3 mm long, with short hairs; upper ⅔ with many, close, transverse ridges. Seed smooth.\n[From:  Webb et al. (1988) Flora of New Zealand. Volume 4.]"
+    },
+    "lookalikes" : [
+      {
+        "entry" : "herb-robert",
+        "howToTell" : "Herb robert is an annual or biennial, hairy, taprooted herb with a characteristic scent; its stems reach about 50 cm; its leaves reach about 9 × 10 cm, with 3–5 lobes; its flowers are paired, with pink or rose petals (7.5)–10–11.5 mm long; its anthers are orange; its fruit segments (mericarps) are 2.5–3 mm long, with 4–6 cross-ridges. Small herb Robert is an annual or biennial, hairy, taprooted herb with a characteristic scent; its stems are sprawling to nearly upright and reach about 30 cm; its leaves are 1.5–5–(7) × 2–6–(8) cm, cut very deeply into 5 lobes; its flowers are paired, with pink to rose petals 6–9 mm long; its anthers are yellow; its fruit segments are 2.5–3 mm long, with many close cross-ridges on their upper two-thirds. Flora of New Zealand's key separates them on the petals, usually 10–11.5 mm in herb robert and 6–9 mm in small herb Robert, and the anthers, orange in herb robert and yellow in small herb Robert. Its note on small herb Robert says the two have sometimes been confused, and gives small petals, yellow pollen and more, closer ridges on the fruit segments together as the signs of small herb Robert, which is also generally more upright, with smaller leaves. No single sign settles it: herb robert's petals can be as short as 7.5 mm, inside small herb Robert's range, and Wikipedia says both species have yellow pollen, so anther colour alone can be hard to read. Both are scented, both have paired pink flowers and deeply divided leaves that turn red, and their fruit segments are the same length. Herb robert's leaves are described as edible by two uncited websites, and two Spanish folk records call it poisonous (see its page).",
+        "name" : "Herb robert",
+        "risk" : "edible",
+        "scientificName" : "Geranium robertianum"
+      }
+    ],
+    "months" : [
+
+    ],
+    "needsBookSource" : false,
+    "origin" : "introduced",
+    "photos" : [
+      {
+        "caption" : "Close up of flower",
+        "credit" : "(c) Jacqui Geux, some rights reserved (CC BY)",
+        "fileName" : "small-herb-robert-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/33939467"
+      },
+      {
+        "caption" : "Plant in natural habitat",
+        "credit" : "(c) Alice Shanks, some rights reserved (CC BY)",
+        "fileName" : "small-herb-robert-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/36183997"
+      },
+      {
+        "caption" : "Leaves and flowers",
+        "credit" : "no rights reserved (CC0)",
+        "fileName" : "small-herb-robert-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/408623866"
+      },
+      {
+        "caption" : "Flower and fruits",
+        "credit" : "(c) Doug Miller, some rights reserved (CC BY)",
+        "fileName" : "small-herb-robert-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/65065812"
+      }
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : ""
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Geranium purpureum",
+    "sources" : [
+      "Entry added 23/10/2026 as a lookalike target of herb robert, not as food (owner, 23/10/2026: 'yeah and include only edible ones unless they are needed for lookalikes'; then /goal 'make sure everything is up to standard with the geranium species'). Flora of New Zealand vol. IV says the two have sometimes been confused. Presence: iNaturalist New Zealand holds 99 research-grade wild records with CC0, CC BY or CC BY-NC photos on 23/10/2026 (119 research grade of all licences, 299 wild), above the presence threshold of three.",
+      "Name: 'Small herb Robert' from Flora of New Zealand vol. IV, Flora of New Zealand Online and NZPCN; Wikipedia gives little-robin.",
+      "Identification text: Flora of New Zealand Online, Manaaki Whenua – Landcare Research. 'Geranium purpureum' factsheet (description from Webb et al. 1988). CC BY 3.0 NZ. Retrieved 23/10/2026. https://www.nzflora.info/factsheet/Taxon/Geranium-purpureum.html — quoted verbatim. Flowering Sep.–Jan.",
+      "Summary (first line) and habitat: Wikipedia contributors. 'Geranium purpureum', Wikipedia, The Free Encyclopedia, revision 1355092632. CC BY-SA 4.0. Retrieved 23/10/2026. https://en.wikipedia.org/wiki/Geranium_purpureum — quoted verbatim, wiki markup and references removed. The habitat is Wikipedia's sentence on introduced populations; no New Zealand habitat text was found: Flora of New Zealand vol. IV gives only the distribution, NZPCN only biostatus, year naturalised (1957) and origin, and Esler 1987 ('The naturalisation of plants in urban Auckland, New Zealand 3. Catalogue of naturalised species', NZ Journal of Botany 25, https://www.tandfonline.com/doi/pdf/10.1080/0028825X.1987.10410085), which a search summary says describes it on waste land in urban Auckland, returned 403 and is unread. Habitat tag disturbed ('railway corridors'). Not used: Wikipedia's Description and its Californian key (Jepson), and its ecology sentence on winter temperature.",
+      "Summary (second and third lines): Flora of New Zealand vol. IV, 'Geranium purpureum' (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/4ab1bde8-21ee-4dbe-a312-f8dee86e6fa9), Retrieved 23/10/2026. — quoted verbatim. Webb gives the native range 'Macaronesia, W. and S. Europe, south to E. Africa', the year 1957 and 'FL Sep-Jan.'",
+      "Edible parts: none recorded in the sources read — Useful Temperate Plants has no record for it ('We have no record for \"Geranium purpureum\"'); Plants For A Future returned its search page, not a species page; CONECT-e's 'Geranium purpureum' page (https://www.conecte.es/index.php/es/plantas/999-geranium-purpureum/usos-tradicionales) gives Spanish and Catalan names but no traditional-use record. Months left empty: nothing is collected.",
+      "Origin: Flora of New Zealand Online and NZPCN: Exotic. Not on DOC's 2024 environmental weed list (SfC 340, no Geranium). Origin introduced.",
+      "Warnings: none found; the lookalike card satisfies the field.",
+      "Lookalike card to herb robert: written for this guide 23/10/2026 from the Flora of New Zealand vol. IV key to Geranium (Webb et al. 1988, CC BY-NC-SA 4.0, https://floraseries.landcareresearch.co.nz/taxa/20ca5ec6-fafe-4592-9d67-3d7491229fcc), couplet 4 ('Petals usually 10-11.5 mm long; anthers orange' against 'Petals 6-9 mm long; anthers yellow'), the Flora vol. IV note on G. purpureum quoted in the summary, both Flora of New Zealand descriptions, and Wikipedia's 'since both species have yellow pollen, plants can be difficult to distinguish based on anther color alone' (which disagrees with the Flora's 'yellow pollen' as a sign of G. purpureum — both are given). Every figure in the card appears in a source for the species it describes.",
+      "Photos (attached by the assistant 23/10/2026; the owner may cut): -1 close up of flower (obs 33939467, Jacqui Geux, Swanson, Auckland, 2019-10-06, CC BY; yellow anthers); -2 plant in natural habitat (obs 36183997, Alice Shanks, Waitohi Reserve, Picton, 2019-11-29, CC BY; a red plant against a fence); -3 leaves and flowers (obs 408623866, Tommy Forrest, St Johns, Tauranga, 2026-10-16, CC0); -4 flower and fruits (obs 65065812, Doug Miller, Waitangi Park gardens, Wellington, 2020-11-16, CC BY). Each checked by the iNaturalist API 23/10/2026: Geranium purpureum, research grade, wild, New Zealand; frames chosen by eye from 32 candidates in 13 observations."
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Geranium purpureum' (CC BY-SA 4.0)",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)"
+      ],
+      "text" : "Geranium purpureum, the little-robin, is a species of flowering plant in the geranium family Geraniaceae. It is native to Europe, Africa, and western Asia, and introduced on all continents except Antarctica. It is similar in appearance to Geranium robertianum, a close relative.\nIn New Zealand (Flora of New Zealand): N.: commonest in the Auckland area, but occurring at least as far north as Whangaroa (N. Auckland).\nBecause of the great similarity of this sp. to G. robertianum, the 2 spp. have sometimes been confused. The combination of small petals, yellow pollen, and more and closer ridges on the mericarps are diagnostic features of G. purpureum. Also, G. purpureum is generally more upright and has smaller lvs."
     },
     "warnings" : [
 
