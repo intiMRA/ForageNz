@@ -83,6 +83,56 @@ final class FieldGuideUITests: XCTestCase {
         XCTAssertEqual(scientificName.label, "Taraxacum officinale")
     }
 
+    func testTappingAPhotoOpensItFullScreenAndZooms() {
+        let dandelion = fieldGuideRow("dandelion", searchingFor: "dandelion")
+        XCTAssertTrue(
+            dandelion.waitForExistence(timeout: Self.existenceTimeout),
+            "Dandelion row not found in the field guide"
+        )
+        dandelion.tap()
+
+        let photo = app.buttons["speciesPhoto.dandelion-2.heic"]
+        XCTAssertTrue(photo.waitForExistence(timeout: Self.existenceTimeout), "Photo strip not shown")
+        photo.tap()
+
+        let close = app.buttons["photoViewer.close"]
+        XCTAssertTrue(close.waitForExistence(timeout: Self.existenceTimeout), "Photo did not open full screen")
+        app.images.firstMatch.doubleTap()
+        app.images.firstMatch.pinch(withScale: 2, velocity: 1)
+
+        close.tap()
+        XCTAssertTrue(
+            app.staticTexts["speciesDetail.scientificName"].waitForExistence(timeout: Self.existenceTimeout),
+            "Closing the viewer did not return to the species page"
+        )
+    }
+
+    func testSwipingAPhotoOffTheScreenClosesIt() {
+        let dandelion = fieldGuideRow("dandelion", searchingFor: "dandelion")
+        XCTAssertTrue(
+            dandelion.waitForExistence(timeout: Self.existenceTimeout),
+            "Dandelion row not found in the field guide"
+        )
+        dandelion.tap()
+
+        let photo = app.buttons["speciesPhoto.dandelion-2.heic"]
+        XCTAssertTrue(photo.waitForExistence(timeout: Self.existenceTimeout), "Photo strip not shown")
+        photo.tap()
+
+        let close = app.buttons["photoViewer.close"]
+        XCTAssertTrue(close.waitForExistence(timeout: Self.existenceTimeout), "Photo did not open full screen")
+        // Sideways still pages to the next photo rather than closing.
+        app.swipeLeft()
+        XCTAssertTrue(close.exists, "A sideways swipe closed the viewer")
+
+        app.swipeDown(velocity: .fast)
+        XCTAssertTrue(
+            app.staticTexts["speciesDetail.scientificName"].waitForExistence(timeout: Self.existenceTimeout),
+            "Swiping the photo away did not return to the species page"
+        )
+        XCTAssertFalse(close.exists, "The viewer is still open after swiping the photo away")
+    }
+
     func testSafetyTabListsSpeciesThatMustNotBeEaten() {
         app.tabBars.buttons["Safety"].tap()
 

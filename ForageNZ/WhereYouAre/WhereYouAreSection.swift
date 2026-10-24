@@ -16,7 +16,7 @@ struct WhereYouAreSection: View {
                 HStack(spacing: .xSmall) {
                     ProgressView()
                     Text("Getting a fix…")
-                        .font(.caption)
+                        .font(.callout)
                         .foregroundStyle(.secondary)
                 }
             case .read(let reading):
@@ -26,13 +26,13 @@ struct WhereYouAreSection: View {
                 checkButton(title: "Check again")
             case .failed(let message):
                 Text(message)
-                    .font(.caption)
+                    .font(.callout)
                     .foregroundStyle(.secondary)
                 checkButton(title: "Try again")
             }
 
             Text("Works offline. Boundaries are [DOC's](https://doc-deptconservation.opendata.arcgis.com/datasets/72354ba9bf7a4706af3fdfe60f86eea1_0/about), generalised to about \(LandStatusMap.approximateResolutionMetres) m — a prompt to check, never a legal answer. Private land, rāhui and council bylaws are not in this map.")
-                .font(.caption2)
+                .font(.footnote)
                 .italic()
                 .foregroundStyle(.secondary)
         }
@@ -42,7 +42,7 @@ struct WhereYouAreSection: View {
         Button(title) {
             Task { await store.check() }
         }
-        .font(.caption.weight(.semibold))
+        .font(.callout.weight(.semibold))
         .disabled(store.isChecking)
         .padding(.bottom, .xxSmall)
     }
@@ -116,9 +116,9 @@ extension WhereYouAreSection {
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: .xxSmall) {
                     Text(verdict.title)
-                        .font(.caption)
+                        .font(.callout)
                     Text(verdict.detail)
-                        .font(.caption2)
+                        .font(.footnote)
                         .foregroundStyle(.secondary)
                 }
             }

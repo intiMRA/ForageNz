@@ -49,13 +49,13 @@ struct SpeciesDetailView: View {
             
             if let maoriName = species.maoriName {
                 Text(maoriName)
-                    .font(.headline)
+                    .font(.title3)
                     .bold()
                     .padding(.bottom, .xxxSmall)
             }
             
             Text(species.scientificName)
-                .font(.subheadline)
+                .font(.body)
                 .accessibilityIdentifier("speciesDetail.scientificName")
                 .italic()
                 .foregroundStyle(.secondary)
@@ -117,7 +117,7 @@ struct SpeciesDetailView: View {
             createSectionHeader(image: Image(.mapSearch), title: "Habitat")
             HabitatView(habitats: species.habitats, layoutDirection: .leftToRight, includeName: true)
             Text(species.habitat.text)
-                .font(.caption)
+                .font(.callout)
         }
     }
     
@@ -165,9 +165,9 @@ struct SpeciesDetailView: View {
 
                 HStack(spacing: .xxSmall) {
                     Image(.outlineExclamation)
-                        .icon(size: .custom(size: 12), color: .primary)
+                        .icon(size: .custom(size: 16), color: .primary)
                     Text("Safety")
-                        .font(.caption2)
+                        .font(.footnote)
                         .bold()
                 }
                 .padding(.bottom, .xSmall)
@@ -182,7 +182,7 @@ struct SpeciesDetailView: View {
 
                             Text(warning)
                         }
-                        .font(.caption2)
+                        .font(.footnote)
                         .italic()
                         .foregroundStyle(.secondary)
                     }
@@ -286,7 +286,7 @@ struct SpeciesDetailView: View {
         VStack(alignment: .leading, spacing: .xxxSmall) {
             createSectionHeader(image: image, title: title)
             Text(text)
-                .font(.caption)
+                .font(.callout)
         }
     }
 
@@ -296,11 +296,11 @@ struct SpeciesDetailView: View {
                 .icon(size: .small, color: .primary)
             VStack(alignment: .leading, spacing: .empty) {
                 Text(title)
-                    .font(.caption)
+                    .font(.callout)
                     .bold()
                 if let subTitle {
                     Text(subTitle)
-                        .font(.caption2)
+                        .font(.footnote)
                         .italic()
                         .foregroundStyle(.secondary)
                 }
@@ -311,9 +311,9 @@ struct SpeciesDetailView: View {
     private var doNotEatBanner: some View {
         HStack(alignment: .top, spacing: .xxxSmall) {
             CautionLevel.doNotEat.image
-                .icon(size: .custom(size: 12), color: .cautionDanger)
+                .icon(size: .custom(size: 16), color: .cautionDanger)
             Text("Do not eat, this entry is here so you can recognise this species and avoid it.")
-                .font(.caption)
+                .font(.callout)
                 .italic()
                 .foregroundStyle(.secondary)
         }
@@ -333,9 +333,9 @@ struct SpeciesDetailView: View {
             // tinting it would throw them away. See `CautionLevel.badgeIcon`.
             CautionLevel.psychoactive.image
                 .resizable()
-                .frame(width: 12, height: 12)
+                .frame(width: 16, height: 16)
             Text("This is not food. Its active compounds are controlled drugs — read the safety notes below.")
-                .font(.caption)
+                .font(.callout)
                 .italic()
         }
         .needsDesign()
@@ -344,9 +344,9 @@ struct SpeciesDetailView: View {
     private var deadlyLookalikeBanner: some View {
         HStack(alignment: .top, spacing: .xxxSmall) {
             CautionLevel.doNotEat.image
-                .icon(size: .custom(size: 12), color: .cautionDanger)
+                .icon(size: .custom(size: 16), color: .cautionDanger)
             Text("Has a deadly lookalike, read the lookalikes section below before you harvest this.")
-                .font(.caption)
+                .font(.callout)
                 .italic()
                 .foregroundStyle(.secondary)
         }
@@ -361,7 +361,7 @@ struct SpeciesDetailView: View {
             \(PoisonsCentre.displayNumber).
             """
         )
-        .font(.caption2)
+        .font(.footnote)
         .italic()
         .foregroundStyle(.secondary)
     }

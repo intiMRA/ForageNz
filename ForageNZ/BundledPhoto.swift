@@ -46,6 +46,12 @@ struct BundledPhoto: View {
     ///
     /// It is also far cheaper: a 100pt slot was decoding four tiles of a 1024px image.
     private var loadedImage: UIImage? {
+        Self.image(named: fileName, maxPixelSize: maxPixelSize)
+    }
+
+    /// The decode behind `loadedImage`, for callers that need a `UIImage` rather than a
+    /// view — the zoomable full-screen viewer.
+    static func image(named fileName: String, maxPixelSize: Int) -> UIImage? {
         guard
             let url = Bundle.main.url(
                 forResource: fileName,

@@ -55,4 +55,12 @@ enum Layout {
 
     /// The same, for the square thumbnail on a list card.
     static let thumbnailDecodePixelSize = 360
+
+    /// The same, for the full-screen zoomable viewer: the largest photo the catalogue holds
+    /// (older files run to 1400 px), so every file decodes at its own size and zooming shows
+    /// all the detail it has. A thumbnail decode never upscales, so smaller files are unharmed.
+    static let fullScreenPhotoDecodePixelSize = 1400
+
+    /// How far the full-screen viewer zooms in past fit-to-screen.
+    static let fullScreenPhotoMaximumZoom: CGFloat = 5
 }

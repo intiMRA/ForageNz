@@ -30,12 +30,12 @@ struct SafetyView: View {
                 .accessibilityIdentifier("safety.poisoningHeader")
 
             Text(Self.poisoningAdvice)
-                .font(.caption)
+                .font(.callout)
                 .italic()
                 .foregroundStyle(.secondary)
             if let callURL = PoisonsCentre.callURL {
                 Link("Call \(PoisonsCentre.displayNumber)", destination: callURL)
-                    .font(.caption.weight(.semibold))
+                    .font(.callout.weight(.semibold))
             }
         }
     }
@@ -46,7 +46,7 @@ struct SafetyView: View {
 
             ForEach(Self.groundRuleLines, id: \.self) { rule in
                 Text(rule)
-                    .font(.caption)
+                    .font(.callout)
                     .foregroundStyle(.secondary)
                     .italic()
             }
@@ -67,7 +67,7 @@ struct SafetyView: View {
                 .icon(size: .small, color: .primary)
 
             Text(title)
-                .font(.headline)
+                .font(.title3)
                 .bold()
         }
     }
@@ -109,7 +109,7 @@ private struct CollapsibleSpeciesList: View {
                 }
             } label: {
                 Text(title)
-                    .font(.headline)
+                    .font(.title3)
                     .bold()
             }
             .accessibilityIdentifier("\(accessibilityIDPrefix).toggle")
