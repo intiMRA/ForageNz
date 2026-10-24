@@ -5,73 +5,71 @@ struct SafetyView: View {
     @Environment(SpeciesStore.self) private var store
 
     var body: some View {
-        List {
-            Section {
-                VStack(alignment: .leading, spacing: .xSmall) {
-                    Text("If you suspect poisoning")
-                        .font(.headline)
-                        .accessibilityIdentifier("safety.poisoningHeader")
-                    Text(Self.poisoningAdvice)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                    if let callURL = PoisonsCentre.callURL {
-                        Link("Call \(PoisonsCentre.displayNumber)", destination: callURL)
-                            .font(.subheadline.weight(.semibold))
-                    }
-                }
-                .padding(.vertical, .xxSmall)
-            }
+        ScrollView {
+            VStack(alignment: .leading, spacing: .small) {
+                poisoning
 
-            WhereYouAreSection()
+                whereYouAre
 
-            Section {
-                ForEach(Self.groundRules, id: \.self) { rule in
-                    Text(rule)
-                        .font(.subheadline)
-                }
-            } header: {
-                Text("Ground rules")
-            }
+                groundRules
 
-            if !store.doNotEat.isEmpty {
-                Section {
-                    ForEach(store.doNotEat) { item in
-                        SpeciesRowButton(species: item)
-                    }
-                } header: {
-                    Text("Learn these, then leave them alone")
-                } footer: {
-                    Text("These entries exist so you can recognise them in the field. None of them are food.")
-                }
-            }
+                CollapsibleSpeciesList(accessibilityIDPrefix: "safety.doNotEat", title: "Do not eat", species: store.doNotEat)
 
-            // Deliberately its own section rather than a few more rows under "leave them
-            // alone": these are not poisonous, and filing them under a heading about
-            // poisoning would be a claim that is not true. The footer explaining what the
-            // reason actually is still needs writing.
-            if !store.psychoactive.isEmpty {
-                Section {
-                    ForEach(store.psychoactive) { item in
-                        SpeciesRowButton(species: item)
-                    }
-                } header: {
-                    Text("Psychoactive")
-                }
-            }
+                CollapsibleSpeciesList(accessibilityIDPrefix: "safety.psychoactive", title: "Psychoactive", species: store.psychoactive)
 
-            if !store.withDeadlyLookalikes.isEmpty {
-                Section {
-                    ForEach(store.withDeadlyLookalikes) { item in
-                        SpeciesRowButton(species: item)
-                    }
-                } header: {
-                    Text("Edible, but has a deadly lookalike")
-                } footer: {
-                    Text("Read the lookalikes section on each of these before you harvest.")
-                }
+                CollapsibleSpeciesList(accessibilityIDPrefix: "safety.deadlyLookalikes", title: "Has deadly lookalikes", species: store.withDeadlyLookalikes)
             }
+            .padding(.horizontal, .medium)
         }
         .navigationTitle("Safety")
+    }
+
+    private var poisoning: some View {
+        VStack(alignment: .leading, spacing: .xxSmall) {
+            makeHeader(image: Image(.outlineExclamation), title: "If you suspect poisoning")
+                .accessibilityIdentifier("safety.poisoningHeader")
+
+            Text(Self.poisoningAdvice)
+                .font(.caption)
+                .italic()
+                .foregroundStyle(.secondary)
+            if let callURL = PoisonsCentre.callURL {
+                Link("Call \(PoisonsCentre.displayNumber)", destination: callURL)
+                    .font(.caption.weight(.semibold))
+            }
+        }
+    }
+
+    private var groundRules: some View {
+        VStack(alignment: .leading) {
+            makeHeader(image: Image(.outlineQuestion), title: "Ground rules")
+
+            ForEach(Self.groundRuleLines, id: \.self) { rule in
+                Text(rule)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .italic()
+            }
+        }
+    }
+
+    private var whereYouAre: some View {
+        VStack(alignment: .leading) {
+            makeHeader(image: Image(systemName: "mappin.and.ellipse.circle.fill"), title: "Where you are")
+
+            WhereYouAreSection()
+        }
+    }
+
+    private func makeHeader(image: Image, title: LocalizedStringKey) -> some View {
+        HStack(spacing: .xxSmall) {
+            image
+                .icon(size: .small, color: .primary)
+
+            Text(title)
+                .font(.headline)
+                .bold()
+        }
     }
 
     /// One localised sentence with a link run on the number, rather than markdown: the `tel:`
@@ -86,7 +84,7 @@ struct SafetyView: View {
         return advice
     }
 
-    private static let groundRules = [
+    private static let groundRuleLines = [
         "This app describes what to check. It cannot identify a plant for you, and a photo is not an identification.",
         "Never eat anything you have not confirmed with an experienced forager or a reliable field guide.",
         "Eat a small amount of anything new the first time, and only one new species at a time.",
@@ -95,5 +93,26 @@ struct SafetyView: View {
         "Avoid roadside verges, railway corridors and council-maintained ground: they are routinely sprayed.",
         "Never harvest shellfish or seaweed without checking MPI's current biotoxin warnings for that stretch of coast."
     ]
+}
 
+private struct CollapsibleSpeciesList: View {
+    let accessibilityIDPrefix: String
+    let title: LocalizedStringKey
+    let species: [ForageSpecies]
+    @State private var isExpanded = false
+
+    var body: some View {
+        if !species.isEmpty {
+            DisclosureGroup(isExpanded: $isExpanded) {
+                ForEach(species) { item in
+                    SpeciesRowButton(species: item)
+                }
+            } label: {
+                Text(title)
+                    .font(.headline)
+                    .bold()
+            }
+            .accessibilityIdentifier("\(accessibilityIDPrefix).toggle")
+        }
+    }
 }

@@ -68,6 +68,10 @@ def test_an_ambiguous_word_needs_its_context_before_it_counts() -> None:
     # Saltmarsh is the coast; a freshwater marsh is not.
     assert classify("Estuaries and salt marsh.") == ["coastal"]
     assert classify("Ditches and marshy ground.") == ["wetland"]
+    # A coastal herbfield is the coast; a bare herbfield is above the treeline.
+    assert classify("Coastal scrub and coastal herbfield.") == ["coastal", "shrubland"]
+    assert classify("Tussock grassland and herbfield.") == ["grassland", "alpine"]
+    assert classify("Cliff faces around damp seepages.") == ["wetland"]
     # A crop grown on straw overseas is not a New Zealand garden.
     assert classify("Cultivated on rice straw in Southeast Asia.") == []
     assert classify("Cultivated and disturbed ground: vegetable gardens.") == [

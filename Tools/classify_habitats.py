@@ -171,7 +171,7 @@ RULES: dict[str, tuple[str, ...]] = {
         r"(?<!near )\blake(?:s|side)?\b",
         r"\bditch(?:es)?\b",
         r"\bdrains?\b",
-        r"\bseepage\b",
+        r"\bseepages?\b",
         r"\bfreshwater\b",
         r"\briparian\b",
         r"\bwaterlogged\b",
@@ -185,7 +185,8 @@ RULES: dict[str, tuple[str, ...]] = {
         # the treeline and above. Not a bare "mountain" either — in prose it is usually the
         # first word of a name (mountain beech, mountain flax, mountain cabbage tree).
         r"\bscree(?:s)?\b",
-        r"\bherbfields?\b",
+        # A coastal herbfield is the coast, not the alpine zone (NZ sow thistle on islands).
+        r"(?<!coastal )\bherbfields?\b",
         r"\btree\s?line\b",
         r"\bmountains\b",
         r"\bmountain (?:tops?|slopes?|zones?|regions?|ranges?|areas?)\b",

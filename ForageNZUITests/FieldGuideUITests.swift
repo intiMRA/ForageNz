@@ -91,13 +91,19 @@ final class FieldGuideUITests: XCTestCase {
             "Safety screen did not load"
         )
 
-        // The list is lazy, so an unrendered row is absent from the hierarchy rather than
-        // merely offscreen — `exists` only becomes true once it has been scrolled to. Tutu
-        // sorts late among the do-not-eat species and that section sits below the poisoning
-        // panel, the location section and seven ground rules, so it takes real scrolling.
+        // The do-not-eat list starts collapsed below the poisoning panel, the location section
+        // and seven ground rules, so its toggle has to be scrolled to and tapped before any
+        // row exists. Tutu then sorts late in the list.
+        let doNotEatToggle = app.buttons["safety.doNotEat.toggle"]
+        XCTAssertTrue(
+            scrollDownUntil({ doNotEatToggle.exists && doNotEatToggle.isHittable }),
+            "Safety screen did not show the do-not-eat toggle"
+        )
+        doNotEatToggle.tap()
+
         let tutu = app.staticTexts["speciesRow.tutu"]
         XCTAssertTrue(
-            scrollDownUntil({ tutu.exists }),
+            scrollDownUntil({ tutu.exists && tutu.isHittable }),
             "Safety screen did not list Tutu among the do-not-eat species"
         )
     }

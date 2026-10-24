@@ -67,9 +67,6 @@
     "Edible Parts" : {
 
     },
-    "Edible, but has a deadly lookalike" : {
-
-    },
     "Endemic" : {
 
     },
@@ -133,6 +130,9 @@
     "Has a deadly lookalike, read the lookalikes section below before you harvest this." : {
 
     },
+    "Has deadly lookalikes" : {
+
+    },
     "Herbs & flavour" : {
 
     },
@@ -169,9 +169,6 @@
 
     },
     "Introduced" : {
-
-    },
-    "Learn these, then leave them alone" : {
 
     },
     "Loading the field guide…" : {
@@ -216,9 +213,6 @@
     "Psychoactive" : {
 
     },
-    "Read the lookalikes section on each of these before you harvest." : {
-
-    },
     "Requires internet connection." : {
 
     },
@@ -253,9 +247,6 @@
 
     },
     "The guide has no page for “%@” in this build." : {
-
-    },
-    "These entries exist so you can recognise them in the field. None of them are food." : {
 
     },
     "This entry has not been verified against a published field guide. Treat it as a starting point for your own identification, not an authority." : {
@@ -304,5 +295,5 @@
 
     }
   },
-  "version" : "1.0"
+  "version" : "1.1"
 }

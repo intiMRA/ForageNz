@@ -42,6 +42,7 @@ public enum SpeciesID: String, Codable, Sendable, Hashable, CaseIterable {
     case bucksHornPlantain = "bucks-horn-plantain"
     case bullKelp = "bull-kelp"
     case bushLawyer = "bush-lawyer"
+    case bushNettle = "bush-nettle"
     case cabbageTree = "cabbage-tree"
     case calendula = "calendula"
     case californiaPoppy = "california-poppy"

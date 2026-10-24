@@ -30,9 +30,9 @@ struct SpeciesDetailView: View {
                 
                 ethics
                 
-                sources
+                disclaimer
                 
-                footer
+                sources
             }
             .padding(.all, .medium)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -352,7 +352,7 @@ struct SpeciesDetailView: View {
         }
     }
     
-    private var footer: some View {
+    private var disclaimer: some View {
         Text(
             """
             This guide describes what to check — it cannot identify a plant for you. \

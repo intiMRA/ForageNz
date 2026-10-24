@@ -88,6 +88,27 @@ struct SpeciesValidationTests {
         #expect(!blocking.contains("warnings[0]"))
     }
 
+    @Test("Recipes on an at-risk or threatened species are blocking")
+    func recipesOnThreatenedSpeciesBlock() {
+        let recipes = [Recipe(title: "Frittata", method: "Whisk.")]
+        let atRisk = makeSpecies(
+            harvestEthics: "This species is at risk. If you harvest it, take only a little.", recipes: recipes)
+        let threatened = makeSpecies(
+            harvestEthics: "Listed Threatened – Nationally Vulnerable. Do not harvest it.", recipes: recipes)
+        let atRiskWithoutRecipes = makeSpecies(harvestEthics: "This species is at risk.")
+        #expect(fields(atRisk, severity: .blocking).contains(.recipes))
+        #expect(fields(threatened, severity: .blocking).contains(.recipes))
+        #expect(atRiskWithoutRecipes.isPublishable)
+    }
+
+    @Test("Recipes on a Not Threatened species pass")
+    func recipesOnNotThreatenedSpeciesPass() {
+        let species = makeSpecies(
+            harvestEthics: "Not Threatened. Be mindful when foraging. Take only what you need.",
+            recipes: [Recipe(title: "Frittata", method: "Whisk.")])
+        #expect(species.isPublishable)
+    }
+
     @Test("Stated edibility text, and words that only contain a phrase, pass")
     func statedEdibilityPasses() {
         let species = makeSpecies(

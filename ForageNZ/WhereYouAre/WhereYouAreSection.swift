@@ -8,7 +8,7 @@ struct WhereYouAreSection: View {
     @Environment(WhereYouAreStore.self) private var store
 
     var body: some View {
-        Section {
+        VStack(alignment: .leading) {
             switch store.state {
             case .idle:
                 checkButton(title: "Check where I am")
@@ -16,7 +16,7 @@ struct WhereYouAreSection: View {
                 HStack(spacing: .xSmall) {
                     ProgressView()
                     Text("Getting a fix…")
-                        .font(.subheadline)
+                        .font(.caption)
                         .foregroundStyle(.secondary)
                 }
             case .read(let reading):
@@ -26,14 +26,15 @@ struct WhereYouAreSection: View {
                 checkButton(title: "Check again")
             case .failed(let message):
                 Text(message)
-                    .font(.subheadline)
+                    .font(.caption)
                     .foregroundStyle(.secondary)
                 checkButton(title: "Try again")
             }
-        } header: {
-            Text("Where you are")
-        } footer: {
+
             Text("Works offline. Boundaries are [DOC's](https://doc-deptconservation.opendata.arcgis.com/datasets/72354ba9bf7a4706af3fdfe60f86eea1_0/about), generalised to about \(LandStatusMap.approximateResolutionMetres) m — a prompt to check, never a legal answer. Private land, rāhui and council bylaws are not in this map.")
+                .font(.caption2)
+                .italic()
+                .foregroundStyle(.secondary)
         }
     }
 
@@ -41,8 +42,9 @@ struct WhereYouAreSection: View {
         Button(title) {
             Task { await store.check() }
         }
-        .font(.subheadline.weight(.semibold))
+        .font(.caption.weight(.semibold))
         .disabled(store.isChecking)
+        .padding(.bottom, .xxSmall)
     }
 }
 
@@ -114,9 +116,9 @@ extension WhereYouAreSection {
                     .accessibilityHidden(true)
                 VStack(alignment: .leading, spacing: .xxSmall) {
                     Text(verdict.title)
-                        .font(.headline)
+                        .font(.caption)
                     Text(verdict.detail)
-                        .font(.subheadline)
+                        .font(.caption2)
                         .foregroundStyle(.secondary)
                 }
             }

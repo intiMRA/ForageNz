@@ -158,6 +158,12 @@ public extension ForageSpecies {
             blocking(.harvestEthics, "Native and endemic species need harvesting and tikanga guidance.")
         }
 
+        // Blocking (owner, 24/10/2026): a recipe encourages harvesting, which works against the
+        // "take only a little" on an at-risk page. Generic recipes go on a common relative.
+        if !recipes.isEmpty && harvestEthicsNamesThreatStatus {
+            blocking(.recipes, "An at-risk or threatened species can't carry recipes — put a generic one on a common relative.")
+        }
+
         for (index, recipe) in recipes.enumerated() where recipe.title.trimmed.isEmpty {
             blocking(.recipes, at: index, "Recipe needs a title.")
         }
@@ -253,8 +259,26 @@ public extension ForageSpecies {
 
     /// The first attribution phrase in `text`, matched case-insensitively on word boundaries.
     static func attributionPhrase(in text: String) -> String? {
+        firstPhrase(of: attributionPhrases, in: text)
+    }
+
+    /// Words that mark an At Risk or Threatened species. The catalogue has no status field: the
+    /// NZTCS status lives in `harvestEthics`, whose sentence is chosen by it ("This species is at
+    /// risk…"), so that is where the status is read from.
+    static let threatStatusPhrases = ["at risk", "threatened", "endangered"]
+
+    /// `true` when `harvestEthics` names an At Risk or Threatened status. "Not Threatened" is a
+    /// status too, and the one that allows harvesting, so it is taken out before matching.
+    var harvestEthicsNamesThreatStatus: Bool {
+        guard let text = harvestEthics?.text else { return false }
+        let withoutSafeStatus = text.lowercased().replacingOccurrences(of: "not threatened", with: "")
+        return Self.firstPhrase(of: Self.threatStatusPhrases, in: withoutSafeStatus) != nil
+    }
+
+    /// The first of `phrases` in `text`, matched case-insensitively on word boundaries.
+    private static func firstPhrase(of phrases: [String], in text: String) -> String? {
         let lowered = text.lowercased()
-        return attributionPhrases.first { phrase in
+        return phrases.first { phrase in
             var searchRange = lowered.startIndex..<lowered.endIndex
             while let found = lowered.range(of: phrase, range: searchRange) {
                 let before = found.lowerBound == lowered.startIndex ? nil : lowered[lowered.index(before: found.lowerBound)]

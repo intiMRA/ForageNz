@@ -100,6 +100,7 @@ the authority; check it before you run something.
 | `import_book_stubs.py` | Turn a book index into draft entries — names, months, origin, group, citation, blank prose | unless `--dry-run` | NZOR (skip with `--no-nzor`) |
 | `fetch_descriptions.py` | Copy description and habitat prose from Wikipedia (CC BY-SA), falling back to Flora of NZ (CC BY) | **on a plain run**; `--dry-run` to preview | Wikipedia, Flora of NZ |
 | `metricate.py` | Convert imperial in copied text to metric, adding the change to each credit | `--write` | — |
+| `expand_flora.py` | Spell out Flora of NZ shorthand (♂, fls, Lvs, us., <) in copied text, adding the change to its credit | `--write` | — |
 | `classify_habitats.py` | Derive `habitats` labels from each entry's own habitat prose; `--review` writes the evidence sheet | `--write` | — |
 | `find_sources.py` | Fetch candidate pages, require each to name the species, then cite it | `--write` | NZPCN, NZOR |
 | `audit_names.py` | Check every scientific name against NZOR: real, current, recorded here | never | NZOR |
@@ -126,7 +127,7 @@ Flags worth knowing:
 | `--degrees 0.005` | build_land_status | Coarser grid, smaller file |
 | `--set out-of-catalogue` | fetch_eval_photos | The negative set, for `--openset` |
 | `--limit N` | validate_candidates | Stop after N candidates |
-| `--catalogue <path>` | audit_names, classify_habitats, fetch_descriptions, find_sources, import_book_stubs, metricate | Point at a catalogue other than the located one |
+| `--catalogue <path>` | audit_names, classify_habitats, expand_flora, fetch_descriptions, find_sources, import_book_stubs, metricate | Point at a catalogue other than the located one |
 
 ### Recipes
 
@@ -274,6 +275,13 @@ What a record does *not* establish is still said, as a statement about the evide
 food rests on a single tasting"). Verbatim licensed text is left as written. Blocking:
 `ForageSpecies.attributionPhrases` (owner, 24/10/2026).
 
+**No recipes on an At Risk or Threatened species.** A recipe encourages harvesting, which works
+against the "take only a little" on the same page. A recipe written for the genus goes on a common,
+Not Threatened or introduced relative, with the move noted in both entries' sources; one written
+for the species itself is not kept. The status is read from `harvestEthics`, whose sentence is
+chosen by it, so the Threatened sentence must name the status. Blocking:
+`ForageSpecies.threatStatusPhrases` (owner, 24/10/2026).
+
 **Verbatim means in the source's own language.** A translation is not a copy: it is new prose in
 the target language, and when a model produces it, it is model prose wearing a citation. So an
 openly licensed article in another language is a source of *facts* like any book — cite it, do not
@@ -399,6 +407,17 @@ The copied text arrives in feet and inches. Most of it needs no arithmetic — t
 writes metric first with imperial in brackets — and every field it touches gains "units
 converted to metric" in its credit, which CC BY-SA requires. It reports anything it will not
 convert rather than guessing; fix those by hand.
+
+Then spell out the Flora's shorthand:
+
+```sh
+.venv/bin/python Tools/expand_flora.py         # report; --write to apply
+```
+
+The Flora writes "Racemes with numerous ♂ and ♀ fls"; the guide says "Racemes with numerous
+male and female flowers". Each abbreviation has one meaning in the Flora's conventions, so it
+becomes that meaning; botanical terms, taxonomic abbreviations and region codes stay. Every
+field it touches gains "abbreviations spelled out" in its Flora credit, which CC BY requires.
 
 ### 7. Classify where it grows
 
@@ -535,7 +554,7 @@ identification page than a confirmed French one. **Keeping such a frame means sa
 that entry's `sources`**, where a reader of the catalogue can see it.
 
 The stager cannot resolve compound names (`Sonchus oleraceus / Sonchus kirkii`, `Ulva spp.`),
-so blackberry, karengo, nettle, pūhā and sea lettuce get nothing from it and need
+so blackberry, karengo and sea lettuce get nothing from it and need
 the editor route.
 
 `PhotoAuditTests` fails the build on a missing file, an oversized file, an orphaned file, or a
