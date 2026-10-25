@@ -5,61 +5,234 @@ entry's own `habitat` prose and nothing else; **Evidence** is the literal text t
 matched. A wrong label is a rule to fix in the tool, not a value to edit here — the
 file is regenerated on every run.
 
-## Shipped entries (66)
+## Shipped entries (170)
 
 These are the ones the app actually shows. Worth reading all of them.
 
 ### Alexanders — `alexanders`
 
 - **Labels:** coastal, urban
-    - `coastal` ← 'coastal', 'coasts', 'coast'
-    - `urban` ← 'gardens'
-- **Prose:** Alexanders is widespread in Britain, where it is frequent in coastal areas in the south, becoming progressively rarer towards the north of Scotland, and absent from Orkney and Shetland. Inland, it is often found close to the sites of medieval monastery gardens and other historical places such as castles. In Ireland it is common around the south and east coasts, but rare inland and to the west.
-
-More generally in Europe, it occurs throughout the Mediterranean, where it is recorded in all coastal areas, including the islands, and it extends as far as Crimea and the Black Sea. It is also found along the Atlantic coast of the continent from the Iberian Peninsula northwards through France, Belgium, the Netherlands, Denmark and (recently) into Norway; and westwards to the Azores. In north Africa it is restricted to the Mediterranean and Atlantic regions, including the Canary Islands.
-The conservation status of alexanders in Britain and France is Least Concern, and it is not considered to be threatened in any region, although it is rare in some countries, such as Belgium.
-It is recorded as an introduction in New Zealand, Australia and Bermuda.
+    - `coastal` ← 'coastal'
+    - `urban` ← 'gardens', 'plantings', 'city', 'planting'
+- **Prose:** Alexanders is widespread in Britain, where it is frequent in coastal areas in the south, becoming progressively rarer towards the north of Scotland, and absent from Orkney and Shetland. Inland, it is often found close to the sites of medieval monastery gardens and other historical places such as castles.
 It is a strictly lowland plant in northern Europe. In Britain, it is recorded no higher than 290 m, at Davidstow Airfield in Cornwall.
-- **Credit:** Wikipedia, 'Smyrnium olusatrum' (CC BY-SA 4.0)
+In New Zealand: established near deliberate plantings at Takou Bay in Northland, and also coming up in Auckland city with no planting nearby (Ogle et al. 2021, restated).
+- **Credit:** Wikipedia, 'Smyrnium olusatrum' (CC BY-SA 4.0); Ogle et al. 2021, Perspectives in Biosecurity 5 (facts restated)
+
+### Alsike clover — `alsike-clover`
+
+- **Labels:** grassland, disturbed
+    - `grassland` ← 'meadows'
+    - `disturbed` ← 'roadsides', 'waste ground'
+- **Prose:** Its natural habitat is fields, meadows, roadsides, banks and waste ground. When added to seed mixtures, it seldom persists once the sward has closed up.
+- **Credit:** Wikipedia, 'Trifolium hybridum' (CC BY-SA 4.0)
 
 ### Amaranth — `amaranthus-species`
 
-- **Labels:** alpine
-    - `alpine` ← 'mountain'
-- **Prose:** The genus most likely originated in Central America. The native range of the genus is cosmopolitan in tropical regions. It is found in elevations ranging from lowlands to mountain ranges such as the Himalayas.
-- **Credit:** Wikipedia, 'Amaranth' (CC BY-SA 4.0)
+- **Labels:** coastal, grassland, urban, disturbed
+    - `coastal` ← 'sand dunes'
+    - `grassland` ← 'pasture'
+    - `urban` ← 'cultivated ground', 'towns', 'gardens'
+    - `disturbed` ← 'waste places', 'roadsides'
+- **Prose:** In New Zealand: waste places and cultivated ground, many of them in and around towns. Spreading amaranth favours shingle and gravel, and green amaranth also grows in crops and on sand dunes in the north (Flora of New Zealand, restated); green amaranth is also recorded from gardens, pasture and roadsides (NZPCN, restated).
+- **Credit:** Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0); New Zealand Plant Conservation Network, 'Amaranthus viridis' (facts restated)
+
+### Annual mallow — `annual-mallow`
+
+- **Labels:** grassland, urban, disturbed
+    - `grassland` ← 'pasture'
+    - `urban` ← 'garden'
+    - `disturbed` ← 'Waste places'
+- **Prose:** Waste places, pasture. L. trimestris is a cultivated sp. collected only as a local garden escape.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0), 'Lavatera trimestris'
+
+### Annual wall-rocket — `annual-wall-rocket`
+
+- **Labels:** coastal, urban, disturbed
+    - `coastal` ← 'sand dunes'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'disturbed', 'railways', 'waste land', 'railway', 'roadsides'
+- **Prose:** It grows in waste and disturbed ground, such as beside railways, roads and on tips.
+In New Zealand: waste land, gardens, railway ballast, roadsides and sand dunes, throughout (Flora of New Zealand, restated).
+- **Credit:** Wikipedia, 'Diplotaxis muralis' (CC BY-SA 4.0); Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0)
 
 ### Apple mint — `apple-mint`
 
-- **Labels:** _none_
-- **Prose:** Apple mint is native to southern and western Europe and is naturalised in central and northern parts of Europe. It is found in damp and wet locations.
-- **Credit:** Wikipedia, 'Mentha suaveolens' (CC BY-SA 4.0)
+- **Labels:** grassland, urban, disturbed
+    - `grassland` ← 'pasture'
+    - `urban` ← 'cultivation'
+    - `disturbed` ← 'waste places', 'roadsides'
+- **Prose:** It is found in damp and wet locations.
+In New Zealand: a cultivation escape on waste places, roadsides and pasture near houses, scattered throughout (Flora of New Zealand, restated).
+- **Credit:** Wikipedia, 'Mentha suaveolens' (CC BY-SA 4.0); Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0)
 
-### Bitter bolete — `bitter-bolete`
+### Arrow bamboo — `arrow-bamboo`
 
-- **Labels:** forest
-    - `forest` ← 'Under conifers and broadleaf trees'
-- **Prose:** Under conifers and broadleaf trees in Europe and North America. Its presence in New Zealand is uncertain; it is included because it is the confusion every porcini guide warns about.
-- **Credit:** _yours, uncredited_
+- **Labels:** forest, shrubland, wetland, urban, disturbed
+    - `forest` ← 'plantations', 'forest'
+    - `shrubland` ← 'scrub'
+    - `wetland` ← 'riverbanks'
+    - `urban` ← 'garden'
+    - `disturbed` ← 'roadsides', 'abandoned', 'waste places'
+- **Prose:** By far the commonest and most widespread wild bamboo in New Zealand: the Volcanic Plateau and most lowland country southwards, thinning out only in the south of the South Island, which roughly tracks where it was planted. Look on roadsides and riverbanks, in and around plantations, in scrub and along forest margins, and especially where a garden boundary meets rough ground — on abandoned sections and in waste places. Spread here is by rhizome and not by seed, so a stand is one clone creeping outwards from something somebody planted.
+- **Credit:** NZPCN and Weedbusters (paraphrased)
+
+### Australasian cranesbill — `australasian-cranesbill`
+
+- **Labels:** coastal, grassland, disturbed
+    - `coastal` ← 'coastal'
+    - `grassland` ← 'grasslands'
+    - `disturbed` ← 'waste places'
+- **Prose:** Open lowland sites, commonly coastal, grasslands, cliffs, sometimes in waste places.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
+### Autumn hawkbit — `autumn-hawkbit`
+
+- **Labels:** coastal, grassland, wetland, disturbed
+    - `coastal` ← 'coastal'
+    - `grassland` ← 'pasture', 'grassland'
+    - `wetland` ← 'riverbeds'
+    - `disturbed` ← 'Waste land', 'roadsides'
+- **Prose:** Waste land, roadsides, coastal sand and riverbeds, pasture, grassland.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
+### Banana passionfruit — `banana-passionfruit`
+
+- **Labels:** coastal, forest, shrubland, grassland, disturbed
+    - `coastal` ← 'the sea'
+    - `forest` ← 'plantations', 'forest'
+    - `shrubland` ← 'Shrubland', 'hedges'
+    - `grassland` ← 'farms'
+    - `disturbed` ← 'roadsides', 'waste ground', 'roadside'
+- **Prose:** Shrubland near the sea and in the lowlands, plantations, the hedges and windbreaks of farms and orchards, the edges and light gaps of forest remnants, roadsides and waste ground (NZPCN, restated).
+bank, clay, dry, hill, loam, lowland, margin, open, roadside, sand, shaded, sheltered, shrubland, slope, stone, track, unstable/eroded
+- **Credit:** Flora of New Zealand Online, 'Passiflora tarminiana' weed profile (CC BY 3.0 NZ); New Zealand Plant Conservation Network, 'Passiflora tarminiana' (facts restated)
+
+### Banana passionfruit — `banana-passionfruit-tripartita`
+
+- **Labels:** coastal, forest, shrubland, disturbed
+    - `coastal` ← 'coast'
+    - `forest` ← 'forest', 'plantation', 'on isolated trees'
+    - `shrubland` ← 'shrubland'
+    - `disturbed` ← 'roadside', 'wasteland'
+- **Prose:** Mainly forest and plantation margins, also on isolated trees.
+bank, clay, cliff, coast, dry, forest, gap, lowland, margin, open, roadside, rock outcrop, sand, shaded, sheltered, shrubland, slope, stone, terrace, wasteland
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0) (as P. mollissima); Flora of New Zealand Online, 'Passiflora tripartita var. mollissima' weed profile (CC BY 3.0 NZ)
+
+### Barberry — `barberry`
+
+- **Labels:** coastal, forest, shrubland, grassland, wetland, disturbed
+    - `coastal` ← 'coast'
+    - `forest` ← 'Forest', 'plantations'
+    - `shrubland` ← 'scrub', 'shrubland'
+    - `grassland` ← 'pasture'
+    - `wetland` ← 'riparian', 'wetland'
+    - `disturbed` ← 'roadside', 'wasteland'
+- **Prose:** Forest margins, scrub and open secondary forest, in plantations and around old homesteads.
+bank, clay, cliff, coast, dry, forest, forest edge, gorge, gully, hill, loam, lowland, margin, moist, open, pasture, ridge, riparian, roadside, rock outcrop, sand, shaded, sheltered, shrubland, silt, slope, stone, terrace, track, wasteland, wetland
+- **Credit:** Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0); Flora of New Zealand Online, 'Berberis glaucocarpa' weed profile (CC BY 3.0 NZ)
+
+### Bay tree — `bay-tree`
+
+- **Labels:** coastal, forest, shrubland, disturbed
+    - `coastal` ← 'coast'
+    - `forest` ← 'bush'
+    - `shrubland` ← 'scrub'
+    - `disturbed` ← 'waste ground', 'roadside', 'wasteland'
+- **Prose:** Lingers where it was once planted and can move out into scrub, waste ground and even unbroken bush (NZPCN, restated).
+clay, cliff, coast, dry, gravel, gully, hill, loam, lowland, margin, open, roadside, rock outcrop, sand, shaded, sheltered, silt, stone, terrace, track, wasteland
+- **Credit:** Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ); New Zealand Plant Conservation Network, 'Laurus nobilis' (facts restated)
+
+### Beach spinach — `beach-spinach`
+
+- **Labels:** coastal, forest, shrubland, grassland
+    - `coastal` ← 'beaches', 'coastal'
+    - `forest` ← 'woodland', 'forest'
+    - `shrubland` ← 'shrubland', 'hedges'
+    - `grassland` ← 'grassland', 'farmland'
+- **Prose:** It occupies a variety of habitats from sand and shingle beaches through coastal woodland, shrubland and grassland, and as exposed, salt-pruned vegetation on cliffs and stacks. It may also be found well inland, in farmland where it is grown in barberry hedges, or on calcareous sandstone or limestone outcrops in dense forest.
+- **Credit:** Wikipedia, 'Tetragonia implexicoma' (CC BY-SA 4.0)
+
+### Beaked hawksbeard — `beaked-hawksbeard`
+
+- **Labels:** disturbed
+    - `disturbed` ← 'Waysides', 'railway', 'waste places', 'roadsides', 'waste land'
+- **Prose:** Waysides, walls, railway banks and waste places, especially in calcareous soils.
+In New Zealand: roadsides, railway yards, waste land and arable land (Flora of New Zealand, restated).
+- **Credit:** Useful Temperate Plants, 'Crepis vesicaria' (CC BY-NC-SA 3.0); Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0)
+
+### Bermuda buttercup — `bermuda-buttercup`
+
+- **Labels:** forest, grassland, urban, disturbed
+    - `forest` ← 'Woodland'
+    - `grassland` ← 'grassy'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'roadsides'
+- **Prose:** Woodland, grassy areas, arable land, gardens, roadsides, and along waterways.
+- **Credit:** Plants of South Eastern New South Wales, 'Oxalis pes-caprae' (Betty Wood; CC BY 4.0)
+
+### Black bamboo — `black-bamboo`
+
+- **Labels:** forest, shrubland, wetland, urban, disturbed
+    - `forest` ← 'Forest'
+    - `shrubland` ← 'scrubland'
+    - `wetland` ← 'stream'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'waste ground', 'roadsides'
+- **Prose:** Forest and stream margins, scrubland, waste ground, roadsides and gardens.
+- **Credit:** Auckland Council, 'Bamboo species' pest page (facts restated)
+
+### Black cherry — `black-cherry`
+
+- **Labels:** forest, shrubland, grassland, wetland, disturbed
+    - `forest` ← 'forest', 'plantations'
+    - `shrubland` ← 'shrubland'
+    - `grassland` ← 'grassland'
+    - `wetland` ← 'riparian'
+    - `disturbed` ← 'roadsides', 'waste land'
+- **Prose:** Prunus serotina is a pioneer species. In the Midwest, it is seen growing mostly in old fields with other sunlight-loving species, such as black walnut, black locust, and hackberry. Gleason and Cronquist (1991) describe P. serotina as "[f]ormerly a forest tree, now abundant as a weed-tree of roadsides, waste land, and forest-margins". The tree is hardy and can tolerate poor soils and oceanic salt sprays.
+In New Zealand: forest, plantations, shrubland, grassland, riparian margins and roadsides (Auckland Council, restated).
+- **Credit:** Wikipedia, 'Prunus serotina' (CC BY-SA 4.0); Auckland Council, 'Prunus serotina' pest page (facts restated)
 
 ### Black nightshade — `black-nightshade`
 
 - **Labels:** urban, disturbed
     - `urban` ← 'Gardens', 'cultivated ground'
     - `disturbed` ← 'disturbed'
-- **Prose:** Gardens, cultivated ground, compost heaps, disturbed soil. Everywhere fat hen grows.
+- **Prose:** Gardens, cultivated ground, compost heaps, disturbed soil.
 - **Credit:** _yours, uncredited_
+
+### Black passionfruit — `black-passionfruit`
+
+- **Labels:** forest, shrubland, disturbed
+    - `forest` ← 'Forest'
+    - `shrubland` ← 'shrubland'
+    - `disturbed` ← 'roadside'
+- **Prose:** roadside, slope
+Forest margins and shrubland, where there is no frost.
+- **Credit:** Flora of New Zealand Online, 'Passiflora edulis' weed profile (CC BY 3.0 NZ); NZ Plant Conservation Network, 'Passiflora edulis f. edulis' (all rights reserved; facts restated by the assistant)
 
 ### Blackberry — `blackberry`
 
-- **Labels:** forest, shrubland, grassland, wetland, disturbed
+- **Labels:** coastal, forest, shrubland, grassland, wetland, urban, disturbed
+    - `coastal` ← 'Coast', 'sand dunes'
     - `forest` ← 'forest'
-    - `shrubland` ← 'thickets'
-    - `grassland` ← 'farmland'
-    - `wetland` ← 'riverbanks'
-    - `disturbed` ← 'Roadsides', 'abandoned'
+    - `shrubland` ← 'thickets', 'hedgerows', 'scrub'
+    - `grassland` ← 'farmland', 'pasture', 'grazed'
+    - `wetland` ← 'riverbanks', 'riverbeds', 'stream', 'swamps'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'Roadsides', 'abandoned', 'waste ground'
 - **Prose:** Roadsides, riverbanks, gullies, forest margins, abandoned farmland. Forms impenetrable thickets.
-- **Credit:** _yours, uncredited_
+Coast and lowlands, especially in high-rainfall country: pasture that is only lightly grazed, orchards and forestry blocks, hedgerows, roadsides and waste ground, scrub, forest edges and clearings, riverbeds, stream banks, swamps, sand dunes and gardens (NZPCN, restated).
+- **Credit:** New Zealand Plant Conservation Network, 'Rubus fruticosus agg.' (facts restated)
+
+### Bluefoot bolete — `bluefoot-bolete`
+
+- **Labels:** forest
+    - `forest` ← 'under broad-leaved trees'
+- **Prose:** Xerocomellus cisalpinus was reported to grow mainly under broad-leaved trees (Quercus, Fagus, Populus, Betula) as well as under conifers (Pinus, Abies, Cedrus, Picea).
+Though Xerocomellus cisalpinus is mainly associated with broad-leaved trees such as Quercus, Fagus, Betula, Populus especially of Quercus spp. Association with some coniferous trees such as Pinus and Juniperus were also presented.
+- **Credit:** Karaduman, Uzun, Yeşilyurt & Kaya (2024), 'First record of Xerocomellus cisalpinus for Turkish Mycobiota', Biological Diversity and Conservation 17(2) (CC BY 4.0)
 
 ### Bracken — `bracken`
 
@@ -77,13 +250,70 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 - **Prose:** Wave-battered rocky coast, especially the South Island, Stewart Island and southern North Island.
 - **Credit:** _yours, uncredited_
 
+### Bush lawyer — `bush-lawyer`
+
+- **Labels:** coastal, forest, shrubland, wetland
+    - `coastal` ← 'Coastal'
+    - `forest` ← 'forest'
+    - `shrubland` ← 'scrub'
+    - `wetland` ← 'wetlands'
+- **Prose:** Coastal to montane, mostly in forest, less often in scrub and more open places. Often grows at the edges of wetlands, or in them.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0); NZ Plant Conservation Network, Rubus australis species page
+
+### Bush nettle — `bush-nettle`
+
+- **Labels:** forest
+    - `forest` ← 'forest'
+- **Prose:** Urtica sykesii is typically found growing on moist soils between rocks between 0–560 metres above sea level.
+In New Zealand (Flora of New Zealand, as Urtica incisa): Lowland to montane forest, forest margins and shaded open places throughout.
+- **Credit:** Wikipedia, 'Urtica sykesii' (rev 1380051515, CC BY-SA 4.0) — units converted to metric; Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA)
+
+### Cabbage tree — `cabbage-tree`
+
+- **Labels:** coastal, forest, shrubland, grassland, wetland, urban
+    - `coastal` ← 'coast', 'the sea', 'sand dunes'
+    - `forest` ← 'Forest'
+    - `shrubland` ← 'scrub'
+    - `grassland` ← 'farmland'
+    - `wetland` ← 'swamps', 'lakes', 'rivers', 'seepage', 'wetlands', 'river'
+    - `urban` ← 'gardens'
+- **Prose:** Forest margins, open places, abundant near swamps.
+A quote from Philip Simpson sums up the wide range of habitats the cabbage tree occupied in early New Zealand, and how much its abundance and distinctive form shaped the impression travellers received of the country:
+"In primeval New Zealand cabbage trees occupied a range of habitats, anywhere open, moist, fertile and warm enough for them to establish and mature: with forest; around the rocky coast; in lowland swamps, around the lakes and along the lower rivers; and perched on isolated rocks. Approaching the land from the sea would have reminded a Polynesian traveller of home, and for a European traveller, conjured up images of the tropical Pacific".
+Generally a lowland species, it grows from sea level to about 1,000 metres, reaching its upper limits on the volcanoes of the central North Island, where eruptions have created open spaces for it to exploit, and in the foothills of the Southern Alps in the South Island, where deforestation may have played a part in giving it room to grow.
+Cordyline australis is a light-demanding pioneer species, and seedlings die when overtopped by other trees. To grow well, young plants require open space so they are not shaded out by other vegetation. Another requirement is water during the seedling stage. Although adult trees can store water and are drought resistant, seedlings need a good supply of water to survive. This stops the species from growing in sand dunes unless there are wet depressions present, and from hillsides unless there is a seepage area. The fertility of the soil is another factor—settlers in Canterbury used the presence of the species to situate their homesteads and gardens. Another factor is temperature, especially the degree of frost. Young trees are killed by frost, and even old trees can be cut back. This is why C. australis is absent from upland areas and from very frosty inland areas.
+Today it is common across farmland, open places, wetlands and scrub in both main islands, but rare on Stewart Island; it likes full sun, so it is scarce inside unbroken forest though common on its edges (DOC, restated). It grows from the coast to montane forest, most of all on alluvial river terraces, and seedlings often come up unbidden in gardens from bird-dropped seed (NZPCN, restated).
+- **Credit:** Flora of New Zealand vol. II (Moore & Edgar 1970), Flora of New Zealand Series (CC BY-NC-SA 4.0); Wikipedia, 'Cordyline australis' (CC BY-SA 4.0) — units converted to metric; Department of Conservation, 'Cabbage tree/tī kōuka' (facts restated); New Zealand Plant Conservation Network, 'Cordyline australis' (facts restated)
+
 ### Catsear — `catsear`
 
-- **Labels:** grassland, disturbed
-    - `grassland` ← 'Lawns', 'paddocks'
-    - `disturbed` ← 'roadsides'
+- **Labels:** coastal, forest, shrubland, grassland, wetland, disturbed
+    - `coastal` ← 'sand dunes'
+    - `forest` ← 'forest'
+    - `shrubland` ← 'scrub'
+    - `grassland` ← 'Lawns', 'paddocks', 'Pasture', 'grassland'
+    - `wetland` ← 'riverbeds', 'swamps'
+    - `disturbed` ← 'roadsides', 'waste ground', 'railway'
 - **Prose:** Lawns, paddocks, roadsides, dry banks. Often more common than dandelion.
+In New Zealand (Flora of New Zealand): Pasture, grassland, lawns, sand dunes, roadsides, riverbeds, waste ground, stony ground, railway ballast, scrub and damaged forest, swamps, up to 1400 m.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
+### Chalciporus aurantiacus — `chalciporus-aurantiacus`
+
+- **Labels:** _none_
+- **Prose:** It is found growing by Nothofagaceae (beech).
 - **Credit:** _yours, uncredited_
+
+### Cheeseweed mallow — `cheeseweed-mallow`
+
+- **Labels:** coastal, wetland, urban, disturbed
+    - `coastal` ← 'coastal'
+    - `wetland` ← 'river'
+    - `urban` ← 'cultivated land'
+    - `disturbed` ← 'Waste land', 'disturbed', 'roadsides'
+- **Prose:** Waste land, cultivated land, coastal habitats, river beds.
+M. parviflora typically grows on agricultural lands and in disturbed sites such as roadsides.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0), 'Malva parviflora'; Wikipedia, 'Malva parviflora' (CC BY-SA 4.0)
 
 ### Cherry guava — `cherry-guava`
 
@@ -94,6 +324,19 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 - **Prose:** Forest margins, gullies and regenerating bush in Northland, Auckland, Bay of Plenty and coastal Taranaki.
 - **Credit:** _yours, uncredited_
 
+### Cherry-plum — `cherry-plum`
+
+- **Labels:** coastal, forest, shrubland, grassland, wetland, disturbed
+    - `coastal` ← 'sand dunes', 'coastal', 'coast'
+    - `forest` ← 'forest', 'plantations', 'shelterbelts'
+    - `shrubland` ← 'shrubland'
+    - `grassland` ← 'grassland', 'pasture'
+    - `wetland` ← 'stream', 'riverbed'
+    - `disturbed` ← 'wasteland', 'roadsides', 'roadside'
+- **Prose:** Hillsides, forest margins, sand dunes, wasteland, stream margins, around plantations and shelterbelts, and roadsides, up to about 300 m; very hardy, thriving inland and upland as well as in warm lowland and coastal places (Flora of New Zealand, restated).
+bank, coast, dry, gap, grassland, gravel, gully, hill, loam, lowland, margin, moist, montane, open, pasture, riverbed, roadside, sand, sheltered, shrubland, slope, stone, terrace, track, tree, wasteland
+- **Credit:** Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ); Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0)
+
 ### Chickweed — `chickweed`
 
 - **Labels:** shrubland, urban
@@ -101,6 +344,16 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
     - `urban` ← 'garden', 'cultivated soil'
 - **Prose:** Damp shaded garden beds, under hedges, cultivated soil. Grows in dense low mats.
 - **Credit:** _yours, uncredited_
+
+### Cinquefoil geranium — `cinquefoil-geranium`
+
+- **Labels:** shrubland, grassland, wetland, disturbed
+    - `shrubland` ← 'scrub'
+    - `grassland` ← 'grasslands', 'pastures'
+    - `wetland` ← 'river'
+    - `disturbed` ← 'roadsides'
+- **Prose:** Open habitats, grasslands, rough pastures, roadsides, river banks, tracks, scrub, lowland to montane.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
 
 ### Cleavers — `cleavers`
 
@@ -111,13 +364,90 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 - **Prose:** Hedges, garden edges, fence lines, damp waste ground; scrambles over anything nearby.
 - **Credit:** _yours, uncredited_
 
-### Dandelion — `dandelion`
+### Coconut milkcap — `coconut-milkcap`
+
+- **Labels:** forest
+    - `forest` ← 'under broad-leaved trees'
+- **Prose:** Lactarius glyciosmus is a common mushroom and is found under broad-leaved trees, particularly birch—often inside of sphagnum moss. It grows in soil individually or in scattered groups.
+- **Credit:** Wikipedia, 'Lactarius glyciosmus' (CC BY-SA 4.0) — northern-hemisphere fruiting season omitted; the New Zealand season is in the entry's sources
+
+### Common lavender — `common-lavender`
+
+- **Labels:** grassland, wetland, urban, disturbed
+    - `grassland` ← 'grassy'
+    - `wetland` ← 'riverbank', 'River'
+    - `urban` ← 'garden', 'plantings', 'urban', 'gardens'
+    - `disturbed` ← 'carpark', 'waste ground'
+- **Prose:** In New Zealand: an escape, usually spread in garden waste or establishing near deliberate plantings (NZPCN, restated). Herbarium specimens record it on a riverbank under the Rangitikei River bridge at Bulls, and among an urban carpark, waste ground and gardens in Otago (GBIF, restated).
+In its native range: Dry grassy slopes amongst rocks, in exposed, usually parched, hot rocky situations often on calcareous soils; at elevations up to 1,800 metres.
+- **Credit:** NZPCN (restated); GBIF herbarium specimens (CC BY 4.0, restated); Useful Temperate Plants (CC BY-NC-SA 3.0)
+
+### Common mallow — `common-mallow`
+
+- **Labels:** grassland, urban, disturbed
+    - `grassland` ← 'pasture'
+    - `urban` ← 'cultivated land'
+    - `disturbed` ← 'Waste places', 'railways'
+- **Prose:** Waste places, cultivated land, pasture, common.
+Malva sylvestris spreads itself on waste and rough ground, by roads and railways throughout lowland England, Wales and Channel Islands, Siberia and scattered elsewhere.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0), 'Malva sylvestris'; Wikipedia, 'Malva sylvestris' (CC BY-SA 4.0)
+
+### Creeping lawyer — `creeping-lawyer`
+
+- **Labels:** forest, wetland, alpine
+    - `forest` ← 'forest'
+    - `wetland` ← 'river', 'stream'
+    - `alpine` ← 'alpine'
+- **Prose:** Lowland to alpine forest and river flats, on river terraces, gravels and stream banks: damp, free-draining open sites among other low shrubs and herbs.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0); NZ Plant Conservation Network, Rubus parvus species page; New Zealand Native Plants (nativeplants.nz), Rubus parvus page
+
+### Creeping wood sorrel — `creeping-wood-sorrel`
+
+- **Labels:** grassland, urban
+    - `grassland` ← 'lawns', 'farmland'
+    - `urban` ← 'Gardens'
+- **Prose:** Gardens. Green-leaved plants grow mostly in deeper soil and shadier spots; purple-leaved plants in sunny, shallow ground such as rock gardens, gravel paths, driveways and around the bases of pots. Also a weed of lawns and farmland.
+- **Credit:** NZPCN, 'Oxalis corniculata subsp. corniculata' and '… var. atropurpurea' factsheets; Wikipedia, 'Oxalis corniculata' (CC BY-SA 4.0)
+
+### Cretan mallow — `cretan-mallow`
+
+- **Labels:** coastal, disturbed
+    - `coastal` ← 'coastal'
+    - `disturbed` ← 'Waste places'
+- **Prose:** Waste places, coastal habitats.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0), 'Lavatera cretica'
+
+### Cut-leaved cranesbill — `cut-leaved-cranesbill`
 
 - **Labels:** grassland, disturbed
-    - `grassland` ← 'Lawns', 'pasture'
-    - `disturbed` ← 'verges', 'waste ground'
+    - `grassland` ← 'pasture'
+    - `disturbed` ← 'Roadsides', 'waste places'
+- **Prose:** Roadsides, waste places around buildings, rough pasture, crops.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
+### Dandelion — `dandelion`
+
+- **Labels:** grassland, wetland, urban, disturbed
+    - `grassland` ← 'Lawns', 'pasture', 'grassland'
+    - `wetland` ← 'river'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'verges', 'waste ground', 'Waste land', 'roadsides', 'railway'
 - **Prose:** Lawns, verges, pasture, waste ground.
-- **Credit:** _yours, uncredited_
+In New Zealand (Flora of New Zealand): Waste land, tracks and roadsides, railway land, lawns, gardens, pasture, grassland, river flats.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
+### Darwin's barberry — `darwins-barberry`
+
+- **Labels:** coastal, forest, shrubland, grassland, wetland, disturbed
+    - `coastal` ← 'coast'
+    - `forest` ← 'forest', 'plantation'
+    - `shrubland` ← 'scrub', 'scrubland'
+    - `grassland` ← 'pasture'
+    - `wetland` ← 'lake'
+    - `disturbed` ← 'roadsides', 'roadside'
+- **Prose:** Remnant forest stands, scrub, along forest and plantation margins, roadsides.
+bank, clay, cliff, coast, dry, forest, forest edge, gully, hill, lake margin, loam, lowland, margin, open, pasture, ridge, roadside, rock outcrop, sand, scrubland, shaded, sheltered, slope, stone, terrace, track, unstable/eroded
+- **Credit:** Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0); Flora of New Zealand Online, 'Berberis darwinii' weed profile (CC BY 3.0 NZ)
 
 ### Death cap — `death-cap`
 
@@ -127,16 +457,88 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 - **Prose:** Under introduced broadleaf trees — especially oak, and also birch, hornbeam and chestnut. Parks, old estates, campus grounds and suburban streets in Auckland, Wellington, Christchurch and Dunedin.
 - **Credit:** _yours, uncredited_
 
-### Elder (flowers & berries) — `elderflower`
+### Dove's-foot cranesbill — `doves-foot-cranesbill`
 
 - **Labels:** forest, grassland, wetland, urban, disturbed
-    - `forest` ← 'shelter belts'
+    - `forest` ← 'forest'
+    - `grassland` ← 'pastures', 'grassland'
+    - `wetland` ← 'riverbanks'
+    - `urban` ← 'cultivated ground'
+    - `disturbed` ← 'Waste places', 'roadsides', 'waste ground'
+- **Prose:** Waste places, roadsides, riverbanks, open pastures, cultivated ground.
+In New Zealand: a common weed of waste ground and grassland, and of open places in forest from sea level up to montane levels (NZPCN, restated).
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0); New Zealand Plant Conservation Network (restated)
+
+### Downy milkcap — `downy-milk-cap`
+
+- **Labels:** forest
+    - `forest` ← 'under birch'
+- **Prose:** The fruit bodies of L. pubescens are found scattered or in groups on the ground in wet areas under birch and other hardwoods.
+- **Credit:** Wikipedia, 'Lactarius pubescens' (CC BY-SA 4.0) — northern-hemisphere fruiting months omitted; the New Zealand season is in the entry's sources
+
+### Dwarf cabbage tree — `dwarf-cabbage-tree`
+
+- **Labels:** forest, shrubland
+    - `forest` ← 'forest'
+    - `shrubland` ← 'scrub'
+- **Prose:** Under light forest and scrub.
+- **Credit:** Flora of New Zealand vol. II (Moore & Edgar 1970), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
+### Dwarf mallow — `dwarf-mallow`
+
+- **Labels:** grassland, wetland, urban, disturbed
+    - `grassland` ← 'pasture'
+    - `wetland` ← 'riverbeds'
+    - `urban` ← 'cultivated land'
+    - `disturbed` ← 'Waste places'
+- **Prose:** Waste places, pasture, cultivated land, riverbeds.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0), 'Malva neglecta'
+
+### Dwarf stinging nettle — `dwarf-stinging-nettle`
+
+- **Labels:** coastal, forest, grassland, wetland, urban, disturbed
+    - `coastal` ← 'coastal'
+    - `forest` ← 'under trees'
+    - `grassland` ← 'farms', 'grassland'
+    - `wetland` ← 'riverbeds'
+    - `urban` ← 'Gardens'
+    - `disturbed` ← 'waste places'
+- **Prose:** In New Zealand (Flora of New Zealand): Gardens, waste places, sheep camps and under trees, especially on farms, riverbeds, coastal cliffs and rough grassland.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA)
+
+### Elder (flowers & berries) — `elderflower`
+
+- **Labels:** coastal, forest, shrubland, grassland, wetland, urban, disturbed
+    - `coastal` ← 'coast'
+    - `forest` ← 'shelter belts', 'forest'
+    - `shrubland` ← 'scrub'
     - `grassland` ← 'farm'
     - `wetland` ← 'Riverbanks'
     - `urban` ← 'gardens'
     - `disturbed` ← 'roadsides', 'abandoned'
 - **Prose:** Riverbanks, old farm shelter belts, roadsides, abandoned gardens.
-- **Credit:** _yours, uncredited_
+A plant of the coast and lowlands, growing in scrub, along forest margins and in vegetation people have modified (NZPCN, restated).
+- **Credit:** New Zealand Plant Conservation Network, 'Sambucus nigra' (facts restated)
+
+### European barberry — `european-barberry`
+
+- **Labels:** forest, shrubland, grassland, urban
+    - `forest` ← 'plantations'
+    - `shrubland` ← 'scrub'
+    - `grassland` ← 'pasture', 'grassland'
+    - `urban` ← 'plantings'
+- **Prose:** Mainly found around old homesteads and to a limited extent in plantations and areas of reverting pasture, scrub and grassland in the vicinity of original plantings.
+- **Credit:** Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0)
+
+### European plum — `european-plum`
+
+- **Labels:** forest, wetland, disturbed
+    - `forest` ← 'forest'
+    - `wetland` ← 'riparian'
+    - `disturbed` ← 'waste ground', 'roadside'
+- **Prose:** Close to where people live or have lived, on waste ground and along forest margins (NZPCN, restated).
+bank, dry, gravel, margin, montane, ridge, riparian, roadside, slope, stone, terrace, tussockland
+- **Credit:** Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ); New Zealand Plant Conservation Network, 'Prunus domestica' (facts restated)
 
 ### Fat hen — `fat-hen`
 
@@ -163,6 +565,45 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 - **Prose:** Open grazed pasture and paddocks, especially after autumn rain. Not in woodland.
 - **Credit:** _yours, uncredited_
 
+### Fishpole bamboo — `fishpole-bamboo`
+
+- **Labels:** forest, shrubland, wetland, urban, disturbed
+    - `forest` ← 'Forest'
+    - `shrubland` ← 'scrubland'
+    - `wetland` ← 'stream'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'waste ground', 'roadsides'
+- **Prose:** Forest and stream margins, scrubland, waste ground, roadsides and gardens.
+- **Credit:** Auckland Council, 'Bamboo species' pest page (facts restated)
+
+### Forest cabbage tree — `forest-cabbage-tree`
+
+- **Labels:** coastal, forest, alpine
+    - `coastal` ← 'coastal'
+    - `forest` ← 'Forest', 'forests'
+    - `alpine` ← 'subalpine'
+- **Prose:** Forest margins.
+Cordyline banksii tolerates a wide variety of habitats. It is common in coastal, lowland, and lower montane forests in the North Island, widespread in the northern half of the South Island and Westland as far south as Haast. It also occasionally occurs in subalpine regions in the South Island. In shrublands it occurs with Cordyline pumilio and may form hybrids with it.
+- **Credit:** Flora of New Zealand vol. II (Moore & Edgar 1970), Flora of New Zealand Series (CC BY-NC-SA 4.0); Wikipedia, 'Cordyline banksii' (CC BY-SA 4.0)
+
+### French lavender — `french-lavender`
+
+- **Labels:** coastal, urban, disturbed
+    - `coastal` ← 'dunes', 'coast', 'coastal'
+    - `urban` ← 'street'
+    - `disturbed` ← 'waste ground'
+- **Prose:** On lava and scoria.
+Herbarium specimens record it in cracks in a footpath beside a street and in a driveway, on waste ground, on dunes near the coast, at the foot of a coastal cliff among coastal shrubs, and self-sown on a steep bank of artificial rock beside steps in Wellington (GBIF, restated).
+- **Credit:** Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0); GBIF herbarium specimens (CC BY 4.0, restated)
+
+### French mallow — `french-mallow`
+
+- **Labels:** coastal, disturbed
+    - `coastal` ← 'coastal'
+    - `disturbed` ← 'Waste places'
+- **Prose:** Waste places, coastal habitats.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0), 'Malva nicaeensis'
+
 ### Gorse — `gorse`
 
 - **Labels:** shrubland, grassland, disturbed
@@ -172,14 +613,27 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 - **Prose:** Hillsides, roadsides, scrub, farmland margins. Almost anywhere that has been cleared and left.
 - **Credit:** _yours, uncredited_
 
+### Hawkbit — `hawkbit`
+
+- **Labels:** coastal, grassland, wetland, urban, disturbed
+    - `coastal` ← 'sand dunes'
+    - `grassland` ← 'Lawns', 'pasture'
+    - `wetland` ← 'bogs', 'swamps'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'roadsides', 'railway', 'waste land'
+- **Prose:** Lawns, bogs, swamps, roadsides, railway lines, sand dunes, gravel, waste land, pasture, gardens.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
 ### Hawthorn — `hawthorn`
 
-- **Labels:** forest, shrubland, disturbed
-    - `forest` ← 'shelter belts'
+- **Labels:** forest, shrubland, grassland, disturbed
+    - `forest` ← 'shelter belts', 'forest'
     - `shrubland` ← 'hedgerows', 'scrub'
-    - `disturbed` ← 'roadsides'
+    - `grassland` ← 'pasture'
+    - `disturbed` ← 'roadsides', 'disturbed', 'waste places'
 - **Prose:** Old hedgerows, shelter belts, roadsides and scrub, especially in Canterbury and Otago where it has naturalised widely.
-- **Credit:** _yours, uncredited_
+Lowland to montane, on ground of low to moderate fertility: low forest and its margins, disturbed forest, scrub, hill-country and other pasture, waste places and roadsides (NZPCN, restated).
+- **Credit:** New Zealand Plant Conservation Network, 'Crataegus monogyna' (facts restated)
 
 ### Hemlock — `hemlock`
 
@@ -191,12 +645,16 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 - **Prose:** Roadsides, stream banks, waste ground, paddock margins and the edges of gardens — the same damp, disturbed ground as wild fennel and sea celery, and often growing right through them.
 - **Credit:** _yours, uncredited_
 
-### Hemlock water dropwort — `hemlock-water-dropwort`
+### Herb robert — `herb-robert`
 
-- **Labels:** wetland
-    - `wetland` ← 'Ditches', 'stream', 'marshy'
-- **Prose:** Ditches, stream banks and marshy ground in Europe. Its status in New Zealand is unconfirmed; treat any large, celery-leaved plant in a watercress stream as if it were this until proven otherwise.
-- **Credit:** _yours, uncredited_
+- **Labels:** forest, shrubland, urban, disturbed
+    - `forest` ← 'forest'
+    - `shrubland` ← 'scrub'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'railway', 'roadsides'
+- **Prose:** Modified habitats, including railway yards, gardens, roadsides, forest margins, remnant forest stands and scrub.
+Herb Robert usually grows in partial or complete shade, but on occasions plants are seen in open sites.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
 
 ### Horopito / Pepper tree — `horopito`
 
@@ -212,6 +670,42 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 - **Prose:** Parks, avenues, school grounds and old homesteads — a planted tree, not a wild one.
 - **Credit:** _yours, uncredited_
 
+### Hūpiro — `hupiro`
+
+- **Labels:** coastal, forest, shrubland, grassland, alpine
+    - `coastal` ← 'Coastal'
+    - `forest` ← 'forest'
+    - `shrubland` ← 'shrubland'
+    - `grassland` ← 'grassland'
+    - `alpine` ← 'subalpine'
+- **Prose:** Coastal to subalpine forest and shrubland, and occasionally grassland.
+- **Credit:** NZ Plant Conservation Network, 'Coprosma foetidissima' (paraphrased); Wikipedia, 'Coprosma foetidissima' (CC BY-SA 4.0)
+
+### Island mallow — `island-mallow`
+
+- **Labels:** coastal, disturbed
+    - `coastal` ← 'Coastal'
+    - `disturbed` ← 'waste places'
+- **Prose:** Coastal waste places, gravels, sands, or cliffs. California mallow is cultivated and persists at old house sites as well as being truly naturalised.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0), 'Lavatera assurgentiflora'
+
+### Japanese mahonia — `japanese-mahonia`
+
+- **Labels:** forest, urban
+    - `forest` ← 'forest', 'podocarp'
+    - `urban` ← 'cultivation'
+- **Prose:** Occasional in deciduous forest or mixed podocarp forest near the old sites of cultivation.
+- **Credit:** Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0)
+
+### Kanono — `kanono`
+
+- **Labels:** coastal, forest, shrubland
+    - `coastal` ← 'coast'
+    - `forest` ← 'Forest', 'understorey'
+    - `shrubland` ← 'shrubland', 'regenerating'
+- **Prose:** Forest understorey and sheltered, shady places, from the coast up to montane and cloud forest. Where rainfall is high it can make up much of the shrubland and regenerating forest, and it is often common along the edges of logging tracks and roads.
+- **Credit:** NZ Plant Conservation Network, 'Coprosma grandifolia' (paraphrased)
+
 ### Karaka — `karaka`
 
 - **Labels:** coastal, forest
@@ -219,6 +713,16 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
     - `forest` ← 'forest'
 - **Prose:** Coastal forest and old pā sites throughout the North Island and northern South Island — often planted deliberately by tūpuna.
 - **Credit:** _yours, uncredited_
+
+### Karamū — `karamu`
+
+- **Labels:** coastal, forest, shrubland, urban
+    - `coastal` ← 'Coastal'
+    - `forest` ← 'forest'
+    - `shrubland` ← 'shrubland'
+    - `urban` ← 'city'
+- **Prose:** Coastal, lowland and lower montane shrubland, and open places within forest, from sea level to about 1,200 m. Hardy: it copes with infertile, poorly drained and exposed ground, in full sun or shade, wind and frost. Also grows in city green spaces.
+- **Credit:** NZ Plant Conservation Network, 'Coprosma robusta' (paraphrased); Wikipedia, 'Coprosma robusta' (CC BY-SA 4.0) — units converted to metric
 
 ### Karengo — `karengo`
 
@@ -236,6 +740,48 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 - **Prose:** Coastal and lowland forest, forest margins, regenerating bush. Common in the North Island, patchier south.
 - **Credit:** _yours, uncredited_
 
+### Kōhia — `kohia`
+
+- **Labels:** forest
+    - `forest` ← 'forest'
+- **Prose:** Lowland areas, in indigenous forest clearings, margins and remnants.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
+### Large-seeded coprosma — `large-seeded-coprosma`
+
+- **Labels:** coastal, forest, shrubland, wetland
+    - `coastal` ← 'coastal'
+    - `forest` ← 'forest'
+    - `shrubland` ← 'scrub'
+    - `wetland` ← 'streams'
+- **Prose:** Mostly coastal forest and scrub, including on offshore islands, from sea level to about 560 m; also gullies and above streams.
+- **Credit:** NZ Plant Conservation Network, 'Coprosma macrocarpa subsp. minor' and 'Coprosma macrocarpa subsp. macrocarpa' (paraphrased)
+
+### Least yellow sorrel — `least-yellow-sorrel`
+
+- **Labels:** coastal, shrubland, grassland, alpine, urban, disturbed
+    - `coastal` ← 'Coast'
+    - `shrubland` ← 'regenerating'
+    - `grassland` ← 'Lawns', 'turf'
+    - `alpine` ← 'subalpine'
+    - `urban` ← 'urban'
+    - `disturbed` ← 'disturbed'
+- **Prose:** Lawns and other open turf, typically dry and poor but also wet or rich ground, and urban areas; also disturbed or regenerating native vegetation, often on track edges, rarely in dense forest. Coast to subalpine (to 1100 m), mostly lowland.
+- **Credit:** NZPCN, 'Oxalis exilis' factsheet — paraphrased; Massey University New Zealand Weeds Database, 'Creeping oxalis' — paraphrased
+
+### Leatherleaf mahonia — `leatherleaf-mahonia`
+
+- **Labels:** forest, shrubland, wetland, urban, disturbed
+    - `forest` ← 'forest', 'woodlands', 'Forests'
+    - `shrubland` ← 'shrubland', 'thickets'
+    - `wetland` ← 'streamsides'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'roadsides'
+- **Prose:** In New Zealand: native and exotic forest, forest margins and shrubland, most likely near gardens or historic sites (Environment Canterbury, for the four mahonias growing wild here); recorded growing wild in the Christchurch Botanic Gardens.
+In the south-eastern United States, where it is naturalised: open woodlands and shrublands, 100–500 m (Flora of North America).
+In its native range: Forests, forest margins, weedy slopes, streamsides, roadsides and thickets; at elevations from 500 - 2,000 metres.
+- **Credit:** Environment Canterbury (restated); Flora of North America (restated); Useful Temperate Plants (CC BY-NC-SA 3.0)
+
 ### Liberty cap — `liberty-cap`
 
 - **Labels:** grassland
@@ -251,6 +797,69 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 - **Prose:** Cool damp shaded ground, often under deciduous trees and in old gardens. More common in the South Island.
 - **Credit:** _yours, uncredited_
 
+### Mingimingi — `mingimingi`
+
+- **Labels:** forest, shrubland, wetland
+    - `forest` ← 'forest'
+    - `shrubland` ← 'scrubland'
+    - `wetland` ← 'swamp', 'stream'
+- **Prose:** This species is common in forest, swamp, montane scrubland, along stream banks, and in stony places and cliffs.
+- **Credit:** Wikipedia, 'Coprosma propinqua' (CC BY-SA 4.0)
+
+### Mountain cabbage tree — `mountain-cabbage-tree`
+
+- **Labels:** forest, shrubland, alpine
+    - `forest` ← 'forest', 'forests'
+    - `shrubland` ← 'shrubland'
+    - `alpine` ← 'mountains', 'subalpine'
+- **Prose:** Well-lit places in forest areas.
+Wetter mountains. Openings in wet forests.
+In New Zealand: montane forest and subalpine shrubland, usually in gullies and at the heads of valleys, coming down into the lowlands only where the terrain keeps the climate cool (NZPCN, restated).
+- **Credit:** Flora of New Zealand vol. II (Moore & Edgar 1970), Flora of New Zealand Series (CC BY-NC-SA 4.0); Useful Temperate Plants, 'Cordyline indivisa' (CC BY-NC-SA 3.0); New Zealand Plant Conservation Network, 'Cordyline indivisa' (facts restated)
+
+### Mountain grape — `mountain-grape`
+
+- **Labels:** forest, wetland, urban
+    - `forest` ← 'forest'
+    - `wetland` ← 'Wetland', 'Lake'
+    - `urban` ← 'gardens'
+- **Prose:** In New Zealand: forest, forest margins and shrublands (Auckland Council, restated).
+In Canterbury it has been found growing wild at Travis Wetland and Horseshoe Lake Reserve, Christchurch; Environment Canterbury adds that the four mahonias growing wild in New Zealand turn up most often near gardens or historic sites (Environment Canterbury, restated).
+- **Credit:** Auckland Council, 'Chinese holly grape' pest page (restated); Environment Canterbury (restated)
+
+### Mower's mushroom — `mowers-mushroom`
+
+- **Labels:** grassland, disturbed
+    - `grassland` ← 'Lawns', 'playing fields', 'grazed', 'pasture', 'grass'
+    - `disturbed` ← 'verges'
+- **Prose:** Lawns, playing fields, verges and grazed pasture, especially where the grass has been fertilised. One of the commonest mushrooms of mown grass, often appearing in numbers a day or two after rain.
+- **Credit:** _yours, uncredited_
+
+### Musk mallow — `musk-mallow`
+
+- **Labels:** urban, disturbed
+    - `urban` ← 'Cultivated land'
+    - `disturbed` ← 'waste places'
+- **Prose:** Cultivated land, waste places.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0), 'Malva moschata'
+
+### Māmāngi — `mamangi`
+
+- **Labels:** coastal, forest
+    - `coastal` ← 'Coastal', 'coast'
+    - `forest` ← 'forest', 'canopy'
+- **Prose:** Coastal to lower montane forest, mostly near the coast and in the lowlands. Often part of the subcanopy in coastal kauri forest or mixed pōhutukawa and hardwood forest, and occasionally the dominant canopy tree.
+- **Credit:** NZ Plant Conservation Network, 'Coprosma arborea' (paraphrased)
+
+### Naples garlic — `naples-garlic`
+
+- **Labels:** grassland, urban
+    - `grassland` ← 'grassy'
+    - `urban` ← 'Garden'
+- **Prose:** In New Zealand: Garden escape.
+In its native Mediterranean range: Dry grassy places and fields. Macchie, phrygana, rocky places, weedy banks, rivulets, ruins, often in shade; at elevations from sea level to 1,035 metres.
+- **Credit:** Flora of New Zealand Series vol. III (Healy & Edgar 1980, CC BY-NC-SA 4.0); Useful Temperate Plants (CC BY-NC-SA 3.0)
+
 ### Nasturtium — `nasturtium`
 
 - **Labels:** coastal, urban, disturbed
@@ -260,15 +869,65 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 - **Prose:** Garden escapes, banks, coastal waste ground, roadside dumps of garden waste.
 - **Credit:** _yours, uncredited_
 
+### Native dandelion — `native-dandelion`
+
+- **Labels:** coastal, forest, grassland, wetland, alpine
+    - `coastal` ← 'dunes'
+    - `forest` ← 'forest'
+    - `grassland` ← 'grassland'
+    - `wetland` ← 'riverbeds'
+    - `alpine` ← 'alpine', 'tussock', 'herbfield', 'screes'
+- **Prose:** Mostly montane to alpine tussock grassland, herbfield, wet places, riverbeds and screes, sometimes lowland grassland, forest margins, and dunes.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
+### New Zealand milkcap — `new-zealand-milkcap`
+
+- **Labels:** forest
+    - `forest` ← 'forests'
+- **Prose:** This striking milkcap is endemic of New Zealand, where it is apparently ectomycorrhizal with Fuscospora truncata (Colenso) Heenan and Smissen (Nothofagus truncata (Colenso) Cockayne is a synonym), growing in relatively mature forests.
+- **Credit:** Leonardi, Comandini, Sanjust & Rinaldi 2021, 'Conservation Status of Milkcaps (Basidiomycota, Russulales, Russulaceae), with Notes on Poorly Known Species', Sustainability 13(18): 10365 (CC BY 4.0). https://doi.org/10.3390/su131810365 — figure cross-reference removed.; Cooper, Buchanan, Leonard, Allison-Cooper, Johnston, Padamsee, McKenzie & Michel 2022, 'Conservation status of selected species of non-lichenised agarics, boletes and russuloid fungi in Aotearoa New Zealand, 2021', New Zealand Threat Classification Series 38, Department of Conservation. Licensed by the Department of Conservation for reuse under the Creative Commons Attribution 4.0 International licence. https://www.doc.govt.nz/globalassets/documents/science-and-technical/nztcs38entire.pdf — a running page header falling mid-sentence removed.
+
+### New Zealand sow thistle — `new-zealand-sow-thistle`
+
+- **Labels:** coastal, shrubland, wetland
+    - `coastal` ← 'coastal', 'coast', 'sand dunes'
+    - `shrubland` ← 'scrub'
+    - `wetland` ← 'seepages'
+- **Prose:** Wet coastal cliffs and talus, rarely on sand or salt meadow.
+On the coast, usually on cliff faces in or around damp seepages, often with the blue-green alga Nostoc and the fern Blechnum blechnoides, and mostly on base-rich rock such as basalt, calcareous mudstone, siltstone, limestone or apatite-rich greywacke. On some offshore islands it extends up into coastal scrub and coastal herbfield, and it occasionally grows on stabilised sand dunes.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0); New Zealand Plant Conservation Network (facts restated)
+
+### New Zealand spinach — `new-zealand-spinach`
+
+- **Labels:** coastal, urban, disturbed
+    - `coastal` ← 'coastal', 'beaches', 'sand dunes'
+    - `urban` ← 'towns', 'garden'
+    - `disturbed` ← 'disturbed'
+- **Prose:** Its natural habitat is sandy shorelines and bluffs, often in disturbed areas. It is a halophyte and grows well in saline ground.
+In New Zealand: the coastal strand — beaches among driftwood and seaweed, sand dunes, boulder and cobble beaches, cliff faces and rock ledges. It also turns up in landfills and as a casual weed in towns, and some coastal plants may have started from garden waste (NZPCN, restated).
+- **Credit:** Wikipedia, 'Tetragonia tetragonioides' (CC BY-SA 4.0); New Zealand Plant Conservation Network, 'Tetragonia tetragonioides' (facts restated)
+
+### Oakbug milkcap — `oakbug-milkcap`
+
+- **Labels:** _none_
+- **Prose:** Lactarius quietus is found growing exclusively at the base of oak trees, solitarily or in scattered groups, in soil. It is ectomycorrhizal, feeding symbiotically exclusively with oak, though studies have suggested it is also able to feed saprotrophically, growing from organic soil matter.
+- **Credit:** Wikipedia, 'Lactarius quietus' (CC BY-SA 4.0)
+
+### Oat — `oat`
+
+- **Labels:** grassland, disturbed
+    - `grassland` ← 'farmland'
+    - `disturbed` ← 'roadsides', 'railway'
+- **Prose:** On roadsides, on railway embankments, and near racecourses and in farmland, occasionally in damp ground.
+- **Credit:** Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)
+
 ### Ongaonga — `ongaonga`
 
-- **Labels:** coastal, forest, shrubland, wetland
+- **Labels:** coastal, forest
     - `coastal` ← 'coastal'
-    - `forest` ← 'Forest', 'bush'
-    - `shrubland` ← 'regenerating', 'scrub'
-    - `wetland` ← 'stream'
-- **Prose:** Forest margins, regenerating bush, stream banks and coastal scrub, often in dense stands. Common along tramping tracks in the North Island and the top of the South Island.
-- **Credit:** _yours, uncredited_
+    - `forest` ← 'forest', 'on the bases of fallen trees'
+- **Prose:** Urtica ferox is typically found in coastal to lowland environments. It is common in forest margins and shrublands and it occurs from sea level to 800–1000 m above sea level. U. ferox grows on a variety of soil types but prefers fertile, basaltic soils. It also occurs inland, including in the Canterbury Region on the Harper Hills near Glentunnel. The plant can be found on alluvial soils in the Taramakau Valley within Arthurs Pass National Park. U. ferox can also be found growing on the bases of fallen trees and streambeds.
+- **Credit:** Wikipedia, 'Urtica ferox' (rev 1380986033, CC BY-SA 4.0)
 
 ### Onion weed — `onion-weed`
 
@@ -280,6 +939,48 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
     - `disturbed` ← 'roadsides'
 - **Prose:** Damp shady ground: roadsides, stream banks, under hedges and trees, neglected gardens. Forms dense carpets in winter and spring.
 - **Credit:** _yours, uncredited_
+
+### Oregon grape — `oregon-grape`
+
+- **Labels:** forest, shrubland, urban, disturbed
+    - `forest` ← 'plantation', 'forest', 'woods', 'forested'
+    - `shrubland` ← 'shrubland'
+    - `urban` ← 'gardens', 'Garden'
+    - `disturbed` ← 'Roadsides'
+- **Prose:** Roadsides, semi-shade by plantation margins or beneath deciduous trees.
+In New Zealand the wild mahonias grow in native and exotic forest, forest margins and shrubland, most often near gardens or historic sites (Environment Canterbury, restated, for the four species together).
+In its native range in the Pacific Northwest: rocky woods and open coniferous forest, on dry to moist rocky sites and forested slopes at 400–2,100 m (Missouri Botanical Garden; NatureServe, restated).
+- **Credit:** Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0); Environment Canterbury (restated); Missouri Botanical Garden, NatureServe (restated)
+
+### Pale-pink wood sorrel — `pale-pink-wood-sorrel`
+
+- **Labels:** coastal, forest, urban, disturbed
+    - `coastal` ← 'seaside'
+    - `forest` ← 'Bush'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'roadsides', 'disturbed'
+- **Prose:** Bush, gardens, roadsides, disturbed sites, also along the seaside. Tolerates shade well.
+- **Credit:** _yours, uncredited_
+
+### Peppermint geranium — `peppermint-scented-geranium`
+
+- **Labels:** coastal
+    - `coastal` ← 'Coastal'
+- **Prose:** Coastal sites, usually on more or less open slopes.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0), 'Pelargonium tomentosum' — abbreviations spelled out
+
+### Perennial sow thistle — `perennial-sow-thistle`
+
+- **Labels:** coastal, shrubland, grassland, wetland, urban, disturbed
+    - `coastal` ← 'coast'
+    - `shrubland` ← 'hedges'
+    - `grassland` ← 'pastures'
+    - `wetland` ← 'swamps', 'lakes', 'rivers'
+    - `urban` ← 'cultivated land'
+    - `disturbed` ← 'Roadsides'
+- **Prose:** Roadsides, hedges, swamps, cultivated land.
+It grows in areas such as pastures, roadsides, bushlands and the shorelines of lakes, rivers and sea coast.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0); Wikipedia, 'Sonchus arvensis' (CC BY-SA 4.0)
 
 ### Petty spurge — `petty-spurge`
 
@@ -294,6 +995,15 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
     - `forest` ← 'forest', 'under tree'
 - **Prose:** Damp shaded native forest floor and gullies, often under tree ferns.
 - **Credit:** _yours, uncredited_
+
+### Pink-flowered passionfruit — `pink-flowered-passionfruit`
+
+- **Labels:** forest, shrubland, urban
+    - `forest` ← 'forest'
+    - `shrubland` ← 'scrub'
+    - `urban` ← 'Cultivation'
+- **Prose:** Cultivation escape; scrub and forest margins.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
 
 ### Plantain — `plantain`
 
@@ -323,51 +1033,112 @@ It is a strictly lowland plant in northern Europe. In Britain, it is recorded no
 
 ### Prickly sow thistle — `prickly-sow-thistle`
 
-- **Labels:** grassland, urban, disturbed
-    - `grassland` ← 'paddocks'
+- **Labels:** coastal, forest, grassland, wetland, urban, disturbed
+    - `coastal` ← 'coastal', 'shores'
+    - `forest` ← 'forest'
+    - `grassland` ← 'paddocks', 'pasture'
+    - `wetland` ← 'lake'
     - `urban` ← 'Gardens'
-    - `disturbed` ← 'roadsides', 'waste ground'
+    - `disturbed` ← 'roadsides', 'waste ground', 'waste land'
 - **Prose:** Gardens, roadsides, paddocks and waste ground alongside pūhā.
-- **Credit:** _yours, uncredited_
+Gardens, arable land, waste land, roadsides, coastal sand and talus, pasture, damaged forest, lake shores.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
 
 ### Psilocybe aucklandiae — `psilocybe-aucklandiae`
 
 - **Labels:** forest
     - `forest` ← 'forests', 'plantations', 'plantation'
-- **Prose:** On soil and litter, especially clay soils, in native forests and pine plantations, almost always in the wider Auckland Region. Commonly found in the exotic pine plantation of Riverhead. Has been recorded from Waipoua in Northland, and in Australia as Psilocybe sect. Zapotecorum, which is likely phylogenetically similar or the same.
-Specimens examined for the description: Auckland: Woodhill State Forest, on ground in litter of mixed pine and native forest,  C. C. King, Jun 1989 PDD 57236 (holotype). Waitakere Ranges: Sharps Bush, in litter under Leptospermum and Dacrydium: PDD 43043; Atkinson Park, Titirangi Beach on soil under Leptospermum: PDD 49789; Quarry Track, Piha Valley Forest, on litter: PDD 58423. Hunua Ranges: Orere, on ground: PDD 34593; Mangatangi Valley, on rotten wood: PDD 34594.
+- **Prose:** On soil and litter, especially clay soils, in native forests and pine plantations, almost always in the wider Auckland Region. Commonly found in the exotic pine plantation of Riverhead.
 - **Credit:** Wikipedia, 'Psilocybe aucklandiae' (CC BY-SA 4.0)
 
 ### Psilocybe makarorae — `psilocybe-makarorae`
 
 - **Labels:** forest
     - `forest` ← 'wood of southern beeches (genus Nothofagus'
-- **Prose:** Psilocybe makarorae is known only from New Zealand. The reported collection locations have been on both the North and South Islands, including the Bay of Plenty, Westland District, Central Otago, and Dunedin.  Like all Psilocybe species, it is saprobic, and feeds on decomposing organic matter. Fruit bodies grow scattered or in groups on the fallen, rotting wood of southern beeches (genus Nothofagus), and are often encountered near lakes and picnic grounds
+- **Prose:** Like all Psilocybe species, it is saprobic, and feeds on decomposing organic matter. Fruit bodies grow scattered or in groups on the fallen, rotting wood of southern beeches (genus Nothofagus), and are often encountered near lakes and picnic grounds.
 - **Credit:** Wikipedia, 'Psilocybe makarorae' (CC BY-SA 4.0)
 
 ### Psilocybe subaeruginosa — `psilocybe-subaeruginosa`
 
-- **Labels:** forest, disturbed
-    - `forest` ← 'forests', 'plantations'
-    - `disturbed` ← 'disturbed'
-- **Prose:** Psilocybe subaeruginosa grows solitary to gregarious from wood debris in Australian native forests, pine plantations and is occasionally observed growing on dung. It is common in southern parts of Australia from April to August. The species is also known from Australian native and Eucalyptus forests, and famously in New Zealand on wood chip. It is recorded as present in New Zealand, but DNA sequencing of collections so far indicates P. allenii and P. cyanescens there as well as P. subaeruginosa. Its tendency to live on wood chips, as well as on plants and in soil, contribute to the likelihood that these were the materials it was transplanted to the Northern Hemisphere on, and the transplantation led to a decrease in genetic diversity. This concept also led to the idea that they exist in disturbed areas, rather than natural.
-- **Credit:** Wikipedia, 'Psilocybe subaeruginosa' (CC BY-SA 4.0)
+- **Labels:** forest, urban
+    - `forest` ← 'forests', 'plantations', 'bush'
+    - `urban` ← 'gardens'
+- **Prose:** Psilocybe subaeruginosa grows solitary to gregarious from wood debris in Australian native forests, pine plantations and is occasionally observed growing on dung. The species is also known from Australian native and Eucalyptus forests, and famously in New Zealand on wood chip.
+In New Zealand: most often in gardens mulched with wood chip, and now and then on rotted wood in native bush (psilverlinings.nz, restated).
+- **Credit:** Wikipedia, 'Psilocybe subaeruginosa' (CC BY-SA 4.0); psilverlinings.nz, 'Psilocybe subaeruginosa' (facts restated)
+
+### Purple wood sorrel — `purple-wood-sorrel`
+
+- **Labels:** grassland, urban, disturbed
+    - `grassland` ← 'Grassy'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'roadsides', 'disturbed'
+- **Prose:** Grassy areas, gardens, roadsides, and other disturbed areas.
+- **Credit:** Plants of South Eastern New South Wales, 'Oxalis purpurea' (Betty Wood; CC BY 4.0)
 
 ### Pūhā / Sow thistle — `puha`
 
-- **Labels:** grassland, urban, disturbed
-    - `grassland` ← 'paddocks'
+- **Labels:** coastal, forest, grassland, urban, disturbed
+    - `coastal` ← 'coastal', 'dunes', 'beaches'
+    - `forest` ← 'forest'
+    - `grassland` ← 'paddocks', 'grassland', 'pasture'
     - `urban` ← 'gardens', 'cultivated paddocks'
-    - `disturbed` ← 'Waste ground', 'roadsides', 'disturbed'
+    - `disturbed` ← 'Waste ground', 'roadsides', 'disturbed', 'Waste land', 'railway'
 - **Prose:** Waste ground, gardens, roadsides, cultivated paddocks. Almost anywhere disturbed.
+Waste land, grassland, coastal rocks, dunes and beaches, forest margins, crevices in walls and footpaths, gardens, pasture, roadsides, railway land.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
+### Red clover — `red-clover`
+
+- **Labels:** grassland, urban, disturbed
+    - `grassland` ← 'Pasture', 'meadows'
+    - `urban` ← 'parks', 'gardens'
+    - `disturbed` ← 'roadsides', 'waste ground'
+- **Prose:** Pasture, meadows, old fields, roadsides, waste ground, parks and gardens, in full light. Prefers well-drained soil and seldom grows in wet ground.
+- **Credit:** Floem, Green-Schools Ireland and NZPCN (paraphrased)
+
+### Red deadnettle — `red-deadnettle`
+
+- **Labels:** forest, grassland, wetland, urban, disturbed
+    - `forest` ← 'forest'
+    - `grassland` ← 'pastures', 'meadows'
+    - `wetland` ← 'river'
+    - `urban` ← 'Cultivated land', 'gardens'
+    - `disturbed` ← 'waste places', 'roadsides'
+- **Prose:** In New Zealand (Flora of New Zealand): Cultivated land, waste places, river beds and poor pastures.
+It frequently occurs in meadows, forest edges, roadsides and gardens.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Lamium purpureum' (rev 1363452126, CC BY-SA 4.0)
+
+### Red raspberry — `red-raspberry`
+
+- **Labels:** shrubland, disturbed
+    - `shrubland` ← 'scrub', 'thickets'
+    - `disturbed` ← 'Roadsides', 'wasteland'
+- **Prose:** Roadsides, wasteland, streambanks, scrub edges, sometimes forming dense thickets.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0)
+
+### Riverine bolete — `riverine-bolete`
+
+- **Labels:** forest, wetland
+    - `forest` ← 'woodland', 'under poplar'
+    - `wetland` ← 'pond', 'boggy', 'stream'
+- **Prose:** It can be found in wet woodland — pond edges, boggy ground and stream banks — growing by poplars, silver birch, willows, alders or oaks. The New Zealand collections so far are under poplar, silver birch and goat willow.
 - **Credit:** _yours, uncredited_
 
-### Red-pored boletes — `red-pored-boletes`
+### Rose geranium — `rose-geranium`
 
-- **Labels:** forest
-    - `forest` ← 'Under the same introduced oaks'
-- **Prose:** Under the same introduced oaks, birches and pines as porcini.
-- **Credit:** _yours, uncredited_
+- **Labels:** coastal
+    - `coastal` ← 'coastal'
+- **Prose:** Warm hill slopes and cliffs, coastal habitats.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0), 'Pelargonium ×asperum'
+
+### Rose-scented geranium — `rose-scented-geranium`
+
+- **Labels:** coastal, disturbed
+    - `coastal` ← 'beach', 'sand dunes'
+    - `disturbed` ← 'disturbed'
+- **Prose:** Its habitat is usually beach sand or other well-drained sandy soils. Its preferred habitat is on sand dunes, but it is a fast grower on any reasonable base, including hard clayey soil, so it readily colonises disturbed habitat.
+- **Credit:** Wikipedia, 'Pelargonium capitatum' (CC BY-SA 4.0)
 
 ### Rosehip (sweet briar) — `rosehip`
 
@@ -377,12 +1148,34 @@ Specimens examined for the description: Auckland: Woodhill State Forest, on grou
 - **Prose:** Dry hill country, riverbeds and farmland, especially Marlborough, Canterbury and Central Otago.
 - **Credit:** _yours, uncredited_
 
+### Rosy garlic — `rosy-garlic`
+
+- **Labels:** grassland, urban, disturbed
+    - `grassland` ← 'grassy'
+    - `urban` ← 'Garden'
+    - `disturbed` ← 'waste land'
+- **Prose:** Garden escape in grassy waste land.
+- **Credit:** Flora of New Zealand Series vol. III (Healy & Edgar 1980, CC BY-NC-SA 4.0)
+
+### Rufous milkcap — `rufous-milkcap`
+
+- **Labels:** _none_
+- **Prose:** It is most commonly found with pine trees, but can also appear with birch, conifer, or spruce.
+- **Credit:** Wikipedia, 'Lactarius rufus' (CC BY-SA 4.0) — northern-hemisphere fruiting season omitted; the New Zealand season is in the entry's sources
+
 ### Saffron milk cap / Pine mushroom — `saffron-milk-cap`
 
 - **Labels:** forest
     - `forest` ← 'under pine', 'plantation', 'forest', 'shelter belts'
 - **Prose:** Exclusively under pine, in plantation forest and shelter belts. Never in native bush.
 - **Credit:** _yours, uncredited_
+
+### Sand coprosma — `sand-coprosma`
+
+- **Labels:** coastal
+    - `coastal` ← 'Coastal', 'dunes'
+- **Prose:** Coastal sand, including dunes.
+- **Credit:** NZ Plant Conservation Network, 'Coprosma acerosa' (paraphrased)
 
 ### Scarlet pimpernel — `scarlet-pimpernel`
 
@@ -407,6 +1200,14 @@ Specimens examined for the description: Auckland: Woodhill State Forest, on grou
 - **Prose:** Sheltered rocky shores, harbours and estuaries. Blooms heavily in nutrient-enriched water.
 - **Credit:** _yours, uncredited_
 
+### Shamrock wood sorrel — `shamrock-wood-sorrel`
+
+- **Labels:** urban, disturbed
+    - `urban` ← 'cultivation', 'Gardens'
+    - `disturbed` ← 'roadsides', 'disturbed'
+- **Prose:** Escape from cultivation. Gardens, roadsides and other disturbed areas, and sometimes native vegetation.
+- **Credit:** Plants of South Eastern New South Wales, 'Oxalis articulata' (Betty Wood; CC BY 4.0)
+
 ### Sheep sorrel — `sheep-sorrel`
 
 - **Labels:** coastal, grassland, disturbed
@@ -416,12 +1217,87 @@ Specimens examined for the description: Auckland: Woodhill State Forest, on grou
 - **Prose:** Poor, acidic, dry soils: paddocks, roadsides, gravel, sand dunes, lawns that have given up.
 - **Credit:** _yours, uncredited_
 
+### Shining karamū — `shining-karamu`
+
+- **Labels:** coastal, forest
+    - `coastal` ← 'coastal'
+    - `forest` ← 'forests'
+- **Prose:** C. lucida is typically found in low coastal and montane forests.  Smale et al. also noted that C. lucida can be found growing in geothermal soils of the Taupō Volcanic Zone.
+- **Credit:** Wikipedia, 'Coprosma lucida' (CC BY-SA 4.0)
+
+### Slender oat — `slender-wild-oat`
+
+- **Labels:** coastal, grassland, disturbed
+    - `coastal` ← 'the sea'
+    - `grassland` ← 'grassy', 'pasture'
+    - `disturbed` ← 'disturbed', 'roadsides'
+- **Prose:** Near the sea, especially on cliffs, dry banks, and steep grassy slopes, occasionally inland on disturbed ground, roadsides and in pasture.
+- **Credit:** Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)
+
+### Slimy milkcap — `slimy-milkcap`
+
+- **Labels:** forest
+    - `forest` ← 'woodland'
+- **Prose:** Lactarius blennius is very common and is found in broad-leaved woodland, favouring beech; it is most associated with Fagus sylvatica, the European beech, though it has also been observed growing in association with species of oak. It forms an ectomycorrhizal association with trees, and can grow on a wide variety of subsoil types, but is more typical of acidic soil.
+- **Credit:** Wikipedia, 'Lactarius blennius' (CC BY-SA 4.0) — northern-hemisphere fruiting season omitted; the New Zealand season is in the entry's sources; 'It is found between late summer and late autumn, and is native to Europe' split at the comma so the surviving clause could move to the summary
+
 ### Slippery jack — `slippery-jack`
 
 - **Labels:** forest
     - `forest` ← 'Under pine', 'plantations', 'shelter belts'
 - **Prose:** Under pine, in plantations and shelter belts.
 - **Credit:** _yours, uncredited_
+
+### Small herb Robert — `small-herb-robert`
+
+- **Labels:** disturbed
+    - `disturbed` ← 'railway'
+- **Prose:** Introduced populations are often found along railway corridors.
+- **Credit:** Wikipedia, 'Geranium purpureum' (CC BY-SA 4.0)
+
+### Small-flowered cranesbill — `small-flowered-cranesbill`
+
+- **Labels:** grassland, urban, disturbed
+    - `grassland` ← 'lawns', 'pastures'
+    - `urban` ← 'cultivated arable land'
+    - `disturbed` ← 'Waste places', 'railway'
+- **Prose:** Waste places around houses, farmyards, railway yards, lawns, cultivated arable land, rough pastures.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
+### Smooth cat's ear — `smooth-cats-ear`
+
+- **Labels:** coastal, grassland, wetland, urban, disturbed
+    - `coastal` ← 'dunes', 'coastal'
+    - `grassland` ← 'Grassland', 'pasture'
+    - `wetland` ← 'riverbeds'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'railway', 'waste land', 'roadsides'
+- **Prose:** Grassland, pasture, dunes, riverbeds, coastal rock, stony terraces, railway ballast, waste land, gardens, roadsides.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
+
+### Smooth hawksbeard — `smooth-hawksbeard`
+
+- **Labels:** coastal, shrubland, grassland, wetland, alpine, urban, disturbed
+    - `coastal` ← 'coastal'
+    - `shrubland` ← 'scrub'
+    - `grassland` ← 'pasture', 'lawns', 'grassland', 'turf'
+    - `wetland` ← 'swamps', 'stream', 'river'
+    - `alpine` ← 'tussock'
+    - `urban` ← 'Gardens'
+    - `disturbed` ← 'roadsides', 'waste land'
+- **Prose:** Gardens, roadsides, waste land, lakeshores, pasture, lawns, swamps, coastal sand and cliffs, stream beds, river flats, tussock grassland, scrub.
+A weed of turf, lawns, crops and newly sown pasture throughout New Zealand (Bayer New Zealand, restated).
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0); Bayer Crop Science New Zealand, 'Hawksbeard' (all rights reserved — restated)
+
+### Snowdrop wood sorrel — `snowdrop-woodsorrel`
+
+- **Labels:** coastal, forest, wetland, alpine
+    - `coastal` ← 'Coast'
+    - `forest` ← 'forest'
+    - `wetland` ← 'streams', 'rivers'
+    - `alpine` ← 'alpine'
+- **Prose:** Beside streams and rivers, usually within their flood zone, and around the plunge pools of waterfalls, mainly in native forest. Coast to montane, sometimes into the alpine zone. Usually in semi-shade; it can grow in full sun where the ground is permanently moist.
+- **Credit:** NZPCN, 'Oxalis magellanica' factsheet — paraphrased
 
 ### Snowflake — `snowflake`
 
@@ -432,27 +1308,55 @@ Specimens examined for the description: Auckland: Woodhill State Forest, on grou
 - **Prose:** Damp ground: stream banks, drains, old gardens and the shade under trees, often with onion weed nearby.
 - **Credit:** _yours, uncredited_
 
+### Solander's geranium — `solanders-geranium`
+
+- **Labels:** coastal, grassland, alpine, disturbed
+    - `coastal` ← 'coast', 'the sea'
+    - `grassland` ← 'grasslands', 'grassland'
+    - `alpine` ← 'tussock'
+    - `disturbed` ← 'waste places'
+- **Prose:** Open lowland places, mostly near the coast in natural and partially modified grasslands, very occasionally in waste places.
+In New Zealand: from the coast up into the montane zone (sea level to 600 m); it was once widespread in short tussock grassland, on lava fields and clay pans, and on rocky headlands by the sea (NZPCN, restated).
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0); New Zealand Plant Conservation Network (restated)
+
+### Southern nettle — `southern-nettle`
+
+- **Labels:** coastal, forest, shrubland
+    - `coastal` ← 'coast', 'beaches', 'sand dunes', 'Coastal'
+    - `forest` ← 'forest'
+    - `shrubland` ← 'scrub'
+- **Prose:** Urtica australis is typically found near the coast, and can be present on rocky beaches, sand dunes, and scrublands.
+In New Zealand (Flora of New Zealand): Coastal forest, forest margin and sea-strand.
+It favours open ground — forest margins, gaps among scrub and grasses, cobble beaches and sand dunes — and is common in damaged forest on the main Chatham Island.
+- **Credit:** Wikipedia, 'Urtica australis' (CC BY-SA 4.0); Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); NZ Plant Conservation Network, 'Urtica australis' fact sheet (P.J. de Lange, all rights reserved, restated)
+
 ### Spindle pouch — `spindle-pouch`
 
 - **Labels:** forest
     - `forest` ← 'bush', 'forest'
-- **Prose:** Rotting wood in native bush and in mixed native and introduced forest. Recorded on both main islands and commoner in the North Island, particularly around Wellington and Auckland.
+- **Prose:** Rotting wood in native bush and in mixed native and introduced forest.
 - **Credit:** _yours, uncredited_
 
 ### Stinging nettle — `nettle`
 
-- **Labels:** wetland, disturbed
+- **Labels:** shrubland, grassland, wetland, urban, disturbed
+    - `shrubland` ← 'thickets'
+    - `grassland` ← 'grassland', 'farmland'
     - `wetland` ← 'riverbanks'
-    - `disturbed` ← 'disturbed'
+    - `urban` ← 'cultivated land'
+    - `disturbed` ← 'disturbed', 'Waste places', 'roadsides'
 - **Prose:** Nitrogen-rich disturbed ground: old stockyards, compost heaps, riverbanks, neglected sections.
-- **Credit:** _yours, uncredited_
+In New Zealand (Flora of New Zealand): Waste places, cultivated land, grassland.
+In New Zealand (NZPCN): usually in damp, rich soil — farmland, fence rows, thickets, stockyards, waste places and roadsides.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); NZ Plant Conservation Network, 'Urtica dioica subsp. dioica' fact sheet (all rights reserved, restated)
 
 ### Straw mushroom — `straw-mushroom`
 
-- **Labels:** forest
-    - `forest` ← 'under an oak'
-- **Prose:** Cultivated on rice straw in Southeast Asia and sold canned or fresh. Not established in the wild in New Zealand; anything that looks like one under an oak here is not one.
-- **Credit:** _yours, uncredited_
+- **Labels:** urban
+    - `urban` ← 'urban', 'park', 'gardens'
+- **Prose:** In New Zealand: wild records are few — an urban park in Christchurch (Hagley Park, 2011, confirmed by DNA), Kaikōura Caves (1991), and an Auckland compost bin (2025). Elsewhere it is found on wood chips, compost and in gardens (Kuo, MushroomExpert, restated).
+Cultivated on rice straw in East and Southeast Asia.
+- **Credit:** Landcare Research PDD herbarium, specimens 96362 and 81917 (facts restated); iNaturalist NZ, research-grade observations 321319392 and 328605331 (facts restated); Kuo, M., MushroomExpert.com, 'Volvariella volvacea' (facts restated)
 
 ### Supplejack — `kareao`
 
@@ -460,6 +1364,15 @@ Specimens examined for the description: Auckland: Woodhill State Forest, on grou
     - `forest` ← 'forest'
 - **Prose:** Lowland and hill forest throughout the North Island and the wetter parts of the South Island, looping between trees in dense, dark tangles.
 - **Credit:** _yours, uncredited_
+
+### Swamp coprosma — `swamp-coprosma`
+
+- **Labels:** forest, shrubland, wetland
+    - `forest` ← 'forest'
+    - `shrubland` ← 'shrubland'
+    - `wetland` ← 'Swamps', 'boggy', 'streams', 'rivers'
+- **Prose:** Swamps and boggy ground, poorly drained shrubland and forest beside streams and rivers, mostly in the lowlands and rarely in the mountains.
+- **Credit:** NZ Plant Conservation Network, 'Coprosma tenuicaulis' (paraphrased)
 
 ### Sweet chestnut — `sweet-chestnut`
 
@@ -470,6 +1383,62 @@ Specimens examined for the description: Auckland: Woodhill State Forest, on grou
 - **Prose:** Old estates, parks, farm plantings and shelter belts.
 - **Credit:** _yours, uncredited_
 
+### Taiwan cherry — `taiwan-cherry`
+
+- **Labels:** forest, shrubland, urban, disturbed
+    - `forest` ← 'forest', 'understorey'
+    - `shrubland` ← 'shrubland'
+    - `urban` ← 'Gardens'
+    - `disturbed` ← 'roadsides'
+- **Prose:** Gardens and reserves, roadsides (above all beneath power lines), shrubland, and native forest, both its understorey and its light wells (Bay of Plenty Regional Council, restated).
+dry, gap, gravel, hill, loam, lowland, open, terrace
+- **Credit:** Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ); Bay of Plenty Regional Council, 'Taiwan cherry' pest page (facts restated)
+
+### Taupata — `taupata`
+
+- **Labels:** coastal, forest, shrubland
+    - `coastal` ← 'coast', 'coastal'
+    - `forest` ← 'forest', 'understorey'
+    - `shrubland` ← 'scrub'
+- **Prose:** On the coast: rock stacks, islets, sea cliffs, slopes of fallen rock and boulder fields, petrel scrub on offshore islands, and coastal forest, where it is often the main understorey. Rarely found inland.
+- **Credit:** NZ Plant Conservation Network, 'Coprosma repens' (paraphrased)
+
+### Tawai milkcap — `tawai-milkcap`
+
+- **Labels:** forest
+    - `forest` ← 'under beech', 'forest'
+- **Prose:** Found on the ground under beech (Nothofagus), in beech forest, singly or in groups. Beech forest is the whole of its recorded habitat, and it grows nowhere outside New Zealand.
+- **Credit:** _yours, uncredited_
+
+### Topped lavender — `topped-lavender`
+
+- **Labels:** urban, disturbed
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'roadsides'
+- **Prose:** Paths, gravel and shingle drives, roadsides and similar habitats around gardens.
+- **Credit:** Flora of New Zealand Series vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0)
+
+### Tree mallow — `tree-mallow`
+
+- **Labels:** coastal, urban, disturbed
+    - `coastal` ← 'coastal'
+    - `urban` ← 'cultivated land'
+    - `disturbed` ← 'Waste places'
+- **Prose:** Waste places and cultivated land, especially well-established at coastal sites.
+It grows mainly on exposed coastal locations, often on small islands, only rarely any distance inland.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0), 'Lavatera arborea'; Wikipedia, 'Malva arborea' (CC BY-SA 4.0)
+
+### Turnip-rooted geranium — `turnip-rooted-geranium`
+
+- **Labels:** coastal, shrubland, grassland, alpine
+    - `coastal` ← 'coast', 'the sea'
+    - `shrubland` ← 'scrub'
+    - `grassland` ← 'grassland'
+    - `alpine` ← 'tussock'
+- **Prose:** Widely distributed in open habitats, especially in lowland grassland and scrub, on cliffs, often in modified communities of herbs.
+In New Zealand: from the coast up into the lower montane zone (sea level to 400 m); it was once widespread in short tussock grassland, on lava fields and clay pans, and on rocky headlands by the sea (NZPCN, restated).
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0); New Zealand Plant Conservation Network (restated)
+
 ### Tutu — `tutu`
 
 - **Labels:** forest, shrubland, wetland
@@ -478,6 +1447,20 @@ Specimens examined for the description: Auckland: Woodhill State Forest, on grou
     - `wetland` ← 'Riverbeds'
 - **Prose:** Riverbeds, slips, forest margins, regenerating scrub. Extremely common nationwide.
 - **Credit:** _yours, uncredited_
+
+### Ugly milkcap — `ugly-milkcap`
+
+- **Labels:** forest
+    - `forest` ← 'woodland'
+- **Prose:** While especially associated with birch, it is also found with spruce, pine and other trees in mixed woodland.
+- **Credit:** Wikipedia, 'Lactarius turpis' (CC BY-SA 4.0)
+
+### Umere milkcap — `umere-milkcap`
+
+- **Labels:** forest
+    - `forest` ← 'Under beech'
+- **Prose:** Under beech (Nothofagus), in groups and occasionally in tufts from a shared base.
+- **Credit:** Manaaki Whenua Landcare Research, Virtual Mycota, 'Lactarius umerensis', habitat 'gregarious or occasionally caespitose under Nothofagus', attributed to McNabb, R.F.R. (1971), 'The Russulaceae of New Zealand. 1. Lactarius', New Zealand Journal of Botany 9(1): 46–66. In copyright, restated not quoted. Checked 08/10/2026. https://virtualmycota.landcareresearch.co.nz/webforms/vM_Species_Details.aspx?pk=5192
 
 ### Walnut — `walnut`
 
@@ -503,6 +1486,29 @@ Specimens examined for the description: Auckland: Woodhill State Forest, on grou
 - **Prose:** Slow-moving fresh water: streams, drains, spring-fed creeks. Often in dense floating mats.
 - **Credit:** _yours, uncredited_
 
+### Weraroa — `weraroa`
+
+- **Labels:** forest
+    - `forest` ← 'forest', 'branches of māhoe', 'on rotted cabbage trees', 'forests'
+- **Prose:** The species is endemic to New Zealand, and is fairly abundant in the early winter and spring months in lowland mixed rainforest near Wellington and Auckland. The mushroom can be difficult to see, often buried under leaves or eaten by slugs, and it is sometimes hard to find mature specimens that are not partially eaten. The species is typically found on decaying wood buried in forest leaf litter (either solitary or crowded), often on the rotting branches of māhoe (Melicytus ramiflorus). It has also been found fruiting on rotted cabbage trees (Cordyline australis) and associated with decaying tree-fern fronds, native to the forests of New Zealand.
+- **Credit:** Wikipedia, 'Psilocybe weraroa' (CC BY-SA 4.0)
+
+### White clover — `white-clover`
+
+- **Labels:** grassland, urban
+    - `grassland` ← 'grassy', 'lawns'
+    - `urban` ← 'gardens'
+- **Prose:** It is common in most grassy areas (lawns and gardens) of North and South America, Australia and New Zealand.
+- **Credit:** Wikipedia, 'Trifolium repens' (CC BY-SA 4.0)
+
+### White-leaved lawyer — `white-leaved-lawyer`
+
+- **Labels:** forest, shrubland
+    - `forest` ← 'forest'
+    - `shrubland` ← 'scrub'
+- **Prose:** Lowland to montane forest, scrub and exposed rocky sites throughout.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA 4.0)
+
 ### Wild carrot — `wild-carrot`
 
 - **Labels:** grassland, disturbed
@@ -519,13 +1525,27 @@ Specimens examined for the description: Auckland: Woodhill State Forest, on grou
 - **Prose:** Roadsides, railway corridors, coastal banks, waste ground. Extremely common.
 - **Credit:** _yours, uncredited_
 
-### Wild plum — `wild-plum`
+### Wild garlic — `wild-garlic`
 
-- **Labels:** wetland, disturbed
-    - `wetland` ← 'riverbanks'
-    - `disturbed` ← 'Roadsides', 'railway'
-- **Prose:** Roadsides, riverbanks, old orchard sites, railway corridors.
-- **Credit:** _yours, uncredited_
+- **Labels:** grassland, disturbed
+    - `grassland` ← 'pastures', 'grassy', 'grazed', 'grassland'
+    - `disturbed` ← 'waste places', 'waste land', 'roadsides'
+- **Prose:** Occasional to locally abundant in pastures and waste places. Wild onion is occasional and difficult to detect in grassy waste land and on roadsides, and is usually grazed down when growing in adjacent grassland.
+- **Credit:** Flora of New Zealand Series vol. III (Healy & Edgar 1980, CC BY-NC-SA 4.0)
+
+### Wild oat — `wild-oat`
+
+- **Labels:** disturbed
+    - `disturbed` ← 'roadsides', 'waste land'
+- **Prose:** A problem weed of crops, on roadsides and waste land and also in brackish soil and reclamation areas.
+- **Credit:** Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)
+
+### Winter wild oat — `sterilised-oat`
+
+- **Labels:** disturbed
+    - `disturbed` ← 'waste land'
+- **Prose:** subsp. ludoviciana: A weed in crops. subsp. sterilis: In waste land.
+- **Credit:** Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)
 
 ### Wood ear — `wood-ear`
 
@@ -537,8 +1557,9 @@ Specimens examined for the description: Auckland: Woodhill State Forest, on grou
 ### Wood nipple fungus — `wood-nipple-fungus`
 
 - **Labels:** _none_
-- **Prose:** It has a Gondwanan distribution, and is found in Australia, New Zealand, and Patagonia (South America), where it grows on rotting wood.
-- **Credit:** Wikipedia, 'Galerina patagonica' (CC BY-SA 4.0)
+- **Prose:** It grows on rotting wood.
+In New Zealand: on rotting wood — trunks, branches and heaps of leaves, mainly of mountain beech — and on the ground (Landcare Research Virtual Mycota, restated).
+- **Credit:** Wikipedia, 'Galerina patagonica' (CC BY-SA 4.0) — one sentence split in two so the biogeography could move to the summary; Landcare Research Virtual Mycota, 'Galerina patagonica' (facts restated)
 
 ### Yellow stainer — `yellow-stainer`
 
@@ -549,75 +1570,15 @@ Specimens examined for the description: Auckland: Woodhill State Forest, on grou
 - **Prose:** Exactly where field mushrooms grow: lawns, parks, pasture and under hedges, often in the same patch.
 - **Credit:** _yours, uncredited_
 
-## Drafts whose prose earned no label (48)
+## Drafts whose prose earned no label (16)
 
 Their `habitat` field is really a distribution section — a native range, not a place to look. These need a habitat statement before they can be classified.
-
-### Bird's-eye speedwell — `birds-eye-speedwell`
-
-- **Labels:** _none_
-- **Prose:** Veronica persica is native to the Caucasus and northern Iran, but it has become widely naturalised elsewhere. It now has a near cosmopolitan distribution, having been introduced to Europe, North Africa, the Americas, East Asia, Australia and New Zealand.
-The species was first recorded in Britain in 1825. It rapidly extended its range during the 1800s and was ubiquitous throughout lowland Britain and Ireland by 1960.
-- **Credit:** Wikipedia, 'Veronica persica' (CC BY-SA 4.0)
-
-### Blackcurrant — `blackcurrant`
-
-- **Labels:** _none_
-- **Prose:** The blackcurrant is native to northern Europe and Asia.
-- **Credit:** Wikipedia, 'Blackcurrant' (CC BY-SA 4.0)
-
-### Bog yellow cress — `bog-yellow-cress`
-
-- **Labels:** _none_
-- **Prose:** Rorippa palustris is native to, or naturalized across much of the globe.
-
-
-Native range
-AFRICA: in Egypt and Ethiopia.
-ASIA and EURASIA: in Afghanistan; Bhutan; the Caucasus (in Armenia, Azerbaijan, Georgia, and Russia) and Ciscaucasia (in Dagestan); much of China and Taiwan; India (in the states of Assam, Bihar, Himachal Pradesh, Jammu and Kashmir, and West Bengal); Indonesia (in Papua province, Java, the Lesser Sunda, and Maluku Islands); Japan (in the prefectures of Hokkaido, Honshu, Kyushu, Shikoku, and the Ryukyu Islands); Kazakhstan; the Korean Peninsula; Kyrgyzstan; Mongolia; Pakistan; Papua New Guinea; eastern and western Siberia; Tajikistan; northeastern Turkey; Turkmenistan; Uzbekistan; and Yemen.
-EUROPE: grows natively in most regions.
-NORTH AMERICA: in every province and territory (excluding Nunavut) of Canada; Puerto Rico; the District of Columbia and every state (excluding Hawaii) in the United States; Mexico
-The CARIBBEAN: in Cuba and Haiti.
-AUSTRALASIA: New Zealand
-
-
-Naturalized range
-AUSTRALASIA: Australia and New Zealand
-MEZO- and SOUTH AMERICA: in Argentina; Brazil; Chile; Ecuador; Panama; Peru; and Suriname.
-- **Credit:** Wikipedia, 'Rorippa palustris' (CC BY-SA 4.0)
 
 ### Common lawn daisy — `common-lawn-daisy`
 
 - **Labels:** _none_
-- **Prose:** Bellis perennis is native to western, central and northern Europe, including remote islands such as the Faroe Islands, but has become widely naturalised in most temperate regions, including the Americas and Australasia. It prefers field-like habitats.
+- **Prose:** It prefers field-like habitats.
 - **Credit:** Wikipedia, 'Bellis perennis' (CC BY-SA 4.0)
-
-### Deadman's fingers — `deadmans-fingers`
-
-- **Labels:** _none_
-- **Prose:** Native to New Zealand, and known across the southern hemisphere, from Tristan da Cunha to South Africa to Australia.
-Community scientists using the platform INaturalist have identified superficially morphologically similar specimens across the southern Hemisphere using user-uploaded photos.
-- **Credit:** Wikipedia, 'Splachnidium rugosum' (CC BY-SA 4.0)
-
-### Dwarf mallow — `dwarf-mallow`
-
-- **Labels:** _none_
-- **Prose:** Acyrthosiphon Malvae
-Although the ecology is more complex, in the Thames valley, Acyrthosiphon Malvae (informally Aphis Malvae) is the common aphid found feeding on common mallow.
-- **Credit:** Wikipedia, 'Malva neglecta' (CC BY-SA 4.0)
-
-### Dwarf stinging nettle — `dwarf-stinging-nettle`
-
-- **Labels:** _none_
-- **Prose:** The native distribution of Urtica urens includes most of Europe except the British Isles, northern Asia, north and northwest Africa.
-In the British Isles, Urtica urens is an archaeophyte, an ancient introduction. It has been introduced to all other continents of the world except Antarctica.
-- **Credit:** Wikipedia, 'Urtica urens' (CC BY-SA 4.0)
-
-### European barberry — `european-barberry`
-
-- **Labels:** _none_
-- **Prose:** The shrub is native to central and southern Europe, southern England, northwest Africa and western Asia; it is also naturalised in northern Europe and North America. In the United States and Canada, it has become established in the wild over an area from Nova Scotia to Nebraska, with additional populations in Colorado, Idaho, Washington state, Montana, and British Columbia. It is also cultivated in many countries.
-- **Credit:** Wikipedia, 'Berberis vulgaris' (CC BY-SA 4.0)
 
 ### Field mustard — `field-mustard`
 
@@ -625,50 +1586,11 @@ In the British Isles, Urtica urens is an archaeophyte, an ancient introduction. 
 - **Prose:** Brassica rapa is an early-season nectar and pollen source for a wide range of insects. Numerous pollinators are attracted to its bright yellow flowers, including bees, flies, and butterflies. A common visitor, the small white butterfly (Pieris rapae) uses the plant both as a nectar source and as a host for larval feeding. Conversely, insect pollination is also very important to the plant; insect pollination of B. rapa leads to 30% more yield when compared to self-fertilizing controls. Furthermore, B. rapa can undergo rapid genomic adaptations when selected on by bumblebees.
 - **Credit:** Wikipedia, 'Brassica rapa' (CC BY-SA 4.0)
 
-### Herb robert — `herb-robert`
-
-- **Labels:** _none_
-- **Prose:** The main areas of distribution of herb-robert are throughout Europe northwards to the Baltic and eastwards as far as Russia. It also occurs in north Africa and it is considered also to be native in north America, although in some western states it is regarded as a weed.
-
-It grows at altitudes from sea level to 700 m at Great Dun Fell in England and up to 2,400 m in Kashmir.
-The IUCN has not assessed the threat status of this species, but in some countries it is classified as Least Concern.
-- **Credit:** Wikipedia, 'Geranium robertianum' (CC BY-SA 4.0) — units converted to metric
-
-### Himalayan honeysuckle — `himalayan-honeysuckle`
-
-- **Labels:** _none_
-- **Prose:** L. formosa includes within its wide range of distribution the areas of all the other known species of the genus. From the North-West Frontier Province and the Punjab it ranges the whole length of the Himalaya eastwards to south-eastern Yunnan, where it was collected by Henry near Mengtze, and north-eastwards to Szechuan and eastern Tibet, where Rehder's var. stenosepala appears to replace very largely the typical form.
-A Revision of the Genus Leycesteria
-— H.K. Airy-Shaw
-
-The species is native to Pakistan, India, Nepal, East and West Himalaya,  Southwestern China (Sichuan, Yunnan and Guizhou), Tibet and Myanmar.
-- **Credit:** Wikipedia, 'Leycesteria formosa' (CC BY-SA 4.0)
-
-### Honesty — `honesty`
-
-- **Labels:** _none_
-- **Prose:** Lunaria annua is native to southern Europe from Spain to Romania, and has been introduced to many other parts of the world with temperate climates.
-- **Credit:** Wikipedia, 'Lunaria annua' (CC BY-SA 4.0)
-
-### Honey mushroom — `honey-mushroom`
-
-- **Labels:** _none_
-- **Prose:** Armillaria novae-zelandiae is found in Australasia (New Zealand including the Chatham Islands, Tasmania, Eastern Australia, and Papua New Guinea), South America (Argentina and Chile), and Asia (Indonesia, Malaysia and Amami-Oshimi islands of Japan). Isolates from New Zealand and Australia are reciprocally monophyletic but considered conspecific by virtue of their similar basidiocarp morphology, vegetative growth characteristics and sexual compatibility. The South American lineage is sister to the Australasian clade, while isolates from Asia are a basal monophyletic lineage within A. novae-zelandiae.
-- **Credit:** Wikipedia, 'Armillaria novae-zelandiae' (CC BY-SA 4.0)
-
 ### Hops — `hops`
 
 - **Labels:** _none_
-- **Prose:** The plant is native to Europe, western Asia and North America.
-It grows best in the latitude range of 38°–51° in full sun with moderate amounts of rainfall.
+- **Prose:** It grows best in the latitude range of 38°–51° in full sun with moderate amounts of rainfall.
 - **Credit:** Wikipedia, 'Humulus lupulus' (CC BY-SA 4.0)
-
-### Horseweed — `horseweed`
-
-- **Labels:** _none_
-- **Prose:** It probably originates from South America, but is now naturalised in North America, Europe, Africa, Asia, and Australasia. It poses a significant threat to wildlife conservation areas and other reserves. In Britain, of the non-native former Conyza species, it is the second most abundant (after Erigeron canadensis) and is typically found in London and the South East of England. It was first recorded in London by Brian Wurzell in 1984,
-and noted in France at Saint-Sozy (Dordogne) in 2006.
-- **Credit:** Wikipedia, 'Erigeron sumatrensis' (CC BY-SA 4.0)
 
 ### Larch — `larch`
 
@@ -681,87 +1603,26 @@ It is susceptible to larch canker Lachnellula willkommii.
 ### Lemon balm — `lemon-balm`
 
 - **Labels:** _none_
-- **Prose:** Melissa officinalis is native to south-central Europe, the Mediterranean Basin, Central Asia and Iran, but is now naturalized in the Americas and elsewhere around the world. It grows easily from seed, preferring rich, moist soil.
+- **Prose:** It grows easily from seed, preferring rich, moist soil.
 - **Credit:** Wikipedia, 'Lemon balm' (CC BY-SA 4.0)
 
-### Lemon-scented geranium — `lemon-scented-geranium`
+### Medlar — `medlar`
 
 - **Labels:** _none_
-- **Prose:** This species occurs in the Western Cape Province, South Africa, between Worcester in the north, and Bredasdorp in the south, as well as eastwards into the Little Karoo region.
-It occurs in rocky, sandy soil on lower slopes, in arid proteoid fynbos as well as renosterveld vegetation.
-- **Credit:** Wikipedia, 'Pelargonium crispum' (CC BY-SA 4.0)
+- **Prose:** The species requires temperate and sub-mediterranean climate conditions with warm summers and mild winters. Air temperatures of 18 to 20 °C are mentioned as favourable for growth, cold of as low as −20 °C is tolerated and late frosts hardly cause any damage. The wild form was observed in dry areas with annual precipitation of 700 mm and at altitudes from 0 to 1,100 m. The species grows in a wide range of soil types and prefers fresh, well-drained loamy soils with a pH that is between 6 and 8.
+- **Credit:** Wikipedia, 'Mespilus germanica' (CC BY-SA 4.0) — units converted to metric
 
-### Lesser burdock — `lesser-burdock`
-
-- **Labels:** _none_
-- **Prose:** The plant is native to Europe, but has become introduced elsewhere such as Australia, North and South America, and other places.
-- **Credit:** Wikipedia, 'Arctium minus' (CC BY-SA 4.0)
-
-### Mountain cabbage tree — `mountain-cabbage-tree`
+### Rimu — `rimu`
 
 - **Labels:** _none_
-- **Prose:** In the North Island, Cordyline indivisa occurs from south of Kohukohunui in the Hunua Ranges and Te Moehau (Coromandel Peninsula) but becomes common only south of Raukūmara Ranges and the central Volcanic Plateau. In the South Island it is widespread and common along the north and western portions of the island, but occurs more locally in the drier eastern regions.
-- **Credit:** Wikipedia, 'Cordyline indivisa' (CC BY-SA 4.0)
+- **Prose:** D. cupressinum's seedlings will not establish themselves where there is moderate to severe root competition and a moderately dense canopy because of low light intensities. The tree prefers sites with partial shade.
+- **Credit:** Wikipedia, 'Dacrydium cupressinum' (CC BY-SA 4.0) — units converted to metric
 
-### Naples garlic — `naples-garlic`
-
-- **Labels:** _none_
-- **Prose:** Its native range extends across the Mediterranean Region from Portugal to the Levant. The species is cultivated as an ornamental and has become naturalized in many areas, including Pakistan, Australia, New Zealand, and in southern and western parts of the United States. It is classed as an invasive species in parts of the U.S., and is found primarily in the states of California, Texas, Louisiana, and Florida.
-- **Credit:** Wikipedia, 'Allium neapolitanum' (CC BY-SA 4.0)
-
-### Neptune's necklace — `neptunes-necklace`
+### Scotch broom — `scotch-broom`
 
 - **Labels:** _none_
-- **Prose:** Hormosira is native to southeastern Australia (including Tasmania, Lord Howe Island and Norfolk Island) and New Zealand. Despite substantial morphological variation across its range, the species represents a single species and the genus Hormosira is monotypic. Genetic analyses of mitochondrial COI and microsatellite DNA sequence data have indicated that there is low genetic variation across the range of the species in Australia.
-- **Credit:** Wikipedia, 'Hormosira' (CC BY-SA 4.0)
-
-### Oakbug Milkcap — `oakbug-milkcap`
-
-- **Labels:** _none_
-- **Prose:** Lactarius quietus is found growing exclusively at the base of oak trees, solitarily or in scattered groups, in soil. It can be found very commonly throughout autumn months. It is ectomycorrhizal, feeding symbiotically exclusively with oak, though studies have suggested it is also able to feed saprotrophically, growing from organic soil matter. L. quietus can be found only in Europe; in the United Kingdom, it is one of the one hundred most commonly encountered mushroom species. L. quietus var. incanus is found commonly in eastern North America.
-- **Credit:** Wikipedia, 'Lactarius quietus' (CC BY-SA 4.0)
-
-### Oat — `oat`
-
-- **Labels:** _none_
-- **Prose:** Oats tolerate cold winters less well than cereals such as wheat, barley, and rye, but need less summer heat and more rain, making them important in areas such as Northwest Europe that have cool, wet summers. They can tolerate low-nutrient and acid soils. Oats grow thickly and vigorously, allowing them to outcompete many weeds, and compared to other cereals are relatively free from diseases.
-- **Credit:** Wikipedia, 'Oat' (CC BY-SA 4.0)
-
-### Prickly lettuce — `prickly-lettuce`
-
-- **Labels:** _none_
-- **Prose:** Lactuca serriola is native to Europe, Asia, and North Africa, and has become naturalized elsewhere.
-- **Credit:** Wikipedia, 'Lactuca serriola' (CC BY-SA 4.0)
-
-### Raupō — `raupo`
-
-- **Labels:** _none_
-- **Prose:** The species is found across East Asia, Southeast Asia, Australia and New Zealand. The plant was introduced to the Chatham Islands of New Zealand by Māori.
-- **Credit:** Wikipedia, 'Typha orientalis' (CC BY-SA 4.0)
-
-### Red clover — `red-clover`
-
-- **Labels:** _none_
-- **Prose:** The red clover is native to Europe, Western Asia, and northwest Africa, but it has been naturalised in other continents, like North and South America. Specifically, the red clover was brought to Argentina and Chile over 100 years ago, although it is not clear how exactly it was introduced. Additionally, it has been introduced to New Zealand.
-- **Credit:** Wikipedia, 'Trifolium pratense' (CC BY-SA 4.0)
-
-### Reindeer moss — `reindeer-moss`
-
-- **Labels:** _none_
-- **Prose:** In New Zealand, it is known from across both the North and South Island. It is also found on the Three Kings Islands. It is one of the most common lichens in the neotropics. It is found in Tasmania and South Australia, as well as on Lord Howe Island and Norfolk Island. It has also been found on the island of Réunion.
-- **Credit:** Wikipedia, 'Cladonia confusa' (CC BY-SA 4.0)
-
-### Rufous Milkcap — `rufous-milkcap`
-
-- **Labels:** _none_
-- **Prose:** Lactarius rufus appears from late spring to late autumn. It is frequent in the northern temperate zones in Europe and North America.  It is most commonly found with pine trees, but can also appear with birch, conifer, or spruce. It is common in northern California, and the Pacific Northwest from late summer to early winter.
-- **Credit:** Wikipedia, 'Lactarius rufus' (CC BY-SA 4.0)
-
-### Salsify — `salsify`
-
-- **Labels:** _none_
-- **Prose:** Tragopogon porrifolius is a common biennial wildflower, native to southeast Europe, Mediterranean Turkey, and north Africa, but introduced elsewhere, for example, into the British Isles (mainly in central and southern England), other parts of northern Europe, North America and southern Africa, and in Australia. In the United States, it is now found growing wild in almost every state, including Hawaii, except in the extreme south-east.
-- **Credit:** Wikipedia, 'Tragopogon porrifolius' (CC BY-SA 4.0)
+- **Prose:** It is found in sunny sites, usually on dry, sandy soils at low altitudes, tolerating very acidic soil conditions.
+- **Credit:** Wikipedia, 'Cytisus scoparius' (CC BY-SA 4.0)
 
 ### Sea emeralds — `sea-emeralds`
 
@@ -779,44 +1640,7 @@ It occurs in rocky, sandy soil on lower slopes, in arid proteoid fynbos as well 
 
 - **Labels:** _none_
 - **Prose:** This species is native to the Mediterranean in southern Europe, southwest Asia and northwest Africa, where it is found in sunny sites, usually on dry, sandy soils.
-
-
-As an invasive species
-Spartium junceum has been widely introduced into other areas, and is regarded as a noxious invasive species in places with a Mediterranean climate such as California and Oregon, Hawaii, central Chile, southeastern Australia, the Western Cape in South Africa and the Canary Islands and Azores. It was first introduced to California as an ornamental plant.
 - **Credit:** Wikipedia, 'Spartium' (CC BY-SA 4.0)
-
-### Stinking chamomile — `stinking-chamomile`
-
-- **Labels:** _none_
-- **Prose:** Native
-
-Palearctic
-
-Macaronesia: Azores, Canary Islands, Madeira
-Northern Africa: Algeria, Egypt, Libya, Morocco, Tunisia
-Eurasia: Armenia, Azerbaijan, Kurdistan, Russia, Georgia, India, North Caucasus, Dagestan, Cyprus, Iran, Iraq, Palestine, Lebanon, Syria, Turkey
-Eastern Europe: Belarus, Estonia, Latvia, Lithuania, Crimea, Russia, Ukraine, Bulgaria
-Northern Europe: Denmark, Norway, Sweden, England, Scotland, Finland
-Central Europe: Austria, Czech Republic, Germany, Hungary, Poland, Switzerland
-Southern Europe: Albania, Bosnia and Herzegovina, Croatia, Greece, Crete, Italy, North Macedonia, Montenegro, Romania, Serbia, Sicily, Slovenia, Sardinia, Corsica, Portugal, Spain, Balearic Islands
-Western Europe: Belgium, Netherlands, France, Ireland, United Kingdom
-Introduced
-Naturalized in Americas, Southern Africa, and Oceania
-- **Credit:** Wikipedia, 'Anthemis cotula' (CC BY-SA 4.0)
-
-### Strawberry tree — `strawberry-tree`
-
-- **Labels:** _none_
-- **Prose:** Arbutus unedo is widespread in the Mediterranean region: in Portugal, Spain, and southeastern France; southward in Algeria, Morocco, Libya, and Tunisia, and eastward in Italy, Malta, Slovenia, Croatia, Montenegro, Greece, Turkey, Israel, Palestine, Jordan, Lebanon, and Syria. It is also found in western France, Albania, Bulgaria, and southwestern Ireland.
-A. unedo has been noted for its disjunct distribution, with isolated relict populations in southern and western Ireland in addition to its Mediterranean range. It is commonly cited as an example of the Lusitanian flora, a small assemblage of plants native to Iberia and South-Western Ireland, but generally absent from Britain. Recent genetic studies have suggested that A. unedo may not be truly native in Ireland, but a Chalcolithic introduction.
-The red-flowered variant, named A. unedo rubra by William Aiton in 1785, was discovered growing wild in Ireland in 1835.
-- **Credit:** Wikipedia, 'Arbutus unedo' (CC BY-SA 4.0)
-
-### Sweet alyssum — `sweet-alyssum`
-
-- **Labels:** _none_
-- **Prose:** This plant is native to the Mediterranean Basin and the Macaronesia region: (Canary Islands, Madeira, Cape Verde). It is widely naturalized elsewhere in the temperate world, including the United States. There is an endemic subspecies in the local flora of the Columbretes Islands of the western Mediterranean.
-- **Credit:** Wikipedia, 'Lobularia maritima' (CC BY-SA 4.0)
 
 ### Velvet shank — `velvet-shank`
 
@@ -829,14 +1653,7 @@ Velvet shank is saprotrophic especially on dead or dying elm, as well as ash, be
 
 - **Labels:** _none_
 - **Prose:** The plant is found in southern and western Europe, often growing on shady walls or in damp rock crevices that are sparse in other plant growth (thus, "wall" pennywort), where its succulent leaves develop in rosettes.
-It is not at present under threat.
 - **Credit:** Wikipedia, 'Wall Pennywort' (CC BY-SA 4.0)
-
-### Wavy bittercress — `wavy-bittercress`
-
-- **Labels:** _none_
-- **Prose:** It is native to the British Isles, Europe, North Africa, Turkey and Iran and widely introduced elsewhere.
-- **Credit:** Wikipedia, 'Cardamine flexuosa' (CC BY-SA 4.0)
 
 ### Wild asparagus — `wild-asparagus`
 
@@ -851,158 +1668,41 @@ It is not at present under threat.
 In North America, it has been documented as introduced in California, Alabama, Iowa, and Washington, DC, and grows wild in other parts of the continent.
 - **Credit:** Wikipedia, 'Lactuca virosa' (CC BY-SA 4.0)
 
-### Wild oat — `wild-oat`
-
-- **Labels:** _none_
-- **Prose:** This oat is native to Eurasia (particularly the eastern Mediterranean) but it has been introduced to most of the other temperate regions of the world. It is naturalized in some areas and considered a noxious weed in others.
-
-This species and other wild oats can become troublesome in prairie agriculture when it invades and lowers the quality of a field crop, or competes for resources with the crop plants. It takes very few wild oat plants to cause a significant reduction in the yield of a wheat or cultivated oat field.
-- **Credit:** Wikipedia, 'Avena fatua' (CC BY-SA 4.0)
-
-### Wild parsnip — `wild-parsnip`
-
-- **Labels:** _none_
-- **Prose:** Like carrots, parsnips are native to Eurasia.
-- **Credit:** Wikipedia, 'Parsnip' (CC BY-SA 4.0)
-
-### Wild radish — `wild-radish`
-
-- **Labels:** _none_
-- **Prose:** It is native to temperate regions of North Africa, Europe and parts of Western Asia.
-
-
-Range
-It is found in North Africa, within Macaronesia, Madeira Islands, Canary Islands, Algeria, Egypt, Libya, Morocco and Tunisia. Within Western Asia it is found in the Caucasus, Armenia, Azerbaijan, Cyprus, Georgia, Iran, Iraq, Israel, Jordan, Lebanon, Syria and Turkey. In eastern Europe, it is found within Belarus, Moldova and Ukraine. In middle Europe, it is in Austria, Belgium, Czech Republic, Germany, Hungary, Netherlands, Poland, Slovakia and Switzerland. In northern Europe, in Denmark, Estonia, Finland, Ireland, Isle of Man, Latvia, Lithuania, Norway, Sweden and United Kingdom. In southeastern Europe, within Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Greece, Italy, Montenegro, North Macedonia, Romania, Serbia and Slovenia. Also in southwestern Europe, it is found in France, Portugal and Spain.
-- **Credit:** Wikipedia, 'Raphanus raphanistrum' (CC BY-SA 4.0)
-
-### Wild thyme — `wild-thyme`
-
-- **Labels:** _none_
-- **Prose:** The species is native to southern Europe from the western Mediterranean to southern Italy.
-- **Credit:** Wikipedia, 'Thymus vulgaris' (CC BY-SA 4.0)
-
 ### Wine-cap stropharia — `wine-cap-stropharia`
 
 - **Labels:** _none_
-- **Prose:** The species is found on wood chips across North America in summer and autumn. It is also found in Europe, and has been introduced to Australia and New Zealand.
+- **Prose:** The species is found on wood chips across North America in summer and autumn.
 - **Credit:** Wikipedia, 'Stropharia rugosoannulata' (CC BY-SA 4.0)
 
-### Yew — `yew`
-
-- **Labels:** _none_
-- **Prose:** The yew is native to all countries of Europe (except Iceland), the Caucasus, and beyond from Turkey eastwards to northern Iran. Its range extends south to Morocco and Algeria in North Africa, and parts of Southwest and South Asia. A few populations are present in the archipelagos of the Azores and Madeira. The limit of its northern Scandinavian distribution is its sensitivity to frost, with global warming predicted to allow its spread inland. It has been introduced elsewhere, including the United States.
-- **Credit:** Wikipedia, 'Taxus baccata' (CC BY-SA 4.0)
-
-## Classified drafts (132)
+## Classified drafts (81)
 
 Prose copied from Wikipedia or Flora of NZ, so the geography may be the species' global range rather than its New Zealand one. Lower confidence than the shipped set.
 
-### Alsike clover — `alsike-clover`
+### Aluminium plant — `aluminium-plant`
 
-- **Labels:** grassland, urban, disturbed
-    - `grassland` ← 'meadows'
-    - `urban` ← 'cultivation'
-    - `disturbed` ← 'roadsides', 'waste ground'
-- **Prose:** Originating in mainland Europe, it has become established as an introduced plant in the British Isles and throughout the temperate regions of the world. It is native to southern Europe and southwestern Asia, especially in mountainous regions.
-Because of its wide cultivation and use as forage, its subspecies T. h. hybridum is used and has become naturalised further north in Europe and in other parts of the world. Its natural habitat is fields, meadows, roadsides, banks and waste ground. When added to seed mixtures, it seldom persists once the sward has closed up.
-- **Credit:** Wikipedia, 'Trifolium hybridum' (CC BY-SA 4.0)
-
-### Annual wall-rocket — `annual-wall-rocket`
-
-- **Labels:** coastal, disturbed
-    - `coastal` ← 'coast'
-    - `disturbed` ← 'disturbed', 'railways'
-- **Prose:** It is native to temperate regions of North Africa, Europe and parts of western Asia.
-
-
-Range
-It is found in North Africa, within Algeria, Libya, Morocco and Tunisia, in addition to Ethiopia in East Africa. Within Asia it is found in the Caucasus, Georgia (country) and Turkey. In middle Europe, it is in Austria, Belgium, Czech Republic, Germany, Hungary, the Netherlands, Poland, Slovakia and Switzerland. In southeastern Europe, within Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Greece, Italy, Malta, Montenegro, North Macedonia, Romania, Serbia, Slovenia and Ukraine. Also in southwestern Europe, it is found in France, Portugal and Spain.
-It has naturalised in the UK since 1778, when it was found in a field of oats raised from imported seeds from a ship wrecked on the Kent coast.
-
-
-Habitat
-It grows in waste and disturbed ground, such as beside railways, roads and on tips.
-- **Credit:** Wikipedia, 'Diplotaxis muralis' (CC BY-SA 4.0)
-
-### Arrow bamboo — `arrow-bamboo`
-
-- **Labels:** forest, shrubland, wetland, urban, disturbed
-    - `forest` ← 'plantations', 'forest'
-    - `shrubland` ← 'scrub'
-    - `wetland` ← 'riverbanks'
-    - `urban` ← 'garden'
-    - `disturbed` ← 'roadsides', 'abandoned', 'waste places'
-- **Prose:** By far the commonest and most widespread wild bamboo in New Zealand: the Volcanic Plateau and most lowland country southwards, thinning out only in the south of the South Island, which roughly tracks where it was planted. Look on roadsides and riverbanks, in and around plantations, in scrub and along forest margins, and especially where a garden boundary meets rough ground — on abandoned sections and in waste places. Spread here is by rhizome and not by seed, so a stand is one clone creeping outwards from something somebody planted.
-- **Credit:** NZPCN and Weedbusters (paraphrased)
-
-### Banana passionfruit — `banana-passionfruit`
-
-- **Labels:** coastal, forest, shrubland, wetland, urban, disturbed
-    - `coastal` ← 'coastline', 'sand dunes'
-    - `forest` ← 'forest', 'bush', 'plantations'
-    - `shrubland` ← 'hedges'
-    - `wetland` ← 'streamsides'
-    - `urban` ← 'gardens'
-    - `disturbed` ← 'disturbed', 'waste ground', 'roadsides'
-- **Prose:** Passiflora tarminiana is native to the uplands of tropical South America but the exact native range is uncertain as it has been widely cultivated in this region. It is found in the Colombian highlands and the Venezuelan, Peruvian and southern Ecuadorean Andes where it is cultivated from around 2000 – 3000 metres. 
-It has naturalised in Australia, Guam, Hawaii, New Zealand and Zimbabwe. In both Hawaii and New Zealand it is regarded as an invasive species. It is widely cultivated throughout the world, including California, Réunion, Mexico, Panama and Papua New Guinea.
-Passiflora tripartita var. mollissima and P. tarminiana were until recently considered to be one species, P. mollissima.
-In New Zealand, look for it in disturbed and open forest, in light wells and along the margins of intact bush, on streamsides, coastline, cliffs and consolidated sand dunes, and on inshore islands. It is just as much at home in hedges, orchards, exotic plantations, waste ground, gardens and along roadsides.
-- **Credit:** Wikipedia, 'Passiflora tarminiana' (CC BY-SA 4.0); Weedbusters NZ and Otago Regional Council, 'Banana passionfruit' (facts restated)
-
-### Bay tree — `bay-tree`
-
-- **Labels:** forest, alpine
-    - `forest` ← 'forests'
-    - `alpine` ← 'mountains'
-- **Prose:** Laurus nobilis is a widespread relict  of the laurel forests that originally covered much of the Mediterranean Basin when the climate of the region was more humid. With the drying of the Mediterranean during the Pliocene era, the laurel forests gradually retreated, and were replaced by the more drought-tolerant sclerophyll plant communities familiar today. Most of the last remaining laurel forests around the Mediterranean are believed to have disappeared approximately ten thousand years ago, although some remnants still persist in the mountains of southern Turkey, northern Syria, southern Spain, north-central Portugal, northern Morocco, the Canary Islands and in Madeira.
-- **Credit:** Wikipedia, 'Laurus nobilis' (CC BY-SA 4.0)
-
-### Beach spinach — `beach-spinach`
-
-- **Labels:** coastal, forest, shrubland, grassland
-    - `coastal` ← 'coastal', 'beaches'
-    - `forest` ← 'woodland', 'forest'
-    - `shrubland` ← 'shrubland', 'hedges'
-    - `grassland` ← 'grassland', 'farmland'
-- **Prose:** Bower spinach is found mainly in coastal regions of New Zealand and southern Australia as well as on many nearby island groups. It occupies a variety of habitats from sand and shingle beaches through coastal woodland, shrubland and grassland, and as exposed, salt-pruned vegetation on cliffs and stacks. It may also be found well inland, in farmland where it is grown in barberry hedges, or on calcareous sandstone or limestone outcrops in dense forest.
-- **Credit:** Wikipedia, 'Tetragonia implexicoma' (CC BY-SA 4.0)
+- **Labels:** forest, shrubland, wetland, disturbed
+    - `forest` ← 'plantation', 'forest'
+    - `shrubland` ← 'Scrub', 'scrubland'
+    - `wetland` ← 'riparian'
+    - `disturbed` ← 'disturbed'
+- **Prose:** In New Zealand (Flora of New Zealand): Scrub, plantation or modified forest in wetter areas.
+In Auckland (Auckland Council): disturbed forest, scrubland, fernland, forest and riparian margins, floodplains and other moist places.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Auckland Council, Tiaki Tāmaki Makaurau, 'Artillery plant' pest search (all rights reserved, restated)
 
 ### Birch bolete — `birch-bolete`
 
-- **Labels:** coastal, urban
-    - `coastal` ← 'Coast'
+- **Labels:** urban
     - `urban` ← 'urban'
-- **Prose:** Leccinum scabrum is a European species that has been introduced to various areas of the world, mostly appearing in urban areas. In New Zealand, it associates solely with Betula pendula. In North America, it can be found from June to September, except on the West Coast, where it appears from September to November.
+- **Prose:** Leccinum scabrum is a European species that has been introduced to various areas of the world, mostly appearing in urban areas. In New Zealand, it associates solely with Betula pendula.
 It grows in association with birch. It has been found in association with ornamental birch trees planted outside of its native range, such as in California.
 - **Credit:** Wikipedia, 'Leccinum scabrum' (CC BY-SA 4.0)
-
-### Black bamboo — `black-bamboo`
-
-- **Labels:** forest, wetland, urban, disturbed
-    - `forest` ← 'bush'
-    - `wetland` ← 'stream'
-    - `urban` ← 'gardens', 'urban', 'plantings'
-    - `disturbed` ← 'disturbed', 'waste ground', 'roadsides'
-- **Prose:** Nobody has published where in New Zealand this one has gone wild. Where it has been described elsewhere, in Australia and East Africa, it is an occasional weed of stream banks, disturbed and waste ground, roadsides, gardens and urban bush in subtropical and warmer temperate country, spreading out of plantings by rhizome into loose clumps of 3–7 m canes.
-- **Credit:** NZPCN and Environmental Weeds of Australia / BioNET-EAFRINET (paraphrased)
-
-### Black locust tree — `black-locust-tree`
-
-- **Labels:** alpine
-    - `alpine` ← 'Mountains'
-- **Prose:** The genus Robinia is native to North America, although traces of it are found in Eocene and Miocene rocks in Europe.
-The species itself is native to the eastern United States, but its exact native range is not accurately known as it has been cultivated and is now found in all 48 lower states, British Columbia, and eastern Canada. The native range is thought to be two separate populations, one centered about the Appalachian Mountains from Pennsylvania to northern Georgia, and a second westward focused around the Ozark Plateau and Ouachita Mountains of Arkansas, Oklahoma and Missouri.
-The tree has been naturalized in temperate North America, Eurasia, and Africa. Humans have distributed the tree for landscaping, with its range now including Canada, Southern South America, Europe, temperate regions in Asia (including China, India, and Pakistan), Northern and Southern Africa, Australia, and New Zealand.
-- **Credit:** Wikipedia, 'Robinia pseudoacacia' (CC BY-SA 4.0)
 
 ### Black tree fern — `black-tree-fern`
 
 - **Labels:** coastal, forest
     - `coastal` ← 'coastal'
     - `forest` ← 'forest'
-- **Prose:** The species is found across many southwestern Pacific Ocean islands, including New Zealand, Fiji, the Marquesas Islands, Tahiti, the Austral Islands, and Pitcairn Island. It is not present in the Kermadec Islands.
-Sphaeropteris medullaris is common in lowland forest throughout the North Island of New Zealand. In the South Island, its distribution is more localised. It is fairly common in wetter coastal areas, but rare in the drier eastern parts and absent in Canterbury and Otago. In New Zealand it also occurs on the Three Kings Islands in the far north, on Stewart Island / Rakiura in the far south and in the Chatham Islands.
+- **Prose:** Sphaeropteris medullaris is common in lowland forest throughout the North Island of New Zealand. It is fairly common in wetter coastal areas, but rare in the drier eastern parts and absent in Canterbury and Otago.
 - **Credit:** Wikipedia, 'Sphaeropteris medullaris' (CC BY-SA 4.0)
 
 ### Bladder kelp — `bladder-kelp`
@@ -1022,8 +1722,7 @@ Recent research has shown that Arctic kelp forests can steadily increase pH leve
 
 - **Labels:** coastal
     - `coastal` ← 'coast'
-- **Prose:** The species is native to the Western Cape and Eastern Cape provinces in South Africa, where it tends to occur in sands along the southern coast. It has also been recorded in the Free State, but these may represent introductions. It has been widely introduced in South Africa and elsewhere in Africa, as far north as Morocco. It has been recorded in Sardinia, Italy. This shrub is found in other Mediterranean countries such as Tunisia and Spain. There is one record in France from 2020.
-It has become naturalised in Australia and New Zealand. It is listed in Australia's Weed of National Significance list and is a declared noxious weed in the United States.
+- **Prose:** The species is native to the Western Cape and Eastern Cape provinces in South Africa, where it tends to occur in sands along the southern coast.
 - **Credit:** Wikipedia, 'Lycium ferocissimum' (CC BY-SA 4.0)
 
 ### Broadleaf sea lettuce — `broadleaf-sea-lettuce`
@@ -1033,61 +1732,12 @@ It has become naturalised in Australia and New Zealand. It is listed in Australi
 - **Prose:** The distribution is worldwide: Europe, North America (west and east coasts), Central America, Caribbean Islands, South America, Africa, Indian Ocean Islands, South-west Asia, China, Pacific Islands, Australia and New Zealand.
 - **Credit:** Wikipedia, 'Ulva lactuca' (CC BY-SA 4.0)
 
-### Cabbage tree — `cabbage-tree`
-
-- **Labels:** coastal, forest, wetland, urban
-    - `coastal` ← 'coast', 'the sea', 'Beach', 'sand dunes'
-    - `forest` ← 'forest', 'on the outside of the tree', 'under the ground  This gives the tree', 'on the white berries of the Ti tree', 'forests'
-    - `wetland` ← 'swamps', 'lakes', 'rivers', 'seepage', 'streams'
-    - `urban` ← 'gardens', 'parks'
-- **Prose:** Habitat
-
-A quote from Philip Simpson sums up the wide range of habitats the cabbage tree occupied in early New Zealand, and how much its abundance and distinctive form shaped the impression travellers received of the country:
-
-"In primeval New Zealand cabbage trees occupied a range of habitats, anywhere open, moist, fertile and warm enough for them to establish and mature: with forest; around the rocky coast; in lowland swamps, around the lakes and along the lower rivers; and perched on isolated rocks. Approaching the land from the sea would have reminded a Polynesian traveller of home, and for a European traveller, conjured up images of the tropical Pacific".
-Cordyline australis occurs from North Cape to the very south of the South Island, where it becomes less and less common, until it reaches its southernmost natural limits at Sandy Point (46° 30' S), west of Invercargill near Oreti Beach. It is absent from much of Fiordland, probably because there is no suitable habitat, and is unknown on the subantarctic islands to the south of New Zealand, probably because it is too cold. It occurs on some offshore islands—Poor Knights, Stewart and the Chathams—but was probably introduced by Māori. In the Stewart Island region, it is rare, growing only on certain islands, headlands and former settlement sites where it may have been introduced by muttonbird collectors, while on the Chatham Islands it is also largely "a notable absentee".
-Generally a lowland species, it grows from sea level to about 1,000 metres, reaching its upper limits on the volcanoes of the central North Island, where eruptions have created open spaces for it to exploit, and in the foothills of the Southern Alps in the South Island, where deforestation may have played a part in giving it room to grow. In the central North Island, it has evolved a much sturdier form (with the Māori name tī manu, meaning "with branches bearing broad, straight upright leaves"). This form resembles that found in the far south of the South Island, suggesting that they are both adapted to cold conditions.
-Cordyline australis is a light-demanding pioneer species, and seedlings die when overtopped by other trees. To grow well, young plants require open space so they are not shaded out by other vegetation. Another requirement is water during the seedling stage. Although adult trees can store water and are drought resistant, seedlings need a good supply of water to survive. This stops the species from growing in sand dunes unless there are wet depressions present, and from hillsides unless there is a seepage area. The fertility of the soil is another factor—settlers in Canterbury used the presence of the species to situate their homesteads and gardens. The fallen leaves of the tree also help to raise the fertility of the soil when they break down. Another factor is temperature, especially the degree of frost. Young trees are killed by frost, and even old trees can be cut back. This is why C. australis is absent from upland areas and from very frosty inland areas.
-Early European explorers of New Zealand described "jungles of cabbage trees" along the banks of streams and rivers, in huge swamps and lowland valleys. Few examples of this former abundance survive today—such areas were the first to be cleared by farmers looking for flat land and fertile soil. In modern New Zealand, cabbage trees usually grow as isolated individuals rather than as parts of a healthy ecosystem.
-
-
-Reproduction
-
-The cabbage tree's year begins in autumn among the tight spike of unopened leaves projecting from the centre of each tuft of leaves. Some of the growing tips have changed from making leaves to producing inflorescences for the coming spring, and around these, two or three buds begin to produce leaves. The inflorescence and the leaf buds pass the winter protected by the enveloping spike of unopened leaves. Months later in spring or early summer, it bears its flowers on the outside of the tree, exposed to insects and birds.
-Flowering takes place over a period of four to six weeks, giving maximum exposure to pollinating insects. The flowers produce a sweet perfume which attracts large numbers of insects. The nectar produced by the flowers contains aromatic compounds, mainly esters and terpenes, which are particularly attractive to moths. Bees use the nectar to produce a light honey to feed their young and increase the size of the hive in the early summer. It takes about two months for the fruit to ripen, and by the end of summer a cabbage tree can have thousands of small fruits available for birds to eat and disperse. The strong framework of the inflorescence can easily bear the weight of heavy birds like the New Zealand pigeon, which was formerly the major disperser of the seeds.
-Each fruit contains three to six shiny, black seeds which are coated in a charcoal-like substance called phytomelan. The latter may serve to protect the seeds from the digestive process in the gut of a bird. The seeds are also rich in linoleic acid as a food source for the developing embryo plant, a compound which is also important in the egg-laying cycle of birds. Because it takes about two years for a particular stem to produce an inflorescence, cabbage trees tend to flower heavily in alternative years, with a bumper flowering every three to five years. Each inflorescence bears 5,000 to 10,000 flowers, so a large inflorescence may carry about 40,000 seeds, or one million seeds for the whole tree in a good flowering year—hundreds of millions for a healthy grove of trees.
-
-
-Response to fire
-Cordyline australis is one of the few New Zealand forest trees that can recover from fire. It can renew its trunk from buds on the protected rhizomes under the ground. This gives the tree an advantage because it can regenerate itself quickly and the fire has eliminated competing plants. Cabbage tree leaves contain oils which make them burn readily. The same oils may also slow down the decay of fallen leaves, so that they build up a dense mat that prevents the seeds of other plants from germinating. When the leaves do break down, they form a fertile soil around the tree. Cabbage tree seed also has a store of oil, which means it remains viable for several years. When a bushfire has cleared the land of vegetation, cabbage tree seeds germinate in great numbers to make the most of the light and space opened up by the flames.
-Older trees sometimes grow epicormic shoots directly from their trunks after storm or fire damage. Aerial rhizomes can also be produced from the trunk if it sustains damage or has become hollow and grow down into the soil to regenerate the plant. Such regeneration can lead to trees of great age with multiple trunks.
-
-
-Biodiversity
-
-Many plants and animals are associated with C. australis in healthy ecosystems. The most common epiphytes are ferns, astelias and orchids. Old trees often carry large clumps of the climbing fern Asplenium, and in moist places, filmy ferns and kidney ferns cling to the branches. Astelia species and Collospermum often establish in the main fork of the tree, and one tree can host several species of native orchid. Other common epiphytes include Griselinia lucida, as well as a range of mosses, liverworts, lichens and fungi. Two fungus species which infect living tissue—Phanaerochaeta cordylines and Sphaeropsis cordylines—occur almost exclusively on C. australis. The lichen Lithothelium kiritea, primarily found on the west coast of New Zealand, grows exclusively on the bark of C. australis.
-Animals and birds associated with C. australis include lizards which forage among the flowers, including the gold-striped gecko which is well camouflaged for life among the leaves of the tree. New Zealand bellbirds like to nest under the dead leaves or among the flower stalks, and paradise shelducks commonly build their nests in the base of an old cabbage tree standing in the middle of a field. Red-crowned parakeets are often seen foraging in cabbage trees. In South Canterbury, long-tailed bats shelter during the day in the hollow branches, which would once have provided nesting holes for many birds.
-The berries of C. australis are enjoyed by bellbirds, tūī, and kererū. Māori sometimes planted groves of cabbage trees (pā tī) to attract kererū which could be snared when they came to eat the berries. Reminiscing in 1903 about life in New Zealand sixty or more years earlier, George Clarke describes how such a tapu grove of cabbage trees would attract huge numbers of pigeons: "About four miles from our house, there was a great preserve of wood pigeons, that was made as tapu as the native chiefs could devise. At a certain season, the pigeons came in vast flocks to feed on the white berries of the Ti tree (bracœna) [sic] and got so heavy with fat that they could hardly fly from one tree to another. No gun was allowed in the place. The Māoris, with a long slender rod and a slip noose at the end, squatted under the leaves and noiselessly slipped the noose over the necks of the stupid pigeons as they were feeding." As the native birds have vanished from much of New Zealand with the clearing of forests, it is now flocks of starlings which descend upon the fruit.
-The nectar of the flowers is sought after by insects, bellbirds, tūī, and stitchbirds. The leaves and the rough bark provide excellent homes for insects such as caterpillars and moths, small beetles, fly larvae, wētā, snails and slugs. Many of these are then eaten by birds such as saddlebacks and robins. The rough bark also provides opportunities for epiphytes to cling and grow, and lizards hide amongst the dead leaves, coming out to drink the nectar and to eat the insects. Good flowering seasons occur every few years only. While it is said that they foretell dry summers, it has been observed that they tend to follow dry seasons.
-Insects, including beetles, moths, wasps and flies, use the bark, leaves and flowers of the tree in various ways. Some feed or hide camouflaged in the skirt of dead leaves, a favourite dry place for wētā to hide in winter. Many of the insect companions of the tree have followed it into the domesticated surroundings of parks and home gardens. If the leaves are left to decay, the soil underneath cabbage trees becomes a black humus that supports a rich array of amphipods, earthworms and millipedes.
-There are nine species of insect only found on C. australis, of which the best known is Epiphryne verriculata, the cabbage tree moth, which is perfectly adapted to hide on a dead leaf. Its caterpillars eat large holes and wedges in the leaves. The moth lays its eggs at the base of the central spike of unopened leaves. The caterpillars eat holes in the surface of the leaves and leave characteristic notches in the leaf margins. They can infest young trees but seldom damage older trees, which lack the skirt of dead leaves where the parent moths like to hide.
-- **Credit:** Wikipedia, 'Cordyline australis' (CC BY-SA 4.0) — units converted to metric
-
-### Calendula — `calendula`
-
-- **Labels:** urban
-    - `urban` ← 'cultivation'
-- **Prose:** It is probably native to southern Europe, though its long history of cultivation makes its precise origin unknown. It is also widely naturalised further north in Europe (as far north as southern England) and elsewhere in warm temperate regions of the world.
-- **Credit:** Wikipedia, 'Calendula officinalis' (CC BY-SA 4.0)
-
 ### Cape gooseberry — `cape-gooseberry`
 
-- **Labels:** forest, shrubland, wetland, alpine
+- **Labels:** forest, wetland
     - `forest` ← 'forests', 'forest'
-    - `shrubland` ← 'thickets'
     - `wetland` ← 'riparian'
-    - `alpine` ← 'Mountains'
-- **Prose:** The species is reportedly native to Chile and Peru. Its center of genetic diversity is in the Andes Mountains of Ecuador, Chile, Colombia, and Peru. It grows in forests, forest edges, and riparian areas. It grows at high elevations of 500–3,000 m in its native region, but may also be found at sea level in Oceania and Pacific islands where it occurs widely in subtropical and warm, temperate conditions. Its latitude range is about 45°S to 60°N, and its altitude range is generally from sea level to 3,000 m. The plant has become invasive in some natural habitats, forming thickets, particularly in Hawaii and on other Pacific islands. There are believed to be dozens of ecotypes worldwide that differentiated by plant size, calyx shape, and the size, color, and flavor of the fruit. Wild forms are thought to be diploid with 2n = 24 chromosomes, while cultivated forms include varieties with increased ploidy and 32 or 48 chromosomes.
+- **Prose:** It grows in forests, forest edges, and riparian areas. It grows at high elevations of 500–3,000 m in its native region, but may also be found at sea level in Oceania and Pacific islands where it occurs widely in subtropical and warm, temperate conditions. Its latitude range is about 45°S to 60°N, and its altitude range is generally from sea level to 3,000 m.
 - **Credit:** Wikipedia, 'Physalis peruviana' (CC BY-SA 4.0) — units converted to metric
 
 ### Celery — `celery`
@@ -1095,82 +1745,16 @@ There are nine species of insect only found on C. australis, of which the best k
 - **Labels:** coastal, wetland
     - `coastal` ← 'coast', 'tidal', 'saltmarshes'
     - `wetland` ← 'rivers', 'ditch'
-- **Prose:** Wild celery is native to much of Eurasia, ranging from Ireland in the west, through Europe north to Scotland, Denmark and Poland, and east to the Caucasus and Central Asia, and as far as the western Himalayas, and also through Macaronesia and North Africa to West Asia and the Arabian Peninsula. It is widely naturalised outside this range, including in Scandinavia, North and South America, Africa, India, central, eastern and southern Asia, and New Zealand. The cultivar groups may also be naturalised.
-It is a plant of damp places, usually near the coast where the soil is salty, typically on the brackish reaches of tidal rivers, ditch and dyke margins, saltmarshes, and sea walls. North of the Alps, wild celery is found only in the foothill zone on soils with some salt content.
+- **Prose:** It is a plant of damp places, usually near the coast where the soil is salty, typically on the brackish reaches of tidal rivers, ditch and dyke margins, saltmarshes, and sea walls. North of the Alps, wild celery is found only in the foothill zone on soils with some salt content.
 - **Credit:** Wikipedia, 'Apium graveolens' (CC BY-SA 4.0)
-
-### Cheeseweed mallow — `cheeseweed-mallow`
-
-- **Labels:** disturbed
-    - `disturbed` ← 'disturbed', 'roadsides'
-- **Prose:** M. parviflora typically grows on agricultural lands and in disturbed sites such as roadsides. Its native range extends from the Mediterranean, through West Asia, and to Central Asia and can be found in Algeria, Egypt, Libya, Morocco, Tunisia, Kuwait, Afghanistan, Cyprus, Iran, Israel, Jordan, Lebanon, Syria, Turkey, Armenia, Azerbaijan, Turkmenistan, Albania, Bosnia and Herzegovina, Greece, Croatia, Italy, Malta, Spain, France, and Portugal. The species is widely naturalized elsewhere, including in North America since the 19th century. It is a naturalized weed in Australia.
-- **Credit:** Wikipedia, 'Malva parviflora' (CC BY-SA 4.0)
-
-### Cherry-plum — `cherry-plum`
-
-- **Labels:** urban
-    - `urban` ← 'urban'
-- **Prose:** It is native to Southeast Europe and Western Asia, and is naturalised in the British Isles and scattered locations in North America. It is also naturalized in parts of Southeast Australia where it is considered to be a mildly invasive weed of bushland near urban centers.
-- **Credit:** Wikipedia, 'Prunus cerasifera' (CC BY-SA 4.0)
 
 ### Chilean sea fig — `chilean-sea-fig`
 
 - **Labels:** coastal, disturbed
-    - `coastal` ← 'coastline', 'coastal', 'dunes', 'estuaries', 'Coast'
+    - `coastal` ← 'coastal', 'dunes', 'estuaries', 'Coast'
     - `disturbed` ← 'roadsides'
-- **Prose:** Usually found in warm temperate and subtropical areas, it is probably native to southern Africa. It is familiar elsewhere, particularly the coastline of western North America, where it is an introduced invasive species that has taken hold and become commonplace. It is also found, and naturalised, in Argentina, Chile, Peru, Ecuador, Australia, Spain, Greece, Southern England and New Zealand. Grown in sunny conditions, it is normally found within coastal dunes and bluffs, margins of estuaries, along roadsides; at elevations from sea level to 100 m along the southern Pacific Coast of North America.
+- **Prose:** Grown in sunny conditions, it is normally found within coastal dunes and bluffs, margins of estuaries, along roadsides; at elevations from sea level to 100 m along the southern Pacific Coast of North America.
 - **Credit:** Wikipedia, 'Carpobrotus chilensis' (CC BY-SA 4.0) — units converted to metric
-
-### Chinese plum — `chinese-plum`
-
-- **Labels:** forest, shrubland, wetland, alpine
-    - `forest` ← 'forests', 'forest'
-    - `shrubland` ← 'thickets'
-    - `wetland` ← 'stream', 'River'
-    - `alpine` ← 'mountains'
-- **Prose:** P. salicina is native to China, Taiwan, Myanmar, Laos, and Vietnam. In China, it grows in sparse forests, forest margins, thickets, along trails in mountains, and stream sides in valleys, at elevations of 200–2600 m. It grows best in temperate warmer regions, as it requires moderate temperatures and is usually early flowering.
-The domestication center of origin of P. salicina is southwestern China, from the Yangtze River Basin. Wild populations of this species are reported as thriving in the provinces of Shaanxi and Gansu. It is recorded as an introduced species in both Australia and Japan.
-- **Credit:** Wikipedia, 'Prunus salicina' (CC BY-SA 4.0)
-
-### Climbing dock — `climbing-dock`
-
-- **Labels:** urban
-    - `urban` ← 'urban'
-- **Prose:** The plant is native to southern Africa, where it occurs from Malawi and Zambia south to South Africa. It has become naturalised in many parts of Australia near urban areas, from Queensland to eastern Tasmania, and warmer locales in New Zealand.
-It spreads by seed or by resprouting from the tuber. The seeds float on water and hence may be conveyed far from the parent plant. Tubers may be broken up by tractors or road graders and each fragment may be able to regrow; they can also be difficult to find with removal of plants by hand. Rumex sagittatus may grow and smother other plants it covers.
-- **Credit:** Wikipedia, 'Rumex sagittatus' (CC BY-SA 4.0)
-
-### Coconut Milkcap — `coconut-milkcap`
-
-- **Labels:** forest
-    - `forest` ← 'under broad-leaved trees'
-- **Prose:** Lactarius glyciosmus is a common mushroom and is found under broad-leaved trees, particularly birch—often inside of sphagnum moss. It can be found between late summer and autumn. It grows in soil individually or in scattered groups. It can be found in North America and Europe, New Zealand, Svalbard, Japan, and China.
-- **Credit:** Wikipedia, 'Lactarius glyciosmus' (CC BY-SA 4.0)
-
-### Common mallow — `common-mallow`
-
-- **Labels:** disturbed
-    - `disturbed` ← 'railways'
-- **Prose:** Malva sylvestris spreads itself on waste and rough ground, by roads and railways throughout lowland England, Wales and Channel Islands, Siberia and scattered elsewhere. One of the major areas that grows in is northeast and central Iran. It is also found in North Africa and grows as a biennial in the Mediterranean; it grows as a perennial elsewhere. It has been introduced to and has become naturalised in eastern Australia, in the United States, Canada, and Mexico as an invasive species.
-
-
-In the wild
-Palearctic:
-Macaronesia: Azores, Madeira Islands
-Northern Africa: Algeria, Egypt, Libya, Morocco
-Arabian Peninsula: Saudi Arabia
-Western Asia: Afghanistan, Sinai, Iran, Israel, Palestine, Jordan, Lebanon, Syria, Turkey
-Caucasus: Armenia, Azerbaijan, Ciscaucasia, Dagestan, Georgia
-Soviet Middle Asia: Kyrgyzstan, Tajikistan, Turkmenistan, Uzbekistan
-Mongolia: Mongolia
-China: Xinjiang
-Indian Subcontinent: Bhutan, India, Pakistan
-Northern Europe: Denmark, Finland, Ireland, Norway, Sweden, United Kingdom
-Middle Europe: Austria, Belgium, Czech Republic, Germany, Hungary, Netherlands, Poland, Slovakia, Switzerland
-East Europe: Belarus, Central Russia, Central Black Earth, Estonia, Latvia, Lithuania, Moldova, Northern Russia, North Caucasus, Northwestern Russia, Volga, Urals, Volga-Vyatka, Ukraine
-Southeastern Europe: Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Greece, Italy, Macedonia, Montenegro, Sardinia, Serbia, Sicily, Slovenia, Romania, Cyprus
-Southwestern Europe: Balearic Islands, Corsica, France, Portugal, Spain
-- **Credit:** Wikipedia, 'Malva sylvestris' (CC BY-SA 4.0)
 
 ### Common mouse-ear chickweed — `common-mouse-ear-chickweed`
 
@@ -1186,69 +1770,41 @@ Southwestern Europe: Balearic Islands, Corsica, France, Portugal, Spain
     - `forest` ← 'forest'
     - `grassland` ← 'meadows', 'pastures'
     - `disturbed` ← 'disturbed', 'roadsides'
-- **Prose:** V. thapsus has a wide native range including Europe, northern Africa, and Asia, from the Azores and Canary Islands east to western China, north to the British Isles, Scandinavia, and Siberia, Kashmir and south to the Himalayas. In northern Europe, it grows from sea level up to 1,850 m altitude, while in China it grows at 1,400–3,200 m altitude.
-It has been introduced throughout the temperate world, and is established as a weed in Australia, New Zealand, tropical Asia, La Réunion, North America, Hawaii, Chile, Hispaniola, and Argentina. It has also been reported in Japan.
-In the United States, it was imported very early in the 18th century and cultivated for its medicinal and piscicide properties. By 1818, it had begun spreading so much that Amos Eaton thought it was a native plant. In 1839, it was already reported in Michigan and in 1876, in California. It is now found commonly in all the states. In Canada, it is most common in the Maritime Provinces and southern Quebec, Ontario, and British Columbia, with scattered populations in between.
+- **Prose:** In northern Europe, it grows from sea level up to 1,850 m altitude, while in China it grows at 1,400–3,200 m altitude.
+
 Great mullein most frequently grows as a colonist of bare and disturbed soil, usually on sandy or chalky ones. It grows best in dry, sandy, or gravelly soils, although it can grow in a variety of habitats, including banksides, meadows, roadsides, forest clearings, and pastures. This ability to grow in a wide range of habitats has been linked to strong phenotype variation rather than adaptation capacities.
 - **Credit:** Wikipedia, 'Verbascum thapsus' (CC BY-SA 4.0)
 
 ### Cow parsley — `cow-parsley`
 
-- **Labels:** forest, shrubland, grassland, urban, disturbed
+- **Labels:** forest, shrubland, grassland, disturbed
     - `forest` ← 'woodland'
     - `shrubland` ← 'hedgerows'
     - `grassland` ← 'meadows'
-    - `urban` ← 'gardens'
     - `disturbed` ← 'roadside'
-- **Prose:** Cow parsley grows in sunny to semi-shaded locations in meadows and at the edges of hedgerows and woodland. It is a particularly common sight by the roadside and with its frothy early-flowering white blooms is regarded as the most important springtime landscape wildflower in Britain. However, the plant is also sufficiently common and fast-growing to be considered a nuisance weed in gardens.  Cow parsley's ability to spread rapidly by means of rhizomes and to produce large quantities of seeds in a single growing season has made it an invasive species in many areas of the United States. Vermont has listed cow parsley on its "Watch List" of invasive species, while Massachusetts has banned the sale of the plant. It is classed as a Class B Noxious Weed in the State of Washington since 1989, where its sale is also banned. In Iceland, where cow parsley is now commonly seen overgrowing lupine fields, it has been classified as an alien invasive species.
+- **Prose:** Cow parsley grows in sunny to semi-shaded locations in meadows and at the edges of hedgerows and woodland. It is a particularly common sight by the roadside and with its frothy early-flowering white blooms is regarded as the most important springtime landscape wildflower in Britain.
 - **Credit:** Wikipedia, 'Anthriscus sylvestris' (CC BY-SA 4.0)
 
-### Creeping wood sorrel — `creeping-wood-sorrel`
+### Cut-leaved deadnettle — `cut-leaved-deadnettle`
 
-- **Labels:** grassland, urban
-    - `grassland` ← 'lawns'
-    - `urban` ← 'gardens'
-- **Prose:** This species probably comes from southeastern Asia. It was first described by Linnaeus in 1753 using specimens from Italy, and it seems to have been introduced to Italy from the east before 1500. It is now cosmopolitan in its distribution and is often regarded as a weed in gardens, agricultural fields, and lawns.
-- **Credit:** Wikipedia, 'Oxalis corniculata' (CC BY-SA 4.0)
-
-### Deadnettle — `deadnettle`
-
-- **Labels:** forest, grassland, urban, disturbed
-    - `forest` ← 'forest'
+- **Labels:** grassland, wetland, urban, disturbed
     - `grassland` ← 'meadows'
-    - `urban` ← 'gardens'
-    - `disturbed` ← 'roadsides'
-- **Prose:** Lamium purpureum is native and relatively common to Europe (including Britain and Ireland) and Asia but it can also be found in North America: especially in the western and eastern United States, and Canada.  It frequently occurs in meadows, forest edges, roadsides and gardens.
-- **Credit:** Wikipedia, 'Lamium purpureum' (CC BY-SA 4.0)
+    - `wetland` ← 'river'
+    - `urban` ← 'gardens', 'urban'
+    - `disturbed` ← 'Waste places'
+- **Prose:** In New Zealand (Flora of New Zealand): Waste places, river beds, gardens.
+It is found growing in open areas, gardens, fields and meadows, and widely in uncultivated areas in urban habitats.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Lamium hybridum' (rev 1322279095, CC BY-SA 4.0)
 
 ### Douglas fir — `douglas-fir`
 
-- **Labels:** coastal, forest, alpine
-    - `coastal` ← 'coast', 'coastal'
+- **Labels:** coastal, forest
+    - `coastal` ← 'coast'
     - `forest` ← 'plantations'
-    - `alpine` ← 'Mountain'
-- **Prose:** Pseudotsuga menziesii var. menziesii, the coast Douglas-fir, grows in the coastal regions from west-central British Columbia southward to Central California. In Oregon and Washington, its range is continuous from the eastern edge of the Cascades west to the Pacific Coast Ranges and Pacific Ocean. In California, it is found in the Klamath and California Coast Ranges as far south as the Santa Lucia Range, with a small stand as far south as the Purisima Hills in Santa Barbara County. One of the last remaining old growth stands of conifers is in the Mattole Watershed, and is under threat of logging. In the Sierra Nevada, it ranges as far south as the Yosemite region. It occurs from sea level along the coast to elevations of 1,500 m or higher, and inland in some cases up to 2,100 m.
-Another variety exists further inland, Pseudotsuga menziesii var. glauca, the Rocky Mountain Douglas-fir or interior Douglas-fir. Interior Douglas-fir intergrades with coast Douglas-fir in the Cascades of northern Washington and southern British Columbia, and from there ranges northward to central British Columbia and southeastward to the Mexican border, becoming increasingly disjunct as latitude decreases and altitude increases. Mexican Douglas-fir (P. lindleyana), which ranges as far south as Oaxaca, is often considered a variety of P. menziesii.
-Fossils (wood, pollen) of Pseudotsuga are recorded from the Miocene and Pliocene of Europe (Siebengebirge, Gleiwitz, Austria).
-It is also naturalised throughout Europe, Argentina and Chile (called Pino Oregón). In New Zealand it is considered to be an invasive species, called a wilding conifer, and is subject to control measures. But is also one of the most common lumber trees used in forestry alongside Radiata pine with large plantations throughout the country. The species was introduced in the 20th century for its wood.
+- **Prose:** It occurs from sea level along the coast to elevations of 1,500 m or higher, and inland in some cases up to 2,100 m.
+
+ But is also one of the most common lumber trees used in forestry alongside Radiata pine with large plantations throughout the country.
 - **Credit:** Wikipedia, 'Douglas fir' (CC BY-SA 4.0) — units converted to metric
-
-### Dove's-foot cranesbill — `doves-foot-cranesbill`
-
-- **Labels:** forest, shrubland, grassland
-    - `forest` ← 'forest'
-    - `shrubland` ← 'hedges'
-    - `grassland` ← 'meadows'
-- **Prose:** It is native to the Mediterranean and sub-Mediterranean areas, but has naturalized in other parts of Europe, in southwestern and central  Asia and in North Africa, though it may have already been in those parts and areas, just not properly identified. It is considered an introduced species in North America, where it is known as Dovefoot Geranium or Awnless Geranium. Although non-native in parts of its range, this species poses little threat to native ecosystems.
-It is found in dry meadows, hedges, banks and forest edges. It prefers sunny places on sandy and relatively dry soils,  at an altitude of 0–1,000 metres above sea level.
-- **Credit:** Wikipedia, 'Geranium molle' (CC BY-SA 4.0) — units converted to metric
-
-### Downy milk cap — `downy-milk-cap`
-
-- **Labels:** forest
-    - `forest` ← 'under birch'
-- **Prose:** The fruit bodies of L. pubescens are found scattered or in groups on the ground in wet areas under birch and other hardwoods from  August to October. The fungus is common all over temperate Europe and has been reported from eastern North America, the Pacific Northwest, Arizona, California, Colorado, Idaho, and western Canada; its frequency of appearance is occasional. It is also found in Greenland, and was reported for the first time in Rome, Italy, in 1997.
-- **Credit:** Wikipedia, 'Lactarius pubescens' (CC BY-SA 4.0)
 
 ### Fairy ring champignon — `fairy-ring-champignon`
 
@@ -1261,36 +1817,13 @@ It grows gregariously in troops, arcs, or rings (type II, which causes the grass
 
 ### Field woundwort — `field-woundwort`
 
-- **Labels:** disturbed
-    - `disturbed` ← 'disturbed'
-- **Prose:** It grows in many types of habitat, including disturbed areas, and often in moist spots.
-- **Credit:** Wikipedia, 'Stachys arvensis' (CC BY-SA 4.0)
-
-### Fishpole bamboo — `fishpole-bamboo`
-
-- **Labels:** forest, urban, disturbed
-    - `forest` ← 'bush'
-    - `urban` ← 'gardens', 'urban'
-    - `disturbed` ← 'roadsides'
-- **Prose:** Beyond the bare word "terrestrial", nothing has been published about where in New Zealand this has gone wild. It has never been recorded flowering here and sets no seed, so every wild stand traces back to a planting and creeps outwards by rhizome. In Australia it is mainly a weed of warmer country: untended ground near gardens, roadsides, waterways and urban bush.
-- **Credit:** NZPCN and Environmental Weeds of Australia / BioNET-EAFRINET (paraphrased)
-
-### Flowering currant — `flowering-currant`
-
-- **Labels:** coastal
-    - `coastal` ← 'coast'
-- **Prose:** It is native to the western United States, Canada and Mexico. In western British Columbia, Washington, and Oregon, it is distributed widely in the moist regions west of the Cascades. In California it is restricted to areas near the coast, and can be found as far south as Santa Barbara County. In Mexico, it is only found on the Pacific island of Guadalupe, where it may be extirpated. Although its conservation status is secure across the rest of its range, in Idaho it is critically imperiled and is found only rarely in Bonner, Kootenai, Benewah, and Adams counties.
-It is widely cultivated and naturalized throughout temperate Europe and Australasia.
-- **Credit:** Wikipedia, 'Ribes sanguineum' (CC BY-SA 4.0)
-
-### Forest cabbage tree — `forest-cabbage-tree`
-
-- **Labels:** coastal, forest, alpine
-    - `coastal` ← 'coastal'
-    - `forest` ← 'forests'
-    - `alpine` ← 'montane', 'subalpine'
-- **Prose:** Cordyline banksii tolerates a wide variety of habitats. It is common in coastal, lowland, and lower montane forests in the North Island, widespread in the northern half of the South Island and Westland as far south as Haast. It has occasionally been reported from coastal Fiordland, but these sightings are unsubstantiated. It also occasionally occurs in subalpine regions in the South Island. In shrublands it occurs with Cordyline pumilio and may form hybrids with it.
-- **Credit:** Wikipedia, 'Cordyline banksii' (CC BY-SA 4.0)
+- **Labels:** wetland, urban, disturbed
+    - `wetland` ← 'river'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'waste places', 'roadsides', 'disturbed'
+- **Prose:** In New Zealand (Flora of New Zealand): A weed of gardens, fields, waste places, roadsides, and river beds.
+It grows in many types of habitat, including disturbed areas, and often in moist spots.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Stachys arvensis' (CC BY-SA 4.0)
 
 ### French broom — `french-broom`
 
@@ -1305,7 +1838,7 @@ It is widely cultivated and naturalized throughout temperate Europe and Australa
 - **Labels:** forest, alpine
     - `forest` ← 'forests', 'canopy'
     - `alpine` ← 'mountains'
-- **Prose:** Monstera deliciosa is native to humid tropical forests, in lowlands and on lower mountains, in the south of Mexico and also in Costa Rica, Guatemala and Panama. The seeds fall to the ground, then the seedlings crawl (negative phototropism) until they meet a tree on which to attach. The many adjacent roots thus allow the plant to anchor against its new support and reach the canopy light (although it rarely grows in full sun and prefers a light dimmed by the foliage). Introduced plants can also be found in other parts of North America (Florida), Asia (Malaysia and India), Australia and the Western Mediterranean and Atlantic (Sicily, Mainland Portugal, Morocco, Madeira), also in Madagascar.
+- **Prose:** Monstera deliciosa is native to humid tropical forests, in lowlands and on lower mountains, in the south of Mexico and also in Costa Rica, Guatemala and Panama. The seeds fall to the ground, then the seedlings crawl (negative phototropism) until they meet a tree on which to attach. The many adjacent roots thus allow the plant to anchor against its new support and reach the canopy light (although it rarely grows in full sun and prefers a light dimmed by the foliage).
 - **Credit:** Wikipedia, 'Monstera deliciosa' (CC BY-SA 4.0)
 
 ### Giant puffball — `giant-puffball`
@@ -1316,46 +1849,29 @@ It is widely cultivated and naturalized throughout temperate Europe and Australa
 - **Prose:** The giant puffball is commonly found in meadows, fields, and deciduous forests in late summer and autumn. It is found in temperate areas throughout the world.
 - **Credit:** Wikipedia, 'Calvatia gigantea' (CC BY-SA 4.0)
 
-### Giant timber bamboo — `giant-timber-bamboo`
-
-- **Labels:** forest
-    - `forest` ← 'woodland', 'bush'
-- **Prose:** No New Zealand habitat note has been published for this one, so what is on record is that it is loose in the country and runs hard on extensive rhizomes — not where to expect it. In its native range it grows in woodland and open bush-wood, especially on lower cleared slopes, up to about 1800 m.
-- **Credit:** NZPCN and Plants For A Future (paraphrased)
-
 ### Greater plantain — `greater-plantain`
 
 - **Labels:** grassland, disturbed
     - `grassland` ← 'lawns', 'grassland'
-    - `disturbed` ← 'roadsides', 'disturbed', 'wayside'
-- **Prose:** Greater plantain is native to almost all of Europe (Iceland excepted), northern and central Asia, and northern and southern Africa. and has become widely naturalised elsewhere in the world.
-The ability of greater plantain to survive frequent trampling and colonise compacted soils makes it important for soil rehabilitation. Its roots break up hardpan surfaces, while simultaneously holding together the soil to prevent erosion. The seeds are a common contaminant in cereal grain and other crop seeds. As a result, it now has a nearly worldwide distribution. Plantago major grows in lawns and fields, along roadsides, and in other areas that have been disturbed by humans. It does particularly well in compacted or disturbed soils, but can also occur in undisturbed grassland.
-
-
-Other names
-As a result of its wide occurrence, Plantago major has many vernacular names. In addition to greater plantain, other recorded vernacular names include broadleaf plantain, common plantain, broad-leaved plantain, cart track plant, dooryard plantain, greater plantago, healing blade, hen plant, lambs foot, roadweed, roundleaf plantain, snakeroot, waybread, wayside plantain, and white man's footprint. Plantago major is believed to be one of the first plants to reach North America after European colonisation. Reportedly brought to the Americas by Puritan colonists, greater plantain was known among some Native American peoples by the name "white man's footprint", because it thrived in the disturbed and damaged ecosystems surrounding European settlements.
+    - `disturbed` ← 'roadsides', 'disturbed'
+- **Prose:** Plantago major grows in lawns and fields, along roadsides, and in other areas that have been disturbed by humans. It does particularly well in compacted or disturbed soils, but can also occur in undisturbed grassland.
 - **Credit:** Wikipedia, 'Plantago major' (CC BY-SA 4.0)
 
 ### Ground-ivy — `ground-ivy`
 
-- **Labels:** forest, grassland, disturbed
-    - `forest` ← 'woodlands'
-    - `grassland` ← 'lawns', 'grasslands'
+- **Labels:** grassland, disturbed
+    - `grassland` ← 'grasslands', 'lawns'
     - `disturbed` ← 'wasteland'
-- **Prose:** European settlers carried it around the world, and it has become a well-established introduced and naturalized plant in a wide variety of localities. It is also considered an aggressive invasive weed of woodlands and lawns in some parts of North America, being considered a non-native plant in the United States, and invasive in some U.S. states. It has invaded wild areas, sometimes choking out native wildflowers.
+- **Prose:** In New Zealand (Flora of New Zealand): Usually in shady places below trees and around buildings.
 G. hederacea thrives in moist shaded areas, but also tolerates sun very well. It is a common plant in grasslands and wooded areas or wasteland.  It also thrives in lawns and around buildings, since it survives mowing. Part of the reason for its wide distribution is its  rhizomatous method of reproduction.
-- **Credit:** Wikipedia, 'Glechoma hederacea' (CC BY-SA 4.0)
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Glechoma hederacea' (CC BY-SA 4.0)
 
 ### Hairy bittercress — `hairy-bittercress`
 
-- **Labels:** grassland, urban, disturbed
+- **Labels:** grassland, disturbed
     - `grassland` ← 'turf'
-    - `urban` ← 'garden'
     - `disturbed` ← 'disturbed', 'waste places'
 - **Prose:** It is commonly found in damp, recently disturbed soil, open ground, turf and waste places and native to Europe, the Middle East, South Asia, Southeast Asia, Central Asia, North Africa, Central Africa, and the Horn of Africa.
-These conditions are prevalent in nursery or garden centre plants, and hairy bittercress seeds may be introduced with those plants. Once established, it is difficult to eradicate. The tiny flowers are attractive to a few early butterflies, including (in the United States) spring azure (Celastrina ladon) and falcate orange-tip (Anthocharis midea).
-Cardamine hirsuta has been introduced in many countries across the world. Its range includes but is not limited to: Argentina, Australia, Canada, China, Colombia, Costa Rica, Ecuador, Gabon, Great Britain, India, Japan, Laos, Madagascar, Mexico, Pakistan, Panama, Peru, Philippines, South Africa, Sri Lanka, Thailand, Turkmenistan, United States, Venezuela, and Vietnam.
-The 1889 book The Useful Native Plants of Australia records that it was also called "Lady's Smock" and that "This and other species afford excellent pot-herbs when luxuriant and flaccid. The present one is a common weed almost throughout the world."
 - **Credit:** Wikipedia, 'Cardamine hirsuta' (CC BY-SA 4.0)
 
 ### Harakeke — `harakeke`
@@ -1375,20 +1891,22 @@ The 1889 book The Useful Native Plants of Australia records that it was also cal
 ### Hedge woundwort — `hedge-woundwort`
 
 - **Labels:** forest, shrubland
-    - `forest` ← 'woods'
-    - `shrubland` ← 'Hedge', 'hedgerows'
-- **Prose:** Hedge woundwort is native to Europe and central and western Asia. It grows in dappled shade at the edge of woods, in hedgerows and on rough ground. It has been introduced into New York state, Ontario, and New Zealand.
-- **Credit:** Wikipedia, 'Stachys sylvatica' (CC BY-SA 4.0)
+    - `forest` ← 'forest', 'woods'
+    - `shrubland` ← 'scrub', 'hedges', 'hedgerows'
+- **Prose:** In New Zealand (Flora of New Zealand): Shaded places along forest margins, amongst scrub and around hedges.
+It grows in dappled shade at the edge of woods, in hedgerows and on rough ground.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Stachys sylvatica' (CC BY-SA 4.0)
 
 ### Henbit deadnettle — `henbit-deadnettle`
 
-- **Labels:** grassland, urban
-    - `grassland` ← 'meadows', 'meadow'
+- **Labels:** grassland, urban, disturbed
+    - `grassland` ← 'meadows'
     - `urban` ← 'gardens', 'urban'
-- **Prose:** Henbit dead-nettle is native to most of Europe, Asia and North Africa, and has since been spread around the world by human activity. It is found growing in open areas, gardens, fields and meadows, and widely in uncultivated areas in urban habitats. It propagates freely by seed, where it becomes a key part of a meadow ecosystem; sometimes entire fields will be reddish-purple with its flowers before spring ploughing.
-It is widely naturalised in eastern North and South America, New Zealand, South Africa and Tasmania. Its attractive appearance, edibility, and readiness to grow in many climates often mean it is permitted to grow when other weeds are not.
-Its status in Great Britain and Ireland is disputed; some sources give it as native, while others cite it as an archaeophyte.
-- **Credit:** Wikipedia, 'Lamium amplexicaule' (CC BY-SA 4.0)
+    - `disturbed` ← 'Waste places', 'roadsides', 'railway'
+- **Prose:** In New Zealand (Flora of New Zealand): Waste places such as roadsides, railway yards and building sites, also on arable land.
+It is found growing in open areas, gardens, fields and meadows, and widely in uncultivated areas in urban habitats.
+In New Zealand it is a common weed of cropping land, especially in the South Island.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Lamium amplexicaule' (rev 1359641636, CC BY-SA 4.0); Bayer Crop Science New Zealand, 'Henbit' (all rights reserved, restated)
 
 ### Hioi — `hioi`
 
@@ -1396,8 +1914,7 @@ Its status in Great Britain and Ireland is disputed; some sources give it as nat
     - `coastal` ← 'coastal'
     - `grassland` ← 'grassy'
     - `alpine` ← 'alpine'
-- **Prose:** Mentha cunninghamii is endemic to the four islands of North Island, South Island, Chatham Island and Stewart Island in New Zealand. It is found sparsely in grassy fields and open land generally. It inhabits an elevation range from coastal to alpine, within a range of sea level to 1,400 metres. Sources variously describe its flowering season as beginning in the Southern Hemisphere in either September or November, ending in April.
-As of 2018, New Zealand's Department of Conservation's New Zealand Threat Classification System (NZTCS) assesses Mentha cunninghamii's conservation status as "At Risk: Declining." The system uses the Declining status to indicate populations that currently possess large populations, but are experiencing declines that could eventually lead to a listing as "Threatened."
+- **Prose:** It is found sparsely in grassy fields and open land generally. It inhabits an elevation range from coastal to alpine, within a range of sea level to 1,400 metres.
 - **Credit:** Wikipedia, 'Mentha cunninghamii' (CC BY-SA 4.0) — units converted to metric
 
 ### Horse mushroom — `horse-mushroom`
@@ -1414,60 +1931,25 @@ Frequently found near stables, as well as in meadows, it may form fairy rings. T
 - **Labels:** forest, alpine
     - `forest` ← 'forest', 'forested', 'canopy'
     - `alpine` ← 'subalpine'
-- **Prose:** Zealandia pustulata ranges from southeastern Queensland through New South Wales to Victoria on the Australian mainland, and to Tasmania, Lord Howe Island, Norfolk Island,  New Zealand's North and South Islands, and the Chatham, Kermadec, and Antipodes islands.
-Zealandia pustulata is widespread and commonly described as both a lithophyte and epiphyte. They are evident across a range of wet sclerophyll forest and rainforest, as well as more open, subalpine environments, with preferred growing conditions being in ferneries or gullies in partial- to full shade. Within these forested environments, the species is described as a middle-storey inhabitant, but is able to grow anywhere from the forest floor to the canopy.
-There are two subspecies, Zealandia pustulata ssp. pustulata, the type species which is present across the plant's mainland and insular ranges; Z. pustulata ssp. howensis is uniquely endemic to Lord Howe Island.
+- **Prose:** Zealandia pustulata is widespread and commonly described as both a lithophyte and epiphyte. They are evident across a range of wet sclerophyll forest and rainforest, as well as more open, subalpine environments, with preferred growing conditions being in ferneries or gullies in partial- to full shade. Within these forested environments, the species is described as a middle-storey inhabitant, but is able to grow anywhere from the forest floor to the canopy.
 - **Credit:** Wikipedia, 'Zealandia pustulata' (CC BY-SA 4.0)
 
-### Island mallow — `island-mallow`
+### Japanese cherry — `japanese-cherry`
 
-- **Labels:** coastal, urban
-    - `coastal` ← 'coastal'
-    - `urban` ← 'cultivation'
-- **Prose:** It is endemic to southern California, where it is native only to the Channel Islands. It can also be found growing as an escapee from cultivation in localised spots in coastal mainland California and Baja California, as well as sparingly in locations in Guatemala, cooler regions in mountainous or Mediterranean areas in western South America, New Zealand and Australia.
-- **Credit:** Wikipedia, 'Malva assurgentiflora' (CC BY-SA 4.0)
-
-### Ivy-leaved toadflax — `ivy-leaved-toadflax`
-
-- **Labels:** coastal, urban
+- **Labels:** coastal, shrubland, disturbed
     - `coastal` ← 'coast'
-    - `urban` ← 'cultivation', 'garden'
-- **Prose:** POWO regards the native range for this species to be limited to southern Europe, in Austria, France, Italy, Switzerland, and the former Yugoslavia, with the nominate subspecies Cymbalaria muralis subsp. muralis also occurring throughout this range. Similarly the World Plants database records it as native to the same areas, but more specifically to Slovenia, Croatia, Bosnia & Hercegovina, Serbia, and Kosovo in the former Yugoslavia and to the small state of San Marino on the Italian peninsula. It also shows it as native to additional areas north east of the Alps such as the Czech Republic, Slovakia and Liechtenstein, and many Atlantic Ocean islands such as the Azores, Madeira, the Canary Islands, and the Cape Verde Islands.
-Cymbalaria muralis subsp. visianii recorded by POWO as growing in the southeastern part of the species' range, only in Italy and the former Yugoslavia. The World Plants database largely agrees listing it as native to the central and southern parts of Italy and to Croatia, but also listing it as introduced in Germany; it has also been recorded as naturalised in Britain since 1970.
-
-From this original range it spread to much of Europe and to the rest of the world as either an accidental introduction or because of its use as an ornamental plant. Its first record outside of cultivation in Great Britain is from 1640. A frequently repeated story is that the plants were introduced accidentally as part of a shipment of statuary to Oxford. However, this is unlikely since it was recorded growing in an English garden in 1617 in Droxford. Thereafter it became a popular ornamental plant that was widely planted in the United Kingdom through the 19th century. Regardless of its status it is recorded from Ireland and Portugal in the west in every country as far east as Ukraine, Poland, and Sweden, and according to POWO it may also be found in the Baltic States, northwestern Russia, and the North Caucasus with World Plants recording it in Belarus and Georgia.
-In Africa it grows in Morocco, Algeria, and Tunisia in the north and in South Africa it grows in the Cape Provinces and the Northern Provinces floristic areas. In Asia it is now found in Turkey, Jordan, North Korea, South Korea, and the eastern Himalayas.
-In North America Cymbalaria muralis has been recorded growing outside cultivation in Bermuda, Canada, Costa Rica, Guatemala, Honduras, Jamaica, Mexico, and the United States. In the USA it is generally agreed that it grows in much of the Midwest, north-east, and New England as far south as South Carolina, Tennessee, and Arkansas and as far west as Wisconsin, Illinois, and Missouri with the exception of Maine and New Hampshire. It is also found on the west coast in California, Oregon, and Washington State. It is more scattered in the interior states, listed as growing in Colorado, Nebraska, South Dakota, and Utah, with the last of these recorded by USDA Natural Resources Conservation Service PLANTS database (PLANTS) and World Plants, but not POWO. In Canada it agreed that it grows in five provinces, British Columbia, Manitoba, New Brunswick, Ontario, and Québec. However PLANTS and World Plants also record it in Nova Scotia while POWO alone records it on the island of Newfoundland.
-In South America it has been observed in Colombia, Ecuador, and Peru in the north. It has also been recorded in the south and southeast of Brazil, Uruguay, Bolivia, and the north of Argentina. In mainland Chile it has been reported from Valparaíso, in Santiago, the Maule Region, and the Biobío Region.
-On oceanic islands it has been introduced to Maui in Hawaii, both the North and South Island of New Zealand, Bermuda, Mauritius, St. Helena, and the Juan Fernández Islands. It is also found in six Australian states, Western Australia, South Australia, Victoria, New South Wales, the south of Queensland, and the island state of Tasmania.
-- **Credit:** Wikipedia, 'Cymbalaria muralis' (CC BY-SA 4.0)
+    - `shrubland` ← 'scrubland', 'shrubland'
+    - `disturbed` ← 'roadside', 'wasteland'
+- **Prose:** bank, coast, dry, gully, hill, margin, open, roadside, scrubland, shrubland, slope, unstable/eroded, wasteland
+- **Credit:** Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ)
 
 ### Japanese honeysuckle — `japanese-honeysuckle`
 
-- **Labels:** forest, shrubland, disturbed
-    - `forest` ← 'forests', 'canopy', 'understory'
-    - `shrubland` ← 'thicket'
+- **Labels:** forest, disturbed
+    - `forest` ← 'forests', 'canopy'
     - `disturbed` ← 'disturbed', 'roadsides'
-- **Prose:** The flowers can also be a significant source of food for deer, rabbits, hummingbirds, and other wildlife.
-
-
-As an invasive species
-Japanese honeysuckle has become naturalized in Argentina, Australia, Brazil, Mexico, New Zealand, and much of the United States, including Hawaii, as well as a number of Pacific and Caribbean islands. It is classified as a noxious weed in 46 states, being prohibited to be bought and sold in Connecticut, Illinois, Massachusetts, and Vermont, and banned in Indiana and New Hampshire. It is on the New Hampshire invasive species list.
-Lonicera japonica was initially brought to the U.S. from Japan in the early 1800s as an ornamental plant. It is still deliberately planted in the U.S. for reasons such as erosion control or forage for deer, but has become invasive in many areas. It prefers to invade areas that have been disturbed, such as roadsides or floodplains. It will generally only invade forests when the canopy has been opened by logging or fallen trees, as it grows less vigorously in the shade. Once it has invaded an area, Lonicera japonica grows rapidly and outcompetes native plants for sunlight and nutrients. It proliferates using both sexual and vegetative reproduction, producing seeds that are spread by animals and expanding locally via rhizomes. Eventually, it will form a dense thicket which prevents other plant species from germinating in that area. Due to its suppression of germination in the understory, Lonicera japonica also prevents the regeneration of trees.
-
-Management of invasive Lonicera japonica has been achieved through a variety of means. Small patches can be removed by hand, or using simple digging tools, but all plant parts including roots and rhizomes must be removed to prevent resprouting. Larger patches can be removed through repeated mowing, but application of herbicide is also recommended to prevent regrowth. There has been some study of using controlled burns to remove L. japonica, but the underground portion of the plant is usually able to survive and resprout, limiting the effectiveness of this method. Browsing by herbivores may limit its growth, but is unlikely to eliminate it.
-
-
-Biological control
-The EPA of New Zealand approved the release of Limenitis glorifica butterflies in 2013 as a biological control for Lonicera japonica. This butterfly is host specific for Japanese honeysuckle, but it may incidentally feed on other closely related plants, including Himalayan honeysuckle Leycesteria formosa. Oberea shirahatai is a Japanese honeysuckle host-specific beetle that feeds on the stems and leaves of Japanese honeysuckle. It was released in New Zealand in 2018 as another L. japonica-specialist biological control.
+- **Prose:** It prefers to invade areas that have been disturbed, such as roadsides or floodplains. It will generally only invade forests when the canopy has been opened by logging or fallen trees, as it grows less vigorously in the shade.
 - **Credit:** Wikipedia, 'Lonicera japonica' (CC BY-SA 4.0)
-
-### Japanese knotweed — `japanese-knotweed`
-
-- **Labels:** urban
-    - `urban` ← 'garden'
-- **Prose:** It is native to East Asia in Japan, China and Korea. In North America and Europe, the species has successfully established itself in numerous habitats, and is classified as a pest and invasive species in several countries. Spread in invaded ranges is mainly vegetative, through rhizome pieces, stem fragments and soil contaminated with plant material; waterways, construction activity and garden waste can move these propagules over longer distances. Many introduced populations are dominated by male-sterile clonal plants, but seed set, hybridisation with giant knotweed and the production of viable seed by Bohemian knotweed have also been reported.
-- **Credit:** Wikipedia, 'Reynoutria japonica' (CC BY-SA 4.0)
 
 ### Jellybean ice plant — `jellybean-ice-plant`
 
@@ -1478,55 +1960,28 @@ The EPA of New Zealand approved the release of Limenitis glorifica butterflies i
 
 ### Kahikatea — `kahikatea`
 
-- **Labels:** forest, wetland, alpine
+- **Labels:** forest, wetland
     - `forest` ← 'forests', 'forest'
     - `wetland` ← 'swamp'
-    - `alpine` ← 'montane'
-- **Prose:** Kahikatea is endemic to the North, South, and Stewart Islands of New Zealand, and is the only member of the genus Dacrycarpus found in the country. It inhabits mostly lowland forests between 0–600 m above sea level, though may in rare cases reach montane areas. It used to dominate a swamp forest type that now exists almost only on the South Westland region of the South Island. Kahikatea prefers flooded or alluvial soils with low levels of drainage, which in Westland occur from post glaciation events.
+- **Prose:** It inhabits mostly lowland forests between 0–600 m above sea level, though may in rare cases reach montane areas. It used to dominate a swamp forest type that now exists almost only on the South Westland region of the South Island. Kahikatea prefers flooded or alluvial soils with low levels of drainage, which in Westland occur from post glaciation events.
 - **Credit:** Wikipedia, 'Dacrycarpus dacrydioides' (CC BY-SA 4.0) — units converted to metric
-
-### Karamū — `karamu`
-
-- **Labels:** coastal, forest, shrubland, alpine, urban
-    - `coastal` ← 'coast', 'coastal'
-    - `forest` ← 'forest', 'bush', 'forests'
-    - `shrubland` ← 'regenerating'
-    - `alpine` ← 'montane'
-    - `urban` ← 'urban', 'city'
-- **Prose:** Natural global range
-
-Karamū is endemic to New Zealand. However, it is gradually becoming naturalised in areas of the south-east coast of Australia such as Victoria and Tasmania and has been rated as a weed threat there.
-
-
-New Zealand range
-It is widely distributed across New Zealand in both the North and South Islands. On the Chatham Islands between Waitangi and Owenga, there is a small area where karamū has become naturalised. They can often be observed naturally in lowland forest. Judging from the distribution map on New Zealand Plant Observation, the distribution of karamū increases with the differentiation in lower altitude which means more karamū in the North Island.
-In Canterbury, karamū is found on Banks Peninsula in fragments of regenerating native bush and bush remnants. Additionally it is also found in forest margins and edges of the montane and lowland forests in the southern alps at the start of the Canterbury plains. Karamū can also be found in the urban environment of many Christchurch city green spaces, such as Riccarton Bush.
-
-
-Habitat preferences
-Karamū can be widely found near coastal, lowland and lower montane areas. It can also grow within shrub lands and expansive areas within dense trees such as lowland forest. However, the population decreases in lowland forest such as beech and kahikatea forests. Normally karamū is a hardy plant that can adapt to infertile soils, poorly drained and exposed lands. It can also grow in a large range of altitude varying from 0 to 1,200 meters under full sun to shady, windy and frosty circumstances.
-- **Credit:** Wikipedia, 'Coprosma robusta' (CC BY-SA 4.0) — units converted to metric
 
 ### Kiekie — `kiekie`
 
-- **Labels:** coastal, forest, wetland, alpine
+- **Labels:** coastal, forest, wetland
     - `coastal` ← 'coastal'
     - `forest` ← 'forests'
     - `wetland` ← 'River'
-    - `alpine` ← 'montane'
-- **Prose:** The plant is endemic to New Zealand. Freycinetia banksii is found in forests throughout the North Island, primarily in coastal and montane forests. In the South Island, kiekie is more common in higher rainfall areas, reaching its southern limit near the Clarence River in the east and in Fiordland in the west.
+- **Prose:** Freycinetia banksii is found in forests throughout the North Island, primarily in coastal and montane forests. In the South Island, kiekie is more common in higher rainfall areas, reaching its southern limit near the Clarence River in the east and in Fiordland in the west.
 - **Credit:** Wikipedia, 'Freycinetia banksii' (CC BY-SA 4.0)
 
-### Kānuka and mānuka — `kanuka-and-manuka`
+### Kānuka — `kanuka`
 
-- **Labels:** coastal, forest, shrubland, wetland, alpine
-    - `coastal` ← 'coastal', 'sand dunes'
+- **Labels:** coastal, forest, shrubland
+    - `coastal` ← 'coastal'
     - `forest` ← 'forest'
-    - `shrubland` ← 'Kānuka', 'mānuka', 'shrubland', 'scrub'
-    - `wetland` ← 'Rivers'
-    - `alpine` ← 'montane'
-- **Prose:** Kānuka (or mānuka, as it was mostly known until the 1930s) is only known from the north of the South Island. It is found north of the Buller and Wairau Rivers, and is most common near Nelson. It mostly grows in shrubland and forest in coastal and lowland areas, rarely in subalpine shrubland.
-Members of the kānuka complex are found throughout New Zealand occurring on the Three Kings Islands, Aotea (Great Barrier Island), from Te Paki (on the Aupōuri Peninsula) at the northern tip of the North Island to as far south as Dunedin and Central Otago in the South Island, and Stewart Island. Within this range kānuka is widespread ranging from coastal scrub and sand dunes (where it may form a distinct forest type) through lowland and montane forest, with one member of the complex reaching elevations of 2000 metres above sea level.
+    - `shrubland` ← 'shrubland'
+- **Prose:** It mostly grows in shrubland and forest in coastal and lowland areas, rarely in subalpine shrubland.
 - **Credit:** Wikipedia, 'Kunzea ericoides' (CC BY-SA 4.0)
 
 ### Landscaping black morel — `landscaping-black-morel`
@@ -1558,18 +2013,11 @@ Members of the kānuka complex are found throughout New Zealand occurring on the
     - `forest` ← 'forests', 'forest', 'canopy'
     - `shrubland` ← 'regenerating'
     - `alpine` ← 'subalpine'
-    - `urban` ← 'gardens', 'garden'
-- **Prose:** Pittosporum eugenioides is endemic to New Zealand. There are "about 200 trees and shrubs" in the genus located in neighbouring parts of the world. Places where the genus is found include Africa, Australia, some Pacific islands, southern and eastern Asia, and New Zealand.  
-A reason for this endemic occurrence is due to the isolation of New Zealand over a long period of time.
+    - `urban` ← 'garden'
+- **Prose:** Pittosporum eugenioides is found throughout the South Island and North Island in low lying forests. It is found in forest clearings and along forest margins up to 600 m above sea level.
 
-
-New Zealand range
-Pittosporum eugenioides is found throughout the South Island and North Island in low lying forests. It is found in forest clearings and along forest margins up to 600 m above sea level.
-
-
-Habitat preferences
 Pittosporum eugenioides can be found in a cooler, mature, lowland and subalpine forest climate zone throughout New Zealand. The species can be found in regenerating areas of forest, both young and old. It has proved to be a great plant for establishing a quick canopy.
-This species, along with other Pittosporum, are making their way in to the average household gardens. Nurseries and garden centres are stocking this native because it is suited to New Zealand conditions where it naturally grew many years ago.
+
 At home in the garden, P. eugenioides prefers a sunny to part shade position, does not mind the wind, and thrives in soil with good drainage.
 - **Credit:** Wikipedia, 'Pittosporum eugenioides' (CC BY-SA 4.0)
 
@@ -1583,51 +2031,17 @@ China is the largest producer worldwide (400,000 t annually), with Spain being t
 
 ### Lowland horopito — `lowland-horopito`
 
-- **Labels:** forest, alpine
-    - `forest` ← 'forests', 'forest'
-    - `alpine` ← 'montane'
-- **Prose:** Edaphy
-The lowland horopito favours cold, dark and damp locations, and are therefore found in higher frequencies throughout native New Zealand lowland forests. It is known that New Zealand forests are quite unique, where the actions of tectonism, volcanism, stratification, erosion, flooding and other naturally occurring processes all contribute to the production of soil development. We have harsh, however adaptable environments where soil is enriched with nutrients and provides a stable habitat for over 80% of New Zealand's native vascular plants. These native species are also usually endemic to New Zealand as it provides such a specified location where adaptations occur to fit these environments and nowhere else. Pseudowintera axillaris is a plant species that prefers shaded environments, meaning that this species must rely more so on soil and water quality to survive and reproduce, as a fundamental part of plant survival being sunlight is reduced. Photosynthesis can occur at low rates with the help of nutrient dense soil, water and shade tolerance. The most important macronutrients needed for plant growth is Nitrogen (N), Phosphorus (P) and Potassium (K). Nitrogen or protein rich soils are often found where manures, food scraps, decay and green leaves are present. This is why the Humus layer within Lower montane forests provides such a strong nutrient enriched base for shade loving plants.
-
-
-Predators, parasites, and diseases
-Pseudowintera species are not a threatened or endangered species as herbivore animals and insects do not appreciate the pungent, peppery taste given off the plant when eating. Both P. colorata and P. axillaris have this aromatic effect. There are however the common animal species that do provide hazards and disadvantages for New Zealand's native plant species. Possums for example are a huge pest to New Zealand as they eat and damage the forest at every point, taking mainly leaves, buds and fruits, as well as scratching tree bark and breaking small branchlets.
-A common invasive species found in New Zealand's lowland forests are the large shrub Epiphytes. An epiphyte is a plant that grows off another plant. Griselinia lucida is the most common of the large shrub epiphytes and is distributed throughout both the North and South Island. Although these epiphytes usually intend to exploit larger trees, their biggest threat to the lowland horopito is their large roots that overcome the water supply and soil nutrients. They exploit the habitat around them.
-A common parasite found in lowland to montane forests throughout the North Island is Dactylanthus taylorii (Pua Reinga – Flower of the Underworld). This species takes a liking toward smaller tree species, like the lowland horopito, and therefore poses a threat to Pseudowintera species, only in the North. The embryo root of a Dactylanthus seed exploits the slender root of its suitable host, by penetrating it, then gradually expands into a tube-like structure, eventually surrounding the host root.
-Due to P. axillaris preferring cold, damp locations, it is often in competition with species of fungi. As a result, the Winteraceae family has managed to adapt with an efficient built-in defence mechanism of a compound called Sesquiterpene Dialdehyde polygodial which has many biological purposes including anti-fungal properties.
-There are also many types of insects that use Pseudowintera as a host plant. Plant-SyNZ gives a reliability score: 0-10. 10 indicating a strong association to the Pseudowintera axillaris. The below species all received a 10
+- **Labels:** forest
+    - `forest` ← 'forests'
+- **Prose:** The lowland horopito favours cold, dark and damp locations, and are therefore found in higher frequencies throughout native New Zealand lowland forests.  Pseudowintera axillaris is a plant species that prefers shaded environments, meaning that this species must rely more so on soil and water quality to survive and reproduce, as a fundamental part of plant survival being sunlight is reduced.
 - **Credit:** Wikipedia, 'Pseudowintera axillaris' (CC BY-SA 4.0)
-
-### Medlar — `medlar`
-
-- **Labels:** coastal, forest, urban
-    - `coastal` ← 'coasts'
-    - `forest` ← 'woods'
-    - `urban` ← 'gardens'
-- **Prose:** From an extensive study of literature and plant specimens, Kazimierz Browicz concluded that the true homeland of M. germanica is only in the southeastern part of the Balkan peninsula, in Asia Minor, on the Caucasus, Crimea, northern Iran, and possibly also in Turkmenistan. It is also found in southeastern Europe, especially the Black Sea coasts of Bulgaria and Turkey. Fossil remains, however, have been reported from a wider area, including from Oriolo, Italy (c. 800 kya thousand years ago) and Burgtonna, Germany (130-115 thousand years ago), dating from the Pleistocene.
-The species requires temperate and sub-mediterranean climate conditions with warm summers and mild winters. Air temperatures of 18 to 20 °C are mentioned as favourable for growth, cold of as low as −20 °C is tolerated and late frosts hardly cause any damage. The wild form was observed in dry areas with annual precipitation of 700 mm and at altitudes from 0 to 1,100 m. The species grows in a wide range of soil types and prefers fresh, well-drained loamy soils with a pH that is between 6 and 8. It is found across southern Europe where it is generally rare. It is reported to be naturalised in some woods in southeast England, but is found in few gardens.
-- **Credit:** Wikipedia, 'Mespilus germanica' (CC BY-SA 4.0) — units converted to metric
-
-### Mingimingi — `mingimingi`
-
-- **Labels:** forest, shrubland, wetland, alpine
-    - `forest` ← 'forest'
-    - `shrubland` ← 'scrubland'
-    - `wetland` ← 'swamp', 'stream'
-    - `alpine` ← 'montane'
-- **Prose:** This species is common in forest, swamp, montane scrubland, along stream banks, and in stony places and cliffs. It is one of the most widely-distributed Coprosma species in New Zealand, ranging from Mangōnui in the North Island to as far south as Stewart Island, (var. propinqua) and in the Chatham Islands (var. martinii).
-- **Credit:** Wikipedia, 'Coprosma propinqua' (CC BY-SA 4.0)
 
 ### Monterey pine — `monterey-pine`
 
-- **Labels:** coastal, forest
+- **Labels:** coastal
     - `coastal` ← 'coast'
-    - `forest` ← 'forest', 'plantation'
-- **Prose:** In the United States, it is native to three very limited areas located in Santa Cruz, Monterey, and San Luis Obispo Counties of California.
-In Mexico, it is found on two islands in the Pacific Ocean, Guadalupe Island and Cedros Island. 
-On Guadalupe Island, located 280 km (150 nmi) off the mainland coast, the pines are found on the steep northern end of the island, at elevations of around 500 to 1,200 m, where they follow the ridgetops and steep slopes. Edward Palmer and Francescho Franceschi were the first to discover the pines on Guadalupe Island. When Franceschi visited in 1892, he noted that they extended all over the northern and northwestern part of the island, comprising a very thick forest, with some of the finest trees growing with the Guadalupe palm.
-On Cedros Island, the pines are more abundant, being found in far greater numbers partly due to the lack of feral goats. (Goats were exterminated on Guadalupe island by 2007.) They are found at lower elevations than on Guadalupe, at around 285 to 690 m, on the windward ridges and canyons of the north and central parts of the island. In both cases, the pines seem to be heavily dependent on locations with a high frequency of fog.
-In Australia, New Zealand, and Spain it is the leading introduced tree and in Argentina, Chile, Uruguay, Kenya, and South Africa it is a major plantation species. It is also an introduced tree on the world's most remote inhabited island, Tristan da Cunha.
+- **Prose:** On Guadalupe Island, located 280 km (150 nmi) off the mainland coast, the pines are found on the steep northern end of the island, at elevations of around 500 to 1,200 m, where they follow the ridgetops and steep slopes.
+ They are found at lower elevations than on Guadalupe, at around 285 to 690 m, on the windward ridges and canyons of the north and central parts of the island. In both cases, the pines seem to be heavily dependent on locations with a high frequency of fog.
 - **Credit:** Wikipedia, 'Pinus radiata' (CC BY-SA 4.0) — units converted to metric
 
 ### Mountain carrot — `mountain-carrot`
@@ -1642,55 +2056,25 @@ In Australia, New Zealand, and Spain it is the leading introduced tree and in Ar
 
 ### Mouse-ear hawkweed — `mouse-ear-hawkweed`
 
-- **Labels:** disturbed
-    - `disturbed` ← 'disturbed'
-- **Prose:** It is a known allelopathic plant, whose roots secrete several substances inhibiting root growth, including its own. It can be controlled through rotation with clover and grasses where possible.
-Recent research claims that Pilosella officinarum exhibits an atavism by the reemergence of sexual reproduction.
-The plant has been found as an invasive species in Sphagnum peatlands disturbed by peat extraction in southern Patagonia.
-- **Credit:** Wikipedia, 'Pilosella officinarum' (CC BY-SA 4.0)
-
-### Mower's mushroom — `mowers-mushroom`
-
-- **Labels:** grassland, disturbed
-    - `grassland` ← 'Lawns', 'playing fields', 'grazed', 'pasture', 'grass'
-    - `disturbed` ← 'verges'
-- **Prose:** Lawns, playing fields, verges and grazed pasture, especially where the grass has been fertilised. One of the commonest mushrooms of mown grass, often appearing in numbers a day or two after rain.
-- **Credit:** _yours, uncredited_
+- **Labels:** shrubland, grassland, wetland, alpine, disturbed
+    - `shrubland` ← 'shrubland'
+    - `grassland` ← 'grasslands', 'lawns', 'pasture'
+    - `wetland` ← 'river', 'riverbeds'
+    - `alpine` ← 'Tussock', 'subalpine', 'herbfield'
+    - `disturbed` ← 'waste land', 'roadsides'
+- **Prose:** Tussock grasslands, lawns, waste land, river terraces, roadsides, rock outcrops, pasture.
+In New Zealand: lowland, montane and subalpine, on ground of low to moderate fertility, in shrubland, tussockland, herbfield and riverbeds and on cliffs and bluffs (NZPCN, restated).
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0); New Zealand Plant Conservation Network (restated)
 
 ### Mānuka — `manuka`
 
-- **Labels:** forest, shrubland, disturbed
-    - `forest` ← 'bush'
-    - `shrubland` ← 'Mānuka', 'manuka'
+- **Labels:** shrubland, disturbed
+    - `shrubland` ← 'Mānuka'
     - `disturbed` ← 'disturbed'
-- **Prose:** Fire ecology
-Mānuka is one of the few New Zealand native species which are adapted to fire, able to respond to fire by opening seed pods and dispersing in recently disturbed ground.
+- **Prose:** Mānuka is one of the few New Zealand native species which are adapted to fire, able to respond to fire by opening seed pods and dispersing in recently disturbed ground.
 
-
-Native bush regeneration
-Mānuka can quickly colonise areas of disturbed land, and can create environments where other native species can establish more successfully. Because of this, mānuka is often utilised by conservation projects in New Zealand.
-
-
-Pests and diseases
-The adult mānuka beetle (Pyronota festiva) and its larvae feed on Leptospermum scoparium in New Zealand. The scale insect, Eriococcus orariensis, is a sap-sucking insect that feeds on L. scoparium.
-
-
-Pollinators
-Pollinators that visit Leptospermum scoparium include Melangyna novaezelandiae, Hylaeus, and honeybees.
-
-
-Continued evolution
-Leptospermum scoparium is in the process of evolutionary differentiation as a result of its isolation from fellow members of the Leptospermum genus. New studies demonstrate a loss of lignotubers among populations of Leptospermum scoparium located in relatively fire-free zones of New Zealand's South Island, while Australian and Tasmanian populations retain their lignotubers along with stronger manifestations of serotiny. Australian populations of Leptospermum scoparium are shown to be chemically distinct from their New Zealand counterparts, with significantly higher levels of cinteole and monoterpines. Chemotypical variations also exist between different populations within New Zealand, leading some to suggest that L. scoparium be divided into three subspecies: those with high pinenes, high triketones, and high sesquiterpenes. Recently, however, new research suggests that plant-to-plant variation far outstrips the variation seen between geographically isolated manuka sites, at least with regard to nectar chemistry.
+Mānuka can quickly colonise areas of disturbed land, and can create environments where other native species can establish more successfully.
 - **Credit:** Wikipedia, 'Mānuka' (CC BY-SA 4.0)
-
-### Native ice plant — `native-ice-plant`
-
-- **Labels:** coastal
-    - `coastal` ← 'coast'
-- **Prose:** Disphyma australe is endemic to New Zealand, that is, it occurs naturally only in New Zealand. It now also grows on a few Australian islands, such as Tasmania, Norfolk Island and Lord Howe Island.
-The two subspecies of Disphyma australe, D. australe australe and D. australe stricticaule, are common in different parts of New Zealand.
-D. australe stricticaule is only found on Kermadec Islands, whereas D. australe australe is found on both the North and South Island throughout the coast. It also occurs on some smaller New Zealand islands, like Stewart Island, Chatham Islands and Solander Islands. Additionally, it coexists with D. australe stricticaule on the Kermadec Islands.
-- **Credit:** Wikipedia, 'Disphyma australe' (CC BY-SA 4.0)
 
 ### Nipplewort — `nipplewort`
 
@@ -1698,8 +2082,7 @@ D. australe stricticaule is only found on Kermadec Islands, whereas D. australe 
     - `forest` ← 'woods', 'woodland', 'forests'
     - `shrubland` ← 'hedges', 'hedgerows'
     - `disturbed` ← 'roadsides', 'wasteland'
-- **Prose:** Away from its native area, Lapsana communis is common throughout the British Isles, naturalised, and sometimes considered an invasive species, in many areas around the world, including Australia, Chile, New Zealand, Greenland, and most of Canada and the United States.
-Lapsana communis is found growing in arable fields, woods, hedges, roadsides, wasteland, hedgerows, woodland margins and clear-felled areas in forests.
+- **Prose:** Lapsana communis is found growing in arable fields, woods, hedges, roadsides, wasteland, hedgerows, woodland margins and clear-felled areas in forests.
 - **Credit:** Wikipedia, 'Lapsana communis' (CC BY-SA 4.0)
 
 ### Ox-eye daisy — `ox-eye-daisy`
@@ -1709,7 +2092,7 @@ Lapsana communis is found growing in arable fields, woods, hedges, roadsides, wa
     - `shrubland` ← 'scrub'
     - `grassland` ← 'grassland', 'meadows', 'pastures'
     - `disturbed` ← 'disturbed', 'roadsides'
-- **Prose:** The species is native to Europe, and to Turkey and Georgia in Western Asia. It is a typical grassland perennial wildflower, growing in a variety of plant communities including meadows and fields, under scrub and open-canopy forests, and in disturbed areas. The species is widely naturalised in many parts of the world, including North America, and is considered to be an invasive species in more than forty countries. It grows in temperate regions where average annual rainfall exceeds 750 mm, and often where soils are heavy and damp. It is often a weed of degraded pastures and roadsides.
+- **Prose:** It is a typical grassland perennial wildflower, growing in a variety of plant communities including meadows and fields, under scrub and open-canopy forests, and in disturbed areas.  It grows in temperate regions where average annual rainfall exceeds 750 mm, and often where soils are heavy and damp. It is often a weed of degraded pastures and roadsides.
 - **Credit:** Wikipedia, 'Leucanthemum vulgare' (CC BY-SA 4.0) — units converted to metric
 
 ### Peppery bolete — `peppery-bolete`
@@ -1723,39 +2106,18 @@ Fruit bodies can be parasitised by the mould Sepedonium chalcipori, a highly spe
 Initially thought to be ectomycorrhizal (symbiotic with plants, like most Boletaceae), C. piperatus has not been confirmed as such in multiple synthesis studies or in isotope fractionation studies. There is some speculation that C. piperatus is a mycoparasite on the mycorrhiza of A. muscaria. In New Zealand, A. muscaria is thought to have been introduced with Pinus radiata, and has made a host jump to the native Nothofagus trees; C. piperatus has since been observed fruiting near Nothofagus trees with A. muscaria associations.  Buchwaldoboletus lignicola is in the same clade as C. piperatus and is thought to be a parasite as well, strengthening the evidence that C. piperatus and its relatives may be mycoparasites.
 - **Credit:** Wikipedia, 'Chalciporus piperatus' (CC BY-SA 4.0)
 
-### Perennial sow thistle — `perennial-sow-thistle`
-
-- **Labels:** coastal, grassland, wetland, disturbed
-    - `coastal` ← 'coast'
-    - `grassland` ← 'pastures'
-    - `wetland` ← 'lakes', 'rivers'
-    - `disturbed` ← 'roadsides'
-- **Prose:** Sonchus arvensis is native to Eurasia, where it is widespread across most of the continent. It has also become naturalized in many other regions, and is considered an invasive noxious weed in some places, such as North America (including Prince Edward Island), Russia, New Zealand, and Australia.
-It grows in areas such as pastures, roadsides, bushlands and the shorelines of lakes, rivers and sea coast.
-A study conducted in 2003 has shown that with future global atmospheric carbon levels, S. arvensis shows increased growth with increased atmospheric carbon which could potentially expand its range and outcompete native species.
-- **Credit:** Wikipedia, 'Sonchus arvensis' (CC BY-SA 4.0)
-
-### Perennial wall-rocket — `perennial-wall-rocket`
-
-- **Labels:** coastal
-    - `coastal` ← 'shores'
-- **Prose:** It is native to parts of Europe, reaching in the east to Turkey and Syria. It is extinct from Morocco and Algeria, but has been introduced in a number of regions: Cyprus, the Caucasus, the Levant, Yemen, Japan, Australia, New Zealand, New Caledonia, Canada (Ontario, Quebec and Nova Scotia), the United States, Costa Rica, Argentina and Uruguay.
-
-Within Europe, its native range covers much of France, the Low Countries, Italy, the Pannonian Basin and the western Balkans up to Macedonia, with generally more thinly scattered populations in northern Greece, Bulgaria, Romania, Crimea, Sicilly, Malta, Sardinia, Corsica and parts of Spain. It has extensively been introduced further north from its native range. In the British Isles the plant is an archaeophyte, with industrial regions and ports still at the centre of the distribution. It is established especially in parts of England and Wales (some believing the plant could even be native to the south-east). Its range has been expanding to the west since the 19th century, but it is still very rare in Scotland and Ireland. It has also been introduced into much of Central Europe: throughout Switzerland, Austria, Germany and Poland, with more scattered instances on the southern shores of Norway and Sweden (where it is found in fewer areas that in the recent past), the Baltic States, Belarus and a few locations further east in Ukraine and European Russia. It has also been introduced on Menorca and near Lisbon in Portugal.
-- **Credit:** Wikipedia, 'Diplotaxis tenuifolia' (CC BY-SA 4.0)
-
 ### Pineappleweed — `pineappleweed`
 
 - **Labels:** disturbed
     - `disturbed` ← 'disturbed', 'roadsides'
-- **Prose:** The plant thrives in disturbed areas, especially those with poor, compacted soil. It often blooms along footpaths and roadsides in spring and early summer. It occurs across Canada and the United States, especially as a common weed in Alaska, the Yukon, and the Northwest Territories.  However, there is disagreement over whether it originated in North America or in Siberia.  This species has been introduced to Europe, Asia, Iceland, South America, and New Zealand and is now widespread and naturalized in Britain, where it has become one of the fastest-spreading plants of the 20th century.
+- **Prose:** The plant thrives in disturbed areas, especially those with poor, compacted soil. It often blooms along footpaths and roadsides in spring and early summer.
 - **Credit:** Wikipedia, 'Matricaria discoidea' (CC BY-SA 4.0)
 
 ### Pink jasmine — `pink-jasmine`
 
 - **Labels:** forest
     - `forest` ← 'forests'
-- **Prose:** The plant is native to the mountainous areas of Southwest China, particularly Guizhou, Sichuan and Yunnan, as well as Myanmar. It lives in valleys and forests at elevations between 1,400 and 3,000 m.
+- **Prose:** It lives in valleys and forests at elevations between 1,400 and 3,000 m.
 - **Credit:** Wikipedia, 'Jasminum polyanthum' (CC BY-SA 4.0) — units converted to metric
 
 ### Portuguese angelica — `portuguese-angelica`
@@ -1771,7 +2133,7 @@ Within Europe, its native range covers much of France, the Low Countries, Italy,
     - `coastal` ← 'coastal'
     - `forest` ← 'forest'
     - `shrubland` ← 'shrubland'
-- **Prose:** Leptecophylla juniperina is native to New Zealand and Victoria and Tasmania. Subspecies Juniperina is widespread in forest and shrubland in New Zealand and in lowland areas of eastern, north-western and western areas of Tasmania. Subspecies oxycedrus is restricted to exposed, rocky coastal regions of southern and western Tasmania, Bass Strait Islands and southern Victoria and subsp. parvifolia is common at altitudes above 600 m in central and eastern parts of Tasmania.
+- **Prose:** Subspecies Juniperina is widespread in forest and shrubland in New Zealand and in lowland areas of eastern, north-western and western areas of Tasmania. Subspecies oxycedrus is restricted to exposed, rocky coastal regions of southern and western Tasmania, Bass Strait Islands and southern Victoria and subsp. parvifolia is common at altitudes above 600 m in central and eastern parts of Tasmania.
 - **Credit:** Wikipedia, 'Leptecophylla juniperina' (CC BY-SA 4.0) — units converted to metric
 
 ### Purslane — `purslane`
@@ -1791,22 +2153,12 @@ Within Europe, its native range covers much of France, the Low Countries, Italy,
 
 ### Pōhutukawa — `pohutukawa`
 
-- **Labels:** coastal, forest, wetland
-    - `coastal` ← 'coastal', 'shores'
-    - `forest` ← 'forests'
+- **Labels:** coastal, wetland
+    - `coastal` ← 'shores'
     - `wetland` ← 'lakes'
-- **Prose:** The pōhutukawa's natural range is the coastal regions of the North Island of New Zealand, north of a line stretching from New Plymouth (39° S) to Gisborne (38° S), where it once formed a continuous coastal fringe. By the 1990s, pastoral farming and introduced pests had reduced pōhutukawa forests by over 90%. It also occurs naturally on the shores of lakes in the Rotorua area and in Abel Tasman National Park at the top of South Island.
+- **Prose:** It also occurs naturally on the shores of lakes in the Rotorua area and in Abel Tasman National Park at the top of South Island.
 The tree is renowned as a cliff-dweller, able to maintain a hold in precarious, near-vertical situations. Like its Hawaiian relative the ʻōhiʻa lehua (M. polymorpha), the pōhutukawa has been shown to be efficient in the colonisation of lava plains – notably on Rangitoto, a volcanic island in the Hauraki Gulf.
 - **Credit:** Wikipedia, 'Pōhutukawa' (CC BY-SA 4.0)
-
-### Red raspberry — `red-raspberry`
-
-- **Labels:** forest, alpine
-    - `forest` ← 'forests', 'under a tree', 'canopy'
-    - `alpine` ← 'mountains'
-- **Prose:** The species is native to Europe and northern Asia and commonly cultivated in other temperate regions.
-As a wild plant, R. idaeus typically grows in forests, forming open stands under a tree canopy, and denser stands in clearings. In the south of its range (southern Europe and central Asia), it occurs only at high altitudes in mountains.
-- **Credit:** Wikipedia, 'Rubus idaeus' (CC BY-SA 4.0)
 
 ### Rengarenga — `rengarenga`
 
@@ -1821,97 +2173,27 @@ As a wild plant, R. idaeus typically grows in forests, forming open stands under
     - `coastal` ← 'coastal'
     - `forest` ← 'forests'
 - **Prose:** A. lanceolatum is found in the southeast of Australia as well as on Samoa, Fiji and on the North Island of New Zealand and in many of the coastal forests of South Island of New Zealand.
-It is the host species for the New Zealand endemic moth Batrachedra litterata.
 - **Credit:** Wikipedia, 'Austroblechnum lanceolatum' (CC BY-SA 4.0)
-
-### Rimu — `rimu`
-
-- **Labels:** forest
-    - `forest` ← 'on the tree', 'Forest'
-- **Prose:** Dacrydium cupressinum's seeds are dispersed by gravity and by fruit-eating animals (frugivores). These seeds are well-adapted to be dispersed by birds; primary dispersers of the seeds include bellbirds, kererū, and the tūī. Brown creepers, fantails, grey warblers, riflemen, silvereyes, and tomtits have been observed in association with the tree. Other birds, such as white-eyes and house sparrows, feed on the tree's receptacles (fleshy fruit-like structures). The tree is known to be browsed by deer and possums, which browse the seedlings and consume the foliage and branchlets, respectively. Excrements of the wētā are frequently found in seed traps, which could indicate that wētā consume the seeds of the tree. The seeds have been recorded being destroyed by chaffinches, mice, rats, and wētā.
-Dacrydium cupressinum's fruits are an important food and vitamin resource for the native flightless parrot, the kākāpō, which feeds on the fruits. The fruits are high in calcium and vitamins, and the kākāpō may have adapted to survive prolonged periods of limited access to these resources. The kākāpō will only mate during years of heavy fruiting.
-Several species of insects have been recorded as feeding on the stems and leaves, including: stick insects, weevils, Pyrgotis species, and looper caterpillars, from Pseudocoremia fenerata. Other wood-boring insects on D. cupressinum include: Ambeodontus tristis, Calliprason pallidus, Prionoplus reticularis, Rhynchodes ursus, and Platypus species. The tree also serves as a host for two beetle species, Euderia squamosa and Sommatidia antarctica, both of which lay their eggs and feed on the tree. Despite these two beetles sharing similar life cycles, certain distinguishing features allow for the differentiation between their infestations and association with the tree. The larvae of Otiorhynchus sulcatus, an introduced species of weevil, can cause damage to seedling's roots in nursery beds. D. cupressinum is very sensitive to fire and is one of the most flammable New Zealand tree species. It is likely the tree has not evolved to be resistant against fire or develop particular traits against flammability, as fire is uncommon in the communities where the tree grows. D. cupressinum is a very wind-resistant tree, particularly when growing on deep soils. However, if damaged, the trees will not regrow by producing coppice shoots, which is a tree regrowth method by producing new shoots.
-
-
-Epiphytes
-Dacrydium cupressinum serves as a host for numerous vascular epiphytes, which are plants that grow on other plants. Metrosideros robusta is perhaps one of the most prominent epiphyte species in the North Island and the northern South Island, in which it takes root in the tree, extending its roots downward to reach the ground. Over time, M. robusta can eventually replace its host as the original tree due to old age or suppression. Other common species that grow as epiphytes on the tree includes Astelia solandri, Freycinetia banksii, and Griselinia lucida. The New Zealand naturalist Walter Oliver conducted a study in 1930 of epiphyte and hemi-epiphyte relationships with D. cupressinum in Gollans Valley, near Wellington. Oliver documented eleven and twelve species in a sunny habitat and a shady habitat, respectively, as epiphytes on the tree. Oliver also mentioned that Nothopanax arboreum, a hemi-epiphyte species, was common.
-
-
-Fungi
-
-The New Zealand mycologist, G. H. Cunningham, recorded thirty-eight species of Thelephoraceae and twenty-seven species of Polyporaceae as saprophytes on D. cupressinum. The most common fungi associated with the tree, according to a 2012 study in the New Zealand Journal of Botany, are Armillaria novae-zelandiae and Ganoderma applanatum. The fungi species that were recorded to a lesser extent included: Hypochnicium polonense, Rigidoporus concrescens, and Irpex species. Armillaria mellea is the only species of fungus known to be parasitic to the tree. A 2009 study of the fungal endophytes on various Podocarpaceae species revealed that D. cupressinum had the highest diversity of endophytes among the studied species; several fungi genera mentioned as hosts on D. cupressinum were: Colletotrichum, Cylindrobasidium, Ophiognomonia, Pezicula, Phomopsis, Phyllosticta, and Xylaria. The mycorrhizal fungi nodules of Dacrydium species are small, at about 0.5–0.7 mm in diameter.
-
-
-Reproduction
-Dacrydium cupressinum is pollinated by the wind. D. cupressinum's seeds typically remain dormant for at least 30 days, but sometimes much longer prior to germination. Beveridge (1964) estimates that a mature specimen would possess about 18 kg of ripe seeds and receptacles or 1.8 kg of clean sound seeds, ultimately producing about 200,000 seeds. The seeds ripen between March and May, about 15–18 months following pollination and are later dispersed for over 1–2 months, although infertile seeds may continue to be released for a significantly longer duration. D. cupressinum's seedlings will not establish themselves where there is moderate to severe root competition and a moderately dense canopy because of low light intensities. The tree prefers sites with partial shade. 
-Dacrydium cupressinum is known for exhibiting mast seeding, which is the synchronised periodicity of seed production. In the Pureora Forest and the Wanganui Forest, in the North Island and the South Island, respectively, seedfall data show clear yearly fluctuations in seed production in studied specimens. A 1988 study proposes that a combination of low seed production and cool temperatures two years before, followed by warm temperatures during seedfall are necessary, but not solely responsible for triggering a mast year in the tree. The relationship between seed production in one year and conditions from two years earlier also plays an important role. Canham et al. 2014 analysed D. cupressinum specimens growing in less fertile marine terrace sites had a higher seed production rate in comparison to specimens that grew on more fertile alluvial soils. Researchers suggested that the tree has adapted to seed production in less fertile soils rather than being displaced by other species.
-The growth rates of D. cupressinum can vary significantly, especially in the early growth stages. Height growth often occurs at the expense of diameter growth, with saplings limited to 10 cm in diameter and reaching up to 12 m tall. In open conditions, annual increments can be 15–30 cm in height and 1–3 cm in diameter, but growth rate slows in shaded forest environments, with seedlings growing 1–2 cm per year.
-- **Credit:** Wikipedia, 'Dacrydium cupressinum' (CC BY-SA 4.0) — units converted to metric
-
-### Roman chamomile — `roman-chamomile`
-
-- **Labels:** coastal, forest
-    - `coastal` ← 'coastline'
-    - `forest` ← 'Forest'
-- **Prose:** Roman chamomile is native to Western Europe and the northwestern Maghreb, but has been introduced to a variety of areas outside its native range, where it has become naturalised. Its native range includes the United Kingdom, Ireland, France, Spain, Portugal, Morocco, Algeria and the Azores. In Great Britain, it grows wild in Southern England and portions of Wales – primarily in Cornwall, Dartmoor, the New Forest and the Welsh coastline – with populations found north of Derbyshire considered to be naturalised.
-- **Credit:** Wikipedia, 'Chamaemelum nobile' (CC BY-SA 4.0)
-
-### Rose-scented geranium — `rose-scented-geranium`
-
-- **Labels:** coastal
-    - `coastal` ← 'coast', 'beach'
-- **Prose:** It is found in fynbos along the coast of South Africa, from Lamberts Bay in the Western Cape east to Kwazulu-Natal. Its habitat is usually beach sand or other well-drained sandy soils. It is a popular and convenient ornamental plant and it also is one of the species of Pelargonium cultivated as a source of essential oils.
-- **Credit:** Wikipedia, 'Pelargonium capitatum' (CC BY-SA 4.0)
 
 ### Rowan tree — `rowan-tree`
 
 - **Labels:** forest, alpine
     - `forest` ← 'forest', 'woodland', 'forests', 'on hollow trees'
     - `alpine` ← 'mountains', 'tree line'
-- **Prose:** Sorbus aucuparia is found in five subspecies:
-
-Sorbus aucuparia subsp. aucuparia: found in most of the species' range, less in the South
-Sorbus aucuparia subsp. fenenkiana (Georgiev & Stoj.): has thin, sparsely hairy leaflets and depressed-globose fruit, restricted to Bulgaria
-Sorbus aucuparia subsp. glabrata (Wimm. & Grab.): less hairy, found in Northern Europe and Central European mountains
-Sorbus aucuparia subsp. praemorsa (Guss.): has hairy leaflets and ovoid fruit, found in Southern Italy, Sicily, and Corsica
-Sorbus aucuparia subsp. sibirica (Hedl.): nearly hairless, found in North Eastern Russia
-It can be found in almost all of Europe and the Caucasus up to Northern Russia and Siberia, but it is not native to Southern Spain, Southern Greece, Sardinia, the Balearic Islands, the Azores, and the Faroe Islands. The species was introduced as an ornamental species in North America. It is widespread from plains to mountains up to the tree line where it grows as the only deciduous tree species among krummholz. In the Alps it grows at elevations of up to 2,000 m. S. aucuparia appears north of the boreal forest at the arctic tree line; in Norway, it is found up to the 71st parallel north. It has naturalised in America from Washington to Alaska and eastward in Canada and the northeast of the US very successfully.
+- **Prose:** It is widespread from plains to mountains up to the tree line where it grows as the only deciduous tree species among krummholz. In the Alps it grows at elevations of up to 2,000 m. S. aucuparia appears north of the boreal forest at the arctic tree line; in Norway, it is found up to the 71st parallel north.
 S. aucuparia is an undemanding species and can withstand shade. It is frost hardy and can tolerate winter dryness and a brief growing season. The plant is also resistant to air pollution, wind, and snow pressure. It mostly grows on soil that is moderately dry to moderately damp, acidic, low on nutrients, sandy, and loose. It often grows in stony soil or clay soil, but also sandy soil or wet peat. The plant grows best on fresh, loose, and fertile soil, prefers average humidity, and does not tolerate saline soil or waterlogging. It can be found in light woodland of all kinds and as a pioneer species over fallen dead trees or in clearcuttings, and at the edge of forests or at the sides of roads. The seeds germinate easily, so the plant may appear on inaccessible rock, ruins, branch forks, or on hollow trees.
-The tallest S. aucuparia in the United Kingdom stands in the Chiltern Hills in South East England. This exceptional specimen is 28 m tall and has a trunk diameter of 56 cm. The stoutest is in the Scottish Highlands near Kingussie, with a girth of 4.31 m (approximately 1.37 m diameter); another near Stapleton in Herefordshire is almost as stout at 4.29 m girth. In Germany, an unusually large specimen is located near Wendisch Waren, a village in Mecklenburg-Vorpommern. This tree stands at more than 15 m tall, is around 100 years old, and has a diameter of 70 cm. The tallest known specimen in Ireland is an 18 m tall specimen at Glenstal Abbey, County Limerick.
 - **Credit:** Wikipedia, 'Sorbus aucuparia' (CC BY-SA 4.0) — units converted to metric
 
 ### Samphire — `samphire`
 
 - **Labels:** coastal
-    - `coastal` ← 'coast', 'coastal', 'coasts', 'salt marshes', 'beaches'
-- **Prose:** Natural global habitat
-Salicornia quinqueflora is not endemic to New Zealand. In New Zealand it is found mostly on the shoreline in regions throughout the North Island. In the South Island S. quinqueflora is widespread on the east coast, but isn't found on the west coast. In Australia it occurs on the south west and south east areas, and also in parts of the Nullarbor Plain, and part of the east coast of Cape York Peninsula.
-
-
-New Zealand range
-In New Zealand, the species is found in mainly coastal areas. It can be found on all islands of New Zealand – including Stewart and the Chatham Islands. Glasswort grows on both coasts of the North Island and down the east coast of the South Island. Interestingly, it is also found in Central Otago, in two locations, roughly 70 km inland.
-
-
-Habitat preferences
+    - `coastal` ← 'coastal', 'salt marshes', 'beaches', 'coasts'
+- **Prose:** In New Zealand it is found mostly on the shoreline in regions throughout the North Island.
+In New Zealand, the species is found in mainly coastal areas.
 The preferred habitat of Salicornia quinqueflora is anywhere where salty water tends to be – so along coastlines, salt marshes, sandy beaches and rocky areas. It grows below and above the high tide mark along the coasts.
-
-
-Soil preferences
-The species is a halophyte, so it prefers soils with high salinities. This is the main factor determining its success. It is typically found in areas with high moisture levels because of the high salinity of the soils near coastlines; however, glassworts are tolerable to a wide range of soil moistures. They can handle areas with completely dry soil and soils that are completely water logged. Salicornia quinqueflora has a healthy population in Otago, where it is extremely dry and arid. It also has a large population on the extremely wet coastlines of Nelson.
-
-
-Environmental preferences
-Like other halophytes, Salicornia quinqueflora can handle a wide range of temperatures and are evolved to handle sudden environmental changes. Producing offspring through clonal reproduction allows them to survive in conditions that are less than ideal. The preferred climate type is warm-temperate and subtropical regions, where they can easily reproduce through seeds to keep populations genetically stable.
+The species is a halophyte, so it prefers soils with high salinities. This is the main factor determining its success. It is typically found in areas with high moisture levels because of the high salinity of the soils near coastlines; however, glassworts are tolerable to a wide range of soil moistures. They can handle areas with completely dry soil and soils that are completely water logged.
+Like other halophytes, Salicornia quinqueflora can handle a wide range of temperatures and are evolved to handle sudden environmental changes. The preferred climate type is warm-temperate and subtropical regions, where they can easily reproduce through seeds to keep populations genetically stable.
 - **Credit:** Wikipedia, 'Salicornia quinqueflora' (CC BY-SA 4.0)
-
-### Scotch broom — `scotch-broom`
-
-- **Labels:** forest, grassland
-    - `forest` ← 'woodland'
-    - `grassland` ← 'grassland'
-- **Prose:** Cytisus scoparius is native to western and central Europe, being common in Great Britain and Republic of Ireland. It is found in sunny sites, usually on dry, sandy soils at low altitudes, tolerating very acidic soil conditions.
-Outside of its native range, it is an ecologically destructive colonizing invasive species in grassland, shrub and woodland, and other habitats.
-- **Credit:** Wikipedia, 'Cytisus scoparius' (CC BY-SA 4.0)
 
 ### Scrambling fuchsia — `scrambling-fuchsia`
 
@@ -1927,45 +2209,31 @@ Fuchsia perscandens's preferred habitats are river terraces and remnants of whit
 ### Sea campion — `sea-campion`
 
 - **Labels:** coastal
-    - `coastal` ← 'coasts', 'coast', 'shores', 'coastal', 'dunes', 'beaches'
-- **Prose:** Silene uniflora 
-Silene uniflora is a maritime species growing in many European countries, but almost entirely along the coasts bordering the Atlantic Ocean and Baltic Sea. In northern Europe, it is native to the coasts of Scandinavia including Finland, Denmark, Sweden, Norway, and Russia as far east as the Kola Peninsula. It is also listed as native to Poland by POWO. It is not found in, or native to, the Baltic States or Russia on the Baltic Sea. In western Europe, it is native to the west coast of France, the northern coast of Spain, and a limited area in northern Portugal. It grows all around the shores of Ireland and the United Kingdom, and is also found in some mountainous areas near fresh water, though only rarely. Further out in the Atlantic Ocean, it is native to the Azores, the Canary Islands, Madeira, and Iceland.
-It has been introduced to Germany, Argentina, and New Zealand.
-It is one of the long-lived perennial plant species that establish on coastal shingle that has been stable for between five and twenty years. It also grows in the dunes and at the strandline on beaches.
+    - `coastal` ← 'coastal', 'dunes', 'beaches'
+- **Prose:** It is one of the long-lived perennial plant species that establish on coastal shingle that has been stable for between five and twenty years. It also grows in the dunes and at the strandline on beaches.
 - **Credit:** Wikipedia, 'Silene uniflora' (CC BY-SA 4.0)
 
 ### Sea grapes — `sea-grapes`
 
 - **Labels:** coastal
     - `coastal` ← 'tropical seas'
-- **Prose:** C. racemosa is widely distributed in shallow temperate and tropical seas. In 1926 a new form of the alga was reported off Tunisia, possibly an immigrant from the Red Sea, and this later spread to much of the eastern Mediterranean Sea. In 1990, a new, larger form with two vertical rows of branches on opposite sides of the stem was found off Libya. It spread widely, invading much of the Mediterranean Sea and becoming more widespread than the invasive species, Caulerpa taxifolia. It is known as var. cylindracea and may have originated from Australian waters. In America C. racemosa is found in shallow water in the Caribbean Sea, around Bermuda and along the eastern seaboard of America from Florida to Brazil.
+- **Prose:** C. racemosa is widely distributed in shallow temperate and tropical seas.
 - **Credit:** Wikipedia, 'Caulerpa racemosa' (CC BY-SA 4.0)
-
-### Sea rimu — `sea-rimu`
-
-- **Labels:** coastal
-    - `coastal` ← 'coast'
-- **Prose:** This species can be found along the southern North Island, the South Island, Chatham Island, Stewart Island, Snares Island of New Zealand. It is also found along the coast in a large area extending from near Karratha in the northern Pilbara region to east of Esperance in the Goldfields-Esperance region of Western Australia.
-- **Credit:** Wikipedia, 'Caulerpa brownii' (CC BY-SA 4.0)
 
 ### Self-heal — `self-heal`
 
-- **Labels:** forest, grassland, urban, disturbed
+- **Labels:** forest, urban, disturbed
     - `forest` ← 'woodland'
-    - `grassland` ← 'lawns'
     - `urban` ← 'gardens'
     - `disturbed` ← 'roadsides'
-- **Prose:** Prunella vulgaris is a perennial herb native in Europe, Asia, Africa, and North America, and is common in most temperate climates. 
-Prunella vulgaris can spread aggressively through creeping stolons and roots, forming dense mats that can displace other plants. Because of its ability to outcompete other desirable vegetation, it can become weedy in lawns and damp shady locations. Prunella vulgaris is listed in Weeds of the Northeast and Weeds of the Great Plains. It was introduced to many countries in the 1800s and has become invasive in the Pacific Islands, including Australia, New Zealand, and Hawaii. In Ireland, it is generally abundant. It also grows in Kashmir where it is known as kalyuth and used as a decoction to wash and bathe in order to relieve muscle pain.
-It grows on roadsides, gardens, waste-places, and woodland edges, and usually in basic and neutral soils.  
-The conspicuous flowers are a favorite of bumblebees and butterflies.  Prunella vulgaris is a host species for the larvae of the  Clouded sulphur butterfly, Colias philodice.
+- **Prose:** It grows on roadsides, gardens, waste-places, and woodland edges, and usually in basic and neutral soils.
 - **Credit:** Wikipedia, 'Prunella vulgaris' (CC BY-SA 4.0)
 
 ### Shaggy inkcap — `shaggy-inkcap`
 
 - **Labels:** grassland
     - `grassland` ← 'grasslands', 'meadows'
-- **Prose:** It grows in groups in grasslands and meadows in North America and Europe, from June through to November in the United Kingdom. It appears to have been introduced to Australia, New Zealand, and Iceland.
+- **Prose:** It grows in groups in grasslands and meadows in North America and Europe, from June through to November in the United Kingdom.
 - **Credit:** Wikipedia, 'Coprinus comatus' (CC BY-SA 4.0)
 
 ### Shepherd's purse — `shepherds-purse`
@@ -1974,36 +2242,8 @@ The conspicuous flowers are a favorite of bumblebees and butterflies.  Prunella 
     - `grassland` ← 'meadows'
     - `urban` ← 'cultivated ground'
     - `disturbed` ← 'waysides'
-- **Prose:** It is native to eastern Europe and Asia minor, but is naturalized and considered a common weed in many parts of the world, especially in colder climates, including the British Isles (where it is regarded as an archaeophyte), North America, and China, but also in the Mediterranean and North Africa. C. bursa-pastoris is the second-most prolific wild plant in the world and is common on cultivated ground and waysides and meadows.
+- **Prose:** C. bursa-pastoris is the second-most prolific wild plant in the world and is common on cultivated ground and waysides and meadows.
 - **Credit:** Wikipedia, 'Capsella bursa-pastoris' (CC BY-SA 4.0)
-
-### Shining Karamū — `shining-karamu`
-
-- **Labels:** coastal, forest, alpine
-    - `coastal` ← 'coastal'
-    - `forest` ← 'forests'
-    - `alpine` ← 'montane'
-- **Prose:** Natural range
-C. lucida is endemic to New Zealand.
-
-
-New Zealand range
-C. lucida is a plant that lives in warm, temperate regions. Within New Zealand, C. lucida is typically found in low coastal and montane forests. C. lucida is found throughout both mainland islands of New Zealand and some smaller surrounding islands, extending as far south as Big South Cape Island. The latitudinal range of C. lucida in New Zealand is between 34.42°S and 46.75°S. However, C. lucida is rare on Stewart Island, where deer populations have drastically reduced the population. Smale et al. also noted that C. lucida can be found growing in geothermal soils of the Taupō Volcanic Zone.
-- **Credit:** Wikipedia, 'Coprosma lucida' (CC BY-SA 4.0)
-
-### Slender oat — `slender-wild-oat`
-
-- **Labels:** grassland
-    - `grassland` ← 'grass'
-- **Prose:** A. barbata is native to central Asia (as far east as Pakistan) and the Mediterranean Basin. As an introduced species it also occurs in other Mediterranean-like habitats of New Zealand, Australia, South Africa, Argentina, Chile, Brazil, and Uruguay. In Europe it has been reported in Finland, France, Germany, Norway, Bulgaria, and Austria. In North America it is an introduced species and noxious weed, where it is especially widespread in California. In California it has displaced native species of grass.
-- **Credit:** Wikipedia, 'Avena barbata' (CC BY-SA 4.0)
-
-### Slimy Milkcap — `slimy-milkcap`
-
-- **Labels:** forest
-    - `forest` ← 'woodland'
-- **Prose:** Lactarius blennius is very common and is found in broad-leaved woodland, favouring beech; it is most associated with Fagus sylvatica, the European beech, though it has also been observed growing in association with species of oak. It forms an ectomycorrhizal association with trees, and can grow on a wide variety of subsoil types, but is more typical of acidic soil. It is found between late summer and late autumn, and is native to Europe. The distribution of the mushroom coincides with the distribution of beech. In the British Isles, the species is one of the one hundred most common mushrooms. Other areas in which it has been recorded include Sweden, France, Italy, and Poland.
-- **Credit:** Wikipedia, 'Lactarius blennius' (CC BY-SA 4.0)
 
 ### Snowberries — `snowberries`
 
@@ -2021,24 +2261,6 @@ C. lucida is a plant that lives in warm, temperate regions. Within New Zealand, 
 - **Prose:** The sour fig grows on coastal and inland slopes in South Africa from Namaqualand in the Northern Cape through the Western Cape to the Eastern Cape. It is often seen as a pioneer on disturbed sites.
 - **Credit:** Wikipedia, 'Carpobrotus edulis' (CC BY-SA 4.0)
 
-### Southern nettle — `southern-nettle`
-
-- **Labels:** coastal
-    - `coastal` ← 'coast', 'beaches', 'sand dunes'
-- **Prose:** Urtica australis is endemic to New Zealand. The species is found in the south-western coast of Fiordland (in the South Island). It is also found on Chatham, Stewart, and other main subantarctic islands. The 2023 assessment of U. australis in the New Zealand Threat Classification System was "At Risk – Declining".
-
-
-Habitat
-Urtica australis is typically found near the coast, and can be present on rocky beaches, sand dunes, and scrublands.
-- **Credit:** Wikipedia, 'Urtica australis' (CC BY-SA 4.0)
-
-### Square bamboo — `square-bamboo`
-
-- **Labels:** forest
-    - `forest` ← 'forests'
-- **Prose:** No New Zealand habitat note has been published. In its native range it is a plant of forests, and here, like the rest of these bamboos, it travels on extensively running rhizomes.
-- **Credit:** NZPCN and Plants For A Future (paraphrased)
-
 ### Sticky mouse-ear chickweed — `sticky-mouse-ear-chickweed`
 
 - **Labels:** disturbed
@@ -2052,27 +2274,17 @@ Urtica australis is typically found near the coast, and can be present on rocky 
     - `forest` ← 'forests'
     - `grassland` ← 'lawns'
     - `urban` ← 'gardens'
-- **Prose:** Viola odorata is native to Europe south of Scandinavia, northwest Africa (Morocco, Algeria, and Tunisia), Macaronesia, the Caucasus, Western Asia, and Kazakhstan. It has been introduced to the Americas, Scandinavia, southern and eastern Asia, Australia, and New Zealand. The species can be found near the edges of forests or in clearings; it is also a common "uninvited guest" in shaded lawns or elsewhere in gardens.
+- **Prose:** The species can be found near the edges of forests or in clearings; it is also a common "uninvited guest" in shaded lawns or elsewhere in gardens.
 - **Credit:** Wikipedia, 'Viola odorata' (CC BY-SA 4.0)
 
 ### Sydney golden wattle — `sydney-golden-wattle`
 
-- **Labels:** coastal, forest, shrubland, urban
-    - `coastal` ← 'coastal', 'coast', 'sand dunes', 'coastline'
-    - `forest` ← 'woodland', 'stump'
+- **Labels:** coastal, forest, shrubland
+    - `coastal` ← 'coastal', 'sand dunes', 'coastline'
+    - `forest` ← 'woodland'
     - `shrubland` ← 'scrub'
-    - `urban` ← 'gardens', 'plantings'
-- **Prose:** The species is endemic to coastal area of south eastern Queensland close to the border with New South Wales extending southward down the coast of New South Wales. In New South Wales it is common along the tablelands and coastal areas where it is situated in various habitats including foredunes and is usually a part of sclerophyll  woodland or coastal heath and scrub communities. The range then extends south and east through Victoria and into South Australia, where it is found on the Eyre Peninsula, Yorke Peninsula, Kangaroo Island, southern Mount Lofty Ranges, and throughout the south-eastern region, where it is mostly restricted to sand dunes. The subspecies, A. sophorae, grows in sand dunes around the Tasmanian coastline.
-It has become naturalised in the south west of Western Australia in coastal areas extending from around Perth in the north down to around Albany in the south. It is thought to have been introduced by escaping from gardens or being used in revegetation plantings. Control methods include hand pulling seedlings, ringbarking, or cutting the plant down and painting the stump with glyphosate.
+- **Prose:** In New South Wales it is common along the tablelands and coastal areas where it is situated in various habitats including foredunes and is usually a part of sclerophyll  woodland or coastal heath and scrub communities.  The subspecies, A. sophorae, grows in sand dunes around the Tasmanian coastline.
 - **Credit:** Wikipedia, 'Acacia longifolia' (CC BY-SA 4.0)
-
-### Taupata — `taupata`
-
-- **Labels:** coastal
-    - `coastal` ← 'coastal'
-- **Prose:** The species is native to the North Island, South Island, Kermadec Islands and Three Kings Islands in New Zealand.
-In Australia, it has become naturalised in coastal areas of Victoria, New South Wales, South Australia, Western Australia and Tasmania, and it is now classified as an environmental weed.
-- **Credit:** Wikipedia, 'Coprosma repens' (CC BY-SA 4.0)
 
 ### Tawaka — `tawaka`
 
@@ -2080,22 +2292,6 @@ In Australia, it has become naturalised in coastal areas of Victoria, New South 
     - `forest` ← 'on native and introduced trees'
 - **Prose:** The species is found mostly in New Zealand and Australia, from November to June. It grows on native and introduced trees where it can cause heart rot, and does not seem to be associated with conifers.
 - **Credit:** Wikipedia, 'Cyclocybe parasitica' (CC BY-SA 4.0)
-
-### Tree fuchsia — `tree-fuchsia`
-
-- **Labels:** forest
-    - `forest` ← 'on a Fuchsia-tree'
-- **Prose:** Fuchsia excorticata's fruits are dispersed by fruit-eating animals (frugivores). F. excorticata's fruits are an important food source for numerous New Zealand native birds, and they are an especially important food source for the kererū (Hemiphaga novaeseelandiae). Other birds, such as the tūī (Prosthemadera novaeseelandiae) and the New Zealand bellbird (Anthornis melanura) consume the fruits frequently. Beveridge (1964) estimated that a single dropping from an introduced blackbird (Turdus merula) produced 178 seedlings, thus proving the efficiency of blackbirds as seed distributors. The fruits of F. excorticata can also be part of the diet of the flightless kākāpō (Strigops habroptilus). German-born New Zealand explorer Julius von Haast said that he saw a kākāpō "sitting on a Fuchsia-tree, 3 m from the ground, and eating berries".
-Fuchsia excorticata has a gynodioecious breeding strategy, meaning individual trees are either hermaphroditic or female. According to Robertson et al. (2008), hermaphroditic individuals occur at a higher frequency than females. F. excorticata can be pollinated by birds, primarily by bellbirds and tūī. Other birds, such as stitchbirds (Pogonornis cincta) and silvereyes (Zosterops lateralis), as well as bumblebees (Bombus spp.) have been reported as visitors on F. excorticata flowers. Evidence presented by a 2012 study shows that the upland moa (Megalapteryx didinus) fed on the nectar. Green flowers stand out compared to the orange bark and produce more nectar, thus making them more attractive and rewarding to bird pollinators than red flowers. New Zealand botanist Eric Godley suggested that F. excorticata is capable of self-pollination "in the absence of pollinator visitors".
-The introduction of the common brushtail possum to New Zealand has led to a decline in this species. F. excorticata appears to be one of the possum's preferred food sources, and they will browse individual trees to the point of defoliation after which the trees can die. F. excorticata plays host to the endemic insect, the lemon tree borer (Oemona hirta). Wyman et al. (2011) investigated interactions between tree wētā (Hemideina spp.) and F. excorticata, finding that tree wētā consumes its seeds. F. excorticata has very low flammability rates. A 2025 study in the American Journal of Botany found that F. excorticata had a moderate ignition percentage, burn time, and burned amount of biomass.
-- **Credit:** Wikipedia, 'Fuchsia excorticata' (CC BY-SA 4.0) — units converted to metric
-
-### Tree mallow — `tree-mallow`
-
-- **Labels:** coastal
-    - `coastal` ← 'sea water', 'coastal'
-- **Prose:** Malva arborea tolerates sea water to varying degrees, at up to 100% sea water in its natural habitat, excreting salt through glands on its leaves. This salt tolerance can be a competitive advantage over inland plant species in coastal areas. Its level of salinity tolerance is thought to be improved by soil with higher phosphate content, making guano enrichment particularly beneficial. It grows mainly on exposed coastal locations, often on small islands, only rarely any distance inland.
-- **Credit:** Wikipedia, 'Malva arborea' (CC BY-SA 4.0)
 
 ### Turkey tail — `turkey-tail`
 
@@ -2109,39 +2305,28 @@ The species may be eaten by caterpillars of the fungus moth Nemaxera betulinella
 
 - **Labels:** grassland, urban, disturbed
     - `grassland` ← 'lawns'
-    - `urban` ← 'cultivation', 'cultivated and waste ground', 'gardens'
+    - `urban` ← 'cultivated and waste ground', 'gardens'
     - `disturbed` ← 'waste ground', 'roadsides'
-- **Prose:** Lepidium didymum is of uncertain origin, but is often cited as native to South America, mainly Argentina, Bolivia, Brazil, Chile, Paraguay, Peru, Uruguay and Venezuela. It has been introduced elsewhere as a weed of cultivation. It has naturalised across the globe, from Africa, Europe, Asia, Australasia, North America and South America. In Britain, it had been recorded from the wild by 1778, chiefly in England and the south of Ireland, growing on cultivated and waste ground, in gardens and lawns, by paths and roadsides.
+- **Prose:** In Britain, it had been recorded from the wild by 1778, chiefly in England and the south of Ireland, growing on cultivated and waste ground, in gardens and lawns, by paths and roadsides.
 - **Credit:** Wikipedia, 'Lepidium didymum' (CC BY-SA 4.0)
 
 ### Tōtara — `totara`
 
 - **Labels:** shrubland, grassland, alpine
     - `shrubland` ← 'regenerating'
-    - `grassland` ← 'farmland', 'farms'
-    - `alpine` ← 'montane', 'subalpine'
+    - `grassland` ← 'farmland'
+    - `alpine` ← 'subalpine'
 - **Prose:** Podocarpus totara is found in both the North Island and the South Island, growing in both lowland, montane and lower subalpine habitats, at elevations of up to 600 metres It is rarely found on Stewart Island / Rakiura. Tōtara is commonly found in lowland areas where the soil is fertile and well drained.
-Tōtara is often found regenerating on farmland, as it is not eaten by livestock. Tōtara is so commonly found on Northland farms that some farmers consider the tree to be a weed.
+Tōtara is often found regenerating on farmland, as it is not eaten by livestock.
 - **Credit:** Wikipedia, 'Podocarpus totara' (CC BY-SA 4.0) — units converted to metric
-
-### Ugly Milkcap — `ugly-milkcap`
-
-- **Labels:** coastal, forest
-    - `coastal` ← 'Coast'
-    - `forest` ← 'woodland'
-- **Prose:** Lactarius turpis is found naturally in Europe and Siberia, and has been introduced to Australia and New Zealand. It can also be found in North America, in the northeast (July–September) and near the West Coast (September–November). While especially associated with birch, it is also found with spruce, pine and other trees in mixed woodland.
-- **Credit:** Wikipedia, 'Lactarius turpis' (CC BY-SA 4.0)
 
 ### Variegated thistle — `variegated-thistle`
 
-- **Labels:** coastal, grassland, urban, disturbed
-    - `coastal` ← 'coast'
+- **Labels:** grassland, urban, disturbed
     - `grassland` ← 'meadows', 'pastures'
-    - `urban` ← 'cultivation', 'urban'
+    - `urban` ← 'urban'
     - `disturbed` ← 'disturbed', 'fallow'
-- **Prose:** Silybum marianum is native from around the Mediterranean and much of Europe to Central Asia and India; in Africa it reaches as far south as Ethiopia. It is possibly native near the coast of southeast England. S. marianum has been widely introduced outside its natural range, for example into North America, Hawaii, Australia, New Zealand, and Colombia where it is considered an invasive weed. It also spreads invasively in almost all of Europe as a consequence of field cultivation.
-Silybum marianum establishes itself in sunny, warm ruderal meadows in regularly disturbed places such as rubble deposits, at the foot of south-exposed walls or villages and on urban fallow land or on cattle pastures. However, it does not prefer dry, stony soils.
-Milk thistle has been potentially observed to modify fire regimes in its invasive range. Its invasion into new habitats may also be encouraged by fire.
+- **Prose:** Silybum marianum establishes itself in sunny, warm ruderal meadows in regularly disturbed places such as rubble deposits, at the foot of south-exposed walls or villages and on urban fallow land or on cattle pastures. However, it does not prefer dry, stony soils.
 - **Credit:** Wikipedia, 'Silybum marianum' (CC BY-SA 4.0)
 
 ### Wall lettuce — `wall-lettuce`
@@ -2149,16 +2334,9 @@ Milk thistle has been potentially observed to modify fire regimes in its invasiv
 - **Labels:** forest, disturbed
     - `forest` ← 'woodlands'
     - `disturbed` ← 'roadsides'
-- **Prose:** Lactuca muralis is a native of Europe but has invaded shady roadsides, paths and logged areas of the Pacific Northwest and New England  It has become naturalized in parts of Northern Ireland as long ago as 1913. It was first recorded in The Burren, where it is now frequent, in 1939.
+- **Prose:** Lactuca muralis is a native of Europe but has invaded shady roadsides, paths and logged areas of the Pacific Northwest and New England
 It can be found in woodlands, especially beech.  It is also found in calcareous soils, and walls.
 - **Credit:** Wikipedia, 'Lactuca muralis' (CC BY-SA 4.0)
-
-### Weraroa — `weraroa`
-
-- **Labels:** forest
-    - `forest` ← 'forest', 'branches of māhoe', 'on rotted cabbage trees', 'forests'
-- **Prose:** The species is endemic to New Zealand, and is fairly abundant in the early winter and spring months in lowland mixed rainforest near Wellington and Auckland. The mushroom can be difficult to see, often buried under leaves or eaten by slugs, and it is sometimes hard to find mature specimens that are not partially eaten. The species is typically found on decaying wood buried in forest leaf litter (either solitary or crowded), often on the rotting branches of māhoe (Melicytus ramiflorus). It has also been found fruiting on rotted cabbage trees (Cordyline australis) and associated with decaying tree-fern fronds, native to the forests of New Zealand.
-- **Credit:** Wikipedia, 'Psilocybe weraroa' (CC BY-SA 4.0)
 
 ### Western painted suillus — `western-painted-suillus`
 
@@ -2170,68 +2348,13 @@ It can be found in woodlands, especially beech.  It is also found in calcareous 
 Both Douglas-fir and S. lakei are non-native introduced species in Europe. The fungus has been found in several central and south European countries following the intentional introduction of Douglas-fir. These include Bosnia and Herzegovina, Bulgaria, Czech Republic, Germany, Hungary, Italy, and Slovakia. It is considered endangered in the Czech Republic. Suillus lakei has also been reported in South America (Argentina and Chile) and in the South Island of New Zealand.
 - **Credit:** Wikipedia, 'Suillus lakei' (CC BY-SA 4.0)
 
-### White clover — `white-clover`
-
-- **Labels:** grassland, urban
-    - `grassland` ← 'grassy', 'lawns'
-    - `urban` ← 'gardens'
-- **Prose:** It is native in Europe and Central Asia, ubiquitous throughout the British Isles, introduced in North America, South Africa, Australia, New Zealand, Japan and elsewhere, and globally cultivated as a forage crop.
-It is common in most grassy areas (lawns and gardens) of North and South America, Australia and New Zealand.
-- **Credit:** Wikipedia, 'Trifolium repens' (CC BY-SA 4.0)
-
-### White-leaved lawyer — `white-leaved-lawyer`
-
-- **Labels:** forest, shrubland, wetland
-    - `forest` ← 'forest', 'canopy', 'forests'
-    - `shrubland` ← 'scrub'
-    - `wetland` ← 'lakes', 'freshwater', 'wetland', 'River'
-- **Prose:** Rubus schmidelioides var. schmidelioides and its variant var subpauperartus are both endemic to New Zealand and the Chatham islands. It is found mainly in the South Island in eastern Canterbury but can also be found in other areas of the country and on Stewart Island.
-
-Rubus schmidelioides is found primarily in scrub and forest. Its variant, Rubus schmidelioides var. subpauperatus, can be found in open scrublands or exposed rocky sites. It has previously been found in the driest vegetation zones surrounding lakes and in a freshwater wetland near the Waitangiroto River.
-Rubus schmidelioides grows best during the mid-stages of succession when the tree canopies have not grown high. Juveniles struggle to grow in areas of low light where the canopy is already established. Rubus schmidelioides favors environments with alluvial soils and appears to be more common in indigenous forests.
-- **Credit:** Wikipedia, 'Rubus schmidelioides' (CC BY-SA 4.0)
-
-### Wild chervil — `wild-chervil`
-
-- **Labels:** urban
-    - `urban` ← 'cultivation'
-- **Prose:** A member of the Apiaceae, the native distribution of chervil is uncertain due to its long history of cultivation, particularly by the Romans. The New Oxford Book of Food Plants limits its native range to the Caucasus, while Plants of the World Online cites it with a wider native range across central and southeastern Europe and southwestern Asia from Switzerland in the west, to Iran in the east.
-The species is now naturalised through most of Europe and North Africa. It is also introduced and frequently grown in North America, where it is naturalised in many areas. These escapes differ from other Anthriscus species growing in North America (A. caucalis and A. sylvestris) by having lanceolate-linear bracteoles and a fruit with a relatively long beak.
-- **Credit:** Wikipedia, 'Chervil' (CC BY-SA 4.0)
-
 ### Wild spearmint — `wild-spearmint`
 
 - **Labels:** wetland
     - `wetland` ← 'swamps', 'creeks'
 - **Prose:** Spearmint can readily adapt to grow in various types of soil. Spearmint tends to thrive with plenty of organic material in full sun to part shade. The plant is also known to be found in moist habitats such as swamps or creeks, where the soil is sand or clay.
 Spearmint ideally thrives in soils that are deep, well-drained, moist, rich in nutrients and organic matter, and have a crumbly texture. The pH range should be between 6.0 and 7.5.
-
-
-Diseases and pests
-
-
-Fungal diseases
-Fungal diseases are common diseases in spearmint. Two main diseases are rust and leaf spot. Puccinia menthae is a fungus that causes the disease called "rust". Rust affects the leaves of spearmint by producing pustules inducing the leaves to fall off. Leaf spot is a fungal disease that occurs when Alternaria alternata is present on the spearmint leaves. The infection looks like circular dark spot on the top side of the leaf. Other fungi that cause disease in spearmint are Rhizoctonia solani, Verticillium dahliae, Phoma strasseri, and Erysiphe cischoracearum.
-
-
-Nematode diseases
-Common nematode diseases known to affect spearmint are root knot, caused by various Meloidogyne species, and root lesions, caused by members of the genus Pratylenchus.
-
-
-Viral and phytoplasmal diseases
-Spearmint can be infected by tobacco ringspot virus. This virus can lead to stunted plant growth and deformation of the leaves in this plant. In China, spearmint have been seen with mosaic symptoms and deformed leaves. This is an indication that the plant can also be infected by the viruses, cucumber mosaic and tomato aspermy.
 - **Credit:** Wikipedia, 'Spearmint' (CC BY-SA 4.0)
-
-### Winter wild oat — `sterilised-oat`
-
-- **Labels:** grassland
-    - `grassland` ← 'grass'
-- **Prose:** A. sterilis is native to the Mediterranean Basin and West, Central and South Asia, but is widely naturalized elsewhere. The species grows on all continents except Antarctica.
-
-In North America, it grows as an introduced species in the U.S. states of California, Oregon, New Jersey, Ohio, Pennsylvania, and the Canadian provinces of Ontario and Quebec.
-
-Because it thrives in the same conditions as many agricultural crops and has similar lifecycles, the grass directly competes with and reduces yield in arable crops.
-- **Credit:** Wikipedia, 'Avena sterilis' (CC BY-SA 4.0)
 
 ### Wood blewit — `wood-blewit`
 
@@ -2263,8 +2386,7 @@ It is a larval host to the two-banded checkered skipper.
     - `forest` ← 'forests'
     - `grassland` ← 'grasslands', 'meadows'
     - `disturbed` ← 'disturbed', 'roadsides'
-- **Prose:** Yarrow is native to temperate regions of the Northern Hemisphere, being found in Europe, Asia, and North America.
-The plant grows from sea level to 3,500 m in elevation. Common yarrow is frequently found in the mildly disturbed soil of grasslands and open forests. Active growth occurs in the spring.
-In North America, both native and introduced genotypes, and both diploid and polyploid plants are found. It is found in every habitat throughout California except the Colorado and Mojave Deserts. 
+- **Prose:** The plant grows from sea level to 3,500 m in elevation. Common yarrow is frequently found in the mildly disturbed soil of grasslands and open forests. Active growth occurs in the spring.
+
 It has been introduced as a feed for livestock in New Zealand and Australia, where it is a common weed of both wet and dry areas, such as roadsides, meadows, fields and coastal places.
 - **Credit:** Wikipedia, 'Achillea millefolium' (CC BY-SA 4.0) — units converted to metric
