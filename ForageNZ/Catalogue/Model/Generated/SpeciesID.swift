@@ -69,6 +69,7 @@ public enum SpeciesID: String, Codable, Sendable, Hashable, CaseIterable {
     case commonMallow = "common-mallow"
     case commonMouseEarChickweed = "common-mouse-ear-chickweed"
     case commonMullein = "common-mullein"
+    case commonOrache = "common-orache"
     case commonPear = "common-pear"
     case commonSorrel = "common-sorrel"
     case commonVetch = "common-vetch"

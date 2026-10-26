@@ -78,7 +78,7 @@ private struct RecipeSection: View {
         VStack(alignment: .leading, spacing: .xxSmall) {
             HStack(alignment: .firstTextBaseline, spacing: .xxSmall) {
                 Image(.chefHat)
-                    .icon(size: .small, color: .primary)
+                    .icon(size: .standard, color: .primary)
                 Text(title)
                     .font(.title3)
                     .bold()
