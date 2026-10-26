@@ -6,6 +6,8 @@ struct SpeciesDetailView: View {
     
     private var species: ForageSpecies { model.species }
     
+    @State var presentRecipies = false
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: .medium) {
@@ -39,6 +41,11 @@ struct SpeciesDetailView: View {
         }
         .navigationTitle(species.commonName)
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $presentRecipies) {
+            NavigationStack {
+                RecipeView(recipies: model.species.recipes)
+            }
+        }
     }
     
     private var header: some View {
@@ -97,7 +104,7 @@ struct SpeciesDetailView: View {
     }
     
     private var season: some View {
-        createSectionHeader(image: Image(.calendar), title: "Season", subTitle: species.seasonDescription)
+        SectionHeader(image: Image(.calendar), title: "Season", subTitle: species.seasonDescription)
     }
     
     private var description: some View {
@@ -114,7 +121,7 @@ struct SpeciesDetailView: View {
     /// otherwise leave this section's prose with no title.
     private var habitat: some View {
         VStack(alignment: .leading, spacing: .xxxSmall) {
-            createSectionHeader(image: Image(.mapSearch), title: "Habitat")
+            SectionHeader(image: Image(.mapSearch), title: "Habitat")
             HabitatView(habitats: species.habitats, layoutDirection: .leftToRight, includeName: true)
             Text(species.habitat.text)
                 .font(.callout)
@@ -177,7 +184,7 @@ struct SpeciesDetailView: View {
                         // The styling is set once on the row: `font`, `italic` and
                         // `foregroundStyle` are inherited by both `Text`s.
                         HStack(alignment: .top, spacing: .xSmall) {
-                            Text("•")
+                            Text(String.bullet)
                                 .accessibilityHidden(true)
 
                             Text(warning)
@@ -205,7 +212,7 @@ struct SpeciesDetailView: View {
     private var lookALike: some View {
         if !species.lookalikes.isEmpty {
             VStack(alignment: .leading, spacing: .empty) {
-                createSectionHeader(image: Image(.outlineQuestion), title: "Look Alike")
+                SectionHeader(image: Image(.outlineQuestion), title: "Look Alike")
                     .padding(.bottom, .xSmall)
 
                 ScrollView(.horizontal) {
@@ -229,7 +236,7 @@ struct SpeciesDetailView: View {
     private var recipes: some View {
         if !species.recipes.isEmpty {
             Button {
-                // TODO: go to recepies page
+                presentRecipies = true
             } label: {
                 HStack(spacing: .xxSmall) {
                     Image(.chefHat)
@@ -258,7 +265,7 @@ struct SpeciesDetailView: View {
     private var sources: some View {
         
         VStack(alignment: .leading, spacing: .xxxSmall) {
-            createSectionHeader(image: Image(systemName: "book.closed"), title: "Sources")
+            SectionHeader(image: Image(systemName: "book.closed"), title: "Sources")
             if species.isVerified {
                 ForEach(species.sources, id: \.self) { source in
                     Text(AttributedString(linkingWebAddressesIn: source))
@@ -284,30 +291,12 @@ struct SpeciesDetailView: View {
     /// sections are exactly this and differ only in their icon, title and field.
     private func textSection(image: Image, title: LocalizedStringResource, text: String) -> some View {
         VStack(alignment: .leading, spacing: .xxxSmall) {
-            createSectionHeader(image: image, title: title)
+            SectionHeader(image: image, title: title)
             Text(text)
                 .font(.callout)
         }
     }
 
-    private func createSectionHeader(image: Image, title: LocalizedStringResource, subTitle: String? = nil) -> some View {
-        HStack(spacing: .xxSmall) {
-            image
-                .icon(size: .small, color: .primary)
-            VStack(alignment: .leading, spacing: .empty) {
-                Text(title)
-                    .font(.callout)
-                    .bold()
-                if let subTitle {
-                    Text(subTitle)
-                        .font(.footnote)
-                        .italic()
-                        .foregroundStyle(.secondary)
-                }
-            }
-        }
-    }
-    
     private var doNotEatBanner: some View {
         HStack(alignment: .top, spacing: .xxxSmall) {
             CautionLevel.doNotEat.image

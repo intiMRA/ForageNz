@@ -5,7 +5,7 @@ entry's own `habitat` prose and nothing else; **Evidence** is the literal text t
 matched. A wrong label is a rule to fix in the tool, not a value to edit here — the
 file is regenerated on every run.
 
-## Shipped entries (170)
+## Shipped entries (176)
 
 These are the ones the app actually shows. Worth reading all of them.
 
@@ -26,6 +26,18 @@ In New Zealand: established near deliberate plantings at Takou Bay in Northland,
     - `disturbed` ← 'roadsides', 'waste ground'
 - **Prose:** Its natural habitat is fields, meadows, roadsides, banks and waste ground. When added to seed mixtures, it seldom persists once the sward has closed up.
 - **Credit:** Wikipedia, 'Trifolium hybridum' (CC BY-SA 4.0)
+
+### Aluminium plant — `aluminium-plant`
+
+- **Labels:** forest, shrubland, wetland, disturbed
+    - `forest` ← 'plantation', 'forest', 'bush'
+    - `shrubland` ← 'Scrub', 'scrubland', 'shrubland'
+    - `wetland` ← 'riparian'
+    - `disturbed` ← 'disturbed'
+- **Prose:** In New Zealand (Flora of New Zealand): Scrub, plantation or modified forest in wetter areas.
+In Auckland (Auckland Council): disturbed forest, scrubland, fernland, forest and riparian margins, floodplains and other moist places.
+Throughout New Zealand (NZ Plant Conservation Network): disturbed bush, shrubland, fernland and their margins.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Auckland Council, Tiaki Tāmaki Makaurau, 'Artillery plant' pest search (all rights reserved, restated); NZ Plant Conservation Network, 'Lamium galeobdolon' (all rights reserved, restated)
 
 ### Amaranth — `amaranthus-species`
 
@@ -425,6 +437,18 @@ Malva sylvestris spreads itself on waste and rough ground, by roads and railways
 - **Prose:** Roadsides, waste places around buildings, rough pasture, crops.
 - **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (CC BY-NC-SA 4.0)
 
+### Cut-leaved deadnettle — `cut-leaved-deadnettle`
+
+- **Labels:** grassland, wetland, urban, disturbed
+    - `grassland` ← 'meadows'
+    - `wetland` ← 'river'
+    - `urban` ← 'gardens', 'urban', 'cultivated land'
+    - `disturbed` ← 'Waste places', 'rubbish', 'roadsides', 'waste ground'
+- **Prose:** In New Zealand (Flora of New Zealand): Waste places, river beds, gardens.
+It is found growing in open areas, gardens, fields and meadows, and widely in uncultivated areas in urban habitats.
+In northern Europe it is mainly a weed of ploughed vegetable fields and cultivated land, gardens, soil heaps, rubbish dumps, roadsides and waste ground, and is rarely seen away from them.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Lamium hybridum' (rev 1322279095, CC BY-SA 4.0); NatureGate (LuontoPortti), 'Cut-leaved Dead-nettle' (all rights reserved, restated)
+
 ### Dandelion — `dandelion`
 
 - **Labels:** grassland, wetland, urban, disturbed
@@ -565,6 +589,18 @@ bank, dry, gravel, margin, montane, ridge, riparian, roadside, slope, stone, ter
 - **Prose:** Open grazed pasture and paddocks, especially after autumn rain. Not in woodland.
 - **Credit:** _yours, uncredited_
 
+### Field woundwort — `field-woundwort`
+
+- **Labels:** grassland, wetland, urban, disturbed
+    - `grassland` ← 'pasture'
+    - `wetland` ← 'river'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'waste places', 'roadsides', 'disturbed'
+- **Prose:** In New Zealand (Flora of New Zealand): A weed of gardens, fields, waste places, roadsides, and river beds.
+It grows in many types of habitat, including disturbed areas, and often in moist spots.
+It is usually found in gardens and crops rather than pasture, because as an annual it needs bare soil to establish (Massey).
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Stachys arvensis' (CC BY-SA 4.0); Massey University, New Zealand weeds database, 'Staggerweed' (all rights reserved — restated)
+
 ### Fishpole bamboo — `fishpole-bamboo`
 
 - **Labels:** forest, shrubland, wetland, urban, disturbed
@@ -613,6 +649,15 @@ Herbarium specimens record it in cracks in a footpath beside a street and in a d
 - **Prose:** Hillsides, roadsides, scrub, farmland margins. Almost anywhere that has been cleared and left.
 - **Credit:** _yours, uncredited_
 
+### Ground-ivy — `ground-ivy`
+
+- **Labels:** grassland, disturbed
+    - `grassland` ← 'grasslands', 'lawns'
+    - `disturbed` ← 'wasteland'
+- **Prose:** In New Zealand (Flora of New Zealand): Usually in shady places below trees and around buildings.
+G. hederacea thrives in moist shaded areas, but also tolerates sun very well. It is a common plant in grasslands and wooded areas or wasteland.  It also thrives in lawns and around buildings, since it survives mowing. Part of the reason for its wide distribution is its  rhizomatous method of reproduction.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Glechoma hederacea' (CC BY-SA 4.0)
+
 ### Hawkbit — `hawkbit`
 
 - **Labels:** coastal, grassland, wetland, urban, disturbed
@@ -635,6 +680,16 @@ Herbarium specimens record it in cracks in a footpath beside a street and in a d
 Lowland to montane, on ground of low to moderate fertility: low forest and its margins, disturbed forest, scrub, hill-country and other pasture, waste places and roadsides (NZPCN, restated).
 - **Credit:** New Zealand Plant Conservation Network, 'Crataegus monogyna' (facts restated)
 
+### Hedge woundwort — `hedge-woundwort`
+
+- **Labels:** forest, shrubland
+    - `forest` ← 'forest', 'woods'
+    - `shrubland` ← 'scrub', 'hedges', 'hedgerows'
+- **Prose:** In New Zealand (Flora of New Zealand): Shaded places along forest margins, amongst scrub and around hedges.
+It grows in dappled shade at the edge of woods, in hedgerows and on rough ground.
+It grows best in part to full shade and moist, rich soil, and also takes dry shade, under hedges and larger shrubs.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Stachys sylvatica' (CC BY-SA 4.0); Kahikatea Farm, 'Woundwort' (kahikateafarm.co.nz, all rights reserved, restated); Jack Wallington, Wild Way, 'Stachys sylvatica, hedge woundwort' (all rights reserved, restated)
+
 ### Hemlock — `hemlock`
 
 - **Labels:** grassland, wetland, urban, disturbed
@@ -644,6 +699,18 @@ Lowland to montane, on ground of low to moderate fertility: low forest and its m
     - `disturbed` ← 'Roadsides', 'waste ground', 'disturbed'
 - **Prose:** Roadsides, stream banks, waste ground, paddock margins and the edges of gardens — the same damp, disturbed ground as wild fennel and sea celery, and often growing right through them.
 - **Credit:** _yours, uncredited_
+
+### Henbit deadnettle — `henbit-deadnettle`
+
+- **Labels:** grassland, urban, disturbed
+    - `grassland` ← 'meadows'
+    - `urban` ← 'gardens', 'urban'
+    - `disturbed` ← 'Waste places', 'roadsides', 'railway'
+- **Prose:** In New Zealand (Flora of New Zealand): Waste places such as roadsides, railway yards and building sites, also on arable land.
+It is found growing in open areas, gardens, fields and meadows, and widely in uncultivated areas in urban habitats.
+In New Zealand it is a common weed of cropping land, especially in the South Island.
+It grows into slightly drier places than red deadnettle, which takes a little more shade.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Lamium amplexicaule' (rev 1359641636, CC BY-SA 4.0); Bayer Crop Science New Zealand, 'Henbit' (all rights reserved, restated); bplant.org, 'Henbit Deadnettle vs Purple Deadnettle' (restated)
 
 ### Herb robert — `herb-robert`
 
@@ -1210,12 +1277,15 @@ It frequently occurs in meadows, forest edges, roadsides and gardens.
 
 ### Sheep sorrel — `sheep-sorrel`
 
-- **Labels:** coastal, grassland, disturbed
+- **Labels:** coastal, grassland, wetland, urban, disturbed
     - `coastal` ← 'sand dunes'
-    - `grassland` ← 'paddocks', 'lawns'
-    - `disturbed` ← 'roadsides'
+    - `grassland` ← 'paddocks', 'lawns', 'pastures'
+    - `wetland` ← 'riverbeds'
+    - `urban` ← 'cultivated ground'
+    - `disturbed` ← 'roadsides', 'pavement'
 - **Prose:** Poor, acidic, dry soils: paddocks, roadsides, gravel, sand dunes, lawns that have given up.
-- **Credit:** _yours, uncredited_
+In New Zealand (Flora of New Zealand): Especially in open situations on poor, light, stony or sandy soils from sea level to c. 1500 m, also in riverbeds, poor pastures, pavement cracks, gutters and cultivated ground.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA)
 
 ### Shining karamū — `shining-karamu`
 
@@ -1674,20 +1744,9 @@ In North America, it has been documented as introduced in California, Alabama, I
 - **Prose:** The species is found on wood chips across North America in summer and autumn.
 - **Credit:** Wikipedia, 'Stropharia rugosoannulata' (CC BY-SA 4.0)
 
-## Classified drafts (81)
+## Classified drafts (87)
 
 Prose copied from Wikipedia or Flora of NZ, so the geography may be the species' global range rather than its New Zealand one. Lower confidence than the shipped set.
-
-### Aluminium plant — `aluminium-plant`
-
-- **Labels:** forest, shrubland, wetland, disturbed
-    - `forest` ← 'plantation', 'forest'
-    - `shrubland` ← 'Scrub', 'scrubland'
-    - `wetland` ← 'riparian'
-    - `disturbed` ← 'disturbed'
-- **Prose:** In New Zealand (Flora of New Zealand): Scrub, plantation or modified forest in wetter areas.
-In Auckland (Auckland Council): disturbed forest, scrubland, fernland, forest and riparian margins, floodplains and other moist places.
-- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Auckland Council, Tiaki Tāmaki Makaurau, 'Artillery plant' pest search (all rights reserved, restated)
 
 ### Birch bolete — `birch-bolete`
 
@@ -1725,6 +1784,17 @@ Recent research has shown that Arctic kelp forests can steadily increase pH leve
 - **Prose:** The species is native to the Western Cape and Eastern Cape provinces in South Africa, where it tends to occur in sands along the southern coast.
 - **Credit:** Wikipedia, 'Lycium ferocissimum' (CC BY-SA 4.0)
 
+### Broad-leaved dock — `broad-leaved-dock`
+
+- **Labels:** grassland, wetland, urban
+    - `grassland` ← 'pastures'
+    - `wetland` ← 'river'
+    - `urban` ← 'gardens'
+- **Prose:** In New Zealand (Flora of New Zealand): Usually near habitations, also common to abundant elsewhere in pastures, river banks and open moist places, and a major weed of gardens and arable land.
+Plants grow very large around stockyards, cowsheds and other places with very high nitrogen levels.
+It is abundant throughout the North, South and Stewart Islands, and grows on the Kermadec, Chatham and Campbell Islands.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — restated
+
 ### Broadleaf sea lettuce — `broadleaf-sea-lettuce`
 
 - **Labels:** coastal
@@ -1756,6 +1826,31 @@ Recent research has shown that Arctic kelp forests can steadily increase pH leve
 - **Prose:** Grown in sunny conditions, it is normally found within coastal dunes and bluffs, margins of estuaries, along roadsides; at elevations from sea level to 100 m along the southern Pacific Coast of North America.
 - **Credit:** Wikipedia, 'Carpobrotus chilensis' (CC BY-SA 4.0) — units converted to metric
 
+### Climbing dock — `climbing-dock`
+
+- **Labels:** coastal, forest, shrubland, wetland, urban, disturbed
+    - `coastal` ← 'coast'
+    - `forest` ← 'bush'
+    - `shrubland` ← 'hedges', 'shrubland'
+    - `wetland` ← 'streams'
+    - `urban` ← 'gardens'
+    - `disturbed` ← 'roadsides'
+- **Prose:** In New Zealand (Flora of New Zealand): Often on or near hedges in settled areas, spreading to waste sites, roadsides, and footpaths, also gardens.
+It also grows on bush and shrubland margins, along streams and on the coast.
+Look for it near the coast, especially from Northland to the Bay of Plenty and south to Wellington, and around Tasman Bay (Nelson), with occasional plants near Blenheim and Picton.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Auckland Council, Tiaki Tāmaki Makaurau, 'Climbing dock' pest search (all rights reserved, restated); Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — restated
+
+### Clustered dock — `clustered-dock`
+
+- **Labels:** coastal, grassland, wetland, disturbed
+    - `coastal` ← 'beaches'
+    - `grassland` ← 'pastures'
+    - `wetland` ← 'river', 'ditches', 'drains', 'swampy'
+    - `disturbed` ← 'waste places'
+- **Prose:** In New Zealand (Flora of New Zealand): Usually damp places such as river banks and beds, ditches, drains and swampy places, also pastures and waste places in high rainfall areas, sometimes just above high tide level on beaches.
+It grows throughout the North and South Islands.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA)
+
 ### Common mouse-ear chickweed — `common-mouse-ear-chickweed`
 
 - **Labels:** grassland, disturbed
@@ -1775,6 +1870,16 @@ Recent research has shown that Arctic kelp forests can steadily increase pH leve
 Great mullein most frequently grows as a colonist of bare and disturbed soil, usually on sandy or chalky ones. It grows best in dry, sandy, or gravelly soils, although it can grow in a variety of habitats, including banksides, meadows, roadsides, forest clearings, and pastures. This ability to grow in a wide range of habitats has been linked to strong phenotype variation rather than adaptation capacities.
 - **Credit:** Wikipedia, 'Verbascum thapsus' (CC BY-SA 4.0)
 
+### Common sorrel — `common-sorrel`
+
+- **Labels:** grassland, wetland, disturbed
+    - `grassland` ← 'grass'
+    - `wetland` ← 'Stream'
+    - `disturbed` ← 'roadsides'
+- **Prose:** In New Zealand (Flora of New Zealand): Usually amongst grass on moist roadsides, very local.
+It is known wild from the Maungatungaroa Stream (Manawatū), Christchurch, Dunedin, the Pourakino Valley (Southland) and Halfmoon Bay (Stewart Island).
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — restated
+
 ### Cow parsley — `cow-parsley`
 
 - **Labels:** forest, shrubland, grassland, disturbed
@@ -1785,16 +1890,17 @@ Great mullein most frequently grows as a colonist of bare and disturbed soil, us
 - **Prose:** Cow parsley grows in sunny to semi-shaded locations in meadows and at the edges of hedgerows and woodland. It is a particularly common sight by the roadside and with its frothy early-flowering white blooms is regarded as the most important springtime landscape wildflower in Britain.
 - **Credit:** Wikipedia, 'Anthriscus sylvestris' (CC BY-SA 4.0)
 
-### Cut-leaved deadnettle — `cut-leaved-deadnettle`
+### Curled dock — `curled-dock`
 
-- **Labels:** grassland, wetland, urban, disturbed
-    - `grassland` ← 'meadows'
-    - `wetland` ← 'river'
-    - `urban` ← 'gardens', 'urban'
-    - `disturbed` ← 'Waste places'
-- **Prose:** In New Zealand (Flora of New Zealand): Waste places, river beds, gardens.
-It is found growing in open areas, gardens, fields and meadows, and widely in uncultivated areas in urban habitats.
-- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Lamium hybridum' (rev 1322279095, CC BY-SA 4.0)
+- **Labels:** coastal, grassland, wetland, alpine, disturbed
+    - `coastal` ← 'dune', 'coast'
+    - `grassland` ← 'pastures'
+    - `wetland` ← 'river', 'ditches', 'swamps'
+    - `alpine` ← 'mountains'
+    - `disturbed` ← 'waste places'
+- **Prose:** In New Zealand (Flora of New Zealand): Mostly damp places such as lakesides, river beds, ditches, swamps, moist dune slacks near the coast, and wet pastures, sometimes drier ground in waste places, pastures and other modified habitats.
+It is a widespread and often abundant weed in all but the mountains, on the North, South and Stewart Islands and the Chatham, Campbell and Antipodes Islands.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — restated
 
 ### Douglas fir — `douglas-fir`
 
@@ -1815,15 +1921,28 @@ It is found growing in open areas, gardens, fields and meadows, and widely in un
 It grows gregariously in troops, arcs, or rings (type II, which causes the grass to grow and become greener).
 - **Credit:** Wikipedia, 'Marasmius oreades' (CC BY-SA 4.0)
 
-### Field woundwort — `field-woundwort`
+### Fiddle dock — `fiddle-dock`
 
-- **Labels:** wetland, urban, disturbed
+- **Labels:** grassland, disturbed
+    - `grassland` ← 'Pastures'
+    - `disturbed` ← 'waste places', 'roadsides', 'railway'
+- **Prose:** In New Zealand (Flora of New Zealand): Pastures, waste places, roadsides, railway yards and other habitats near settlements.
+It favours dry, sunny places on sandy soils.
+It grows on the North and South Islands.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Plants For A Future, 'Rumex pulcher' (all rights reserved, restated); Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — restated
+
+### Foxglove — `foxglove`
+
+- **Labels:** coastal, forest, shrubland, grassland, wetland, disturbed
+    - `coastal` ← 'Coast'
+    - `forest` ← 'forest'
+    - `shrubland` ← 'scrub'
+    - `grassland` ← 'pastures'
     - `wetland` ← 'river'
-    - `urban` ← 'gardens'
-    - `disturbed` ← 'waste places', 'roadsides', 'disturbed'
-- **Prose:** In New Zealand (Flora of New Zealand): A weed of gardens, fields, waste places, roadsides, and river beds.
-It grows in many types of habitat, including disturbed areas, and often in moist spots.
-- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Stachys arvensis' (CC BY-SA 4.0)
+    - `disturbed` ← 'disturbed', 'roadsides'
+- **Prose:** In New Zealand (Flora of New Zealand): Mostly open disturbed areas, especially poor pastures, scrub and forest margins, stony river beds, roadsides, tracksides.
+It is very widespread on the North, South and Stewart Islands, but often absent from drier areas; it is abundant on the West Coast of the South Island, up to about 1000 m.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — restated
 
 ### French broom — `french-broom`
 
@@ -1857,15 +1976,6 @@ It grows in many types of habitat, including disturbed areas, and often in moist
 - **Prose:** Plantago major grows in lawns and fields, along roadsides, and in other areas that have been disturbed by humans. It does particularly well in compacted or disturbed soils, but can also occur in undisturbed grassland.
 - **Credit:** Wikipedia, 'Plantago major' (CC BY-SA 4.0)
 
-### Ground-ivy — `ground-ivy`
-
-- **Labels:** grassland, disturbed
-    - `grassland` ← 'grasslands', 'lawns'
-    - `disturbed` ← 'wasteland'
-- **Prose:** In New Zealand (Flora of New Zealand): Usually in shady places below trees and around buildings.
-G. hederacea thrives in moist shaded areas, but also tolerates sun very well. It is a common plant in grasslands and wooded areas or wasteland.  It also thrives in lawns and around buildings, since it survives mowing. Part of the reason for its wide distribution is its  rhizomatous method of reproduction.
-- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Glechoma hederacea' (CC BY-SA 4.0)
-
 ### Hairy bittercress — `hairy-bittercress`
 
 - **Labels:** grassland, disturbed
@@ -1888,26 +1998,6 @@ G. hederacea thrives in moist shaded areas, but also tolerates sun very well. It
 - **Prose:** Once indigenous to North Africa and southern Europe, but found in Ireland, Wales and England and also in the highlands of Scotland.  It is found on roadsides, wasteland and as a weed of arable land.  It is now well-established throughout the world.
 - **Credit:** Wikipedia, 'Sisymbrium officinale' (CC BY-SA 4.0)
 
-### Hedge woundwort — `hedge-woundwort`
-
-- **Labels:** forest, shrubland
-    - `forest` ← 'forest', 'woods'
-    - `shrubland` ← 'scrub', 'hedges', 'hedgerows'
-- **Prose:** In New Zealand (Flora of New Zealand): Shaded places along forest margins, amongst scrub and around hedges.
-It grows in dappled shade at the edge of woods, in hedgerows and on rough ground.
-- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Stachys sylvatica' (CC BY-SA 4.0)
-
-### Henbit deadnettle — `henbit-deadnettle`
-
-- **Labels:** grassland, urban, disturbed
-    - `grassland` ← 'meadows'
-    - `urban` ← 'gardens', 'urban'
-    - `disturbed` ← 'Waste places', 'roadsides', 'railway'
-- **Prose:** In New Zealand (Flora of New Zealand): Waste places such as roadsides, railway yards and building sites, also on arable land.
-It is found growing in open areas, gardens, fields and meadows, and widely in uncultivated areas in urban habitats.
-In New Zealand it is a common weed of cropping land, especially in the South Island.
-- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Wikipedia, 'Lamium amplexicaule' (rev 1359641636, CC BY-SA 4.0); Bayer Crop Science New Zealand, 'Henbit' (all rights reserved, restated)
-
 ### Hioi — `hioi`
 
 - **Labels:** coastal, grassland, alpine
@@ -1916,6 +2006,17 @@ In New Zealand it is a common weed of cropping land, especially in the South Isl
     - `alpine` ← 'alpine'
 - **Prose:** It is found sparsely in grassy fields and open land generally. It inhabits an elevation range from coastal to alpine, within a range of sea level to 1,400 metres.
 - **Credit:** Wikipedia, 'Mentha cunninghamii' (CC BY-SA 4.0) — units converted to metric
+
+### Hooked dock — `hooked-dock`
+
+- **Labels:** coastal, grassland, wetland, disturbed
+    - `coastal` ← 'coastal'
+    - `grassland` ← 'pastures'
+    - `wetland` ← 'riverbeds'
+    - `disturbed` ← 'roadsides', 'waste places'
+- **Prose:** In New Zealand (Flora of New Zealand): Open, often very dry situations such as cliff tops and coastal headlands, roadsides, waste places, poor pastures, stony riverbeds and on talus deposits.
+Look for it in the north of the North Island, especially on offshore islands, south to the Bay of Plenty, and in Marlborough and Nelson; it is occasional in Canterbury and Otago, and very common on Raoul Island.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — restated
 
 ### Horse mushroom — `horse-mushroom`
 
@@ -2076,6 +2177,17 @@ In New Zealand: lowland, montane and subalpine, on ground of low to moderate fer
 Mānuka can quickly colonise areas of disturbed land, and can create environments where other native species can establish more successfully.
 - **Credit:** Wikipedia, 'Mānuka' (CC BY-SA 4.0)
 
+### New Zealand dock — `new-zealand-dock`
+
+- **Labels:** grassland, wetland, alpine
+    - `grassland` ← 'grassland'
+    - `wetland` ← 'bogs', 'lake', 'streamsides', 'boggy'
+    - `alpine` ← 'mountains'
+- **Prose:** In New Zealand (Flora of New Zealand): Lowland to montane grassland, open places, especially bogs, wet flushes, lake and streamsides.
+It prefers damp, boggy ground that can be flooded for months at a time.
+Look for it from the mountains of the central North Island southwards, down to sea level in parts of the South Island and on Stewart Island; it is mostly uncommon in the north.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); Oratia Native Plant Nursery, 'Rumex' (The Fringe, June 2013, all rights reserved, restated); Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — restated
+
 ### Nipplewort — `nipplewort`
 
 - **Labels:** forest, shrubland, disturbed
@@ -2084,6 +2196,13 @@ Mānuka can quickly colonise areas of disturbed land, and can create environment
     - `disturbed` ← 'roadsides', 'wasteland'
 - **Prose:** Lapsana communis is found growing in arable fields, woods, hedges, roadsides, wasteland, hedgerows, woodland margins and clear-felled areas in forests.
 - **Credit:** Wikipedia, 'Lapsana communis' (CC BY-SA 4.0)
+
+### Olive oyster — `olive-oyster`
+
+- **Labels:** forest
+    - `forest` ← 'on dead wood of Nothofagus trees'
+- **Prose:** It is found on dead wood of Nothofagus trees.
+- **Credit:** Wikipedia, 'Pleurotus purpureo-olivaceus' (CC BY-SA 4.0)
 
 ### Ox-eye daisy — `ox-eye-daisy`
 
@@ -2245,6 +2364,17 @@ Fuchsia perscandens's preferred habitats are river terraces and remnants of whit
 - **Prose:** C. bursa-pastoris is the second-most prolific wild plant in the world and is common on cultivated ground and waysides and meadows.
 - **Credit:** Wikipedia, 'Capsella bursa-pastoris' (CC BY-SA 4.0)
 
+### Shore dock — `shore-dock`
+
+- **Labels:** coastal, grassland, wetland
+    - `coastal` ← 'beaches', 'coastal', 'coast', 'shores'
+    - `grassland` ← 'turf'
+    - `wetland` ← 'streams', 'seepages'
+- **Prose:** In New Zealand (Flora of New Zealand): Gravelly and sandy beaches, coastal turf and coastal banks.
+It grows in damp coastal turf near streams and seepages, and in damp sand.
+Look for it from the south Wellington coast and the shores of Cook Strait southwards, on Stewart Island, the Chatham Islands and most of the subantarctic islands; it is now common only on the Chathams and the subantarctic islands.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA); NZ Plant Conservation Network, 'Rumex neglectus' (all rights reserved, restated); Oratia Native Plant Nursery, 'Rumex' (The Fringe, June 2013, all rights reserved, restated)
+
 ### Snowberries — `snowberries`
 
 - **Labels:** shrubland, alpine
@@ -2355,6 +2485,14 @@ Both Douglas-fir and S. lakei are non-native introduced species in Europe. The f
 - **Prose:** Spearmint can readily adapt to grow in various types of soil. Spearmint tends to thrive with plenty of organic material in full sun to part shade. The plant is also known to be found in moist habitats such as swamps or creeks, where the soil is sand or clay.
 Spearmint ideally thrives in soils that are deep, well-drained, moist, rich in nutrients and organic matter, and have a crumbly texture. The pH range should be between 6.0 and 7.5.
 - **Credit:** Wikipedia, 'Spearmint' (CC BY-SA 4.0)
+
+### Wisteria — `wisteria`
+
+- **Labels:** shrubland, disturbed
+    - `shrubland` ← 'scrubland'
+    - `disturbed` ← 'Waste places'
+- **Prose:** In New Zealand (Flora of New Zealand): Waste places, scrubland.
+- **Credit:** Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA)
 
 ### Wood blewit — `wood-blewit`
 

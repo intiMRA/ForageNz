@@ -29,6 +29,15 @@ BUILD_FILE = re.compile(
 )
 
 
+def project_path(raw: str) -> str:
+    """A file reference's path relative to the ForageNZ group.
+
+    Xcode quotes a path holding characters such as `+`, and a model file shown in another
+    group (Recipe.swift sits under Recipies) is written relative to that group, `../Catalogue/…`.
+    """
+    return re.sub(r"^(\.\./)+", "", raw.strip('"'))
+
+
 def sources_phases(text: str) -> list[set[str]]:
     """The build-file ids listed in each PBXSourcesBuildPhase."""
     phases, current = [], None
@@ -53,7 +62,7 @@ def find_drift() -> list[str]:
     on_disk = {
         str(path.relative_to("ForageNZ")) for path in MODEL_DIR.rglob("*.swift")
     }
-    refs = {path: ref for ref, path in FILE_REF.findall(text)}
+    refs = {project_path(path): ref for ref, path in FILE_REF.findall(text)}
     builds: dict[str, list[str]] = {}
     for build, ref in BUILD_FILE.findall(text):
         builds.setdefault(ref, []).append(build)

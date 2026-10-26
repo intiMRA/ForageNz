@@ -78,7 +78,7 @@ NAMES = {
     "black-nightshade": "Nightshades and fat hen",
     "bracken": "Ferns",
     "chickweed": "Chickweed and its lookalikes",
-    "dock": "Docks and sheep sorrel",
+    "clustered-dock": "Docks and sheep sorrel",
     "european-barberry": "Barberries",
     "herb-robert": "Cranesbills",
     "slippery-jack": "Slippery jacks",
@@ -336,11 +336,289 @@ details summary { cursor: pointer; color: var(--warn); }
 details ul { margin: 6px 0 0; padding-left: 16px; }
 details li { margin-bottom: 6px; }
 code { font: 12px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--muted); }
+details.recipes { overflow: visible; }
+details.recipes > summary { color: var(--fg); padding: 12px 16px; font-size: 15px;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
+details.recipes[open] > summary { border-bottom: 1px solid var(--line); }
+.recipe { padding: 16px 18px 18px; border-bottom: 1px solid var(--line); max-width: 860px; }
+.recipe:last-child { border-bottom: 0; }
+.recipe h4 { font-size: 17px; margin: 0 0 4px; }
+.recipe h5 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--muted); margin: 0 0 6px; }
+.recipe h6 { font-size: 13px; margin: 10px 0 2px; color: var(--accent); }
+.recipe .yield { color: var(--accent); font-weight: 600; font-size: 13px; margin: 0 0 6px; }
+.recipe .note { color: var(--muted); font-style: italic; font-size: 13px; margin: 6px 0 10px;
+  max-width: 75ch; }
+.recipe-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 8px 28px; margin-top: 10px; }
+.recipe-body > :only-child { grid-column: 1 / -1; }
+.ingredients ul { margin: 0; padding-left: 18px; }
+.ingredients li { margin-bottom: 4px; font-size: 14px; }
+.ingredients .aside { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+.method ol { margin: 0; padding-left: 22px; }
+.method li { margin-bottom: 8px; font-size: 14px; max-width: 70ch; }
+.method li::marker { color: var(--accent); font-weight: 600; }
+@media (max-width: 640px) { .recipe-body { grid-template-columns: 1fr; } }
 """
 
 
 def esc(text: object) -> str:
     return html.escape(str(text))
+
+
+# --- Recipes ---------------------------------------------------------------------------
+#
+# A recipe's method is stored as one paragraph of prose (`Recipe.method`). The report lays
+# it out as a recipe card by reading that prose, never by changing it: sentences that open
+# with a source line ("Written for …", "The author's …") become notes, "Serves 4" / "Makes
+# one jar" become the yield, a list sentence before the first instruction becomes the
+# ingredients ("Filling: …" starts a named group), and every other sentence is a numbered
+# step. Every word of the method appears in the card exactly once.
+
+SENTENCE = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9(½¼¾“\"])")
+NOTE = re.compile(
+    r"^(Written for|From (?!day)|The author|The source|The recipe|Metric|Millilitres|"
+    r"Of his lists|He |She |Adapted|Converted|Built|Made from)"
+)
+YIELD = re.compile(r"^(Serves|Makes|Feeds)\b")
+FOR_N = re.compile(r"^For (?:\d+|one|two|three|four|five|six|eight|ten)\b[^:.;]{0,30}:\s*")
+LABEL = re.compile(r"^(?:For the )?([A-Z]?[a-z]+(?: [a-z]+)?(?: \([^()]*\))?):\s+(.*)$", re.S)
+YOU_NEED = re.compile(r"^You(?:'ll| will)? need\s+")
+# Words that make a sentence an instruction or a remark rather than a list of things.
+VERBISH = re.compile(
+    r"\b(is|are|was|were|until|then|so|can|should|will|keeps?|need|needs|leave|use|uses|"
+    r"must|warns?|says?)\b"
+)
+QUANTITY = re.compile(
+    r"^(\d|½|¼|¾|⅓|a |an |the |some |about |half |one |two |three |four |five |six |"
+    r"several |plenty |enough |equal |extra |more |another |plus |optional)",
+    re.I,
+)
+# Sentence openers that make it an instruction, never a list: "Blanch 12 dock leaves, …".
+IMPERATIVE = set(
+    "add bake beat blanch blend blitz boil bring brown brush butter chill chop clean combine "
+    "cook cool cover cream crumble crush cut dilute dip dissolve divide drain dress drink "
+    "drizzle drop fill finish flatten fold fry garnish gather grate grease grind halve heat "
+    "infuse keep knead ladle lay layer leave let lift line make mash melt mix muddle pack peel "
+    "pick pour prepare press pulse purée put refrigerate rest return rinse roast roll rub run "
+    "sauté scatter scoop score seal season serve shake shape sieve simmer slice soak soften "
+    "spoon spread sprinkle squeeze steam steep sterilise stir store strain strip sweat sweeten "
+    "take taste tear tip toast top toss trim turn twist uncover use warm wash whip whisk wilt wrap "
+    "finely roughly lightly gently thinly".split()
+)
+GROUP_LABEL = re.compile(r"^for (?:the )?([a-z]+(?: [a-z]+)?),\s*(.*)$", re.S)
+# A caution or aside wherever it sits in the sentence: "…; the author warns not to …".
+REMARK = re.compile(r"\b(the author|he|she) (warns|notes|says)\b")
+PARENS = re.compile(r"\([^()]*\)")
+# Openers of a descriptor that belongs to the item before it: "…, peeled and cored".
+TRAILER = re.compile(r"^(\w+ed|\w+ly|stems?|with|without|peel|seeds?|skin|or|at|in|for|such)\b")
+# Imperatives that are also ingredient words ("peel and all", "butter"), so they only
+# mark an instruction at the very start of a sentence.
+NOUN_TOO = {"peel", "top", "butter", "line", "season", "score", "rest", "dress", "brown", "tip"}
+
+
+def sentences(method: str) -> list[str]:
+    return [s.strip() for s in SENTENCE.split(method.strip()) if s.strip()]
+
+
+def top_level_split(text: str, sep: str) -> list[str]:
+    """Split on `sep` outside parentheses."""
+    parts, depth, cur, i = [], 0, "", 0
+    while i < len(text):
+        ch = text[i]
+        depth += ch == "("
+        depth -= ch == ")"
+        if depth == 0 and text.startswith(sep, i):
+            parts.append(cur)
+            cur, i = "", i + len(sep)
+            continue
+        cur += ch
+        i += 1
+    parts.append(cur)
+    return [p.strip() for p in parts if p.strip()]
+
+
+def is_trailer(part: str) -> bool:
+    """ "peeled and cored", "finely chopped", "soaked in the hot water" — but not "sliced
+    day-old white bread", a new item that opens with a participle."""
+    if not TRAILER.match(part):
+        return False
+    if not re.match(r"\w+ed\b", part):
+        return True
+    return len(part.split()) <= 3 or bool(
+        re.search(r"\b(or|in|for|into|to|with|until|lengthways|from|on)\b", part)
+    )
+
+
+def comma_items(text: str) -> list[str]:
+    items: list[str] = []
+    parts = [
+        piece
+        for part in top_level_split(text, ",")
+        for piece in re.split(r"\s+—\s+plus\s+", part)  # "… one and a half times — plus 3 tbsp sugar"
+    ]
+    for part in parts:
+        if items and is_trailer(part):
+            items[-1] += ", " + part
+        else:
+            items.append(part)
+    # "…, 60 ml parmesan and, if you like, 300 g tofu": the aside goes with the next item.
+    for i in range(len(items) - 2, -1, -1):
+        if re.match(r"if \w+( \w+)?$", items[i]):
+            items[i : i + 2] = [items[i] + ", " + items[i + 1]]
+            if i:
+                items[i - 1] = re.sub(r" and$", "", items[i - 1])
+    # "… a handful of wild garlic and a little dulse": split the last item at its final
+    # "and" when what follows is a new quantity, not "salt and pepper".
+    if items:
+        head, sep, tail = items[-1].rpartition(" and ")
+        if sep and head and QUANTITY.match(tail):
+            items[-1:] = [head, tail]
+    return items
+
+
+def ingredient_groups(label: str | None, text: str) -> list[tuple[str | None, list[str]]]:
+    """A list sentence as named groups of items. Two or more semicolons separate items
+    ("2 cloves garlic, minced; olive oil; …"); a single one separates comma lists, and
+    "for the seasoning, …" after it starts a group of its own."""
+    text = text.rstrip(".")
+    parts = top_level_split(text, ";")
+    groups: list[tuple[str | None, list[str]]] = [(label, [])]
+    for part in parts:
+        if m := GROUP_LABEL.match(part):
+            groups.append((m.group(1).capitalize(), []))
+            part = m.group(2)
+        for piece in re.split(r"\s+—\s+then\s+|^then\s+", part):
+            if not piece:
+                continue
+            split = comma_items(piece)
+            listed = sum(bool(QUANTITY.match(i)) for i in split)
+            groups[-1][1].extend(split if len(parts) <= 2 or listed * 2 >= len(split) > 2 else [piece])
+    clean = lambda item: re.sub(r"^(and|plus) ", "", item).strip()
+    return [(name, [clean(i) for i in items if clean(i)]) for name, items in groups if items]
+
+
+def opens_with_instruction(text: str) -> bool:
+    words = [w.rstrip(",:").lower() for w in text.split(" ", 2)]
+    # "Carefully twist …", "Half fill a jar …"
+    if len(words) > 1 and (words[0].endswith("ly") or words[0] in ("half", "first", "then")):
+        if words[1] in IMPERATIVE or words[1] == "fill":
+            return True
+    return words[0] in IMPERATIVE
+
+
+def split_aside(text: str) -> tuple[str, str | None]:
+    """ "Equal parts sorrel, sugar and water; the author usually uses 250 ml of each." —
+    a list, then a remark about it after its one semicolon."""
+    parts = top_level_split(text, ";")
+    if len(parts) == 2 and VERBISH.search(parts[1]) and not VERBISH.search(PARENS.sub("", parts[0])):
+        return parts[0], parts[1][:1].upper() + parts[1][1:]
+    return text, None
+
+
+def is_ingredient_list(text: str) -> bool:
+    if opens_with_instruction(text):
+        return False
+    if text.count(";") >= 2:
+        return True
+    # "In a large saucepan, bring the sugar …", "The night before, soak …"
+    for part in top_level_split(text, ",")[1:]:
+        verb = part.split(" ", 1)[0].lower()
+        if verb in IMPERATIVE and verb not in NOUN_TOO and not verb.endswith("ly"):
+            return False
+    if VERBISH.search(PARENS.sub("", text)):
+        return False
+    lists = text.count(";") + len(top_level_split(text, ",")) - 1
+    if lists >= 2:
+        return True
+    # "400 g dried pasta and 5 ml salt for the water."
+    return bool(QUANTITY.match(text)) and (lists >= 1 or len(comma_items(text.rstrip("."))) >= 2)
+
+
+def parse_recipe(method: str) -> dict[str, Any]:
+    card: dict[str, Any] = {
+        "lede": [], "yield": [], "groups": [], "asides": [], "steps": [], "notes": []
+    }
+    for sentence in sentences(method):
+        started = bool(card["steps"])
+        if NOTE.match(sentence) or REMARK.search(sentence):
+            card["notes" if started else "lede"].append(sentence)
+            continue
+        if m := FOR_N.match(sentence):
+            card["yield"].append(sentence[: m.end()].rstrip(": "))
+            sentence = sentence[m.end() :]
+            sentence = sentence[:1].upper() + sentence[1:]
+        if YIELD.match(sentence) and len(sentence) < 80:
+            card["yield"].append(sentence.rstrip("."))
+            continue
+        label, body = None, sentence
+        if m := LABEL.match(sentence):
+            label, body = m.group(1), m.group(2)
+        if m := YOU_NEED.match(body):
+            body = body[m.end() :]
+        listed, aside = split_aside(body)
+        # After the first step only an unmistakable list still counts: "First infuse the
+        # vodka …. 75 ml sake, 15 ml gin, 15 ml of the vodka …"
+        strong = sum(bool(QUANTITY.match(i)) for i in comma_items(listed.rstrip("."))) >= 3
+        if (not started or strong) and is_ingredient_list(listed):
+            card["groups"].extend(ingredient_groups(label, listed))
+            if aside:
+                card["asides"].append(aside)
+        else:
+            card["steps"].append((label, body))
+    return card
+
+
+def render_recipe(recipe: dict[str, str]) -> str:
+    out = ['<article class="recipe">', f"<h4>{esc(recipe['title'])}</h4>"]
+    if not recipe["method"].strip():
+        out.append('<p class="dim">No method written yet.</p></article>')
+        return "".join(out)
+    card = parse_recipe(recipe["method"])
+    if card["yield"]:
+        out.append(f'<p class="yield">{esc(" · ".join(card["yield"]))}</p>')
+    if card["lede"]:
+        out.append(f'<p class="note">{esc(" ".join(card["lede"]))}</p>')
+    out.append('<div class="recipe-body">')
+    if card["groups"]:
+        out.append('<div class="ingredients"><h5>Ingredients</h5>')
+        for label, items in card["groups"]:
+            if label:
+                out.append(f"<h6>{esc(label)}</h6>")
+            out.append("<ul>" + "".join(f"<li>{esc(i)}</li>" for i in items) + "</ul>")
+        for aside in card["asides"]:
+            out.append(f'<p class="aside">{esc(aside)}</p>')
+        out.append("</div>")
+    if card["steps"]:
+        out.append('<div class="method"><h5>Method</h5><ol>')
+        for label, text in card["steps"]:
+            lead = f"<b>{esc(label)}:</b> " if label else ""
+            out.append(f"<li>{lead}{esc(text)}</li>")
+        out.append("</ol></div>")
+    out.append("</div>")
+    if card["notes"]:
+        out.append(f'<p class="note">{esc(" ".join(card["notes"]))}</p>')
+    out.append("</article>")
+    return "".join(out)
+
+
+def render_recipes(entries: list[Entry]) -> list[str]:
+    cooked = sorted((e for e in entries if e.get("recipes")), key=lambda e: e["commonName"])
+    total = sum(len(e["recipes"]) for e in cooked)
+    out = [
+        f'<h2 class="group" id="recipes">Recipes<small>{total} recipes on {len(cooked)} '
+        "entries</small></h2>"
+    ]
+    for e in cooked:
+        count = len(e["recipes"])
+        out.append(f'<details class="cluster recipes" id="recipes-{esc(e["id"])}"><summary>')
+        out.append(
+            f'<b>{esc(e["commonName"])}</b> <span class="sci">{esc(e["scientificName"])}</span>'
+            f' <span class="chip">{count} recipe{"s" if count != 1 else ""}</span></summary>'
+        )
+        out.extend(render_recipe(r) for r in e["recipes"])
+        out.append("</details>")
+    return out
 
 
 def months_text(months: list[int]) -> str:
@@ -429,6 +707,7 @@ def render(entries: list[Entry]) -> str:
         (sum(1 for e in entries if e.get("draft")), "draft"),
         (sum(1 for e in entries if not e.get("photos")), "with no photo"),
         (sum(1 for e in entries if owed(e)), "owe a person's text"),
+        (sum(len(e.get("recipes", [])) for e in entries), "recipes"),
     ]
     out.append('<div class="totals">')
     for value, label in totals:
@@ -438,6 +717,7 @@ def render(entries: list[Entry]) -> str:
     for key, label in GROUPS:
         count = sum(1 for e in entries if e["group"] == key)
         out.append(f'<a href="#{key}">{esc(label)} · {count}</a>')
+    out.append('<a href="#recipes">Recipes</a>')
     out.append("</nav>")
 
     labels = dict(GROUPS)
@@ -501,6 +781,7 @@ def render(entries: list[Entry]) -> str:
             out.extend(render_table(group["loose"]))
             out.append("</section>")
 
+    out.extend(render_recipes(entries))
     out.append("</div>")
     return "\n".join(out)
 

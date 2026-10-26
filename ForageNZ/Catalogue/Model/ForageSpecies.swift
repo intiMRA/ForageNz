@@ -217,7 +217,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     public var searchableText: String {
         [commonName, maoriName, scientificName, summary.text]
             .compactMap(\.self)
-            .joined(separator: " ")
+            .joined(separator: .space)
             .lowercased()
     }
 

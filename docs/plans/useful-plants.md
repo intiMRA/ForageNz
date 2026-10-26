@@ -60,6 +60,32 @@ The catalogue is food-shaped from the model up, and every one of these assumes "
   "Other uses" sections of Useful Temperate Plants (CC BY-NC-SA 3.0); Te Papa collections. None has
   been read for this yet.
 
+## Candidates noted while filling food entries
+
+Non-food uses met in sources while filling food pages. Nothing here is on a page yet; each needs its
+source re-read (licence first) and the plan's rules applied before it is used.
+
+| Species (entry id) | Use | Where it was seen |
+|---|---|---|
+| Hedge woundwort (`hedge-woundwort`) | Tough stem fibre; yellow dye from the plant | Kahikatea Farm 'Woundwort' (NZ nursery); PFAF 'Stachys sylvatica' |
+| Red deadnettle (`red-deadnettle`) | Dye for wool | Grow Forage Cook Ferment; Nerdy Farm Wife |
+| Kōkihi / beach spinach (`beach-spinach`) | Red berries used as a stain and dye (not eaten) | Ngā Rauropi Whakaoranga, Tunuku Karetai to Beattie |
+| Kohia (`kohia`) | Seed oil, fibre, scent | Ngā Rauropi Whakaoranga |
+| Henbit deadnettle (`henbit-deadnettle`) | Salve (medicinal — out of scope unless decision 1 changes) | Nerdy Farm Wife |
+| Narrow-leaved plantain (`plantain`), greater plantain (`greater-plantain`) | Leaf-infused oil for salves, balms, lip balm, lotion bars and soap; bath salts and bath bags; infused-vinegar hair rinse (medicinal and cosmetic — out of scope unless decision 1 changes) | The Nerdy Farm Wife '10 Things to Make with Plantain' (written for Plantago major and P. lanceolata); Hedgecombers 'Plantain salve recipe' (both species); On the Land 'Plantain for pain' (infused-oil and beeswax balm); Herb Federation of NZ 'Plantain' (infused oil) |
+| Climbing dock (`climbing-dock`) | Dye for wool; ornamental fruiting valves; leaf monoprints (paint dabbed on the leaves, pressed between paper) | Flora of New Zealand vol. IV 'Rumex sagittatus'; Diego Bonetto, 'How to forage and cook rambling dock' (21/08/2021) |
+| Sheep sorrel (`sheep-sorrel`) | Mordant-free dye, green to yellow to red (docks' leaves and stalks generally) | Diego Bonetto, 'How to identify and use yellow dock and its close relatives' |
+| Curled dock (`curled-dock`) | Root oil colours cold-process soap pink; roots dye yellow, dark green to brown and dark grey without a mordant; leaf-infused oil salve for itchy skin (medicinal — out of scope unless decision 1 changes) | Diego Bonetto (as above); Eat The Weeds 'Rumex Ruminations' (reader comment); Useful Tropical Plants 'Rumex crispus'; The Nerdy Farm Wife 'Yellow Dock Salve Recipe' |
+| Broad-leaved dock (`broad-leaved-dock`) | Leaves wrapped butter for market ('butter dock') | Wikipedia 'Rumex obtusifolius'; Totally Wild UK; Eat The Weeds |
+| New Zealand dock (`new-zealand-dock`), broad-leaved dock | Sap, leaves and root used on abrasions, boils, cracked lips (medicinal — out of scope unless decision 1 changes) | Ngā Rauropi Whakaoranga |
+| Common sorrel (`common-sorrel`) | Roots dye green, grey and brown, leaves and stems blue-grey; juice removes stains from linen and cloth (laundry stain-remover); an ingredient in wood and silver polish | The Foraging Course Company 'Common sorrel - Rumex acetosa'; The Wildlife Trusts 'Common sorrel'; Kew Species Profile (POWO); Korpelainen & Pietiläinen 2020 (dyes) |
+| Pōhue / pink bindweed (`pink-bindweed`) | Used as tying material; roots boiled for nursing mothers, purgative root (medicinal — out of scope unless decision 1 changes) | Useful Temperate Plants 'Calystegia sepium'; Ngā Rauropi Whakaoranga; Plants For A Future |
+| Lesser burdock (`lesser-burdock`) | Fibre for paper; root used as a herbal remedy (medicinal — out of scope unless decision 1 changes) | Useful Temperate Plants 'Arctium minus'; Common Weeds of New Zealand via RNZIH |
+| Narrow-leaved plantain (`plantain`) | Dye (plant simmered in water, for textiles); clothing starch; cordage; seed-coat mucilage as a food thickener and stabiliser | Wikipedia 'Plantago lanceolata'; The Foraging Course Company 'Ribwort plantain'; Useful Temperate Plants 'Plantago lanceolata' |
+| Greater plantain (`greater-plantain`) | Tough leaf fibres for small cords, fishing line and braiding; seed mucilage as a thickener (ice cream, chocolate) and in cosmetics; seed sold as bird feed; kopakopa as rongoā for ulcers, boils, burns, cuts and bites (medicinal — out of scope unless decision 1 changes) | Wikipedia 'Plantago major'; Useful Temperate Plants 'Plantago major'; Rongoā Mauri 'KOPAKOPA'; Ngā Rauropi Whakaoranga 'Plantago spp.'; On the Land 'Plantain for pain' (bird feed) |
+| Water plantain (`water-plantain`) | Root and leaves in Chinese and European herbal medicine ('mad-dog weed') (medicinal — out of scope unless decision 1 changes) | Useful Temperate Plants 'Alisma plantago-aquatica'; Wikipedia; Botanical Society of Scotland plant of the week 19/08/2024 (Gerard's Herbal 1597, Chinese 'zexie'); herbs2000.com |
+| Water plantain (`water-plantain`) | Removing heavy metals from stormwater and industrial wastewater (phytoremediation; stored in the roots) | Botanical Society of Scotland plant of the week 19/08/2024, citing Ushakumary and Madhu 2014 |
+
 ## Open decisions (decide before starting)
 
 1. **Which uses are in scope** besides fibre and dye? Candidates: basketry and weaving materials,
