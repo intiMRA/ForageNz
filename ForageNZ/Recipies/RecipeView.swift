@@ -24,7 +24,7 @@ struct RecipeView: View {
                     if index > 0 {
                         Divider()
                     }
-                    RecipeSection(title: entry.recipe.title, card: entry.card)
+                    RecipeSection(title: entry.recipe.title, card: entry.card, sourceURL: entry.recipe.sourceURL)
                 }
             }
             .padding(.all, .medium)
@@ -48,6 +48,7 @@ struct RecipeView: View {
 private struct RecipeSection: View {
     let title: String
     let card: RecipeCard
+    let sourceURL: URL?
 
     var body: some View {
         VStack(alignment: .leading, spacing: .medium) {
@@ -71,7 +72,24 @@ private struct RecipeSection: View {
             if !card.notes.isEmpty {
                 remark(image: Image(systemName: "lightbulb"), text: card.notes.joined(separator: .space))
             }
+
+            if let sourceURL {
+                source(sourceURL)
+            }
         }
+    }
+
+    private func source(_ url: URL) -> some View {
+        Link(destination: url) {
+            HStack(spacing: .xxSmall) {
+                Image(systemName: "globe")
+                    .icon(size: .small, color: .accent)
+                Text("View Source Recipe")
+                    .font(.callout)
+                    .bold()
+            }
+        }
+        .accessibilityHint(Text(url.host() ?? url.absoluteString))
     }
 
     private var header: some View {

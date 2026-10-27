@@ -164,8 +164,14 @@ public extension ForageSpecies {
             blocking(.recipes, "An at-risk or threatened species can't carry recipes — put a generic one on a common relative.")
         }
 
-        for (index, recipe) in recipes.enumerated() where recipe.title.trimmed.isEmpty {
-            blocking(.recipes, at: index, "Recipe needs a title.")
+        for (index, recipe) in recipes.enumerated() {
+            if recipe.title.trimmed.isEmpty {
+                blocking(.recipes, at: index, "Recipe needs a title.")
+            }
+            // Owner, 27/10/2026: every recipe links to the published recipe it was written from.
+            if recipe.sourceURL == nil {
+                blocking(.recipes, at: index, "Recipe needs a link to the recipe it was written from.")
+            }
         }
 
         for (index, photo) in photos.enumerated() {

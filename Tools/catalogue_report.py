@@ -9,9 +9,9 @@ connected component over two kinds of edge:
   * a lookalike card between two entries that are both in the catalogue.
 
 Those are the groups where one research session fills several entries at once. The report
-opens with every group that still has a draft — the ones to pick up next, most drafts first —
-and inside each app group the groups with drafts come before the finished ones. Entries joined
-to nothing are listed last in their app group.
+opens with every draft batched by plant family (``BATCHES``) — the ones to pick up next, most
+drafts first — and inside each app group the groups with drafts come before the finished
+ones. Entries joined to nothing are listed last in their app group.
 
 Per entry the report shows its state, caution, photos, months, the prose fields still empty,
 its lookalike cards (and whether each opens a draft), its habitat tags with the words in its
@@ -105,6 +105,56 @@ NAMES = {
     "bluefoot-bolete": "Bluefoot and riverine boletes",
     "sticky-mouse-ear-chickweed": "Mouse-ear chickweeds",
 }
+
+# The "Pick up next" table batches species groups (and lone drafts) by plant family, so one
+# session covers several groups that share a Flora treatment, keys and lookalikes. Small
+# families join their nearest relatives (fuchsias with the myrtles, hops with the roses) or a
+# coarser lineage where families are tiny: fungi by order, conifers, ferns, seaweeds by colour.
+# Keyed by genus, the first word of `scientificName`; a genus missing here gets its own batch.
+BATCHES = {
+    "Daisy family (Asteraceae)": "Achillea Anthemis Arctium Bellis Calendula Chamaemelum Crepis "
+    "Erigeron Hypochaeris Lactuca Lapsana Leontodon Leucanthemum Matricaria Mycelis Pilosella "
+    "Scorzoneroides Silybum Sonchus Taraxacum Tragopogon",
+    "Mustard family (Brassicaceae)": "Barbarea Brassica Cakile Capsella Cardamine Diplotaxis "
+    "Lepidium Lobularia Lunaria Matthiola Nasturtium Raphanus Rorippa Sisymbrium",
+    "Carrot family and lemonwood (Apiales)": "Angelica Anthriscus Apium Conium Daucus Foeniculum "
+    "Gingidia Helosciadium Pastinaca Petroselinum Pittosporum Smyrnium",
+    "Mint, plantain and olive families (Lamiales)": "Cymbalaria Digitalis Glechoma Jasminum Lamium "
+    "Lavandula Melissa Mentha Olea Origanum Plantago Prunella Stachys Thymus Verbascum Veronica",
+    "Rose family and hops (Rosales)": "Chaenomeles Crataegus Cydonia Eriobotrya Fragaria Humulus "
+    "Prunus Pyrus Rosa Rubus Sanguisorba Sorbus Urtica",
+    "Pea family (Fabaceae)": "Acacia Cytisus Genista Lathyrus Robinia Spartium Trifolium Ulex "
+    "Vicia Wisteria",
+    "Succulents and saltworts (Caryophyllales)": "Amaranthus Atriplex Carpobrotus Chenopodium "
+    "Disphyma Opuntia Portulaca Salicornia Suaeda Tetragonia",
+    "Pinks and knotweeds (Caryophyllales)": "Cerastium Dianthus Persicaria Reynoutria Rumex "
+    "Silene Stellaria",
+    "Myrtles and fuchsias (Myrtales)": "Acca Fuchsia Kunzea Leptospermum Metrosideros Psidium "
+    "Syzygium",
+    "Heath family (Ericaceae)": "Arbutus Gaultheria Leptecophylla Styphelia",
+    "Nightshades, honeysuckles and comfrey": "Convolvulus Leycesteria Lonicera Lycium Physalis "
+    "Solanum Symphytum",
+    "Lilies, flaxes and irises (Asparagales)": "Allium Arthropodium Asparagus Cordyline Hosta "
+    "Leucojum Phormium Romulea",
+    "Grasses, bamboos and raupō (Poales)": "Avena Briza Himalayacalamus Phyllostachys Pseudosasa "
+    "Typha",
+    "Other monocots": "Alisma Freycinetia Monstera Ripogonum Tradescantia",
+    "Violets and linseed (Malpighiales)": "Euphorbia Linum Passiflora Viola",
+    "Currants and pennywort (Saxifragales)": "Ribes Umbilicus",
+    "Nut trees and sumac": "Aesculus Castanea Juglans Quercus Rhus",
+    "Other trees and climbers": "Eschscholzia Magnolia Pseudowintera Sicyos Tilia",
+    "Conifers": "Chamaecyparis Cryptomeria Dacrycarpus Dacrydium Larix Pinus Podocarpus "
+    "Prumnopitys Pseudotsuga Taxus",
+    "Ferns": "Asplenium Blechnum Cyathea Lecanopteris Pteridium",
+    "Brown seaweeds": "Durvillaea Ecklonia Hormosira Macrocystis Splachnidium Undaria",
+    "Green and red seaweeds": "Agarophyton Caulerpa Chaetomorpha Codium Pyropia Ulva",
+    "Boletes (Boletales)": "Boletus Chalciporus Leccinum Suillus Xerocomellus",
+    "Gilled mushrooms (Agaricales)": "Agaricus Amanita Armillaria Calvatia Chlorophyllum "
+    "Clavogaster Clitocybe Coprinus Cyclocybe Flammulina Galerina Marasmius Panaeolus Pleurotus "
+    "Psilocybe Stropharia Volvariella",
+    "Other fungi and lichens": "Auricularia Cladonia Hericium Lactarius Morchella Trametes",
+}
+BATCH_OF = {genus: batch for batch, genera in BATCHES.items() for genus in genera.split()}
 
 
 def prose(entry: Entry, field: str) -> str:
@@ -238,6 +288,45 @@ def describe(members: list[Entry], by_id: dict[str, Entry]) -> dict[str, Any]:
     }
 
 
+def genus_of(entry: Entry) -> str:
+    name = (entry.get("scientificName") or "").strip()
+    return name.split()[0] if name else "?"
+
+
+def batch_drafts(entries: list[Entry]) -> list[dict[str, Any]]:
+    """Every draft in one batch, with the species groups it brings along, most drafts first.
+
+    A species group goes whole into the batch most of its drafts' genera belong to.
+    """
+    by_id = {e["id"]: e for e in entries}
+    batches: dict[str, list[dict[str, Any]]] = collections.defaultdict(list)
+    for members in components(entries):
+        drafts = [e for e in members if e.get("draft")]
+        if not drafts:
+            continue
+        votes = collections.Counter(BATCH_OF.get(genus_of(e), genus_of(e)) for e in drafts)
+        batches[votes.most_common(1)[0][0]].append(describe(members, by_id))
+    out: list[dict[str, Any]] = []
+    for name, groups in batches.items():
+        groups.sort(key=lambda c: (-c["drafts"], c["name"]))
+        rows = [r for c in groups for r in c["rows"]]
+        out.append(
+            {
+                "name": name,
+                "groups": groups,
+                "apps": [
+                    key for key, _ in GROUPS if any(by_id[r["id"]]["group"] == key for r in rows)
+                ],
+                "size": len(rows),
+                "drafts": sum(1 for r in rows if r["draft"]),
+                "photoless": sum(1 for r in rows if r["photos"] == 0),
+                "owed": sum(1 for r in rows if r["owed"]),
+            }
+        )
+    out.sort(key=lambda b: (-b["drafts"], -b["size"], b["name"]))
+    return out
+
+
 def file_by_group(entries: list[Entry]) -> dict[str, dict[str, Any]]:
     """App group → its species groups (ranked) and its unjoined entries.
 
@@ -246,11 +335,8 @@ def file_by_group(entries: list[Entry]) -> dict[str, dict[str, Any]]:
     """
     by_id = {e["id"]: e for e in entries}
     filed: dict[str, dict[str, Any]] = {key: {"clusters": [], "loose": []} for key, _ in GROUPS}
-    filed["next"] = {"clusters": [], "loose": []}
     for members in components(entries):
         whole = describe(members, by_id)
-        if len(members) > 1 and whole["drafts"]:
-            filed["next"]["clusters"].append(whole)
         for key, _ in GROUPS:
             part = [e for e in members if e["group"] == key]
             if not part:
@@ -347,6 +433,8 @@ details.recipes[open] > summary { border-bottom: 1px solid var(--line); }
   color: var(--muted); margin: 0 0 6px; }
 .recipe h6 { font-size: 13px; margin: 10px 0 2px; color: var(--accent); }
 .recipe .yield { color: var(--accent); font-weight: 600; font-size: 13px; margin: 0 0 6px; }
+.recipe .source { font-size: 13px; margin: 8px 0 0; }
+.recipe .source a::before { content: "🌐 "; }
 .recipe .note { color: var(--muted); font-style: italic; font-size: 13px; margin: 6px 0 10px;
   max-width: 75ch; }
 .recipe-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
@@ -378,9 +466,11 @@ def esc(text: object) -> str:
 SENTENCE = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9(½¼¾“\"])")
 NOTE = re.compile(
     r"^(Written for|From (?!day)|The author|The source|The recipe|Metric|Millilitres|"
-    r"Of his lists|He |She |Adapted|Converted|Built|Made from)"
+    r"Of his lists|He |She |Adapted|Converted|Built|Made from|Made with|Recorded|The amounts|"
+    r"The quantities|Keeps|It keeps|They keep|"
+    r"Ready (?:after|in)|Good (?:on|with|as))"
 )
-YIELD = re.compile(r"^(Serves|Makes|Feeds)\b")
+YIELD = re.compile(r"^(Serves|Makes|Feeds|Fills)\b")
 FOR_N = re.compile(r"^For (?:\d+|one|two|three|four|five|six|eight|ten)\b[^:.;]{0,30}:\s*")
 LABEL = re.compile(r"^(?:For the )?([A-Z]?[a-z]+(?: [a-z]+)?(?: \([^()]*\))?):\s+(.*)$", re.S)
 YOU_NEED = re.compile(r"^You(?:'ll| will)? need\s+")
@@ -455,7 +545,9 @@ def comma_items(text: str) -> list[str]:
     parts = [
         piece
         for part in top_level_split(text, ",")
-        for piece in re.split(r"\s+—\s+plus\s+", part)  # "… one and a half times — plus 3 tbsp sugar"
+        for piece in re.split(
+            r"\s+—\s+plus\s+", part
+        )  # "… one and a half times — plus 3 tbsp sugar"
     ]
     for part in parts:
         if items and is_trailer(part):
@@ -493,7 +585,9 @@ def ingredient_groups(label: str | None, text: str) -> list[tuple[str | None, li
                 continue
             split = comma_items(piece)
             listed = sum(bool(QUANTITY.match(i)) for i in split)
-            groups[-1][1].extend(split if len(parts) <= 2 or listed * 2 >= len(split) > 2 else [piece])
+            groups[-1][1].extend(
+                split if len(parts) <= 2 or listed * 2 >= len(split) > 2 else [piece]
+            )
     clean = lambda item: re.sub(r"^(and|plus) ", "", item).strip()
     return [(name, [clean(i) for i in items if clean(i)]) for name, items in groups if items]
 
@@ -511,7 +605,11 @@ def split_aside(text: str) -> tuple[str, str | None]:
     """ "Equal parts sorrel, sugar and water; the author usually uses 250 ml of each." —
     a list, then a remark about it after its one semicolon."""
     parts = top_level_split(text, ";")
-    if len(parts) == 2 and VERBISH.search(parts[1]) and not VERBISH.search(PARENS.sub("", parts[0])):
+    if (
+        len(parts) == 2
+        and VERBISH.search(parts[1])
+        and not VERBISH.search(PARENS.sub("", parts[0]))
+    ):
         return parts[0], parts[1][:1].upper() + parts[1][1:]
     return text, None
 
@@ -537,7 +635,12 @@ def is_ingredient_list(text: str) -> bool:
 
 def parse_recipe(method: str) -> dict[str, Any]:
     card: dict[str, Any] = {
-        "lede": [], "yield": [], "groups": [], "asides": [], "steps": [], "notes": []
+        "lede": [],
+        "yield": [],
+        "groups": [],
+        "asides": [],
+        "steps": [],
+        "notes": [],
     }
     for sentence in sentences(method):
         started = bool(card["steps"])
@@ -572,7 +675,7 @@ def parse_recipe(method: str) -> dict[str, Any]:
 def render_recipe(recipe: dict[str, str]) -> str:
     out = ['<article class="recipe">', f"<h4>{esc(recipe['title'])}</h4>"]
     if not recipe["method"].strip():
-        out.append('<p class="dim">No method written yet.</p></article>')
+        out.append('<p class="dim">No method written yet.</p>' + source_link(recipe) + "</article>")
         return "".join(out)
     card = parse_recipe(recipe["method"])
     if card["yield"]:
@@ -598,8 +701,16 @@ def render_recipe(recipe: dict[str, str]) -> str:
     out.append("</div>")
     if card["notes"]:
         out.append(f'<p class="note">{esc(" ".join(card["notes"]))}</p>')
+    out.append(source_link(recipe))
     out.append("</article>")
     return "".join(out)
+
+
+def source_link(recipe: dict[str, str]) -> str:
+    url = recipe.get("sourceURL")
+    if not url:
+        return '<p class="dim">No source link yet.</p>'
+    return f'<p class="source"><a href="{esc(url)}">View source recipe</a></p>'
 
 
 def render_recipes(entries: list[Entry]) -> list[str]:
@@ -663,7 +774,7 @@ def render_row(r: dict[str, Any]) -> str:
         tags.append(f"<li>{esc(tag)}{why}</li>")
     tag_cell = f'<ul class="list">{"".join(tags)}</ul>' if tags else '<span class="dim">—</span>'
     return (
-        "<tr>"
+        f'<tr id="e-{esc(r["id"])}">'
         f"<td><b>{esc(r['commonName'])}</b><br>"
         f'<span class="sci">{esc(r["scientificName"])}</span><br>'
         f"<code>{esc(r['id'])}</code></td>"
@@ -696,7 +807,7 @@ def render(entries: list[Entry]) -> str:
         "<h1>Catalogue report</h1>",
         '<p class="lede">Every entry, filed by its app group and then by species group — '
         "entries sharing a genus or a lookalike card, the ones one research session fills "
-        "together. It opens with the groups that still have a draft, most drafts first. "
+        "together. It opens with every draft batched by plant family, most drafts first. "
         "A habitat tag is followed by the words in that entry's own habitat prose that "
         "support it. Generated by "
         "<code>Tools/catalogue_report.py</code>; do not edit by hand.</p>",
@@ -721,27 +832,43 @@ def render(entries: list[Entry]) -> str:
     out.append("</nav>")
 
     labels = dict(GROUPS)
-    picks = filed["next"]["clusters"]
+    picks = batch_drafts(entries)
     out.append(
-        f'<h2 class="group" id="next">Pick up next<small>{len(picks)} species groups '
-        "with a draft, most drafts first</small></h2>"
+        f'<h2 class="group" id="next">Pick up next<small>{len(picks)} batches by plant family, '
+        "most drafts first</small></h2>"
     )
     out.append('<section class="cluster"><div class="scroll"><table><thead><tr>')
-    headers = ["Species group", "App group", "Drafts", "No photo", "Owe text", "Lookalike pairs"]
+    headers = [
+        "Batch",
+        "Species groups and their drafts",
+        "App group",
+        "Drafts",
+        "No photo",
+        "Owe text",
+    ]
     for header in headers:
         out.append(f"<th>{header}</th>")
     out.append("</tr></thead><tbody>")
-    for c in picks:
-        drafts = ", ".join(r["commonName"] for r in c["rows"] if r["draft"])
+    for b in picks:
+        lines = []
+        for c in b["groups"]:
+            drafts = ", ".join(
+                f'<a href="#e-{esc(r["id"])}">{esc(r["commonName"])}</a>'
+                for r in c["rows"]
+                if r["draft"]
+            )
+            label = (
+                f'<a href="#{c["anchor"]}"><b>{esc(c["name"])}</b></a>: ' if c["size"] > 1 else ""
+            )
+            lines.append(f"<li>{label}{drafts}</li>")
         out.append(
             "<tr>"
-            f'<td><a href="#{c["anchor"]}"><b>{esc(c["name"])}</b></a><br>'
-            f'<span class="dim">{esc(drafts)}</span></td>'
-            f"<td>{esc(' / '.join(labels[k] for k in c['apps']))}</td>"
-            f'<td><span class="miss">{c["drafts"]}</span> of {c["size"]}</td>'
-            f"<td>{c['photoless'] or '—'}</td>"
-            f"<td>{c['owed'] or '—'}</td>"
-            f"<td>{c['linked']}/{c['possible']}</td>"
+            f"<td><b>{esc(b['name'])}</b></td>"
+            f'<td><ul class="list">{"".join(lines)}</ul></td>'
+            f"<td>{esc(' / '.join(labels[k] for k in b['apps']))}</td>"
+            f'<td><span class="miss">{b["drafts"]}</span> of {b["size"]}</td>'
+            f"<td>{b['photoless'] or '—'}</td>"
+            f"<td>{b['owed'] or '—'}</td>"
             "</tr>"
         )
     out.append("</tbody></table></div></section>")

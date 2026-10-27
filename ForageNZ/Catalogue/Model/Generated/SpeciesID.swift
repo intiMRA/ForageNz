@@ -274,6 +274,7 @@ public enum SpeciesID: String, Codable, Sendable, Hashable, CaseIterable {
     case samphire = "samphire"
     case sandCoprosma = "sand-coprosma"
     case scarletPimpernel = "scarlet-pimpernel"
+    case scentlessChamomile = "scentless-chamomile"
     case scotchBroom = "scotch-broom"
     case scramblingFuchsia = "scrambling-fuchsia"
     case seaBlite = "sea-blite"

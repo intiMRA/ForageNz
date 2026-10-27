@@ -97,11 +97,13 @@ nonisolated struct RecipeCard: Equatable, Sendable {
 private extension RecipeCard {
     static let note = Pattern(
         "^(Written for|From (?!day)|The author|The source|The recipe|Metric|Millilitres|"
-            + "Of his lists|He |She |Adapted|Converted|Built|Made from)"
+            + "Of his lists|He |She |Adapted|Converted|Built|Made from|Made with|Recorded|The amounts|"
+            + "The quantities|Keeps|It keeps|They keep|"
+            + "Ready (?:after|in)|Good (?:on|with|as))"
     )
     /// A caution or aside wherever it sits in the sentence: "…; the author warns not to …".
     static let remark = Pattern("\\b(the author|he|she) (warns|notes|says)\\b")
-    static let yieldLine = Pattern("^(Serves|Makes|Feeds)\\b")
+    static let yieldLine = Pattern("^(Serves|Makes|Feeds|Fills)\\b")
     static let forPeople = Pattern("^For (?:\\d+|one|two|three|four|five|six|eight|ten)\\b[^:.;]{0,30}:\\s*")
     static let label = Pattern(
         "^(?:For the )?([A-Z]?[a-z]+(?: [a-z]+)?(?: \\([^()]*\\))?):\\s+(.*)$",

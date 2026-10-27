@@ -38,6 +38,20 @@ struct RecipeCardTests {
         #expect(card.notes == ["The author notes the patches may be sprayed."])
     }
 
+    @Test("Storage and serving remarks are notes, and 'Fills' gives the yield")
+    func storageAndServingNotes() {
+        let card = RecipeCard(
+            method: "Made with narrow-leaved plantain. Fills 2 jam jars. 1 kg berries; 500 g sugar; 1 lemon. "
+                + "Boil everything until set. Keeps a year unopened. Good on toast."
+        )
+
+        #expect(card.lede == ["Made with narrow-leaved plantain."])
+        #expect(card.yield == ["Fills 2 jam jars"])
+        #expect(card.ingredients.flatMap(\.items) == ["1 kg berries", "500 g sugar", "1 lemon"])
+        #expect(card.steps.map(\.text) == ["Boil everything until set."])
+        #expect(card.notes == ["Keeps a year unopened.", "Good on toast."])
+    }
+
     @Test("A labelled list starts a named group; a labelled instruction stays a step")
     func labelledGroups() {
         let card = RecipeCard(

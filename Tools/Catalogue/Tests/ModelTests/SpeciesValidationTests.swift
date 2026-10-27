@@ -105,7 +105,7 @@ struct SpeciesValidationTests {
     func recipesOnNotThreatenedSpeciesPass() {
         let species = makeSpecies(
             harvestEthics: "Not Threatened. Be mindful when foraging. Take only what you need.",
-            recipes: [Recipe(title: "Frittata", method: "Whisk.")])
+            recipes: [Recipe(title: "Frittata", method: "Whisk.", sourceURL: URL(string: "https://example.org/frittata"))])
         #expect(species.isPublishable)
     }
 
@@ -239,6 +239,14 @@ struct SpeciesValidationTests {
     func recipeNeedsTitle() {
         let species = makeSpecies(recipes: [Recipe(title: "", method: "Boil.")])
         #expect(labels(species, severity: .blocking).contains("recipes[0]"))
+    }
+
+    @Test("A recipe without a source link is blocking")
+    func recipeNeedsSourceLink() {
+        let unlinked = makeSpecies(recipes: [Recipe(title: "Soup", method: "Boil.")])
+        let linked = makeSpecies(recipes: [Recipe(title: "Soup", method: "Boil.", sourceURL: URL(string: "https://example.org/soup"))])
+        #expect(labels(unlinked, severity: .blocking).contains("recipes[0]"))
+        #expect(linked.isPublishable)
     }
 
     @Test("Identifiers must be slug-shaped")

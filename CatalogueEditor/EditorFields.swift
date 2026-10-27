@@ -117,7 +117,7 @@ struct RecipeEditor: View {
                     HStack(spacing: .xSmall) {
                         TextField("Title", text: Binding(
                             get: { recipe.title },
-                            set: { replace(index, Recipe(title: $0, method: recipe.method)) }
+                            set: { replace(index, Recipe(title: $0, method: recipe.method, sourceURL: recipe.sourceURL)) }
                         ))
                         .textFieldStyle(.roundedBorder)
 
@@ -134,9 +134,15 @@ struct RecipeEditor: View {
 
                     TextField("Method", text: Binding(
                         get: { recipe.method },
-                        set: { replace(index, Recipe(title: recipe.title, method: $0)) }
+                        set: { replace(index, Recipe(title: recipe.title, method: $0, sourceURL: recipe.sourceURL)) }
                     ), axis: .vertical)
                     .lineLimit(2...8)
+                    .textFieldStyle(.roundedBorder)
+
+                    TextField("Source link", text: Binding(
+                        get: { recipe.sourceURL?.absoluteString ?? "" },
+                        set: { replace(index, Recipe(title: recipe.title, method: recipe.method, sourceURL: URL(string: $0.trimmingCharacters(in: .whitespaces)))) }
+                    ))
                     .textFieldStyle(.roundedBorder)
                 }
             }

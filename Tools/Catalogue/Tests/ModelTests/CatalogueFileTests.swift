@@ -50,7 +50,7 @@ struct CatalogueFileTests {
                 lookalikes: [Lookalike(name: "Other", risk: .deadly, howToTell: "Check the base.", entry: .deathCap)],
                 warnings: ["Do not eat."], harvestEthics: "Leave it.",
                 sources: ["Somebody, A Book, p. 1"],
-                recipes: [Recipe(title: "Nothing", method: "Do not.")],
+                recipes: [Recipe(title: "Nothing", method: "Do not.", sourceURL: URL(string: "https://example.org/nothing"))],
                 draft: true,
                 needsBookSource: true,
                 sourcingNote: "Somebody, A Book — nothing online."
