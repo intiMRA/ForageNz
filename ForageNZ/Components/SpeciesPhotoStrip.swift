@@ -83,9 +83,8 @@ private struct FullScreenPhotoViewer: View {
     let photos: [SpeciesPhoto]
     @State var selection: SpeciesPhoto.ID
     let close: (_ animated: Bool) -> Void
-    /// True only while a photo is being dragged away: flipped once at the start and once at
-    /// the end, never per frame — the drag itself lives in UIKit so the pager is not
-    /// re-rendered under the finger.
+    /// Hides the close button and caption while a photo is dragged. Flipped only at the start
+    /// and end of a drag: the drag itself lives in UIKit, so the pager isn't re-rendered per frame.
     @State private var isDragging = false
 
     /// Presented by UIKit rather than with `fullScreenCover`: a cover takes the page beneath
@@ -94,13 +93,10 @@ private struct FullScreenPhotoViewer: View {
     @MainActor
     static func present(photos: [SpeciesPhoto], selection: SpeciesPhoto.ID) {
         guard let presenter = topViewController() else { return }
-        let presented = PresentedController()
-        let host = UIHostingController(
-            rootView: FullScreenPhotoViewer(photos: photos, selection: selection) { animated in
-                presented.controller?.dismiss(animated: animated)
-            }
-        )
-        presented.controller = host
+        let viewer = FullScreenPhotoViewer(photos: photos, selection: selection) { [weak presenter] animated in
+            presenter?.dismiss(animated: animated)
+        }
+        let host = UIHostingController(rootView: viewer)
         host.view.backgroundColor = .clear
         host.modalPresentationStyle = .overFullScreen
         host.modalTransitionStyle = .crossDissolve
@@ -114,7 +110,7 @@ private struct FullScreenPhotoViewer: View {
                 ZoomablePhoto(
                     fileName: photo.fileName,
                     caption: photo.caption,
-                    onDragChanged: { dragging in isDragging = dragging },
+                    onDragChanged: { isDragging = $0 },
                     // The photo has already left the screen; a second fade would only delay.
                     onDismiss: { close(false) }
                 )
@@ -125,42 +121,53 @@ private struct FullScreenPhotoViewer: View {
         .tabViewStyle(.page(indexDisplayMode: photos.count > 1 ? .always : .never))
         .ignoresSafeArea()
         .overlay(alignment: .topTrailing) {
-            Button {
-                close(true)
-            } label: {
-                Image(systemName: "xmark")
-                    .font(.title3.weight(.semibold))
-                    .foregroundStyle(.white)
-                    .padding(.all, .small)
-                    .background(.black.opacity(0.5), in: Circle())
-            }
-            .accessibilityLabel("Close")
-            .accessibilityIdentifier("photoViewer.close")
-            .padding(.all, .medium)
-            .opacity(isDragging ? 0 : 1)
+            closeButton
         }
         .overlay(alignment: .bottom) {
             if let photo = photos.first(where: { $0.id == selection }) {
-                VStack(alignment: .leading, spacing: .xxSmall) {
-                    Text(photo.caption)
-                        .font(.callout)
-                    Text(photo.credit)
-                        .font(.caption)
-                        .italic()
-                        .opacity(0.8)
-                }
-                .foregroundStyle(.white)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.all, .medium)
-                // Clear of the page dots, which sit at the very bottom.
-                .padding(.bottom, .large)
-                .background(.black.opacity(0.5))
-                .allowsHitTesting(false)
-                .opacity(isDragging ? 0 : 1)
+                captionPanel(photo)
             }
         }
         .animation(.easeOut(duration: 0.15), value: isDragging)
         .statusBarHidden()
+        // A drag that reaches the bottom edge would otherwise be taken by the home indicator,
+        // cancelling it mid-flight.
+        .defersSystemGestures(on: .bottom)
+    }
+
+    private var closeButton: some View {
+        Button {
+            close(true)
+        } label: {
+            Image(systemName: "xmark")
+                .font(.title3.weight(.semibold))
+                .foregroundStyle(.white)
+                .padding(.all, .small)
+                .background(.black.opacity(0.5), in: Circle())
+        }
+        .accessibilityLabel("Close")
+        .accessibilityIdentifier("photoViewer.close")
+        .padding(.all, .medium)
+        .opacity(isDragging ? 0 : 1)
+    }
+
+    private func captionPanel(_ photo: SpeciesPhoto) -> some View {
+        VStack(alignment: .leading, spacing: .xxSmall) {
+            Text(photo.caption)
+                .font(.callout)
+            Text(photo.credit)
+                .font(.caption)
+                .italic()
+                .opacity(0.8)
+        }
+        .foregroundStyle(.white)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.all, .medium)
+        // Clear of the page dots, which sit at the very bottom.
+        .padding(.bottom, .large)
+        .background(.black.opacity(0.5))
+        .allowsHitTesting(false)
+        .opacity(isDragging ? 0 : 1)
     }
 
     @MainActor
@@ -175,12 +182,6 @@ private struct FullScreenPhotoViewer: View {
         }
         return top
     }
-}
-
-/// Lets the viewer's close action reach the controller presenting it, which does not exist
-/// yet when the viewer is built.
-private final class PresentedController {
-    weak var controller: UIViewController?
 }
 
 /// One photo that pinches, double-taps and pans like Photos. A `UIScrollView`, because its
@@ -216,7 +217,7 @@ private final class ZoomingImageView: UIScrollView, UIScrollViewDelegate {
 
     /// How far, in points, the photo must be dragged before letting go closes it.
     private static let dismissDistance: CGFloat = 120
-    /// A flick this fast closes it from any distance.
+    /// A flick this fast, in points per second, closes it from any distance.
     private static let dismissVelocity: CGFloat = 1000
 
     init(image: UIImage?) {
@@ -253,19 +254,19 @@ private final class ZoomingImageView: UIScrollView, UIScrollViewDelegate {
         fatalError("init(coder:) is not used")
     }
 
+    // MARK: Zooming
+
     /// At fit-to-screen the image view is sized to the photo's aspect, not the screen's, so a
     /// zoomed photo pans to its own edges rather than into letterboxing.
     override func layoutSubviews() {
         super.layoutSubviews()
-        guard zoomScale == minimumZoomScale, let size = imageView.image?.size, size.width > 0, size.height > 0 else {
-            centre()
-            return
-        }
-        let fit = min(bounds.width / size.width, bounds.height / size.height)
-        let fitted = CGSize(width: size.width * fit, height: size.height * fit)
-        if imageView.frame.size != fitted {
-            imageView.frame = CGRect(origin: .zero, size: fitted)
-            contentSize = fitted
+        if zoomScale == minimumZoomScale, let size = imageView.image?.size, size.width > 0, size.height > 0 {
+            let fit = min(bounds.width / size.width, bounds.height / size.height)
+            let fitted = CGSize(width: size.width * fit, height: size.height * fit)
+            if imageView.bounds.size != fitted {
+                imageView.frame = CGRect(origin: .zero, size: fitted)
+                contentSize = fitted
+            }
         }
         centre()
     }
@@ -285,53 +286,9 @@ private final class ZoomingImageView: UIScrollView, UIScrollViewDelegate {
         contentInset = UIEdgeInsets(top: vertical, left: horizontal, bottom: vertical, right: horizontal)
     }
 
-    /// Only a mostly-vertical drag at fit-to-screen closes the photo. Zoomed in, the same drag
-    /// is panning around the photo.
-    override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        guard gestureRecognizer === dismissPan else {
-            return super.gestureRecognizerShouldBegin(gestureRecognizer)
-        }
-        let velocity = dismissPan.velocity(in: self)
-        return zoomScale == minimumZoomScale && abs(velocity.y) > abs(velocity.x)
-    }
-
-    /// Moves the photo with the finger, by transform so `layoutSubviews` keeps its fitted
-    /// size, and on release either sends it off the screen or springs it back.
-    @objc private func dragToDismiss(_ gesture: UIPanGestureRecognizer) {
-        let offset = gesture.translation(in: self).y
-        switch gesture.state {
-        case .began:
-            onDragChanged?(true)
-        case .changed:
-            imageView.transform = CGAffineTransform(translationX: 0, y: offset)
-            backgroundColor = UIColor.black.withAlphaComponent(1 - min(1, abs(offset) / (2 * Self.dismissDistance)))
-        case .ended, .cancelled:
-            let velocity = gesture.velocity(in: self).y
-            let closes = gesture.state == .ended
-                && (abs(offset) > Self.dismissDistance || abs(velocity) > Self.dismissVelocity)
-            if closes {
-                let direction: CGFloat = (abs(velocity) > Self.dismissVelocity ? velocity : offset) < 0 ? -1 : 1
-                UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn) {
-                    self.imageView.transform = CGAffineTransform(translationX: 0, y: direction * self.bounds.height)
-                    self.backgroundColor = .clear
-                } completion: { _ in
-                    self.onDismiss?()
-                }
-            } else {
-                onDragChanged?(false)
-                UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0) {
-                    self.imageView.transform = .identity
-                    self.backgroundColor = .black
-                }
-            }
-        default:
-            break
-        }
-    }
-
     /// Double-tap zooms into the point tapped, and back out again from anywhere.
     @objc private func toggleZoom(_ gesture: UITapGestureRecognizer) {
-        if zoomScale > minimumZoomScale {
+        guard zoomScale == minimumZoomScale else {
             setZoomScale(minimumZoomScale, animated: true)
             return
         }
@@ -343,5 +300,65 @@ private final class ZoomingImageView: UIScrollView, UIScrollViewDelegate {
             size: size
         )
         zoom(to: target, animated: true)
+    }
+
+    // MARK: Drag to dismiss
+
+    /// Only a mostly-vertical drag at fit-to-screen closes the photo. Zoomed in, the same drag
+    /// is panning around the photo.
+    override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        guard gestureRecognizer === dismissPan else {
+            return super.gestureRecognizerShouldBegin(gestureRecognizer)
+        }
+        let velocity = dismissPan.velocity(in: self)
+        return zoomScale == minimumZoomScale && abs(velocity.y) > abs(velocity.x)
+    }
+
+    @objc private func dragToDismiss(_ gesture: UIPanGestureRecognizer) {
+        let offset = gesture.translation(in: self).y
+        let velocity = gesture.velocity(in: self).y
+        switch gesture.state {
+        case .began:
+            onDragChanged?(true)
+        case .changed:
+            follow(offset)
+        // A cancel is judged like a release: the system cancels a drag that runs off the
+        // screen, which is exactly the drag that should close the photo.
+        case .ended, .cancelled:
+            if abs(velocity) > Self.dismissVelocity {
+                flyOff(from: offset, down: velocity > 0)
+            } else if abs(offset) > Self.dismissDistance {
+                flyOff(from: offset, down: offset > 0)
+            } else {
+                springBack()
+            }
+        default:
+            break
+        }
+    }
+
+    /// Moves the photo by transform, so `layoutSubviews` keeps its fitted size, and fades the
+    /// backdrop as it goes so the species page shows through.
+    private func follow(_ offset: CGFloat) {
+        imageView.transform = CGAffineTransform(translationX: 0, y: offset)
+        backgroundColor = .black.withAlphaComponent(1 - min(1, abs(offset) / (2 * Self.dismissDistance)))
+    }
+
+    /// Carries on from where the finger let go, a full screen further the way it was heading,
+    /// so the photo never doubles back on its way out.
+    private func flyOff(from offset: CGFloat, down: Bool) {
+        let exit = offset + (down ? bounds.height : -bounds.height)
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseOut) {
+            self.follow(exit)
+        } completion: { _ in
+            self.onDismiss?()
+        }
+    }
+
+    private func springBack() {
+        onDragChanged?(false)
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0) {
+            self.follow(0)
+        }
     }
 }
