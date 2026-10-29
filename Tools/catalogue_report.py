@@ -313,6 +313,7 @@ def batch_drafts(entries: list[Entry]) -> list[dict[str, Any]]:
         out.append(
             {
                 "name": name,
+                "anchor": "b-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-"),
                 "groups": groups,
                 "apps": [
                     key for key, _ in GROUPS if any(by_id[r["id"]]["group"] == key for r in rows)
@@ -837,41 +838,53 @@ def render(entries: list[Entry]) -> str:
         f'<h2 class="group" id="next">Pick up next<small>{len(picks)} batches by plant family, '
         "most drafts first</small></h2>"
     )
-    out.append('<section class="cluster"><div class="scroll"><table><thead><tr>')
-    headers = [
-        "Batch",
-        "Species groups and their drafts",
-        "App group",
-        "Drafts",
-        "No photo",
-        "Owe text",
-    ]
-    for header in headers:
-        out.append(f"<th>{header}</th>")
-    out.append("</tr></thead><tbody>")
+    out.append('<nav>')
     for b in picks:
-        lines = []
+        out.append(f'<a href="#{b["anchor"]}">{esc(b["name"])} · {b["drafts"]}</a>')
+    out.append("</nav>")
+    for b in picks:
+        out.append(f'<section class="cluster" id="{b["anchor"]}"><div class="head">')
+        out.append(f"<h3>{esc(b['name'])}</h3>")
+        out.append(f'<span class="genera">{esc(" / ".join(labels[k] for k in b["apps"]))}</span>')
+        out.append('<div class="chips">')
+        out.append(f'<span class="chip on">{b["drafts"]} of {b["size"]} draft</span>')
+        if b["photoless"]:
+            out.append(f'<span class="chip bad">{b["photoless"]} no photo</span>')
+        if b["owed"]:
+            out.append(f'<span class="chip on">{b["owed"]} owe text</span>')
+        out.append("</div></div>")
+        out.append('<div class="scroll"><table><thead><tr>')
+        for header in ["Species group", "Draft", "Photos", "Missing"]:
+            out.append(f"<th>{header}</th>")
+        out.append("</tr></thead><tbody>")
         for c in b["groups"]:
-            drafts = ", ".join(
-                f'<a href="#e-{esc(r["id"])}">{esc(r["commonName"])}</a>'
-                for r in c["rows"]
-                if r["draft"]
+            drafts = [r for r in c["rows"] if r["draft"]]
+            group = (
+                f'<a href="#{c["anchor"]}"><b>{esc(c["name"])}</b></a><br>'
+                f'<span class="dim">{c["drafts"]} of {c["size"]} draft</span>'
+                if c["size"] > 1
+                else '<span class="dim">—</span>'
             )
-            label = (
-                f'<a href="#{c["anchor"]}"><b>{esc(c["name"])}</b></a>: ' if c["size"] > 1 else ""
-            )
-            lines.append(f"<li>{label}{drafts}</li>")
-        out.append(
-            "<tr>"
-            f"<td><b>{esc(b['name'])}</b></td>"
-            f'<td><ul class="list">{"".join(lines)}</ul></td>'
-            f"<td>{esc(' / '.join(labels[k] for k in b['apps']))}</td>"
-            f'<td><span class="miss">{b["drafts"]}</span> of {b["size"]}</td>'
-            f"<td>{b['photoless'] or '—'}</td>"
-            f"<td>{b['owed'] or '—'}</td>"
-            "</tr>"
-        )
-    out.append("</tbody></table></div></section>")
+            for i, r in enumerate(drafts):
+                first = f'<td rowspan="{len(drafts)}">{group}</td>' if i == 0 else ""
+                photos = (
+                    f'<span class="ok">{r["photos"]}</span>'
+                    if r["photos"]
+                    else '<span class="no">0</span>'
+                )
+                gaps = r["missing"] + (["owed text"] if r["owed"] else [])
+                missing = (
+                    f'<span class="miss">{esc(", ".join(gaps))}</span>'
+                    if gaps
+                    else '<span class="ok">complete</span>'
+                )
+                out.append(
+                    f"<tr>{first}"
+                    f'<td><a href="#e-{esc(r["id"])}"><b>{esc(r["commonName"])}</b></a><br>'
+                    f'<span class="sci">{esc(r["scientificName"])}</span></td>'
+                    f"<td>{photos}</td><td>{missing}</td></tr>"
+                )
+        out.append("</tbody></table></div></section>")
 
     for key, label in GROUPS:
         group = filed[key]

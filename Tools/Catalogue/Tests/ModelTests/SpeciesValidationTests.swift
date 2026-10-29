@@ -109,6 +109,19 @@ struct SpeciesValidationTests {
         #expect(species.isPublishable)
     }
 
+    @Test("Regional cautions on a Not Threatened species don't block its recipes")
+    func regionalCautionsDoNotBlockRecipes() {
+        let recipes = [Recipe(title: "Frittata", method: "Whisk.", sourceURL: URL(string: "https://example.org/frittata"))]
+        let regional = makeSpecies(
+            harvestEthics: "Be mindful. Some regions rank it as more at risk. In Auckland (Regionally Endangered), don't.",
+            recipes: recipes)
+        let nationalAtRisk = makeSpecies(
+            harvestEthics: "This species is at risk. Some regions rank it as more at risk. In Otago (Regionally Critical), don't.",
+            recipes: recipes)
+        #expect(regional.isPublishable)
+        #expect(fields(nationalAtRisk, severity: .blocking).contains(.recipes))
+    }
+
     @Test("Stated edibility text, and words that only contain a phrase, pass")
     func statedEdibilityPasses() {
         let species = makeSpecies(

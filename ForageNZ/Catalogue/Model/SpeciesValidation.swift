@@ -273,11 +273,17 @@ public extension ForageSpecies {
     /// risk…"), so that is where the status is read from.
     static let threatStatusPhrases = ["at risk", "threatened", "endangered"]
 
+    /// Opens the regional cautions appended to `harvestEthics` when a region ranks a species
+    /// higher than its national status (owner, 28/10/2026). Everything from here on is regional.
+    static let regionalCautionLead = "Some regions rank it as more at risk."
+
     /// `true` when `harvestEthics` names an At Risk or Threatened status. "Not Threatened" is a
-    /// status too, and the one that allows harvesting, so it is taken out before matching.
+    /// status too, and the one that allows harvesting, so it is taken out before matching. Only the
+    /// national status counts (owner, 28/10/2026): the regional cautions are cut off first.
     var harvestEthicsNamesThreatStatus: Bool {
         guard let text = harvestEthics?.text else { return false }
-        let withoutSafeStatus = text.lowercased().replacingOccurrences(of: "not threatened", with: "")
+        let national = text.components(separatedBy: Self.regionalCautionLead)[0]
+        let withoutSafeStatus = national.lowercased().replacingOccurrences(of: "not threatened", with: "")
         return Self.firstPhrase(of: Self.threatStatusPhrases, in: withoutSafeStatus) != nil
     }
 
