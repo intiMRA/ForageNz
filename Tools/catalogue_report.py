@@ -149,9 +149,9 @@ BATCHES = {
     "Brown seaweeds": "Durvillaea Ecklonia Hormosira Macrocystis Splachnidium Undaria",
     "Green and red seaweeds": "Agarophyton Caulerpa Chaetomorpha Codium Pyropia Ulva",
     "Boletes (Boletales)": "Boletus Chalciporus Leccinum Suillus Xerocomellus",
-    "Gilled mushrooms (Agaricales)": "Agaricus Amanita Armillaria Calvatia Chlorophyllum "
-    "Clavogaster Clitocybe Coprinus Cyclocybe Flammulina Galerina Marasmius Panaeolus Pleurotus "
-    "Psilocybe Stropharia Volvariella",
+    "Gilled mushrooms (Agaricales)": "Agaricus Amanita Armillaria Austrocortinarius Calvatia "
+    "Chlorophyllum Clavogaster Clitocybe Coprinus Cyclocybe Flammulina Galerina Marasmius Panaeolus "
+    "Pleurotus Psilocybe Stropharia Volvariella",
     "Other fungi and lichens": "Auricularia Cladonia Hericium Lactarius Morchella Trametes",
 }
 BATCH_OF = {genus: batch for batch, genera in BATCHES.items() for genus in genera.split()}
