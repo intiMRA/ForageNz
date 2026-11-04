@@ -91,7 +91,7 @@ NAMES = {
     "garden-orache": "Saltbush and orache",
     "hedge-mustard": "Rocket and hedge mustard",
     "tutu": "Elder and tutu",
-    "german-chamomile": "Chamomile and pineappleweed",
+    "pineappleweed": "Chamomile and pineappleweed",
     "harakeke": "Flax",
     "hawthorn": "Hawthorn and medlar",
     "lowland-horopito": "Horopito",
