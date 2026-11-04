@@ -101,7 +101,6 @@ NAMES = {
     "sweet-violet": "Violets",
     "cabbage-tree": "Cabbage trees",
     "native-ice-plant": "Ice plants",
-    "sea-lettuce": "Sea lettuces",
     "bluefoot-bolete": "Bluefoot and riverine boletes",
     "sticky-mouse-ear-chickweed": "Mouse-ear chickweeds",
 }

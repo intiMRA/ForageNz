@@ -4777,7 +4777,7 @@
         "Milkwood, 'Foraging + Eating Sea Lettuce: Ulva Lactuca' (Kirsten Bradley, NSW, 08/08/2016, all rights reserved, restated)",
         "National Seaweed Hub (UConn), 'Sea Lettuce Profile & Recipes' (restated)"
       ],
-      "text" : "In New Zealand (NZPCN): on rock and in rock pools on the lower shore, and in the shallow subtidal zone.\nIn New Zealand (Waikato Regional Council): along the coast, in estuaries and even brackish water, but not in very deep water, as it needs sunlight. It grows attached to rocks, shells and other seaweeds, and can also break free and live as a floating mass that piles up on beaches and in sheltered bays.\nOn rock shelves between the high and low tide marks, and in tide pools, on pier pilings, floating docks and driftwood."
+      "text" : "In New Zealand (NZPCN): on rock and in rock pools on the lower shore, and in the shallow subtidal zone.\nIn New Zealand (Waikato Regional Council): along the coast, in estuaries and even brackish water, but not in very deep water, as it needs sunlight. It grows attached to rocks, shells and other seaweeds, and can also break free and live as a floating mass that piles up on beaches and in sheltered bays."
     },
     "habitats" : [
       "coastal"
@@ -4806,12 +4806,7 @@
 
     ],
     "months" : [
-      1,
-      2,
-      6,
-      7,
-      8,
-      12
+
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/67423",
     "needsBookSource" : false,
@@ -4893,7 +4888,11 @@
       "Heavy-metal sentence in the first warning: Wikipedia, 'Sea lettuce' (CC BY-SA 4.0, as on the sea-lettuce entry): 'Contamination with toxic heavy metals at certain sites where it can be collected makes it dangerous for human consumption.'",
       "Fishing rules (owner, 28/10/2026: 'see if an mpi works'), retrieved 28/10/2026. Fisheries (Amateur Fishing) Regulations 2013 (https://www.legislation.govt.nz/regulation/public/2013/0482/latest/whole.html): reg. 5A lets the Minister set daily limits for 'any fish, aquatic life, or seaweed' by notice; reg. 17C makes a notice's general daily limits binding; reg. 123B, Te Whata Kai o Rakihouia i Te Tai o Marokura–Kaikōura Marine Area: 'karengo means seaweed of either of the following genera: (a) Porphyra ; or (b) Ulva', taken only by 'hand-gathering', within the daily limit set by notice; '5 litres of wet volume means the amount of fresh seaweed that fits into a 5-litre bucket'. Fisheries (Recreational Management Controls) Notice in force 25/04/2024 (copy at https://www.nzsportfishing.co.nz/wp-content/uploads/2024/05/Fisheries-Controls-Notice-Recreational-effective-25-April-2024.pdf), cl. 33 'Daily limits for seaweed' — the only seaweed limits in the notice are bladder kelp and karengo in the Kaikōura Marine Area, 5 litres of wet volume each; no general national seaweed limit. That notice is revoked; the current ones (No. 1 2026, and No. 2 2026 in force 01/11/2026 per NZ Gazette 2026-sl5707) are on mpi.govt.nz but its bot wall blocked every download, so the 5-litre figure is given as the 2024 notice's. MPI 'Kaikōura area fishing rules' (https://www.mpi.govt.nz/fishing-aquaculture/recreational-fishing/fishing-rules/kaikoura-fishing-rules, last reviewed 15/07/2026): Oaro-Haumuri Taiāpure 'closed to seaweed and shellfish (except scampi, rock lobster, octopus and kina) gathering'. Marine Reserves Act 1971 s 18I(3)(d): an offence to take 'any marine life' from a marine reserve, and s 2 'marine life' includes any plant species that inhabits the sea or foreshore. Not used: other local closures (Hauraki Gulf rock pools, mātaitai bylaws) named only in a search summary, not read at source.",
       "Months researched 28/10/2026 (owner: '1 research'), left unchanged pending the owner's call. No source found dates U. lactuca's fronds in New Zealand; every New Zealand seasonal source speaks of sea lettuce as a mix of Ulva species. Bay of Plenty Regional Council 'Tauranga Harbour issues' (https://www.boprc.govt.nz/environment/coast-and-ocean/harbours/tauranga-harbour/tauranga-harbour-issues/) calls it 'Ulva spp' and says abundance 'varies … from year to year and place to place'. NZ Herald, 'Warmer sea temperatures result in summer break from sea lettuce' (29/01/2019): University of Waikato work for the council found an 'optimum temperature window … between 16C and 20C', growth dropping below 16 °C and generally stopping above 25 °C. The Waikato factsheet (above): above 20 °C growth may slow or stop. Sinner et al. 2011, Health of Te Awanui Tauranga Harbour (Cawthron Report 1969): blooms peak in spring and decline over late summer — known only from search summaries, the report itself not read. iNaturalist NZ, taxon 67423 Ulva lactuca: 10 research-grade observations, too few to date anything, and the sources agree the species can't be told from other Ulva by eye. The current months [1,2,6,7,8,12] have no source on this entry.",
-      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): moreImagesURL added: iNaturalist taxon 67423 'Ulva lactuca' (species), the active record matching the scientific name."
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): moreImagesURL added: iNaturalist taxon 67423 'Ulva lactuca' (species), the active record matching the scientific name.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): First warning tightened to its sources 04/11/2026: Wikipedia contributors, 'Sea lettuce' (CC BY-SA 4.0, https://en.wikipedia.org/wiki/Sea_lettuce), retrieved 04/11/2026 (genus level): 'Contamination with toxic heavy metals at certain sites where it can be collected makes it dangerous for human consumption.' Maggy Wassilieff, 'Seaweed – Types of seaweed', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-2 (Wayback 2026 copy), retrieved 04/11/2026, written for sea lettuce (Ulva lactuca) in New Zealand: 'it is edible, although prolific growth often indicates sewage pollution.' Also NRW, 'Ulva lactuca. Sea lettuce.' (Moore & Adams 1963): 'where it abounds one can suspect sewage contamination'.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Overseas habitat line removed 04/11/2026 (owner rule: prefer NZ sources): it was restated from Milkwood (NSW) and the National Seaweed Hub (Connecticut; written for 'Ulva spp.'), and the two NZ lines above (NZPCN; Waikato Regional Council) already cover where it grows here. Te Ara 'Seaweed – Types of seaweed' (CC BY-NC 3.0 NZ, retrieved 04/11/2026) adds that green seaweeds are 'usually found in the intertidal zone (between the high and low water marks) and in shallow water where there is plenty of sunlight'.",
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 12): the separate 'Sea lettuce' (Ulva spp.) entry was dropped (owner: '1 can drop'): it was a catch-all for a genus of 19 NZ species, several of them introduced, which can't be told apart by form (Heesch et al. 2009; NZTCS Macroalgae 2019). Its two warnings (nutrient-polluted water and heavy metals; rotting piles giving off hydrogen sulphide) are already covered by this entry's warnings, so nothing was moved.",
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 12): months set to year-round (owner: '2 sure'). The earlier months [1,2,6,7,8,12] had no source; NZ sources give no season for Ulva: Waikato Regional Council, 'Sea lettuce' coastal factsheet no. 02 (March 2016) says only that growth slows above 20 °C, and Bay of Plenty Regional Council says abundance 'varies … from year to year and place to place'."
     ],
     "summary" : {
       "sources" : [
@@ -4907,7 +4906,7 @@
       "text" : "Ulva lactuca, also known by the common name sea lettuce or broadleaf sea lettuce, is an edible green alga in the family Ulvaceae.\nThe distribution is worldwide: Europe, North America (west and east coasts), Central America, Caribbean Islands, South America, Africa, Indian Ocean Islands, South-west Asia, China, Pacific Islands, Australia and New Zealand.\nIn New Zealand it is counted as introduced. A 2009 genetic survey of 581 New Zealand Ulva samples found 24 distinct taxa and concluded that at least five had been introduced, U. lactuca among them, judging partly by how often they turned up in highly modified places and areas with frequent vessel traffic. NZPCN and Biota of NZ list it as Exotic (Biota's earlier status was indigenous); Biota's databased collections are from the Canterbury and Wellington land districts.\nSea lettuce shelters small marine animals and is food for them and for some birds. It needs cool water and nutrients: above about 20 °C in summer its growth slows or stops, and added nitrogen and phosphorus drive blooms that can smother seagrass and shellfish.\nIn 2021 Ulva was not cultivated in New Zealand; a study isolated 24 Ulva cultivars from wild Bay of Plenty populations as a first step towards land-based farming.\nLife cycle\nThe sporangial and gametangial thalli are morphologically alike. The diploid adult plant produces zoospores by meiosis – making them haploid. These settle and grow to form haploid male and female plants similar to the diploid plants. When these haploid plants release gametes they unite to produce the zygote which germinates, and grows to produce the diploid plant."
     },
     "warnings" : [
-      "Sea lettuce grows especially well in nutrient-rich water, near ocean outfalls and at river mouths below cities or farmland, and it can take up heavy metals. Pick it only from clean, open water: never near an outfall or river mouth, in a busy harbour, or from stagnant pools that the tide does not refresh.",
+      "Sea lettuce grows especially well in nutrient-rich water, near ocean outfalls and at river mouths below cities or farmland, and at some sites it is contaminated with toxic heavy metals. Prolific growth often indicates sewage pollution. Pick it only from clean, open water: never near an outfall or river mouth, in a busy harbour, or from stagnant pools that the tide does not refresh.",
       "Never collect rotting sea lettuce from piles on the shore. Bacteria rotting it can give off hydrogen sulphide, a poisonous gas; keep away from large rotting piles."
     ]
   },
@@ -5301,28 +5300,42 @@
     "group" : "seaweed",
     "habitat" : {
       "sources" : [
-
+        "Maggy Wassilieff, 'Seaweed – Kelp', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-3 (Wayback 2026 copy), retrieved 04/11/2026"
       ],
-      "text" : "Wave-battered rocky coast, especially the South Island, Stewart Island and southern North Island."
+      "text" : "Wave-battered rocky coast, especially the South Island, Stewart Island and southern North Island.\nIn New Zealand (Te Ara): secured to intertidal rocks on exposed coasts. In northern New Zealand it grows only on very exposed headlands and becomes more common in the cooler waters south of Cook Strait."
     },
     "habitats" : [
       "coastal"
     ],
     "harvestEthics" : {
       "sources" : [
-
+        "New Zealand Threat Classification System (DOC, https://nztcs.org.nz, REST API all-assessments), retrieved 04/11/2026: record 42440 'Durvillaea antarctica (Cham.) Har.', Macroalgae 2019 (Nelson et al. 2019), current",
+        "Fisheries (Amateur Fishing) Regulations 2013 (legislation.govt.nz, https://www.legislation.govt.nz/regulation/public/2013/0482/latest/whole.html), retrieved 04/11/2026, reg. 129C; Maggy Wassilieff, 'Seaweed – Traditional use of seaweeds', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-4 (read via Wayback 2026 copy), retrieved 04/11/2026 (restated)"
       ],
-      "text" : "Rimurapa is culturally significant, particularly for pōhā tītī in the south. Some beds are subject to customary management or rāhui. Ask locally before harvesting."
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading.\nRimurapa is culturally significant, particularly for pōhā tītī in the south. Some beds are subject to customary management or rāhui. Ask locally before harvesting.\nIt may not be taken from the East Otago taiāpure, and the Ngāi Tahu Claims Settlement Act 1998 protects bull kelp from commercial harvesting within Ngāi Tahu's traditional seaweed-gathering grounds."
     },
     "id" : "bull-kelp",
     "identification" : {
       "sources" : [
-
+        "Wikipedia, 'Durvillaea poha' and 'Durvillaea willana' (CC BY-SA 4.0), retrieved 04/11/2026 (restated)"
       ],
-      "text" : "Very large, thick, leathery olive-brown straps anchored by a massive holdfast. The blade is honeycombed inside, which keeps it buoyant — this internal structure is diagnostic."
+      "text" : "Very large, thick, leathery olive-brown straps anchored by a massive holdfast. The blade is honeycombed inside, which keeps it buoyant. Durvillaea poha shares the honeycomb, while D. willana lacks it, does not float and has a branched stipe."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "durvillaea-poha",
+        "howToTell" : "Both have thick, leathery blades with an internal honeycomb, so the honeycomb does not separate them. Look at a blade in cross-section: Durvillaea poha's blades are broad and flattened, and stay flattened even where the tips become whip-like; bull kelp's always remain rounded or oval in cross-section, even where they become narrower and whip-like on more exposed sites. Durvillaea poha's short stipe is orange-yellow and becomes flattened towards the tip; bull kelp's is cylindrical. Colour helps only a little: Durvillaea poha's blades are orange-brown to golden and can look more orange, bull kelp's are golden to dark brown to olive green. Size does not separate them: Durvillaea poha is usually 5–10 m long, bull kelp grows to 5 m and sometimes up to 10 m. Durvillaea poha often grows in a band above bull kelp, or further back on rock platforms and in more sheltered bays, but in southern New Zealand the two frequently grow next to one another. Durvillaea poha is found mainly on the southern South Island, Stewart Island and the Snares and Auckland Islands, and at low frequencies along the Wellington coastline; it was not found on the northern South Island north of the Kaikōura Peninsula. No record of Durvillaea poha as food was found, so it is not given as food here.",
+        "name" : "Durvillaea poha",
+        "risk" : "unknown",
+        "scientificName" : "Durvillaea poha"
+      },
+      {
+        "entry" : "durvillaea-willana",
+        "howToTell" : "Cut or tear a blade: bull kelp's has an internal honeycomb, full of air, that keeps it buoyant; Durvillaea willana's has no honeycomb, and it does not float. Bull kelp's short stipe is cylindrical and unbranched; Durvillaea willana's is thick and cylindrical and produces side branches. Colour overlaps: Durvillaea willana is dark brown, darker than all other bull kelps, while bull kelp ranges from golden to dark brown to olive green. Durvillaea willana usually grows lower on the shore, from the low intertidal to the upper subtidal; bull kelp grows in the low intertidal, so the two can meet there. Durvillaea willana grows up to 5 m long and has smaller blades than bull kelp, which grows to 5 m and sometimes up to 10 m, so size alone does not separate them. In the North Island Durvillaea willana is found only in the southeastern corner, not in Cook Strait; bull kelp grows from the Three Kings Islands to Stewart Island. No record of Durvillaea willana as food was found, so it is not given as food here.",
+        "name" : "Durvillaea willana",
+        "risk" : "unknown",
+        "scientificName" : "Durvillaea willana"
+      }
     ],
     "maoriName" : "Rimurapa",
     "months" : [
@@ -5364,21 +5377,7 @@
       "text" : "Slice thinly and simmer for a long time, or dry and grind as a seasoning. Tough and best treated as a stock ingredient rather than a vegetable."
     },
     "recipes" : [
-      {
-        "method" : "Written for cochayuyo, the dried Chilean bull kelp, in Chile; the page names no species. 100 g cooked bull kelp; 100 g cooked chickpeas; 50 g red onion; 40 g red capsicum; 10 g coriander; the finely grated zest and juice of 1 lemon; olive oil; salt and pepper. The night before, put the dried chickpeas and the dried kelp to soak, with a weight on the kelp so it stays under the water. Next day, cook the chickpeas with salt in a pressure cooker for about 40 minutes, and cook the kelp in a pressure cooker for 30 minutes. While the chickpeas cook, chop the cooked kelp finely, slice the onion into thin crescents, dice the capsicum small and pick the leaves off the coriander. Scrub the lemon and grate off the zest, stopping before the bitter white pith. Mix everything in a serving dish, season with salt, pepper and a little olive oil, scatter the zest over the top and serve. The author gives the kelp and chickpea weights cooked, and works from dried kelp rather than fresh blade.",
-        "sourceURL" : "https://delaraizalplato.cl/recetas/ensalada-de-cochayuyo-y-garbanzos/",
-        "title" : "Bull kelp and chickpea salad"
-      },
-      {
-        "method" : "Written for cochayuyo, the dried bull kelp sold in bundles in Chile; the page names no species, but cochayuyo is Durvillaea antarctica. Serves 4. 1 small bundle of dried cochayuyo; 4 tablespoons (60 ml) olive oil; 1 teaspoon sea salt; ½ teaspoon merkén (Chilean smoked chilli); 1 teaspoon dried oregano; the zest and juice of 1 lemon. Soak the cochayuyo in hot water for 1 hour. Wash it well, dry it with a clean cloth and cut it into 1 cm pieces. Leave the pieces spread on a cloth overnight to dry. Toss them with the oil, salt, merkén, oregano and lemon zest and juice. Spread them on a silicone baking sheet and bake in a moderate oven for 15 minutes, then turn them and bake 15 minutes more, until golden and crisp. Let them cool, then keep them in an airtight jar.",
-        "sourceURL" : "https://www.latercera.com/paula/chips-de-cochayuyo/",
-        "title" : "Roasted kelp chips"
-      },
-      {
-        "method" : "Written for bull kelp in Fiordland and Stewart Island/Rakiura; the page names no species. For the fish: 2 butterfish, whole; 1 bull kelp blade; sea salt and cracked pepper; 1 lemon, thinly sliced. For the pebre sauce: 1 red onion; half a head of garlic; 1 red capsicum; half a spring onion; a handful of coriander; a pinch of salt; a dash of rice vinegar; rice bran oil and olive oil, 3 parts to 1, to cover. For the orange emulsion: 1 orange, peeled; the other half of the spring onion; the other half-head of garlic; a full scoop of honey; a handful of parsley; 1 chilli, seeds and stem removed; 250 ml (1 cup) rice bran oil; a dash of rice vinegar. Finely dice the onion, garlic, capsicum, spring onion and coriander for the pebre and put them in a small saucepan with the salt and vinegar. Cover with the oils and keep on very low heat for about 5 minutes to bring the flavours together, then let it cool. Put all the emulsion ingredients in a blender and blend until it looks like a proper sauce. Cut the kelp blade in half and, working from one side with a sharp knife, slit each piece open through the middle without cutting all the way through, so that it forms a bag. Gut and scale the fish thoroughly and make small shallow cuts on both sides of each. Season them with salt and pepper and slide one into each bag. Pour 5 tablespoons (75 ml) of the pebre into one bag and 5 tablespoons of the orange emulsion into the other, making sure each fish is well coated, then add a few lemon slices. Close each bag securely with a skewer pushed through both sides of the opening. Cook on a covered medium-hot barbecue straight on the grill, or in the oven at 200 °C, for 30–40 minutes, until the fish is cooked through. Cut the bags open and serve the fish on the kelp. The author says any kelp that crisps up like crackling is the best part, and that other fish work as well as butterfish.",
-        "sourceURL" : "https://www.fishing.net.nz/fishing-advice/seafood-recipes/bull-kelp-butterfish-papillote/",
-        "title" : "Kelp oven bag"
-      }
+
     ],
     "scientificName" : "Durvillaea antarctica",
     "sources" : [
@@ -5389,7 +5388,18 @@
       "Recipe 'Roasted kelp chips' (method added 27/10/2026; the title was the owner's): 'Chips de cochayuyo', Paula, La Tercera (Chile), 09/11/2018. © La Tercera, all rights reserved. Retrieved 27/10/2026. https://www.latercera.com/paula/chips-de-cochayuyo/ — translated from Spanish and paraphrased, not quoted; spoon measures converted at 15 ml / 5 ml. Written for store-bought dried cochayuyo; the page names no species, and cochayuyo is the Chilean name for Durvillaea antarctica (Wikipedia, 'Durvillaea antarctica'). The page gives the oven only as 'temperatura media', so no temperature is stated. Not used: the Wild-Foods-NZ blog's one-line mention that bull kelp blades 'can be cut into seaweed chips that can be oven roasted' (no method), and North American bull kelp chip recipes, which are for Nereocystis.",
       "Recipe 'Kelp oven bag' (method added 27/10/2026; the title was the owner's): 'Bull Kelp Butterfish Papillote', The Fishing Website (fishing.net.nz), recipe credited to Kai Ika, served on Pure Salt charters in Fiordland and Stewart Island/Rakiura; undated. All rights reserved. Retrieved 27/10/2026. https://www.fishing.net.nz/fishing-advice/seafood-recipes/bull-kelp-butterfish-papillote/ — method paraphrased, not quoted; NZ 250 ml cup, 15 ml tablespoon. Written for 'bull kelp which is plentiful throughout Fiordland and Stewart Island/Rakiura'; names no species. Corroborated as a use of this species by The Seaweed Forager, 'Bull Kelp' (Durvillaea antarctica): 'When the blades are wide, it can be cut into to make a bag to stuff food into as an oven bag' (https://theseaweedforager.net/seaweed/bull-kelp/), and by Wild-Foods-NZ (2018): 'Bull kelp can be used as an oven bag itself to cook a whole fish or shellfish'.",
       "Recipe 'Bull kelp and chickpea salad' (added 27/10/2026 in place of the owner's 'Bull kelp stock', which could not be sourced): Tobar Bächler, Sebastián (chef, Nutrición y Dietética UC). 'Ensalada de cochayuyo y garbanzos', De la Raíz al Plato (Chile), undated. All rights reserved. Retrieved 27/10/2026. https://delaraizalplato.cl/recetas/ensalada-de-cochayuyo-y-garbanzos/ — translated from Spanish and paraphrased, not quoted. Written for dried cochayuyo; the page names no species, and cochayuyo is the Chilean name for Durvillaea antarctica (Wikipedia, 'Durvillaea antarctica'). The page gives no serving count and no dry weights. Not used: Ben Bayly's 'Bull Kelp Vegetables' (Cuisine), because it cuts the thick base of the kelp near the holdfast, against this entry's warning to take only drift or blade tips; Recetas Nestlé's charquicán de cochayuyo (brand page built around a Maggi product); and Típico Chileno's ensalada de cochayuyo (a cochayuyo seller's page).",
-      "Origin checked against NZTCS 28/10/2026 (owner, 28/10/2026: \"since is a gov website that should be the source of truth for those bio statuses\"): New Zealand Threat Classification System database (DOC, https://nztcs.org.nz), retrieved 28/10/2026, record 42440 'Durvillaea antarctica' — biostatus Indigenous (endemicity not specified). Origin 'native' agrees."
+      "Origin checked against NZTCS 28/10/2026 (owner, 28/10/2026: \"since is a gov website that should be the source of truth for those bio statuses\"): New Zealand Threat Classification System database (DOC, https://nztcs.org.nz), retrieved 28/10/2026, record 42440 'Durvillaea antarctica' — biostatus Indigenous (endemicity not specified). Origin 'native' agrees.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Harvest ethics set to the At Risk sentence 04/11/2026: New Zealand Threat Classification System (DOC, https://nztcs.org.nz, REST API all-assessments), retrieved 04/11/2026, record 42440 'Durvillaea antarctica (Cham.) Har.', current assessment Macroalgae 2019 (Nelson et al. 2019): 'At Risk - Declining', qualifiers Range Restricted, Secure ? Overseas, Biologically Sparse (the 2005 assessment was Not Threatened). Under the catalogue rule an At Risk species gets the At Risk harvest sentence and no recipes.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Harvest rules added 04/11/2026: Fisheries (Amateur Fishing) Regulations 2013 (legislation.govt.nz, https://www.legislation.govt.nz/regulation/public/2013/0482/latest/whole.html), retrieved 04/11/2026, reg. 129C 'Prohibition on taking kelp from East Otago taiapure': 'A person must not take any of the following species of kelp from the East Otago taiapure: (a) Durvillaea antarctica'. Maggy Wassilieff, 'Seaweed – Traditional use of seaweeds', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-4 (read via Wayback 2026 copy), retrieved 04/11/2026: 'The Ngai Tahu Claims Settlement Act 1998 protects bull kelp and karengo from commercial harvesting within the tribe’s traditional seaweed-gathering grounds' (restated). The Act itself (s 306) lists 'Rimurapa (Bull kelp— Durvillee spp)' among non-commercially harvested species (Ngāi Tahu Claims Settlement Act 1998 (legislation.govt.nz, https://www.legislation.govt.nz/act/public/1998/0097/latest/whole.html), retrieved 04/11/2026).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Recipe 'Bull kelp and chickpea salad' removed 04/11/2026: Durvillaea antarctica is At Risk – Declining (NZTCS Macroalgae 2019, record 42440, retrieved 04/11/2026), and At Risk entries carry no recipes (blocking rule). The page was also written for Chilean cochayuyo, which Wikipedia ('Durvillaea antarctica', CC BY-SA 4.0, retrieved 04/11/2026) says is harvested from both D. antarctica and D. incurvata.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Recipe 'Roasted kelp chips' removed 04/11/2026: Durvillaea antarctica is At Risk – Declining (NZTCS Macroalgae 2019, record 42440, retrieved 04/11/2026); At Risk entries carry no recipes (blocking rule). The page's 'cochayuyo is Durvillaea antarctica' framing was also incomplete: Chilean cochayuyo comes from D. antarctica and D. incurvata (Wikipedia, 'Durvillaea antarctica').",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Recipe 'Kelp oven bag' removed 04/11/2026: Durvillaea antarctica is At Risk – Declining (NZTCS Macroalgae 2019, record 42440, retrieved 04/11/2026); At Risk entries carry no recipes (blocking rule).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Identification corrected 04/11/2026: the honeycomb is not diagnostic of D. antarctica, because the New Zealand bull kelp D. poha has it too. Wikipedia contributors, 'Durvillaea poha' (CC BY-SA 4.0, https://en.wikipedia.org/wiki/Durvillaea_poha, retrieved 04/11/2026): 'wide, air filled blades with a 'honeycomb' structure'; 'Durvillaea willana' (https://en.wikipedia.org/wiki/Durvillaea_willana): 'The species has a branched stipe, and is non-buoyant, lacking a honeycomb structure within its fronds'; 'Durvillaea' (genus): 'Three species, D. incurvata, D. antarctica, D. poha are buoyant due to a honeycomb-like structure'.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Habitat line added from an NZ source 04/11/2026: Maggy Wassilieff, 'Seaweed – Kelp', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-3 (Wayback 2026 copy), retrieved 04/11/2026: bull kelp is 'the most striking seaweed of the exposed coasts', its fronds 'secured to intertidal rocks by a solid disc-shaped holdfast'; of Durvillaea antarctica, 'In northern New Zealand it grows only on very exposed headlands and becomes more common in the cooler waters south of Cook Strait.'",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Iodine warning added 04/11/2026, written for brown seaweed in general, not for Durvillaea alone: NZ Food Safety / MPI, 'Iodine added to food' (https://www.mpi.govt.nz/food-safety-home/nutrients-added-food/iodine-added-food, read through r.jina.ai), retrieved 04/11/2026: 'High levels of iodine can cause thyroid problems.' 'Products made with brown seaweed may contain very high iodine levels. It may be unsafe to eat these products more than every once in a while, especially if you're pregnant or breastfeeding.' Smith et al. 2010, 'Nutrient and heavy metal content of edible seaweeds in New Zealand', NZ Journal of Crop and Horticultural Science, doi:10.1080/01140671003619290 (analysed D. antarctica): 'Some seaweed species, particularly phaeophytes, contain very high quantities of iodine' (D. antarctica's own figure is in a table not read).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Months (year-round, unchanged) sourced 04/11/2026: Maggy Wassilieff, 'Seaweed – What is seaweed?', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-1 (Wayback 2026 copy), retrieved 04/11/2026: 'Many seaweeds only live, or only grow, for a single season; others, especially the large kelps, grow year-round and may live for many years'; Maggy Wassilieff, 'Seaweed – Kelp', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-3 (Wayback 2026 copy), retrieved 04/11/2026: bull kelp 'grows to 10 metres in length and can live for 10 years'. The eaten part is the blade, present on the living plant all year. PFAF has no page for Durvillaea antarctica (https://pfaf.org/user/Plant.aspx?LatinName=Durvillaea+antarctica, checked 04/11/2026).",
+      "Durvillaea poha ↔ bull kelp cards (04/11/2026; owner-approved new entry): confusion named by NIWA — the D. poha page lists 'It could also be………. Durvillaea antarctica' and the D. antarctica page lists 'Durvillaea poha'. Tests: Kate Neill & Wendy Nelson (with Michelle Kelly & Blayne Herr), 'Stunning seaweeds: Beautiful browns — a guide to the large brown seaweeds of New Zealand', Version 1, 2016, NIWA, CC BY-NC-ND 3.0, https://webstatic.niwa.co.nz/static/web/MarineIdentificationGuidesandFactSheets/Beautiful_Browns_Ver1-2016-NIWA.pdf, retrieved 04/11/2026 — D. poha: 'Plants usually 5–10 m long', 'broad and flattened, with an internal honeycomb structure', 'Blades can become whip-like at the tips, but always remain broad and flattened in cross-section', 'Short stipe is orange-yellow and becomes flattened towards the tip', 'Blades orange-brown to golden', 'often in a band above D. antarctica, around southern South Island, Stewart, Snares and Auckland Islands'; D. antarctica: 'growing to 5 m long, or sometimes up to 10 m long', 'with an internal honeycomb structure', 'In more exposed areas blades become narrower and more whip-like, however, they always remain rounded or oval in cross-section', 'Short stipe is cylindrical, unbranched', 'Golden to dark brown to olive green'. Wikipedia contributors, 'Durvillaea poha' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_poha, retrieved 04/11/2026: 'D. poha generally has wider fronds than D. antarctica, and can appear more 'orange' across the frond area'; 'In southern New Zealand, D. poha and D. antarctica frequently grow next to one another, although D. poha normally grows higher up or further back on rock platforms, or in more sheltered bays, where wave force is weaker'; 'it can be found at low frequencies along the Wellington coastline'. Vaux F., Craw D., Fraser C.I. & Waters J.M. (2021), 'Northward range extension for Durvillaea poha bull kelp: Response to tectonic disturbance?', Journal of Phycology 57(5): 1411–1418, doi:10.1111/jpy.13179, PMID 33942304 (abstract via PubMed; paper not open access), retrieved 04/11/2026: 'Extensive sampling from the northern South Island (105 samples at five locations) confirmed the absence of D. poha north of the Kaikōura Peninsula' (restated). Every range checked against the other species'; what does not separate them (honeycomb, size, colour overlap at golden, shared shores) is stated. Risk on each card follows the target entry's caution (bull kelp careRequired → edible; D. poha doNotEat, edibility unknown → unknown). Reverse card added on bull-kelp (owner-approved new draft entry durvillaea-poha).",
+      "Durvillaea willana ↔ bull kelp cards (04/11/2026; owner-approved new entry): confusion named by NIWA — the D. willana page lists 'It could also be………. Durvillaea antarctica' and the D. antarctica page lists 'Durvillaea willana'; Wikipedia contributors, 'Durvillaea willana' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_willana, retrieved 04/11/2026: 'This species is superficially similar in appearance to Durvillaea antarctica'. Tests: Kate Neill & Wendy Nelson (with Michelle Kelly & Blayne Herr), 'Stunning seaweeds: Beautiful browns — a guide to the large brown seaweeds of New Zealand', Version 1, 2016, NIWA, CC BY-NC-ND 3.0, https://webstatic.niwa.co.nz/static/web/MarineIdentificationGuidesandFactSheets/Beautiful_Browns_Ver1-2016-NIWA.pdf, retrieved 04/11/2026 — D. willana: 'Plants grow up to 5 m high', 'with no internal honeycomb structure', 'Stipe is thick, cylindrical, and produces side branches', 'Dark brown', 'Found in the low intertidal to upper subtidal on exposed coasts of the southeastern corner of the North Island (but not Cook Strait), South Island and Stewart Island'; D. antarctica: 'growing to 5 m long, or sometimes up to 10 m long', 'with an internal honeycomb structure', 'Short stipe is cylindrical, unbranched', 'Golden to dark brown to olive green', 'Found on rock in the low intertidal zone of exposed coasts around the Three Kings Islands in the north down to Stewart Island in the south'. Wikipedia contributors, 'Durvillaea willana' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_willana, retrieved 04/11/2026: 'This species is chocolate brown in colour and is darker than all other bull kelp species'; 'The species has a branched stipe, and is non-buoyant, lacking a honeycomb structure within its fronds'; 'D. willana has smaller blades than D. antarctica and is usually found lower on the shoreline'. Maggy Wassilieff, 'Seaweed – Kelp', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-3 (Wayback 2026 copy), retrieved 04/11/2026: D. antarctica fronds 'have an internal honeycomb-like tissue, full of air, which keeps the blade buoyant'. What does not separate them (colour at dark brown, size, the low intertidal) is stated. Risk on each card follows the target entry's caution (bull kelp careRequired → edible; D. willana doNotEat, edibility unknown → unknown). Reverse card added on bull-kelp (owner-approved new draft entry durvillaea-willana)."
     ],
     "summary" : {
       "sources" : [
@@ -5399,7 +5409,8 @@
     },
     "warnings" : [
       "Collecting kelp from a wave-exposed southern shore is genuinely dangerous. People drown doing this. Never turn your back on the sea, and never go alone.",
-      "Take only drift or cut from the blade tip — never remove the holdfast."
+      "Take only drift or cut from the blade tip — never remove the holdfast.",
+      "Bull kelp is a brown seaweed, and brown seaweed can contain very high levels of iodine. High levels of iodine can cause thyroid problems, so eating it more than every once in a while may be unsafe, especially when pregnant or breastfeeding."
     ]
   },
   {
@@ -15795,6 +15806,13 @@
         "name" : "Sweet broom",
         "risk" : "toxic",
         "scientificName" : "Genista stenopetala"
+      },
+      {
+        "entry" : "scotch-broom",
+        "howToTell" : "Scotch broom has no spines; its green twigs are more or less five-angled, and its leaves have three leaflets on older twigs, often one or two on young twigs. Gorse is sharply spiny, and on a grown plant its leaves are reduced to spines, the main ones rigid, furrowed and 15–30 mm long. Both have yellow pea flowers, usually single, and their length overlaps (gorse 13–20 mm, Scotch broom 16–25 mm), so flowers do not separate them. Scotch broom's pods are 15–60 mm long and hairy only along the edges; gorse's are hairy all over and 13–25 mm long. Gorse seedlings have leaves of three hairy leaflets, so a seedling's leaves do not separate it from broom.",
+        "name" : "Scotch broom",
+        "risk" : "unknown",
+        "scientificName" : "Cytisus scoparius"
       }
     ],
     "months" : [
@@ -15884,7 +15902,8 @@
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Months [4–11] re-checked 04/11/2026 (unchanged): Flora of New Zealand vol. IV 'Ulex europaeus' FL (Jan)-May-Nov-(Dec); iNaturalist NZ research-grade, non-captive, flowering-annotated histogram retrieved 04/11/2026: Jan 15, Feb 45, Mar 59, Apr 237, May 92, Jun 103, Jul 112, Aug 148, Sep 191, Oct 185, Nov 61, Dec 15. Massey University: 'it flowers twice a year' in New Zealand.",
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Warning on flower alkaloids restated 04/11/2026: the evidence is thin. Plants For A Future, 'Ulex europaeus' (https://pfaf.org/user/Plant.aspx?LatinName=Ulex+europaeus, retrieved 04/11/2026): 'we have never been able to find an authenticated account of them being safe to eat… it is also possible that the flowers contain small quantities of alkaloids… restrict yourself to just a few'; Wild Food UK, 'Gorse' (https://www.wildfooduk.com/edible-wild-plants/gorse/, retrieved 04/11/2026) states the flowers 'contain small amounts of toxic alkaloids' and 'should not be eaten too often or in large quantities'. Hornoy et al. 2012, Naturwissenschaften 99:883–92 (PubMed 23007201) confirms gorse carries quinolizidine alkaloids, very variable between plants, but gives no flower figures.",
       "Shipped-entries sweep 04/11/2026 (owner answers to batch 11): edible parts widened to flowers and flower buds on the owner's word; PFAF, https://pfaf.org/user/Plant.aspx?LatinName=Ulex+europaeus, retrieved 04/11/2026: 'The flower buds are pickled in vinegar and then used like capers in salads'. Shoot-tip tea not added.",
-      "Shipped-entries sweep 04/11/2026 (owner answers to batch 11): warning 'The pods and seeds are toxic' kept on the owner's word ('they are toxic'), now backed by: Encyclopaedia Britannica 11th ed. (1911), 'Cytisine' (public domain, https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Cytisine, retrieved 04/11/2026): 'It is also found in the seeds of furze (Ulex europaeus)… It acts as a violent poison.'; Hornoy et al. 2012, Naturwissenschaften 99:883–92 (quinolizidine alkaloids in gorse); Wild Food UK and the Foraging Course Company."
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 11): warning 'The pods and seeds are toxic' kept on the owner's word ('they are toxic'), now backed by: Encyclopaedia Britannica 11th ed. (1911), 'Cytisine' (public domain, https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Cytisine, retrieved 04/11/2026): 'It is also found in the seeds of furze (Ulex europaeus)… It acts as a violent poison.'; Hornoy et al. 2012, Naturwissenschaften 99:883–92 (quinolizidine alkaloids in gorse); Wild Food UK and the Foraging Course Company.",
+      "Shipped-entries sweep 05/11/2026 (owner answer to batch 11, '13 yes'): lookalike card to Scotch broom added (risk unknown, as on the other cards to scotch-broom). Massey University NZ weeds database 'Gorse': 'From a distance, it may be confused with broom'. Flora of New Zealand vol. IV (Webb, Sykes & Garnock-Jones 1988), 'Ulex europaeus' and 'Cytisus scoparius' (floraseries.landcareresearch.co.nz, retrieved 04/11/2026): gorse 'terminal and lateral spines rigid, deeply furrowed, 15-30 mm long', 'Lvs of seedlings not spinous but with 3 hairy leaflets', 'Corolla clear yellow or golden yellow, 13-20 mm long', 'Pod villous … 13-25 mm long'; Scotch broom 'twigs … green, ± 5-angled', 'Lvs … 3-foliolate … when mature or on older twigs; lvs of younger twigs often 1-2-foliolate', 'Fls usually solitary', corolla '16-25 mm long', 'Pod black … 15-60 mm long, with hairy margins'."
     ],
     "summary" : {
       "sources" : [
@@ -18857,7 +18876,7 @@
     "lookalikes" : [
       {
         "entry" : "sweet-chestnut",
-        "howToTell" : "Look at the leaves first. Sweet chestnut's are single, long (about 15–32 cm), oblong and boldly toothed; horse chestnut's are hand-shaped, with five to seven leaflets spreading from one stalk. Horse chestnut's leaflets are toothed too, so teeth alone do not separate them. Both cases are spiny; sweet chestnut's is reportedly covered in many fine spines, horse chestnut's in short spikes. Sweet chestnut's case usually holds two or more nuts with a tufted tip; horse chestnut's usually holds one round, glossy, dark brown conker with a large pale scar, sometimes two. Some grafted sweet chestnut varieties bear a single large nut, so nut count alone does not decide it. Sweet chestnut is edible.",
+        "howToTell" : "Look at the leaves first. Sweet chestnut's are single, long (about 15–32 cm), oblong and boldly toothed; horse chestnut's are hand-shaped, with five to seven leaflets spreading from one stalk. Horse chestnut's leaflets are toothed too, so teeth alone do not separate them. Both cases are spiny; sweet chestnut's is covered in many long, fine spines, horse chestnut's in short, more widely spaced spikes. Sweet chestnut's case usually holds two or more nuts with a tufted tip; horse chestnut's usually holds one round, glossy, dark brown conker with a large pale scar, sometimes two. Some grafted sweet chestnut varieties bear a single large nut, so nut count alone does not decide it. Sweet chestnut is edible.",
         "name" : "Sweet chestnut",
         "risk" : "edible",
         "scientificName" : "Castanea sativa"
@@ -18916,7 +18935,8 @@
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Identification 04/11/2026: the owner's description had no source; the Flora of New Zealand vol. IV description of Aesculus hippocastanum and its note on the hybrid A. × carnea appended (CC BY-NC-SA, retrieved 04/11/2026).",
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Habitat 04/11/2026: Flora of New Zealand vol. IV 'Aesculus hippocastanum' habitat line and 'seedlings are common around parent trees' appended (retrieved 04/11/2026); it agrees with the owner's 'a planted tree, not a wild one' ('nowhere fully naturalised').",
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Summary 04/11/2026: Flora of New Zealand vol. IV 'Aesculus hippocastanum' distribution and note appended (retrieved 04/11/2026).",
-      "Shipped-entries sweep 04/11/2026 (owner answers to batch 11): kept on the owner's word as the do-not-eat lookalike of sweet chestnut, though Flora of New Zealand says 'nowhere fully naturalised' and most wild NZ iNaturalist records are seedlings near parent trees. Edible parts stay 'None.' on the owner's word, although Plants For A Future records the seed eaten after the saponins are leached out."
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 11): kept on the owner's word as the do-not-eat lookalike of sweet chestnut, though Flora of New Zealand says 'nowhere fully naturalised' and most wild NZ iNaturalist records are seedlings near parent trees. Edible parts stay 'None.' on the owner's word, although Plants For A Future records the seed eaten after the saponins are leached out.",
+      "Horse chestnut → sweet chestnut card, shipped-entries sweep 04/11/2026 (batch 12, matching the reverse card): 'reportedly' removed from the case test, now on two sources — ANSES (French Agency for Food, Environmental and Occupational Health & Safety), 'How to avoid confusing horse chestnuts with sweet chestnuts' (https://www.anses.fr/en/news/how-avoid-confusing-horse-chestnuts-sweet-chestnuts, retrieved 04/11/2026): 'the sweet chestnut burr is brown and has numerous long bristly spines', 'horse chestnut burrs are thick and green, with small, short, more widely spaced spikes'; Woodland Trust, 'Can you eat conkers?' (https://www.woodlandtrust.org.uk/blog/2026/09/can-you-eat-conkers/, retrieved 04/11/2026): 'horse chestnut cases are covered in short spikes while sweet chestnut cases have lots of fine spines'."
     ],
     "summary" : {
       "sources" : [
@@ -20187,71 +20207,6 @@
   },
   {
     "caution" : "careRequired",
-    "commonName" : "Japanese chestnut",
-    "draft" : true,
-    "edibleParts" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "group" : "nuts",
-    "habitat" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "habitats" : [
-
-    ],
-    "id" : "japanese-chestnut",
-    "identification" : {
-      "sources" : [
-        "Wikipedia, 'Castanea crenata' (CC BY-SA 4.0) — units converted to metric"
-      ],
-      "text" : "Castanea crenata is a small to medium-sized deciduous tree growing to 10–15 m tall. The leaves are similar to those of the sweet chestnut, though usually a little smaller, 8–19 cm long and 3–5 cm broad. The flowers of both sexes are borne in 7–20 cm long, upright catkins, the male flowers in the upper part and female flowers in the lower part. They appear in summer, and by autumn, the female flowers develop into spiny cupules containing 3–7 brownish nuts that are shed during October."
-    },
-    "lookalikes" : [
-
-    ],
-    "months" : [
-
-    ],
-    "moreImagesURL" : "https://inaturalist.nz/taxa/122786",
-    "needsBookSource" : false,
-    "origin" : "introduced",
-    "photos" : [
-
-    ],
-    "preparation" : {
-      "sources" : [
-
-      ],
-      "text" : ""
-    },
-    "recipes" : [
-
-    ],
-    "scientificName" : "Castanea crenata",
-    "sources" : [
-      "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
-      "Identification and summary text: Wikipedia contributors. 'Castanea crenata', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Castanea_crenata",
-      "Origin checked 28/10/2026 (owner, 28/10/2026: \"make sure every entry has a true bio status\"), retrieved 28/10/2026: NZ Organisms Register (https://data.nzor.org.nz/names/search?query=Castanea%20crenata): Exotic, Present in New Zealand; not on DOC's List of environmental weeds in New Zealand 2024 (McAlpine & Howell, Science for Conservation 340, Table 2) and not in Wildland Consultants 2021 Contract Report 5396 for the PCE, Appendix 2 (every weed taxon in a regional pest management plan) (text searched), so not a pest. Origin 'introduced' stands."
-    ],
-    "sourcingNote" : "Owed: months. Empty reads as year-round, but the part collected here is seasonal (owner, 12/10/2026: months are the window the collected part is available, not how long the plant is alive). Set it from New Zealand records or an NZ source, a book the owner owns, the owner's word, or a source's season word for this species read as the NZ season (\"late summer\" = about February, padded a month for spread) — never a northern source's calendar months shifted by six, and never a different species' season. Precedent: black-cherry.",
-    "summary" : {
-      "sources" : [
-        "Wikipedia, 'Castanea crenata' (CC BY-SA 4.0)"
-      ],
-      "text" : "Castanea crenata, the Japanese chestnut or Korean chestnut, is a species of chestnut native to Japan and Korea."
-    },
-    "warnings" : [
-
-    ]
-  },
-  {
-    "caution" : "careRequired",
     "commonName" : "Japanese honeysuckle",
     "draft" : true,
     "edibleParts" : {
@@ -20581,7 +20536,13 @@
       "text" : "It is a deciduous tree growing to 20 m tall, rarely 30 m, and 40–80 centimetres stem diameter, with light grey bark. The leaves are pinnate, 50–90 cm long, with 11–17 leaflets, each leaflet 7–16 cm long and 3–5 cm broad. The whole leaf is downy-pubescent, and a somewhat brighter, yellower green than many other tree leaves.\nThe male flowers are inconspicuous yellow-green catkins produced in spring at the same time as the new leaves appear. The female flowers have pink/red pistils. The fruit is a nut, produced in bunches of 4–10 together; the nut is spherical, 3–5 cm long and broad, surrounded by a green husk before maturity in mid-autumn."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "walnut",
+        "howToTell" : "Both edible; this is about which you have. Count and feel the leaflets: Japanese walnut has 9–17, finely toothed though the teeth are often sparse, the end leaflet about the size of the side ones; walnut has 5–9 with smooth (untoothed) edges, the end leaflet the largest and the lowest pair much smaller. Seedling walnuts can have toothed leaflets, so check an adult tree. Japanese walnut's fruits hang 10–22 together in long strings; walnut's sit in clusters of 1–3 close on the twig. Japanese walnut's fruit is 2.5–4 cm, egg-shaped, beaked, sticky and rusty-hairy; walnut's is 3.5–5 cm, nearly round, smooth and green with gland dots, not beaked. Japanese walnut's thick shell has raised seams that split with difficulty and an often sharp tip; walnut's splits easily in half along its seams when ripe.",
+        "name" : "Walnut",
+        "risk" : "edible",
+        "scientificName" : "Juglans regia"
+      }
     ],
     "months" : [
 
@@ -20606,7 +20567,9 @@
       "Knox, Johanna. A Forager's Treasury: A New Zealand guide to finding and using wild plants (Allen & Unwin, 2013).",
       "Identification and summary text: Wikipedia contributors. 'Juglans ailantifolia', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Juglans_ailantifolia",
       "Summary text: Wikipedia contributors. 'Juglans ailantifolia', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Juglans_ailantifolia",
-      "Origin checked 28/10/2026 (owner, 28/10/2026: \"make sure every entry has a true bio status\"), retrieved 28/10/2026: NZ Organisms Register (https://data.nzor.org.nz/names/search?query=Juglans%20ailantifolia): Exotic in New Zealand; listed in DOC, McAlpine & Howell 2024, List of environmental weeds in New Zealand 2024, Science for Conservation 340 (https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc340.pdf), Table 2: 'Juglans ailantifolia Carrière Japanese walnut tree UO NPPA 88 195 Auckland (SC), Waikato (SL)' (UO = Unwanted Organism, NPPA = National Pest Plant Accord; regional plan categories SC sustained control, PC progressive containment, E eradication, SL site-led, OOI organism of interest). On DOC's environmental weed list, so origin 'introduced' → 'pest' (the 20/10/2026 rule: the DOC list alone counts)."
+      "Origin checked 28/10/2026 (owner, 28/10/2026: \"make sure every entry has a true bio status\"), retrieved 28/10/2026: NZ Organisms Register (https://data.nzor.org.nz/names/search?query=Juglans%20ailantifolia): Exotic in New Zealand; listed in DOC, McAlpine & Howell 2024, List of environmental weeds in New Zealand 2024, Science for Conservation 340 (https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc340.pdf), Table 2: 'Juglans ailantifolia Carrière Japanese walnut tree UO NPPA 88 195 Auckland (SC), Waikato (SL)' (UO = Unwanted Organism, NPPA = National Pest Plant Accord; regional plan categories SC sustained control, PC progressive containment, E eradication, SL site-led, OOI organism of interest). On DOC's environmental weed list, so origin 'introduced' → 'pest' (the 20/10/2026 rule: the DOC list alone counts).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Reverse card (Japanese walnut → walnut), 04/11/2026: Lookalike cards walnut ↔ Japanese walnut, added 04/11/2026 (a substantiated NZ lookalike with no card): every test from the Flora of New Zealand accounts of both species — Flora of New Zealand vol. IV (Webb et al. 1988), 'Juglans regia' (https://floraseries.landcareresearch.co.nz/taxa/96094039-8cfa-4a57-89fd-a2b7b1796a2b, retrieved 04/11/2026): 'Leaflets 5-9 … entire … lowest pair of leaflets much smaller; terminal leaflet largest'; 'fls in clusters of 1-3, sessile or subsessile'; 'Fr. 3.5-5 cm long, subglobose, glabrous but gland-dotted, green, not beaked'; 'sutures thick and easily dividing in 1/2 at maturity'. Flora of New Zealand vol. IV (Webb et al. 1988), 'Juglans ailantifolia' (https://floraseries.landcareresearch.co.nz/taxa/348073f0-dbf1-42e9-a4b8-2e8d3b85de4c, retrieved 04/11/2026): 'Leaflets 9-17 … serrulate with teeth often sparse … terminal leaflet mostly of similar size to lateral leaflets'; 'Fr. 2.5-4 cm long, broad-ovoid, beaked, viscid, tomentose, ferrugineus'; 'sutures thick and raised, dividing with difficulty; beak often sharply acute'; genus key 'frs 10-22, in pendulous racemes' against 'frs in clusters of 1-3'. Seedling hedge: Wikipedia 'Juglans regia' (CC BY-SA 4.0, retrieved 04/11/2026): leaflet margins 'entire, but with toothed margins on seedlings'. Both wild in NZ: walnut 'sporadic throughout', Japanese walnut on the North Island (Flora vol. IV). Risk edible both ways: walnut seed edible (Wikipedia 'large and edible nut'; PFAF); Japanese walnut 'The edible nuts have an oily texture' (Wikipedia 'Juglans ailantifolia', retrieved 04/11/2026), PFAF 'Seed - raw, cooked or used in confectionery'. Not used: PFAF's 'The shell is easily cracked' for Japanese walnut, which contradicts the Flora's NZ description (probably the thin-shelled heartnut).",
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 12): tree-nut allergy warning added (owner: '7 yes'). Food Standards Australia New Zealand, 'Food allergies' (https://www.foodstandards.gov.au/consumer/foodallergies, retrieved 04/11/2026): 'Most food allergies in Australia and New Zealand are caused by peanuts, certain tree nuts (almond, Brazil nut, cashew, hazelnut, macadamia, pecan, pine nut, pistachio, walnut)'; Wikipedia, 'Juglans regia' (CC BY-SA 4.0, https://en.wikipedia.org/w/index.php?title=Juglans_regia&action=raw, retrieved 04/11/2026): 'Walnuts and other tree nuts are food allergen sources having potential to cause life-threatening, IgE-mediated allergic reactions in some individuals.'"
     ],
     "sourcingNote" : "Owed: months. Empty reads as year-round, but the part collected here is seasonal (owner, 12/10/2026: months are the window the collected part is available, not how long the plant is alive). Set it from New Zealand records or an NZ source, a book the owner owns, the owner's word, or a source's season word for this species read as the NZ season (\"late summer\" = about February, padded a month for spread) — never a northern source's calendar months shifted by six, and never a different species' season. Precedent: black-cherry.",
     "summary" : {
@@ -20616,7 +20579,7 @@
       "text" : "Juglans ailantifolia (synonyms J. cordiformis and J. sieboldiana and J. mandshurica var. sachalinensis), the Japanese walnut (Japanese: 鬼胡桃, romanized: oni-gurumi), is a species of walnut native to Japan and Sakhalin."
     },
     "warnings" : [
-
+      "Walnuts are tree nuts, one of the commonest causes of food allergy in New Zealand, and can cause life-threatening allergic reactions in some people."
     ]
   },
   {
@@ -21463,25 +21426,26 @@
     "group" : "seaweed",
     "habitat" : {
       "sources" : [
-
+        "Nelson, W.A. (2013) 'Pyropia plicata sp. nov. (Bangiales, Rhodophyta): naming a common intertidal alga from New Zealand', PhytoKeys 21: 17–28 (CC BY 3.0), https://doi.org/10.3897/phytokeys.21.4614, retrieved 04/11/2026"
       ],
-      "text" : "Exposed rocky shore in the upper intertidal zone, where waves break. Best after winter storms."
+      "text" : "Exposed rocky shore in the upper intertidal zone, where waves break. Best after winter storms.\nIn New Zealand (Nelson 2013): found in the upper to mid intertidal zone on open coasts; uncommon in sheltered areas."
     },
     "habitats" : [
       "coastal"
     ],
     "harvestEthics" : {
       "sources" : [
-
+        "New Zealand Threat Classification System (DOC, https://nztcs.org.nz, REST API all-assessments), retrieved 04/11/2026: Pyropia plicata, P. cinnamomea, P. virididentata, P. rakiura (Macroalgae 2019, Not Threatened)",
+        "Fisheries (Amateur Fishing) Regulations 2013 (legislation.govt.nz, https://www.legislation.govt.nz/regulation/public/2013/0482/latest/whole.html), retrieved 04/11/2026, reg. 123B; Maggy Wassilieff, 'Seaweed – Traditional use of seaweeds', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-4 (read via Wayback 2026 copy), retrieved 04/11/2026 (restated)"
       ],
-      "text" : "Karengo is a taonga species with deep customary significance, and specific beds are managed by hapū. Check for rāhui before harvesting, cut rather than tear so the holdfast survives, and take only what you will use. Some areas are subject to customary management under the Fisheries Act — ask locally."
+      "text" : "Be mindful when foraging. Take only what you need.\nKarengo is a taonga species with deep customary significance, and specific beds are managed by hapū. Check for rāhui before harvesting, cut rather than tear so the holdfast survives, and take only what you will use. Some areas are subject to customary management under the Fisheries Act — ask locally.\nIn the Kaikōura Marine Area karengo may be gathered by hand only, within a daily limit, and the Ngāi Tahu Claims Settlement Act 1998 protects it from commercial harvesting within Ngāi Tahu's traditional seaweed-gathering grounds."
     },
     "id" : "karengo",
     "identification" : {
       "sources" : [
-
+        "Nelson, W.A. (2013) 'Pyropia plicata sp. nov. (Bangiales, Rhodophyta): naming a common intertidal alga from New Zealand', PhytoKeys 21: 17–28 (CC BY 3.0), https://doi.org/10.3897/phytokeys.21.4614, retrieved 04/11/2026"
       ],
-      "text" : "Thin, translucent, almost membranous fronds in purple-brown to olive, clinging flat to rock. Only one cell layer thick, so it feels like wet tissue paper rather than rubber."
+      "text" : "Thin, translucent, almost membranous fronds in purple-brown to olive, clinging flat to rock. Only one cell layer thick, so it feels like wet tissue paper rather than rubber.\nIn New Zealand (Nelson 2013): Blades circular to folded rosettes, strongly attached centrally by rhizoidal holdfast. Blades (1.5) 4–12 (42) cm in diameter. Colour purple to grey, bleaching to khaki-green on upper edges. It is the only species of Pyropia present on mainland shores with a marked rosette-like growth form."
     },
     "lookalikes" : [
 
@@ -21495,14 +21459,15 @@
       10,
       11
     ],
+    "moreImagesURL" : "https://www.inaturalist.org/taxa/523871",
     "needsBookSource" : false,
     "origin" : "native",
     "photos" : [
       {
-        "caption" : "Thin blade on wet rock",
-        "credit" : "(c) Richard Littauer, some rights reserved (CC BY)",
-        "fileName" : "karengo-1.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/244816618"
+        "caption" : "Folded rosette among barnacles",
+        "credit" : "(c) dbscott, some rights reserved (CC BY-NC)",
+        "fileName" : "karengo-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/252093469"
       },
       {
         "caption" : "Crinkled clumps on rock in the splash zone",
@@ -21545,12 +21510,12 @@
         "title" : "Laverbread"
       },
       {
-        "method" : "Written for laver (Porphyra), the European relative of karengo; the author's are purple, tough and winter laver. Cooked, drained laverbread; pinhead oatmeal; soy sauce, miso, dried sea lettuce or chopped fried mushrooms; a squeeze of lemon juice; fat for shallow-frying — bacon fat is best. Blitz cooked, drained laverbread (see the laverbread recipe), then stir in pinhead oatmeal — between half and an equal volume of oatmeal to laver — until thick enough to shape. Season to taste with soy sauce, miso, dried sea lettuce or chopped fried mushrooms, and add a squeeze of lemon juice for acidity. Leave for at least an hour, better overnight, so the oatmeal swells. Shape into patties with wet hands and shallow-fry in hot (not smoking) fat — bacon fat is best — pressing them flat with a spatula until the oatmeal bronzes into a crust. They keep well frozen once cooled, and reheat in the oven.",
+        "method" : "Written for laver (Porphyra), the European relative of karengo; the author's are purple, tough and winter laver. Cooked, drained laverbread; pinhead oatmeal; soy sauce, miso, sea lettuce or chopped fried mushrooms; a squeeze of lemon juice; fat for shallow-frying — bacon fat is best. Blitz cooked, drained laverbread (see the laverbread recipe), then stir in pinhead oatmeal — between half and an equal volume of oatmeal to laver — until thick enough to shape. Season to taste with soy sauce, miso, dried sea lettuce or chopped fried mushrooms, and add a squeeze of lemon juice for acidity. Leave for at least an hour, better overnight, so the oatmeal swells. Shape into patties with wet hands and shallow-fry in hot (not smoking) fat — bacon fat is best — pressing them flat with a spatula until the oatmeal bronzes into a crust. They keep well frozen once cooled, and reheat in the oven.",
         "sourceURL" : "https://gallowaywildfoods.com/laver-seaweed-edibility-identification-distribution/",
         "title" : "Laverbread patties"
       }
     ],
-    "scientificName" : "Pyropia / Porphyra spp.",
+    "scientificName" : "Pyropia plicata",
     "sources" : [
       "Langlands, Peter. Foraging New Zealand (Penguin Random House NZ, 2024), 'Karengo' entry.",
       "Wikipedia contributors. 'Pyropia', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 06/10/2026. https://en.wikipedia.org/wiki/Pyropia Supports the 'native nori' description and explains the double genus name on this entry. Pyropia is a genus of red algae of intertidal zones and shallow water worldwide, and several of its species are what nori is made from — a two-billion-dollar industry centred on China, Korea and Japan — with nori carrying substantial vitamin B12. Many species now in Pyropia sat in Porphyra until recently, and New Zealand material drove some of that: 2013 research on New Zealand plants moved Pyropia plicata out of Porphyra. Both names are therefore in circulation for the same seaweeds, which is why this entry lists both.",
@@ -21559,13 +21524,19 @@
       "Recipe: Felicity Joy, 'Karengo Chips recipe', Wild Botanica (New Zealand, 03/09/2022). Retrieved 27/10/2026. https://www.wildbotanica.co.nz/blogs/articles/karengo-chips-recipe",
       "Recipe: Gretta Carney, 'Karengo', RNZ Recipes (no date shown). Retrieved 27/10/2026. https://www.rnz.co.nz/collections/recipes/karengo — the page's advice to wash picked karengo in fresh water is left out because the entry says rinse in seawater; its iodine/thyroid remarks are not used.",
       "Recipe: Tracy Farr, 'Baked Karengo with Garlic and Orange Juice', RNZ Recipes, from Saturday Morning (no reliable date shown). Retrieved 27/10/2026. https://www.rnz.co.nz/collections/recipes/baked-karengo-with-garlic-and-orange-juice — offered in place of 'Karengo pudding', which could not be sourced: the only karengo pudding found (Cameron Petley, steamed pudding with karengo praline, NZ Herald Viva 20/06/2017, https://www.nzherald.co.nz/viva/culture/street-kai-festival-to-celebrate-matariki/6G4LXCLIVQNCOZMFIZEHVHFDDM/) uses karengo only in a praline dust sprinkled as garnish, and its baking powder has no unit ('1½ baking powder').",
-      "Near-duplicate recipes removed 28/10/2026 (owner, 28/10/2026: 'trim anything that is a near duplicate do that for all recipes that we have'; 'smoothies are low priority recipes'): 'Toasted laver' (kept 'Crisped karengo'; that one is written for karengo). Their source lines above are kept as history."
+      "Near-duplicate recipes removed 28/10/2026 (owner, 28/10/2026: 'trim anything that is a near duplicate do that for all recipes that we have'; 'smoothies are low priority recipes'): 'Toasted laver' (kept 'Crisped karengo'; that one is written for karengo). Their source lines above are kept as history.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Not Threatened harvest sentence added 04/11/2026: New Zealand Threat Classification System (DOC, https://nztcs.org.nz, REST API all-assessments), retrieved 04/11/2026. Every named karengo with a determinate status in the current Macroalgae 2019 assessment (Nelson et al. 2019) is Not Threatened: Pyropia plicata (record 42729), P. cinnamomea (42725), P. virididentata (42733), P. rakiura (42731). Pyropia columbina, P. sp. A–I and Porphyra sp. A–M are Data Deficient, and P. koreana and P. suborbiculata are Exotic.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Harvest rules added 04/11/2026: Fisheries (Amateur Fishing) Regulations 2013 (legislation.govt.nz, https://www.legislation.govt.nz/regulation/public/2013/0482/latest/whole.html), retrieved 04/11/2026, reg. 123B (Te Whata Kai o Rakihouia i Te Tai o Marokura—Kaikōura Marine Area): a daily limit for karengo is set by instrument, karengo may not be taken 'by any method other than hand-gathering', and 'karengo means seaweed of either of the following genera: (a) Porphyra ; or (b) Ulva'. Maggy Wassilieff, 'Seaweed – Traditional use of seaweeds', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-4 (read via Wayback 2026 copy), retrieved 04/11/2026: the Act 'protects bull kelp and karengo from commercial harvesting within the tribe’s traditional seaweed-gathering grounds'. The 'cut rather than tear' advice already in the field matches Nelson & Conroy 1989 (J. Applied Phycology 1: 277–283, doi:10.1007/BF00003654, abstract): where karengo 'had been cut with basal portions left intact there were harvestable plants within two months', but cleared quadrats showed 'very little growth'.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Recipe 'Laverbread patties' corrected 04/11/2026: Galloway Wild Foods' seasoning list names 'sea lettuce', not dried sea lettuce (https://gallowaywildfoods.com/laver-seaweed-edibility-identification-distribution/, retrieved 04/11/2026).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Months June–November (unchanged) sourced 04/11/2026: Maggy Wassilieff, 'Seaweed – Traditional use of seaweeds', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-4 (read via Wayback 2026 copy), retrieved 04/11/2026: karengo 'is pulled from tidal rocks in winter and spring and usually air-dried before use'. Also: RNZ 'Karengo' — 'traditionally harvested on the East coast of the North Island in August and September'; NRW (Moore & Adams 1963) — 'Fronds are gathered in winter'. Te Aka's example sentence for karengo (citing Te Ara 2015) says autumn and winter instead. PFAF has no page for Porphyra/Pyropia (checked 04/11/2026).",
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 12): the entry is narrowed from the catch-all 'Pyropia / Porphyra spp.' (NZTCS lists about 30 karengo taxa) to Pyropia plicata (owner: '3 sure'), which Nelson 2013 names as 'the most commonly found and widespread species of bladed Bangiales in New Zealand', long misnamed Porphyra columbina. Its NZTCS status is Not Threatened (Macroalgae 2019, record 42729; nztcs.org.nz REST API, retrieved 04/11/2026), so the Not Threatened harvest sentence stands. Nelson's CC BY description, habitat and distribution are added (verbatim, lightly restated where marked); moreImagesURL set to iNaturalist taxon 523871 'Pyropia plicata'. Months stay June–November (Te Ara, 'winter and spring'); Nelson 2013 notes the species 'shows no particular seasonal trends', which concerns reproduction, not the harvest window. Photo karengo-1 is identified only to genus (Pyropia) on iNaturalist; karengo-2 and -4 are Pyropia plicata.",
+      "Photos, shipped-entries sweep 05/11/2026 (owner answer to batch 12, '11 remove and replace'): karengo-1 (iNaturalist observation 244816618, identified only to genus Pyropia) removed under the one-species rule and replaced by karengo-5, iNaturalist observation 252093469 (research grade, Pyropia plicata, NZ; photo 451205389, (c) dbscott, CC BY-NC), showing the folded rosette Nelson 2013 gives as the species' distinctive growth form."
     ],
     "summary" : {
       "sources" : [
-
+        "Nelson, W.A. (2013) 'Pyropia plicata sp. nov. (Bangiales, Rhodophyta): naming a common intertidal alga from New Zealand', PhytoKeys 21: 17–28 (CC BY 3.0), https://doi.org/10.3897/phytokeys.21.4614, retrieved 04/11/2026"
       ],
-      "text" : "Aotearoa's native nori — a taonga species, traditionally dried on rocks and traded inland."
+      "text" : "Aotearoa's native nori — a taonga species, traditionally dried on rocks and traded inland.\nIn New Zealand (Nelson 2013): North Island, South Island and Chatham Islands; not found on the Three Kings Islands, Stewart Island or the subantarctic islands. For many years it was incorrectly known as Porphyra columbina."
     },
     "warnings" : [
       "Harvest only from clean, wave-exposed coast — never from harbours, marinas, or near stormwater or wastewater outfalls.",
@@ -28524,7 +28495,7 @@
         "scientificName" : "Avena barbata"
       },
       {
-        "entry" : "sterilised-oat",
+        "entry" : "sterile-oat",
         "howToTell" : "Both edible; this is about which you have. Look at the awn: winter wild oat's lowest one or two florets each carry an awn bent at a knee and twisted in its lower part, 25–50 mm long in subsp. ludoviciana and 60–70 mm in subsp. sterilis; the cultivated oat is usually awnless, and where an awn is present it is weak, straight or curved, not kneed and scarcely twisted. Winter wild oat's lemmas are hairy below the awn; the cultivated oat's are hairless or have a few hairs near the base. Size helps but overlaps: cultivated oat spikelets are (15)–20–30–(40) mm with 2–(3) florets, winter wild oat's 3.5–6 cm with 2–3 florets (subsp. ludoviciana) or 6–8 cm with 3–5 (subsp. sterilis).",
         "name" : "Winter wild oat",
         "risk" : "edible",
@@ -37685,6 +37656,13 @@
         "name" : "Sweet broom",
         "risk" : "toxic",
         "scientificName" : "Genista stenopetala"
+      },
+      {
+        "entry" : "gorse",
+        "howToTell" : "Gorse is sharply spiny, and on a grown plant its leaves are reduced to spines, the main ones rigid, furrowed and 15–30 mm long. Scotch broom has no spines; its green twigs are more or less five-angled, and its leaves have three leaflets on older twigs, often one or two on young twigs. Gorse seedlings have leaves of three hairy leaflets, so a seedling's leaves do not separate it from broom. Both have yellow pea flowers, usually single, and their length overlaps (gorse 13–20 mm, Scotch broom 16–25 mm), so flowers do not separate them. Gorse's pods are hairy all over and 13–25 mm long; Scotch broom's are 15–60 mm long and hairy only along the edges.",
+        "name" : "Gorse",
+        "risk" : "edible",
+        "scientificName" : "Ulex europaeus"
       }
     ],
     "months" : [
@@ -37712,7 +37690,8 @@
       "Summary text: Wikipedia contributors. 'Cytisus scoparius', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 15/09/2026. https://en.wikipedia.org/wiki/Cytisus_scoparius",
       "Lookalike cards to french-broom and sweet-broom added 26/10/2026 (Genista goal): Weedbusters 'Montpellier broom' names Cytisus scoparius as similar; card facts from Flora of New Zealand vol. IV (Cytisus scoparius, Teline monspessulana, Teline stenopetala), numbers checked.",
       "Origin checked 28/10/2026 (owner, 28/10/2026: \"make sure every entry has a true bio status\"), retrieved 28/10/2026: NZ Organisms Register (https://data.nzor.org.nz/names/search?query=Cytisus%20scoparius): Exotic in New Zealand; listed in DOC, McAlpine & Howell 2024, List of environmental weeds in New Zealand 2024, Science for Conservation 340 (https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc340.pdf), Table 2: 'Cytisus scoparius (L.) Link Scotch broom shrub — — 1922 3734 Northland (SC), Auckland (PC), Waikato (SC, SL), Gisborne (SL), Hawke’s Bay (OOI), Manawatū-Whanganui (PC), Taranaki (SC), Tasman-Nelson (SC), Marlborough (SC), Canterbury (SC, SL), West Coast (PC, SC) …' (UO = Unwanted Organism, NPPA = National Pest Plant Accord; regional plan categories SC sustained control, PC progressive containment, E eradication, SL site-led, OOI organism of interest). On DOC's environmental weed list, so origin 'introduced' → 'pest' (the 20/10/2026 rule: the DOC list alone counts).",
-      "Warnings added 28/10/2026 (owner: \"fix what you can using the quick wins\"), restated: Sykes, W.R. (1991, revised October 2002). Plants in New Zealand Poisonous to Children. Landcare Research New Zealand Ltd; 'may be copied and distributed to others without limitation, provided Landcare Research New Zealand Ltd and the source of the information is acknowledged'. Distributed by the National Poisons Centre: https://poisons-centre.s3.ap-southeast-2.amazonaws.com/public/Uploads/003fe3fc44/0011_Plants_in_New_Zealand_Poisonous_To_Children.pdf, retrieved 28/10/2026 — 'The seeds are poisonous, especially if chewed and crushed before swallowing.'"
+      "Warnings added 28/10/2026 (owner: \"fix what you can using the quick wins\"), restated: Sykes, W.R. (1991, revised October 2002). Plants in New Zealand Poisonous to Children. Landcare Research New Zealand Ltd; 'may be copied and distributed to others without limitation, provided Landcare Research New Zealand Ltd and the source of the information is acknowledged'. Distributed by the National Poisons Centre: https://poisons-centre.s3.ap-southeast-2.amazonaws.com/public/Uploads/003fe3fc44/0011_Plants_in_New_Zealand_Poisonous_To_Children.pdf, retrieved 28/10/2026 — 'The seeds are poisonous, especially if chewed and crushed before swallowing.'",
+      "Shipped-entries sweep 05/11/2026 (owner answer to batch 11, '13 yes'): reverse lookalike card to gorse added (risk edible, as on the other cards to gorse; gorse caution careRequired). Flora of New Zealand vol. IV (Webb, Sykes & Garnock-Jones 1988), 'Ulex europaeus' and 'Cytisus scoparius' (floraseries.landcareresearch.co.nz, retrieved 04/11/2026): gorse 'terminal and lateral spines rigid, deeply furrowed, 15-30 mm long', 'Lvs of seedlings not spinous but with 3 hairy leaflets', 'Corolla clear yellow or golden yellow, 13-20 mm long', 'Pod villous … 13-25 mm long'; Scotch broom 'twigs … green, ± 5-angled', 'Lvs … 3-foliolate … when mature or on older twigs; lvs of younger twigs often 1-2-foliolate', 'Fls usually solitary', corolla '16-25 mm long', 'Pod black … 15-60 mm long, with hairy margins'."
     ],
     "summary" : {
       "sources" : [
@@ -38255,90 +38234,6 @@
     },
     "warnings" : [
 
-    ]
-  },
-  {
-    "caution" : "careRequired",
-    "commonName" : "Sea lettuce",
-    "draft" : false,
-    "edibleParts" : {
-      "sources" : [
-
-      ],
-      "text" : "Fresh green fronds still attached to rock."
-    },
-    "group" : "seaweed",
-    "habitat" : {
-      "sources" : [
-
-      ],
-      "text" : "Sheltered rocky shores, harbours and estuaries. Blooms heavily in nutrient-enriched water."
-    },
-    "habitats" : [
-      "coastal"
-    ],
-    "harvestEthics" : {
-      "sources" : [
-
-      ],
-      "text" : "Take only attached, living fronds from clean open coast."
-    },
-    "id" : "sea-lettuce",
-    "identification" : {
-      "sources" : [
-
-      ],
-      "text" : "Bright grass-green translucent sheets, two cells thick, with a ruffled edge. Slippery and lettuce-like."
-    },
-    "lookalikes" : [
-
-    ],
-    "maoriName" : "Karengo rehia",
-    "months" : [
-
-    ],
-    "moreImagesURL" : "https://inaturalist.nz/taxa/54644",
-    "needsBookSource" : false,
-    "origin" : "native",
-    "photos" : [
-      {
-        "caption" : "Broad, ruffled sheet on sand",
-        "credit" : "(c) Richard Littauer, some rights reserved (CC BY)",
-        "fileName" : "sea-lettuce-3.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/236407265"
-      },
-      {
-        "caption" : "Translucent green blades",
-        "credit" : "no rights reserved",
-        "fileName" : "sea-lettuce-4.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/113709180"
-      }
-    ],
-    "preparation" : {
-      "sources" : [
-
-      ],
-      "text" : "Rinse well, dry and crumble as a seasoning, or blanch briefly. Do not use decaying material."
-    },
-    "recipes" : [
-
-    ],
-    "scientificName" : "Ulva spp.",
-    "sources" : [
-      "Hurd, C. L. et al. 'When seaweeds go bad: an overview of outbreaks of nuisance quantities of marine macroalgae in New Zealand.' New Zealand Journal of Marine and Freshwater Research 49(4), 2015. doi:10.1080/00288330.2015.1064975",
-      "Wikipedia contributors. 'Sea lettuce', Wikipedia, The Free Encyclopedia. CC BY-SA 4.0. Retrieved 06/10/2026. https://en.wikipedia.org/wiki/Sea_lettuce Puts the specifics behind both of this entry's warnings. On the heavy metals: 'Contamination with toxic heavy metals at certain sites where it can be collected makes it dangerous for human consumption.' On the rotting windrows — the deaths this page alludes to are the Brittany blooms of August 2009, where decomposing sea lettuce produced large quantities of hydrogen sulfide: near Saint-Michel-en-Grève a horse rider lost consciousness and his horse died from the fumes, and a lorry driver carrying a load of the decomposing weed passed out, crashed and died. Thirty-one wild boars found dead on the beaches in July 2011 were attributed to the same fumes. The gas inhibits cytochrome c oxidase, as hydrogen cyanide does, so it kills by stopping cellular respiration. Environmentalists attributed the blooms to nitrogen from pig and poultry slurry and fertiliser washing out to sea — the same nutrient-runoff mechanism this entry's habitat warning describes. Eaten elsewhere in Scandinavia, Britain, Ireland, China and Japan, where it is called aosa.",
-      "Origin checked 20/10/2026 (owner: \"find the bio status all shipped species and label them accordingly\"), retrieved 20/10/2026: NZ Organisms Register 'Ulva' (https://data.nzor.org.nz/names/search?query=Ulva): NIWA biostatus Indigenous, Present. Origin 'native' stands.",
-      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): moreImagesURL added: iNaturalist taxon 54644 'Ulva' (genus), the active record matching the scientific name."
-    ],
-    "summary" : {
-      "sources" : [
-
-      ],
-      "text" : "Bright green, abundant and easy to identify — but it thrives on exactly the nutrient pollution you want to avoid eating."
-    },
-    "warnings" : [
-      "Sea lettuce blooms are driven by nutrient runoff, and it readily accumulates heavy metals. Never harvest in a harbour, estuary or anywhere near an outfall — which rules out most of the places you will see it in quantity.",
-      "Never collect rotting sea lettuce washed up in windrows. Decomposing Ulva releases hydrogen sulfide, which has caused deaths overseas."
     ]
   },
   {
@@ -40326,7 +40221,7 @@
         "scientificName" : "Avena sativa"
       },
       {
-        "entry" : "sterilised-oat",
+        "entry" : "sterile-oat",
         "howToTell" : "Size does not reliably separate them. Winter wild oat is a strong, rather stiff plant with heavy panicles, and slender oat is often very slender, but their measurements can overlap: slender oat's spikelets are 40–50 mm with awns 30–36 mm; winter wild oat's are 3.5–6 cm with awns 25–50 mm in subspecies ludoviciana (overlapping slender oat), and 6–8 cm with awns 60–70 mm in subspecies sterilis. Leaf width overlaps too (2–8 mm against 3–15 mm), and reddish hairs on the lemma occur in slender oat and in subspecies sterilis. Check how a ripe spikelet breaks up: slender oat's breaks apart below each floret, while winter wild oat's florets stay joined and fall together from above the glumes. Slender oat's lemma tip-lobes are each drawn out into a fine bristle 2–3 mm long; winter wild oat's lemma narrows to a papery, two-toothed tip, and only its lower one or two lemmas carry an awn. Both have edible seeds.",
         "name" : "Winter wild oat",
         "risk" : "edible",
@@ -42373,7 +42268,7 @@
     "habitats" : [
       "disturbed"
     ],
-    "id" : "sterilised-oat",
+    "id" : "sterile-oat",
     "identification" : {
       "sources" : [
         "Flora of New Zealand Online, Manaaki Whenua – Landcare Research (CC BY 3.0 NZ) — abbreviations spelled out",
@@ -42415,25 +42310,25 @@
       {
         "caption" : "Large ripe spikelets with bent awns",
         "credit" : "(c) Lloyd Esler, some rights reserved (CC BY-NC)",
-        "fileName" : "sterilised-oat-6.heic",
+        "fileName" : "sterile-oat-6.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/10821973"
       },
       {
         "caption" : "Ripe stand by a road",
         "credit" : "(c) Paul Bell-Butler, some rights reserved (CC BY)",
-        "fileName" : "sterilised-oat-1.heic",
+        "fileName" : "sterile-oat-1.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/145381507"
       },
       {
         "caption" : "Grain",
         "credit" : "(c) Stephen Thorpe, some rights reserved (CC BY)",
-        "fileName" : "sterilised-oat-5.heic",
+        "fileName" : "sterile-oat-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/61143901"
       },
       {
         "caption" : "Grain on plant",
         "credit" : "no rights reserved",
-        "fileName" : "sterilised-oat-3.heic",
+        "fileName" : "sterile-oat-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/46070640"
       }
     ],
@@ -42466,15 +42361,18 @@
       "Origin checked 22/10/2026 → introduced (unchanged): not on DOC SfC 340 (2024) Table 2, nor in PCE 2021 Appendix 2 (all RPMPs); NZOR biostatus Exotic, Present.",
       "Identification text (22/10/2026): Flora of New Zealand Online, 'Avena sterilis' factsheet (CC BY 3.0 NZ), https://www.nzflora.info/factsheet/Taxon/Avena-sterilis.html, retrieved 22/10/2026, verbatim; the two subspecies paragraphs from Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0) (hyphens between numbers set as en dashes). Replaces the Wikipedia 'Avena sterilis' description, removed because its spikelet size (1.7–4.5 cm) contradicts Flora's New Zealand figures (3.5–6 cm and 6–8 cm) used in the cards, and because it carried a paragraph on pests and pathogens, which is not identification.",
       "Photos (the owner's curation in the editor, seen 22/10/2026; replaces the assistant's line on -1 to -4, of which the owner kept -1): -6 ripe spikelets (obs 10821973, Lloyd Esler, CC BY-NC), -1 ripe stand (obs 145381507 photo 249702174, Paul Bell-Butler, Wellington, CC BY), -5 floret close-up under magnification (obs 61143901, Stephen Thorpe, Tāmaki, CC BY), -3 ripe spikelets on the plant (obs 46070640, Anna C, Nea Makri, Greece, CC0 — overseas, judged on species, not geography). Every observation re-checked by the iNaturalist API 22/10/2026 (taxon, research grade, wild, photo licence) and every frame checked by eye against its caption.",
-      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): moreImagesURL added: iNaturalist taxon 75722 'Avena sterilis' (species), the active record matching the scientific name."
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): moreImagesURL added: iNaturalist taxon 75722 'Avena sterilis' (species), the active record matching the scientific name.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Summary 04/11/2026: the alias 'wild oat' dropped from the Wikipedia name list, because it is the commonName of the separate wild oat entry (Avena fatua) and a shared alias would send readers to the wrong species (precedent: an alias shared with another entry's species is dropped). The Flora of New Zealand Online 'Avena sterilis' factsheet (CC BY 3.0 NZ, https://www.nzflora.info/factsheet/Taxon/Avena-sterilis.html, retrieved 04/11/2026) does list 'Wild oat' among its vernaculars ('Animated oat; Sterile oat; Wild oat; Winter wild oat'); 'Winter wild oat' stays the common name, as Flora vol. V gives it for subsp. ludoviciana and Wikipedia's species box uses it.",
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 12): id renamed from 'sterilised-oat' to 'sterile-oat' (owner: '10 rename'), matching 'sterile oat', the vernacular in Flora of New Zealand vol. V and Wikipedia 'Avena sterilis'; photo files and the cards on oat, wild oat and slender wild oat renamed with it."
     ],
     "sourcingNote" : "",
     "summary" : {
       "sources" : [
         "Wikipedia, 'Avena sterilis' (CC BY-SA 4.0)",
-        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)"
+        "Flora of New Zealand Series vol. V, Edgar, E.; Connor, H.E. 2000, Gramineae, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0)",
+        "Wikipedia, 'Avena sterilis' (CC BY-SA 4.0) — the alias 'wild oat' left out because it is the common name of the separate wild oat entry (Avena fatua)"
       ],
-      "text" : "Avena sterilis (animated oat, sterile oat, wild oat, wild red oat, winter wild oat; syn. Avena ludoviciana Durieu; Avena macrocarpa Moench; Avena sterilis ssp. sterilis; Avena sterilis ssp. ludoviciana) is a species of grass weed whose seeds are edible.\nA. sterilis is native to the Mediterranean Basin and West, Central and South Asia, but is widely naturalized elsewhere. The species grows on all continents except Antarctica.\n\nIn North America, it grows as an introduced species in the U.S. states of California, Oregon, New Jersey, Ohio, Pennsylvania, and the Canadian provinces of Ontario and Quebec.\n\nBecause it thrives in the same conditions as many agricultural crops and has similar lifecycles, the grass directly competes with and reduces yield in arable crops.\n\nIn New Zealand (Flora of New Zealand): subsp. ludoviciana: N.: Feilding, Wellington City; S.: Nelson City, Blenheim, more common in Canterbury, North Otago (near Oamaru). Naturalised from Eurasia. subsp. sterilis: N.: North Auckland (near Whangarei), Auckland City, Waikato (Waerenga); Cook Strait (Stephens Id); S.: Dunedin. Naturalised from Mediterranean."
+      "text" : "Avena sterilis (animated oat, sterile oat, wild red oat, winter wild oat; syn. Avena ludoviciana Durieu; Avena macrocarpa Moench; Avena sterilis ssp. sterilis; Avena sterilis ssp. ludoviciana) is a species of grass weed whose seeds are edible.\nA. sterilis is native to the Mediterranean Basin and West, Central and South Asia, but is widely naturalized elsewhere. The species grows on all continents except Antarctica.\n\nIn North America, it grows as an introduced species in the U.S. states of California, Oregon, New Jersey, Ohio, Pennsylvania, and the Canadian provinces of Ontario and Quebec.\n\nBecause it thrives in the same conditions as many agricultural crops and has similar lifecycles, the grass directly competes with and reduces yield in arable crops.\n\nIn New Zealand (Flora of New Zealand): subsp. ludoviciana: N.: Feilding, Wellington City; S.: Nelson City, Blenheim, more common in Canterbury, North Otago (near Oamaru). Naturalised from Eurasia. subsp. sterilis: N.: North Auckland (near Whangarei), Auckland City, Waikato (Waerenga); Cook Strait (Stephens Id); S.: Dunedin. Naturalised from Mediterranean."
     },
     "warnings" : [
       "Claviceps purpurea is an ergot fungus that grows on the ears of rye and related cereal and forage plants. Consumption of grains or seeds contaminated with the survival structure of this fungus, the ergot sclerotium, can cause ergotism in humans and other mammals. It affects oats only rarely."
@@ -43635,32 +43533,32 @@
     "group" : "nuts",
     "habitat" : {
       "sources" : [
-
+        "Biota NZ / Landcare herbarium via GBIF, NZFRI 18635 (Whakarewarewa Forest, Rotorua, 24/11/1989): 'Under Pinus patula. Sweet chestnut. Low sprawling plants, scattered under this stand.'; iNaturalist observation 74485533 (Whangateau, 13/03/2021, research grade): 'wild in the bush edge', retrieved 04/11/2026"
       ],
-      "text" : "Old estates, parks, farm plantings and shelter belts."
+      "text" : "Old estates, parks, farm plantings and shelter belts.\nIn New Zealand: self-sown plants grow scattered under pine plantation and on bush edges."
     },
     "habitats" : [
       "forest",
-      "grassland",
       "urban"
     ],
     "id" : "sweet-chestnut",
     "identification" : {
       "sources" : [
-
+        "Flora of New Zealand Series vol. IV, Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0) — Fagaceae note, abbreviations spelled out; Wikipedia, 'Castanea sativa' (CC BY-SA 4.0) — leaf sentence"
       ],
-      "text" : "Long narrow leaves with sharply toothed edges. Nuts sit inside a dense casing covered in fine, sharp, needle-like spines — like a sea urchin — usually two or three flattened glossy brown nuts per case, each with a pointed tip and a tassel."
+      "text" : "Long narrow leaves with sharply toothed edges. Nuts sit inside a dense casing covered in fine, sharp, needle-like spines — like a sea urchin — usually two or three flattened glossy brown nuts per case, each with a pointed tip and a tassel.\nIn New Zealand (Flora of New Zealand): sweet chestnut is distinguished by the erect male catkins and prickly cupule which completely encloses the fruit. The oblong-lanceolate, boldly toothed leaves are 15–32 cm long and 5–10 cm broad (Wikipedia)."
     },
     "lookalikes" : [
       {
         "entry" : "horse-chestnut",
-        "howToTell" : "Horse chestnut has hand-shaped leaves of five to seven leaflets spreading from one stalk; sweet chestnut's leaves are single, long and boldly toothed. Horse chestnut's case is spiky, reportedly with short spikes rather than sweet chestnut's many fine spines, and usually holds one round, glossy, dark brown seed — a conker — with a large pale scar, sometimes two; sweet chestnut's usually holds two or more nuts with a tufted tip. Do not rely on nut count alone, because some sweet chestnut varieties bear a single nut. Raw horse chestnut seeds are toxic, with several toxic compounds including aesculin, and cause sickness when eaten.",
+        "howToTell" : "Horse chestnut has hand-shaped leaves of five to seven leaflets spreading from one stalk; sweet chestnut's leaves are single, long and boldly toothed. Horse chestnut's case has short, more widely spaced spikes rather than sweet chestnut's many long, fine spines, and usually holds one round, glossy, dark brown seed — a conker — with a large pale scar, sometimes two; sweet chestnut's usually holds two or more nuts with a tufted tip. Do not rely on nut count alone, because some sweet chestnut varieties bear a single nut. Raw horse chestnut seeds are toxic, with several toxic compounds including aesculin, and cause sickness when eaten.",
         "name" : "Horse chestnut",
         "risk" : "toxic",
         "scientificName" : "Aesculus hippocastanum"
       }
     ],
     "months" : [
+      3,
       4,
       5
     ],
@@ -43700,7 +43598,7 @@
         "title" : "Roasted sweet chestnuts"
       },
       {
-        "method" : "Fresh sweet chestnuts; a steamer; a coarse sieve; 500 g resealable freezer bags. Leave freshly gathered nuts somewhere dry for a few days to sweeten. On a chopping board, cut off the base and brown skin of each nut with a sharp knife, throwing out any that show signs of rot. Steam them for about 20 minutes. While they are hot, push them a few at a time through a coarse sieve with the end of a rolling pin to remove the brown inner skin; if they are very hard to push through, they need more steaming. The sieving dries them to a breadcrumb-like texture. Pack into 500 g resealable bags and freeze, and thaw before baking or cooking. The author uses frozen processed chestnuts within six months, and finds a 500 g bag does a couple of meals for two.",
+        "method" : "Fresh sweet chestnuts; a steamer; a coarse sieve; 500 g resealable freezer bags. Leave freshly gathered nuts somewhere dry for a few days to sweeten. On a chopping board, cut off the base and brown skin of each nut with a sharp knife, throwing out any that show signs of rot. Steam them for about 20 minutes. While they are hot, push them a few at a time through a coarse sieve with the end of a rolling pin to remove the brown inner skin; if they are very hard to push through, they need more steaming. The sieving dries them to a breadcrumb-like texture. Pack into 500 g resealable bags and freeze, and thaw before baking or cooking. Frozen processed chestnuts are best used within six months, and a 500 g bag is enough for a couple of meals for two.",
         "sourceURL" : "https://ourwayoflife.co.nz/self-sufficiency-with-sweet-chestnuts-how-to-process-roast-and-make-chestnut-flour/",
         "title" : "Chestnut flour"
       },
@@ -43725,7 +43623,15 @@
       "Recipe: Diack, Lucinda. 'Self-sufficiency with sweet chestnuts: How to process, roast and make chestnut flour', Our Way of Life (first in NZ Lifestyle Block magazine), 22/03/2019. No licence stated, so all rights reserved. Retrieved 27/10/2026. https://ourwayoflife.co.nz/self-sufficiency-with-sweet-chestnuts-how-to-process-roast-and-make-chestnut-flour/ — method paraphrased, not quoted; names Castanea sativa. Not used: Rebecca Stewart, 'The homegrown flour trials', Our Way of Life (boil 8 minutes, peel, slice, part-dehydrate, grind; the page does not name the chestnut species); Forager Chef's chestnut flour (dries raw nuts, which conflicts with this entry's 'cooked').",
       "Recipe: River Cottage. 'Simple Chestnut and Sage Soup', rivercottage.net (no author or date shown). No licence stated, so all rights reserved. Retrieved 27/10/2026. https://rivercottage.net/recipes/chestnut-and-sage-soup/ — method paraphrased, not quoted. Not used: Bite, 'Pumpkin and chestnut soup', NZ Herald Eat Well (pumpkin-led; species not named either).",
       "Recipes from Julia Sich, Julia's Edible Weeds (Bay of Plenty, New Zealand; all rights reserved), added 28/10/2026 (owner, 28/10/2026: 'cross match our catalogue with the recipes here https://juliasedibleweeds.com/recipes/ and add them'): 'Chickweed and chestnut nori wraps' from 'Chickweed – abundant in winter' (15/07/2014, https://juliasedibleweeds.com/recipes/chickweed-abundant-in-winter/). Restated in my words, metric (NZ 250 ml cup, 15 ml tablespoon), every amount checked against the post text retrieved 28/10/2026 through the site's WordPress API (category 'recipes', 30 posts); her health and medicinal claims are not used. A recipe is on this entry only because the author made it with this plant, not because it is named as a substitute.",
-      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): card name 'Horse chestnut / conker' → 'Horse chestnut', the target entry's common name (alias dropped so the card matches the page it opens)."
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): card name 'Horse chestnut / conker' → 'Horse chestnut', the target entry's common name (alias dropped so the card matches the page it opens).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Sweet chestnut → horse chestnut card, 04/11/2026: 'reportedly' removed and the case test restated, now resting on two sources instead of the Woodland Trust alone — ANSES (French Agency for Food, Environmental and Occupational Health & Safety), 'How to avoid confusing horse chestnuts with sweet chestnuts' (https://www.anses.fr/en/news/how-avoid-confusing-horse-chestnuts-sweet-chestnuts, retrieved 04/11/2026): 'the sweet chestnut burr is brown and has numerous long bristly spines' and 'horse chestnut burrs are thick and green, with small, short, more widely spaced spikes'; Woodland Trust, 'Can you eat conkers?' (https://www.woodlandtrust.org.uk/blog/2026/09/can-you-eat-conkers/, retrieved 04/11/2026): 'horse chestnut cases are covered in short spikes while sweet chestnut cases have lots of fine spines'. Flora of New Zealand vol. IV (Webb et al. 1988), Fagaceae (https://floraseries.landcareresearch.co.nz/taxa/e27ac9a9-18bc-4d46-8d06-8ad74f918b4f, retrieved 04/11/2026) ('prickly cupule which completely encloses the fr.') and Flora of New Zealand vol. IV, 'Aesculus hippocastanum' (https://floraseries.landcareresearch.co.nz/taxa/413a7758-8f59-4edf-92fe-b61fea31d630, retrieved 04/11/2026) ('Capsule to 6 cm diam., subglobose, echinate') confirm both are spiny. The commonly planted red horse chestnut hybrid has 'capsules [with] few prickles' but is not recorded wild (Flora vol. IV).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Warning 04/11/2026: 'sparse and blunt' is in no source (the earlier sweep flagged it unsupported); restated from ANSES (French Agency for Food, Environmental and Occupational Health & Safety), 'How to avoid confusing horse chestnuts with sweet chestnuts' (https://www.anses.fr/en/news/how-avoid-confusing-horse-chestnuts-sweet-chestnuts, retrieved 04/11/2026): sweet chestnut burr 'has numerous long bristly spines'; horse chestnut burrs 'with small, short, more widely spaced spikes, and generally contain only one larger rounded nut'; 'Sweet chestnuts are edible, but horse chestnuts are poisonous.' Corroborated by Woodland Trust, 'Can you eat conkers?' (https://www.woodlandtrust.org.uk/blog/2026/09/can-you-eat-conkers/, retrieved 04/11/2026).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Months 04/11/2026: [4,5] → [3,4,5], the window fallen ripe nuts are gathered in NZ, which had no sources line. NZ Herald Eat Well, 'That old chestnut' (https://www.nzherald.co.nz/eatwell/food-news/that-old-chestnut/S2JDMU346BW2BRVJ5F6XS4EXD4/, retrieved 04/11/2026): 'Chestnut season in New Zealand is short: it runs from March until May'; Matarau, 'Growing chestnuts in Aotearoa' (https://matarau.nz/whenua-uses-and-data/chestnuts/, retrieved 04/11/2026): 'between February and April in the North Island, and between March and May in the South Island'; Chestnut Traders 'Chestnuts in New Zealand' (https://www.chestnut-traders.co.nz/nzchestnuts.htm, retrieved 04/11/2026) dates orchard harvests from the last week of February (early cultivar, Auckland) to mid-May. These are orchard (mostly Euro-Japanese hybrid) dates; February is left out as an early-cultivar, Auckland-only start. iNaturalist NZ fruiting annotations for Castanea sativa are only 2, both March.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Identification 04/11/2026: the owner's description had no field source; sourced description appended (owner text kept). Flora of New Zealand vol. IV (Webb et al. 1988), Fagaceae (https://floraseries.landcareresearch.co.nz/taxa/e27ac9a9-18bc-4d46-8d06-8ad74f918b4f, retrieved 04/11/2026): 'Castanea sativa Miller, sweet chestnut, is distinguished by the erect ♂ catkins and prickly cupule which completely encloses the fr.' (abbreviations spelled out); Wikipedia 'Castanea sativa' (CC BY-SA 4.0, retrieved 04/11/2026): 'The oblong-lanceolate, boldly toothed leaves are 15–32 centimetres long and 5–10 cm broad'. The owner's 'usually two or three flattened glossy brown nuts per case' matches ANSES ('two to three nuts at a time, which are fairly small, flattened and triangular') and the Woodland Trust.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Recipe 'Chestnut flour' 04/11/2026: last sentence restated to what the page says (not the author's own practice) — Our Way of Life, 'Self-sufficiency with sweet chestnuts' (retrieved 04/11/2026): 'Frozen, processed chestnuts are best used up within six months' and 'A 500g bag of chestnut flour is enough for a couple of meals for two people'.",
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 12): the draft 'Japanese chestnut' (Castanea crenata) entry was dropped (owner: '6 drop') as not wild in NZ: not in Flora of New Zealand vol. IV, two needs-ID iNaturalist records (Kaitaia, Takapuna), and herbarium sheets only of cultivated arboretum trees (Eastwoodhill). It had no lookalike cards.",
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 12): forest tag kept and backed by a sourced habitat line (herbarium NZFRI 18635 under pine plantation; iNaturalist bush-edge record); grassland tag dropped (owner: '8 sure'), as the prose names no grassland.",
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 12): tree-nut allergy warning added (owner: '7 yes'). Wikipedia, 'Tree nut allergy' (CC BY-SA 4.0, https://en.wikipedia.org/w/index.php?title=Tree_nut_allergy&action=raw, retrieved 04/11/2026): 'Tree nuts include almonds, Brazil nuts, cashews, chestnuts, …' and a tree nut allergy 'may lead to severe physical symptoms'. Chestnut is not on the FSANZ list of tree nuts that must be declared on labels, so the warning rests on Wikipedia alone."
     ],
     "summary" : {
       "sources" : [
@@ -43734,8 +43640,9 @@
       "text" : "Worth the effort in autumn — but its ornamental namesake is toxic and far more commonly planted."
     },
     "warnings" : [
-      "Count the spines: dense and needle-sharp means sweet chestnut, sparse and blunt means horse chestnut.",
-      "Many nuts in old plantings are grub-infested. Float them in water and discard any that float."
+      "Check the case: sweet chestnut's has numerous long, fine spines; horse chestnut's has short, more widely spaced spikes and usually holds one round conker. Horse chestnuts are poisonous.",
+      "Many nuts in old plantings are grub-infested. Float them in water and discard any that float.",
+      "Chestnuts are tree nuts, and a tree nut allergy can cause severe reactions."
     ]
   },
   {
@@ -46581,37 +46488,43 @@
     "draft" : false,
     "edibleParts" : {
       "sources" : [
-
+        "Wikipedia, 'Juglans regia' (CC BY-SA 4.0) — edible nut; Plants For A Future, 'Juglans regia' (all rights reserved, restated) — seed, unripe fruits pickled; NZ Walnut Industry Group, 'Other Walnut Recipes' (restated) — green nuts before the shell hardens"
       ],
-      "text" : "The kernel. Green immature nuts can be pickled whole."
+      "text" : "The kernel. Green immature nuts, picked before the shell begins to harden, can be pickled whole."
     },
     "group" : "nuts",
     "habitat" : {
       "sources" : [
-
+        "Flora of New Zealand Series vol. IV, Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0) — 'Juglans regia'"
       ],
-      "text" : "Old farm shelter belts, homestead gardens, roadsides. Common in Canterbury, Nelson and Hawke's Bay."
+      "text" : "Old farm shelter belts, homestead gardens, roadsides.\nIn New Zealand: spontaneous in the vicinity of parent trees, near old gardens and plantations."
     },
     "habitats" : [
-      "forest",
-      "grassland",
       "urban",
       "disturbed"
     ],
     "id" : "walnut",
     "identification" : {
       "sources" : [
-
+        "Flora of New Zealand Series vol. IV, Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0) — 'Juglans regia', abbreviations spelled out, hyphens between numbers set as en dashes"
       ],
-      "text" : "Large tree with compound leaves of five to nine leaflets, aromatic when crushed. Green tennis-ball husks that split and blacken to release the familiar wrinkled shell."
+      "text" : "Large tree with compound leaves of five to nine leaflets, aromatic when crushed. Round green husks 3.5–5 cm long that split and blacken to release the familiar wrinkled shell.\nIn New Zealand (Flora of New Zealand): Large tree to over 20 m high, with broad spreading crown. Shoots glabrous, stout, dark, with prominent, Y-shaped leaf scars; buds grey, more or less finely puberulent. Leaves to about 55 cm long; petiole and rachis to about 30 cm long on adult branches. Leaflets 5–9, densely glandular-puberulent when young, becoming glabrous except for axillary hair tufts on undersurface, entire; base cuneate to rounded; apex rounded to acute or cuspidate; lowest pair of leaflets much smaller; terminal leaflet largest. Lamina of terminal leaflet mostly 10–20 × 5–11 cm (sometimes larger on strong vegetative shoots), broad-elliptic or elliptic-obovate. Male catkins 5–11 cm long, puberulent. Female flowers in clusters of 1–3, sessile or subsessile, densely glandular-puberulent; stigmas to 3 mm long, pale green. Fruit 3.5–5 cm long, subglobose, glabrous but gland-dotted, green, not beaked. Shell thick or thin, rugose; sutures thick and easily dividing in half at maturity. Seed very convoluted. Wild or self-sown trees tend to have thick-shelled nuts."
     },
     "lookalikes" : [
-
+      {
+        "entry" : "japanese-walnut",
+        "howToTell" : "Both edible; this is about which you have. Count and feel the leaflets: walnut has 5–9 with smooth (untoothed) edges, the end leaflet the largest and the lowest pair much smaller; Japanese walnut has 9–17, finely toothed though the teeth are often sparse, the end leaflet about the size of the side ones. Seedling walnuts can have toothed leaflets, so check an adult tree. Walnut's fruits sit in clusters of 1–3 close on the twig; Japanese walnut's hang 10–22 together in long strings. Walnut's fruit is 3.5–5 cm, nearly round, smooth and green with gland dots, not beaked; Japanese walnut's is 2.5–4 cm, egg-shaped, beaked, sticky and rusty-hairy. Walnut's shell splits easily in half along its seams when ripe; Japanese walnut's thick shell has raised seams that split with difficulty and an often sharp tip.",
+        "name" : "Japanese walnut",
+        "risk" : "edible",
+        "scientificName" : "Juglans ailantifolia"
+      }
     ],
     "months" : [
-      2,
       3,
-      4
+      4,
+      5,
+      11,
+      12
     ],
     "moreImagesURL" : "https://inaturalist.nz/taxa/63935",
     "needsBookSource" : false,
@@ -46644,9 +46557,9 @@
     ],
     "preparation" : {
       "sources" : [
-
+        "Wikipedia, 'Juglans regia' (CC BY-SA 4.0); NZ Walnut Industry Group, 'Other Walnut Recipes' (restated)"
       ],
-      "text" : "Gather fallen nuts promptly, husk them (wear gloves — the husk stains skin brown for weeks), then dry for several weeks before storing."
+      "text" : "Gather fallen nuts promptly, husk them (wear gloves — the husk stains skin brown and the stain is very hard to remove), then dry for several weeks before storing."
     },
     "recipes" : [
       {
@@ -46672,16 +46585,29 @@
       "Origin checked 20/10/2026 (owner: \"find the bio status all shipped species and label them accordingly\"), retrieved 20/10/2026: NZ Organisms Register 'Juglans regia' (https://data.nzor.org.nz/names/search?query=Juglans%20regia): NZFLORA biostatus Exotic, Present; NZPCN 'Juglans regia' (https://www.nzpcn.org.nz/flora/species/juglans-regia/): Biostatus Exotic, year naturalised 1968. Origin 'introduced' stands. Kept introduced, not pest: not on DOC's List of environmental weeds in New Zealand 2024 (McAlpine & Howell, Science for Conservation 340, https://www.doc.govt.nz/globalassets/documents/science-and-technical/sfc340.pdf), not in Wildland Consultants' table of weed taxa in every regional pest management plan (2021, Contract Report 5396 for the PCE, Appendix 2, https://pce.parliament.nz/media/fx4pjock/hutchison-et-al-review-of-weed-management-programmes-pdf-6mb.pdf), and no Unwanted Organism or Pest Plant Accord listing on its NZPCN page.",
       "Recipe: New Zealand Walnut Industry Group. 'Pickled Walnuts' ('3 times winner of our pickled walnut recipe competition'), Other Walnut Recipes, walnuts.org.nz (formerly walnutsplease.nz). No licence stated, so all rights reserved. Retrieved 27/10/2026. https://walnuts.org.nz/walnuts/walnut-recipes/other-walnut-recipes/ — method paraphrased, not quoted. Not used: ODT, 'Mid-summer the season to get your walnuts in a pickle' (23/01/2009; the brine's salt fraction is missing from the page: 'mix cup of salt for every 5 cups of water'); Vegetarian Society 'Pickled Walnuts' (UK; NZ source preferred); the same page's 'Red Zone Pickled Walnuts' (cooked version).",
       "Recipe: Locatelli, Kerry. 'Maple Walnut Smoothie' (walnut butter component), Nuzest NZ, updated 29/08/2025. No licence stated, so all rights reserved. Retrieved 27/10/2026. https://www.nuzest.co.nz/blogs/recipes/maple-walnut-smoothie — walnut butter method paraphrased, not quoted. Not used: the page's nutrition and health claims; the smoothie itself; MasterClass 'Classic Homemade Walnut Butter' (NZ source preferred).",
-      "Recipe: Casley, Angela. 'Walnut pesto', NZ Herald Eat Well (Viva). No licence stated, so all rights reserved. Retrieved 27/10/2026. https://www.nzherald.co.nz/eatwell/recipes/walnut-pesto/JN6O3LMOHBCWGVIP5NDO5SQDD4/ — method paraphrased, not quoted. Not used: NZ Herald 'Pasta spirals with walnut pesto' (basil-led, 60 g walnuts)."
+      "Recipe: Casley, Angela. 'Walnut pesto', NZ Herald Eat Well (Viva). No licence stated, so all rights reserved. Retrieved 27/10/2026. https://www.nzherald.co.nz/eatwell/recipes/walnut-pesto/JN6O3LMOHBCWGVIP5NDO5SQDD4/ — method paraphrased, not quoted. Not used: NZ Herald 'Pasta spirals with walnut pesto' (basil-led, 60 g walnuts).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Lookalike cards walnut ↔ Japanese walnut, added 04/11/2026 (a substantiated NZ lookalike with no card): every test from the Flora of New Zealand accounts of both species — Flora of New Zealand vol. IV (Webb et al. 1988), 'Juglans regia' (https://floraseries.landcareresearch.co.nz/taxa/96094039-8cfa-4a57-89fd-a2b7b1796a2b, retrieved 04/11/2026): 'Leaflets 5-9 … entire … lowest pair of leaflets much smaller; terminal leaflet largest'; 'fls in clusters of 1-3, sessile or subsessile'; 'Fr. 3.5-5 cm long, subglobose, glabrous but gland-dotted, green, not beaked'; 'sutures thick and easily dividing in 1/2 at maturity'. Flora of New Zealand vol. IV (Webb et al. 1988), 'Juglans ailantifolia' (https://floraseries.landcareresearch.co.nz/taxa/348073f0-dbf1-42e9-a4b8-2e8d3b85de4c, retrieved 04/11/2026): 'Leaflets 9-17 … serrulate with teeth often sparse … terminal leaflet mostly of similar size to lateral leaflets'; 'Fr. 2.5-4 cm long, broad-ovoid, beaked, viscid, tomentose, ferrugineus'; 'sutures thick and raised, dividing with difficulty; beak often sharply acute'; genus key 'frs 10-22, in pendulous racemes' against 'frs in clusters of 1-3'. Seedling hedge: Wikipedia 'Juglans regia' (CC BY-SA 4.0, retrieved 04/11/2026): leaflet margins 'entire, but with toothed margins on seedlings'. Both wild in NZ: walnut 'sporadic throughout', Japanese walnut on the North Island (Flora vol. IV). Risk edible both ways: walnut seed edible (Wikipedia 'large and edible nut'; PFAF); Japanese walnut 'The edible nuts have an oily texture' (Wikipedia 'Juglans ailantifolia', retrieved 04/11/2026), PFAF 'Seed - raw, cooked or used in confectionery'. Not used: PFAF's 'The shell is easily cracked' for Japanese walnut, which contradicts the Flora's NZ description (probably the thin-shelled heartnut).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Months 04/11/2026: [2,3,4] → [3,4,5,11,12], with no sources line before. Ripe nuts: NZ Walnut Industry Group, 'Introduction to walnut growing' (https://walnuts.org.nz/growing-resources/introduction-to-walnut-growing/, retrieved 04/11/2026): 'nuts typically begin to fall in late March and harvest goes through until early May' (February unsupported, May was missing). Green nuts for pickling, also an edible part here: NZ Walnut Industry Group, 'Other Walnut Recipes' (https://walnuts.org.nz/walnuts/walnut-recipes/other-walnut-recipes/, retrieved 04/11/2026): 'Pick green walnuts from November to December, before the inner shell has begun to harden', 'collected early in the season (around Christmas)', and 'Generally after the new year walnuts will be too well developed'. iNaturalist NZ fruiting annotations (12) fall Dec–Apr, mostly green fruit.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Edible parts 04/11/2026: field had no source; now backed by Wikipedia 'Juglans regia' (retrieved 04/11/2026): 'the seed is a large and edible nut with a rich flavour'; Plants For A Future 'Juglans regia' (https://pfaf.org/user/Plant.aspx?LatinName=Juglans+regia, retrieved 04/11/2026): 'Seed - eaten raw' and 'The unripe fruits are pickled in vinegar'; and NZ Walnut Industry Group, 'Other Walnut Recipes' (https://walnuts.org.nz/walnuts/walnut-recipes/other-walnut-recipes/, retrieved 04/11/2026), which adds the timing: green walnuts 'before the inner shell has begun to harden'.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Preparation 04/11/2026: 'for weeks' is in no source; restated — Wikipedia 'Juglans regia' (retrieved 04/11/2026): 'harvesting the nuts often leaves the fingers strongly stained brown'; NZ Walnut Industry Group, 'Other Walnut Recipes' (https://walnuts.org.nz/walnuts/walnut-recipes/other-walnut-recipes/, retrieved 04/11/2026): 'wear gloves to prevent the walnut juices from staining your hands – the stain is very difficult to remove'. The rest of the line (gather promptly; dry before storing) is kept: NZ Walnut Industry Group, 'Introduction to walnut growing' (https://walnuts.org.nz/growing-resources/introduction-to-walnut-growing/, retrieved 04/11/2026): 'Your crop then needs to be dried' and 'Not drying walnuts sufficiently will result in nuts becoming mouldy in storage' (the 'several weeks' is book-only).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Identification 04/11/2026: the owner's description had no field source; the Flora of New Zealand description appended (owner text kept) — Flora of New Zealand vol. IV (Webb et al. 1988), 'Juglans regia' (https://floraseries.landcareresearch.co.nz/taxa/96094039-8cfa-4a57-89fd-a2b7b1796a2b, retrieved 04/11/2026), verbatim with abbreviations spelled out. Note the owner's 'tennis-ball husks' is larger than the Flora's fruit, 3.5–5 cm (see owner question).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Habitat 04/11/2026: Flora of New Zealand habitat sentence appended — Flora of New Zealand vol. IV (Webb et al. 1988), 'Juglans regia' (https://floraseries.landcareresearch.co.nz/taxa/96094039-8cfa-4a57-89fd-a2b7b1796a2b, retrieved 04/11/2026): 'Spontaneous in the vicinity of parent trees, near old gardens and plantations.'",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Summary 04/11/2026: NZ distribution from Flora of New Zealand vol. IV (Webb et al. 1988), 'Juglans regia' (https://floraseries.landcareresearch.co.nz/taxa/96094039-8cfa-4a57-89fd-a2b7b1796a2b, retrieved 04/11/2026): 'N.; S.: sporadic throughout.'; 'S.E. Europe, E. to temperate Himalaya, China'; 'Walnuts or English walnuts were amongst the first nut plants introduced to N.Z. by early settlers from Europe'.",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Habitat tags 04/11/2026: 'forest' removed — neither the owner's prose ('Old farm shelter belts, homestead gardens, roadsides') nor the Flora sentence ('near old gardens and plantations') names forest. urban and disturbed stay (gardens; roadsides).",
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Habitat 04/11/2026: 'Common in Canterbury, Nelson and Hawke's Bay' removed — it is range, not habitat (habitat holds habitat), and no source supports it for wild trees: Flora of New Zealand vol. IV (Webb et al. 1988), 'Juglans regia' (https://floraseries.landcareresearch.co.nz/taxa/96094039-8cfa-4a57-89fd-a2b7b1796a2b, retrieved 04/11/2026) gives the NZ range as 'N.; S.: sporadic throughout' (now in the summary); NZ Walnut Industry Group, 'Introduction to walnut growing' (https://walnuts.org.nz/growing-resources/introduction-to-walnut-growing/, retrieved 04/11/2026) says only that 'Canterbury is home to a large fraction of New Zealand's walnut orchards' (cultivated).",
+      "Identification, shipped-entries sweep 04/11/2026 (batch 12): 'tennis-ball husks' overstated the fruit (a tennis ball is about 6.7 cm) and is restated to the Flora's size — Flora of New Zealand vol. IV (Webb et al. 1988), 'Juglans regia' (https://floraseries.landcareresearch.co.nz/taxa/96094039-8cfa-4a57-89fd-a2b7b1796a2b, retrieved 04/11/2026): 'Fruit 3.5–5 cm long, subglobose'.",
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 12): grassland tag dropped (owner: '9 drop'): it rested only on 'old farm shelter belts'.",
+      "Shipped-entries sweep 04/11/2026 (owner answers to batch 12): tree-nut allergy warning added (owner: '7 yes'). Food Standards Australia New Zealand, 'Food allergies' (https://www.foodstandards.gov.au/consumer/foodallergies, retrieved 04/11/2026): 'Most food allergies in Australia and New Zealand are caused by peanuts, certain tree nuts (almond, Brazil nut, cashew, hazelnut, macadamia, pecan, pine nut, pistachio, walnut)'; Wikipedia, 'Juglans regia' (CC BY-SA 4.0, https://en.wikipedia.org/w/index.php?title=Juglans_regia&action=raw, retrieved 04/11/2026): 'Walnuts and other tree nuts are food allergen sources having potential to cause life-threatening, IgE-mediated allergic reactions in some individuals.'"
     ],
     "summary" : {
       "sources" : [
-
+        "Flora of New Zealand Series vol. IV, Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988, Manaaki Whenua – Landcare Research (CC BY-NC-SA 4.0) — 'Juglans regia', distribution and history, abbreviations spelled out"
       ],
-      "text" : "Old farm and roadside trees drop far more than anyone collects."
+      "text" : "Old farm and roadside trees drop far more than anyone collects.\nIn New Zealand (Flora of New Zealand): North and South Islands, sporadic throughout. Naturalised from south-east Europe east to the temperate Himalaya and China. Walnuts were amongst the first nut plants introduced to New Zealand by early settlers from Europe."
     },
     "warnings" : [
-      "Nuts left lying damp on the ground develop moulds. Discard any kernel that is shrivelled, discoloured or smells rancid."
+      "Nuts left lying damp on the ground develop moulds. Discard any kernel that is shrivelled, discoloured or smells rancid.",
+      "Walnuts are tree nuts, one of the commonest causes of food allergy in New Zealand, and can cause life-threatening allergic reactions in some people."
     ]
   },
   {
@@ -48770,7 +48696,7 @@
         "scientificName" : "Avena barbata"
       },
       {
-        "entry" : "sterilised-oat",
+        "entry" : "sterile-oat",
         "howToTell" : "Winter wild oat's spikelet breaks above the glumes with its florets held together, so they fall as one unit; wild oat's breaks below each floret, so they fall one by one. At the base of each floret, winter wild oat's callus is bordered by dense short hairs; wild oat has a horseshoe-shaped scar densely bordered by long hairs. Winter wild oat's awns, on the lowest 1–2 florets, have a red-brown twisted column; wild oat's column is dark brown. Size does not separate them: winter wild oat's spikelets are 3.5–6 cm with 2–3 florets and an awn of 25–50 mm in one subspecies (ludoviciana), and 6–8 cm with 3–5 florets and an awn of 60–70 mm in the other (sterilis); wild oat's spikelets are 35–50 mm with 2–3 florets and an awn of 30–40 mm.",
         "name" : "Winter wild oat",
         "risk" : "edible",
@@ -51381,6 +51307,246 @@
       "Liver fluke risk: mints growing in water are among the plants recorded as sources of human liver fluke (Fasciola) infection, caught by eating them raw; this is recorded for mints in general, not for this species. Peppermint often grows in streams and drains, so do not eat it raw from water draining land where sheep or cattle graze. Cooking kills the cysts.",
       "Peppermint hybridises freely with other mints, so wild plants may not match the description exactly.",
       "Never eat plants from sites with polluted water."
+    ]
+  },
+  {
+    "caution" : "doNotEat",
+    "commonName" : "Durvillaea poha",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+        "No source written for Durvillaea poha records it as food (NIWA, Wikipedia, Te Papa, NZTCS, Ngā Rauropi Whakaoranga checked; no PFAF page), so none is given"
+      ],
+      "text" : "None."
+    },
+    "group" : "seaweed",
+    "habitat" : {
+      "sources" : [
+        "Neill & Nelson (2016), 'Stunning seaweeds: Beautiful browns', NIWA (CC BY-NC-ND 3.0) — reproduced unaltered",
+        "Wikipedia, 'Durvillaea poha' (CC BY-SA 4.0)"
+      ],
+      "text" : "Found in the intertidal in exposed areas, often in a band above D. antarctica, around southern South Island, Stewart, Snares and Auckland Islands.\nIn southern New Zealand, D. poha and D. antarctica frequently grow next to one another, although D. poha normally grows higher up or further back on rock platforms, or in more sheltered bays, where wave force is weaker."
+    },
+    "habitats" : [
+      "coastal"
+    ],
+    "harvestEthics" : {
+      "sources" : [
+        "New Zealand Threat Classification System (DOC, https://nztcs.org.nz, REST API all-assessments), retrieved 04/11/2026: record 42442 'Durvillaea poha C.I.Fraser, H.G.Spencer & J.M.Waters', Macroalgae 2019 (Nelson et al. 2019), current: At Risk – Declining, Data Poor",
+        "Maggy Wassilieff, 'Seaweed – Traditional use of seaweeds', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-4 (Wayback 2026 copy), retrieved 04/11/2026 (restated); Ngāi Tahu Claims Settlement Act 1998, s 306 (legislation.govt.nz), retrieved 04/11/2026"
+      ],
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading.\nThe Ngāi Tahu Claims Settlement Act 1998 protects bull kelp (Durvillaea species) from commercial harvesting within Ngāi Tahu's traditional seaweed-gathering grounds."
+    },
+    "id" : "durvillaea-poha",
+    "identification" : {
+      "sources" : [
+        "Neill & Nelson (2016), 'Stunning seaweeds: Beautiful browns', NIWA (CC BY-NC-ND 3.0) — reproduced unaltered",
+        "Wikipedia, 'Durvillaea poha' (CC BY-SA 4.0)"
+      ],
+      "text" : "Plants usually 5–10 m long, and are made up of massive blades, broad and flattened, with an internal honeycomb structure. Blades can become whip-like at the tips, but always remain broad and flattened in cross-section. Short stipe is orange-yellow and becomes flattened towards the tip. Holdfasts may join together with several stipes growing out of a clump. Blades orange-brown to golden. Fertile structures are scattered over the blades but are not easily visible.\n[From: Neill & Nelson (2016) Beautiful browns, NIWA.]\nThe stipes are unbranched. D. poha generally has wider fronds than D. antarctica, and can appear more 'orange' across the frond area."
+    },
+    "lookalikes" : [
+      {
+        "entry" : "bull-kelp",
+        "howToTell" : "Both have thick, leathery blades with an internal honeycomb, so the honeycomb does not separate them. Look at a blade in cross-section: Durvillaea poha's blades are broad and flattened, and stay flattened even where the tips become whip-like; bull kelp's always remain rounded or oval in cross-section, even where they become narrower and whip-like on more exposed sites. Durvillaea poha's short stipe is orange-yellow and becomes flattened towards the tip; bull kelp's is cylindrical. Colour helps only a little: Durvillaea poha's blades are orange-brown to golden and can look more orange, bull kelp's are golden to dark brown to olive green. Size does not separate them: Durvillaea poha is usually 5–10 m long, bull kelp grows to 5 m and sometimes up to 10 m. Durvillaea poha often grows in a band above bull kelp, or further back on rock platforms and in more sheltered bays, but in southern New Zealand the two frequently grow next to one another. Durvillaea poha is found mainly on the southern South Island, Stewart Island and the Snares and Auckland Islands, and at low frequencies along the Wellington coastline; it was not found on the northern South Island north of the Kaikōura Peninsula. Bull kelp's young blade tissue is eaten.",
+        "name" : "Bull kelp",
+        "risk" : "edible",
+        "scientificName" : "Durvillaea antarctica"
+      },
+      {
+        "entry" : "durvillaea-willana",
+        "howToTell" : "Cut or tear a blade: Durvillaea poha's has an internal honeycomb; Durvillaea willana's has none, and it does not float. Durvillaea poha's short stipe is orange-yellow, unbranched and flattened towards the tip; Durvillaea willana's is thick and cylindrical and produces side branches. Durvillaea poha's blades are orange-brown to golden; Durvillaea willana is dark brown, darker than all other bull kelps. Durvillaea poha grows in the intertidal, often in a band above bull kelp; Durvillaea willana grows lower, from the low intertidal to the upper subtidal. Durvillaea willana grows up to 5 m long and Durvillaea poha is usually 5–10 m long, so a plant about 5 m long could be either. Both grow on exposed coasts of the South Island and Stewart Island. No record of Durvillaea willana as food was found, so it is not given as food here.",
+        "name" : "Durvillaea willana",
+        "risk" : "unknown",
+        "scientificName" : "Durvillaea willana"
+      }
+    ],
+    "months" : [
+
+    ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/491341",
+    "needsBookSource" : false,
+    "origin" : "endemic",
+    "photos" : [
+      {
+        "caption" : "Holdfast with flattened stipes",
+        "credit" : "(c) Javier, some rights reserved (CC BY)",
+        "fileName" : "durvillaea-poha-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/145856673"
+      },
+      {
+        "caption" : "Cast-up plant on sand",
+        "credit" : "no rights reserved",
+        "fileName" : "durvillaea-poha-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/79469254"
+      },
+      {
+        "caption" : "Golden blades at low tide",
+        "credit" : "(c) Heidi Meudt, some rights reserved (CC BY)",
+        "fileName" : "durvillaea-poha-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/183614824"
+      },
+      {
+        "caption" : "Ruffled golden blades in the surf",
+        "credit" : "(c) Saryu Mae 前 朝琉, some rights reserved (CC BY)",
+        "fileName" : "durvillaea-poha-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/264488392"
+      }
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : "None."
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Durvillaea poha",
+    "sources" : [
+      "New entry 04/11/2026 (owner approved adding Durvillaea poha as a draft lookalike of bull kelp after the 04/11/2026 sweep of bull-kelp, whose identification now names it). NZ presence checked 04/11/2026: 149 iNaturalist research-grade, not-captive New Zealand observations (taxon 491341, place 6803; 150 worldwide); Museum of New Zealand Te Papa Tongarewa holds 14 herbarium specimens (Collections Online, https://collections.tepapa.govt.nz/taxon/60884, retrieved 04/11/2026); NZOR 'Durvillaea poha C.I.Fraser, H.G.Spencer & J.M.Waters': Endemic, Present, Wild (NZ Organisms Register (https://data.nzor.org.nz), retrieved 04/11/2026). Flora of New Zealand and Biota NZ do not cover seaweeds; Te Papa (WELT) is the NZ seaweed herbarium checked instead.",
+      "Name (04/11/2026): no New Zealand source gives this species its own common name. NZTCS's common name is 'bull kelp', which it uses for every Durvillaea; NIWA's Beautiful browns gives 'bull kelp, rimurapa' only for D. antarctica and no common name here; Te Papa Collections Online and iNaturalist list none; Wikipedia's 'southern bull kelp' is the genus name. The scientific name is used as the common name, as on chalciporus-aurantiacus. Māori name not set: Te Ara gives 'Bull kelp or rimurapa (Durvillaea species)' and the Ngāi Tahu Claims Settlement Act s 306 'Rimurapa (Bull kelp— Durvillee spp)', both genus-wide; NIWA gives rimurapa for D. antarctica only and NZTCS gives no Māori name.",
+      "Origin 'endemic' (04/11/2026): New Zealand Threat Classification System (DOC, https://nztcs.org.nz, REST API findNztcsSpeciesByCriteria and all-assessments), retrieved 04/11/2026, record 42442 'Durvillaea poha C.I.Fraser, H.G.Spencer & J.M.Waters' gives biostatus 'Endemicity not specified' (Indigenous) and common name 'bull kelp' (used for the whole genus). Endemism is settled by NZ Organisms Register (https://data.nzor.org.nz), retrieved 04/11/2026: 'Durvillaea poha C.I.Fraser, H.G.Spencer & J.M.Waters' origin 'Endemic'; NIWA's distribution lists New Zealand localities only; Wikipedia ('Durvillaea poha') calls it endemic to New Zealand; and Fraser et al. 2012's title is 'a buoyant southern bull-kelp species endemic to New Zealand'. NZTCS does not contradict this; it leaves endemicity unspecified.",
+      "Harvest ethics (04/11/2026): New Zealand Threat Classification System (DOC, https://nztcs.org.nz, REST API findNztcsSpeciesByCriteria and all-assessments), retrieved 04/11/2026, record 42442 'Durvillaea poha C.I.Fraser, H.G.Spencer & J.M.Waters', current assessment Macroalgae 2019 (Nelson et al. 2019, NZTCS 30): 'At Risk - Declining', qualifier Data Poor (only assessment). Under the catalogue rule an At Risk species gets the At Risk harvest sentence and no recipes. Commercial-harvest line: Maggy Wassilieff, 'Seaweed – Traditional use of seaweeds', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-4 (Wayback 2026 copy), retrieved 04/11/2026: 'The Ngai Tahu Claims Settlement Act 1998 protects bull kelp and karengo from commercial harvesting within the tribe’s traditional seaweed-gathering grounds' (restated); the Act (s 306) names 'Rimurapa (Bull kelp— Durvillee spp)', i.e. the whole genus (Ngāi Tahu Claims Settlement Act 1998 (legislation.govt.nz, https://www.legislation.govt.nz/act/public/1998/0097/latest/whole.html), retrieved 04/11/2026).",
+      "Identification and habitat text: Kate Neill & Wendy Nelson (with Michelle Kelly & Blayne Herr), 'Stunning seaweeds: Beautiful browns — a guide to the large brown seaweeds of New Zealand', Version 1, 2016, NIWA, CC BY-NC-ND 3.0, https://webstatic.niwa.co.nz/static/web/MarineIdentificationGuidesandFactSheets/Beautiful_Browns_Ver1-2016-NIWA.pdf, retrieved 04/11/2026, page 11 'Durvillaea poha C.I. Fraser & J. Waters' — morphology paragraph and habitat sentence verbatim and unaltered (line breaks of the PDF joined; the licence allows no adaptation).",
+      "Summary, identification (last lines) and habitat (second line): Wikipedia contributors, 'Durvillaea poha' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_poha, retrieved 04/11/2026 — lead, Description ('The stipes are unbranched'), Taxonomy, Distribution and Human use sentences verbatim, references removed. The pōhā sentence is Wikipedia's: its cited pages (Te Ara 'Seaweed – Traditional use of seaweeds'; Te Papa 'Traditional Māori food gathering') speak of bull kelp or rimurapa generally and do not name D. poha; the species name is from pōhā (Fraser et al. 2012 abstract does not say more). Not used: Wikipedia's 'Edible seaweeds' category, which is not a statement of use.",
+      "Taxonomy: Fraser C.I., Spencer H.G. & Waters J.M. (2012), 'Durvillaea poha sp. nov. (Fucales, Phaeophyceae): a buoyant southern bull-kelp species endemic to New Zealand', Phycologia 51: 151–156, doi:10.2216/11-47.1 (abstract via OpenAlex; the paper is not open access), retrieved 04/11/2026: 'the ‘cape’ lineage of D. antarctica, endemic to the New Zealand region'; 'No evidence of hybridisation among sympatric D. poha and D. antarctica has been observed.' Wellington and Kaikōura: Vaux F., Craw D., Fraser C.I. & Waters J.M. (2021), 'Northward range extension for Durvillaea poha bull kelp: Response to tectonic disturbance?', Journal of Phycology 57(5): 1411–1418, doi:10.1111/jpy.13179, PMID 33942304 (abstract via PubMed; paper not open access), retrieved 04/11/2026: 'All specimens from the North Island were expected to be D. antarctica, but unexpectedly 10 samples from four sites were identified as D. poha.'",
+      "Edibility (04/11/2026): no source written for Durvillaea poha records it as food — NIWA, Wikipedia ('Durvillaea poha'), Te Papa, NZTCS and Ngā Rauropi Whakaoranga (search 'Durvillaea', https://rauropiwhakaoranga.landcareresearch.co.nz/search?query=Durvillaea, retrieved 04/11/2026: only a D. antarctica record) were checked, and PFAF has no page for it (https://pfaf.org/user/Plant.aspx?LatinName=Durvillaea+poha, checked 04/11/2026). Under the catalogue rule (edible only if two sources written for this species say so) it is doNotEat with edibility unknown, and edible parts and preparation are 'None.' as on pennyroyal. Months left empty, as on pennyroyal: nothing is harvested. No recipes: none are sourced, and At Risk entries carry none (blocking rule).",
+      "Warnings (04/11/2026): the second warning rests on Wikipedia contributors, 'Durvillaea poha' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_poha, retrieved 04/11/2026: 'In southern New Zealand, D. poha and D. antarctica frequently grow next to one another', and on NIWA (both have 'an internal honeycomb structure').",
+      "Durvillaea poha ↔ bull kelp cards (04/11/2026; owner-approved new entry): confusion named by NIWA — the D. poha page lists 'It could also be………. Durvillaea antarctica' and the D. antarctica page lists 'Durvillaea poha'. Tests: Kate Neill & Wendy Nelson (with Michelle Kelly & Blayne Herr), 'Stunning seaweeds: Beautiful browns — a guide to the large brown seaweeds of New Zealand', Version 1, 2016, NIWA, CC BY-NC-ND 3.0, https://webstatic.niwa.co.nz/static/web/MarineIdentificationGuidesandFactSheets/Beautiful_Browns_Ver1-2016-NIWA.pdf, retrieved 04/11/2026 — D. poha: 'Plants usually 5–10 m long', 'broad and flattened, with an internal honeycomb structure', 'Blades can become whip-like at the tips, but always remain broad and flattened in cross-section', 'Short stipe is orange-yellow and becomes flattened towards the tip', 'Blades orange-brown to golden', 'often in a band above D. antarctica, around southern South Island, Stewart, Snares and Auckland Islands'; D. antarctica: 'growing to 5 m long, or sometimes up to 10 m long', 'with an internal honeycomb structure', 'In more exposed areas blades become narrower and more whip-like, however, they always remain rounded or oval in cross-section', 'Short stipe is cylindrical, unbranched', 'Golden to dark brown to olive green'. Wikipedia contributors, 'Durvillaea poha' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_poha, retrieved 04/11/2026: 'D. poha generally has wider fronds than D. antarctica, and can appear more 'orange' across the frond area'; 'In southern New Zealand, D. poha and D. antarctica frequently grow next to one another, although D. poha normally grows higher up or further back on rock platforms, or in more sheltered bays, where wave force is weaker'; 'it can be found at low frequencies along the Wellington coastline'. Vaux F., Craw D., Fraser C.I. & Waters J.M. (2021), 'Northward range extension for Durvillaea poha bull kelp: Response to tectonic disturbance?', Journal of Phycology 57(5): 1411–1418, doi:10.1111/jpy.13179, PMID 33942304 (abstract via PubMed; paper not open access), retrieved 04/11/2026: 'Extensive sampling from the northern South Island (105 samples at five locations) confirmed the absence of D. poha north of the Kaikōura Peninsula' (restated). Every range checked against the other species'; what does not separate them (honeycomb, size, colour overlap at golden, shared shores) is stated. Risk on each card follows the target entry's caution (bull kelp careRequired → edible; D. poha doNotEat, edibility unknown → unknown).",
+      "Durvillaea poha ↔ Durvillaea willana cards (04/11/2026): confusion named by NIWA — each species page lists the other under 'It could also be……….'. Tests: Kate Neill & Wendy Nelson (with Michelle Kelly & Blayne Herr), 'Stunning seaweeds: Beautiful browns — a guide to the large brown seaweeds of New Zealand', Version 1, 2016, NIWA, CC BY-NC-ND 3.0, https://webstatic.niwa.co.nz/static/web/MarineIdentificationGuidesandFactSheets/Beautiful_Browns_Ver1-2016-NIWA.pdf, retrieved 04/11/2026 — D. poha: 'Plants usually 5–10 m long', 'with an internal honeycomb structure', 'Short stipe is orange-yellow and becomes flattened towards the tip', 'Blades orange-brown to golden', 'Found in the intertidal in exposed areas, often in a band above D. antarctica'; D. willana: 'Plants grow up to 5 m high', 'with no internal honeycomb structure', 'Stipe is thick, cylindrical, and produces side branches', 'Dark brown', 'Found in the low intertidal to upper subtidal'. Wikipedia contributors, 'Durvillaea poha' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_poha, retrieved 04/11/2026: 'The stipes are unbranched'. Wikipedia contributors, 'Durvillaea willana' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_willana, retrieved 04/11/2026: 'darker than all other bull kelp species', 'non-buoyant'. Both entries are doNotEat with edibility unknown, so risk is unknown both ways.",
+      "Not used (04/11/2026): non-food use — pōhā bags (food storage, carrying water, propagating shellfish, clothing and sports equipment; Wikipedia 'Durvillaea poha') — noted for the useful-plants candidates table. Photos: none staged yet."
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Durvillaea poha' (CC BY-SA 4.0)"
+      ],
+      "text" : "Durvillaea poha is a large, robust species of southern bull kelp found in New Zealand. Common in the waters of the South Island, the species can be recognised due to its broader, flatter blades.\nThe species was previously classified as the \"cape\" lineage of Durvillaea antarctica but in 2012 it was recognised as a distinct species due to consistent genetic, morphological and ecological differences.\nThe species is endemic to New Zealand, and is predominantly found along southern coasts of the South Island and on Stewart Island, as well as on the subantarctic Snares and Auckland Islands. Based on genetic data, the species appears to have undergone a recent range expansion into the North Island, as it can be found at low frequencies along the Wellington coastline.\nAlong with D. antarctica, blades of D. poha are used to make traditional pōhā bags, which are used to carry and store food and fresh water, to propagate live shellfish, and to make clothing and equipment for sports. Pōhā bags are especially associated with the Ngāi Tahu people (iwi), and are often used to carry and store muttonbird (tītī) chicks."
+    },
+    "warnings" : [
+      "No record of Durvillaea poha as food was found, so it is not given as food here.",
+      "In southern New Zealand it frequently grows next to bull kelp, and both have honeycombed blades, so check every plant before cutting (see the lookalikes)."
+    ]
+  },
+  {
+    "caution" : "doNotEat",
+    "commonName" : "Durvillaea willana",
+    "draft" : true,
+    "edibleParts" : {
+      "sources" : [
+        "No source written for Durvillaea willana records it as food (NIWA, Wikipedia, Te Papa, NZTCS, Ngā Rauropi Whakaoranga checked; no PFAF page), so none is given"
+      ],
+      "text" : "None."
+    },
+    "group" : "seaweed",
+    "habitat" : {
+      "sources" : [
+        "Neill & Nelson (2016), 'Stunning seaweeds: Beautiful browns', NIWA (CC BY-NC-ND 3.0) — reproduced unaltered",
+        "Wikipedia, 'Durvillaea' (CC BY-SA 4.0)"
+      ],
+      "text" : "Found in the low intertidal to upper subtidal on exposed coasts of the southeastern corner of the North Island (but not Cook Strait), South Island and Stewart Island.\nD. antarctica and D. poha are intertidal, whereas D. willana is subtidal (to 6 m depths)."
+    },
+    "habitats" : [
+      "coastal"
+    ],
+    "harvestEthics" : {
+      "sources" : [
+        "New Zealand Threat Classification System (DOC, https://nztcs.org.nz, REST API all-assessments), retrieved 04/11/2026: record 42443 'Durvillaea willana Lindauer', Macroalgae 2019 (Nelson et al. 2019), current: At Risk – Naturally Uncommon",
+        "Fisheries (Amateur Fishing) Regulations 2013, reg. 129C (legislation.govt.nz), retrieved 04/11/2026 (restated)",
+        "Maggy Wassilieff, 'Seaweed – Traditional use of seaweeds', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-4 (Wayback 2026 copy), retrieved 04/11/2026 (restated); Ngāi Tahu Claims Settlement Act 1998, s 306 (legislation.govt.nz), retrieved 04/11/2026"
+      ],
+      "text" : "This species is at risk. If you harvest it, take only a little, and never in a way that kills it or stops it from reproducing and spreading.\nIt may not be taken from the East Otago taiāpure unless it is unattached and cast ashore. The Ngāi Tahu Claims Settlement Act 1998 protects bull kelp (Durvillaea species) from commercial harvesting within Ngāi Tahu's traditional seaweed-gathering grounds."
+    },
+    "id" : "durvillaea-willana",
+    "identification" : {
+      "sources" : [
+        "Neill & Nelson (2016), 'Stunning seaweeds: Beautiful browns', NIWA (CC BY-NC-ND 3.0) — reproduced unaltered",
+        "Wikipedia, 'Durvillaea willana' (CC BY-SA 4.0)"
+      ],
+      "text" : "Plants grow up to 5 m high and consist of massive blades, tough and leathery, sometimes divided into straps, with no internal honeycomb structure. Stipe is thick, cylindrical, and produces side branches. Holdfast a dome-shaped disc. Dark brown. Fertile structures are scattered over the blades but are not easily visible.\n[From: Neill & Nelson (2016) Beautiful browns, NIWA.]\nThis species is chocolate brown in colour and is darker than all other bull kelp species. The holdfast becomes large and spreads like a plate on rocky substrates. The species has a branched stipe, and is non-buoyant, lacking a honeycomb structure within its fronds."
+    },
+    "lookalikes" : [
+      {
+        "entry" : "bull-kelp",
+        "howToTell" : "Cut or tear a blade: bull kelp's has an internal honeycomb, full of air, that keeps it buoyant; Durvillaea willana's has no honeycomb, and it does not float. Bull kelp's short stipe is cylindrical and unbranched; Durvillaea willana's is thick and cylindrical and produces side branches. Colour overlaps: Durvillaea willana is dark brown, darker than all other bull kelps, while bull kelp ranges from golden to dark brown to olive green. Durvillaea willana usually grows lower on the shore, from the low intertidal to the upper subtidal; bull kelp grows in the low intertidal, so the two can meet there. Durvillaea willana grows up to 5 m long and has smaller blades than bull kelp, which grows to 5 m and sometimes up to 10 m, so size alone does not separate them. In the North Island Durvillaea willana is found only in the southeastern corner, not in Cook Strait; bull kelp grows from the Three Kings Islands to Stewart Island. Bull kelp's young blade tissue is eaten.",
+        "name" : "Bull kelp",
+        "risk" : "edible",
+        "scientificName" : "Durvillaea antarctica"
+      },
+      {
+        "entry" : "durvillaea-poha",
+        "howToTell" : "Cut or tear a blade: Durvillaea poha's has an internal honeycomb; Durvillaea willana's has none, and it does not float. Durvillaea poha's short stipe is orange-yellow, unbranched and flattened towards the tip; Durvillaea willana's is thick and cylindrical and produces side branches. Durvillaea poha's blades are orange-brown to golden; Durvillaea willana is dark brown, darker than all other bull kelps. Durvillaea poha grows in the intertidal, often in a band above bull kelp; Durvillaea willana grows lower, from the low intertidal to the upper subtidal. Durvillaea willana grows up to 5 m long and Durvillaea poha is usually 5–10 m long, so a plant about 5 m long could be either. Both grow on exposed coasts of the South Island and Stewart Island. No record of Durvillaea poha as food was found, so it is not given as food here.",
+        "name" : "Durvillaea poha",
+        "risk" : "unknown",
+        "scientificName" : "Durvillaea poha"
+      }
+    ],
+    "months" : [
+
+    ],
+    "moreImagesURL" : "https://inaturalist.nz/taxa/410727",
+    "needsBookSource" : false,
+    "origin" : "endemic",
+    "photos" : [
+      {
+        "caption" : "Cast-up plant with stout stipe",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "durvillaea-willana-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/133056393"
+      },
+      {
+        "caption" : "Dark brown blades on a pebble beach",
+        "credit" : "(c) Leon Perrie, some rights reserved (CC BY)",
+        "fileName" : "durvillaea-willana-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/128119286"
+      },
+      {
+        "caption" : "Stipe among dark straps",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "durvillaea-willana-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/160506894"
+      },
+      {
+        "caption" : "Tangle of branched stipes",
+        "credit" : "no rights reserved",
+        "fileName" : "durvillaea-willana-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/317920267"
+      }
+    ],
+    "preparation" : {
+      "sources" : [
+
+      ],
+      "text" : "None."
+    },
+    "recipes" : [
+
+    ],
+    "scientificName" : "Durvillaea willana",
+    "sources" : [
+      "New entry 04/11/2026 (owner approved adding Durvillaea willana as a draft lookalike of bull kelp after the 04/11/2026 sweep of bull-kelp, whose identification now names it). NZ presence checked 04/11/2026: 121 iNaturalist research-grade, not-captive New Zealand observations (taxon 410727, place 6803; 122 worldwide); Museum of New Zealand Te Papa Tongarewa holds 13 herbarium specimens, the earliest 1930 (Collections Online, https://collections.tepapa.govt.nz/taxon/8834, retrieved 04/11/2026); NZOR 'Durvillaea willana Lindauer': Endemic, Present, Wild (NZ Organisms Register (https://data.nzor.org.nz), retrieved 04/11/2026). Flora of New Zealand and Biota NZ do not cover seaweeds; Te Papa (WELT) is the NZ seaweed herbarium checked instead.",
+      "Name (04/11/2026): no New Zealand source gives this species its own common name. NZTCS's common name is 'bull kelp', which it uses for every Durvillaea; NIWA's Beautiful browns gives 'bull kelp, rimurapa' only for D. antarctica and no common name here; Te Papa Collections Online and iNaturalist list none; Wikipedia's 'southern bull kelp' is the genus name. The scientific name is used as the common name, as on chalciporus-aurantiacus. Māori name not set: Te Ara gives 'Bull kelp or rimurapa (Durvillaea species)' and the Ngāi Tahu Claims Settlement Act s 306 'Rimurapa (Bull kelp— Durvillee spp)', both genus-wide; NIWA gives rimurapa for D. antarctica only and NZTCS gives no Māori name.",
+      "Origin 'endemic' (04/11/2026): New Zealand Threat Classification System (DOC, https://nztcs.org.nz, REST API findNztcsSpeciesByCriteria and all-assessments), retrieved 04/11/2026, record 42443 'Durvillaea willana Lindauer' gives biostatus 'Endemicity not specified' (Indigenous) and common name 'bull kelp' (used for the whole genus). Endemism is settled by NZ Organisms Register (https://data.nzor.org.nz), retrieved 04/11/2026: 'Durvillaea willana Lindauer' origin 'Endemic'; NIWA's distribution lists New Zealand localities only; Wikipedia ('Durvillaea willana') calls it endemic to New Zealand; and Hay 2019's abstract opens 'The endemic bull kelp Durvillaea willana Lindauer'. NZTCS does not contradict this; it leaves endemicity unspecified.",
+      "Harvest ethics (04/11/2026): New Zealand Threat Classification System (DOC, https://nztcs.org.nz, REST API findNztcsSpeciesByCriteria and all-assessments), retrieved 04/11/2026, record 42443 'Durvillaea willana Lindauer', current assessment Macroalgae 2019 (Nelson et al. 2019, NZTCS 30): 'At Risk - Naturally Uncommon', no qualifiers (only assessment). Under the catalogue rule an At Risk species gets the At Risk harvest sentence and no recipes. Commercial-harvest line: Maggy Wassilieff, 'Seaweed – Traditional use of seaweeds', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-4 (Wayback 2026 copy), retrieved 04/11/2026: 'The Ngai Tahu Claims Settlement Act 1998 protects bull kelp and karengo from commercial harvesting within the tribe’s traditional seaweed-gathering grounds' (restated); the Act (s 306) names 'Rimurapa (Bull kelp— Durvillee spp)', i.e. the whole genus (Ngāi Tahu Claims Settlement Act 1998 (legislation.govt.nz, https://www.legislation.govt.nz/act/public/1998/0097/latest/whole.html), retrieved 04/11/2026). East Otago line: Fisheries (Amateur Fishing) Regulations 2013 (legislation.govt.nz, https://www.legislation.govt.nz/regulation/public/2013/0482/latest/whole.html), retrieved 04/11/2026, reg. 129C 'Prohibition on taking kelp from East Otago taiapure': 'A person must not take any of the following species of kelp from the East Otago taiapure', listing '(b) Durvillaea willana'; '(2) Subclause (1) does not apply to kelp that is unattached and cast ashore.' (restated).",
+      "Identification and habitat text: Kate Neill & Wendy Nelson (with Michelle Kelly & Blayne Herr), 'Stunning seaweeds: Beautiful browns — a guide to the large brown seaweeds of New Zealand', Version 1, 2016, NIWA, CC BY-NC-ND 3.0, https://webstatic.niwa.co.nz/static/web/MarineIdentificationGuidesandFactSheets/Beautiful_Browns_Ver1-2016-NIWA.pdf, retrieved 04/11/2026, page 12 'Durvillaea willana Lindauer' — morphology paragraph and habitat sentence verbatim and unaltered (line breaks of the PDF joined; the licence allows no adaptation).",
+      "Summary and identification (last lines): Wikipedia contributors, 'Durvillaea willana' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_willana, retrieved 04/11/2026 — lead and Description sentences verbatim, references removed. Habitat second line: Wikipedia contributors, 'Durvillaea' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea, retrieved 04/11/2026 — Ecology sentence verbatim (Wikipedia cites Parvizi et al. 2020, Proc. R. Soc. B 287: 20200712, not read). NIWA's 'low intertidal to upper subtidal' and Wikipedia's 'subtidal (to 6 m depths)' are both kept; NIWA is the NZ source.",
+      "Summary range lines restated from Hay C.H. (2019), 'Seashore uplift and the distribution of the bull kelp Durvillaea willana Lindauer in New Zealand', New Zealand Journal of Botany, doi:10.1080/0028825X.2019.1679842 (abstract via OpenAlex; all rights reserved, restated), retrieved 04/11/2026: 'grows on South and Stewart/Rakiura Islands, with a small North Island population on the northern Wairarapa coast'; 'there are three lengthy tracts of rocky shore where the kelp is conspicuously absent. These distributional gaps are: Wellington's south coast (despite proximity to populations on the South Island side of Cook Strait), the southern and central Wairarapa Coast, and in South Westland'; 'a non‐buoyant kelp with poor dispersive ability'.",
+      "Edibility (04/11/2026): no source written for Durvillaea willana records it as food — NIWA, Wikipedia ('Durvillaea willana'), Te Papa, NZTCS and Ngā Rauropi Whakaoranga (search 'Durvillaea', https://rauropiwhakaoranga.landcareresearch.co.nz/search?query=Durvillaea, retrieved 04/11/2026: only a D. antarctica record) were checked, and PFAF has no page for it (https://pfaf.org/user/Plant.aspx?LatinName=Durvillaea+willana, checked 04/11/2026). Under the catalogue rule (edible only if two sources written for this species say so) it is doNotEat with edibility unknown, and edible parts and preparation are 'None.' as on pennyroyal. Months left empty, as on pennyroyal: nothing is harvested. No recipes: none are sourced, and At Risk entries carry none (blocking rule).",
+      "Warnings (04/11/2026): the second warning rests on NIWA (D. willana 'low intertidal to upper subtidal'; D. antarctica 'low intertidal zone of exposed coasts') and Wikipedia contributors, 'Durvillaea willana' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_willana, retrieved 04/11/2026 ('superficially similar in appearance to Durvillaea antarctica').",
+      "Durvillaea willana ↔ bull kelp cards (04/11/2026; owner-approved new entry): confusion named by NIWA — the D. willana page lists 'It could also be………. Durvillaea antarctica' and the D. antarctica page lists 'Durvillaea willana'; Wikipedia contributors, 'Durvillaea willana' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_willana, retrieved 04/11/2026: 'This species is superficially similar in appearance to Durvillaea antarctica'. Tests: Kate Neill & Wendy Nelson (with Michelle Kelly & Blayne Herr), 'Stunning seaweeds: Beautiful browns — a guide to the large brown seaweeds of New Zealand', Version 1, 2016, NIWA, CC BY-NC-ND 3.0, https://webstatic.niwa.co.nz/static/web/MarineIdentificationGuidesandFactSheets/Beautiful_Browns_Ver1-2016-NIWA.pdf, retrieved 04/11/2026 — D. willana: 'Plants grow up to 5 m high', 'with no internal honeycomb structure', 'Stipe is thick, cylindrical, and produces side branches', 'Dark brown', 'Found in the low intertidal to upper subtidal on exposed coasts of the southeastern corner of the North Island (but not Cook Strait), South Island and Stewart Island'; D. antarctica: 'growing to 5 m long, or sometimes up to 10 m long', 'with an internal honeycomb structure', 'Short stipe is cylindrical, unbranched', 'Golden to dark brown to olive green', 'Found on rock in the low intertidal zone of exposed coasts around the Three Kings Islands in the north down to Stewart Island in the south'. Wikipedia contributors, 'Durvillaea willana' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_willana, retrieved 04/11/2026: 'This species is chocolate brown in colour and is darker than all other bull kelp species'; 'The species has a branched stipe, and is non-buoyant, lacking a honeycomb structure within its fronds'; 'D. willana has smaller blades than D. antarctica and is usually found lower on the shoreline'. Maggy Wassilieff, 'Seaweed – Kelp', Te Ara – the Encyclopedia of New Zealand (CC BY-NC 3.0 NZ), https://teara.govt.nz/en/seaweed/page-3 (Wayback 2026 copy), retrieved 04/11/2026: D. antarctica fronds 'have an internal honeycomb-like tissue, full of air, which keeps the blade buoyant'. What does not separate them (colour at dark brown, size, the low intertidal) is stated. Risk on each card follows the target entry's caution (bull kelp careRequired → edible; D. willana doNotEat, edibility unknown → unknown).",
+      "Durvillaea poha ↔ Durvillaea willana cards (04/11/2026): confusion named by NIWA — each species page lists the other under 'It could also be……….'. Tests: Kate Neill & Wendy Nelson (with Michelle Kelly & Blayne Herr), 'Stunning seaweeds: Beautiful browns — a guide to the large brown seaweeds of New Zealand', Version 1, 2016, NIWA, CC BY-NC-ND 3.0, https://webstatic.niwa.co.nz/static/web/MarineIdentificationGuidesandFactSheets/Beautiful_Browns_Ver1-2016-NIWA.pdf, retrieved 04/11/2026 — D. poha: 'Plants usually 5–10 m long', 'with an internal honeycomb structure', 'Short stipe is orange-yellow and becomes flattened towards the tip', 'Blades orange-brown to golden', 'Found in the intertidal in exposed areas, often in a band above D. antarctica'; D. willana: 'Plants grow up to 5 m high', 'with no internal honeycomb structure', 'Stipe is thick, cylindrical, and produces side branches', 'Dark brown', 'Found in the low intertidal to upper subtidal'. Wikipedia contributors, 'Durvillaea poha' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_poha, retrieved 04/11/2026: 'The stipes are unbranched'. Wikipedia contributors, 'Durvillaea willana' (CC BY-SA 4.0), https://en.wikipedia.org/wiki/Durvillaea_willana, retrieved 04/11/2026: 'darker than all other bull kelp species', 'non-buoyant'. Both entries are doNotEat with edibility unknown, so risk is unknown both ways.",
+      "Not used (04/11/2026): Wikipedia's earthquake-uplift and genetic-diversity paragraph (not needed for identification). Photos: none staged yet."
+    ],
+    "summary" : {
+      "sources" : [
+        "Wikipedia, 'Durvillaea willana' (CC BY-SA 4.0)",
+        "Hay (2019), New Zealand Journal of Botany, abstract (restated)"
+      ],
+      "text" : "Durvillaea willana is a large species of southern bull kelp endemic to New Zealand. The specific epithet willana honours Eileen Alice Willa who collected many algal species for Lindauer.\nIt grows on the South Island and Stewart Island/Rakiura, with a small North Island population on the northern Wairarapa coast. Within that range it is conspicuously absent from three long stretches of rocky shore: Wellington's south coast, the southern and central Wairarapa coast, and South Westland. It does not float and disperses poorly."
+    },
+    "warnings" : [
+      "No record of Durvillaea willana as food was found, so it is not given as food here.",
+      "It grows on the same exposed coasts as bull kelp and looks superficially like it, meeting it in the low intertidal, so check every plant before cutting (see the lookalikes)."
     ]
   }
 ]

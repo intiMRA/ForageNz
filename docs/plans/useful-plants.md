@@ -169,6 +169,9 @@ source re-read (licence first) and the plan's rules applied before it is used.
 | Wild garlic (`wild-garlic`) | Repellent: the juice is used against moths and rubbed on skin against biting insects | Plants For A Future 'Allium vineale' (Other uses) |
 | Bay tree (`bay-tree`) | Dried leaves keep weevils out of stored grain and beans; an oil from the fruit is used in soap making | Plants For A Future 'Laurus nobilis' (Other uses) |
 | Cherry laurel (`cherry-laurel`) | Dye: green from the leaves, dark grey to green from the fruit; wood for turnery; hedging | Plants For A Future 'Prunus laurocerasus' (Other uses) |
+| Bull kelp (`bull-kelp`) | Kelp bags (pōhā) for preserving muttonbirds (pōhā tītī), eels, weka and other birds; covering the sides and bottom of canoes on the Chatham Islands (waka rimu) and in building waka pahi; sodium alginate; fertiliser | Ngā Rauropi Whakaoranga 'Durvillaea antarctica' (Beattie 1920; Best 1925; Schiel and Nelson 1990) |
+| Karengo (`karengo`) | Medicinal (out of scope): fermented with tutu juice as a mild laxative | Ngā Rauropi Whakaoranga 'Porphyra columbina' (Goldie 1904) |
+| Durvillaea poha (`durvillaea-poha`) | Kelp bags (pōhā) for storing muttonbirds; the pages Wikipedia cites don't name the species | Wikipedia 'Durvillaea poha' |
 
 ## Open decisions (decide before starting)
 
