@@ -1356,9 +1356,9 @@
       },
       {
         "entry" : "microseris",
-        "howToTell" : "Autumn hawkbit's stems branch, carry many small narrow bracts and hold their buds erect; microseris's flower stems are leafless and unbranched, with a single head, and its buds nod. Autumn hawkbit's outer involucral bracts are about half as long as the inner ones and its florets a darker yellow; microseris has a single row of involucral bracts with a few small bracteoles at the base. In seed, autumn hawkbit's achenes carry a single row of feathery hairs; microseris's pappus hairs are stiff, brownish and minutely barbed. Leaf hairs do not separate them: both have leaves that are hairless or nearly so. Both have yellow heads, basal rosettes of often lobed leaves and milky sap. Microseris is a native plant with no recorded Māori food use; murnong, the Australian 'yam daisy' eaten for its tuber, is a different species (see its page).",
+        "howToTell" : "Autumn hawkbit's stems branch, carry many small narrow bracts and hold their buds erect; microseris's flower stems are leafless and unbranched, with a single head, and its buds nod. Autumn hawkbit's outer involucral bracts are about half as long as the inner ones and its florets a darker yellow; microseris has a single row of involucral bracts with a few small bracteoles at the base. In seed, autumn hawkbit's achenes carry a single row of feathery hairs; microseris's pappus hairs are stiff, brownish and minutely barbed. Leaf hairs do not separate them: both have leaves that are hairless or nearly so. Both have yellow heads, basal rosettes of often lobed leaves and milky sap. Microseris is a native plant whose roots are edible, though eating them rests on two tastings and no Māori food use is recorded; murnong, the Australian 'yam daisy' eaten for its tuber, is a different species (see its page).",
         "name" : "Microseris",
-        "risk" : "unknown",
+        "risk" : "edible",
         "scientificName" : "Microseris scapigera"
       }
     ],
@@ -1443,7 +1443,8 @@
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Dandelion cards (both ways), verification sweep 04/11/2026: in-text attribution ('(Flora of New Zealand)', 'Practical Self Reliance adds') removed; the claimants stay in the existing card sources line (Practical Self Reliance: 'the flower stems are branching, and they’re not hollow').",
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Catsear card, verification sweep 04/11/2026: in-text attribution (BSBI Fermanagh, Flora of New Zealand's key) removed, the claimants already credited in the card sources line. BSBI Fermanagh 'Leontodon autumnalis' (retrieved 04/11/2026): 'The best distinguishing feature separating H. radicata from L. autumnalis remains, however, the long, tapering, receptacle scales'; 'remarkably variable in L. autumnalis'.",
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Catsear card, verification sweep 04/11/2026: 'BSBI calls' removed (in-text attribution); BSBI Fermanagh stays credited in the card sources line.",
-      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Microseris card, verification sweep 04/11/2026: 'in Ngā Rauropi Whakaoranga' moved out of the card (in-text attribution); the 02/11/2026 card line already records that Ngā Rauropi Whakaoranga has no Microseris records. Risk 'unknown' agrees with microseris's doNotEat entry; the reverse card has no attribution."
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Microseris card, verification sweep 04/11/2026: 'in Ngā Rauropi Whakaoranga' moved out of the card (in-text attribution); the 02/11/2026 card line already records that Ngā Rauropi Whakaoranga has no Microseris records. Risk 'unknown' agrees with microseris's doNotEat entry; the reverse card has no attribution.",
+      "Microseris card updated 05/11/2026 (owner: 'yes'): risk unknown → edible and closing line reworded, after microseris's roots were made edible on Walsh 2016 (raw) and Campanelli, M., Muir, J., Mora, A., Clarke, D.R. & Griffin, D. 2018, 'Re-Creating an Aboriginal Earth Oven with Clayey Heating Elements: Experimental Archaeology and Paleodietary Implications', EXARC Journal 2018/2 (CC BY 4.0) (cooked)."
     ],
     "summary" : {
       "sources" : [
@@ -5916,7 +5917,7 @@
   {
     "caution" : "careRequired",
     "commonName" : "Calendula",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants, 'Calendula officinalis' (Ken Fern, CC BY-NC-SA, restated)",
@@ -5956,25 +5957,25 @@
     "origin" : "introduced",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Orange flower heads and buds",
         "credit" : "(c) jodepagecorney, some rights reserved (CC BY)",
         "fileName" : "calendula-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/182756549"
       },
       {
-        "caption" : "",
+        "caption" : "Plant with flowers and seed heads",
         "credit" : "(c) naturewatchwidow, some rights reserved (CC BY)",
         "fileName" : "calendula-6.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/69130813"
       },
       {
-        "caption" : "",
+        "caption" : "Flower head",
         "credit" : "no rights reserved",
         "fileName" : "calendula-2.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/330047364"
       },
       {
-        "caption" : "",
+        "caption" : "Pale apricot double flower head",
         "credit" : "no rights reserved",
         "fileName" : "calendula-1.heic",
         "sourceURL" : "http://naturewatch.org.nz/observations/6233388"
@@ -8257,8 +8258,8 @@
       },
       {
         "entry" : "stinking-chamomile",
-        "howToTell" : "Stinking chamomile is an annual with leafy stems, usually much-branched from the base, standing or rising usually 30–40 cm tall (5–60 cm at the extremes), and its leaves are cut three times into narrow segments with a somewhat feathery look. Lawn daisy has undivided, spoon-shaped, toothed leaves in a basal rosette and a leafless flower stalk. Stinking chamomile is strongly foetid. Its receptacle carries narrow, pointed scales, usually only in the inner two-thirds; lawn daisy's has none. Its white rays bend back as the head ages. What does not separate them: head size (stinking chamomile about 15–30 mm across, up to 35 mm; lawn daisy 15–25 mm), white rays around a yellow disc, and place — both grow in lawns and pasture. Stinking chamomile is not a food plant: its juice is acrid, touching or eating it can cause allergies in some people, the foliage may irritate skin, and there are reports of toxicity.",
-        "name" : "Stinking chamomile",
+        "howToTell" : "Stinking mayweed is an annual with leafy stems, usually much-branched from the base, standing or rising usually 30–40 cm tall (5–60 cm at the extremes), and its leaves are cut three times into narrow segments with a somewhat feathery look. Lawn daisy has undivided, spoon-shaped, toothed leaves in a basal rosette and a leafless flower stalk. Stinking mayweed is strongly foetid. Its receptacle carries narrow, pointed scales, usually only in the inner two-thirds; lawn daisy's has none. Its white rays bend back as the head ages. What does not separate them: head size (stinking mayweed about 15–30 mm across, up to 35 mm; lawn daisy 15–25 mm), white rays around a yellow disc, and place — both grow in lawns and pasture. Stinking mayweed is not a food plant: its juice is acrid, touching or eating it can cause allergies in some people, the foliage may irritate skin, and there are reports of toxicity.",
+        "name" : "Stinking mayweed",
         "risk" : "toxic",
         "scientificName" : "Anthemis cotula"
       }
@@ -8351,7 +8352,8 @@
       "Wetland tag checked 27/10/2026 (owner: 'research'): kept. The tag means 'Wetland & riverbank' — fresh water and the ground that stays wet, riverbanks and streamsides included — and Flora of New Zealand vol. IV puts the plant on 'stream banks, seepages' and says it grows in lawns and pastures 'especially in wetter areas'; Massey says it prefers moist soil. NZPCN's FACU rating allows occasional wet-ground occurrence. iNaturalist NZ research-grade wild records (taxon 55563, place 6803) whose observers describe the spot: 43028620 (North Shore, Auckland, 'Stream bank'), 15666890 (Wainui, Banks Peninsula, 'Stream bank.'), 2492228 (Timaru, 'In ephemeral stream channel.'), 3327907 (Graham Stream, Tairua, 'damp ground within mown strips leading to stream'), 244254444 (Waitati, 'Riverbank'), 283047197 (Christchurch, 'in riverbank lawn'). Many more records sit in wetland reserves (e.g. Travis Wetland) but the place name alone does not say the plant was in wet ground, so those are not counted. A few records in 2,719: it is a lawn and pasture plant first, and the habitat text says so.",
       "Origin checked 28/10/2026 (owner, 28/10/2026: \"make sure every entry has a true bio status\"), retrieved 28/10/2026: NZ Organisms Register (https://data.nzor.org.nz/names/search?query=Bellis%20perennis): Exotic, Present in New Zealand; listed in DOC, McAlpine & Howell 2024, List of environmental weeds in New Zealand 2024, Science for Conservation 340, Table 2: 'Bellis perennis L. lawn daisy herb — — 1085 60 —'. Origin 'pest' stands.",
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): moreImagesURL added: iNaturalist taxon 55563 'Bellis perennis' (species), the active record matching the scientific name.",
-      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Herbicide warning (01/11/2026): 'commonly' softened to what the source says. Massey University, New Zealand Weeds Database, 'Daisy' (retrieved 01/11/2026): 'In turf, herbicides such as clopyralid (Versatill), triclopyr/picloram (Victory Gold) and 2,4-D/dicamba mixes all give good control.'"
+      "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Herbicide warning (01/11/2026): 'commonly' softened to what the source says. Massey University, New Zealand Weeds Database, 'Daisy' (retrieved 01/11/2026): 'In turf, herbicides such as clopyralid (Versatill), triclopyr/picloram (Victory Gold) and 2,4-D/dicamba mixes all give good control.'",
+      "Lookalike card to stinking-chamomile renamed 'Stinking mayweed', 05/11/2026, to match that entry's new common name (owner, Q1 'sure')."
     ],
     "summary" : {
       "sources" : [
@@ -11560,25 +11562,25 @@
     "origin" : "pest",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Shoot tip with buds",
         "credit" : "(c) Sarah Richardson, some rights reserved (CC BY)",
         "fileName" : "douglas-fir-1.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/195128261"
       },
       {
-        "caption" : "",
+        "caption" : "Shoot, soft flat needles",
         "credit" : "(c) Brett Sandford, some rights reserved (CC BY)",
         "fileName" : "douglas-fir-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/25024107"
       },
       {
-        "caption" : "",
+        "caption" : "Young wilding tree in tussock",
         "credit" : "(c) Genevieve Early, some rights reserved (CC BY)",
         "fileName" : "douglas-fir-6.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/108859119"
       },
       {
-        "caption" : "",
+        "caption" : "Cone with three-pointed bracts",
         "credit" : "(c) Jenny Saito, some rights reserved (CC BY)",
         "fileName" : "douglas-fir-7.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/18913291"
@@ -16684,9 +16686,9 @@
       },
       {
         "entry" : "microseris",
-        "howToTell" : "Both send up a leafless, unbranched stem with a single yellow head and have nodding buds, leaves all in a basal rosette that may be toothed or lobed, and milky sap, so the stem and leaf shape do not separate them. With a hand lens, hawkbit's leaf hairs fork into two, sometimes three, at the tip; microseris's leaves are hairless or have scurfy, scaly hairs beneath. In seed, hawkbit's outer achenes carry only a ring of tiny scales and its inner ones are shortly beaked with feathery hairs; microseris's achenes are unbeaked and ribbed, with stiff, brownish, minutely barbed hairs. Microseris is a native plant with no food record in Ngā Rauropi Whakaoranga; murnong, the Australian 'yam daisy' eaten for its tuber, is a different species (see its page).",
+        "howToTell" : "Both send up a leafless, unbranched stem with a single yellow head and have nodding buds, leaves all in a basal rosette that may be toothed or lobed, and milky sap, so the stem and leaf shape do not separate them. With a hand lens, hawkbit's leaf hairs fork into two, sometimes three, at the tip; microseris's leaves are hairless or have scurfy, scaly hairs beneath. In seed, hawkbit's outer achenes carry only a ring of tiny scales and its inner ones are shortly beaked with feathery hairs; microseris's achenes are unbeaked and ribbed, with stiff, brownish, minutely barbed hairs. Microseris is a native plant whose roots are edible, though eating them rests on two tastings and no Māori food use is recorded; murnong, the Australian 'yam daisy' eaten for its tuber, is a different species (see its page).",
         "name" : "Microseris",
-        "risk" : "unknown",
+        "risk" : "edible",
         "scientificName" : "Microseris scapigera"
       }
     ],
@@ -16758,7 +16760,8 @@
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): card to catsear: the same stem-bract restatement as on the autumn hawkbit card — Flora of New Zealand vol. IV, 'Leontodon taraxacoides' (Webb et al. 1988, CC BY-NC-SA, https://floraseries.landcareresearch.co.nz/taxa/973474b6-dfb4-4e0b-995d-b9bcd6e74e09, retrieved 01/11/2026): 'Stem bracts 0-(1).'; NatureSpot, 'Lesser Hawkbit' (https://www.naturespot.org/species/lesser-hawkbit, retrieved 01/11/2026): 'unbranched stem usually with a few scale-like bracts'.",
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): card to mouse-ear hawkweed: the unsourced judgement 'This is the closest match' cut. This card had no sources line on this entry; it rests on Flora of New Zealand vol. IV, 'Hieracium pilosella' (Webb et al. 1988, CC BY-NC-SA, https://floraseries.landcareresearch.co.nz/taxa/ac379a9f-5659-4d67-8b44-1ef828c0f07e, retrieved 01/11/2026: 'Stem lf 0-(1), scale-like.', 'Flowering stems erect, (2)-5-10-(15) cm tall', achenes 'c. 2 × 0.5 mm') and Flora of New Zealand vol. IV, 'Leontodon taraxacoides' (Webb et al. 1988, CC BY-NC-SA, https://floraseries.landcareresearch.co.nz/taxa/973474b6-dfb4-4e0b-995d-b9bcd6e74e09, retrieved 01/11/2026) ('(2)-10-50 cm tall', 'Stem bracts 0-(1).'), with the Lactuceae key and Useful Temperate Plants 'Pilosella officinarum' (edible uses 'None known') as cited on the mouse-ear-hawkweed entry.",
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): identification: process note 'restated' dropped from the in-text credit; NatureSpot 'Lesser Hawkbit' (https://www.naturespot.org/species/lesser-hawkbit) stays in the field sources.",
-      "Card to microseris, 02/11/2026 (owner, 30/10/2026: 'if it is presented in nz it should have a card'): Flora of New Zealand vol. IV, 'Leontodon taraxacoides' (Webb et al. 1988, CC BY-NC-SA, https://floraseries.landcareresearch.co.nz/taxa/973474b6-dfb4-4e0b-995d-b9bcd6e74e09), retrieved 02/11/2026: 'Microseris scapigera has similar simple scapes and nodding buds, but it has scabrid pappus hairs' and 'The 2-fid hairs distinguish L. taraxacoides from similar spp. of Lactuceae in N.Z.'; microseris characters from Flora of New Zealand vol. I, 'Microseris scapigera' (Allan 1961, https://floraseries.landcareresearch.co.nz/taxa/a5398c57-fdb3-4a7b-947e-5ca476a1eec0: 'Lvs all basal, glab. or furfuraceous', 'Pappus-hairs c. 14-24, stiff, brownish, widened to membranous base, barbellate above'; genus 'not beaked', 'milky juice') and the vol. IV Lactuceae key ('Lvs glabrous or with scaly hairs beneath'). Ngā Rauropi Whakaoranga has no Microseris records (searched 02/11/2026); murnong is Microseris walteri (Walsh 2016, Muelleria 34: 63–67)."
+      "Card to microseris, 02/11/2026 (owner, 30/10/2026: 'if it is presented in nz it should have a card'): Flora of New Zealand vol. IV, 'Leontodon taraxacoides' (Webb et al. 1988, CC BY-NC-SA, https://floraseries.landcareresearch.co.nz/taxa/973474b6-dfb4-4e0b-995d-b9bcd6e74e09), retrieved 02/11/2026: 'Microseris scapigera has similar simple scapes and nodding buds, but it has scabrid pappus hairs' and 'The 2-fid hairs distinguish L. taraxacoides from similar spp. of Lactuceae in N.Z.'; microseris characters from Flora of New Zealand vol. I, 'Microseris scapigera' (Allan 1961, https://floraseries.landcareresearch.co.nz/taxa/a5398c57-fdb3-4a7b-947e-5ca476a1eec0: 'Lvs all basal, glab. or furfuraceous', 'Pappus-hairs c. 14-24, stiff, brownish, widened to membranous base, barbellate above'; genus 'not beaked', 'milky juice') and the vol. IV Lactuceae key ('Lvs glabrous or with scaly hairs beneath'). Ngā Rauropi Whakaoranga has no Microseris records (searched 02/11/2026); murnong is Microseris walteri (Walsh 2016, Muelleria 34: 63–67).",
+      "Microseris card updated 05/11/2026 (owner: 'yes'): risk unknown → edible and closing line reworded, after microseris's roots were made edible on Walsh 2016 (raw) and Campanelli, M., Muir, J., Mora, A., Clarke, D.R. & Griffin, D. 2018, 'Re-Creating an Aboriginal Earth Oven with Clayey Heating Elements: Experimental Archaeology and Paleodietary Implications', EXARC Journal 2018/2 (CC BY 4.0) (cooked)."
     ],
     "summary" : {
       "sources" : [
@@ -19215,25 +19218,25 @@
     "origin" : "introduced",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Rosette",
         "credit" : "(c) Richard Littauer, some rights reserved (CC BY)",
         "fileName" : "horseweed-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/142020126"
       },
       {
-        "caption" : "",
+        "caption" : "Young plants",
         "credit" : "(c) Joe Potter Butler, some rights reserved (CC BY)",
         "fileName" : "horseweed-6.heic",
         "sourceURL" : "http://naturewatch.org.nz/observations/2743006"
       },
       {
-        "caption" : "",
+        "caption" : "Flowering stem, many small heads",
         "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
         "fileName" : "horseweed-2.heic",
         "sourceURL" : "http://naturewatch.org.nz/observations/355354"
       },
       {
-        "caption" : "",
+        "caption" : "Flower heads",
         "credit" : "(c) Leon Perrie, some rights reserved (CC BY)",
         "fileName" : "horseweed-1.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/30084184"
@@ -20004,25 +20007,25 @@
     "origin" : "introduced",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Leafy shoots",
         "credit" : "(c) Chris Ecroyd, some rights reserved (CC BY)",
         "fileName" : "japanese-cedar-2.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/65611837"
       },
       {
-        "caption" : "",
+        "caption" : "Mature cones",
         "credit" : "(c) Michael Berardozzi, some rights reserved (CC BY)",
         "fileName" : "japanese-cedar-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/195226432"
       },
       {
-        "caption" : "",
+        "caption" : "Pollen cones",
         "credit" : "(c) Michael Berardozzi, some rights reserved (CC BY)",
         "fileName" : "japanese-cedar-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/207122692"
       },
       {
-        "caption" : "",
+        "caption" : "Tree",
         "credit" : "(c) charbailie, some rights reserved (CC BY-NC)",
         "fileName" : "japanese-cedar-6.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/60682383"
@@ -20697,25 +20700,25 @@
     "origin" : "endemic",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Tree",
         "credit" : "(c) John Barkla, some rights reserved (CC BY)",
         "fileName" : "kahikatea-2.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/53328278"
       },
       {
-        "caption" : "",
+        "caption" : "Branch with fruit",
         "credit" : "(c) Michael Berardozzi, some rights reserved (CC BY)",
         "fileName" : "kahikatea-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/154058578"
       },
       {
-        "caption" : "",
+        "caption" : "Juvenile foliage",
         "credit" : "(c) Jacqui Geux, some rights reserved (CC BY)",
         "fileName" : "kahikatea-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/39440407"
       },
       {
-        "caption" : "",
+        "caption" : "Fruit: orange receptacles, black seeds",
         "credit" : "(c) Jacqui Geux, some rights reserved (CC BY)",
         "fileName" : "kahikatea-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/39728339"
@@ -22295,25 +22298,25 @@
     "origin" : "pest",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Cones on bare winter branches",
         "credit" : "(c) 謝麗霦, some rights reserved (CC BY)",
         "fileName" : "larch-1.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/371516718"
       },
       {
-        "caption" : "",
+        "caption" : "Wilding seedling in tussock",
         "credit" : "(c) Sarah Richardson, some rights reserved (CC BY)",
         "fileName" : "larch-2.heic",
         "sourceURL" : "http://naturewatch.org.nz/observations/1177050"
       },
       {
-        "caption" : "",
+        "caption" : "Branches with cones",
         "credit" : "(c) 謝麗霦, some rights reserved (CC BY)",
         "fileName" : "larch-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/370245340"
       },
       {
-        "caption" : "",
+        "caption" : "Needles in tufts on short shoots",
         "credit" : "(c) Matt Berger, some rights reserved (CC BY)",
         "fileName" : "larch-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/144548730"
@@ -22707,25 +22710,25 @@
     "origin" : "introduced",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Young cones",
         "credit" : "(c) avocat, some rights reserved (CC BY)",
         "fileName" : "lawson-cypress-1.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/403412277"
       },
       {
-        "caption" : "",
+        "caption" : "Flattened sprays of scale leaves",
         "credit" : "(c) Jacqui Geux, some rights reserved (CC BY)",
         "fileName" : "lawson-cypress-2.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/53020508"
       },
       {
-        "caption" : "",
+        "caption" : "Foliage",
         "credit" : "no rights reserved",
         "fileName" : "lawson-cypress-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/142500746"
       },
       {
-        "caption" : "",
+        "caption" : "Trunk in forest",
         "credit" : "(c) wild_wind, some rights reserved (CC BY)",
         "fileName" : "lawson-cypress-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/64161515"
@@ -24712,16 +24715,16 @@
     ]
   },
   {
-    "caution" : "doNotEat",
+    "caution" : "careRequired",
     "commonName" : "Microseris",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
-        "Walsh 2016, 'A name for Murnong', Muelleria 34: 63–67 (Royal Botanic Gardens Victoria): roots tasted raw, 'slightly, but tolerably bitter'; not known whether they were eaten — a single tasting, not a food record",
-        "Useful Temperate Plants and Plants For A Future, 'Microseris scapigera': root raw or cooked, sweetish — compiled under the old broad name that included murnong (now Microseris walteri), and not used",
+        "Walsh 2016, 'A name for Murnong', Muelleria 34: 63–67 (Royal Botanic Gardens Victoria, restated): raw roots tasted",
+        "Campanelli, M., Muir, J., Mora, A., Clarke, D.R. & Griffin, D. 2018, 'Re-Creating an Aboriginal Earth Oven with Clayey Heating Elements: Experimental Archaeology and Paleodietary Implications', EXARC Journal 2018/2 (CC BY 4.0) — roots of M. scapigera, used in place of murnong (M. walteri), cooked and eaten",
         "Ngā Rauropi Whakaoranga: no records for Microseris"
       ],
-      "text" : "None."
+      "text" : "Roots, raw or cooked. Raw, they are fleshy, only slightly fibrous, crunchy and slightly bitter."
     },
     "group" : "greens",
     "habitat" : {
@@ -24738,9 +24741,10 @@
     ],
     "harvestEthics" : {
       "sources" : [
-        "NZTCS record 4412 'Microseris scapigera' — 2023 Not Threatened, qualifiers Data Poor: Size, Data Poor: Trend (de Lange et al. 2024, NZTCS 43; CC BY 4.0), retrieved 02/11/2026"
+        "NZTCS record 4412 'Microseris scapigera' — 2023 Not Threatened, qualifiers Data Poor: Size, Data Poor: Trend (de Lange et al. 2024, NZTCS 43; CC BY 4.0), retrieved 02/11/2026",
+        "NZPCN, 'Microseris scapigera' — regional conservation statuses: Wellington 2025 Regionally Threatened – Regionally Critical (Enright et al. 2025); Northland 2026 Regionally Extirpated (Ford et al. 2026); Otago 2025 Regionally Not Threatened (Jarvie et al. 2025). https://www.nzpcn.org.nz/flora/species/microseris-scapigera/"
       ],
-      "text" : "There is no reason to pick this plant. You can observe and photograph it without disturbing it."
+      "text" : "Be mindful when foraging. Take only what you need. Some regions rank it as more at risk. In the Wellington region (Regionally Critical), do not harvest it unless it is a life-or-death situation and you must eat it. It is recorded as gone from Northland (Regionally Extirpated)."
     },
     "id" : "microseris",
     "identification" : {
@@ -24776,35 +24780,35 @@
     "origin" : "native",
     "photos" : [
       {
-        "caption" : "Dug-up plant showing its roots",
-        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
-        "fileName" : "microseris-1.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/105820117"
+        "caption" : "Single yellow head on a leafless stalk",
+        "credit" : "(c) Cara-Lisa Schloots, some rights reserved (CC BY)",
+        "fileName" : "microseris-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/356007380"
       },
       {
-        "caption" : "Rosette of narrow, grass-like leaves",
+        "caption" : "Tuft of narrow, strap-like leaves",
+        "credit" : "(c) Paul Bell-Butler, some rights reserved (CC BY)",
+        "fileName" : "microseris-3.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/147879216"
+      },
+      {
+        "caption" : "Rosette of wavy, lobed leaves",
+        "credit" : "(c) Rae Lerew, some rights reserved (CC BY)",
+        "fileName" : "microseris-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/405325614"
+      },
+      {
+        "caption" : "Half-open head nodding on its stalk",
         "credit" : "(c) Chris Ecroyd, some rights reserved (CC BY)",
         "fileName" : "microseris-2.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/197289438"
-      },
-      {
-        "caption" : "Two yellow flower heads",
-        "credit" : "(c) Sarah Richardson, some rights reserved (CC BY)",
-        "fileName" : "microseris-3.heic",
-        "sourceURL" : "http://naturewatch.org.nz/observations/397896"
-      },
-      {
-        "caption" : "Single yellow head on a leafless stalk",
-        "credit" : "(c) Chris Ecroyd, some rights reserved (CC BY)",
-        "fileName" : "microseris-4.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/257102409"
       }
     ],
     "preparation" : {
       "sources" : [
-
+        "Campanelli, M., Muir, J., Mora, A., Clarke, D.R. & Griffin, D. 2018, 'Re-Creating an Aboriginal Earth Oven with Clayey Heating Elements: Experimental Archaeology and Paleodietary Implications', EXARC Journal 2018/2 (CC BY 4.0) — verbatim fragments"
       ],
-      "text" : "None."
+      "text" : "Long, slow cooking softens the roots: cooked overnight (about 18 hours) in an earth oven, they became soft, almost creamy and palatable, with a sweet-smoky smell and a nutty taste."
     },
     "recipes" : [
 
@@ -24824,7 +24828,9 @@
       "Microseris ↔ hawkbit card (02/11/2026): confusion named in Flora of New Zealand vol. IV, 'Leontodon taraxacoides' ('similar simple scapes and nodding buds, but it has scabrid pappus hairs'; 'The 2-fid hairs distinguish L. taraxacoides from similar spp. of Lactuceae in N.Z.'). Hawkbit characters from the same description (hairs '2-(3)-fid at tip, sparse to dense'; 'Stems ascending, not branching'; 'Stem bracts 0-(1)'; 'nodding in bud'; outer achenes 'not beaked … with a pappus of scales c. 0.7 mm long'; inner achenes 'shortly beaked … the inner row 5-7 mm long, plumose'); microseris characters from Flora of New Zealand vol. I ('Lvs all basal, glab. or furfuraceous, entire to denticulate to pinnatifid', 'Scapes … naked, unbranched', 'distinctly ribbed', 'Pappus-hairs c. 14-24, stiff, brownish, widened to membranous base, barbellate above'; genus 'not beaked', 'milky juice') and the vol. IV Lactuceae key ('Lvs glabrous or with scaly hairs beneath'; pappus 'bristly', not plumose). Milky latex: the tribe description.",
       "Microseris ↔ autumn hawkbit card (02/11/2026): Flora of New Zealand vol. IV, 'Leontodon autumnalis' (Webb et al. 1988, CC BY-NC-SA, https://floraseries.landcareresearch.co.nz/taxa/a0f22db2-57c5-49e3-ba23-427498a76666), retrieved 02/11/2026: 'may sometimes resemble forms of the native Microseris scapigera, but is distinguished by the branching stems bearing stem bracts, the outer involucral bracts c. 1/2 the length of inner bracts, the darker yellow florets and plumose pappus hairs'; its description ('Stems erect, branching'; 'Stem bracts numerous, especially above'; 'erect in bud'; 'hairs simple, sparse or 0'; 'Pappus in 1 row; hairs plumose'). Microseris: nodding buds (Webb's hawkbit note), 'Phyll. in 1 series, with a few bracteoles at base' (Allan, genus), leaves 'glab. or furfuraceous' (Allan). Both occur in the South Island (Flora distributions). Autumn hawkbit's edibility from its own entry.",
       "Not carded: catsear, dandelion and native dandelion — no source read names them as confused with Microseris scapigera (Flora of New Zealand's notes name only the two hawkbits). Walsh 2016 suggests Aboriginal people at Coranderrk may have recognised a similarity between Hypochaeris glabra and Microseris, a conjecture about food use, not an identification note.",
-      "Crowe sought, 02/11/2026: Useful Temperate Plants' and Plants For A Future's line 'The root tastes like a sweet potato with an occasional hot taste' cites reference [173], Crowe, A. (1990) Native Edible Plants of New Zealand (Hodder and Stoughton). Neither that book nor Crowe's A Field Guide to the Native Edible Plants of New Zealand (1981; 1997; 2004) could be read: no copy on the Internet Archive or Open Library (catalogue records only, no scan), and Google Books blocked access; a Goodreads reader review confirms only that the field guide includes Microseris scapigera. So it is not known whether Crowe wrote the line about the New Zealand plant or about murnong, and it is not used. No New Zealand record of the plant as food was found: Ngā Rauropi Whakaoranga has no Microseris record; Papers Past's journals (37 hits for 'Microseris', mostly Transactions of the New Zealand Institute plant lists) mention it only in species lists; Ferdinand von Mueller, Select Extra-tropical Plants (1880, Internet Archive), calls 'Microseris Forsteri' 'The Native Scorzonera of extra-tropical Australia and New Zealand' but records food use only by 'The Australian aborigines'; Lyons, Plant Names (1900), has only 'Australia and New Zealand. Native Scorzonera. Root esculent.' under the old broad name; Cooper & Cambie, New Zealand's Economic Native Plants (1991), lists 'native scorzonera (Microseris scapigera)' beside cranesbills and onion orchid on page 100, but the book is borrow-only and the sentence around it could not be read; Tim Entwisle (Talking Plants, 01/07/2013) found no Māori name and suspected 'yam' was 'borrowed more recently from Australia'. Edible parts stay 'None.' — the owner may borrow Crowe or Cooper & Cambie to settle it."
+      "Crowe sought, 02/11/2026: Useful Temperate Plants' and Plants For A Future's line 'The root tastes like a sweet potato with an occasional hot taste' cites reference [173], Crowe, A. (1990) Native Edible Plants of New Zealand (Hodder and Stoughton). Neither that book nor Crowe's A Field Guide to the Native Edible Plants of New Zealand (1981; 1997; 2004) could be read: no copy on the Internet Archive or Open Library (catalogue records only, no scan), and Google Books blocked access; a Goodreads reader review confirms only that the field guide includes Microseris scapigera. So it is not known whether Crowe wrote the line about the New Zealand plant or about murnong, and it is not used. No New Zealand record of the plant as food was found: Ngā Rauropi Whakaoranga has no Microseris record; Papers Past's journals (37 hits for 'Microseris', mostly Transactions of the New Zealand Institute plant lists) mention it only in species lists; Ferdinand von Mueller, Select Extra-tropical Plants (1880, Internet Archive), calls 'Microseris Forsteri' 'The Native Scorzonera of extra-tropical Australia and New Zealand' but records food use only by 'The Australian aborigines'; Lyons, Plant Names (1900), has only 'Australia and New Zealand. Native Scorzonera. Root esculent.' under the old broad name; Cooper & Cambie, New Zealand's Economic Native Plants (1991), lists 'native scorzonera (Microseris scapigera)' beside cranesbills and onion orchid on page 100, but the book is borrow-only and the sentence around it could not be read; Tim Entwisle (Talking Plants, 01/07/2013) found no Māori name and suspected 'yam' was 'borrowed more recently from Australia'. Edible parts stay 'None.' — the owner may borrow Crowe or Cooper & Cambie to settle it.",
+      "Owner's links checked 05/11/2026 for a food record — none found for this species: NZPCN, Biota of New Zealand, Flora of New Zealand Online and Plants For A Future (already cited above; no NZ food or Māori use); Atlas of Living Australia, 'Microseris scapigera' (APC concept https://id.biodiversity.org.au/taxon/apni/51268669): common names 'Yam Daisy', 'Murrnong', 'Native Dandelion', 'Yam', no use notes; Victorian Resources Online, 'Native yam daisy' (https://soilhealth.ccmaknowledgebase.vic.gov.au/vro_archive/statewide/pages/sip_salt_native_yam.html): 'Microseris spp. (syn. M. scapigera, M. lanceolata)', roots 'an important food source for indigenous peoples' — the pre-2016 broad name, so not assignable (Walsh 2016); Warndu, 'Murnong' (https://warndu.com/blogs/first-nations-food-guide/murnong): murnong 'is any of the plants Microseris walteri, Microseris lanceolata and Microseris scapigera', describes tubers, no source, New Zealand not mentioned; Slow Food Ark of Taste, 'Yam daisy' (https://www.fondazioneslowfood.com/en/ark-of-taste-slow-food/yam-daisy/): names M. scapigera and M. lanceolata but M. walteri as 'the correct name' for the cultivated plant, south-eastern Australia only. All three describe tubers, which Walsh 2016 gives to M. walteri and not to M. scapigera, so they describe murnong. nativeplants.nz, 'Microseris scapigera' (https://www.nativeplants.nz/microseris-scapigera.html): no food use; its 'dense, stiff tufts', 'flowering panicles' and '1000 to 2000 meters' contradict Flora of New Zealand (solitary heads on naked scapes; lowland to subalpine), so it is not used. Edible parts stay 'None.'",
+      "Owner answer 05/11/2026 ('yes', after asking 'is it the same species as the australian one? if so there is no reason why it would be only edible in one country and not the other'): caution doNotEat → careRequired; edible parts 'None.' → roots, raw or cooked; preparation, harvest ethics (Not Threatened sentence plus NZPCN regional cautions), warnings and both reverse cards updated. Same species in New Zealand and Australia: Walsh 2016 (basalt plains of western Victoria and elevated Tasmania), Australian Plant Census via ALA, Flora of New Zealand Online. Food evidence for M. scapigera in the post-2016 sense: Walsh 2016's raw tasting, and Campanelli, M., Muir, J., Mora, A., Clarke, D.R. & Griffin, D. 2018, 'Re-Creating an Aboriginal Earth Oven with Clayey Heating Elements: Experimental Archaeology and Paleodietary Implications', EXARC Journal 2018/2 (CC BY 4.0), https://exarc.net/issue-2018-2/ea/re-creating-aboriginal-earth-oven-clayey-heating-elements-experimental-archaeology-and-paleodietary, retrieved 05/11/2026 — nursery-grown M. scapigera '(used in place of the traditional M. walteri)', '1-3 tapered roots, up to 2 g each, and about 6 cm long'; the 'crunchy and bitter roots' cooked about 18 hours in an earth oven 'had become soft, almost creamy, and palatable, with a particular sweet-smoky smell and a nutty taste'. No report of harm found. The 02/11 line recording edible parts 'None.' and doNotEat is superseded. No recipes: the root harvest kills the plant, the national status rests on poor data, and the owner chose careRequired with no recipes. Months left empty (year-round): the roots of this perennial (Flora of New Zealand) are present all year."
     ],
     "summary" : {
       "sources" : [
@@ -24836,8 +24842,8 @@
       "text" : "Microseris scapigera is a yellow-flowered daisy, a perennial herb, found in New Zealand and Australia. It is the only New Zealand species of Microseris, and one of three Australian species along with Microseris lanceolata and Microseris walteri. It is classified into a group of plants, the tribe Cichorieae, that includes chicory and dandelion.\nThe murnong or \"yam daisy\" has been referred to as M. scapigera, M. lanceolata, or M. forsteri, but is now classified as M. walteri.\nIn New Zealand (Flora of New Zealand): North, South and Stewart Islands, not recently recorded north of about latitude 37°. Forma linearis grows from latitude 38° 30' southwards, forma pinnatifida from latitude 39° 30' southwards, forma obovata between latitudes 41° and 42°, and forma major on the Ure River, Marlborough. The forms are informal, there are intermediates, and the distribution and status of the complex need further study.\nIts national conservation status (2023) is Not Threatened, with low confidence for lack of data on population size and trend. Regionally it is ranked extirpated in Northland and Regionally Critical in the Wellington region. An unnamed plant on the Brothers Islands, Microseris aff. scapigera, is ranked At Risk – Naturally Uncommon.\nUnlike murnong, whose tuber was a staple food in south-eastern Australia, it has no tuber."
     },
     "warnings" : [
-      "Murnong or yam daisy, the Australian plant whose sweet tubers were a staple food, is a different species (Microseris walteri) and is not a New Zealand plant. This plant has no tuber; its roots are fleshy and slightly bitter, and no traditional use of them as food has been confirmed.",
-      "Its single yellow heads on leafless, unbranched stems, with buds that nod, look like hawkbit's, and hawkbit is eaten. Check the leaf hairs and the seed hairs before picking (see the lookalikes)."
+      "Murnong or yam daisy, the Australian plant whose sweet tubers were a staple food, is a different species (Microseris walteri) and is not a New Zealand plant. This plant has no tuber; its roots are small, fleshy and slightly bitter. Eating them rests on two tastings by researchers; no traditional use of them as food has been confirmed.",
+      "Its single yellow heads on leafless, unbranched stems, with buds that nod, look like hawkbit's. Check the leaf hairs and the seed hairs to be sure which plant you have (see the lookalikes)."
     ]
   },
   {
@@ -25175,25 +25181,25 @@
     "origin" : "endemic",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Foliage with fruit",
         "credit" : "(c) Halema J, some rights reserved (CC BY)",
         "fileName" : "miro-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/158787012"
       },
       {
-        "caption" : "",
+        "caption" : "Leafy shoots",
         "credit" : "(c) Duncan Cunningham, some rights reserved (CC BY)",
         "fileName" : "miro-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/98741515"
       },
       {
-        "caption" : "",
+        "caption" : "Tree crown",
         "credit" : "(c) Chris Parminter, some rights reserved (CC BY)",
         "fileName" : "miro-1.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/262878711"
       },
       {
-        "caption" : "",
+        "caption" : "Fruit with a waxy bloom",
         "credit" : "(c) greghadley1, some rights reserved (CC BY-NC)",
         "fileName" : "miro-6.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/277289137"
@@ -25271,25 +25277,25 @@
     "origin" : "pest",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Young seed cones",
         "credit" : "(c) Steve Kerr, some rights reserved (CC BY)",
         "fileName" : "monterey-pine-1.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/42735408"
       },
       {
-        "caption" : "",
+        "caption" : "Branches with pollen cones",
         "credit" : "(c) Kane Fleury, some rights reserved (CC BY)",
         "fileName" : "monterey-pine-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/32557134"
       },
       {
-        "caption" : "",
+        "caption" : "Wilding tree in native forest",
         "credit" : "(c) Cara-Lisa Schloots, some rights reserved (CC BY)",
         "fileName" : "monterey-pine-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/105223932"
       },
       {
-        "caption" : "",
+        "caption" : "Pollen cones and new shoots",
         "credit" : "(c) Jacqui Geux, some rights reserved (CC BY)",
         "fileName" : "monterey-pine-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/59106980"
@@ -25546,7 +25552,7 @@
   {
     "caution" : "doNotEat",
     "commonName" : "Mountain fireweed",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Ngā Rauropi Whakaoranga (https://rauropiwhakaoranga.landcareresearch.co.nz/search?query=wairauensis): no records for Senecio wairauensis or Erechtites",
@@ -25611,28 +25617,28 @@
     "origin" : "endemic",
     "photos" : [
       {
-        "caption" : "Rosette of lobed, toothed leaves",
-        "credit" : "(c) William Harland, some rights reserved (CC BY)",
-        "fileName" : "mountain-fireweed-1.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/396848120"
-      },
-      {
-        "caption" : "Flowering stem with yellow, rayless heads",
-        "credit" : "(c) Chris Ecroyd, some rights reserved (CC BY)",
-        "fileName" : "mountain-fireweed-2.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/197289436"
-      },
-      {
-        "caption" : "Hairy, lobed leaf",
-        "credit" : "(c) Chris Ecroyd, some rights reserved (CC BY)",
-        "fileName" : "mountain-fireweed-3.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/255843611"
-      },
-      {
         "caption" : "Leafy plant with deeply cut leaves",
         "credit" : "(c) John Steel, some rights reserved (CC BY)",
         "fileName" : "mountain-fireweed-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/67781187"
+      },
+      {
+        "caption" : "Young rosette of broad, shallowly lobed leaves",
+        "credit" : "(c) John Barkla, some rights reserved (CC BY)",
+        "fileName" : "mountain-fireweed-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/182251286"
+      },
+      {
+        "caption" : "Branched flowering stem with narrow, rayless heads",
+        "credit" : "(c) Mike Lusk, some rights reserved (CC BY-NC)",
+        "fileName" : "mountain-fireweed-2.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/1199964"
+      },
+      {
+        "caption" : "Seed head of fine white hairs above green buds",
+        "credit" : "(c) Daniel, some rights reserved (CC BY-NC)",
+        "fileName" : "mountain-fireweed-1.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/347692648"
       }
     ],
     "preparation" : {
@@ -25656,7 +25662,8 @@
       "Edible parts 'None.', preparation 'None.' and caution doNotEat, 02/11/2026 (pennyroyal / microseris precedent): no food record for this species was found — Ngā Rauropi Whakaoranga (https://rauropiwhakaoranga.landcareresearch.co.nz/search?query=wairauensis, also 'Erechtites'): 'No results found'; Flora of New Zealand and NZPCN record no use; web searches for the species with food, eaten, alkaloid, toxic or poisonous found none. Its chemistry has not been published (no alkaloid analysis found). Months left empty: nothing is collected.",
       "Warning, genus-level (stated as genus-level, not as a finding for this species): Colorado State University, Guide to Poisonous Plants, 'Senecio, groundsel, tansy ragwort' (https://poisonousplants.cvmbs.colostate.edu/plant/41, read via r.jina.ai, retrieved 02/11/2026): 'Toxic Principle Pyrrolizidine alkaloids. All Senecio species should be considered toxic, some more than others.'; 'The PA's are cumulative in effect and over a period of months cause severe liver fibrosis and eventual irreversible liver failure' (animals affected: horses, cattle). MSD Veterinary Manual, 'Pyrrolizidine Alkaloidosis in Animals' (https://www.msdvetmanual.com/toxicology/pyrrolizidine-alkaloidosis/pyrrolizidine-alkaloidosis-in-animals, read via r.jina.ai, retrieved 02/11/2026): 'typically a chronic toxicosis that results in hepatic failure. It is caused by many toxic plants, most commonly of the genera Senecio, …'. Sadgrove, N.J. 2022, 'Comment on Pyrrolizidine Alkaloids and Terpenes from Senecio (Asteraceae): Chemistry and Research Gaps in Africa', Molecules 27(24): 8868, doi:10.3390/molecules27248868, CC BY 4.0 (https://pmc.ncbi.nlm.nih.gov/articles/PMC9781224/, read via r.jina.ai, retrieved 02/11/2026): 'Surprisingly, there are significantly more sesquiterpenoid than pyrrolizidine alkaloid-containing species' — the hedge 'not every species studied contains these alkaloids'. Wikipedia's 'Pyrrolizidine alkaloids are found in all Senecio species' (cited to a wildflower book) is contradicted by this review and not used.",
       "Mountain fireweed ↔ nipplewort card (02/11/2026): confusion named in Flora of New Zealand vol. IV, 'Lapsana communis' (quoted above). Nipplewort from the same description ('Florets few, c. 1.5× length of involucre; corolla yellow; tube < ligule'; 'Achenes fusiform, glabrous, pale, c. 20-ribbed, 3-5 mm long; pappus 0'; 'Involucre 5-8 mm long'; lower leaves 'lyrate-pinnatifid'; habitat 'Roadsides, tracksides, forest margins …, waste land'); milky sap and all-ligulate florets from the vol. IV Lactuceae tribe ('Sap milky'; 'Capitula homogamous; all florets ligulate'; 'copious milky latex when cut'). Mountain fireweed from Webb ('Ray florets 0. Disc yellow, 2-3 mm diam.'; achenes 'glabrous or with scattered hairs in 1-3 rows in narrow grooves'; 'Involucral bracts … 6-7-(8) mm long'; leaves 'lyrate-pinnatifid'; 'forest margins and clearings … or disturbed areas'), Allan (pappus 'fine, white, c. 6 mm. long') and the Lapsana note ('watery juice', 'papillate achenes').",
-      "Mountain fireweed ↔ wall lettuce card (02/11/2026): confusion named in Flora of New Zealand vol. IV, 'Mycelis muralis' (quoted above: heterogamous capitula, thicker leaves with more rounded teeth, paler sparsely papillate achenes, watery juice). Wall lettuce from the same description ('Glabrous perennial'; 'coarsely toothed'; 'hydathodes prominent at tips of teeth; lamina thin'; upper leaves 'amplexicaul-auriculate at base'; 'corolla pale yellow'; 'Achenes usually 5 or fewer, dark brown to black'; 'Pappus bristles … fine, white'; 'forest margins, roadsides, stream beds'), Lactuceae tribe (milky sap, all florets ligulate) and Botany in Scotland (usually five florets, as on the wall-lettuce entry). Mountain fireweed: Webb (leaves 'almost glabrous', mid cauline leaves 'amplexicaul'; ray florets 0; disc 2-3 mm), Allan (pappus white; 'nearly glab. stems'; streamsides and forest margins). Beaks not used (Allan and Webb disagree for mountain fireweed)."
+      "Mountain fireweed ↔ wall lettuce card (02/11/2026): confusion named in Flora of New Zealand vol. IV, 'Mycelis muralis' (quoted above: heterogamous capitula, thicker leaves with more rounded teeth, paler sparsely papillate achenes, watery juice). Wall lettuce from the same description ('Glabrous perennial'; 'coarsely toothed'; 'hydathodes prominent at tips of teeth; lamina thin'; upper leaves 'amplexicaul-auriculate at base'; 'corolla pale yellow'; 'Achenes usually 5 or fewer, dark brown to black'; 'Pappus bristles … fine, white'; 'forest margins, roadsides, stream beds'), Lactuceae tribe (milky sap, all florets ligulate) and Botany in Scotland (usually five florets, as on the wall-lettuce entry). Mountain fireweed: Webb (leaves 'almost glabrous', mid cauline leaves 'amplexicaul'; ray florets 0; disc 2-3 mm), Allan (pappus white; 'nearly glab. stems'; streamsides and forest margins). Beaks not used (Allan and Webb disagree for mountain fireweed).",
+      "Photo mountain-fireweed-2 replaced 05/11/2026 (owner: 'swap for a better'): Oscar Dove's leaf-underside photo (iNaturalist 256460659) showed one purple leaf in a hand and did not help identification; replaced with Mike Lusk's flowering stem (iNaturalist 1199964, Armstrong Saddle, Ruahine Range, 25/01/2015, research grade, identified Senecio wairauensis by jon_sullivan and johnvandenhoeven; photo 1515640, CC BY-NC), which shows the narrow rayless heads."
     ],
     "summary" : {
       "sources" : [
@@ -25964,25 +25971,25 @@
     "origin" : "pest",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Flower head",
         "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
         "fileName" : "mouse-ear-hawkweed-1.heic",
         "sourceURL" : "http://naturewatch.org.nz/observations/381618"
       },
       {
-        "caption" : "",
+        "caption" : "Flowering patch",
         "credit" : "(c) Alice Shanks, some rights reserved (CC BY)",
         "fileName" : "mouse-ear-hawkweed-2.heic",
         "sourceURL" : "http://naturewatch.org.nz/observations/378572"
       },
       {
-        "caption" : "",
+        "caption" : "Mat in flower",
         "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
         "fileName" : "mouse-ear-hawkweed-3.heic",
         "sourceURL" : "http://naturewatch.org.nz/observations/336620"
       },
       {
-        "caption" : "",
+        "caption" : "Rosette, long white hairs on leaves",
         "credit" : "(c) wellmaintainedhedge, some rights reserved (CC BY-NC)",
         "fileName" : "mouse-ear-hawkweed-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/153551446"
@@ -29668,7 +29675,7 @@
         "Massey University, New Zealand Weeds Database, 'Oxeye daisy' (all rights reserved, restated)",
         "Stuff, 'The oxeye daisy - you can eat it but cattle can't' (Shayne McNamara, 15/05/2018, all rights reserved, restated)"
       ],
-      "text" : "Scarcely scented, perennial herb. Stems erect, up to about 1 m tall, usually sparsely to densely villous below and glabrous above, rarely hairy or glabrous above and below, striate, simple or branched at base or sometimes above, rooting toward base. Basal and lower cauline leaves long-petiolate, elliptic, obovate or spathulate, obtuse at apex, cuneate, coarsely 1–2-serrate, crenate, or shallowly 1–(2)-pinnatifid, usually glabrous, sometimes sparsely hairy on petiole and midrib, very rarely moderately hairy, up to 12–(18) × 2–(4) cm; cauline leaves similar to basal but above becoming smaller, apetiolate, narrow-oblong, amplexicaul, with few distant teeth or sometimes entire, and often auriculate at base. Involucral bracts 3–8 mm long, glabrous; margins and apex brown, membranous; inner bracts with extended, broad, apical flap. Capitula solitary or few in corymbs, (25)–30–60–(65) mm diameter; ray florets (9)–18–33; ligules white; disc florets numerous, yellow. Achenes about 2.5 mm long, dark brown with pale ribs; achenes of disc florets mostly more or less terete, with 10 more or less equal ribs, and corona 0; achenes of ray florets similar to those of disc florets, but sometimes flattened with lateral ribs somewhat extended, 3 ribs on outer surface and 5 ribs on inner surface, rarely achene 3-angled, sometimes with irregular corona about 0.3 mm long. \n[From: Webb et al. (1988) Flora of New Zealand. Volume 4.]\nIt varies somewhat in hairiness, and in the number, size, and shape of the ligules. Much of this variation can be seen within a single population, and all forms are easily distinguished from L. maximum.\nLeucanthemum maximum, the other naturalised Leucanthemum in New Zealand, has narrow-elliptic, evenly toothed basal and lower stem leaves, stems hairless or with a few scattered hairs, and heads (50)–70–120 mm across (Flora of New Zealand key, restated).\nIt grows as a rosette at first, then as taller clumps with upright, leafy flower stems (Massey University, restated).\nWhile it is small it can be confused with the common lawn daisy, with stinking chamomile (stinking mayweed) and with scentless chamomile (Stuff, restated)."
+      "text" : "Scarcely scented, perennial herb. Stems erect, up to about 1 m tall, usually sparsely to densely villous below and glabrous above, rarely hairy or glabrous above and below, striate, simple or branched at base or sometimes above, rooting toward base. Basal and lower cauline leaves long-petiolate, elliptic, obovate or spathulate, obtuse at apex, cuneate, coarsely 1–2-serrate, crenate, or shallowly 1–(2)-pinnatifid, usually glabrous, sometimes sparsely hairy on petiole and midrib, very rarely moderately hairy, up to 12–(18) × 2–(4) cm; cauline leaves similar to basal but above becoming smaller, apetiolate, narrow-oblong, amplexicaul, with few distant teeth or sometimes entire, and often auriculate at base. Involucral bracts 3–8 mm long, glabrous; margins and apex brown, membranous; inner bracts with extended, broad, apical flap. Capitula solitary or few in corymbs, (25)–30–60–(65) mm diameter; ray florets (9)–18–33; ligules white; disc florets numerous, yellow. Achenes about 2.5 mm long, dark brown with pale ribs; achenes of disc florets mostly more or less terete, with 10 more or less equal ribs, and corona 0; achenes of ray florets similar to those of disc florets, but sometimes flattened with lateral ribs somewhat extended, 3 ribs on outer surface and 5 ribs on inner surface, rarely achene 3-angled, sometimes with irregular corona about 0.3 mm long. \n[From: Webb et al. (1988) Flora of New Zealand. Volume 4.]\nIt varies somewhat in hairiness, and in the number, size, and shape of the ligules. Much of this variation can be seen within a single population, and all forms are easily distinguished from L. maximum.\nLeucanthemum maximum, the other naturalised Leucanthemum in New Zealand, has narrow-elliptic, evenly toothed basal and lower stem leaves, stems hairless or with a few scattered hairs, and heads (50)–70–120 mm across (Flora of New Zealand key, restated).\nIt grows as a rosette at first, then as taller clumps with upright, leafy flower stems (Massey University, restated).\nWhile it is small it can be confused with the common lawn daisy, with stinking mayweed (stinking chamomile) and with scentless chamomile (Stuff, restated)."
     },
     "lookalikes" : [
       {
@@ -29680,8 +29687,8 @@
       },
       {
         "entry" : "stinking-chamomile",
-        "howToTell" : "Leaves separate them best: stinking chamomile's are cut three times into narrow, almost thread-like segments with a somewhat feathery look, while ox-eye daisy's basal leaves are long-stalked and coarsely toothed, scalloped or at most shallowly lobed, and its upper stem leaves are narrow, stalkless and clasping, with a few distant teeth or none. Stinking chamomile is a strongly foetid annual; ox-eye daisy is a scarcely scented perennial whose stems root towards the base. Stinking chamomile's receptacle carries narrow, pointed scales among the inner florets; ox-eye daisy's has none. What does not separate them: head size overlaps (stinking chamomile about 15–30 mm across, up to 35 mm; ox-eye usually 30–60 mm, 25–65 mm at the extremes), so heads of 25–35 mm need the leaf, smell or scale tests; ray number overlaps (8–21 against 9–33); both have white rays around a yellow disc, and both grow on roadsides, waste places and pasture. Stinking chamomile is not a food plant: its juice is acrid, touching or eating it can cause allergies in some people, the foliage may irritate skin, and there are reports of toxicity.",
-        "name" : "Stinking chamomile",
+        "howToTell" : "Leaves separate them best: stinking mayweed's are cut three times into narrow, almost thread-like segments with a somewhat feathery look, while ox-eye daisy's basal leaves are long-stalked and coarsely toothed, scalloped or at most shallowly lobed, and its upper stem leaves are narrow, stalkless and clasping, with a few distant teeth or none. Stinking mayweed is a strongly foetid annual; ox-eye daisy is a scarcely scented perennial whose stems root towards the base. Stinking mayweed's receptacle carries narrow, pointed scales among the inner florets; ox-eye daisy's has none. What does not separate them: head size overlaps (stinking mayweed about 15–30 mm across, up to 35 mm; ox-eye usually 30–60 mm, 25–65 mm at the extremes), so heads of 25–35 mm need the leaf, smell or scale tests; ray number overlaps (8–21 against 9–33); both have white rays around a yellow disc, and both grow on roadsides, waste places and pasture. Stinking mayweed is not a food plant: its juice is acrid, touching or eating it can cause allergies in some people, the foliage may irritate skin, and there are reports of toxicity.",
+        "name" : "Stinking mayweed",
         "risk" : "toxic",
         "scientificName" : "Anthemis cotula"
       },
@@ -29821,7 +29828,8 @@
       "Lookalike card to shasta-daisy, 02/11/2026: Flora of New Zealand vol. IV (Webb, Sykes & Garnock-Jones 1988, CC BY-NC-SA) descriptions of both species — 'Leucanthemum maximum (Ramond) DC.' https://floraseries.landcareresearch.co.nz/taxa/5e3264dd-d3a7-4f02-b835-1668d7c0dc53 and 'Leucanthemum vulgare Lam.' https://floraseries.landcareresearch.co.nz/taxa/632961c9-fa88-419e-bd9e-b97b70f9d410 — and the genus key https://floraseries.landcareresearch.co.nz/taxa/a5ddc23b-4f57-4d5c-9ef4-fbe4a4cc5595 ('Basal and lower cauline lvs narrow-elliptic, evenly 1-serrate; stems glabrous or with a few scattered hairs; capitula (50)-70-120 mm diam.'), retrieved 02/11/2026, bracketed outliers kept; Flora's note that L. maximum 'is an escape from cultivation' and is 'occasional throughout'. Risk 'toxic': NC State Extension Plant Toolbox, 'Leucanthemum x superbum' (https://plants.ces.ncsu.edu/plants/leucanthemum-x-superbum/, retrieved 02/11/2026): 'Shasta daisies are mildly toxic to humans and pets if ingested', 'Causes Contact Dermatitis: Yes' (see the shasta-daisy entry).",
       "Risk on the Shasta daisy card changed from 'toxic' to 'unknown' (owner asked for research, 02/11/2026): the only toxicity record, NC State Extension Plant Toolbox, 'Leucanthemum x superbum' (https://plants.ces.ncsu.edu/plants/leucanthemum-x-superbum/, retrieved 02/11/2026), rates it 'mildly toxic', Poison Severity 'Low', with symptoms and toxic principles ('Sesquiterpene lactones and pyrethrins') matching ASPCA's pet listing for Chrysanthemum spp. (https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/daisy); the same toolbox gives ox-eye daisy the same Low rating and toxic principle (https://plants.ces.ncsu.edu/plants/leucanthemum-vulgare/: 'Toxic to cats and dogs if ingested'; 'In moderate amounts, the leaves are edible'). No poisoning report was found (PubMed search for Leucanthemum maximum, L. superbum, Chrysanthemum maximum, 02/11/2026), and the Ministry of Health list of poisonous plants in New Zealand (RNZIH, https://www.rnzih.org.nz/pages/poison.html) has no Leucanthemum. 'Unknown' records that its edibility is not established; 'toxic' asserts serious harm nobody has recorded.",
       "Shasta daisy card wording, 02/11/2026: 'not a food plant — it is mildly toxic' restated as 'no reliable record as food, is listed as mildly toxic' to match the card's 'unknown' risk; NC State Extension Plant Toolbox, 'Leucanthemum x superbum' (retrieved 02/11/2026): 'Shasta daisies are mildly toxic to humans and pets if ingested', Poison Severity 'Low'.",
-      "Shipped-entries sweep 04/11/2026, owner's answer (Q1 'drop'): the German chamomile (Matricaria chamomilla) entry was removed under the NZ presence rule — Flora of New Zealand vol. IV knows it from 'only one collection, from wasteland', Biota of NZ lists it as Casual, and the ~10 research-grade NZ iNaturalist records are all urban, the one behind its photos saying it 'surely spread from the herb garden' — so the German chamomile card was removed from this entry."
+      "Shipped-entries sweep 04/11/2026, owner's answer (Q1 'drop'): the German chamomile (Matricaria chamomilla) entry was removed under the NZ presence rule — Flora of New Zealand vol. IV knows it from 'only one collection, from wasteland', Biota of NZ lists it as Casual, and the ~10 research-grade NZ iNaturalist records are all urban, the one behind its photos saying it 'surely spread from the herb garden' — so the German chamomile card was removed from this entry.",
+      "Lookalike card to stinking-chamomile renamed 'Stinking mayweed', 05/11/2026, to match that entry's new common name (owner, Q1 'sure')."
     ],
     "summary" : {
       "sources" : [
@@ -31136,13 +31144,13 @@
         "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — abbreviations spelled out; figure reference omitted",
         "Massey University, New Zealand weeds database, 'Stinking mayweed' (restated)"
       ],
-      "text" : "Aromatic herb. Stems erect or ascending, 5–20–(40) cm tall, striate, glabrous or with a few hairs below capitula, usually much-branched from base. Basal and lower cauline leaves appearing shortly petiolate but usually with very reduced leaflets along sheath, narrow-obovate to elliptic, usually glabrous, sometimes sparsely hairy when young, 2–3-pinnatisect, 2–8 × 0.5–2 cm; ultimate segments narrow-linear or subulate, more or less all in one plane; cauline leaves similar to basal but above becoming smaller, with fewer segments, ovate, and apetiolate. Corymb diffuse, of 1-many capitula. Involucral bracts glabrous, 3–5 mm long; margins pale, membranous. Capitula 4–10 mm diameter; ray florets 0; disc florets numerous, dull yellow to greenish yellow, 4-toothed. Achenes about 1.5 mm long, very pale brown, narrow-obovoid; inner surface with usually 4 narrow ribs, the outer 2 with glandular groove for longer than 1/2 length; outer surface smooth; corona shorter than 0.1 mm long or 0. \n[From: Webb et al. (1988) Flora of New Zealand. Volume 4.]\nThis species is distinguished by the pineapple scent, rayless conic capitula, and the distinctive achenes.\nBefore it flowers it looks like stinking chamomile; crush it — rayless chamomile smells of pineapple, stinking chamomile very strongly and unpleasantly."
+      "text" : "Aromatic herb. Stems erect or ascending, 5–20–(40) cm tall, striate, glabrous or with a few hairs below capitula, usually much-branched from base. Basal and lower cauline leaves appearing shortly petiolate but usually with very reduced leaflets along sheath, narrow-obovate to elliptic, usually glabrous, sometimes sparsely hairy when young, 2–3-pinnatisect, 2–8 × 0.5–2 cm; ultimate segments narrow-linear or subulate, more or less all in one plane; cauline leaves similar to basal but above becoming smaller, with fewer segments, ovate, and apetiolate. Corymb diffuse, of 1-many capitula. Involucral bracts glabrous, 3–5 mm long; margins pale, membranous. Capitula 4–10 mm diameter; ray florets 0; disc florets numerous, dull yellow to greenish yellow, 4-toothed. Achenes about 1.5 mm long, very pale brown, narrow-obovoid; inner surface with usually 4 narrow ribs, the outer 2 with glandular groove for longer than 1/2 length; outer surface smooth; corona shorter than 0.1 mm long or 0. \n[From: Webb et al. (1988) Flora of New Zealand. Volume 4.]\nThis species is distinguished by the pineapple scent, rayless conic capitula, and the distinctive achenes.\nBefore it flowers it looks like stinking mayweed; crush it — rayless chamomile smells of pineapple, stinking mayweed very strongly and unpleasantly."
     },
     "lookalikes" : [
       {
         "entry" : "stinking-chamomile",
-        "howToTell" : "Stinking chamomile nearly always has 8–21 white rays around a yellow disc, its heads 15–30 mm across (up to 35); pineappleweed has no rays and heads 4–10 mm across — but rayless forms of stinking chamomile occur rarely, so a rayless head is not proof on its own. Before flowering the two look alike, so smell is the test then. Crush it: stinking chamomile smells strongly foetid, pineappleweed of pineapple. Stinking chamomile has narrow, pointed scales between the florets on the inner part of the receptacle; pineappleweed has none. Stinking chamomile's leaf segments do not all lie in one plane, giving a feathery look; pineappleweed's lie more or less in one plane. Stinking chamomile is not eaten in this guide: its acrid juice can blister skin and it has been reported as toxic.",
-        "name" : "Stinking chamomile",
+        "howToTell" : "Stinking mayweed nearly always has 8–21 white rays around a yellow disc, its heads 15–30 mm across (up to 35); pineappleweed has no rays and heads 4–10 mm across — but rayless forms of stinking mayweed occur rarely, so a rayless head is not proof on its own. Before flowering the two look alike, so smell is the test then. Crush it: stinking mayweed smells strongly foetid, pineappleweed of pineapple. Stinking mayweed has narrow, pointed scales between the florets on the inner part of the receptacle; pineappleweed has none. Stinking mayweed's leaf segments do not all lie in one plane, giving a feathery look; pineappleweed's lie more or less in one plane. Stinking mayweed is not eaten in this guide: its acrid juice can blister skin and it has been reported as toxic.",
+        "name" : "Stinking mayweed",
         "risk" : "toxic",
         "scientificName" : "Anthemis cotula"
       },
@@ -31286,7 +31294,8 @@
       "Shipped-entries sweep 04/11/2026: twin-cress card — 'and gardens' cut: Flora of New Zealand vol. IV (Webb et al. 1988) gives gardens for pineappleweed but not for twin cress (Coronopus didymus, retrieved 04/11/2026: \"Waste land, roadsides, cultivated land, coastal shingly land.\"), so 'both' was not substantiated. Same change made on the reverse card.",
       "Shipped-entries sweep 04/11/2026: summary — Bayer Crop Science NZ's 'not particularly common in New Zealand, and found chiefly in the North Island, and the north and east of the South Island' cut: Flora of New Zealand vol. IV (Webb et al. 1988), 'Matricaria discoidea' (retrieved 04/11/2026) gives \"N.: throughout; S.: Nelson, Kaikoura, Canterbury, Otago, Southland\", already in the summary, and iNaturalist NZ holds 391 research-grade wild records (27/10/2026); an unsourced commercial weed page does not outweigh the Flora (prefer NZ floras).",
       "Shipped-entries sweep 04/11/2026: the Galloway recipes line above says the author's allergy remark was not used because the entry had no sourced warning; that predates the current allergy warning, which now rests on Useful Temperate Plants 'Matricaria matricarioides' ('Some caution is advised since some individuals are allergic to this plant') and Galloway's allergy advice (see the Galloway edibility line).",
-      "Shipped-entries sweep 04/11/2026, owner's answer (Q1 'drop'): the German chamomile (Matricaria chamomilla) entry was removed under the NZ presence rule — Flora of New Zealand vol. IV knows it from 'only one collection, from wasteland', Biota of NZ lists it as Casual, and the ~10 research-grade NZ iNaturalist records are all urban, the one behind its photos saying it 'surely spread from the herb garden' — so the German chamomile card was removed from this entry."
+      "Shipped-entries sweep 04/11/2026, owner's answer (Q1 'drop'): the German chamomile (Matricaria chamomilla) entry was removed under the NZ presence rule — Flora of New Zealand vol. IV knows it from 'only one collection, from wasteland', Biota of NZ lists it as Casual, and the ~10 research-grade NZ iNaturalist records are all urban, the one behind its photos saying it 'surely spread from the herb garden' — so the German chamomile card was removed from this entry.",
+      "Lookalike card to stinking-chamomile renamed 'Stinking mayweed', 05/11/2026, to match that entry's new common name (owner, Q1 'sure')."
     ],
     "summary" : {
       "sources" : [
@@ -35265,25 +35274,25 @@
     "origin" : "endemic",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Drooping foliage with fruit",
         "credit" : "(c) John Barkla, some rights reserved (CC BY)",
         "fileName" : "rimu-2.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/24566295"
       },
       {
-        "caption" : "",
+        "caption" : "Shoot",
         "credit" : "(c) Angus Campbell, some rights reserved (CC BY)",
         "fileName" : "rimu-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/393146831"
       },
       {
-        "caption" : "",
+        "caption" : "Fruit: orange receptacles, black seeds",
         "credit" : "(c) Jacqui Geux, some rights reserved (CC BY)",
         "fileName" : "rimu-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/20339051"
       },
       {
-        "caption" : "",
+        "caption" : "Tree beside a track",
         "credit" : "(c) Jacqui Geux, some rights reserved (CC BY)",
         "fileName" : "rimu-5.heic",
         "sourceURL" : "http://naturewatch.org.nz/observations/3465610"
@@ -35445,12 +35454,13 @@
   {
     "caution" : "careRequired",
     "commonName" : "Roman chamomile",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants, 'Chamaemelum nobile' (Ken Fern, CC BY-NC-SA, restated)",
         "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) (restated: 'the florets are also used to make chamomile tea')",
-        "European Medicines Agency, HMPC, 'Community herbal monograph on Chamaemelum nobile (L.) All., flos' (EMA/HMPC/560734/2010, 22/11/2011) (restated)"
+        "European Medicines Agency, HMPC, 'Community herbal monograph on Chamaemelum nobile (L.) All., flos' (EMA/HMPC/560734/2010, 22/11/2011) (restated)",
+        "Yates New Zealand, 'How to grow chamomile' (as Anthemis nobilis) (restated)"
       ],
       "text" : "The flower heads, fresh or dried, for herbal tea — strongly aromatic and bitter, most of all in the single-flowered form. Young sprigs are used as a seasoning and to flavour herb beers."
     },
@@ -35458,9 +35468,10 @@
     "habitat" : {
       "sources" : [
         "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA)",
-        "Useful Temperate Plants, 'Chamaemelum nobile' (Ken Fern, CC BY-NC-SA)"
+        "The Plant Company (NZ nursery), 'Chamaemelum nobile (Lawn Chamomile, Roman Chamomile)' (restated)",
+        "Yates New Zealand, 'How to grow chamomile' (restated)"
       ],
-      "text" : "In New Zealand (Flora of New Zealand): Forming small colonies in waste places, roadsides, pasture, and gardens.\nSandy commons, pastures and grassy roadsides."
+      "text" : "In New Zealand (Flora of New Zealand): Forming small colonies in waste places, roadsides, pasture, and gardens.\nIn gardens it is grown in full sun to light shade in well-drained soil, kept out of waterlogged ground."
     },
     "habitats" : [
       "disturbed",
@@ -35473,13 +35484,13 @@
         "Wikipedia, 'Chamaemelum nobile' (CC BY-SA 4.0) — units converted to metric",
         "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — abbreviations spelled out; figure references omitted"
       ],
-      "text" : "Chamaemelum nobile has daisy-like white flowers and procumbent stems; the leaves are alternate, bipinnate, finely dissected, and downy to glabrous. The solitary, terminal flowerheads, rising 20–30 cm above the ground, consist of prominent yellow disk flowers and silver-white ray flowers.\nAlthough the plant is often confused with German chamomile (Matricaria chamomilla), its morphology, properties and chemical composition are markedly different.\nIn New Zealand (Flora of New Zealand): Sweetly aromatic, creeping, perennial herb. Stems decumbent to ascending, to about 20 cm tall, striate, moderately to densely hairy, much-branched from base. Basal and lower cauline leaves apetiolate, obovate, sparsely to moderately hairy, 3-pinnatisect, 15–50 × 5–15 mm; ultimate segments narrow-linear to subulate, entire, not all in one plane giving a feathery appearance; cauline leaves few, smaller than basal, oblong and becoming 1-pinnatisect. Involucral bracts sparsely hairy, 2–5 mm long; margins pale, membranous, often with an extended membranous flap at apex. Capitula solitary, about 8–20–(30) mm diameter; ray florets 13–20, female; ligules white; disc florets numerous, yellow. Receptacle scales elliptic-oblong, obtuse and often irregular at apex. Achenes 1.1–1.2 mm long, narrow-obovoid, narrowed to apex, brown, with 1–4 narrow ribs on inner surface.\nChamomile may be distinguished from Anthemis arvensis and A. cotula when mature achenes are not present, by the apex of the receptacle scales which is blunt and often irregular in C. nobile and acute to acuminate and entire in the 2 Anthemis species."
+      "text" : "In New Zealand (Flora of New Zealand): Sweetly aromatic, creeping, perennial herb. Stems decumbent to ascending, to about 20 cm tall, striate, moderately to densely hairy, much-branched from base. Basal and lower cauline leaves apetiolate, obovate, sparsely to moderately hairy, 3-pinnatisect, 15–50 × 5–15 mm; ultimate segments narrow-linear to subulate, entire, not all in one plane giving a feathery appearance; cauline leaves few, smaller than basal, oblong and becoming 1-pinnatisect. Involucral bracts sparsely hairy, 2–5 mm long; margins pale, membranous, often with an extended membranous flap at apex. Capitula solitary, about 8–20–(30) mm diameter; ray florets 13–20, female; ligules white; disc florets numerous, yellow. Receptacle scales elliptic-oblong, obtuse and often irregular at apex. Achenes 1.1–1.2 mm long, narrow-obovoid, narrowed to apex, brown, with 1–4 narrow ribs on inner surface.\nChamomile may be distinguished from Anthemis arvensis and A. cotula when mature achenes are not present, by the apex of the receptacle scales which is blunt and often irregular in C. nobile and acute to acuminate and entire in the 2 Anthemis species.\nAlthough the plant is often confused with German chamomile (Matricaria chamomilla), its morphology, properties and chemical composition are markedly different."
     },
     "lookalikes" : [
       {
         "entry" : "stinking-chamomile",
-        "howToTell" : "Both have scales between the florets, so check their tips with a hand lens: Roman chamomile's are blunt and often ragged at the tip, stinking chamomile's narrow and pointed. Crushed stinking chamomile smells strongly foetid; Roman chamomile is sweetly aromatic. Stinking chamomile's stems stand upright or rise from the base, usually 30–40 cm tall but from 5 cm to 60 cm; Roman chamomile creeps, its stems lying along the ground or rising to about 20 cm — so a small stinking chamomile can be as short. Stinking chamomile's stems range from almost hairless to moderately hairy and Roman chamomile's from moderately to densely hairy, so hairiness does not separate them; both have white rays around a yellow disc and feathery leaves. Stinking chamomile is not eaten in this guide: its acrid juice can blister skin and it has been reported as toxic.",
-        "name" : "Stinking chamomile",
+        "howToTell" : "Both have scales between the florets, so check their tips with a hand lens: Roman chamomile's are blunt and often ragged at the tip, stinking mayweed's narrow and pointed. Crushed stinking mayweed smells strongly foetid; Roman chamomile is sweetly aromatic. Stinking mayweed's stems stand upright or rise from the base, usually 30–40 cm tall but from 5 cm to 60 cm; Roman chamomile creeps, its stems lying along the ground or rising to about 20 cm — so a small stinking mayweed can be as short. Stinking mayweed's stems range from almost hairless to moderately hairy and Roman chamomile's from moderately to densely hairy, so hairiness does not separate them; both have white rays around a yellow disc and feathery leaves. Stinking mayweed is not eaten in this guide: its acrid juice can blister skin and it has been reported as toxic.",
+        "name" : "Stinking mayweed",
         "risk" : "toxic",
         "scientificName" : "Anthemis cotula"
       },
@@ -35531,25 +35542,25 @@
     "origin" : "introduced",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Heads among pasture grass, leaves finely cut",
         "credit" : "(c) Benjamin Lavin, some rights reserved (CC BY)",
         "fileName" : "roman-chamomile-2.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/199876756"
       },
       {
-        "caption" : "",
+        "caption" : "Low sprawling clump on gravel, feathery grey-green leaves",
         "credit" : "(c) Joe Dillon, some rights reserved (CC BY)",
         "fileName" : "roman-chamomile-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/200075519"
       },
       {
-        "caption" : "",
+        "caption" : "Heads on a creeping mat of feathery leaves",
         "credit" : "(c) Geoff J Hare, some rights reserved (CC BY-NC)",
         "fileName" : "roman-chamomile-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/42455716"
       },
       {
-        "caption" : "",
+        "caption" : "Close-up heads, white rays around a yellow disc",
         "credit" : "(c) Colin Ogle, some rights reserved (CC BY-NC)",
         "fileName" : "roman-chamomile-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/185870285"
@@ -35558,7 +35569,8 @@
     "preparation" : {
       "sources" : [
         "Useful Temperate Plants, 'Chamaemelum nobile' (Ken Fern, CC BY-NC-SA, restated)",
-        "European Medicines Agency, HMPC, 'Community herbal monograph on Chamaemelum nobile (L.) All., flos' (EMA/HMPC/560734/2010, 22/11/2011) (restated, section 4.2)"
+        "European Medicines Agency, HMPC, 'Community herbal monograph on Chamaemelum nobile (L.) All., flos' (EMA/HMPC/560734/2010, 22/11/2011) (restated, section 4.2)",
+        "Yates New Zealand, 'How to grow chamomile' (as Anthemis nobilis) (restated)"
       ],
       "text" : "Gather the flower heads when fully open and dry them; keep them no longer than 12 months. Make the tea in a covered vessel so the essential oil is not lost. For tea, 1–4 g of dried flower heads is infused in 100–150 ml of boiling water; adults take it 3 times a day between meals."
     },
@@ -35583,14 +35595,21 @@
       "Months [12–4] (Dec–Apr) = flowering, from Flora of New Zealand vol. IV (the flowers are the part used); set in the 27/10/2026 Asteraceae fill.",
       "Origin checked 28/10/2026 (owner, 28/10/2026: \"make sure every entry has a true bio status\"), retrieved 28/10/2026: NZ Organisms Register (https://data.nzor.org.nz/names/search?query=Chamaemelum%20nobile): Exotic, Present in New Zealand; not on DOC's List of environmental weeds in New Zealand 2024 (McAlpine & Howell, Science for Conservation 340, Table 2) and not in Wildland Consultants 2021 Contract Report 5396 for the PCE, Appendix 2 (every weed taxon in a regional pest management plan) (text searched), so not a pest. Origin 'introduced' stands.",
       "Months widened 28/10/2026 from the flowering window [12–4] to all year (owner, 28/10/2026: 'yeah it should be more since the flowers are not the only edible part. fix that for any other entries in the catalogue that you did that to as well'): young sprigs are used as a seasoning as well as the flower heads for tea, and Useful Temperate Plants (line above) gives its habit as 'Evergreen Perennial'. Flower heads stay December–April (Flora of New Zealand).",
-      "Shipped-entries sweep 04/11/2026, owner's answer (Q1 'drop'): the German chamomile (Matricaria chamomilla) entry was removed under the NZ presence rule — Flora of New Zealand vol. IV knows it from 'only one collection, from wasteland', Biota of NZ lists it as Casual, and the ~10 research-grade NZ iNaturalist records are all urban, the one behind its photos saying it 'surely spread from the herb garden' — so the German chamomile card was removed from this entry."
+      "Shipped-entries sweep 04/11/2026, owner's answer (Q1 'drop'): the German chamomile (Matricaria chamomilla) entry was removed under the NZ presence rule — Flora of New Zealand vol. IV knows it from 'only one collection, from wasteland', Biota of NZ lists it as Casual, and the ~10 research-grade NZ iNaturalist records are all urban, the one behind its photos saying it 'surely spread from the herb garden' — so the German chamomile card was removed from this entry.",
+      "Lookalike card to stinking-chamomile renamed 'Stinking mayweed', 05/11/2026, to match that entry's new common name (owner, Q1 'sure').",
+      "Owner's links round 05/11/2026 (8 links, retrieved 05/11/2026): NZPCN https://www.nzpcn.org.nz/flora/species/chamaemelum-nobile/ (Exotic, naturalised 1867, W. Europe, N. Africa, Azores — matches the Flora; used with Biota for the summary's opening); NZ Flora factsheet https://www.nzflora.info/factsheet/Taxon/Chamaemelum-nobile.html (synonyms Anthemis nobilis, Ormenis nobilis; vernacular Chamomile, Garden chamomile; Flora description and FL Dec–Apr — confirmed, no change); Flora of New Zealand Series page (already cited — confirmed, no change); Biota of NZ — the pasted link https://biotanz.landcareresearch.co.nz/scientific-names/D99CEC38-85E4-4175-A2BB-A69A03A7250A is the genus record (Chamaemelum Mill.), so the species record https://biotanz.landcareresearch.co.nz/scientific-names/856c1ccf-3af5-4c41-b1d1-9b01b94d7005 was used: Exotic, Wild; vernacular Chamomile, Garden chamomile; 17 NZ herbarium collections (North Auckland 1, South Auckland 4, Taranaki 1, Wellington 3, Nelson 3, Westland 2, Canterbury 3) — Canterbury is outside the Flora's range and is added to the summary; The Plant Company https://www.theplantcompany.co.nz/shop/product/perennials/chamaemelum-nobile (NZ nursery) — garden uses (summary) and full sun, well-drained soil, avoid waterlogging (habitat); its 5–15 cm height is for garden plants and not used over the Flora's 'to c. 20 cm'; Yates NZ https://www.yates.co.nz/plants/flowers-and-ornamentals/chamomile/how-to-grow-chamomile/ (as Anthemis nobilis) — flowers picked, dried and infused for tea (edibleParts, preparation: confirms, no wording change), lawn substitute in light traffic (summary), full sun to light shade (habitat); PFAF https://pfaf.org/user/Plant.aspx?LatinName=Chamaemelum+nobile — same edible uses as Useful Temperate Plants (confirmed), but its Known Hazards now warns that people with severe ragweed allergy may cross-react, which backs the existing allergy warning (no wording change; the UTP 'None known' note above is superseded); its flowering 'June to July' is northern-hemisphere and not used; Gardening Know How 'Is Chamomile Edible' https://www.gardeningknowhow.com/edible/herbs/chamomile/is-chamomile-edible.htm (Mary H. Dyer, updated 21/12/2022) — not used: it names no species ('chamomile' leaves and flowers 'perfectly safe to eat', salad, butter, cordial, liqueur, oil), so it is no food record for Roman chamomile.",
+      "Replaced in the same round (prefer NZ sources): Wikipedia's summary opening (range 'Europe, North America, and South America', native countries, British distribution) → NZPCN/Biota/NZ nursery text; Wikipedia's identification paragraph ('bipinnate' leaves, heads 'rising 20–30 cm above the ground') contradicts the Flora's 3-pinnatisect leaves and stems to about 20 cm and is removed — the Flora paragraph covers it; Wikipedia's German chamomile sentence kept (no NZ equivalent) and now the only Wikipedia text on the entry; Useful Temperate Plants' overseas habitat line ('Sandy commons, pastures and grassy roadsides') removed — the Flora's NZ line covers it.",
+      "Photos re-checked 05/11/2026 (iNaturalist API: research grade, wild, NZ, current identifications Chamaemelum nobile, licence matches credit; viewed and captioned): roman-chamomile-2 = observation 199876756 (Benjamin Lavin, CC BY, Gisborne); -3 = 200075519 (Joe Dillon, CC BY, Tora); -5 = 42455716 (Geoff J Hare, CC BY-NC, North Shore, Auckland); -4 = 185870285 (Colin Ogle, CC BY-NC, Whanganui). The 27/10/2026 photo line describes a superseded set."
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Chamaemelum nobile' (CC BY-SA 4.0)",
-        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — abbreviations spelled out"
+        "New Zealand Plant Conservation Network, 'Chamaemelum nobile'",
+        "Biota of New Zealand (Manaaki Whenua – Landcare Research), 'Chamaemelum nobile (L.) All.' — biostatus, vernacular names, herbarium collections by land district",
+        "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — abbreviations spelled out",
+        "The Plant Company (NZ nursery), 'Chamaemelum nobile (Lawn Chamomile, Roman Chamomile)' (restated)",
+        "Yates New Zealand, 'How to grow chamomile' (restated)"
       ],
-      "text" : "Chamaemelum nobile, commonly known as chamomile (also spelled camomile), is a low perennial plant found in dry fields and around gardens and cultivated grounds in Europe, North America, and South America.\nRoman chamomile is native to Western Europe and the northwestern Maghreb, but has been introduced to a variety of areas outside its native range, where it has become naturalised. Its native range includes the United Kingdom, Ireland, France, Spain, Portugal, Morocco, Algeria and the Azores. In Great Britain, it grows wild in Southern England and portions of Wales – primarily in Cornwall, Dartmoor, the New Forest and the Welsh coastline – with populations found north of Derbyshire considered to be naturalised.\nIn New Zealand (Flora of New Zealand): North Island: scattered localities, commonest in Auckland and Northland; South Island: Nelson, Westland, one early collection from Bluff. (Western Europe, North Africa, Azores; first recorded 1867.) Chamomile has been previously recorded in New Zealand as Anthemis nobilis and A. mixta. C. nobile is widely cultivated as a lawn plant, and the florets are also used to make chamomile tea - it is sometimes known as perennial chamomile or as Roman chamomile."
+      "text" : "Chamaemelum nobile — chamomile, also called garden chamomile, perennial chamomile or Roman chamomile — is a low, creeping, sweetly aromatic perennial herb. It is exotic in New Zealand and grows wild here.\nIn New Zealand (Flora of New Zealand): North Island: scattered localities, commonest in Auckland and Northland; South Island: Nelson, Westland, one early collection from Bluff. (Western Europe, North Africa, Azores; first recorded 1867.) Chamomile has been previously recorded in New Zealand as Anthemis nobilis and A. mixta. C. nobile is widely cultivated as a lawn plant, and the florets are also used to make chamomile tea - it is sometimes known as perennial chamomile or as Roman chamomile.\nNew Zealand herbarium specimens come from North Auckland, South Auckland, Taranaki, Wellington, Nelson, Westland and Canterbury, so it has also been collected in Canterbury, outside the range the Flora gives.\nNew Zealand nurseries sell it for chamomile lawns, for planting between paving stones and for herb and cottage gardens; it can replace a lawn where foot traffic is light."
     },
     "warnings" : [
       "Do not use it if you are allergic to plants of the daisy family (Asteraceae). Allergic reactions to chamomile are commonly reported, including anaphylaxis after chamomile tea, and people allergic to ragweed, asters or chrysanthemums can cross-react.",
@@ -37034,25 +37053,25 @@
     "origin" : "introduced",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Flowering plant",
         "credit" : "no rights reserved",
         "fileName" : "salsify-6.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/8539760"
       },
       {
-        "caption" : "",
+        "caption" : "Seed head",
         "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
         "fileName" : "salsify-7.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/9277516"
       },
       {
-        "caption" : "",
+        "caption" : "Clump of grass-like leaves",
         "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
         "fileName" : "salsify-8.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/246123718"
       },
       {
-        "caption" : "",
+        "caption" : "Purple flower head",
         "credit" : "(c) Aalbert Rebergen, some rights reserved (CC BY)",
         "fileName" : "salsify-9.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/408229179"
@@ -37476,12 +37495,13 @@
   {
     "caution" : "doNotEat",
     "commonName" : "Scentless chamomile",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants and Plants For A Future: no record for Tripleurospermum inodorum or its synonyms",
         "Grieve, A Modern Herbal (1931), 'Mayweed, Scentless' (public domain; medicinal only)",
-        "Washington State Noxious Weed Control Board, 'Scentless Mayweed'; King County, 'Scentless mayweed identification and control'; Garden Organic, 'Scentless mayweed' (all restated) — weed agencies, no food use recorded"
+        "Washington State Noxious Weed Control Board, 'Scentless Mayweed'; King County, 'Scentless mayweed identification and control'; Garden Organic, 'Scentless mayweed' (all restated) — weed agencies, no food use recorded",
+        "PGG Wrightson, M. Munro, 'Pasture Weed Watch: Scentless chamomile', NZ Lifestyle Block — 'Alternative Uses? None really'"
       ],
       "text" : "None."
     },
@@ -37489,15 +37509,15 @@
     "habitat" : {
       "sources" : [
         "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA)",
-        "Washington State Noxious Weed Control Board and King County, 'Scentless mayweed' (restated)",
-        "Garden Organic, 'Scentless mayweed' (all rights reserved, restated)"
+        "PGG Wrightson, M. Munro, 'Pasture Weed Watch: Scentless chamomile', NZ Lifestyle Block (restated)"
       ],
-      "text" : "In New Zealand (Flora of New Zealand): Waste places, especially roadsides, coastal areas, and stony grassland.\nIt grows along roadsides, fence lines and waste areas, in forage crops and cultivated fields, and particularly on heavy soils (Washington State Noxious Weed Control Board, restated).\nIn Britain it is a weed of arable land, waste ground and gardens on all lowland soils except chalk; it tolerates trampling but not dense shade or waterlogging, and does not thrive in summer heat or drought (Garden Organic, restated)."
+      "text" : "In New Zealand (Flora of New Zealand): Waste places, especially roadsides, coastal areas, and stony grassland.\nIn New Zealand it is also a weed of pasture, crops and gardens (PGG Wrightson, restated)."
     },
     "habitats" : [
       "coastal",
       "grassland",
-      "disturbed"
+      "disturbed",
+      "urban"
     ],
     "id" : "scentless-chamomile",
     "identification" : {
@@ -37506,9 +37526,10 @@
         "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA)",
         "Minnesota Wildflowers, 'Scentless False Mayweed' (K. Chayka, all rights reserved, restated)",
         "Massey University, New Zealand Weeds Database, 'Stinking mayweed' and 'Oxeye daisy' (all rights reserved, restated)",
-        "Washington State Noxious Weed Control Board, 'Scentless Mayweed' (restated)"
+        "Washington State Noxious Weed Control Board, 'Scentless Mayweed' (restated)",
+        "PGG Wrightson, M. Munro, 'Pasture Weed Watch: Scentless chamomile', NZ Lifestyle Block (restated)"
       ],
-      "text" : "Almost scentless, annual or biennial herb sometimes regrowing from old rootstock. Stems erect or ascending, 15–100 cm tall, ribbed, usually glabrous, sometimes sparsely hairy, branched only above to form inflorescence or sometimes also much-branched from base. Basal and lower cauline leaves appearing shortly petiolate, but usually with very reduced leaflets along sheath, usually narrow-obovate, sometimes ovate, glabrous, mostly 3-pinnatisect, 15–150 × 10–60 mm; ultimate segments filiform, entire, not all in one plane giving a feathery appearance; cauline leaves similar to basal, but apetiolate and above becoming smaller and with fewer segments. Corymb diffuse, of few to many capitula. Involucral bracts glabrous or with a few scattered hairs, 4–7 mm long; margins pale or dark brown, membranous. Capitula about 30–50 mm diameter; ray florets 12-numerous; ligules white; disc florets numerous, yellow. Achenes 1.7–2.5 mm long, brown, narrow-obpyramidal to cylindric; inner surface with 3 thick ribs; outer surface rugose, with 2, more or less globose or slightly elongated glands at apex; corona crenulate, about 0.1 mm long. \n[From: Webb et al. (1988) Flora of New Zealand. Volume 4.]\nThe achenes distinguish Tripleurospermum inodorum from all other naturalised New Zealand Anthemideae: they have 3 distinct ribs on the inner face and usually 2 conspicuous glands at the top of the outer face, and the receptacle is conical, especially in fruit, with no scales among the florets (Flora of New Zealand, restated).\nThe yellow disc grows from button-shaped to dome-shaped to nearly round as it matures, and the white rays droop as it expands until they point straight down. Cut a head in half: the disc is solid at the core (Minnesota Wildflowers, restated).\nIts leaves are essentially odourless when crushed (Washington State Noxious Weed Control Board, restated). Next to stinking mayweed (stinking chamomile) its flowers are slightly larger and its leaflets slightly finer (Massey University, restated).\nCorn chamomile (Anthemis arvensis), also naturalised in New Zealand and also almost scentless, has scales on its receptacle — elliptic-lanceolate and long-pointed — and square achenes broadest at the top (Flora of New Zealand key, restated); in Washington State scentless chamomile spreads unnoticed because it looks so like corn chamomile."
+      "text" : "Almost scentless, annual or biennial herb sometimes regrowing from old rootstock. Stems erect or ascending, 15–100 cm tall, ribbed, usually glabrous, sometimes sparsely hairy, branched only above to form inflorescence or sometimes also much-branched from base. Basal and lower cauline leaves appearing shortly petiolate, but usually with very reduced leaflets along sheath, usually narrow-obovate, sometimes ovate, glabrous, mostly 3-pinnatisect, 15–150 × 10–60 mm; ultimate segments filiform, entire, not all in one plane giving a feathery appearance; cauline leaves similar to basal, but apetiolate and above becoming smaller and with fewer segments. Corymb diffuse, of few to many capitula. Involucral bracts glabrous or with a few scattered hairs, 4–7 mm long; margins pale or dark brown, membranous. Capitula about 30–50 mm diameter; ray florets 12-numerous; ligules white; disc florets numerous, yellow. Achenes 1.7–2.5 mm long, brown, narrow-obpyramidal to cylindric; inner surface with 3 thick ribs; outer surface rugose, with 2, more or less globose or slightly elongated glands at apex; corona crenulate, about 0.1 mm long. \n[From: Webb et al. (1988) Flora of New Zealand. Volume 4.]\nThe achenes distinguish Tripleurospermum inodorum from all other naturalised New Zealand Anthemideae: they have 3 distinct ribs on the inner face and usually 2 conspicuous glands at the top of the outer face, and the receptacle is conical, especially in fruit, with no scales among the florets (Flora of New Zealand, restated).\nThe yellow disc grows from button-shaped to dome-shaped to nearly round as it matures, and the white rays droop as it expands until they point straight down. Cut a head in half: the disc is solid at the core (Minnesota Wildflowers, restated).\nSeedlings form small, dense rosettes of very finely divided leaves rather like fern fronds, and are very hard to tell by eye from the seedlings of stinking mayweed and pineappleweed. Crush the foliage: pineappleweed smells of pineapple, stinking chamomile stinks, and scentless chamomile smells of almost nothing (PGG Wrightson, restated). Next to stinking mayweed (stinking chamomile) its flowers are slightly larger and its leaflets slightly finer (Massey University, restated).\nCorn chamomile (Anthemis arvensis), also naturalised in New Zealand and also almost scentless, has scales on its receptacle — elliptic-lanceolate and long-pointed — and square achenes broadest at the top (Flora of New Zealand key, restated); in Washington State scentless chamomile spreads unnoticed because it looks so like corn chamomile."
     },
     "lookalikes" : [
       {
@@ -37520,8 +37541,8 @@
       },
       {
         "entry" : "stinking-chamomile",
-        "howToTell" : "Crush a leaf: stinking chamomile smells strongly foetid; scentless chamomile is almost scentless. Look inside the head: stinking chamomile has narrow, pointed scales among the inner florets; scentless chamomile has none. Stinking chamomile's heads are about 15–30 mm across (up to 35 mm) with 8–21 rays; scentless chamomile's are about 30–50 mm with 12 to many rays, and its leaflets are slightly finer. What does not separate them: both have leaves cut three times into fine, feathery segments, white rays around a yellow disc, and both grow on roadsides, waste places and pasture; heads of 30–35 mm fall in both ranges. Stinking mayweed is generally the commoner of the two in the North Island, scentless chamomile in Canterbury and much of the South Island. Stinking chamomile is not a food plant: its acrid juice can blister skin and it is reported as toxic (see its entry).",
-        "name" : "Stinking chamomile",
+        "howToTell" : "Crush a leaf: stinking mayweed smells strongly foetid; scentless chamomile is almost scentless. Look inside the head: stinking mayweed has narrow, pointed scales among the inner florets; scentless chamomile has none. Stinking mayweed's heads are about 15–30 mm across (up to 35 mm) with 8–21 rays; scentless chamomile's are about 30–50 mm with 12 to many rays, and its leaflets are slightly finer. What does not separate them: both have leaves cut three times into fine, feathery segments, white rays around a yellow disc, and both grow on roadsides, waste places and pasture; heads of 30–35 mm fall in both ranges. Stinking mayweed is generally the commoner of the two in the North Island, scentless chamomile in Canterbury and much of the South Island. Stinking mayweed is not a food plant: its acrid juice can blister skin and it is reported as toxic (see its entry).",
+        "name" : "Stinking mayweed",
         "risk" : "toxic",
         "scientificName" : "Anthemis cotula"
       },
@@ -37548,25 +37569,25 @@
     "origin" : "introduced",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Flowering patch, thread-like feathery leaves",
         "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
         "fileName" : "scentless-chamomile-2.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/160174348"
       },
       {
-        "caption" : "",
+        "caption" : "Flowering plant, heads on long leafy branches",
         "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
         "fileName" : "scentless-chamomile-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/20497214"
       },
       {
-        "caption" : "",
+        "caption" : "Flower head and buds, white rays round a yellow disc",
         "credit" : "(c) Jenny Saito, some rights reserved (CC BY)",
         "fileName" : "scentless-chamomile-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/102509105"
       },
       {
-        "caption" : "",
+        "caption" : "Young plant, leaves finely cut into threads",
         "credit" : "no rights reserved",
         "fileName" : "scentless-chamomile-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/142269128"
@@ -37599,19 +37620,24 @@
       "Photos (27/10/2026): iNaturalist research-grade, wild, New Zealand observations, CC BY, attached by Tools/fetch_catalogue_photos.py and checked by eye against the description (thread-like feathery leaves; white rays on a domed yellow disc) — scentless-chamomile-7.heic = https://www.inaturalist.org/observations/336447925 ((c) Saryu Mae 前 朝琉, some rights reserved (CC BY); Wallacetown, Southland); scentless-chamomile-8.heic = https://www.inaturalist.org/observations/31775553 ((c) Jon Sullivan, some rights reserved (CC BY); Christchurch including Banks Peninsula); scentless-chamomile-5.heic = https://www.inaturalist.org/observations/330949264 ((c) Jon Sullivan, some rights reserved (CC BY); Selwyn, Canterbury — the closer of that observation's frames, iNaturalist photo 600251265); scentless-chamomile-6.heic = https://www.inaturalist.org/observations/257072105 ((c) Colin Meurk, some rights reserved (CC BY); Kaiapoi). The owner may cut any of them.",
       "Months: none — nothing on this page is eaten.",
       "Origin checked 28/10/2026 (owner, 28/10/2026: \"make sure every entry has a true bio status\"), retrieved 28/10/2026: NZ Organisms Register (https://data.nzor.org.nz/names/search?query=Tripleurospermum%20inodorum): Exotic, Present in New Zealand; not on DOC's List of environmental weeds in New Zealand 2024 (McAlpine & Howell, Science for Conservation 340, Table 2) and not in Wildland Consultants 2021 Contract Report 5396 for the PCE, Appendix 2 (every weed taxon in a regional pest management plan) (text searched), so not a pest. Origin 'introduced' stands.",
-      "Shipped-entries sweep 04/11/2026, owner's answer (Q1 'drop'): the German chamomile (Matricaria chamomilla) entry was removed under the NZ presence rule — Flora of New Zealand vol. IV knows it from 'only one collection, from wasteland', Biota of NZ lists it as Casual, and the ~10 research-grade NZ iNaturalist records are all urban, the one behind its photos saying it 'surely spread from the herb garden' — so the German chamomile card was removed from this entry."
+      "Shipped-entries sweep 04/11/2026, owner's answer (Q1 'drop'): the German chamomile (Matricaria chamomilla) entry was removed under the NZ presence rule — Flora of New Zealand vol. IV knows it from 'only one collection, from wasteland', Biota of NZ lists it as Casual, and the ~10 research-grade NZ iNaturalist records are all urban, the one behind its photos saying it 'surely spread from the herb garden' — so the German chamomile card was removed from this entry.",
+      "Owner's sources 05/11/2026 (owner pasted nine links for this entry), retrieved 05/11/2026: PGG Wrightson, Milton Munro, 'Pasture Weed Watch: Scentless chamomile — the nose knows', NZ Lifestyle Block p. 43, https://www.pggwrightson.co.nz/sites/default/files/2021-11/Pasture%20Weed%20Watch_Scentless%20Chamomile%20%281%29.pdf (all rights reserved, restated) — annual or short-lived perennial found all over New Zealand, in particular Canterbury; germinates year-round when soil is moist, lit and above 3 °C, mostly spring and autumn; 10,000–200,000 seeds per plant (summary); seedlings in dense, finely divided fern-like rosettes, told from rayless chamomile (pineappleweed) and stinking mayweed by smell (identification); competitor of crops and gardens and a pest in pasture (habitat); 'animals will not eat it', 'Is it toxic? No' (warning); 'Alternative Uses? None really' (edible parts). Its 'native to Europe, Asia and North Africa' is not used: Flora/NZPCN's native range stands. The habitat's Washington State and Garden Organic (Britain) lines and the identification's Washington odour line were replaced by these NZ lines (prefer NZ sources); Wikipedia's 'annual or short-lived perennial' and 'native to Eurasia' were replaced by the PGG sentence; the warning's 'Washington State's weed board records it as not known to be toxic' was restated without attribution, backed by PGG and Washington State. Environment Southland Pest Hub (https://pesthub.es.govt.nz/?pwsystem=true&pwid=1077&sort=alpha): 'an annual weed found all over New Zealand', no rules — not a pest (DOC weeds site: Southland RPMP Organism of Interest only, 464 records, unchanged). Biota of New Zealand (https://biotanz.landcareresearch.co.nz/scientific-names/873b49ba-1975-4444-8429-cbdafbf44a6d): Exotic, Wild; vernaculars false chamomile, scentless mayweed; 32 databased herbarium specimens, 25 from Canterbury. Te Papa SP112074 (https://collections.tepapa.govt.nz/object/1985870), CC BY 4.0: herbarium sheet, Hanmer Springs, Pawsons Road, L.R. Perrie & L.D. Shepherd, 23/06/2021, vernaculars scentless mayweed, false chamomile. NZPCN and Flora of New Zealand Online re-read: unchanged. Edible Wild Food 'Stinking chamomile' (https://www.ediblewildfood.com/stinking-chamomile.aspx) is about Anthemis cotula and names this plant only as its closest lookalike — no food record for scentless chamomile. PictureThis 'Is scentless mayweed edible?' (https://www.picturethisai.com/ask/Tripleurospermum_inodorum-6.html): answer gated behind the app, not readable, and an uncited plant-care site in any case — not used. Edible parts stay 'None.' and months stay empty.",
+      "Photos re-checked 05/11/2026 (owner: 'fill in the photos for Tripleurospermum inodorum'): the set on the page is the owner's choice and replaces the 27/10/2026 set above — scentless-chamomile-2.heic = https://www.inaturalist.org/observations/160174348 ((c) Jon Sullivan, some rights reserved (CC BY); Christchurch including Banks Peninsula, 29/04/2023); scentless-chamomile-3.heic = https://www.inaturalist.org/observations/20497214 ((c) Jon Sullivan, some rights reserved (CC BY); Selwyn, 19/02/2019); scentless-chamomile-4.heic = https://www.inaturalist.org/observations/102509105 ((c) Jenny Saito, some rights reserved (CC BY); Selwyn, 05/12/2021); scentless-chamomile-5.heic = https://www.inaturalist.org/observations/142269128 (Tyler McBeth, no rights reserved (CC0); Kaiapoi, 18/11/2022). Each checked against the iNaturalist API 05/11/2026: research grade, not captive, in New Zealand, current identifications Tripleurospermum inodorum (Lloyd Esler on the first three, Alex Iosipenko on -4, Mark Smale on -5), photo licences as credited. Captions written by eye against the description (thread-like feathery leaves; white rays on a yellow disc).",
+      "Lookalike card to stinking-chamomile renamed 'Stinking mayweed', 05/11/2026, to match that entry's new common name (owner, Q1 'sure')."
     ],
     "summary" : {
       "sources" : [
         "Wikipedia, 'Tripleurospermum inodorum' (CC BY-SA 4.0)",
         "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — abbreviations spelled out",
-        "Massey University, New Zealand Weeds Database, 'Stinking mayweed' (restated)"
+        "Massey University, New Zealand Weeds Database, 'Stinking mayweed' (restated)",
+        "PGG Wrightson, M. Munro, 'Pasture Weed Watch: Scentless chamomile', NZ Lifestyle Block (restated)",
+        "Biota of New Zealand and Te Papa specimen SP112074 (vernacular 'false chamomile')"
       ],
-      "text" : "Tripleurospermum inodorum, common names scentless false mayweed, scentless mayweed, scentless chamomile, and Baldr's brow, is the type species of Tripleurospermum. It is an annual or short-lived perennial. It is native to Eurasia. Pollen is collected by solitary bees.\nIn New Zealand (Flora of New Zealand): North Island: Auckland City, Wellington City, Hutt Valley; South Island: mainly dry eastern areas from Marlborough to Central Otago and Southland. Native range Mediterranean to Western Asia and southern Russia; first recorded wild in New Zealand in 1870.\nScentless mayweed, or scentless chamomile as it is sometimes called, is often abundant on roadsides and in waste places. It has previously been known in New Zealand as T. maritimum, Matricaria perforata, M. inodora, and Chrysanthemum inodorum.\nIn New Zealand stinking mayweed is generally the commoner of the two in the North Island, while scentless chamomile is the more common in Canterbury and several other parts of the South Island (Massey University, restated)."
+      "text" : "Tripleurospermum inodorum, common names scentless false mayweed, scentless mayweed, scentless chamomile, and Baldr's brow, is the type species of Tripleurospermum. It is an annual, or in some situations a short-lived perennial, found all over New Zealand and especially in Canterbury; in New Zealand it is also called false chamomile. Seeds germinate at any time of year when the soil is moist, lit and above 3 °C, mostly in spring and autumn, and one plant can set 10,000 to 200,000 seeds (PGG Wrightson, restated). Pollen is collected by solitary bees.\nIn New Zealand (Flora of New Zealand): North Island: Auckland City, Wellington City, Hutt Valley; South Island: mainly dry eastern areas from Marlborough to Central Otago and Southland. Native range Mediterranean to Western Asia and southern Russia; first recorded wild in New Zealand in 1870.\nScentless mayweed, or scentless chamomile as it is sometimes called, is often abundant on roadsides and in waste places. It has previously been known in New Zealand as T. maritimum, Matricaria perforata, M. inodora, and Chrysanthemum inodorum.\nIn New Zealand stinking mayweed is generally the commoner of the two in the North Island, while scentless chamomile is the more common in Canterbury and several other parts of the South Island (Massey University, restated)."
     },
     "warnings" : [
       "There is no record of scentless chamomile being eaten, and it is not one of the chamomiles used for tea. It looks very like them — check the receptacle and the smell (see the lookalikes).",
-      "Livestock find it unpalatable and hens avoid it; eaten in large amounts it can blister the muzzles of livestock. Washington State's weed board records it as not known to be toxic."
+      "It is not known to be toxic, but stock will not eat it and hens avoid it, and eaten in large amounts it can blister the muzzles of livestock."
     ]
   },
   {
@@ -39164,7 +39190,7 @@
   {
     "caution" : "doNotEat",
     "commonName" : "Shasta daisy",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants, 'Leucanthemum maximum' (Ken Fern, CC BY-NC-SA): Edible Uses 'None known'; no record for Leucanthemum x superbum or Chrysanthemum maximum",
@@ -39211,28 +39237,28 @@
     "origin" : "introduced",
     "photos" : [
       {
-        "caption" : "Flower heads, white rays around a yellow centre",
-        "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
-        "fileName" : "shasta-daisy-1.heic",
-        "sourceURL" : "http://naturewatch.org.nz/observations/2648175"
+        "caption" : "Clump in flower, with narrow toothed leaves",
+        "credit" : "(c) naturewatchwidow, some rights reserved (CC BY)",
+        "fileName" : "shasta-daisy-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/106108846"
       },
       {
-        "caption" : "Flower head beside a long, toothed leaf",
-        "credit" : "(c) Doug Miller, some rights reserved (CC BY)",
-        "fileName" : "shasta-daisy-2.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/68095378"
+        "caption" : "Flower heads, white rays around a yellow disc",
+        "credit" : "no rights reserved",
+        "fileName" : "shasta-daisy-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/208003484"
       },
       {
-        "caption" : "Flower head from below, showing its bracts",
+        "caption" : "Head from below, bracts with brown papery margins",
         "credit" : "no rights reserved",
         "fileName" : "shasta-daisy-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/335160620"
       },
       {
-        "caption" : "Flowering clump",
-        "credit" : "(c) naturewatchwidow, some rights reserved (CC BY)",
-        "fileName" : "shasta-daisy-4.heic",
-        "sourceURL" : "https://www.inaturalist.org/observations/106108846"
+        "caption" : "Lower leaf, narrow and evenly toothed",
+        "credit" : "(c) Dave Holland, some rights reserved (CC BY-NC)",
+        "fileName" : "shasta-daisy-7.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/74339346"
       }
     ],
     "preparation" : {
@@ -39257,14 +39283,18 @@
       "Months: none — nothing on this page is eaten.",
       "Warning restated 02/11/2026: NC State Extension rates Shasta daisy 'Poison Severity Low' ('This plant has low severity poison characteristics', https://plants.ces.ncsu.edu/plants/leucanthemum-x-superbum/) and gives the same rating and toxic principle, 'Sesquiterpene lactones', for ox-eye daisy (https://plants.ces.ncsu.edu/plants/leucanthemum-vulgare/), retrieved 02/11/2026. 'Pyrethrins' dropped: it appears with the same symptom list in ASPCA's pet listing for Chrysanthemum spp. ('Toxic Principles: Sesquiterpene, lactones, pyrethrins'), a different genus, and no source written for Leucanthemum names it. No poisoning report found: PubMed (Leucanthemum maximum, Leucanthemum superbum, 'Chrysanthemum maximum'; 02/11/2026) returns only a guinea-pig pollen-allergen study; the Ministry of Health list of poisonous plants in New Zealand reproduced by RNZIH (https://www.rnzih.org.nz/pages/poison.html) has no Leucanthemum or Chrysanthemum; Connor (1977) not read.",
       "Hybrid records, 02/11/2026: the 4 iNaturalist research-grade wild New Zealand records filed as Leucanthemum × superbum (taxon 170837, place 6803; Stewart Island, Auckland, Ngaio in Wellington, Oreti Beach) are covered by this entry — New Zealand sources do not separate the hybrid: the NZ Organisms Register lists only L. maximum, L. vulgare and L. ircutianum under Leucanthemum (https://data.nzor.org.nz/names/search?query=Leucanthemum, no name for L. × superbum or Chrysanthemum × superbum), NZPCN has no page for it, and Flora of New Zealand vol. IV files all wild plants under L. maximum while noting that most cultivated material may be the hybrid. More images link stays on L. maximum (taxon 77719, 79 of the 83 records).",
-      "Photo shasta-daisy-3.heic replaced 02/11/2026 (owner: replace weak photos): iNaturalist observation 335160620, photo 608814775, research grade, wild, New Zealand, no rights reserved; chosen by eye from the NZ research-grade CC0/CC BY/CC BY-NC frames for showing an identifying feature."
+      "Photo shasta-daisy-3.heic replaced 02/11/2026 (owner: replace weak photos): iNaturalist observation 335160620, photo 608814775, research grade, wild, New Zealand, no rights reserved; chosen by eye from the NZ research-grade CC0/CC BY/CC BY-NC frames for showing an identifying feature.",
+      "Owner-supplied links checked 05/11/2026. Used: NZPCN 'Leucanthemum maximum' (https://www.nzpcn.org.nz/flora/species/leucanthemum-maximum/: common name Shasta daisy, Asteraceae, Exotic, naturalised 1914, origin Pyrenees), Biota of New Zealand (https://biotanz.landcareresearch.co.nz/scientific-names/e88282e9-73b2-4538-a994-9d9e79e18788: Exotic, Wild; synonym Chrysanthemum maximum; vernacular 'shasta daisy'), Greenleaf Nurseries (https://www.greenleafnurseries.co.nz/shop/evergreen/chrysanthemummaximumshastadaisy-pb3/) and Loch Leven Nursery (https://www.lochlevennursery.co.nz/shop/p/leucanthemum-shasta-daisy, a double-flowered form) — together replace Wikipedia's first two summary sentences (prefer NZ sources); Wikipedia's 'max chrysanthemum' alias and 'native to France and Spain' dropped, the Flora's 'Native to the Pyrenees' already given. Confirmed, no change: Flora of New Zealand Online factsheet and Flora of New Zealand Series vol. IV (same description, distribution and habitat as given); Biota herbarium records (Canterbury 4, Nelson 1, North Auckland 2, Southland 1, Wellington 3, Westland 2 — all within the Flora's 'occasional throughout'); Te Papa specimen SP061442 (https://collections.tepapa.govt.nz/object/1964438, Donald McQueen, February 1949, Bluff Road near Green Meadows) — within range. DOC weeds genus page (https://weeds.doc.govt.nz/species/leucanthemum) is about the genus; the species page already gives 'Currently classified as a weed: No'. Not used: Eatweeds, 'Oxeye daisy' (https://www.eatweeds.co.uk/oxeye-daisy-leucanthemum-vulgare) is about ox-eye daisy only and is no food record for this species; Wildflowers and Weeds, 'Oxeye Daisy' (Thomas J. Elpel, https://wildflowers-and-weeds.com/weedsinfo/Chrysanthemum_leucanthemum.htm) says Shasta daisy 'has a root ball, while oxeye daisy has a creeping root system' — not added to the card: no Flora or other trusted description of Shasta daisy gives its roots, so the test is substantiated on the ox-eye side only (Flora 'rooting toward base', Massey 'short rhizomes'); its height and size comparison matches the card already.",
+      "Photos re-checked 05/11/2026 (owner's set): shasta-daisy-4 (iNaturalist 106108846, naturewatchwidow, CC BY, postcode 7073, IDs incl. leonperrie and mark_smale), -5 (208003484, agnestrekker, CC0, Christchurch), -3 (335160620, pjd1, CC0, Chatham Island), -6 (104233416, invertebratist, CC BY, Hunua Falls) — all research grade, wild, New Zealand, current IDs Leucanthemum maximum; captions added.",
+      "Photo shasta-daisy-6.heic replaced 05/11/2026 (owner: swap): its stem is clearly hairy and its leaf broad and coarsely toothed, closer to ox-eye daisy than to the Flora's Shasta daisy (stems 'glabrous or with a few scattered hairs', lower leaves 'narrow-elliptic … evenly 1-serrate'). New shasta-daisy-7.heic: iNaturalist observation 74339346, photo 121484135, Dave Holland, CC BY-NC, Matakana, research grade, wild, New Zealand, current IDs Leucanthemum maximum by lloyd_esler and mark_smale; chosen from a contact sheet of all 140 CC0/CC BY/CC BY-NC New Zealand research-grade frames (observations the owner removed excluded) for showing the lower-leaf test the ox-eye card relies on."
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Leucanthemum maximum' (CC BY-SA 4.0)",
+        "NZ Plant Conservation Network, 'Leucanthemum maximum'; Biota of New Zealand, 'Leucanthemum maximum (Ramond) DC.'; Greenleaf Nurseries and Loch Leven Nursery (New Zealand) — restated",
+        "Wikipedia, 'Leucanthemum maximum' (CC BY-SA 4.0) — Burbank sentence",
         "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — abbreviations spelled out, distribution line restated"
       ],
-      "text" : "Leucanthemum maximum, known as max chrysanthemum and Shasta daisy, is a species of flowering plant in the aster family. It is native to France and Spain but it can be found growing wild in other parts of the world as an introduced species and sometimes a garden escapee. This species is one of the wild chrysanthemums Luther Burbank crossed to produce the popular garden hybrid known as the Shasta daisy, Leucanthemum × superbum.\nIn New Zealand (Flora of New Zealand): North and South Islands: occasional throughout; Stewart Island: Halfmoon Bay area to Maori Beach. Native to the Pyrenees; naturalised in New Zealand by 1914.\nThe species is an escape from cultivation and is usually known as Chrysanthemum maximum. Hortus Third (1976) suggests that most of the material cultivated as C. maximum is probably C. × superbum J. Ingram, which is presumed to be a hybrid between C. lacustre Brot. and C. maximum. Other authorities treat all cultivated material as selections of C. maximum."
+      "text" : "Shasta daisy (Leucanthemum maximum, synonym Chrysanthemum maximum) is a perennial herb of the daisy family, Asteraceae, sold by New Zealand nurseries as a garden plant, including double-flowered forms, and found wild as a garden escape. This species is one of the wild chrysanthemums Luther Burbank crossed to produce the popular garden hybrid known as the Shasta daisy, Leucanthemum × superbum.\nIn New Zealand (Flora of New Zealand): North and South Islands: occasional throughout; Stewart Island: Halfmoon Bay area to Maori Beach. Native to the Pyrenees; naturalised in New Zealand by 1914.\nThe species is an escape from cultivation and is usually known as Chrysanthemum maximum. Hortus Third (1976) suggests that most of the material cultivated as C. maximum is probably C. × superbum J. Ingram, which is presumed to be a hybrid between C. lacustre Brot. and C. maximum. Other authorities treat all cultivated material as selections of C. maximum."
     },
     "warnings" : [
       "Do not eat Shasta daisy. The garden Shasta daisy, from which wild plants escape, is listed as mildly toxic, of low severity: eating it can cause drooling, mouth irritation, vomiting and diarrhoea, and the flowers, leaves, stems and roots are all listed as poisonous. The toxic principle listed is sesquiterpene lactones, which ox-eye daisy also contains. No report of anyone poisoned by it has been found. Plant databases record no food use; its record as food is a foraging blog and a gardening page about garden plants.",
@@ -41123,25 +41153,25 @@
     "origin" : "endemic",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Red fruit",
         "credit" : "(c) Chris Ecroyd, some rights reserved (CC BY)",
         "fileName" : "snow-totara-1.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/338175349"
       },
       {
-        "caption" : "",
+        "caption" : "Low spreading mat",
         "credit" : "(c) Matt Berger, some rights reserved (CC BY)",
         "fileName" : "snow-totara-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/144654619"
       },
       {
-        "caption" : "",
+        "caption" : "Shrub",
         "credit" : "no rights reserved",
         "fileName" : "snow-totara-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/196104053"
       },
       {
-        "caption" : "",
+        "caption" : "Leafy shoots",
         "credit" : "(c) woody832, some rights reserved (CC BY)",
         "fileName" : "snow-totara-2.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/358864024"
@@ -42444,8 +42474,8 @@
   },
   {
     "caution" : "doNotEat",
-    "commonName" : "Stinking chamomile",
-    "draft" : true,
+    "commonName" : "Stinking mayweed",
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
@@ -42457,9 +42487,11 @@
       "sources" : [
         "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA)",
         "Massey University, New Zealand Weeds Database, 'Stinking mayweed' (restated)",
+        "Rainbow & Brown, 'Stinking Mayweed' (all rights reserved, restated)",
+        "PGG Wrightson, Pasture Watch, 'Stinking mayweed' (Gary Bosley, NZ Lifestyle Block, all rights reserved, restated)",
         "Useful Temperate Plants, 'Anthemis cotula' (Ken Fern, CC BY-NC-SA)"
       ],
-      "text" : "In New Zealand (Flora of New Zealand): Waste places, especially roadsides, pasture, lawns.\nIn New Zealand it grows in spring-sown crops and in pastures that are thin in spring, often after treading damage over winter or when newly sown.\nWaste places usually on heavy soil."
+      "text" : "In New Zealand (Flora of New Zealand): Waste places, especially roadsides, pasture, lawns.\nIn New Zealand it grows in spring-sown crops and in pastures that are thin in spring, often after treading damage over winter or when newly sown.\nIt also grows on roadsides, in farmyards and holding paddocks, and on bare or pugged soil.\nWaste places usually on heavy soil."
     },
     "habitats" : [
       "disturbed",
@@ -42469,50 +42501,52 @@
     "id" : "stinking-chamomile",
     "identification" : {
       "sources" : [
-        "Wikipedia, 'Anthemis cotula' (CC BY-SA 4.0) — units converted to metric; one clause removed (see open_questions)",
+        "Rainbow & Brown, 'Stinking Mayweed' (all rights reserved, restated)",
+        "Bayer Crop Science New Zealand, 'Stinking mayweed' (all rights reserved, restated)",
+        "PGG Wrightson, Pasture Watch, 'Stinking mayweed' (Gary Bosley, NZ Lifestyle Block, all rights reserved, restated)",
         "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — abbreviations spelled out; figure references omitted"
       ],
-      "text" : "The \"stinking chamomile\" Anthemis cotula is so-named for its resemblance to the true chamomile plant, Anthemis nobilis; both have branching upright stems each topped by a single large flower head. The leaves of Anthemis cotula have a similar appearance to those of the fennel plant (Foeniculum vulgare), from which the name \"Dog's Fennel\" is derived.\nAnthemis cotula is an annual glandular plant with a harsh taste and an acrid smell. Its height varies from 30–60 cm.\n\nLeaves\nThe leaves of the plant sometimes have very fine and soft hairs on the upper surface, although the plant is mostly hairless. There is no leaf stalk; leaves grow immediately from the stems. The leaves are pinnate in shape, with many extremely thin lobes, and can be around 25–50 mm long.\nFlowers\nEach stem is topped by a single flower head which is usually around 25 mm in diameter. The flower head is encompassed by between 10 and 18 white ray florets, each with a three-toothed shape; the florets tend to curve downwards around the edges and may occasionally have pistils, although these do not produce fruit. Beneath the flower proper, oval bracts of the plant form an involucre, with soft hairs on each; further bracts are bristled and sit at right angles to the flowers.\nFruits\nThe fruits are achenes (with no pappus). They are wrinkled, ribbed with ten ridges, and have small glandular bumps across the surface.\nIn New Zealand (Flora of New Zealand): Strongly foetid annual herb. Stems erect or ascending, (5)–30–40–(60) cm tall, striate, almost glabrous to moderately hairy especially above, usually much-branched from base, rooting in lower part. Basal and lower cauline leaves apetiolate, ovate to obovate-oblong, glabrous to sparsely hairy and glandular, 3-pinnatisect, up to 8 cm long; ultimate segments subulate to linear, entire, not all in one plane giving a somewhat feathery appearance to the leaf; cauline leaves similar to basal, smaller and less divided near capitula, usually ovate-oblong. Involucral bracts glabrous to moderately hairy, 2–6 mm long; margins and apex of at least inner bracts membranous. Capitula solitary, about 15–30–(35) mm diameter; ray florets 8–21, very rarely 0; ligules white, becoming reflexed; disc florets numerous, yellow. Scales usually confined to inner ⅔ of receptacle, linear, acute. Achenes 1.3–1.7 mm long, obconic, narrowed slightly at apex, circular in section, brown, obscurely ribbed; ribs usually prominently tuberculate, rarely whole achene almost smooth; pappus 0.\nIt can be distinguished from A. arvensis and Chamaemelum nobile, with which it has been confused in New Zealand, by the shape of the receptacle scales and achenes. The achenes are usually distinctly tuberculate, but in some forms the tubercules are scattered or altogether absent. Rarely rayless forms are found."
+      "text" : "An erect, bushy annual about 40 cm tall, with feathery, dark green leaves cut into awl-shaped segments and white daisy flower heads with a yellow centre; crushed or rubbed, it has a very strong smell.\nSeedlings have stalkless seed leaves, pointed at the tip and tapered at the base.\nCrush the foliage to tell it from its lookalike mayweeds: if it stinks, it is stinking mayweed; if it smells of pineapple, it is pineappleweed (rayless mayweed); if it smells of nothing, it is probably scentless chamomile.\nIn New Zealand (Flora of New Zealand): Strongly foetid annual herb. Stems erect or ascending, (5)–30–40–(60) cm tall, striate, almost glabrous to moderately hairy especially above, usually much-branched from base, rooting in lower part. Basal and lower cauline leaves apetiolate, ovate to obovate-oblong, glabrous to sparsely hairy and glandular, 3-pinnatisect, up to 8 cm long; ultimate segments subulate to linear, entire, not all in one plane giving a somewhat feathery appearance to the leaf; cauline leaves similar to basal, smaller and less divided near capitula, usually ovate-oblong. Involucral bracts glabrous to moderately hairy, 2–6 mm long; margins and apex of at least inner bracts membranous. Capitula solitary, about 15–30–(35) mm diameter; ray florets 8–21, very rarely 0; ligules white, becoming reflexed; disc florets numerous, yellow. Scales usually confined to inner ⅔ of receptacle, linear, acute. Achenes 1.3–1.7 mm long, obconic, narrowed slightly at apex, circular in section, brown, obscurely ribbed; ribs usually prominently tuberculate, rarely whole achene almost smooth; pappus 0.\nIt can be distinguished from A. arvensis and Chamaemelum nobile, with which it has been confused in New Zealand, by the shape of the receptacle scales and achenes. The achenes are usually distinctly tuberculate, but in some forms the tubercules are scattered or altogether absent. Rarely rayless forms are found."
     },
     "lookalikes" : [
       {
         "entry" : "yarrow",
-        "howToTell" : "Both have feathery, finely divided leaves and grow in waste places, on roadsides, in pasture and in lawns. Stinking chamomile is a strongly foetid annual without rhizomes, with single daisy heads about 15–30 mm across (8–21 white rays, yellow centre); yarrow spreads by rhizomes into mats, lacks that strong smell, and has heads only about 5–10 mm across with 4–7 rays, usually white right across, packed many together in a flat cluster. Yarrow is edible in small amounts but carries its own cautions (daisy-family allergy, pregnancy) — see its entry.",
+        "howToTell" : "Both have feathery, finely divided leaves and grow in waste places, on roadsides, in pasture and in lawns. Stinking mayweed is a strongly foetid annual without rhizomes, with single daisy heads about 15–30 mm across (8–21 white rays, yellow centre); yarrow spreads by rhizomes into mats, lacks that strong smell, and has heads only about 5–10 mm across with 4–7 rays, usually white right across, packed many together in a flat cluster. Yarrow is edible in small amounts but carries its own cautions (daisy-family allergy, pregnancy) — see its entry.",
         "name" : "Yarrow",
         "risk" : "edible",
         "scientificName" : "Achillea millefolium"
       },
       {
         "entry" : "roman-chamomile",
-        "howToTell" : "Both have scales between the florets, so check their tips with a hand lens: Roman chamomile's are blunt and often ragged at the tip, stinking chamomile's narrow and pointed. Roman chamomile is sweetly aromatic; crushed stinking chamomile smells strongly foetid. Roman chamomile creeps, its stems lying along the ground or rising to about 20 cm; stinking chamomile's stems stand upright or rise from the base, usually 30–40 cm tall but from 5 cm to 60 cm — so a small stinking chamomile can be as short. Roman chamomile's stems are moderately to densely hairy and stinking chamomile's almost hairless to moderately hairy, so hairiness does not separate them; both have white rays around a yellow disc and feathery leaves. Roman chamomile's flowers are used for tea, with care for people allergic to the daisy family.",
+        "howToTell" : "Both have scales between the florets, so check their tips with a hand lens: Roman chamomile's are blunt and often ragged at the tip, stinking mayweed's narrow and pointed. Roman chamomile is sweetly aromatic; crushed stinking mayweed smells strongly foetid. Roman chamomile creeps, its stems lying along the ground or rising to about 20 cm; stinking mayweed's stems stand upright or rise from the base, usually 30–40 cm tall but from 5 cm to 60 cm — so a small stinking mayweed can be as short. Roman chamomile's stems are moderately to densely hairy and stinking mayweed's almost hairless to moderately hairy, so hairiness does not separate them; both have white rays around a yellow disc and feathery leaves. Roman chamomile's flowers are used for tea, with care for people allergic to the daisy family.",
         "name" : "Roman chamomile",
         "risk" : "edible",
         "scientificName" : "Chamaemelum nobile"
       },
       {
         "entry" : "pineappleweed",
-        "howToTell" : "Pineappleweed has no white rays — its heads are a dome of dull yellow to greenish-yellow florets, 4–10 mm across; stinking chamomile nearly always has 8–21 white rays and heads 15–30 mm across (up to 35), but rayless forms of stinking chamomile occur rarely, so a rayless head is not proof. Before flowering the two look alike, so smell is the test then. Crush it: pineappleweed smells of pineapple, stinking chamomile strongly foetid. Pineappleweed has no scales on its receptacle; stinking chamomile has narrow, pointed scales between the inner florets. Pineappleweed's leaf segments lie more or less in one plane; stinking chamomile's do not, which makes its leaves look feathery. Pineappleweed's flower heads and leaves are eaten and made into tea.",
+        "howToTell" : "Pineappleweed has no white rays — its heads are a dome of dull yellow to greenish-yellow florets, 4–10 mm across; stinking mayweed nearly always has 8–21 white rays and heads 15–30 mm across (up to 35), but rayless forms of stinking mayweed occur rarely, so a rayless head is not proof. Before flowering the two look alike, so smell is the test then. Crush it: pineappleweed smells of pineapple, stinking mayweed strongly foetid. Pineappleweed has no scales on its receptacle; stinking mayweed has narrow, pointed scales between the inner florets. Pineappleweed's leaf segments lie more or less in one plane; stinking mayweed's do not, which makes its leaves look feathery. Pineappleweed's flower heads and leaves are eaten and made into tea.",
         "name" : "Pineappleweed",
         "risk" : "edible",
         "scientificName" : "Matricaria discoidea"
       },
       {
         "entry" : "ox-eye-daisy",
-        "howToTell" : "Ox-eye daisy's lower leaves are long-stalked, spoon-shaped to oval and coarsely toothed or only shallowly lobed; stinking chamomile's are divided three times into fine, narrow segments. Ox-eye daisy has no scales on its flat or slightly convex receptacle; stinking chamomile has narrow, pointed scales between the inner florets. Ox-eye daisy is scarcely scented; crushed stinking chamomile smells strongly foetid. Ox-eye daisy's flower heads are usually 30–60 mm across (25–65 mm at the extremes) and stinking chamomile's 15–30 mm (up to 35), so a small ox-eye daisy and a large stinking chamomile overlap; both have white rays around a yellow disc and both grow on roadsides and in waste places. Ox-eye daisy is eaten — its young leaves, shoots and flower buds (see its entry).",
+        "howToTell" : "Ox-eye daisy's lower leaves are long-stalked, spoon-shaped to oval and coarsely toothed or only shallowly lobed; stinking mayweed's are divided three times into fine, narrow segments. Ox-eye daisy has no scales on its flat or slightly convex receptacle; stinking mayweed has narrow, pointed scales between the inner florets. Ox-eye daisy is scarcely scented; crushed stinking mayweed smells strongly foetid. Ox-eye daisy's flower heads are usually 30–60 mm across (25–65 mm at the extremes) and stinking mayweed's 15–30 mm (up to 35), so a small ox-eye daisy and a large stinking mayweed overlap; both have white rays around a yellow disc and both grow on roadsides and in waste places. Ox-eye daisy is eaten — its young leaves, shoots and flower buds (see its entry).",
         "name" : "Ox-eye daisy",
         "risk" : "edible",
         "scientificName" : "Leucanthemum vulgare"
       },
       {
         "entry" : "scentless-chamomile",
-        "howToTell" : "Crush a leaf: stinking chamomile smells strongly foetid; scentless chamomile is almost scentless. Look inside the head: stinking chamomile has narrow, pointed scales among the inner florets; scentless chamomile has none. Stinking chamomile's heads are about 15–30 mm across (up to 35 mm), scentless chamomile's about 30–50 mm, and scentless chamomile's leaflets are slightly finer. What does not separate them: both have finely divided, feathery leaves and white rays around a yellow disc, and both grow on roadsides and in waste places and pasture. Stinking mayweed is generally the commoner of the two in the North Island, scentless chamomile in Canterbury and much of the South Island. There is no record of scentless chamomile being eaten.",
+        "howToTell" : "Crush a leaf: stinking mayweed smells strongly foetid; scentless chamomile is almost scentless. Look inside the head: stinking mayweed has narrow, pointed scales among the inner florets; scentless chamomile has none. Stinking mayweed's heads are about 15–30 mm across (up to 35 mm), scentless chamomile's about 30–50 mm, and scentless chamomile's leaflets are slightly finer. What does not separate them: both have finely divided, feathery leaves and white rays around a yellow disc, and both grow on roadsides and in waste places and pasture. Stinking mayweed is generally the commoner of the two in the North Island, scentless chamomile in Canterbury and much of the South Island. There is no record of scentless chamomile being eaten.",
         "name" : "Scentless chamomile",
         "risk" : "unknown",
         "scientificName" : "Tripleurospermum inodorum"
       },
       {
         "entry" : "common-lawn-daisy",
-        "howToTell" : "Common lawn daisy has undivided, spoon-shaped leaves with 2–6 pairs of shallow teeth, all in a basal rosette, and a single head 15–25 mm across on a leafless stalk 3–15 cm long (up to 25 cm). Stinking chamomile is an annual with leafy stems, usually much-branched from the base and usually 30–40 cm tall (5–60 cm at the extremes), and its leaves are cut three times into narrow segments with a somewhat feathery look. Stinking chamomile's receptacle carries narrow, pointed scales, usually only in the inner two-thirds; lawn daisy's has none. Stinking chamomile is strongly foetid. What does not separate them: head size (stinking chamomile about 15–30 mm across, up to 35 mm; lawn daisy 15–25 mm), white rays around a yellow disc, and place — both grow in lawns and pasture. Lawn daisy's young leaves, flower buds and petals are eaten (see its entry).",
+        "howToTell" : "Common lawn daisy has undivided, spoon-shaped leaves with 2–6 pairs of shallow teeth, all in a basal rosette, and a single head 15–25 mm across on a leafless stalk 3–15 cm long (up to 25 cm). Stinking mayweed is an annual with leafy stems, usually much-branched from the base and usually 30–40 cm tall (5–60 cm at the extremes), and its leaves are cut three times into narrow segments with a somewhat feathery look. Stinking mayweed's receptacle carries narrow, pointed scales, usually only in the inner two-thirds; lawn daisy's has none. Stinking mayweed is strongly foetid. What does not separate them: head size (stinking mayweed about 15–30 mm across, up to 35 mm; lawn daisy 15–25 mm), white rays around a yellow disc, and place — both grow in lawns and pasture. Lawn daisy's young leaves, flower buds and petals are eaten (see its entry).",
         "name" : "Common lawn daisy",
         "risk" : "edible",
         "scientificName" : "Bellis perennis"
@@ -42526,25 +42560,25 @@
     "origin" : "introduced",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Dense flowering stand, feathery leaves",
         "credit" : "(c) Jenny Saito, some rights reserved (CC BY)",
         "fileName" : "stinking-chamomile-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/272628892"
       },
       {
-        "caption" : "",
+        "caption" : "Flowering plant, finely divided leaves",
         "credit" : "(c) boytouchgrass, some rights reserved (CC BY)",
         "fileName" : "stinking-chamomile-1.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/330410286"
       },
       {
-        "caption" : "",
+        "caption" : "Flower head, white rays round a yellow disc",
         "credit" : "(c) boytouchgrass, some rights reserved (CC BY)",
         "fileName" : "stinking-chamomile-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/330410286"
       },
       {
-        "caption" : "",
+        "caption" : "Paddock infestation in full flower",
         "credit" : "(c) Kate McAlpine, some rights reserved (CC BY)",
         "fileName" : "stinking-chamomile-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/195510024"
@@ -42577,21 +42611,27 @@
       "Lookalike card to scentless-chamomile, 27/10/2026: Flora of New Zealand vol. IV descriptions of both species (Tripleurospermum inodorum https://floraseries.landcareresearch.co.nz/taxa/97d8c24a-f2d0-4c01-b12e-c96283478989), Minnesota Wildflowers (solid v. hollow disc), Massey University 'Stinking mayweed' (smell, island frequency); risk 'unknown' — no record of it as food anywhere (see the scentless-chamomile entry).",
       "Origin checked 28/10/2026 (owner, 28/10/2026: \"make sure every entry has a true bio status\"), retrieved 28/10/2026: NZ Organisms Register (https://data.nzor.org.nz/names/search?query=Anthemis%20cotula): Exotic, Present in New Zealand; not on DOC's List of environmental weeds in New Zealand 2024 (McAlpine & Howell, Science for Conservation 340, Table 2) and not in Wildland Consultants 2021 Contract Report 5396 for the PCE, Appendix 2 (every weed taxon in a regional pest management plan) (text searched), so not a pest. Origin 'introduced' stands.",
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Reverse card to common-lawn-daisy (01/11/2026): the lawn daisy entry carries a stinking chamomile card but this entry had no card back. Built from Flora of New Zealand vol. IV (Webb et al. 1988, CC BY-NC-SA), 'Bellis perennis L.' (https://floraseries.landcareresearch.co.nz/taxa/e2e61593-4ef0-4497-8c64-2ce2939abdcc), genus 'Bellis L.' ('Receptacle flat to conic; scales 0') and 'Anthemis cotula L.' (https://floraseries.landcareresearch.co.nz/taxa/58e466f8-9586-45df-9627-6071256dd17f), retrieved 01/11/2026; mirrors the lawn daisy entry's card.",
-      "Shipped-entries sweep 04/11/2026, owner's answer (Q1 'drop'): the German chamomile (Matricaria chamomilla) entry was removed under the NZ presence rule — Flora of New Zealand vol. IV knows it from 'only one collection, from wasteland', Biota of NZ lists it as Casual, and the ~10 research-grade NZ iNaturalist records are all urban, the one behind its photos saying it 'surely spread from the herb garden' — so the German chamomile card was removed from this entry."
+      "Shipped-entries sweep 04/11/2026, owner's answer (Q1 'drop'): the German chamomile (Matricaria chamomilla) entry was removed under the NZ presence rule — Flora of New Zealand vol. IV knows it from 'only one collection, from wasteland', Biota of NZ lists it as Casual, and the ~10 research-grade NZ iNaturalist records are all urban, the one behind its photos saying it 'surely spread from the herb garden' — so the German chamomile card was removed from this entry.",
+      "Owner's links, 05/11/2026 (pasted with no instruction; treated as 'check this entry against these'), retrieved 05/11/2026: Rainbow & Brown, 'Stinking Mayweed', https://www.rainbowbrown.co.nz/Stinking-Mayweed (all rights reserved, restated) — erect, bushy annual about 40 cm, feathery dark green leaves with awl-shaped segments, very strong smell when crushed (identification, replacing the overseas Wikipedia lead and its leaf, flower and fruit paragraphs, which the Flora covers with New Zealand figures and partly contradicted: 10–18 rays v. the Flora's 8–21, leaves 25–50 mm v. up to 8 cm); roadsides, farmyards, holding paddocks (habitat); reduced once the sward thickens (summary); 'noticeable tainting of the milk' if lactating cows eat it (corroborates the toxicity warning); 'upper half of the South Island' and herbicide rates not used. PGG Wrightson, Pasture Watch, 'Stinking mayweed' (Gary Bosley, NZ Lifestyle Block), https://www.pggwrightson.co.nz/sites/default/files/2021-11/Pasture%20Watch_Stinking%20mayweed.pdf (all rights reserved, restated) — the crush test against scentless and rayless mayweed (identification); bare soil, pugging (habitat); cattle dislike it, sheep graze it only when there is nothing else, seeds germinate any time the soil is moist, plants mown while flowering may overwinter, weak seedlings (summary). Not used: 'Is it toxic? No' (a lifestyle-block pasture column; Weeds Australia, citing Parsons & Cuthbertson 2001, and ASPCA record it as poisonous to poultry and possibly to horses, dogs and cats, so the warning stands), 'Where is it found? Nationwide' (Flora and Biota specimens used instead), 'Extracts have been used for bacteria control' (no source), herbicide names. Bayer Crop Science NZ, 'Stinking mayweed', https://www.cropscience.bayer.co.nz/crop-management/weeds/stinking-mayweed (all rights reserved, restated) — seed leaves pointed, tapered, stalkless (identification); 'common in the North Island and also in Nelson, Marlborough and Canterbury' (matches the Flora); seedling leaves 'oval with pointed tips, hairy' not used (unclear which leaves). Biota of New Zealand, https://biotanz.landcareresearch.co.nz/scientific-names/46bc4e4d-f869-4219-b8d1-fd6544105170 — Exotic, Wild (origin 'introduced' stands); vernaculars Mayweed, Stinking chamomile, Stinking mayweed (summary); 35 determined specimens by land district: Wellington 8, Canterbury 7, Otago 6, Marlborough 3, Nelson 3, North Auckland 3, South Auckland 2, Hawke's Bay 2, Westland 1 (summary: Otago and Westland lie outside the Flora's 1988 range). New Zealand Plant Conservation Network, https://www.nzpcn.org.nz/flora/species/anthemis-cotula/ — Exotic, naturalised 1878, 'Europe, N. Africa, Caucasia to Iran and Iraq' (summary, replacing Wikipedia's native-range country list); no weed listing. NZFO factsheet, https://www.nzflora.info/factsheet/Taxon/Anthemis-cotula.html — already used; flowering '(August)–December–March–(June)' not used (no edible part, months stay empty). Te Papa SP112092, https://collections.tepapa.govt.nz/object/1959874 (CC BY 4.0) — Queen Elizabeth Park, Paraparaumu, 06/03/2021, L.R. Perrie, O. Spearpoint & Wellington Botanical Society, det. Perrie 28/07/2021; presence only, nothing used. Eat The Weeds, tag 'Anthemis cotula', https://www.eattheweeds.com/tag/anthemis-cotula/ — the only post is about pineappleweed (smell separates them, already on the card); not a food record; Wikipedia's 'Dog's Fennel' name is not used either (not a New Zealand name).",
+      "Photos re-checked 05/11/2026: the set on the page is the owner's choice and replaces the 27/10/2026 set above — stinking-chamomile-5.heic = https://www.inaturalist.org/observations/272628892 ((c) Jenny Saito, some rights reserved (CC BY); Hurunui River, Domett, Canterbury, 20/04/2025); stinking-chamomile-1.heic and stinking-chamomile-3.heic = https://www.inaturalist.org/observations/330410286 ((c) boytouchgrass, some rights reserved (CC BY); South Taranaki, 12/12/2025); stinking-chamomile-4.heic = https://www.inaturalist.org/observations/195510024 ((c) Kate McAlpine, some rights reserved (CC BY); Palmerston North, 02/01/2024). Each checked against the iNaturalist API 05/11/2026: research grade, not captive, in New Zealand, current identifications Anthemis cotula (Lloyd Esler on the first two, Mark Smale on the last), photo licences as credited. Captions written by eye.",
+      "Common name changed from 'Stinking chamomile' to 'Stinking mayweed', 05/11/2026 (owner, Q1 'sure'): the name used by NZPCN, Bayer Crop Science NZ, Rainbow & Brown, PGG Wrightson and Massey University's NZ Weeds Database; Biota of NZ and NZFO list it with 'Stinking chamomile' and 'Mayweed' as vernaculars. The id stays stinking-chamomile."
     ],
     "summary" : {
       "sources" : [
-        "Wikipedia, 'Anthemis cotula' (CC BY-SA 4.0)",
         "Flora of New Zealand vol. IV (Webb et al. 1988), Flora of New Zealand Series (Manaaki Whenua – Landcare Research, CC BY-NC-SA) — abbreviations spelled out",
-        "Massey University, New Zealand Weeds Database, 'Stinking mayweed' (restated)"
+        "New Zealand Plant Conservation Network, 'Anthemis cotula' (facts restated)",
+        "Biota of New Zealand, 'Anthemis cotula L.' (Manaaki Whenua – Landcare Research)",
+        "Massey University, New Zealand Weeds Database, 'Stinking mayweed' (restated)",
+        "PGG Wrightson, Pasture Watch, 'Stinking mayweed' (Gary Bosley, NZ Lifestyle Block, all rights reserved, restated)",
+        "Rainbow & Brown, 'Stinking Mayweed' (all rights reserved, restated)"
       ],
-      "text" : "Anthemis cotula, also known as stinking chamomile or mayweed, is a flowering annual plant with a noticeable and strong odor.\nNative\n\nPalearctic\n\nMacaronesia: Azores, Canary Islands, Madeira\nNorthern Africa: Algeria, Egypt, Libya, Morocco, Tunisia\nEurasia: Armenia, Azerbaijan, Kurdistan, Russia, Georgia, India, North Caucasus, Dagestan, Cyprus, Iran, Iraq, Palestine, Lebanon, Syria, Turkey\nEastern Europe: Belarus, Estonia, Latvia, Lithuania, Crimea, Russia, Ukraine, Bulgaria\nNorthern Europe: Denmark, Norway, Sweden, England, Scotland, Finland\nCentral Europe: Austria, Czech Republic, Germany, Hungary, Poland, Switzerland\nSouthern Europe: Albania, Bosnia and Herzegovina, Croatia, Greece, Crete, Italy, North Macedonia, Montenegro, Romania, Serbia, Sicily, Slovenia, Sardinia, Corsica, Portugal, Spain, Balearic Islands\nWestern Europe: Belgium, Netherlands, France, Ireland, United Kingdom\nIntroduced\nNaturalized in Americas, Southern Africa, and Oceania\nIn New Zealand (Flora of New Zealand): North Island: throughout; South Island: Nelson, Marlborough, Canterbury. (Europe, North Africa, Caucasia to Iran and Iraq; first recorded 1878.) Stinking mayweed is a common plant of waste places.\nIn New Zealand stinking mayweed is generally more common than scentless chamomile (Tripleurospermum inodorum) in the North Island, while scentless chamomile is the more common of the two in Canterbury and several other parts of the South Island. Once in a pasture, most livestock avoid it, which lets it dominate; as an annual it dies out once it has flowered."
+      "text" : "Anthemis cotula, known in New Zealand as stinking mayweed, stinking chamomile or mayweed, is a strongly foetid annual herb of the daisy family, native to Europe, North Africa and Caucasia to Iran and Iraq and naturalised in New Zealand by 1878.\nIn New Zealand (Flora of New Zealand): North Island: throughout; South Island: Nelson, Marlborough, Canterbury. (Europe, North Africa, Caucasia to Iran and Iraq; first recorded 1878.) Stinking mayweed is a common plant of waste places. The Landcare Research herbarium also holds specimens from Otago and Westland, outside the Flora's range.\nIn New Zealand stinking mayweed is generally more common than scentless chamomile (Tripleurospermum inodorum) in the North Island, while scentless chamomile is the more common of the two in Canterbury and several other parts of the South Island. Once in a pasture, most livestock avoid it, which lets it dominate: cattle don't like it, and sheep graze it only when there is nothing else to eat. Its seedlings are weak and slow-growing, and it usually fades once a pasture sward thickens. Its seeds can germinate at any time of year if the soil is moist enough; plants usually die after setting seed, but plants mown while flowering may survive the winter."
     },
     "warnings" : [
       "The whole plant carries an acrid juice that can blister bare skin; prolonged contact with the flower heads and seeds is reported to cause dermatitis, and some people are allergic to it.",
       "It is reported as toxic: it can poison poultry and may poison dogs, cats and horses, and most livestock avoid eating it; milk from cows that do can be tainted. The few records of it as a flavouring or a weak chamomile-like tea come with cautions about toxicity.",
       "As a herbal remedy it is contraindicated in pregnancy and for nursing mothers.",
-      "It is easily mistaken for the chamomiles used for tea. Crush a leaf — stinking chamomile smells strongly foetid — and check the receptacle: its scales are narrow and pointed."
+      "It is easily mistaken for the chamomiles used for tea. Crush a leaf — stinking mayweed smells strongly foetid — and check the receptacle: its scales are narrow and pointed."
     ]
   },
   {
@@ -44621,25 +44661,25 @@
     "origin" : "endemic",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Fruit: red receptacle, green seed",
         "credit" : "(c) John Barkla, some rights reserved (CC BY)",
         "fileName" : "totara-1.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/206732893"
       },
       {
-        "caption" : "",
+        "caption" : "Shoot, sharp-pointed leaves",
         "credit" : "(c) Angus Campbell, some rights reserved (CC BY)",
         "fileName" : "totara-2.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/393147176"
       },
       {
-        "caption" : "",
+        "caption" : "Branches with red fruit",
         "credit" : "(c) John Barkla, some rights reserved (CC BY)",
         "fileName" : "totara-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/206732893"
       },
       {
-        "caption" : "",
+        "caption" : "Tree",
         "credit" : "(c) hjcjim, some rights reserved (CC BY)",
         "fileName" : "totara-5.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/72876177"
@@ -50397,8 +50437,8 @@
       },
       {
         "entry" : "stinking-chamomile",
-        "howToTell" : "Both have finely divided leaves whose narrow, awl-shaped to linear segments do not lie in one plane, giving a feathery look, and both grow in waste places, on roadsides, in pasture and in lawns, so plants not in flower are easily confused. Stinking chamomile (stinking mayweed) is an annual with no underground rhizomes, its stems usually much-branched from the base; yarrow spreads by rhizomes and forms mats. Stinking chamomile is strongly foetid when crushed; yarrow's smell is pleasant, not foetid. In flower they differ clearly: stinking chamomile bears single daisy heads about 15–30 mm across, with 8–21 white rays around a yellow centre; yarrow's heads are only about 5–10 mm across, with 4–7 rays, and are usually white (sometimes pink) right across, packed many together in a flat cluster. Stinking chamomile's juice is acrid: touching or eating the plant can cause allergies in some people, and there are some reports of toxicity.",
-        "name" : "Stinking chamomile",
+        "howToTell" : "Both have finely divided leaves whose narrow, awl-shaped to linear segments do not lie in one plane, giving a feathery look, and both grow in waste places, on roadsides, in pasture and in lawns, so plants not in flower are easily confused. Stinking mayweed (stinking mayweed) is an annual with no underground rhizomes, its stems usually much-branched from the base; yarrow spreads by rhizomes and forms mats. Stinking mayweed is strongly foetid when crushed; yarrow's smell is pleasant, not foetid. In flower they differ clearly: stinking mayweed bears single daisy heads about 15–30 mm across, with 8–21 white rays around a yellow centre; yarrow's heads are only about 5–10 mm across, with 4–7 rays, and are usually white (sometimes pink) right across, packed many together in a flat cluster. Stinking mayweed's juice is acrid: touching or eating the plant can cause allergies in some people, and there are some reports of toxicity.",
+        "name" : "Stinking mayweed",
         "risk" : "toxic",
         "scientificName" : "Anthemis cotula"
       },
@@ -50531,7 +50571,8 @@
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): warnings: 'occasionally' → 'in rare cases', 01/11/2026 sweep, to match the source — European Medicines Agency, HMPC, Assessment report on Achillea millefolium L., flos (EMA/HMPC/149343/2010), section 5.3, https://www.ema.europa.eu/en/documents/herbal-report/final-assessment-report-achillea-millefolium-l-flos_en.pdf, retrieved 01/11/2026: 'If the skin comes into contact with the flowers, in rare cases hypersensitivity (allergy) may occur, with reddening of the skin and formation of small blisters'.",
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Card to stinking-chamomile: 'yarrow lacks that strong smell' → 'yarrow's smell is pleasant, not foetid', 01/11/2026 sweep — yarrow is 'Strongly scented' (Flora of New Zealand vol. IV, https://floraseries.landcareresearch.co.nz/taxa/9bc79fac-2006-46d7-879c-40493ae3a854, retrieved 01/11/2026), and the hemlock card on this page calls it 'strongly aromatic', so the old wording read as a contradiction; Common Weeds of New Zealand via RNZIH (https://www.rnzih.org.nz/pages/achilleamillefolium.htm, retrieved 01/11/2026) calls it 'pleasant smelling', against stinking mayweed's 'Strongly foetid' (Flora vol. IV, Anthemis cotula).",
       "Shipped-entries sweep 01/11/2026 (owner /goal \"do that for all shipped entries and fix wrongs or inconsistencies\"): Card to twin-cress: in-text attribution 'is listed as a weed similar to yarrow' restated plainly, 01/11/2026 sweep; the claimant (Massey University New Zealand Weeds Database, 'Twin cress' and 'Yarrow', https://www.massey.ac.nz/…/new-zealand-weeds-database/yarrow/, retrieved 01/11/2026, 'Similar species … Twin cress') stays in sources.",
-      "Shipped-entries sweep 04/11/2026: hemlock card height corrected (reverse of the hemlock→yarrow fix): 'usually under about 1 m' is a number no source gives; Flora of New Zealand vol. IV (Webb et al. 1988), 'Achillea millefolium' (https://floraseries.landcareresearch.co.nz/taxa/9bc79fac-2006-46d7-879c-40493ae3a854, retrieved 04/11/2026): 'Stems usually erect, sometimes ascending, up to c. 80 cm tall, ribbed and striate, hairy especially above'."
+      "Shipped-entries sweep 04/11/2026: hemlock card height corrected (reverse of the hemlock→yarrow fix): 'usually under about 1 m' is a number no source gives; Flora of New Zealand vol. IV (Webb et al. 1988), 'Achillea millefolium' (https://floraseries.landcareresearch.co.nz/taxa/9bc79fac-2006-46d7-879c-40493ae3a854, retrieved 04/11/2026): 'Stems usually erect, sometimes ascending, up to c. 80 cm tall, ribbed and striate, hairy especially above'.",
+      "Lookalike card to stinking-chamomile renamed 'Stinking mayweed', 05/11/2026, to match that entry's new common name (owner, Q1 'sure')."
     ],
     "summary" : {
       "sources" : [
@@ -50721,25 +50762,25 @@
     "origin" : "introduced",
     "photos" : [
       {
-        "caption" : "",
+        "caption" : "Young shoots",
         "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
         "fileName" : "yew-1.heic",
         "sourceURL" : "http://naturewatch.org.nz/observations/1133835"
       },
       {
-        "caption" : "",
+        "caption" : "Red aril around the seed",
         "credit" : "no rights reserved",
         "fileName" : "yew-2.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/268154058"
       },
       {
-        "caption" : "",
+        "caption" : "Branches",
         "credit" : "(c) Jon Sullivan, some rights reserved (CC BY)",
         "fileName" : "yew-3.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/359463771"
       },
       {
-        "caption" : "",
+        "caption" : "Tree",
         "credit" : "(c) Leon Perrie, some rights reserved (CC BY)",
         "fileName" : "yew-4.heic",
         "sourceURL" : "https://www.inaturalist.org/observations/209398114"

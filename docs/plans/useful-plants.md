@@ -98,7 +98,7 @@ source re-read (licence first) and the plan's rules applied before it is used.
 | Creeping saltbush (`creeping-saltbush`) | The plant used as a source of potash | Useful Temperate Plants 'Atriplex prostrata' (citing Komarov, Flora of the USSR) |
 | Common orache (`common-orache`) | Medicinal (out of scope): antiscorbutic; just-ripe seeds as a laxative | Ngā Rauropi Whakaoranga 'Atriplex patula. Orache.'; Useful Temperate Plants 'Atriplex patula' |
 | Garden orache (`garden-orache`) | Ornamental: seed pods dried for floral decorations; a blue dye from the seed; a potential biomass crop | Useful Temperate Plants 'Atriplex hortensis'; Owairaka Seeds and Susie Ripley Gardening 'Ruby Gold' listings |
-| Calendula (`calendula`) | Yellow dye from boiled flowers and petal food colouring; golden hair rinse; seed oil (calendic acid) for paints and coatings; compost activator, eelworm deterrent, companion plant; cosmetics. Medicinal (out of scope): skin remedy, mouth rinse | Useful Temperate Plants 'Calendula officinalis'; Wikipedia; EMA HMPC monograph; MSK; CONECT-e |
+| Calendula (`calendula`) | Yellow dye from boiled flowers and petal food colouring; the plant used historically to dye fabrics, foods and cosmetics; golden hair rinse; seed oil (calendic acid) for paints and coatings; compost activator, eelworm deterrent, companion plant; cut flowers; flowers draw pollinators and beneficial insects. Skin care and cosmetics from dried flower heads: infused oil (used as facial moisturiser, massage oil, hair conditioner, make-up remover), salve or balm, whipped coconut oil, lotion bars, lotion, cream, cocoa-butter balm, cold-process bar soap and liquid soap, oatmeal bath soak (recipes in *Recipe leads*). Medicinal (out of scope): skin remedy, mouth rinse; balms and creams for burns, cuts, eczema, dermatitis and sunburn; tea and liquid extract taken internally (Kiwiherb gives doses) | Useful Temperate Plants 'Calendula officinalis'; Wikipedia; EMA HMPC monograph; MSK; CONECT-e; University of Wisconsin–Madison Extension 'Calendula, Calendula officinalis' (dye, cut flower, pollinators); Kiwiherb 'Calendula' (NZ herbal maker); the recipe pages listed under *Recipe leads*. NZPCN, Biota of NZ and the Flora of NZ factsheet give no uses (exotic, naturalised 1883, wild records mostly Canterbury and South Auckland) |
 | Common lawn daisy (`common-lawn-daisy`) | Insect-repellent spray from a leaf infusion; daisy chains. Medicinal (out of scope): wound herb, bruise ointment | Useful Temperate Plants 'Bellis perennis'; Wikipedia; CONECT-e; Eatweeds |
 | Roman chamomile (`roman-chamomile`); German chamomile (entry dropped 04/11/2026, not wild in NZ — its items kept for the record) | Yellow to gold dye from the flowers; fair-hair rinse; plant tonic / liquid feed and compost activator; strewing herb and insect repellent; essential oil for perfume and cosmetics; Roman chamomile as a lawn plant; German chamomile infusion sprayed on seedlings against damping-off and on courgettes and cucumbers against mildew, a companion plant; flower-infused oil for soap (adds a soft yellow), lip balm, lotion and bath salts. Medicinal (out of scope) | Useful Temperate Plants 'Matricaria chamomilla', 'Chamaemelum nobile'; Flora of New Zealand vol. IV; EMA HMPC monographs; Herb Federation of New Zealand 'Chamomile'; The Nerdy Farm Wife '10 Things to Make with Chamomile' |
 | Stinking chamomile (`stinking-chamomile`) | Gold dye from the whole plant; repels mice and fleas, insecticide | Useful Temperate Plants 'Anthemis cotula'; BSBI Fermanagh Flora |
@@ -173,10 +173,35 @@ source re-read (licence first) and the plan's rules applied before it is used.
 | Karengo (`karengo`) | Medicinal (out of scope): fermented with tutu juice as a mild laxative | Ngā Rauropi Whakaoranga 'Porphyra columbina' (Goldie 1904) |
 | Durvillaea poha (`durvillaea-poha`) | Kelp bags (pōhā) for storing muttonbirds; the pages Wikipedia cites don't name the species | Wikipedia 'Durvillaea poha' |
 
+## Recipe leads
+
+Non-food recipes (skin care, soap, dye and craft preparations) that could fill a use once its kind
+is in scope. Nothing here is on a page; the same rules apply as for food recipes — restated, never
+copied, credited, and each one re-read before use. The safety points are what the source itself
+states; processing steps are safety text (see *Content and sources*). Food recipes go on the food
+entry as now, not here.
+
+| Species (entry id) | Recipe | Kind | Source | Safety points the source states |
+|---|---|---|---|---|
+| Calendula (`calendula`) | Calendula balm: dried flower heads infused in olive (or coconut, sweet almond) oil for 6 weeks cool and dark, or overnight in a jar in a low crockpot water bath; strained, beeswax melted in over a water bath, optional essential oil | Balm | Woodland Escape (NZ), 'Making calendula balm' (Emma, 06/05/2025) | Dry the flowers first |
+| Calendula (`calendula`) | Infused oil, salve, whipped coconut oil, lotion bars, cold-process bar soap, liquid soap, oatmeal bath soak, cream, cocoa-butter balm (also tea and petal-coloured sugar sprinkles, which are food) | Oil, salve, soap, bath | The Nerdy Farm Wife, '10 Things to Make with Calendula Flowers' (Jan Berry, updated 2020) | Dry the flowers first to prevent mould; salve keeps about a year, lotion bars 9–12 months; soap needs lye knowledge |
+| Calendula (`calendula`) | Calendula oil: 100 % dry whole flower heads (dried below 40 °C), jar ¾ full, covered with unrefined carrier oil (jojoba, sweet almond, olive, argan, hemp seed); cold infusion at least 2 weeks, ideally a month, or a same-day warm infusion; strained, stored cool and dark | Infused oil | Homestead and Chill, 'How to make calendula oil' (Deanna Talerico, 2019, updated 12/07/2025) | About a year's shelf life, depending on the oil; a reader comment advises avoiding it when pregnant or nursing |
+| Calendula (`calendula`) | Calendula lotion: flowers simmered 30 min in sunflower oil, coconut oil and shea butter, strained, emulsifying wax melted in; a calendula tea in distilled water; both at about 70 °C, emulsified with a stick blender; broad-spectrum preservative and optional vitamin E added on cooling | Lotion | The Healing Herb Garden (UK), 'Homemade calendula lotion' (29/10/2026) | True *Calendula officinalis* only, not French or African marigolds; avoid if allergic to the daisy family; external use, keep from eyes and mouth; never skip the preservative (vitamin E is not one); discard if colour, smell or texture changes; patch test |
+| Narrow-leaved plantain (`plantain`), greater plantain (`greater-plantain`) | Infused-oil salves, balms, lip balm, lotion bars, soap, bath salts, hair rinse | Oil, salve, soap, bath | The Nerdy Farm Wife '10 Things to Make with Plantain'; Hedgecombers 'Plantain salve recipe'; On the Land 'Plantain for pain' | Not yet re-read |
+| Curled dock (`curled-dock`) | Yellow dock salve | Salve | The Nerdy Farm Wife 'Yellow Dock Salve Recipe' | Not yet re-read |
+| Roman chamomile (`roman-chamomile`) | Flower-infused oil for soap, lip balm, lotion, bath salts | Oil, soap, bath | The Nerdy Farm Wife '10 Things to Make with Chamomile' | Not yet re-read |
+| Self-heal (`self-heal`) | Self-heal salve | Salve | Floranella 'How to Make Self Heal Salve' | Not yet re-read |
+| Lemon balm (`lemon-balm`) | Lip balm, salve, facial toner, soap, bath herb, vinegar hair rinse; wood polish | Oil, soap, bath, household | The Nerdy Farm Wife; Food52 (wood polish) | Not yet re-read |
+| French rose (`provence-rose`) | Rose oil (petals infused in oil); bath salts and bath fizzies | Oil, bath | The English Garden 'Rose petal recipes' | Not yet re-read |
+| Wood blewit (`wood-blewit`) | Green dye: chopped mushrooms boiled in an iron pot | Dye | First Nature 'Lepista nuda'; Woodland Trust | Not yet re-read |
+
 ## Open decisions (decide before starting)
 
 1. **Which uses are in scope** besides fibre and dye? Candidates: basketry and weaving materials,
-   cordage, tinder and kindling, soap plants, natural building materials. **Recommendation:**
+   cordage, tinder and kindling, soap plants, natural building materials, and home skin-care and
+   bath preparations (infused oils, balms, salves, lotions, soap — see *Recipe leads*). Skin care
+   sits next to medicinal use: the recipe pages above sell it on healing claims, soap needs lye, and
+   lotions need a preservative, so it would need its own rules. **Recommendation:**
    medicinal uses stay out unless the owner decides otherwise. A medicinal claim is the riskiest
    kind of safety text, and there are few trusted open sources for it.
 2. **Groups:** new top-level groups, or a "uses" filter across the existing groups?
