@@ -189,6 +189,10 @@ struct CatalogueTests {
     /// page carried "Wild fennel — Deadly", because there was no way to say the other one is
     /// the safe half until `LookalikeRisk.edible` existed. This is the check that says so.
     ///
+    /// A care-required page may still be opened by a toxic or deadly card when its own
+    /// warnings say why: yew's aril is eaten, but the cards to yew stay "Deadly" because the
+    /// leaves and seed kill.
+    ///
     /// `psychoactive` is the tightest of the three rules, and deliberately so: it is the one
     /// word on a card that carries a legal claim, so a page and the cards that open it may
     /// not disagree about it in either direction.
@@ -207,10 +211,15 @@ struct CatalogueTests {
                 )
 
                 switch target.caution {
-                case .straightforward, .careRequired:
+                case .straightforward:
                     #expect(
                         lookalike.risk != .toxic && lookalike.risk != .deadly,
                         "\(card) is tagged \(lookalike.risk.rawValue), but \(target.id)'s own page says \(target.caution.rawValue)"
+                    )
+                case .careRequired:
+                    #expect(
+                        (lookalike.risk != .toxic && lookalike.risk != .deadly) || !target.warnings.isEmpty,
+                        "\(card) is tagged \(lookalike.risk.rawValue), but \(target.id)'s own page has no warnings to back it"
                     )
                 case .doNotEat:
                     #expect(
