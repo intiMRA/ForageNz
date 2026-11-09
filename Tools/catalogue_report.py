@@ -122,8 +122,8 @@ BATCHES = {
     "Lavandula Melissa Mentha Olea Origanum Plantago Prunella Stachys Thymus Verbascum Veronica",
     "Rose family and hops (Rosales)": "Chaenomeles Crataegus Cydonia Eriobotrya Fragaria Humulus "
     "Prunus Pyrus Rosa Rubus Sanguisorba Sorbus Urtica",
-    "Pea family (Fabaceae)": "Acacia Cytisus Genista Lathyrus Robinia Spartium Trifolium Ulex "
-    "Vicia Wisteria",
+    "Pea family (Fabaceae)": "Acacia Cytisus Genista Gleditsia Lathyrus Robinia Spartium Trifolium "
+    "Ulex Vicia Wisteria",
     "Succulents and saltworts (Caryophyllales)": "Amaranthus Atriplex Carpobrotus Chenopodium "
     "Disphyma Opuntia Portulaca Salicornia Suaeda Tetragonia",
     "Pinks and knotweeds (Caryophyllales)": "Cerastium Dianthus Persicaria Reynoutria Rumex "
