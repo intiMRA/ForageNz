@@ -141,7 +141,7 @@ BATCHES = {
     "Violets and linseed (Malpighiales)": "Euphorbia Linum Passiflora Viola",
     "Currants and pennywort (Saxifragales)": "Ribes Umbilicus",
     "Nut trees and sumac": "Aesculus Castanea Juglans Quercus Rhus",
-    "Other trees and climbers": "Eschscholzia Magnolia Pseudowintera Sicyos Tilia",
+    "Other trees and climbers": "Alseuosmia Araujia Eschscholzia Magnolia Pseudowintera Sicyos",
     "Conifers": "Chamaecyparis Cryptomeria Dacrycarpus Dacrydium Larix Pinus Podocarpus "
     "Prumnopitys Pseudotsuga Taxus",
     "Ferns": "Asplenium Blechnum Cyathea Lecanopteris Pteridium",
