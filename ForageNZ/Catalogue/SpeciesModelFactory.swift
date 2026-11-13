@@ -70,6 +70,8 @@ nonisolated struct FindPinModel: Equatable, Identifiable {
     let speciesID: SpeciesID?
     let commonName: String?
     let group: ForageGroup?
+    /// Colours the pin as the species' card is coloured; `nil` with the species gone.
+    let caution: CautionLevel?
 }
 
 // MARK: - Factory
@@ -135,7 +137,8 @@ struct CatalogueSpeciesModelFactory: SpeciesModelFactory {
             foundAt: find.foundAt,
             speciesID: species == nil ? nil : find.speciesID,
             commonName: species?.commonName,
-            group: species?.group
+            group: species?.group,
+            caution: species?.caution
         )
     }
 }
@@ -149,7 +152,7 @@ struct UnconfiguredSpeciesModelFactory: SpeciesModelFactory {
         LookalikeCardModel(lookalike)
     }
     func createFindPinModel(_ find: FindSnapshot) -> FindPinModel {
-        FindPinModel(id: find.id, coordinate: find.coordinate, foundAt: find.foundAt, speciesID: nil, commonName: nil, group: nil)
+        FindPinModel(id: find.id, coordinate: find.coordinate, foundAt: find.foundAt, speciesID: nil, commonName: nil, group: nil, caution: nil)
     }
 }
 

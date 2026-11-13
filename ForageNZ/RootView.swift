@@ -67,7 +67,7 @@ struct RootView: View {
                 .environment(\.router, fieldGuideRouter)
             }
 
-            Tab("Lists", systemImage: "bookmark") {
+            Tab("Lists", image: "list-add") {
                 NavigationStack(path: $listsRouter.path) {
                     ListsView().speciesDestination()
                 }

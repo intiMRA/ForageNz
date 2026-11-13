@@ -1,8 +1,12 @@
 import DesignLibrary
 import SwiftUI
 
-struct SpeciesRow: View {
+/// `belowPhoto` and `besideBadge` are for cards that carry a little more than the listing —
+/// the map's find card puts its date and delete button there. Lists leave them empty.
+struct SpeciesRow<BelowPhoto: View, BesideBadge: View>: View {
     let model: ListingRowModel
+    @ViewBuilder var belowPhoto: BelowPhoto
+    @ViewBuilder var besideBadge: BesideBadge
 
     var body: some View {
         SpeciesCard(background: model.caution.rowBackground) {
@@ -14,6 +18,7 @@ struct SpeciesRow: View {
     var leftView: some View {
         VStack(alignment: .leading) {
             SpeciesThumbnail(fileName: model.photoFileName)
+            belowPhoto
             Spacer()
             groupView
         }
@@ -24,21 +29,24 @@ struct SpeciesRow: View {
             HStack(alignment: .top) {
                 infoView
                 Spacer()
-                VStack(alignment: .trailing, spacing: .xxSmall) {
-                    Badge(
-                        image: model.caution.badgeIcon,
-                        title: model.caution.shortLabel,
-                        size: .small,
-                        color: model.caution.tintColor,
-                        forgroundColor: model.caution.badgeForeground
-                    )
-                    // Debug builds only — a shipped row is never unverified.
-                    if model.isUnverified {
-                        UnverifiedBadge()
+                HStack(alignment: .top, spacing: .xxSmall) {
+                    VStack(alignment: .trailing, spacing: .xxSmall) {
+                        Badge(
+                            image: model.caution.badgeIcon,
+                            title: model.caution.shortLabel,
+                            size: .small,
+                            color: model.caution.tintColor,
+                            forgroundColor: model.caution.badgeForeground
+                        )
+                        // Debug builds only — a shipped row is never unverified.
+                        if model.isUnverified {
+                            UnverifiedBadge()
+                        }
+                        if model.needsBookSource {
+                            BookOnlyBadge()
+                        }
                     }
-                    if model.needsBookSource {
-                        BookOnlyBadge()
-                    }
+                    besideBadge
                 }
             }
             
@@ -103,5 +111,11 @@ struct SpeciesRow: View {
                 .lineLimit(3)
                 .padding(.bottom, .medium)
         }
+    }
+}
+
+extension SpeciesRow where BelowPhoto == EmptyView, BesideBadge == EmptyView {
+    init(model: ListingRowModel) {
+        self.init(model: model, belowPhoto: { EmptyView() }, besideBadge: { EmptyView() })
     }
 }

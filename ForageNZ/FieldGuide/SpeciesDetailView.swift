@@ -318,16 +318,14 @@ struct SpeciesDetailView: View {
     /// cannot be mistaken for finished.
     private var psychoactiveBanner: some View {
         HStack(alignment: .top, spacing: .xxxSmall) {
-            // Not `.icon(…)`: this is the one caution symbol drawn in its own colours, and
-            // tinting it would throw them away. See `CautionLevel.badgeIcon`.
             CautionLevel.psychoactive.image
                 .resizable()
                 .frame(width: 16, height: 16)
             Text("This is not food. Its active compounds are controlled drugs — read the safety notes below.")
                 .font(.callout)
                 .italic()
+                .foregroundStyle(.secondary)
         }
-        .needsDesign()
     }
 
     private var deadlyLookalikeBanner: some View {

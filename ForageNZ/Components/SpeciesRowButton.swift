@@ -36,7 +36,7 @@ struct SpeciesRowButton: View {
             // button's tap instead of its own.
             .overlay(alignment: .topLeading) {
                 AddToListMenu(speciesID: id)
-                    .padding(.all, .small)
+                    .padding(.all, .xSmall)
             }
         }
     }

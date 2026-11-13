@@ -64,6 +64,7 @@
 		8ADBF3C0306655F900B20F27 /* HabitatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF3BF306655F900B20F27 /* HabitatView.swift */; };
 		8ADBF3D2306655F900B20F30 /* DebugDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF3D1306655F900B20F30 /* DebugDrawer.swift */; };
 		8ADBF4A2306655F900B20F41 /* View+If.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF4A1306655F900B20F41 /* View+If.swift */; };
+		8ADBF4A2306655F900B20F51 /* View+ConditionalGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF4A1306655F900B20F51 /* View+ConditionalGlass.swift */; };
 		8ADBF4A4306655F900B20F41 /* String+Separators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF4A3306655F900B20F41 /* String+Separators.swift */; };
 		8ADBF4A5306655F900B20F41 /* String+Separators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF4A3306655F900B20F41 /* String+Separators.swift */; };
 		91E1E633F5ADEA9EF5395618 /* SpeciesFilterMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BABD59101CC31A8A411D293 /* SpeciesFilterMenu.swift */; };
@@ -230,6 +231,7 @@
 		8ADBF3BF306655F900B20F27 /* HabitatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitatView.swift; sourceTree = "<group>"; };
 		8ADBF3D1306655F900B20F30 /* DebugDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugDrawer.swift; sourceTree = "<group>"; };
 		8ADBF4A1306655F900B20F41 /* View+If.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+If.swift"; sourceTree = "<group>"; };
+		8ADBF4A1306655F900B20F51 /* View+ConditionalGlass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ConditionalGlass.swift"; sourceTree = "<group>"; };
 		8ADBF4A3306655F900B20F41 /* String+Separators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Separators.swift"; path = "Catalogue/Model/String+Separators.swift"; sourceTree = "<group>"; };
 		8B5CFF23B8C79B576A8D1B65 /* ForageNZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0408E8A6865DA99E0341C7 /* SpeciesRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesRepository.swift; path = Catalogue/SpeciesRepository.swift; sourceTree = "<group>"; };
@@ -539,6 +541,7 @@
 		8ADBEE3F3063725700B20F27 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				8ADBF4A1306655F900B20F51 /* View+ConditionalGlass.swift */,
 				8ADBF4A1306655F900B20F41 /* View+If.swift */,
 			);
 			path = Util;
@@ -1000,6 +1003,7 @@
 				4CCD82CE448B568CA2ED776F /* SpeciesDestination.swift in Sources */,
 				BAA24ADD5643D98E84B24B00 /* Logging.swift in Sources */,
 				8ADBF4A2306655F900B20F41 /* View+If.swift in Sources */,
+				8ADBF4A2306655F900B20F51 /* View+ConditionalGlass.swift in Sources */,
 				8ADBF4A4306655F900B20F41 /* String+Separators.swift in Sources */,
 				3FD848FD5B3AB6AE2B5D6E3A /* AttributedString+WebLinks.swift in Sources */,
 				177D70A9D5DC2D6E0E7165C8 /* RecipeCard.swift in Sources */,

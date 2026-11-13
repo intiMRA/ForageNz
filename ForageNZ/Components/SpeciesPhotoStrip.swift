@@ -143,7 +143,7 @@ private struct FullScreenPhotoViewer: View {
                 .font(.title3.weight(.semibold))
                 .foregroundStyle(.white)
                 .padding(.all, .small)
-                .background(.black.opacity(0.5), in: Circle())
+                .conditionalGlass(in: Circle(), tint: .black.opacity(0.4), isInteractive: true, legacy: .black.opacity(0.5))
         }
         .accessibilityLabel("Close")
         .accessibilityIdentifier("photoViewer.close")

@@ -14,7 +14,7 @@ struct ListDetailView: View {
         if let list = lists.list(id: listID) {
             content(for: list)
         } else {
-            ContentUnavailableView("List deleted", systemImage: "bookmark.slash")
+            ContentUnavailableView("List deleted", image: "list-add")
         }
     }
 
@@ -29,7 +29,7 @@ struct ListDetailView: View {
                 if list.speciesIDsRaw.isEmpty {
                     ContentUnavailableView(
                         "Nothing in this list",
-                        systemImage: "bookmark",
+                        image: "list-add",
                         description: Text("Add species with the bookmark on any card in the field guide.")
                     )
                 } else if results.isEmpty, !members.species.isEmpty {

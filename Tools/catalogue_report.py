@@ -131,7 +131,7 @@ BATCHES = {
     "Myrtles and fuchsias (Myrtales)": "Acca Fuchsia Kunzea Leptospermum Metrosideros Psidium "
     "Syzygium",
     "Heath family (Ericaceae)": "Arbutus Gaultheria Leptecophylla Styphelia",
-    "Nightshades, honeysuckles and comfrey": "Calystegia Convolvulus Leycesteria Lonicera Lycium Nicandra Physalis "
+    "Nightshades, honeysuckles and comfrey": "Calystegia Convolvulus Ipomoea Leycesteria Lonicera Lycium Nicandra Physalis "
     "Solanum Symphytum",
     "Lilies, flaxes and irises (Asparagales)": "Allium Arthropodium Asparagus Cordyline Hosta "
     "Leucojum Phormium Romulea",

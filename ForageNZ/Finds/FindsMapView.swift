@@ -58,8 +58,8 @@ struct FindsMapView: View {
     private func map(_ pins: [FindPinModel]) -> some View {
         Map(position: $position, selection: $selectedFindID) {
             ForEach(pins) { pin in
-                Annotation(pin.commonName ?? String(localized: "No longer in the guide"), coordinate: CLLocationCoordinate2D(pin.coordinate)) {
-                    FindPinView(group: pin.group, isSelected: pin.id == selectedFindID)
+                Annotation(pin.commonName ?? String(localized: "No longer in the guide"), coordinate: CLLocationCoordinate2D(pin.coordinate), anchor: .center) {
+                    FindPinView(group: pin.group, caution: pin.caution, isSelected: pin.id == selectedFindID)
                 }
                 .tag(pin.id)
             }
@@ -94,7 +94,7 @@ struct FindsMapView: View {
             Text("Tap + to save where you found a species.")
                 .font(.subheadline)
                 .padding(.all, .medium)
-                .background(.regularMaterial, in: Layout.cardShape)
+                .conditionalGlass(in: Layout.cardShape)
                 .padding(.all, .medium)
         }
     }
@@ -124,7 +124,7 @@ struct FindsMapView: View {
             }
         }
         .padding(.all, .medium)
-        .background(.regularMaterial, in: Layout.cardShape)
+        .conditionalGlass(in: Layout.cardShape)
         .padding(.all, .medium)
     }
 

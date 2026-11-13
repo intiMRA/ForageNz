@@ -30,10 +30,11 @@ struct AddToListMenu: View {
                 Label("New list…", systemImage: "plus")
             }
         } label: {
-            Image(systemName: lists.isListed(speciesID) ? "bookmark.fill" : "bookmark")
+            Image(lists.isListed(speciesID) ? .listAdded : .listAdd)
+                .icon(size: .standard, color: .primary)
                 .foregroundStyle(.tint)
-                .padding(.all, .xSmall)
-                .background(.regularMaterial, in: Circle())
+                .padding(.all, .xxxSmall)
+                .conditionalGlass(in: Circle(), isInteractive: true)
         }
         .accessibilityLabel("Add to list")
         .accessibilityValue(lists.isListed(speciesID) ? "In a list" : "")

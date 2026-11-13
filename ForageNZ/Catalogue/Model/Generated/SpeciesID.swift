@@ -36,6 +36,7 @@ public enum SpeciesID: String, Codable, Sendable, Hashable, CaseIterable {
     case blackwood = "blackwood"
     case bladderCampion = "bladder-campion"
     case bladderKelp = "bladder-kelp"
+    case blueMorningGlory = "blue-morning-glory"
     case bluePimpernel = "blue-pimpernel"
     case bluefootBolete = "bluefoot-bolete"
     case bogYellowCress = "bog-yellow-cress"

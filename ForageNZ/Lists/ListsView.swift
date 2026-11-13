@@ -39,7 +39,7 @@ struct ListsView: View {
             }
         case .loaded where lists.lists.isEmpty:
             ContentUnavailableView {
-                Label("No lists yet", systemImage: "bookmark")
+                Label("No lists yet", image: "list-add")
             } description: {
                 Text("Make a list, then add species to it with the bookmark on any card in the field guide.")
             } actions: {
