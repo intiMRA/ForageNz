@@ -127,7 +127,6 @@ class PhotoConstants:
     def __init__(self, swift: str) -> None:
         self.maximum_pixel_size = _swift_int(swift, "maximumPixelSize")
         self.maximum_bytes_per_photo = _swift_int(swift, "maximumBytesPerPhoto")
-        self.total_byte_budget = _swift_int(swift, "totalByteBudget")
         self.compression_quality = _swift_float(swift, "compressionQuality")
 
     @classmethod
@@ -241,6 +240,11 @@ def query_names(scientific_name: str) -> list[str]:
 AGGREGATE_RANKS = frozenset({"complex", "hybrid", "genushybrid", "section", "subsection"})
 
 
+def _hybrid_spacing(name: str) -> str:
+    """One spelling of the hybrid sign: the catalogue writes "×bohemica", iNaturalist "× bohemica"."""
+    return re.sub(r"\s*×\s*", " ×", " ".join(name.split())).strip()
+
+
 def taxon_id_for(name: str) -> int | None:
     """The iNaturalist taxon id for an exact scientific name, or `None` if it has no single one.
 
@@ -264,13 +268,16 @@ def taxon_id_for(name: str) -> int | None:
         results = results_of(Source.INAT_TAXA, {"q": name, "per_page": 20})
     except SourceError:
         return None
-    wanted = name.casefold()
+    wanted = _hybrid_spacing(name).casefold()
+    # A named hybrid (Reynoutria ×bohemica) is itself the entry, not a set of siblings, so the
+    # `hybrid` rank is only skipped when the entry is not one.
+    skipped = AGGREGATE_RANKS - {"hybrid"} if "×" in wanted else AGGREGATE_RANKS
     exact = [
         taxon
         for taxon in results
-        if str(taxon.get("name") or "").casefold() == wanted
+        if _hybrid_spacing(str(taxon.get("name") or "")).casefold() == wanted
         and taxon.get("id") is not None
-        and str(taxon.get("rank") or "") not in AGGREGATE_RANKS
+        and str(taxon.get("rank") or "") not in skipped
     ]
     if len(exact) != 1:
         return None
@@ -824,18 +831,11 @@ def main(argv: list[str] | None = None) -> int:
     if arguments.limit:
         todo = todo[: arguments.limit]
 
-    # `totalByteBudget` governs what SHIPS, and staged files do not ship: they sit outside any
-    # Xcode target, about half are rejected at review, and the survivors are attached one entry
-    # at a time as drafts are promoted. Charging downloads against it stopped an earlier run at
-    # 233 of 279 entries for no reason — and the figure it compared was arbitrary anyway, since
-    # `catalogue_bytes()` counts only the shipped folder and ignored the 110 MB already staged.
-    # The real guard against overshooting the budget is `PhotoAudit`, which reads what shipped.
     shipped = catalogue_bytes()
     print(
         f"{len(todo)} entr{'y' if len(todo) == 1 else 'ies'} "
         f"{'below their photo target' if arguments.top_up else 'with no photos'} · "
-        f"catalogue is {shipped / 1e6:.1f} MB of the {constants.total_byte_budget / 1e6:.0f} MB "
-        "ship budget (staging is not charged against it)"
+        f"catalogue ships {shipped / 1e6:.1f} MB of photos (staging not counted)"
     )
 
     staged: list[Staged] = []
@@ -925,24 +925,13 @@ def main(argv: list[str] | None = None) -> int:
         entry["photos"] = [catalogue_photo(photo) for photo in result.photos]
 
     write_catalogue(entries, arguments.catalogue)
-    # Checked here and not before the loop, because `photo["bytes"]` is the STAGED size and the
-    # write re-encodes: at the current constants a staged file is ~2× what ships, so a
-    # pre-flight check would refuse writes that comfortably fit. This reads what is actually on
-    # disk. It reports rather than fails — the files are already written, so the useful output
-    # is the number, and `catalogue-tool --photos` is the gate that blocks on it.
+    # Read from disk after the write, because `photo["bytes"]` is the STAGED size and the
+    # write re-encodes.
     total = catalogue_bytes()
-    budget = constants.total_byte_budget
     print(
         f"\nAttached photos to {len(by_id)} entries with blank captions.\n"
-        f"Catalogue photos now {total / 1e6:.1f} MB of the {budget / 1e6:.0f} MB budget."
+        f"Catalogue photos now {total / 1e6:.1f} MB."
     )
-    if total > budget:
-        print(
-            f"OVER BUDGET by {(total - budget) / 1e6:.1f} MB. Lower "
-            "`CataloguePhotos.maximumPixelSize` and re-run --write; bytes scale with pixel "
-            "count, and the staged originals are still on disk.",
-            file=sys.stderr,
-        )
     print("Write a caption for each, then run `swift run catalogue-tool --normalise`.")
     return 0
 

@@ -67,7 +67,7 @@ def test_constants_are_read_from_the_swift_source_not_copied() -> None:
     constants = PhotoConstants.load()
     swift = PHOTO_CONSTANTS.read_text()
     assert f"= {constants.maximum_pixel_size}" in swift
-    assert str(constants.total_byte_budget)[:3] in swift.replace("_", "")
+    assert f"= {constants.maximum_bytes_per_photo:_}" in swift
     assert 0 < constants.compression_quality <= 1
 
 
@@ -499,3 +499,11 @@ def test_frames_already_chosen_are_not_offered_twice() -> None:
     assert {candidate.photo_id for candidate in first}.isdisjoint(
         candidate.photo_id for candidate in second
     )
+
+
+def test_a_named_hybrid_resolves_to_its_own_taxon(monkeypatch) -> None:
+    import fetch_catalogue_photos as fetch
+    taxa = [{"id": 850784, "name": "Reynoutria × bohemica", "rank": "hybrid"}]
+    monkeypatch.setattr(fetch, "results_of", lambda source, params: taxa)
+    assert fetch.taxon_id_for("Reynoutria ×bohemica") == 850784
+    assert fetch.taxon_id_for("Reynoutria bohemica") is None

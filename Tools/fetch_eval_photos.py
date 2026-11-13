@@ -47,10 +47,9 @@ def catalogue_taxa(catalogue: Path = CATALOGUE) -> dict[str, str]:
 
 #: Common NZ plants deliberately NOT in the catalogue. Several are seriously toxic, which
 #: is the point: photographing one must not produce a confident shortlist of edibles.
-#: Hemlock used to be here; it is a catalogue entry now, and `check_disjoint` exists so that
-#: kind of drift fails the run instead of quietly inflating the false-accept rate.
+#: Hemlock and foxglove used to be here; they are catalogue entries now, and `check_disjoint`
+#: exists so that kind of drift fails the run instead of quietly inflating the false-accept rate.
 OUT_OF_CATALOGUE_TAXA: dict[str, str] = {
-    "foxglove": "Digitalis purpurea",
     "ragwort": "Jacobaea vulgaris",
     "agapanthus": "Agapanthus praecox",
     "arum-lily": "Zantedeschia aethiopica",

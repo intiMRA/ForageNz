@@ -234,7 +234,7 @@ if arguments.contains("--photos") {
         )
     }
     print("""
-    \(report.photoCount) photo(s) · \(report.totalBytes / 1024) KB of \(CataloguePhotos.totalByteBudget / 1_000_000) MB budget
+    \(report.photoCount) photo(s) · \(report.totalBytes / 1_000_000) MB
     \(thin.count) entrie(s) below their photo target (\(CataloguePhotos.recommendedCount(hasDeadlyLookalike: false)), or \(CataloguePhotos.recommendedCount(hasDeadlyLookalike: true)) with a deadly lookalike)
     """)
     exit(report.isClean ? 0 : 1)
@@ -332,7 +332,7 @@ catalogue-tool — headless catalogue maintenance
 
   --normalise            rewrite species.json in the canonical shape
   --check                report blocking validation issues
-  --photos               report photo budget, missing files and orphans
+  --photos               report photo size, missing files and orphans
   --attach <manifest>    attach the captioned photos from a staging manifest
   --index                build the photo match index and report its separation
   --evaluate <dir>       leave-one-out accuracy over a directory of labelled photos

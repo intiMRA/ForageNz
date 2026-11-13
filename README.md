@@ -146,7 +146,7 @@ xcodebuild test -project ForageNZ.xcodeproj -scheme ForageNZ \
 # what is missing, without changing anything
 .venv/bin/python Tools/enrich_catalogue.py      # gaps and disagreements
 .venv/bin/python Tools/audit_names.py           # names that are wrong or stale
-swift run catalogue-tool --photos               # photo budget and thin entries
+swift run catalogue-tool --photos               # photo size, missing files, orphans and thin entries
 
 # after adding a model file
 .venv/bin/python Tools/check_target_membership.py
@@ -626,8 +626,8 @@ bakes DOC's two public layers into a bitmap small enough to ship:
 .venv/bin/python Tools/build_land_status.py --degrees 0.005  # coarser grid, smaller file
 ```
 
-It writes `ForageNZ/Catalogue/land-status.png` (**237 KB** for the whole country, ~2% of the
-photo budget) plus `land-status.json` describing the grid. `LandStatusMap` reads them and
+It writes `ForageNZ/Catalogue/land-status.png` (**237 KB** for the whole country, a small share
+of the app download) plus `land-status.json` describing the grid. `LandStatusMap` reads them and
 answers a coordinate in constant time, entirely offline.
 
 Deliberate trade-offs:
@@ -779,7 +779,6 @@ shows. **`ValidationIssue.Severity`** is `blocking` (fails the build) or `adviso
 | `CataloguePhotos.maximumPixelSize` | `1000` | Longest edge, sized against what the app draws: the detail strip decodes at 720, thumbnails at 360, and nothing zooms. **This is the lever that makes full coverage fit** — 1,366 photos measure ~154 MB here against ~230 MB at the old 1400. Measure, don't extrapolate: HEIC does not shrink with pixel area (1000 px is 0.68× of 1400, not 0.51×) |
 | `CataloguePhotos.compressionQuality` | `0.62` | HEIC quality |
 | `CataloguePhotos.maximumBytesPerPhoto` | `220_000` | A photo over this has been mis-encoded. A defect detector, not a size lever — left at 220 KB when the pixel size dropped, so the already-shipped 1400 px photos are not flagged |
-| `CataloguePhotos.totalByteBudget` | `180_000_000` | A download-size limit, not a coverage limit. Sized to stay under the App Store's default 200 MB cellular prompt; fits 4 photos on every entry (~154 MB). Applies to what **ships** — `fetch_catalogue_photos.py` does not charge staged downloads against it, and reports the real total after `--write` |
 | `CataloguePhotos.recommendedCount` | 4, or 6 with a deadly lookalike | There is no signal in a gully, so the embedded photos are all the user gets |
 | `CataloguePhotos.imageExtensions` | heic, heif, jpg, jpeg, png, webp | One definition, so orphan detection and the evaluation sets cannot disagree about whether a `.webp` is a photo |
 | `CataloguePhotos.directoryName` | `Photos` | |

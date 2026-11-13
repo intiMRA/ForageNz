@@ -156,7 +156,7 @@ struct SpeciesEditorView: View {
                 onRemovePhoto: onRemovePhoto
             )
         } footer: {
-            Text("Photos ship inside the app: each stays under \(CataloguePhotos.maximumBytesPerPhoto / 1024) KB, and the whole catalogue under \(CataloguePhotos.totalByteBudget / 1_000_000) MB. Imports are downscaled and re-encoded automatically.")
+            Text("Photos ship inside the app: each stays under \(CataloguePhotos.maximumBytesPerPhoto / 1024) KB. Imports are downscaled and re-encoded automatically.")
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }

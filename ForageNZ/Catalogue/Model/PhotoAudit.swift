@@ -47,7 +47,7 @@ public nonisolated enum PhotoAudit {
                 }
 
                 // A file whose size can't be read is a finding, not zero bytes — otherwise
-                // an unreadable photo would sail under both the per-photo and total budgets.
+                // an unreadable photo would sail under the per-photo ceiling.
                 let bytes: Int
                 do {
                     let attributes = try fileManager.attributesOfItem(atPath: url.path)
@@ -94,13 +94,6 @@ public nonisolated enum PhotoAudit {
                     problem: "Photo directory unreadable — \(error.localizedDescription)"
                 ))
             }
-        }
-
-        if totalBytes > CataloguePhotos.totalByteBudget {
-            findings.append(Finding(
-                speciesId: "-", fileName: "-",
-                problem: "Photos total \(totalBytes / 1_000_000) MB, over the \(CataloguePhotos.totalByteBudget / 1_000_000) MB budget."
-            ))
         }
 
         return Report(

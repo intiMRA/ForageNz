@@ -117,7 +117,7 @@ BATCHES = {
     "Mustard family (Brassicaceae)": "Barbarea Brassica Cakile Capsella Cardamine Diplotaxis "
     "Lepidium Lobularia Lunaria Matthiola Nasturtium Raphanus Rorippa Sisymbrium",
     "Carrot family and lemonwood (Apiales)": "Angelica Anthriscus Apium Conium Daucus Foeniculum "
-    "Gingidia Helosciadium Pastinaca Petroselinum Pittosporum Smyrnium",
+    "Gingidia Helosciadium Heracleum Pastinaca Petroselinum Pittosporum Smyrnium",
     "Mint, plantain and olive families (Lamiales)": "Cymbalaria Digitalis Glechoma Jasminum Lamium "
     "Lavandula Melissa Mentha Olea Origanum Plantago Prunella Stachys Thymus Verbascum Veronica",
     "Rose family and hops (Rosales)": "Chaenomeles Crataegus Cydonia Eriobotrya Fragaria Humulus "
@@ -126,12 +126,12 @@ BATCHES = {
     "Ulex Vicia Wisteria",
     "Succulents and saltworts (Caryophyllales)": "Amaranthus Atriplex Carpobrotus Chenopodium "
     "Disphyma Opuntia Portulaca Salicornia Suaeda Tetragonia",
-    "Pinks and knotweeds (Caryophyllales)": "Cerastium Dianthus Persicaria Reynoutria Rumex "
+    "Pinks and knotweeds (Caryophyllales)": "Arum Cerastium Dianthus Persicaria Reynoutria Rumex "
     "Silene Stellaria",
     "Myrtles and fuchsias (Myrtales)": "Acca Fuchsia Kunzea Leptospermum Metrosideros Psidium "
     "Syzygium",
     "Heath family (Ericaceae)": "Arbutus Gaultheria Leptecophylla Styphelia",
-    "Nightshades, honeysuckles and comfrey": "Convolvulus Leycesteria Lonicera Lycium Physalis "
+    "Nightshades, honeysuckles and comfrey": "Calystegia Convolvulus Leycesteria Lonicera Lycium Nicandra Physalis "
     "Solanum Symphytum",
     "Lilies, flaxes and irises (Asparagales)": "Allium Arthropodium Asparagus Cordyline Hosta "
     "Leucojum Phormium Romulea",
