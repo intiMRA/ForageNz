@@ -1,3 +1,4 @@
+import DesignLibrary
 import SwiftUI
 
 /// A list row for a species that routes to its page — the one way every list does it.
@@ -31,6 +32,12 @@ struct SpeciesRowButton: View {
             // them back, which is what lets a screen reader read the row's parts separately —
             // and what the UI tests use to find a row by `speciesRow.<id>`.
             .accessibilityElement(children: .contain)
+            // Beside the button, not in its label: a control inside a button's label gets the
+            // button's tap instead of its own.
+            .overlay(alignment: .topLeading) {
+                AddToListMenu(speciesID: id)
+                    .padding(.all, .small)
+            }
         }
     }
 }

@@ -63,4 +63,10 @@ enum Layout {
 
     /// How far the full-screen viewer zooms in past fit-to-screen.
     static let fullScreenPhotoMaximumZoom: CGFloat = 5
+
+    /// The ring round a find's pin on the map.
+    static let findPinBorderWidth: CGFloat = 2
+
+    /// How much the selected find's pin grows, so it stands out from its neighbours.
+    static let selectedFindPinScale: CGFloat = 1.3
 }

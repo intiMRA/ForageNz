@@ -34,6 +34,9 @@ no distinguishing check, or a native species ships without harvesting guidance.
 | `ForageNZ/InSeason/` | What's worth looking for this month. |
 | `ForageNZ/FieldGuide/` | Searchable catalogue with group + origin filters, and the species detail screen. |
 | `ForageNZ/Safety/` | Ground rules, the do-not-eat list, and species with deadly lookalikes. |
+| `ForageNZ/UserData/` | The SwiftData store for the user's own data: the `@Model` types, `SwiftDataUserDataRepository` (a `@ModelActor`), the repository protocols and snapshots, and the iCloud setting. See *Lists and finds*. |
+| `ForageNZ/Lists/` | The Lists tab, a list's page (laid out and filtered like the field guide), and the bookmark menu on every species card. |
+| `ForageNZ/Finds/` | The Map tab: finds on a MapKit map, the card under a selected pin, the species picker, and the list fallback for when map tiles can't load. |
 | `ForageNZ/WhereYouAre/` | Offline land-status lookup: the bundled DOC raster, a one-shot location fix, and the Safety-tab section that reports it. |
 | `ForageNZ/Components/` | Shared UI: `SpeciesRow`, `SpeciesRowButton`, `CautionBadge`, `CautionPalette`, `HabitatChips`, `Layout`, and `Colors.xcassets` — the three caution colours live here rather than in the app's asset catalog so the editor can compile them as well. |
 | `ForageNZ/Navigation/` | `Destination`, the `@CasePathable` enum of everywhere a screen can go, and `Router`, which owns one stack's `path`. There is a router per tab, injected into that tab's subtree. Screens never hold a `NavigationLink` — a row is a `Button` that calls `router.push(.species(id))`, so the route is state something can read and drive. |
@@ -658,6 +661,26 @@ Deliberate trade-offs:
   corrupted raster, and invisible everywhere except the six ground-truth pixels.
 
 Location is taken once, on request, and never leaves the device.
+
+## Lists and finds — the user's own data
+
+The catalogue is read-only, bundled and checked at build time. Lists and finds are the opposite:
+mutable and per user, so they get their own store (SwiftData) and never enter the repo.
+
+- **Two stores, one boundary.** `SpeciesListsRepository` and `FindsRepository` are protocols over
+  `Sendable` snapshots; the `@Model` classes never leave `SwiftDataUserDataRepository`. Stores
+  (`ListsStore`, `FindsStore`) read them through the dependency context, like the catalogue.
+- **Species are stored as raw strings.** A species can leave the catalogue after someone listed
+  it. The row still loads; the list's page shows it under "No longer in the guide" and offers to
+  remove it, and a find for it keeps its pin but opens nothing. Writes go through `SpeciesID`.
+- **A store that won't open never crashes the app.** `UnavailableUserDataRepository` takes over and
+  every screen says lists and finds are unavailable; the field guide is unaffected.
+- **iCloud is opt-in.** Off by default; the setting is read when the store opens at launch, so it
+  applies the next time the app opens. The models are CloudKit-shaped (defaults everywhere,
+  optional relationships, no unique constraints). Real sync has to be checked on a device.
+- **Foraging spots are private.** Coordinates are never logged. The map tiles come from Apple, so
+  the finds can also be read as a list without a signal.
+- **UI tests run in memory** (`-UserDataInMemory`), so they never touch real lists or finds.
 
 ## Fixed values
 

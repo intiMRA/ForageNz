@@ -15,6 +15,7 @@ final class FieldGuideUITests: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         app = XCUIApplication()
+        app.launchArguments.append("-UserDataInMemory")
         app.launch()
     }
 
@@ -24,6 +25,8 @@ final class FieldGuideUITests: XCTestCase {
         let tabs = [
             (label: "In season", title: "In season"),
             (label: "Field guide", title: "Field guide"),
+            (label: "Lists", title: "Lists"),
+            (label: "Map", title: "Map"),
             (label: "Safety", title: "Safety")
         ]
 

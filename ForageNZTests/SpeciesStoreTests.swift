@@ -89,6 +89,34 @@ private func makeSpecies(
 @Suite("SpeciesStore")
 @MainActor
 struct SpeciesStoreTests {
+    @Test("A list's members split into the species shown, in display order, and the ids the guide lacks")
+    func listMembers() async {
+        let draft = makeSpecies(id: "stub", commonName: "Stub").with(draft: true)
+        let store = makeStore(repository: StubRepository(species: [
+            makeSpecies(id: "b", commonName: "Watercress"),
+            makeSpecies(id: "a", commonName: "Blackberry"),
+            draft
+        ]))
+        await store.loadIfNeeded()
+        let list = SpeciesListSnapshot(
+            id: UUID(), name: "Wanted", createdAt: .now,
+            speciesIDsRaw: ["b", "gone-plant", "stub", "a"]
+        )
+
+        let members = store.members(of: list)
+
+        #expect(members.species.map(\.id) == ["a", "b"])
+        #expect(members.missingIDsRaw == ["gone-plant", "stub"])
+    }
+
+    @Test("Only a group or origin counts as narrowing by facet, not the search text")
+    func narrowsByFacet() {
+        #expect(SpeciesFilter().narrowsByFacet == false)
+        #expect(SpeciesFilter(query: "fennel").narrowsByFacet == false)
+        #expect(SpeciesFilter(group: .greens).narrowsByFacet)
+        #expect(SpeciesFilter(origin: .pest).narrowsByFacet)
+    }
+
     @Test("Loading sorts the catalogue by common name")
     func loadSorts() async {
         let store = makeStore(repository: StubRepository(species: [

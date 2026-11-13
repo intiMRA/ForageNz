@@ -4,14 +4,19 @@ import DesignLibrary
 struct InSeasonView: View {
     @Environment(SpeciesStore.self) private var store
 
+    @State private var filter = SpeciesFilter()
+
     var body: some View {
         let month = store.currentMonth
-        let species = store.inSeason(for: month)
+        let species = filter.apply(to: store.inSeason(for: month))
         ScrollView {
             LazyVStack(alignment: .leading) {
                 Section {
+                    OriginGuidance(origin: filter.origin)
                     if species.isEmpty {
-                        Text("Nothing in the guide is at its peak this month.")
+                        Text(filter.narrowsByFacet
+                             ? "Nothing in season matches the current filters."
+                             : "Nothing in the guide is at its peak this month.")
                             .foregroundStyle(.secondary)
                     } else {
                         ForEach(species) { item in
@@ -28,6 +33,10 @@ struct InSeasonView: View {
             .padding(.horizontal, .medium)
         }
         .navigationTitle("In season")
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                SpeciesFilterMenu(filter: $filter)
+            }
+        }
     }
-
 }

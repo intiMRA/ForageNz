@@ -1,7 +1,23 @@
 # Plan: user lists — "Favourites", "Found", "Wanted", …
 
-**Status:** planned, not started. Written 11/09/2026; finds and the map added 12/10/2026. Nothing in
-the app depends on this yet.
+**Status:** in progress from 14/11/2026. Written 11/09/2026; finds and the map added 12/10/2026.
+
+## Owner decisions (14/11/2026) — these override the sections below where they differ
+
+- **No built-in lists.** Every list is the user's: they name it and choose its species. No
+  `BuiltInList`, no heart/tick badges.
+- **Lists behave like the Field guide tab**: search, the group/origin filters, species grouped by
+  app group. The In season tab gains the same filters.
+- **Cards on Field guide and In season have an add-to-list button** (a bookmark menu: every list
+  with a tick for membership, plus "New list…").
+- **Finds are separate from lists.** A find is its own record (species, where, when). On the map
+  the user picks a location and saves a species there. A pin shows the species' group icon; tapping
+  it opens a card over the bottom of the map; tapping the card opens the species page.
+- **Two new tabs**: Lists and Map (five in all).
+- **iCloud sync is the user's choice**: a setting, off by default, that takes effect the next time
+  the app opens. The real sync needs checking on a device.
+- **Permission string and Apple map tiles approved**, with a list of finds as the offline fallback.
+
 
 ## Goal
 

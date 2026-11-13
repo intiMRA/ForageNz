@@ -9,4 +9,5 @@ import SwiftUINavigation
 @CasePathable
 enum Destination: Hashable {
     case species(SpeciesID)
+    case list(SpeciesListSnapshot.ID)
 }

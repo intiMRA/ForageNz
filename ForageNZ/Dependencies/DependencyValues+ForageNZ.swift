@@ -1,10 +1,8 @@
 import Dependencies
 import Foundation
 
-// The app's three injectable collaborators. Each already had a protocol and a bundled
-// implementation behind a constructor default; this moves that wiring into a dependency
-// context so a test can substitute one without an initialiser parameter threaded through
-// every caller.
+// The app's injectable collaborators, each behind a protocol and registered here so a test can
+// substitute one without an initialiser parameter threaded through every caller.
 //
 // Only `liveValue` is given, deliberately. swift-dependencies then reports a loud test issue
 // the moment a test reaches a dependency it has not overridden, rather than quietly handing
@@ -30,6 +28,16 @@ extension DependencyValues {
         get { self[LocationProviderKey.self] }
         set { self[LocationProviderKey.self] = newValue }
     }
+
+    var speciesListsRepository: any SpeciesListsRepository {
+        get { self[SpeciesListsRepositoryKey.self] }
+        set { self[SpeciesListsRepositoryKey.self] = newValue }
+    }
+
+    var findsRepository: any FindsRepository {
+        get { self[FindsRepositoryKey.self] }
+        set { self[FindsRepositoryKey.self] = newValue }
+    }
 }
 
 private enum SpeciesRepositoryKey: DependencyKey {
@@ -42,4 +50,12 @@ private enum LandStatusRepositoryKey: DependencyKey {
 
 private enum LocationProviderKey: DependencyKey {
     static let liveValue: any LocationProvider = DeviceLocationProvider()
+}
+
+private enum SpeciesListsRepositoryKey: DependencyKey {
+    static let liveValue: any SpeciesListsRepository = UserDataSettings.liveRepository
+}
+
+private enum FindsRepositoryKey: DependencyKey {
+    static let liveValue: any FindsRepository = UserDataSettings.liveRepository
 }

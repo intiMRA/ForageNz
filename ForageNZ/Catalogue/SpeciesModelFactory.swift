@@ -61,6 +61,17 @@ nonisolated struct InfoPageModel: Equatable {
     let lookalikeCards: [LookalikeCardModel]
 }
 
+/// One find on the map. The pin draws the species' group; the card under the map opens its page.
+nonisolated struct FindPinModel: Equatable, Identifiable {
+    let id: FindSnapshot.ID
+    let coordinate: Coordinate
+    let foundAt: Date
+    /// `nil` once the species has left the guide: the pin still shows, and opens nothing.
+    let speciesID: SpeciesID?
+    let commonName: String?
+    let group: ForageGroup?
+}
+
 // MARK: - Factory
 
 /// The only way a `SpeciesID` becomes something on screen.
@@ -78,6 +89,7 @@ protocol SpeciesModelFactory {
     /// Takes the `Lookalike` rather than a bare id: the card's text — how to tell them apart —
     /// belongs to the relationship between two species, not to the one it opens.
     func createLookalikeCardModel(_ lookalike: Lookalike) -> LookalikeCardModel
+    func createFindPinModel(_ find: FindSnapshot) -> FindPinModel
 }
 
 struct CatalogueSpeciesModelFactory: SpeciesModelFactory {
@@ -114,6 +126,18 @@ struct CatalogueSpeciesModelFactory: SpeciesModelFactory {
             photoFileName: store.species(for: lookalike.entry)?.photos.first?.fileName
         )
     }
+
+    func createFindPinModel(_ find: FindSnapshot) -> FindPinModel {
+        let species = find.speciesID.flatMap(store.species(for:))
+        return FindPinModel(
+            id: find.id,
+            coordinate: find.coordinate,
+            foundAt: find.foundAt,
+            speciesID: species == nil ? nil : find.speciesID,
+            commonName: species?.commonName,
+            group: species?.group
+        )
+    }
 }
 
 /// What a view gets if nothing injected a factory: nothing, loudly. A default that quietly
@@ -123,6 +147,9 @@ struct UnconfiguredSpeciesModelFactory: SpeciesModelFactory {
     func createListingRowModel(id: SpeciesID) -> ListingRowModel? { nil }
     func createLookalikeCardModel(_ lookalike: Lookalike) -> LookalikeCardModel {
         LookalikeCardModel(lookalike)
+    }
+    func createFindPinModel(_ find: FindSnapshot) -> FindPinModel {
+        FindPinModel(id: find.id, coordinate: find.coordinate, foundAt: find.foundAt, speciesID: nil, commonName: nil, group: nil)
     }
 }
 

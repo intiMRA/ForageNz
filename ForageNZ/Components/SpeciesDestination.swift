@@ -24,6 +24,8 @@ private struct SpeciesDestination: ViewModifier {
                         description: Text("The guide has no page for “\(id.rawValue)” in this build.")
                     )
                 }
+            case .list(let id):
+                ListDetailView(listID: id)
             }
         }
     }

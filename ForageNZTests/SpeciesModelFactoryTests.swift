@@ -1,4 +1,5 @@
 import Dependencies
+import Foundation
 import Testing
 
 @testable import ForageNZ
@@ -115,5 +116,38 @@ struct SpeciesModelFactoryTests {
         let factory = UnconfiguredSpeciesModelFactory()
         #expect(factory.createInfoPageModel(id: .hemlock) == nil)
         #expect(factory.createListingRowModel(id: .hemlock) == nil)
+    }
+
+    @Test("A find's pin carries its species' name and group")
+    func findPin() async {
+        let factory = await Self.factory()
+        let find = FindSnapshot(
+            id: UUID(), speciesIDRaw: "wild-fennel",
+            coordinate: Coordinate(latitude: -41, longitude: 174), foundAt: .now
+        )
+
+        let pin = factory.createFindPinModel(find)
+
+        #expect(pin.id == find.id)
+        #expect(pin.coordinate == find.coordinate)
+        #expect(pin.speciesID == .wildFennel)
+        #expect(pin.commonName == "Wild fennel")
+        #expect(pin.group == .herbs)
+    }
+
+    @Test("A find whose species the guide lacks keeps its pin but opens nothing", arguments: ["gone-plant", "kawakawa"])
+    func findPinWithoutSpecies(speciesIDRaw: String) async {
+        let factory = await Self.factory()
+        let find = FindSnapshot(
+            id: UUID(), speciesIDRaw: speciesIDRaw,
+            coordinate: Coordinate(latitude: -41, longitude: 174), foundAt: .now
+        )
+
+        let pin = factory.createFindPinModel(find)
+
+        #expect(pin.coordinate == find.coordinate)
+        #expect(pin.speciesID == nil)
+        #expect(pin.commonName == nil)
+        #expect(pin.group == nil)
     }
 }

@@ -7,13 +7,6 @@ import OSLog
 @Observable
 @MainActor
 final class SpeciesStore {
-    enum LoadState: Equatable {
-        case idle
-        case loading
-        case loaded
-        case failed(message: String)
-    }
-
     /// What the screens read: the catalogue minus the unfinished entries.
     private(set) var species: [ForageSpecies] = []
     private(set) var loadState: LoadState = .idle
@@ -55,7 +48,7 @@ final class SpeciesStore {
 
     /// Loads the catalogue unless it is already loaded or in flight. A failed load may retry.
     func loadIfNeeded() async {
-        guard loadState == .idle || isFailed else { return }
+        guard loadState.canStart else { return }
 
         loadState = .loading
         do {
@@ -72,11 +65,6 @@ final class SpeciesStore {
 
     private func applyVisibility() {
         species = includesUnverified ? catalogue : catalogue.filter { !$0.draft }
-    }
-
-    private var isFailed: Bool {
-        if case .failed = loadState { return true }
-        return false
     }
 
     // MARK: - Derived views
@@ -104,9 +92,7 @@ final class SpeciesStore {
 
     /// Case-insensitive search across names and summary. An empty query returns everything.
     func search(_ query: String) -> [ForageSpecies] {
-        let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        guard !trimmed.isEmpty else { return species }
-        return species.filter { $0.searchableText.contains(trimmed) }
+        SpeciesFilter(query: query).apply(to: species)
     }
 
     /// The entry for a compile-time species id. `nil` for a draft, unless the debug drawer
@@ -122,11 +108,23 @@ final class SpeciesStore {
         group: ForageGroup? = nil,
         origin: ForageOrigin? = nil
     ) -> [ForageSpecies] {
-        search(query).filter { species in
-            if let group, species.group != group { return false }
-            if let origin, species.origin != origin { return false }
-            return true
-        }
+        SpeciesFilter(query: query, group: group, origin: origin).apply(to: species)
+    }
+
+    /// A list's members split into the ones the guide shows, in display order, and the raw ids
+    /// it does not (a species since removed, or a draft the debug drawer has hidden again).
+    func members(of list: SpeciesListSnapshot) -> ListMembers {
+        let listed = Set(list.speciesIDsRaw)
+        let present = species.filter { listed.contains($0.id) }
+        let shown = Set(present.map(\.id))
+        return ListMembers(
+            species: present,
+            missingIDsRaw: list.speciesIDsRaw.filter { !shown.contains($0) }
+        )
     }
 }
 
+nonisolated struct ListMembers: Equatable {
+    let species: [ForageSpecies]
+    let missingIDsRaw: [String]
+}
