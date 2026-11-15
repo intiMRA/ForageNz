@@ -226,7 +226,8 @@ def name_of(members: list[Entry]) -> str:
 
 def row(entry: Entry, members: set[str], by_id: dict[str, Entry]) -> dict[str, Any]:
     missing = [f for f in PROSE_FIELDS if not prose(entry, f)]
-    if not entry.get("months"):
+    # Months are the harvest window of the eaten part, so a doNotEat entry has none to give.
+    if not entry.get("months") and entry.get("caution") != "doNotEat":
         missing.append("months")
     cards = []
     for card in entry.get("lookalikes") or []:
