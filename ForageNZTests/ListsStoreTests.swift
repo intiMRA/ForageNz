@@ -17,11 +17,11 @@ private actor AddFailingRepository: SpeciesListsRepository {
     private let inner = InMemoryUserDataRepository()
 
     func lists() async throws(UserDataError) -> [SpeciesListSnapshot] { try await inner.lists() }
-    func createList(named name: String) async throws(UserDataError) -> SpeciesListSnapshot {
-        try await inner.createList(named: name)
+    func createList(named name: String, symbolName: String?) async throws(UserDataError) -> SpeciesListSnapshot {
+        try await inner.createList(named: name, symbolName: symbolName)
     }
-    func renameList(_ id: SpeciesListSnapshot.ID, to name: String) async throws(UserDataError) {
-        try await inner.renameList(id, to: name)
+    func updateList(_ id: SpeciesListSnapshot.ID, name: String, symbolName: String?) async throws(UserDataError) {
+        try await inner.updateList(id, name: name, symbolName: symbolName)
     }
     func deleteList(_ id: SpeciesListSnapshot.ID) async throws(UserDataError) { try await inner.deleteList(id) }
     func add(_ species: SpeciesID, toList id: SpeciesListSnapshot.ID) async throws(UserDataError) {
@@ -102,7 +102,7 @@ struct ListsStoreTests {
         let list = await store.createList(named: "Wanted", adding: .hemlock)
         let id = try #require(list?.id)
 
-        await store.renameList(id, to: "WANTED")
+        await store.updateList(id, name: "WANTED", symbolName: nil)
 
         #expect(store.list(id: id)?.name == "WANTED")
         #expect(store.list(id: id)?.contains(.hemlock) == true)
@@ -116,10 +116,37 @@ struct ListsStoreTests {
         await store.createList(named: "Wanted")
         let other = try #require(await store.createList(named: "Found"))
 
-        await store.renameList(other.id, to: "Wanted")
+        await store.updateList(other.id, name: "Wanted", symbolName: "leaf")
 
         #expect(store.list(id: other.id)?.name == "Found")
+        #expect(store.list(id: other.id)?.symbolName == nil)
         #expect(store.errorMessage == UserDataError.duplicateListName.userMessage)
+    }
+
+    @Test("A list is made with no icon unless one is picked")
+    func createWithIcon() async {
+        let store = makeStore(repository: InMemoryUserDataRepository())
+        await store.loadIfNeeded()
+
+        let plain = await store.createList(named: "Wanted")
+        let withIcon = await store.createList(named: "Found", symbolName: "leaf")
+
+        #expect(plain?.symbolName == nil)
+        #expect(withIcon?.symbolName == "leaf")
+    }
+
+    @Test("Editing changes the icon, and an edit with no icon takes it off")
+    func editIcon() async throws {
+        let store = makeStore(repository: InMemoryUserDataRepository())
+        await store.loadIfNeeded()
+        let id = try #require(await store.createList(named: "Wanted", symbolName: "leaf", adding: .hemlock)).id
+
+        await store.updateList(id, name: "Wanted", symbolName: "tree")
+        #expect(store.list(id: id)?.symbolName == "tree")
+        #expect(store.list(id: id)?.contains(.hemlock) == true)
+
+        await store.updateList(id, name: "Wanted", symbolName: nil)
+        #expect(store.list(id: id)?.symbolName == nil)
     }
 
     @Test("Toggling adds a species, and toggling again takes it out")

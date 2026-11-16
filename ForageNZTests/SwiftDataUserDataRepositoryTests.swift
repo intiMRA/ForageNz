@@ -15,7 +15,7 @@ struct SwiftDataUserDataRepositoryTests {
     @Test("A list keeps its members in the order they were added, once each")
     func listRoundTrip() async throws {
         let repository = try Self.makeRepository()
-        let list = try await repository.createList(named: "Wanted")
+        let list = try await repository.createList(named: "Wanted", symbolName: nil)
 
         try await repository.add(.wildFennel, toList: list.id)
         try await repository.add(.hemlock, toList: list.id)
@@ -29,11 +29,11 @@ struct SwiftDataUserDataRepositoryTests {
     @Test("Renaming and removing change only what they name")
     func renameAndRemove() async throws {
         let repository = try Self.makeRepository()
-        let list = try await repository.createList(named: "Wanted")
+        let list = try await repository.createList(named: "Wanted", symbolName: nil)
         try await repository.add(.wildFennel, toList: list.id)
         try await repository.add(.hemlock, toList: list.id)
 
-        try await repository.renameList(list.id, to: "Found")
+        try await repository.updateList(list.id, name: "Found", symbolName: nil)
         try await repository.remove(speciesIDRaw: "wild-fennel", fromList: list.id)
 
         let stored = try #require(try await repository.lists().first)
@@ -45,7 +45,7 @@ struct SwiftDataUserDataRepositoryTests {
     func cascadeDelete() async throws {
         let container = try UserDataContainer.make(syncEnabled: false, inMemory: true)
         let repository = SwiftDataUserDataRepository(modelContainer: container)
-        let list = try await repository.createList(named: "Wanted")
+        let list = try await repository.createList(named: "Wanted", symbolName: nil)
         try await repository.add(.hemlock, toList: list.id)
 
         try await repository.deleteList(list.id)
@@ -53,6 +53,19 @@ struct SwiftDataUserDataRepositoryTests {
         #expect(try await repository.lists().isEmpty)
         let entries = try ModelContext(container).fetchCount(FetchDescriptor<StoredListEntry>())
         #expect(entries == 0)
+    }
+
+    @Test("A list's icon is stored, changed and taken off")
+    func iconRoundTrip() async throws {
+        let repository = try Self.makeRepository()
+        let list = try await repository.createList(named: "Wanted", symbolName: "leaf")
+        #expect(try await repository.lists().first?.symbolName == "leaf")
+
+        try await repository.updateList(list.id, name: "Wanted", symbolName: "tree")
+        #expect(try await repository.lists().first?.symbolName == "tree")
+
+        try await repository.updateList(list.id, name: "Wanted", symbolName: nil)
+        #expect(try await repository.lists().first?.symbolName == nil)
     }
 
     @Test("A change to a list that does not exist says so")
@@ -71,7 +84,7 @@ struct SwiftDataUserDataRepositoryTests {
     func unknownSpeciesLoads() async throws {
         let container = try UserDataContainer.make(syncEnabled: false, inMemory: true)
         let context = ModelContext(container)
-        let list = StoredSpeciesList(name: "Old", createdAt: .now)
+        let list = StoredSpeciesList(name: "Old", symbolName: nil, createdAt: .now)
         let entry = StoredListEntry(speciesIDRaw: "gone-plant", addedAt: .now)
         context.insert(list)
         context.insert(entry)

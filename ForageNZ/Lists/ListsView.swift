@@ -13,7 +13,7 @@ struct ListsView: View {
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        lists.nameRequest = .create(adding: nil)
+                        lists.editorRequest = .create(adding: nil)
                     } label: {
                         Label("New list", systemImage: "plus")
                     }
@@ -44,7 +44,7 @@ struct ListsView: View {
                 Text("Make a list, then add species to it with the bookmark on any card in the field guide.")
             } actions: {
                 Button("New list") {
-                    lists.nameRequest = .create(adding: nil)
+                    lists.editorRequest = .create(adding: nil)
                 }
             }
         case .loaded:
@@ -53,8 +53,10 @@ struct ListsView: View {
                     Button {
                         router.push(.list(list.id))
                     } label: {
-                        LabeledContent(list.name) {
+                        LabeledContent {
                             Text(list.speciesIDsRaw.count, format: .number)
+                        } label: {
+                            ListLabel(list: list)
                         }
                         .contentShape(Rectangle())
                     }
@@ -64,8 +66,8 @@ struct ListsView: View {
                         Button("Delete", role: .destructive) {
                             Task { await lists.deleteList(list.id) }
                         }
-                        Button("Rename") {
-                            lists.nameRequest = .rename(list.id, currentName: list.name)
+                        Button("Edit") {
+                            lists.editorRequest = .edit(list.id)
                         }
                     }
                 }

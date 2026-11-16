@@ -42,7 +42,7 @@ struct RootView: View {
         .task {
             await finds.loadIfNeeded()
         }
-        .listNamePrompt()
+        .listEditor()
         .environment(store)
         .environment(whereYouAre)
         .environment(lists)

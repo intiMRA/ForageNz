@@ -15,14 +15,16 @@ actor InMemoryUserDataRepository: SpeciesListsRepository, FindsRepository {
 
     func lists() async throws(UserDataError) -> [SpeciesListSnapshot] { storedLists }
 
-    func createList(named name: String) async throws(UserDataError) -> SpeciesListSnapshot {
-        let list = SpeciesListSnapshot(id: UUID(), name: name, createdAt: .now, speciesIDsRaw: [])
+    func createList(named name: String, symbolName: String?) async throws(UserDataError) -> SpeciesListSnapshot {
+        let list = SpeciesListSnapshot(id: UUID(), name: name, createdAt: .now, speciesIDsRaw: [], symbolName: symbolName)
         storedLists.append(list)
         return list
     }
 
-    func renameList(_ id: SpeciesListSnapshot.ID, to name: String) async throws(UserDataError) {
-        try update(id) { SpeciesListSnapshot(id: $0.id, name: name, createdAt: $0.createdAt, speciesIDsRaw: $0.speciesIDsRaw) }
+    func updateList(_ id: SpeciesListSnapshot.ID, name: String, symbolName: String?) async throws(UserDataError) {
+        try update(id) {
+            SpeciesListSnapshot(id: $0.id, name: name, createdAt: $0.createdAt, speciesIDsRaw: $0.speciesIDsRaw, symbolName: symbolName)
+        }
     }
 
     func deleteList(_ id: SpeciesListSnapshot.ID) async throws(UserDataError) {
@@ -69,6 +71,6 @@ actor InMemoryUserDataRepository: SpeciesListsRepository, FindsRepository {
 
 private extension SpeciesListSnapshot {
     func replacingMembers(_ members: [String]) -> SpeciesListSnapshot {
-        SpeciesListSnapshot(id: id, name: name, createdAt: createdAt, speciesIDsRaw: members)
+        SpeciesListSnapshot(id: id, name: name, createdAt: createdAt, speciesIDsRaw: members, symbolName: symbolName)
     }
 }

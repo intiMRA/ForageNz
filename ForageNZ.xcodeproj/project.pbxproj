@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		00B386238746B52A8FC66EF1 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51770A6820F225DAC3895D24 /* Destination.swift */; };
+		026DC10C00C3BE7102AB9858 /* ListSymbolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2486A28D2BE30FC14DAE005 /* ListSymbolTests.swift */; };
 		02CDE9468E43EE78B39EBDF1 /* FindCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE102D10E219B5E57D316069 /* FindCard.swift */; };
 		050E57BB2DA43E1ED22CBD88 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D4E62F42270D71D4BA248 /* ListsView.swift */; };
 		0556316CF96F4367AE28C6AE /* SpeciesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C37CCC8954518819C409B /* SpeciesCard.swift */; };
+		06E8FEEBF61ABF304600979E /* list-symbols.json in Resources */ = {isa = PBXBuildFile; fileRef = A910A2D47D7457ADB387DF05 /* list-symbols.json */; };
 		07A7F205698F30A7C79C9D9B /* EditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12BAA997F082B29A294ACA /* EditorUITests.swift */; };
 		0A816877BA9AA045859E5529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817A298659AD6F2CD63D0228 /* Assets.xcassets */; };
 		0EFC0592935EC3241932A7C6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B19F5173E05C2042951736 /* Colors.xcassets */; };
-		101DE5141305F5CD132A6095 /* ListNamePrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA352E5903551C859B71ADC4 /* ListNamePrompt.swift */; };
+		101DE5141305F5CD132A6095 /* ListEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA352E5903551C859B71ADC4 /* ListEditor.swift */; };
 		15886EDB209E6B1080D7691F /* SpeciesPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1148E743FAD404D0633179E /* SpeciesPickerView.swift */; };
 		16020BFCDA4491686721448A /* PhotoSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01BA2E911FCB343C07DAD39 /* PhotoSectionView.swift */; };
 		16AF351E5E55AEB9978BCDD5 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB674D266AEC3706DD237EA /* LocationProvider.swift */; };
@@ -53,6 +55,7 @@
 		6DCD0099345F124C7C49EED0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B19F5173E05C2042951736 /* Colors.xcassets */; };
 		7062ADCA73776244CB4A6E51 /* WhereYouAreStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE2E1227F9C1C691B2F945D /* WhereYouAreStoreTests.swift */; };
 		732EB0C3958667F5E1937D29 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F567D725B05CA6E238F22C8 /* RootView.swift */; };
+		73CF2EDBA57E7D2D4454DBD8 /* ListSymbolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFA72B5C5F97F5E8D92B3D0 /* ListSymbolPicker.swift */; };
 		79283BD4101F75B425C68128 /* FindsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF20B4529AACF074E7700D9 /* FindsMapView.swift */; };
 		7B432E867DB0ED01A38C768B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C28C6DA10AE33F73F5B94C /* Cocoa.framework */; };
 		7D35632F1F5EEB570322D3E0 /* PoisonsCentre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2163C64C7220DD70F766A16E /* PoisonsCentre.swift */; };
@@ -67,6 +70,7 @@
 		8ADBF4A2306655F900B20F51 /* View+ConditionalGlass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF4A1306655F900B20F51 /* View+ConditionalGlass.swift */; };
 		8ADBF4A4306655F900B20F41 /* String+Separators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF4A3306655F900B20F41 /* String+Separators.swift */; };
 		8ADBF4A5306655F900B20F41 /* String+Separators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBF4A3306655F900B20F41 /* String+Separators.swift */; };
+		8C7E205C11264AE5C32B30B7 /* ListSymbolPickerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1AF488FF240FA4AD17D70A /* ListSymbolPickerStore.swift */; };
 		91E1E633F5ADEA9EF5395618 /* SpeciesFilterMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BABD59101CC31A8A411D293 /* SpeciesFilterMenu.swift */; };
 		9259C8452BDD7F338B28B7A0 /* CatalogueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1001C8B591D460EC849D511 /* CatalogueStore.swift */; };
 		964DFD06BF7EB889DF54325C /* WhereYouAreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE23F44C740462604FCC5A42 /* WhereYouAreStore.swift */; };
@@ -142,6 +146,8 @@
 		E0E56E639A59BBA011C3905E /* LandStatusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F8E9DC97AD8C0C3504754F /* LandStatusRepository.swift */; };
 		E3C01D365E85295EE1DB4CBC /* CautionPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */; };
 		E7057F68D7BCDBAEC626647A /* DesignLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 83413BE0AA6927FA598C7C0C /* DesignLibrary */; };
+		EBCF1BB325E8DC34EBF8EDDE /* ListLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63D5EE60CF7481F6A95C3AD /* ListLabel.swift */; };
+		EC850996A00DA519D4FADD69 /* ListSymbolRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0446237105087BDFCC28FA /* ListSymbolRepository.swift */; };
 		F27751D8CED545496FD78F35 /* AddToListMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7166AC7C55CEA87F2A7CE00E /* AddToListMenu.swift */; };
 		F3D4CB60FA829288FF51385C /* LookalikeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C595A6A649F412A4066591 /* LookalikeCardView.swift */; };
 		F8FA2580665211FBE57FFE35 /* LoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D38C0AA6C37ED6EE1D4D1 /* LoadState.swift */; };
@@ -223,6 +229,7 @@
 		77FFA5A6D2CBF0D6DD4FB60E /* TextLinkTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextLinkTests.swift; sourceTree = "<group>"; };
 		791DF0D2BB9C0D5A58110687 /* CatalogueEditorApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueEditorApp.swift; sourceTree = "<group>"; };
 		7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesDetailView.swift; path = FieldGuide/SpeciesDetailView.swift; sourceTree = "<group>"; };
+		7D0446237105087BDFCC28FA /* ListSymbolRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListSymbolRepository.swift; sourceTree = "<group>"; };
 		81537D299113F560DA0998DA /* SyncSettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SyncSettingsView.swift; sourceTree = "<group>"; };
 		817A298659AD6F2CD63D0228 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A1716FC308ECF9D00726869 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
@@ -244,9 +251,13 @@
 		A1C0DE0000000000CA7A1006 /* CatalogueArtwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogueArtwork.swift; path = Components/CatalogueArtwork.swift; sourceTree = "<group>"; };
 		A1C0DE0000000000CA7A1009 /* Catalogue.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Catalogue.xcassets; sourceTree = "<group>"; };
 		A1C0DE0000000000CA7A1010 /* NeedsDesign.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeedsDesign.swift; path = Components/NeedsDesign.swift; sourceTree = "<group>"; };
+		A2486A28D2BE30FC14DAE005 /* ListSymbolTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListSymbolTests.swift; sourceTree = "<group>"; };
 		A280176C09840D8DD171A282 /* ListsStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListsStoreTests.swift; sourceTree = "<group>"; };
 		A5BD7F4C4DAC84FA2F0E3BB4 /* GroupedSpeciesList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupedSpeciesList.swift; path = Components/GroupedSpeciesList.swift; sourceTree = "<group>"; };
+		A63D5EE60CF7481F6A95C3AD /* ListLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListLabel.swift; sourceTree = "<group>"; };
+		A910A2D47D7457ADB387DF05 /* list-symbols.json */ = {isa = PBXFileReference; includeInIndex = 1; path = "list-symbols.json"; sourceTree = "<group>"; };
 		AADD7223F93D0639B7DEDA24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE1AF488FF240FA4AD17D70A /* ListSymbolPickerStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListSymbolPickerStore.swift; sourceTree = "<group>"; };
 		B1148E743FAD404D0633179E /* SpeciesPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesPickerView.swift; sourceTree = "<group>"; };
 		B23CB3FA9353E11476EEC70C /* ForageNZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForageNZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D00CFE7D2AD3E97CCF1400 /* land-status.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "land-status.png"; path = "Catalogue/land-status.png"; sourceTree = "<group>"; };
@@ -257,7 +268,7 @@
 		B9A08516B887C616C0C2D6B0 /* SpeciesEditorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesEditorView.swift; sourceTree = "<group>"; };
 		C2C1E4BB891EDCD2F172DCFF /* UnavailableUserDataRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UnavailableUserDataRepository.swift; sourceTree = "<group>"; };
 		C4A71E0B5D2F48A19B3C0771 /* CatalogueMerge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueMerge.swift; sourceTree = "<group>"; };
-		CA352E5903551C859B71ADC4 /* ListNamePrompt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListNamePrompt.swift; sourceTree = "<group>"; };
+		CA352E5903551C859B71ADC4 /* ListEditor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListEditor.swift; sourceTree = "<group>"; };
 		CA7A10000000000000000001 /* CatalogueFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogueFile.swift; path = Catalogue/Model/CatalogueFile.swift; sourceTree = "<group>"; };
 		CA7A10000000000000000004 /* CatalogueLocator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CatalogueLocator.swift; path = Catalogue/Model/CatalogueLocator.swift; sourceTree = "<group>"; };
 		CA7A10000000000000000007 /* CautionLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CautionLevel.swift; path = Catalogue/Model/CautionLevel.swift; sourceTree = "<group>"; };
@@ -274,6 +285,7 @@
 		CA7A10000000000000000028 /* SpeciesPhoto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesPhoto.swift; path = Catalogue/Model/SpeciesPhoto.swift; sourceTree = "<group>"; };
 		CA7A1000000000000000002B /* SpeciesValidation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesValidation.swift; path = Catalogue/Model/SpeciesValidation.swift; sourceTree = "<group>"; };
 		CA7A1000000000000000002E /* SpeciesID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesID.swift; path = Catalogue/Model/Generated/SpeciesID.swift; sourceTree = "<group>"; };
+		CBFA72B5C5F97F5E8D92B3D0 /* ListSymbolPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListSymbolPicker.swift; sourceTree = "<group>"; };
 		CD6C37CCC8954518819C409B /* SpeciesCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesCard.swift; path = Components/SpeciesCard.swift; sourceTree = "<group>"; };
 		CD72CBBFBBA343438F3DA352 /* SpeciesModelFactoryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesModelFactoryTests.swift; sourceTree = "<group>"; };
 		CEB9B70B4ADDC9A611FEAF30 /* SectionHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionHeader.swift; path = Components/SectionHeader.swift; sourceTree = "<group>"; };
@@ -392,8 +404,13 @@
 				68BEB1CAECBCC149A6477D02 /* ListsStore.swift */,
 				1D7D4E62F42270D71D4BA248 /* ListsView.swift */,
 				7791EA6160F36050C39244C2 /* ListDetailView.swift */,
-				CA352E5903551C859B71ADC4 /* ListNamePrompt.swift */,
+				CA352E5903551C859B71ADC4 /* ListEditor.swift */,
 				7166AC7C55CEA87F2A7CE00E /* AddToListMenu.swift */,
+				7D0446237105087BDFCC28FA /* ListSymbolRepository.swift */,
+				AE1AF488FF240FA4AD17D70A /* ListSymbolPickerStore.swift */,
+				CBFA72B5C5F97F5E8D92B3D0 /* ListSymbolPicker.swift */,
+				A63D5EE60CF7481F6A95C3AD /* ListLabel.swift */,
+				A910A2D47D7457ADB387DF05 /* list-symbols.json */,
 			);
 			name = Lists;
 			path = Lists;
@@ -560,6 +577,7 @@
 				A280176C09840D8DD171A282 /* ListsStoreTests.swift */,
 				B86EF35FE6BEC4ECF0BD53B9 /* FindsStoreTests.swift */,
 				1815ECF6690FE0157C6E07B5 /* SwiftDataUserDataRepositoryTests.swift */,
+				A2486A28D2BE30FC14DAE005 /* ListSymbolTests.swift */,
 			);
 			path = ForageNZTests;
 			sourceTree = "<group>";
@@ -859,6 +877,7 @@
 				0EFC0592935EC3241932A7C6 /* Colors.xcassets in Resources */,
 				A1C0DE0000000000CA7A100A /* Catalogue.xcassets in Resources */,
 				9F5008342D304A10A3E24A19 /* Localizable.xcstrings in Resources */,
+				06E8FEEBF61ABF304600979E /* list-symbols.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1017,7 +1036,7 @@
 				350C95B5F85A80A6AD351C06 /* ListsStore.swift in Sources */,
 				050E57BB2DA43E1ED22CBD88 /* ListsView.swift in Sources */,
 				5ED9D0371F62C6D1938C2B0F /* ListDetailView.swift in Sources */,
-				101DE5141305F5CD132A6095 /* ListNamePrompt.swift in Sources */,
+				101DE5141305F5CD132A6095 /* ListEditor.swift in Sources */,
 				F27751D8CED545496FD78F35 /* AddToListMenu.swift in Sources */,
 				3051F7D755D087F3893A3429 /* FindsStore.swift in Sources */,
 				79283BD4101F75B425C68128 /* FindsMapView.swift in Sources */,
@@ -1028,6 +1047,10 @@
 				50980C635719E922E377B47C /* GroupedSpeciesList.swift in Sources */,
 				DABF08A5D04B3B998975A84C /* SpeciesFilter.swift in Sources */,
 				F8FA2580665211FBE57FFE35 /* LoadState.swift in Sources */,
+				EC850996A00DA519D4FADD69 /* ListSymbolRepository.swift in Sources */,
+				8C7E205C11264AE5C32B30B7 /* ListSymbolPickerStore.swift in Sources */,
+				73CF2EDBA57E7D2D4454DBD8 /* ListSymbolPicker.swift in Sources */,
+				EBCF1BB325E8DC34EBF8EDDE /* ListLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1053,6 +1076,7 @@
 				D6A620EAE6DA739BB9BD8F00 /* ListsStoreTests.swift in Sources */,
 				C94DF7511CF823EFEFBDCAEE /* FindsStoreTests.swift in Sources */,
 				6799DE71C175C1310FEE1353 /* SwiftDataUserDataRepositoryTests.swift in Sources */,
+				026DC10C00C3BE7102AB9858 /* ListSymbolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

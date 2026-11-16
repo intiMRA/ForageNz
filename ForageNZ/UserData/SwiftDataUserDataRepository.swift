@@ -9,12 +9,14 @@ import SwiftData
 final class StoredSpeciesList {
     var id: UUID = UUID()
     var name: String = ""
+    var symbolName: String?
     var createdAt: Date = Date.now
     @Relationship(deleteRule: .cascade, inverse: \StoredListEntry.list)
     var entries: [StoredListEntry]? = []
 
-    init(name: String, createdAt: Date) {
+    init(name: String, symbolName: String?, createdAt: Date) {
         self.name = name
+        self.symbolName = symbolName
         self.createdAt = createdAt
     }
 }
@@ -79,15 +81,21 @@ actor SwiftDataUserDataRepository: SpeciesListsRepository, FindsRepository {
             .map(SpeciesListSnapshot.init)
     }
 
-    func createList(named name: String) async throws(UserDataError) -> SpeciesListSnapshot {
-        let list = StoredSpeciesList(name: name, createdAt: .now)
+    func createList(named name: String, symbolName: String?) async throws(UserDataError) -> SpeciesListSnapshot {
+        let list = StoredSpeciesList(name: name, symbolName: symbolName, createdAt: .now)
         modelContext.insert(list)
         try save()
         return SpeciesListSnapshot(list)
     }
 
-    func renameList(_ id: SpeciesListSnapshot.ID, to name: String) async throws(UserDataError) {
-        try storedList(id).name = name
+    func updateList(
+        _ id: SpeciesListSnapshot.ID,
+        name: String,
+        symbolName: String?
+    ) async throws(UserDataError) {
+        let list = try storedList(id)
+        list.name = name
+        list.symbolName = symbolName
         try save()
     }
 
@@ -174,7 +182,8 @@ private extension SpeciesListSnapshot {
             id: list.id,
             name: list.name,
             createdAt: list.createdAt,
-            speciesIDsRaw: (list.entries ?? []).sorted { $0.addedAt < $1.addedAt }.map(\.speciesIDRaw)
+            speciesIDsRaw: (list.entries ?? []).sorted { $0.addedAt < $1.addedAt }.map(\.speciesIDRaw),
+            symbolName: list.symbolName
         )
     }
 }

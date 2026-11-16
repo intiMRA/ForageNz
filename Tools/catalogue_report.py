@@ -140,7 +140,7 @@ BATCHES = {
     "Other monocots": "Alisma Freycinetia Monstera Ripogonum Tradescantia",
     "Violets and linseed (Malpighiales)": "Euphorbia Linum Passiflora Viola",
     "Currants and pennywort (Saxifragales)": "Ribes Umbilicus",
-    "Nut trees and sumac": "Aesculus Castanea Juglans Quercus Rhus",
+    "Nut trees and sumac": "Aesculus Ailanthus Castanea Juglans Quercus Rhus Toxicodendron",
     "Other trees and climbers": "Alseuosmia Araujia Eschscholzia Magnolia Pseudowintera Sicyos",
     "Conifers": "Chamaecyparis Cryptomeria Dacrycarpus Dacrydium Larix Pinus Podocarpus "
     "Prumnopitys Pseudotsuga Taxus",

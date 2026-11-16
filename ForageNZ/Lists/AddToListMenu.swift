@@ -5,6 +5,7 @@ import SwiftUI
 /// "New list…". Filled when the species is in any list.
 struct AddToListMenu: View {
     let speciesID: SpeciesID
+    var hasCircleBackground = true
 
     @Environment(ListsStore.self) private var lists
 
@@ -17,7 +18,7 @@ struct AddToListMenu: View {
                     if list.contains(speciesID) {
                         Label(list.name, systemImage: "checkmark")
                     } else {
-                        Text(list.name)
+                        ListLabel(list: list)
                     }
                 }
             }
@@ -25,16 +26,20 @@ struct AddToListMenu: View {
             Divider()
 
             Button {
-                lists.nameRequest = .create(adding: speciesID)
+                lists.editorRequest = .create(adding: speciesID)
             } label: {
                 Label("New list…", systemImage: "plus")
             }
         } label: {
             Image(lists.isListed(speciesID) ? .listAdded : .listAdd)
                 .icon(size: .standard, color: .primary)
-                .foregroundStyle(.tint)
-                .padding(.all, .xxxSmall)
-                .conditionalGlass(in: Circle(), isInteractive: true)
+                .if(hasCircleBackground, transform: { view in
+                    view
+                        .foregroundStyle(.tint)
+                        .padding(.all, .xxxSmall)
+                        .conditionalGlass(in: Circle(), isInteractive: true)
+                })
+                
         }
         .accessibilityLabel("Add to list")
         .accessibilityValue(lists.isListed(speciesID) ? "In a list" : "")

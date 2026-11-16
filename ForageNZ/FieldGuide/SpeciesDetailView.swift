@@ -46,6 +46,11 @@ struct SpeciesDetailView: View {
                 RecipeView(recipies: model.species.recipes)
             }
         }
+        .toolbar {
+            if let id = model.species.typedID {
+                AddToListMenu(speciesID: id, hasCircleBackground: false)
+            }
+        }
     }
     
     private var header: some View {

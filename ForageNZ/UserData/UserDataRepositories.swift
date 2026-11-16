@@ -9,6 +9,16 @@ nonisolated struct SpeciesListSnapshot: Sendable, Equatable, Identifiable {
     /// The members as stored, oldest first. Raw strings rather than `SpeciesID`, because a
     /// species can leave the catalogue after it was listed and the list must still load.
     let speciesIDsRaw: [String]
+    /// The SF Symbol the user picked for the list; `nil` when they picked none.
+    let symbolName: String?
+
+    init(id: UUID, name: String, createdAt: Date, speciesIDsRaw: [String], symbolName: String? = nil) {
+        self.id = id
+        self.name = name
+        self.createdAt = createdAt
+        self.speciesIDsRaw = speciesIDsRaw
+        self.symbolName = symbolName
+    }
 
     func contains(_ species: SpeciesID) -> Bool {
         speciesIDsRaw.contains(species.rawValue)
@@ -30,8 +40,12 @@ nonisolated struct FindSnapshot: Sendable, Equatable, Identifiable {
 protocol SpeciesListsRepository: Sendable {
     /// Oldest first.
     func lists() async throws(UserDataError) -> [SpeciesListSnapshot]
-    func createList(named name: String) async throws(UserDataError) -> SpeciesListSnapshot
-    func renameList(_ id: SpeciesListSnapshot.ID, to name: String) async throws(UserDataError)
+    func createList(named name: String, symbolName: String?) async throws(UserDataError) -> SpeciesListSnapshot
+    func updateList(
+        _ id: SpeciesListSnapshot.ID,
+        name: String,
+        symbolName: String?
+    ) async throws(UserDataError)
     /// Deletes the list and its memberships, never the species.
     func deleteList(_ id: SpeciesListSnapshot.ID) async throws(UserDataError)
     /// Adding a species the list already holds changes nothing.

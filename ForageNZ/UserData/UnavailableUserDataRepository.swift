@@ -6,8 +6,12 @@ struct UnavailableUserDataRepository: SpeciesListsRepository, FindsRepository {
     let reason: UserDataError
 
     func lists() async throws(UserDataError) -> [SpeciesListSnapshot] { throw reason }
-    func createList(named name: String) async throws(UserDataError) -> SpeciesListSnapshot { throw reason }
-    func renameList(_ id: SpeciesListSnapshot.ID, to name: String) async throws(UserDataError) { throw reason }
+    func createList(named name: String, symbolName: String?) async throws(UserDataError) -> SpeciesListSnapshot {
+        throw reason
+    }
+    func updateList(_ id: SpeciesListSnapshot.ID, name: String, symbolName: String?) async throws(UserDataError) {
+        throw reason
+    }
     func deleteList(_ id: SpeciesListSnapshot.ID) async throws(UserDataError) { throw reason }
     func add(_ species: SpeciesID, toList id: SpeciesListSnapshot.ID) async throws(UserDataError) { throw reason }
     func remove(speciesIDRaw: String, fromList id: SpeciesListSnapshot.ID) async throws(UserDataError) { throw reason }

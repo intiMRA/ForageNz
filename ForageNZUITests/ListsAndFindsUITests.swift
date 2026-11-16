@@ -26,12 +26,11 @@ final class ListsAndFindsUITests: XCTestCase {
         bookmark.tap()
         app.buttons["New list…"].tap()
 
-        let prompt = app.alerts.firstMatch
-        XCTAssertTrue(prompt.waitForExistence(timeout: Self.existenceTimeout), "The new-list prompt did not open")
-        let name = prompt.textFields.firstMatch
-        XCTAssertTrue(name.waitForExistence(timeout: Self.existenceTimeout), "The new-list prompt has no name field")
+        let name = app.textFields["listName"]
+        XCTAssertTrue(name.waitForExistence(timeout: Self.existenceTimeout), "The new-list editor did not open")
+        name.tap()
         name.typeText("Wanted")
-        app.alerts.buttons["Save"].tap()
+        app.buttons["saveList"].tap()
 
         app.tabBars.buttons["Lists"].tap()
         let list = app.buttons["list.Wanted"]
@@ -41,6 +40,36 @@ final class ListsAndFindsUITests: XCTestCase {
         XCTAssertTrue(
             app.staticTexts["speciesRow.dandelion"].waitForExistence(timeout: Self.existenceTimeout),
             "Dandelion is not on the list's page"
+        )
+    }
+
+    func testAListKeepsTheIconPickedForIt() {
+        app.tabBars.buttons["Lists"].tap()
+        app.buttons["newList"].tap()
+
+        let name = app.textFields["listName"]
+        XCTAssertTrue(name.waitForExistence(timeout: Self.existenceTimeout), "The new-list editor did not open")
+        name.tap()
+        name.typeText("Walks")
+        app.buttons["chooseListIcon"].tap()
+
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: Self.existenceTimeout), "The icon picker has no search field")
+        search.tap()
+        search.typeText("leaf")
+        let leaf = app.buttons["listSymbol.leaf"]
+        XCTAssertTrue(leaf.waitForExistence(timeout: Self.existenceTimeout), "The leaf icon is not in the picker")
+        leaf.tap()
+        app.buttons["saveList"].tap()
+
+        let list = app.buttons["list.Walks"]
+        XCTAssertTrue(list.waitForExistence(timeout: Self.existenceTimeout), "The new list is not in the Lists tab")
+        list.tap()
+        app.buttons["editList"].tap()
+
+        XCTAssertTrue(
+            app.buttons["removeListIcon"].waitForExistence(timeout: Self.existenceTimeout),
+            "The list's icon was not kept"
         )
     }
 

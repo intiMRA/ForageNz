@@ -38,6 +38,11 @@ extension DependencyValues {
         get { self[FindsRepositoryKey.self] }
         set { self[FindsRepositoryKey.self] = newValue }
     }
+
+    var listSymbolRepository: any ListSymbolRepository {
+        get { self[ListSymbolRepositoryKey.self] }
+        set { self[ListSymbolRepositoryKey.self] = newValue }
+    }
 }
 
 private enum SpeciesRepositoryKey: DependencyKey {
@@ -58,4 +63,8 @@ private enum SpeciesListsRepositoryKey: DependencyKey {
 
 private enum FindsRepositoryKey: DependencyKey {
     static let liveValue: any FindsRepository = UserDataSettings.liveRepository
+}
+
+private enum ListSymbolRepositoryKey: DependencyKey {
+    static let liveValue: any ListSymbolRepository = BundledListSymbolRepository()
 }

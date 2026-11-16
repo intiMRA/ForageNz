@@ -54,10 +54,11 @@ struct ListDetailView: View {
             }
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    lists.nameRequest = .rename(list.id, currentName: list.name)
+                    lists.editorRequest = .edit(list.id)
                 } label: {
-                    Label("Rename", systemImage: "pencil")
+                    Label("Edit", systemImage: "pencil")
                 }
+                .accessibilityIdentifier("editList")
             }
         }
     }

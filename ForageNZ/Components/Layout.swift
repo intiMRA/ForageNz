@@ -69,4 +69,8 @@ enum Layout {
 
     /// How much the selected find's pin grows, so it stands out from its neighbours.
     static let selectedFindPinScale: CGFloat = 1.3
+
+    /// One icon in the list-icon picker: the minimum tap target, so the grid stays tappable
+    /// with thousands of icons packed into it.
+    static let listSymbolCellSize: CGFloat = 44
 }

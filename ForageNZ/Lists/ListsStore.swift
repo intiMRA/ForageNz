@@ -8,16 +8,16 @@ import OSLog
 @Observable
 @MainActor
 final class ListsStore {
-    /// Asks the one name prompt `RootView` hosts to open. A list row can scroll away while the
-    /// prompt is up, so the prompt cannot live on the row.
-    enum NameRequest: Equatable, Identifiable {
+    /// Asks the one list editor `RootView` hosts to open. A list row can scroll away while the
+    /// editor is up, so the editor cannot live on the row.
+    enum EditorRequest: Equatable, Identifiable {
         case create(adding: SpeciesID?)
-        case rename(SpeciesListSnapshot.ID, currentName: String)
+        case edit(SpeciesListSnapshot.ID)
 
         var id: String {
             switch self {
             case .create(let species): "create.\(species?.rawValue ?? "")"
-            case .rename(let id, _): "rename.\(id.uuidString)"
+            case .edit(let id): "edit.\(id.uuidString)"
             }
         }
     }
@@ -27,7 +27,7 @@ final class ListsStore {
     private(set) var loadState: LoadState = .idle
     /// The last change that failed, for the screen to show and clear.
     var errorMessage: String?
-    var nameRequest: NameRequest?
+    var editorRequest: EditorRequest?
 
     @ObservationIgnored @Dependency(\.speciesListsRepository) private var repository
 
@@ -55,10 +55,17 @@ final class ListsStore {
 
     /// Creates a list and, when given one, puts `species` in it — the "New list…" route from a card.
     @discardableResult
-    func createList(named rawName: String, adding species: SpeciesID? = nil) async -> SpeciesListSnapshot? {
+    func createList(
+        named rawName: String,
+        symbolName: String? = nil,
+        adding species: SpeciesID? = nil
+    ) async -> SpeciesListSnapshot? {
         var created: SpeciesListSnapshot?
         await perform { () async throws(UserDataError) in
-            let list = try await repository.createList(named: try validatedName(rawName, renaming: nil))
+            let list = try await repository.createList(
+                named: try validatedName(rawName, renaming: nil),
+                symbolName: symbolName
+            )
             if let species {
                 try await repository.add(species, toList: list.id)
             }
@@ -68,9 +75,10 @@ final class ListsStore {
         return list(id: created.id)
     }
 
-    func renameList(_ id: SpeciesListSnapshot.ID, to rawName: String) async {
+    /// Saves a new name and icon; `symbolName` `nil` takes the icon off.
+    func updateList(_ id: SpeciesListSnapshot.ID, name rawName: String, symbolName: String?) async {
         await perform { () async throws(UserDataError) in
-            try await repository.renameList(id, to: try validatedName(rawName, renaming: id))
+            try await repository.updateList(id, name: try validatedName(rawName, renaming: id), symbolName: symbolName)
         }
     }
 
