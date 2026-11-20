@@ -122,7 +122,7 @@ BATCHES = {
     "Lavandula Melissa Mentha Olea Origanum Plantago Prunella Stachys Thymus Verbascum Veronica",
     "Rose family and hops (Rosales)": "Chaenomeles Crataegus Cydonia Eriobotrya Fragaria Humulus "
     "Prunus Pyrus Rosa Rubus Sanguisorba Sorbus Urtica",
-    "Pea family (Fabaceae)": "Acacia Cytisus Genista Gleditsia Lathyrus Robinia Spartium Trifolium "
+    "Pea family (Fabaceae)": "Acacia Cytisus Genista Gleditsia Lathyrus Medicago Robinia Spartium Trifolium "
     "Ulex Vicia Wisteria",
     "Succulents and saltworts (Caryophyllales)": "Amaranthus Atriplex Carpobrotus Chenopodium "
     "Disphyma Opuntia Portulaca Salicornia Suaeda Tetragonia",
@@ -149,7 +149,7 @@ BATCHES = {
     "Green and red seaweeds": "Agarophyton Caulerpa Chaetomorpha Codium Pyropia Ulva",
     "Boletes (Boletales)": "Boletus Chalciporus Leccinum Suillus Xerocomellus",
     "Gilled mushrooms (Agaricales)": "Agaricus Amanita Armillaria Austrocortinarius Calvatia "
-    "Chlorophyllum Clavogaster Clitocybe Coprinus Cyclocybe Flammulina Galerina Marasmius Panaeolus "
+    "Chlorophyllum Clavogaster Clitocybe Coprinopsis Coprinus Cyclocybe Flammulina Galerina Marasmius Panaeolus "
     "Pleurotus Psilocybe Stropharia Volvariella",
     "Other fungi and lichens": "Auricularia Cladonia Hericium Lactarius Morchella Trametes",
 }
