@@ -48,6 +48,7 @@ struct CatalogueFileTests {
                 identification: SourcedText("Unmistakable.", sources: ["Wikipedia, 'Testus alpha' (CC BY-SA 4.0)"]),
                 edibleParts: "None.", preparation: "None.",
                 lookalikes: [Lookalike(name: "Other", risk: .deadly, howToTell: "Check the base.", entry: .deathCap)],
+                associations: [Association(kind: .mycorrhizalPartner, entry: .englishOak, note: "Under oak.")],
                 warnings: ["Do not eat."], harvestEthics: "Leave it.",
                 sources: ["Somebody, A Book, p. 1"],
                 recipes: [Recipe(title: "Nothing", method: "Do not.", sourceURL: URL(string: "https://example.org/nothing"))],

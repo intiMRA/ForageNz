@@ -16,6 +16,8 @@ struct SpeciesDetailView: View {
                 description
                 
                 habitat
+
+                growsWith
                 
                 howToFindIt
                 
@@ -220,21 +222,45 @@ struct SpeciesDetailView: View {
                 SectionHeader(image: Image(.outlineQuestion), title: "Look Alike")
                     .padding(.bottom, .xSmall)
 
-                ScrollView(.horizontal) {
-                    LazyHStack(alignment: .top, spacing: .xSmall) {
-                        ForEach(model.lookalikeCards) { card in
-                            LookalikeCardView(model: card)
-                                .containerRelativeFrame(.horizontal, alignment: .leading) { width, _ in
-                                    width - CommonPadding.xSmall.rawValue
-                                }
-                        }
-                    }
-                    .scrollTargetLayout()
-                }
-                .scrollIndicators(.hidden)
-                .scrollTargetBehavior(.viewAligned)
+                cardStrip(model.lookalikeCards) { LookalikeCardView(model: $0) }
             }
         }
+    }
+
+    /// Living partners this species needs — the tree a fungus fruits under, the fungi under a
+    /// tree. Placed after Habitat because a partner is the best clue to where to look.
+    @ViewBuilder
+    private var growsWith: some View {
+        if !model.associationCards.isEmpty {
+            VStack(alignment: .leading, spacing: .empty) {
+                SectionHeader(image: Image(systemName: "tree"), title: "Grows With")
+                    .padding(.bottom, .xSmall)
+
+                cardStrip(model.associationCards) { AssociationCardView(model: $0) }
+            }
+            .accessibilityIdentifier("speciesDetail.growsWith")
+        }
+    }
+
+    /// A paged horizontal row of cards, each a little narrower than the page so the next one
+    /// peeks in and shows there is more.
+    private func cardStrip<Card: Identifiable, CardView: View>(
+        _ cards: [Card],
+        @ViewBuilder card: @escaping (Card) -> CardView
+    ) -> some View {
+        ScrollView(.horizontal) {
+            LazyHStack(alignment: .top, spacing: .xSmall) {
+                ForEach(cards) { model in
+                    card(model)
+                        .containerRelativeFrame(.horizontal, alignment: .leading) { width, _ in
+                            width - CommonPadding.xSmall.rawValue
+                        }
+                }
+            }
+            .scrollTargetLayout()
+        }
+        .scrollIndicators(.hidden)
+        .scrollTargetBehavior(.viewAligned)
     }
     
     @ViewBuilder

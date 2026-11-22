@@ -104,6 +104,57 @@ struct SpeciesModelFactoryTests {
         #expect(factory.createInfoPageModel(id: .hemlock)?.lookalikeCards.isEmpty == true)
     }
 
+    /// An oak with two root partners: death cap, shipped, and porcini, still a draft.
+    private static func oakAndPartners() -> [ForageSpecies] {
+        func fungus(_ id: String, _ name: String, caution: CautionLevel, draft: Bool) -> ForageSpecies {
+            ForageSpecies(
+                id: id, commonName: name, scientificName: "Fungus \(id)",
+                group: .fungi, origin: .introduced, caution: caution,
+                summary: "A fungus.", habitat: "Under oak.", identification: "Gills.",
+                edibleParts: "Cap.", preparation: "Fry.",
+                associations: [Association(kind: .mycorrhizalPartner, entry: .englishOak, note: "Under oak.")],
+                photos: [SpeciesPhoto(fileName: "\(id)-1.heic", caption: "Cap.", credit: "(c) Someone (CC BY)")],
+                draft: draft
+            )
+        }
+        return [
+            ForageSpecies(
+                id: "english-oak", commonName: "English oak", scientificName: "Quercus robur",
+                group: .nuts, origin: .introduced, caution: .careRequired,
+                summary: "Acorns.", habitat: "Parks.", identification: "Lobed leaves.",
+                edibleParts: "Acorns.", preparation: "Leach.",
+                associations: [
+                    Association(kind: .mycorrhizalPartner, entry: .deathCap, note: "Fruits under oak."),
+                    Association(kind: .mycorrhizalPartner, entry: .porcini, note: "Fruits under oak.")
+                ]
+            ),
+            fungus("death-cap", "Death cap", caution: .doNotEat, draft: false),
+            fungus("porcini", "Porcini", caution: .careRequired, draft: true)
+        ]
+    }
+
+    @Test("A partner card takes its name, photo and caution from the partner's own entry")
+    func associationCardModel() async {
+        let store = makeStore(repository: StubRepository(species: Self.oakAndPartners()))
+        await store.loadIfNeeded()
+        let factory = CatalogueSpeciesModelFactory(store: store)
+
+        let cards = factory.createInfoPageModel(id: .englishOak)?.associationCards
+        let card = cards?.first
+        #expect(card?.destination == .deathCap)
+        #expect(card?.accessibilityIdentifier == "association.death-cap")
+        #expect(card?.name == "Death cap")
+        #expect(card?.scientificName == "Fungus death-cap")
+        #expect(card?.photoFileName == "death-cap-1.heic")
+        #expect(card?.note == "Fruits under oak.")
+        // The poisonous partner carries its badge, so the danger shows without opening it.
+        #expect(card?.caution == .doNotEat)
+
+        // Porcini is a draft, so it has no page to open and no card.
+        #expect(cards?.count == 1)
+        #expect(factory.createInfoPageModel(id: .deathCap)?.associationCards.map(\.destination) == [.englishOak])
+    }
+
     @Test("An id the loaded catalogue lacks yields no model rather than a guess")
     func missingSpecies() async {
         let factory = await Self.factory()

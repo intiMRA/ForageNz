@@ -26,6 +26,7 @@
 		2419EA989959E66CD9C14599 /* CautionPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */; };
 		2478951C8558E38C24D6A904 /* InMemoryUserDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09E54A6E3CA58B5AFD2B132 /* InMemoryUserDataRepository.swift */; };
 		264ED09A988065B705F34E20 /* CatalogueEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DF0D2BB9C0D5A58110687 /* CatalogueEditorApp.swift */; };
+		28C9F846A387965332FFDD41 /* Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9340D6437D61FE276F0E07C /* Association.swift */; };
 		28CE6B4FE8E95DD4A1BB1633 /* SpeciesModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC10D366D26564C8B7E4205 /* SpeciesModelFactory.swift */; };
 		2BB82EB485F18B9705B3F347 /* land-status.json in Resources */ = {isa = PBXBuildFile; fileRef = F3879044878C62F8D8F549D8 /* land-status.json */; };
 		2CA3EAD76EAE4CE824C68675 /* SpeciesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD4F47E08118369C1720304 /* SpeciesRow.swift */; };
@@ -40,11 +41,13 @@
 		42BC722A0552DA4BEBBE5C9F /* ImageBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BEAEAE3D024F1C6A9B9C10 /* ImageBadge.swift */; };
 		4691207ECB81626813522BE9 /* SwiftDataUserDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48341EC562CF6DC0772AA3F0 /* SwiftDataUserDataRepository.swift */; };
 		46C62396A1A4F671C63FEDD0 /* SyncSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81537D299113F560DA0998DA /* SyncSettingsView.swift */; };
+		483EFD56ED838ED53F89F00E /* Association.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9340D6437D61FE276F0E07C /* Association.swift */; };
 		4BB7620AB24EB7A8E15ADEB9 /* WhereYouAreSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867CCA8A5C5E962FD60BBF8 /* WhereYouAreSection.swift */; };
 		4CCD82CE448B568CA2ED776F /* SpeciesDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FF7768A1A33F41DFEFA066 /* SpeciesDestination.swift */; };
 		50980C635719E922E377B47C /* GroupedSpeciesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD7F4C4DAC84FA2F0E3BB4 /* GroupedSpeciesList.swift */; };
 		52AF8572651023313C6A4223 /* UserDataRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE05E5FE2F3CF61A2D9FF0 /* UserDataRepositories.swift */; };
 		544CC0C91FC4F9A0C2478BD7 /* UserDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3FB017210A6E783F85B29E /* UserDataError.swift */; };
+		562BE32D68CBDEDB447E940E /* AssociationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5147F858D59A9C3483AB6D9A /* AssociationCardView.swift */; };
 		566613F76B253A99D963B234 /* land-status.png in Resources */ = {isa = PBXBuildFile; fileRef = B2D00CFE7D2AD3E97CCF1400 /* land-status.png */; };
 		5ED9D0371F62C6D1938C2B0F /* ListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7791EA6160F36050C39244C2 /* ListDetailView.swift */; };
 		663A3FC4F77B87622BD1B478 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F90454DCD23471EAA95C57 /* Router.swift */; };
@@ -209,6 +212,7 @@
 		452B052BD15DA513EB5F5BF3 /* FieldGuideUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FieldGuideUITests.swift; sourceTree = "<group>"; };
 		48341EC562CF6DC0772AA3F0 /* SwiftDataUserDataRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftDataUserDataRepository.swift; sourceTree = "<group>"; };
 		50C595A6A649F412A4066591 /* LookalikeCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LookalikeCardView.swift; path = Components/LookalikeCardView.swift; sourceTree = "<group>"; };
+		5147F858D59A9C3483AB6D9A /* AssociationCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociationCardView.swift; path = Components/AssociationCardView.swift; sourceTree = "<group>"; };
 		51770A6820F225DAC3895D24 /* Destination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Destination.swift; path = Navigation/Destination.swift; sourceTree = "<group>"; };
 		55C6D5333F8A7A09C3B0043D /* SpeciesStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesStore.swift; path = Catalogue/SpeciesStore.swift; sourceTree = "<group>"; };
 		57CE05E5FE2F3CF61A2D9FF0 /* UserDataRepositories.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserDataRepositories.swift; sourceTree = "<group>"; };
@@ -256,6 +260,7 @@
 		A5BD7F4C4DAC84FA2F0E3BB4 /* GroupedSpeciesList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupedSpeciesList.swift; path = Components/GroupedSpeciesList.swift; sourceTree = "<group>"; };
 		A63D5EE60CF7481F6A95C3AD /* ListLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListLabel.swift; sourceTree = "<group>"; };
 		A910A2D47D7457ADB387DF05 /* list-symbols.json */ = {isa = PBXFileReference; includeInIndex = 1; path = "list-symbols.json"; sourceTree = "<group>"; };
+		A9340D6437D61FE276F0E07C /* Association.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Association.swift; path = Catalogue/Model/Association.swift; sourceTree = "<group>"; };
 		AADD7223F93D0639B7DEDA24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE1AF488FF240FA4AD17D70A /* ListSymbolPickerStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListSymbolPickerStore.swift; sourceTree = "<group>"; };
 		B1148E743FAD404D0633179E /* SpeciesPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesPickerView.swift; sourceTree = "<group>"; };
@@ -638,6 +643,7 @@
 				CA7A1000000000000000002B /* SpeciesValidation.swift */,
 				8ADBF4A3306655F900B20F41 /* String+Separators.swift */,
 				CA7A1000000000000000002E /* SpeciesID.swift */,
+				A9340D6437D61FE276F0E07C /* Association.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -685,6 +691,7 @@
 				CEB9B70B4ADDC9A611FEAF30 /* SectionHeader.swift */,
 				0BABD59101CC31A8A411D293 /* SpeciesFilterMenu.swift */,
 				A5BD7F4C4DAC84FA2F0E3BB4 /* GroupedSpeciesList.swift */,
+				5147F858D59A9C3483AB6D9A /* AssociationCardView.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -965,6 +972,7 @@
 				427F19E65882EA68C6C6B0B6 /* Layout.swift in Sources */,
 				E3C01D365E85295EE1DB4CBC /* CautionPalette.swift in Sources */,
 				9FBCD80401D74B2453FD524A /* EditorLayout.swift in Sources */,
+				483EFD56ED838ED53F89F00E /* Association.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1051,6 +1059,8 @@
 				8C7E205C11264AE5C32B30B7 /* ListSymbolPickerStore.swift in Sources */,
 				73CF2EDBA57E7D2D4454DBD8 /* ListSymbolPicker.swift in Sources */,
 				EBCF1BB325E8DC34EBF8EDDE /* ListLabel.swift in Sources */,
+				28C9F846A387965332FFDD41 /* Association.swift in Sources */,
+				562BE32D68CBDEDB447E940E /* AssociationCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

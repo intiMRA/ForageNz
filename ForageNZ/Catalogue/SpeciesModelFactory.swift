@@ -55,10 +55,32 @@ nonisolated struct LookalikeCardModel: Equatable, Identifiable {
     }
 }
 
-/// The detail page: the entry itself plus its lookalike cards already resolved to destinations.
+/// One "Grows with" card: a living partner and the page it opens.
+///
+/// Unlike a lookalike card, the name, scientific name and caution come from the partner's own
+/// entry, because an association records only the link and its note.
+nonisolated struct AssociationCardModel: Equatable, Identifiable {
+    let destination: SpeciesID
+    let kind: AssociationKind
+    let name: String
+    let scientificName: String?
+    let photoFileName: String?
+    let note: String
+    /// The partner's caution, so a poisonous partner (death cap under an oak) carries its
+    /// badge on the card.
+    let caution: CautionLevel
+
+    var id: String { "\(destination.rawValue)|\(kind.rawValue)" }
+    /// Stable hook for UI tests: `association.silver-birch`.
+    var accessibilityIdentifier: String { "association.\(destination.rawValue)" }
+}
+
+/// The detail page: the entry itself plus its lookalike and partner cards already resolved to
+/// destinations.
 nonisolated struct InfoPageModel: Equatable {
     let species: ForageSpecies
     let lookalikeCards: [LookalikeCardModel]
+    let associationCards: [AssociationCardModel]
 }
 
 /// One find on the map. The pin draws the species' group; the card under the map opens its page.
@@ -91,6 +113,9 @@ protocol SpeciesModelFactory {
     /// Takes the `Lookalike` rather than a bare id: the card's text — how to tell them apart —
     /// belongs to the relationship between two species, not to the one it opens.
     func createLookalikeCardModel(_ lookalike: Lookalike) -> LookalikeCardModel
+    /// Takes the `Association` for the same reason: its note belongs to the partnership. `nil`
+    /// when the partner has no page in the app — a draft — since the card would open nothing.
+    func createAssociationCardModel(_ association: Association) -> AssociationCardModel?
     func createFindPinModel(_ find: FindSnapshot) -> FindPinModel
 }
 
@@ -101,7 +126,8 @@ struct CatalogueSpeciesModelFactory: SpeciesModelFactory {
         guard let species = store.species(for: id) else { return nil }
         return InfoPageModel(
             species: species,
-            lookalikeCards: species.lookalikes.map(createLookalikeCardModel)
+            lookalikeCards: species.lookalikes.map(createLookalikeCardModel),
+            associationCards: species.associations.compactMap(createAssociationCardModel)
         )
     }
 
@@ -129,6 +155,19 @@ struct CatalogueSpeciesModelFactory: SpeciesModelFactory {
         )
     }
 
+    func createAssociationCardModel(_ association: Association) -> AssociationCardModel? {
+        guard let partner = store.species(for: association.entry) else { return nil }
+        return AssociationCardModel(
+            destination: association.entry,
+            kind: association.kind,
+            name: partner.commonName,
+            scientificName: partner.scientificName,
+            photoFileName: partner.photos.first?.fileName,
+            note: association.note,
+            caution: partner.caution
+        )
+    }
+
     func createFindPinModel(_ find: FindSnapshot) -> FindPinModel {
         let species = find.speciesID.flatMap(store.species(for:))
         return FindPinModel(
@@ -151,6 +190,7 @@ struct UnconfiguredSpeciesModelFactory: SpeciesModelFactory {
     func createLookalikeCardModel(_ lookalike: Lookalike) -> LookalikeCardModel {
         LookalikeCardModel(lookalike)
     }
+    func createAssociationCardModel(_ association: Association) -> AssociationCardModel? { nil }
     func createFindPinModel(_ find: FindSnapshot) -> FindPinModel {
         FindPinModel(id: find.id, coordinate: find.coordinate, foundAt: find.foundAt, speciesID: nil, commonName: nil, group: nil, caution: nil)
     }

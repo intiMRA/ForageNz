@@ -18,6 +18,7 @@ public enum ValidationField: String, Sendable, Hashable, CaseIterable {
     case caution
     case months
     case lookalikes
+    case associations
     case warnings
     case harvestEthics
     case sources
@@ -95,6 +96,15 @@ public extension ForageSpecies {
             }
             if lookalike.howToTell.trimmed.isEmpty {
                 blocking(.lookalikes, at: index, "Needs a specific, field-checkable way to tell them apart.")
+            }
+        }
+
+        for (index, association) in associations.enumerated() {
+            if association.entry.rawValue == id {
+                blocking(.associations, at: index, "A species cannot be its own partner — pick the page this card should open.")
+            }
+            if association.note.trimmed.isEmpty {
+                blocking(.associations, at: index, "Needs a short note saying what the partnership is.")
             }
         }
 

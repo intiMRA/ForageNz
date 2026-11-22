@@ -22,6 +22,9 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     public let edibleParts: SourcedText
     public let preparation: SourcedText
     public let lookalikes: [Lookalike]
+    /// Living partners this species needs — root partners, hosts, parasites. Each one is
+    /// carried back on the partner's entry; `AssociationLink.oneWay` finds any that is not.
+    public let associations: [Association]
     /// Hard safety facts — processing requirements, toxic parts, contamination risks.
     public let warnings: [String]
     /// Tikanga, access and conservation notes: rāhui, DOC land, taking sparingly.
@@ -73,6 +76,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         edibleParts: SourcedText,
         preparation: SourcedText,
         lookalikes: [Lookalike] = [],
+        associations: [Association] = [],
         warnings: [String] = [],
         harvestEthics: SourcedText? = nil,
         sources: [String] = [],
@@ -98,6 +102,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         self.edibleParts = edibleParts
         self.preparation = preparation
         self.lookalikes = lookalikes
+        self.associations = associations
         self.warnings = warnings
         self.harvestEthics = harvestEthics
         self.sources = sources
@@ -128,6 +133,8 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         edibleParts = try container.decode(SourcedText.self, forKey: .edibleParts)
         preparation = try container.decode(SourcedText.self, forKey: .preparation)
         lookalikes = try container.decode([Lookalike].self, forKey: .lookalikes)
+        // Absent means none recorded, so entries written before the field existed still decode.
+        associations = try container.decodeIfPresent([Association].self, forKey: .associations) ?? []
         warnings = try container.decode([String].self, forKey: .warnings)
         harvestEthics = try container.decodeIfPresent(SourcedText.self, forKey: .harvestEthics)
         sources = try container.decode([String].self, forKey: .sources)
@@ -251,6 +258,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         edibleParts: SourcedText? = nil,
         preparation: SourcedText? = nil,
         lookalikes: [Lookalike]? = nil,
+        associations: [Association]? = nil,
         warnings: [String]? = nil,
         harvestEthics: SourcedText?? = nil,
         sources: [String]? = nil,
@@ -277,6 +285,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
             edibleParts: edibleParts ?? self.edibleParts,
             preparation: preparation ?? self.preparation,
             lookalikes: lookalikes ?? self.lookalikes,
+            associations: associations ?? self.associations,
             warnings: warnings ?? self.warnings,
             harvestEthics: harvestEthics ?? self.harvestEthics,
             sources: sources ?? self.sources,

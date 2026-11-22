@@ -14,7 +14,8 @@ drafts first — and inside each app group the groups with drafts come before th
 ones. Entries joined to nothing are listed last in their app group.
 
 Per entry the report shows its state, caution, photos, months, the prose fields still empty,
-its lookalike cards (and whether each opens a draft), its habitat tags with the words in its
+its lookalike cards (and whether each opens a draft), its "grows with" partners (flagging any
+the partner's entry does not link back), its habitat tags with the words in its
 own habitat prose that support them, and every ``OWED`` line in its sources — the text only
 a person may write.
 
@@ -224,6 +225,28 @@ def name_of(members: list[Entry]) -> str:
     return " and ".join(sorted(e["commonName"] for e in members)[:2])
 
 
+# The kind the partner's entry must carry for the same partnership — `AssociationKind.reverse`.
+REVERSE_KIND = {
+    "mycorrhizalPartner": "mycorrhizalPartner",
+    "parasiteOf": "hostOf",
+    "hostOf": "parasiteOf",
+    "growsOnDeadWoodOf": "deadWoodHostOf",
+    "deadWoodHostOf": "growsOnDeadWoodOf",
+}
+
+
+def has_reverse(entry: Entry, link: dict[str, str], by_id: dict[str, Entry]) -> bool:
+    """Whether the partner's entry links back to ``entry`` with the reverse kind."""
+    partner = by_id.get(link.get("entry", ""))
+    if partner is None:
+        return False
+    wanted = REVERSE_KIND.get(link.get("kind", ""))
+    return any(
+        back.get("entry") == entry["id"] and back.get("kind") == wanted
+        for back in partner.get("associations") or []
+    )
+
+
 def row(entry: Entry, members: set[str], by_id: dict[str, Entry]) -> dict[str, Any]:
     missing = [f for f in PROSE_FIELDS if not prose(entry, f)]
     # Months are the harvest window of the eaten part, so a doNotEat entry has none to give.
@@ -240,6 +263,17 @@ def row(entry: Entry, members: set[str], by_id: dict[str, Entry]) -> dict[str, A
                 "sibling": card.get("entry") in members,
             }
         )
+    partners = []
+    for link in entry.get("associations") or []:
+        target = by_id.get(link.get("entry", ""))
+        partners.append(
+            {
+                "name": target["commonName"] if target else link.get("entry"),
+                "kind": link.get("kind", ""),
+                "state": "missing" if not target else ("draft" if target.get("draft") else ""),
+                "oneWay": not has_reverse(entry, link, by_id),
+            }
+        )
     tags = entry.get("habitats") or []
     found = evidence(prose(entry, "habitat"))
     return {
@@ -252,6 +286,7 @@ def row(entry: Entry, members: set[str], by_id: dict[str, Entry]) -> dict[str, A
         "months": entry.get("months") or [],
         "missing": missing,
         "cards": cards,
+        "partners": partners,
         "habitats": [(tag, found.get(tag, [])) for tag in tags],
         "owed": owed(entry),
     }
@@ -765,6 +800,18 @@ def render_row(r: dict[str, Any]) -> str:
         }.get(c["state"], "")
         cards.append(f'<li>{esc(c["name"])} <span class="dim">· {esc(c["risk"])}</span>{flag}</li>')
     card_cell = f'<ul class="list">{"".join(cards)}</ul>' if cards else '<span class="dim">—</span>'
+    partners = []
+    for p in r["partners"]:
+        flag = {
+            "draft": ' <span class="miss">(draft)</span>',
+            "missing": ' <span class="no">(no page)</span>',
+        }.get(p["state"], "")
+        if p["oneWay"]:
+            flag += ' <span class="no">(no link back)</span>'
+        partners.append(f'<li>{esc(p["name"])} <span class="dim">· {esc(p["kind"])}</span>{flag}</li>')
+    partner_cell = (
+        f'<ul class="list">{"".join(partners)}</ul>' if partners else '<span class="dim">—</span>'
+    )
     tags = []
     for tag, words in r["habitats"]:
         why = (
@@ -784,6 +831,7 @@ def render_row(r: dict[str, Any]) -> str:
         f"<td>{months_text(r['months'])}</td>"
         f"<td>{missing}</td>"
         f"<td>{card_cell}</td>"
+        f"<td>{partner_cell}</td>"
         f"<td>{tag_cell}</td>"
         "</tr>"
     )
@@ -791,7 +839,7 @@ def render_row(r: dict[str, Any]) -> str:
 
 def render_table(rows: list[dict[str, Any]]) -> list[str]:
     out = ['<div class="scroll"><table><thead><tr>']
-    for header in ["Entry", "State", "Photos", "Months", "Missing", "Lookalikes", "Habitats"]:
+    for header in ["Entry", "State", "Photos", "Months", "Missing", "Lookalikes", "Grows with", "Habitats"]:
         out.append(f"<th>{header}</th>")
     out.append("</tr></thead><tbody>")
     out.extend(render_row(r) for r in rows)

@@ -183,6 +183,25 @@ final class FieldGuideUITests: XCTestCase {
         XCTAssertEqual(scientificName.label, "Conium maculatum", "Tapping the card did not open hemlock's own page")
     }
 
+    /// A partner card opens the partner's own page: from a fungus to the tree it grows under.
+    func testGrowsWithCardOpensThePartnersEntry() {
+        let slipperyJack = fieldGuideRow("slippery-jack", searchingFor: "slippery jack")
+        XCTAssertTrue(slipperyJack.waitForExistence(timeout: Self.existenceTimeout), "Slippery jack row not found")
+        slipperyJack.tap()
+
+        let pineCard = app.descendants(matching: .any)["association.monterey-pine"].firstMatch
+        XCTAssertTrue(pineCard.waitForExistence(timeout: Self.existenceTimeout), "Radiata pine card is not on the slippery jack page")
+        XCTAssertTrue(
+            scrollDownUntil({ pineCard.isHittable }),
+            "Could not scroll the radiata pine card into view"
+        )
+        pineCard.tap()
+
+        let scientificName = app.staticTexts["speciesDetail.scientificName"]
+        XCTAssertTrue(scientificName.waitForExistence(timeout: Self.existenceTimeout))
+        XCTAssertEqual(scientificName.label, "Pinus radiata", "Tapping the card did not open radiata pine's own page")
+    }
+
     /// Opens the Field guide and searches for a row rather than assuming it is rendered.
     ///
     /// The list is lazy and alphabetical, so whether any given row is on screen at launch is a

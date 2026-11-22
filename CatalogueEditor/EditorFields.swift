@@ -279,6 +279,87 @@ struct LookalikeEditor: View {
     }
 }
 
+struct AssociationEditor: View {
+    let associations: [Association]
+    /// The species being edited. A new link starts by pointing at it, which validation flags
+    /// as blocking, for the same reason as a new lookalike card.
+    let owner: SpeciesID?
+    let onChange: ([Association]) -> Void
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: .small) {
+            if associations.isEmpty {
+                Text("None recorded.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
+            ForEach(Array(associations.enumerated()), id: \.offset) { index, association in
+                VStack(alignment: .leading, spacing: .xSmall) {
+                    HStack(spacing: .xSmall) {
+                        Picker("Kind", selection: Binding(
+                            get: { association.kind },
+                            set: { replace(index, association, kind: $0) }
+                        )) {
+                            ForEach(AssociationKind.allCases, id: \.self) { Text($0.displayName).tag($0) }
+                        }
+
+                        Button {
+                            var next = associations
+                            next.remove(at: index)
+                            onChange(next)
+                        } label: {
+                            Image(systemName: "minus.circle.fill")
+                        }
+                        .buttonStyle(.borderless)
+                        .help("Remove partner")
+                    }
+
+                    Picker("Partner page", selection: Binding(
+                        get: { association.entry },
+                        set: { replace(index, association, entry: $0) }
+                    )) {
+                        ForEach(SpeciesID.allCases, id: \.self) { Text($0.rawValue).tag($0) }
+                    }
+
+                    TextField("Note for the card", text: Binding(
+                        get: { association.note },
+                        set: { replace(index, association, note: $0) }
+                    ), axis: .vertical)
+                    .lineLimit(1...4)
+                    .textFieldStyle(.roundedBorder)
+                }
+                .padding(.all, .small)
+                .background(Color.secondary.opacity(Layout.bannerBackgroundOpacity), in: EditorLayout.insetShape)
+            }
+
+            Button("Add partner", systemImage: "plus.circle") {
+                onChange(associations + [
+                    Association(kind: .mycorrhizalPartner, entry: owner ?? SpeciesID.allCases[0], note: "")
+                ])
+            }
+            .buttonStyle(.borderless)
+        }
+        .padding(.vertical, .xxxSmall)
+    }
+
+    private func replace(
+        _ index: Int,
+        _ association: Association,
+        kind: AssociationKind? = nil,
+        entry: SpeciesID? = nil,
+        note: String? = nil
+    ) {
+        var next = associations
+        next[index] = Association(
+            kind: kind ?? association.kind,
+            entry: entry ?? association.entry,
+            note: note ?? association.note
+        )
+        onChange(next)
+    }
+}
+
 /// The structured companion to the habitat text field. Toggles rather than a single
 /// selection, because a species that grows on roadsides and riverbanks grows in both.
 struct HabitatPicker: View {

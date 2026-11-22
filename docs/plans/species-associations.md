@@ -1,6 +1,17 @@
 # Plan: "Grows with" — symbiotic links between species
 
-**Status:** proposed 16/11/2026; owner decisions 16/11/2026 below. Nothing built yet.
+**Status:** proposed 16/11/2026; owner decisions 16/11/2026 below. Steps 1–4 built 23/11/2026
+(model, validation, reverse-link test, "Grows With" page section, editor section, report column).
+Seed links (step 5, first part) added 23/11/2026: 20 pairs between entries that already exist,
+each resting on a species-level source recorded as a dated 'Associations round' line on both
+entries (Biota of New Zealand PDD host records, Virtual Mycota, Plant & Food, Fungal Guide). The UI
+test is slippery jack → radiata pine. Not linked, for want of a species-level New Zealand record:
+oakbug milkcap–oak (only 'Quercus sp.'), porcini–sweet chestnut (habitat says it; no NZ record),
+death cap–mānuka/kānuka (genus only), fly agaric–larch and –mānuka (genus only), fly agaric–lilly
+pilly (one Biota record of 'Eugenia smithii', not in its habitat text — owner to decide). Still to
+come: the host entries the catalogue lacks (silver birch first, then the southern beeches,
+European beech, poplar, willow, alder) and the links that wait on them. Partners that are still drafts get no card in the app (their page does not
+exist there) but count for the reverse-link test.
 
 ## Owner decisions (16/11/2026) — these override the sections below where they differ
 

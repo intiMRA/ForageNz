@@ -19,6 +19,7 @@ struct SpeciesValidationTests {
         edibleParts: SourcedText = "Leaves.",
         preparation: SourcedText = "Boil.",
         lookalikes: [Lookalike] = [],
+        associations: [Association] = [],
         warnings: [String] = [],
         harvestEthics: SourcedText? = nil,
         sources: [String] = ["A Book, p. 1"],
@@ -33,7 +34,7 @@ struct SpeciesValidationTests {
             group: .greens, origin: origin, caution: caution, months: months,
             summary: summary, habitat: habitat, habitats: habitats, identification: identification,
             edibleParts: edibleParts, preparation: preparation,
-            lookalikes: lookalikes, warnings: warnings, harvestEthics: harvestEthics,
+            lookalikes: lookalikes, associations: associations, warnings: warnings, harvestEthics: harvestEthics,
             sources: sources, recipes: recipes, photos: photos
         )
     }
@@ -146,6 +147,19 @@ struct SpeciesValidationTests {
         let species = makeSpecies(id: "hemlock", caution: .careRequired, lookalikes: [selfie])
         #expect(labels(species, severity: .blocking).contains("lookalikes[0]"))
         #expect(makeSpecies(id: "wild-fennel", caution: .careRequired, lookalikes: [selfie]).isPublishable)
+    }
+
+    @Test("A species cannot name itself as a partner")
+    func selfAssociationBlocks() {
+        let selfie = Association(kind: .mycorrhizalPartner, entry: .birchBolete, note: "Under birch.")
+        #expect(labels(makeSpecies(id: "birch-bolete", associations: [selfie]), severity: .blocking).contains("associations[0]"))
+        #expect(makeSpecies(id: "silver-birch", associations: [selfie]).isPublishable)
+    }
+
+    @Test("A partner card with no note is blocking")
+    func associationNeedsNote() {
+        let blank = Association(kind: .mycorrhizalPartner, entry: .birchBolete, note: "  ")
+        #expect(labels(makeSpecies(associations: [blank]), severity: .blocking).contains("associations[0]"))
     }
 
     @Test("Identifiers cannot start with a digit — they become enum cases")

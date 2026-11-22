@@ -166,6 +166,16 @@ struct CatalogueTests {
         }
     }
 
+    /// A partnership is a fact about two species, so both pages carry it: the tree lists the
+    /// fungus and the fungus lists the tree, with each other's kind (a parasite's host says
+    /// `hostOf`). One page carrying it alone means someone forgot the other.
+    @Test("Every association is recorded on both partners' pages")
+    func everyAssociationHasItsReverse() async throws {
+        for link in AssociationLink.oneWay(in: try await loadCatalogue()) {
+            Issue.record("\(link.from.rawValue) → \(link.to.rawValue) (\(link.kind.rawValue)) has no \(link.kind.reverse.rawValue) link back")
+        }
+    }
+
     /// A card can name any page, so this is what stops "Hemlock" opening the death-cap page:
     /// when a lookalike records a scientific name, the page it opens must carry that name.
     @Test("Every lookalike opens the page whose scientific name it records")

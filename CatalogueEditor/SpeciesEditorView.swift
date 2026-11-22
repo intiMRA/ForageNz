@@ -127,6 +127,18 @@ struct SpeciesEditorView: View {
             )
         }
 
+        Section {
+            AssociationEditor(associations: species.associations, owner: species.typedID) {
+                onChange(species.with(associations: $0))
+            }
+        } header: {
+            Text("Grows with")
+        } footer: {
+            Text("Only partners this species needs — a root partner, host or parasite, or the one tree whose dead wood it rots. Add the reverse link on the partner's entry too.")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+        }
+
         Section("Use") {
             LabelledField(
                 "Edible parts",
@@ -282,7 +294,7 @@ enum EditorTab: String, CaseIterable, Identifiable {
     static func tab(owning field: ValidationField) -> EditorTab {
         switch field {
         case .id, .commonName, .scientificName, .summary, .habitat, .habitats, .identification,
-             .edibleParts, .preparation, .caution, .months:
+             .associations, .edibleParts, .preparation, .caution, .months:
             .entry
         case .photos:
             .photos
