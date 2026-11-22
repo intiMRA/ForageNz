@@ -4,7 +4,6 @@
 /// One case per catalogue entry. Referencing a species means naming one of these, so a
 /// screen or a lookalike cannot point at a species the catalogue does not have.
 public enum SpeciesID: String, Codable, Sendable, Hashable, CaseIterable {
-    case agarophytonTranstasmanicum = "agarophyton-transtasmanicum"
     case alexanders = "alexanders"
     case alsikeClover = "alsike-clover"
     case aluminiumPlant = "aluminium-plant"
@@ -93,6 +92,11 @@ public enum SpeciesID: String, Codable, Sendable, Hashable, CaseIterable {
     case commonSorrel = "common-sorrel"
     case commonStorksbill = "common-storksbill"
     case commonVetch = "common-vetch"
+    case coprosmaColensoi = "coprosma-colensoi"
+    case coprosmaCrassifolia = "coprosma-crassifolia"
+    case coprosmaDistantia = "coprosma-distantia"
+    case coprosmaObconica = "coprosma-obconica"
+    case coprosmaRigida = "coprosma-rigida"
     case cowParsley = "cow-parsley"
     case creepingLawyer = "creeping-lawyer"
     case creepingSaltbush = "creeping-saltbush"
@@ -310,6 +314,7 @@ public enum SpeciesID: String, Codable, Sendable, Hashable, CaseIterable {
     case purslane = "purslane"
     case quince = "quince"
     case radish = "radish"
+    case railwayCreeper = "railway-creeper"
     case raupo = "raupo"
     case redCampion = "red-campion"
     case redClover = "red-clover"
