@@ -106,9 +106,10 @@ final class SpeciesStore {
     func filter(
         query: String = "",
         group: ForageGroup? = nil,
-        origin: ForageOrigin? = nil
+        origin: ForageOrigin? = nil,
+        habitat: Habitat? = nil
     ) -> [ForageSpecies] {
-        SpeciesFilter(query: query, group: group, origin: origin).apply(to: species)
+        SpeciesFilter(query: query, group: group, origin: origin, habitat: habitat).apply(to: species)
     }
 
     /// A list's members split into the ones the guide shows, in display order, and the raw ids

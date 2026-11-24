@@ -67,6 +67,7 @@ private func makeSpecies(
     caution: CautionLevel = .straightforward,
     months: [ForageMonth] = [],
     summary: SourcedText = "A plant.",
+    habitats: [Habitat] = [],
     lookalikes: [Lookalike] = []
 ) -> ForageSpecies {
     ForageSpecies(
@@ -79,6 +80,7 @@ private func makeSpecies(
         months: months,
         summary: summary,
         habitat: "Ground.",
+        habitats: habitats,
         identification: "Green.",
         edibleParts: "Leaves.",
         preparation: "Boil.",
@@ -109,12 +111,13 @@ struct SpeciesStoreTests {
         #expect(members.missingIDsRaw == ["gone-plant", "stub"])
     }
 
-    @Test("Only a group or origin counts as narrowing by facet, not the search text")
+    @Test("Only a group, origin or habitat counts as narrowing by facet, not the search text")
     func narrowsByFacet() {
         #expect(SpeciesFilter().narrowsByFacet == false)
         #expect(SpeciesFilter(query: "fennel").narrowsByFacet == false)
         #expect(SpeciesFilter(group: .greens).narrowsByFacet)
         #expect(SpeciesFilter(origin: .pest).narrowsByFacet)
+        #expect(SpeciesFilter(habitat: .coastal).narrowsByFacet)
     }
 
     @Test("Loading sorts the catalogue by common name")
@@ -294,6 +297,21 @@ struct SpeciesStoreTests {
         #expect(store.filter(origin: .native).map(\.id) == ["kawakawa"])
         #expect(store.filter(origin: .pest).map(\.id) == ["blackberry"])
         #expect(store.filter(origin: .introduced).map(\.id) == ["walnut"])
+    }
+
+    @Test("Filtering by habitat keeps every entry that lists it, among others or alone")
+    func filterByHabitat() async {
+        let store = makeStore(repository: StubRepository(species: [
+            makeSpecies(id: "karengo", commonName: "Karengo", habitats: [.coastal]),
+            makeSpecies(id: "fennel", commonName: "Fennel", habitats: [.disturbed, .coastal]),
+            makeSpecies(id: "horopito", commonName: "Horopito", habitats: [.forest])
+        ]))
+
+        await store.loadIfNeeded()
+
+        #expect(store.filter(habitat: .coastal).map(\.id) == ["fennel", "karengo"])
+        #expect(store.filter(habitat: .forest).map(\.id) == ["horopito"])
+        #expect(store.filter(habitat: .alpine).isEmpty)
     }
 
     @Test("Category and origin filters compose")

@@ -15,8 +15,15 @@ import SwiftUI
 final class Router {
     var path: [Destination] = []
 
-    func push(_ destination: Destination) {
-        path.append(destination)
+    func push(_ destination: Destination, dropStack: Bool = false) {
+        if dropStack, path.count >= 9 {
+            var newPath = path[0..<1]
+            newPath.append(destination)
+            path = Array(newPath)
+        }
+        else {
+            path.append(destination)
+        }
     }
 
     func pop() {

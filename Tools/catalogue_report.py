@@ -8,10 +8,9 @@ connected component over two kinds of edge:
   * same genus — the first word of ``scientificName``;
   * a lookalike card between two entries that are both in the catalogue.
 
-Those are the groups where one research session fills several entries at once. The report
-opens with every draft batched by plant family (``BATCHES``) — the ones to pick up next, most
-drafts first — and inside each app group the groups with drafts come before the finished
-ones. Entries joined to nothing are listed last in their app group.
+Those are the groups where one research session fills several entries at once. Inside each
+app group the groups with drafts come before the finished ones. Entries joined to nothing are
+listed last in their app group.
 
 Per entry the report shows its state, caution, photos, months, the prose fields still empty,
 its lookalike cards (and whether each opens a draft), its "grows with" partners (flagging any
@@ -19,7 +18,15 @@ the partner's entry does not link back), its habitat tags with the words in its
 own habitat prose that support them, and every ``OWED`` line in its sources — the text only
 a person may write.
 
-    python3 Tools/catalogue_report.py [--out docs/catalogue.html]
+While any lead is open, the report opens with "Link next": the "grows with" partnerships a link can be made from, from
+``docs/association-leads.json`` (written by ``Tools/globi_symbioses.py``, which keeps a GloBI
+GloBI's specific partnership records, generalists left out, with Biota of New Zealand's record
+count beside each as a head start), split into batches by the kind of fungus (``LINK_BATCHES``), one row per fungus.
+Pairs the associations plan already declined are left out of the page (owner 23/11/2026),
+counted in a chip, and so are the hosts of a fungus declined with every tree.
+Host plants with no wild New Zealand presence (``NOT_IN_NZ_HOSTS``) are dropped from the leads.
+
+    python3 Tools/catalogue_report.py [--out docs/catalogue.html] [--leads docs/association-leads.json]
 """
 
 from __future__ import annotations
@@ -30,12 +37,14 @@ import html
 import json
 import pathlib
 import re
+import urllib.parse
 from typing import Any
 
 from classify_habitats import evidence
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 SPECIES = REPO / "ForageNZ" / "Catalogue" / "species.json"
+LEADS = REPO / "docs" / "association-leads.json"
 
 Entry = dict[str, Any]
 
@@ -106,55 +115,175 @@ NAMES = {
     "sticky-mouse-ear-chickweed": "Mouse-ear chickweeds",
 }
 
-# The "Pick up next" table batches species groups (and lone drafts) by plant family, so one
-# session covers several groups that share a Flora treatment, keys and lookalikes. Small
-# families join their nearest relatives (fuchsias with the myrtles, hops with the roses) or a
-# coarser lineage where families are tiny: fungi by order, conifers, ferns, seaweeds by colour.
-# Keyed by genus, the first word of `scientificName`; a genus missing here gets its own batch.
-BATCHES = {
-    "Daisy family (Asteraceae)": "Achillea Anthemis Arctium Bellis Calendula Chamaemelum Crepis "
-    "Erigeron Hypochaeris Lactuca Lapsana Leontodon Leucanthemum Matricaria Mycelis Pilosella "
-    "Scorzoneroides Silybum Sonchus Taraxacum Tragopogon",
-    "Mustard family (Brassicaceae)": "Barbarea Brassica Cakile Capsella Cardamine Diplotaxis "
-    "Lepidium Lobularia Lunaria Matthiola Nasturtium Raphanus Rorippa Sisymbrium",
-    "Carrot family and lemonwood (Apiales)": "Angelica Anthriscus Apium Conium Daucus Foeniculum "
-    "Gingidia Helosciadium Heracleum Pastinaca Petroselinum Pittosporum Smyrnium",
-    "Mint, plantain and olive families (Lamiales)": "Cymbalaria Digitalis Glechoma Jasminum Lamium "
-    "Lavandula Melissa Mentha Olea Origanum Plantago Prunella Stachys Thymus Verbascum Veronica",
-    "Rose family and hops (Rosales)": "Chaenomeles Crataegus Cydonia Eriobotrya Fragaria Humulus "
-    "Prunus Pyrus Rosa Rubus Sanguisorba Sorbus Urtica",
-    "Pea family (Fabaceae)": "Acacia Cytisus Genista Gleditsia Lathyrus Medicago Robinia Spartium Trifolium "
-    "Ulex Vicia Wisteria",
-    "Succulents and saltworts (Caryophyllales)": "Amaranthus Atriplex Carpobrotus Chenopodium "
-    "Disphyma Opuntia Portulaca Salicornia Suaeda Tetragonia",
-    "Pinks and knotweeds (Caryophyllales)": "Arum Cerastium Dianthus Persicaria Reynoutria Rumex "
-    "Silene Stellaria",
-    "Myrtles and fuchsias (Myrtales)": "Acca Fuchsia Kunzea Leptospermum Metrosideros Psidium "
-    "Syzygium",
-    "Heath family (Ericaceae)": "Arbutus Gaultheria Leptecophylla Styphelia",
-    "Nightshades, honeysuckles and comfrey": "Calystegia Convolvulus Ipomoea Leycesteria Lonicera Lycium Nicandra Physalis "
-    "Solanum Symphytum",
-    "Lilies, flaxes and irises (Asparagales)": "Allium Arthropodium Asparagus Cordyline Hosta "
-    "Leucojum Phormium Romulea",
-    "Grasses, bamboos and raupō (Poales)": "Avena Briza Himalayacalamus Phyllostachys Pseudosasa "
-    "Typha",
-    "Other monocots": "Alisma Freycinetia Monstera Ripogonum Tradescantia",
-    "Violets and linseed (Malpighiales)": "Euphorbia Linum Passiflora Viola",
-    "Currants and pennywort (Saxifragales)": "Ribes Umbilicus",
-    "Nut trees and sumac": "Aesculus Ailanthus Castanea Juglans Quercus Rhus Toxicodendron",
-    "Other trees and climbers": "Alseuosmia Araujia Eschscholzia Magnolia Pseudowintera Sicyos",
-    "Conifers": "Chamaecyparis Cryptomeria Dacrycarpus Dacrydium Larix Pinus Podocarpus "
-    "Prumnopitys Pseudotsuga Taxus",
-    "Ferns": "Asplenium Blechnum Cyathea Lecanopteris Pteridium",
-    "Brown seaweeds": "Durvillaea Ecklonia Hormosira Macrocystis Splachnidium Undaria",
-    "Green and red seaweeds": "Agarophyton Caulerpa Chaetomorpha Codium Pyropia Ulva",
-    "Boletes (Boletales)": "Boletus Chalciporus Leccinum Suillus Xerocomellus",
-    "Gilled mushrooms (Agaricales)": "Agaricus Amanita Armillaria Austrocortinarius Calvatia "
-    "Chlorophyllum Clavogaster Clitocybe Coprinopsis Coprinus Cyclocybe Flammulina Galerina Marasmius Panaeolus "
-    "Pleurotus Psilocybe Stropharia Volvariella",
-    "Other fungi and lichens": "Auricularia Cladonia Hericium Lactarius Morchella Trametes",
+# "Link next" batches: fungus genus → batch, in the order they are worked. A pair with no fungus
+# goes in PLANT_BATCH, a genus not listed in its own batch named after it.
+LINK_BATCHES = {
+    "Boletes and suillus": (
+        "Boletus Leccinum Xerocomellus Chalciporus Suillus",
+        "Root partners. Each pair needs a New Zealand record naming the host species "
+        "(Biota PDD host records read through the current name, Virtual Mycota).",
+    ),
+    "Milkcaps, amanitas and webcaps": (
+        "Lactarius Amanita Cortinarius Russula",
+        "Root partners. Each pair needs a New Zealand record naming the host species "
+        "(Biota PDD host records read through the current name, Virtual Mycota).",
+    ),
+    "Wood-rotters and tree parasites": (
+        "Armillaria Flammulina Trametes Auricularia Pleurotus Cyclocybe",
+        "Owner scope 16/11: a link only when the fungus needs one particular tree; a "
+        "generalist on any dead wood gets none.",
+    ),
+    "Ground and litter mushrooms": (
+        "Agaricus Marasmius Calvatia Coprinus Stropharia Morchella Psilocybe Chlorophyllum Clitocybe",
+        "Grassland, compost and litter fungi.",
+    ),
 }
-BATCH_OF = {genus: batch for batch, genera in BATCHES.items() for genus in genera.split()}
+LINK_BATCH_OF = {
+    genus: batch for batch, (genera, _) in LINK_BATCHES.items() for genus in genera.split()
+}
+PLANT_BATCH = "Plants on plants"
+PLANT_NOTE = "Epiphytes and climbers recorded on one host."
+
+# Pairs docs/plans/species-associations.md already declined (23/11/2026), with its reason.
+DECLINED = {
+    frozenset(pair): reason
+    for reason, pairs in {
+        "genus-only record ('Quercus sp.')": [
+            ("oakbug-milkcap", "english-oak"), ("oakbug-milkcap", "holm-oak")
+        ],
+        "no NZ record for chestnut": [("porcini", "sweet-chestnut")],
+        "genus-only record": [
+            ("death-cap", "manuka"), ("death-cap", "kanuka"),
+            ("fly-agaric", "larch"), ("fly-agaric", "manuka"),
+        ],
+        "one photo record": [("olive-oyster", "silver-beech")],
+        "no species-level NZ record": [("skirt-webcap", "black-beech")],
+        "single record outside its beech habitat": [
+            ("umere-milkcap", "kanuka"), ("tawai-milkcap", "totara")
+        ],
+        # GloBI leads checked against Biota NZ PDD host records 23/11/2026.
+        "no NZ record naming this tree": [
+            ("slippery-jack", "black-walnut"), ("slippery-jack", "common-pear"),
+            ("slippery-jack", "douglas-fir"), ("slippery-jack", "english-oak"),
+            ("slippery-jack", "european-beech"), ("slippery-jack", "japanese-walnut"),
+            ("slippery-jack", "plantain"), ("slippery-jack", "silver-birch"),
+            ("birch-bolete", "black-cherry"), ("birch-bolete", "english-oak"),
+            ("larch-bolete", "monterey-pine"), ("larch-bolete", "european-beech"),
+            ("western-painted-suillus", "monterey-pine"),
+            ("fly-agaric", "black-walnut"), ("fly-agaric", "japanese-walnut"),
+            ("fly-agaric", "strawberry-tree"), ("fly-agaric", "sweet-chestnut"),
+            ("oakbug-milkcap", "european-beech"), ("oakbug-milkcap", "silver-birch"),
+            ("saffron-milk-cap", "black-locust-tree"), ("saffron-milk-cap", "douglas-fir"),
+            ("slimy-milkcap", "european-beech"), ("slimy-milkcap", "silver-birch"),
+        ],
+        "genus-only record ('Pinus')": [("porcini", "monterey-pine")],
+        "no NZ record; one GloBI 'symbiontOf' record with no study or place": [
+            ("slippery-jack", "heather")
+        ],
+        "a decomposer; GloBI's untraced root-partner row has no study and no other source (owner 24/11/2026: research)": [
+            ("shaggy-inkcap", "norway-spruce")
+        ],
+        "a decomposer; GloBI's one 'hasHost' row has no study, and no root or dead-wood kind fits (owner 24/11/2026: no honest kind, decline)": [
+            ("shaggy-inkcap", "greek-fir")
+        ],
+        "a needle-litter decomposer, not a root or dead-wood partner (owner 24/11/2026: decline)": [
+            ("shaggy-parasol", "norway-spruce")
+        ],
+        "a decomposer of litter or woodchips, not a root or dead-wood partner; one GloBI row (24/11/2026 rule: no honest kind, decline)": [
+            ("shaggy-inkcap", "black-locust-tree"), ("psilocybe-aucklandiae", "monterey-pine")
+        ],
+        "an epiphyte or epiphytic seedling on the tree, not a root, parasite or dead-wood partner; one GloBI row (no honest kind, decline)": [
+            ("hounds-tongue-fern", "matai"), ("karamu", "totara"), ("lemonwood", "totara")
+        ],
+        "two plants with no root, parasite or dead-wood kind between them; one GloBI row (no honest kind, decline)": [
+            ("scotch-broom", "aleppo-pine"), ("scotch-broom", "austrian-pine"), ("scotch-broom", "corsican-pine"),
+            ("scotch-broom", "maritime-pine"), ("scotch-broom", "scots-pine")
+        ],
+        "probably a parasite of other fungi (Cooper), not a beech partner": [
+            ("chalciporus-aurantiacus", "silver-beech"), ("chalciporus-aurantiacus", "hard-beech")
+        ],
+    }.items()
+    for pair in pairs
+}
+# GloBI host leads declined for one fungus, by the host's GloBI name: the host has no entry and
+# needs none for this fungus. The plan says why.
+DECLINED_HOSTS = {
+    ("shaggy-inkcap", "Dittrichia graveolens"): "an untraced root-partner record for a decomposer (owner 24/11/2026: decline)",
+    ("shaggy-inkcap", "Lolium perenne"): "a GloBI host row with no study for a grassland decomposer; no honest partnership kind (owner 24/11/2026: skip)",
+    ("birch-bolete", "Avenella flexuosa subsp. flexuosa"): "a grass is not a bolete root partner; GloBI row with no study, no Biota record (owner 24/11/2026: skip)",
+}
+# Fungi declined with every tree, and why.
+DECLINED_WITH_TREES = {"peppery-bolete": "treated as a parasite of fly agaric, not a tree partner"}
+# GloBI host plants with no wild New Zealand presence (iNaturalist NZ, Flora, Biota herbarium checked),
+# dropped from the leads on the owner's word (23/11/2026: "if dont exist in nz drop"). The plan says why.
+NOT_IN_NZ_HOSTS = {
+    "Pinus densiflora": "Biota: cultivated; one naturalised sheet (NZFRI 27531), 0 wild iNaturalist NZ",
+    "Pinus thunbergii": "Biota: cultivated; wild only at Muriwai and Whangarei Heads (owner 23/11/2026: drop)",
+    "Pinus ayacahuite": "Biota: cultivated; one naturalised tree (NZFRI 27621), 0 wild iNaturalist NZ",
+    "Pinus hartwegii": "Biota: cultivated; all 17 NZ herbarium sheets planted, 0 wild iNaturalist NZ",
+    "Pinus edulis": "Biota: cultivated; all 15 NZ herbarium sheets planted, 1 captive iNaturalist NZ",
+    "Pinus lambertiana": "Biota: cultivated; all 15 NZ herbarium sheets planted, 0 iNaturalist NZ",
+    "Pinus tabuliformis": "Biota: cultivated; all 14 NZ herbarium sheets planted, 3 captive iNaturalist NZ",
+    "Pinus jeffreyi": "Biota: cultivated; wild only in the Mackenzie Basin (CHR 658228, 658229), 3 captive iNaturalist NZ",
+    "Pinus kesiya": "Biota: cultivated; all 12 NZ herbarium sheets planted, 1 botanic-garden iNaturalist NZ",
+    "Pinus resinosa": "Biota: cultivated; all 12 NZ herbarium sheets planted, 0 iNaturalist NZ",
+    "Pinus koraiensis": "Biota: cultivated; all 10 NZ herbarium sheets planted, 2 captive iNaturalist NZ",
+    "Tsuga canadensis": "not on NZ Flora Online; all 9 NZ herbarium sheets planted, 2 captive iNaturalist NZ (owner 24/11/2026: drop)",
+    "Pinus pumila": "not on NZ Flora Online; one nursery display-garden sheet, 0 iNaturalist NZ (owner 24/11/2026: drop)",
+    "Tilia cordata": "Biota: cultivated; 49 iNaturalist NZ are street/park trees, 13 sheets planted (owner 24/11/2026: drop)",
+    "Carpinus betulus": "Biota: cultivated; 17 iNaturalist NZ are hedges/street trees, 17 sheets planted (owner 24/11/2026: drop)",
+    "Agrostis canina": "not in NZ Flora Online; 0 iNaturalist NZ, old sheet names are native Agrostis (owner 24/11/2026: drop)",
+    "Populus tremuloides": "Biota: cultivated; 1 iNaturalist NZ (ID disputed), 5 sheets, none called wild (owner 24/11/2026: drop)",
+    "Lophozonia cunninghamii": "Biota: cultivated; 2 iNaturalist NZ (parent-only seedlings, zoo), 17 sheets planted (owner 24/11/2026: drop)",
+    "Corymbia ficifolia": "Biota: casual; all iNaturalist NZ and sheets ornamental/plantation, none self-sown (owner 24/11/2026: drop)",
+    "Metrosideros collina": "Biota: casual; 3 iNaturalist NZ all planted/garden, every herbarium sheet cultivated (owner 24/11/2026: drop)",
+    "Betula papyrifera": "Biota: casual, one 1968 sheet; 3 iNaturalist NZ all needing ID, rest planted (owner 24/11/2026: drop)",
+    "Acer saccharum": "Biota: cultivated; 0 iNaturalist NZ, 7 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Abies lasiocarpa": "Biota: cultivated; 0 iNaturalist NZ, 5 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Betula alleghaniensis": "Biota: cultivated; 0 iNaturalist NZ, 5 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Alnus rhombifolia": "Biota: cultivated; 2 iNaturalist NZ, 4 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Betula ermanii": "Biota: cultivated; 0 iNaturalist NZ, 2 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Betula lenta": "Biota: cultivated; 0 iNaturalist NZ, 2 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Betula nana": "Biota: no biostatus row; 0 iNaturalist NZ, 1 herbarium sheet, none wild (owner 24/11/2026: drop)",
+    "Quercus mongolica": "Biota: cultivated; 0 iNaturalist NZ, 2 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Quercus petraea": "Biota: cultivated; 0 iNaturalist NZ, 15 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Quercus agrifolia": "Biota: cultivated; 0 iNaturalist NZ, 6 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Abies sachalinensis": "Biota: no biostatus row; 0 iNaturalist NZ, 1 herbarium sheet, none wild (owner 24/11/2026: drop)",
+    "Abies amabilis": "Biota: cultivated; 0 iNaturalist NZ, 9 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Nothofagus dombeyi": "not on NZ Flora Online (only N. antarctica); 1 garden-tree iNaturalist NZ, all 21 sheets cultivated (owner rule 24/11/2026: drop)",
+    "Picea glauca": "Biota: cultivated; 0 iNaturalist NZ, 13 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Picea pungens": "Biota: cultivated; 4 iNaturalist NZ, 10 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Picea engelmannii": "Biota: cultivated; 0 iNaturalist NZ, 9 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Carya ovata": "Biota: cultivated; 0 iNaturalist NZ, 11 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Carya laciniosa": "Biota: no biostatus row; 0 iNaturalist NZ, 1 herbarium sheet, none wild (owner 24/11/2026: drop)",
+    "Pinus clausa": "Biota: no biostatus row; 0 iNaturalist NZ, 1 herbarium sheet, none wild (owner 24/11/2026: drop)",
+    "Pinus massoniana": "Biota: cultivated; 0 iNaturalist NZ, 10 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Castanea dentata": "Biota: no biostatus row; 0 iNaturalist NZ, 2 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Tilia tomentosa": "Biota: cultivated; 1 iNaturalist NZ, 24 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Larix gmelinii": "Biota: cultivated; 0 iNaturalist NZ, 10 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Larix laricina": "Biota: no biostatus row; 0 iNaturalist NZ, 1 herbarium sheet, none wild (owner 24/11/2026: drop)",
+    "Acer sterculiaceum subsp. franchetii": "Biota: no biostatus row; 0 iNaturalist NZ, 2 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Callitropsis nootkatensis": "Biota: cultivated; 0 iNaturalist NZ, 18 herbarium sheets, none wild (owner 24/11/2026: drop)",
+    "Populus cathayana": "Biota: no biostatus row; 0 iNaturalist NZ, 1 herbarium sheet, none wild (owner 24/11/2026: drop)",
+    "Fagus grandifolia": "Biota: cultivated; 1 iNaturalist NZ, 1 herbarium sheet, none wild (owner 24/11/2026: drop)",
+}
+# Most links a cell shows, the commonest in New Zealand (GBIF occurrences) first; the rest are counted.
+LINKS_SHOWN = 10
+# GloBI host names that are catalogue entries under an older name. Biota's 'Nothofagus solandri'
+# records split between black and mountain beech, so that name stands for both, and 'Salix
+# babylonica' stands for weeping willow, whose New Zealand plants are S. ×pendulina (Glenny 2022).
+HOST_ALIASES = {
+    "Eucalyptus pauciflora subsp. pauciflora": ["snow-gum"],
+    "Nothofagus fusca": ["red-beech"],
+    "Nothofagus truncata": ["hard-beech"],
+    "Nothofagus menziesii": ["silver-beech"],
+    "Nothofagus cliffortioides": ["mountain-beech"],
+    "Nothofagus solandri": ["black-beech", "mountain-beech"],
+    "Macropiper excelsum": ["kawakawa"],
+    "Podocarpus hallii": ["halls-totara"],
+    "Psidium cattleianum": ["cherry-guava"],
+    "Salix babylonica": ["weeping-willow"],
+}
 
 
 def prose(entry: Entry, field: str) -> str:
@@ -328,38 +457,163 @@ def genus_of(entry: Entry) -> str:
     return name.split()[0] if name else "?"
 
 
-def batch_drafts(entries: list[Entry]) -> list[dict[str, Any]]:
-    """Every draft in one batch, with the species groups it brings along, most drafts first.
+def capped_list(items: list[str], total: int) -> str:
+    """At most LINKS_SHOWN list items, with a count of the ones left out."""
+    if not items:
+        return '<span class="dim">—</span>'
+    more = f'<span class="dim">and {total - len(items)} more</span>' if total > len(items) else ""
+    return f'<ul class="list">{"".join(items)}</ul>{more}'
 
-    A species group goes whole into the batch most of its drafts' genera belong to.
+
+def inaturalist_url(entry: Entry | None, name: str) -> str:
+    """The entry's own iNaturalist taxon page when it has one, else an iNaturalist taxon search."""
+    url = (entry or {}).get("moreImagesURL") or ""
+    if "inaturalist.org/taxa/" in url or "inaturalist.nz/taxa/" in url:
+        return url
+    name = re.sub(r"\s*\(.*?\)", "", name).strip()
+    return "https://www.inaturalist.org/taxa/search?" + urllib.parse.urlencode({"q": name})
+
+
+def partners_sheet(row: dict[str, Any], open_pairs: list[dict[str, Any]]) -> str:
+    """A <dialog> table of every open partner of one row, commonest in New Zealand first."""
+    e = row["entry"]
+    lines = [
+        (p.get("nz", 0), p["entry"]["commonName"], p["entry"].get("scientificName", ""), p["entry"], p)
+        for p in open_pairs
+    ] + [(h["nz"], "", h["name"], None, h) for h in row["hosts"]]
+    lines.sort(key=lambda line: (-line[0], (line[1] or line[2]).lower()))
+    body = []
+    for nz, common, sci, entry, item in lines:
+        name = (
+            f'<a href="#e-{esc(entry["id"])}">{esc(common)}</a>' if entry else '<span class="dim">no entry</span>'
+        )
+        records = item["records"]
+        body.append(
+            f"<tr><td>{name}</td><td class=\"sci\">{esc(sci)}</td>"
+            f"<td>{esc(', '.join(item['kinds']))}</td><td>{records}</td><td>{item.get('biota', 0) or '—'}</td><td>{nz}</td>"
+            f'<td><a href="{esc(inaturalist_url(entry, sci))}" target="_blank" rel="noopener">iNaturalist</a></td></tr>'
+        )
+    return (
+        f'<dialog class="partners" id="more-{esc(e["id"])}"><div class="bar">'
+        f"<h3>{esc(e['commonName'])} · symbiosis partners</h3>"
+        f'<span class="dim">{len(lines)} in GloBI, commonest in NZ first</span>'
+        '<form method="dialog"><button class="more">Close</button></form></div>'
+        "<table><thead><tr><th>Catalogue entry</th><th>Scientific name</th>"
+        f"<th>GloBI relationship (from {esc(e['commonName'])})</th><th>Records</th><th>Biota NZ records</th>"
+        "<th>GBIF NZ occurrences</th><th>Species page</th></tr></thead>"
+        f"<tbody>{''.join(body)}</tbody></table></dialog>"
+    )
+
+
+def declined(fungus: str, partner: Entry) -> str | None:
+    """Why the associations plan declined this pair, or `None` when it is still open."""
+    reason = DECLINED.get(frozenset((fungus, partner["id"])))
+    if reason is None and partner["group"] != "fungi":
+        reason = DECLINED_WITH_TREES.get(fungus)
+    return reason
+
+
+#: Rank words GloBI keeps in infraspecific names and the catalogue drops, writing names as
+#: iNaturalist does (owner, 23/11/2026): GloBI's "Pinus nigra subsp. laricio" is the
+#: catalogue's "Pinus nigra laricio".
+RANK_WORDS = frozenset({"subsp.", "ssp.", "var.", "f."})
+
+
+def plain_name(name: str) -> str:
+    """A scientific name without rank words, for matching names across sources."""
+    return " ".join(word for word in name.split() if word not in RANK_WORDS)
+
+
+def link_batches(entries: list[Entry], leads: dict[str, Any]) -> list[dict[str, Any]]:
+    """The GloBI leads still to research, split into batches of one row per fungus.
+
+    A pair the catalogue has linked since the leads were written, or naming an entry that no
+    longer exists, is left out; a declined one stays, marked with the plan's reason.
     """
     by_id = {e["id"]: e for e in entries}
-    batches: dict[str, list[dict[str, Any]]] = collections.defaultdict(list)
-    for members in components(entries):
-        drafts = [e for e in members if e.get("draft")]
-        if not drafts:
+    by_sci = {plain_name(e.get("scientificName") or ""): e["id"] for e in entries}
+    rows: dict[str, dict[str, Any]] = {}
+
+    def row_for(subject: str) -> dict[str, Any]:
+        return rows.setdefault(subject, {"entry": by_id[subject], "pairs": [], "hosts": []})
+
+    for pair in leads.get("pairs", []):
+        a, b = by_id.get(pair["a"]), by_id.get(pair["b"])
+        if a is None or b is None:
             continue
-        votes = collections.Counter(BATCH_OF.get(genus_of(e), genus_of(e)) for e in drafts)
-        batches[votes.most_common(1)[0][0]].append(describe(members, by_id))
-    out: list[dict[str, Any]] = []
-    for name, groups in batches.items():
-        groups.sort(key=lambda c: (-c["drafts"], c["name"]))
-        rows = [r for c in groups for r in c["rows"]]
+        if any(link["entry"] in (a["id"], b["id"]) for e in (a, b) for link in e.get("associations") or []):
+            continue
+        fungi = [e for e in (a, b) if e["group"] == "fungi"]
+        subject = fungi[0] if fungi else a
+        partner = b if subject is a else a
+        row_for(subject["id"])["pairs"].append(
+            {
+                "entry": partner,
+                "kinds": pair["kinds"].get(subject["id"]) or pair["kinds"].get(partner["id"], []),
+                "records": max(pair["records"].values(), default=0),
+                "biota": pair.get("biota", 0),
+                "nz": (pair.get("nz") or {}).get(partner["id"], 0),
+                "declined": declined(subject["id"], partner),
+            }
+        )
+    for fungus, hosts in leads.get("hosts", {}).items():
+        if fungus not in by_id:
+            continue
+        row = row_for(fungus)
+        linked = {link["entry"] for link in by_id[fungus].get("associations") or []}
+        for host in hosts:
+            for alias in HOST_ALIASES.get(host["name"], []):
+                if alias in by_id and alias not in linked and all(p["entry"]["id"] != alias for p in row["pairs"]):
+                    row["pairs"].append(
+                        {
+                            "entry": by_id[alias],
+                            "kinds": host["kinds"],
+                            "records": host["records"],
+                            "biota": host.get("biota", 0),
+                            "nz": host["nz"],
+                            "declined": declined(fungus, by_id[alias]),
+                        }
+                    )
+        row["hosts"] = (
+            []
+            if fungus in DECLINED_WITH_TREES
+            else [
+                {**h, "linked": by_sci.get(plain_name(h["name"])) in linked}
+                for h in hosts
+                if h["name"] not in HOST_ALIASES and h["name"] not in NOT_IN_NZ_HOSTS
+                and (fungus, h["name"]) not in DECLINED_HOSTS
+                and not (plain_name(h["name"]) in by_sci and declined(fungus, by_id[by_sci[plain_name(h["name"])]]))
+            ]
+        )
+
+    def batch_of(entry: Entry) -> str:
+        if entry["group"] != "fungi":
+            return PLANT_BATCH
+        genus = genus_of(entry)
+        return LINK_BATCH_OF.get(genus, genus)
+
+    batches: dict[str, list[dict[str, Any]]] = collections.defaultdict(list)
+    for r in rows.values():
+        r["pairs"].sort(
+            key=lambda p: (p["declined"] is not None, -p.get("nz", 0), -p["records"], p["entry"]["commonName"].lower())
+        )
+        r["open"] = sum(1 for p in r["pairs"] if not p["declined"])
+        batches[batch_of(r["entry"])].append(r)
+    order = list(LINK_BATCHES) + [PLANT_BATCH]
+    out = []
+    for name in sorted(batches, key=lambda n: (order.index(n) if n in order else len(order), n)):
+        members = sorted(batches[name], key=lambda r: (-r["open"], -len(r["hosts"]), r["entry"]["commonName"].lower()))
         out.append(
             {
                 "name": name,
-                "anchor": "b-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-"),
-                "groups": groups,
-                "apps": [
-                    key for key, _ in GROUPS if any(by_id[r["id"]]["group"] == key for r in rows)
-                ],
-                "size": len(rows),
-                "drafts": sum(1 for r in rows if r["draft"]),
-                "photoless": sum(1 for r in rows if r["photos"] == 0),
-                "owed": sum(1 for r in rows if r["owed"]),
+                "anchor": "l-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-"),
+                "note": LINK_BATCHES[name][1] if name in LINK_BATCHES else (PLANT_NOTE if name == PLANT_BATCH else ""),
+                "rows": members,
+                "open": sum(r["open"] for r in members),
+                "declined": sum(len(r["pairs"]) - r["open"] for r in members),
+                "hosts": sum(len(r["hosts"]) for r in members),
             }
         )
-    out.sort(key=lambda b: (-b["drafts"], -b["size"], b["name"]))
     return out
 
 
@@ -452,6 +706,16 @@ tbody tr:last-child td { border-bottom: 0; }
 .no { color: var(--bad); }
 .miss { color: var(--warn); }
 .dim { color: var(--muted); }
+button.more { margin-top: 6px; background: var(--chip); color: var(--accent); border: 0;
+  border-radius: 999px; padding: 3px 11px; font: inherit; font-size: 12px; cursor: pointer; }
+dialog.partners { width: min(980px, 96vw); max-height: 88vh; padding: 0; border: 1px solid var(--line);
+  border-radius: 14px; background: var(--card); color: var(--fg); }
+dialog.partners::backdrop { background: rgb(0 0 0 / 0.45); }
+dialog.partners .bar { position: sticky; top: 0; display: flex; align-items: baseline; gap: 10px;
+  padding: 14px 16px; background: var(--card); border-bottom: 1px solid var(--line); }
+dialog.partners .bar h3 { margin: 0; font-size: 17px; }
+dialog.partners .bar form { margin-left: auto; }
+dialog.partners table { min-width: 0; }
 ul.list { list-style: none; margin: 0; padding: 0; }
 ul.list li { margin: 0 0 4px; }
 details summary { cursor: pointer; color: var(--warn); }
@@ -810,7 +1074,10 @@ def render_row(r: dict[str, Any]) -> str:
             flag += ' <span class="no">(no link back)</span>'
         partners.append(f'<li>{esc(p["name"])} <span class="dim">· {esc(p["kind"])}</span>{flag}</li>')
     partner_cell = (
-        f'<ul class="list">{"".join(partners)}</ul>' if partners else '<span class="dim">—</span>'
+        f'<span class="dim">{len(partners)} link{"" if len(partners) == 1 else "s"}</span>'
+        f'<ul class="list">{"".join(partners)}</ul>'
+        if partners
+        else '<span class="dim">—</span>'
     )
     tags = []
     for tag, words in r["habitats"]:
@@ -847,8 +1114,91 @@ def render_table(rows: list[dict[str, Any]]) -> list[str]:
     return out
 
 
-def render(entries: list[Entry]) -> str:
+#: Marks a lead the catalogue has since linked.
+TICK = ' <span class="ok" title="linked">✓</span>'
+
+
+def render_links(batches: list[dict[str, Any]]) -> list[str]:
+    pairs = sum(b["open"] for b in batches)
+    out = [
+        f'<h2 class="group" id="links">Link next<small>{pairs} "grows with" pairs to research, '
+        f"in {len(batches)} batches by kind of fungus</small></h2>",
+        '<p class="lede">GloBI records of a specific partnership (root partner, host, parasite, epiphyte, '
+        "pathogen) between two catalogue species, or between a fungus and a New Zealand plant the catalogue "
+        "has no entry for yet. Co-occurrence ('symbiont', 'mutualist', 'commensal') records and generalist "
+        "wood-rotters are left out. 'Biota NZ' counts the Biota of New Zealand records that already name "
+        "the pair, a head start for the research each lead needs "
+        "(<code>docs/plans/species-associations.md</code>). Generated from "
+        "<code>docs/association-leads.json</code>; re-run <code>Tools/globi_symbioses.py</code> to refresh.</p>",
+        "<nav>",
+    ]
+    for b in batches:
+        out.append(f'<a href="#{b["anchor"]}">{esc(b["name"])} · {b["open"]}</a>')
+    out.append("</nav>")
+    for b in batches:
+        out.append(f'<section class="cluster" id="{b["anchor"]}"><div class="head">')
+        out.append(f"<h3>{esc(b['name'])}</h3>")
+        out.append(f'<span class="genera">{esc(b["note"])}</span>')
+        out.append('<div class="chips">')
+        out.append(f'<span class="chip on">{b["open"]} pairs open</span>')
+        if b["declined"]:
+            out.append(f'<span class="chip">{b["declined"]} declined (see the plan)</span>')
+        if b["hosts"]:
+            out.append(f'<span class="chip">{b["hosts"]} NZ plants with no entry</span>')
+        out.append("</div></div>")
+        out.append('<div class="scroll"><table><thead><tr>')
+        for header in ["Species", "Catalogue partners not linked", "NZ plants with no entry"]:
+            out.append(f"<th>{header}</th>")
+        out.append("</tr></thead><tbody>")
+        for r in b["rows"]:
+            e = r["entry"]
+            open_pairs = [p for p in r["pairs"] if not p["declined"]]
+            if not open_pairs and not r["hosts"]:
+                continue
+            items = []
+            for p in open_pairs[:LINKS_SHOWN]:
+                line = (
+                    f'<a href="#e-{esc(p["entry"]["id"])}">{esc(p["entry"]["commonName"])}</a> '
+                    f'<span class="dim">· {esc(", ".join(p["kinds"]))} · {p["records"]} '
+                    f'record{"" if p["records"] == 1 else "s"} · {p.get("nz", 0)} NZ'
+                    f'{" · Biota NZ ×" + str(p["biota"]) if p.get("biota") else ""}</span>'
+                )
+                items.append(f"<li>{line}</li>")
+            pair_cell = capped_list(items, len(open_pairs))
+            hosts = [
+                f'<li>{esc(h["name"])}{TICK if h.get("linked") else ""} <span class="dim">· {h["nz"]} NZ'
+                f'{" · Biota NZ ×" + str(h["biota"]) if h.get("biota") else ""}</span></li>'
+                for h in r["hosts"][:LINKS_SHOWN]
+            ]
+            host_cell = capped_list(hosts, len(r["hosts"]))
+            more = ""
+            if len(open_pairs) > LINKS_SHOWN or len(r["hosts"]) > LINKS_SHOWN:
+                more = (
+                    f'<br><button class="more" onclick="document.getElementById(\'more-{esc(e["id"])}\').showModal()">'
+                    f"More symbiosis partners</button>{partners_sheet(r, open_pairs)}"
+                )
+            linked = len(e.get("associations") or [])
+            out.append(
+                f'<tr><td><a href="#e-{esc(e["id"])}"><b>{esc(e["commonName"])}</b></a><br>'
+                f'<span class="sci">{esc(e.get("scientificName", ""))}</span><br>'
+                f'<span class="dim">{linked} link{"" if linked == 1 else "s"}</span>{more}</td>'
+                f"<td>{pair_cell}</td><td>{host_cell}</td></tr>"
+            )
+        out.append("</tbody></table></div></section>")
+    return out
+
+
+def open_leads(batches: list[dict[str, Any]]) -> bool:
+    """Whether any lead is still to research: an open pair, or a host the fungus is not linked to."""
+    return any(r["open"] or any(not h["linked"] for h in r["hosts"]) for b in batches for r in b["rows"])
+
+
+def render(entries: list[Entry], leads: dict[str, Any] | None = None) -> str:
     filed = file_by_group(entries)
+    # With every lead linked or declined the section has nothing to say, so it is left out
+    # (owner 25/11/2026: "if so you can delete the link next section").
+    batches = link_batches(entries, leads) if leads else []
+    show_links = open_leads(batches)
     out = [
         "<title>Catalogue report</title>",
         f"<style>{CSS}</style>",
@@ -856,8 +1206,9 @@ def render(entries: list[Entry]) -> str:
         "<h1>Catalogue report</h1>",
         '<p class="lede">Every entry, filed by its app group and then by species group — '
         "entries sharing a genus or a lookalike card, the ones one research session fills "
-        "together. It opens with every draft batched by plant family, most drafts first. "
-        "A habitat tag is followed by the words in that entry's own habitat prose that "
+        "together. "
+        + ('It opens with the "grows with" links still to research, batched by kind of fungus. ' if show_links else "")
+        + "A habitat tag is followed by the words in that entry's own habitat prose that "
         "support it. Generated by "
         "<code>Tools/catalogue_report.py</code>; do not edit by hand.</p>",
     ]
@@ -873,66 +1224,16 @@ def render(entries: list[Entry]) -> str:
     for value, label in totals:
         out.append(f'<div class="total"><b>{value}</b><span>{esc(label)}</span></div>')
     out.append("</div><nav>")
-    out.append('<a href="#next">Pick up next</a>')
+    if show_links:
+        out.append('<a href="#links">Link next</a>')
     for key, label in GROUPS:
         count = sum(1 for e in entries if e["group"] == key)
         out.append(f'<a href="#{key}">{esc(label)} · {count}</a>')
     out.append('<a href="#recipes">Recipes</a>')
     out.append("</nav>")
 
-    labels = dict(GROUPS)
-    picks = batch_drafts(entries)
-    out.append(
-        f'<h2 class="group" id="next">Pick up next<small>{len(picks)} batches by plant family, '
-        "most drafts first</small></h2>"
-    )
-    out.append('<nav>')
-    for b in picks:
-        out.append(f'<a href="#{b["anchor"]}">{esc(b["name"])} · {b["drafts"]}</a>')
-    out.append("</nav>")
-    for b in picks:
-        out.append(f'<section class="cluster" id="{b["anchor"]}"><div class="head">')
-        out.append(f"<h3>{esc(b['name'])}</h3>")
-        out.append(f'<span class="genera">{esc(" / ".join(labels[k] for k in b["apps"]))}</span>')
-        out.append('<div class="chips">')
-        out.append(f'<span class="chip on">{b["drafts"]} of {b["size"]} draft</span>')
-        if b["photoless"]:
-            out.append(f'<span class="chip bad">{b["photoless"]} no photo</span>')
-        if b["owed"]:
-            out.append(f'<span class="chip on">{b["owed"]} owe text</span>')
-        out.append("</div></div>")
-        out.append('<div class="scroll"><table><thead><tr>')
-        for header in ["Species group", "Draft", "Photos", "Missing"]:
-            out.append(f"<th>{header}</th>")
-        out.append("</tr></thead><tbody>")
-        for c in b["groups"]:
-            drafts = [r for r in c["rows"] if r["draft"]]
-            group = (
-                f'<a href="#{c["anchor"]}"><b>{esc(c["name"])}</b></a><br>'
-                f'<span class="dim">{c["drafts"]} of {c["size"]} draft</span>'
-                if c["size"] > 1
-                else '<span class="dim">—</span>'
-            )
-            for i, r in enumerate(drafts):
-                first = f'<td rowspan="{len(drafts)}">{group}</td>' if i == 0 else ""
-                photos = (
-                    f'<span class="ok">{r["photos"]}</span>'
-                    if r["photos"]
-                    else '<span class="no">0</span>'
-                )
-                gaps = r["missing"] + (["owed text"] if r["owed"] else [])
-                missing = (
-                    f'<span class="miss">{esc(", ".join(gaps))}</span>'
-                    if gaps
-                    else '<span class="ok">complete</span>'
-                )
-                out.append(
-                    f"<tr>{first}"
-                    f'<td><a href="#e-{esc(r["id"])}"><b>{esc(r["commonName"])}</b></a><br>'
-                    f'<span class="sci">{esc(r["scientificName"])}</span></td>'
-                    f"<td>{photos}</td><td>{missing}</td></tr>"
-                )
-        out.append("</tbody></table></div></section>")
+    if show_links:
+        out.extend(render_links(batches))
 
     for key, label in GROUPS:
         group = filed[key]
@@ -977,12 +1278,15 @@ def render(entries: list[Entry]) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", default=str(REPO / "docs" / "catalogue.html"))
+    parser.add_argument("--leads", default=str(LEADS), help="GloBI leads for the Link next section")
     args = parser.parse_args()
 
     entries: list[Entry] = json.loads(SPECIES.read_text())
+    leads_path = pathlib.Path(args.leads)
+    leads = json.loads(leads_path.read_text()) if leads_path.exists() else None
     out = pathlib.Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(render(entries))
+    out.write_text(render(entries, leads))
     print(f"{len(entries)} entries → {out}")
 
 

@@ -155,6 +155,27 @@ struct SpeciesModelFactoryTests {
         #expect(factory.createInfoPageModel(id: .deathCap)?.associationCards.map(\.destination) == [.englishOak])
     }
 
+    @Test("The Grows With strip stops at ten cards and offers the rest in a list")
+    func associationStripLimit() throws {
+        let species = try #require(Self.oakAndPartners().first)
+        func page(partners: Int) -> InfoPageModel {
+            let cards = SpeciesID.allCases.prefix(partners).map {
+                AssociationCardModel(
+                    destination: $0, kind: .mycorrhizalPartner, name: $0.rawValue, scientificName: nil,
+                    photoFileName: nil, note: "Note.", caution: .careRequired
+                )
+            }
+            return InfoPageModel(species: species, lookalikeCards: [], associationCards: Array(cards))
+        }
+
+        #expect(page(partners: 10).associationStripCards.count == 10)
+        #expect(!page(partners: 10).hasMoreAssociations)
+
+        let eleven = page(partners: 11)
+        #expect(eleven.associationStripCards.map(\.destination) == Array(SpeciesID.allCases.prefix(10)))
+        #expect(eleven.hasMoreAssociations)
+    }
+
     @Test("An id the loaded catalogue lacks yields no model rather than a guess")
     func missingSpecies() async {
         let factory = await Self.factory()

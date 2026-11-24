@@ -8,12 +8,16 @@ import SwiftUI
 /// partner looks exactly as poisonous here as it does in a list.
 struct AssociationCardView: View {
     let model: AssociationCardModel
+    /// Runs before the partner's page opens — the partners sheet closes itself here, since a
+    /// push lands on the stack behind it.
+    var onOpen: () -> Void = {}
 
     @Environment(\.router) private var router
 
     var body: some View {
         Button {
-            router.push(.species(model.destination))
+            onOpen()
+            router.push(.species(model.destination), dropStack: true)
         } label: {
             card
         }

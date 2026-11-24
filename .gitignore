@@ -34,3 +34,6 @@ xcuserdata/
 
 # Python bytecode
 __pycache__/
+
+# GloBI responses cached by Tools/globi_symbioses.py.
+.globi-cache/

@@ -7,6 +7,7 @@ struct SpeciesDetailView: View {
     private var species: ForageSpecies { model.species }
     
     @State var presentRecipies = false
+    @State private var presentPartners = false
     
     var body: some View {
         ScrollView {
@@ -46,6 +47,11 @@ struct SpeciesDetailView: View {
         .sheet(isPresented: $presentRecipies) {
             NavigationStack {
                 RecipeView(recipies: model.species.recipes)
+            }
+        }
+        .sheet(isPresented: $presentPartners) {
+            NavigationStack {
+                AssociationListView(speciesName: species.commonName, cards: model.associationCards)
             }
         }
         .toolbar {
@@ -164,19 +170,6 @@ struct SpeciesDetailView: View {
     private var safety: some View {
         if showsSafety {
             VStack(alignment: .leading, spacing: .empty) {
-                if species.caution == .doNotEat {
-                    doNotEatBanner
-                        .padding(.bottom, .xxxSmall)
-                }
-                else if species.caution == .psychoactive {
-                    psychoactiveBanner
-                        .padding(.bottom, .xxxSmall)
-                }
-                else if species.hasDeadlyLookalikeAsEdible {
-                    deadlyLookalikeBanner
-                        .padding(.bottom, .xxxSmall)
-                }
-
                 HStack(spacing: .xxSmall) {
                     Image(.outlineExclamation)
                         .icon(size: .custom(size: 16), color: .primary)
@@ -200,6 +193,20 @@ struct SpeciesDetailView: View {
                         .italic()
                         .foregroundStyle(.secondary)
                     }
+                }
+                .padding(.bottom, .xxSmall)
+                
+                if species.caution == .doNotEat {
+                    doNotEatBanner
+                        .padding(.bottom, .xxxSmall)
+                }
+                else if species.caution == .psychoactive {
+                    psychoactiveBanner
+                        .padding(.bottom, .xxxSmall)
+                }
+                else if species.hasDeadlyLookalikeAsEdible {
+                    deadlyLookalikeBanner
+                        .padding(.bottom, .xxxSmall)
                 }
             }
         }
@@ -236,7 +243,24 @@ struct SpeciesDetailView: View {
                 SectionHeader(image: Image(systemName: "tree"), title: "Grows With")
                     .padding(.bottom, .xSmall)
 
-                cardStrip(model.associationCards) { AssociationCardView(model: $0) }
+                cardStrip(model.associationStripCards) { AssociationCardView(model: $0) }
+
+                if model.hasMoreAssociations {
+                    Button {
+                        presentPartners = true
+                    } label: {
+                        HStack(spacing: .xxSmall) {
+                            Image(systemName: "apple.meditate")
+                                .icon(size: .small, color: .accent)
+                            Text("More symbiosis partners · \(model.associationCards.count) in all")
+                            Spacer()
+                            Image(.chevronRight)
+                                .icon(size: .small, color: .accent)
+                        }
+                    }
+                    .padding(.top, .xSmall)
+                    .accessibilityIdentifier("speciesDetail.morePartners")
+                }
             }
             .accessibilityIdentifier("speciesDetail.growsWith")
         }
@@ -329,12 +353,13 @@ struct SpeciesDetailView: View {
     }
 
     private var doNotEatBanner: some View {
-        HStack(alignment: .top, spacing: .xxxSmall) {
+        HStack(alignment: .top, spacing: .xxSmall) {
             CautionLevel.doNotEat.image
                 .icon(size: .custom(size: 16), color: .cautionDanger)
             Text("Do not eat, this entry is here so you can recognise this species and avoid it.")
-                .font(.callout)
+                .font(.footnote)
                 .italic()
+                .bold()
                 .foregroundStyle(.secondary)
         }
     }
@@ -348,25 +373,27 @@ struct SpeciesDetailView: View {
     /// sentence; until it exists the page says something rather than nothing, in a colour that
     /// cannot be mistaken for finished.
     private var psychoactiveBanner: some View {
-        HStack(alignment: .top, spacing: .xxxSmall) {
+        HStack(alignment: .top, spacing: .xxSmall) {
             CautionLevel.psychoactive.image
                 .resizable()
                 .frame(width: 16, height: 16)
             Text("This is not food. Its active compounds are controlled drugs — read the safety notes below.")
-                .font(.callout)
+                .font(.footnote)
                 .italic()
+                .bold()
                 .foregroundStyle(.secondary)
         }
     }
 
     private var deadlyLookalikeBanner: some View {
-        HStack(alignment: .top, spacing: .xxxSmall) {
+        HStack(alignment: .top, spacing: .xxSmall) {
             CautionLevel.doNotEat.image
                 .icon(size: .custom(size: 16), color: .cautionDanger)
             Text("Has a deadly lookalike, read the lookalikes section below before you harvest this.")
-                .font(.callout)
+                .font(.footnote)
                 .italic()
-                .foregroundStyle(.secondary)
+                .bold()
+                .foregroundStyle(.cautionDanger)
         }
     }
     

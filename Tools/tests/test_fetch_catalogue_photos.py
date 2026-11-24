@@ -507,3 +507,31 @@ def test_a_named_hybrid_resolves_to_its_own_taxon(monkeypatch) -> None:
     monkeypatch.setattr(fetch, "results_of", lambda source, params: taxa)
     assert fetch.taxon_id_for("Reynoutria ×bohemica") == 850784
     assert fetch.taxon_id_for("Reynoutria bohemica") is None
+
+
+def test_an_infraspecific_name_resolves_without_its_rank_word(monkeypatch) -> None:
+    # iNaturalist writes "Pinus nigra laricio" (rank subspecies); the catalogue writes
+    # "Pinus nigra subsp. laricio". Before, the two never matched and no photos were found.
+    import fetch_catalogue_photos as fetch
+    taxa = [
+        {"id": 135790, "name": "Pinus nigra", "rank": "species"},
+        {"id": 412996, "name": "Pinus nigra laricio", "rank": "subspecies"},
+        {"id": 412998, "name": "Pinus nigra nigra", "rank": "subspecies"},
+    ]
+    asked: list[object] = []
+
+    def results(_source: Any, params: dict[str, object]) -> list[dict[str, Any]]:
+        asked.append(params["q"])
+        return taxa
+
+    monkeypatch.setattr(fetch, "results_of", results)
+    assert fetch.taxon_id_for("Pinus nigra subsp. laricio") == 412996
+    assert asked == ["Pinus nigra laricio"]
+
+
+def test_a_rank_word_must_match_the_taxon_rank(monkeypatch) -> None:
+    import fetch_catalogue_photos as fetch
+    taxa = [{"id": 1, "name": "Brassica oleracea capitata", "rank": "subspecies"}]
+    monkeypatch.setattr(fetch, "results_of", lambda source, params: taxa)
+    assert fetch.taxon_id_for("Brassica oleracea var. capitata") is None
+    assert fetch.taxon_id_for("Brassica oleracea subsp. capitata") == 1

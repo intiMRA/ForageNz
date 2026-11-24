@@ -1,0 +1,2013 @@
+{
+ "pairs": [
+  {
+   "a": "aleppo-pine",
+   "b": "peppery-bolete",
+   "kinds": {
+    "peppery-bolete": [
+     "root partner (it is the fungus)"
+    ],
+    "aleppo-pine": [
+     "root partner (it is the host)"
+    ]
+   },
+   "records": {
+    "peppery-bolete": 1,
+    "aleppo-pine": 1
+   },
+   "nz": {
+    "aleppo-pine": 54,
+    "peppery-bolete": 514
+   },
+   "biota": 0
+  },
+  {
+   "a": "aleppo-pine",
+   "b": "scotch-broom",
+   "kinds": {
+    "aleppo-pine": [
+     "lives on"
+    ]
+   },
+   "records": {
+    "aleppo-pine": 1
+   },
+   "nz": {
+    "scotch-broom": 6037
+   },
+   "biota": 0
+  },
+  {
+   "a": "austrian-pine",
+   "b": "fly-agaric",
+   "kinds": {
+    "austrian-pine": [
+     "host of"
+    ]
+   },
+   "records": {
+    "austrian-pine": 2
+   },
+   "nz": {
+    "fly-agaric": 6519
+   },
+   "biota": 1
+  },
+  {
+   "a": "austrian-pine",
+   "b": "scotch-broom",
+   "kinds": {
+    "austrian-pine": [
+     "lives on"
+    ]
+   },
+   "records": {
+    "austrian-pine": 1
+   },
+   "nz": {
+    "scotch-broom": 6037
+   },
+   "biota": 0
+  },
+  {
+   "a": "austrian-pine",
+   "b": "slippery-jack",
+   "kinds": {
+    "austrian-pine": [
+     "host of"
+    ]
+   },
+   "records": {
+    "austrian-pine": 4
+   },
+   "nz": {
+    "slippery-jack": 508
+   },
+   "biota": 1
+  },
+  {
+   "a": "birch-bolete",
+   "b": "black-cherry",
+   "kinds": {
+    "birch-bolete": [
+     "lives on"
+    ],
+    "black-cherry": [
+     "host of"
+    ]
+   },
+   "records": {
+    "birch-bolete": 1,
+    "black-cherry": 1
+   },
+   "nz": {
+    "black-cherry": 62,
+    "birch-bolete": 913
+   },
+   "biota": 0
+  },
+  {
+   "a": "birch-bolete",
+   "b": "english-oak",
+   "kinds": {
+    "birch-bolete": [
+     "root partner (it is the fungus)"
+    ],
+    "english-oak": [
+     "root partner (it is the host)"
+    ]
+   },
+   "records": {
+    "birch-bolete": 1,
+    "english-oak": 1
+   },
+   "nz": {
+    "english-oak": 586,
+    "birch-bolete": 913
+   },
+   "biota": 0
+  },
+  {
+   "a": "bishop-pine",
+   "b": "peppery-bolete",
+   "kinds": {
+    "bishop-pine": [
+     "root partner (it is the host)"
+    ],
+    "peppery-bolete": [
+     "root partner (it is the fungus)"
+    ]
+   },
+   "records": {
+    "bishop-pine": 1,
+    "peppery-bolete": 1
+   },
+   "nz": {
+    "peppery-bolete": 514,
+    "bishop-pine": 202
+   },
+   "biota": 0
+  },
+  {
+   "a": "black-locust-tree",
+   "b": "saffron-milk-cap",
+   "kinds": {
+    "black-locust-tree": [
+     "root partner (it is the host)"
+    ],
+    "saffron-milk-cap": [
+     "root partner (it is the fungus)"
+    ]
+   },
+   "records": {
+    "black-locust-tree": 1,
+    "saffron-milk-cap": 1
+   },
+   "nz": {
+    "saffron-milk-cap": 19,
+    "black-locust-tree": 424
+   },
+   "biota": 0
+  },
+  {
+   "a": "black-locust-tree",
+   "b": "shaggy-inkcap",
+   "kinds": {
+    "black-locust-tree": [
+     "root partner (it is the host)"
+    ],
+    "shaggy-inkcap": [
+     "root partner (it is the fungus)"
+    ]
+   },
+   "records": {
+    "black-locust-tree": 1,
+    "shaggy-inkcap": 1
+   },
+   "nz": {
+    "shaggy-inkcap": 841,
+    "black-locust-tree": 424
+   },
+   "biota": 0
+  },
+  {
+   "a": "contorta-pine",
+   "b": "peppery-bolete",
+   "kinds": {
+    "contorta-pine": [
+     "host of",
+     "root partner (it is the host)"
+    ],
+    "peppery-bolete": [
+     "lives on"
+    ]
+   },
+   "records": {
+    "contorta-pine": 2,
+    "peppery-bolete": 1
+   },
+   "nz": {
+    "peppery-bolete": 514,
+    "contorta-pine": 1074
+   },
+   "biota": 1
+  },
+  {
+   "a": "corsican-pine",
+   "b": "scotch-broom",
+   "kinds": {
+    "corsican-pine": [
+     "lives on"
+    ]
+   },
+   "records": {
+    "corsican-pine": 1
+   },
+   "nz": {
+    "scotch-broom": 6037
+   },
+   "biota": 0
+  },
+  {
+   "a": "douglas-fir",
+   "b": "peppery-bolete",
+   "kinds": {
+    "douglas-fir": [
+     "host of",
+     "root partner (it is the host)"
+    ],
+    "peppery-bolete": [
+     "lives on",
+     "root partner (it is the fungus)"
+    ]
+   },
+   "records": {
+    "douglas-fir": 2,
+    "peppery-bolete": 2
+   },
+   "nz": {
+    "peppery-bolete": 514,
+    "douglas-fir": 3223
+   },
+   "biota": 3
+  },
+  {
+   "a": "douglas-fir",
+   "b": "saffron-milk-cap",
+   "kinds": {
+    "douglas-fir": [
+     "host of"
+    ],
+    "saffron-milk-cap": [
+     "lives on"
+    ]
+   },
+   "records": {
+    "douglas-fir": 1,
+    "saffron-milk-cap": 1
+   },
+   "nz": {
+    "saffron-milk-cap": 19,
+    "douglas-fir": 3223
+   },
+   "biota": 0
+  },
+  {
+   "a": "english-oak",
+   "b": "oakbug-milkcap",
+   "kinds": {
+    "english-oak": [
+     "root partner (it is the host)"
+    ],
+    "oakbug-milkcap": [
+     "root partner (it is the fungus)"
+    ]
+   },
+   "records": {
+    "english-oak": 1,
+    "oakbug-milkcap": 1
+   },
+   "nz": {
+    "oakbug-milkcap": 6,
+    "english-oak": 586
+   },
+   "biota": 0
+  },
+  {
+   "a": "european-beech",
+   "b": "oakbug-milkcap",
+   "kinds": {
+    "european-beech": [
+     "root partner (it is the host)"
+    ],
+    "oakbug-milkcap": [
+     "root partner (it is the fungus)"
+    ]
+   },
+   "records": {
+    "european-beech": 1,
+    "oakbug-milkcap": 1
+   },
+   "nz": {
+    "oakbug-milkcap": 6,
+    "european-beech": 109
+   },
+   "biota": 0
+  },
+  {
+   "a": "european-beech",
+   "b": "peppery-bolete",
+   "kinds": {
+    "european-beech": [
+     "root partner (it is the host)"
+    ],
+    "peppery-bolete": [
+     "root partner (it is the fungus)"
+    ]
+   },
+   "records": {
+    "european-beech": 1,
+    "peppery-bolete": 1
+   },
+   "nz": {
+    "peppery-bolete": 514,
+    "european-beech": 109
+   },
+   "biota": 1
+  },
+  {
+   "a": "european-beech",
+   "b": "slimy-milkcap",
+   "kinds": {
+    "european-beech": [
+     "host of",
+     "root partner (it is the host)"
+    ],
+    "slimy-milkcap": [
+     "lives on",
+     "root partner (it is the fungus)"
+    ]
+   },
+   "records": {
+    "european-beech": 2,
+    "slimy-milkcap": 2
+   },
+   "nz": {
+    "slimy-milkcap": 9,
+    "european-beech": 109
+   },
+   "biota": 0
+  },
+  {
+   "a": "fly-agaric",
+   "b": "larch",
+   "kinds": {
+    "fly-agaric": [
+     "lives on",
+     "root partner (it is the fungus)"
+    ],
+    "larch": [
+     "host of",
+     "root partner (it is the host)"
+    ]
+   },
+   "records": {
+    "fly-agaric": 2,
+    "larch": 2
+   },
+   "nz": {
+    "larch": 313,
+    "fly-agaric": 6519
+   },
+   "biota": 1
+  },
+  {
+   "a": "fly-agaric",
+   "b": "strawberry-tree",
+   "kinds": {
+    "fly-agaric": [
+     "lives on"
+    ],
+    "strawberry-tree": [
+     "host of"
+    ]
+   },
+   "records": {
+    "fly-agaric": 1,
+    "strawberry-tree": 1
+   },
+   "nz": {
+    "strawberry-tree": 687,
+    "fly-agaric": 6519
+   },
+   "biota": 0
+  },
+  {
+   "a": "fly-agaric",
+   "b": "sweet-chestnut",
+   "kinds": {
+    "fly-agaric": [
+     "lives on"
+    ],
+    "sweet-chestnut": [
+     "host of"
+    ]
+   },
+   "records": {
+    "fly-agaric": 1,
+    "sweet-chestnut": 1
+   },
+   "nz": {
+    "sweet-chestnut": 100,
+    "fly-agaric": 6519
+   },
+   "biota": 2
+  },
+  {
+   "a": "hounds-tongue-fern",
+   "b": "matai",
+   "kinds": {
+    "hounds-tongue-fern": [
+     "lives on"
+    ],
+    "matai": [
+     "host of"
+    ]
+   },
+   "records": {
+    "hounds-tongue-fern": 1,
+    "matai": 1
+   },
+   "nz": {
+    "matai": 8514,
+    "hounds-tongue-fern": 27962
+   },
+   "biota": 0
+  },
+  {
+   "a": "karamu",
+   "b": "totara",
+   "kinds": {
+    "karamu": [
+     "lives on"
+    ],
+    "totara": [
+     "host of"
+    ]
+   },
+   "records": {
+    "karamu": 1,
+    "totara": 1
+   },
+   "nz": {
+    "totara": 11923,
+    "karamu": 12726
+   },
+   "biota": 0
+  },
+  {
+   "a": "larch-bolete",
+   "b": "monterey-pine",
+   "kinds": {
+    "larch-bolete": [
+     "lives on",
+     "root partner (it is the fungus)"
+    ],
+    "monterey-pine": [
+     "host of",
+     "root partner (it is the host)"
+    ]
+   },
+   "records": {
+    "larch-bolete": 2,
+    "monterey-pine": 2
+   },
+   "nz": {
+    "monterey-pine": 4436,
+    "larch-bolete": 225
+   },
+   "biota": 0
+  },
+  {
+   "a": "lawson-cypress",
+   "b": "peppery-bolete",
+   "kinds": {
+    "lawson-cypress": [
+     "host of"
+    ],
+    "peppery-bolete": [
+     "lives on"
+    ]
+   },
+   "records": {
+    "lawson-cypress": 1,
+    "peppery-bolete": 1
+   },
+   "nz": {
+    "peppery-bolete": 514,
+    "lawson-cypress": 480
+   },
+   "biota": 1
+  },
+  {
+   "a": "lemonwood",
+   "b": "totara",
+   "kinds": {
+    "lemonwood": [
+     "lives on"
+    ],
+    "totara": [
+     "host of"
+    ]
+   },
+   "records": {
+    "lemonwood": 1,
+    "totara": 1
+   },
+   "nz": {
+    "totara": 11923,
+    "lemonwood": 8045
+   },
+   "biota": 0
+  },
+  {
+   "a": "loblolly-pine",
+   "b": "peppery-bolete",
+   "kinds": {
+    "peppery-bolete": [
+     "root partner (it is the fungus)"
+    ]
+   },
+   "records": {
+    "peppery-bolete": 1
+   },
+   "nz": {
+    "loblolly-pine": 33
+   },
+   "biota": 0
+  },
+  {
+   "a": "maritime-pine",
+   "b": "scotch-broom",
+   "kinds": {
+    "maritime-pine": [
+     "lives on"
+    ]
+   },
+   "records": {
+    "maritime-pine": 1
+   },
+   "nz": {
+    "scotch-broom": 6037
+   },
+   "biota": 0
+  },
+  {
+   "a": "monterey-pine",
+   "b": "peppery-bolete",
+   "kinds": {
+    "monterey-pine": [
+     "host of",
+     "root partner (it is the host)"
+    ],
+    "peppery-bolete": [
+     "lives on",
+     "root partner (it is the fungus)"
+    ]
+   },
+   "records": {
+    "monterey-pine": 2,
+    "peppery-bolete": 3
+   },
+   "nz": {
+    "peppery-bolete": 514,
+    "monterey-pine": 4436
+   },
+   "biota": 7
+  },
+  {
+   "a": "monterey-pine",
+   "b": "porcini",
+   "kinds": {
+    "monterey-pine": [
+     "host of"
+    ],
+    "porcini": [
+     "lives on",
+     "root partner (it is the fungus)"
+    ]
+   },
+   "records": {
+    "monterey-pine": 1,
+    "porcini": 2
+   },
+   "nz": {
+    "porcini": 791,
+    "monterey-pine": 4436
+   },
+   "biota": 0
+  },
+  {
+   "a": "monterey-pine",
+   "b": "psilocybe-aucklandiae",
+   "kinds": {
+    "monterey-pine": [
+     "host of"
+    ],
+    "psilocybe-aucklandiae": [
+     "lives on"
+    ]
+   },
+   "records": {
+    "monterey-pine": 1,
+    "psilocybe-aucklandiae": 1
+   },
+   "nz": {
+    "psilocybe-aucklandiae": 65,
+    "monterey-pine": 4436
+   },
+   "biota": 0
+  },
+  {
+   "a": "monterey-pine",
+   "b": "western-painted-suillus",
+   "kinds": {
+    "monterey-pine": [
+     "host of"
+    ],
+    "western-painted-suillus": [
+     "lives on"
+    ]
+   },
+   "records": {
+    "monterey-pine": 1,
+    "western-painted-suillus": 1
+   },
+   "nz": {
+    "western-painted-suillus": 151,
+    "monterey-pine": 4436
+   },
+   "biota": 0
+  },
+  {
+   "a": "oakbug-milkcap",
+   "b": "silver-birch",
+   "kinds": {
+    "oakbug-milkcap": [
+     "root partner (it is the fungus)"
+    ],
+    "silver-birch": [
+     "root partner (it is the host)"
+    ]
+   },
+   "records": {
+    "oakbug-milkcap": 1,
+    "silver-birch": 1
+   },
+   "nz": {
+    "silver-birch": 527,
+    "oakbug-milkcap": 6
+   },
+   "biota": 0
+  },
+  {
+   "a": "peppery-bolete",
+   "b": "ponderosa-pine",
+   "kinds": {
+    "peppery-bolete": [
+     "lives on"
+    ],
+    "ponderosa-pine": [
+     "host of"
+    ]
+   },
+   "records": {
+    "peppery-bolete": 1,
+    "ponderosa-pine": 1
+   },
+   "nz": {
+    "ponderosa-pine": 194,
+    "peppery-bolete": 514
+   },
+   "biota": 1
+  },
+  {
+   "a": "peppery-bolete",
+   "b": "silver-birch",
+   "kinds": {
+    "peppery-bolete": [
+     "lives on",
+     "root partner (it is the fungus)"
+    ],
+    "silver-birch": [
+     "host of",
+     "root partner (it is the host)"
+    ]
+   },
+   "records": {
+    "peppery-bolete": 2,
+    "silver-birch": 2
+   },
+   "nz": {
+    "silver-birch": 527,
+    "peppery-bolete": 514
+   },
+   "biota": 0
+  },
+  {
+   "a": "porcini",
+   "b": "sweet-chestnut",
+   "kinds": {
+    "porcini": [
+     "lives on"
+    ],
+    "sweet-chestnut": [
+     "host of"
+    ]
+   },
+   "records": {
+    "porcini": 1,
+    "sweet-chestnut": 1
+   },
+   "nz": {
+    "sweet-chestnut": 100,
+    "porcini": 791
+   },
+   "biota": 0
+  },
+  {
+   "a": "scotch-broom",
+   "b": "scots-pine",
+   "kinds": {
+    "scotch-broom": [
+     "host of"
+    ],
+    "scots-pine": [
+     "lives on"
+    ]
+   },
+   "records": {
+    "scotch-broom": 1,
+    "scots-pine": 1
+   },
+   "nz": {
+    "scots-pine": 195,
+    "scotch-broom": 6037
+   },
+   "biota": 0
+  }
+ ],
+ "hosts": {
+  "birch-bolete": [
+   {
+    "name": "Liriodendron tulipifera",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 97,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea abies",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 37,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Avenella flexuosa subsp. flexuosa",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 30,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Betula papyrifera",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 25,
+    "records": 2,
+    "biota": 0
+   },
+   {
+    "name": "Tilia cordata",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 25,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Betula pubescens",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 20,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Tsuga canadensis",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 9,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Acer saccharum",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 7,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Abies lasiocarpa",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 5,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Betula alleghaniensis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 5,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Populus tremuloides",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 5,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Alnus rhombifolia",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 4,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Betula ermanii",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 2,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Betula lenta",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 2,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Quercus mongolica",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 2,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Abies sachalinensis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 1,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Betula nana",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 1,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "bluefoot-bolete": [
+   {
+    "name": "Nothofagus fusca",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 13968,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Quercus rubra",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 70,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Cedrus atlantica",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 49,
+    "records": 1,
+    "biota": 2
+   },
+   {
+    "name": "Picea abies",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 37,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Carpinus betulus",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 29,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Tilia tomentosa",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 24,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Quercus petraea",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 23,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea glauca",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 13,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Carya ovata",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 11,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Abies amabilis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 9,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Abies sachalinensis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 1,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Carya laciniosa",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 1,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus clausa",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 1,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "brown-oyster-mushroom": [
+   {
+    "name": "Metrosideros collina",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 39,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "chalciporus-aurantiacus": [
+   {
+    "name": "Nothofagus menziesii",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 23203,
+    "records": 1,
+    "biota": 4
+   }
+  ],
+  "coconut-milkcap": [
+   {
+    "name": "Betula alleghaniensis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 5,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Alnus rhombifolia",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 4,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Betula ermanii",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 2,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Castanea dentata",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 2,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Abies sachalinensis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 1,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Betula nana",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 1,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "fly-agaric": [
+   {
+    "name": "Nothofagus menziesii",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 23203,
+    "records": 1,
+    "biota": 3
+   },
+   {
+    "name": "Nothofagus cliffortioides",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 15884,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Nothofagus fusca",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 13968,
+    "records": 1,
+    "biota": 5
+   },
+   {
+    "name": "Nothofagus solandri",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 4201,
+    "records": 1,
+    "biota": 13
+   },
+   {
+    "name": "Eucalyptus globulus",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 276,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Quercus palustris",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 119,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Corymbia ficifolia",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 82,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Eucalyptus pauciflora subsp. pauciflora",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 57,
+    "records": 1,
+    "biota": 1
+   },
+   {
+    "name": "Eucalyptus nitens",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 54,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Cedrus atlantica",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 49,
+    "records": 1,
+    "biota": 1
+   },
+   {
+    "name": "Pinus densiflora",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 44,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Populus trichocarpa",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 40,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea abies",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 37,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Populus tremula",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 32,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Tsuga heterophylla",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 30,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Betula papyrifera",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 25,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Tilia tomentosa",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 24,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Betula pubescens",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 20,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Abies cephalonica",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 19,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Lophozonia cunninghamii",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 19,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus hartwegii",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 17,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus tabuliformis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 14,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea glauca",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 13,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea pungens",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 11,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea engelmannii",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 9,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Populus tremuloides",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 5,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Castanea dentata",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 2,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "larch-bolete": [
+   {
+    "name": "Pinus densiflora",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 44,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea abies",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 37,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Larix kaempferi",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 32,
+    "records": 1,
+    "biota": 1
+   },
+   {
+    "name": "Larix gmelinii",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 10,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Acer sterculiaceum subsp. franchetii",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 2,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Larix laricina",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 1,
+    "records": 2,
+    "biota": 0
+   }
+  ],
+  "liberty-cap": [
+   {
+    "name": "Agrostis canina",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 19,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "new-zealand-milkcap": [
+   {
+    "name": "Nothofagus menziesii",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 23203,
+    "records": 1,
+    "biota": 2
+   }
+  ],
+  "oakbug-milkcap": [
+   {
+    "name": "Populus alba",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 642,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Alnus glutinosa",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 513,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Quercus rubra",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 70,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea abies",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 37,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Carpinus betulus",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 29,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Quercus petraea",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 23,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Carya ovata",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 11,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Castanea dentata",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 2,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Quercus mongolica",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 2,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus clausa",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 1,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "olive-oyster": [
+   {
+    "name": "Nothofagus menziesii",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 23203,
+    "records": 1,
+    "biota": 2
+   }
+  ],
+  "peppery-bolete": [
+   {
+    "name": "Picea abies",
+    "kinds": [
+     "lives on",
+     "root partner (it is the fungus)"
+    ],
+    "nz": 37,
+    "records": 2,
+    "biota": 0
+   },
+   {
+    "name": "Carpinus betulus",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 29,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Abies cephalonica",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 19,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea glauca",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 13,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea engelmannii",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 9,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "porcini": [
+   {
+    "name": "Abies cephalonica",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 19,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "riverine-bolete": [
+   {
+    "name": "Salix babylonica",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 215,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Tilia tomentosa",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 24,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "saffron-milk-cap": [
+   {
+    "name": "Abies grandis",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 46,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus densiflora",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 44,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus thunbergii",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 36,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus canariensis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 25,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Abies cephalonica",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 19,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Callitropsis nootkatensis",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 18,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus tabuliformis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 14,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus massoniana",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 10,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Quercus mongolica",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 2,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Populus cathayana",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 1,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "shaggy-inkcap": [
+   {
+    "name": "Lolium perenne",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 1670,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Dittrichia graveolens",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 96,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea abies",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 37,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Abies cephalonica",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 19,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "shaggy-parasol": [
+   {
+    "name": "Picea abies",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 37,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Quercus agrifolia",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 6,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "slimy-milkcap": [
+   {
+    "name": "Pinus densiflora",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 44,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea abies",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 37,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Quercus petraea",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 23,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Picea glauca",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 13,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Carya ovata",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 11,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Fagus grandifolia",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 1,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "slippery-jack": [
+   {
+    "name": "Pinus densiflora",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 44,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus thunbergii",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 36,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus ayacahuite",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 20,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus hartwegii",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 17,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus edulis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 15,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus lambertiana",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 15,
+    "records": 1,
+    "biota": 2
+   },
+   {
+    "name": "Pinus tabuliformis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 14,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus jeffreyi",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 13,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus kesiya",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 12,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus resinosa",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 12,
+    "records": 2,
+    "biota": 0
+   },
+   {
+    "name": "Pinus koraiensis",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 10,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Tsuga canadensis",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 9,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Pinus pumila",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 1,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "tawai-milkcap": [
+   {
+    "name": "Nothofagus menziesii",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 23203,
+    "records": 1,
+    "biota": 3
+   },
+   {
+    "name": "Nothofagus fusca",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 13968,
+    "records": 1,
+    "biota": 3
+   }
+  ],
+  "western-painted-suillus": [
+   {
+    "name": "Betula papyrifera",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 25,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Nothofagus antarctica",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 25,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Nothofagus dombeyi",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 21,
+    "records": 1,
+    "biota": 0
+   },
+   {
+    "name": "Larix gmelinii",
+    "kinds": [
+     "root partner (it is the fungus)"
+    ],
+    "nz": 10,
+    "records": 1,
+    "biota": 0
+   }
+  ],
+  "wood-blewit": [
+   {
+    "name": "Picea glauca",
+    "kinds": [
+     "lives on"
+    ],
+    "nz": 13,
+    "records": 1,
+    "biota": 0
+   }
+  ]
+ }
+}

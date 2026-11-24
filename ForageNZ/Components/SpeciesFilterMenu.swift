@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// The toolbar menu that narrows a species screen by group and origin.
+/// The toolbar menu that narrows a species screen by group, origin and habitat.
 struct SpeciesFilterMenu: View {
     @Binding var filter: SpeciesFilter
 
@@ -19,6 +19,13 @@ struct SpeciesFilterMenu: View {
                 clearSymbol: "circle.dashed",
                 selection: $filter.origin
             )
+
+            facetSection(
+                "Habitat",
+                clearTitle: "Any habitat",
+                clearSymbol: "map",
+                selection: $filter.habitat
+            )
         } label: {
             Label(
                 "Filter",
@@ -29,8 +36,8 @@ struct SpeciesFilterMenu: View {
         }
     }
 
-    /// One "pick a classification, or clear it" menu section. Group and origin are the same
-    /// control over different enums, so they are the same code over a `CatalogueFacet`.
+    /// One "pick a classification, or clear it" menu section. Group, origin and habitat are the
+    /// same control over different enums, so they are the same code over a `CatalogueFacet`.
     ///
     /// A checkmark replaces the facet's own drawing when it is the current choice, which is
     /// the only way a `Menu` row can show selection.

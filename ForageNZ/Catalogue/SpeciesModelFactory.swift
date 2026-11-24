@@ -81,6 +81,19 @@ nonisolated struct InfoPageModel: Equatable {
     let species: ForageSpecies
     let lookalikeCards: [LookalikeCardModel]
     let associationCards: [AssociationCardModel]
+
+    /// How many partner cards the page's strip carries before the rest move to a sheet —
+    /// a strip past ten is swiped through, not read.
+    static let associationStripLimit = 10
+
+    var associationStripCards: [AssociationCardModel] {
+        Array(associationCards.prefix(Self.associationStripLimit))
+    }
+
+    /// True when the strip cannot carry every partner, so the page offers the full list.
+    var hasMoreAssociations: Bool {
+        associationCards.count > Self.associationStripLimit
+    }
 }
 
 /// One find on the map. The pin draws the species' group; the card under the map opens its page.

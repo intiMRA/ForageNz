@@ -6,9 +6,11 @@ nonisolated struct SpeciesFilter: Equatable {
     var query = ""
     var group: ForageGroup?
     var origin: ForageOrigin?
+    /// Matches an entry listing this habitat among its `habitats`, wherever it falls in them.
+    var habitat: Habitat?
 
     /// Whether a facet is set. The query has its own field on screen, so it does not count.
-    var narrowsByFacet: Bool { group != nil || origin != nil }
+    var narrowsByFacet: Bool { group != nil || origin != nil || habitat != nil }
 
     /// Case-insensitive search across names and summary, then the facets. Keeps the order given.
     func apply(to species: [ForageSpecies]) -> [ForageSpecies] {
@@ -17,6 +19,7 @@ nonisolated struct SpeciesFilter: Equatable {
             if !trimmed.isEmpty, !species.searchableText.contains(trimmed) { return false }
             if let group, species.group != group { return false }
             if let origin, species.origin != origin { return false }
+            if let habitat, !species.habitats.contains(habitat) { return false }
             return true
         }
     }

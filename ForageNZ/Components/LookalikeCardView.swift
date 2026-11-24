@@ -10,7 +10,7 @@ struct LookalikeCardView: View {
 
     var body: some View {
         Button {
-            router.push(.species(model.destination))
+            router.push(.species(model.destination), dropStack: true)
         } label: {
             card
         }

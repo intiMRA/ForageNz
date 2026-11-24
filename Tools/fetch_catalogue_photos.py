@@ -245,6 +245,20 @@ def _hybrid_spacing(name: str) -> str:
     return re.sub(r"\s*×\s*", " ×", " ".join(name.split())).strip()
 
 
+#: Rank words the catalogue writes inside infraspecific names, and the iNaturalist rank each
+#: one means. iNaturalist names those taxa without the word ("Pinus nigra laricio", rank
+#: subspecies), so "Pinus nigra subsp. laricio" matched nothing and fell back to a name query.
+INFRASPECIFIC_RANKS = {"subsp.": "subspecies", "ssp.": "subspecies", "var.": "variety", "f.": "form"}
+
+
+def _inat_form(name: str) -> tuple[str, str | None]:
+    """The name as iNaturalist writes it, and the rank its rank word asks for (None if none)."""
+    words = name.split()
+    ranks = [INFRASPECIFIC_RANKS[word] for word in words if word in INFRASPECIFIC_RANKS]
+    kept = " ".join(word for word in words if word not in INFRASPECIFIC_RANKS)
+    return kept, (ranks[-1] if ranks else None)
+
+
 def taxon_id_for(name: str) -> int | None:
     """The iNaturalist taxon id for an exact scientific name, or `None` if it has no single one.
 
@@ -259,16 +273,20 @@ def taxon_id_for(name: str) -> int | None:
     unresolved so the caller falls back to the old name query rather than silently fetching
     some other taxon, which is the failure being fixed.
 
+    A rank word ("subsp.", "var.", "f.") is dropped, as iNaturalist drops it, and the match must
+    then carry that rank: "Pinus nigra subsp. laricio" is iNaturalist's "Pinus nigra laricio".
+
     Aggregate ranks are skipped. iNaturalist carries both a `complex` and a `species` called
     *Avena barbata*, and a complex is by definition a set of species too alike to tell apart —
     querying one would re-create the very problem, handing an entry its siblings' photos under
     a name that looks right.
     """
+    inat_name, wanted_rank = _inat_form(name)
     try:
-        results = results_of(Source.INAT_TAXA, {"q": name, "per_page": 20})
+        results = results_of(Source.INAT_TAXA, {"q": inat_name, "per_page": 20})
     except SourceError:
         return None
-    wanted = _hybrid_spacing(name).casefold()
+    wanted = _hybrid_spacing(inat_name).casefold()
     # A named hybrid (Reynoutria ×bohemica) is itself the entry, not a set of siblings, so the
     # `hybrid` rank is only skipped when the entry is not one.
     skipped = AGGREGATE_RANKS - {"hybrid"} if "×" in wanted else AGGREGATE_RANKS
@@ -278,6 +296,7 @@ def taxon_id_for(name: str) -> int | None:
         if _hybrid_spacing(str(taxon.get("name") or "")).casefold() == wanted
         and taxon.get("id") is not None
         and str(taxon.get("rank") or "") not in skipped
+        and (wanted_rank is None or taxon.get("rank") == wanted_rank)
     ]
     if len(exact) != 1:
         return None

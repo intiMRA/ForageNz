@@ -33,6 +33,7 @@
 		2FFEC43C9B4D53C2E4ACBA15 /* ForageNZApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F39B686CA0E9CE04181DD40 /* ForageNZApp.swift */; };
 		3051F7D755D087F3893A3429 /* FindsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AF13D1629E5656EC9FBA40 /* FindsStore.swift */; };
 		33F1FEE23644859BA88F9258 /* SpeciesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */; };
+		A55C1A7E0F1D4C2B9E3A1B01 /* AssociationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55C1A7E0F1D4C2B9E3A1B02 /* AssociationListView.swift */; };
 		350C95B5F85A80A6AD351C06 /* ListsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BEB1CAECBCC149A6477D02 /* ListsStore.swift */; };
 		360194B642E9FF2742582745 /* InSeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4ED5A9B62C12BD6C3E48E /* InSeasonView.swift */; };
 		3D19D3D50781F4C7BE5F99E4 /* SpeciesStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3FB453CF93F89079D941E /* SpeciesStoreTests.swift */; };
@@ -233,6 +234,7 @@
 		77FFA5A6D2CBF0D6DD4FB60E /* TextLinkTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextLinkTests.swift; sourceTree = "<group>"; };
 		791DF0D2BB9C0D5A58110687 /* CatalogueEditorApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CatalogueEditorApp.swift; sourceTree = "<group>"; };
 		7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesDetailView.swift; path = FieldGuide/SpeciesDetailView.swift; sourceTree = "<group>"; };
+		A55C1A7E0F1D4C2B9E3A1B02 /* AssociationListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociationListView.swift; path = FieldGuide/AssociationListView.swift; sourceTree = "<group>"; };
 		7D0446237105087BDFCC28FA /* ListSymbolRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListSymbolRepository.swift; sourceTree = "<group>"; };
 		81537D299113F560DA0998DA /* SyncSettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SyncSettingsView.swift; sourceTree = "<group>"; };
 		817A298659AD6F2CD63D0228 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -465,6 +467,7 @@
 			children = (
 				09A9E85DA08B2A7D3ED5C7C9 /* BrowseView.swift */,
 				7AC2A93A771996BA6E78A54D /* SpeciesDetailView.swift */,
+				A55C1A7E0F1D4C2B9E3A1B02 /* AssociationListView.swift */,
 			);
 			name = FieldGuide;
 			sourceTree = "<group>";
@@ -1012,6 +1015,7 @@
 				A1C0DE0000000000CA7A1007 /* CatalogueArtwork.swift in Sources */,
 				C96F1DE935FB259F9428C0FE /* BrowseView.swift in Sources */,
 				33F1FEE23644859BA88F9258 /* SpeciesDetailView.swift in Sources */,
+				A55C1A7E0F1D4C2B9E3A1B01 /* AssociationListView.swift in Sources */,
 				2FFEC43C9B4D53C2E4ACBA15 /* ForageNZApp.swift in Sources */,
 				360194B642E9FF2742582745 /* InSeasonView.swift in Sources */,
 				7D35632F1F5EEB570322D3E0 /* PoisonsCentre.swift in Sources */,

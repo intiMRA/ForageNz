@@ -22,6 +22,7 @@ protocol CatalogueFacet: CaseIterable, Identifiable, Hashable {
 
 extension ForageGroup: CatalogueFacet {}
 extension ForageOrigin: CatalogueFacet {}
+extension Habitat: CatalogueFacet {}
 
 extension Habitat {
     var image: Image {
