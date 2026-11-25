@@ -20,10 +20,11 @@ struct ListDetailView: View {
 
     private func content(for list: SpeciesListSnapshot) -> some View {
         let members = store.members(of: list)
-        let results = filter.apply(to: members.species)
+        let results = filter.apply(to: members.species, currentMonth: store.currentMonth)
         return ScrollView {
             LazyVStack {
                 OriginGuidance(origin: filter.origin)
+                SearchUnderstoodLine(search: filter.search(currentMonth: store.currentMonth))
                 GroupedSpeciesList(species: results)
 
                 if list.speciesIDsRaw.isEmpty {

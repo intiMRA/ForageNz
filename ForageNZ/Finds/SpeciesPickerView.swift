@@ -13,7 +13,7 @@ struct SpeciesPickerView: View {
 
     var body: some View {
         NavigationStack {
-            List(SpeciesFilter(query: query).apply(to: store.species)) { species in
+            List(SpeciesFilter(query: query).apply(to: store.species, currentMonth: store.currentMonth)) { species in
                 if let id = species.typedID, let model = models.createListingRowModel(id: id) {
                     Button {
                         onPick(id)

@@ -70,6 +70,31 @@ final class FieldGuideUITests: XCTestCase {
         )
     }
 
+    /// A sentence offers the plain-words button, and tapping it must always answer: a reading
+    /// from the on-device model where there is one, a note saying why not where there is not.
+    /// Silence is the failure.
+    func testPlainWordsButtonReadsTheSentenceOrSaysWhyNot() {
+        app.tabBars.buttons["Field guide"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: Self.existenceTimeout))
+        search.tap()
+        search.typeText("mushrooms under pine trees")
+
+        let button = app.buttons["plainWordsButton"]
+        XCTAssertTrue(button.waitForExistence(timeout: Self.existenceTimeout), "A sentence did not offer plain-words search")
+        button.tap()
+
+        let reading = app.descendants(matching: .any)["searchUnderstood"].firstMatch
+        let note = app.descendants(matching: .any)["plainWordsNote"].firstMatch
+        let deadline = Date().addingTimeInterval(30)
+        while Date() < deadline, !reading.exists, !note.exists {
+            RunLoop.current.run(until: Date().addingTimeInterval(0.5))
+        }
+        XCTAssertTrue(reading.exists || note.exists, "Plain-words search showed neither a reading nor a note")
+        if reading.exists { print("PLAINWORDS reading: \(reading.label)") }
+        if note.exists { print("PLAINWORDS note: \(note.label)") }
+    }
+
     func testOpeningASpeciesShowsItsDetail() {
         let dandelion = fieldGuideRow("dandelion", searchingFor: "dandelion")
         XCTAssertTrue(

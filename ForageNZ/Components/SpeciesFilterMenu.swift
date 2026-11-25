@@ -87,6 +87,35 @@ struct OriginGuidance: View {
     }
 }
 
+/// The facets the search field's words were read as — "Fungi · March" for "fungi in march" —
+/// so a word taken as a filter is never a silent surprise. Nothing when no word named a facet.
+///
+/// For a query the on-device model read (`isReading`), the words it kept are shown too, in
+/// quotes. They are always the user's own words: `SearchReading` drops any other.
+struct SearchUnderstoodLine: View {
+    let search: SpeciesSearch
+    var isReading = false
+
+    var body: some View {
+        if search.recognisesFacets || (isReading && !search.terms.isEmpty) {
+            Label(labels.joined(separator: " · "), systemImage: isReading ? "sparkle.magnifyingglass" : "text.magnifyingglass")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .accessibilityIdentifier("searchUnderstood")
+        }
+    }
+
+    private var labels: [String] {
+        let groups: [String] = ForageGroup.allCases.filter(search.groups.contains).map { String(localized: $0.displayName) }
+        let origins: [String] = ForageOrigin.allCases.filter(search.origins.contains).map { String(localized: $0.displayName) }
+        let habitats: [String] = Habitat.allCases.filter(search.habitats.contains).map { String(localized: $0.shortLabel) }
+        let months: [String] = ForageMonth.allCases.filter(search.months.contains).map(\.displayName)
+        let words: [String] = isReading ? search.terms.map { "“\($0)”" } : []
+        return groups + origins + habitats + months + words
+    }
+}
+
 /// What a filtered species screen shows when nothing matches.
 struct SpeciesFilterEmptyState: View {
     let query: String

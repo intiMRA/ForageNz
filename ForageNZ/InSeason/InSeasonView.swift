@@ -8,7 +8,7 @@ struct InSeasonView: View {
 
     var body: some View {
         let month = store.currentMonth
-        let species = filter.apply(to: store.inSeason(for: month))
+        let species = filter.apply(to: store.inSeason(for: month), currentMonth: month)
         ScrollView {
             LazyVStack(alignment: .leading) {
                 Section {

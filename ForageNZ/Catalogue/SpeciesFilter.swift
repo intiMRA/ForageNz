@@ -12,15 +12,28 @@ nonisolated struct SpeciesFilter: Equatable {
     /// Whether a facet is set. The query has its own field on screen, so it does not count.
     var narrowsByFacet: Bool { group != nil || origin != nil || habitat != nil }
 
-    /// Case-insensitive search across names and summary, then the facets. Keeps the order given.
-    func apply(to species: [ForageSpecies]) -> [ForageSpecies] {
-        let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        return species.filter { species in
-            if !trimmed.isEmpty, !species.searchableText.contains(trimmed) { return false }
+    /// The facets, then the query (see `SpeciesSearch`): best match first, ties in the order
+    /// given. `currentMonth` is what "in season" in the query means.
+    func apply(
+        to species: [ForageSpecies],
+        currentMonth: @autoclosure () -> ForageMonth = .containing(.now)
+    ) -> [ForageSpecies] {
+        apply(to: species, using: search(currentMonth: currentMonth()))
+    }
+
+    /// The facets, then `search` in place of the typed query — for a query the on-device model
+    /// has read (`PlainWordsSearch`).
+    func apply(to species: [ForageSpecies], using search: SpeciesSearch) -> [ForageSpecies] {
+        let narrowed = species.filter { species in
             if let group, species.group != group { return false }
             if let origin, species.origin != origin { return false }
             if let habitat, !species.habitats.contains(habitat) { return false }
             return true
         }
+        return search.results(from: narrowed)
+    }
+
+    func search(currentMonth: @autoclosure () -> ForageMonth = .containing(.now)) -> SpeciesSearch {
+        SpeciesSearch(query, currentMonth: currentMonth())
     }
 }

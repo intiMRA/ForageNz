@@ -682,6 +682,26 @@ mutable and per user, so they get their own store (SwiftData) and never enter th
   the finds can also be read as a list without a signal.
 - **UI tests run in memory** (`-UserDataInMemory`), so they never touch real lists or finds.
 
+## Search
+
+One rule: **a model may read the user's words, never write the guide's.** Search returns catalogue
+rows; nothing answers "can I eat this?". The plan is `docs/plans/ai-search.md`.
+
+- **Search reads words, not prose** (`SpeciesSearch`). Macrons, case and hyphens fold away
+  ("kanuka" finds kānuka), names outrank the summary, which outranks the identification and habitat
+  text, and words match at the start of a word (inside a name, ranked last). Words that are the
+  guide's own labels act as filters: "fungi march", "native fruit", "coast", "in season". A test
+  holds every such word to a label the app already shows. Habitat synonyms ("stream" → wetland,
+  "paddock" → grassland) are the owner-approved list in `Vocabulary.habitatSynonyms`, taken from
+  the words `Tools/classify_habitats.py` reads; add one only with the owner's approval. An entry named by the whole query is always found, so
+  "bush lawyer" is not read as forest. The line under the search box says which words became
+  filters.
+- **Plain words, on the device** (`PlainWordsSearch`). In the Field guide, a sentence of three or
+  more words offers a "Search in plain words" button, which asks Apple's on-device model to read it
+  into a `SearchReading` — enum cases and the user's own words, nothing else; a word the query does
+  not contain is dropped — which becomes an ordinary search. No Private Cloud Compute, no network. A
+  wrong reading is a search miss. It needs Apple Intelligence and does not run in the simulator.
+
 ## Fixed values
 
 Every closed set in the catalogue lives in `ForageNZ/Catalogue/Model/`, as a `String`-raw-value

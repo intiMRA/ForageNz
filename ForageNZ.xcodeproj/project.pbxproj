@@ -37,6 +37,7 @@
 		350C95B5F85A80A6AD351C06 /* ListsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BEB1CAECBCC149A6477D02 /* ListsStore.swift */; };
 		360194B642E9FF2742582745 /* InSeasonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C4ED5A9B62C12BD6C3E48E /* InSeasonView.swift */; };
 		3D19D3D50781F4C7BE5F99E4 /* SpeciesStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3FB453CF93F89079D941E /* SpeciesStoreTests.swift */; };
+		1C083A6C444F7D63ABDBD004 /* SpeciesSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61922167ED98902D35A87C5B /* SpeciesSearchTests.swift */; };
 		3FD848FD5B3AB6AE2B5D6E3A /* AttributedString+WebLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651810F1C2528EAEC505E1C3 /* AttributedString+WebLinks.swift */; };
 		427F19E65882EA68C6C6B0B6 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B10EF78BEEEED358AB658 /* Layout.swift */; };
 		42BC722A0552DA4BEBBE5C9F /* ImageBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BEAEAE3D024F1C6A9B9C10 /* ImageBadge.swift */; };
@@ -147,6 +148,8 @@
 		D7E1A40C3B5642A981C0E116 /* StagedPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E1A40C3B5642A981C0E115 /* StagedPhotos.swift */; };
 		D7E1A40C3B5642A981C0E118 /* PhotoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E1A40C3B5642A981C0E117 /* PhotoFetcher.swift */; };
 		DABF08A5D04B3B998975A84C /* SpeciesFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD99DFB2DBA33245B1BA2A4 /* SpeciesFilter.swift */; };
+		719FBAC521915B599D53513E /* PlainWordsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7ABB5286E0DBC16E486FE29 /* PlainWordsSearch.swift */; };
+		10E34883BEFE3E062747198F /* SpeciesSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA482663F4C6D090A6B6EF /* SpeciesSearch.swift */; };
 		E0E56E639A59BBA011C3905E /* LandStatusRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F8E9DC97AD8C0C3504754F /* LandStatusRepository.swift */; };
 		E3C01D365E85295EE1DB4CBC /* CautionPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDBC513CB04CB9AE280E8C9 /* CautionPalette.swift */; };
 		E7057F68D7BCDBAEC626647A /* DesignLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 83413BE0AA6927FA598C7C0C /* DesignLibrary */; };
@@ -196,6 +199,8 @@
 		09A9E85DA08B2A7D3ED5C7C9 /* BrowseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BrowseView.swift; path = FieldGuide/BrowseView.swift; sourceTree = "<group>"; };
 		0BABD59101CC31A8A411D293 /* SpeciesFilterMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesFilterMenu.swift; path = Components/SpeciesFilterMenu.swift; sourceTree = "<group>"; };
 		0BD99DFB2DBA33245B1BA2A4 /* SpeciesFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesFilter.swift; path = Catalogue/SpeciesFilter.swift; sourceTree = "<group>"; };
+		A7ABB5286E0DBC16E486FE29 /* PlainWordsSearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlainWordsSearch.swift; path = Catalogue/PlainWordsSearch.swift; sourceTree = "<group>"; };
+		99FA482663F4C6D090A6B6EF /* SpeciesSearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeciesSearch.swift; path = Catalogue/SpeciesSearch.swift; sourceTree = "<group>"; };
 		1239F81D5CA44305396AE48B /* ForageNZ.entitlements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.entitlements; path = ForageNZ.entitlements; sourceTree = "<group>"; };
 		1815ECF6690FE0157C6E07B5 /* SwiftDataUserDataRepositoryTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftDataUserDataRepositoryTests.swift; sourceTree = "<group>"; };
 		1867CCA8A5C5E962FD60BBF8 /* WhereYouAreSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhereYouAreSection.swift; path = WhereYouAre/WhereYouAreSection.swift; sourceTree = "<group>"; };
@@ -270,6 +275,7 @@
 		B2D00CFE7D2AD3E97CCF1400 /* land-status.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "land-status.png"; path = "Catalogue/land-status.png"; sourceTree = "<group>"; };
 		B3AF13D1629E5656EC9FBA40 /* FindsStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FindsStore.swift; sourceTree = "<group>"; };
 		B5D3FB453CF93F89079D941E /* SpeciesStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesStoreTests.swift; sourceTree = "<group>"; };
+		61922167ED98902D35A87C5B /* SpeciesSearchTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesSearchTests.swift; sourceTree = "<group>"; };
 		B86EF35FE6BEC4ECF0BD53B9 /* FindsStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FindsStoreTests.swift; sourceTree = "<group>"; };
 		B8B6228E42326BD7547589CF /* RecipeCardTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RecipeCardTests.swift; sourceTree = "<group>"; };
 		B9A08516B887C616C0C2D6B0 /* SpeciesEditorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeciesEditorView.swift; sourceTree = "<group>"; };
@@ -578,6 +584,7 @@
 				6276DE2F1556F1A782D58DEF /* CatalogueTests.swift */,
 				CD72CBBFBBA343438F3DA352 /* SpeciesModelFactoryTests.swift */,
 				B5D3FB453CF93F89079D941E /* SpeciesStoreTests.swift */,
+				61922167ED98902D35A87C5B /* SpeciesSearchTests.swift */,
 				9DE2E1227F9C1C691B2F945D /* WhereYouAreStoreTests.swift */,
 				77FFA5A6D2CBF0D6DD4FB60E /* TextLinkTests.swift */,
 				B8B6228E42326BD7547589CF /* RecipeCardTests.swift */,
@@ -599,6 +606,8 @@
 				55C6D5333F8A7A09C3B0043D /* SpeciesStore.swift */,
 				CA7A10000000000000FFFF01 /* Model */,
 				0BD99DFB2DBA33245B1BA2A4 /* SpeciesFilter.swift */,
+				A7ABB5286E0DBC16E486FE29 /* PlainWordsSearch.swift */,
+				99FA482663F4C6D090A6B6EF /* SpeciesSearch.swift */,
 			);
 			name = Catalogue;
 			sourceTree = "<group>";
@@ -1058,6 +1067,8 @@
 				91E1E633F5ADEA9EF5395618 /* SpeciesFilterMenu.swift in Sources */,
 				50980C635719E922E377B47C /* GroupedSpeciesList.swift in Sources */,
 				DABF08A5D04B3B998975A84C /* SpeciesFilter.swift in Sources */,
+				719FBAC521915B599D53513E /* PlainWordsSearch.swift in Sources */,
+				10E34883BEFE3E062747198F /* SpeciesSearch.swift in Sources */,
 				F8FA2580665211FBE57FFE35 /* LoadState.swift in Sources */,
 				EC850996A00DA519D4FADD69 /* ListSymbolRepository.swift in Sources */,
 				8C7E205C11264AE5C32B30B7 /* ListSymbolPickerStore.swift in Sources */,
@@ -1082,6 +1093,7 @@
 			files = (
 				B93BA6A59034E519AC12B2B9 /* CatalogueTests.swift in Sources */,
 				3D19D3D50781F4C7BE5F99E4 /* SpeciesStoreTests.swift in Sources */,
+				1C083A6C444F7D63ABDBD004 /* SpeciesSearchTests.swift in Sources */,
 				7062ADCA73776244CB4A6E51 /* WhereYouAreStoreTests.swift in Sources */,
 				CAFC3DCE142AC7A3A71B2E81 /* SpeciesModelFactoryTests.swift in Sources */,
 				81159BD9E02D4AB374806AD6 /* TextLinkTests.swift in Sources */,
@@ -1229,7 +1241,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_IDENTITY = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.ForageNZTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1247,7 +1259,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_IDENTITY = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.ForageNZUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1381,7 +1393,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_IDENTITY = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.ForageNZTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1410,7 +1422,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1495,7 +1507,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1523,7 +1535,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_IDENTITY = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.intialbuquerque.ForageNZUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

@@ -90,9 +90,9 @@ final class SpeciesStore {
         species.filter(\.hasDeadlyLookalikeAsEdible)
     }
 
-    /// Case-insensitive search across names and summary. An empty query returns everything.
+    /// Search as the field guide does it (see `SpeciesSearch`). An empty query returns everything.
     func search(_ query: String) -> [ForageSpecies] {
-        SpeciesFilter(query: query).apply(to: species)
+        SpeciesFilter(query: query).apply(to: species, currentMonth: currentMonth)
     }
 
     /// The entry for a compile-time species id. `nil` for a draft, unless the debug drawer
@@ -109,7 +109,7 @@ final class SpeciesStore {
         origin: ForageOrigin? = nil,
         habitat: Habitat? = nil
     ) -> [ForageSpecies] {
-        SpeciesFilter(query: query, group: group, origin: origin, habitat: habitat).apply(to: species)
+        SpeciesFilter(query: query, group: group, origin: origin, habitat: habitat).apply(to: species, currentMonth: currentMonth)
     }
 
     /// A list's members split into the ones the guide shows, in display order, and the raw ids
