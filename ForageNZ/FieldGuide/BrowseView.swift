@@ -17,28 +17,28 @@ struct BrowseView: View {
     @State private var readingNote: (query: String, text: LocalizedStringResource)?
 
     var body: some View {
-        let search = readingOrTyped
-        let results = filter.apply(to: store.species, using: search)
+        let (search, results) = readingOrTyped
         ScrollView {
             LazyVStack {
                 OriginGuidance(origin: filter.origin)
                 if readingQuery == filter.query {
-                    ProgressView("Reading your search…")
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                } else {
-                    plainWordsButton
-                    SearchUnderstoodLine(search: search, isReading: currentReading != nil)
-                    if let readingNote, readingNote.query == filter.query {
-                        Label {
-                            Text(readingNote.text)
-                        } icon: {
-                            Image(systemName: "sparkle.magnifyingglass")
-                        }
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .accessibilityIdentifier("plainWordsNote")
+                    HStack(spacing: .xxSmall) {
+                        Spacer()
+                        ProgressView()
+                        Text("Processing your search")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
                     }
+                } else {
+                    plainWordsButton(foundNothing: results.isEmpty)
+                    if let readingNote, readingNote.query == filter.query {
+                        Text(readingNote.text)
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                            .accessibilityIdentifier("plainWordsNote")
+                    }
+                    SearchUnderstoodLine(search: search, isReading: currentReading != nil)
                 }
                 GroupedSpeciesList(species: results)
 
@@ -46,7 +46,7 @@ struct BrowseView: View {
                     SpeciesFilterEmptyState(query: filter.query)
                 }
             }
-            .padding(.horizontal, .medium)
+            .padding(.horizontal, .xLarge)
         }
         .navigationTitle("Field guide")
         // The placement is explicit because `.automatic` renders nothing here: from iOS 26 a
@@ -65,17 +65,25 @@ struct BrowseView: View {
         }
     }
 
-    /// Offered once the query reads as a sentence and has not been read yet. A button rather
-    /// than Return, which gives no hint that it searches differently from typing. Shown even
-    /// where the model cannot run, so tapping it can say why.
+    /// Offered once the query reads as a sentence, or whenever word search found nothing, and
+    /// the query has not been read yet. A button rather than Return, which gives no hint that
+    /// it searches differently from typing. Only offered where the on-device model can run.
     @ViewBuilder
-    private var plainWordsButton: some View {
-        if PlainWordsSearch.isWorthReading(filter.query), currentReading == nil {
+    private func plainWordsButton(foundNothing: Bool) -> some View {
+        let hasQuery = !filter.query.trimmingCharacters(in: .whitespaces).isEmpty
+        if PlainWordsSearch.isAvailable, hasQuery,
+           PlainWordsSearch.isWorthReading(filter.query) || foundNothing,
+           currentReading == nil {
             Button(action: readPlainWords) {
-                Label("Search in plain words", systemImage: "sparkle.magnifyingglass")
-                    .frame(maxWidth: .infinity)
+                HStack(spacing: .xxSmall) {
+                    Spacer()
+                    Image(systemName: "sparkle.magnifyingglass")
+                        .icon(size: .standard, color: .accent)
+                    Text("Search in plain words")
+                        .font(.caption)
+                        .foregroundStyle(.accent)
+                }
             }
-            .buttonStyle(.bordered)
             .accessibilityIdentifier("plainWordsButton")
         }
     }
@@ -84,10 +92,6 @@ struct BrowseView: View {
     /// own; see `PlainWordsSearch`.
     private func readPlainWords() {
         let query = filter.query
-        if let reason = PlainWordsSearch.unavailableReason {
-            readingNote = (query, reason)
-            return
-        }
         readingNote = nil
         readingTask?.cancel()
         readingQuery = query
@@ -108,13 +112,16 @@ struct BrowseView: View {
     /// typed search. A reading whose words match nothing falls back to its filters alone —
     /// "plants in season that grow on grass" should not come back empty because no entry says
     /// "plants".
-    private var readingOrTyped: SpeciesSearch {
-        guard let reading = currentReading else { return filter.search(currentMonth: store.currentMonth) }
-        if reading.recognisesFacets, !reading.terms.isEmpty,
-           filter.apply(to: store.species, using: reading).isEmpty {
-            return reading.withoutTerms
+    ///
+    /// Returns the results with the search, so the catalogue is filtered once per draw.
+    private var readingOrTyped: (search: SpeciesSearch, results: [ForageSpecies]) {
+        let search = currentReading ?? filter.search(currentMonth: store.currentMonth)
+        let results = filter.apply(to: store.species, using: search, index: store.searchIndex)
+        if currentReading != nil, results.isEmpty, search.recognisesFacets, !search.terms.isEmpty {
+            let filtersOnly = search.withoutTerms
+            return (filtersOnly, filter.apply(to: store.species, using: filtersOnly, index: store.searchIndex))
         }
-        return reading
+        return (search, results)
     }
 
     private var currentReading: SpeciesSearch? {

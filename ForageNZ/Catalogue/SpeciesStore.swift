@@ -15,6 +15,13 @@ final class SpeciesStore {
     /// can be recomputed when `includesUnverified` flips without re-reading the bundle.
     private var catalogue: [ForageSpecies] = []
 
+    /// `species` by id, so a row or card finds its entry without scanning the catalogue.
+    private var speciesByID: [String: ForageSpecies] = [:]
+
+    /// Every entry's text folded for search, drafts included, built once per load. Not
+    /// observed: it changes only with `catalogue`, which `species` already reports.
+    @ObservationIgnored private(set) var searchIndex = SpeciesSearch.Index.empty
+
     /// Lists the unfinished entries alongside the finished ones. Off in every build the user
     /// sees: the only thing that writes it is the debug drawer, which is compiled out of a
     /// release build. Half an entry is worse than none in the field, which is why the default
@@ -53,11 +60,14 @@ final class SpeciesStore {
         loadState = .loading
         do {
             catalogue = try await repository.loadSpecies().sorted(by: ForageSpecies.displayOrder)
+            searchIndex = await Self.buildSearchIndex(catalogue)
             applyVisibility()
             loadState = .loaded
         } catch {
             catalogue = []
+            searchIndex = .empty
             species = []
+            speciesByID = [:]
             Self.logger.error("Catalogue load failed: \(String(describing: error), privacy: .public)")
             loadState = .failed(message: error.userMessage)
         }
@@ -65,6 +75,13 @@ final class SpeciesStore {
 
     private func applyVisibility() {
         species = includesUnverified ? catalogue : catalogue.filter { !$0.draft }
+        speciesByID = Dictionary(species.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
+    }
+
+    /// Off the main actor: folding the whole catalogue's prose is the one heavy step of a load.
+    @concurrent
+    private static func buildSearchIndex(_ species: [ForageSpecies]) async -> SpeciesSearch.Index {
+        SpeciesSearch.Index(species)
     }
 
     // MARK: - Derived views
@@ -92,14 +109,14 @@ final class SpeciesStore {
 
     /// Search as the field guide does it (see `SpeciesSearch`). An empty query returns everything.
     func search(_ query: String) -> [ForageSpecies] {
-        SpeciesFilter(query: query).apply(to: species, currentMonth: currentMonth)
+        SpeciesFilter(query: query).apply(to: species, currentMonth: currentMonth, index: searchIndex)
     }
 
     /// The entry for a compile-time species id. `nil` for a draft, unless the debug drawer
     /// has asked for them, or if the enum and the catalogue have drifted, which
     /// `CatalogueTests` does not allow to ship.
     func species(for id: SpeciesID) -> ForageSpecies? {
-        species.first { $0.id == id.rawValue }
+        speciesByID[id.rawValue]
     }
 
     /// Search plus the browse filters. A `nil` filter means "don't narrow on that dimension".
@@ -109,7 +126,11 @@ final class SpeciesStore {
         origin: ForageOrigin? = nil,
         habitat: Habitat? = nil
     ) -> [ForageSpecies] {
-        SpeciesFilter(query: query, group: group, origin: origin, habitat: habitat).apply(to: species, currentMonth: currentMonth)
+        SpeciesFilter(query: query, group: group, origin: origin, habitat: habitat).apply(
+            to: species,
+            currentMonth: currentMonth,
+            index: searchIndex
+        )
     }
 
     /// A list's members split into the ones the guide shows, in display order, and the raw ids

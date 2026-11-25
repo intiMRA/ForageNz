@@ -381,4 +381,20 @@ struct SpeciesStoreTests {
         #expect(store.species(for: .hemlock)?.id == "hemlock")
         #expect(store.species(for: .deathCap) == nil, "the stub catalogue has no death cap")
     }
+
+    @Test("A draft resolves by id only while the debug flag lets drafts out")
+    func draftLookupFollowsTheFlag() async {
+        let store = makeStore(repository: StubRepository(species: [
+            makeSpecies(id: "hemlock", commonName: "Hemlock").with(draft: true)
+        ]))
+        await store.loadIfNeeded()
+
+        #expect(store.species(for: .hemlock) == nil)
+
+        store.includesUnverified = true
+        #expect(store.species(for: .hemlock)?.id == "hemlock")
+
+        store.includesUnverified = false
+        #expect(store.species(for: .hemlock) == nil)
+    }
 }

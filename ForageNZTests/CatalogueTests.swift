@@ -112,6 +112,22 @@ struct CatalogueTests {
         }
     }
 
+    /// A photo is decoded once per size and then served from memory, which is what keeps a
+    /// scrolled list from decoding the same HEIC on every redraw.
+    @Test("A shipped photo is decoded once per size")
+    func photosAreCached() async throws {
+        let species = try await loadCatalogue()
+        let fileName = try #require(species.lazy.flatMap(\.photos).first?.fileName, "no entry has a photo")
+
+        let first = try #require(BundledPhoto.image(named: fileName, maxPixelSize: 64), "\(fileName) did not decode")
+        let again = BundledPhoto.image(named: fileName, maxPixelSize: 64)
+        let larger = try #require(BundledPhoto.image(named: fileName, maxPixelSize: 128))
+
+        #expect(again === first, "the second request should come from the cache")
+        #expect(larger !== first, "a different size is a different decode")
+        #expect(max(first.size.width, first.size.height) <= 64)
+    }
+
     /// A web link is a planning aid, never the only route to something needed in the field.
     @Test("No entry depends on a web link for its identification content")
     func noEntryLeansOnTheWeb() async throws {

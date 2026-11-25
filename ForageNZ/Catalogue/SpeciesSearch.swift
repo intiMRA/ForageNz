@@ -99,10 +99,11 @@ nonisolated struct SpeciesSearch: Equatable {
     var isEmpty: Bool { phrase.isEmpty && terms.isEmpty && !recognisesFacets }
 
     /// The entries that answer the query, best match first; ties keep the order given.
-    func results(from species: [ForageSpecies]) -> [ForageSpecies] {
+    /// `index` holds the entries' text already folded; an entry it lacks is folded here.
+    func results(from species: [ForageSpecies], index: Index = .empty) -> [ForageSpecies] {
         guard !isEmpty else { return species }
         return species.enumerated()
-            .compactMap { offset, entry in score(entry).map { (offset, entry, $0) } }
+            .compactMap { offset, entry in score(entry, index.text(for: entry)).map { (offset, entry, $0) } }
             .sorted { $0.2 != $1.2 ? $0.2 > $1.2 : $0.0 < $1.0 }
             .map(\.1)
     }
@@ -111,14 +112,14 @@ nonisolated struct SpeciesSearch: Equatable {
     /// summary, which outranks the identification and habitat prose, all matched at the start of
     /// a word; a word found inside a name ("cress" in watercress) ranks last. Prose is never
     /// matched mid-word, so "ash" does not find every entry that says "wash".
-    private func score(_ entry: ForageSpecies) -> Int? {
-        let names = Self.fold(entry.searchableNames)
+    private func score(_ entry: ForageSpecies, _ text: FoldedText) -> Int? {
+        let names = text.names
         let phraseInName = !phrase.isEmpty && Self.startsWord(names, phrase)
 
         guard phraseInName || matchesFacets(entry) else { return nil }
 
-        let summary = Self.fold(entry.summary.text)
-        let prose = Self.fold(entry.identification.text + " " + entry.habitat.text)
+        let summary = text.summary
+        let prose = text.prose
         var total = phraseInName ? 100 : 0
         for term in terms {
             if Self.startsWord(names, term) {
@@ -146,6 +147,41 @@ nonisolated struct SpeciesSearch: Equatable {
     }
 
     // MARK: - Folding
+
+    /// An entry's text as search reads it. Folding walks every character, so each entry is
+    /// folded once, ahead of time.
+    struct FoldedText: Sendable {
+        let names: String
+        let summary: String
+        /// The identification and habitat prose, which rank below the summary.
+        let prose: String
+
+        init(_ entry: ForageSpecies) {
+            names = SpeciesSearch.fold(entry.searchableNames)
+            summary = SpeciesSearch.fold(entry.summary.text)
+            prose = SpeciesSearch.fold(entry.identification.text + " " + entry.habitat.text)
+        }
+    }
+
+    /// The catalogue's text folded ahead of time, by entry id. Built once when the catalogue
+    /// loads (`SpeciesStore.searchIndex`).
+    struct Index: Sendable {
+        private let texts: [String: FoldedText]
+
+        static let empty = Index(texts: [:])
+
+        init(_ species: [ForageSpecies]) {
+            texts = Dictionary(species.map { ($0.id, FoldedText($0)) }, uniquingKeysWith: { first, _ in first })
+        }
+
+        private init(texts: [String: FoldedText]) {
+            self.texts = texts
+        }
+
+        func text(for entry: ForageSpecies) -> FoldedText {
+            texts[entry.id] ?? FoldedText(entry)
+        }
+    }
 
     /// Lowercased, without macrons or other marks, with punctuation as spaces and runs of
     /// space collapsed — so "Tūtae-kākā" and "tutae kaka" fold to the same words.

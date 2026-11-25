@@ -20,7 +20,7 @@ struct ListDetailView: View {
 
     private func content(for list: SpeciesListSnapshot) -> some View {
         let members = store.members(of: list)
-        let results = filter.apply(to: members.species, currentMonth: store.currentMonth)
+        let results = filter.apply(to: members.species, currentMonth: store.currentMonth, index: store.searchIndex)
         return ScrollView {
             LazyVStack {
                 OriginGuidance(origin: filter.origin)

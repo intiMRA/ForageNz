@@ -696,8 +696,8 @@ rows; nothing answers "can I eat this?". The plan is `docs/plans/ai-search.md`.
   the words `Tools/classify_habitats.py` reads; add one only with the owner's approval. An entry named by the whole query is always found, so
   "bush lawyer" is not read as forest. The line under the search box says which words became
   filters.
-- **Plain words, on the device** (`PlainWordsSearch`). In the Field guide, a sentence of three or
-  more words offers a "Search in plain words" button, which asks Apple's on-device model to read it
+- **Plain words, on the device** (`PlainWordsSearch`). In the Field guide, where Apple's model
+  can run, a query longer than four characters or a search that found nothing offers a "Search in plain words" button, which asks Apple's on-device model to read it
   into a `SearchReading` — enum cases and the user's own words, nothing else; a word the query does
   not contain is dropped — which becomes an ordinary search. No Private Cloud Compute, no network. A
   wrong reading is a search miss. It needs Apple Intelligence and does not run in the simulator.

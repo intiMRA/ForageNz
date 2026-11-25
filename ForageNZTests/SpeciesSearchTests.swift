@@ -33,8 +33,14 @@ private func makeSpecies(
     )
 }
 
+/// Runs every query twice — folding the text on the fly and through a prebuilt index, as the
+/// screens do — so each test also holds the index to the same results.
 private func ids(_ query: String, in species: [ForageSpecies], month: ForageMonth = .june) -> [String] {
-    SpeciesFilter(query: query).apply(to: species, currentMonth: month).map(\.id)
+    let filter = SpeciesFilter(query: query)
+    let folded = filter.apply(to: species, currentMonth: month).map(\.id)
+    let indexed = filter.apply(to: species, currentMonth: month, index: SpeciesSearch.Index(species)).map(\.id)
+    #expect(indexed == folded, "a prebuilt index must match and rank exactly as folding on the fly")
+    return indexed
 }
 
 @Suite("SpeciesSearch")
@@ -210,10 +216,11 @@ struct PlainWordsSearchTests {
         #expect(filtersOnly.months == [.november])
     }
 
-    @Test("Only a sentence is worth the model's time")
+    @Test("Only a query longer than four characters is worth the model's time")
     func worthReading() {
         #expect(PlainWordsSearch.isWorthReading("white flowers by a stream"))
-        #expect(!PlainWordsSearch.isWorthReading("kawakawa"))
-        #expect(!PlainWordsSearch.isWorthReading("bush lawyer"))
+        #expect(PlainWordsSearch.isWorthReading("kawakawa"))
+        #expect(!PlainWordsSearch.isWorthReading("kawa"))
+        #expect(!PlainWordsSearch.isWorthReading(""))
     }
 }

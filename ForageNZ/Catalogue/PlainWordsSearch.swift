@@ -14,8 +14,8 @@ import OSLog
 ///
 /// On-device only. No Private Cloud Compute, no network: the app is used where there is no
 /// signal. Where the model is unavailable (no Apple Intelligence, model not downloaded), the
-/// field guide's own word search is all there is, and the "Search in plain words" button says
-/// why when tapped (`unavailableReason`). The model does not run in the simulator at all.
+/// field guide's own word search is all there is and the "Search in plain words" button is not
+/// offered. The model does not run in the simulator at all.
 @MainActor
 enum PlainWordsSearch {
     private static let logger = Logger(subsystem: Logging.subsystem, category: "plainWordsSearch")
@@ -24,26 +24,9 @@ enum PlainWordsSearch {
         SystemLanguageModel.default.isAvailable
     }
 
-    /// Why the model cannot read a search on this device, in words the user can act on; `nil`
-    /// when it can.
-    static var unavailableReason: LocalizedStringResource? {
-        switch SystemLanguageModel.default.availability {
-        case .available:
-            return nil
-        case .unavailable(.deviceNotEligible):
-            return "Plain-words search needs a device that supports Apple Intelligence."
-        case .unavailable(.appleIntelligenceNotEnabled):
-            return "Plain-words search needs Apple Intelligence. Turn it on in Settings."
-        case .unavailable(.modelNotReady):
-            return "Plain-words search is waiting for Apple Intelligence to finish downloading."
-        case .unavailable:
-            return "Plain-words search is not available on this device."
-        }
-    }
-
-    /// Whether a query reads as a sentence rather than a name — worth the model's time.
+    /// Whether a query is long enough to be worth the model's time: more than four characters.
     nonisolated static func isWorthReading(_ query: String) -> Bool {
-        SpeciesSearch.fold(query).split(separator: " ").count >= 3
+        query.count > 4
     }
 
     /// The model's reading of `query`, or `nil` if it could not read it.

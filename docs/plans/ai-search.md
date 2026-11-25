@@ -58,9 +58,9 @@ person wrote. On-device only: no Private Cloud Compute, no network.
   own words. Greedy sampling; the current month is given for "now" and "in season".
 - If the reading's words match nothing, the list falls back to its filters alone.
 - Editing the query drops the reading; asking again cancels a read in flight.
-- When the model cannot run, tapping the button says why (Apple Intelligence off, model
-  downloading, unsupported device, or "Couldn't read that as a search"); a UI test holds that it
-  always shows a reading or a note.
+- The button is offered only where the model reports itself available (owner, 25/11), and also
+  whenever word search finds nothing. Where it is offered, a tap must show a reading or a note
+  ("Couldn't read that as a search"); a UI test holds both.
 - **Does not run in the simulator**: the iOS 26.3 and 27 simulators report the model available,
   then every request fails in Apple's safety check ("SafetyGuardrailTextSanitizerBackend …
   Simulator is not supported", 25/11/2026). Try it on an iPhone 15 Pro or later with Apple

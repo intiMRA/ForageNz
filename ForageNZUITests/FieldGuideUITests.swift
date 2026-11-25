@@ -1,4 +1,5 @@
 import XCTest
+import FoundationModels
 
 final class FieldGuideUITests: XCTestCase {
     private static let existenceTimeout: TimeInterval = 5
@@ -70,10 +71,9 @@ final class FieldGuideUITests: XCTestCase {
         )
     }
 
-    /// A sentence offers the plain-words button, and tapping it must always answer: a reading
-    /// from the on-device model where there is one, a note saying why not where there is not.
-    /// Silence is the failure.
-    func testPlainWordsButtonReadsTheSentenceOrSaysWhyNot() {
+    /// The plain-words button is offered only where the on-device model can run, and there a
+    /// tap must come back with a reading or a note. Silence is the failure.
+    func testPlainWordsButtonShowsOnlyWhereTheModelRuns() {
         app.tabBars.buttons["Field guide"].tap()
         let search = app.searchFields.firstMatch
         XCTAssertTrue(search.waitForExistence(timeout: Self.existenceTimeout))
@@ -81,6 +81,10 @@ final class FieldGuideUITests: XCTestCase {
         search.typeText("mushrooms under pine trees")
 
         let button = app.buttons["plainWordsButton"]
+        guard SystemLanguageModel.default.isAvailable else {
+            XCTAssertFalse(button.waitForExistence(timeout: 2), "Plain-words search was offered where the model cannot run")
+            return
+        }
         XCTAssertTrue(button.waitForExistence(timeout: Self.existenceTimeout), "A sentence did not offer plain-words search")
         button.tap()
 
@@ -91,8 +95,6 @@ final class FieldGuideUITests: XCTestCase {
             RunLoop.current.run(until: Date().addingTimeInterval(0.5))
         }
         XCTAssertTrue(reading.exists || note.exists, "Plain-words search showed neither a reading nor a note")
-        if reading.exists { print("PLAINWORDS reading: \(reading.label)") }
-        if note.exists { print("PLAINWORDS note: \(note.label)") }
     }
 
     func testOpeningASpeciesShowsItsDetail() {
