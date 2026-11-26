@@ -146,7 +146,7 @@ struct SpeciesEditorView: View {
                 lines: 2...6,
                 help: species.caution.isHarvestable
                     ? nil
-                    : "Must say exactly “\(ForageSpecies.noEdibleParts)” for a \(species.caution == .doNotEat ? "do-not-eat" : "psychoactive") entry."
+                    : "Must say exactly “\(ForageSpecies.noEdibleParts)” for a \(species.caution == .doNotEat ? "do-not-eat" : species.caution == .notFood ? "not-food" : "psychoactive") entry."
             )
             LabelledField(
                 "Preparation",

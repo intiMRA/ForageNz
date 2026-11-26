@@ -897,7 +897,10 @@ An entry can carry what it is gathered for besides food (`SpeciesUse` in `uses`;
 `docs/plans/useful-plants.md`). The food use is not one of them: it stays in `edibleParts`,
 `preparation`, `warnings` and `recipes`, so food recipes and each use's own recipes sit side by
 side. `caution` still means "can I eat it"; a use's own `warnings` say what handling it asks of
-you, so a dye plant can be "do not eat" and "wear gloves" at once. Each use has a kind, the part
+you, so a dye plant can be "do not eat" and "wear gloves" at once. A plant nobody eats that nothing
+says is poisonous is `caution: notFood` ("Not food", 27/11/2026): never harvestable, edible parts
+exactly "None.", no food recipes, and a use written or planned (blocking); its colour and leaf
+badge borrow the lookalike "Not known" grey and the Useful plants leaf until it is designed. Each use has a kind, the part
 gathered, its harvest window, how it is processed, its warnings and recipes.
 
 - **Every part and method carries its source** (blocking). A use has no "written for this

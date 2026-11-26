@@ -77,6 +77,10 @@ extension CautionLevel {
             return .tint(Color(.cautionDanger))
         case .psychoactive:
             return .ramp(.init(colors: [Color(.psychoGradient1), Color(.psychoGradient2), Color(.psychoGradient3)]))
+        // Needs design: borrows the lookalike "Not known" grey, the one colour off the
+        // red-to-green scale, because "not food" is no claim about safety at all.
+        case .notFood:
+            return .tint(Color(.riskUnknown))
         }
     }
 
@@ -85,7 +89,7 @@ extension CautionLevel {
     /// takes `.primary`, which is also what the owner's mock shows.
     var badgeForeground: Color {
         switch self {
-        case .straightforward, .careRequired, .doNotEat: .white
+        case .straightforward, .careRequired, .doNotEat, .notFood: .white
         case .psychoactive: .primary
         }
     }
@@ -97,7 +101,7 @@ extension CautionLevel {
     /// stay flat `.tint`s and render exactly as they always have.
     var rowBackground: CardFill {
         switch self {
-        case .straightforward, .careRequired:
+        case .straightforward, .careRequired, .notFood:
             return .tint(Color(.rowCardBackground))
         case .doNotEat:
             return .tint(Color(.riskDeadlyBackground))

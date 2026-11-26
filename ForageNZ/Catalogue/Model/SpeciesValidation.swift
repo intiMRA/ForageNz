@@ -140,6 +140,18 @@ public extension ForageSpecies {
             if months.isEmpty {
                 blocking(.months, "A psychoactive entry must say when it fruits — empty months reads as year-round.")
             }
+        case .notFood:
+            // Nothing on the page is food, so it must not read as food; and it is in the guide
+            // only for a use, so one has to be written or planned.
+            if !claimsNoEdibleParts {
+                blocking(.edibleParts, "A not-food entry must say exactly “\(Self.noEdibleParts)”.")
+            }
+            if !recipes.isEmpty {
+                blocking(.recipes, "A not-food entry can't carry food recipes — put them on its uses.")
+            }
+            if uses.isEmpty && plannedUses.isEmpty {
+                blocking(.uses, "A not-food entry is here for a use — write or plan one.")
+            }
         case .careRequired:
             if warnings.isEmpty && lookalikes.isEmpty {
                 blocking(.warnings, "Needs care, so it must say why — a warning or a lookalike.")
@@ -307,7 +319,7 @@ public extension ForageSpecies {
         }
 
         if use.kind == .cosmetics {
-            if !caution.isHarvestable && use.warnings.isEmpty {
+            if (caution == .doNotEat || caution == .psychoactive) && use.warnings.isEmpty {
                 messages.append("Cosmetics on a plant nobody may eat needs a warning saying what handling it does.")
             }
         }

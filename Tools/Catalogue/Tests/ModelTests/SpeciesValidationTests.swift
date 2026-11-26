@@ -196,6 +196,18 @@ struct SpeciesValidationTests {
         #expect(makePsychoactive().isPublishable)
     }
 
+    /// A not-food entry (lacebark, 27/11/2026) is in the guide for a use, so it claims no
+    /// edible parts, carries no food recipes and must have a use written or planned.
+    @Test("A not-food entry claims no edible parts and needs a use")
+    func notFoodRules() {
+        let planned = makeSpecies(caution: .notFood, edibleParts: "None.", preparation: "None.")
+            .with(plannedUses: [.fibre])
+        #expect(planned.isPublishable)
+        #expect(fields(planned.with(edibleParts: "Bark."), severity: .blocking).contains(.edibleParts))
+        #expect(fields(makeSpecies(caution: .notFood, edibleParts: "None."), severity: .blocking).contains(.uses))
+        #expect(!CautionLevel.notFood.isHarvestable)
+    }
+
     /// Months are advisory everywhere else, and that let the *least* finished of the five
     /// *Psilocybe* entries pass first: `liberty-cap` cleared validation carrying no months,
     /// no photos and no lookalike card, because nothing demanded any of them. (The photo half

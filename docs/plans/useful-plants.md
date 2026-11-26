@@ -405,6 +405,18 @@ as a group are left out. None has an entry: each would be a new "Useful plants" 
 entry where it is also eaten) and needs the full standards, an NZTCS status check (no uses on an
 at-risk species) and the owner's say before it is started.
 
+**Added 27/11/2026** (owner: "all of the ones that make sense") as drafts for the use review:
+lacebark, long-leaved lacebark, kāmahi, tānekaha, pūriri, hangehange, patē, pūtawa and giant
+umbrella sedge (Useful plants, the first `notFood` entries; tītoki `doNotEat` for its poisonous
+seeds), and hīnau, makomako, perching astelia, coastal astelia, bush lily and kahakaha (Fruit,
+with their uses). **Not added:** narrow-leaved lacebark, lowland ribbonwood, mountain toatoa,
+pōkākā, kaikōmako, kuta, kāpūngāwhā, kāretu and small white rātā are At Risk or Threatened in at
+least one region on NZPCN, so they could carry no use; pīngao, pūnui, sand pimelea and parapara
+are At Risk nationally and black crottle Naturally Uncommon; silver tussock (no source names the
+part used); the mountain ribbonwoods, makamaka, tōwai, the two Coprosma dye plants, kōwhai,
+neinei, maurea, large mountain daisies, the vines, clematis, mosses, eel grass and the lichen
+genera (no part and method, a catch-all record, or both).
+
 | Species | Use (kind) | NRW record |
 |---|---|---|
 | Lacebark, houhere (*Hoheria populnea*, *H. sextylosa*) | Inner bark scraped, dried and beaten for cloaks, kete, poi, belts and hair ornaments; bark strips for tying; trimming for hats and dresses (fibre) | https://rauropiwhakaoranga.landcareresearch.co.nz/names/038578df-a568-4bcd-9459-cde0ef919dab |
@@ -571,6 +583,10 @@ entry as now, not here.
    system `leaf` symbol until it has a drawing. Its first entry, soapwort, is poisonous (roots and
    seeds; NC State Extension), so it takes the existing "Do not eat" caution; the "not food" caution
    still waits for the first harmless non-food plant.
+   *Built 27/11/2026 (NRW species, lacebark first):* `CautionLevel.notFood`, "Not food": not
+   harvestable, edible parts exactly "None.", no food recipes, and a use written or planned
+   (blocking). Its grey (the lookalike "Not known" colour), leaf badge and detail-page banner ("This
+   is not food. It is in the guide for its other uses.") are placeholders marked as needing design.
 3. **Tikanga and taonga species: sourced from trustworthy pages only, nothing made up; the owner
    reviews.** Māori-authored sources first (Ngā Rauropi Whakaoranga, Te Ara); every sentence credited
    beside it like any other text. No separate reviewer and no deliberately thinned pages.

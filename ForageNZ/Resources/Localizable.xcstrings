@@ -398,6 +398,9 @@
     "None" : {
       "comment" : "Shown in place of a list's icon when it has none."
     },
+    "Not food" : {
+
+    },
     "Not known" : {
 
     },

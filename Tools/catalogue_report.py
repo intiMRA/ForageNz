@@ -381,8 +381,8 @@ def has_reverse(entry: Entry, link: dict[str, str], by_id: dict[str, Entry]) -> 
 
 def row(entry: Entry, members: set[str], by_id: dict[str, Entry]) -> dict[str, Any]:
     missing = [f for f in PROSE_FIELDS if not prose(entry, f)]
-    # Months are the harvest window of the eaten part, so a doNotEat entry has none to give.
-    if not entry.get("months") and entry.get("caution") != "doNotEat":
+    # Months are the harvest window of the eaten part, so a doNotEat or notFood entry has none.
+    if not entry.get("months") and entry.get("caution") not in ("doNotEat", "notFood"):
         missing.append("months")
     cards = []
     for card in entry.get("lookalikes") or []:

@@ -15,6 +15,12 @@ public nonisolated enum CautionLevel: String, Codable, Sendable, CaseIterable {
     /// rather than a health risk. Kept apart from `doNotEat` because filing a non-toxic
     /// mushroom under a heading about poisoning is a claim that is simply untrue.
     case psychoactive
+    /// Nobody eats it and nothing says it is poisonous: it is in the guide for a non-food use
+    /// (fibre, dye, craft, cosmetics). The useful-plants plan deferred this case until the
+    /// first such plant (decision 2), because "Do not eat" on a harmless dye plant is untrue
+    /// and "Straightforward" would say it is food. Lacebark and the other Ngā Rauropi
+    /// Whakaoranga plants added on 27/11/2026 were that first case.
+    case notFood
 
     public var displayName: LocalizedStringResource {
         switch self {
@@ -22,6 +28,7 @@ public nonisolated enum CautionLevel: String, Codable, Sendable, CaseIterable {
         case .careRequired: "Care required"
         case .doNotEat: "Do not eat"
         case .psychoactive: "Psychoactive"
+        case .notFood: "Not food"
         }
     }
 
@@ -31,6 +38,7 @@ public nonisolated enum CautionLevel: String, Codable, Sendable, CaseIterable {
         case .careRequired: "Care"
         case .doNotEat: "Danger"
         case .psychoactive: "Psychoactive"
+        case .notFood: "Not food"
         }
     }
 
@@ -42,7 +50,7 @@ public nonisolated enum CautionLevel: String, Codable, Sendable, CaseIterable {
     public var isHarvestable: Bool {
         switch self {
         case .straightforward, .careRequired: true
-        case .doNotEat, .psychoactive: false
+        case .doNotEat, .psychoactive, .notFood: false
         }
     }
 

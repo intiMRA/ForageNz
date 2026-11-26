@@ -136,6 +136,8 @@ extension CautionLevel {
         case .careRequired: .tinted(Image(systemName: "exclamationmark.triangle"))
         case .doNotEat: .tinted(Image(systemName: "xmark.octagon"))
         case .psychoactive: .original(Image(.psychoactive))
+        // Needs design: the same SF leaf the Useful plants group wears.
+        case .notFood: .tinted(Image(systemName: "leaf"))
         }
     }
 

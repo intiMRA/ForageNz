@@ -256,6 +256,12 @@ struct CatalogueTests {
                         lookalike.risk != .edible,
                         "\(card) is tagged edible, but \(target.id) is a do-not-eat entry"
                     )
+                case .notFood:
+                    // Nobody eats it, so it is never the edible half of a pair.
+                    #expect(
+                        lookalike.risk != .edible,
+                        "\(card) is tagged edible, but \(target.id) is a not-food entry"
+                    )
                 case .psychoactive:
                     break  // Covered by the equivalence above.
                 }

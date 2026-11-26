@@ -213,6 +213,10 @@ struct SpeciesDetailView: View {
                     psychoactiveBanner
                         .padding(.bottom, .xxxSmall)
                 }
+                else if species.caution == .notFood {
+                    notFoodBanner
+                        .padding(.bottom, .xxxSmall)
+                }
                 else if species.hasDeadlyLookalikeAsEdible {
                     deadlyLookalikeBanner
                         .padding(.bottom, .xxxSmall)
@@ -228,6 +232,7 @@ struct SpeciesDetailView: View {
         !species.warnings.isEmpty
             || species.caution == .doNotEat
             || species.caution == .psychoactive
+            || species.caution == .notFood
             || species.hasDeadlyLookalikeAsEdible
     }
 
@@ -446,6 +451,23 @@ struct SpeciesDetailView: View {
     /// whose active compounds are controlled drugs. What this should say is the owner's
     /// sentence; until it exists the page says something rather than nothing, in a colour that
     /// cannot be mistaken for finished.
+    /// Not designed yet either, and the wording is a placeholder: the plain fact a not-food
+    /// page needs, that it is here for its other uses and not as food.
+    private var notFoodBanner: some View {
+        HStack(alignment: .top, spacing: .xxSmall) {
+            CautionLevel.notFood.image
+                .resizable()
+                .scaledToFit()
+                .frame(width: 16, height: 16)
+            Text("This is not food. It is in the guide for its other uses.")
+                .font(.footnote)
+                .italic()
+                .bold()
+                .foregroundStyle(.secondary)
+        }
+        .needsDesign()
+    }
+
     private var psychoactiveBanner: some View {
         HStack(alignment: .top, spacing: .xxSmall) {
             CautionLevel.psychoactive.image
