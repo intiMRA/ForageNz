@@ -901,12 +901,21 @@ gathered, its harvest window, how it is processed, its warnings and recipes.
 
 - **Every part and method carries its source** (blocking). A use has no "written for this
   guide" case; taonga species are sourced from Māori-authored pages first, and the owner reviews.
-- **Skin care is cosmetic only.** A medicinal claim ("heals", "remedy", "eczema"…) blocks;
-  medicinal use is out of scope.
+- **No medical claims, on any use** (owner, 26/11/2026). A healing or medicinal claim ("heals",
+  "remedy", "first aid", "splinters", "eczema"…) blocks on every kind, and "treat" on skin care;
+  recipe pages that sell a balm on healing claims give the preparation only. Medicinal use is out
+  of scope, and skin care is cosmetic only.
 - **Lye or a toxic mordant needs a warning** (copper, chrome, tin; alum and iron do not count),
   and skin care on a plant nobody may eat needs one too.
 - The species page shows an *Other Uses* section with each use's recipes on their own sheet; the
   filter menu offers a use only once some shipped entry has it.
+- **Every entry that will get a use is a draft until the owner reviews it** (owner, 26/11/2026),
+  food page included. `plannedUses` records the kinds the plan's lead tables name for it;
+  `Tools/use_leads.py --draft` reads those tables, sets `plannedUses` and drafts each entry (it only
+  adds; only the owner clears a draft). Such a draft may be complete and shipped cards may open it
+  (`ForageSpecies.awaitsUseReview`); UI tests launch with the debug drawer's "show unverified" switch
+  on so they do not depend on which entries are shipped. The report's *Other uses next* section
+  batches these entries by app group with every lead from the plan.
 
 ## Validation
 

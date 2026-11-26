@@ -74,7 +74,7 @@ struct SpeciesUseTests {
         #expect(useMessages(makeSpecies(uses: [makeUse(method: method)])).isEmpty)
     }
 
-    @Test("A medicinal claim on a skin-care use blocks, and not on a dye")
+    @Test("A medical claim on any use blocks, and 'treat' only on skin care")
     func skinCareIsCosmeticOnly() {
         let healing = Recipe(title: "Healing balm", method: "Infuse the flowers in oil.", sourceURL: recipeURL)
         #expect(!useMessages(makeSpecies(uses: [makeUse(kind: .skinCare, recipes: [healing])])).isEmpty)
@@ -84,6 +84,9 @@ struct SpeciesUseTests {
 
         let treated = SourcedText("Treat the wool with alum first.", sources: ["A dye book"])
         #expect(useMessages(makeSpecies(uses: [makeUse(method: treated)])).isEmpty)
+
+        let firstAid = SourcedText("Glue the bearing block; keep some in your first aid kit for splinters.", sources: ["A bushcraft page"])
+        #expect(!useMessages(makeSpecies(uses: [makeUse(kind: .craft, method: firstAid)])).isEmpty)
     }
 
     @Test("Skin care on a plant nobody may eat needs a warning")

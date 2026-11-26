@@ -492,6 +492,10 @@ entry as now, not here.
    salves, soap and bath preparations (the *Recipe leads* table). **Medicinal use stays out.** Skin
    care gets its own rules (see *Skin care rules*). Timber, resin, turpentine, shelter and ornamental
    uses in the candidates table are not foraging uses and are not carried over.
+   *Narrowed 26/11/2026 (owner, pine link round):* resin glue, a resin-and-beeswax balm and pitch
+   or fatwood tinder are in, as craft and skin care; turpentine and rosin stay out. Pages that name only
+   "pine" apply to every pine unless a species-level claim blocks it, and needle baskets go only on pines
+   whose needles reach 10 cm.
 2. **Browsing: a uses filter across every group, plus one new group for species with no food use.**
    The group is added when the first such species is drafted (none is yet, because of decision 4),
    together with the caution it needs: no current caution fits a harmless plant that simply is not
@@ -533,10 +537,19 @@ meaning "can I eat it".
 4. ~~UI: uses on the species page, the filter, the handling caution.~~ Done: an *Other Uses*
    section with each use's recipes on their own sheet; the filter menu offers a use once a shipped
    entry has it. The non-food group waits for the first non-food-only species (decision 2).
-5. **Pilot, waiting on the owner's review:** Scotch broom's dye use and acid-yellow wool-dye
+5. **Every entry that will get a use is a draft until the owner reviews it** (owner, 26/11/2026:
+   "all the entries with other uses need to be drafts until I review them", then "set all entries
+   that will get another use as a draft"). 243 entries, 242 of them shipped food pages, were drafted
+   with `Tools/use_leads.py --draft`, which reads this plan's four lead tables and records the kinds
+   each lead names in the entry's `plannedUses`. The owner was told what that hides: about half the
+   guide, 170 shipped lookalike cards that now open nothing (146 of them the edible partner on a
+   dangerous plant's page, hemlock and tutu among them) and 84 grows-with cards. The report's
+   *Other uses next* section lists them in batches by app group with their leads.
+6. **Pilot, waiting on the owner's review:** Scotch broom's dye use and acid-yellow wool-dye
    recipe, restated from Snapdragon Life (re-read 26/11/2026). No batch until the owner has
    looked at it on the device.
-6. ~~Report: gaps per use.~~ Done: `catalogue_report.py` has an *Other uses* column.
+7. ~~Report: gaps per use.~~ Done: `catalogue_report.py` has an *Other uses* column and the
+   *Other uses next* batches.
 
 ## Not in scope
 

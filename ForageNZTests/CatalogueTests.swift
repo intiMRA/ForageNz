@@ -39,6 +39,8 @@ struct CatalogueTests {
     func draftsAreStubsNotShippedContent() async throws {
         for entry in try await loadCatalogue() where entry.draft {
             #expect(entry.isVerified, "\(entry.id) is a draft with no source — where did its facts come from?")
+            // A draft held for the owner's use review may be finished: what it waits on is a person.
+            if entry.awaitsUseReview { continue }
             #expect(!entry.blockingIssues.isEmpty, "\(entry.id) passes validation, so it should no longer be a draft")
         }
     }
@@ -168,7 +170,9 @@ struct CatalogueTests {
     func everyLookalikeHasAnEntry() async throws {
         let species = try await loadCatalogue()
         let ids = Set(species.map(\.id))
-        let shipped = Set(species.filter { !$0.draft }.map(\.id))
+        // An entry held for the owner's use review opens nothing until it is cleared; the owner
+        // chose that over keeping its page live (26/11/2026), so cards to it are allowed.
+        let shipped = Set(species.filter { !$0.draft || $0.awaitsUseReview }.map(\.id))
         for entry in species {
             for lookalike in entry.lookalikes {
                 #expect(ids.contains(lookalike.entry.rawValue), "\(entry.id) → \(lookalike.name) names \(lookalike.entry.rawValue), which is not in the catalogue")

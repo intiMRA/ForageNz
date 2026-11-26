@@ -295,14 +295,18 @@ public extension ForageSpecies {
             messages.append("\(name): mentions \(chemical), so it needs a warning saying how to handle it.")
         }
 
+        // No medical claims on any use (owner, 26/11/2026: "no medical claims"). Recipe pages sell
+        // balms and teas on healing claims; the claim stays behind and the preparation comes.
+        let written = ([use.parts.text, use.method.text] + use.warnings
+            + use.recipes.flatMap { [$0.title, $0.method] }).joined(separator: "\n")
+        let claimPhrases = use.kind == .skinCare
+            ? Self.medicinalClaimPhrases + Self.skinCareTreatmentPhrases
+            : Self.medicinalClaimPhrases
+        if let phrase = Self.firstPhrase(of: claimPhrases, in: written) {
+            messages.append("\(name): makes a medical claim (“\(phrase)”) — leave the claim out and keep the preparation.")
+        }
+
         if use.kind == .skinCare {
-            // Medicinal use is out of scope (owner, 26/11/2026). Skin-care recipe pages sell their
-            // preparations on healing claims; the claim stays behind and the preparation comes.
-            let written = ([use.parts.text, use.method.text] + use.warnings
-                + use.recipes.flatMap { [$0.title, $0.method] }).joined(separator: "\n")
-            if let phrase = Self.firstPhrase(of: Self.medicinalClaimPhrases, in: written) {
-                messages.append("Skin care: makes a medicinal claim (“\(phrase)”) — cosmetic uses only.")
-            }
             if !caution.isHarvestable && use.warnings.isEmpty {
                 messages.append("Skin care on a plant nobody may eat needs a warning saying what handling it does.")
             }
@@ -328,12 +332,18 @@ public extension ForageSpecies {
         "tin crystals", "tin mordant", "stannous chloride",
     ]
 
-    /// Words that make a skin-care use a medicinal one.
+    /// Words that make a use a medical one, whatever its kind.
     private static let medicinalClaimPhrases = [
-        "heal", "heals", "healing", "cure", "cures", "treat", "treats", "treatment", "remedy", "remedies",
+        "heal", "heals", "healing", "cure", "cures", "remedy", "remedies",
         "medicinal", "medicine", "antiseptic", "antibacterial", "antifungal", "anti-inflammatory",
+        "antimicrobial", "analgesic", "disinfect", "disinfects", "first aid", "first-aid",
         "eczema", "psoriasis", "wound", "wounds", "infection", "infections", "pain",
+        "splinter", "splinters", "bruise", "bruises", "rash", "rashes", "rheumatic", "congestion",
     ]
+
+    /// "Treat" is a dyer's and woodworker's word ("treat the wool with alum"), so it only reads
+    /// as a medical claim on skin care.
+    private static let skinCareTreatmentPhrases = ["treat", "treats", "treatment"]
 
     var blockingIssues: [ValidationIssue] {
         validationIssues.filter { $0.severity == .blocking }

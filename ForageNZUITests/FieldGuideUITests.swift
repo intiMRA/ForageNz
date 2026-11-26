@@ -17,6 +17,11 @@ final class FieldGuideUITests: XCTestCase {
         continueAfterFailure = false
         app = XCUIApplication()
         app.launchArguments.append("-UserDataInMemory")
+        // The debug drawer's "show unverified entries" switch, through the launch-argument
+        // defaults domain (it does not persist). Every entry that will get a non-food use is a
+        // draft until the owner reviews it (26/11/2026) — half the guide, dandelion included —
+        // so without it these tests would chase whichever entries happen to be shipped today.
+        app.launchArguments += ["-debug.showsUnverifiedEntries", "YES"]
         app.launch()
     }
 

@@ -35,6 +35,10 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     /// What it is gathered for besides food — fibre, dye, craft, skin care. The food use is
     /// the fields above, not an element here.
     public let uses: [SpeciesUse]
+    /// Non-food use kinds the plan's lead tables (`docs/plans/useful-plants.md`) say this entry
+    /// will get, written or not. What holds an entry as a draft for the owner's use review
+    /// before any use is on it — see `awaitsUseReview`. Set by `Tools/use_leads.py --draft`.
+    public let plannedUses: [UseKind]
     public let photos: [SpeciesPhoto]
     /// Where to see more photographs — an iNaturalist taxon page, usually.
     public let moreImagesURL: URL?
@@ -85,6 +89,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         sources: [String] = [],
         recipes: [Recipe] = [],
         uses: [SpeciesUse] = [],
+        plannedUses: [UseKind] = [],
         photos: [SpeciesPhoto] = [],
         moreImagesURL: URL? = nil,
         draft: Bool = false,
@@ -112,6 +117,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         self.sources = sources
         self.recipes = recipes
         self.uses = uses
+        self.plannedUses = plannedUses
         self.photos = photos
         self.moreImagesURL = moreImagesURL
         self.draft = draft
@@ -146,6 +152,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         recipes = try container.decode([Recipe].self, forKey: .recipes)
         // Absent means none recorded, like `associations`.
         uses = try container.decodeIfPresent([SpeciesUse].self, forKey: .uses) ?? []
+        plannedUses = try container.decodeIfPresent([UseKind].self, forKey: .plannedUses) ?? []
         photos = try container.decode([SpeciesPhoto].self, forKey: .photos)
         moreImagesURL = try container.decodeIfPresent(URL.self, forKey: .moreImagesURL)
         draft = try container.decodeIfPresent(Bool.self, forKey: .draft) ?? false
@@ -153,6 +160,13 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         needsBookSource = try container.decodeIfPresent(Bool.self, forKey: .needsBookSource) ?? false
         sourcingNote = try container.decodeIfPresent(String.self, forKey: .sourcingNote)
     }
+
+    /// Held back for the owner to review its non-food uses (owner, 26/11/2026: "all the
+    /// entries with other uses need to be drafts until I review them", and before that, every
+    /// entry that will get one). Unlike every other draft it may be complete, and shipped cards
+    /// may point at it: the whole page waits, food content included, until the owner clears
+    /// the draft flag.
+    public var awaitsUseReview: Bool { draft && !(uses.isEmpty && plannedUses.isEmpty) }
 
     /// `true` once someone has checked this entry against a field guide.
     public var isVerified: Bool { !sources.isEmpty }
@@ -217,6 +231,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         sources: [String]? = nil,
         recipes: [Recipe]? = nil,
         uses: [SpeciesUse]? = nil,
+        plannedUses: [UseKind]? = nil,
         photos: [SpeciesPhoto]? = nil,
         moreImagesURL: URL?? = nil,
         draft: Bool? = nil,
@@ -245,6 +260,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
             sources: sources ?? self.sources,
             recipes: recipes ?? self.recipes,
             uses: uses ?? self.uses,
+            plannedUses: plannedUses ?? self.plannedUses,
             photos: photos ?? self.photos,
             moreImagesURL: moreImagesURL ?? self.moreImagesURL,
             draft: draft ?? self.draft,

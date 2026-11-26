@@ -41,6 +41,8 @@ import urllib.parse
 from typing import Any
 
 from classify_habitats import evidence
+from use_leads import PLAN, planned_kinds
+from use_leads import parse as parse_use_leads
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 SPECIES = REPO / "ForageNZ" / "Catalogue" / "species.json"
@@ -1204,13 +1206,108 @@ def render_links(batches: list[dict[str, Any]]) -> list[str]:
     return out
 
 
+#: Labels for `UseKind` (ForageNZ/Catalogue/Model/SpeciesUse.swift), in its order.
+USE_KINDS = [("fibre", "Fibre & weaving"), ("dye", "Dye"), ("craft", "Craft & household"), ("skinCare", "Skin care")]
+USE_LABEL = dict(USE_KINDS)
+
+
+def use_batches(entries: list[Entry], leads: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:
+    """Entries with a planned or written non-food use, one batch per app group (the owner works
+    group by group), each in display order. An entry is done once its draft flag is cleared."""
+    batches = []
+    for key, label in GROUPS:
+        rows = []
+        for e in sorted((e for e in entries if e["group"] == key), key=lambda e: (e["commonName"].lower(), e["id"])):
+            entry_leads = leads.get(e["id"], [])
+            planned = e.get("plannedUses") or planned_kinds(entry_leads)
+            written = [u.get("kind", "") for u in e.get("uses") or []]
+            if not planned and not written:
+                continue
+            rows.append({"entry": e, "planned": planned, "written": written, "leads": entry_leads})
+        if rows:
+            batches.append({
+                "key": key,
+                "label": label,
+                "rows": rows,
+                "waiting": sum(1 for r in rows if r["entry"].get("draft")),
+                "written": sum(1 for r in rows if r["written"]),
+            })
+    return batches
+
+
+def lead_text(text: str) -> str:
+    """A plan table cell as HTML: escaped, backticks dropped, markdown links made links."""
+    out = esc(text.replace("`", ""))
+    return re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2">\1</a>', out)
+
+
+def render_uses(batches: list[dict[str, Any]]) -> list[str]:
+    entries = sum(len(b["rows"]) for b in batches)
+    waiting = sum(b["waiting"] for b in batches)
+    out = [
+        f'<h2 class="group" id="uses">Other uses next<small>{entries} entries with a planned use, '
+        f"{waiting} drafts waiting for review, in {len(batches)} batches by app group</small></h2>",
+        '<p class="lede">Every entry the lead tables in <code>docs/plans/useful-plants.md</code> name '
+        "for an in-scope use (fibre, dye, craft, skin care; medicinal is out). Each is a draft until the "
+        "owner reviews it (26/11/2026). The kinds are read from the lead's words to sort them, so they are "
+        "a starting point, not a claim: every lead is re-read at its source, restated and credited before it "
+        "reaches a page. Leads already on a page are ticked. Re-run <code>Tools/use_leads.py --draft</code> "
+        "after adding leads to the plan.</p>",
+        "<nav>",
+    ]
+    for b in batches:
+        out.append(f'<a href="#uses-{b["key"]}">{esc(b["label"])} · {len(b["rows"])}</a>')
+    out.append("</nav>")
+    for b in batches:
+        out.append(f'<section class="cluster" id="uses-{b["key"]}"><div class="head">')
+        out.append(f"<h3>{esc(b['label'])}</h3>")
+        out.append('<div class="chips">')
+        out.append(f'<span class="chip">{len(b["rows"])} entries</span>')
+        out.append(f'<span class="chip on">{b["waiting"]} waiting for review</span>')
+        out.append(f'<span class="chip">{b["written"]} with a use written</span>')
+        out.append("</div></div>")
+        out.append('<div class="scroll"><table><thead><tr>')
+        for header in ["Entry", "Planned", "Written", "Leads from the plan"]:
+            out.append(f"<th>{header}</th>")
+        out.append("</tr></thead><tbody>")
+        for r in b["rows"]:
+            e = r["entry"]
+            state = '<span class="miss">draft</span>' if e.get("draft") else '<span class="ok">reviewed</span>'
+            planned = ", ".join(USE_LABEL.get(k, k) for k in r["planned"]) or "—"
+            written = ", ".join(USE_LABEL.get(k, k) for k in r["written"])
+            items = []
+            for lead in r["leads"]:
+                kinds = ", ".join(USE_LABEL.get(k, k) for k in lead["kinds"]) or "out of scope"
+                where = f'<br><span class="dim">{lead_text(lead["where"])}</span>' if lead["where"] else ""
+                items.append(
+                    f'<li>{TICK if lead["done"] else ""}<span class="dim">{esc(lead["table"])} · {esc(kinds)}</span><br>'
+                    f"{lead_text(lead['text'])}{where}</li>"
+                )
+            lead_cell = f'<ul class="list">{"".join(items)}</ul>' if items else '<span class="dim">—</span>'
+            out.append(
+                f'<tr><td><a href="#e-{esc(e["id"])}"><b>{esc(e["commonName"])}</b></a><br>'
+                f'<span class="sci">{esc(e.get("scientificName", ""))}</span><br>'
+                f'<code>{esc(e["id"])}</code><br>{state}</td>'
+                f"<td>{esc(planned)}</td>"
+                f'<td>{esc(written) if written else chr(8212)}</td>'
+                f"<td>{lead_cell}</td></tr>"
+            )
+        out.append("</tbody></table></div></section>")
+    return out
+
+
 def open_leads(batches: list[dict[str, Any]]) -> bool:
     """Whether any lead is still to research: an open pair, or a host the fungus is not linked to."""
     return any(r["open"] or any(not h["linked"] for h in r["hosts"]) for b in batches for r in b["rows"])
 
 
-def render(entries: list[Entry], leads: dict[str, Any] | None = None) -> str:
+def render(
+    entries: list[Entry],
+    leads: dict[str, Any] | None = None,
+    use_leads: dict[str, list[dict[str, Any]]] | None = None,
+) -> str:
     filed = file_by_group(entries)
+    uses = use_batches(entries, use_leads or {})
     # With every lead linked or declined the section has nothing to say, so it is left out
     # (owner 25/11/2026: "if so you can delete the link next section").
     batches = link_batches(entries, leads) if leads else []
@@ -1235,6 +1332,7 @@ def render(entries: list[Entry], leads: dict[str, Any] | None = None) -> str:
         (sum(1 for e in entries if not e.get("photos")), "with no photo"),
         (sum(1 for e in entries if owed(e)), "owe a person's text"),
         (sum(len(e.get("recipes", [])) for e in entries), "recipes"),
+        (sum(1 for e in entries if e.get("draft") and (e.get("uses") or e.get("plannedUses"))), "waiting for use review"),
     ]
     out.append('<div class="totals">')
     for value, label in totals:
@@ -1242,6 +1340,8 @@ def render(entries: list[Entry], leads: dict[str, Any] | None = None) -> str:
     out.append("</div><nav>")
     if show_links:
         out.append('<a href="#links">Link next</a>')
+    if uses:
+        out.append('<a href="#uses">Other uses next</a>')
     for key, label in GROUPS:
         count = sum(1 for e in entries if e["group"] == key)
         out.append(f'<a href="#{key}">{esc(label)} · {count}</a>')
@@ -1250,6 +1350,8 @@ def render(entries: list[Entry], leads: dict[str, Any] | None = None) -> str:
 
     if show_links:
         out.extend(render_links(batches))
+    if uses:
+        out.extend(render_uses(uses))
 
     for key, label in GROUPS:
         group = filed[key]
@@ -1302,7 +1404,7 @@ def main() -> None:
     leads = json.loads(leads_path.read_text()) if leads_path.exists() else None
     out = pathlib.Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(render(entries, leads))
+    out.write_text(render(entries, leads, parse_use_leads(PLAN.read_text())))
     print(f"{len(entries)} entries → {out}")
 
 

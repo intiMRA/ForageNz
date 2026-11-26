@@ -156,11 +156,29 @@ struct SpeciesEditorView: View {
         }
 
         Section {
+            LabeledContent("Planned") {
+                HStack(spacing: .small) {
+                    ForEach(UseKind.allCases) { kind in
+                        Toggle(isOn: Binding(
+                            get: { species.plannedUses.contains(kind) },
+                            set: { isOn in
+                                let next = UseKind.allCases.filter {
+                                    $0 == kind ? isOn : species.plannedUses.contains($0)
+                                }
+                                onChange(species.with(plannedUses: next))
+                            }
+                        )) {
+                            Text(kind.displayName)
+                        }
+                        .toggleStyle(.checkbox)
+                    }
+                }
+            }
             UseEditor(uses: species.uses) { onChange(species.with(uses: $0)) }
         } header: {
             Text("Other uses")
         } footer: {
-            Text("Fibre, dye, craft and skin care — never medicinal. Every part and method needs its source; skin care stays cosmetic.")
+            Text("Fibre, dye, craft and skin care — never medicinal. Every part and method needs its source; skin care stays cosmetic. An entry with a planned or written use stays a draft until reviewed.")
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
