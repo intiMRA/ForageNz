@@ -1,6 +1,6 @@
 import Foundation
 
-/// Something a species is gathered for other than eating — fibre, dye, craft or skin care.
+/// Something a species is gathered for other than eating — fibre, dye, craft or cosmetics.
 ///
 /// The food use is not one of these: it is the entry's own `edibleParts`, `preparation`,
 /// `warnings` and `recipes`, left where they were so no shipped food page changes
@@ -56,8 +56,9 @@ public nonisolated enum UseKind: String, Codable, Sendable, CaseIterable, Identi
     case dye
     /// Tinder, soap plants and similar household materials.
     case craft
-    /// Infused oils, balms, salves, soap and bath preparations — cosmetic, never medicinal.
-    case skinCare
+    /// Infused oils, balms, salves, soap, bath preparations and hair rinses — cosmetic, never
+    /// medicinal. Named skin care until the owner renamed it (26/11/2026).
+    case cosmetics
 
     public var id: String { rawValue }
 
@@ -66,7 +67,7 @@ public nonisolated enum UseKind: String, Codable, Sendable, CaseIterable, Identi
         case .fibre: "Fibre & weaving"
         case .dye: "Dye"
         case .craft: "Craft & household"
-        case .skinCare: "Skin care"
+        case .cosmetics: "Cosmetics"
         }
     }
 }

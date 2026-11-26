@@ -299,16 +299,16 @@ public extension ForageSpecies {
         // balms and teas on healing claims; the claim stays behind and the preparation comes.
         let written = ([use.parts.text, use.method.text] + use.warnings
             + use.recipes.flatMap { [$0.title, $0.method] }).joined(separator: "\n")
-        let claimPhrases = use.kind == .skinCare
-            ? Self.medicinalClaimPhrases + Self.skinCareTreatmentPhrases
+        let claimPhrases = use.kind == .cosmetics
+            ? Self.medicinalClaimPhrases + Self.cosmeticsTreatmentPhrases
             : Self.medicinalClaimPhrases
         if let phrase = Self.firstPhrase(of: claimPhrases, in: written) {
             messages.append("\(name): makes a medical claim (“\(phrase)”) — leave the claim out and keep the preparation.")
         }
 
-        if use.kind == .skinCare {
+        if use.kind == .cosmetics {
             if !caution.isHarvestable && use.warnings.isEmpty {
-                messages.append("Skin care on a plant nobody may eat needs a warning saying what handling it does.")
+                messages.append("Cosmetics on a plant nobody may eat needs a warning saying what handling it does.")
             }
         }
 
@@ -342,8 +342,8 @@ public extension ForageSpecies {
     ]
 
     /// "Treat" is a dyer's and woodworker's word ("treat the wool with alum"), so it only reads
-    /// as a medical claim on skin care.
-    private static let skinCareTreatmentPhrases = ["treat", "treats", "treatment"]
+    /// as a medical claim on cosmetics.
+    private static let cosmeticsTreatmentPhrases = ["treat", "treats", "treatment"]
 
     var blockingIssues: [ValidationIssue] {
         validationIssues.filter { $0.severity == .blocking }

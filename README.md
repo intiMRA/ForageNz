@@ -890,7 +890,7 @@ catalog is the prerequisite for it, not a substitute.
 To add a language, add it to the catalog in Xcode (Editor → Add Language) and translate; `mi`
 (te reo Māori) is the obvious first.
 
-## Other uses — fibre, dye, craft, skin care
+## Other uses — fibre, dye, craft, cosmetics
 
 An entry can carry what it is gathered for besides food (`SpeciesUse` in `uses`; the plan is
 `docs/plans/useful-plants.md`). The food use is not one of them: it stays in `edibleParts`,
@@ -902,11 +902,11 @@ gathered, its harvest window, how it is processed, its warnings and recipes.
 - **Every part and method carries its source** (blocking). A use has no "written for this
   guide" case; taonga species are sourced from Māori-authored pages first, and the owner reviews.
 - **No medical claims, on any use** (owner, 26/11/2026). A healing or medicinal claim ("heals",
-  "remedy", "first aid", "splinters", "eczema"…) blocks on every kind, and "treat" on skin care;
+  "remedy", "first aid", "splinters", "eczema"…) blocks on every kind, and "treat" on cosmetics;
   recipe pages that sell a balm on healing claims give the preparation only. Medicinal use is out
-  of scope, and skin care is cosmetic only.
+  of scope, and cosmetics make no medical claim.
 - **Lye or a toxic mordant needs a warning** (copper, chrome, tin; alum and iron do not count),
-  and skin care on a plant nobody may eat needs one too.
+  and cosmetics on a plant nobody may eat needs one too.
 - The species page shows an *Other Uses* section with each use's recipes on their own sheet; the
   filter menu offers a use only once some shipped entry has it.
 - **Every entry that will get a use is a draft until the owner reviews it** (owner, 26/11/2026),
@@ -915,7 +915,9 @@ gathered, its harvest window, how it is processed, its warnings and recipes.
   adds; only the owner clears a draft). Such a draft may be complete and shipped cards may open it
   (`ForageSpecies.awaitsUseReview`); UI tests launch with the debug drawer's "show unverified" switch
   on so they do not depend on which entries are shipped. The report's *Other uses next* section
-  batches these entries by app group with every lead from the plan.
+  batches the drafts still waiting by app group with every lead from the plan (a reviewed entry
+  drops out), and splits each group by species or similar use: two or more entries of one genus
+  make a sub-batch, every other entry goes by its leading kind (fibre, dye, cosmetics, craft).
 
 ## Validation
 

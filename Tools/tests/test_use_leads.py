@@ -34,8 +34,8 @@ PLAN = """\
 def test_each_row_files_under_every_id_it_names_with_the_kinds_its_words_name():
     leads = use_leads.parse(PLAN)
     assert use_leads.planned_kinds(leads["hedge-woundwort"]) == ["fibre", "dye"]
-    assert use_leads.planned_kinds(leads["plantain"]) == ["skinCare"]
-    assert use_leads.planned_kinds(leads["greater-plantain"]) == ["skinCare"]
+    assert use_leads.planned_kinds(leads["plantain"]) == ["cosmetics"]
+    assert use_leads.planned_kinds(leads["greater-plantain"]) == ["cosmetics"]
     assert "gorse" not in leads
 
 
@@ -63,17 +63,30 @@ def test_marking_drafts_and_adds_kinds_but_never_clears_any():
     assert use_leads.mark_planned(catalogue, leads) == []
 
 
-def test_the_report_batches_planned_entries_by_group_and_counts_the_waiting_drafts():
+def test_the_report_batches_waiting_drafts_by_group_and_splits_them_by_genus_or_use():
     leads = use_leads.parse(PLAN)
     entries = [
-        {"id": "hedge-woundwort", "commonName": "Hedge woundwort", "group": "greens", "draft": True, "plannedUses": ["fibre", "dye"]},
+        {"id": "hedge-woundwort", "commonName": "Hedge woundwort", "scientificName": "Stachys sylvatica",
+         "group": "greens", "draft": True, "plannedUses": ["fibre", "dye"]},
+        {"id": "curled-dock", "commonName": "Curled dock", "scientificName": "Rumex crispus",
+         "group": "greens", "draft": True, "plannedUses": ["dye"]},
+        {"id": "broad-leaved-dock", "commonName": "Broad-leaved dock", "scientificName": "Rumex obtusifolius",
+         "group": "greens", "draft": True, "plannedUses": ["dye"], "uses": [{"kind": "dye"}]},
+        {"id": "comfrey", "commonName": "Comfrey", "scientificName": "Symphytum officinale",
+         "group": "greens", "draft": True, "plannedUses": ["craft", "cosmetics"]},
         {"id": "hawthorn", "commonName": "Hawthorn", "group": "fruit", "draft": False},
-        {"id": "scotch-broom", "commonName": "Scotch broom", "group": "greens", "draft": False,
-         "plannedUses": ["dye"], "uses": [{"kind": "dye"}]},
+        {"id": "scotch-broom", "commonName": "Scotch broom", "scientificName": "Cytisus scoparius",
+         "group": "greens", "draft": False, "plannedUses": ["dye"], "uses": [{"kind": "dye"}]},
     ]
     batches = report.use_batches(entries, leads)
     assert [b["key"] for b in batches] == ["greens"]
-    assert [r["entry"]["id"] for r in batches[0]["rows"]] == ["hedge-woundwort", "scotch-broom"]
-    assert batches[0]["waiting"] == 1 and batches[0]["written"] == 1
+    assert "scotch-broom" not in [r["entry"]["id"] for r in batches[0]["rows"]]
+    assert batches[0]["written"] == 1
+    subs = [(s["label"], [r["entry"]["id"] for r in s["rows"]]) for s in batches[0]["subs"]]
+    assert subs == [
+        ("Rumex", ["broad-leaved-dock", "curled-dock"]),
+        ("Fibre uses", ["hedge-woundwort"]),
+        ("Cosmetic uses", ["comfrey"]),
+    ]
     html = "\n".join(report.render_uses(batches))
-    assert "Tough stem fibre" in html and "reviewed" in html
+    assert "Tough stem fibre" in html and "Rumex" in html and "Scotch broom" not in html

@@ -61,8 +61,8 @@ struct SpeciesUseTests {
     @Test("Lye or a toxic mordant needs a warning")
     func harshChemicalsNeedAWarning() {
         let lye = SourcedText("Cold-process soap with lye.", sources: ["Soap page"])
-        #expect(!useMessages(makeSpecies(uses: [makeUse(kind: .skinCare, method: lye)])).isEmpty)
-        #expect(useMessages(makeSpecies(uses: [makeUse(kind: .skinCare, method: lye, warnings: ["Lye burns skin and eyes."])])).isEmpty)
+        #expect(!useMessages(makeSpecies(uses: [makeUse(kind: .cosmetics, method: lye)])).isEmpty)
+        #expect(useMessages(makeSpecies(uses: [makeUse(kind: .cosmetics, method: lye, warnings: ["Lye burns skin and eyes."])])).isEmpty)
 
         let chromeRecipe = Recipe(title: "Gold wool", method: "Mordant with potassium dichromate.", sourceURL: recipeURL)
         #expect(!useMessages(makeSpecies(uses: [makeUse(recipes: [chromeRecipe])])).isEmpty)
@@ -74,13 +74,13 @@ struct SpeciesUseTests {
         #expect(useMessages(makeSpecies(uses: [makeUse(method: method)])).isEmpty)
     }
 
-    @Test("A medical claim on any use blocks, and 'treat' only on skin care")
-    func skinCareIsCosmeticOnly() {
+    @Test("A medical claim on any use blocks, and 'treat' only on cosmetics")
+    func cosmeticsMakeNoMedicalClaims() {
         let healing = Recipe(title: "Healing balm", method: "Infuse the flowers in oil.", sourceURL: recipeURL)
-        #expect(!useMessages(makeSpecies(uses: [makeUse(kind: .skinCare, recipes: [healing])])).isEmpty)
+        #expect(!useMessages(makeSpecies(uses: [makeUse(kind: .cosmetics, recipes: [healing])])).isEmpty)
 
         let balm = Recipe(title: "Flower balm", method: "Infuse the flowers in oil.", sourceURL: recipeURL)
-        #expect(useMessages(makeSpecies(uses: [makeUse(kind: .skinCare, recipes: [balm])])).isEmpty)
+        #expect(useMessages(makeSpecies(uses: [makeUse(kind: .cosmetics, recipes: [balm])])).isEmpty)
 
         let treated = SourcedText("Treat the wool with alum first.", sources: ["A dye book"])
         #expect(useMessages(makeSpecies(uses: [makeUse(method: treated)])).isEmpty)
@@ -89,10 +89,10 @@ struct SpeciesUseTests {
         #expect(!useMessages(makeSpecies(uses: [makeUse(kind: .craft, method: firstAid)])).isEmpty)
     }
 
-    @Test("Skin care on a plant nobody may eat needs a warning")
-    func skinCareOnDoNotEatNeedsAWarning() {
-        #expect(!useMessages(makeSpecies(caution: .doNotEat, uses: [makeUse(kind: .skinCare)])).isEmpty)
-        let warned = makeUse(kind: .skinCare, warnings: ["The sap can blister skin."])
+    @Test("Cosmetics on a plant nobody may eat needs a warning")
+    func cosmeticsOnDoNotEatNeedAWarning() {
+        #expect(!useMessages(makeSpecies(caution: .doNotEat, uses: [makeUse(kind: .cosmetics)])).isEmpty)
+        let warned = makeUse(kind: .cosmetics, warnings: ["The sap can blister skin."])
         #expect(useMessages(makeSpecies(caution: .doNotEat, uses: [warned])).isEmpty)
     }
 

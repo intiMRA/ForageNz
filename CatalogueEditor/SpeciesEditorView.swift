@@ -178,7 +178,7 @@ struct SpeciesEditorView: View {
         } header: {
             Text("Other uses")
         } footer: {
-            Text("Fibre, dye, craft and skin care — never medicinal. Every part and method needs its source; skin care stays cosmetic. An entry with a planned or written use stays a draft until reviewed.")
+            Text("Fibre, dye, craft and cosmetics — never medicinal. Every part and method needs its source; cosmetics make no medical claim. An entry with a planned or written use stays a draft until reviewed.")
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }

@@ -487,15 +487,17 @@ entry as now, not here.
 
 ## Decisions (owner, 26/11/2026)
 
-1. **Scope: fibre, dye, craft and skin care.** Fibre covers weaving, basketry and cordage; craft
-   covers tinder, soap plants and similar household materials; skin care covers infused oils, balms,
-   salves, soap and bath preparations (the *Recipe leads* table). **Medicinal use stays out.** Skin
-   care gets its own rules (see *Skin care rules*). Timber, resin, turpentine, shelter and ornamental
+1. **Scope: fibre, dye, craft and cosmetics.** Fibre covers weaving, basketry and cordage; craft
+   covers tinder, soap plants and similar household materials; cosmetics covers infused oils, balms,
+   salves, soap and bath preparations (the *Recipe leads* table). **Medicinal use stays out.** Cosmetics
+   get their own rules (see *Cosmetics rules*). Timber, resin, turpentine, shelter and ornamental
    uses in the candidates table are not foraging uses and are not carried over.
    *Narrowed 26/11/2026 (owner, pine link round):* resin glue, a resin-and-beeswax balm and pitch
-   or fatwood tinder are in, as craft and skin care; turpentine and rosin stay out. Pages that name only
+   or fatwood tinder are in, as craft and cosmetics; turpentine and rosin stay out. Pages that name only
    "pine" apply to every pine unless a species-level claim blocks it, and needle baskets go only on pines
    whose needles reach 10 cm.
+   *Renamed 26/11/2026 (owner, mallow link round):* "skin care" became **cosmetics** ("change that
+   whole category to cosmetics"), so hair rinses sit there too; the rules are unchanged.
 2. **Browsing: a uses filter across every group, plus one new group for species with no food use.**
    The group is added when the first such species is drafted (none is yet, because of decision 4),
    together with the caution it needs: no current caution fits a harmless plant that simply is not
@@ -512,14 +514,14 @@ The proposal above said to move today's food fields into a `food` use. **Not don
 fields stay where they are and are the food use. Moving them would touch every screen, the editor,
 the search index and the Python tools for no change on any page, and would put the shipped food
 pages at risk to add something beside them. A species instead gains `uses: [SpeciesUse]` for its
-non-food uses only. Each use has a kind (fibre, dye, craft, skin care), the part used, its harvest
+non-food uses only. Each use has a kind (fibre, dye, craft, cosmetics), the part used, its harvest
 window, how it is processed, its own warnings (the handling caution, so a dye plant can be "do not
 eat" and "wear gloves" at once), its own recipes and the sources each sits on. `caution` keeps
 meaning "can I eat it".
 
-### Skin care rules
+### Cosmetics rules
 
-- **Cosmetic only.** No healing or medicinal claim in a skin-care use's text, warnings or recipes:
+- **Cosmetic only.** No healing or medicinal claim in a cosmetics use's text, warnings or recipes:
   a blocking rule fails words such as "heals", "cures", "treats", "remedy", "antiseptic", "eczema"
   or "wound". Recipe pages sell these on healing claims; the claim is left behind and the
   preparation kept.

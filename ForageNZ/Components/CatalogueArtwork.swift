@@ -32,7 +32,7 @@ extension UseKind {
         case .fibre: Image(systemName: "basket")
         case .dye: Image(systemName: "paintpalette")
         case .craft: Image(systemName: "hammer")
-        case .skinCare: Image(systemName: "drop")
+        case .cosmetics: Image(systemName: "drop")
         }
     }
 }

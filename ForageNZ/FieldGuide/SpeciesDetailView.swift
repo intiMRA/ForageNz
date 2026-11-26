@@ -316,7 +316,7 @@ struct SpeciesDetailView: View {
     
     /// Not designed yet, and painted so — see `needsDesign()`.
     ///
-    /// Fibre, dye, craft and skin care (`docs/plans/useful-plants.md`). Shown on every caution
+    /// Fibre, dye, craft and cosmetics (`docs/plans/useful-plants.md`). Shown on every caution
     /// level: a plant nobody may eat can still be worth gathering for dye, and each use's own
     /// warnings say what handling it asks of you.
     @ViewBuilder

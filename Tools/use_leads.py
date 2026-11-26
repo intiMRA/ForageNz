@@ -4,7 +4,7 @@
 The plan's four lead tables (*Candidates noted while filling food entries*, the Jenny Dean and
 One Hundred Dollars dye cross-references, and *Recipe leads*) are where every use still to be
 written is recorded. This turns them into one list per catalogue entry, each lead tagged with the
-use kinds in scope (owner, 26/11/2026: fibre, dye, craft, skin care) that its text names, so the
+use kinds in scope (owner, 26/11/2026: fibre, dye, craft, cosmetics) that its text names, so the
 report can file them into batches and the drafting script knows which entries will get a use.
 
 The kinds come from words in the lead, so they are a sorting aid, not a claim: a lead is re-read
@@ -47,10 +47,10 @@ KIND_WORDS: dict[str, tuple[str, ...]] = {
     "craft": ("tinder", "kindling", "soap plant", "saponin", "lather", "scent", "perfum", "pomade",
               "enfleurage", "polish", "candle", "wax", "brush", "glue", "tannin", "tanning", "insect repell",
               "pot-scourer", "scour", "bag", "vessel", "wrapping", "packing", "size canoes", "flute"),
-    "skinCare": ("salve", "balm", "lotion", "lip balm", "soap", "bath", "cream", "skin", "hair rinse",
-                 "infused oil", "oil infus", "toner", "cosmetic", "ointment"),
+    "cosmetics": ("salve", "balm", "lotion", "lip balm", "soap", "bath", "cream", "skin", "hair rinse",
+                  "infused oil", "oil infus", "toner", "cosmetic", "ointment"),
 }
-KIND_ORDER = ["fibre", "dye", "craft", "skinCare"]
+KIND_ORDER = ["fibre", "dye", "craft", "cosmetics"]
 
 ID_PATTERN = re.compile(r"`([a-z0-9-]+)`")
 

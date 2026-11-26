@@ -129,7 +129,7 @@ struct SpeciesStoreTests {
             makeSpecies(id: "broom", commonName: "Broom").with(uses: [dye]),
             makeSpecies(id: "nettle", commonName: "Nettle").with(uses: [fibre, dye]),
             makeSpecies(id: "fennel", commonName: "Fennel"),
-            makeSpecies(id: "stub", commonName: "Stub").with(uses: [SpeciesUse(kind: .skinCare, parts: "", method: "")], draft: true)
+            makeSpecies(id: "stub", commonName: "Stub").with(uses: [SpeciesUse(kind: .cosmetics, parts: "", method: "")], draft: true)
         ]))
 
         await store.loadIfNeeded()

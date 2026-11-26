@@ -32,7 +32,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     /// Where this entry's claims were checked. Empty means unverified.
     public let sources: [String]
     public let recipes: [Recipe]
-    /// What it is gathered for besides food — fibre, dye, craft, skin care. The food use is
+    /// What it is gathered for besides food — fibre, dye, craft, cosmetics. The food use is
     /// the fields above, not an element here.
     public let uses: [SpeciesUse]
     /// Non-food use kinds the plan's lead tables (`docs/plans/useful-plants.md`) say this entry

@@ -41,7 +41,7 @@ import urllib.parse
 from typing import Any
 
 from classify_habitats import evidence
-from use_leads import PLAN, planned_kinds
+from use_leads import KIND_ORDER, PLAN, planned_kinds
 from use_leads import parse as parse_use_leads
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
@@ -690,6 +690,8 @@ h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.01em; }
 nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
 nav a { background: var(--chip); color: var(--fg); border-radius: 999px; padding: 4px 12px;
   font-size: 13px; text-decoration: none; }
+nav.subs { margin: 12px 0 8px; }
+.cluster > h4 { font-size: 16px; margin: 22px 0 8px; }
 h2.group { font-size: 21px; margin: 36px 0 12px; padding-top: 8px;
   border-top: 2px solid var(--line); }
 h2.group small { color: var(--muted); font-weight: 400; font-size: 14px; margin-left: 8px; }
@@ -1207,17 +1209,56 @@ def render_links(batches: list[dict[str, Any]]) -> list[str]:
 
 
 #: Labels for `UseKind` (ForageNZ/Catalogue/Model/SpeciesUse.swift), in its order.
-USE_KINDS = [("fibre", "Fibre & weaving"), ("dye", "Dye"), ("craft", "Craft & household"), ("skinCare", "Skin care")]
+USE_KINDS = [("fibre", "Fibre & weaving"), ("dye", "Dye"), ("craft", "Craft & household"), ("cosmetics", "Cosmetics")]
 USE_LABEL = dict(USE_KINDS)
 
 
+#: The kind that files an entry with no genus-mates into a sub-batch, first match wins: fibre and
+#: dye plants share their methods (retting, mordants), so they lead over the broader kinds.
+LEAD_KIND_ORDER = ["fibre", "dye", "cosmetics", "craft"]
+LEAD_KIND_BATCH = {"fibre": "Fibre uses", "dye": "Dye uses", "cosmetics": "Cosmetic uses", "craft": "Craft uses"}
+
+
+def use_sub_batches(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """A group's rows split by species or by similar use (owner 26/11/2026): two or more entries
+    of one genus are a sub-batch, worked together because their leads usually apply to each;
+    every other entry joins the sub-batch of its leading kind, sorted so the same mix of kinds
+    sits together."""
+    by_genus: dict[str, list[dict[str, Any]]] = collections.defaultdict(list)
+    for r in rows:
+        by_genus[genus_of(r["entry"])].append(r)
+    genus_batches, by_kind = [], collections.defaultdict(list)
+    for genus, members in by_genus.items():
+        if len(members) > 1 and genus != "?":
+            genus_batches.append({"label": genus, "rows": members})
+            continue
+        for r in members:
+            kinds = r["planned"] or r["written"]
+            lead = next((k for k in LEAD_KIND_ORDER if k in kinds), "craft")
+            by_kind[lead].append(r)
+    genus_batches.sort(key=lambda b: (-len(b["rows"]), b["label"]))
+    kind_rank = {k: i for i, k in enumerate(KIND_ORDER)}
+    kind_batches = [
+        {
+            "label": LEAD_KIND_BATCH[k],
+            "rows": sorted(by_kind[k], key=lambda r: (
+                [kind_rank.get(x, 9) for x in (r["planned"] or r["written"])], r["entry"]["commonName"].lower())),
+        }
+        for k in LEAD_KIND_ORDER if by_kind[k]
+    ]
+    return genus_batches + kind_batches
+
+
 def use_batches(entries: list[Entry], leads: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:
-    """Entries with a planned or written non-food use, one batch per app group (the owner works
-    group by group), each in display order. An entry is done once its draft flag is cleared."""
+    """Entries waiting for use review, one batch per app group (the owner works group by group),
+    each split into sub-batches by species or similar use. An entry leaves once the owner clears
+    its draft flag (owner 26/11/2026: "remove the reviewed entries from the batches")."""
     batches = []
     for key, label in GROUPS:
         rows = []
         for e in sorted((e for e in entries if e["group"] == key), key=lambda e: (e["commonName"].lower(), e["id"])):
+            if not e.get("draft"):
+                continue
             entry_leads = leads.get(e["id"], [])
             planned = e.get("plannedUses") or planned_kinds(entry_leads)
             written = [u.get("kind", "") for u in e.get("uses") or []]
@@ -1229,7 +1270,7 @@ def use_batches(entries: list[Entry], leads: dict[str, list[dict[str, Any]]]) ->
                 "key": key,
                 "label": label,
                 "rows": rows,
-                "waiting": sum(1 for r in rows if r["entry"].get("draft")),
+                "subs": use_sub_batches(rows),
                 "written": sum(1 for r in rows if r["written"]),
             })
     return batches
@@ -1241,17 +1282,41 @@ def lead_text(text: str) -> str:
     return re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2">\1</a>', out)
 
 
+def use_row(r: dict[str, Any]) -> str:
+    e = r["entry"]
+    planned = ", ".join(USE_LABEL.get(k, k) for k in r["planned"]) or "—"
+    written = ", ".join(USE_LABEL.get(k, k) for k in r["written"])
+    items = []
+    for lead in r["leads"]:
+        kinds = ", ".join(USE_LABEL.get(k, k) for k in lead["kinds"]) or "out of scope"
+        where = f'<br><span class="dim">{lead_text(lead["where"])}</span>' if lead["where"] else ""
+        items.append(
+            f'<li>{TICK if lead["done"] else ""}<span class="dim">{esc(lead["table"])} · {esc(kinds)}</span><br>'
+            f"{lead_text(lead['text'])}{where}</li>"
+        )
+    lead_cell = f'<ul class="list">{"".join(items)}</ul>' if items else '<span class="dim">—</span>'
+    return (
+        f'<tr><td><a href="#e-{esc(e["id"])}"><b>{esc(e["commonName"])}</b></a><br>'
+        f'<span class="sci">{esc(e.get("scientificName", ""))}</span><br>'
+        f'<code>{esc(e["id"])}</code></td>'
+        f"<td>{esc(planned)}</td>"
+        f'<td>{esc(written) if written else chr(8212)}</td>'
+        f"<td>{lead_cell}</td></tr>"
+    )
+
+
 def render_uses(batches: list[dict[str, Any]]) -> list[str]:
     entries = sum(len(b["rows"]) for b in batches)
-    waiting = sum(b["waiting"] for b in batches)
     out = [
-        f'<h2 class="group" id="uses">Other uses next<small>{entries} entries with a planned use, '
-        f"{waiting} drafts waiting for review, in {len(batches)} batches by app group</small></h2>",
+        f'<h2 class="group" id="uses">Other uses next<small>{entries} drafts waiting for use review, '
+        f"in {len(batches)} batches by app group, each split by species or similar use</small></h2>",
         '<p class="lede">Every entry the lead tables in <code>docs/plans/useful-plants.md</code> name '
-        "for an in-scope use (fibre, dye, craft, skin care; medicinal is out). Each is a draft until the "
-        "owner reviews it (26/11/2026). The kinds are read from the lead's words to sort them, so they are "
-        "a starting point, not a claim: every lead is re-read at its source, restated and credited before it "
-        "reaches a page. Leads already on a page are ticked. Re-run <code>Tools/use_leads.py --draft</code> "
+        "for an in-scope use (fibre, dye, craft, cosmetics; medicinal is out) that is still a draft. Each is a "
+        "draft until the owner reviews it (26/11/2026), and leaves this list once reviewed. Within a group, "
+        "two or more entries of one genus make a sub-batch; every other entry is filed by its leading kind "
+        "(fibre, then dye, cosmetics, craft). The kinds are read from the lead's words to sort them, so they "
+        "are a starting point, not a claim: every lead is re-read at its source, restated and credited before "
+        "it reaches a page. Leads already on a page are ticked. Re-run <code>Tools/use_leads.py --draft</code> "
         "after adding leads to the plan.</p>",
         "<nav>",
     ]
@@ -1262,37 +1327,23 @@ def render_uses(batches: list[dict[str, Any]]) -> list[str]:
         out.append(f'<section class="cluster" id="uses-{b["key"]}"><div class="head">')
         out.append(f"<h3>{esc(b['label'])}</h3>")
         out.append('<div class="chips">')
-        out.append(f'<span class="chip">{len(b["rows"])} entries</span>')
-        out.append(f'<span class="chip on">{b["waiting"]} waiting for review</span>')
+        out.append(f'<span class="chip on">{len(b["rows"])} waiting for review</span>')
+        out.append(f'<span class="chip">{len(b["subs"])} sub-batches</span>')
         out.append(f'<span class="chip">{b["written"]} with a use written</span>')
         out.append("</div></div>")
-        out.append('<div class="scroll"><table><thead><tr>')
-        for header in ["Entry", "Planned", "Written", "Leads from the plan"]:
-            out.append(f"<th>{header}</th>")
-        out.append("</tr></thead><tbody>")
-        for r in b["rows"]:
-            e = r["entry"]
-            state = '<span class="miss">draft</span>' if e.get("draft") else '<span class="ok">reviewed</span>'
-            planned = ", ".join(USE_LABEL.get(k, k) for k in r["planned"]) or "—"
-            written = ", ".join(USE_LABEL.get(k, k) for k in r["written"])
-            items = []
-            for lead in r["leads"]:
-                kinds = ", ".join(USE_LABEL.get(k, k) for k in lead["kinds"]) or "out of scope"
-                where = f'<br><span class="dim">{lead_text(lead["where"])}</span>' if lead["where"] else ""
-                items.append(
-                    f'<li>{TICK if lead["done"] else ""}<span class="dim">{esc(lead["table"])} · {esc(kinds)}</span><br>'
-                    f"{lead_text(lead['text'])}{where}</li>"
-                )
-            lead_cell = f'<ul class="list">{"".join(items)}</ul>' if items else '<span class="dim">—</span>'
-            out.append(
-                f'<tr><td><a href="#e-{esc(e["id"])}"><b>{esc(e["commonName"])}</b></a><br>'
-                f'<span class="sci">{esc(e.get("scientificName", ""))}</span><br>'
-                f'<code>{esc(e["id"])}</code><br>{state}</td>'
-                f"<td>{esc(planned)}</td>"
-                f'<td>{esc(written) if written else chr(8212)}</td>'
-                f"<td>{lead_cell}</td></tr>"
-            )
-        out.append("</tbody></table></div></section>")
+        out.append('<nav class="subs">')
+        for i, sub in enumerate(b["subs"]):
+            out.append(f'<a href="#uses-{b["key"]}-{i}">{esc(sub["label"])} · {len(sub["rows"])}</a>')
+        out.append("</nav>")
+        for i, sub in enumerate(b["subs"]):
+            out.append(f'<h4 id="uses-{b["key"]}-{i}">{esc(sub["label"])} <span class="dim">· {len(sub["rows"])}</span></h4>')
+            out.append('<div class="scroll"><table><thead><tr>')
+            for header in ["Entry", "Planned", "Written", "Leads from the plan"]:
+                out.append(f"<th>{header}</th>")
+            out.append("</tr></thead><tbody>")
+            out.extend(use_row(r) for r in sub["rows"])
+            out.append("</tbody></table></div>")
+        out.append("</section>")
     return out
 
 

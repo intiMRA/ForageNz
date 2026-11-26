@@ -1063,7 +1063,7 @@
     ],
     "plannedUses" : [
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -1928,7 +1928,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -2076,7 +2076,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -2896,7 +2896,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -4066,7 +4066,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -4218,7 +4218,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -5792,7 +5792,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -5977,7 +5977,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -6318,7 +6318,7 @@
     ],
     "plannedUses" : [
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -6469,7 +6469,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -6634,7 +6634,7 @@
     ],
     "plannedUses" : [
       "fibre",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -7558,7 +7558,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -7759,7 +7759,7 @@
     ],
     "caution" : "careRequired",
     "commonName" : "Broad-leaved dock",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants, 'Rumex obtusifolius' (Ken Fern, CC BY-NC-SA, restated)",
@@ -7982,7 +7982,9 @@
       "Pinks standards check 11/11/2026 (follows the owner decision of the same date on the foxglove cards — Flora tests only): the foxglove warning's 'matt' and 'dock leaves are smooth and glossy' tests, which rested on bushcraft sites, replaced by the Flora tests used on the cards (foxglove leaves hairy, grey-felted beneath, scalloped edges — Flora of NZ Online 'Digitalis purpurea'; the dock leaf-stalk sheath (ochrea) — Flora of NZ vol. IV 'Rumex').",
       "Pinks group standards check 11/11/2026: the New Zealand range sentence (from the Flora of New Zealand vol. IV distribution) moved from the habitat field to the end of the summary's first paragraph — habitat holds where it grows, range belongs in the summary; wording unchanged apart from 'Look for it' becoming a plain statement.",
       "Pinks group standards check 11/11/2026 (Wikipedia review; Flora of New Zealand vol. IV page re-read 11/11/2026): summary — Wikipedia supplies only why it is called 'butter dock'; the Flora gives 'often simply called dock', range, 'Europe 1864' and the stockyard note, all already used. Identification — Wikipedia supplies red lower stalks, the hairless upper surface, seedlings and plain wording for the ochrea; the Flora's description ('long, white, membranous ochreae', 'often puberulent below') agrees and says nothing on the others. Kept.",
-      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex obtusifolius' was last edited 20/09/2026 (revision 1375841993), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change."
+      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex obtusifolius' was last edited 20/09/2026 (revision 1375841993), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change.",
+      "Other uses, owner link round 26/11/2026 (Rumex): the owner pasted twelve pages on dock and sorrel dyes, cordage and salves and said the same rule as the pines applies (a page naming only the genus applies to every species unless a species-level claim blocks it), to be researched to be sure. Genus-wide lines given here: roots, Plants For A Future's 'dark green to brown and dark grey dyes can be obtained from the roots of many species in this genus, they do not need a mordant' (its pages for clustered, fiddle and hooked dock); leaves and stalks, Diego Bonetto's 'the leaves and stalks of others again are harvested for a mordant-free dye, the colours obtained go from green to yellow to red'. For broad-leaved dock: The Knitting Shed dyed with broad-leaved dock itself. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (oxalic acid in food only) hold nothing against handling the plant for dye. Months left empty: the roots, leaves and stalks are taken through the year, and permies.com gives sheep sorrel's harvest time as 'any'. Copper and the tin and chrome mordants one page mentions are left out. Not used: Wildwalks Southwest, 'Making cordage from plants' (Rachel Lambert, 17/01/2026), which lists broad-leaved dock among plants made into cordage but names neither the part nor how its fibre is extracted, and no second source for dock fibre was found, so no fibre use; Bruk Gedefaw 2018, 'Extraction of Textile Dye from Rumex abyisinicus' (academia.edu), a laboratory solvent extraction from an African dock not in New Zealand; Backyard Forager, 'All About Dock' and Martin Nursery, 'Rumex', which give no non-food use; and three yellow dock salve pages (The Nerdy Farm Wife, 'Yellow Dock Salve Recipe', 21/08/2025; Mayernik Kitchen, 'Yellow Dock'; LearningHerbs, 'Yellow Dock Uses', Rosalee de la Forêt), whose only stated purposes are medical (stings, itching, sores, eczema and internal remedies), so under the no-medical-claims rule nothing is kept. The Spruce Crafts page also covers burdock and oxalis; those are left for their own entries.",
+      "Other uses reviewed 26/11/2026: the owner approved the dock and sorrel uses ('ship the ones we just reviewed') and the entry ships again."
     ],
     "summary" : {
       "sources" : [
@@ -7996,7 +7998,34 @@
       "text" : "Broad-leaved dock, also called bitter dock or butter dock, is often simply called dock, and in heavily modified places it is the commonest of the genus. It is native to Europe and was first recorded wild in New Zealand in 1864. Its Māori names include paewhenua, paenehua and rungarunga. 'Butter dock' comes from the old use of its leaves to wrap butter for market. It is abundant throughout the North, South and Stewart Islands, and grows on the Kermadec, Chatham and Campbell Islands.\nOne plant can shed tens of thousands of long-lived seeds — about 60,000 by an Australian estimate — so large seed banks build up in the soil, and taproots left after digging or cultivation regrow. Tannins make the leaves unpalatable to cattle and horses, though sheep eat them, so it is a particular weed of dairy farms. It hybridises with curled dock, giving plants that look halfway between the two."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex obtusifolius' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+obtusifolius, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated",
+            "Louise Diggins, The Knitting Shed, 'Dyeing with Dock' (19/05/2019), https://theknittingshed.com/dyeing-with-dock/, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots: dark green to brown and dark grey dyes come from the roots of many docks and sorrels, with no mordant needed. This dock's roots also give yellow. Leaves and stalks: docks' leaves and stalks give a dye with no mordant, in colours from green to yellow to red. Leaves just covered with tap water and simmered for an hour dyed alum-mordanted wool yellow in another hour's simmer; the yellow darkened as it dried in the sun, so it may not hold."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex obtusifolius' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+obtusifolius, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated",
+            "Louise Diggins, The Knitting Shed, 'Dyeing with Dock' (19/05/2019), https://theknittingshed.com/dyeing-with-dock/, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots and leaves."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
       "It contains oxalic acid, which gives the leaves their sharp taste. A little is fine, but large amounts can lock up calcium and other minerals in food; cooking lowers the oxalic acid. Take particular care, or leave it alone, if you are prone to rheumatism, arthritis, gout, kidney stones or hyperacidity.",
@@ -9757,7 +9786,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -9914,7 +9943,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -11031,7 +11060,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -11341,7 +11370,7 @@
     ],
     "caution" : "careRequired",
     "commonName" : "Cheeseweed mallow",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Malva parviflora'"
@@ -11454,7 +11483,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -11502,7 +11531,9 @@
       "Card to Annual mallow removed 03/11/2026: the annual-mallow entry was dropped on the owner's word (\"if there is basically none drop it\") — no genuinely wild New Zealand population (iNaturalist NZ: 15 observations, 6 not captive, of which 2 in Auckland Botanic Gardens, 1 in school grounds, 1 unconfirmed; Flora of New Zealand: 'collected only as a local garden escape').",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): PFAF check — Plants For A Future, 'Malva parviflora' (all rights reserved, facts only), https://pfaf.org/user/Plant.aspx?LatinName=Malva+parviflora, retrieved 18/11/2026: leaves raw or cooked as a potherb, a lettuce alternative; immature seeds raw or cooked, used for a creamed soup; seed oil (up to 18 %); Edibility Rating 5 of 5; Known Hazards: no toxicity reports, nitrate build-up on nitrogen-rich soils [76]. Agrees with the page (same Ken Fern text credited to Useful Temperate Plants). Other uses (cream, yellow and green dyes) recorded in useful-plants.md.",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): Wikipedia review — current article 'Malva parviflora' (action=raw, revision 1385978603, retrieved 18/11/2026; the entry was written from 1355518153) still contains every statement the entry carries, and the only change since is a lead sentence on traditional medicine and the Uses wording, which the entry does not use. Kept: the summary's lead and common-names list (cheeseweed, marshmallow, etc.), the native-range and naturalised-in-North-America/Australia sentences; the identification's habit (50–80 cm), 5–7 shallow lobes, cotyledon, taproot, chromosome-count and 'distinguished from M. neglecta' sentences (Wikipedia's 8–10 cm, year-round flowering and 4–10 mm petals stay deleted because Flora of New Zealand gives 1–8 cm, Sep.–Apr. and 3–5 mm); the habitat sentence (agricultural lands and roadsides); and the 'Toxicity' warning (cadmium and chromium, nitrates in cattle and poultry, cyclopropene fatty acids in horses), which sits beside Flora of New Zealand's 'Poisonous (Connor 1977)' and AgPest's livestock staggers record. Wikipedia's 'entire plant is edible' remains unused because the Flora records the species as poisonous. Wikipedia's 'annual or perennial' differs from the Flora's 'Annual' for NZ material and is kept as a worldwide statement.",
-      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's lead, common-names list, country-by-country native range and North America / Australia sentences replaced by NZPCN's Family and Origin fields and Flora of New Zealand Online's 'Annual' and vernaculars (small-flowered mallow, marshmallow); the overseas names and range lists dropped as Wikipedia-only. Identification — Wikipedia's lobe, flower-colour and seed sentences cut (the Flora description below them covers leaves and flowers; seed size is not needed to know the plant), the chromosome count cut, and 'distinguished from M. neglecta' rewritten from the two Flora of New Zealand descriptions; kept from Wikipedia, because no New Zealand source read gives them: the 50–80 cm height and the seedling paragraph (cotyledons, first leaf, red spot, taproot), which is what a forager picking young plants sees. Habitat — Wikipedia's 'agricultural lands … roadsides' cut; the Flora's 'Waste land, cultivated land, coastal habitats, river beds' covers it. Warnings unchanged (the Wikipedia livestock and pollutant warning is put to the owner, 21/11/2026)."
+      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's lead, common-names list, country-by-country native range and North America / Australia sentences replaced by NZPCN's Family and Origin fields and Flora of New Zealand Online's 'Annual' and vernaculars (small-flowered mallow, marshmallow); the overseas names and range lists dropped as Wikipedia-only. Identification — Wikipedia's lobe, flower-colour and seed sentences cut (the Flora description below them covers leaves and flowers; seed size is not needed to know the plant), the chromosome count cut, and 'distinguished from M. neglecta' rewritten from the two Flora of New Zealand descriptions; kept from Wikipedia, because no New Zealand source read gives them: the 50–80 cm height and the seedling paragraph (cotyledons, first leaf, red spot, taproot), which is what a forager picking young plants sees. Habitat — Wikipedia's 'agricultural lands … roadsides' cut; the Flora's 'Waste land, cultivated land, coastal habitats, river beds' covers it. Warnings unchanged (the Wikipedia livestock and pollutant warning is put to the owner, 21/11/2026).",
+      "Other uses, owner link round 26/11/2026 (Malva): the owner pasted twelve pages on mallow dyes, skin care and fibre and said the same rule as the earlier rounds applies: what can apply to every species does, otherwise only where it makes sense. Genus-wide line given here: the Handweavers, Spinners and Dyers Guild of Tasmania page names only 'mallow', so its alum-wool yellow from the leaves goes on every Malva entry. Plants For A Future's dye line is written on five species pages, not for the genus, so it stays on those. For cheeseweed mallow: Plants For A Future's species page gives the plant and seed-head dyes and the root or leaf hair rinse. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (nitrates in leaves on rich soils, and gallstones, both about eating) hold nothing against handling the plant. Months left empty: leaves, stems and roots are taken through the growing year and no page gives a time. No recipe: no page gives quantities, times and temperatures for a Malva use. Not used: Wool Tribulations, 'Dyeing wool with rose mallow flowers' (Fran Rushworth, 31/07/2015), which names no species, and 'rose mallow' is a garden name for several plants none of which is in this catalogue; Eat Weeds, 'The traditional and modern uses of mallow' (Robin Harford, 20/07/2017), whose poultices, ointments and remedies are medical and whose flowers 'for decoration around the home' give no method; Wild Botanica's mucous-membrane and irritated-skin uses, which are medical (its dry-skin line is cited on common mallow only, as it names no part or preparation); Permaculture magazine, 'Benefits of marshmallow (Althaea officinalis): hand cream and face mask recipes' (Laura Pardoe, from Vital Skincare), whose recipes are for marshmallow, a different genus not in the catalogue, and which does not say mallow can stand in; Annmarie Gianni's internal tea uses (medical); a ResearchGate figure (could not be read, HTTP 403) and Tropicalistic, 'Natural textile fibers in Brazilian design' (Adele Firpo, 05/06/2025), whose 'malva' fibre is Urena lobata, a different genus; Practical Plants, 'Malva moschata', which repeats Plants For A Future's notes and so counts as the same source. From Plants For A Future: common mallow's leaves for insect bites and stings (medical), cheeseweed mallow's seed oil (no use given) are left out (dwarf mallow's root toothbrush was placed under craft afterwards); its tree mallow page lists no other uses and it has no Cretan or island mallow data.",
+      "Other uses reviewed 26/11/2026: the owner approved the mallow uses ('yes' to shipping) and the entry ships again; the owner renamed the skin-care kind to cosmetics the same day."
     ],
     "summary" : {
       "sources" : [
@@ -11513,7 +11544,56 @@
       "text" : "Cheeseweed mallow, Malva parviflora, is an annual herb of the mallow family (Malvaceae), native from south-western Europe and the Mediterranean to western Asia. New Zealand floras call it small-flowered mallow or marshmallow.\nIn New Zealand it grows throughout the North Island, throughout the South Island except Westland and Fiordland, and on the Kermadec Islands. It was first recorded growing wild here in 1883."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Malva parviflora' (Other Uses: cream, yellow and green dyes from the plant and the seed heads), https://pfaf.org/user/Plant.aspx?LatinName=Malva+parviflora, retrieved 26/11/2026 — restated",
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Whole plant and seed heads: cream, yellow and green dyes come from the plant and the seed heads. Leaves: mallow leaves, about their own weight to the weight of wool, dyed alum-mordanted wool yellow, and iron can be added to the same bath to change the colour. Two kinds of wool took the colour very differently."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Malva parviflora' (Other Uses: cream, yellow and green dyes from the plant and the seed heads), https://pfaf.org/user/Plant.aspx?LatinName=Malva+parviflora, retrieved 26/11/2026 — restated",
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "The whole plant, its leaves and the seed heads."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      },
+      {
+        "kind" : "cosmetics",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Malva parviflora' (Other Uses: a decoction of the roots or leaves as a hair rinse to soften the hair), https://pfaf.org/user/Plant.aspx?LatinName=Malva+parviflora, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "A decoction of the roots or leaves makes a hair rinse that softens the hair."
+        },
+        "months" : [
+
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Malva parviflora' (Other Uses: a decoction of the roots or leaves as a hair rinse to soften the hair), https://pfaf.org/user/Plant.aspx?LatinName=Malva+parviflora, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots or leaves."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
       "M. parviflora accumulates pollutants such as cadmium and chromium. In nitrogen-rich soils, the plant's leaves and seeds can be toxic to cattle and poultry due to an accumulation of nitrates. If consumed in large amounts, the plant can damage energy homeostasis in horses, possibly due to its cyclopropene fatty acids.",
@@ -11736,7 +11816,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -12090,7 +12170,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -12804,7 +12884,7 @@
     ],
     "caution" : "careRequired",
     "commonName" : "Climbing dock",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Survive.au, 'Acetosa sagittata – Turkey Rhubarb' (all rights reserved, restated)",
@@ -12937,7 +13017,9 @@
       "Pinks standards check 11/11/2026: Oxalic-acid warning, regulator backing (genus level): New Zealand Food Safety, 'Contaminants in Animal Feed', NZFS Technical Paper 2020/21 (MPI, July 2020; https://www.mpi.govt.nz/dmsdocument/41142/direct, via Wayback, retrieved 11/11/2026): 'Plant species associated with oxalate poisoning in New Zealand include fat hen (Chenopodium album) and sorrel (Rumex spp.)'; soluble oxalate 'can bind serum calcium'; in people, soluble oxalate 'may result in systemic effects similar to those noted for animals; hypocalcaemia and renal dysfunction'. The paper names the genus, not this species; it backs the oxalic-acid warning without adding to it.",
       "Pinks group standards check 11/11/2026: Wikipedia's 'and warmer locales in New Zealand' in the summary replaced by the Flora of New Zealand vol. IV distribution ('N.: coastal areas, especially from N. Auckland to Bay of Plenty, but also extending S. to Wellington; S.: mainly in coastal parts of Tasman Bay (Nelson), occasional in the Blenheim and Picton areas (Marlborough)'), moved out of the habitat field, where it sat as a range sentence (habitat holds habitat only); the Flora's 'The persistent tubers can exceed 10 cm diam., especially in old plants on light soil' added beside Wikipedia's tuber lines — Flora of New Zealand vol. IV, 'Rumex sagittatus' (Webb, Sykes & Garnock-Jones 1988, CC BY-NC-SA, https://floraseries.landcareresearch.co.nz/taxa/ac9aa6e9-a021-4b72-a38f-20fe4ca57572, retrieved 11/11/2026). Wikipedia still supplies the other names, the African and Australian range and the tuber-fragment and hand-pulling lines, which no New Zealand source covers.",
       "Pinks group standards check 11/11/2026 (Wikipedia review; Flora of New Zealand vol. IV page re-read 11/11/2026): summary — after this round's fixes Wikipedia supplies only the other names, the African and Australian range and the tuber-fragment and hand-pulling lines; the Flora gives 'South Africa 1935', the NZ distribution, tuber size and wool dyeing, all used. Kept.",
-      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex sagittatus' was last edited 16/10/2026 (revision 1380509637), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change."
+      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex sagittatus' was last edited 16/10/2026 (revision 1380509637), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change.",
+      "Other uses, owner link round 26/11/2026 (Rumex): the owner pasted twelve pages on dock and sorrel dyes, cordage and salves and said the same rule as the pines applies (a page naming only the genus applies to every species unless a species-level claim blocks it), to be researched to be sure. Genus-wide lines given here: roots, Plants For A Future's 'dark green to brown and dark grey dyes can be obtained from the roots of many species in this genus, they do not need a mordant' (its pages for clustered, fiddle and hooked dock); leaves and stalks, Diego Bonetto's 'the leaves and stalks of others again are harvested for a mordant-free dye, the colours obtained go from green to yellow to red'. For climbing dock: the Flora records wool dyeing for this species without naming the part. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (oxalic acid in food only) hold nothing against handling the plant for dye. Months left empty: the roots, leaves and stalks are taken through the year, and permies.com gives sheep sorrel's harvest time as 'any'. Copper and the tin and chrome mordants one page mentions are left out. Not used: Wildwalks Southwest, 'Making cordage from plants' (Rachel Lambert, 17/01/2026), which lists broad-leaved dock among plants made into cordage but names neither the part nor how its fibre is extracted, and no second source for dock fibre was found, so no fibre use; Bruk Gedefaw 2018, 'Extraction of Textile Dye from Rumex abyisinicus' (academia.edu), a laboratory solvent extraction from an African dock not in New Zealand; Backyard Forager, 'All About Dock' and Martin Nursery, 'Rumex', which give no non-food use; and three yellow dock salve pages (The Nerdy Farm Wife, 'Yellow Dock Salve Recipe', 21/08/2025; Mayernik Kitchen, 'Yellow Dock'; LearningHerbs, 'Yellow Dock Uses', Rosalee de la Forêt), whose only stated purposes are medical (stings, itching, sores, eczema and internal remedies), so under the no-medical-claims rule nothing is kept. The Spruce Crafts page also covers burdock and oxalis; those are left for their own entries.",
+      "Other uses reviewed 26/11/2026: the owner approved the dock and sorrel uses ('ship the ones we just reviewed') and the entry ships again."
     ],
     "summary" : {
       "sources" : [
@@ -12952,7 +13034,33 @@
       "text" : "Rumex sagittatus, synonym Acetosa sagittata, commonly known as turkey rhubarb or rambling dock or potato vine, is a herbaceous perennial plant native to southern Africa, which has become a weed in Australia and New Zealand.\nThe plant is native to southern Africa, where it occurs from Malawi and Zambia south to South Africa. It has become naturalised in many parts of Australia near urban areas, from Queensland to eastern Tasmania. In New Zealand it grows mainly near the coast: in the North Island especially from Northland to the Bay of Plenty and south to Wellington, and in the South Island mainly around Tasman Bay (Nelson), with occasional plants near Blenheim and Picton.\nIt spreads by seed or by resprouting from the tuber. The tubers persist and can grow more than 10 cm across, especially in old plants on light soil. They may be broken up by tractors or road graders and each fragment may be able to regrow; they can also be difficult to find with removal of plants by hand.\nIt was brought to New Zealand as an ornamental and recorded wild by 1935. It is sometimes grown for its colourful fruit, and has been used to dye wool. It is on the Department of Conservation's 2024 list of environmental weeds and under sustained control across the Auckland region, where it smothers native plants and stops seedlings establishing.\nA young plant can fruit within its first year and set thousands of seeds, which can lie dormant in the soil for at least two years. Seeds and tubers travel on the wind, in fresh and salt water, in moved soil and in dumped garden waste. It copes with wet and drought, dying back to its tubers in drought and, in cooler places, over winter, then regrowing in spring; after fire it resprouts from the tubers. Other names include arrow dock and arrowhead vine.\nIn the Bay of Plenty, where it is common and widespread, it is an advisory pest: the regional council does not enforce its control, which is left to landowners and occupiers."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex brownii' (Other Uses: the genus line 'roots of many species in this genus'), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+brownii, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated",
+            "Webb CJ, Sykes WR, Garnock-Jones PJ (1988), Flora of New Zealand vol. IV, 'Rumex sagittatus' — 'has been used for dyeing wool' (already cited above), restated"
+          ],
+          "text" : "Roots: dark green to brown and dark grey dyes come from the roots of many docks and sorrels, with no mordant needed. Leaves and stalks: docks' leaves and stalks give a dye with no mordant, in colours from green to yellow to red. Climbing dock has been used to dye wool."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex brownii' (Other Uses: the genus line 'roots of many species in this genus'), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+brownii, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots, leaves and stalks."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
       "It contains oxalic acid, which gives the leaves their sharp taste. Do not eat it in large amounts, and leave it alone if you have rheumatism, arthritis, gout, kidney stones or hyperacidity.",
@@ -13064,7 +13172,7 @@
       }
     ],
     "plannedUses" : [
-
+      "dye"
     ],
     "preparation" : {
       "sources" : [
@@ -13104,7 +13212,9 @@
       "Owner decision 11/11/2026 (Pinks standards check): foxglove card added on clustered dock (risk 'deadly', as on broad-leaved and curled dock) with the reverse card on foxglove (risk 'edible'). Confusion: foxglove rosettes 'can look like dock' (Totally Wild UK and Jack Raven Bushcraft, written for docks in general; foxglove's own warning). Tests from Flora of New Zealand descriptions only — clustered dock, Flora vol. IV (retrieved 11/11/2026): 'Glabrous, short-lived, tap-rooted perennial', lower leaves '(3)-7-20-(23) × (1)-1.5-3.5 cm, oblong or ovate-oblong … margin often undulate and crisped; base broad-cuneate, rounded or cordate' (https://floraseries.landcareresearch.co.nz/taxa/9b6d7914-1896-4219-b8b9-1fab0bf51991); Flora of New Zealand Online 'Digitalis purpurea' (https://www.nzflora.info/factsheet/Taxon/Digitalis-purpurea.html, retrieved 11/11/2026): 'densely hairy simple stems', 'Petiole long and winged', 'Lamina 10–25 × 3.5–12 cm, lanceolate to elliptic or ovate, hairy to glabrate above, ± grey-tomentulose with crisped hairs beneath, crenate or crenulate; base cuneate to attenuate'; ochrea: Flora vol. IV Rumex (https://floraseries.landcareresearch.co.nz/taxa/b728cd21-b85a-49bb-a982-618902fdbb51, retrieved 11/11/2026): 'ochreae ± tubular'; Polygonaceae: 'Stipules mostly forming a membranous or scarious ochrea (sheath)'. Ranges overlap: foxglove 'very widespread on the North, South and Stewart Islands' in pastures, roadsides and river beds; clustered dock on both main islands in pastures and waste places.",
       "Pinks group standards check 11/11/2026: the New Zealand range sentence (from the Flora of New Zealand vol. IV distribution) moved from the habitat field to the end of the summary's first paragraph — habitat holds where it grows, range belongs in the summary; wording unchanged apart from 'Look for it' becoming a plain statement.",
       "Pinks group standards check 11/11/2026 (Wikipedia review; Flora of New Zealand vol. IV page re-read 11/11/2026): summary — Wikipedia supplies only the names 'sharp dock' and Rumex acutus (also in the weed-seed ID tool); the Flora page gives range, 'Europe, N. Africa, Asia Minor 1867', habitat and the red-veined dock remark, all used, and no synonyms. Kept.",
-      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex conglomeratus' was last edited 30/01/2024 (revision 1200964238), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change."
+      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex conglomeratus' was last edited 30/01/2024 (revision 1200964238), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change.",
+      "Other uses, owner link round 26/11/2026 (Rumex): the owner pasted twelve pages on dock and sorrel dyes, cordage and salves and said the same rule as the pines applies (a page naming only the genus applies to every species unless a species-level claim blocks it), to be researched to be sure. Genus-wide lines given here: roots, Plants For A Future's 'dark green to brown and dark grey dyes can be obtained from the roots of many species in this genus, they do not need a mordant' (its pages for clustered, fiddle and hooked dock); leaves and stalks, Diego Bonetto's 'the leaves and stalks of others again are harvested for a mordant-free dye, the colours obtained go from green to yellow to red'. For clustered dock: no page names this species, so only the genus lines are given. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (oxalic acid in food only) hold nothing against handling the plant for dye. Months left empty: the roots, leaves and stalks are taken through the year, and permies.com gives sheep sorrel's harvest time as 'any'. Copper and the tin and chrome mordants one page mentions are left out. Not used: Wildwalks Southwest, 'Making cordage from plants' (Rachel Lambert, 17/01/2026), which lists broad-leaved dock among plants made into cordage but names neither the part nor how its fibre is extracted, and no second source for dock fibre was found, so no fibre use; Bruk Gedefaw 2018, 'Extraction of Textile Dye from Rumex abyisinicus' (academia.edu), a laboratory solvent extraction from an African dock not in New Zealand; Backyard Forager, 'All About Dock' and Martin Nursery, 'Rumex', which give no non-food use; and three yellow dock salve pages (The Nerdy Farm Wife, 'Yellow Dock Salve Recipe', 21/08/2025; Mayernik Kitchen, 'Yellow Dock'; LearningHerbs, 'Yellow Dock Uses', Rosalee de la Forêt), whose only stated purposes are medical (stings, itching, sores, eczema and internal remedies), so under the no-medical-claims rule nothing is kept. The Spruce Crafts page also covers burdock and oxalis; those are left for their own entries.",
+      "Other uses reviewed 26/11/2026: the owner approved the dock and sorrel uses ('ship the ones we just reviewed') and the entry ships again."
     ],
     "summary" : {
       "sources" : [
@@ -13117,7 +13227,32 @@
       "text" : "Rumex conglomeratus, known as clustered dock and sharp dock, is a plant of the family Polygonaceae; an older name for it is Rumex acutus. It is native to Europe, North Africa and Asia Minor and was first recorded wild in New Zealand in 1867. Kew's Plants of the World Online gives a wider native range, east to Central Asia and the western Himalaya and also South Africa, and lists it as introduced in the Americas, Japan, Korea, Tasmania and Norfolk Island as well as both main islands of New Zealand. It grows throughout the North and South Islands.\nIt is a weed of pasture and cultivated ground, though in Australia it is less aggressive than curled dock. It spreads by seed: ripe fruits break off when people, animals or machinery brush the dry branches, and travel on the wind (the valves act as sails), in mud, and on water (the tubercles act as floats). Pieces of the crown and upper taproot cut up by cultivation can regrow. Red-veined dock (Rumex sanguineus) has been reported from New Zealand, but the Flora of New Zealand (1988) found no specimens and suggests plants so named may have been clustered dock, which can also be very reddish."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex conglomeratus' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+conglomeratus, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots: dark green to brown and dark grey dyes come from the roots of many docks and sorrels, with no mordant needed. Leaves and stalks: docks' leaves and stalks give a dye with no mordant, in colours from green to yellow to red."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex conglomeratus' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+conglomeratus, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots, leaves and stalks."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
       "It contains oxalic acid, which gives the leaves their sharp taste. A little is fine, but large amounts can lock up calcium and other minerals in food; cooking lowers the oxalic acid. Take particular care, or leave it alone, if you are prone to rheumatism, arthritis, gout, kidney stones or hyperacidity.",
@@ -13761,7 +13896,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -13854,7 +13989,7 @@
     ],
     "caution" : "careRequired",
     "commonName" : "Common mallow",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Malva sylvestris'",
@@ -13966,8 +14101,10 @@
       }
     ],
     "plannedUses" : [
+      "fibre",
       "dye",
-      "skinCare"
+      "craft",
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -14035,7 +14172,10 @@
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): PFAF check — Plants For A Future, 'Malva sylvestris' (all rights reserved, facts only), https://pfaf.org/user/Plant.aspx?LatinName=Malva+sylvestris, retrieved 18/11/2026: leaves and young shoots raw or cooked (mucilaginous, a soup thickener, a lettuce substitute), immature seed raw as a nibble, flowers raw in salads or as garnish, a tea; Edibility Rating 3 of 5; Known Hazards: nitrate build-up on nitrogen-rich soils [76], and 'Avoid with gallstones' (no reference given). Agrees with the page (same Ken Fern text credited to Useful Temperate Plants). The gallstones line is not added: one source, no citation, no regulator. Other uses (cream, yellow and green dyes; a flower tincture as a delicate alkali test) recorded in useful-plants.md.",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): Wikipedia review — current article 'Malva sylvestris' (action=raw, revision 1377982137, retrieved 18/11/2026; same revision the entry was last checked against) still contains everything the entry carries and nothing is contradicted by Flora of New Zealand. Kept: the summary's lead (type species, common names cheeses / high mallow / tall mallow / mauve des bois, native home, Iran, North Africa, biennial in the Mediterranean, introduced and invasive in eastern Australia, the US, Canada and Mexico) and the USDA GRIN country list; the identification's herbaceous-perennial, stem, leaf, flower, epicalyx, nutlet, seed and chemistry sentences (the deleted figures — 7×10 cm leaves, 2–4 flowers, 2 cm petals, 10–12 mericarps — stay deleted because Flora of New Zealand gives 1–15–(20) cm, 2–10, 12–30 mm and 8–12–(15)); the habitat sentence (waste and rough ground, roads and railways; the lowland England/Siberia range clause stays cut); edible parts ('young leaves and shoots are edible raw or cooked'); and the preparation text on Morocco, Tunisia, Palestine and Egypt's khobeiza ('especially in winter' omitted as a northern season). The nitrate warning is Useful Temperate Plants', not Wikipedia's.",
       "Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard'): NZ spelling — 'center' → 'centre' in identification.",
-      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's lead (type species, cheeses / high mallow / tall mallow / mauve des bois, Iran, Mediterranean biennial, invasive in Australia and North America) and the USDA GRIN country list replaced by NZPCN's Family and Origin and Flora of New Zealand Online's 'Perennial' and vernaculars; the overseas names and lists dropped as Wikipedia-only. Identification — Wikipedia's paragraphs cut except the 1.5 m height and the base-first flowering order, which no New Zealand source read gives (the Flora description below covers stems, hairs, leaves, flowers, epicalyx and fruit; petiole length, sepal, nutlet and seed sizes and the chemistry are not needed). Habitat — Wikipedia's 'waste and rough ground, by roads and railways' cut; the Flora covers it. Edible parts — Wikipedia's 'young leaves and shoots' replaced by Knox 2013 pp. 89–90 (New Zealand). Preparation — Wikipedia's Moroccan, Tunisian, Palestinian and Egyptian dishes replaced by Knox's New Zealand method; the CONECT-e Spanish uses and the constipation caution stay."
+      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's lead (type species, cheeses / high mallow / tall mallow / mauve des bois, Iran, Mediterranean biennial, invasive in Australia and North America) and the USDA GRIN country list replaced by NZPCN's Family and Origin and Flora of New Zealand Online's 'Perennial' and vernaculars; the overseas names and lists dropped as Wikipedia-only. Identification — Wikipedia's paragraphs cut except the 1.5 m height and the base-first flowering order, which no New Zealand source read gives (the Flora description below covers stems, hairs, leaves, flowers, epicalyx and fruit; petiole length, sepal, nutlet and seed sizes and the chemistry are not needed). Habitat — Wikipedia's 'waste and rough ground, by roads and railways' cut; the Flora covers it. Edible parts — Wikipedia's 'young leaves and shoots' replaced by Knox 2013 pp. 89–90 (New Zealand). Preparation — Wikipedia's Moroccan, Tunisian, Palestinian and Egyptian dishes replaced by Knox's New Zealand method; the CONECT-e Spanish uses and the constipation caution stay.",
+      "Other uses, owner link round 26/11/2026 (Malva): the owner pasted twelve pages on mallow dyes, skin care and fibre and said the same rule as the earlier rounds applies: what can apply to every species does, otherwise only where it makes sense. Genus-wide line given here: the Handweavers, Spinners and Dyers Guild of Tasmania page names only 'mallow', so its alum-wool yellow from the leaves goes on every Malva entry. Plants For A Future's dye line is written on five species pages, not for the genus, so it stays on those. For common mallow: Plants For A Future's species page gives the plant and seed-head dyes, the stem fibre and the flower-tincture alkali test; LisaLise tested common mallow gel itself, and Annmarie Gianni and Skintique write about common mallow extract in skin and hair care. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (nitrates in leaves on rich soils, and gallstones, both about eating) hold nothing against handling the plant. Months left empty: leaves, stems and roots are taken through the growing year and no page gives a time. No recipe: no page gives quantities, times and temperatures for a Malva use. Not used: Wool Tribulations, 'Dyeing wool with rose mallow flowers' (Fran Rushworth, 31/07/2015), which names no species, and 'rose mallow' is a garden name for several plants none of which is in this catalogue; Eat Weeds, 'The traditional and modern uses of mallow' (Robin Harford, 20/07/2017), whose poultices, ointments and remedies are medical and whose flowers 'for decoration around the home' give no method; Wild Botanica's mucous-membrane and irritated-skin uses, which are medical (its dry-skin line is cited on common mallow only, as it names no part or preparation); Permaculture magazine, 'Benefits of marshmallow (Althaea officinalis): hand cream and face mask recipes' (Laura Pardoe, from Vital Skincare), whose recipes are for marshmallow, a different genus not in the catalogue, and which does not say mallow can stand in; Annmarie Gianni's internal tea uses (medical); a ResearchGate figure (could not be read, HTTP 403) and Tropicalistic, 'Natural textile fibers in Brazilian design' (Adele Firpo, 05/06/2025), whose 'malva' fibre is Urena lobata, a different genus; Practical Plants, 'Malva moschata', which repeats Plants For A Future's notes and so counts as the same source. From Plants For A Future: common mallow's leaves for insect bites and stings (medical), cheeseweed mallow's seed oil (no use given) are left out (dwarf mallow's root toothbrush was placed under craft afterwards); its tree mallow page lists no other uses and it has no Cretan or island mallow data.",
+      "Other uses, mallow follow-up 26/11/2026: the owner asked how the stem fibre is extracted. No Malva source found gives a hands-on method: Plants For A Future and Martin Crawford ('the stems of many mallows can be processed to extract a strong, coarse fibre to make cordage'; he names common and musk mallow for cordage, textiles and paper) say only that it can be done; Albayrak et al. 2022 (Journal of Natural Fibers, doi:10.1080/15440478.2022.2073498) and Meddah et al. 2022 (Journal of Composite Materials, doi:10.1177/00219983221146355) test common mallow stem fibre in the laboratory and their abstracts give no extraction steps; the hands-on cordage pages found are for nettle, dogbane or bur mallow (Urena, another genus). So the fibre use keeps its sourced 'taken from the stems' and gives no retting or stripping method, and Crawford's 'many mallows' is not spread to the other Malva entries without a method to go with it.",
+      "Other uses reviewed 26/11/2026: the owner approved the mallow uses ('yes' to shipping) and the entry ships again; the owner renamed the skin-care kind to cosmetics the same day."
     ],
     "summary" : {
       "sources" : [
@@ -14046,7 +14186,111 @@
       "text" : "Common mallow, Malva sylvestris, is a perennial herb of the mallow family (Malvaceae), native to Europe, North Africa and south-western Asia. New Zealand floras call it large-flowered mallow, and also cheeses or zebrina mallow.\nIn New Zealand it grows throughout the North Island except Taranaki, in Nelson, Marlborough, Canterbury and Otago, and on the Chatham Islands. It was first recorded growing wild here in 1870."
     },
     "uses" : [
+      {
+        "kind" : "fibre",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Malva sylvestris' (Other Uses: a fibre from the stems for cordage, textiles and paper making), https://pfaf.org/user/Plant.aspx?LatinName=Malva+sylvestris, retrieved 26/11/2026 — restated",
+            "Martin Crawford, 'Malva: the mallows', The Monkey Puzzler (27/04/2026), https://martincrawford.substack.com/p/malva-the-mallows, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "A fibre taken from the stems is used for cordage, textiles and paper making."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Malva sylvestris' (Other Uses: a fibre from the stems for cordage, textiles and paper making), https://pfaf.org/user/Plant.aspx?LatinName=Malva+sylvestris, retrieved 26/11/2026 — restated",
+            "Martin Crawford, 'Malva: the mallows', The Monkey Puzzler (27/04/2026), https://martincrawford.substack.com/p/malva-the-mallows, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Stems."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      },
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Malva sylvestris' (Other Uses: cream, yellow and green dyes from the plant and the seed heads), https://pfaf.org/user/Plant.aspx?LatinName=Malva+sylvestris, retrieved 26/11/2026 — restated",
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated",
+            "LisaLise, 'Mallow as Colorant - the Bad News and the Good' (15/01/2016), https://www.lisaliseblog.com/2016/01/mallow-as-colorant-bad-news-and-good.html, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Whole plant and seed heads: cream, yellow and green dyes come from the plant and the seed heads. Leaves: mallow leaves, about their own weight to the weight of wool, dyed alum-mordanted wool yellow, and iron can be added to the same bath to change the colour. Two kinds of wool took the colour very differently. A strong common mallow gel stains towels, clothes and sinks colours from light blue to deep plum, but the stains wash out in an ordinary wash and the gel left grey hair uncoloured, so it does not give a lasting colour on its own."
+        },
+        "months" : [
+
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Malva sylvestris' (Other Uses: cream, yellow and green dyes from the plant and the seed heads), https://pfaf.org/user/Plant.aspx?LatinName=Malva+sylvestris, retrieved 26/11/2026 — restated",
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "The whole plant, its leaves and the seed heads."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      },
+      {
+        "kind" : "craft",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Malva sylvestris' (Other Uses: a tincture of the flowers as a test for alkalis), https://pfaf.org/user/Plant.aspx?LatinName=Malva+sylvestris, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "A tincture of the flowers makes a very delicate test for alkalis, used like litmus."
+        },
+        "months" : [
+
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Malva sylvestris' (Other Uses: a tincture of the flowers as a test for alkalis), https://pfaf.org/user/Plant.aspx?LatinName=Malva+sylvestris, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Flowers."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      },
+      {
+        "kind" : "cosmetics",
+        "method" : {
+          "sources" : [
+            "Annmarie Gianni, 'Malva for Skin: The Gentle, Soothing, and Softening Flower' (updated 21/03/2022), https://www.annmariegianni.com/malva-for-skin-the-gentle-soothing-and-softening-flower/, retrieved 26/11/2026 — restated",
+            "Skintique, 'Malva Sylvestris Extract' ingredient glossary (updated 18/08/2026), https://skintique.co.uk/community/academy/ingredients/glossary/malva-sylvestris-extract, retrieved 26/11/2026 — restated",
+            "Felicity Joy, Wild Botanica, 'Mallow' (14/09/2026), https://www.wildbotanica.co.nz/blogs/articles/mallow-1, retrieved 26/11/2026 — restated (the genus line 'used externally for soothing dry … skin')"
+          ],
+          "text" : "An extract of the flowers or leaves goes into creams, lotions, facial and body oils and cleansers as a softening, smoothing and moisturising ingredient for dry, rough or sensitive skin. It also softens and conditions hair."
+        },
+        "months" : [
+
+        ],
+        "parts" : {
+          "sources" : [
+            "Annmarie Gianni, 'Malva for Skin: The Gentle, Soothing, and Softening Flower' (updated 21/03/2022), https://www.annmariegianni.com/malva-for-skin-the-gentle-soothing-and-softening-flower/, retrieved 26/11/2026 — restated",
+            "Skintique, 'Malva Sylvestris Extract' ingredient glossary (updated 18/08/2026), https://skintique.co.uk/community/academy/ingredients/glossary/malva-sylvestris-extract, retrieved 26/11/2026 — restated",
+            "Felicity Joy, Wild Botanica, 'Mallow' (14/09/2026), https://www.wildbotanica.co.nz/blogs/articles/mallow-1, retrieved 26/11/2026 — restated (the genus line 'used externally for soothing dry … skin')"
+          ],
+          "text" : "Flowers and leaves."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
       "When grown on nitrogen rich soils (and particularly when these are cultivated inorganically), the plant tends to concentrate high levels of nitrates in its leaves."
@@ -14282,7 +14526,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -14747,7 +14991,7 @@
     ],
     "caution" : "careRequired",
     "commonName" : "Common sorrel",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants, 'Rumex acetosa' (Ken Fern, CC BY-NC-SA, restated)",
@@ -14880,7 +15124,9 @@
       "Pinks standards check 11/11/2026: Warning: 'or leave it alone' is stronger than its sources. Plants For A Future 'Rumex acetosa' (retrieved 11/11/2026): people with a tendency to rheumatism, arthritis, gout, kidney stones or hyperacidity 'should take especial caution'; Tuazon-Nartea & Savage 2013, 'Investigation of Oxalate Levels in Sorrel Plant Parts and Sorrel-Based Products', Food and Nutrition Sciences 4: 838–843 (Lincoln University, Canterbury; CC BY; https://doi.org/10.4236/fns.2013.48109, retrieved 11/11/2026): 'it should only be consumed in small amounts especially by people who are prone to kidney-stone formation'.",
       "Lookalike card common sorrel <-> Italian arum added 11/11/2026 (Pinks round 11/11/2026 (lookalike draft, owner 11/11/2026)). Confusion named in Wikipedia contributors, 'Arum maculatum' (CC BY-SA 4.0), retrieved 11/11/2026, https://en.wikipedia.org/wiki/Arum_maculatum — 'The leaves, which are toxic, can be mistaken for edible sorrel' and Wild Food UK, 'Lords and Ladies' (all rights reserved; facts restated), retrieved 11/11/2026, https://www.wildfooduk.com/wild-plants/lords-and-ladies/ — 'Arum italicum, pictured, is almost identical but has green and white variagated leaves. Can be confused with Common Sorrel' — both for lords-and-ladies (Arum maculatum), which Wild Food UK calls 'almost identical' to Italian arum, the only Arum wild in New Zealand (Flora vol. III 'Adventive sp. 1'). Tests from Flora of New Zealand Online, 'Arum italicum' factsheet (Manaaki Whenua – Landcare Research, CC BY 3.0 NZ), retrieved 11/11/2026, https://www.nzflora.info/factsheet/Taxon/Arum-italicum.html and Healy, A.J.; Edgar, E. 1980: Flora of New Zealand vol. III, 'Arum italicum' (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0), retrieved 11/11/2026, https://floraseries.landcareresearch.co.nz/taxa/07004325-c5c2-4560-8b70-269598803fb7 (laminae 'hastate, to 30 cm long, dark green with lighter yellow-green midrib and main veins', 'petioles 20–40 cm long, lower half membranous, sheathing, purple-tinged', 'Juvenile leaves are lanceolate', 'Tuber c. 4 cm diam., producing small tubers', spathe 'c. 30 × 15 cm', 'Berries 1 cm diam., bright red', 'leafless scape'), New Zealand Plant Conservation Network, 'Arum italicum' (all rights reserved; facts restated), retrieved 11/11/2026, https://www.nzpcn.org.nz/flora/species/arum-italicum/ ('creamy midrib and main veins', 'Flower a yellow spike'), and Webb, C.J.; Sykes, W.R.; Garnock-Jones, P.J. 1988: Flora of New Zealand vol. IV, 'Rumex acetosa' and genus 'Rumex' (Flora of New Zealand Series, Manaaki Whenua – Landcare Research, CC BY-NC-SA 4.0), retrieved 11/11/2026, https://floraseries.landcareresearch.co.nz/taxa/255265ff-5cf9-40e9-b6fb-8df5d23dca32 (lamina '3.5-12 × 1-3 cm', 'rootstock ± woody', 'Infl. to c. 30 cm long, reddish, with several simple branches, leafless', stems 'to c. 1 m'; genus 'ochreae ± tubular'). Risk 'toxic': Italian arum is doNotEat — 'All parts are very poisonous' (Sykes, W.R. (1991, revised October 2002). Plants in New Zealand Poisonous to Children. Landcare Research New Zealand Ltd (copying permitted with acknowledgement), National Poisons Centre, retrieved 11/11/2026, https://poisons-centre.s3.ap-southeast-2.amazonaws.com/public/Uploads/003fe3fc44/0011_Plants_in_New_Zealand_Poisonous_To_Children.pdf — section 1, internal poisons); arum family 'cause severe irritation of the mouth and throat if swallowed' (Te Ara – the Encyclopedia of New Zealand, 'Poisonous plants and fungi', page 3 'Poisonous garden plants' (Ministry for Culture and Heritage; facts restated), retrieved 11/11/2026 via Wayback, https://teara.govt.nz/en/poisonous-plants-and-fungi/page-3); no New Zealand source records a death, so not 'deadly'.",
       "Pinks group standards check 11/11/2026 (Wikipedia review; Flora of New Zealand vol. IV page re-read 11/11/2026): summary — Wikipedia 'Sorrel' supplies only that much garden sorrel is the cultigen Rumex rugosus; the Flora gives range, 'Temperate Eurasia 1855', 'surprisingly uncommon', probable deliberate introduction and French sorrel (R. scutatus) as cultivated in NZ, all used, and nothing on R. rugosus. Edible parts — Wikipedia is one food record ('The leaves are edible when young but toughen with age'; young shoots) beside Useful Temperate Plants and Korpelainen & Pietiläinen 2020; the Flora's 'pleasantly sour to taste' is a description, not a food use, and Knox 2013 covers only wood sorrels (Oxalis). Kept.",
-      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Sorrel' was last edited 15/09/2026 (revision 1375079742), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change."
+      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Sorrel' was last edited 15/09/2026 (revision 1375079742), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change.",
+      "Other uses, owner link round 26/11/2026 (Rumex): the owner pasted twelve pages on dock and sorrel dyes, cordage and salves and said the same rule as the pines applies (a page naming only the genus applies to every species unless a species-level claim blocks it), to be researched to be sure. Genus-wide lines given here: roots, Plants For A Future's 'dark green to brown and dark grey dyes can be obtained from the roots of many species in this genus, they do not need a mordant' (its pages for clustered, fiddle and hooked dock); leaves and stalks, Diego Bonetto's 'the leaves and stalks of others again are harvested for a mordant-free dye, the colours obtained go from green to yellow to red'. For common sorrel: Abigail Booth's The Wild Dyer and The Foraging Course Company write about common sorrel itself; the polish and stain-remover craft use is Plants For A Future's species entry, confirmed by The Foraging Course Company. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (oxalic acid in food only) hold nothing against handling the plant for dye. Months left empty: the roots, leaves and stalks are taken through the year, and permies.com gives sheep sorrel's harvest time as 'any'. Copper and the tin and chrome mordants one page mentions are left out. Not used: Wildwalks Southwest, 'Making cordage from plants' (Rachel Lambert, 17/01/2026), which lists broad-leaved dock among plants made into cordage but names neither the part nor how its fibre is extracted, and no second source for dock fibre was found, so no fibre use; Bruk Gedefaw 2018, 'Extraction of Textile Dye from Rumex abyisinicus' (academia.edu), a laboratory solvent extraction from an African dock not in New Zealand; Backyard Forager, 'All About Dock' and Martin Nursery, 'Rumex', which give no non-food use; and three yellow dock salve pages (The Nerdy Farm Wife, 'Yellow Dock Salve Recipe', 21/08/2025; Mayernik Kitchen, 'Yellow Dock'; LearningHerbs, 'Yellow Dock Uses', Rosalee de la Forêt), whose only stated purposes are medical (stings, itching, sores, eczema and internal remedies), so under the no-medical-claims rule nothing is kept. The Spruce Crafts page also covers burdock and oxalis; those are left for their own entries.",
+      "Other uses reviewed 26/11/2026: the owner approved the dock and sorrel uses ('ship the ones we just reviewed') and the entry ships again."
     ],
     "summary" : {
       "sources" : [
@@ -14895,7 +15141,62 @@
       "text" : "Common sorrel, also called garden sorrel or sour dock, is native to temperate Eurasia and was first recorded wild in New Zealand in 1855. It was probably brought in deliberately, being grown for its sour leaves, but it has stayed surprisingly uncommon in the wild. The name acetosa comes from the Latin for sour.\nIts native range runs across Europe and temperate Asia as far as Japan and Taiwan, and into Morocco. People have gathered it for thousands of years: its seeds and charred remains turn up at Mesolithic and Neolithic settlement sites across Europe. French gardeners began improving it in the late 1600s, giving the large-leaved cultivar 'Belleville'; 'Profusion', from 1993, never flowers or sets seed. Garden forms are sold under names such as French sorrel, which is also the name of a different species, Rumex scutatus, and much of the garden sorrel in cultivation is a form some botanists treat as a species of its own, Rumex rugosus.\nPlants are either male or female, and wild stands usually hold more females than males.\nFlora of New Zealand (1988) knew it with certainty in the North Island only from the Maungatungaroa Stream (Manawatū), and gives Christchurch, Dunedin and the Pourakino Valley (Southland) in the South Island and Halfmoon Bay on Stewart Island."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex acetosa' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+acetosa, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated",
+            "The Foraging Course Company, 'Common sorrel (Rumex acetosa)' (09/01/2025), https://www.foragingcoursecompany.co.uk/post/foraging-guide-common-sorrel, retrieved 26/11/2026 — restated",
+            "Abigail Booth, The Wild Dyer, extract 'Shades of summer and a note on foraging' (Octopus Books, 07/05/2020), https://www.octopusbooks.co.uk/make-create-blog/2020/05/07/shades-of-summer-and-foraging/, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots: dark green to brown and dark grey dyes come from the roots of many docks and sorrels, with no mordant needed. This sorrel's roots are described as giving greens, greys and browns. Leaves and stalks: docks' leaves and stalks give a dye with no mordant, in colours from green to yellow to red. This sorrel's leaves and stems give a grey-blue. Dried seed stalks give warm tan browns, turning dark grey with an iron mordant; young green stems give pale, yellowy greens. About three stems a metre tall make a strong dye bath."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex acetosa' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+acetosa, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated",
+            "The Foraging Course Company, 'Common sorrel (Rumex acetosa)' (09/01/2025), https://www.foragingcoursecompany.co.uk/post/foraging-guide-common-sorrel, retrieved 26/11/2026 — restated",
+            "Abigail Booth, The Wild Dyer, extract 'Shades of summer and a note on foraging' (Octopus Books, 07/05/2020), https://www.octopusbooks.co.uk/make-create-blog/2020/05/07/shades-of-summer-and-foraging/, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots, leaves and stems."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      },
+      {
+        "kind" : "craft",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex acetosa' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+acetosa, retrieved 26/11/2026 — restated",
+            "The Foraging Course Company, 'Common sorrel (Rumex acetosa)' (09/01/2025), https://www.foragingcoursecompany.co.uk/post/foraging-guide-common-sorrel, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "An infusion of the stems is used as a polish for bamboo and wicker furniture and for silver. The juice of the plant takes stains out of linen and natural cloth, and ink stains (but not ballpoint ink) out of white material."
+        },
+        "months" : [
+
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex acetosa' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+acetosa, retrieved 26/11/2026 — restated",
+            "The Foraging Course Company, 'Common sorrel (Rumex acetosa)' (09/01/2025), https://www.foragingcoursecompany.co.uk/post/foraging-guide-common-sorrel, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Stems, and the juice of the plant."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
       "It contains oxalic acid, which gives the leaves their sharp taste. A little is fine, but large amounts can lock up calcium, iron and other minerals in food and add to the risk of kidney stones. Larger, older leaves and the stems hold the most. Eat raw leaves only occasionally or in small amounts; cooking lowers it, and cooking the leaves with calcium-rich foods such as cheese or cream means less of it is absorbed. Take particular care if you are prone to rheumatism, arthritis, gout, kidney or bladder stones, or hyperacidity."
@@ -15414,7 +15715,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -15575,7 +15876,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -16276,7 +16577,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -16429,7 +16730,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -17459,7 +17760,7 @@
       }
     ],
     "plannedUses" : [
-
+      "dye"
     ],
     "preparation" : {
       "sources" : [
@@ -17487,7 +17788,9 @@
       "Card to Annual mallow removed 03/11/2026: the annual-mallow entry was dropped on the owner's word (\"if there is basically none drop it\") — no genuinely wild New Zealand population (iNaturalist NZ: 15 observations, 6 not captive, of which 2 in Auckland Botanic Gardens, 1 in school grounds, 1 unconfirmed; Flora of New Zealand: 'collected only as a local garden escape').",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): PFAF check — Plants For A Future, 'Malva multiflora' (all rights reserved, facts only), https://pfaf.org/user/Plant.aspx?LatinName=Malva+multiflora, retrieved 18/11/2026: PFAF's empty template (no Edible Uses, Known Hazards or Other Uses text); 'Lavatera cretica' and 'Malva pseudolavatera' also return it. No PFAF data; the page rests on its other sources.",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): Wikipedia review — current article 'Malva multiflora' (action=raw, revision 1200329757, retrieved 18/11/2026; unchanged since the entry was written) is credited only for the summary's first two sentences (synonym Lavatera cretica, common names Cornish mallow and Cretan hollyhock, native to western Europe, North Africa and the Mediterranean Basin, naturalised in Mediterranean-climate parts of Australia, South Africa and California); both are still verbatim in the lead and agree with Flora of New Zealand vol. IV (as Lavatera cretica) and Flora of New Zealand Online. Wikipedia's description (1–3 m, leaves up to 10 cm, petals just over 1 cm, 7–10 segments) and its solar-tracking sentence are not used, the Flora's description being the identification text. The edible-parts and preparation lines rest on CONECT-e and other sources, not Wikipedia.",
-      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's lead (Cornish mallow, Cretan hollyhock; western Europe, North Africa and the Mediterranean Basin; naturalised in Australia, South Africa and California) replaced by Flora of New Zealand vol. IV's native range ('S. and W. Europe, N. Africa, Asia Minor') and annual-to-biennial habit (already on the card) and Flora of New Zealand Online's family; the overseas names and naturalised range dropped as Wikipedia-only. NZPCN has no page under Malva multiflora (404, 21/11/2026)."
+      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's lead (Cornish mallow, Cretan hollyhock; western Europe, North Africa and the Mediterranean Basin; naturalised in Australia, South Africa and California) replaced by Flora of New Zealand vol. IV's native range ('S. and W. Europe, N. Africa, Asia Minor') and annual-to-biennial habit (already on the card) and Flora of New Zealand Online's family; the overseas names and naturalised range dropped as Wikipedia-only. NZPCN has no page under Malva multiflora (404, 21/11/2026).",
+      "Other uses, owner link round 26/11/2026 (Malva): the owner pasted twelve pages on mallow dyes, skin care and fibre and said the same rule as the earlier rounds applies: what can apply to every species does, otherwise only where it makes sense. Genus-wide line given here: the Handweavers, Spinners and Dyers Guild of Tasmania page names only 'mallow', so its alum-wool yellow from the leaves goes on every Malva entry. Plants For A Future's dye line is written on five species pages, not for the genus, so it stays on those. For Cretan mallow: no page names this species, so only the genus leaf-dye line is given. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (nitrates in leaves on rich soils, and gallstones, both about eating) hold nothing against handling the plant. Months left empty: leaves, stems and roots are taken through the growing year and no page gives a time. No recipe: no page gives quantities, times and temperatures for a Malva use. Not used: Wool Tribulations, 'Dyeing wool with rose mallow flowers' (Fran Rushworth, 31/07/2015), which names no species, and 'rose mallow' is a garden name for several plants none of which is in this catalogue; Eat Weeds, 'The traditional and modern uses of mallow' (Robin Harford, 20/07/2017), whose poultices, ointments and remedies are medical and whose flowers 'for decoration around the home' give no method; Wild Botanica's mucous-membrane and irritated-skin uses, which are medical (its dry-skin line is cited on common mallow only, as it names no part or preparation); Permaculture magazine, 'Benefits of marshmallow (Althaea officinalis): hand cream and face mask recipes' (Laura Pardoe, from Vital Skincare), whose recipes are for marshmallow, a different genus not in the catalogue, and which does not say mallow can stand in; Annmarie Gianni's internal tea uses (medical); a ResearchGate figure (could not be read, HTTP 403) and Tropicalistic, 'Natural textile fibers in Brazilian design' (Adele Firpo, 05/06/2025), whose 'malva' fibre is Urena lobata, a different genus; Practical Plants, 'Malva moschata', which repeats Plants For A Future's notes and so counts as the same source. From Plants For A Future: common mallow's leaves for insect bites and stings (medical), cheeseweed mallow's seed oil (no use given) are left out (dwarf mallow's root toothbrush was placed under craft afterwards); its tree mallow page lists no other uses and it has no Cretan or island mallow data.",
+      "Other uses reviewed 26/11/2026: the owner approved the mallow uses ('yes' to shipping) and the entry ships again; the owner renamed the skin-care kind to cosmetics the same day."
     ],
     "summary" : {
       "sources" : [
@@ -17498,7 +17801,30 @@
       "text" : "Cretan mallow, Malva multiflora (formerly Lavatera cretica), is an annual to biennial herb of the mallow family (Malvaceae), native to southern and western Europe, North Africa and Asia Minor.\nIn New Zealand it grows in Auckland City, Waikato, Coromandel, Napier and from Palmerston North to Wellington, and in Nelson, lowland Canterbury and North Otago. It was first recorded growing wild here in 1940."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Leaves: mallow leaves, about their own weight to the weight of wool, dyed alum-mordanted wool yellow, and iron can be added to the same bath to change the colour. Two kinds of wool took the colour very differently."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Leaves."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
 
@@ -17510,7 +17836,7 @@
     ],
     "caution" : "careRequired",
     "commonName" : "Curled dock",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants, 'Rumex crispus' (Ken Fern, CC BY-NC-SA, restated)",
@@ -17632,7 +17958,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -17732,7 +18058,9 @@
       "Pinks standards check 11/11/2026 (follows the owner decision of the same date on the foxglove cards — Flora tests only): the foxglove warning's 'matt' and 'dock leaves are smooth and glossy' tests, which rested on bushcraft sites, replaced by the Flora tests used on the cards (foxglove leaves hairy, grey-felted beneath, scalloped edges — Flora of NZ Online 'Digitalis purpurea'; the dock leaf-stalk sheath (ochrea) — Flora of NZ vol. IV 'Rumex').",
       "Pinks group standards check 11/11/2026: the New Zealand range sentence (from the Flora of New Zealand vol. IV distribution) moved from the habitat field to the end of the summary's first paragraph — habitat holds where it grows, range belongs in the summary; wording unchanged apart from 'Look for it' becoming a plain statement.",
       "Pinks group standards check 11/11/2026 (Wikipedia review; Flora of New Zealand vol. IV page re-read 11/11/2026): summary — Wikipedia supplies 'hybridizes readily … including Rumex obtusifolius' and Armenian aveluk; the Flora page gives range, 'Europe, N. Africa, W. Asia 1832' and habitat, all used, and neither point. Identification — Wikipedia supplies the 'large, yellow, forking taproot'; the Flora says 'stout taproot' only. Preparation — Wikipedia supplies boiling 'in several changes of water'; the Flora gives no preparation. Kept.",
-      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex crispus' was last edited 03/06/2026 (revision 1357646103), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change."
+      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex crispus' was last edited 03/06/2026 (revision 1357646103), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change.",
+      "Other uses, owner link round 26/11/2026 (Rumex): the owner pasted twelve pages on dock and sorrel dyes, cordage and salves and said the same rule as the pines applies (a page naming only the genus applies to every species unless a species-level claim blocks it), to be researched to be sure. Genus-wide lines given here: roots, Plants For A Future's 'dark green to brown and dark grey dyes can be obtained from the roots of many species in this genus, they do not need a mordant' (its pages for clustered, fiddle and hooked dock); leaves and stalks, Diego Bonetto's 'the leaves and stalks of others again are harvested for a mordant-free dye, the colours obtained go from green to yellow to red'. For curled dock: The Knitting Shed, A Verb for Keeping Warm and The Spruce Crafts dyed with curled dock itself. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (oxalic acid in food only) hold nothing against handling the plant for dye. Months left empty: the roots, leaves and stalks are taken through the year, and permies.com gives sheep sorrel's harvest time as 'any'. Copper and the tin and chrome mordants one page mentions are left out. Not used: Wildwalks Southwest, 'Making cordage from plants' (Rachel Lambert, 17/01/2026), which lists broad-leaved dock among plants made into cordage but names neither the part nor how its fibre is extracted, and no second source for dock fibre was found, so no fibre use; Bruk Gedefaw 2018, 'Extraction of Textile Dye from Rumex abyisinicus' (academia.edu), a laboratory solvent extraction from an African dock not in New Zealand; Backyard Forager, 'All About Dock' and Martin Nursery, 'Rumex', which give no non-food use; and three yellow dock salve pages (The Nerdy Farm Wife, 'Yellow Dock Salve Recipe', 21/08/2025; Mayernik Kitchen, 'Yellow Dock'; LearningHerbs, 'Yellow Dock Uses', Rosalee de la Forêt), whose only stated purposes are medical (stings, itching, sores, eczema and internal remedies), so under the no-medical-claims rule nothing is kept. The Spruce Crafts page also covers burdock and oxalis; those are left for their own entries.",
+      "Other uses reviewed 26/11/2026: the owner approved the dock and sorrel uses ('ship the ones we just reviewed') and the entry ships again."
     ],
     "summary" : {
       "sources" : [
@@ -17744,7 +18072,41 @@
       "text" : "Curled dock, also called curly dock or yellow dock, is native to Europe, North Africa and western Asia and was first recorded wild in New Zealand in 1832. It hybridises readily with other docks, including broad-leaved dock. It is a widespread and often abundant weed in all but the mountains, on the North, South and Stewart Islands and the Chatham, Campbell and Macquarie Islands.\nOne plant can shed tens of thousands of seeds — about 60,000 by an Australian estimate. The ripe fruits snap off easily when brushed and travel on clothing, animals, machinery and mud, and on wind and water: the papery valves act as sails and the tubercles as floats. Pieces of crown and taproot broken up by cultivation regrow, and in Australia the root has been recorded 3 m deep. Seedlings overwinter as rosettes. In Armenia the young plants are dried in braids, fermenting as they dry, to make aveluk, which is boiled back to life for soups and salads."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex crispus' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+crispus, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated",
+            "The Spruce Crafts, 'Make Your Own Organic Natural Yellow Dye' (Yellow Dock Roots), https://www.thesprucecrafts.com/make-yellow-natural-fabric-dyes-2145748, retrieved 26/11/2026 — restated",
+            "Louise Diggins, The Knitting Shed, 'Dyeing with Dock' (19/05/2019), https://theknittingshed.com/dyeing-with-dock/, retrieved 26/11/2026 — restated",
+            "Kristine Vejar, A Verb for Keeping Warm, 'Textile Byways - Dyeing with Curly Dock - Montana 2014' (10/11/2014), https://www.averbforkeepingwarm.com/blogs/news/15813064-textile-byways-dyeing-with-curly-dock-montana-2014, retrieved 26/11/2026 — restated, units converted to metric"
+          ],
+          "text" : "Roots: dark green to brown and dark grey dyes come from the roots of many docks and sorrels, with no mordant needed. This dock's roots also give yellow; the deep taproots boiled in water make a yellow to mustard dye bath. Leaves and stalks: docks' leaves and stalks give a dye with no mordant, in colours from green to yellow to red. This dock's leaves, flowers and seeds boiled in water give browns. Leaves just covered with tap water and simmered for an hour dyed alum-mordanted wool yellow in another hour's simmer; the yellow darkened as it dried in the sun, so it may not hold. Flowering stalks are best picked for dyeing once they have dried to a rust red."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex crispus' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+crispus, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated",
+            "The Spruce Crafts, 'Make Your Own Organic Natural Yellow Dye' (Yellow Dock Roots), https://www.thesprucecrafts.com/make-yellow-natural-fabric-dyes-2145748, retrieved 26/11/2026 — restated",
+            "Kristine Vejar, A Verb for Keeping Warm, 'Textile Byways - Dyeing with Curly Dock - Montana 2014' (10/11/2014), https://www.averbforkeepingwarm.com/blogs/news/15813064-textile-byways-dyeing-with-curly-dock-montana-2014, retrieved 26/11/2026 — restated, units converted to metric"
+          ],
+          "text" : "Roots, leaves, flowering stalks, flowers and seeds."
+        },
+        "recipes" : [
+          {
+            "method" : "Wool yarn; 1 tablespoon (15 ml) alum (aluminium potassium sulphate) for every 100 g of yarn; dried, rust-red curled dock stalks, half the weight of the yarn. To mordant: dissolve the alum in hot water, add it to a pot with enough water for the yarn to float freely, add the yarn, bring it to 88 °C over half an hour, hold it there for 1 hour and leave it to cool. To dye: chop the dock into a pot of water and keep it at a low simmer for 3 hours. Strain, return the dye to the pot, add the yarn, bring it to 88 °C over half an hour, hold it there for 1 hour and leave it to cool. Wash the yarn and hang it to dry.",
+            "sourceURL" : "https://www.averbforkeepingwarm.com/blogs/news/15813064-textile-byways-dyeing-with-curly-dock-montana-2014",
+            "title" : "Curled dock wool dye"
+          }
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
       "It contains oxalic acid, which gives the leaves their sharp taste. A little is fine, but large amounts can lock up calcium and other minerals in food; cooking lowers the oxalic acid. Take particular care, or leave it alone, if you are prone to rheumatism, arthritis, gout, kidney stones or hyperacidity. It can kill: in a published case, a 53-year-old man died three days after eating curled dock, with severely low blood calcium and liver failure.",
@@ -19005,7 +19367,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -20088,7 +20450,7 @@
     ],
     "caution" : "careRequired",
     "commonName" : "Dwarf mallow",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Malva neglecta'",
@@ -20201,7 +20563,8 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "craft",
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -20260,7 +20623,10 @@
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): Wikipedia review — current article 'Malva neglecta' (action=raw, revision 1383369623, retrieved 18/11/2026; the entry was written and checked against 1375183018, and this revision changes nothing the entry uses) still has every Wikipedia statement on the entry and none conflicts with Flora of New Zealand. Kept: the summary lead and common-names sentence (common mallow in the United States, buttonweed, cheeseplant, cheeseweed, dwarf mallow, roundleaf mallow) and the moved aphid sentence; the identification (prostrate downy herb to about 60 cm, alternate leaves, winter annual, taproot, flowers in clusters of 2–5, schizocarps, leaf-movement sentence; the '10–12 mericarps', '12 cm' petiole and Canada sentences stay deleted against the Flora's 12–15 mericarps and petioles (2)–4–20 cm); edible parts (often consumed, leaves, stalks and seed; mature seeds cooked like rice); preparation (spinach and okra-like thickening, Moroccan Bakola / Khobiza, the root as a meringue substitute); and the nitrate warning ('high nitrate content, similar to that of arugula'). The Flora's 'Annual or short-lived perennial' is compatible with Wikipedia's winter annual that can persist as a biennial or perennial.",
       "Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard'): NZ spelling — 'flavor' → 'flavour' in edible parts.",
       "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's 'native to most of the Old World except sub-Saharan Africa' and its list of overseas names replaced by NZPCN's Family and Origin and Flora of New Zealand Online's 'Annual or short-lived perennial'; kept from Wikipedia only that the United States calls it common mallow, because overseas foraging pages use that name and here it means Malva sylvestris. Identification — Wikipedia's paragraph cut except the 60 cm spread, the taproot and the flower stalks shorter than the leaf stalks, which no New Zealand source read gives (the Flora description covers habit, leaves, petioles, stipules, flower clusters and fruit); the leaf-movement paragraph cut. Edible parts — Wikipedia's 'often consumed … leaves, stalks and seed' replaced by Knox 2013 pp. 89–90. Preparation — Wikipedia's spinach/okra, Moroccan Bakola and root-meringue sentences replaced by Knox's New Zealand method; the root meringue is cut, not kept, because Knox (p. 90) says making meringue from the mucilage of any mallow but the root of true marshmallow (Althaea officinalis) 'is a challenge that has frustrated many a forager'. The CONECT-e Spanish fruit use stays. Warnings unchanged (the Wikipedia nitrate line repeats the Useful Temperate Plants one; put to the owner, 21/11/2026).",
-      "Owner research request 21/11/2026 ('1 research', on the Malva batch cuts): the root-meringue use cut from preparation earlier the same day is restored. Useful Temperate Plants, 'Malva neglecta' (retrieved 21/11/2026): 'A decoction of the roots is used as an egg-white substitute for making meringue. The roots are brought to the boil in water and then simmered until the water becomes quite thick. This liquid can then be whisked in much the same way as egg whites.' Wikipedia's same sentence cites Facciola 1990, Cornucopia, and PFAF (= Useful Temperate Plants, one source). Knox 2013 p. 90 does not say it fails, only that making meringue from any mallow's mucilage but true marshmallow root (Althaea officinalis) 'is a challenge that has frustrated many a forager', because the froth is hard to make firm and stable; that is now stated beside the method instead of being the reason to cut it (owner rule: keep sourced uses, raise a specific doubt). French mallow's 'stems' cut stays: a web search 21/11/2026 found the stems only in Wikipedia's uncited Uses sentence (its one footnote there, Apicius, is about garum); PFAF / Useful Temperate Plants list leaves and seed, and Levantine sources leaves and fruit."
+      "Owner research request 21/11/2026 ('1 research', on the Malva batch cuts): the root-meringue use cut from preparation earlier the same day is restored. Useful Temperate Plants, 'Malva neglecta' (retrieved 21/11/2026): 'A decoction of the roots is used as an egg-white substitute for making meringue. The roots are brought to the boil in water and then simmered until the water becomes quite thick. This liquid can then be whisked in much the same way as egg whites.' Wikipedia's same sentence cites Facciola 1990, Cornucopia, and PFAF (= Useful Temperate Plants, one source). Knox 2013 p. 90 does not say it fails, only that making meringue from any mallow's mucilage but true marshmallow root (Althaea officinalis) 'is a challenge that has frustrated many a forager', because the froth is hard to make firm and stable; that is now stated beside the method instead of being the reason to cut it (owner rule: keep sourced uses, raise a specific doubt). French mallow's 'stems' cut stays: a web search 21/11/2026 found the stems only in Wikipedia's uncited Uses sentence (its one footnote there, Apicius, is about garum); PFAF / Useful Temperate Plants list leaves and seed, and Levantine sources leaves and fruit.",
+      "Other uses, owner link round 26/11/2026 (Malva): the owner pasted twelve pages on mallow dyes, skin care and fibre and said the same rule as the earlier rounds applies: what can apply to every species does, otherwise only where it makes sense. Genus-wide line given here: the Handweavers, Spinners and Dyers Guild of Tasmania page names only 'mallow', so its alum-wool yellow from the leaves goes on every Malva entry. Plants For A Future's dye line is written on five species pages, not for the genus, so it stays on those. For dwarf mallow: Plants For A Future's species page gives the plant and seed-head dyes. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (nitrates in leaves on rich soils, and gallstones, both about eating) hold nothing against handling the plant. Months left empty: leaves, stems and roots are taken through the growing year and no page gives a time. No recipe: no page gives quantities, times and temperatures for a Malva use. Not used: Wool Tribulations, 'Dyeing wool with rose mallow flowers' (Fran Rushworth, 31/07/2015), which names no species, and 'rose mallow' is a garden name for several plants none of which is in this catalogue; Eat Weeds, 'The traditional and modern uses of mallow' (Robin Harford, 20/07/2017), whose poultices, ointments and remedies are medical and whose flowers 'for decoration around the home' give no method; Wild Botanica's mucous-membrane and irritated-skin uses, which are medical (its dry-skin line is cited on common mallow only, as it names no part or preparation); Permaculture magazine, 'Benefits of marshmallow (Althaea officinalis): hand cream and face mask recipes' (Laura Pardoe, from Vital Skincare), whose recipes are for marshmallow, a different genus not in the catalogue, and which does not say mallow can stand in; Annmarie Gianni's internal tea uses (medical); a ResearchGate figure (could not be read, HTTP 403) and Tropicalistic, 'Natural textile fibers in Brazilian design' (Adele Firpo, 05/06/2025), whose 'malva' fibre is Urena lobata, a different genus; Practical Plants, 'Malva moschata', which repeats Plants For A Future's notes and so counts as the same source. From Plants For A Future: common mallow's leaves for insect bites and stings (medical), cheeseweed mallow's seed oil (no use given) are left out (dwarf mallow's root toothbrush was placed under craft afterwards); its tree mallow page lists no other uses and it has no Cretan or island mallow data.",
+      "Other uses, mallow follow-up 26/11/2026: the owner placed dwarf mallow's root toothbrush (Plants For A Future) under craft.",
+      "Other uses reviewed 26/11/2026: the owner approved the mallow uses ('yes' to shipping) and the entry ships again; the owner renamed the skin-care kind to cosmetics the same day."
     ],
     "summary" : {
       "sources" : [
@@ -20272,7 +20638,56 @@
       "text" : "Dwarf mallow, Malva neglecta, is an annual or short-lived perennial herb of the mallow family (Malvaceae), native to Europe, south-western Asia and north-western Africa. In the United States it is called common mallow, the name used here for Malva sylvestris.\nIn New Zealand it grows throughout the North Island, in eastern areas of the South Island from the Marlborough Sounds to Southland, where it is common, and on the Chatham Islands. It was first recorded growing wild here in 1867."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Malva neglecta' (Other Uses: cream, yellow and green dyes from the plant and the seed heads), https://pfaf.org/user/Plant.aspx?LatinName=Malva+neglecta, retrieved 26/11/2026 — restated",
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Whole plant and seed heads: cream, yellow and green dyes come from the plant and the seed heads. Leaves: mallow leaves, about their own weight to the weight of wool, dyed alum-mordanted wool yellow, and iron can be added to the same bath to change the colour. Two kinds of wool took the colour very differently."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Malva neglecta' (Other Uses: cream, yellow and green dyes from the plant and the seed heads), https://pfaf.org/user/Plant.aspx?LatinName=Malva+neglecta, retrieved 26/11/2026 — restated",
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "The whole plant, its leaves and the seed heads."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      },
+      {
+        "kind" : "craft",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Malva neglecta' (Other Uses: the root used as a toothbrush), https://pfaf.org/user/Plant.aspx?LatinName=Malva+neglecta, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "The root is used as a toothbrush."
+        },
+        "months" : [
+
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Malva neglecta' (Other Uses: the root used as a toothbrush), https://pfaf.org/user/Plant.aspx?LatinName=Malva+neglecta, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
       "When grown on nitrogen rich soils (and particularly when these are inorganic), the plant tends to concentrate high levels of nitrates in its leaves.",
@@ -20393,7 +20808,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -20535,7 +20950,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -22231,7 +22646,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -22553,7 +22968,7 @@
       }
     ],
     "plannedUses" : [
-
+      "dye"
     ],
     "preparation" : {
       "sources" : [
@@ -22584,7 +22999,9 @@
       "Owner decision 11/11/2026 (Pinks standards check): foxglove card added on fiddle dock (risk 'deadly', as on broad-leaved and curled dock) with the reverse card on foxglove (risk 'edible'). Confusion: foxglove rosettes 'can look like dock' (Totally Wild UK and Jack Raven Bushcraft, written for docks in general; foxglove's own warning). Tests from Flora of New Zealand descriptions only — fiddle dock, Flora vol. IV (retrieved 11/11/2026): lower leaves 'with basal 1/4 of lamina forming 2 large rounded cordate lobes … lf constricted in basal 1/2, flat, occasionally simple, oblong, puberulent towards base beneath' (https://floraseries.landcareresearch.co.nz/taxa/fca239df-a988-4f87-ab1e-fc8bec0afe9e); Flora of New Zealand Online 'Digitalis purpurea' (https://www.nzflora.info/factsheet/Taxon/Digitalis-purpurea.html, retrieved 11/11/2026): 'densely hairy simple stems', 'Petiole long and winged', 'Lamina 10–25 × 3.5–12 cm, lanceolate to elliptic or ovate, hairy to glabrate above, ± grey-tomentulose with crisped hairs beneath, crenate or crenulate; base cuneate to attenuate'; ochrea: Flora vol. IV Rumex (https://floraseries.landcareresearch.co.nz/taxa/b728cd21-b85a-49bb-a982-618902fdbb51, retrieved 11/11/2026): 'ochreae ± tubular'; Polygonaceae: 'Stipules mostly forming a membranous or scarious ochrea (sheath)'. Ranges overlap: foxglove 'very widespread on the North, South and Stewart Islands' in pastures, roadsides and river beds; fiddle dock on both main islands in pastures and waste places.",
       "Pinks group standards check 11/11/2026: 'It grows on the North and South Islands' removed from the habitat field (range, not habitat); the summary already gives its New Zealand range (Massey 'found throughout New Zealand', consistent with the Flora's 'N.; S.'). The lawn and turf sentence stays in habitat.",
       "Pinks group standards check 11/11/2026 (Wikipedia review; Flora of New Zealand vol. IV page re-read 11/11/2026): summary — Wikipedia supplies only that some authorities divide it into subspecies; the Flora gives 'S. and W. Europe 1878', 'N.; S.', 'not as common as the other large weedy docks' and the fiddle-shaped leaves, all used, and names no subspecies (the summary says so). Kept.",
-      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex pulcher' was last edited 17/08/2025 (revision 1306460697), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change."
+      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex pulcher' was last edited 17/08/2025 (revision 1306460697), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change.",
+      "Other uses, owner link round 26/11/2026 (Rumex): the owner pasted twelve pages on dock and sorrel dyes, cordage and salves and said the same rule as the pines applies (a page naming only the genus applies to every species unless a species-level claim blocks it), to be researched to be sure. Genus-wide lines given here: roots, Plants For A Future's 'dark green to brown and dark grey dyes can be obtained from the roots of many species in this genus, they do not need a mordant' (its pages for clustered, fiddle and hooked dock); leaves and stalks, Diego Bonetto's 'the leaves and stalks of others again are harvested for a mordant-free dye, the colours obtained go from green to yellow to red'. For fiddle dock: no page names this species, so only the genus lines are given. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (oxalic acid in food only) hold nothing against handling the plant for dye. Months left empty: the roots, leaves and stalks are taken through the year, and permies.com gives sheep sorrel's harvest time as 'any'. Copper and the tin and chrome mordants one page mentions are left out. Not used: Wildwalks Southwest, 'Making cordage from plants' (Rachel Lambert, 17/01/2026), which lists broad-leaved dock among plants made into cordage but names neither the part nor how its fibre is extracted, and no second source for dock fibre was found, so no fibre use; Bruk Gedefaw 2018, 'Extraction of Textile Dye from Rumex abyisinicus' (academia.edu), a laboratory solvent extraction from an African dock not in New Zealand; Backyard Forager, 'All About Dock' and Martin Nursery, 'Rumex', which give no non-food use; and three yellow dock salve pages (The Nerdy Farm Wife, 'Yellow Dock Salve Recipe', 21/08/2025; Mayernik Kitchen, 'Yellow Dock'; LearningHerbs, 'Yellow Dock Uses', Rosalee de la Forêt), whose only stated purposes are medical (stings, itching, sores, eczema and internal remedies), so under the no-medical-claims rule nothing is kept. The Spruce Crafts page also covers burdock and oxalis; those are left for their own entries.",
+      "Other uses reviewed 26/11/2026: the owner approved the dock and sorrel uses ('ship the ones we just reviewed') and the entry ships again."
     ],
     "summary" : {
       "sources" : [
@@ -22594,7 +23011,32 @@
       "text" : "Fiddle dock, also called red dock or fiddleleaf dock, is named for its fiddle-shaped leaves. Flora of New Zealand gives its origin as southern and western Europe; its native range runs from the Atlantic islands and Britain through the Mediterranean and North Africa to Iran and Turkmenistan, and it is also native to South Africa's Cape. It was first recorded wild in New Zealand in 1878. Massey University calls it a common dock found throughout New Zealand, though probably less common in pastures than broad-leaved dock; Flora of New Zealand (1988) put it behind the other large weedy docks.\nIt varies a good deal, and some authorities split it into several subspecies that are hard to tell apart; Flora of New Zealand does not. The ripe fruits break off when brushed, and their toothed valves carry them on wind, water, animals and people. The crown and the top of the taproot regrow from pieces dragged about by cultivation."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex pulcher' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+pulcher, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots: dark green to brown and dark grey dyes come from the roots of many docks and sorrels, with no mordant needed. Leaves and stalks: docks' leaves and stalks give a dye with no mordant, in colours from green to yellow to red."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex pulcher' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+pulcher, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots, leaves and stalks."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
       "It contains oxalic acid, which gives the leaves their sharp taste. A little is fine, but large amounts can lock up calcium and other minerals in food; cooking lowers the oxalic acid. Take particular care, or leave it alone, if you are prone to rheumatism, arthritis, gout, kidney stones or hyperacidity.",
@@ -25089,7 +25531,7 @@
     ],
     "caution" : "careRequired",
     "commonName" : "French mallow",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Malva nicaeensis'"
@@ -25200,7 +25642,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -25237,7 +25679,9 @@
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): PFAF check — Plants For A Future, 'Malva nicaeensis' (all rights reserved, facts only), https://pfaf.org/user/Plant.aspx?LatinName=Malva+nicaeensis, retrieved 18/11/2026: leaves raw or cooked (very mild, mucilaginous, slimy cooked), seed raw before fully ripe; Edibility Rating 3 of 5; Known Hazards: no toxicity reports, nitrate build-up on nitrogen-rich soils [76]. Agrees with the page (same Ken Fern text credited to Useful Temperate Plants). Other uses (cream, yellow and green dyes; a root decoction as a hair rinse) recorded in useful-plants.md.",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): Wikipedia review — current article 'Malva nicaeensis' (action=raw, revision 1341991879, retrieved 18/11/2026; unchanged since the entry was written) still has the three Wikipedia-backed items: the summary lead (bull mallow, French mallow; 'grows in the Middle East, where it has variously served as food'), edible parts ('The leaves and stems are edible, and are widely collected for food') and preparation (excellent garnish chopped and fried in olive oil with onions and spices; the Khubeza patties). All kept and none conflicts with Flora of New Zealand vol. IV, whose description and NZ range carry the rest. Note that the Wikipedia edible-use sentence is itself uncited, and the other edible source on the entry (Useful Temperate Plants) names leaves and seed only, so 'stems' and 'widely collected' rest on Wikipedia alone; Wikipedia's Levant rains and 1948 Jerusalem sentences stay unused.",
       "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's lead (bull mallow; 'grows in the Middle East, where it has variously served as food') replaced by NZPCN's Family and Origin and Flora of New Zealand Online's 'Annual or short-lived perennial'. Edible parts — Wikipedia's 'The leaves and stems are edible, and are widely collected for food' cut: it is uncited, and stems rested on it alone (Useful Temperate Plants gives leaves and seed); the page now says leaves and seed. Preparation — Wikipedia's fried-garnish and Khubeza-patty sentences kept: no New Zealand source read names this species' preparation (Knox's herb-mallow pages cover M. sylvestris, M. neglecta and M. parviflora only).",
-      "Owner research request 21/11/2026 ('1 research'): the 'stems' cut re-checked — a web search found the stems only in Wikipedia's uncited 'The leaves and stems are edible, and are widely collected for food' (its only nearby footnote, Apicius, is about garum); Plants For A Future (https://pfaf.org/user/Plant.aspx?LatinName=Malva+nicaeensis) lists leaves and seed. The cut stays."
+      "Owner research request 21/11/2026 ('1 research'): the 'stems' cut re-checked — a web search found the stems only in Wikipedia's uncited 'The leaves and stems are edible, and are widely collected for food' (its only nearby footnote, Apicius, is about garum); Plants For A Future (https://pfaf.org/user/Plant.aspx?LatinName=Malva+nicaeensis) lists leaves and seed. The cut stays.",
+      "Other uses, owner link round 26/11/2026 (Malva): the owner pasted twelve pages on mallow dyes, skin care and fibre and said the same rule as the earlier rounds applies: what can apply to every species does, otherwise only where it makes sense. Genus-wide line given here: the Handweavers, Spinners and Dyers Guild of Tasmania page names only 'mallow', so its alum-wool yellow from the leaves goes on every Malva entry. Plants For A Future's dye line is written on five species pages, not for the genus, so it stays on those. For French mallow: Plants For A Future's species page gives the plant and seed-head dyes and the root hair rinse. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (nitrates in leaves on rich soils, and gallstones, both about eating) hold nothing against handling the plant. Months left empty: leaves, stems and roots are taken through the growing year and no page gives a time. No recipe: no page gives quantities, times and temperatures for a Malva use. Not used: Wool Tribulations, 'Dyeing wool with rose mallow flowers' (Fran Rushworth, 31/07/2015), which names no species, and 'rose mallow' is a garden name for several plants none of which is in this catalogue; Eat Weeds, 'The traditional and modern uses of mallow' (Robin Harford, 20/07/2017), whose poultices, ointments and remedies are medical and whose flowers 'for decoration around the home' give no method; Wild Botanica's mucous-membrane and irritated-skin uses, which are medical (its dry-skin line is cited on common mallow only, as it names no part or preparation); Permaculture magazine, 'Benefits of marshmallow (Althaea officinalis): hand cream and face mask recipes' (Laura Pardoe, from Vital Skincare), whose recipes are for marshmallow, a different genus not in the catalogue, and which does not say mallow can stand in; Annmarie Gianni's internal tea uses (medical); a ResearchGate figure (could not be read, HTTP 403) and Tropicalistic, 'Natural textile fibers in Brazilian design' (Adele Firpo, 05/06/2025), whose 'malva' fibre is Urena lobata, a different genus; Practical Plants, 'Malva moschata', which repeats Plants For A Future's notes and so counts as the same source. From Plants For A Future: common mallow's leaves for insect bites and stings (medical), cheeseweed mallow's seed oil (no use given) are left out (dwarf mallow's root toothbrush was placed under craft afterwards); its tree mallow page lists no other uses and it has no Cretan or island mallow data.",
+      "Other uses reviewed 26/11/2026: the owner approved the mallow uses ('yes' to shipping) and the entry ships again; the owner renamed the skin-care kind to cosmetics the same day."
     ],
     "summary" : {
       "sources" : [
@@ -25248,7 +25692,56 @@
       "text" : "French mallow, Malva nicaeensis, is an annual or short-lived perennial herb of the mallow family (Malvaceae), native from the Mediterranean to western Asia.\nIn New Zealand it grows throughout the North Island and in Nelson, Marlborough, Canterbury and North Otago. It was first recorded growing wild here in 1957, though Flora of New Zealand says it was present much longer and had been confused with other mallows."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Malva nicaeensis' (Other Uses: cream, yellow and green dyes from the plant and the seed heads), https://pfaf.org/user/Plant.aspx?LatinName=Malva+nicaeensis, retrieved 26/11/2026 — restated",
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Whole plant and seed heads: cream, yellow and green dyes come from the plant and the seed heads. Leaves: mallow leaves, about their own weight to the weight of wool, dyed alum-mordanted wool yellow, and iron can be added to the same bath to change the colour. Two kinds of wool took the colour very differently."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Malva nicaeensis' (Other Uses: cream, yellow and green dyes from the plant and the seed heads), https://pfaf.org/user/Plant.aspx?LatinName=Malva+nicaeensis, retrieved 26/11/2026 — restated",
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "The whole plant, its leaves and the seed heads."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      },
+      {
+        "kind" : "cosmetics",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Malva nicaeensis' (Other Uses: a decoction of the roots as a hair rinse), https://pfaf.org/user/Plant.aspx?LatinName=Malva+nicaeensis, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "A decoction of the roots makes a hair rinse."
+        },
+        "months" : [
+
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Malva nicaeensis' (Other Uses: a decoction of the roots as a hair rinse), https://pfaf.org/user/Plant.aspx?LatinName=Malva+nicaeensis, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
 
@@ -25335,7 +25828,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -25969,7 +26462,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -26093,7 +26586,7 @@
     ],
     "plannedUses" : [
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -27012,7 +27505,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -27494,7 +27987,7 @@
     "plannedUses" : [
       "fibre",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -28462,7 +28955,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -29933,7 +30426,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -31097,7 +31590,7 @@
     ],
     "caution" : "careRequired",
     "commonName" : "Hooked dock",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants, 'Rumex brownii' (Ken Fern, CC BY-NC-SA, restated)",
@@ -31193,7 +31686,9 @@
       "Owner decision 11/11/2026 (Pinks standards check): edibleParts: the roasted-root coffee substitute cut — PFAF/Useful Temperate Plants alone ('The roasted root is a coffee substitute[193]', https://pfaf.org/user/Plant.aspx?LatinName=Rumex+brownii, retrieved 11/11/2026); preparation names no root, so it is unchanged. Second leaf record accepted: Survive.au 'Rumex – Docks' (https://www.survive.au/bf_rumex.php, retrieved 11/11/2026), a docks page that covers swamp dock (R. brownii): 'Introduced From : Europe and Asia (swamp dock is native)', 'Uses: Leaves and leaf stalks edible cooked'. Wikipedia's uncited 'Leaf used as a blanched leafy vegetable' is no longer counted as a food record.",
       "Pinks group standards check 11/11/2026: the New Zealand range sentence (from the Flora of New Zealand vol. IV distribution) moved from the habitat field to the end of the summary's first paragraph — habitat holds where it grows, range belongs in the summary; wording unchanged apart from 'Look for it' becoming a plain statement.",
       "Pinks group standards check 11/11/2026 (Wikipedia review): 'or blanch them' cut from preparation — it rested only on Wikipedia 'Rumex brownii' Uses ('Leaf used as a blanched leafy vegetable'), which carries no citation and is no longer counted as a food record; Wikipedia dropped from the edible-parts and preparation field sources (the text left is Useful Temperate Plants / PFAF and Survive.au). Kept: in the summary every point except the name 'swamp dock' is covered by Flora of New Zealand vol. IV 'Rumex brownii' (https://floraseries.landcareresearch.co.nz/taxa/60979861-e9f9-49d7-9ce0-020a583f2e86, retrieved 11/11/2026: 'S.E. Australia 1948', 'dispersed easily by passing animals', 'apparently spread rapidly during this century', confused with R. flexuosus), so Wikipedia ('Rumex brownii', action=raw, retrieved 11/11/2026) supplies only that name; in identification it supplies only that the hooks catch on 'human clothing' as well as fur (the Flora: hooked spines, dispersal by animals), which no New Zealand source contradicts.",
-      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex brownii' was last edited 20/04/2022 (revision 1083719477), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change."
+      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex brownii' was last edited 20/04/2022 (revision 1083719477), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change.",
+      "Other uses, owner link round 26/11/2026 (Rumex): the owner pasted twelve pages on dock and sorrel dyes, cordage and salves and said the same rule as the pines applies (a page naming only the genus applies to every species unless a species-level claim blocks it), to be researched to be sure. Genus-wide lines given here: roots, Plants For A Future's 'dark green to brown and dark grey dyes can be obtained from the roots of many species in this genus, they do not need a mordant' (its pages for clustered, fiddle and hooked dock); leaves and stalks, Diego Bonetto's 'the leaves and stalks of others again are harvested for a mordant-free dye, the colours obtained go from green to yellow to red'. For hooked dock: Plants For A Future's 'rich yellow with alum' is for this species. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (oxalic acid in food only) hold nothing against handling the plant for dye. Months left empty: the roots, leaves and stalks are taken through the year, and permies.com gives sheep sorrel's harvest time as 'any'. Copper and the tin and chrome mordants one page mentions are left out. Not used: Wildwalks Southwest, 'Making cordage from plants' (Rachel Lambert, 17/01/2026), which lists broad-leaved dock among plants made into cordage but names neither the part nor how its fibre is extracted, and no second source for dock fibre was found, so no fibre use; Bruk Gedefaw 2018, 'Extraction of Textile Dye from Rumex abyisinicus' (academia.edu), a laboratory solvent extraction from an African dock not in New Zealand; Backyard Forager, 'All About Dock' and Martin Nursery, 'Rumex', which give no non-food use; and three yellow dock salve pages (The Nerdy Farm Wife, 'Yellow Dock Salve Recipe', 21/08/2025; Mayernik Kitchen, 'Yellow Dock'; LearningHerbs, 'Yellow Dock Uses', Rosalee de la Forêt), whose only stated purposes are medical (stings, itching, sores, eczema and internal remedies), so under the no-medical-claims rule nothing is kept. The Spruce Crafts page also covers burdock and oxalis; those are left for their own entries.",
+      "Other uses reviewed 26/11/2026: the owner approved the dock and sorrel uses ('ship the ones we just reviewed') and the entry ships again."
     ],
     "summary" : {
       "sources" : [
@@ -31203,7 +31698,32 @@
       "text" : "Hooked dock, also called swamp dock, is native to south-eastern Australia and was first recorded wild in New Zealand in 1948. Its hooked fruit hitch rides on passing animals, and it seems to have spread quickly in the 20th century. It has been confused with, and recorded as, the native New Zealand dock, which never has hooked fruit. In New Zealand it grows in the north of the North Island, especially on offshore islands, south to the Bay of Plenty, and in Marlborough and Nelson; it is occasional in Canterbury and Otago, and very common on Raoul Island."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex brownii' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+brownii, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots: dark green to brown and dark grey dyes come from the roots of many docks and sorrels, with no mordant needed. This dock's root gives a rich yellow when the dye is fixed with alum. Leaves and stalks: docks' leaves and stalks give a dye with no mordant, in colours from green to yellow to red."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex brownii' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+brownii, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots, leaves and stalks."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
       "It contains oxalic acid, which gives the leaves their sharp taste. A little is fine, but large amounts can lock up calcium and other minerals in food; cooking lowers the oxalic acid. Take particular care, or leave it alone, if you are prone to rheumatism, arthritis, gout, kidney stones or hyperacidity.",
@@ -31829,7 +32349,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -32702,7 +33222,7 @@
       }
     ],
     "plannedUses" : [
-
+      "dye"
     ],
     "preparation" : {
       "sources" : [
@@ -32735,7 +33255,9 @@
       "Card to Annual mallow removed 03/11/2026: the annual-mallow entry was dropped on the owner's word (\"if there is basically none drop it\") — no genuinely wild New Zealand population (iNaturalist NZ: 15 observations, 6 not captive, of which 2 in Auckland Botanic Gardens, 1 in school grounds, 1 unconfirmed; Flora of New Zealand: 'collected only as a local garden escape').",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): PFAF check — Plants For A Future, 'Malva assurgentiflora' (all rights reserved, facts only), https://pfaf.org/user/Plant.aspx?LatinName=Malva+assurgentiflora, retrieved 18/11/2026: PFAF's empty template (no Edible Uses, Known Hazards or Other Uses text); 'Lavatera assurgentiflora' also returns it. No PFAF data; the page rests on its other sources.",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): Wikipedia review — current article 'Malva assurgentiflora' (action=raw, revision 1377483392, retrieved 18/11/2026) still contains the summary's two Wikipedia sentences: the lead (formerly Lavatera assurgentiflora; island mallow, mission mallow, royal mallow, malva rosa island mallow, island tree mallow, malva rosa) and the distribution sentence (endemic to southern California, native only to the Channel Islands, escaped in coastal California, Baja California, Guatemala, western South America, New Zealand and Australia). Both kept; nothing conflicts with Flora of New Zealand vol. IV (which calls it Californian mallow). The entry-level credit 'Habitat and summary text: Wikipedia' is stale for habitat: the habitat field is the Flora's NZ line, so the credit should name the summary only. Wikipedia's Description (3–4 m, 6 or 8 fruit segments) and its ornamental/windbreak Uses line are not used; its Uses section records no food use, consistent with the entry's single-tasting edible parts.",
-      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's lead (island, mission, royal and malva rosa names) and its escape list (coastal California, Baja California, Guatemala, South America, New Zealand, Australia) replaced by NZPCN's Family, Origin, common name and synonym and the Flora's woody-shrub habit (already the identification); the overseas names and list dropped as Wikipedia-only."
+      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's lead (island, mission, royal and malva rosa names) and its escape list (coastal California, Baja California, Guatemala, South America, New Zealand, Australia) replaced by NZPCN's Family, Origin, common name and synonym and the Flora's woody-shrub habit (already the identification); the overseas names and list dropped as Wikipedia-only.",
+      "Other uses, owner link round 26/11/2026 (Malva): the owner pasted twelve pages on mallow dyes, skin care and fibre and said the same rule as the earlier rounds applies: what can apply to every species does, otherwise only where it makes sense. Genus-wide line given here: the Handweavers, Spinners and Dyers Guild of Tasmania page names only 'mallow', so its alum-wool yellow from the leaves goes on every Malva entry. Plants For A Future's dye line is written on five species pages, not for the genus, so it stays on those. For island mallow: no page names this species, so only the genus leaf-dye line is given. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (nitrates in leaves on rich soils, and gallstones, both about eating) hold nothing against handling the plant. Months left empty: leaves, stems and roots are taken through the growing year and no page gives a time. No recipe: no page gives quantities, times and temperatures for a Malva use. Not used: Wool Tribulations, 'Dyeing wool with rose mallow flowers' (Fran Rushworth, 31/07/2015), which names no species, and 'rose mallow' is a garden name for several plants none of which is in this catalogue; Eat Weeds, 'The traditional and modern uses of mallow' (Robin Harford, 20/07/2017), whose poultices, ointments and remedies are medical and whose flowers 'for decoration around the home' give no method; Wild Botanica's mucous-membrane and irritated-skin uses, which are medical (its dry-skin line is cited on common mallow only, as it names no part or preparation); Permaculture magazine, 'Benefits of marshmallow (Althaea officinalis): hand cream and face mask recipes' (Laura Pardoe, from Vital Skincare), whose recipes are for marshmallow, a different genus not in the catalogue, and which does not say mallow can stand in; Annmarie Gianni's internal tea uses (medical); a ResearchGate figure (could not be read, HTTP 403) and Tropicalistic, 'Natural textile fibers in Brazilian design' (Adele Firpo, 05/06/2025), whose 'malva' fibre is Urena lobata, a different genus; Practical Plants, 'Malva moschata', which repeats Plants For A Future's notes and so counts as the same source. From Plants For A Future: common mallow's leaves for insect bites and stings (medical), cheeseweed mallow's seed oil (no use given) are left out (dwarf mallow's root toothbrush was placed under craft afterwards); its tree mallow page lists no other uses and it has no Cretan or island mallow data.",
+      "Other uses reviewed 26/11/2026: the owner approved the mallow uses ('yes' to shipping) and the entry ships again; the owner renamed the skin-care kind to cosmetics the same day."
     ],
     "summary" : {
       "sources" : [
@@ -32745,7 +33267,30 @@
       "text" : "Island mallow, Malva assurgentiflora (formerly Lavatera assurgentiflora), is a shrub of the mallow family (Malvaceae), native to the islands off the coast of southern California. New Zealand floras call it Californian mallow.\nIn New Zealand it is locally established on the east coast of the South Island from Marlborough to Otago. It was first recorded growing wild here in 1940."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Leaves: mallow leaves, about their own weight to the weight of wool, dyed alum-mordanted wool yellow, and iron can be added to the same bath to change the colour. Two kinds of wool took the colour very differently."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Leaves."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
 
@@ -34345,7 +34890,7 @@
     ],
     "plannedUses" : [
       "fibre",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -34488,7 +35033,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -37558,7 +38103,7 @@
     ],
     "plannedUses" : [
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -38406,7 +38951,7 @@
     "plannedUses" : [
       "fibre",
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -38619,7 +39164,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -38772,7 +39317,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -39131,7 +39676,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -39887,7 +40432,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -40958,7 +41503,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -41168,7 +41713,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -41339,7 +41884,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -42784,7 +43329,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -42925,7 +43470,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -43266,7 +43811,7 @@
     ],
     "caution" : "careRequired",
     "commonName" : "Musk mallow",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Useful Temperate Plants (Ken Fern, CC BY-NC-SA 3.0), 'Malva moschata'"
@@ -43379,7 +43924,7 @@
     "plannedUses" : [
       "fibre",
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -43408,7 +43953,10 @@
       "Presence re-checked 03/11/2026 and the entry KEPT on the owner's word (\"keep it then\"): iNaturalist NZ 8 observations, 7 not captive, 5 research grade — a population at Tai Tapu recorded 2018–2021 (4 records) plus independent Dunedin and Waimiha records; Flora of New Zealand gives scattered North and South Island localities, naturalised since 1904. Unlike annual mallow (dropped the same day), it has a wild population.",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): PFAF check — Plants For A Future, 'Malva moschata' (all rights reserved, facts only), https://pfaf.org/user/Plant.aspx?LatinName=Malva+moschata, retrieved 18/11/2026: leaves raw or cooked (mild, mucilaginous, a perennial lettuce substitute), flowers raw, seed raw before fully ripe; Edibility Rating 5 of 5; Known Hazards: nitrate build-up on nitrogen-rich soils [76]. Agrees with the page (same Ken Fern text credited to Useful Temperate Plants). Other uses (dye, fibre, cover crop and mulch) recorded in useful-plants.md.",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): Wikipedia review — current article 'Malva moschata' (action=raw, revision 1375079334, retrieved 18/11/2026; unchanged since the entry was written) still has all three Wikipedia-backed statements: the summary's lead (musk mallow, a flowering plant in the Malvaceae, native to Eurasia, introduced elsewhere and cultivated as an ornamental), the edible-parts sentences ('The leaves and flowers can be added to salads. The seeds are also edible.') and the restated preparation. All kept; nothing conflicts with Flora of New Zealand vol. IV (NZ range and description are the Flora's), and Useful Temperate Plants records the same leaf, flower and seed uses. Wikipedia's 'flowers in summer', its description (seed count 10–16, chromosome number) and its ecology and hybrid notes are not used.",
-      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's 'native to Eurasia … cultivated as an ornamental' replaced by NZPCN's Family and Origin ('Europe, N. Africa') and Flora of New Zealand Online's 'Erect perennial herb'. Edible parts — Wikipedia's 'The leaves and flowers can be added to salads. The seeds are also edible.' cut: the Useful Temperate Plants text that follows gives the same leaves, flowers and seed. Preparation — the Wikipedia credit removed; the restated line rests on Useful Temperate Plants alone, which gives every point in it."
+      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's 'native to Eurasia … cultivated as an ornamental' replaced by NZPCN's Family and Origin ('Europe, N. Africa') and Flora of New Zealand Online's 'Erect perennial herb'. Edible parts — Wikipedia's 'The leaves and flowers can be added to salads. The seeds are also edible.' cut: the Useful Temperate Plants text that follows gives the same leaves, flowers and seed. Preparation — the Wikipedia credit removed; the restated line rests on Useful Temperate Plants alone, which gives every point in it.",
+      "Other uses, owner link round 26/11/2026 (Malva): the owner pasted twelve pages on mallow dyes, skin care and fibre and said the same rule as the earlier rounds applies: what can apply to every species does, otherwise only where it makes sense. Genus-wide line given here: the Handweavers, Spinners and Dyers Guild of Tasmania page names only 'mallow', so its alum-wool yellow from the leaves goes on every Malva entry. Plants For A Future's dye line is written on five species pages, not for the genus, so it stays on those. For musk mallow: Plants For A Future's species page and The Grizzly Forager give the dye and the stem fibre for musk mallow itself; no page gives musk mallow a skin-care use. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (nitrates in leaves on rich soils, and gallstones, both about eating) hold nothing against handling the plant. Months left empty: leaves, stems and roots are taken through the growing year and no page gives a time. No recipe: no page gives quantities, times and temperatures for a Malva use. Not used: Wool Tribulations, 'Dyeing wool with rose mallow flowers' (Fran Rushworth, 31/07/2015), which names no species, and 'rose mallow' is a garden name for several plants none of which is in this catalogue; Eat Weeds, 'The traditional and modern uses of mallow' (Robin Harford, 20/07/2017), whose poultices, ointments and remedies are medical and whose flowers 'for decoration around the home' give no method; Wild Botanica's mucous-membrane and irritated-skin uses, which are medical (its dry-skin line is cited on common mallow only, as it names no part or preparation); Permaculture magazine, 'Benefits of marshmallow (Althaea officinalis): hand cream and face mask recipes' (Laura Pardoe, from Vital Skincare), whose recipes are for marshmallow, a different genus not in the catalogue, and which does not say mallow can stand in; Annmarie Gianni's internal tea uses (medical); a ResearchGate figure (could not be read, HTTP 403) and Tropicalistic, 'Natural textile fibers in Brazilian design' (Adele Firpo, 05/06/2025), whose 'malva' fibre is Urena lobata, a different genus; Practical Plants, 'Malva moschata', which repeats Plants For A Future's notes and so counts as the same source. From Plants For A Future: common mallow's leaves for insect bites and stings (medical), cheeseweed mallow's seed oil (no use given) are left out (dwarf mallow's root toothbrush was placed under craft afterwards); its tree mallow page lists no other uses and it has no Cretan or island mallow data.",
+      "Other uses, mallow follow-up 26/11/2026: the owner asked how the stem fibre is extracted. No Malva source found gives a hands-on method: Plants For A Future and Martin Crawford ('the stems of many mallows can be processed to extract a strong, coarse fibre to make cordage'; he names common and musk mallow for cordage, textiles and paper) say only that it can be done; Albayrak et al. 2022 (Journal of Natural Fibers, doi:10.1080/15440478.2022.2073498) and Meddah et al. 2022 (Journal of Composite Materials, doi:10.1177/00219983221146355) test common mallow stem fibre in the laboratory and their abstracts give no extraction steps; the hands-on cordage pages found are for nettle, dogbane or bur mallow (Urena, another genus). So the fibre use keeps its sourced 'taken from the stems' and gives no retting or stripping method, and Crawford's 'many mallows' is not spread to the other Malva entries without a method to go with it.",
+      "Other uses reviewed 26/11/2026: the owner approved the mallow uses ('yes' to shipping) and the entry ships again; the owner renamed the skin-care kind to cosmetics the same day."
     ],
     "sourcingNote" : "Owed: months.",
     "summary" : {
@@ -43420,7 +43968,60 @@
       "text" : "Musk mallow, Malva moschata, is an erect perennial herb of the mallow family (Malvaceae), native to Europe and North Africa.\nIn New Zealand it is known from scattered places in South Auckland, Taranaki and Wellington, and in the South Island from Tākaka and the Taieri Plain, with one collection from Southland. It was first recorded growing wild here in 1904."
     },
     "uses" : [
+      {
+        "kind" : "fibre",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Malva moschata' (Other Uses: a fibre from the stems for cordage, textiles and paper making), https://pfaf.org/user/Plant.aspx?LatinName=Malva+moschata, retrieved 26/11/2026 — restated",
+            "The Grizzly Forager, 'Mallow' (Musk Mallow), https://www.thegrizzlyforager.co.uk/mallow/, retrieved 26/11/2026 — restated",
+            "Martin Crawford, 'Malva: the mallows', The Monkey Puzzler (27/04/2026), https://martincrawford.substack.com/p/malva-the-mallows, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "A fibre taken from the stems is used for cordage, textiles and paper making."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Malva moschata' (Other Uses: a fibre from the stems for cordage, textiles and paper making), https://pfaf.org/user/Plant.aspx?LatinName=Malva+moschata, retrieved 26/11/2026 — restated",
+            "The Grizzly Forager, 'Mallow' (Musk Mallow), https://www.thegrizzlyforager.co.uk/mallow/, retrieved 26/11/2026 — restated",
+            "Martin Crawford, 'Malva: the mallows', The Monkey Puzzler (27/04/2026), https://martincrawford.substack.com/p/malva-the-mallows, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Stems."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      },
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Malva moschata' (Other Uses: cream, yellow and green dyes from the plant and the seed heads), https://pfaf.org/user/Plant.aspx?LatinName=Malva+moschata, retrieved 26/11/2026 — restated",
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Whole plant and seed heads: cream, yellow and green dyes come from the plant and the seed heads. Leaves: mallow leaves, about their own weight to the weight of wool, dyed alum-mordanted wool yellow, and iron can be added to the same bath to change the colour. Two kinds of wool took the colour very differently."
+        },
+        "months" : [
+
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Malva moschata' (Other Uses: cream, yellow and green dyes from the plant and the seed heads), https://pfaf.org/user/Plant.aspx?LatinName=Malva+moschata, retrieved 26/11/2026 — restated",
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "The whole plant, its leaves and the seed heads."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
       "When grown on nitrogen rich soils (and particularly when these are used inorganically), the plant tends to concentrate high levels of nitrates in its leaves."
@@ -44230,7 +44831,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -44415,7 +45016,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -46279,7 +46880,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -47000,7 +47601,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -47382,7 +47983,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -47707,7 +48308,7 @@
     "plannedUses" : [
       "fibre",
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -49649,7 +50250,7 @@
     ],
     "plannedUses" : [
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -50640,7 +51241,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -50781,7 +51382,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -51426,7 +52027,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -53786,7 +54387,7 @@
     ],
     "plannedUses" : [
       "fibre",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -54235,7 +54836,7 @@
     ],
     "plannedUses" : [
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -54852,7 +55453,7 @@
     "plannedUses" : [
       "fibre",
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -55792,7 +56393,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -55922,7 +56523,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -56254,7 +56855,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -56394,7 +56995,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -56566,7 +57167,7 @@
     ],
     "plannedUses" : [
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -57275,7 +57876,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -58254,7 +58855,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -58595,7 +59196,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -59139,7 +59740,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -59274,7 +59875,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -59414,7 +60015,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -59664,7 +60265,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -59826,7 +60427,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -60586,7 +61187,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -61426,7 +62027,7 @@
     ],
     "caution" : "careRequired",
     "commonName" : "Sheep sorrel",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
         "Wikipedia, 'Rumex acetosella' (CC BY-SA 4.0); Plants For A Future, 'Rumex acetosella' (restated)",
@@ -61555,7 +62156,9 @@
       "Pinks standards check 11/11/2026: Oxalic-acid warning, regulator backing (genus level): New Zealand Food Safety, 'Contaminants in Animal Feed', NZFS Technical Paper 2020/21 (MPI, July 2020; https://www.mpi.govt.nz/dmsdocument/41142/direct, via Wayback, retrieved 11/11/2026): 'Plant species associated with oxalate poisoning in New Zealand include fat hen (Chenopodium album) and sorrel (Rumex spp.)'; soluble oxalate 'can bind serum calcium'; in people, soluble oxalate 'may result in systemic effects similar to those noted for animals; hypocalcaemia and renal dysfunction'. The paper names the genus, not this species; it backs the oxalic-acid warning without adding to it.",
       "Pinks standards check 11/11/2026: Warning: 'avoid altogether if you have kidney problems' went beyond its sources (they speak of kidney stones and of taking care); restated from them, with regulator backing. Plants For A Future 'Rumex acetosella' (retrieved 11/11/2026): 'The leaves should only be used in small quantities due to the oxalic acid content'; 'The oxalic acid content will be reduced if the plant is cooked'; 'People with a tendency to rheumatism, arthritis, gout, kidney stones or hyperacidity should take especial caution'. New Zealand Food Safety, 'Contaminants in Animal Feed', NZFS Technical Paper 2020/21 (Cressey, Pearson & Baoumgren, MPI, July 2020; https://www.mpi.govt.nz/dmsdocument/41142/direct, via Wayback, retrieved 11/11/2026): 'Plant species associated with oxalate poisoning in New Zealand include fat hen (Chenopodium album) and sorrel (Rumex spp.)'; in people soluble oxalate 'may result in … hypocalcaemia and renal dysfunction'. Flora of New Zealand vol. IV: 'Poisonous to stock (Connor 1977)'. Fresh & Foraged: 'be mindful when consuming it if you are prone to kidney stones'.",
       "Pinks group standards check 11/11/2026 (Wikipedia review; Flora of New Zealand vol. IV page re-read 11/11/2026): edible parts — Wikipedia is one food record ('The leaves can be eaten'); the Flora's own 'sometimes eaten like sorrel as a salad' is cited beside it as the NZ record, with PFAF. Kept.",
-      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex acetosella' was last edited 16/07/2026 (revision 1364493170), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change."
+      "Wikipedia review re-confirmed 21/11/2026 (Greens & leaves standards check 21/11/2026 (owner /goal 'check Dianella Greens & leaves group is up to standard')): article edit history read at https://en.wikipedia.org/w/index.php?title=<article>&action=history, retrieved 21/11/2026 — 'Rumex acetosella' was last edited 16/07/2026 (revision 1364493170), before the 11/11/2026 review, so that review was made against today's text. The dated review stands; no change.",
+      "Other uses, owner link round 26/11/2026 (Rumex): the owner pasted twelve pages on dock and sorrel dyes, cordage and salves and said the same rule as the pines applies (a page naming only the genus applies to every species unless a species-level claim blocks it), to be researched to be sure. Genus-wide lines given here: roots, Plants For A Future's 'dark green to brown and dark grey dyes can be obtained from the roots of many species in this genus, they do not need a mordant' (its pages for clustered, fiddle and hooked dock); leaves and stalks, Diego Bonetto's 'the leaves and stalks of others again are harvested for a mordant-free dye, the colours obtained go from green to yellow to red'. For sheep sorrel: Forest and the Spirit and permies.com dyed with sheep sorrel itself; the yarn-handling warning is permies.com's. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (oxalic acid in food only) hold nothing against handling the plant for dye. Months left empty: the roots, leaves and stalks are taken through the year, and permies.com gives sheep sorrel's harvest time as 'any'. Copper and the tin and chrome mordants one page mentions are left out. Not used: Wildwalks Southwest, 'Making cordage from plants' (Rachel Lambert, 17/01/2026), which lists broad-leaved dock among plants made into cordage but names neither the part nor how its fibre is extracted, and no second source for dock fibre was found, so no fibre use; Bruk Gedefaw 2018, 'Extraction of Textile Dye from Rumex abyisinicus' (academia.edu), a laboratory solvent extraction from an African dock not in New Zealand; Backyard Forager, 'All About Dock' and Martin Nursery, 'Rumex', which give no non-food use; and three yellow dock salve pages (The Nerdy Farm Wife, 'Yellow Dock Salve Recipe', 21/08/2025; Mayernik Kitchen, 'Yellow Dock'; LearningHerbs, 'Yellow Dock Uses', Rosalee de la Forêt), whose only stated purposes are medical (stings, itching, sores, eczema and internal remedies), so under the no-medical-claims rule nothing is kept. The Spruce Crafts page also covers burdock and oxalis; those are left for their own entries.",
+      "Other uses reviewed 26/11/2026: the owner approved the dock and sorrel uses ('ship the ones we just reviewed') and the entry ships again."
     ],
     "summary" : {
       "sources" : [
@@ -61564,7 +62167,41 @@
       "text" : "A small sour weed of poor ground whose arrow-shaped leaves taste sharply of lemon. It is one of New Zealand's most abundant weeds, first recorded wild in 1867; it is poisonous to stock, though it is sometimes eaten like sorrel as a salad."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex acetosella' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+acetosella, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated",
+            "The Foraging Course Company, 'Sheep's sorrel (Rumex acetosella)', https://www.foragingcoursecompany.co.uk/post/foraging-guide-sheeps-sorrel, retrieved 26/11/2026 — restated",
+            "Forest and the Spirit, 'Plant dyes: Sheep sorrel (Rumex acetosella)' (31/05/2016), https://forestandthespirit.wordpress.com/2016/05/31/plant-dyes-sheep-sorrel/, retrieved 26/11/2026 — restated",
+            "r ransom, permies.com dyeing forum, 'Natural Dyeing with Sheeps Sorrel' (thread from 13/07/2017), https://permies.com/t/68332/dyeing/Natural-Dyeing-Sheeps-Sorrel, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots: dark green to brown and dark grey dyes come from the roots of many docks and sorrels, with no mordant needed. This sorrel's roots are described as giving greens, greys and browns. Leaves and stalks: docks' leaves and stalks give a dye with no mordant, in colours from green to yellow to red. This sorrel's leaves and stems are described as giving a blue-grey. The whole fresh plant, boiled and then simmered for one to two hours, gave a red-orange bath; strain it well, as the small flower heads cling to fabric. With no mordant, cotton took no dye, wool went light yellow and silk barely yellow; on wool with different mordants and acid or alkaline baths it gave a dark blackish brown, a golden green and a bright grassy green. Seed stems simmered for an hour, with wool cooked in the bath just below a simmer for another hour, gave yellow on alum-mordanted wool, darkening to green in an iron bath."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Plants For A Future, 'Rumex acetosella' (Other Uses), https://pfaf.org/user/Plant.aspx?LatinName=Rumex+acetosella, retrieved 26/11/2026 — restated",
+            "Diego Bonetto, 'How to identify and use yellow dock and its close relatives' (03/06/2020), https://www.diegobonetto.com/blog/how-to-identify-and-use-yellow-dock-and-its-close-relatives, retrieved 26/11/2026 — restated",
+            "The Foraging Course Company, 'Sheep's sorrel (Rumex acetosella)', https://www.foragingcoursecompany.co.uk/post/foraging-guide-sheeps-sorrel, retrieved 26/11/2026 — restated",
+            "Forest and the Spirit, 'Plant dyes: Sheep sorrel (Rumex acetosella)' (31/05/2016), https://forestandthespirit.wordpress.com/2016/05/31/plant-dyes-sheep-sorrel/, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Roots, and the whole plant above ground."
+        },
+        "recipes" : [
+          {
+            "method" : "About 400 g sheep sorrel seed stems; 200 g wool yarn, mordanted with alum and soaked well in water beforehand (under-soaked yarn dyes unevenly); an iron afterbath for green. Simmer the stems in a pot of water for 1 hour. Add the soaked yarn with the plants still in the pot and keep it just below a simmer for 1 hour, turning it now and then. For yellow, leave the yarn in the bath overnight. For green, lift it out and dip it in the iron afterbath, heated until it just starts to steam: the colour darkens at once, so take it out when you like the shade (about 10 minutes). Rinse until the water runs clear, then dry.",
+            "sourceURL" : "https://permies.com/t/68332/dyeing/Natural-Dyeing-Sheeps-Sorrel",
+            "title" : "Sheep sorrel yellow and green wool"
+          }
+        ],
+        "warnings" : [
+          "One dyer got small burns or blisters on the hands from handling the yarn during dyeing; rinse dyed yarn well."
+        ]
+      }
     ],
     "warnings" : [
       "High in oxalic acid. Eat only small amounts; cooking lowers it. Take particular care if you are prone to rheumatism, arthritis, gout, kidney stones or hyperacidity."
@@ -62381,7 +63018,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -62677,7 +63314,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -62991,7 +63628,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -63137,7 +63774,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -68233,7 +68870,7 @@
     "plannedUses" : [
       "fibre",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -68400,7 +69037,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -68707,7 +69344,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -69657,7 +70294,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -69821,7 +70458,7 @@
     "plannedUses" : [
       "fibre",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -70105,7 +70742,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -70278,7 +70915,7 @@
       }
     ],
     "plannedUses" : [
-
+      "dye"
     ],
     "preparation" : {
       "sources" : [
@@ -70325,7 +70962,9 @@
       "Card to Annual mallow removed 03/11/2026: the annual-mallow entry was dropped on the owner's word (\"if there is basically none drop it\") — no genuinely wild New Zealand population (iNaturalist NZ: 15 observations, 6 not captive, of which 2 in Auckland Botanic Gardens, 1 in school grounds, 1 unconfirmed; Flora of New Zealand: 'collected only as a local garden escape').",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): PFAF check — Plants For A Future, 'Lavatera arborea' (all rights reserved, facts only), https://pfaf.org/user/Plant.aspx?LatinName=Lavatera+arborea, retrieved 18/11/2026: (filed under the old name Lavatera arborea; 'Malva arborea' and 'Malva dendromorpha' return the empty template) young leaves raw or cooked, mild but dry and hairy, best in a chopped mixed salad; Edibility Rating 2 of 5; Known Hazards 'None known'. Agrees with the page (same Ken Fern text credited to Useful Temperate Plants).",
       "Greens & leaves standards check 18/11/2026 (owner /goal \"verify Ferns Greens & leaves in up to standard\"): Wikipedia review — current article 'Malva arborea' (action=raw, revision 1306450649, retrieved 18/11/2026; identical to the revision the 02/11/2026 sweep read) still contains every Wikipedia statement on the entry. Kept: the summary's lead (formerly Lavatera arborea / Malva eriocalyx; native to the coasts of western Europe and the Mediterranean from Ireland and Britain to Algeria and Libya and east to Greece), the three salt-tolerance sentences moved to the summary, and the New Zealand sentence (established on seabird islands as a serious ecological weed, eradication programmes such as North Brother Island); the habitat sentence (exposed coastal locations, often small islands, rarely far inland); and the edible parts (leaves less palatable than common mallow unless cut very thinly because of the hairy mouth-feel, citing Knox 2013; seeds edible, 'petit pains'), restated as plain fact and shown in the preparation as 'cut very thinly'. None conflicts with Flora of New Zealand vol. IV (local on the coast, first recorded wild 1870). Wikipedia's medicinal, toilet-paper, fodder and puffin/tern ecology lines stay unused.",
-      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's lead (Malva eriocalyx; Ireland and Britain to Algeria, Libya and Greece), its three salt-tolerance sentences (overseas physiology, not needed) and its New Zealand seabird-island sentence replaced: native range, synonym and ornamental introduction from NZPCN; the weed impact from Weedbusters, a New Zealand source ('Forms tall dense clumps … potentially making habitat less suitable to nesting bird colonies'). Wikipedia's North Brother Island eradication programme is dropped: no New Zealand source found confirms it (search 21/11/2026: DOC, NZPCN and Weedbusters). Habitat — Wikipedia's 'exposed coastal locations, often on small islands' cut; the Flora's 'especially well-established at coastal sites' and NZPCN's 'Coastal sites' cover it. Edible parts — Wikipedia's palatability sentence (itself citing Knox 2013) and 'petit pains' replaced by Knox 2013 pp. 91–92 directly (leaves stringy and fuzzy even boiled, a few fine chopped in stew or soup; flowers and seedpods as for herb mallows). Preparation — the Wikipedia credit replaced by Knox, which gives the 'cut very thinly' point."
+      "Malva NZ-source rewrite 21/11/2026 (owner 21/11/2026: apply the 21/11 prefer-NZ-sources rule to the Greens & leaves entries, batch by batch): summary — Wikipedia's lead (Malva eriocalyx; Ireland and Britain to Algeria, Libya and Greece), its three salt-tolerance sentences (overseas physiology, not needed) and its New Zealand seabird-island sentence replaced: native range, synonym and ornamental introduction from NZPCN; the weed impact from Weedbusters, a New Zealand source ('Forms tall dense clumps … potentially making habitat less suitable to nesting bird colonies'). Wikipedia's North Brother Island eradication programme is dropped: no New Zealand source found confirms it (search 21/11/2026: DOC, NZPCN and Weedbusters). Habitat — Wikipedia's 'exposed coastal locations, often on small islands' cut; the Flora's 'especially well-established at coastal sites' and NZPCN's 'Coastal sites' cover it. Edible parts — Wikipedia's palatability sentence (itself citing Knox 2013) and 'petit pains' replaced by Knox 2013 pp. 91–92 directly (leaves stringy and fuzzy even boiled, a few fine chopped in stew or soup; flowers and seedpods as for herb mallows). Preparation — the Wikipedia credit replaced by Knox, which gives the 'cut very thinly' point.",
+      "Other uses, owner link round 26/11/2026 (Malva): the owner pasted twelve pages on mallow dyes, skin care and fibre and said the same rule as the earlier rounds applies: what can apply to every species does, otherwise only where it makes sense. Genus-wide line given here: the Handweavers, Spinners and Dyers Guild of Tasmania page names only 'mallow', so its alum-wool yellow from the leaves goes on every Malva entry. Plants For A Future's dye line is written on five species pages, not for the genus, so it stays on those. For tree mallow: no page names this species with a use (Plants For A Future: 'None known'), so only the genus leaf-dye line is given. Checked for a species-level block: this entry's warnings and Plants For A Future's Known Hazards (nitrates in leaves on rich soils, and gallstones, both about eating) hold nothing against handling the plant. Months left empty: leaves, stems and roots are taken through the growing year and no page gives a time. No recipe: no page gives quantities, times and temperatures for a Malva use. Not used: Wool Tribulations, 'Dyeing wool with rose mallow flowers' (Fran Rushworth, 31/07/2015), which names no species, and 'rose mallow' is a garden name for several plants none of which is in this catalogue; Eat Weeds, 'The traditional and modern uses of mallow' (Robin Harford, 20/07/2017), whose poultices, ointments and remedies are medical and whose flowers 'for decoration around the home' give no method; Wild Botanica's mucous-membrane and irritated-skin uses, which are medical (its dry-skin line is cited on common mallow only, as it names no part or preparation); Permaculture magazine, 'Benefits of marshmallow (Althaea officinalis): hand cream and face mask recipes' (Laura Pardoe, from Vital Skincare), whose recipes are for marshmallow, a different genus not in the catalogue, and which does not say mallow can stand in; Annmarie Gianni's internal tea uses (medical); a ResearchGate figure (could not be read, HTTP 403) and Tropicalistic, 'Natural textile fibers in Brazilian design' (Adele Firpo, 05/06/2025), whose 'malva' fibre is Urena lobata, a different genus; Practical Plants, 'Malva moschata', which repeats Plants For A Future's notes and so counts as the same source. From Plants For A Future: common mallow's leaves for insect bites and stings (medical), cheeseweed mallow's seed oil (no use given) are left out (dwarf mallow's root toothbrush was placed under craft afterwards); its tree mallow page lists no other uses and it has no Cretan or island mallow data.",
+      "Other uses reviewed 26/11/2026: the owner approved the mallow uses ('yes' to shipping) and the entry ships again; the owner renamed the skin-care kind to cosmetics the same day."
     ],
     "summary" : {
       "sources" : [
@@ -70336,7 +70975,30 @@
       "text" : "Tree mallow, Malva arborea (formerly Lavatera arborea), is a stout biennial of the mallow family (Malvaceae), native to western and southern Europe and North Africa, and was brought to New Zealand as an ornamental.\nIt forms tall, dense clumps that can crowd out native perennials. The stands have no understorey and die back in summer, leaving coastal soil open to erosion by sea winds and to annual weeds, and can make the ground less suitable for nesting bird colonies.\nIn New Zealand it is local throughout the North Island (not recorded from Taranaki) and throughout the South Island, and on Ruapuke Island and the Chatham Islands. It was first recorded growing wild here in 1870."
     },
     "uses" : [
+      {
+        "kind" : "dye",
+        "method" : {
+          "sources" : [
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Leaves: mallow leaves, about their own weight to the weight of wool, dyed alum-mordanted wool yellow, and iron can be added to the same bath to change the colour. Two kinds of wool took the colour very differently."
+        },
+        "months" : [
 
+        ],
+        "parts" : {
+          "sources" : [
+            "Handweavers, Spinners and Dyers Guild of Tasmania, 'Virtual Dye Day - Mallow' (Bronwyn Platz, dyeing by Di Kearney, 29/05/2020), https://www.hwsdguildtasmania.org/post/virtual-dye-day-mallow, retrieved 26/11/2026 — restated"
+          ],
+          "text" : "Leaves."
+        },
+        "recipes" : [
+
+        ],
+        "warnings" : [
+
+        ]
+      }
     ],
     "warnings" : [
 
@@ -70904,7 +71566,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -71481,7 +72143,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -73105,7 +73767,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -73464,7 +74126,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -74454,7 +75116,7 @@
     "plannedUses" : [
       "fibre",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -75519,7 +76181,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -75697,7 +76359,7 @@
       }
     ],
     "plannedUses" : [
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -75984,7 +76646,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -76724,7 +77386,7 @@
     "plannedUses" : [
       "fibre",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -76948,7 +77610,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -78030,7 +78692,7 @@
     ],
     "plannedUses" : [
       "dye",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -78287,7 +78949,7 @@
     "plannedUses" : [
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -78856,7 +79518,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -79004,7 +79666,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -79155,7 +79817,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -79335,7 +79997,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -79512,7 +80174,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -79683,7 +80345,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -79832,7 +80494,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -79984,7 +80646,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -80144,7 +80806,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -80293,7 +80955,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -81292,7 +81954,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -81437,7 +82099,7 @@
         ]
       },
       {
-        "kind" : "skinCare",
+        "kind" : "cosmetics",
         "method" : {
           "sources" : [
             "Rosalee de la Forêt, LearningHerbs, 'Pine Uses and Plant Profile' (14/03/2018), https://www.learningherbs.com/blog/pine-uses, retrieved 26/11/2026 — restated",
@@ -81801,7 +82463,7 @@
     ],
     "plannedUses" : [
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
@@ -83604,7 +84266,7 @@
       "fibre",
       "dye",
       "craft",
-      "skinCare"
+      "cosmetics"
     ],
     "preparation" : {
       "sources" : [
