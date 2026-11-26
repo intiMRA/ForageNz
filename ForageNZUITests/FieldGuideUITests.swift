@@ -229,6 +229,26 @@ final class FieldGuideUITests: XCTestCase {
         XCTAssertEqual(scientificName.label, "Pinus radiata", "Tapping the card did not open radiata pine's own page")
     }
 
+    /// Scotch broom is the pilot non-food use: a dye with its own recipe, beside its food recipes.
+    func testOtherUsesShowsTheUseAndOpensItsOwnRecipes() {
+        let broom = fieldGuideRow("scotch-broom", searchingFor: "scotch broom")
+        XCTAssertTrue(broom.waitForExistence(timeout: Self.existenceTimeout), "Scotch broom row not found")
+        broom.tap()
+
+        let recipes = app.buttons["speciesDetail.useRecipes.0"]
+        XCTAssertTrue(recipes.waitForExistence(timeout: Self.existenceTimeout), "No recipes button for the dye use")
+        XCTAssertTrue(
+            scrollDownUntil({ recipes.isHittable }),
+            "The dye use's recipes button is not on the Scotch broom page"
+        )
+        recipes.tap()
+
+        XCTAssertTrue(
+            app.staticTexts["Acid-yellow wool dye"].waitForExistence(timeout: Self.existenceTimeout),
+            "The use's recipe sheet did not show its recipe"
+        )
+    }
+
     /// Opens the Field guide and searches for a row rather than assuming it is rendered.
     ///
     /// The list is lazy and alphabetical, so whether any given row is on screen at launch is a

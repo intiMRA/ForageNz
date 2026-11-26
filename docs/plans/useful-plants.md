@@ -1,8 +1,7 @@
 # Plan: plants foraged for fibre, dye and other uses
 
-**Status:** planned, not started. Written 16/10/2026 at the owner's request. **Starts only after**
-the food catalogue is finished and the work in `species-lists.md` (lists, then finds and the map)
-is done. Nothing in the app depends on this yet.
+**Status:** in progress. Written 16/10/2026 at the owner's request; decisions settled and the
+model started 26/11/2026 (see *Decisions*).
 
 ## Goal
 
@@ -476,7 +475,7 @@ entry as now, not here.
 | Roman chamomile (`roman-chamomile`) | Flower-infused oil for soap, lip balm, lotion, bath salts | Oil, soap, bath | The Nerdy Farm Wife '10 Things to Make with Chamomile' | Not yet re-read |
 | Self-heal (`self-heal`) | Self-heal salve | Salve | Floranella 'How to Make Self Heal Salve' | Not yet re-read |
 | Lemon balm (`lemon-balm`) | Lip balm, salve, facial toner, soap, bath herb, vinegar hair rinse; wood polish | Oil, soap, bath, household | The Nerdy Farm Wife; Food52 (wood polish) | Not yet re-read |
-| Scotch broom (`scotch-broom`) | Acid-yellow wool dye: 400 g flowers simmered 1 hour in 3 litres of water and left about 4 days until musty and fermented, then strained; 100 g alum-mordanted wool held just below a simmer for 40 minutes and left to steep 18 hours, then rinsed and dried. Simmering the fresh flowers alone gave no dye | Dye | Snapdragon Life 'Scotch broom as a dye plant' (https://www.snapdragonlife.com/news/blog/scotch-broom-as-a-dye-plant/), retrieved 09/11/2026 | None stated |
+| Scotch broom (`scotch-broom`) — **on the page 26/11/2026 (pilot)** | Acid-yellow wool dye: 400 g flowers simmered 1 hour in 3 litres of water and left about 4 days until musty and fermented, then strained; 100 g alum-mordanted wool held just below a simmer for 40 minutes and left to steep 18 hours, then rinsed and dried. Simmering the fresh flowers alone gave no dye | Dye | Snapdragon Life 'Scotch broom as a dye plant' (https://www.snapdragonlife.com/news/blog/scotch-broom-as-a-dye-plant/), retrieved 09/11/2026 | None stated |
 | French rose (`provence-rose`) | Rose oil (petals infused in oil); bath salts and bath fizzies | Oil, bath | The English Garden 'Rose petal recipes' | Not yet re-read |
 | Wood blewit (`wood-blewit`) | Green dye: chopped mushrooms boiled in an iron pot | Dye | First Nature 'Lepista nuda'; Woodland Trust | Not yet re-read |
 | Douglas fir (`douglas-fir`) | Douglas fir infused oil (young tips or mature needles wilted 1–2 days, blended under olive or jojoba oil, warmed 5 min in a double boiler, steeped a week, strained) and Douglas fir lip balm (the oil with beeswax and fir essential oil) | Oil, lip balm | Elise Krohn, Wild Foods and Medicines 'Douglas Fir' | Gentle heating drives off remaining water from the oil; otherwise none stated |
@@ -486,31 +485,58 @@ entry as now, not here.
 | Cabbage tree (`cabbage-tree`) | Cabbage tree flower pomade: flowers laid on an odourless solid fat in an enfleurage frame and recharged until the fat smells as strong as wanted, then jarred and kept cool (the flowers do not tincture well) | Perfume | Knox 2013, pp. 47 and 265 (owner's book; read 10/11/2026 with the PDF search tool) | Test a little on the skin for strength with each recharge |
 | Blackcurrant (`blackcurrant`) | Fabric dye from the berry mash left after making juice: cotton simmered an hour in 2 litres of water with 125 ml salt as a mordant, then an hour in the simmered mash and left overnight; came out grey-mauve rather than purple | Dye | Cheryl Arkison, 'Natural Dyeing – Black Currants' (27/08/2008), https://www.cherylarkison.com/diningroomempire/2008/08/natural-dying-black-currants.html | Not colourfast: it kept running after rinsing and vinegar made it run more; the writer would not use it in anything to be washed. Cotton takes natural dyes poorly without a stronger mordant (alum) |
 
-## Open decisions (decide before starting)
+## Decisions (owner, 26/11/2026)
 
-1. **Which uses are in scope** besides fibre and dye? Candidates: basketry and weaving materials,
-   cordage, tinder and kindling, soap plants, natural building materials, and home skin-care and
-   bath preparations (infused oils, balms, salves, lotions, soap — see *Recipe leads*). Skin care
-   sits next to medicinal use: the recipe pages above sell it on healing claims, soap needs lye, and
-   lotions need a preservative, so it would need its own rules. **Recommendation:**
-   medicinal uses stay out unless the owner decides otherwise. A medicinal claim is the riskiest
-   kind of safety text, and there are few trusted open sources for it.
-2. **Groups:** new top-level groups, or a "uses" filter across the existing groups?
-3. **Who reviews tikanga text,** and whether some taonga species get a page that describes the
-   plant but deliberately leaves out how to harvest it.
-4. **Order:** start with species already in the catalogue (adding a use to an existing page), or with
-   the best-known non-food plants first?
+1. **Scope: fibre, dye, craft and skin care.** Fibre covers weaving, basketry and cordage; craft
+   covers tinder, soap plants and similar household materials; skin care covers infused oils, balms,
+   salves, soap and bath preparations (the *Recipe leads* table). **Medicinal use stays out.** Skin
+   care gets its own rules (see *Skin care rules*). Timber, resin, turpentine, shelter and ornamental
+   uses in the candidates table are not foraging uses and are not carried over.
+2. **Browsing: a uses filter across every group, plus one new group for species with no food use.**
+   The group is added when the first such species is drafted (none is yet, because of decision 4),
+   together with the caution it needs: no current caution fits a harmless plant that simply is not
+   food, and "Do not eat" on it would be untrue.
+3. **Tikanga and taonga species: sourced from trustworthy pages only, nothing made up; the owner
+   reviews.** Māori-authored sources first (Ngā Rauropi Whakaoranga, Te Ara); every sentence credited
+   beside it like any other text. No separate reviewer and no deliberately thinned pages.
+4. **Order: existing entries first.** Uses are added to species already in the catalogue, starting
+   from the candidates table.
+
+### Model, as built
+
+The proposal above said to move today's food fields into a `food` use. **Not done:** the food
+fields stay where they are and are the food use. Moving them would touch every screen, the editor,
+the search index and the Python tools for no change on any page, and would put the shipped food
+pages at risk to add something beside them. A species instead gains `uses: [SpeciesUse]` for its
+non-food uses only. Each use has a kind (fibre, dye, craft, skin care), the part used, its harvest
+window, how it is processed, its own warnings (the handling caution, so a dye plant can be "do not
+eat" and "wear gloves" at once), its own recipes and the sources each sits on. `caution` keeps
+meaning "can I eat it".
+
+### Skin care rules
+
+- **Cosmetic only.** No healing or medicinal claim in a skin-care use's text, warnings or recipes:
+  a blocking rule fails words such as "heals", "cures", "treats", "remedy", "antiseptic", "eczema"
+  or "wound". Recipe pages sell these on healing claims; the claim is left behind and the
+  preparation kept.
+- **Lye and harsh chemicals need a warning.** A use whose method or recipes mention lye (sodium
+  hydroxide) or a toxic mordant (copper, chrome, tin) blocks until it carries a warning.
+- **Not on a do-not-eat or psychoactive plant without a warning** saying what handling it does.
 
 ## Steps, when it starts
 
-1. Decide the four items above.
-2. Model: `SpeciesUse`, the caution split, validation per use; migrate food fields into the `food`
-   use; regenerate; tests that the migration changes no shipped page.
-3. Editor and `catalogue-tool`: show and check uses; `--check` reports gaps per use.
-4. UI: uses on the species page, the group or filter, the handling caution.
-5. Content: one pilot species end to end (sources, tikanga, photos, cards), reviewed by the owner
-   before any batch.
-6. Report (`Tools/catalogue_report.py`): count gaps per use.
+1. ~~Decide the four items above.~~ Done 26/11/2026.
+2. ~~Model: `SpeciesUse`, validation per use.~~ Done 26/11/2026 (food fields not migrated — see
+   *Model, as built*; the handling caution is each use's `warnings`).
+3. ~~Editor and `catalogue-tool`: show and check uses.~~ Done: the editor's Entry tab has an
+   *Other uses* section; `--check` reports use blockers like any other.
+4. ~~UI: uses on the species page, the filter, the handling caution.~~ Done: an *Other Uses*
+   section with each use's recipes on their own sheet; the filter menu offers a use once a shipped
+   entry has it. The non-food group waits for the first non-food-only species (decision 2).
+5. **Pilot, waiting on the owner's review:** Scotch broom's dye use and acid-yellow wool-dye
+   recipe, restated from Snapdragon Life (re-read 26/11/2026). No batch until the owner has
+   looked at it on the device.
+6. ~~Report: gaps per use.~~ Done: `catalogue_report.py` has an *Other uses* column.
 
 ## Not in scope
 

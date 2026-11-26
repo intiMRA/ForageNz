@@ -118,6 +118,26 @@ struct SpeciesStoreTests {
         #expect(SpeciesFilter(group: .greens).narrowsByFacet)
         #expect(SpeciesFilter(origin: .pest).narrowsByFacet)
         #expect(SpeciesFilter(habitat: .coastal).narrowsByFacet)
+        #expect(SpeciesFilter(use: .dye).narrowsByFacet)
+    }
+
+    @Test("Filtering by use keeps entries carrying that use, and the menu offers only uses some entry has")
+    func filterByUse() async {
+        let dye = SpeciesUse(kind: .dye, parts: SourcedText("Flowers.", sources: ["Dye book"]), method: SourcedText("Simmer.", sources: ["Dye book"]))
+        let fibre = SpeciesUse(kind: .fibre, parts: SourcedText("Stems.", sources: ["Fibre book"]), method: SourcedText("Ret.", sources: ["Fibre book"]))
+        let store = makeStore(repository: StubRepository(species: [
+            makeSpecies(id: "broom", commonName: "Broom").with(uses: [dye]),
+            makeSpecies(id: "nettle", commonName: "Nettle").with(uses: [fibre, dye]),
+            makeSpecies(id: "fennel", commonName: "Fennel"),
+            makeSpecies(id: "stub", commonName: "Stub").with(uses: [SpeciesUse(kind: .skinCare, parts: "", method: "")], draft: true)
+        ]))
+
+        await store.loadIfNeeded()
+
+        #expect(SpeciesFilter(use: .dye).apply(to: store.species).map(\.id) == ["broom", "nettle"])
+        #expect(SpeciesFilter(use: .fibre).apply(to: store.species).map(\.id) == ["nettle"])
+        // A draft's use is not offered: picking it would empty every list.
+        #expect(store.useKinds == [.fibre, .dye])
     }
 
     @Test("Loading sorts the catalogue by common name")

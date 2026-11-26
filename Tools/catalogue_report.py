@@ -417,6 +417,14 @@ def row(entry: Entry, members: set[str], by_id: dict[str, Entry]) -> dict[str, A
         "cards": cards,
         "partners": partners,
         "habitats": [(tag, found.get(tag, [])) for tag in tags],
+        "uses": [
+            {
+                "kind": use.get("kind", ""),
+                "recipes": len(use.get("recipes") or []),
+                "months": use.get("months") or [],
+            }
+            for use in entry.get("uses") or []
+        ],
         "owed": owed(entry),
     }
 
@@ -1088,6 +1096,13 @@ def render_row(r: dict[str, Any]) -> str:
         )
         tags.append(f"<li>{esc(tag)}{why}</li>")
     tag_cell = f'<ul class="list">{"".join(tags)}</ul>' if tags else '<span class="dim">—</span>'
+    # Non-food uses (docs/plans/useful-plants.md): kind, harvest window, recipe count.
+    uses = []
+    for u in r.get("uses", []):
+        count = u["recipes"]
+        recipes = f" · {count} recipe{'' if count == 1 else 's'}" if count else ""
+        uses.append(f'<li>{esc(u["kind"])} <span class="dim">· {months_text(u["months"])}{recipes}</span></li>')
+    use_cell = f'<ul class="list">{"".join(uses)}</ul>' if uses else '<span class="dim">—</span>'
     return (
         f'<tr id="e-{esc(r["id"])}">'
         f"<td><b>{esc(r['commonName'])}</b><br>"
@@ -1100,13 +1115,14 @@ def render_row(r: dict[str, Any]) -> str:
         f"<td>{card_cell}</td>"
         f"<td>{partner_cell}</td>"
         f"<td>{tag_cell}</td>"
+        f"<td>{use_cell}</td>"
         "</tr>"
     )
 
 
 def render_table(rows: list[dict[str, Any]]) -> list[str]:
     out = ['<div class="scroll"><table><thead><tr>']
-    for header in ["Entry", "State", "Photos", "Months", "Missing", "Lookalikes", "Grows with", "Habitats"]:
+    for header in ["Entry", "State", "Photos", "Months", "Missing", "Lookalikes", "Grows with", "Habitats", "Other uses"]:
         out.append(f"<th>{header}</th>")
     out.append("</tr></thead><tbody>")
     out.extend(render_row(r) for r in rows)

@@ -23,6 +23,19 @@ protocol CatalogueFacet: CaseIterable, Identifiable, Hashable {
 extension ForageGroup: CatalogueFacet {}
 extension ForageOrigin: CatalogueFacet {}
 extension Habitat: CatalogueFacet {}
+extension UseKind: CatalogueFacet {}
+
+extension UseKind {
+    /// SF Symbols for now: there is no drawn artwork for uses yet.
+    var image: Image {
+        switch self {
+        case .fibre: Image(systemName: "basket")
+        case .dye: Image(systemName: "paintpalette")
+        case .craft: Image(systemName: "hammer")
+        case .skinCare: Image(systemName: "drop")
+        }
+    }
+}
 
 extension Habitat {
     var image: Image {

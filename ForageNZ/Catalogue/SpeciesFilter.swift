@@ -8,9 +8,12 @@ nonisolated struct SpeciesFilter: Equatable {
     var origin: ForageOrigin?
     /// Matches an entry listing this habitat among its `habitats`, wherever it falls in them.
     var habitat: Habitat?
+    /// Matches an entry carrying a non-food use of this kind. There is no "food" case: food is
+    /// what the guide lists anyway.
+    var use: UseKind?
 
     /// Whether a facet is set. The query has its own field on screen, so it does not count.
-    var narrowsByFacet: Bool { group != nil || origin != nil || habitat != nil }
+    var narrowsByFacet: Bool { group != nil || origin != nil || habitat != nil || use != nil }
 
     /// The facets, then the query (see `SpeciesSearch`): best match first, ties in the order
     /// given. `currentMonth` is what "in season" in the query means.
@@ -35,6 +38,7 @@ nonisolated struct SpeciesFilter: Equatable {
             if let group, species.group != group { return false }
             if let origin, species.origin != origin { return false }
             if let habitat, !species.habitats.contains(habitat) { return false }
+            if let use, !species.uses.contains(where: { $0.kind == use }) { return false }
             return true
         }
         return search.results(from: narrowed, index: index)

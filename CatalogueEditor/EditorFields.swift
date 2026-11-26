@@ -437,3 +437,116 @@ struct MonthPicker: View {
         .padding(.vertical, .xxxSmall)
     }
 }
+
+/// The non-food uses on an entry (`docs/plans/useful-plants.md`). Each use carries its own
+/// sources beside its part and method, because a use has no "written for this guide" case:
+/// rewriting the text clears them (`SourcedText.with(text:)`), and validation then asks for
+/// them back.
+struct UseEditor: View {
+    let uses: [SpeciesUse]
+    let onChange: ([SpeciesUse]) -> Void
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: .small) {
+            if uses.isEmpty {
+                Text("None recorded.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
+            ForEach(Array(uses.enumerated()), id: \.offset) { index, use in
+                VStack(alignment: .leading, spacing: .xSmall) {
+                    HStack(spacing: .xSmall) {
+                        Picker("Kind", selection: Binding(
+                            get: { use.kind },
+                            set: { replace(index, use, kind: $0) }
+                        )) {
+                            ForEach(UseKind.allCases) { Text($0.displayName).tag($0) }
+                        }
+
+                        Button {
+                            var next = uses
+                            next.remove(at: index)
+                            onChange(next)
+                        } label: {
+                            Image(systemName: "minus.circle.fill")
+                        }
+                        .buttonStyle(.borderless)
+                        .help("Remove use")
+                    }
+
+                    LabelledField("Part used", text: Binding(
+                        get: { use.parts.text },
+                        set: { replace(index, use, parts: use.parts.with(text: $0)) }
+                    ), lines: 1...4)
+                    sourceList(use.parts.sources) { replace(index, use, parts: SourcedText(use.parts.text, sources: $0)) }
+
+                    LabeledContent("Harvest window") {
+                        MonthPicker(months: use.months) { replace(index, use, months: $0) }
+                    }
+
+                    LabelledField("How it is processed", text: Binding(
+                        get: { use.method.text },
+                        set: { replace(index, use, method: use.method.with(text: $0)) }
+                    ), lines: 2...8)
+                    sourceList(use.method.sources) { replace(index, use, method: SourcedText(use.method.text, sources: $0)) }
+
+                    Text("Handling warnings")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                    StringListEditor(
+                        values: use.warnings,
+                        addLabel: "Add warning",
+                        placeholder: "Sap, fumes, lye, mordants — what will hurt someone",
+                        lines: 1...4
+                    ) { replace(index, use, warnings: $0) }
+
+                    Text("Recipes")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                    RecipeEditor(recipes: use.recipes) { replace(index, use, recipes: $0) }
+                }
+                .padding(.all, .small)
+                .background(Color.secondary.opacity(Layout.bannerBackgroundOpacity), in: EditorLayout.insetShape)
+            }
+
+            Button("Add use", systemImage: "plus.circle") {
+                onChange(uses + [SpeciesUse(kind: .fibre, parts: "", method: "")])
+            }
+            .buttonStyle(.borderless)
+        }
+        .padding(.vertical, .xxxSmall)
+    }
+
+    private func sourceList(_ sources: [String], onChange: @escaping ([String]) -> Void) -> some View {
+        StringListEditor(
+            values: sources,
+            addLabel: "Add source",
+            placeholder: "Ngā Rauropi Whakaoranga, 'Phormium tenax' (URL, retrieved date)",
+            lines: 1...3,
+            onChange: onChange
+        )
+    }
+
+    private func replace(
+        _ index: Int,
+        _ use: SpeciesUse,
+        kind: UseKind? = nil,
+        parts: SourcedText? = nil,
+        months: [ForageMonth]? = nil,
+        method: SourcedText? = nil,
+        warnings: [String]? = nil,
+        recipes: [Recipe]? = nil
+    ) {
+        var next = uses
+        next[index] = SpeciesUse(
+            kind: kind ?? use.kind,
+            parts: parts ?? use.parts,
+            months: months ?? use.months,
+            method: method ?? use.method,
+            warnings: warnings ?? use.warnings,
+            recipes: recipes ?? use.recipes
+        )
+        onChange(next)
+    }
+}

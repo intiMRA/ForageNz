@@ -890,6 +890,24 @@ catalog is the prerequisite for it, not a substitute.
 To add a language, add it to the catalog in Xcode (Editor → Add Language) and translate; `mi`
 (te reo Māori) is the obvious first.
 
+## Other uses — fibre, dye, craft, skin care
+
+An entry can carry what it is gathered for besides food (`SpeciesUse` in `uses`; the plan is
+`docs/plans/useful-plants.md`). The food use is not one of them: it stays in `edibleParts`,
+`preparation`, `warnings` and `recipes`, so food recipes and each use's own recipes sit side by
+side. `caution` still means "can I eat it"; a use's own `warnings` say what handling it asks of
+you, so a dye plant can be "do not eat" and "wear gloves" at once. Each use has a kind, the part
+gathered, its harvest window, how it is processed, its warnings and recipes.
+
+- **Every part and method carries its source** (blocking). A use has no "written for this
+  guide" case; taonga species are sourced from Māori-authored pages first, and the owner reviews.
+- **Skin care is cosmetic only.** A medicinal claim ("heals", "remedy", "eczema"…) blocks;
+  medicinal use is out of scope.
+- **Lye or a toxic mordant needs a warning** (copper, chrome, tin; alum and iron do not count),
+  and skin care on a plant nobody may eat needs one too.
+- The species page shows an *Other Uses* section with each use's recipes on their own sheet; the
+  filter menu offers a use only once some shipped entry has it.
+
 ## Validation
 
 Per-entry rules live in `ForageSpecies.validationIssues`, split into blocking (fails the
@@ -1003,8 +1021,6 @@ Known gaps, in rough priority order:
   Knox drafts have no season at all, because that book states none. Two disagreements with
   Langlands were left conservative on purpose: it treats water celery and ripe black nightshade
   berries as edible; the catalogue says do not eat.
-- **No user lists yet** — favourites, found, wanted. Planned, with the model and boundaries
-  worked out, in `docs/plans/species-lists.md`.
 - **No location awareness.** Several entries are regional (cherry guava is northern, rosehip is
   dry-eastern). Region filtering needs a region field on each entry.
 - **No live overlays.** Rāhui, MPI biotoxin warnings and LAWA algal-bloom status are all

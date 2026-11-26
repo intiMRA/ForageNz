@@ -154,6 +154,16 @@ struct SpeciesEditorView: View {
                 lines: 3...8
             )
         }
+
+        Section {
+            UseEditor(uses: species.uses) { onChange(species.with(uses: $0)) }
+        } header: {
+            Text("Other uses")
+        } footer: {
+            Text("Fibre, dye, craft and skin care — never medicinal. Every part and method needs its source; skin care stays cosmetic.")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+        }
     }
 
     @ViewBuilder
@@ -294,7 +304,7 @@ enum EditorTab: String, CaseIterable, Identifiable {
     static func tab(owning field: ValidationField) -> EditorTab {
         switch field {
         case .id, .commonName, .scientificName, .summary, .habitat, .habitats, .identification,
-             .associations, .edibleParts, .preparation, .caution, .months:
+             .associations, .edibleParts, .preparation, .caution, .months, .uses:
             .entry
         case .photos:
             .photos

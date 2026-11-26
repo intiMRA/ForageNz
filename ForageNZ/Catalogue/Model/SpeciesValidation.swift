@@ -24,6 +24,7 @@ public enum ValidationField: String, Sendable, Hashable, CaseIterable {
     case sources
     case needsBookSource
     case recipes
+    case uses
     case photos
 }
 
@@ -175,12 +176,14 @@ public extension ForageSpecies {
         }
 
         for (index, recipe) in recipes.enumerated() {
-            if recipe.title.trimmed.isEmpty {
-                blocking(.recipes, at: index, "Recipe needs a title.")
+            for message in Self.recipeIssues(recipe) {
+                blocking(.recipes, at: index, message)
             }
-            // Owner, 27/10/2026: every recipe links to the published recipe it was written from.
-            if recipe.sourceURL == nil {
-                blocking(.recipes, at: index, "Recipe needs a link to the recipe it was written from.")
+        }
+
+        for (index, use) in uses.enumerated() {
+            for message in useIssues(use) {
+                blocking(.uses, at: index, message)
             }
         }
 
@@ -251,6 +254,86 @@ public extension ForageSpecies {
 
         return issues
     }
+
+    /// The blocking rules for one non-food use (`docs/plans/useful-plants.md`). Every one is
+    /// blocking: a use is new text on a page, and nothing about it is allowed to ship unsourced.
+    private func useIssues(_ use: SpeciesUse) -> [String] {
+        var messages: [String] = []
+        let name = String(localized: use.kind.displayName)
+
+        if use.parts.isBlank { messages.append("\(name): say which part is gathered.") }
+        if use.method.isBlank { messages.append("\(name): say how it is processed.") }
+        // Owner, 26/11/2026, for taonga and every other use: sourced from trustworthy pages,
+        // nothing made up. An empty `sources` on a food field means "written for this guide";
+        // a use has no such case.
+        if !use.parts.isBlank && use.parts.sources.isEmpty {
+            messages.append("\(name): the part used needs its source.")
+        }
+        if !use.method.isBlank && use.method.sources.isEmpty {
+            messages.append("\(name): the method needs its source.")
+        }
+        if use.warnings.contains(where: { $0.trimmed.isEmpty }) {
+            messages.append("\(name): remove the blank warning, or fill it in.")
+        }
+
+        for text in [use.parts.text, use.method.text] + use.warnings {
+            if let phrase = Self.attributionPhrase(in: text) {
+                messages.append("\(name): attributes the claim in the prose (“\(phrase)”) — state it, and put who said it in the sources.")
+            }
+        }
+
+        for recipe in use.recipes {
+            messages += Self.recipeIssues(recipe).map { "\(name): \($0)" }
+        }
+        if !use.recipes.isEmpty && harvestEthicsNamesThreatStatus {
+            messages.append("\(name): an at-risk or threatened species can't carry recipes.")
+        }
+
+        let processing = ([use.method.text] + use.recipes.flatMap { [$0.title, $0.method] })
+            .joined(separator: "\n")
+        if use.warnings.isEmpty, let chemical = Self.firstPhrase(of: Self.harshChemicalPhrases, in: processing) {
+            messages.append("\(name): mentions \(chemical), so it needs a warning saying how to handle it.")
+        }
+
+        if use.kind == .skinCare {
+            // Medicinal use is out of scope (owner, 26/11/2026). Skin-care recipe pages sell their
+            // preparations on healing claims; the claim stays behind and the preparation comes.
+            let written = ([use.parts.text, use.method.text] + use.warnings
+                + use.recipes.flatMap { [$0.title, $0.method] }).joined(separator: "\n")
+            if let phrase = Self.firstPhrase(of: Self.medicinalClaimPhrases, in: written) {
+                messages.append("Skin care: makes a medicinal claim (“\(phrase)”) — cosmetic uses only.")
+            }
+            if !caution.isHarvestable && use.warnings.isEmpty {
+                messages.append("Skin care on a plant nobody may eat needs a warning saying what handling it does.")
+            }
+        }
+
+        return messages
+    }
+
+    /// The rules every recipe meets, food or not.
+    private static func recipeIssues(_ recipe: Recipe) -> [String] {
+        var messages: [String] = []
+        if recipe.title.trimmed.isEmpty { messages.append("Recipe needs a title.") }
+        // Owner, 27/10/2026: every recipe links to the published recipe it was written from.
+        if recipe.sourceURL == nil { messages.append("Recipe needs a link to the recipe it was written from.") }
+        return messages
+    }
+
+    /// Chemicals in a dye bath or a soap that hurt the person using them. Alum and iron are left
+    /// out: they are the everyday mordants, and "iron" is also every iron pot.
+    private static let harshChemicalPhrases = [
+        "lye", "sodium hydroxide", "caustic soda", "potassium hydroxide",
+        "copper sulphate", "copper sulfate", "chrome", "chromium", "potassium dichromate",
+        "tin crystals", "tin mordant", "stannous chloride",
+    ]
+
+    /// Words that make a skin-care use a medicinal one.
+    private static let medicinalClaimPhrases = [
+        "heal", "heals", "healing", "cure", "cures", "treat", "treats", "treatment", "remedy", "remedies",
+        "medicinal", "medicine", "antiseptic", "antibacterial", "antifungal", "anti-inflammatory",
+        "eczema", "psoriasis", "wound", "wounds", "infection", "infections", "pain",
+    ]
 
     var blockingIssues: [ValidationIssue] {
         validationIssues.filter { $0.severity == .blocking }

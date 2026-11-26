@@ -22,6 +22,10 @@ final class SpeciesStore {
     /// observed: it changes only with `catalogue`, which `species` already reports.
     @ObservationIgnored private(set) var searchIndex = SpeciesSearch.Index.empty
 
+    /// The non-food use kinds some listed entry carries, in `UseKind` order. The filter menu
+    /// offers only these, so it never offers a use that would empty every list.
+    private(set) var useKinds: [UseKind] = []
+
     /// Lists the unfinished entries alongside the finished ones. Off in every build the user
     /// sees: the only thing that writes it is the debug drawer, which is compiled out of a
     /// release build. Half an entry is worse than none in the field, which is why the default
@@ -68,6 +72,7 @@ final class SpeciesStore {
             searchIndex = .empty
             species = []
             speciesByID = [:]
+            useKinds = []
             Self.logger.error("Catalogue load failed: \(String(describing: error), privacy: .public)")
             loadState = .failed(message: error.userMessage)
         }
@@ -76,6 +81,8 @@ final class SpeciesStore {
     private func applyVisibility() {
         species = includesUnverified ? catalogue : catalogue.filter { !$0.draft }
         speciesByID = Dictionary(species.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
+        let present = Set(species.flatMap { $0.uses.map(\.kind) })
+        useKinds = UseKind.allCases.filter(present.contains)
     }
 
     /// Off the main actor: folding the whole catalogue's prose is the one heavy step of a load.

@@ -32,6 +32,9 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     /// Where this entry's claims were checked. Empty means unverified.
     public let sources: [String]
     public let recipes: [Recipe]
+    /// What it is gathered for besides food — fibre, dye, craft, skin care. The food use is
+    /// the fields above, not an element here.
+    public let uses: [SpeciesUse]
     public let photos: [SpeciesPhoto]
     /// Where to see more photographs — an iNaturalist taxon page, usually.
     public let moreImagesURL: URL?
@@ -81,6 +84,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         harvestEthics: SourcedText? = nil,
         sources: [String] = [],
         recipes: [Recipe] = [],
+        uses: [SpeciesUse] = [],
         photos: [SpeciesPhoto] = [],
         moreImagesURL: URL? = nil,
         draft: Bool = false,
@@ -107,6 +111,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         self.harvestEthics = harvestEthics
         self.sources = sources
         self.recipes = recipes
+        self.uses = uses
         self.photos = photos
         self.moreImagesURL = moreImagesURL
         self.draft = draft
@@ -139,6 +144,8 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         harvestEthics = try container.decodeIfPresent(SourcedText.self, forKey: .harvestEthics)
         sources = try container.decode([String].self, forKey: .sources)
         recipes = try container.decode([Recipe].self, forKey: .recipes)
+        // Absent means none recorded, like `associations`.
+        uses = try container.decodeIfPresent([SpeciesUse].self, forKey: .uses) ?? []
         photos = try container.decode([SpeciesPhoto].self, forKey: .photos)
         moreImagesURL = try container.decodeIfPresent(URL.self, forKey: .moreImagesURL)
         draft = try container.decodeIfPresent(Bool.self, forKey: .draft) ?? false
@@ -163,62 +170,8 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
     }
 
     /// A human-readable season window, e.g. "Feb – Apr", "Nov – Feb" or "Year-round".
-    ///
-    /// Each contiguous run collapses to its own range, and the ranges are joined:
-    /// elder's two harvests read "Sep – Dec, Feb – Apr" rather than spelling out seven
-    /// months. Every run is listed rather than spanning first to last, because the gaps
-    /// are real — elder has nothing to pick in January, and a row claiming otherwise
-    /// sends someone out after green berries.
-    ///
-    /// Seasons are treated as circular, because southern-hemisphere seasons routinely wrap
-    /// the new year — a plain numeric sort would render Nov–Feb as "Jan, Feb, Nov, Dec".
-    public var seasonDescription: String {
-        guard !months.isEmpty else { return "Year-round" }
-        let ordered = orderedSeasonMonths
-        guard ordered.count > 1 else { return ordered[0].displayName }
-        guard ordered.count < ForageMonth.count else { return "Year-round" }
-
-        return contiguousSeasonRuns(in: ordered)
-            .map { run in
-                run.count > 1 ? "\(run[0].shortName) – \(run[run.count - 1].shortName)" : run[0].shortName
-            }
-            .joined(separator: ", ")
-    }
-
-    /// Splits months already in reading order into runs of consecutive months.
-    private func contiguousSeasonRuns(in ordered: [ForageMonth]) -> [[ForageMonth]] {
-        var runs: [[ForageMonth]] = []
-        var run: [ForageMonth] = []
-        for month in ordered {
-            if let previous = run.last, month.isImmediatelyAfter(previous) {
-                run.append(month)
-            } else {
-                if !run.isEmpty { runs.append(run) }
-                run = [month]
-            }
-        }
-        if !run.isEmpty { runs.append(run) }
-        return runs
-    }
-
-    /// Months rotated so the run begins after the largest gap in the calendar circle,
-    /// putting a year-wrapping season into reading order (Nov, Dec, Jan).
-    private var orderedSeasonMonths: [ForageMonth] {
-        let sorted = months.sorted()
-        guard sorted.count > 1 else { return sorted }
-
-        var startIndex = 0
-        var largestGap = 0
-        for index in sorted.indices {
-            let previous = sorted[(index + sorted.count - 1) % sorted.count]
-            let gap = sorted[index].monthsAfter(previous)
-            if gap > largestGap {
-                largestGap = gap
-                startIndex = index
-            }
-        }
-        return Array(sorted[startIndex...]) + Array(sorted[..<startIndex])
-    }
+    /// See `Array<ForageMonth>.seasonDescription`.
+    public var seasonDescription: String { months.seasonDescription }
 
     /// Text the search field matches against.
     public var searchableText: String {
@@ -263,6 +216,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         harvestEthics: SourcedText?? = nil,
         sources: [String]? = nil,
         recipes: [Recipe]? = nil,
+        uses: [SpeciesUse]? = nil,
         photos: [SpeciesPhoto]? = nil,
         moreImagesURL: URL?? = nil,
         draft: Bool? = nil,
@@ -290,6 +244,7 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
             harvestEthics: harvestEthics ?? self.harvestEthics,
             sources: sources ?? self.sources,
             recipes: recipes ?? self.recipes,
+            uses: uses ?? self.uses,
             photos: photos ?? self.photos,
             moreImagesURL: moreImagesURL ?? self.moreImagesURL,
             draft: draft ?? self.draft,
@@ -307,5 +262,65 @@ public nonisolated struct ForageSpecies: Codable, Sendable, Hashable, Identifiab
         case .orderedDescending: false
         case .orderedSame: lhs.id < rhs.id
         }
+    }
+}
+
+public nonisolated extension Array where Element == ForageMonth {
+    /// A human-readable season window, e.g. "Feb – Apr", "Nov – Feb" or "Year-round".
+    ///
+    /// Each contiguous run collapses to its own range, and the ranges are joined:
+    /// elder's two harvests read "Sep – Dec, Feb – Apr" rather than spelling out seven
+    /// months. Every run is listed rather than spanning first to last, because the gaps
+    /// are real — elder has nothing to pick in January, and a row claiming otherwise
+    /// sends someone out after green berries.
+    ///
+    /// Seasons are treated as circular, because southern-hemisphere seasons routinely wrap
+    /// the new year — a plain numeric sort would render Nov–Feb as "Jan, Feb, Nov, Dec".
+    public var seasonDescription: String {
+        guard !isEmpty else { return "Year-round" }
+        let ordered = orderedSeasonMonths
+        guard ordered.count > 1 else { return ordered[0].displayName }
+        guard ordered.count < ForageMonth.count else { return "Year-round" }
+
+        return contiguousSeasonRuns(in: ordered)
+            .map { run in
+                run.count > 1 ? "\(run[0].shortName) – \(run[run.count - 1].shortName)" : run[0].shortName
+            }
+            .joined(separator: ", ")
+    }
+
+    /// Splits months already in reading order into runs of consecutive months.
+    private func contiguousSeasonRuns(in ordered: [ForageMonth]) -> [[ForageMonth]] {
+        var runs: [[ForageMonth]] = []
+        var run: [ForageMonth] = []
+        for month in ordered {
+            if let previous = run.last, month.isImmediatelyAfter(previous) {
+                run.append(month)
+            } else {
+                if !run.isEmpty { runs.append(run) }
+                run = [month]
+            }
+        }
+        if !run.isEmpty { runs.append(run) }
+        return runs
+    }
+
+    /// Months rotated so the run begins after the largest gap in the calendar circle,
+    /// putting a year-wrapping season into reading order (Nov, Dec, Jan).
+    private var orderedSeasonMonths: [ForageMonth] {
+        let sorted = self.sorted()
+        guard sorted.count > 1 else { return sorted }
+
+        var startIndex = 0
+        var largestGap = 0
+        for index in sorted.indices {
+            let previous = sorted[(index + sorted.count - 1) % sorted.count]
+            let gap = sorted[index].monthsAfter(previous)
+            if gap > largestGap {
+                largestGap = gap
+                startIndex = index
+            }
+        }
+        return Array(sorted[startIndex...]) + Array(sorted[..<startIndex])
     }
 }

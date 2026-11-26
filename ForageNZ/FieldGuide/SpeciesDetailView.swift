@@ -8,6 +8,8 @@ struct SpeciesDetailView: View {
     
     @State var presentRecipies = false
     @State private var presentPartners = false
+    /// The use whose recipes are showing. Food recipes have their own sheet above.
+    @State private var useRecipes: UseRecipes?
     
     var body: some View {
         ScrollView {
@@ -32,6 +34,8 @@ struct SpeciesDetailView: View {
                 lookALike
 
                 recipes
+
+                otherUses
                 
                 ethics
                 
@@ -47,6 +51,11 @@ struct SpeciesDetailView: View {
         .sheet(isPresented: $presentRecipies) {
             NavigationStack {
                 RecipeView(recipies: model.species.recipes)
+            }
+        }
+        .sheet(item: $useRecipes) { selection in
+            NavigationStack {
+                RecipeView(recipies: selection.recipes)
             }
         }
         .sheet(isPresented: $presentPartners) {
@@ -305,6 +314,71 @@ struct SpeciesDetailView: View {
         }
     }
     
+    /// Not designed yet, and painted so — see `needsDesign()`.
+    ///
+    /// Fibre, dye, craft and skin care (`docs/plans/useful-plants.md`). Shown on every caution
+    /// level: a plant nobody may eat can still be worth gathering for dye, and each use's own
+    /// warnings say what handling it asks of you.
+    @ViewBuilder
+    private var otherUses: some View {
+        if !species.uses.isEmpty {
+            VStack(alignment: .leading, spacing: .small) {
+                SectionHeader(image: Image(systemName: "basket"), title: "Other Uses")
+
+                ForEach(Array(species.uses.enumerated()), id: \.offset) { index, use in
+                    useView(use, index: index)
+                }
+            }
+            // Owner, 26/11/2026: the whole section is a placeholder until it is designed.
+            .needsDesign()
+        }
+    }
+
+    private func useView(_ use: SpeciesUse, index: Int) -> some View {
+        VStack(alignment: .leading, spacing: .xxSmall) {
+            SectionHeader(
+                image: use.kind.image,
+                title: use.kind.displayName,
+                subTitle: use.months.seasonDescription,
+                alignment: .top
+            )
+
+            Text(use.parts.text)
+                .font(.callout)
+            Text(use.method.text)
+                .font(.callout)
+
+            ForEach(use.warnings, id: \.self) { warning in
+                HStack(alignment: .top, spacing: .xSmall) {
+                    Image(.outlineExclamation)
+                        .icon(size: .custom(size: 14), color: .primary)
+                        .accessibilityHidden(true)
+                    Text(warning)
+                }
+                .font(.footnote)
+                .italic()
+                .foregroundStyle(.secondary)
+            }
+
+            if !use.recipes.isEmpty {
+                Button {
+                    useRecipes = UseRecipes(id: index, recipes: use.recipes)
+                } label: {
+                    HStack(spacing: .xxSmall) {
+                        use.kind.image
+                            .icon(size: .small, color: .accent)
+                        Text("How can I make it? \(use.recipes.count) recipes")
+                        Spacer()
+                        Image(.chevronRight)
+                            .icon(size: .small, color: .accent)
+                    }
+                }
+                .padding(.top, .xxxSmall)
+                .accessibilityIdentifier("speciesDetail.useRecipes.\(index)")
+            }
+        }
+    }
+
     @ViewBuilder
     private var ethics: some View {
         if species.harvestEthics != nil {
@@ -411,4 +485,11 @@ struct SpeciesDetailView: View {
         .foregroundStyle(.secondary)
     }
     
+}
+
+/// One use's recipes, for `sheet(item:)`.
+private struct UseRecipes: Identifiable {
+    /// The use's position on the page; two uses of one kind are allowed.
+    let id: Int
+    let recipes: [Recipe]
 }

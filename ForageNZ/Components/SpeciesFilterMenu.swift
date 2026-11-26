@@ -1,8 +1,9 @@
 import SwiftUI
 
-/// The toolbar menu that narrows a species screen by group, origin and habitat.
+/// The toolbar menu that narrows a species screen by group, origin, habitat and use.
 struct SpeciesFilterMenu: View {
     @Binding var filter: SpeciesFilter
+    @Environment(SpeciesStore.self) private var store
 
     var body: some View {
         Menu {
@@ -26,6 +27,16 @@ struct SpeciesFilterMenu: View {
                 clearSymbol: "map",
                 selection: $filter.habitat
             )
+
+            if !store.useKinds.isEmpty {
+                facetSection(
+                    "Other uses",
+                    clearTitle: "Any use",
+                    clearSymbol: "fork.knife",
+                    selection: $filter.use,
+                    facets: store.useKinds
+                )
+            }
         } label: {
             Label(
                 "Filter",
@@ -45,7 +56,8 @@ struct SpeciesFilterMenu: View {
         _ title: LocalizedStringKey,
         clearTitle: LocalizedStringKey,
         clearSymbol: String,
-        selection: Binding<Facet?>
+        selection: Binding<Facet?>,
+        facets: [Facet] = Array(Facet.allCases)
     ) -> some View {
         Section(title) {
             Button {
@@ -54,7 +66,7 @@ struct SpeciesFilterMenu: View {
                 Label(clearTitle, systemImage: selection.wrappedValue == nil ? "checkmark" : clearSymbol)
             }
 
-            ForEach(Array(Facet.allCases)) { facet in
+            ForEach(facets) { facet in
                 Button {
                     selection.wrappedValue = facet
                 } label: {

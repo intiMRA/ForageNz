@@ -295,3 +295,15 @@ def test_the_link_next_section_is_left_out_once_every_lead_is_linked():
     jack["associations"] = [{"kind": "mycorrhizalPartner", "entry": "monterey-pine", "note": "n"}]
     pine["associations"] = [{"kind": "mycorrhizalPartner", "entry": "slippery-jack", "note": "n"}]
     assert not report.open_leads(report.link_batches([jack, pine], leads))
+
+
+def test_the_row_lists_each_non_food_use_with_its_recipe_count():
+    broom = entry("scotch-broom")
+    broom["uses"] = [
+        {"kind": "dye", "months": [10, 11], "recipes": [{"title": "Yellow wool"}]},
+        {"kind": "fibre", "months": [], "recipes": []},
+    ]
+    row = report.row(broom, set(), by_id(broom))
+    assert [u["kind"] for u in row["uses"]] == ["dye", "fibre"]
+    cell = report.render_row(row)
+    assert "dye" in cell and "1 recipe<" in cell and "fibre" in cell
