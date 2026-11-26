@@ -51531,16 +51531,22 @@
         "sourceURL" : "http://www.inaturalist.org/observations/4751351"
       },
       {
-        "caption" : "Row of caps",
-        "credit" : "(c) Alan Rockefeller, some rights reserved (CC BY) (CC-BY)",
-        "fileName" : "porcini-2.heic",
-        "sourceURL" : "http://www.inaturalist.org/observations/4751351"
-      },
-      {
         "caption" : "Specimens, one cut: white flesh",
         "credit" : "(c) Alan Rockefeller, some rights reserved (CC BY) (CC-BY)",
         "fileName" : "porcini-3.heic",
         "sourceURL" : "http://www.inaturalist.org/observations/4751351"
+      },
+      {
+        "caption" : "Cut mushroom : white flesh",
+        "credit" : "(c) Tim Park, some rights reserved (CC BY)",
+        "fileName" : "porcini-4.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/66363963"
+      },
+      {
+        "caption" : "Mushroom on floor",
+        "credit" : "(c) bythepark, some rights reserved (CC BY)",
+        "fileName" : "porcini-5.heic",
+        "sourceURL" : "https://www.inaturalist.org/observations/110263189"
       }
     ],
     "plannedUses" : [
