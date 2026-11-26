@@ -37,3 +37,4 @@ __pycache__/
 
 # GloBI responses cached by Tools/globi_symbioses.py.
 .globi-cache/
+.nrw-cache/

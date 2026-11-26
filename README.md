@@ -727,6 +727,7 @@ Guide filter and the row icon. Deliberately neutral about edibility: the death c
 | `fungi` | Fungi | `fungi` |
 | `seaweed` | Seaweed | `seaweed` |
 | `nuts` | Nuts & seeds | `nuts` |
+| `useful` | Useful plants | none yet — a system `leaf` symbol, marked needs-design |
 
 **`ForageOrigin`** — where the species sits relative to Aotearoa's own flora, which decides how
 freely it can be taken. `isIndigenous` is `endemic || native`, kept as one predicate so the

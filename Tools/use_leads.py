@@ -114,12 +114,22 @@ def will_get_a_use(leads: dict[str, list[dict[str, Any]]], catalogue_ids: set[st
     return [i for i, ls in leads.items() if i in catalogue_ids and planned_kinds(ls)]
 
 
+#: Sources lines that record a finished use review. An entry the owner has reviewed and shipped
+#: keeps its uses as decided: a new lead on it goes to the owner, not back into a draft (the
+#: 27/11/2026 run re-drafted the shipped pines, docks, mallows, oaks and cabbage trees).
+REVIEW_LINES = ("Other uses reviewed", "Other uses, owner link round")
+
+
+def use_review_settled(entry: dict[str, Any]) -> bool:
+    return not entry.get("draft") and any(line.startswith(REVIEW_LINES) for line in entry.get("sources", []))
+
+
 def mark_planned(catalogue: list[dict[str, Any]], leads: dict[str, list[dict[str, Any]]]) -> list[str]:
     """Add each entry's planned kinds and draft it. Returns the ids that changed."""
     changed = []
     for entry in catalogue:
         kinds = planned_kinds(leads.get(entry["id"], []))
-        if not kinds:
+        if not kinds or use_review_settled(entry):
             continue
         merged = [k for k in KIND_ORDER if k in kinds or k in (entry.get("plannedUses") or [])]
         if merged != (entry.get("plannedUses") or []) or not entry.get("draft"):

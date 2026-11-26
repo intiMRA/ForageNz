@@ -417,6 +417,7 @@ public enum SpeciesID: String, Codable, Sendable, Hashable, CaseIterable {
     case snowberries = "snowberries"
     case snowdropWoodsorrel = "snowdrop-woodsorrel"
     case snowflake = "snowflake"
+    case soapwort = "soapwort"
     case solandersGeranium = "solanders-geranium"
     case southAfricanIcePlant = "south-african-ice-plant"
     case southernMagnolia = "southern-magnolia"

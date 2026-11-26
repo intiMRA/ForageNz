@@ -63,6 +63,14 @@ def test_marking_drafts_and_adds_kinds_but_never_clears_any():
     assert use_leads.mark_planned(catalogue, leads) == []
 
 
+def test_marking_leaves_a_reviewed_shipped_entry_alone():
+    leads = use_leads.parse(PLAN)
+    catalogue = [{"id": "hedge-woundwort", "draft": False, "plannedUses": ["craft"],
+                  "sources": ["Other uses reviewed 27/11/2026: the owner approved the craft use."]}]
+    assert use_leads.mark_planned(catalogue, leads) == []
+    assert catalogue[0]["draft"] is False
+
+
 def test_the_report_batches_waiting_drafts_by_group_and_splits_them_by_genus_or_use():
     leads = use_leads.parse(PLAN)
     entries = [

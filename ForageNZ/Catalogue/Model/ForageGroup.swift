@@ -7,6 +7,8 @@ public nonisolated enum ForageGroup: String, Codable, Sendable, CaseIterable, Id
     case fungi
     case seaweed
     case nuts
+    /// Plants with no food use, kept for a non-food use (dye, fibre, craft, cosmetics).
+    case useful
 
     public var id: String { rawValue }
 
@@ -18,6 +20,7 @@ public nonisolated enum ForageGroup: String, Codable, Sendable, CaseIterable, Id
         case .fungi: "Fungi"
         case .seaweed: "Seaweed"
         case .nuts: "Nuts & seeds"
+        case .useful: "Useful plants"
         }
     }
 

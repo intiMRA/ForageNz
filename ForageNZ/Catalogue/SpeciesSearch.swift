@@ -211,7 +211,8 @@ extension SpeciesSearch {
             "fruit": .fruit, "berries": .fruit, "berry": .fruit,
             "fungi": .fungi,
             "seaweed": .seaweed,
-            "nuts": .nuts, "nut": .nuts, "seeds": .nuts, "seed": .nuts
+            "nuts": .nuts, "nut": .nuts, "seeds": .nuts, "seed": .nuts,
+            "useful": .useful
         ]
 
         /// "native" takes in the endemic entries too: endemic species are native ones found

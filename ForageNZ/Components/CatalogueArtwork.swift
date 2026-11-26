@@ -64,6 +64,8 @@ extension ForageGroup {
         case .fungi: Image(.fungi)
         case .seaweed: Image(.seaweed)
         case .nuts: Image(.nuts)
+        // needsDesign: a system symbol until the useful-plants drawing exists.
+        case .useful: Image(systemName: "leaf")
         }
     }
 }

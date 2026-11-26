@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Write the one HTML report on the catalogue: every entry, grouped, with what it still owes.
 
-Entries are filed by their app group (greens, herbs, fruit, fungi, seaweed, nuts), then by
+Entries are filed by their app group (greens, herbs, fruit, fungi, seaweed, nuts, useful), then by
 species group inside it — the bamboos, the passionfruit, the milkcaps. A species group is a
 connected component over two kinds of edge:
 
@@ -58,6 +58,7 @@ GROUPS = [
     ("fungi", "Fungi"),
     ("seaweed", "Seaweed"),
     ("nuts", "Nuts & seeds"),
+    ("useful", "Useful plants"),
 ]
 
 # Fields a filled-in entry is expected to carry. `photos` and `months` are checked

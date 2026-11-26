@@ -109,7 +109,7 @@ struct SearchReading {
 
 @Generable
 enum ReadingGroup {
-    case greens, herbs, fruit, fungi, seaweed, nuts
+    case greens, herbs, fruit, fungi, seaweed, nuts, useful
 
     var group: ForageGroup {
         switch self {
@@ -119,6 +119,7 @@ enum ReadingGroup {
         case .fungi: .fungi
         case .seaweed: .seaweed
         case .nuts: .nuts
+        case .useful: .useful
         }
     }
 }
