@@ -85677,7 +85677,7 @@
     ],
     "caution" : "notFood",
     "commonName" : "Hangehange",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
@@ -85765,7 +85765,8 @@
       "Other uses, NRW lookup 27/11/2026: DYE used (bark pulped as a black dye, Brett's Guide 1883 and White quoted in Aston 1918b; thin: the record gives the part and one step, and no source gives a mordant, a quantity or a time). NOT used: food wrapper (Kirk in Taylor 1870: 'generally used for enveloping various roots etc., during the process of cooking'; Colenso 1868a: tikoraha roots tied separately for baking in bundles of hangehange — no source names the part, so it is not written as a use; flagged in the notes); lotion for children's sores and bark rubbed on the skin for itch (Goldie 1904, Best 1906, Taylor 1848 and 1870, Kerry-Nicholls 1886; medicinal, dropped). Months left empty for the dye: no New Zealand source dates the bark harvest.",
       "Entry months left empty: nothing on it is eaten.",
       "Lookalikes: none written. No source consulted names a plant mistaken for hangehange; NRW lists 'Māori privet' as a common name, a different plant from the poisonous introduced privets (Ligustrum).",
-      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 4, 1, 5, 6 kept; the others not used (seedlings, blurred or unclear frames, garden settings)."
+      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 4, 1, 5, 6 kept; the others not used (seedlings, blurred or unclear frames, garden settings).",
+      "Other uses reviewed 27/11/2026: the owner approved the dye use ('ship them') and the entry ships."
     ],
     "summary" : {
       "sources" : [
@@ -86360,7 +86361,9 @@
       "Lookalikes: left empty. NZPCN names Hoheria sexstylosa (long-leaved lacebark) as often confused with this species (sexstylosa has a thread-like juvenile habit, drooping branches, narrower more finely toothed leaves, usually six carpels), and Hoheria equitum (Poor Knights and Hen and Chicken Islands only, not catalogued). Once 'long-leaved-lacebark' is added the owner can decide on a card pair.",
       "Harvest ethics: NZTCS 2023 Not Threatened; NZPCN regional statuses Northland 2026 Regionally Not Threatened, Auckland 2025 Regionally Not Threatened (qualifiers DPS, DPT). No regional caution needed. Sentence for a useful plant with uses, from the brief.",
       "Stays a draft until the owner's use review.",
-      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 1, 5, 7, 3 kept; the others not used (seedlings, blurred or unclear frames, garden settings)."
+      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 1, 5, 7, 3 kept; the others not used (seedlings, blurred or unclear frames, garden settings).",
+      "Origin decision 27/11/2026: NZTCS gives biostatus 'Non-endemic' for this Hoheria, but NZPCN, Flora of New Zealand Online and Plants For A Future all give endemic; the owner said to keep 'endemic' ('1 keep').",
+      "Lacebark use months researched 27/11/2026 (owner: '5 research'): the only source dating the harvest is Ali Brown Weaving ('a hot fine day in summer', on a living tree), whose author says her experience is limited; Manaaki Whenua's weaving-plants sheet on houhere gives no season but says the lace comes away readily from dead, dried bark, and Te Ara, NRW, Plants For A Future and Meaning of Trees give no season either. Months left empty: no reliable New Zealand source dates it."
     ],
     "summary" : {
       "sources" : [
@@ -86376,14 +86379,13 @@
             "Ngā Rauropi Whakaoranga 'Hoheria populnea. H. sextylosa. Houhere. Lacebark.' (Manaaki Whenua – Landcare Research, data CC BY 4.0), https://rauropiwhakaoranga.landcareresearch.co.nz/names/038578df-a568-4bcd-9459-cde0ef919dab, retrieved 27/11/2026 — restated (Taylor 1855; Kirk in Taylor 1870 and 1889; Colenso 1868a; Te Rangi Hiroa 1923; Best 1942)",
             "Ali Brown, 'Harvesting the lace from lacebark', Ali Brown Weaving (2 June 2007; all rights reserved, facts restated), https://www.alibrown.nz/harvesting-the-lace-from-lacebark/, retrieved 27/11/2026",
             "Herb Federation of New Zealand, 'Lacebark, Ribbonwood' (all rights reserved, facts restated), https://herbs.org.nz/herbs/lacebark-ribbonwood/, retrieved 27/11/2026",
-            "Plants For A Future, 'Hoheria populnea' (PFAF = Useful Temperate Plants, one source; all rights reserved, facts restated), https://pfaf.org/user/Plant.aspx?LatinName=Hoheria+populnea, retrieved 27/11/2026"
+            "Plants For A Future, 'Hoheria populnea' (PFAF = Useful Temperate Plants, one source; all rights reserved, facts restated), https://pfaf.org/user/Plant.aspx?LatinName=Hoheria+populnea, retrieved 27/11/2026",
+            "Sue Scheele and Peter Sweetapple, 'Houhere – Lacebark', Weaving plants information sheets (Manaaki Whenua – Landcare Research, no date; restated), https://www.landcareresearch.co.nz/science/plants-animals-fungi/plants/ethnobotany/weaving-plants/information-sheets/houhere-lacebark (page removed; read from the Wayback Machine copy of 14/08/2020, http://web.archive.org/web/20200814084930/https://www.landcareresearch.co.nz/science/plants-animals-fungi/plants/ethnobotany/weaving-plants/information-sheets/houhere-lacebark), retrieved 27/11/2026"
           ],
-          "text" : "Harvest: on a fallen tree, two short upright cuts are made in the bark and a knife is pushed between the wood and the bark to ease it away; the bark is then pulled up carefully in a long strip. Preparing the lace: the strips of bark and inner bark are soaked in water for a few days, changing the water each day, until the inner lace layer starts to peel away from the outer bark and separate into strips. The dried lace is stiff but softens again when dampened, and if it is held in a shape while it dries it keeps that shape. Uses: Māori plaited inner bark into small fine decorative baskets, bands and kilts, and used it for fine weaving on cloaks; strips of the tough bark were used for tying. Inner bark was made into aute-like ribbons, and Māori once tried to make bark cloth like aute (tapa) by beating the bark. Later it was used as ribbon for trimming hats, bonnets and dresses. The tough, stringy bark of Hoheria populnea was also plaited into net-ropes; the Plants For A Future page adds that its strong inner-bark fibre makes rope and cord and ornaments baskets and bonnets."
+          "text" : "Harvest: on a fallen tree, two short upright cuts are made in the bark and a knife is pushed between the wood and the bark to ease it away; the bark is then pulled up carefully in a long strip. The lacy inner bark is hard to separate from green bark, but comes away readily from both bark and wood, in several very fine layers, once the bark is dead and dried. Preparing the lace: the strips of bark and inner bark are soaked in water for a few days, changing the water each day, until the inner lace layer starts to peel away from the outer bark and separate into strips. The dried lace is stiff but softens again when dampened, and if it is held in a shape while it dries it keeps that shape. Uses: Māori plaited inner bark into small fine decorative baskets, bands and kilts, and used it for fine weaving on cloaks; strips of the tough bark were used for tying. Inner bark was made into aute-like ribbons, and Māori once tried to make bark cloth like aute (tapa) by beating the bark. Later it was used as ribbon for trimming hats, bonnets and dresses. The tough, stringy bark of Hoheria populnea was also plaited into net-ropes. Its strong inner-bark fibre also makes rope and cord, and trims baskets and bonnets."
         },
         "months" : [
-          12,
-          1,
-          2
+
         ],
         "parts" : {
           "sources" : [
@@ -86502,7 +86504,9 @@
       "Lookalikes: left empty. NZPCN says Hoheria sexstylosa is confused with H. populnea (lacebark; differs by juvenile habit, taller tree with drooping branches, narrower grey-green leaves with finer teeth, usually six carpels; ranges overlap in northern Waikato and western Auckland) and with H. angustifolia (narrow-leaved lacebark, not catalogued; hybridises with it in the south). Once 'lacebark' is added the owner can decide on a card pair.",
       "Harvest ethics: NZTCS 2023 Not Threatened; NZPCN regional statuses Auckland 2025 Regionally Data Deficient (ignored), Wellington 2025 Regionally Not Threatened. No regional caution needed.",
       "Stays a draft until the owner's use review.",
-      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 1, 5, 4, 8 kept; the others not used (seedlings, blurred or unclear frames, garden settings)."
+      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 1, 5, 4, 8 kept; the others not used (seedlings, blurred or unclear frames, garden settings).",
+      "Origin decision 27/11/2026: NZTCS gives biostatus 'Non-endemic' for this Hoheria, but NZPCN, Flora of New Zealand Online and Plants For A Future all give endemic; the owner said to keep 'endemic' ('1 keep').",
+      "Lacebark use months researched 27/11/2026 (owner: '5 research'): the only source dating the harvest is Ali Brown Weaving ('a hot fine day in summer', on a living tree), whose author says her experience is limited; Manaaki Whenua's weaving-plants sheet on houhere gives no season but says the lace comes away readily from dead, dried bark, and Te Ara, NRW, Plants For A Future and Meaning of Trees give no season either. Months left empty: no reliable New Zealand source dates it."
     ],
     "summary" : {
       "sources" : [
@@ -86517,14 +86521,13 @@
           "sources" : [
             "Ngā Rauropi Whakaoranga 'Hoheria populnea. H. sextylosa. Houhere. Lacebark.' (Manaaki Whenua – Landcare Research, data CC BY 4.0), https://rauropiwhakaoranga.landcareresearch.co.nz/names/038578df-a568-4bcd-9459-cde0ef919dab, retrieved 27/11/2026 — restated (Taylor 1855; Kirk in Taylor 1870 and 1889; Te Rangi Hiroa 1923; Best 1942)",
             "Ali Brown, 'Harvesting the lace from lacebark', Ali Brown Weaving (2 June 2007; all rights reserved, facts restated), https://www.alibrown.nz/harvesting-the-lace-from-lacebark/, retrieved 27/11/2026",
-            "Herb Federation of New Zealand, 'Lacebark, Ribbonwood' (all rights reserved, facts restated), https://herbs.org.nz/herbs/lacebark-ribbonwood/, retrieved 27/11/2026"
+            "Herb Federation of New Zealand, 'Lacebark, Ribbonwood' (all rights reserved, facts restated), https://herbs.org.nz/herbs/lacebark-ribbonwood/, retrieved 27/11/2026",
+            "Sue Scheele and Peter Sweetapple, 'Houhere – Lacebark', Weaving plants information sheets (Manaaki Whenua – Landcare Research, no date; restated), https://www.landcareresearch.co.nz/science/plants-animals-fungi/plants/ethnobotany/weaving-plants/information-sheets/houhere-lacebark (page removed; read from the Wayback Machine copy of 14/08/2020, http://web.archive.org/web/20200814084930/https://www.landcareresearch.co.nz/science/plants-animals-fungi/plants/ethnobotany/weaving-plants/information-sheets/houhere-lacebark), retrieved 27/11/2026"
           ],
-          "text" : "Harvest: on a fallen tree, two short upright cuts are made in the bark and a knife is pushed between the wood and the bark to ease it away; the bark is then pulled up carefully in a long strip. Preparing the lace: the strips of bark and inner bark are soaked in water for a few days, changing the water each day, until the inner lace layer starts to peel away from the outer bark and separate into strips. The dried lace is stiff but softens again when dampened, and if it is held in a shape while it dries it keeps that shape. Uses: Māori plaited inner bark into small fine decorative baskets, bands and kilts, and used it for fine weaving on cloaks; strips of the tough bark were used for tying. Inner bark was made into aute-like ribbons, and Māori once tried to make bark cloth like aute (tapa) by beating the bark. Later it was used as ribbon for trimming hats, bonnets and dresses."
+          "text" : "Harvest: on a fallen tree, two short upright cuts are made in the bark and a knife is pushed between the wood and the bark to ease it away; the bark is then pulled up carefully in a long strip. The lacy inner bark is hard to separate from green bark, but comes away readily from both bark and wood, in several very fine layers, once the bark is dead and dried. Preparing the lace: the strips of bark and inner bark are soaked in water for a few days, changing the water each day, until the inner lace layer starts to peel away from the outer bark and separate into strips. The dried lace is stiff but softens again when dampened, and if it is held in a shape while it dries it keeps that shape. Uses: Māori plaited inner bark into small fine decorative baskets, bands and kilts, and used it for fine weaving on cloaks; strips of the tough bark were used for tying. Inner bark was made into aute-like ribbons, and Māori once tried to make bark cloth like aute (tapa) by beating the bark. Later it was used as ribbon for trimming hats, bonnets and dresses."
         },
         "months" : [
-          12,
-          1,
-          2
+
         ],
         "parts" : {
           "sources" : [
@@ -87024,7 +87027,7 @@
     ],
     "caution" : "notFood",
     "commonName" : "Pūriri",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
@@ -87112,7 +87115,8 @@
       "Entry months left empty: nothing on it is eaten.",
       "Lookalikes: none written. No source consulted (Allan 1961, NZPCN, NRW) names a plant mistaken for pūriri.",
       "Caution 'notFood' 27/11/2026: Ngā Rauropi Whakaoranga 'Vitex lucens. Pūriri.' (https://rauropiwhakaoranga.landcareresearch.co.nz/names/1aaa3c96-8bb1-454d-8498-d3396e0a1b30, retrieved 27/11/2026) records that Nicholas (1817) found the berries very bitter and disagreeable and that the Māori with him thought them poisonous; Wikipedia 'Vitex lucens' says the fruit was not a traditional Māori food for its bitter taste. A single historical report is not enough for a poison warning (catalogue rule: a single-source safety point stays off unless a regulator speaks), and nobody records eating it, so the entry is 'not food' with no warning.",
-      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 2, 5, 7, 6 kept; the others not used (seedlings, blurred or unclear frames, garden settings)."
+      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 2, 5, 7, 6 kept; the others not used (seedlings, blurred or unclear frames, garden settings).",
+      "Other uses reviewed 27/11/2026: the owner approved the dye use ('ship them') and the entry ships."
     ],
     "summary" : {
       "sources" : [
@@ -87297,7 +87301,7 @@
     ],
     "caution" : "notFood",
     "commonName" : "Tānekaha",
-    "draft" : true,
+    "draft" : false,
     "edibleParts" : {
       "sources" : [
 
@@ -87384,7 +87388,8 @@
       "Other uses, NRW lookup 27/11/2026: DYE used (bark; method from Wade 1842 / Best 1898 'process described' only as pointers — the process text itself is not in NRW; the written method is restated from three modern pages instead: Rangi Te Kanawa's account at WOW STEM, McKendry 2019 in EXARC Journal, and Smith and Te Kanawa 2008, Chemistry in New Zealand; NRW supplies the colours, the older-trees-in-sunny-places bark, the kākāriki pink and the pūriri yellow, from Brett's Guide 1883, Colenso 1868a, Te Rangi Hiroa 1911 and White quoted in Aston 1918b). NOT used: tanning nets and leather (Reed and Bretts 1874, Kirk 1889: no method); dark red dyes for staining furniture and walking sticks (Colenso 1881b: no method); bark small water containers (Best 1942: no method); fish hooks, canoe masts and poles, scoop-net handles, walking sticks, bowls, mauls, adze helves, decking and posts (carved wood and timber, out of scope); all medicinal uses (dropped); the traditions record (Best 1898: only descendants of two named ancestors took bark from two named trees at Rua-tahuna; a local custom, not a warning). Months left empty for the dye: no New Zealand source dates the bark harvest.",
       "Entry months left empty: nothing on it is eaten.",
       "Lookalikes: none written. No source consulted (Allan 1961, NZPCN, NRW) names a plant mistaken for tānekaha; the other New Zealand Phyllocladus, mountain toatoa (P. alpinus), is a related shrub of higher ground.",
-      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 4, 7, 2, 8 kept; the others not used (seedlings, blurred or unclear frames, garden settings)."
+      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 4, 7, 2, 8 kept; the others not used (seedlings, blurred or unclear frames, garden settings).",
+      "Other uses reviewed 27/11/2026: the owner approved the dye use ('ship them') and the entry ships."
     ],
     "summary" : {
       "sources" : [
@@ -87454,9 +87459,12 @@
     ],
     "harvestEthics" : {
       "sources" : [
-        "NZTCS (DOC, https://nztcs.org.nz), record 8084 'Alectryon excelsus subsp. excelsus', Vascular plants 2023 (de Lange et al. 2024), retrieved 27/11/2026 — Not Threatened; NZTCS (DOC, https://nztcs.org.nz), record 8085 'Alectryon excelsus subsp. grandis', Vascular plants 2023 (de Lange et al. 2024), retrieved 27/11/2026 — Nationally Vulnerable; NZPCN, 'Alectryon excelsus subsp. excelsus' fact sheet (de Lange; all rights reserved, restated), https://www.nzpcn.org.nz/flora/species/alectryon-excelsus-subsp-excelsus/, retrieved 27/11/2026: regional statuses Northland 2026, Auckland 2025 and Wellington 2025 all Regionally Not Threatened (no regional caution for the mainland tree); NZPCN, 'Alectryon excelsus subsp. grandis' fact sheet (de Lange; all rights reserved, restated), https://www.nzpcn.org.nz/flora/species/alectryon-excelsus-subsp-grandis/, retrieved 27/11/2026: Northland 2026 Regionally Threatened – Regionally Vulnerable (Three Kings only)."
+        "NZTCS (DOC, https://nztcs.org.nz), record 8084 'Alectryon excelsus subsp. excelsus', Vascular plants 2023 (de Lange et al. 2024), retrieved 27/11/2026 — Not Threatened; NZTCS (DOC, https://nztcs.org.nz), record 8085 'Alectryon excelsus subsp. grandis', Vascular plants 2023 (de Lange et al. 2024), retrieved 27/11/2026 — Nationally Vulnerable; NZPCN, 'Alectryon excelsus subsp. excelsus' fact sheet (de Lange; all rights reserved, restated), https://www.nzpcn.org.nz/flora/species/alectryon-excelsus-subsp-excelsus/, retrieved 27/11/2026: regional statuses Northland 2026, Auckland 2025 and Wellington 2025 all Regionally Not Threatened (no regional caution for the mainland tree); NZPCN, 'Alectryon excelsus subsp. grandis' fact sheet (de Lange; all rights reserved, restated), https://www.nzpcn.org.nz/flora/species/alectryon-excelsus-subsp-grandis/, retrieved 27/11/2026: Northland 2026 Regionally Threatened – Regionally Vulnerable (Three Kings only).",
+        "Benton, R.A. 2023, 'Titoki', Te Māra Reo (CC BY-NC 3.0 NZ, restated), https://www.temarareo.org/TMR-Titoki.html, retrieved 27/11/2026: 'The oil pressed from the seed was highly esteemed, and generally reserved for use exclusively by rangatira. However, in a season when the tītoki were fruiting abundantly, a commoner could become \"he rangatira o te tau tītoki\" -- a chief for the tītoki season'",
+        "Kahutoi Te Kanawa, 'Māori weaving and tukutuku – te raranga me te whatu', page 5 'Revival of Māori fibre work', Te Ara – the Encyclopedia of New Zealand, published 22/10/2014 (CC BY-NC 3.0 NZ, restated), https://teara.govt.nz/en/maori-weaving-and-tukutuku-te-raranga-me-te-whatu/page-5 (read from the Wayback Machine copy of 13/04/2024), retrieved 27/11/2026: 'the traditions and tikanga (protocols) and the stories and designs unique to each iwi'; 'The kaitiaki (guardians) of tikanga (customs) associated with weaving uphold these traditions as they apply them through the processes of making.'",
+        "Department of Conservation, 'Conservation General Policy', https://www.doc.govt.nz/about-us/our-policies-and-plans/conservation-general-policy/, retrieved 27/11/2026 — customary use is the 'Gathering and use of natural resources by tangata whenua according to tikanga' and may be authorised case by case; collection of indigenous species from public conservation lands is by application. DOC, 'Eco-sourcing, collecting and propagating seeds', https://www.doc.govt.nz/nature/native-plants/native-plant-restoration/ecosourcing-collecting-and-propagating-seeds/, retrieved 27/11/2026: 'you will need to apply for a permit from DOC if planning to collect from public conservation land'."
       ],
-      "text" : "Be mindful when foraging. Take only what you need. Some tītoki are ranked separately by the New Zealand Threat Classification System. Alectryon excelsus subsp. grandis (Three Kings tītoki) is Threatened – Nationally Vulnerable and grows wild only on the Three Kings Islands: do not harvest it."
+      "text" : "Be mindful when foraging. Take only what you need. Some tītoki are ranked separately by the New Zealand Threat Classification System. Alectryon excelsus subsp. grandis (Three Kings tītoki) is Threatened – Nationally Vulnerable and grows wild only on the Three Kings Islands: do not harvest it. In Māori custom the oil pressed from the seed was highly esteemed and generally kept for rangatira (chiefs), though in a season of heavy fruiting anyone could become a chief for the tītoki season. Gathering plant materials is guided by tikanga (Māori customs), which the kaitiaki (guardians) of each craft uphold and which differ between iwi, so be mindful of them; on public conservation land, get permission from the Department of Conservation before taking any plant material."
     },
     "id" : "titoki",
     "identification" : {
@@ -87526,7 +87534,9 @@
       "Months 27/11/2026: entry months left empty — nothing on it is eaten; NZPCN gives fruiting 'November - August' and Flora vol. I FT. 10-12 'in following year' (fruit take about a year to mature, Te Māra Reo). Use months left empty: no NZ source dates the oil harvest.",
       "Lookalikes: none added. NZPCN says subsp. excelsus 'could be confused with' Three Kings tītoki (subsp. grandis), which is the same species here and not a separate entry. No lookalike card written.",
       "Harvest ethics: owner's Not Threatened generic sentence for the mainland tree (NZTCS record 8084 Not Threatened) plus a 'do not harvest' sentence for subsp. grandis (NZTCS record 8085 Nationally Vulnerable): NZTCS (DOC, https://nztcs.org.nz), record 8084 'Alectryon excelsus subsp. excelsus', Vascular plants 2023 (de Lange et al. 2024), retrieved 27/11/2026; NZTCS (DOC, https://nztcs.org.nz), record 8085 'Alectryon excelsus subsp. grandis', Vascular plants 2023 (de Lange et al. 2024), retrieved 27/11/2026; NZPCN, 'Alectryon excelsus subsp. excelsus' fact sheet (de Lange; all rights reserved, restated), https://www.nzpcn.org.nz/flora/species/alectryon-excelsus-subsp-excelsus/, retrieved 27/11/2026 and NZPCN, 'Alectryon excelsus subsp. grandis' fact sheet (de Lange; all rights reserved, restated), https://www.nzpcn.org.nz/flora/species/alectryon-excelsus-subsp-grandis/, retrieved 27/11/2026.",
-      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 2, 5, 1, 4 kept; the others not used (seedlings, blurred or unclear frames, garden settings)."
+      "Photos 27/11/2026: four iNaturalist NZ photos staged with Tools/fetch_catalogue_photos.py (manifest2669.json, 8 staged) and picked by eye against the entry's identification text: staged frames 2, 5, 1, 4 kept; the others not used (seedlings, blurred or unclear frames, garden settings).",
+      "Tikanga line 27/11/2026 (owner: '3 yeah'): the rangatira sentence in harvest ethics is from Te Māra Reo 'Titoki' (https://www.temarareo.org/TMR-Titoki.html, retrieved 27/11/2026).",
+      "Customs line 27/11/2026 (owner: 'also need to mention to be mindfull of maori custumes find a source'): the harvest-ethics sentence on tikanga and DOC permission rests on Te Ara 'Māori weaving and tukutuku' page 5 (Kahutoi Te Kanawa, 2014) and DOC's Conservation General Policy and seed-collecting page; Te Ara's harakeke harvesting text (leaves cut so te rito is not harmed) and Manaaki Whenua's kiekie and pīngao harvesting notes are about other plants and not used here."
     ],
     "summary" : {
       "sources" : [
