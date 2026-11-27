@@ -562,6 +562,28 @@ entry as now, not here.
 | Cabbage tree (`cabbage-tree`) | Cabbage tree flower pomade: flowers laid on an odourless solid fat in an enfleurage frame and recharged until the fat smells as strong as wanted, then jarred and kept cool (the flowers do not tincture well) | Perfume | Knox 2013, pp. 47 and 265 (owner's book; read 10/11/2026 with the PDF search tool) | Test a little on the skin for strength with each recharge |
 | Blackcurrant (`blackcurrant`) | Fabric dye from the berry mash left after making juice: cotton simmered an hour in 2 litres of water with 125 ml salt as a mordant, then an hour in the simmered mash and left overnight; came out grey-mauve rather than purple | Dye | Cheryl Arkison, 'Natural Dyeing – Black Currants' (27/08/2008), https://www.cherylarkison.com/diningroomempire/2008/08/natural-dying-black-currants.html | Not colourfast: it kept running after rinsing and vinegar made it run more; the writer would not use it in anything to be washed. Cotton takes natural dyes poorly without a stronger mordant (alum) |
 
+## Recipe required (owner, 27/11/2026)
+
+Scope questions the owner answered "I'll find a recipe for it. mark it as recipe required … so when
+I get to it I can do it". Nothing here is on a page; each waits for the owner to bring a recipe or
+method source, and the report lists them under *Recipe required*.
+
+| Entry | Lead (from the scope questions) | Owner's answer |
+|---|---|---|
+| `grand-fir` | moth repellent: PFAF, the aromatic leaves are used as a moth repellent (no method given) | later |
+| `cow-parsley` | mosquito repellent (from the earlier lead): not on the PFAF Other Uses text re-read today; no source read give | later |
+| `atlas-cedar` | warning for the cosmetics use: the do-not-eat caution needs a handling warning but PFAF gives none ('Known Hazards: None known'); owner to supply one. | yes, once there is a recipe |
+| `japanese-cedar` | insect repellent and room scent: Aroma-Zone 'Japanese cedarwood essential oil', essential oil steam-distilled from the wood, repellent and diffused; page not re-read today, so source, part and method unconfirmed | yes, once there is a recipe |
+| `scotch-broom` | Knox 2013 pp. 72–73 (brooms) and pp. 262–271 (enfleurage, scented oils): book not read, no method confirmed | later |
+| `wild-fennel` | Knox 2013 pp. 262, 264, 266, 268 names fennel leaves, flowers and seeds for scent tinctures, glycerine extracts, flower pomades and infused oils: add as cosmetics (scent)? Not a lead for this entry. | later |
+| `cleavers` | red root dye: PFAF (root decoction) against Jenny Dean (never achieved it, nor met anyone who has) — write it with a caveat, or leave out? | later |
+| `scarlet-pimpernel` | Scarlet pimpernel is doNotEat; the cosmetics use rests on one PFAF line (Nepal) with the part given only as 'the squeezed plant'. Keep? | later |
+| `harakeke` | paper by lye cook: Plants For A Future 'Phormium tenax' (Other Uses): leaves scraped, soaked in water 2 hours, cooked 24 hours with lye, then beaten in a ball mill for 4 hours to make a cream paper. Fibre kind (paper), but the page gives no lye handling advice, so the rule that a lye method needs a source-stated warning cannot be met. Owner to decide whether to add it with a warning of their own. | yes, once there is a recipe |
+| `douglas-fir` | insecticide: PFAF 'The plant has insecticidal properties', no part or method given, so nothing to put to the owner beyond the note | later |
+| `red-raspberry` | lye warning in the raspberry paper use has no source (PFAF gives none); please supply a sourced caution or drop the use | later |
+| `yew` | insecticide: Plants For A Future 'Taxus baccata' (Other Uses: 'A decoction of the leaves is used as an insecticide'), https://pfaf.org/user/Plant.aspx?LatinName=Taxus+baccata — part leaves, method decoction, no quantities; yew is poisonous in every part but the aril flesh | later |
+| `nasturtium` | insecticide/pest spray: Plants For A Future 'Tropaeolum majus' (Other Uses: 'An insecticide can be made from an infusion of leaves and soap flakes'), https://pfaf.org/user/Plant.aspx?LatinName=Tropaeolum+majus — part leaves, method infusion with soap flakes, no quantities; the Goodness is… flower-and-leaf spray lead was not reachable | later |
+
 ## Decisions (owner, 26/11/2026)
 
 1. **Scope: fibre, dye, craft and cosmetics.** Fibre covers weaving, basketry and cordage; craft

@@ -307,3 +307,18 @@ def test_the_row_lists_each_non_food_use_with_its_recipe_count():
     assert [u["kind"] for u in row["uses"]] == ["dye", "fibre"]
     cell = report.render_row(row)
     assert "dye" in cell and "1 recipe<" in cell and "fibre" in cell
+
+
+def test_recipe_required_rows_are_read_from_their_plan_table_only():
+    plan = "\n".join([
+        "## Recipe required (owner, 27/11/2026)",
+        "| Entry | Lead (from the scope questions) | Owner's answer |",
+        "|---|---|---|",
+        "| `yew` | insecticide: leaf decoction | later |",
+        "## Decisions",
+        "| `nettle` | not this one | later |",
+    ])
+    rows = report.parse_recipe_required(plan)
+    assert rows == [{"id": "yew", "lead": "insecticide: leaf decoction", "answer": "later"}]
+    html = "\n".join(report.render_recipe_required(rows, {"yew": "Yew"}))
+    assert 'id="recipe-required"' in html and "Yew" in html and "insecticide" in html

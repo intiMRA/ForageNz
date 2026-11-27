@@ -1306,6 +1306,40 @@ def use_row(r: dict[str, Any]) -> str:
     )
 
 
+def parse_recipe_required(plan_text: str) -> list[dict[str, str]]:
+    """Rows of the plan's *Recipe required* table: uses the owner will find a recipe for."""
+    rows: list[dict[str, str]] = []
+    inside = False
+    for line in plan_text.splitlines():
+        if line.startswith("## "):
+            inside = line.startswith("## Recipe required")
+            continue
+        if not inside or not line.startswith("|") or line.startswith("|---"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) < 3 or not cells[0].startswith("`"):
+            continue  # header row
+        rows.append({"id": cells[0].strip("`"), "lead": cells[1], "answer": cells[2]})
+    return rows
+
+
+def render_recipe_required(rows: list[dict[str, str]], names: dict[str, str]) -> list[str]:
+    out = [
+        f'<h2 class="group" id="recipe-required">Recipe required<small>{len(rows)} uses waiting for a recipe</small></h2>',
+        '<p class="lede">Uses the owner will find a recipe or method for (27/11/2026). Nothing here is on a page; '
+        "the list comes from the <em>Recipe required</em> table in <code>docs/plans/useful-plants.md</code>.</p>",
+        '<div class="scroll"><table><thead><tr><th>Entry</th><th>Lead</th><th>Owner\'s answer</th></tr></thead><tbody>',
+    ]
+    for r in rows:
+        name = names.get(r["id"], r["id"])
+        out.append(
+            f'<tr><td><a href="#e-{esc(r["id"])}"><b>{esc(name)}</b></a><br><code>{esc(r["id"])}</code></td>'
+            f'<td>{esc(r["lead"])}</td><td>{esc(r["answer"])}</td></tr>'
+        )
+    out.append("</tbody></table></div>")
+    return out
+
+
 def render_uses(batches: list[dict[str, Any]]) -> list[str]:
     entries = sum(len(b["rows"]) for b in batches)
     out = [
@@ -1357,6 +1391,7 @@ def render(
     entries: list[Entry],
     leads: dict[str, Any] | None = None,
     use_leads: dict[str, list[dict[str, Any]]] | None = None,
+    recipe_required: list[dict[str, str]] | None = None,
 ) -> str:
     filed = file_by_group(entries)
     uses = use_batches(entries, use_leads or {})
@@ -1394,6 +1429,8 @@ def render(
         out.append('<a href="#links">Link next</a>')
     if uses:
         out.append('<a href="#uses">Other uses next</a>')
+    if recipe_required:
+        out.append('<a href="#recipe-required">Recipe required</a>')
     for key, label in GROUPS:
         count = sum(1 for e in entries if e["group"] == key)
         out.append(f'<a href="#{key}">{esc(label)} · {count}</a>')
@@ -1404,6 +1441,8 @@ def render(
         out.extend(render_links(batches))
     if uses:
         out.extend(render_uses(uses))
+    if recipe_required:
+        out.extend(render_recipe_required(recipe_required, {e["id"]: e["commonName"] for e in entries}))
 
     for key, label in GROUPS:
         group = filed[key]
@@ -1456,7 +1495,8 @@ def main() -> None:
     leads = json.loads(leads_path.read_text()) if leads_path.exists() else None
     out = pathlib.Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(render(entries, leads, parse_use_leads(PLAN.read_text())))
+    plan_text = PLAN.read_text()
+    out.write_text(render(entries, leads, parse_use_leads(plan_text), parse_recipe_required(plan_text)))
     print(f"{len(entries)} entries → {out}")
 
 
